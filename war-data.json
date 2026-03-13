@@ -1,10 +1,10 @@
 {
   "meta": {
-    "lastUpdated": "2026-03-13 16:00 ET",
+    "lastUpdated": "2026-03-13 16:10 ET",
     "notes": [
       "This dashboard is updated manually by replacing war-data.json.",
-      "Daily launch charts extend to the latest loaded date. Unknown daily values after the last defensible full series are left blank instead of invented.",
-      "Latest target-country charts show the latest daily slice loaded, not cumulative totals."
+      "Daily launch charts extend through Mar 13, but unknown daily values after the last defensible full series are left blank rather than invented.",
+      "Event log is intentionally rendered newest first."
     ]
   },
   "metrics": [
@@ -26,13 +26,13 @@
     {
       "label": "Data through",
       "value": "Mar 13",
-      "desc": "Dashboard narrative and fragments updated through Mar 13"
+      "desc": "All dynamic components updated through Mar 13"
     }
   ],
   "sitrep": [
     "The best complete public daily launch series still ends on March 9 and shows a sharp decline from the opening phase.",
-    "The dashboard now carries the timeline, event log, oil, theory evaluation, scenario probabilities, and business sections through March 13.",
-    "Post-March 9 public reporting is stronger on oil, shipping, and target-country incident fragments than on a new clean all-theater daily launch ledger, so the chart continues with blanks rather than fake numbers."
+    "The event log, timeline, business sections, theory evaluation, and oil layer are updated through March 13.",
+    "Post-March 9 public reporting is stronger on oil, shipping, and target-country fragments than on a clean full daily missile/drone ledger, so those chart values remain blank rather than fabricated."
   ],
   "theoryEvaluation": [
     {
@@ -141,7 +141,7 @@
       95.7,
       96.0
     ],
-    "note": "Use settlement values when available. The current layer is through Mar 13."
+    "note": "Current benchmark layer loaded through Mar 13."
   },
   "latestTargetBreakdown": {
     "note": "Latest daily slice loaded. Zeros may mean no public hit recorded in the loaded slice, not guaranteed inactivity.",

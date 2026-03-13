@@ -7,81 +7,39 @@
   <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.1/dist/chart.umd.min.js"></script>
   <style>
     :root{
-      --bg:#07111f;
-      --bg2:#0e1a2e;
-      --panel:#0f1c31;
-      --panel2:#15253f;
-      --border:#29415f;
-      --text:#eef5fc;
-      --muted:#9eb5d0;
-      --soft:#7f97b1;
-      --gold:#ffd166;
-      --blue:#63b3ff;
-      --cyan:#46d7b0;
-      --orange:#ff9f43;
-      --red:#ff6b6b;
-      --purple:#b084ff;
+      --bg:#07111f; --bg2:#0e1a2e; --panel:#0f1c31; --panel2:#15253f; --border:#29415f;
+      --text:#eef5fc; --muted:#9eb5d0; --soft:#7f97b1; --gold:#ffd166; --blue:#63b3ff;
+      --cyan:#46d7b0; --orange:#ff9f43; --red:#ff6b6b; --purple:#b084ff;
     }
     *{box-sizing:border-box}
     body{
-      margin:0;
-      color:var(--text);
+      margin:0; color:var(--text);
       font-family:Inter,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;
       background:
         radial-gradient(circle at top right, rgba(99,179,255,.16), transparent 24%),
         radial-gradient(circle at top left, rgba(255,209,102,.10), transparent 22%),
         linear-gradient(180deg,var(--bg) 0%,var(--bg2) 100%);
     }
-    .topbar{
-      position:sticky; top:0; z-index:5;
-      backdrop-filter: blur(16px);
-      background:rgba(7,17,31,.84);
-      border-bottom:1px solid var(--border);
-      margin-bottom:18px;
-    }
+    .topbar{position:sticky;top:0;z-index:5;backdrop-filter:blur(16px);background:rgba(7,17,31,.84);border-bottom:1px solid var(--border);margin-bottom:18px}
     .topbar-inner,.shell{max-width:1520px;margin:0 auto;padding-left:18px;padding-right:18px}
     .topbar-inner{padding-top:14px;padding-bottom:14px;display:flex;gap:16px;justify-content:space-between;align-items:center;flex-wrap:wrap}
     .title h1{margin:0;font-size:22px;letter-spacing:.2px}
     .title p{margin:6px 0 0;color:var(--muted);font-size:13px;line-height:1.45;max-width:960px}
     .chips{display:flex;gap:10px;flex-wrap:wrap}
-    .chip{
-      border:1px solid var(--border);
-      border-radius:12px;
-      padding:10px 14px;
-      background:linear-gradient(180deg,#182947,#101b31);
-      font-size:13px;
-    }
+    .chip{border:1px solid var(--border);border-radius:12px;padding:10px 14px;background:linear-gradient(180deg,#182947,#101b31);font-size:13px}
     .chip strong{color:#fff}
     .shell{padding-top:18px;padding-bottom:28px}
     .grid{display:grid;gap:16px}
     .hero{grid-template-columns:1.22fr .78fr}
     .cols-2{grid-template-columns:repeat(2,minmax(0,1fr))}
     .cols-3{grid-template-columns:repeat(3,minmax(0,1fr))}
-    .panel{
-      border:1px solid var(--border);
-      border-radius:22px;
-      padding:18px;
-      background:linear-gradient(180deg,rgba(15,28,49,.96),rgba(21,37,63,.94));
-      box-shadow:0 20px 60px rgba(0,0,0,.24);
-    }
+    .panel{border:1px solid var(--border);border-radius:22px;padding:18px;background:linear-gradient(180deg,rgba(15,28,49,.96),rgba(21,37,63,.94));box-shadow:0 20px 60px rgba(0,0,0,.24)}
     .panel h2,.panel h3{margin:0 0 8px}
     .sub{color:var(--muted);font-size:13px;line-height:1.45;margin-bottom:12px}
     .kicker{color:var(--gold);font-weight:800;font-size:12px;text-transform:uppercase;letter-spacing:.85px;margin-bottom:8px}
-    .theory{
-      background:rgba(255,209,102,.06);
-      border-left:4px solid var(--gold);
-      border-radius:0 16px 16px 0;
-      padding:14px 16px;
-      line-height:1.6;
-      font-size:14px;
-    }
+    .theory{background:rgba(255,209,102,.06);border-left:4px solid var(--gold);border-radius:0 16px 16px 0;padding:14px 16px;line-height:1.6;font-size:14px}
     .metric-grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:12px;margin-top:16px}
-    .metric{
-      border:1px solid var(--border);
-      border-radius:18px;
-      padding:14px;
-      background:rgba(255,255,255,.028);
-    }
+    .metric{border:1px solid var(--border);border-radius:18px;padding:14px;background:rgba(255,255,255,.028)}
     .metric .label{font-size:12px;color:var(--muted);margin-bottom:6px}
     .metric .value{font-size:28px;font-weight:800;line-height:1.05}
     .metric .desc{font-size:12px;color:var(--soft);margin-top:6px;line-height:1.4}
@@ -96,28 +54,14 @@
     th,td{padding:12px 10px;border-bottom:1px solid var(--border);text-align:left;font-size:13px;vertical-align:top}
     th{position:sticky;top:0;background:rgba(255,255,255,.03);color:var(--muted)}
     .pill{display:inline-block;border:1px solid var(--border);border-radius:999px;padding:4px 9px;font-size:11px;font-weight:800;background:rgba(255,255,255,.03)}
-    .missile{color:var(--red)}
-    .drone{color:var(--orange)}
+    .missile{color:var(--red)} .drone{color:var(--orange)}
     .tag{display:inline-block;padding:5px 10px;border-radius:999px;font-size:11px;font-weight:800}
-    .good{background:rgba(70,215,176,.14);color:var(--cyan)}
-    .warn{background:rgba(255,209,102,.14);color:var(--gold)}
-    .bad{background:rgba(255,107,107,.14);color:var(--red)}
-    .scenario{
-      display:flex;justify-content:space-between;gap:10px;align-items:flex-start;
-      padding:12px;border:1px solid var(--border);border-radius:16px;margin-bottom:10px;background:rgba(255,255,255,.02)
-    }
-    .scenario strong{display:block;margin-bottom:4px}
-    .scenario .prob{font-size:22px;font-weight:900;color:var(--gold);white-space:nowrap}
-    .biz-section{margin-top:14px}
-    .biz-section h4{margin:0 0 8px;font-size:13px;color:var(--gold);letter-spacing:.4px;text-transform:uppercase}
-    @media(max-width:1180px){
-      .hero,.cols-2,.cols-3{grid-template-columns:1fr}
-      .metric-grid{grid-template-columns:repeat(2,minmax(0,1fr))}
-    }
-    @media(max-width:700px){
-      .metric-grid{grid-template-columns:1fr}
-      .title h1{font-size:19px}
-    }
+    .good{background:rgba(70,215,176,.14);color:var(--cyan)} .warn{background:rgba(255,209,102,.14);color:var(--gold)} .bad{background:rgba(255,107,107,.14);color:var(--red)}
+    .scenario{display:flex;justify-content:space-between;gap:10px;align-items:flex-start;padding:12px;border:1px solid var(--border);border-radius:16px;margin-bottom:10px;background:rgba(255,255,255,.02)}
+    .scenario strong{display:block;margin-bottom:4px} .scenario .prob{font-size:22px;font-weight:900;color:var(--gold);white-space:nowrap}
+    .biz-section{margin-top:14px} .biz-section h4{margin:0 0 8px;font-size:13px;color:var(--gold);letter-spacing:.4px;text-transform:uppercase}
+    @media(max-width:1180px){.hero,.cols-2,.cols-3{grid-template-columns:1fr}.metric-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}
+    @media(max-width:700px){.metric-grid{grid-template-columns:1fr}.title h1{font-size:19px}}
   </style>
 </head>
 <body>
@@ -125,12 +69,12 @@
     <div class="topbar-inner">
       <div class="title">
         <h1>Iran War Dashboard</h1>
-        <p>Daily tempo, target spread, oil shock, and business impact. Built for manual data updates: replace <code>war-data.json</code>, push, redeploy, done. The UI now assumes manual updates and does not pretend to do live magic.</p>
+        <p>Daily tempo, target spread, oil shock, and business impact. Manual update model: replace <code>war-data.json</code>, push, redeploy. The page is fully driven by the JSON file.</p>
       </div>
       <div class="chips">
         <div class="chip">Last data update: <strong id="lastUpdated">—</strong></div>
         <div class="chip">Freshness: <strong id="freshnessStatus">—</strong></div>
-        <div class="chip">Best full daily series through: <strong id="seriesThrough">—</strong></div>
+        <div class="chip">Data window: <strong id="seriesThrough">—</strong></div>
       </div>
     </div>
   </div>
@@ -139,12 +83,12 @@
     <section class="grid hero">
       <div class="panel">
         <div class="kicker">Working theory</div>
-        <div class="theory"><strong>Core question:</strong> can U.S./Israeli strikes suppress meaningful missile and drone launch capability before political and economic costs force them to back off? If yes, the regime becomes much more vulnerable. This dashboard tests that theory using daily tempo, target spread, oil stress, and business risk — not cumulative scoreboards.</div>
+        <div class="theory"><strong>Core question:</strong> can U.S./Israeli strikes suppress meaningful missile and drone launch capability before political and economic costs force them to back off? If yes, the regime becomes much more vulnerable. This dashboard tests that theory with daily tempo, target spread, oil stress, and business risk — not cumulative scoreboard theater.</div>
         <div class="metric-grid" id="metrics"></div>
       </div>
       <div class="panel">
         <h2>SITREP</h2>
-        <div class="sub">Concise and grounded. If the full daily launch ledger is incomplete after a certain date, the dashboard should admit that plainly and still update everything else dynamically.</div>
+        <div class="sub">Concise and grounded. If full daily launch counts are missing after a date, the dashboard should still render the newer event log and business logic without pretending those counts exist.</div>
         <ul class="list" id="sitrep"></ul>
         <div class="footnote" id="sourceNotes"></div>
       </div>
@@ -153,13 +97,13 @@
     <section class="grid cols-2" style="margin-top:16px">
       <div class="panel">
         <h3>Daily ballistic missile launches</h3>
-        <div class="sub">Daily counts, not cumulative. Trend line included. Unknown future daily values can be left blank and the chart will still render.</div>
+        <div class="sub">Daily counts, not cumulative. Trend line included. Null values are allowed for dates where no defensible full count exists.</div>
         <div class="chart-box"><canvas id="missileChart"></canvas></div>
         <div class="footnote" id="missileFoot"></div>
       </div>
       <div class="panel">
         <h3>Daily drone launches</h3>
-        <div class="sub">Daily counts, not cumulative. Trend line included. Unknown values can be left blank.</div>
+        <div class="sub">Daily counts, not cumulative. Null values are allowed when only fragments exist.</div>
         <div class="chart-box"><canvas id="droneChart"></canvas></div>
         <div class="footnote" id="droneFoot"></div>
       </div>
@@ -202,7 +146,7 @@
 
     <section class="panel" style="margin-top:16px">
       <h3>Event log</h3>
-      <div class="sub">Newest first. Dynamic rendering: add new dates to <code>dailyRows</code> and they appear automatically.</div>
+      <div class="sub">Newest first. Add new dates to <code>dailyRows</code> and they render automatically.</div>
       <div class="table-wrap">
         <table>
           <thead>
@@ -224,12 +168,10 @@
     <section class="grid cols-2" style="margin-top:16px">
       <div class="panel">
         <h3>Projected timeline</h3>
-        <div class="sub">Clearer time windows tied to operational and cost signals.</div>
         <ul class="list" id="timeline"></ul>
       </div>
       <div class="panel">
         <h3>Scenario probabilities</h3>
-        <div class="sub">Working estimates, not mystical tablets.</div>
         <div id="scenarioProbs"></div>
       </div>
     </section>
@@ -237,7 +179,6 @@
     <section class="grid cols-2" style="margin-top:16px">
       <div class="panel">
         <h3>Working theory evaluation</h3>
-        <div class="sub">Explicitly evaluates your theory against the latest loaded data.</div>
         <ul class="list" id="theoryEval"></ul>
       </div>
       <div class="panel">
@@ -249,139 +190,83 @@
     <section class="grid cols-2" style="margin-top:16px">
       <div class="panel">
         <h3>Iranfarhang</h3>
-        <div class="sub">Grouped by business so the operational picture is not scattered all over the page like dropped screws.</div>
-        <div class="biz-section">
-          <h4>Impact</h4>
-          <ul class="list" id="impactIranfarhang"></ul>
-        </div>
-        <div class="biz-section">
-          <h4>Preparation priorities</h4>
-          <ul class="list" id="prepIranfarhang"></ul>
-        </div>
-        <div class="biz-section">
-          <h4>Signals to watch</h4>
-          <ul class="list" id="signalsIranfarhang"></ul>
-        </div>
+        <div class="biz-section"><h4>Impact</h4><ul class="list" id="impactIranfarhang"></ul></div>
+        <div class="biz-section"><h4>Preparation priorities</h4><ul class="list" id="prepIranfarhang"></ul></div>
+        <div class="biz-section"><h4>Signals to watch</h4><ul class="list" id="signalsIranfarhang"></ul></div>
       </div>
       <div class="panel">
         <h3>KIP</h3>
-        <div class="sub">Iran/UAE export-import corridor business using Dubai/UAE for settlement, re-export, transshipment, and shipping access.</div>
-        <div class="biz-section">
-          <h4>Impact</h4>
-          <ul class="list" id="impactKIP"></ul>
-        </div>
-        <div class="biz-section">
-          <h4>Preparation priorities</h4>
-          <ul class="list" id="prepKIP"></ul>
-        </div>
-        <div class="biz-section">
-          <h4>Signals to watch</h4>
-          <ul class="list" id="signalsKIP"></ul>
-        </div>
+        <div class="biz-section"><h4>Impact</h4><ul class="list" id="impactKIP"></ul></div>
+        <div class="biz-section"><h4>Preparation priorities</h4><ul class="list" id="prepKIP"></ul></div>
+        <div class="biz-section"><h4>Signals to watch</h4><ul class="list" id="signalsKIP"></ul></div>
       </div>
     </section>
   </main>
 
   <script>
     const DEFAULT_DATA = {
-      meta: {
-        lastUpdated: "2026-03-13 16:00 ET",
-        notes: [
-          "This dashboard is updated manually by replacing war-data.json.",
-          "Daily launch charts should extend to the latest loaded date, but unknown values should remain blank rather than made up.",
-          "Latest target-country charts show the latest daily slice loaded, not cumulative totals."
-        ]
-      },
-      metrics: [],
-      sitrep: [],
-      theoryEvaluation: [],
-      scenarioProbabilities: [],
-      dailySeries: { labels: [], missiles: [], drones: [], sourceLabel: "", throughDate: "" },
-      oil: { labels: [], brent: [], wti: [], note: "" },
-      latestTargetBreakdown: { note: "", missiles: {}, drones: {} },
-      pressure: { labels: [], attrition: [], cost: [] },
-      dailyRows: [],
-      timeline: [],
-      endstate: [],
-      impactIranfarhang: [],
-      prepIranfarhang: [],
-      signalsIranfarhang: [],
-      impactKIP: [],
-      prepKIP: [],
-      signalsKIP: []
+      meta:{lastUpdated:"",notes:[]}, metrics:[], sitrep:[], theoryEvaluation:[], scenarioProbabilities:[],
+      dailySeries:{labels:[],missiles:[],drones:[],sourceLabel:"",throughDate:""},
+      oil:{labels:[],brent:[],wti:[],note:""}, latestTargetBreakdown:{note:"",missiles:{},drones:{}},
+      pressure:{labels:[],attrition:[],cost:[]}, dailyRows:[], timeline:[], endstate:[],
+      impactIranfarhang:[], prepIranfarhang:[], signalsIranfarhang:[],
+      impactKIP:[], prepKIP:[], signalsKIP:[]
     };
 
     let state = structuredClone(DEFAULT_DATA);
     const charts = {};
 
     const commonOptions = {
-      responsive: true,
-      maintainAspectRatio: false,
-      interaction: { mode: 'index', intersect: false },
-      plugins: {
-        legend: { labels: { color: '#eef5fc', font: { size: 12 } } },
-        tooltip: {
-          backgroundColor: '#0f1627',
-          borderColor: '#2d3a53',
-          borderWidth: 1,
-          titleColor: '#fff',
-          bodyColor: '#eef5fc'
-        }
+      responsive:true, maintainAspectRatio:false, interaction:{mode:'index',intersect:false},
+      plugins:{
+        legend:{labels:{color:'#eef5fc',font:{size:12}}},
+        tooltip:{backgroundColor:'#0f1627',borderColor:'#2d3a53',borderWidth:1,titleColor:'#fff',bodyColor:'#eef5fc'}
       },
-      scales: {
-        x: { ticks: { color: '#9eb5d0' }, grid: { color: 'rgba(255,255,255,.05)' } },
-        y: { ticks: { color: '#9eb5d0' }, grid: { color: 'rgba(255,255,255,.05)' } }
+      scales:{
+        x:{ticks:{color:'#9eb5d0'},grid:{color:'rgba(255,255,255,.05)'}},
+        y:{ticks:{color:'#9eb5d0'},grid:{color:'rgba(255,255,255,.05)'}}
       }
     };
 
-    function linearTrend(values) {
-      const clean = values.map((v, i) => ({ x: i, y: Number.isFinite(v) ? v : null })).filter(p => p.y !== null);
-      if (clean.length < 2) return values.map(() => null);
+    function linearTrend(values){
+      const clean = values.map((v,i)=>({x:i,y:Number.isFinite(v)?v:null})).filter(p=>p.y!==null);
+      if (clean.length < 2) return values.map(()=>null);
       const n = clean.length;
-      const xMean = clean.reduce((a, b) => a + b.x, 0) / n;
-      const yMean = clean.reduce((a, b) => a + b.y, 0) / n;
-      let numerator = 0;
-      let denominator = 0;
-      for (const p of clean) {
-        numerator += (p.x - xMean) * (p.y - yMean);
-        denominator += (p.x - xMean) ** 2;
-      }
-      const m = denominator ? numerator / denominator : 0;
-      const b = yMean - m * xMean;
-      return values.map((_, i) => +(m * i + b).toFixed(1));
+      const xMean = clean.reduce((a,b)=>a+b.x,0)/n;
+      const yMean = clean.reduce((a,b)=>a+b.y,0)/n;
+      let numerator = 0, denominator = 0;
+      for (const p of clean){ numerator += (p.x-xMean)*(p.y-yMean); denominator += (p.x-xMean)**2; }
+      const m = denominator ? numerator/denominator : 0;
+      const b = yMean - m*xMean;
+      return values.map((_,i)=> +(m*i+b).toFixed(1));
     }
 
-    function computeFreshness(lastUpdatedText) {
-      const parsed = Date.parse(String(lastUpdatedText).replace(' ET', ' GMT-0400'));
-      if (Number.isNaN(parsed)) return { label: 'Check timestamp', cls: 'warn' };
-      const hours = (Date.now() - parsed) / 36e5;
-      if (hours <= 12) return { label: 'Current-ish', cls: 'good' };
-      if (hours <= 48) return { label: 'Aging', cls: 'warn' };
-      return { label: 'Stale', cls: 'bad' };
+    function computeFreshness(lastUpdatedText){
+      const parsed = Date.parse(String(lastUpdatedText).replace(' ET',' GMT-0400'));
+      if (Number.isNaN(parsed)) return {label:'Check timestamp',cls:'warn'};
+      const hours = (Date.now()-parsed)/36e5;
+      if (hours <= 12) return {label:'Current-ish',cls:'good'};
+      if (hours <= 48) return {label:'Aging',cls:'warn'};
+      return {label:'Stale',cls:'bad'};
     }
 
-    function parseLogDate(dateText) {
-      const months = { Jan:0, Feb:1, Mar:2, Apr:3, May:4, Jun:5, Jul:6, Aug:7, Sep:8, Oct:9, Nov:10, Dec:11 };
-      const parts = String(dateText).trim().split(/\s+/);
+    function parseLogDate(dateText){
+      const months = {Jan:0,Feb:1,Mar:2,Apr:3,May:4,Jun:5,Jul:6,Aug:7,Sep:8,Oct:9,Nov:10,Dec:11};
+      const parts = String(dateText || '').trim().split(/\s+/);
       if (parts.length < 2 || !(parts[0] in months)) return new Date(0);
-      return new Date(2026, months[parts[0]], parseInt(parts[1], 10) || 1);
+      return new Date(2026, months[parts[0]], parseInt(parts[1],10)||1);
     }
 
-    function kill(name) {
-      if (charts[name]) charts[name].destroy();
-    }
+    function kill(name){ if (charts[name]) charts[name].destroy(); }
+    function renderList(id, arr){ document.getElementById(id).innerHTML = (arr||[]).map(item=>`<li>${item}</li>`).join(''); }
 
-    function renderList(id, arr) {
-      document.getElementById(id).innerHTML = (arr || []).map(item => `<li>${item}</li>`).join('');
-    }
-
-    function setText() {
+    function setText(){
       document.getElementById('lastUpdated').textContent = state.meta.lastUpdated || '—';
       const freshness = computeFreshness(state.meta.lastUpdated || '');
       document.getElementById('freshnessStatus').innerHTML = `<span class="tag ${freshness.cls}">${freshness.label}</span>`;
       document.getElementById('seriesThrough').textContent = state.dailySeries.throughDate || state.dailySeries.labels.at(-1) || '—';
 
-      document.getElementById('metrics').innerHTML = (state.metrics || []).map(m => `
+      document.getElementById('metrics').innerHTML = (state.metrics||[]).map(m=>`
         <div class="metric">
           <div class="label">${m.label}</div>
           <div class="value">${m.value}</div>
@@ -389,15 +274,15 @@
         </div>`).join('');
 
       renderList('sitrep', state.sitrep);
-      document.getElementById('sourceNotes').innerHTML = (state.meta.notes || []).map(n => `<div>• ${n}</div>`).join('');
+      document.getElementById('sourceNotes').innerHTML = (state.meta.notes||[]).map(n=>`<div>• ${n}</div>`).join('');
       document.getElementById('missileFoot').textContent = `Source note: ${state.dailySeries.sourceLabel || ''}`;
       document.getElementById('droneFoot').textContent = `Source note: ${state.dailySeries.sourceLabel || ''}`;
       document.getElementById('oilFoot').textContent = state.oil.note || '';
       document.getElementById('targetMissileFoot').textContent = state.latestTargetBreakdown.note || '';
       document.getElementById('targetDroneFoot').textContent = state.latestTargetBreakdown.note || '';
 
-      const sortedRows = [...(state.dailyRows || [])].sort((a, b) => parseLogDate(b.date) - parseLogDate(a.date));
-      document.getElementById('dailyRows').innerHTML = sortedRows.map(r => `
+      const sortedRows = [...(state.dailyRows||[])].sort((a,b)=> parseLogDate(b.date) - parseLogDate(a.date));
+      document.getElementById('dailyRows').innerHTML = sortedRows.map(r=>`
         <tr>
           <td>${r.date}</td>
           <td><span class="pill missile">${r.missiles ?? '—'}</span></td>
@@ -408,14 +293,14 @@
           <td>${r.assessment || '—'}</td>
         </tr>`).join('');
 
-      document.getElementById('timeline').innerHTML = (state.timeline || []).map(t => `<li><strong>${t.title}:</strong> ${t.body}</li>`).join('');
-      document.getElementById('scenarioProbs').innerHTML = (state.scenarioProbabilities || []).map(s => `
+      document.getElementById('timeline').innerHTML = (state.timeline||[]).map(t=>`<li><strong>${t.title}:</strong> ${t.body}</li>`).join('');
+      document.getElementById('scenarioProbs').innerHTML = (state.scenarioProbabilities||[]).map(s=>`
         <div class="scenario">
           <div><strong>${s.name}</strong>${s.body}</div>
           <div class="prob">${s.prob}</div>
         </div>`).join('');
-      document.getElementById('theoryEval').innerHTML = (state.theoryEvaluation || []).map(t => `<li><strong>${t.title}:</strong> ${t.body}</li>`).join('');
-      document.getElementById('endstate').innerHTML = (state.endstate || []).map(t => `<li><strong>${t.title}:</strong> ${t.body}</li>`).join('');
+      document.getElementById('theoryEval').innerHTML = (state.theoryEvaluation||[]).map(t=>`<li><strong>${t.title}:</strong> ${t.body}</li>`).join('');
+      document.getElementById('endstate').innerHTML = (state.endstate||[]).map(t=>`<li><strong>${t.title}:</strong> ${t.body}</li>`).join('');
 
       renderList('impactIranfarhang', state.impactIranfarhang);
       renderList('prepIranfarhang', state.prepIranfarhang);
@@ -425,139 +310,99 @@
       renderList('signalsKIP', state.signalsKIP);
     }
 
-    function renderCharts() {
+    function renderCharts(){
       const labels = state.dailySeries.labels || [];
       const missiles = state.dailySeries.missiles || [];
       const drones = state.dailySeries.drones || [];
 
       kill('missile');
       charts.missile = new Chart(document.getElementById('missileChart'), {
-        type: 'line',
-        data: {
-          labels,
-          datasets: [
-            { label: 'Daily ballistic missiles', data: missiles, borderColor: '#ff6b6b', backgroundColor: 'rgba(255,107,107,.08)', fill: true, tension: .24, borderWidth: 3, pointRadius: 4, spanGaps: false },
-            { label: 'Trend line', data: linearTrend(missiles), borderColor: '#ffd166', borderDash: [8,5], pointRadius: 0, borderWidth: 2, tension: 0, spanGaps: true }
-          ]
-        },
-        options: commonOptions
+        type:'line',
+        data:{ labels, datasets:[
+          {label:'Daily ballistic missiles', data:missiles, borderColor:'#ff6b6b', backgroundColor:'rgba(255,107,107,.08)', fill:true, tension:.24, borderWidth:3, pointRadius:4, spanGaps:false},
+          {label:'Trend line', data:linearTrend(missiles), borderColor:'#ffd166', borderDash:[8,5], pointRadius:0, borderWidth:2, tension:0, spanGaps:true}
+        ]},
+        options:commonOptions
       });
 
       kill('drone');
       charts.drone = new Chart(document.getElementById('droneChart'), {
-        type: 'line',
-        data: {
-          labels,
-          datasets: [
-            { label: 'Daily drones', data: drones, borderColor: '#ff9f43', backgroundColor: 'rgba(255,159,67,.08)', fill: true, tension: .24, borderWidth: 3, pointRadius: 4, spanGaps: false },
-            { label: 'Trend line', data: linearTrend(drones), borderColor: '#63b3ff', borderDash: [8,5], pointRadius: 0, borderWidth: 2, tension: 0, spanGaps: true }
-          ]
-        },
-        options: commonOptions
+        type:'line',
+        data:{ labels, datasets:[
+          {label:'Daily drones', data:drones, borderColor:'#ff9f43', backgroundColor:'rgba(255,159,67,.08)', fill:true, tension:.24, borderWidth:3, pointRadius:4, spanGaps:false},
+          {label:'Trend line', data:linearTrend(drones), borderColor:'#63b3ff', borderDash:[8,5], pointRadius:0, borderWidth:2, tension:0, spanGaps:true}
+        ]},
+        options:commonOptions
       });
 
       kill('combo');
       charts.combo = new Chart(document.getElementById('comboChart'), {
-        type: 'line',
-        data: {
-          labels,
-          datasets: [
-            { label: 'Ballistic missiles', data: missiles, borderColor: '#63b3ff', borderWidth: 3, pointRadius: 4, tension: .24, spanGaps: false },
-            { label: 'Drones', data: drones, borderColor: '#ff9f43', borderWidth: 3, pointRadius: 4, tension: .24, spanGaps: false },
-            { label: 'Missile trend', data: linearTrend(missiles), borderColor: '#46d7b0', borderDash: [8,5], pointRadius: 0, borderWidth: 2, tension: 0, spanGaps: true },
-            { label: 'Drone trend', data: linearTrend(drones), borderColor: '#b084ff', borderDash: [8,5], pointRadius: 0, borderWidth: 2, tension: 0, spanGaps: true }
-          ]
-        },
-        options: commonOptions
+        type:'line',
+        data:{ labels, datasets:[
+          {label:'Ballistic missiles', data:missiles, borderColor:'#63b3ff', borderWidth:3, pointRadius:4, tension:.24, spanGaps:false},
+          {label:'Drones', data:drones, borderColor:'#ff9f43', borderWidth:3, pointRadius:4, tension:.24, spanGaps:false},
+          {label:'Missile trend', data:linearTrend(missiles), borderColor:'#46d7b0', borderDash:[8,5], pointRadius:0, borderWidth:2, tension:0, spanGaps:true},
+          {label:'Drone trend', data:linearTrend(drones), borderColor:'#b084ff', borderDash:[8,5], pointRadius:0, borderWidth:2, tension:0, spanGaps:true}
+        ]},
+        options:commonOptions
       });
 
       kill('oil');
       charts.oil = new Chart(document.getElementById('oilChart'), {
-        type: 'line',
-        data: {
-          labels: state.oil.labels || [],
-          datasets: [
-            { label: 'Brent', data: state.oil.brent || [], borderColor: '#63b3ff', borderWidth: 3, pointRadius: 4, tension: .22 },
-            { label: 'WTI', data: state.oil.wti || [], borderColor: '#ffd166', borderWidth: 3, pointRadius: 4, tension: .22 }
-          ]
-        },
-        options: commonOptions
+        type:'line',
+        data:{ labels:state.oil.labels||[], datasets:[
+          {label:'Brent', data:state.oil.brent||[], borderColor:'#63b3ff', borderWidth:3, pointRadius:4, tension:.22},
+          {label:'WTI', data:state.oil.wti||[], borderColor:'#ffd166', borderWidth:3, pointRadius:4, tension:.22}
+        ]},
+        options:commonOptions
       });
 
       const missileEntries = Object.entries((state.latestTargetBreakdown && state.latestTargetBreakdown.missiles) || {});
       kill('targetMissile');
       charts.targetMissile = new Chart(document.getElementById('targetMissileChart'), {
-        type: 'bar',
-        data: {
-          labels: missileEntries.map(([k]) => k),
-          datasets: [{ label: 'Daily missiles', data: missileEntries.map(([,v]) => v), backgroundColor: 'rgba(255,107,107,.72)', borderRadius: 8, barThickness: 18 }]
-        },
-        options: {
-          ...commonOptions,
-          indexAxis: 'y',
-          plugins: { ...commonOptions.plugins, legend: { display: false } },
-          scales: {
-            x: { ticks: { color: '#9eb5d0', precision: 0 }, grid: { color: 'rgba(255,255,255,.05)' }, beginAtZero: true },
-            y: { ticks: { color: '#9eb5d0' }, grid: { display: false } }
-          }
-        }
+        type:'bar',
+        data:{ labels:missileEntries.map(([k])=>k), datasets:[{label:'Daily missiles', data:missileEntries.map(([,v])=>v), backgroundColor:'rgba(255,107,107,.72)', borderRadius:8, barThickness:18}]},
+        options:{ ...commonOptions, indexAxis:'y', plugins:{...commonOptions.plugins, legend:{display:false}}, scales:{
+          x:{ticks:{color:'#9eb5d0', precision:0}, grid:{color:'rgba(255,255,255,.05)'}, beginAtZero:true},
+          y:{ticks:{color:'#9eb5d0'}, grid:{display:false}}
+        }}
       });
 
       const droneEntries = Object.entries((state.latestTargetBreakdown && state.latestTargetBreakdown.drones) || {});
       kill('targetDrone');
       charts.targetDrone = new Chart(document.getElementById('targetDroneChart'), {
-        type: 'bar',
-        data: {
-          labels: droneEntries.map(([k]) => k),
-          datasets: [{ label: 'Daily drones', data: droneEntries.map(([,v]) => v), backgroundColor: 'rgba(255,159,67,.72)', borderRadius: 8, barThickness: 18 }]
-        },
-        options: {
-          ...commonOptions,
-          indexAxis: 'y',
-          plugins: { ...commonOptions.plugins, legend: { display: false } },
-          scales: {
-            x: { ticks: { color: '#9eb5d0', precision: 0 }, grid: { color: 'rgba(255,255,255,.05)' }, beginAtZero: true },
-            y: { ticks: { color: '#9eb5d0' }, grid: { display: false } }
-          }
-        }
+        type:'bar',
+        data:{ labels:droneEntries.map(([k])=>k), datasets:[{label:'Daily drones', data:droneEntries.map(([,v])=>v), backgroundColor:'rgba(255,159,67,.72)', borderRadius:8, barThickness:18}]},
+        options:{ ...commonOptions, indexAxis:'y', plugins:{...commonOptions.plugins, legend:{display:false}}, scales:{
+          x:{ticks:{color:'#9eb5d0', precision:0}, grid:{color:'rgba(255,255,255,.05)'}, beginAtZero:true},
+          y:{ticks:{color:'#9eb5d0'}, grid:{display:false}}
+        }}
       });
 
       kill('pressure');
       charts.pressure = new Chart(document.getElementById('pressureChart'), {
-        type: 'line',
-        data: {
-          labels: (state.pressure && state.pressure.labels) || [],
-          datasets: [
-            { label: 'Operational attrition', data: (state.pressure && state.pressure.attrition) || [], borderColor: '#46d7b0', borderWidth: 3, pointRadius: 4, tension: .25 },
-            { label: 'Political/economic cost pressure', data: (state.pressure && state.pressure.cost) || [], borderColor: '#ffd166', borderWidth: 3, pointRadius: 4, tension: .25 }
-          ]
-        },
-        options: {
-          ...commonOptions,
-          scales: {
-            ...commonOptions.scales,
-            y: { ...commonOptions.scales.y, beginAtZero: true, suggestedMax: 10 }
-          }
-        }
+        type:'line',
+        data:{ labels:(state.pressure&&state.pressure.labels)||[], datasets:[
+          {label:'Operational attrition', data:(state.pressure&&state.pressure.attrition)||[], borderColor:'#46d7b0', borderWidth:3, pointRadius:4, tension:.25},
+          {label:'Political/economic cost pressure', data:(state.pressure&&state.pressure.cost)||[], borderColor:'#ffd166', borderWidth:3, pointRadius:4, tension:.25}
+        ]},
+        options:{ ...commonOptions, scales:{ ...commonOptions.scales, y:{ ...commonOptions.scales.y, beginAtZero:true, suggestedMax:10 }}}
       });
     }
 
-    function render() {
-      setText();
-      renderCharts();
-    }
+    function render(){ setText(); renderCharts(); }
 
-    async function loadDashboardData() {
-      try {
-        const response = await fetch(`./war-data.json?ts=${Date.now()}`, { cache: 'no-store' });
-        if (!response.ok) throw new Error('No external data file found');
+    async function loadDashboardData(){
+      try{
+        const response = await fetch(`./war-data.json?ts=${Date.now()}`, {cache:'no-store'});
+        if(!response.ok) throw new Error('No external data file found');
         const json = await response.json();
-        if (!json.meta || !json.dailySeries || !json.oil) throw new Error('Malformed JSON structure');
+        if(!json.meta || !json.dailySeries || !json.oil) throw new Error('Malformed JSON structure');
         state = { ...structuredClone(DEFAULT_DATA), ...json };
         state.meta = { ...DEFAULT_DATA.meta, ...(json.meta || {}) };
-      } catch (error) {
+      }catch(error){
         state = structuredClone(DEFAULT_DATA);
-      } finally {
+      }finally{
         render();
       }
     }
