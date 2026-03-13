@@ -1,15 +1,18 @@
-Iran War Dashboard starter bundle
+Iran War Dashboard manual-update bundle
 
-Files:
+Replace these files in your repo:
 - index.html
 - war-data.json
-- vercel.json
+- vercel.json (optional; unchanged unless you want a clean starter)
 
-Usage:
-1. Replace your repo files with these versions.
-2. Commit and push.
-3. Vercel redeploys automatically.
-4. Future updates should only require replacing war-data.json unless the UI itself changes.
+This version:
+- removes fake live-refresh logic
+- sorts the event log newest first
+- groups business content by business
+- renames the UAE export-import business to KIP
+- extends the data layer through Mar 13 while keeping unknown daily launch values blank rather than invented
 
-Note:
-This version is built for manual data updates. It does not show a refresh button and does not pretend to fetch live data beyond what exists in war-data.json.
+Future workflow:
+Ask for a refreshed war-data.json.
+Replace that single file.
+Commit and push.

@@ -1,20 +1,20 @@
 {
   "meta": {
-    "lastUpdated": "2026-03-13 14:49 ET",
+    "lastUpdated": "2026-03-13 16:00 ET",
     "notes": [
       "This dashboard is updated manually by replacing war-data.json.",
-      "If the best complete daily missile/drone series still ends earlier than today, the charts should stop there honestly rather than inventing a fake continuation.",
+      "Daily launch charts extend to the latest loaded date. Unknown daily values after the last defensible full series are left blank instead of invented.",
       "Latest target-country charts show the latest daily slice loaded, not cumulative totals."
     ]
   },
   "metrics": [
     {
-      "label": "Latest missile day",
+      "label": "Last full missile day",
       "value": "40",
       "desc": "Mar 09 daily ballistic missiles in best complete public series"
     },
     {
-      "label": "Latest drone day",
+      "label": "Last full drone day",
       "value": "60",
       "desc": "Mar 09 daily drones in best complete public series"
     },
@@ -24,28 +24,28 @@
       "desc": "Latest benchmark point loaded"
     },
     {
-      "label": "Fresh fragment",
+      "label": "Data through",
       "value": "Mar 13",
-      "desc": "Current-event layer extends beyond daily launch series"
+      "desc": "Dashboard narrative and fragments updated through Mar 13"
     }
   ],
   "sitrep": [
     "The best complete public daily launch series still ends on March 9 and shows a sharp decline from the opening phase.",
-    "Latest post-March 9 public reporting is stronger on oil, shipping, and target-country incident fragments than on a clean new all-theater daily launch ledger.",
-    "That means the theory should be evaluated using both the daily launch curve and the current cost and escalation fragments instead of pretending perfect data exists."
+    "The dashboard now carries the timeline, event log, oil, theory evaluation, scenario probabilities, and business sections through March 13.",
+    "Post-March 9 public reporting is stronger on oil, shipping, and target-country incident fragments than on a new clean all-theater daily launch ledger, so the chart continues with blanks rather than fake numbers."
   ],
   "theoryEvaluation": [
     {
       "title": "Support for the theory",
-      "body": "The loaded daily series still supports the claim that meaningful launch capability has been degraded materially from the opening phase."
+      "body": "The best full daily launch series still supports the claim that meaningful launch capability was degraded materially from the opening phase."
     },
     {
       "title": "What weakens confidence",
-      "body": "Public post-March 9 data is fragmented, so we cannot yet prove from public evidence alone that capability has been fully broken rather than reduced to a lower-volume adaptive phase."
+      "body": "Public data after March 9 is fragmented, so it does not yet prove complete destruction of missile and drone capability."
     },
     {
       "title": "Current judgment",
-      "body": "Latest loaded data supports capability degraded materially more strongly than capability destroyed, while oil and shipping stress remain strategically significant."
+      "body": "Latest loaded data still supports capability degraded materially more strongly than capability destroyed, while oil and shipping stress remain strategically significant enough to affect coalition tolerance."
     }
   ],
   "scenarioProbabilities": [
@@ -81,7 +81,11 @@
       "Mar 06",
       "Mar 07",
       "Mar 08",
-      "Mar 09"
+      "Mar 09",
+      "Mar 10",
+      "Mar 11",
+      "Mar 12",
+      "Mar 13"
     ],
     "missiles": [
       480,
@@ -93,7 +97,11 @@
       100,
       70,
       50,
-      40
+      40,
+      null,
+      null,
+      null,
+      null
     ],
     "drones": [
       720,
@@ -105,10 +113,14 @@
       160,
       110,
       80,
-      60
+      60,
+      null,
+      null,
+      null,
+      null
     ],
-    "sourceLabel": "Best complete public day-by-day series currently loaded",
-    "throughDate": "Mar 09"
+    "sourceLabel": "Best complete public day-by-day series currently loaded; later dates included with blanks where no defensible full daily launch count is available",
+    "throughDate": "Mar 13"
   },
   "oil": {
     "labels": [
@@ -129,10 +141,10 @@
       95.7,
       96.0
     ],
-    "note": "Use settlement values when available. If the last point is a live/current value rather than a settlement, note that explicitly in your data update."
+    "note": "Use settlement values when available. The current layer is through Mar 13."
   },
   "latestTargetBreakdown": {
-    "note": "Use latest daily slices available; zeros may mean no public hit recorded in the loaded slice, not guaranteed inactivity.",
+    "note": "Latest daily slice loaded. Zeros may mean no public hit recorded in the loaded slice, not guaranteed inactivity.",
     "missiles": {
       "Israel": 17,
       "Bahrain": 9,
@@ -158,13 +170,17 @@
       "Day 3",
       "Day 5",
       "Day 7",
-      "Day 10"
+      "Day 10",
+      "Day 12",
+      "Day 14"
     ],
     "attrition": [
       2,
       4,
       6,
       8,
+      9,
+      9,
       9
     ],
     "cost": [
@@ -172,7 +188,9 @@
       3,
       5,
       7,
-      8
+      8,
+      9,
+      9
     ]
   },
   "dailyRows": [
@@ -265,6 +283,42 @@
       "capability": "Near-floor daily output in the loaded series; does not prove complete destruction.",
       "cost": "Decision pressure now depends heavily on oil, shipping, and politics.",
       "assessment": "Near-floor, not zero."
+    },
+    {
+      "date": "Mar 10",
+      "missiles": null,
+      "drones": null,
+      "primary": "No clean all-theater daily ledger publicly available; country-level slices and oil data continue",
+      "capability": "Public evidence remains consistent with degraded capability, but not enough for a defensible full daily count.",
+      "cost": "Cost layer matters more as full daily launch clarity drops.",
+      "assessment": "Narrative/data continuation without fake daily totals."
+    },
+    {
+      "date": "Mar 11",
+      "missiles": null,
+      "drones": null,
+      "primary": "Fragmentary country-level incidents and continuing Gulf stress",
+      "capability": "Still no credible complete daily missile/drone ledger loaded for this date.",
+      "cost": "Economic and shipping pressure remain central to the war\u2019s direction.",
+      "assessment": "Hold the line on honesty; do not invent counts."
+    },
+    {
+      "date": "Mar 12",
+      "missiles": null,
+      "drones": null,
+      "primary": "Regional disruption, elevated oil, and persistent incident reporting",
+      "capability": "Capability appears constrained relative to opening phase, but full daily counts remain unavailable.",
+      "cost": "Oil shock and shipping disruption continue to pressure coalition decision-making.",
+      "assessment": "Cost-pressure signal strengthened."
+    },
+    {
+      "date": "Mar 13",
+      "missiles": null,
+      "drones": null,
+      "primary": "Latest dashboard date; current layer driven by oil, shipping, and target-country slices",
+      "capability": "Best complete daily launch series still capped at Mar 09 in loaded data.",
+      "cost": "Brent near $100 keeps the external pain meter high.",
+      "assessment": "Dashboard updated through today without forging fake launch numbers."
     }
   ],
   "timeline": [
@@ -299,6 +353,11 @@
       "body": "Evidence of restored launch volume, slower-than-expected attrition, or political and economic pressure forcing an early operational pause."
     }
   ],
+  "impactIranfarhang": [
+    "Main vulnerability: freight continuity, customs friction, client procurement hesitation, and payment workflow complexity \u2014 not the basic legal concept of informational-materials trade.",
+    "Most likely: more shipment irregularity, longer cycle times, higher freight cost, tighter compliance questions from universities/libraries, and heavier dependence on the Atlanta node as a trust anchor.",
+    "Worst realistic case: air-export disruption from Iran or payment friction around third-country invoicing causes procurement delays, missed subscription cycles, and reputational strain with institutional buyers."
+  ],
   "prepIranfarhang": [
     "Rank current outbound and inbound orders by institutional importance and time sensitivity.",
     "Batch low-priority titles more aggressively and protect periodicals and subscription continuity first.",
@@ -311,13 +370,18 @@
     "University or library procurement teams asking for heightened sanctions review or pausing approvals.",
     "Breakdown in Atlanta replenishment cadence or inability to maintain expected batching windows."
   ],
-  "prepCorridor": [
+  "impactKIP": [
+    "Main vulnerability: banking de-risking and payment friction first, logistics disruption second, direct asset seizure a distant third.",
+    "Most likely: more transaction monitoring, more exchange-house friction, higher documentation burden, shipping rerouting, and episodic cargo delay rather than full shutdown.",
+    "Worst realistic case: broad banking disengagement from Iran-linked clients, restrictions on exchange-house activity, and Gulf shipping interruption severe enough to break working-capital cycles."
+  ],
+  "prepKIP": [
     "Map each payment flow to its bank, exchange house, and beneficial-owner exposure.",
     "Define backup settlement paths and backup ports before you need them.",
     "Shorten receivable cycles and model working-capital stress under 7, 14, and 30-day disruption cases.",
     "Pre-write counterparty documentation packs for fast compliance responses."
   ],
-  "signalsCorridor": [
+  "signalsKIP": [
     "UAE bank account closures or widened transaction rejections for Iran-linked clients.",
     "Exchange-house restrictions, monitoring crackdowns, or licensing actions.",
     "Jebel Ali or related Gulf cargo holds, reroutes, or documentation surges.",

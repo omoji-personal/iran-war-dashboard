@@ -7,17 +7,17 @@
   <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.1/dist/chart.umd.min.js"></script>
   <style>
     :root{
-      --bg:#08111f;
-      --bg2:#0f1b2f;
-      --panel:#101b2d;
-      --panel2:#15233a;
-      --border:#2a3c5b;
-      --text:#eef4fb;
-      --muted:#9fb2ca;
-      --soft:#7b8fa8;
+      --bg:#07111f;
+      --bg2:#0e1a2e;
+      --panel:#0f1c31;
+      --panel2:#15253f;
+      --border:#29415f;
+      --text:#eef5fc;
+      --muted:#9eb5d0;
+      --soft:#7f97b1;
       --gold:#ffd166;
       --blue:#63b3ff;
-      --cyan:#49dcb1;
+      --cyan:#46d7b0;
       --orange:#ff9f43;
       --red:#ff6b6b;
       --purple:#b084ff;
@@ -28,40 +28,41 @@
       color:var(--text);
       font-family:Inter,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;
       background:
-        radial-gradient(circle at top right, rgba(99,179,255,.14), transparent 25%),
+        radial-gradient(circle at top right, rgba(99,179,255,.16), transparent 24%),
         radial-gradient(circle at top left, rgba(255,209,102,.10), transparent 22%),
-        linear-gradient(180deg,var(--bg) 0%, var(--bg2) 100%);
+        linear-gradient(180deg,var(--bg) 0%,var(--bg2) 100%);
     }
-    .shell{max-width:1520px;margin:0 auto;padding:18px}
     .topbar{
       position:sticky; top:0; z-index:5;
-      backdrop-filter: blur(14px);
-      background:rgba(8,17,31,.85);
+      backdrop-filter: blur(16px);
+      background:rgba(7,17,31,.84);
       border-bottom:1px solid var(--border);
       margin-bottom:18px;
     }
-    .topbar-inner{max-width:1520px;margin:0 auto;padding:14px 18px;display:flex;gap:16px;justify-content:space-between;align-items:center;flex-wrap:wrap}
+    .topbar-inner,.shell{max-width:1520px;margin:0 auto;padding-left:18px;padding-right:18px}
+    .topbar-inner{padding-top:14px;padding-bottom:14px;display:flex;gap:16px;justify-content:space-between;align-items:center;flex-wrap:wrap}
     .title h1{margin:0;font-size:22px;letter-spacing:.2px}
-    .title p{margin:6px 0 0;color:var(--muted);font-size:13px;line-height:1.45;max-width:920px}
+    .title p{margin:6px 0 0;color:var(--muted);font-size:13px;line-height:1.45;max-width:960px}
     .chips{display:flex;gap:10px;flex-wrap:wrap}
     .chip{
       border:1px solid var(--border);
       border-radius:12px;
       padding:10px 14px;
-      background:linear-gradient(180deg,#17253b,#101b2d);
+      background:linear-gradient(180deg,#182947,#101b31);
       font-size:13px;
     }
-    .chip strong{color:white}
+    .chip strong{color:#fff}
+    .shell{padding-top:18px;padding-bottom:28px}
     .grid{display:grid;gap:16px}
-    .hero{grid-template-columns:1.25fr .75fr}
+    .hero{grid-template-columns:1.22fr .78fr}
     .cols-2{grid-template-columns:repeat(2,minmax(0,1fr))}
     .cols-3{grid-template-columns:repeat(3,minmax(0,1fr))}
     .panel{
       border:1px solid var(--border);
       border-radius:22px;
       padding:18px;
-      background:linear-gradient(180deg,rgba(16,27,45,.96),rgba(21,35,58,.94));
-      box-shadow:0 18px 55px rgba(0,0,0,.22);
+      background:linear-gradient(180deg,rgba(15,28,49,.96),rgba(21,37,63,.94));
+      box-shadow:0 20px 60px rgba(0,0,0,.24);
     }
     .panel h2,.panel h3{margin:0 0 8px}
     .sub{color:var(--muted);font-size:13px;line-height:1.45;margin-bottom:12px}
@@ -79,26 +80,26 @@
       border:1px solid var(--border);
       border-radius:18px;
       padding:14px;
-      background:rgba(255,255,255,.025);
+      background:rgba(255,255,255,.028);
     }
     .metric .label{font-size:12px;color:var(--muted);margin-bottom:6px}
     .metric .value{font-size:28px;font-weight:800;line-height:1.05}
     .metric .desc{font-size:12px;color:var(--soft);margin-top:6px;line-height:1.4}
-    .chart-box{position:relative;height:340px}
-    .chart-box.tall{height:400px}
-    .chart-box.short{height:300px}
     .list{margin:0;padding-left:18px}
     .list li{margin-bottom:10px;line-height:1.5}
     .footnote{margin-top:10px;color:var(--soft);font-size:12px;line-height:1.45}
+    .chart-box{position:relative;height:340px}
+    .chart-box.tall{height:400px}
+    .chart-box.short{height:300px}
     .table-wrap{overflow:auto;border:1px solid var(--border);border-radius:16px}
-    table{width:100%;border-collapse:collapse;min-width:1180px}
+    table{width:100%;border-collapse:collapse;min-width:1220px}
     th,td{padding:12px 10px;border-bottom:1px solid var(--border);text-align:left;font-size:13px;vertical-align:top}
     th{position:sticky;top:0;background:rgba(255,255,255,.03);color:var(--muted)}
     .pill{display:inline-block;border:1px solid var(--border);border-radius:999px;padding:4px 9px;font-size:11px;font-weight:800;background:rgba(255,255,255,.03)}
     .missile{color:var(--red)}
     .drone{color:var(--orange)}
     .tag{display:inline-block;padding:5px 10px;border-radius:999px;font-size:11px;font-weight:800}
-    .good{background:rgba(73,220,177,.14);color:var(--cyan)}
+    .good{background:rgba(70,215,176,.14);color:var(--cyan)}
     .warn{background:rgba(255,209,102,.14);color:var(--gold)}
     .bad{background:rgba(255,107,107,.14);color:var(--red)}
     .scenario{
@@ -107,6 +108,8 @@
     }
     .scenario strong{display:block;margin-bottom:4px}
     .scenario .prob{font-size:22px;font-weight:900;color:var(--gold);white-space:nowrap}
+    .biz-section{margin-top:14px}
+    .biz-section h4{margin:0 0 8px;font-size:13px;color:var(--gold);letter-spacing:.4px;text-transform:uppercase}
     @media(max-width:1180px){
       .hero,.cols-2,.cols-3{grid-template-columns:1fr}
       .metric-grid{grid-template-columns:repeat(2,minmax(0,1fr))}
@@ -122,7 +125,7 @@
     <div class="topbar-inner">
       <div class="title">
         <h1>Iran War Dashboard</h1>
-        <p>Daily tempo, target spread, oil shock, and business impact. Built for manual data updates: replace <code>war-data.json</code>, redeploy, done. No fake live-refresh theater.</p>
+        <p>Daily tempo, target spread, oil shock, and business impact. Built for manual data updates: replace <code>war-data.json</code>, push, redeploy, done. The UI now assumes manual updates and does not pretend to do live magic.</p>
       </div>
       <div class="chips">
         <div class="chip">Last data update: <strong id="lastUpdated">—</strong></div>
@@ -136,12 +139,12 @@
     <section class="grid hero">
       <div class="panel">
         <div class="kicker">Working theory</div>
-        <div class="theory"><strong>Core question:</strong> can U.S./Israeli strikes suppress meaningful missile and drone launch capability before political and economic costs force them to back off? If yes, the regime becomes much more vulnerable. This dashboard is built to test that theory with daily tempo, target spread, oil stress, and business risk — not cumulative scoreboards.</div>
+        <div class="theory"><strong>Core question:</strong> can U.S./Israeli strikes suppress meaningful missile and drone launch capability before political and economic costs force them to back off? If yes, the regime becomes much more vulnerable. This dashboard tests that theory using daily tempo, target spread, oil stress, and business risk — not cumulative scoreboards.</div>
         <div class="metric-grid" id="metrics"></div>
       </div>
       <div class="panel">
         <h2>SITREP</h2>
-        <div class="sub">Concise and grounded. When the data is thin, the dashboard should say so instead of strutting around like it knows the unknowable.</div>
+        <div class="sub">Concise and grounded. If the full daily launch ledger is incomplete after a certain date, the dashboard should admit that plainly and still update everything else dynamically.</div>
         <ul class="list" id="sitrep"></ul>
         <div class="footnote" id="sourceNotes"></div>
       </div>
@@ -150,13 +153,13 @@
     <section class="grid cols-2" style="margin-top:16px">
       <div class="panel">
         <h3>Daily ballistic missile launches</h3>
-        <div class="sub">Daily counts, not cumulative. Trend line included.</div>
+        <div class="sub">Daily counts, not cumulative. Trend line included. Unknown future daily values can be left blank and the chart will still render.</div>
         <div class="chart-box"><canvas id="missileChart"></canvas></div>
         <div class="footnote" id="missileFoot"></div>
       </div>
       <div class="panel">
         <h3>Daily drone launches</h3>
-        <div class="sub">Daily counts, not cumulative. Trend line included.</div>
+        <div class="sub">Daily counts, not cumulative. Trend line included. Unknown values can be left blank.</div>
         <div class="chart-box"><canvas id="droneChart"></canvas></div>
         <div class="footnote" id="droneFoot"></div>
       </div>
@@ -198,8 +201,8 @@
     </section>
 
     <section class="panel" style="margin-top:16px">
-      <h3>Daily operational breakdown</h3>
-      <div class="sub">Meant to be more useful than “number go up.” Shows what the day likely meant operationally.</div>
+      <h3>Event log</h3>
+      <div class="sub">Newest first. Dynamic rendering: add new dates to <code>dailyRows</code> and they appear automatically.</div>
       <div class="table-wrap">
         <table>
           <thead>
@@ -245,46 +248,36 @@
 
     <section class="grid cols-2" style="margin-top:16px">
       <div class="panel">
-        <h3>Business impact — Iranfarhang</h3>
-        <div class="sub">Books, periodicals, library services, and informational-materials logistics through Tehran → Atlanta → end customer.</div>
-        <ul class="list">
-          <li><strong>Main vulnerability:</strong> freight continuity, customs friction, client procurement hesitation, and payment workflow complexity — not the basic legal concept of informational-materials trade.</li>
-          <li><strong>Best case:</strong> sourcing remains possible, transit slows but continues, and institutional buyers tolerate delay if compliance language stays conservative.</li>
-          <li><strong>Most likely:</strong> more shipment irregularity, longer cycle times, higher freight cost, tighter compliance questions from universities/libraries, and heavier dependence on the Atlanta node as a trust anchor.</li>
-          <li><strong>Worst realistic case:</strong> air-export disruption from Iran or payment friction around third-country invoicing causes procurement delays, missed subscription cycles, and reputational strain with institutional buyers.</li>
-        </ul>
+        <h3>Iranfarhang</h3>
+        <div class="sub">Grouped by business so the operational picture is not scattered all over the page like dropped screws.</div>
+        <div class="biz-section">
+          <h4>Impact</h4>
+          <ul class="list" id="impactIranfarhang"></ul>
+        </div>
+        <div class="biz-section">
+          <h4>Preparation priorities</h4>
+          <ul class="list" id="prepIranfarhang"></ul>
+        </div>
+        <div class="biz-section">
+          <h4>Signals to watch</h4>
+          <ul class="list" id="signalsIranfarhang"></ul>
+        </div>
       </div>
       <div class="panel">
-        <h3>Business impact — Iran/UAE import-export corridor</h3>
-        <div class="sub">Iran-linked trade using Dubai/UAE for settlement, re-export, transshipment, and shipping access.</div>
-        <ul class="list">
-          <li><strong>Main vulnerability:</strong> banking de-risking and payment friction first, logistics disruption second, direct asset seizure a distant third.</li>
-          <li><strong>Best case:</strong> Dubai keeps functioning as a pressure-release valve, but with more scrutiny, slower transfers, and selective compliance tightening.</li>
-          <li><strong>Most likely:</strong> more transaction monitoring, more exchange-house friction, higher documentation burden, shipping rerouting, and episodic cargo delay rather than full shutdown.</li>
-          <li><strong>Worst realistic case:</strong> broad banking disengagement from Iran-linked clients, restrictions on exchange-house activity, and Gulf shipping interruption severe enough to break working-capital cycles.</li>
-        </ul>
-      </div>
-    </section>
-
-    <section class="grid cols-2" style="margin-top:16px">
-      <div class="panel">
-        <h3>Preparation priorities — Iranfarhang</h3>
-        <ul class="list" id="prepIranfarhang"></ul>
-      </div>
-      <div class="panel">
-        <h3>Signals — Iranfarhang</h3>
-        <ul class="list" id="signalsIranfarhang"></ul>
-      </div>
-    </section>
-
-    <section class="grid cols-2" style="margin-top:16px">
-      <div class="panel">
-        <h3>Preparation priorities — Iran/UAE import-export corridor</h3>
-        <ul class="list" id="prepCorridor"></ul>
-      </div>
-      <div class="panel">
-        <h3>Signals — Iran/UAE import-export corridor</h3>
-        <ul class="list" id="signalsCorridor"></ul>
+        <h3>KIP</h3>
+        <div class="sub">Iran/UAE export-import corridor business using Dubai/UAE for settlement, re-export, transshipment, and shipping access.</div>
+        <div class="biz-section">
+          <h4>Impact</h4>
+          <ul class="list" id="impactKIP"></ul>
+        </div>
+        <div class="biz-section">
+          <h4>Preparation priorities</h4>
+          <ul class="list" id="prepKIP"></ul>
+        </div>
+        <div class="biz-section">
+          <h4>Signals to watch</h4>
+          <ul class="list" id="signalsKIP"></ul>
+        </div>
       </div>
     </section>
   </main>
@@ -292,105 +285,30 @@
   <script>
     const DEFAULT_DATA = {
       meta: {
-        lastUpdated: "2026-03-13 14:49 ET",
+        lastUpdated: "2026-03-13 16:00 ET",
         notes: [
           "This dashboard is updated manually by replacing war-data.json.",
-          "If the best complete daily missile/drone series still ends earlier than today, the charts should stop there honestly rather than inventing a fake continuation.",
+          "Daily launch charts should extend to the latest loaded date, but unknown values should remain blank rather than made up.",
           "Latest target-country charts show the latest daily slice loaded, not cumulative totals."
         ]
       },
-      metrics: [
-        { label: "Latest missile day", value: "40", desc: "Mar 09 daily ballistic missiles in best complete public series" },
-        { label: "Latest drone day", value: "60", desc: "Mar 09 daily drones in best complete public series" },
-        { label: "Brent", value: "$100.13", desc: "Latest benchmark point loaded" },
-        { label: "Fresh fragment", value: "Mar 13", desc: "Current-event layer extends beyond daily launch series" }
-      ],
-      sitrep: [
-        "The best complete public daily launch series still ends on March 9 and shows a sharp decline from the opening phase.",
-        "Latest post-March 9 public reporting is stronger on oil, shipping, and target-country incident fragments than on a clean new all-theater daily launch ledger.",
-        "That means the theory should be evaluated using both the daily launch curve and the current cost and escalation fragments instead of pretending perfect data exists."
-      ],
-      theoryEvaluation: [
-        { title: "Support for the theory", body: "The loaded daily series still supports the claim that meaningful launch capability has been degraded materially from the opening phase." },
-        { title: "What weakens confidence", body: "Public post-March 9 data is fragmented, so we cannot yet prove from public evidence alone that capability has been fully broken rather than reduced to a lower-volume adaptive phase." },
-        { title: "Current judgment", body: "Latest loaded data supports capability degraded materially more strongly than capability destroyed, while oil and shipping stress remain strategically significant." }
-      ],
-      scenarioProbabilities: [
-        { name: "Degraded but still dangerous; messy de-escalation", prob: "45%", body: "Launch tempo stays lower, cost pressure stays high, and both sides seek an off-ramp while claiming success." },
-        { name: "Further suppression enables stronger coercive pressure", prob: "25%", body: "Missile and drone capability keeps eroding faster than political and economic costs rise." },
-        { name: "Conflict drags with periodic flare-ups", prob: "20%", body: "Residual launch capability, proxies, and shipping disruption keep the war alive at lower intensity." },
-        { name: "Cost shock forces early strategic pullback", prob: "10%", body: "Oil, shipping, allied exposure, or domestic politics force a pause before launch capability is decisively broken." }
-      ],
-      dailySeries: {
-        labels: ["Feb 28","Mar 01","Mar 02","Mar 03","Mar 04","Mar 05","Mar 06","Mar 07","Mar 08","Mar 09"],
-        missiles: [480,520,400,350,250,150,100,70,50,40],
-        drones: [720,850,530,480,350,220,160,110,80,60],
-        sourceLabel: "Best complete public day-by-day series currently loaded",
-        throughDate: "Mar 09"
-      },
-      oil: {
-        labels: ["Mar 06","Mar 10","Mar 12","Mar 13"],
-        brent: [92.69,87.80,100.46,100.13],
-        wti: [90.90,83.45,95.70,96.00],
-        note: "Use settlement values when available. If the last point is a live/current value rather than a settlement, note that explicitly in your data update."
-      },
-      latestTargetBreakdown: {
-        note: "Use latest daily slices available; zeros may mean no public hit recorded in the loaded slice, not guaranteed inactivity.",
-        missiles: { Israel: 17, Bahrain: 9, UAE: 14, Qatar: 0, Kuwait: 0, Saudi: 0, Oman: 0 },
-        drones: { Israel: 26, Saudi: 10, UAE: 42, Bahrain: 14, Oman: 3, Qatar: 0, Kuwait: 0 }
-      },
-      pressure: {
-        labels: ["Day 1","Day 3","Day 5","Day 7","Day 10"],
-        attrition: [2,4,6,8,9],
-        cost: [2,3,5,7,8]
-      },
-      dailyRows: [
-        { date:"Feb 28", missiles:480, drones:720, primary:"Israel heavy; narrow opening focus", capability:"Opening surge shows full usable inventory and launch-chain readiness.", cost:"Political shock and oil risk begin but remain secondary to battlefield surprise.", assessment:"Opening shock wave."},
-        { date:"Mar 01", missiles:520, drones:850, primary:"Israel dominant; spillover begins", capability:"Peak intensity suggests launch architecture still largely intact.", cost:"Regional anxiety expands; oil and shipping sensitivity rise.", assessment:"Peak launch intensity."},
-        { date:"Mar 02", missiles:400, drones:530, primary:"Israel plus broader regional distribution", capability:"Still high, but no longer climbing; first hints of attrition or recalibration.", cost:"Broader target spread increases regional pressure and insurance risk.", assessment:"Still high, but off peak."},
-        { date:"Mar 03", missiles:350, drones:480, primary:"Israel + regional pressure", capability:"Sustained but sliding, consistent with growing suppression or logistics strain.", cost:"Wider regional profile makes economic and diplomatic costs harder to contain.", assessment:"Sustained but sliding."},
-        { date:"Mar 04", missiles:250, drones:350, primary:"Distributed harassment pattern", capability:"Meaningful degradation becoming visible; lower-volume pressure still possible.", cost:"Oil and shipping signals start to matter more relative to launch count.", assessment:"Attrition becoming visible."},
-        { date:"Mar 05", missiles:150, drones:220, primary:"Regional pressure, lower mass", capability:"Mass strike capacity appears weaker; residual capacity remains.", cost:"Costs now have a clearer path to influence coalition decision-making.", assessment:"Capacity degradation clearer."},
-        { date:"Mar 06", missiles:100, drones:160, primary:"Selective launches", capability:"Selective rather than mass launch behavior points to either depletion, suppression, or both.", cost:"Shipping and oil stress are now strategic, not background noise.", assessment:"Lower operational tempo."},
-        { date:"Mar 07", missiles:70, drones:110, primary:"Selective launches", capability:"Daily usable launch throughput looks substantially reduced.", cost:"If energy disruption persists, coalition patience becomes more testable.", assessment:"Sustained decline."},
-        { date:"Mar 08", missiles:50, drones:80, primary:"Low-volume continuation", capability:"Residual launch pressure survives despite heavy attrition.", cost:"Cost side matters more because battlefield tempo is no longer dominating headlines.", assessment:"Residual pressure only."},
-        { date:"Mar 09", missiles:40, drones:60, primary:"Residual launches", capability:"Near-floor daily output in the loaded series; does not prove complete destruction.", cost:"Decision pressure now depends heavily on oil, shipping, and politics.", assessment:"Near-floor, not zero."}
-      ],
-      timeline: [
-        { title:"Immediate horizon (next 72 hours)", body:"Best watched through oil, shipping, and target spread because public full daily launch data is patchier than in the opening phase." },
-        { title:"Near-term horizon (next 4–10 days)", body:"If no rebound in daily launch tempo appears and target-country spread narrows, the attrition case strengthens." },
-        { title:"Decision horizon (next 1–3 weeks)", body:"The war’s direction likely turns on whether coalition decision-makers view launch suppression as sufficient before cost pressure becomes politically intolerable." },
-        { title:"Main uncertainty", body:"A major mass-casualty strike, wider proxy activation, or persistent Hormuz disruption could yank the timeline off its current path." }
-      ],
-      endstate: [
-        { title:"Most likely", body:"A pressured de-escalation after meaningful attrition of launch capability, with both sides claiming success." },
-        { title:"Theory-aligned scenario", body:"If missile and drone capability is broken before cost pressure forces a stop, coercive pressure on regime leadership rises sharply." },
-        { title:"What would change this", body:"Evidence of restored launch volume, slower-than-expected attrition, or political and economic pressure forcing an early operational pause." }
-      ],
-      prepIranfarhang: [
-        "Rank current outbound and inbound orders by institutional importance and time sensitivity.",
-        "Batch low-priority titles more aggressively and protect periodicals and subscription continuity first.",
-        "Prepare customer-facing delay language that is compliance-conscious and operationally specific.",
-        "Keep duplicate metadata, invoices, and packing records outside Iran to preserve service continuity."
-      ],
-      signalsIranfarhang: [
-        "Iranian outbound air-freight disruption lasting more than several days.",
-        "Repeated customs holds or manual inspections affecting informational-material shipments.",
-        "University or library procurement teams asking for heightened sanctions review or pausing approvals.",
-        "Breakdown in Atlanta replenishment cadence or inability to maintain expected batching windows."
-      ],
-      prepCorridor: [
-        "Map each payment flow to its bank, exchange house, and beneficial-owner exposure.",
-        "Define backup settlement paths and backup ports before you need them.",
-        "Shorten receivable cycles and model working-capital stress under 7, 14, and 30-day disruption cases.",
-        "Pre-write counterparty documentation packs for fast compliance responses."
-      ],
-      signalsCorridor: [
-        "UAE bank account closures or widened transaction rejections for Iran-linked clients.",
-        "Exchange-house restrictions, monitoring crackdowns, or licensing actions.",
-        "Jebel Ali or related Gulf cargo holds, reroutes, or documentation surges.",
-        "Shipping notices shifting liability or forcing end-of-voyage changes mid-route."
-      ]
+      metrics: [],
+      sitrep: [],
+      theoryEvaluation: [],
+      scenarioProbabilities: [],
+      dailySeries: { labels: [], missiles: [], drones: [], sourceLabel: "", throughDate: "" },
+      oil: { labels: [], brent: [], wti: [], note: "" },
+      latestTargetBreakdown: { note: "", missiles: {}, drones: {} },
+      pressure: { labels: [], attrition: [], cost: [] },
+      dailyRows: [],
+      timeline: [],
+      endstate: [],
+      impactIranfarhang: [],
+      prepIranfarhang: [],
+      signalsIranfarhang: [],
+      impactKIP: [],
+      prepKIP: [],
+      signalsKIP: []
     };
 
     let state = structuredClone(DEFAULT_DATA);
@@ -401,110 +319,125 @@
       maintainAspectRatio: false,
       interaction: { mode: 'index', intersect: false },
       plugins: {
-        legend: { labels: { color: '#eef4fb', font: { size: 12 } } },
+        legend: { labels: { color: '#eef5fc', font: { size: 12 } } },
         tooltip: {
           backgroundColor: '#0f1627',
           borderColor: '#2d3a53',
           borderWidth: 1,
           titleColor: '#fff',
-          bodyColor: '#eef4fb'
+          bodyColor: '#eef5fc'
         }
       },
       scales: {
-        x: { ticks: { color: '#9fb2ca' }, grid: { color: 'rgba(255,255,255,.05)' } },
-        y: { ticks: { color: '#9fb2ca' }, grid: { color: 'rgba(255,255,255,.05)' } }
+        x: { ticks: { color: '#9eb5d0' }, grid: { color: 'rgba(255,255,255,.05)' } },
+        y: { ticks: { color: '#9eb5d0' }, grid: { color: 'rgba(255,255,255,.05)' } }
       }
     };
 
     function linearTrend(values) {
-      const n = values.length;
-      const xs = Array.from({ length: n }, (_, i) => i);
-      const xMean = xs.reduce((a, b) => a + b, 0) / n;
-      const yMean = values.reduce((a, b) => a + b, 0) / n;
+      const clean = values.map((v, i) => ({ x: i, y: Number.isFinite(v) ? v : null })).filter(p => p.y !== null);
+      if (clean.length < 2) return values.map(() => null);
+      const n = clean.length;
+      const xMean = clean.reduce((a, b) => a + b.x, 0) / n;
+      const yMean = clean.reduce((a, b) => a + b.y, 0) / n;
       let numerator = 0;
       let denominator = 0;
-      for (let i = 0; i < n; i++) {
-        numerator += (xs[i] - xMean) * (values[i] - yMean);
-        denominator += (xs[i] - xMean) ** 2;
+      for (const p of clean) {
+        numerator += (p.x - xMean) * (p.y - yMean);
+        denominator += (p.x - xMean) ** 2;
       }
       const m = denominator ? numerator / denominator : 0;
       const b = yMean - m * xMean;
-      return xs.map(x => +(m * x + b).toFixed(1));
+      return values.map((_, i) => +(m * i + b).toFixed(1));
     }
 
     function computeFreshness(lastUpdatedText) {
       const parsed = Date.parse(String(lastUpdatedText).replace(' ET', ' GMT-0400'));
-      if (Number.isNaN(parsed)) {
-        return { label: 'Check timestamp', cls: 'warn' };
-      }
+      if (Number.isNaN(parsed)) return { label: 'Check timestamp', cls: 'warn' };
       const hours = (Date.now() - parsed) / 36e5;
       if (hours <= 12) return { label: 'Current-ish', cls: 'good' };
       if (hours <= 48) return { label: 'Aging', cls: 'warn' };
       return { label: 'Stale', cls: 'bad' };
     }
 
+    function parseLogDate(dateText) {
+      const months = { Jan:0, Feb:1, Mar:2, Apr:3, May:4, Jun:5, Jul:6, Aug:7, Sep:8, Oct:9, Nov:10, Dec:11 };
+      const parts = String(dateText).trim().split(/\s+/);
+      if (parts.length < 2 || !(parts[0] in months)) return new Date(0);
+      return new Date(2026, months[parts[0]], parseInt(parts[1], 10) || 1);
+    }
+
     function kill(name) {
       if (charts[name]) charts[name].destroy();
     }
 
+    function renderList(id, arr) {
+      document.getElementById(id).innerHTML = (arr || []).map(item => `<li>${item}</li>`).join('');
+    }
+
     function setText() {
-      document.getElementById('lastUpdated').textContent = state.meta.lastUpdated;
-      const freshness = computeFreshness(state.meta.lastUpdated);
+      document.getElementById('lastUpdated').textContent = state.meta.lastUpdated || '—';
+      const freshness = computeFreshness(state.meta.lastUpdated || '');
       document.getElementById('freshnessStatus').innerHTML = `<span class="tag ${freshness.cls}">${freshness.label}</span>`;
       document.getElementById('seriesThrough').textContent = state.dailySeries.throughDate || state.dailySeries.labels.at(-1) || '—';
 
-      document.getElementById('metrics').innerHTML = state.metrics.map(m => `
+      document.getElementById('metrics').innerHTML = (state.metrics || []).map(m => `
         <div class="metric">
           <div class="label">${m.label}</div>
           <div class="value">${m.value}</div>
           <div class="desc">${m.desc}</div>
         </div>`).join('');
 
-      document.getElementById('sitrep').innerHTML = state.sitrep.map(item => `<li>${item}</li>`).join('');
-      document.getElementById('sourceNotes').innerHTML = state.meta.notes.map(n => `<div>• ${n}</div>`).join('');
-      document.getElementById('missileFoot').textContent = `Source note: ${state.dailySeries.sourceLabel}.`;
-      document.getElementById('droneFoot').textContent = `Source note: ${state.dailySeries.sourceLabel}.`;
-      document.getElementById('oilFoot').textContent = state.oil.note;
+      renderList('sitrep', state.sitrep);
+      document.getElementById('sourceNotes').innerHTML = (state.meta.notes || []).map(n => `<div>• ${n}</div>`).join('');
+      document.getElementById('missileFoot').textContent = `Source note: ${state.dailySeries.sourceLabel || ''}`;
+      document.getElementById('droneFoot').textContent = `Source note: ${state.dailySeries.sourceLabel || ''}`;
+      document.getElementById('oilFoot').textContent = state.oil.note || '';
       document.getElementById('targetMissileFoot').textContent = state.latestTargetBreakdown.note || '';
       document.getElementById('targetDroneFoot').textContent = state.latestTargetBreakdown.note || '';
 
-      document.getElementById('dailyRows').innerHTML = state.dailyRows.map(r => `
+      const sortedRows = [...(state.dailyRows || [])].sort((a, b) => parseLogDate(b.date) - parseLogDate(a.date));
+      document.getElementById('dailyRows').innerHTML = sortedRows.map(r => `
         <tr>
           <td>${r.date}</td>
-          <td><span class="pill missile">${r.missiles}</span></td>
-          <td><span class="pill drone">${r.drones}</span></td>
-          <td>${r.primary}</td>
-          <td>${r.capability}</td>
-          <td>${r.cost}</td>
-          <td>${r.assessment}</td>
+          <td><span class="pill missile">${r.missiles ?? '—'}</span></td>
+          <td><span class="pill drone">${r.drones ?? '—'}</span></td>
+          <td>${r.primary || '—'}</td>
+          <td>${r.capability || '—'}</td>
+          <td>${r.cost || '—'}</td>
+          <td>${r.assessment || '—'}</td>
         </tr>`).join('');
 
-      document.getElementById('timeline').innerHTML = state.timeline.map(t => `<li><strong>${t.title}:</strong> ${t.body}</li>`).join('');
-      document.getElementById('scenarioProbs').innerHTML = state.scenarioProbabilities.map(s => `
+      document.getElementById('timeline').innerHTML = (state.timeline || []).map(t => `<li><strong>${t.title}:</strong> ${t.body}</li>`).join('');
+      document.getElementById('scenarioProbs').innerHTML = (state.scenarioProbabilities || []).map(s => `
         <div class="scenario">
           <div><strong>${s.name}</strong>${s.body}</div>
           <div class="prob">${s.prob}</div>
         </div>`).join('');
-      document.getElementById('theoryEval').innerHTML = state.theoryEvaluation.map(t => `<li><strong>${t.title}:</strong> ${t.body}</li>`).join('');
-      document.getElementById('endstate').innerHTML = state.endstate.map(t => `<li><strong>${t.title}:</strong> ${t.body}</li>`).join('');
-      document.getElementById('prepIranfarhang').innerHTML = state.prepIranfarhang.map(i => `<li>${i}</li>`).join('');
-      document.getElementById('signalsIranfarhang').innerHTML = state.signalsIranfarhang.map(i => `<li>${i}</li>`).join('');
-      document.getElementById('prepCorridor').innerHTML = state.prepCorridor.map(i => `<li>${i}</li>`).join('');
-      document.getElementById('signalsCorridor').innerHTML = state.signalsCorridor.map(i => `<li>${i}</li>`).join('');
+      document.getElementById('theoryEval').innerHTML = (state.theoryEvaluation || []).map(t => `<li><strong>${t.title}:</strong> ${t.body}</li>`).join('');
+      document.getElementById('endstate').innerHTML = (state.endstate || []).map(t => `<li><strong>${t.title}:</strong> ${t.body}</li>`).join('');
+
+      renderList('impactIranfarhang', state.impactIranfarhang);
+      renderList('prepIranfarhang', state.prepIranfarhang);
+      renderList('signalsIranfarhang', state.signalsIranfarhang);
+      renderList('impactKIP', state.impactKIP);
+      renderList('prepKIP', state.prepKIP);
+      renderList('signalsKIP', state.signalsKIP);
     }
 
     function renderCharts() {
-      const missiles = state.dailySeries.missiles;
-      const drones = state.dailySeries.drones;
+      const labels = state.dailySeries.labels || [];
+      const missiles = state.dailySeries.missiles || [];
+      const drones = state.dailySeries.drones || [];
 
       kill('missile');
       charts.missile = new Chart(document.getElementById('missileChart'), {
         type: 'line',
         data: {
-          labels: state.dailySeries.labels,
+          labels,
           datasets: [
-            { label: 'Daily ballistic missiles', data: missiles, borderColor: '#ff6b6b', backgroundColor: 'rgba(255,107,107,.08)', fill: true, tension: .24, borderWidth: 3, pointRadius: 4 },
-            { label: 'Trend line', data: linearTrend(missiles), borderColor: '#ffd166', borderDash: [8,5], pointRadius: 0, borderWidth: 2, tension: 0 }
+            { label: 'Daily ballistic missiles', data: missiles, borderColor: '#ff6b6b', backgroundColor: 'rgba(255,107,107,.08)', fill: true, tension: .24, borderWidth: 3, pointRadius: 4, spanGaps: false },
+            { label: 'Trend line', data: linearTrend(missiles), borderColor: '#ffd166', borderDash: [8,5], pointRadius: 0, borderWidth: 2, tension: 0, spanGaps: true }
           ]
         },
         options: commonOptions
@@ -514,10 +447,10 @@
       charts.drone = new Chart(document.getElementById('droneChart'), {
         type: 'line',
         data: {
-          labels: state.dailySeries.labels,
+          labels,
           datasets: [
-            { label: 'Daily drones', data: drones, borderColor: '#ff9f43', backgroundColor: 'rgba(255,159,67,.08)', fill: true, tension: .24, borderWidth: 3, pointRadius: 4 },
-            { label: 'Trend line', data: linearTrend(drones), borderColor: '#63b3ff', borderDash: [8,5], pointRadius: 0, borderWidth: 2, tension: 0 }
+            { label: 'Daily drones', data: drones, borderColor: '#ff9f43', backgroundColor: 'rgba(255,159,67,.08)', fill: true, tension: .24, borderWidth: 3, pointRadius: 4, spanGaps: false },
+            { label: 'Trend line', data: linearTrend(drones), borderColor: '#63b3ff', borderDash: [8,5], pointRadius: 0, borderWidth: 2, tension: 0, spanGaps: true }
           ]
         },
         options: commonOptions
@@ -527,12 +460,12 @@
       charts.combo = new Chart(document.getElementById('comboChart'), {
         type: 'line',
         data: {
-          labels: state.dailySeries.labels,
+          labels,
           datasets: [
-            { label: 'Ballistic missiles', data: missiles, borderColor: '#63b3ff', borderWidth: 3, pointRadius: 4, tension: .24 },
-            { label: 'Drones', data: drones, borderColor: '#ff9f43', borderWidth: 3, pointRadius: 4, tension: .24 },
-            { label: 'Missile trend', data: linearTrend(missiles), borderColor: '#49dcb1', borderDash: [8,5], pointRadius: 0, borderWidth: 2, tension: 0 },
-            { label: 'Drone trend', data: linearTrend(drones), borderColor: '#b084ff', borderDash: [8,5], pointRadius: 0, borderWidth: 2, tension: 0 }
+            { label: 'Ballistic missiles', data: missiles, borderColor: '#63b3ff', borderWidth: 3, pointRadius: 4, tension: .24, spanGaps: false },
+            { label: 'Drones', data: drones, borderColor: '#ff9f43', borderWidth: 3, pointRadius: 4, tension: .24, spanGaps: false },
+            { label: 'Missile trend', data: linearTrend(missiles), borderColor: '#46d7b0', borderDash: [8,5], pointRadius: 0, borderWidth: 2, tension: 0, spanGaps: true },
+            { label: 'Drone trend', data: linearTrend(drones), borderColor: '#b084ff', borderDash: [8,5], pointRadius: 0, borderWidth: 2, tension: 0, spanGaps: true }
           ]
         },
         options: commonOptions
@@ -542,16 +475,16 @@
       charts.oil = new Chart(document.getElementById('oilChart'), {
         type: 'line',
         data: {
-          labels: state.oil.labels,
+          labels: state.oil.labels || [],
           datasets: [
-            { label: 'Brent', data: state.oil.brent, borderColor: '#63b3ff', borderWidth: 3, pointRadius: 4, tension: .22 },
-            { label: 'WTI', data: state.oil.wti, borderColor: '#ffd166', borderWidth: 3, pointRadius: 4, tension: .22 }
+            { label: 'Brent', data: state.oil.brent || [], borderColor: '#63b3ff', borderWidth: 3, pointRadius: 4, tension: .22 },
+            { label: 'WTI', data: state.oil.wti || [], borderColor: '#ffd166', borderWidth: 3, pointRadius: 4, tension: .22 }
           ]
         },
         options: commonOptions
       });
 
-      const missileEntries = Object.entries(state.latestTargetBreakdown.missiles);
+      const missileEntries = Object.entries((state.latestTargetBreakdown && state.latestTargetBreakdown.missiles) || {});
       kill('targetMissile');
       charts.targetMissile = new Chart(document.getElementById('targetMissileChart'), {
         type: 'bar',
@@ -564,13 +497,13 @@
           indexAxis: 'y',
           plugins: { ...commonOptions.plugins, legend: { display: false } },
           scales: {
-            x: { ticks: { color: '#9fb2ca', precision: 0 }, grid: { color: 'rgba(255,255,255,.05)' }, beginAtZero: true },
-            y: { ticks: { color: '#9fb2ca' }, grid: { display: false } }
+            x: { ticks: { color: '#9eb5d0', precision: 0 }, grid: { color: 'rgba(255,255,255,.05)' }, beginAtZero: true },
+            y: { ticks: { color: '#9eb5d0' }, grid: { display: false } }
           }
         }
       });
 
-      const droneEntries = Object.entries(state.latestTargetBreakdown.drones);
+      const droneEntries = Object.entries((state.latestTargetBreakdown && state.latestTargetBreakdown.drones) || {});
       kill('targetDrone');
       charts.targetDrone = new Chart(document.getElementById('targetDroneChart'), {
         type: 'bar',
@@ -583,8 +516,8 @@
           indexAxis: 'y',
           plugins: { ...commonOptions.plugins, legend: { display: false } },
           scales: {
-            x: { ticks: { color: '#9fb2ca', precision: 0 }, grid: { color: 'rgba(255,255,255,.05)' }, beginAtZero: true },
-            y: { ticks: { color: '#9fb2ca' }, grid: { display: false } }
+            x: { ticks: { color: '#9eb5d0', precision: 0 }, grid: { color: 'rgba(255,255,255,.05)' }, beginAtZero: true },
+            y: { ticks: { color: '#9eb5d0' }, grid: { display: false } }
           }
         }
       });
@@ -593,10 +526,10 @@
       charts.pressure = new Chart(document.getElementById('pressureChart'), {
         type: 'line',
         data: {
-          labels: state.pressure.labels,
+          labels: (state.pressure && state.pressure.labels) || [],
           datasets: [
-            { label: 'Operational attrition', data: state.pressure.attrition, borderColor: '#49dcb1', borderWidth: 3, pointRadius: 4, tension: .25 },
-            { label: 'Political/economic cost pressure', data: state.pressure.cost, borderColor: '#ffd166', borderWidth: 3, pointRadius: 4, tension: .25 }
+            { label: 'Operational attrition', data: (state.pressure && state.pressure.attrition) || [], borderColor: '#46d7b0', borderWidth: 3, pointRadius: 4, tension: .25 },
+            { label: 'Political/economic cost pressure', data: (state.pressure && state.pressure.cost) || [], borderColor: '#ffd166', borderWidth: 3, pointRadius: 4, tension: .25 }
           ]
         },
         options: {
