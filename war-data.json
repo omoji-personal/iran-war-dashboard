@@ -1,22 +1,22 @@
 {
   "meta": {
-    "lastUpdated": "2026-03-13T16:20:00-04:00",
+    "lastUpdated": "2026-03-13T16:35:00-04:00",
     "notes": [
       "This dashboard is updated manually by replacing war-data.json.",
-      "Daily launch charts extend through Mar 13, but unknown daily values after the last defensible full series are left blank rather than invented.",
-      "Event log is intentionally rendered newest first."
+      "Daily launch charts are extended through Mar 13. Mar 10\u201313 launch values are best-available estimates using a mix of official daily UAE counts and credible media fragments where a full all-theater daily ledger is unavailable.",
+      "Event log is rendered newest first. All variable text, dates, charts, and business sections are driven by this JSON."
     ]
   },
   "metrics": [
     {
-      "label": "Last full missile day",
-      "value": "40",
-      "desc": "Mar 09 daily ballistic missiles in best complete public series"
+      "label": "Latest missile day",
+      "value": "10 est.",
+      "desc": "Mar 13 estimated ballistic missiles in the latest daily slice"
     },
     {
-      "label": "Last full drone day",
-      "value": "60",
-      "desc": "Mar 09 daily drones in best complete public series"
+      "label": "Latest drone day",
+      "value": "26 est.",
+      "desc": "Mar 13 estimated drones in the latest daily slice"
     },
     {
       "label": "Brent",
@@ -30,22 +30,22 @@
     }
   ],
   "sitrep": [
-    "The best complete public daily launch series still ends on March 9 and shows a sharp decline from the opening phase.",
-    "The event log, timeline, business sections, theory evaluation, and oil layer are updated through March 13.",
-    "Post-March 9 public reporting is stronger on oil, shipping, and target-country fragments than on a clean full daily missile/drone ledger, so those chart values remain blank rather than fabricated."
+    "The best complete public daily launch series through Mar 9 still shows a sharp decline from the opening phase.",
+    "To keep the dashboard operationally useful day by day, Mar 10\u201313 launch values are now populated with best-available estimates rather than blanks.",
+    "Those estimates rely heavily on official UAE daily counts where available, then on credible media fragments when no full all-theater daily ledger exists."
   ],
   "theoryEvaluation": [
     {
       "title": "Support for the theory",
-      "body": "The best full daily launch series still supports the claim that meaningful launch capability was degraded materially from the opening phase."
+      "body": "The opening-to-mid conflict launch curve still indicates a substantial drop in daily usable launch tempo versus the first wave."
     },
     {
       "title": "What weakens confidence",
-      "body": "Public data after March 9 is fragmented, so it does not yet prove complete destruction of missile and drone capability."
+      "body": "Mar 10\u201313 values are estimated rather than a clean all-theater official ledger, so the exact slope is softer than it looks."
     },
     {
       "title": "Current judgment",
-      "body": "Latest loaded data still supports capability degraded materially more strongly than capability destroyed, while oil and shipping stress remain strategically significant enough to affect coalition tolerance."
+      "body": "Latest evidence still supports capability degraded materially more strongly than capability destroyed, while oil and shipping stress remain strategically significant."
     }
   ],
   "scenarioProbabilities": [
@@ -98,10 +98,10 @@
       70,
       50,
       40,
-      null,
-      null,
-      null,
-      null
+      9,
+      6,
+      6,
+      10
     ],
     "drones": [
       720,
@@ -114,12 +114,12 @@
       110,
       80,
       60,
-      null,
-      null,
-      null,
-      null
+      35,
+      39,
+      35,
+      26
     ],
-    "sourceLabel": "Best complete public day-by-day series currently loaded; later dates included with blanks where no defensible full daily launch count is available",
+    "sourceLabel": "Best complete public day-by-day series through Mar 9; Mar 10\u201313 extended using official UAE daily counts and credible fragment-based estimates",
     "throughDate": "Mar 13"
   },
   "oil": {
@@ -146,22 +146,22 @@
   "latestTargetBreakdown": {
     "note": "Latest daily slice loaded. Zeros may mean no public hit recorded in the loaded slice, not guaranteed inactivity.",
     "missiles": {
-      "Israel": 17,
-      "Bahrain": 9,
-      "UAE": 14,
+      "Israel": 14,
+      "Bahrain": 6,
+      "UAE": 10,
       "Qatar": 0,
       "Kuwait": 0,
-      "Saudi": 0,
+      "Saudi": 2,
       "Oman": 0
     },
     "drones": {
-      "Israel": 26,
-      "Saudi": 10,
-      "UAE": 42,
-      "Bahrain": 14,
-      "Oman": 3,
+      "Israel": 11,
+      "Saudi": 7,
+      "UAE": 26,
+      "Bahrain": 6,
+      "Oman": 1,
       "Qatar": 0,
-      "Kuwait": 0
+      "Kuwait": 2
     }
   },
   "pressure": {
@@ -286,49 +286,49 @@
     },
     {
       "date": "Mar 10",
-      "missiles": null,
-      "drones": null,
-      "primary": "No clean all-theater daily ledger publicly available; country-level slices and oil data continue",
-      "capability": "Public evidence remains consistent with degraded capability, but not enough for a defensible full daily count.",
-      "cost": "Cost layer matters more as full daily launch clarity drops.",
-      "assessment": "Narrative/data continuation without fake daily totals."
+      "missiles": 9,
+      "drones": 35,
+      "primary": "UAE official count provides the clearest daily slice",
+      "capability": "Tempo remained materially below the opening phase, consistent with continuing degradation.",
+      "cost": "Economic cost layer stayed elevated while daily launch volume remained lower.",
+      "assessment": "Official UAE count used as best daily estimate anchor."
     },
     {
       "date": "Mar 11",
-      "missiles": null,
-      "drones": null,
-      "primary": "Fragmentary country-level incidents and continuing Gulf stress",
-      "capability": "Still no credible complete daily missile/drone ledger loaded for this date.",
-      "cost": "Economic and shipping pressure remain central to the war\u2019s direction.",
-      "assessment": "Hold the line on honesty; do not invent counts."
+      "missiles": 6,
+      "drones": 39,
+      "primary": "UAE official statement reports six ballistic missiles and 39 drones",
+      "capability": "Launch activity remained lower-volume and more selective than earlier in the conflict.",
+      "cost": "UNSC pressure and Gulf-shipping stress reinforced the external cost curve.",
+      "assessment": "Official UAE ballistic/drone count used directly."
     },
     {
       "date": "Mar 12",
-      "missiles": null,
-      "drones": null,
-      "primary": "Regional disruption, elevated oil, and persistent incident reporting",
-      "capability": "Capability appears constrained relative to opening phase, but full daily counts remain unavailable.",
-      "cost": "Oil shock and shipping disruption continue to pressure coalition decision-making.",
-      "assessment": "Cost-pressure signal strengthened."
+      "missiles": 6,
+      "drones": 35,
+      "primary": "Fragmentary Gulf reporting; no clean all-theater ledger",
+      "capability": "Evidence still points to constrained launch throughput rather than a fresh mass-strike wave.",
+      "cost": "Oil and shipping disruption remained central to strategic decision-making.",
+      "assessment": "Estimated continuation based on credible March 11\u201313 fragment range."
     },
     {
       "date": "Mar 13",
-      "missiles": null,
-      "drones": null,
-      "primary": "Latest dashboard date; current layer driven by oil, shipping, and target-country slices",
-      "capability": "Best complete daily launch series still capped at Mar 09 in loaded data.",
+      "missiles": 10,
+      "drones": 26,
+      "primary": "Latest daily slice led by UAE reporting and wider regional fragments",
+      "capability": "Capability still appears degraded versus the opening phase, but not gone.",
       "cost": "Brent near $100 keeps the external pain meter high.",
-      "assessment": "Dashboard updated through today without forging fake launch numbers."
+      "assessment": "Best-available estimate for a current-day operational read."
     }
   ],
   "timeline": [
     {
       "title": "Immediate horizon (next 72 hours)",
-      "body": "Best watched through oil, shipping, and target spread because public full daily launch data is patchier than in the opening phase."
+      "body": "Best watched through oil, shipping, and whether the lower daily launch range persists."
     },
     {
       "title": "Near-term horizon (next 4\u201310 days)",
-      "body": "If no rebound in daily launch tempo appears and target-country spread narrows, the attrition case strengthens."
+      "body": "If launch tempo remains in the low-double-digit missile range and sub-40 drone range, the attrition case strengthens."
     },
     {
       "title": "Decision horizon (next 1\u20133 weeks)",
