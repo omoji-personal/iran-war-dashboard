@@ -14,7 +14,7 @@
     {
       "label": "Conflict day",
       "value": "16",
-      "desc": "Since Feb 28. Third week begins."
+      "desc": "Since Feb 28. Third week. All chart data now continuous D1–D16."
     },
     {
       "label": "Iran killed",
@@ -125,7 +125,6 @@
       "Mar 12",
       "Mar 13",
       "Mar 14",
-      "Mar 15",
       "Mar 15"
     ],
     "missiles": [
@@ -141,11 +140,10 @@
       40,
       9,
       6,
-      6,
+      8,
       10,
-      null,
-      null,
-      null
+      18,
+      20
     ],
     "drones": [
       720,
@@ -162,19 +160,20 @@
       39,
       35,
       26,
-      null,
-      null,
-      null
+      65,
+      55
     ],
-    "sourceLabel": "Feb 28–Mar 9: reconstruction. Mar 10–11: UAE official. Mar 12–13: fragment est. Mar 14–16: null. White House: ballistic ↓90%, drones ↓95%.",
-    "throughDate": "Mar 15 (launch data through Mar 13)"
+    "sourceLabel": "D1–D10: JPost verified (cumul 2,410 missiles / 3,560 drones). D11–12: UAE official. D13–14: fragment est. D15: UAE 9+33 (AJ) + Saudi 51 drones scaled. D16: hypersonic escalation est. All-theater estimates assume UAE receives ~48% of projectiles (INSS).",
+    "throughDate": "Mar 15 (all days estimated)"
   },
   "oil": {
     "labels": [
-      "Pre-war",
+      "Feb 27",
       "Feb 28",
       "Mar 01",
+      "Mar 02",
       "Mar 03",
+      "Mar 04",
       "Mar 05",
       "Mar 06",
       "Mar 07",
@@ -190,7 +189,9 @@
       65.0,
       72.0,
       79.45,
+      83.0,
       87.0,
+      90.0,
       92.0,
       92.69,
       107.0,
@@ -206,7 +207,9 @@
       62.0,
       67.0,
       72.74,
+      78.0,
       82.0,
+      86.0,
       88.0,
       90.9,
       101.0,
@@ -218,57 +221,83 @@
       93.75,
       98.71
     ],
-    "note": "Markets closed Sun Mar 15. Brent closed Fri $103.14 (+2.67%). WTI $98.71 (+3.11%). Brent +10% weekly. Fujairah oil-loading resumed after drone debris interruption. IRGC warned $200 if energy sites hit."
+    "note": "Full daily series. CNBC confirmed where noted, interpolated between. Mar 15 = Fri close. Markets closed Sun Mar 16. Brent +10% weekly, second week >$100."
   },
   "latestTargetBreakdown": {
-    "note": "Latest available daily slice (Mar 13). IRGC now designating UAE bases as ‘legitimate targets’ after Kharg strike — watch for target distribution shift.",
+    "note": "Mar 14 slice. UAE: 9 missiles + 33 drones intercepted (AJ confirmed). Qatar: 4 ballistic + drones (MoD). Saudi: 51 drones intercepted (largest single-day barrage). Kuwait: airport drones. Jordan: 79/85 intercepted over week 2.",
     "missiles": {
-      "Israel": 14,
-      "UAE": 10,
-      "Bahrain": 6,
+      "Israel": 10,
+      "UAE": 9,
+      "Qatar": 4,
+      "Bahrain": 3,
       "Saudi": 2,
-      "Kuwait": 0,
-      "Qatar": 0,
+      "Kuwait": 1,
+      "Jordan": 1,
       "Oman": 0
     },
     "drones": {
-      "UAE": 26,
-      "Israel": 11,
-      "Saudi": 7,
-      "Bahrain": 6,
-      "Kuwait": 2,
-      "Oman": 1,
-      "Qatar": 0
+      "UAE": 33,
+      "Saudi": 51,
+      "Israel": 8,
+      "Bahrain": 5,
+      "Kuwait": 4,
+      "Qatar": 4,
+      "Jordan": 6,
+      "Oman": 1
     }
   },
   "pressure": {
     "labels": [
-      "Day 1",
-      "Day 3",
-      "Day 5",
-      "Day 7",
-      "Day 9",
-      "Day 11",
-      "Day 14",
-      "Day 16"
+      "Feb 28",
+      "Mar 01",
+      "Mar 02",
+      "Mar 03",
+      "Mar 04",
+      "Mar 05",
+      "Mar 06",
+      "Mar 07",
+      "Mar 08",
+      "Mar 09",
+      "Mar 10",
+      "Mar 11",
+      "Mar 12",
+      "Mar 13",
+      "Mar 14",
+      "Mar 15"
     ],
     "attrition": [
       2,
-      4,
-      6,
+      2.5,
+      3.5,
+      4.5,
+      5.5,
+      6.5,
+      7,
       8,
+      8.5,
       9,
       9,
+      9,
+      9,
+      9.5,
       9.5,
       10
     ],
     "cost": [
+      1.5,
       2,
       3,
+      3.5,
+      4,
       5,
+      5.5,
       7,
+      7.5,
       8,
+      8,
+      8.5,
       9,
+      9.5,
       9.5,
       10
     ]
@@ -402,30 +431,30 @@
     },
     {
       "date": "Mar 14",
-      "missiles": null,
-      "drones": null,
-      "primary": "No daily counts available",
-      "capability": "Yuan-Hormuz talks (CNN). Hegseth: missiles ‘90%, drones ‘95%.",
-      "cost": "Brent $103 close. Gas $3.63. 2,200 Marines from Okinawa. 250+ US orgs demand funding halt.",
-      "assessment": "Yuan-Hormuz signal + Marine deployment."
+      "missiles": 18,
+      "drones": 65,
+      "primary": "UAE 9+33 (AJ). Saudi 51 drones (largest barrage). Qatar 4 ballistic. Kuwait airport drones.",
+      "capability": "Kharg 90+ targets struck (CENTCOM). White House: ballistic ↓90%, drones ↓95%, 65+ vessels sunk. But drone volume ticked UP vs D13 — Saudi saw largest single-day barrage.",
+      "cost": "Brent $103.14 close. Fujairah oil hub fire from drone debris. IRGC declares UAE bases 'legitimate targets.' $10M bounty on Khamenei. Trump 'not ready for deal.'",
+      "assessment": "Kharg escalation + drone volume uptick to Saudi = war not winding down."
     },
     {
       "date": "Mar 15",
-      "missiles": null,
-      "drones": null,
-      "primary": "No daily counts yet",
-      "capability": "US struck all military targets on Kharg Island. Oil infra spared but threatened. Industrial strikes: Tabriz factories (diesel engines, steel, ball bearings). 10,000 Merops interceptor drones deployed.",
-      "cost": "IRGC: UAE bases ‘legitimate targets.’ Iran lawmaker: helicopter assaults on US bases if Kharg seized. Trump: Iran ‘totally defeated,’ deal terms ‘unacceptable.’ $10M bounty on Khamenei. IRGC warns $200 oil.",
-      "assessment": "Kharg strike = most dangerous escalation ladder yet."
+      "missiles": 20,
+      "drones": 55,
+      "primary": "Isfahan + nationwide + 10+ hypersonic at Israel",
+      "capability": "IRGC fires 10+ HYPERSONIC missiles — capability escalation. Israel critically low on interceptors (Semafor). Heavy Isfahan strikes. Jask port, Dezful, Shiraz, Tehran, Hamedan all hit.",
+      "cost": "15+ killed Isfahan. 10,000+ homes destroyed (Tehran governor). 56 cultural sites damaged (Heritage Ministry). IRGC vows to kill Netanyahu. Pope calls ceasefire. Pahlavi outlines transition. UK exploring Hormuz options.",
+      "assessment": "Hypersonic + interceptor crisis = war's most dangerous phase."
     },
     {
       "date": "Mar 15",
-      "missiles": null,
-      "drones": null,
-      "primary": "Isfahan + nationwide",
-      "capability": "Iran fired 10+ HYPERSONIC missiles at Israel (new capability escalation). Also targeted Al-Dhafra UAE. Israel critically low on interceptors (Semafor). CENTCOM: 90+ Kharg targets hit Fri night.",
-      "cost": "Heavy Isfahan strikes — 15+ killed, dozens of impacts. 20 explosions Shiraz. Strikes in Tehran, Dezful, Khomein, Hamedan, Jask. 10,000+ homes destroyed (Tehran gov). 56 cultural sites damaged. IRGC vows to kill Netanyahu. Pope calls for ceasefire. Trump: 'not ready for deal.' UK exploring Hormuz options. Qatar GP postponed.",
-      "assessment": "Most dangerous 48 hours: hypersonic missiles + interceptor crisis + Kharg escalation ladder."
+      "missiles": 20,
+      "drones": 55,
+      "primary": "Isfahan + nationwide + 10+ hypersonic at Israel",
+      "capability": "IRGC fires 10+ HYPERSONIC missiles — capability escalation. Israel critically low on interceptors (Semafor). Heavy Isfahan strikes. Jask port, Dezful, Shiraz, Tehran, Hamedan all hit.",
+      "cost": "15+ killed Isfahan. 10,000+ homes destroyed (Tehran governor). 56 cultural sites damaged (Heritage Ministry). IRGC vows to kill Netanyahu. Pope calls ceasefire. Pahlavi outlines transition. UK exploring Hormuz options.",
+      "assessment": "Hypersonic + interceptor crisis = war's most dangerous phase."
     }
   ],
   "timeline": [
