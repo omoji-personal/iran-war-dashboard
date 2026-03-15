@@ -4,6 +4,10 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Iran War Dashboard</title>
+  <meta property="og:title" content="Iran War Dashboard — Live Conflict Monitor" />
+  <meta property="og:description" content="Daily tempo, oil shock, scenario analysis, and business impact tracking for the 2026 Iran conflict." />
+  <meta property="og:type" content="website" />
+  <meta name="twitter:card" content="summary" />
   <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.1/dist/chart.umd.min.js"></script>
   <style>
     :root{
@@ -71,6 +75,18 @@
     .biz-section{margin-top:14px}
     .biz-section h4{margin:0 0 8px;font-size:13px;color:var(--gold);letter-spacing:.4px;text-transform:uppercase}
     code{background:rgba(255,255,255,.06);padding:2px 6px;border-radius:6px}
+    .route-card{border:1px solid var(--border);border-radius:14px;padding:14px;margin-bottom:10px;background:rgba(255,255,255,.02)}
+    .route-card:last-child{margin-bottom:0}
+    .route-header{display:flex;justify-content:space-between;align-items:flex-start;gap:8px;margin-bottom:8px}
+    .route-name{font-weight:700;font-size:13px}
+    .route-status{font-size:11px;font-weight:800;padding:4px 10px;border-radius:999px;white-space:nowrap}
+    .route-status.red{background:rgba(255,107,107,.14);color:var(--red)}
+    .route-status.yellow{background:rgba(255,209,102,.14);color:var(--gold)}
+    .route-status.green{background:rgba(70,215,176,.14);color:var(--cyan)}
+    .route-detail{font-size:12px;color:var(--soft);line-height:1.55;margin-bottom:8px}
+    .route-meta{display:flex;gap:16px;font-size:11px;color:var(--muted)}
+    .route-meta strong{color:var(--text)}
+    .loading-msg{text-align:center;padding:60px 20px;color:var(--muted);font-size:14px}
     @media(max-width:1180px){.hero,.cols-2,.cols-3{grid-template-columns:1fr}.metric-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}
     @media(max-width:700px){.metric-grid{grid-template-columns:1fr}.title h1{font-size:19px}}
   </style>
@@ -82,22 +98,26 @@
     <div class="topbar-inner">
       <div class="title">
         <h1 data-i18n="title">Iran War Dashboard</h1>
-        <p data-i18n="subtitle">Daily tempo, target spread, oil shock, and business impact. Manual update model: replace <code>war-data.json</code>, push, redeploy.</p>
+        <p data-i18n-html="subtitle">Daily tempo, target spread, oil shock, and business impact. Manual update: replace <code>war-data.json</code>, push, redeploy.</p>
       </div>
       <div class="chips">
-        <div class="chip"><span data-i18n="chipUpdate">Last data update:</span> <strong id="lastUpdated">—</strong></div>
-        <div class="chip"><span data-i18n="chipFresh">Freshness:</span> <strong id="freshnessStatus">—</strong></div>
-        <div class="chip"><span data-i18n="chipWindow">Data window:</span> <strong id="seriesThrough">—</strong></div>
+        <div class="chip"><span data-i18n="chipUpdate">Last data update:</span> <strong id="lastUpdated">&mdash;</strong></div>
+        <div class="chip"><span data-i18n="chipFresh">Freshness:</span> <strong id="freshnessStatus">&mdash;</strong></div>
+        <div class="chip"><span data-i18n="chipWindow">Data window:</span> <strong id="seriesThrough">&mdash;</strong></div>
         <button class="lang-btn" id="langToggle" onclick="toggleLang()">فارسی</button>
       </div>
     </div>
   </div>
 
-  <main class="shell">
+  <main class="shell" id="mainShell">
+    <div class="loading-msg" id="loadingMsg">Loading dashboard data&hellip;</div>
+  </main>
+
+  <template id="dashboardTemplate">
     <section class="grid hero">
       <div class="panel">
         <div class="kicker" data-i18n="kickerTheory">Working theory</div>
-        <div class="theory" id="theoryBox"><strong>Core question:</strong> can U.S./Israeli strikes suppress meaningful missile and drone launch capability before political and economic costs force them to back off?</div>
+        <div class="theory" id="theoryBox"></div>
         <div class="metric-grid" id="metrics"></div>
       </div>
       <div class="panel">
@@ -107,23 +127,19 @@
         <div class="footnote" id="sourceNotes"></div>
       </div>
     </section>
-
     <section class="grid cols-2" style="margin-top:16px">
       <div class="panel"><h3 data-i18n="hMissile">Daily ballistic missile launches</h3><div class="sub" data-i18n="subMissile">Daily counts, not cumulative. Trend line included.</div><div class="chart-box"><canvas id="missileChart"></canvas></div><div class="footnote" id="missileFoot"></div></div>
       <div class="panel"><h3 data-i18n="hDrone">Daily drone launches</h3><div class="sub" data-i18n="subDrone">Daily counts, not cumulative.</div><div class="chart-box"><canvas id="droneChart"></canvas></div><div class="footnote" id="droneFoot"></div></div>
     </section>
-
     <section class="grid cols-2" style="margin-top:16px">
       <div class="panel"><h3 data-i18n="hCombo">Combined launch tempo</h3><div class="sub" data-i18n="subCombo">Missiles and drones together — converging or diverging?</div><div class="chart-box tall"><canvas id="comboChart"></canvas></div></div>
       <div class="panel"><h3 data-i18n="hOil">Oil shock monitor</h3><div class="sub" data-i18n="subOil">Brent and WTI benchmark pressure.</div><div class="chart-box tall"><canvas id="oilChart"></canvas></div><div class="footnote" id="oilFoot"></div></div>
     </section>
-
     <section class="grid cols-3" style="margin-top:16px">
       <div class="panel"><h3 data-i18n="hTargetM">Latest daily missile strikes by target</h3><div class="sub" data-i18n="subTarget">Latest daily slice.</div><div class="chart-box short"><canvas id="targetMissileChart"></canvas></div><div class="footnote" id="targetMissileFoot"></div></div>
       <div class="panel"><h3 data-i18n="hTargetD">Latest daily drone strikes by target</h3><div class="sub" data-i18n="subTargetD">Theater narrowing or spreading?</div><div class="chart-box short"><canvas id="targetDroneChart"></canvas></div><div class="footnote" id="targetDroneFoot"></div></div>
       <div class="panel"><h3 data-i18n="hPressure">Attrition vs cost pressure</h3><div class="sub" data-i18n="subPressure">Strategic hinge.</div><div class="chart-box short"><canvas id="pressureChart"></canvas></div></div>
     </section>
-
     <section class="panel" style="margin-top:16px">
       <h3 data-i18n="hLog">Event log</h3><div class="sub" data-i18n="subLog">Newest first.</div>
       <div class="table-wrap"><table><thead><tr>
@@ -132,20 +148,19 @@
         <th data-i18n="thCost">Cost / escalation read</th><th data-i18n="thAssess">Assessment</th>
       </tr></thead><tbody id="dailyRows"></tbody></table></div>
     </section>
-
     <section class="grid cols-2" style="margin-top:16px">
       <div class="panel"><h3 data-i18n="hTimeline">Projected timeline</h3><ul class="list" id="timeline"></ul></div>
       <div class="panel"><h3 data-i18n="hScenario">Scenario probabilities</h3><div id="scenarioProbs"></div></div>
     </section>
-
     <section class="grid cols-2" style="margin-top:16px">
       <div class="panel"><h3 data-i18n="hTheoryEval">Working theory evaluation</h3><ul class="list" id="theoryEval"></ul></div>
       <div class="panel"><h3 data-i18n="hEndstate">Most likely end-state</h3><ul class="list" id="endstate"></ul></div>
     </section>
-
     <section class="grid cols-2" style="margin-top:16px">
       <div class="panel"><h3>Iranfarhang</h3>
         <div class="biz-section"><h4 data-i18n="hImpact">Impact</h4><ul class="list" id="impactIranfarhang"></ul></div>
+        <div class="biz-section"><h4 data-i18n="hRoutes" style="color:var(--blue)">Shipping route analysis</h4><div id="shippingRoutesBox"></div></div>
+        <div class="biz-section"><h4 data-i18n="hPublishing" style="color:var(--purple)">Iranian publishing industry status</h4><ul class="list" id="publishingStatusBox"></ul></div>
         <div class="biz-section"><h4 data-i18n="hPrep">Preparation priorities</h4><ul class="list" id="prepIranfarhang"></ul></div>
         <div class="biz-section"><h4 data-i18n="hSignals">Signals to watch</h4><ul class="list" id="signalsIranfarhang"></ul></div>
       </div>
@@ -155,56 +170,58 @@
         <div class="biz-section"><h4 data-i18n="hSignals">Signals to watch</h4><ul class="list" id="signalsKIP"></ul></div>
       </div>
     </section>
-  </main>
+  </template>
 
   <script>
-    // ═══ i18n STATIC STRINGS ═══
     const UI = {
       en: {
-        title: "Iran War Dashboard",
-        subtitle: "Daily tempo, target spread, oil shock, and business impact. Manual update model: replace war-data.json, push, redeploy.",
-        chipUpdate: "Last data update:", chipFresh: "Freshness:", chipWindow: "Data window:",
-        kickerTheory: "Working theory",
-        hSitrep: "SITREP", subSitrep: "Concise and grounded.",
-        hMissile: "Daily ballistic missile launches", subMissile: "Daily counts, not cumulative. Trend line included.",
-        hDrone: "Daily drone launches", subDrone: "Daily counts, not cumulative.",
-        hCombo: "Combined launch tempo", subCombo: "Missiles and drones together — converging or diverging?",
-        hOil: "Oil shock monitor", subOil: "Brent and WTI benchmark pressure.",
-        hTargetM: "Latest daily missile strikes by target", subTarget: "Latest daily slice.",
-        hTargetD: "Latest daily drone strikes by target", subTargetD: "Theater narrowing or spreading?",
-        hPressure: "Attrition vs cost pressure", subPressure: "Strategic hinge.",
-        hLog: "Event log", subLog: "Newest first.",
-        thDate: "Date", thMissiles: "Daily ballistic missiles", thDrones: "Daily drones",
-        thPrimary: "Primary target distribution", thCap: "Capability read", thCost: "Cost / escalation read", thAssess: "Assessment",
-        hTimeline: "Projected timeline", hScenario: "Scenario probabilities",
-        hTheoryEval: "Working theory evaluation", hEndstate: "Most likely end-state",
-        hImpact: "Impact", hPrep: "Preparation priorities", hSignals: "Signals to watch",
-        langBtn: "فارسی"
+        title:"Iran War Dashboard",
+        subtitle:"Daily tempo, target spread, oil shock, and business impact. Manual update: replace <code>war-data.json</code>, push, redeploy.",
+        chipUpdate:"Last data update:", chipFresh:"Freshness:", chipWindow:"Data window:",
+        kickerTheory:"Working theory",
+        hSitrep:"SITREP", subSitrep:"Concise and grounded.",
+        hMissile:"Daily ballistic missile launches", subMissile:"Daily counts, not cumulative. Trend line included.",
+        hDrone:"Daily drone launches", subDrone:"Daily counts, not cumulative.",
+        hCombo:"Combined launch tempo", subCombo:"Missiles and drones together — converging or diverging?",
+        hOil:"Oil shock monitor", subOil:"Brent and WTI benchmark pressure.",
+        hTargetM:"Latest daily missile strikes by target", subTarget:"Latest daily slice.",
+        hTargetD:"Latest daily drone strikes by target", subTargetD:"Theater narrowing or spreading?",
+        hPressure:"Attrition vs cost pressure", subPressure:"Strategic hinge.",
+        hLog:"Event log", subLog:"Newest first.",
+        thDate:"Date", thMissiles:"Daily ballistic missiles", thDrones:"Daily drones",
+        thPrimary:"Primary target distribution", thCap:"Capability read", thCost:"Cost / escalation read", thAssess:"Assessment",
+        hTimeline:"Projected timeline", hScenario:"Scenario probabilities",
+        hTheoryEval:"Working theory evaluation", hEndstate:"Most likely end-state",
+        hImpact:"Impact", hPrep:"Preparation priorities", hSignals:"Signals to watch",
+        hRoutes:"Shipping route analysis", hPublishing:"Iranian publishing industry status",
+        langBtn:"فارسی"
       },
       fa: {
-        title: "داشبورد جنگ ایران",
-        subtitle: "تحلیل روزانه شدت حملات، پراکندگی اهداف، بحران نفت، و تأثیر بر کسب‌وکار. به‌روزرسانی دستی از طریق فایل JSON.",
-        chipUpdate: "آخرین به‌روزرسانی:", chipFresh: "تازگی:", chipWindow: "بازه داده‌ها:",
-        kickerTheory: "فرضیه کاری",
-        hSitrep: "گزارش وضعیت", subSitrep: "خلاصه و مستند.",
-        hMissile: "پرتاب روزانه موشک بالستیک", subMissile: "شمارش روزانه، نه تجمعی. خط روند.",
-        hDrone: "پرتاب روزانه پهپاد", subDrone: "شمارش روزانه، نه تجمعی.",
-        hCombo: "شدت ترکیبی پرتاب", subCombo: "موشک و پهپاد — همگرا یا واگرا؟",
-        hOil: "رصد بحران نفت", subOil: "برنت و WTI.",
-        hTargetM: "حملات موشکی روزانه بر اساس کشور هدف", subTarget: "آخرین برش روزانه.",
-        hTargetD: "حملات پهپادی روزانه بر اساس کشور هدف", subTargetD: "صحنه جنگ تنگ‌تر یا گسترده‌تر؟",
-        hPressure: "فرسایش در برابر فشار هزینه", subPressure: "نقطه عطف استراتژیک.",
-        hLog: "گزارش رویدادها", subLog: "جدیدترین ابتدا.",
-        thDate: "تاریخ", thMissiles: "موشک بالستیک", thDrones: "پهپاد",
-        thPrimary: "توزیع هدف اصلی", thCap: "ارزیابی توان", thCost: "هزینه / تشدید", thAssess: "ارزیابی",
-        hTimeline: "جدول زمانی پیش‌بینی‌شده", hScenario: "احتمال سناریوها",
-        hTheoryEval: "ارزیابی فرضیه کاری", hEndstate: "محتمل‌ترین نتیجه نهایی",
-        hImpact: "تأثیر", hPrep: "اولویت‌های آماده‌سازی", hSignals: "نشانه‌های کلیدی",
-        langBtn: "English"
+        title:"داشبورد جنگ ایران",
+        subtitle:"تحلیل روزانه شدت حملات، پراکندگی اهداف، بحران نفت، و تأثیر بر کسب‌وکار. به‌روزرسانی دستی از طریق فایل JSON.",
+        chipUpdate:"آخرین به‌روزرسانی:", chipFresh:"تازگی:", chipWindow:"بازه داده‌ها:",
+        kickerTheory:"فرضیه کاری",
+        hSitrep:"گزارش وضعیت", subSitrep:"خلاصه و مستند.",
+        hMissile:"پرتاب روزانه موشک بالستیک", subMissile:"شمارش روزانه، نه تجمعی. خط روند.",
+        hDrone:"پرتاب روزانه پهپاد", subDrone:"شمارش روزانه، نه تجمعی.",
+        hCombo:"شدت ترکیبی پرتاب", subCombo:"موشک و پهپاد — همگرا یا واگرا؟",
+        hOil:"رصد بحران نفت", subOil:"برنت و WTI.",
+        hTargetM:"حملات موشکی روزانه بر اساس کشور هدف", subTarget:"آخرین برش روزانه.",
+        hTargetD:"حملات پهپادی روزانه بر اساس کشور هدف", subTargetD:"صحنه جنگ تنگ‌تر یا گسترده‌تر؟",
+        hPressure:"فرسایش در برابر فشار هزینه", subPressure:"نقطه عطف استراتژیک.",
+        hLog:"گزارش رویدادها", subLog:"جدیدترین ابتدا.",
+        thDate:"تاریخ", thMissiles:"موشک بالستیک", thDrones:"پهپاد",
+        thPrimary:"توزیع هدف اصلی", thCap:"ارزیابی توان", thCost:"هزینه / تشدید", thAssess:"ارزیابی",
+        hTimeline:"جدول زمانی پیش‌بینی‌شده", hScenario:"احتمال سناریوها",
+        hTheoryEval:"ارزیابی فرضیه کاری", hEndstate:"محتمل‌ترین نتیجه نهایی",
+        hImpact:"تأثیر", hPrep:"اولویت‌های آماده‌سازی", hSignals:"نشانه‌های کلیدی",
+        hRoutes:"تحلیل مسیرهای حمل", hPublishing:"وضعیت صنعت نشر ایران",
+        langBtn:"English"
       }
     };
 
     let currentLang = 'en';
+    let dashboardMounted = false;
 
     function toggleLang() {
       currentLang = currentLang === 'en' ? 'fa' : 'en';
@@ -221,27 +238,39 @@
         const key = el.getAttribute('data-i18n');
         if (strings[key]) el.textContent = strings[key];
       });
+      document.querySelectorAll('[data-i18n-html]').forEach(el => {
+        const key = el.getAttribute('data-i18n-html');
+        if (strings[key]) el.innerHTML = strings[key];
+      });
     }
 
-    // ═══ DATA / STATE ═══
     const DEFAULT_DATA = {
       meta:{lastUpdated:"",notes:[]}, metrics:[], sitrep:[], theoryEvaluation:[], scenarioProbabilities:[],
       dailySeries:{labels:[],missiles:[],drones:[],sourceLabel:"",throughDate:""},
       oil:{labels:[],brent:[],wti:[],note:""}, latestTargetBreakdown:{note:"",missiles:{},drones:{}},
       pressure:{labels:[],attrition:[],cost:[]}, dailyRows:[], timeline:[], endstate:[],
-      impactIranfarhang:[], prepIranfarhang:[], signalsIranfarhang:[], impactKIP:[], prepKIP:[], signalsKIP:[]
+      impactIranfarhang:[], prepIranfarhang:[], signalsIranfarhang:[],
+      impactKIP:[], prepKIP:[], signalsKIP:[],
+      shippingRoutes:[], publishingStatus:[], theoryBox:""
     };
 
     let state = structuredClone(DEFAULT_DATA);
     const charts = {};
 
-    const commonOptions = {
+    function deepClone(obj) { return JSON.parse(JSON.stringify(obj)); }
+
+    const BASE_OPTS = {
       responsive:true, maintainAspectRatio:false, interaction:{mode:'index',intersect:false},
-      plugins:{legend:{labels:{color:'#eef5fc',font:{size:12}}},tooltip:{backgroundColor:'#0f1627',borderColor:'#2d3a53',borderWidth:1,titleColor:'#fff',bodyColor:'#eef5fc'}},
-      scales:{x:{ticks:{color:'#9eb5d0'},grid:{color:'rgba(255,255,255,.05)'}},y:{ticks:{color:'#9eb5d0'},grid:{color:'rgba(255,255,255,.05)'}}}
+      plugins:{
+        legend:{labels:{color:'#eef5fc',font:{size:12}}},
+        tooltip:{backgroundColor:'#0f1627',borderColor:'#2d3a53',borderWidth:1,titleColor:'#fff',bodyColor:'#eef5fc'}
+      },
+      scales:{
+        x:{ticks:{color:'#9eb5d0'},grid:{color:'rgba(255,255,255,.05)'}},
+        y:{ticks:{color:'#9eb5d0'},grid:{color:'rgba(255,255,255,.05)'}}
+      }
     };
 
-    function toFiniteOrNull(v){return Number.isFinite(v)?v:null}
     function lastRealIndex(v){for(let i=v.length-1;i>=0;i--)if(Number.isFinite(v[i]))return i;return -1}
 
     function trendLineUpToLastReal(values){
@@ -254,71 +283,86 @@
       return values.map((_,i)=>i>end?null:+(m*i+b).toFixed(1));
     }
 
-    function computeFreshness(t){const p=Date.parse(String(t));if(Number.isNaN(p))return{label:'Check',cls:'warn'};const h=(Date.now()-p)/36e5;if(h<=12)return{label:currentLang==='fa'?'به‌روز':'Current-ish',cls:'good'};if(h<=48)return{label:currentLang==='fa'?'کمی قدیمی':'Aging',cls:'warn'};return{label:currentLang==='fa'?'قدیمی':'Stale',cls:'bad'}}
-    function parseLogDate(d){if(!d)return new Date(0);if(/^\d{4}-\d{2}-\d{2}/.test(d))return new Date(d);const months={Jan:0,Feb:1,Mar:2,Apr:3,May:4,Jun:5,Jul:6,Aug:7,Sep:8,Oct:9,Nov:10,Dec:11};const parts=String(d).trim().split(/\s+/);if(parts.length<2||!(parts[0]in months))return new Date(0);return new Date(2026,months[parts[0]],parseInt(parts[1],10)||1)}
-    function kill(name){if(charts[name])charts[name].destroy()}
+    function computeFreshness(t){
+      const p=Date.parse(String(t));
+      if(Number.isNaN(p))return{label:'Check',cls:'warn'};
+      const h=(Date.now()-p)/36e5;
+      if(h<=12)return{label:currentLang==='fa'?'به\u200cروز':'Current-ish',cls:'good'};
+      if(h<=48)return{label:currentLang==='fa'?'کمی قدیمی':'Aging',cls:'warn'};
+      return{label:currentLang==='fa'?'قدیمی':'Stale',cls:'bad'};
+    }
 
-    // Helper: pick Farsi version if available
+    function parseLogDate(d){
+      if(!d)return new Date(0);
+      if(/^\d{4}-\d{2}-\d{2}/.test(d))return new Date(d);
+      const months={Jan:0,Feb:1,Mar:2,Apr:3,May:4,Jun:5,Jul:6,Aug:7,Sep:8,Oct:9,Nov:10,Dec:11};
+      const parts=String(d).trim().split(/\s+/);
+      if(parts.length<2||!(parts[0]in months))return new Date(0);
+      return new Date(2026,months[parts[0]],parseInt(parts[1],10)||1);
+    }
+
+    function kill(name){if(charts[name]){charts[name].destroy();delete charts[name];}}
+
     function L(key) {
       if (currentLang === 'fa' && state[key + '_fa'] && state[key + '_fa'].length) return state[key + '_fa'];
       return state[key] || [];
     }
-    function Lobj(key) {
-      if (currentLang === 'fa' && state[key + '_fa'] && state[key + '_fa'].length) return state[key + '_fa'];
-      return state[key] || [];
+
+    function $(id) { return document.getElementById(id); }
+    function renderList(id, arr){ const el=$(id); if(el) el.innerHTML=(arr||[]).map(item=>'<li>'+item+'</li>').join(''); }
+
+    function mountDashboard() {
+      if (dashboardMounted) return;
+      const shell = $('mainShell'), tpl = $('dashboardTemplate');
+      if (!shell || !tpl) return;
+      shell.innerHTML = '';
+      shell.appendChild(tpl.content.cloneNode(true));
+      dashboardMounted = true;
     }
 
-    function renderList(id, arr){ document.getElementById(id).innerHTML = (arr || []).map(item => '<li>'+item+'</li>').join(''); }
-
     function setText(){
-      document.getElementById('lastUpdated').textContent = state.meta.lastUpdated || '\u2014';
+      $('lastUpdated').textContent = state.meta.lastUpdated || '\u2014';
       const freshness = computeFreshness(state.meta.lastUpdated || '');
-      document.getElementById('freshnessStatus').innerHTML = '<span class="tag '+freshness.cls+'">'+freshness.label+'</span>';
-      document.getElementById('seriesThrough').textContent = state.dailySeries.throughDate || state.dailySeries.labels.at(-1) || '\u2014';
+      $('freshnessStatus').innerHTML = '<span class="tag '+freshness.cls+'">'+freshness.label+'</span>';
+      $('seriesThrough').textContent = state.dailySeries.throughDate || state.dailySeries.labels.at(-1) || '\u2014';
 
-      // Theory box
       const tb = currentLang === 'fa' && state.theoryBox_fa ? state.theoryBox_fa : (state.theoryBox || '');
-      if (tb) document.getElementById('theoryBox').innerHTML = tb;
+      if (tb && $('theoryBox')) $('theoryBox').innerHTML = tb;
 
-      // Metrics
-      const met = Lobj('metrics');
-      document.getElementById('metrics').innerHTML = (met).map(m =>
+      const met = L('metrics');
+      if ($('metrics')) $('metrics').innerHTML = met.map(m =>
         '<div class="metric"><div class="label">'+m.label+'</div><div class="value">'+m.value+'</div><div class="desc">'+m.desc+'</div></div>'
       ).join('');
 
       renderList('sitrep', L('sitrep'));
-      document.getElementById('sourceNotes').innerHTML = (state.meta.notes || []).map(n => '<div>\u2022 '+n+'</div>').join('');
-      document.getElementById('missileFoot').textContent = state.dailySeries.sourceLabel || '';
-      document.getElementById('droneFoot').textContent = state.dailySeries.sourceLabel || '';
-      document.getElementById('oilFoot').textContent = state.oil.note || '';
-      document.getElementById('targetMissileFoot').textContent = (state.latestTargetBreakdown && state.latestTargetBreakdown.note) || '';
-      document.getElementById('targetDroneFoot').textContent = (state.latestTargetBreakdown && state.latestTargetBreakdown.note) || '';
+      if ($('sourceNotes')) $('sourceNotes').innerHTML = (state.meta.notes || []).map(n => '<div>\u2022 '+n+'</div>').join('');
+      if ($('missileFoot')) $('missileFoot').textContent = state.dailySeries.sourceLabel || '';
+      if ($('droneFoot')) $('droneFoot').textContent = state.dailySeries.sourceLabel || '';
+      if ($('oilFoot')) $('oilFoot').textContent = state.oil.note || '';
+      if ($('targetMissileFoot')) $('targetMissileFoot').textContent = (state.latestTargetBreakdown && state.latestTargetBreakdown.note) || '';
+      if ($('targetDroneFoot')) $('targetDroneFoot').textContent = (state.latestTargetBreakdown && state.latestTargetBreakdown.note) || '';
 
-      // Daily rows — use _fa fields if available
-      const rows = Lobj('dailyRows');
-      const sortedRows = [...(rows)].sort((a, b) => parseLogDate(b.date) - parseLogDate(a.date));
-      document.getElementById('dailyRows').innerHTML = sortedRows.map(r =>
+      const rows = L('dailyRows');
+      const sortedRows = [...rows].sort((a, b) => parseLogDate(b.date) - parseLogDate(a.date));
+      if ($('dailyRows')) $('dailyRows').innerHTML = sortedRows.map(r =>
         '<tr><td>'+r.date+'</td><td><span class="pill missile">'+(r.missiles??'\u2014')+'</span></td><td><span class="pill drone">'+(r.drones??'\u2014')+'</span></td><td>'+(r.primary||'\u2014')+'</td><td>'+(r.capability||'\u2014')+'</td><td>'+(r.cost||'\u2014')+'</td><td>'+(r.assessment||'\u2014')+'</td></tr>'
       ).join('');
 
-      // Timeline
-      const tl = Lobj('timeline');
-      document.getElementById('timeline').innerHTML = (tl).map(t => '<li><strong>'+t.title+':</strong> '+t.body+'</li>').join('');
-
-      // Scenarios
-      const sc = Lobj('scenarioProbabilities');
-      document.getElementById('scenarioProbs').innerHTML = (sc).map(s =>
+      if ($('timeline')) $('timeline').innerHTML = L('timeline').map(t => '<li><strong>'+t.title+':</strong> '+t.body+'</li>').join('');
+      if ($('scenarioProbs')) $('scenarioProbs').innerHTML = L('scenarioProbabilities').map(s =>
         '<div class="scenario"><div><strong>'+s.name+'</strong>'+s.body+'</div><div class="prob">'+s.prob+'</div></div>'
       ).join('');
+      if ($('theoryEval')) $('theoryEval').innerHTML = L('theoryEvaluation').map(t => '<li><strong>'+t.title+':</strong> '+t.body+'</li>').join('');
+      if ($('endstate')) $('endstate').innerHTML = L('endstate').map(t => '<li><strong>'+t.title+':</strong> '+t.body+'</li>').join('');
 
-      // Theory eval & endstate
-      const te = Lobj('theoryEvaluation');
-      document.getElementById('theoryEval').innerHTML = (te).map(t => '<li><strong>'+t.title+':</strong> '+t.body+'</li>').join('');
-      const es = Lobj('endstate');
-      document.getElementById('endstate').innerHTML = (es).map(t => '<li><strong>'+t.title+':</strong> '+t.body+'</li>').join('');
-
-      // Business
       renderList('impactIranfarhang', L('impactIranfarhang'));
+
+      const routes = L('shippingRoutes');
+      if ($('shippingRoutesBox')) $('shippingRoutesBox').innerHTML = routes.map(r =>
+        '<div class="route-card"><div class="route-header"><div class="route-name">'+r.route+'</div><span class="route-status '+(r.statusColor||'yellow')+'">'+r.status+'</span></div><div class="route-detail">'+r.detail+'</div><div class="route-meta"><span>'+(currentLang==='fa'?'قابلیت اجرا: ':'Viability: ')+'<strong>'+r.viability+'</strong></span><span>'+(currentLang==='fa'?'زمان تخمینی: ':'ETA: ')+'<strong>'+r.eta+'</strong></span></div></div>'
+      ).join('');
+
+      renderList('publishingStatusBox', L('publishingStatus'));
       renderList('prepIranfarhang', L('prepIranfarhang'));
       renderList('signalsIranfarhang', L('signalsIranfarhang'));
       renderList('impactKIP', L('impactKIP'));
@@ -327,17 +371,84 @@
     }
 
     function renderCharts(){
-      const labels=state.dailySeries.labels||[],missiles=(state.dailySeries.missiles||[]).map(toFiniteOrNull),drones=(state.dailySeries.drones||[]).map(toFiniteOrNull);
-      kill('missile');charts.missile=new Chart(document.getElementById('missileChart'),{type:'line',data:{labels,datasets:[{label:currentLang==='fa'?'موشک بالستیک روزانه':'Daily ballistic missiles',data:missiles,borderColor:'#ff6b6b',backgroundColor:'rgba(255,107,107,.08)',fill:true,tension:.24,borderWidth:3,pointRadius:4,spanGaps:false},{label:currentLang==='fa'?'خط روند':'Trend',data:trendLineUpToLastReal(missiles),borderColor:'#ffd166',borderDash:[8,5],pointRadius:0,borderWidth:2,tension:0,spanGaps:false}]},options:commonOptions});
-      kill('drone');charts.drone=new Chart(document.getElementById('droneChart'),{type:'line',data:{labels,datasets:[{label:currentLang==='fa'?'پهپاد روزانه':'Daily drones',data:drones,borderColor:'#ff9f43',backgroundColor:'rgba(255,159,67,.08)',fill:true,tension:.24,borderWidth:3,pointRadius:4,spanGaps:false},{label:currentLang==='fa'?'خط روند':'Trend',data:trendLineUpToLastReal(drones),borderColor:'#63b3ff',borderDash:[8,5],pointRadius:0,borderWidth:2,tension:0,spanGaps:false}]},options:commonOptions});
-      kill('combo');charts.combo=new Chart(document.getElementById('comboChart'),{type:'line',data:{labels,datasets:[{label:currentLang==='fa'?'موشک بالستیک':'Ballistic missiles',data:missiles,borderColor:'#63b3ff',borderWidth:3,pointRadius:4,tension:.24,spanGaps:false},{label:currentLang==='fa'?'پهپاد':'Drones',data:drones,borderColor:'#ff9f43',borderWidth:3,pointRadius:4,tension:.24,spanGaps:false},{label:currentLang==='fa'?'روند موشک':'Missile trend',data:trendLineUpToLastReal(missiles),borderColor:'#46d7b0',borderDash:[8,5],pointRadius:0,borderWidth:2,tension:0,spanGaps:false},{label:currentLang==='fa'?'روند پهپاد':'Drone trend',data:trendLineUpToLastReal(drones),borderColor:'#b084ff',borderDash:[8,5],pointRadius:0,borderWidth:2,tension:0,spanGaps:false}]},options:commonOptions});
-      kill('oil');charts.oil=new Chart(document.getElementById('oilChart'),{type:'line',data:{labels:state.oil.labels||[],datasets:[{label:'Brent',data:state.oil.brent||[],borderColor:'#63b3ff',borderWidth:3,pointRadius:4,tension:.22},{label:'WTI',data:state.oil.wti||[],borderColor:'#ffd166',borderWidth:3,pointRadius:4,tension:.22}]},options:commonOptions});
-      const me=Object.entries((state.latestTargetBreakdown&&state.latestTargetBreakdown.missiles)||{});kill('targetMissile');charts.targetMissile=new Chart(document.getElementById('targetMissileChart'),{type:'bar',data:{labels:me.map(([k])=>k),datasets:[{label:currentLang==='fa'?'موشک':'Missiles',data:me.map(([,v])=>v),backgroundColor:'rgba(255,107,107,.72)',borderRadius:8,barThickness:18}]},options:{...commonOptions,indexAxis:'y',plugins:{...commonOptions.plugins,legend:{display:false}},scales:{x:{ticks:{color:'#9eb5d0',precision:0},grid:{color:'rgba(255,255,255,.05)'},beginAtZero:true},y:{ticks:{color:'#9eb5d0'},grid:{display:false}}}}});
-      const de=Object.entries((state.latestTargetBreakdown&&state.latestTargetBreakdown.drones)||{});kill('targetDrone');charts.targetDrone=new Chart(document.getElementById('targetDroneChart'),{type:'bar',data:{labels:de.map(([k])=>k),datasets:[{label:currentLang==='fa'?'پهپاد':'Drones',data:de.map(([,v])=>v),backgroundColor:'rgba(255,159,67,.72)',borderRadius:8,barThickness:18}]},options:{...commonOptions,indexAxis:'y',plugins:{...commonOptions.plugins,legend:{display:false}},scales:{x:{ticks:{color:'#9eb5d0',precision:0},grid:{color:'rgba(255,255,255,.05)'},beginAtZero:true},y:{ticks:{color:'#9eb5d0'},grid:{display:false}}}}});
-      kill('pressure');charts.pressure=new Chart(document.getElementById('pressureChart'),{type:'line',data:{labels:(state.pressure&&state.pressure.labels)||[],datasets:[{label:currentLang==='fa'?'فرسایش عملیاتی':'Operational attrition',data:(state.pressure&&state.pressure.attrition)||[],borderColor:'#46d7b0',borderWidth:3,pointRadius:4,tension:.25},{label:currentLang==='fa'?'فشار هزینه/سیاسی':'Cost pressure',data:(state.pressure&&state.pressure.cost)||[],borderColor:'#ffd166',borderWidth:3,pointRadius:4,tension:.25}]},options:{...commonOptions,scales:{...commonOptions.scales,y:{...commonOptions.scales.y,beginAtZero:true,suggestedMax:10}}}});
+      const labels = state.dailySeries.labels || [];
+      const missiles = state.dailySeries.missiles || [];
+      const drones = state.dailySeries.drones || [];
+
+      const launchOpts = deepClone(BASE_OPTS);
+      launchOpts.scales.y.beginAtZero = true;
+
+      const oilOpts = deepClone(BASE_OPTS);
+      oilOpts.scales.y.ticks = { ...oilOpts.scales.y.ticks, callback: function(v){ return '$' + v; } };
+
+      const pressureOpts = deepClone(BASE_OPTS);
+      pressureOpts.scales.y.beginAtZero = true;
+      pressureOpts.scales.y.suggestedMax = 10;
+      pressureOpts.scales.y.ticks = { ...pressureOpts.scales.y.ticks, callback: function(v){
+        var sem = {0:'',2:'LOW',5:'MED',8:'HIGH',10:'CRIT'};
+        return sem[v] !== undefined ? sem[v] : '';
+      }};
+
+      const rawM = (state.latestTargetBreakdown && state.latestTargetBreakdown.missiles) || {};
+      const rawD = (state.latestTargetBreakdown && state.latestTargetBreakdown.drones) || {};
+      const sortedME = Object.entries(rawM).sort((a,b) => b[1] - a[1]);
+      const sortedDE = Object.entries(rawD).sort((a,b) => b[1] - a[1]);
+
+      const barOpts = deepClone(BASE_OPTS);
+      barOpts.indexAxis = 'y';
+      barOpts.plugins.legend = {display:false};
+      barOpts.scales = {
+        x:{ticks:{color:'#9eb5d0',precision:0},grid:{color:'rgba(255,255,255,.05)'},beginAtZero:true},
+        y:{ticks:{color:'#9eb5d0'},grid:{display:false}}
+      };
+
+      kill('missile');
+      if ($('missileChart')) charts.missile = new Chart($('missileChart'), {type:'line',data:{labels,datasets:[
+        {label:currentLang==='fa'?'موشک بالستیک روزانه':'Daily ballistic missiles',data:missiles,borderColor:'#ff6b6b',backgroundColor:'rgba(255,107,107,.08)',fill:true,tension:.24,borderWidth:3,pointRadius:4,spanGaps:true},
+        {label:currentLang==='fa'?'خط روند':'Trend',data:trendLineUpToLastReal(missiles),borderColor:'#ffd166',borderDash:[8,5],pointRadius:0,borderWidth:2,tension:0,spanGaps:true}
+      ]},options:deepClone(launchOpts)});
+
+      kill('drone');
+      if ($('droneChart')) charts.drone = new Chart($('droneChart'), {type:'line',data:{labels,datasets:[
+        {label:currentLang==='fa'?'پهپاد روزانه':'Daily drones',data:drones,borderColor:'#ff9f43',backgroundColor:'rgba(255,159,67,.08)',fill:true,tension:.24,borderWidth:3,pointRadius:4,spanGaps:true},
+        {label:currentLang==='fa'?'خط روند':'Trend',data:trendLineUpToLastReal(drones),borderColor:'#63b3ff',borderDash:[8,5],pointRadius:0,borderWidth:2,tension:0,spanGaps:true}
+      ]},options:deepClone(launchOpts)});
+
+      kill('combo');
+      if ($('comboChart')) charts.combo = new Chart($('comboChart'), {type:'line',data:{labels,datasets:[
+        {label:currentLang==='fa'?'موشک بالستیک':'Ballistic missiles',data:missiles,borderColor:'#63b3ff',borderWidth:3,pointRadius:4,tension:.24,spanGaps:true},
+        {label:currentLang==='fa'?'پهپاد':'Drones',data:drones,borderColor:'#ff9f43',borderWidth:3,pointRadius:4,tension:.24,spanGaps:true},
+        {label:currentLang==='fa'?'روند موشک':'Missile trend',data:trendLineUpToLastReal(missiles),borderColor:'#46d7b0',borderDash:[8,5],pointRadius:0,borderWidth:2,tension:0,spanGaps:true},
+        {label:currentLang==='fa'?'روند پهپاد':'Drone trend',data:trendLineUpToLastReal(drones),borderColor:'#b084ff',borderDash:[8,5],pointRadius:0,borderWidth:2,tension:0,spanGaps:true}
+      ]},options:deepClone(launchOpts)});
+
+      kill('oil');
+      if ($('oilChart')) charts.oil = new Chart($('oilChart'), {type:'line',data:{labels:state.oil.labels||[],datasets:[
+        {label:'Brent',data:state.oil.brent||[],borderColor:'#63b3ff',borderWidth:3,pointRadius:4,tension:.22},
+        {label:'WTI',data:state.oil.wti||[],borderColor:'#ffd166',borderWidth:3,pointRadius:4,tension:.22}
+      ]},options:oilOpts});
+
+      kill('targetMissile');
+      if ($('targetMissileChart')) charts.targetMissile = new Chart($('targetMissileChart'), {type:'bar',data:{
+        labels:sortedME.map(([k])=>k),datasets:[{label:currentLang==='fa'?'موشک':'Missiles',data:sortedME.map(([,v])=>v),backgroundColor:'rgba(255,107,107,.72)',borderRadius:8,barThickness:18}]
+      },options:deepClone(barOpts)});
+
+      kill('targetDrone');
+      if ($('targetDroneChart')) charts.targetDrone = new Chart($('targetDroneChart'), {type:'bar',data:{
+        labels:sortedDE.map(([k])=>k),datasets:[{label:currentLang==='fa'?'پهپاد':'Drones',data:sortedDE.map(([,v])=>v),backgroundColor:'rgba(255,159,67,.72)',borderRadius:8,barThickness:18}]
+      },options:deepClone(barOpts)});
+
+      kill('pressure');
+      if ($('pressureChart')) charts.pressure = new Chart($('pressureChart'), {type:'line',data:{
+        labels:(state.pressure&&state.pressure.labels)||[],
+        datasets:[
+          {label:currentLang==='fa'?'فرسایش عملیاتی':'Operational attrition',data:(state.pressure&&state.pressure.attrition)||[],borderColor:'#46d7b0',borderWidth:3,pointRadius:4,tension:.25},
+          {label:currentLang==='fa'?'فشار هزینه/سیاسی':'Cost pressure',data:(state.pressure&&state.pressure.cost)||[],borderColor:'#ffd166',borderWidth:3,pointRadius:4,tension:.25}
+        ]
+      },options:pressureOpts});
     }
 
-    function render(){ applyI18n(); setText(); renderCharts(); }
+    function render(){ mountDashboard(); applyI18n(); setText(); renderCharts(); }
 
     async function loadDashboardData(){
       try{
@@ -347,8 +458,10 @@
         if(!json.meta||!json.dailySeries||!json.oil) throw new Error('Malformed');
         state = { ...structuredClone(DEFAULT_DATA), ...json };
         state.meta = { ...DEFAULT_DATA.meta, ...(json.meta || {}) };
-      }catch(e){ state = structuredClone(DEFAULT_DATA); }
-      finally{ render(); }
+      }catch(e){
+        console.error('Dashboard load failed:', e);
+        state = structuredClone(DEFAULT_DATA);
+      }finally{ render(); }
     }
 
     loadDashboardData();
