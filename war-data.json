@@ -1,112 +1,121 @@
 {
   "meta": {
-    "lastUpdated": "2026-03-15T10:30:00-04:00",
+    "lastUpdated": "2026-03-16T17:00:00-04:00",
     "notes": [
-      "Updated Mar 15 ~10:30 AM ET. Sources: CNBC, CNN, Al Jazeera, ABC News, CBS News, Iran International, Wikipedia, Semafor.",
-      "Daily launch series: Feb 28–Mar 9 reconstruction; Mar 10–11 UAE official; Mar 12–13 fragment est. Mar 14–16 null. White House updated: ballistic ↓90%, drones ↓95%, 65+ vessels sunk, 6,000+ targets.",
-      "Oil: markets closed today (Sunday). Brent closed Fri $103.14. WTI $98.71. Fujairah oil-loading resumed after drone debris interruption.",
-      "Iran killed: 1,400+ (AJ tracker). 10,000+ residential homes damaged/destroyed (Tehran governor). 56 cultural sites damaged (Heritage Ministry). Lebanon: 773+.",
-      "MAJOR: 90+ military targets on Kharg Island struck Fri night (CENTCOM). Isfahan struck Sunday AM — 15+ killed. Iran fired 10+ hypersonic missiles at Israel. Israel critically low on interceptors (Semafor).",
-      "Business/shipping/publishing sections reflect on-ground intel + sourced analysis. Not legal advice."
+      "Day 17 (Mar 16) — LATE UPDATE 5PM ET. Sources: CNN live, NBC live, AJ D17, Alma Center (Israel), Reuters/Kpler, Breaking Defense.",
+      "Launch series: D1–D10 JPost (cumul 2,410/3,560). D11: UAE MoD (13+39 UAE-only, scaled ×2.08). D12–D17: fragment estimates via INSS (UAE≈48%). D17 REVISED: Saudi 37 drones intercepted (AJ specific count) replaces earlier '3 waves' estimate.",
+      "DISCREPANCY: Iran claims ~700 missiles / ~3,600 drones total. JPost all-theater est. much higher. IRGC spokesman D17: 'most weapons cache intact, missiles used are from a decade ago' — suggests stockpile deeper than coalition estimates.",
+      "Oil: Gulf exports ↓61% to 9.71M bpd from 25.13M bpd Feb (Reuters/Kpler via NBC). Brent $106.12 Sun; Mon trading range $102-106.50 (Investing.com).",
+      "Casualties REVISED: ~200 US troops wounded (up from 140), 180+ RTD (CNN CENTCOM). 13 KIA. Khamenei: fractured foot, bruised eye, lacerations (CNN source — first specific details).",
+      "Israel: 245 attack waves on Israel total. IDF 7,600+ strikes / 5,000 sorties. Planning 3+ more weeks, 'thousands of targets' (CNN). Admin expects end 'within weeks or sooner.'",
+      "Allies: Australia, Japan NOT sending ships. Germany: no NATO role. G5 (Canada/France/Germany/Italy/UK) 'gravely concerned' re Lebanon."
     ]
   },
+  "theoryBox": "<strong>Core question:</strong> Can the coalition degrade Iran's offensive capability faster than the Hormuz closure and oil shock erode political will? <strong>Day 17 revision:</strong> IRGC claims most weapons cache intact and hasn't used post-2025 missiles — if true, the ↓90% narrative describes rate, not stockpile depletion. Iran may be rationing deliberately while the economic siege (Gulf exports ↓61%, Brent $106) does the real damage. The war's center of gravity has shifted from military to economic.",
+  "theoryBox_fa": "<strong>پرسش اصلی:</strong> آیا ائتلاف توان تهاجمی ایران را تحلیل می‌برد؟ <strong>بازنگری روز ۱۷:</strong> سپاه ادعا می‌کند بیشتر ذخایر سالم و موشک‌های پس از ۲۰۲۵ شلیک نشده. اگر درست باشد، کاهش ۹۰٪ فقط نرخ است نه تخلیه ذخایر. صادرات نفت ↓۶۱٪. مرکز ثقل جنگ از نظامی به اقتصادی منتقل شده.",
   "metrics": [
     {
-      "label": "Conflict day",
-      "value": "16",
-      "desc": "Since Feb 28. Third week. All chart data now continuous D1–D16."
+      "label": "Day of conflict",
+      "value": "17",
+      "desc": "Since Feb 28. Third week. Monday Mar 16. Admin expects end 'within weeks or sooner.' Israel planning 3+ more weeks."
     },
     {
-      "label": "Iran killed",
-      "value": "1,400+",
-      "desc": "AJ tracker. 10,000+ homes destroyed (Tehran governor)."
+      "label": "Cumul. missiles (JPost est.)",
+      "value": "~2,595",
+      "desc": "Iran claims ~700. IRGC: 'most cache intact, using decade-old missiles' — implies stockpile deeper than assumed."
+    },
+    {
+      "label": "Cumul. drones (JPost est.)",
+      "value": "~4,005",
+      "desc": "Iran claims ~3,600. REVISED D17: Saudi 37 drones intercepted (AJ). UAE >1,800 total projectiles."
     },
     {
       "label": "Brent crude",
-      "value": "$103.14",
-      "desc": "Fri close. Markets closed today (Sun). Fujairah loading resumed."
+      "value": "$106.12",
+      "desc": "Sun futures. Mon range $102–106.50. Gulf exports ↓61% to 9.71M bpd from 25.13M Feb (Reuters/Kpler)."
     },
     {
-      "label": "Kharg Island",
-      "value": "90+ TARGETS HIT",
-      "desc": "CENTCOM Fri night. Oil infra spared but explicitly threatened."
+      "label": "US casualties",
+      "value": "13 KIA / ~200 WIA",
+      "desc": "REVISED (CNN CENTCOM). Up from 140 wounded. 180+ RTD. 8 severe (death possible/imminent)."
     },
     {
-      "label": "Isfahan",
-      "value": "STRUCK TODAY",
-      "desc": "Heavy strikes early Sun AM. 15+ killed. Dozens of impacts."
+      "label": "ME death toll",
+      "value": "2,200+",
+      "desc": "Iran 1,444 killed / 18,551 injured (AJ/Red Crescent). Lebanon 850+. US 13. Gulf dozens."
     },
     {
-      "label": "Israel interceptors",
-      "value": "CRITICALLY LOW",
-      "desc": "Israel told US running low on ballistic missile interceptors (Semafor)."
+      "label": "Khamenei status",
+      "value": "ALIVE — injured",
+      "desc": "CNN source: fractured foot, bruised left eye, facial lacerations. First specific details. No public appearance in 8+ days."
     },
     {
-      "label": "US military deaths",
-      "value": "13",
-      "desc": "6 KC-135; 6 Kuwait; 1 Iraq. 3 more injured Kuwait Sat."
+      "label": "Hormuz status",
+      "value": "CLOSED",
+      "desc": "Gulf exports ↓61%. No escort ops. Australia, Japan won't send ships. Germany: no NATO role. Trump: 'numerous countries on their way' (unnamed)."
+    }
+  ],
+  "metrics_fa": [
+    {
+      "label": "روز جنگ",
+      "value": "۱۷",
+      "desc": "هفته سوم. اسرائیل برنامه ۳+ هفته دیگر دارد."
     },
     {
-      "label": "Hypersonic missiles",
-      "value": "10+ FIRED",
-      "desc": "IRGC fired 10+ hypersonic missiles at Israel today. Bnei Brak hit."
+      "label": "مجموع موشک",
+      "value": "~۲,۵۹۵",
+      "desc": "سپاه: بیشتر ذخایر سالم. موشک‌های استفاده‌شده از یک دهه پیش."
+    },
+    {
+      "label": "مجموع پهپاد",
+      "value": "~۴,۰۰۵",
+      "desc": "عربستان ۳۷ پهپاد رهگیری (الجزیره)."
+    },
+    {
+      "label": "نفت برنت",
+      "value": "$۱۰۶",
+      "desc": "صادرات خلیج ↓۶۱٪. ۹.۷۱ م.ب/ر از ۲۵.۱۳."
+    },
+    {
+      "label": "تلفات آمریکا",
+      "value": "۱۳ کشته / ~۲۰۰ زخمی",
+      "desc": "بازنگری. ۱۸۰+ بازگشت به خدمت."
+    },
+    {
+      "label": "کشته خاورمیانه",
+      "value": "۲,۲۰۰+",
+      "desc": "ایران ۱,۴۴۴ / لبنان ۸۵۰+."
+    },
+    {
+      "label": "خامنه‌ای",
+      "value": "زنده — مجروح",
+      "desc": "شکستگی پا، کبودی چشم، بریدگی صورت (CNN)."
+    },
+    {
+      "label": "هرمز",
+      "value": "بسته",
+      "desc": "صادرات ↓۶۱٪. استرالیا، ژاپن، آلمان رد کردند."
     }
   ],
   "sitrep": [
-    "<strong>Day 16 — Isfahan struck, hypersonic missiles fired:</strong> Early Sunday, heavy US-Israeli airstrikes hit multiple sites across Isfahan province, killing at least 15. Simultaneously: 20 explosions near Shiraz, heavy strikes in southern Tehran, Dezful Air Base, Khomein, Hamedan, and Jask port (Hormozgan). This is the broadest single-day geographic spread of strikes so far.",
-    "<strong>Kharg Island — 90+ targets confirmed:</strong> CENTCOM confirmed US forces struck more than 90 military targets on Kharg Island Friday night. Oil infrastructure deliberately preserved. White House restated: ballistic capability ↓90%, drones ↓95%, 65+ naval vessels sunk, 6,000+ targets struck total.",
-    "<strong>Iran fires hypersonic missiles:</strong> IRGC launched 10+ hypersonic missiles at Israel plus drones. Hit Bnei Brak apartment building — 4 injured. Also targeted Al-Dhafra Air Base in UAE. IRGC vowed to 'pursue and kill Netanyahu.' Sirens in central Israel.",
-    "<strong>Israel interceptor crisis:</strong> Israel informed the US it is running critically low on ballistic missile interceptors (Semafor). This is a strategic vulnerability — if interceptor stocks deplete, Iran's residual launch capability becomes far more dangerous.",
-    "<strong>Trump: not ready for deal:</strong> Told NBC Iran 'wants to make a deal' but terms 'aren't good enough yet.' Calling for naval coalition to keep Hormuz open. UK energy secretary Miliband: exploring 'any options' to help secure Hormuz.",
-    "<strong>Civilian toll deepening:</strong> Tehran governor: 10,000+ residential homes damaged or destroyed. 56 cultural sites damaged (Heritage Ministry). Brig. Gen. Jalali Nasab killed (another senior military figure). Pope Leo called for immediate ceasefire.",
-    "<strong>Reza Pahlavi:</strong> Exiled prince outlined 5 economic goals for post-regime transition — remove economy from IRGC control, address corruption. Signals US-backed regime change messaging accelerating.",
-    "<strong>Key signal:</strong> The combination of Kharg strike, Isfahan bombardment, AND Israel's interceptor crisis creates the most dangerous 48 hours of the conflict. Iran's hypersonic missiles are harder to intercept — if Israel's interceptor stocks are depleted, the calculus changes dramatically."
+    "Day 17 (5PM update). Israel launched new wave of strikes on Tehran overnight — thick black smoke over capital. IDF struck Tehran, Tabriz, Shiraz, Isfahan, and IRGC/nuclear-related sites. IDF: 7,600+ strikes in 5,000 sorties since D1. Planning 3+ more weeks with 'thousands of targets.'",
+    "Dubai airport suspended flights after drone fuel tank fire — Emirates later resumed limited operations. Abu Dhabi: missile killed 1 Palestinian. Fujairah: industrial zone drone fire. Saudi intercepted 37 drones on Monday (AJ confirmed count). Baghdad airport rockets wounded 5.",
+    "US casualties REVISED upward: ~200 troops wounded/injured across 7 countries (CNN/CENTCOM), up from 140 as of Mar 10. 180+ returned to duty. 8 severe (death possible). 13 KIA unchanged.",
+    "Khamenei health REVEALED: fractured foot, bruised left eye, facial lacerations from Feb 28 strikes (CNN source). First specific details after 8+ days of speculation. IRGC spokesman: 'most weapons cache intact, using missiles from a decade ago.'",
+    "Gulf oil exports collapsed 61% — from 25.13M bpd (Feb) to 9.71M bpd (week to Mar 15) per Reuters/Kpler via NBC. This is the largest supply disruption in oil market history. Brent $106+.",
+    "Hormuz coalition FAILING: Australia, Japan explicitly declined to send ships. Germany said no NATO role in strait. Trump: 'numerous countries told me on their way' but named none. UK 'working with allies' — no specifics.",
+    "G5 leaders (Canada/France/Germany/Italy/UK): 'gravely concerned' about Lebanon violence, called for 'immediate de-escalation.' Israel expanding ground operations in southern Lebanon.",
+    "IRGC spokesman Naini: Iran has not yet fired post-2025 missiles. Claims most arsenal intact. If true, Iran's offensive capability is deeper than Pentagon estimates suggest. Counter-narrative to 'missiles ↓90%' claim."
   ],
-  "theoryEvaluation": [
-    {
-      "title": "Support",
-      "body": "White House confirms ballistic ↓90%, drones ↓95%. 90+ Kharg targets hit. 65+ vessels sunk. 6,000+ total targets. Industrial base being degraded (Tabriz factories, Jask port). Launch suppression is working at a mechanical level."
-    },
-    {
-      "title": "Weakens confidence",
-      "body": "Iran fired 10+ HYPERSONIC missiles at Israel today. This is a capability escalation — hypersonics are harder to intercept. Combined with Israel's interceptor crisis (Semafor), the remaining Iranian capability is more dangerous per shot even if volume is down. Isfahan struck but Iran is hitting back. Trump 'not ready for deal' = no off-ramp being built."
-    },
-    {
-      "title": "Current judgment",
-      "body": "The theory — 'can strikes suppress capability before costs force pullback?' — is now being tested at its sharpest edge. Capability IS down 90–95%. But the remaining 5–10% includes hypersonic missiles vs depleting Israeli interceptors, which is a worse ratio than 100% of capability vs full interceptor stocks. The war's most dangerous phase may be NOW, not Day 1."
-    }
-  ],
-  "scenarioProbabilities": [
-    {
-      "name": "Protracted low-intensity + periodic escalation spikes",
-      "prob": "30%",
-      "body": "The new baseline. Strikes continue but at variable intensity. Hypersonic missiles vs. depleting interceptors creates a dangerous equilibrium. Neither side can deliver knockout blow. Oil $95–115."
-    },
-    {
-      "name": "US 'Mission Accomplished' + wind-down",
-      "prob": "22%",
-      "body": "↓ from 28%. Trump saying 'not ready for deal' pushes this back. But Kharg + interceptor crisis could force accelerated timeline if costs spike. Naval coalition talk = looking for exit that isn't 'retreat.'"
-    },
-    {
-      "name": "Full economic/regional war escalation",
-      "prob": "22%",
-      "body": "Stable from yesterday. Kharg oil infrastructure is the red line. Araghchi warned: strike energy sites = Iran hits US companies' facilities. Israel interceptor depletion could trigger this scenario if a mass-casualty strike gets through."
-    },
-    {
-      "name": "Negotiated ceasefire",
-      "prob": "14%",
-      "body": "↑ slightly. Pope Leo ceasefire call. Araghchi offering to 'cooperate with regional neighbors.' Iran's terms (guarantees + compensation) still on table. But Trump 'not ready' = no near-term deal."
-    },
-    {
-      "name": "Iranian regime fracture",
-      "prob": "8%",
-      "body": "Pahlavi's transition message = US amplifying regime change track. Khamenei still not appearing. But IRGC showing capability (hypersonic missiles) undermines collapse narrative."
-    },
-    {
-      "name": "Nuclear threshold",
-      "prob": "4%",
-      "body": "Unchanged. Parchin damaged. Hidden enriched uranium found pre-war."
-    }
+  "sitrep_fa": [
+    "روز ۱۷. حمله جدید اسرائیل به تهران. دود سیاه بر فراز پایتخت. ۷,۶۰۰+ حمله در ۵,۰۰۰ سورتی. برنامه ۳+ هفته دیگر.",
+    "فرودگاه دبی متوقف سپس محدود بازگشایی. ابوظبی: ۱ کشته. فجیره: آتش‌سوزی. عربستان ۳۷ پهپاد رهگیری. بغداد ۵ زخمی.",
+    "تلفات آمریکا بازنگری: ~۲۰۰ زخمی در ۷ کشور. ۱۸۰+ بازگشت. ۸ شدید.",
+    "خامنه‌ای: شکستگی پا، کبودی چشم، بریدگی صورت (CNN). سپاه: بیشتر ذخایر سالم.",
+    "صادرات نفت خلیج ↓۶۱٪ — ۹.۷۱ م.ب/ر. بزرگترین اختلال تاریخ بازار نفت.",
+    "ائتلاف هرمز شکست: استرالیا، ژاپن رد. آلمان: ناتو نقشی ندارد. ترامپ کشورها را نام نبرد.",
+    "رهبران G5: نگرانی عمیق درباره لبنان. درخواست کاهش تنش فوری.",
+    "سخنگوی سپاه: موشک‌های پس از ۲۰۲۵ شلیک نشده. بیشتر زرادخانه سالم."
   ],
   "dailySeries": {
     "labels": [
@@ -125,7 +134,8 @@
       "Mar 12",
       "Mar 13",
       "Mar 14",
-      "Mar 15"
+      "Mar 15",
+      "Mar 16"
     ],
     "missiles": [
       480,
@@ -138,12 +148,13 @@
       70,
       50,
       40,
-      9,
-      6,
+      27,
       8,
       10,
-      18,
-      20
+      20,
+      25,
+      15,
+      12
     ],
     "drones": [
       720,
@@ -156,15 +167,16 @@
       110,
       80,
       60,
-      35,
-      39,
-      35,
-      26,
-      65,
-      55
+      81,
+      40,
+      30,
+      70,
+      60,
+      45,
+      70
     ],
-    "sourceLabel": "D1–D10: JPost verified (cumul 2,410 missiles / 3,560 drones). D11–12: UAE official. D13–14: fragment est. D15: UAE 9+33 (AJ) + Saudi 51 drones scaled. D16: hypersonic escalation est. All-theater estimates assume UAE receives ~48% of projectiles (INSS).",
-    "throughDate": "Mar 15 (all days estimated)"
+    "sourceLabel": "D1–D10: JPost Israeli analysis (cumul 2,410 missiles / 3,560 drones). D11: UAE MoD (13+39 UAE-only, scaled ×2.08 for all-theater). D12–D17: fragment estimates from AJ/CNN/Gulf MoDs, scaled via INSS ratio (UAE ≈ 48%). NOTE: Iran claims only ~700 missiles / ~3,600 drones total — significant discrepancy with Israeli estimates.",
+    "throughDate": "Mar 16 (all days estimated)"
   },
   "oil": {
     "labels": [
@@ -183,7 +195,8 @@
       "Mar 11",
       "Mar 12",
       "Mar 13",
-      "Mar 14"
+      "Mar 14",
+      "Mar 15"
     ],
     "brent": [
       65.0,
@@ -194,14 +207,15 @@
       90.0,
       92.0,
       92.69,
-      107.0,
+      119.5,
       88.43,
       94.0,
-      92.0,
+      91.0,
       91.98,
       100.46,
       99.32,
-      103.14
+      103.14,
+      106.12
     ],
     "wti": [
       62.0,
@@ -212,39 +226,17 @@
       86.0,
       88.0,
       90.9,
-      101.0,
+      112.0,
       85.27,
       85.0,
       85.0,
       87.25,
       95.73,
       93.75,
-      98.71
+      98.71,
+      101.53
     ],
-    "note": "Full daily series. CNBC confirmed where noted, interpolated between. Mar 15 = Fri close. Markets closed Sun Mar 16. Brent +10% weekly, second week >$100."
-  },
-  "latestTargetBreakdown": {
-    "note": "Mar 14 slice. UAE: 9 missiles + 33 drones intercepted (AJ confirmed). Qatar: 4 ballistic + drones (MoD). Saudi: 51 drones intercepted (largest single-day barrage). Kuwait: airport drones. Jordan: 79/85 intercepted over week 2.",
-    "missiles": {
-      "Israel": 10,
-      "UAE": 9,
-      "Qatar": 4,
-      "Bahrain": 3,
-      "Saudi": 2,
-      "Kuwait": 1,
-      "Jordan": 1,
-      "Oman": 0
-    },
-    "drones": {
-      "UAE": 33,
-      "Saudi": 51,
-      "Israel": 8,
-      "Bahrain": 5,
-      "Kuwait": 4,
-      "Qatar": 4,
-      "Jordan": 6,
-      "Oman": 1
-    }
+    "note": "Full daily series. CNBC/Investing.com confirmed where noted. D8 REVISED: Investing.com 52w high = $119.50, IEA confirmed 'within whisker of $120.' Previous estimate of $107 was intraday not peak. Markets closed regular hours Sun Mar 16. D16 = Sunday evening futures."
   },
   "pressure": {
     "labels": [
@@ -263,7 +255,8 @@
       "Mar 12",
       "Mar 13",
       "Mar 14",
-      "Mar 15"
+      "Mar 15",
+      "Mar 16"
     ],
     "attrition": [
       2,
@@ -281,6 +274,7 @@
       9,
       9.5,
       9.5,
+      10,
       10
     ],
     "cost": [
@@ -292,516 +286,541 @@
       5,
       5.5,
       7,
+      9,
+      7,
       7.5,
-      8,
-      8,
+      7,
+      7.5,
+      8.5,
       8.5,
       9,
-      9.5,
-      9.5,
-      10
+      9.5
     ]
+  },
+  "latestTargetBreakdown": {
+    "note": "Mar 16 (D17) daily estimate. Dubai: airport drone fire + fuel tank. Abu Dhabi: missile killed 1 Palestinian. Fujairah: drone fire. Saudi: 3 drone waves east. Baghdad: rockets at airport (5 wounded). Israel: cluster missile Tel Aviv + ballistic shrapnel at US diplomat building.",
+    "missiles": {
+      "Israel": 5,
+      "UAE": 4,
+      "Iraq": 3,
+      "Saudi": 2,
+      "Bahrain": 1,
+      "Kuwait": 0,
+      "Qatar": 0,
+      "Jordan": 0
+    },
+    "drones": {
+      "Saudi": 15,
+      "UAE": 12,
+      "Iraq": 5,
+      "Israel": 4,
+      "Bahrain": 3,
+      "Kuwait": 3,
+      "Qatar": 2,
+      "Jordan": 1
+    }
   },
   "dailyRows": [
     {
       "date": "Feb 28",
       "missiles": 480,
       "drones": 720,
-      "primary": "Israel heavy",
-      "capability": "Full inventory surge. Khamenei assassinated. IRGC closes Hormuz.",
-      "cost": "Oil $72. True Promise IV within hours.",
-      "assessment": "Opening shock."
+      "primary": "All-theater: UAE (Al Dhafra, Dubai airport, Palm Jumeirah), Israel (Tel Aviv, Haifa), Saudi (Ras Tanura), Qatar (Al Udeid), Kuwait, Bahrain, Jordan",
+      "capability": "Operation Roaring Lion / True Promise IV launched within hours. 480 ballistic missiles + 720 drones on D1. Fastest Iranian response ever — suggests pre-positioned C2.",
+      "cost": "Khamenei killed. IRIS Dena sunk by US submarine off Sri Lanka. Brent $72 (+$7). Hormuz shipping halted immediately — 150 ships stalled.",
+      "assessment": "Overwhelming opening salvo. Iran distributing fire across 13 countries to overwhelm defenses."
     },
     {
       "date": "Mar 01",
       "missiles": 520,
       "drones": 850,
-      "primary": "Israel dominant; Gulf spillover",
-      "capability": "Peak intensity. Beit Shemesh 9 killed.",
-      "cost": "Dubai Airport struck. Oil $79. Khamenei death confirmed.",
-      "assessment": "Peak launch intensity."
+      "primary": "Peak launch day. UAE heaviest target. Israel: 124 injured from 10-warhead ballistic missile at Tel Aviv.",
+      "capability": "520 missiles + 850 drones — highest single-day volume. Iran expending stockpile rapidly.",
+      "cost": "Brent $79.45 (CNBC). Iran state media confirms Khamenei family killed. Assembly of Experts emergency session. Jebel Ali Port fire, AWS data center hit.",
+      "assessment": "Peak fury. Iran burning through inventory at unsustainable rate."
     },
     {
       "date": "Mar 02",
       "missiles": 400,
       "drones": 530,
-      "primary": "Israel + regional",
-      "capability": "High but not climbing.",
-      "cost": "Hezbollah enters. 20 killed Tehran. PJAK enters Iran.",
-      "assessment": "Off peak. Second front."
+      "primary": "Kuwait (6 US KIA at Shuaiba Port operations center), Bahrain, Saudi (US Embassy Riyadh drones), Israel (Hezbollah joins)",
+      "capability": "400+530. Kuwaiti F/A-18 friendly-fire shoots down 3 US F-15Es (all 6 crew survive). Hezbollah opens second front.",
+      "cost": "6 US KIA — first American combat deaths. Brent ~$83. Qatar arrests 10 IRGC cell operatives.",
+      "assessment": "War expands. US casualties mount. Hezbollah + Iraqi militias = multi-front."
     },
     {
       "date": "Mar 03",
       "missiles": 350,
       "drones": 480,
-      "primary": "Israel + regional",
-      "capability": "Sliding. IRIB + parliament hit. IRIS Dena sunk.",
-      "cost": "Trump: no navy left. Assembly of Experts bombed.",
-      "assessment": "Major infrastructure hits."
+      "primary": "Nuclear sites: Natanz entrance destroyed, Isfahan, Fordow access roads hit, Arak targeted",
+      "capability": "350+480. Declining from peak but still massive. Coalition strikes nuclear infrastructure.",
+      "cost": "IAEA confirms Natanz inaccessible. Enrichment stockpile unverified 8+ months. Humanitarian crisis emerging.",
+      "assessment": "Nuclear dimension activated. Escalation risk from enrichment uncertainty."
     },
     {
       "date": "Mar 04",
       "missiles": 250,
       "drones": 350,
-      "primary": "Distributed",
-      "capability": "300+ launchers destroyed. UAE: 174 missiles, 689 drones.",
-      "cost": "11-year-old killed Kuwait.",
-      "assessment": "Attrition visible."
+      "primary": "Hezbollah long-range missile at Tel Aviv. Israel 250+ strikes on Lebanon. IRIS Dena confirmed sunk.",
+      "capability": "250+350. Clear decline. Senate rejects war powers resolution. CSIS: first 100 hours = $3.7B.",
+      "cost": "Lebanon front fully active. Brent ~$90. Senate gives Trump political cover.",
+      "assessment": "Decline accelerating. Political constraints loosening domestically."
     },
     {
       "date": "Mar 05",
       "missiles": 150,
       "drones": 220,
-      "primary": "Regional, lower mass",
-      "capability": "CENTCOM: air dominance. ‘90% ballistic, ‘83% drones. Fars: 500+ missiles, ~2,000 drones cumul.",
-      "cost": "Azadi Complex bombed. Azerbaijan airport hit.",
-      "assessment": "Air dominance claimed."
+      "primary": "Qatar (14 ballistic + 4 drones per MoD), Kuwait, Bahrain, UAE",
+      "capability": "150+220. Fars claims >500 missiles, ~2,000 drones cumul. Rate ↓69% missiles, ↓74% drones.",
+      "cost": "Brent ~$92. IEA triggers largest coordinated SPR release in history (400M bbl). War cost ~$2B/day.",
+      "assessment": "Iran's ballistic capability declining structurally. Economic war intensifying."
     },
     {
       "date": "Mar 06",
       "missiles": 100,
       "drones": 160,
-      "primary": "Selective",
-      "capability": "3,000+ targets. 43 warships.",
-      "cost": "War $11.3B/6 days. Houthi: ‘hands on trigger.’",
-      "assessment": "Lower tempo."
+      "primary": "Continued Gulf + Israel harassment. Iraq: PMF HQs struck across multiple provinces.",
+      "capability": "100+160. Rate ↓79% missiles. >60% of Iranian launchers neutralized. 43 naval vessels destroyed.",
+      "cost": "Brent $92.69 (CNBC). VLCC freight rates approaching records. Ruwais refinery shut (922K bbl/day offline).",
+      "assessment": "Iran losing conventional capability. Asymmetric phase beginning."
     },
     {
       "date": "Mar 07",
       "missiles": 70,
       "drones": 110,
-      "primary": "Selective",
-      "capability": "Throughput substantially reduced.",
-      "cost": "Trump demands surrender. Oil $120 intraday. Iran mines Hormuz. Iraq ‘70%.",
-      "assessment": "Oil crisis peak."
+      "primary": "Diminished volume across Gulf. Iraq militia attacks intensify. F-35 shoots down Iranian Yak-130 — first F-35 air-to-air kill.",
+      "capability": "70+110. Rate ↓85%. Red Crescent: 65 schools, 32 medical facilities damaged.",
+      "cost": "Brent intraday volatility. IEA Oil Market Report: 'largest supply disruption in history.' 20 Mb/d offline. Iran internet blackout persists.",
+      "assessment": "Conventional campaign near-spent. Iran shifting to economic leverage."
     },
     {
       "date": "Mar 08",
       "missiles": 50,
       "drones": 80,
-      "primary": "Low-volume",
-      "capability": "Residual pressure.",
-      "cost": "WTI $119→$85 crash. G7 release. Falak-ol-Aflak struck.",
-      "assessment": "Oil whipsaw."
+      "primary": "UAE MoD cumul: 1,422 UAVs detected (1,342 intercepted). All 8 cruise missiles intercepted.",
+      "capability": "50+80. Rate ↓90%. UAE air defenses showing strain but holding.",
+      "cost": "Brent hits $119.50 — 52-week high (Investing.com). IEA: 'within whisker of $120.' Then crashes on SPR release news. Extreme volatility.",
+      "assessment": "Oil price spike signals market panic. SPR intervention buys temporary relief."
     },
     {
       "date": "Mar 09",
       "missiles": 40,
       "drones": 60,
-      "primary": "Residual",
-      "capability": "Near-floor. Mojtaba Khamenei appointed.",
-      "cost": "Isfahan heritage damaged. WTI biggest weekly gain ever.",
-      "assessment": "Near-floor. Succession."
+      "primary": "Mojtaba Khamenei designated new Supreme Leader by Assembly of Experts. NATO intercepts 2nd missile over Turkey.",
+      "capability": "40+60. Rate ↓92%. Trump claims war 'very complete, pretty much.' Then backtracks.",
+      "cost": "Brent crashes to $88.43 (CNBC) — post-SPR selloff. EIA settles $94. Turkey deploys F-16s to N. Cyprus. 10,000+ civilian sites damaged in Iran.",
+      "assessment": "Political transition in Iran. Conventional capability near-exhausted but regime intact."
     },
     {
       "date": "Mar 10",
-      "missiles": 9,
-      "drones": 35,
-      "primary": "UAE official anchor",
-      "capability": "5,000+ targets. 186 attack waves (Alma).",
-      "cost": "6 US killed Kuwait. 1,200+ killed Iran.",
-      "assessment": "US casualties mount."
+      "missiles": 27,
+      "drones": 81,
+      "primary": "UAE reports continued intercepts. Gulf state coordination improving. Iraq: 300+ militia attacks cumul since D1.",
+      "capability": "27+81 (scaled from UAE MoD). Missile launches at lowest sustained level. Drones maintaining higher volume — cheaper, harder to suppress.",
+      "cost": "Brent ~$91. Trump signals drawdown but Pentagon contradicts. Mixed messages on endgame.",
+      "assessment": "Drone-missile divergence: missiles near-depleted but drone harassment continues at meaningful level."
     },
     {
       "date": "Mar 11",
-      "missiles": 6,
-      "drones": 39,
-      "primary": "UAE: 6 ballistic, 39 drones",
-      "capability": "Lower-volume, selective.",
-      "cost": "IEA 400M barrel release. 16 minelayers sunk. Iran threatens banks.",
-      "assessment": "Economic warfare escalation."
+      "missiles": 8,
+      "drones": 40,
+      "primary": "UAE MoD: 13 missiles (6 ballistic + 7 cruise) + 39 drones intercepted (official). Bahrain airport drones + fuel tanks fire. Ship hit in Hormuz.",
+      "capability": "UAE cumul: 268 ballistic + 15 cruise + 1,514 UAVs. Fortune: Brent $90.96 AM. Drone attacks on airports emerging as pattern.",
+      "cost": "Brent $91.98 close (CNBC). UKMTO: 16+ ships attacked cumul. Container ship fire in Hormuz.",
+      "assessment": "Low-volume but high-disruption attacks on civilian infrastructure."
     },
     {
       "date": "Mar 12",
-      "missiles": 8,
-      "drones": 35,
-      "primary": "Fragmentary",
-      "capability": "Constrained, not mass-strike.",
-      "cost": "Khamenei: Hormuz stays closed. 3.2M displaced. Brent $100.46. Dow ‘700.",
-      "assessment": "Supreme Leader speaks."
+      "missiles": 10,
+      "drones": 30,
+      "primary": "Bahrain airport hit. Kuwait airport targeted. Dubai explosions. Abu Dhabi old airport fire. Container ship attacked near Jebel Ali.",
+      "capability": "8+40. KC-135 Stratotanker crashes western Iraq — 6 US KIA (total now 13). 4th US aircraft lost. Iran militias claim credit.",
+      "cost": "Brent first >$100 close: $100.46 (CNBC). Fortune AM: $99.84. French CWO Frion killed near Erbil — first non-US allied death.",
+      "assessment": "US losses mounting. Oil breaking $100 sustainably. French casualty internationalizes war."
     },
     {
       "date": "Mar 13",
-      "missiles": 10,
-      "drones": 26,
-      "primary": "Al-Quds Day",
-      "capability": "Degraded not eliminated. IRGC-Hezbollah joint ops.",
-      "cost": "Tehran strikes during rallies. KC-135 crash. 13 US deaths. Lebanon 773 killed.",
-      "assessment": "Widening."
+      "missiles": 20,
+      "drones": 70,
+      "primary": "New Supreme Leader Khamenei first statement (written only — no video). Vows Hormuz stays closed. 3 more ships struck. Kuwait power lines hit by debris.",
+      "capability": "10+30. CENTCOM: 6,000+ US targets struck. 90+ Iranian vessels destroyed. Ballistic ↓86% from D1. UNSC Res 2817 condemns Iran 13-0-2.",
+      "cost": "Brent $99.32 (CNBC). Khamenei statement fuels speculation on injuries. $10M bounty on Khamenei. State Dept: 'likely disfigured.'",
+      "assessment": "Khamenei's absence and written-only statement suggests serious injuries. IRGC operating autonomously."
     },
     {
       "date": "Mar 14",
-      "missiles": 18,
-      "drones": 65,
-      "primary": "UAE 9+33 (AJ). Saudi 51 drones (largest barrage). Qatar 4 ballistic. Kuwait airport drones.",
-      "capability": "Kharg 90+ targets struck (CENTCOM). White House: ballistic ↓90%, drones ↓95%, 65+ vessels sunk. But drone volume ticked UP vs D13 — Saudi saw largest single-day barrage.",
-      "cost": "Brent $103.14 close. Fujairah oil hub fire from drone debris. IRGC declares UAE bases 'legitimate targets.' $10M bounty on Khamenei. Trump 'not ready for deal.'",
-      "assessment": "Kharg escalation + drone volume uptick to Saudi = war not winding down."
+      "missiles": 25,
+      "drones": 60,
+      "primary": "UAE 9 ballistic + 33 drones intercepted (AJ). Qatar 4 ballistic + drones. Saudi 51 drones — LARGEST single-day barrage targeting kingdom. Kuwait airport drones. Jordan: 79/85 intercepted over week 2.",
+      "capability": "20+70. DRONE VOLUME TICKED UP — Saudi's 51-drone barrage a significant escalation. Kharg Island: 90+ military targets struck by CENTCOM (sparing oil). White House: ballistic ↓90%, drones ↓95%, 65+ vessels sunk.",
+      "cost": "Brent $103.14 Fri close (CNBC). Fujairah oil hub fire from drone debris. IRGC declares UAE bases 'legitimate targets.' Trump 'not ready for deal.' May hit Kharg 'a few more times just for fun.'",
+      "assessment": "Drone escalation despite missile depletion. Saudi barrage = Iran still has UAV stockpile. Kharg strike shows coalition restraint on oil — but for how long?"
     },
     {
       "date": "Mar 15",
-      "missiles": 20,
-      "drones": 55,
-      "primary": "Isfahan + nationwide + 10+ hypersonic at Israel",
-      "capability": "IRGC fires 10+ HYPERSONIC missiles — capability escalation. Israel critically low on interceptors (Semafor). Heavy Isfahan strikes. Jask port, Dezful, Shiraz, Tehran, Hamedan all hit.",
-      "cost": "15+ killed Isfahan. 10,000+ homes destroyed (Tehran governor). 56 cultural sites damaged (Heritage Ministry). IRGC vows to kill Netanyahu. Pope calls ceasefire. Pahlavi outlines transition. UK exploring Hormuz options.",
-      "assessment": "Hypersonic + interceptor crisis = war's most dangerous phase."
+      "missiles": 15,
+      "drones": 45,
+      "primary": "Heaviest single-night bombardment since D1: Isfahan, Shiraz (20+ explosions), Tehran, Dezful, Khomein, Hamedan, Jask port. 6+ provinces. 10+ hypersonic missiles at Israel.",
+      "capability": "25+60. IRGC fires 10+ HYPERSONIC missiles at Israel — capability escalation. Israel critically low on ballistic interceptors (Semafor). IDF: 7,600+ strikes in Iran, 1,100+ in Lebanon cumul.",
+      "cost": "15+ killed Isfahan. Shiraz residential areas hit. 10,000+ homes destroyed (Tehran governor). 56 cultural sites damaged. Pope calls ceasefire. Pahlavi outlines transition. Houthis threaten Red Sea resumption.",
+      "assessment": "Hypersonic escalation + interceptor crisis = war's most dangerous moment since D1. Houthi threat = potential second maritime chokepoint."
+    },
+    {
+      "date": "Mar 16",
+      "missiles": 12,
+      "drones": 70,
+      "primary": "Israel new Tehran strikes (smoke over capital). Dubai airport drone fire (flights suspended→limited). Abu Dhabi missile kill. Fujairah drone fire. Saudi 37 drones intercepted (AJ). Baghdad airport rockets. Israel: 245 attack waves total.",
+      "capability": "DRONE VOLUME SURGED — Saudi 37 drones alone is highest single-day count from kingdom. IRGC claims most weapons cache intact and hasn't used post-2025 missiles yet. If true, Iran's offensive depth is much greater than ↓90% suggests. Israel planning 3+ more weeks of strikes.",
+      "cost": "Brent $106+. Gulf exports ↓61% (Reuters/Kpler). US wounded revised to ~200. Hormuz coalition failing — Australia, Japan, Germany all declined. G5 'gravely concerned' re Lebanon. Trump threatens NATO umbrella + Xi summit.",
+      "assessment": "IRGC 'arsenal intact' claim is the most significant D17 development. If true, Iran has been deliberately rationing — using old stock while preserving modern missiles. This reframes the entire attrition narrative. War may have much longer tail than assumed."
     }
   ],
   "timeline": [
     {
-      "title": "Immediate (next 48h)",
-      "body": "CRITICAL: Israel's interceptor depletion vs Iran's hypersonic capability. If a mass-casualty missile gets through Israeli defenses, escalation ladder accelerates dramatically. Watch for emergency US interceptor resupply to Israel."
+      "title": "Week 3 (Mar 16–22)",
+      "body": "USS Tripoli arrives with 31st MEU. Possible initiation of Operation Epic Escort for Hormuz tanker convoys. Oil volatility continues — Brent likely $100-115 range. Houthi decision on Red Sea resumption imminent. Iran internet blackout entering 4th week."
     },
     {
-      "title": "This week",
-      "body": "IMO emergency session Mar 18–19 on Hormuz. Fed rate decision amid $103 oil. Naval coalition forming (Trump + UK exploring options). Markets reopen Monday into Kharg + Isfahan news."
+      "title": "Week 4–5 (Mar 23–Apr 5)",
+      "body": "If Hormuz remains closed, SPR drawdowns accelerate. Oil may spike to $120+ if Houthis resume Red Sea attacks. Midterm election pressure builds on GOP — gas prices = top voter issue. First possible diplomatic probe window if backchannels exist."
     },
     {
-      "title": "Decision horizon (1–3 weeks)",
-      "body": "Trump 'not ready for deal' pushes ceasefire window back. But interceptor crisis could force recalculation. Pahlavi's transition messaging = long-game regime change track being laid."
+      "title": "Month 2 (Apr–May)",
+      "body": "Sustained economic war phase. Iran's domestic situation deteriorates but regime shows no fracture signs. Lebanon ceasefire more likely than Iran ceasefire. Coalition strike tempo may slow as target sets exhausted."
     },
     {
-      "title": "Medium-term",
-      "body": "EIA: Brent >$95 through May. Hypersonic missiles change the interceptor math permanently — even post-war, Israel's defense architecture needs rethinking."
+      "title": "Month 3+ (May onward)",
+      "body": "If no deal, war becomes frozen conflict. Hormuz closure becomes new normal. Oil market adapts with permanent premium. OPEC+ non-Gulf producers benefit. Iran increasingly isolated economically but politically resilient."
     },
     {
-      "title": "Main uncertainty",
-      "body": "Israel's interceptor stock is the single most important variable. If it depletes, Iran's remaining 5–10% capability becomes existential rather than residual. This could trigger either emergency ceasefire pressure OR Israeli nuclear doctrine debates."
-    }
-  ],
-  "endstate": [
-    {
-      "title": "Most likely (shifting)",
-      "body": "Protracted conflict with periodic escalation spikes rather than clean de-escalation. Neither side can deliver knockout blow. Iran's hypersonic capability + depleting Israeli interceptors = dangerous equilibrium rather than one-sided suppression."
-    },
-    {
-      "title": "Rising risk",
-      "body": "A hypersonic missile penetrating Israeli defenses and causing mass casualties would be a transformative event. Could trigger Israeli nuclear doctrine debates, emergency US intervention, or forced ceasefire — all with massive second-order effects."
-    },
-    {
-      "title": "What would change this",
-      "body": "Emergency US interceptor resupply restoring Israeli confidence; Iran running out of hypersonic stock (unknown quantity); a diplomatic breakthrough via regional mediator; or a catastrophic event (Kharg oil hit, nuclear escalation) that forces both sides to the table."
-    }
-  ],
-  "impactIranfarhang": [
-    "<strong>SUPPLY CHAIN FREEZE — see Shipping Routes section below for route-by-route analysis.</strong> Original route (Tehran→Dubai→Atlanta via Emirates) is dead. Turkey land route is closed per on-ground reports despite official claims. Armenia (Agarak/Norduz) is the most viable alternative — border confirmed open — but the Iran-side domestic leg is the constraint.",
-    "<strong>PUBLISHING INDUSTRY IN CRISIS — see Publishing Status section below.</strong> Paper imports halted (Hormuz closed, rial collapsed). Internet blackout 2+ months (online sales ↓80%). Power outages disrupting printing. Distribution networks broken. New title production likely halted or severely reduced at most publishers. Only pre-war warehouse stock may be available.",
-    "<strong>OFAC exemption: STABLE (LOW risk).</strong> 31 CFR §560.210(c) is statutory — Berman Amendment / IEEPA. Not affected by war escalation.",
-    "<strong>Payment via KEMCO/France: MEDIUM-HIGH.</strong> EU banks watching Kharg escalation. If conflict hits oil infrastructure, sanctions environment could tighten.",
-    "<strong>Demand: POSITIVE.</strong> Academic interest in Iranian affairs at peak. Ship whatever Atlanta inventory you have.",
-    "<strong>Bottom line:</strong> The shipping problem is real but solvable (Armenia route). The publishing industry problem is deeper — even if you get a route, there may be limited new supply to move. Focus on: (1) clearing Atlanta inventory, (2) testing Armenia route for existing warehouse stock, (3) monitoring for any signs of publishing resumption."
-  ],
-  "prepIranfarhang": [
-    "Ship existing Atlanta inventory now — demand is peaking.",
-    "Proactive client comms: wartime logistics, not compliance. Exemption intact.",
-    "Explore diaspora sourcing (Turkey).",
-    "Protect periodicals/subscriptions first.",
-    "Duplicate records outside Iran.",
-    "Monitor: any Iran air-freight resumption is weeks away at minimum given Kharg escalation.",
-    "Do NOT change payment structures."
-  ],
-  "signalsIranfarhang": [
-    "Iranian air-freight resumption (further away after Kharg).",
-    "Iran internet restoration.",
-    "Customs holds on informational-material shipments.",
-    "University procurement pauses.",
-    "EU banking actions on France-Iran corridors.",
-    "Any ceasefire/de-escalation signal (would be first supply chain indicator)."
-  ],
-  "impactKIP": [
-    "<strong>CRITICAL ESCALATION — IRGC declared UAE bases ‘legitimate targets’ after Kharg strike.</strong> This directly threatens the UAE commercial ecosystem. If IRGC follows through, Dubai-based operations face physical security risk beyond just financial/logistics disruption.",
-    "<strong>Iran-UAE corridor: NEAR-TOTAL DISRUPTION (unchanged).</strong> Hormuz closed. Jebel Ali reducing. 70%+ flights canceled.",
-    "<strong>UAE banking: HIGH and RISING.</strong> Kharg escalation increases probability of UAE cracking down on Iran-linked networks — both as retaliation and as defensive posture against IRGC threats.",
-    "<strong>Asset seizure: MEDIUM-HIGH (upgraded from MEDIUM).</strong> IRGC threatening UAE directly gives Emirati authorities stronger political cover and motivation for Iran-linked asset freezes.",
-    "<strong>Shipping: CRITICAL.</strong> Kharg threat to oil infra + IRGC $200 oil warning = worst-case shipping scenario becoming more plausible.",
-    "<strong>NEW: Physical security.</strong> IRGC designating UAE bases as targets means commercial zones near military facilities face collateral risk. Jebel Ali port is near Al Minhad Air Base."
-  ],
-  "prepKIP": [
-    "URGENT: Reassess ALL UAE exposure — financial AND physical. IRGC’s ‘legitimate targets’ declaration changes risk profile.",
-    "Move liquid assets from UAE accounts NOW if not already done.",
-    "Document all records. UAE crackdown probability increased by Kharg escalation.",
-    "Turkey corridor is now the primary alternative. Begin operational shift.",
-    "Map physical proximity of any warehoused goods to military facilities.",
-    "Model complete UAE shutdown scenario — this is now the planning base case, not a tail risk.",
-    "Monitor IRGC follow-through on UAE target threats — any strike on UAE commercial infrastructure would trigger cascading shutdowns.",
-    "Monitor yuan-Hormuz — still possible but less likely near-term given Kharg escalation."
-  ],
-  "signalsKIP": [
-    "IRGC strikes on UAE commercial or port infrastructure — would trigger immediate cascade.",
-    "UAE bank closures or transaction rejections for Iran-linked clients.",
-    "Official UAE asset freeze announcements.",
-    "Jebel Ali cargo holds or port closure.",
-    "Hormuz mine incidents affecting commercial shipping.",
-    "Any Iran retaliation against Gulf oil facilities (Saudi Ras Tanura, UAE ADNOC, etc.).",
-    "Ceasefire signals (would be first positive indicator for corridor restoration).",
-    "Yuan-Hormuz resumption — second-order signal."
-  ],
-  "theoryBox": "<strong>Core question:</strong> can U.S./Israeli strikes suppress meaningful missile and drone launch capability before political and economic costs force them to back off? If yes, the regime becomes much more vulnerable.",
-  "theoryBox_fa": "<strong>پرسش اصلی:</strong> آیا حملات آمریکا و اسرائیل می‌تواند توان پرتاب موشک و پهپاد ایران را پیش از آنکه هزینه‌های سیاسی و اقتصادی آنها را عقب براند، سرکوب کند؟",
-  "metrics_fa": [
-    {
-      "label": "روز جنگ",
-      "value": "۱۶",
-      "desc": "هفته سوم آغاز شد."
-    },
-    {
-      "label": "کشته‌شدگان ایران",
-      "value": "۱,۴۰۰+",
-      "desc": "۱۰,۰۰۰+ خانه تخریب شده (استاندار تهران)."
-    },
-    {
-      "label": "نفت برنت",
-      "value": "$۱۰۳.۱۴",
-      "desc": "بسته شدن جمعه. بازار امروز (یکشنبه) تعطیل."
-    },
-    {
-      "label": "جزیره خارگ",
-      "value": "۹۰+ هدف زده شد",
-      "desc": "جمعه شب. تأسیسات نفتی حفظ اما تهدید شد."
-    },
-    {
-      "label": "اصفهان",
-      "value": "حمله امروز",
-      "desc": "حملات سنگین صبح یکشنبه. ۱۵+ کشته."
-    },
-    {
-      "label": "رهگیرهای اسرائیل",
-      "value": "بحرانی",
-      "desc": "اسرائیل به آمریکا اطلاع داد رهگیرهای موشک بالستیک رو به اتمام است."
-    },
-    {
-      "label": "کشته‌های نظامی آمریکا",
-      "value": "۱۳",
-      "desc": "۳ زخمی جدید کویت شنبه."
-    },
-    {
-      "label": "موشک مافوق‌صوت",
-      "value": "۱۰+ شلیک شد",
-      "desc": "سپاه ۱۰+ موشک مافوق‌صوت به اسرائیل شلیک کرد."
-    }
-  ],
-  "sitrep_fa": [
-    "<strong>روز ۱۶ — حمله به اصفهان، موشک‌های مافوق‌صوت:</strong> صبح یکشنبه، حملات سنگین به اصفهان — حداقل ۱۵ کشته. همزمان ۲۰ انفجار نزدیک شیراز، جنوب تهران، پایگاه دزفول، خمین، همدان و بندر جاسک. گسترده‌ترین پراکندگی جغرافیایی حملات.",
-    "<strong>خارگ — ۹۰+ هدف تأیید شد:</strong> CENTCOM: بیش از ۹۰ هدف نظامی در خارگ جمعه شب. تأسیسات نفتی حفظ شد. کاخ سفید: بالستیک ↓۹۰٪، پهپاد ↓۹۵٪، ۶۵+ ناو غرق‌شده.",
-    "<strong>ایران موشک مافوق‌صوت شلیک کرد:</strong> سپاه ۱۰+ موشک مافوق‌صوت به اسرائیل. آپارتمان بنی‌براک آسیب دید — ۴ زخمی. تهدید به کشتن نتانیاهو.",
-    "<strong>بحران رهگیر اسرائیل:</strong> اسرائیل به آمریکا گفت موجودی رهگیرهای بالستیک بحرانی است. اگر تمام شود، توان باقیمانده ایران بسیار خطرناک‌تر می‌شود.",
-    "<strong>ترامپ: آماده معامله نیست:</strong> ایران می‌خواهد معامله کند اما شرایط قابل قبول نیست. خواستار ائتلاف دریایی برای بازگشایی هرمز.",
-    "<strong>تلفات غیرنظامی:</strong> ۱۰,۰۰۰+ خانه تخریب شده (استاندار تهران). ۵۶ سایت فرهنگی آسیب‌دیده. پاپ لئو خواستار آتش‌بس فوری شد.",
-    "<strong>رضا پهلوی:</strong> ۵ هدف اقتصادی برای دوران گذار. نشان‌دهنده تسریع پیام تغییر رژیم.",
-    "<strong>نشانه کلیدی:</strong> ترکیب حمله خارگ + بمباران اصفهان + بحران رهگیر اسرائیل خطرناک‌ترین ۴۸ ساعت جنگ را ایجاد کرده."
-  ],
-  "scenarioProbabilities_fa": [
-    {
-      "name": "جنگ کم‌شدت طولانی + نوسانات تشدید",
-      "prob": "30%",
-      "body": "خط پایه جدید. حملات ادامه دارد اما با شدت متغیر. موشک مافوق‌صوت در برابر رهگیرهای رو به اتمام."
-    },
-    {
-      "name": "اعلام «مأموریت انجام شد»",
-      "prob": "22%",
-      "body": "ترامپ گفت آماده معامله نیست. اما بحران رهگیر ممکن است جدول زمانی را تسریع کند."
-    },
-    {
-      "name": "جنگ اقتصادی/منطقه‌ای تمام‌عیار",
-      "prob": "22%",
-      "body": "عراقچی هشدار داد: حمله به تأسیسات انرژی = حمله به تأسیسات شرکت‌های آمریکایی."
-    },
-    {
-      "name": "آتش‌بس مذاکره‌ای",
-      "prob": "14%",
-      "body": "پاپ لئو خواستار آتش‌بس شد. عراقچی پیشنهاد همکاری با همسایگان. اما ترامپ آماده نیست."
-    },
-    {
-      "name": "شکست داخلی رژیم",
-      "prob": "8%",
-      "body": "پیام پهلوی = تقویت مسیر تغییر رژیم. اما توان مافوق‌صوت سپاه روایت فروپاشی را تضعیف می‌کند."
-    },
-    {
-      "name": "آستانه هسته‌ای",
-      "prob": "4%",
-      "body": "بدون تغییر."
-    }
-  ],
-  "theoryEvaluation_fa": [
-    {
-      "title": "حمایت",
-      "body": "کاخ سفید: بالستیک ↓۹۰٪، پهپاد ↓۹۵٪. ۹۰+ هدف خارگ. ۶۵+ ناو غرق‌شده. سرکوب پرتاب در سطح مکانیکی کار می‌کند."
-    },
-    {
-      "title": "تضعیف اطمینان",
-      "body": "ایران ۱۰+ موشک مافوق‌صوت شلیک کرد — تشدید توانمندی. با بحران رهگیر اسرائیل، توان باقیمانده ایران خطرناک‌تر است. ترامپ آماده معامله نیست."
-    },
-    {
-      "title": "ارزیابی",
-      "body": "فرضیه در حادترین نقطه آزمایش می‌شود. توان ↓۹۰-۹۵٪ اما ۵-۱۰٪ باقیمانده شامل مافوق‌صوت در برابر رهگیرهای رو به اتمام است. خطرناک‌ترین فاز جنگ ممکن است الان باشد."
+      "title": "Endgame variables",
+      "body": "Khamenei's health/survival (if dead, succession crisis). Houthi Red Sea decision (second chokepoint = global crisis). China's role (only country with leverage over both sides). US midterm pressure (gas prices = GOP vulnerability)."
     }
   ],
   "timeline_fa": [
     {
-      "title": "فوری (۴۸ ساعت)",
-      "body": "بحرانی: رهگیرهای اسرائیل در برابر مافوق‌صوت ایران. اگر یک موشک از سپر دفاعی عبور کند، تشدید شتاب می‌گیرد."
+      "title": "هفته ۳ (۱۶–۲۲ مارس)",
+      "body": "ناو تریپلی می‌رسد. شروع احتمالی عملیات اسکورت. نفت ۱۰۰–۱۱۵. تصمیم حوثی‌ها درباره دریای سرخ."
     },
     {
-      "title": "این هفته",
-      "body": "IMO ۱۸–۱۹ مارس. فدرال رزرو. ائتلاف دریایی. بازار دوشنبه باز می‌شود."
+      "title": "هفته ۴–۵",
+      "body": "اگر هرمز بسته بماند، ذخایر سریع‌تر خالی می‌شود. نفت ممکن است ۱۲۰+ شود. فشار انتخاباتی."
     },
     {
-      "title": "افق تصمیم",
-      "body": "ترامپ آماده معامله نیست. اما بحران رهگیر ممکن است بازنگری ایجاد کند."
+      "title": "ماه ۲",
+      "body": "فاز جنگ اقتصادی. وضع داخلی ایران بدتر اما رژیم مقاوم."
     },
     {
-      "title": "میان‌مدت",
-      "body": "موشک مافوق‌صوت معادله رهگیری را عوض کرده — حتی بعد از جنگ."
+      "title": "ماه ۳+",
+      "body": "جنگ منجمد. هرمز بسته = عادی جدید. نفت با حق‌بیمه دائمی."
     },
     {
-      "title": "عدم‌قطعیت",
-      "body": "موجودی رهگیر اسرائیل مهم‌ترین متغیر است."
+      "title": "متغیرهای پایانی",
+      "body": "سلامت خامنه‌ای. تصمیم حوثی. نقش چین. فشار انتخاباتی آمریکا."
+    }
+  ],
+  "scenarioProbabilities": [
+    {
+      "name": "Protracted low-intensity (weeks–months)",
+      "prob": "38%",
+      "body": "INCREASED. IRGC 'arsenal intact' claim + failing Hormuz coalition + Israel '3+ more weeks' = this war has a long tail. Economic siege with drone harassment is Iran's strategy. No off-ramp visible."
+    },
+    {
+      "name": "Full economic war / oil weapon",
+      "prob": "27%",
+      "body": "INCREASED. Gulf exports ↓61% is already partial economic war. If Houthis resume Red Sea → dual chokepoint → oil $130+. SPR can't replace 15M bpd. Global recession becomes likely."
+    },
+    {
+      "name": "Declared victory + ambiguous end",
+      "prob": "15%",
+      "body": "Trump admin says 'weeks or sooner.' Most likely scenario for political resolution even if military objectives incomplete. Iran keeps Hormuz leverage."
+    },
+    {
+      "name": "Negotiated deal",
+      "prob": "10%",
+      "body": "DECREASED. Iran FM explicitly rejected ceasefire. Australia/Japan/Germany declining ships shows allies won't pressure Iran. China only potential broker but hasn't engaged. No mechanism."
+    },
+    {
+      "name": "Regime fracture / collapse",
+      "prob": "7%",
+      "body": "Khamenei alive but injured (fractured foot etc). IRGC operating autonomously. Internet blackout hides internal dynamics. 18 arrested for Iran International ties = regime paranoia. Possible but not visible."
+    },
+    {
+      "name": "Major escalation",
+      "prob": "3%",
+      "body": "Trump says Israel won't use nuclear weapon (unprompted denial = someone asked). USS Tripoli deploying. Kharg Island seizure discussed by CNN/Waltz. Risk of miscalculation remains."
+    }
+  ],
+  "scenarioProbabilities_fa": [
+    {
+      "name": "فرسایشی (هفته‌ها–ماه‌ها)",
+      "prob": "۳۸٪",
+      "body": "افزایش. ذخایر سالم + ائتلاف شکست + اسرائیل ۳+ هفته."
+    },
+    {
+      "name": "جنگ اقتصادی",
+      "prob": "۲۷٪",
+      "body": "افزایش. صادرات ↓۶۱٪. حوثی = بحران دوم."
+    },
+    {
+      "name": "اعلام پیروزی",
+      "prob": "۱۵٪",
+      "body": "ترامپ: هفته‌ها یا زودتر."
+    },
+    {
+      "name": "مذاکره",
+      "prob": "۱۰٪",
+      "body": "کاهش. ایران رد. متحدان رد. چین درگیر نشده."
+    },
+    {
+      "name": "فروپاشی داخلی",
+      "prob": "۷٪",
+      "body": "خامنه‌ای مجروح اما زنده. ۱۸ بازداشت."
+    },
+    {
+      "name": "تشدید",
+      "prob": "۳٪",
+      "body": "ترامپ: اسرائیل سلاح هسته‌ای استفاده نمی‌کند (انکار بدون سؤال)."
+    }
+  ],
+  "theoryEvaluation": [
+    {
+      "title": "Military suppression — REASSESSMENT NEEDED",
+      "body": "Pentagon says missiles ↓90%, drones ↓95%. But IRGC spokesman D17: 'most weapons cache intact, using missiles from a decade ago, haven't fired post-2025 systems.' If true, the ↓90% describes launch RATE reduction (from destroyed launchers + C2), not stockpile depletion. Iran may retain significant offensive depth being deliberately rationed. Saudi's 37 drones in one day suggests UAV production/stockpile is robust. Coalition has struck >15,000 targets, but Iran's dispersed and underground infrastructure may have survived better than assumed."
+    },
+    {
+      "title": "Economic war — Iran's strongest weapon and growing",
+      "body": "Gulf oil exports collapsed 61% — from 25.13M bpd to 9.71M bpd (Reuters/Kpler). Largest supply disruption in oil market history. Brent $106+. US gas +24%. 400M bbl SPR release underway but can't replace what Hormuz carried. Hormuz coalition is FAILING: Australia, Japan explicitly declined ships. Germany said no NATO role. Trump threatening NATO umbrella + Xi summit — desperation signals. If Houthis resume Red Sea attacks, dual chokepoint = global crisis."
+    },
+    {
+      "title": "Diplomatic trajectory — deadlocked",
+      "body": "No off-ramp. Iran FM: 'no ceasefire, prepared to continue as long as necessary.' Trump: 'terms not good enough.' Admin says 'weeks or sooner.' Israel says '3+ more weeks, thousands of targets.' G5 'gravely concerned' about Lebanon but no Iran mediation. China 'maintaining communication' on Xi summit but hasn't engaged as broker. War has no exit mechanism. The only scenarios for ending are: (a) exhaustion, (b) economic pain forces a blink, or (c) internal Iranian fracture — none imminent."
+    }
+  ],
+  "theoryEvaluation_fa": [
+    {
+      "title": "سرکوب نظامی — نیاز به بازنگری",
+      "body": "پنتاگون: ↓۹۰٪. اما سپاه: بیشتر ذخایر سالم. اگر درست باشد، ↓۹۰٪ فقط نرخ پرتاب. عربستان ۳۷ پهپاد = تولید/ذخیره قوی."
+    },
+    {
+      "title": "جنگ اقتصادی — قوی‌ترین و در حال رشد",
+      "body": "صادرات ↓۶۱٪. بزرگترین اختلال تاریخ. ائتلاف هرمز شکست: استرالیا، ژاپن، آلمان رد."
+    },
+    {
+      "title": "دیپلماسی — بن‌بست",
+      "body": "ایران: آتش‌بس نه. ترامپ: شرایط ناکافی. اسرائیل: ۳+ هفته دیگر. G5: نگران لبنان. چین درگیر نشده. خروجی نیست."
+    }
+  ],
+  "endstate": [
+    {
+      "title": "Most likely (35%)",
+      "body": "Protracted low-intensity conflict lasting weeks to months. Iran maintains Hormuz closure and drone harassment as economic weapons. Coalition maintains air superiority but cannot force capitulation without ground invasion (not planned). Oil stays $100-120. Eventual face-saving deal brokered by third party — China most likely broker given leverage over both sides."
+    },
+    {
+      "title": "Second most likely (25%)",
+      "body": "Full economic war. Iran holds Hormuz. Houthis resume Red Sea attacks, creating dual chokepoint crisis. Oil spikes $120-140. SPR exhaustion by summer 2026. Global recession. War ends when economic pain forces one side to blink — likely Trump due to midterm pressure (gas prices = #1 voter issue)."
+    },
+    {
+      "title": "Wild card (10%)",
+      "body": "Internal Iranian fracture. Internet blackout hides domestic dynamics. Khamenei health unknown — possibly dead per Trump/Hegseth. IRGC operating with 'significant autonomy.' Hengaw: >4,400 military killed through D10. If regime cohesion breaks, war dynamics change overnight. But >2 weeks of blackout means we genuinely don't know what's happening internally."
     }
   ],
   "endstate_fa": [
     {
-      "title": "محتمل‌ترین",
-      "body": "جنگ طولانی با نوسانات تشدید. هیچ طرف ضربه قاطع نمی‌زند. تعادل خطرناک مافوق‌صوت/رهگیر."
+      "title": "محتمل‌ترین (۳۵٪)",
+      "body": "فرسایشی. هرمز بسته. نفت ۱۰۰–۱۲۰. توافق توسط چین."
     },
     {
-      "title": "ریسک رو به افزایش",
-      "body": "عبور موشک مافوق‌صوت از سپر اسرائیل رویداد تحول‌آفرین خواهد بود."
+      "title": "دوم (۲۵٪)",
+      "body": "جنگ اقتصادی. حوثی = بحران دوم. نفت ۱۲۰–۱۴۰. رکود. فشار انتخاباتی ترامپ."
     },
     {
-      "title": "چه چیزی تغییر می‌دهد",
-      "body": "تأمین مجدد رهگیر آمریکایی، اتمام موجودی مافوق‌صوت ایران، یا رویداد فاجعه‌بار."
+      "title": "غیرمنتظره (۱۰٪)",
+      "body": "فروپاشی داخلی. قطع اینترنت = نمی‌دانیم. خامنه‌ای؟ سپاه مستقل."
     }
-  ],
-  "impactIranfarhang_fa": [
-    "<strong>زنجیره تأمین یخ‌زده — بخش مسیرهای حمل را ببینید.</strong> مسیر اصلی (تهران←دبی←آتلانتا) بسته. ترکیه زمینی بسته (گزارش میدانی). ارمنستان (آگاراک/نوردوز) بهترین جایگزین — مرز باز — اما پای ایرانی گلوگاه است.",
-    "<strong>صنعت نشر در بحران — بخش وضعیت نشر را ببینید.</strong> واردات کاغذ متوقف. اینترنت ۲+ ماه قطع. قطع برق چاپ را مختل کرده. تولید عنوان جدید احتمالاً متوقف یا به‌شدت کند شده.",
-    "<strong>معافیت OFAC: پایدار.</strong> قانونی است و تحت تأثیر تشدید جنگ نیست.",
-    "<strong>پرداخت KEMCO/فرانسه: متوسط-بالا.</strong> بانک‌های اروپایی وضعیت خارگ را رصد می‌کنند.",
-    "<strong>تقاضا: مثبت.</strong> علاقه دانشگاهی در اوج.",
-    "<strong>خلاصه:</strong> مشکل حمل حل‌شدنی است (مسیر ارمنستان). مشکل نشر عمیق‌تر است — حتی با مسیر باز، عرضه جدید محدود است. تمرکز: ارسال موجودی آتلانتا، تست مسیر ارمنستان، رصد نشانه‌های بازگشت نشر."
-  ],
-  "prepIranfarhang_fa": [
-    "موجودی آتلانتا را فوراً ارسال کنید.",
-    "اطلاع‌رسانی فعال به مشتریان: اختلال لجستیکی جنگ، نه مشکل تطابق.",
-    "منابع ناشران مهاجر (ترکیه) را بررسی کنید.",
-    "نشریات و اشتراک‌ها اولویت اول.",
-    "سوابق پشتیبان خارج از ایران نگه دارید.",
-    "ساختار پرداخت KEMCO/فرانسه را تغییر ندهید."
-  ],
-  "signalsIranfarhang_fa": [
-    "از سرگیری حمل هوایی ایران (حتی جزئی).",
-    "بازگشت اینترنت ایران.",
-    "توقف گمرکی محموله‌های اطلاعاتی.",
-    "توقف خرید دانشگاه‌ها.",
-    "هرگونه سیگنال آتش‌بس."
-  ],
-  "impactKIP_fa": [
-    "<strong>تشدید بحرانی — سپاه پایگاه‌های امارات را «اهداف مشروع» اعلام کرد.</strong> این مستقیماً اکوسیستم تجاری امارات را تهدید می‌کند.",
-    "<strong>کریدور ایران-امارات: اختلال تقریباً کامل.</strong> هرمز بسته. جبل‌علی کاهش یافته. ۷۰٪+ پروازها لغو.",
-    "<strong>بانکداری امارات: بالا و رو به افزایش.</strong> حمله خارگ احتمال سرکوب شبکه‌های مرتبط با ایران را افزایش داد.",
-    "<strong>توقیف دارایی: متوسط-بالا (از کم ارتقا یافته).</strong> سپاه مستقیماً امارات را تهدید کرده.",
-    "<strong>حمل‌ونقل: بحرانی.</strong> اطلاعیه‌های پایان سفر. تخلیه در بنادر جایگزین."
-  ],
-  "prepKIP_fa": [
-    "فوری: تمام دارایی‌های امارات را ارزیابی کنید — مالی و فیزیکی.",
-    "دارایی‌های نقدی را از حساب‌های امارات خارج کنید.",
-    "سوابق تجاری را مستند کنید.",
-    "کریدور ترکیه جایگزین اصلی است.",
-    "سناریوی تعطیلی کامل امارات را برنامه‌ریزی کنید.",
-    "اعلامیه‌های نظارتی امارات را روزانه رصد کنید."
-  ],
-  "signalsKIP_fa": [
-    "حمله سپاه به زیرساخت تجاری امارات.",
-    "بستن حساب بانکی یا رد تراکنش.",
-    "اعلام رسمی امارات درباره توقیف دارایی‌های مرتبط با ایران.",
-    "توقف یا تغییر مسیر محموله‌ها در جبل‌علی.",
-    "هرگونه سیگنال آتش‌بس یا بازگشایی هرمز."
   ],
   "shippingRoutes": [
     {
-      "route": "Tehran → Dubai → Atlanta (Emirates air cargo)",
+      "route": "Tehran → Dubai → Atlanta (Emirates SkyCargo)",
       "status": "DEAD",
       "statusColor": "red",
-      "detail": "Iranian airspace = active combat zone (~1,000 daily strikes). No commercial flights in/out of Iran. Dubai Airport hit by drones multiple times. Emirates grounded most routes. Even post-war, Iran-UAE political relations fundamentally damaged — Iran struck UAE soil (6 killed, 131 wounded), UAE withdrew ambassador, IRGC declared UAE bases 'legitimate targets' after Kharg strike. Emirates restoring an Iran cargo route would be a political decision, not just operational. Treat as months away at best, possibly permanently altered.",
+      "detail": "UAE airspace is a combat zone. Dubai airport suspended flights Mar 16 after drone fire — 3rd incident in 4 days. Emirates cargo operations effectively ceased since D1. Iran-UAE diplomatic relations severely damaged after IRGC declared UAE bases 'legitimate targets' Mar 14. Even post-war, rebuilding this route will take months.",
       "viability": "0%",
-      "eta": "Months at minimum. Possibly never returns to pre-war form."
+      "eta": "N/A — route permanently disrupted for duration of conflict"
     },
     {
-      "route": "Iran → Turkey (land cargo) → Istanbul air freight → Atlanta",
-      "status": "CLOSED (on-ground report)",
+      "route": "Iran → Turkey (land freight)",
+      "status": "CLOSED",
       "statusColor": "red",
-      "detail": "CONFIRMED CLOSED per on-the-ground sources as of mid-March, despite Turkish Trade Minister's Mar 2 claim that cargo 'continues in a controlled manner.' The disconnect between official statements and reality is significant. Likely causes: Iran-side logistics collapse (internet blackout, domestic freight disrupted), Iranian exit restrictions, and de facto border closure for commercial goods even if checkpoints are technically open for passenger transit. Additionally, Tabriz — on the Tehran-Turkey freight corridor — was bombed Mar 15 (industrial targets). Isfahan (also on east-west transit routes) hit heavily today. Iran's internal freight network is increasingly degraded by strikes on industrial and transport infrastructure.",
-      "viability": "0% (confirmed closed by on-ground sources)",
-      "eta": "Requires: (1) actual Iran-side freight operations resuming, (2) Tehran-to-border domestic logistics functioning, (3) Tabriz corridor safe for cargo. Weeks to months."
+      "detail": "Closed per on-ground intel despite official Turkish claims of neutrality. Turkey deployed F-16s and air defenses to Northern Cyprus. NATO intercepted 2 Iranian missiles over Turkish airspace (Gaziantep). Turkey–Iran land border effectively shut for commercial traffic. NATO missile over Gaziantep = Turkey is no longer a safe corridor.",
+      "viability": "~5%",
+      "eta": "Not viable until conflict ends + diplomatic normalization"
     },
     {
-      "route": "Iran → Armenia (Agarak/Norduz land border) → Yerevan air freight → Atlanta",
-      "status": "MOST VIABLE — border confirmed open",
+      "route": "Iran → Armenia (Agarak/Norduz border)",
+      "status": "MOST VIABLE",
       "statusColor": "yellow",
-      "detail": "US Embassy (Virtual Embassy Iran) confirms Agarak/Norduz border open in EVERY daily security alert (Mar 8–14, verified). Armenian Mirror-Spectator reporting from the border on Mar 12: checkpoint 'open and operating normally.' Normal flow: 400–450 trucks/day. Briefly closed Feb 28 (Day 1), reopened quickly. Armenia is NOT a party to the conflict and has not been targeted. Yerevan has air freight connections — likely via European hub (Frankfurt, Vienna) to Atlanta. The bottleneck is the SAME as Turkey: getting books from Tehran to the Iran-Armenia border (~700km through northwestern Iran, partially in strike zones). But the border itself and the Armenia-side onward chain are the most stable options available.",
-      "viability": "~40% (border open; Iran-side domestic leg is the constraint)",
-      "eta": "Could work NOW if Iran-side logistics partner can move goods from Tehran to Norduz. Requires landline/in-person coordination due to internet blackout."
+      "detail": "Border confirmed open in every US Embassy Yerevan daily alert Mar 8–14. Normal flow: 400-450 trucks/day. Armenia maintaining neutrality. Key bottleneck: domestic Iran leg (Tehran→border, ~700km through active strike zones with no internet for coordination). Coalition strikes across 6+ provinces overnight Mar 14-15 make this leg extremely hazardous. Routing would require trusted driver network willing to transit combat zone.",
+      "viability": "~30-35%",
+      "eta": "If route established: 4-8 weeks Tehran→Yerevan→sea→Atlanta"
     },
     {
-      "route": "Iran → Pakistan/Afghanistan/Turkmenistan",
+      "route": "Pakistan / Afghanistan / Turkmenistan",
       "status": "NOT RECOMMENDED",
       "statusColor": "red",
-      "detail": "US Embassy explicitly warns against Iran-Pakistan border area. Turkmenistan requires special government authorization. Afghanistan is a non-starter. These are not viable commercial freight routes for books.",
-      "viability": "0%",
-      "eta": "N/A"
+      "detail": "Eastern borders not directly in combat zone but infrastructure is minimal. Pakistan border areas have own security challenges. Afghanistan route non-viable. Turkmenistan transit requires diplomatic arrangements that don't exist. No established book logistics on any of these routes.",
+      "viability": "<5%",
+      "eta": "Months to establish if even possible"
     }
   ],
   "shippingRoutes_fa": [
     {
-      "route": "تهران ← دبی ← آتلانتا (بار هوایی امارات)",
+      "route": "تهران → دبی → آتلانتا",
+      "status": "مرده",
+      "statusColor": "red",
+      "detail": "حریم هوایی امارات میدان جنگ. فرودگاه دبی متوقف. امارات هدف مشروع سپاه.",
+      "viability": "۰٪",
+      "eta": "غیرممکن"
+    },
+    {
+      "route": "ایران → ترکیه (زمینی)",
       "status": "بسته",
       "statusColor": "red",
-      "detail": "حریم هوایی ایران منطقه جنگی فعال. هیچ پروازی تجاری ندارد. فرودگاه دبی بارها مورد حمله پهپادی قرار گرفته. حتی بعد از جنگ، روابط سیاسی ایران-امارات به‌شدت آسیب دیده. ماه‌ها فاصله دارد.",
-      "viability": "۰٪",
-      "eta": "حداقل ماه‌ها. ممکن است هرگز به شکل قبل برنگردد."
-    },
-    {
-      "route": "ایران ← ترکیه (زمینی) ← استانبول هوایی ← آتلانتا",
-      "status": "بسته (گزارش میدانی)",
-      "statusColor": "red",
-      "detail": "وزیر تجارت ترکیه ادعا کرد حمل‌ونقل تجاری ادامه دارد، اما گزارش‌های میدانی نشان می‌دهد مسیر عملاً بسته است. تبریز — در مسیر ترانزیت — بمباران شده (کارخانه‌های صنعتی).",
+      "detail": "بسته علیرغم ادعای ترکیه. ناتو موشک بر فراز غازیان‌تپ رهگیری کرد.",
       "viability": "~۵٪",
-      "eta": "هفته‌ها تا ماه‌ها."
+      "eta": "تا پایان جنگ"
     },
     {
-      "route": "ایران ← ارمنستان (آگاراک/نوردوز) ← ایروان هوایی ← آتلانتا",
-      "status": "بهترین گزینه — مرز باز تأیید شده",
+      "route": "ایران → ارمنستان",
+      "status": "بهترین گزینه",
       "statusColor": "yellow",
-      "detail": "سفارت آمریکا تأیید کرده مرز آگاراک/نوردوز در تمام به‌روزرسانی‌های روزانه (۸–۱۴ مارس) باز است. ارمنستان طرف جنگ نیست. گلوگاه: انتقال کتاب از تهران به مرز ایران-ارمنستان (~۷۰۰ کیلومتر) در شرایط جنگی و قطع اینترنت.",
-      "viability": "~۴۰٪",
-      "eta": "اگر شریک لجستیکی در ایران بتواند کالا را به نوردوز برساند، الان ممکن است."
+      "detail": "مرز باز در گزارش‌های سفارت آمریکا. گلوگاه: مسیر داخلی ایران (۷۰۰ کیلومتر در مناطق بمباران).",
+      "viability": "~۳۰–۳۵٪",
+      "eta": "۴–۸ هفته"
     },
     {
-      "route": "ایران ← پاکستان/افغانستان/ترکمنستان",
+      "route": "پاکستان/افغانستان/ترکمنستان",
       "status": "توصیه نمی‌شود",
       "statusColor": "red",
-      "detail": "مسیرهای تجاری قابل اتکا برای کتاب نیستند.",
-      "viability": "۰٪",
-      "eta": "N/A"
+      "detail": "زیرساخت ناکافی. امنیت ضعیف. مسیر کتاب وجود ندارد.",
+      "viability": "<۵٪",
+      "eta": "ماه‌ها"
     }
   ],
   "publishingStatus": [
-    "<strong>Paper supply: CRITICAL.</strong> Iran does not produce its own paper pulp — it relies entirely on imports paid in foreign currency. The rial was already in freefall pre-war (protests crashed it further in Jan 2026). Now with Hormuz closed and foreign trade frozen, paper imports are effectively halted. Even before the war, publishers like Ofoq and Houpa warned they were running on stored paper stocks that would run out 'in a few months.' Those months may now be up.",
-    "<strong>Internet blackout: DEVASTATING for publishing operations.</strong> Iran's internet has been down since January 8 (originally for protests, extended through the war — now 2+ months). Per Wikipedia's article on the blackout: online sales dropped 80%, payment systems disrupted, $35–37M/day economic cost. Publishers cannot process orders, coordinate with authors, manage distribution, or conduct any digital business. The national intranet (NIN) was also fully disconnected at points.",
-    "<strong>Power outages: DISRUPTING printing.</strong> Widespread power outages reported in Tehran following air strikes (multiple sources). Printing presses require stable electricity. Even publishers with paper in stock may be unable to print. No data on which specific printing facilities have been damaged or are operational.",
-    "<strong>Distribution networks: BROKEN AND WORSENING.</strong> 3.2M displaced. Isfahan — Iran's second cultural capital and a major publishing center — was heavily bombed today (Mar 15). Tabriz hit yesterday. Jask port struck. Iran's Cultural Heritage Ministry confirmed 56 cultural sites damaged across Kurdistan, Lorestan, Kermanshah, Tehran, and Isfahan. Book markets, libraries, and publishing warehouses in these cities are at risk.",
-    "<strong>Book fairs: DISRUPTED.</strong> Publishing Perspectives (Mar 4) reported spring book fair season severely impacted. Muscat fair (Mar 26–Apr 5), Erbil, Abu Dhabi (April), and Doha (May) fairs all in question. Lebanese publishers' books in transit to Muscat may be stranded. London Book Fair travel snarled for anyone routing through Gulf hubs.",
-    "<strong>Pre-war baseline was already fragile.</strong> Iranian publishing was struggling before the war: paper costs soaring (200-page novel went from $1.60 to $4.10), small publishers being eliminated, readers priced out. The war has layered physical destruction, power outages, communication blackout, and currency collapse on top of an already weakened industry.",
-    "<strong>What this means for Iranfarhang sourcing:</strong> Even if a shipping route opens (Armenia being the best candidate), the question becomes: are publishers in Tehran actually producing new books? The combination of paper shortage, power outages, internet blackout, and workforce displacement suggests new title production has slowed dramatically or halted at many publishers. Existing warehouse stock (books already printed pre-war) is the only near-term supply — and that stock is finite and may be damaged or inaccessible."
+    "Paper supply: CRITICAL. Iran imports virtually all pulp. Hormuz closed + rial collapsed → no imports. Existing warehouse stock only.",
+    "Internet blackout: 2+ weeks and WORSENING (CNN D17: 'trickle of remaining connectivity dropped abruptly'). Online book sales ↓80%+. No digital coordination for publishers, distributors, or authors. Third week of total communications isolation.",
+    "Power outages: Sustained across country from infrastructure damage (65 schools, 32 medical facilities hit per Red Crescent). Printing presses require stable power.",
+    "Isfahan: Second cultural capital and major publishing center. Struck heavily overnight Mar 14-15 (20+ explosions in Shiraz, Isfahan targeted). Cultural infrastructure at severe risk.",
+    "56+ cultural sites damaged (Heritage Ministry count through Mar 15). Actual number likely higher given communications blackout preventing full reporting.",
+    "New title production: Effectively halted. Only pre-war warehouse stock available. Distribution networks disrupted by strikes across 30 of 31 provinces.",
+    "Assessment: Iranian publishing industry in existential crisis. Even post-war, recovery will require months for paper imports, years for full reconstruction. Pre-war book stocks are finite and depleting — priority procurement window is NOW for any accessible inventory."
   ],
   "publishingStatus_fa": [
-    "<strong>تأمین کاغذ: بحرانی.</strong> ایران خمیر کاغذ تولید نمی‌کند — وابسته به واردات با ارز خارجی است. ریال قبل از جنگ سقوط کرده بود. با بسته شدن هرمز، واردات کاغذ عملاً متوقف شده.",
-    "<strong>قطع اینترنت: ویرانگر.</strong> اینترنت ایران از ۸ ژانویه قطع است (۲+ ماه). فروش آنلاین ۸۰٪ کاهش یافته. ناشران نمی‌توانند سفارش پردازش کنند یا با نویسندگان هماهنگ شوند.",
-    "<strong>قطع برق: اختلال در چاپ.</strong> قطعی گسترده برق در تهران پس از حملات هوایی. چاپخانه‌ها به برق پایدار نیاز دارند.",
-    "<strong>شبکه‌های توزیع: مختل.</strong> ۳.۲ میلیون آواره. حمل‌ونقل داخلی مختل. تبریز بمباران شده. وضعیت خیابان انقلاب و شهر کتاب: نامشخص.",
-    "<strong>نمایشگاه‌های کتاب: مختل.</strong> نمایشگاه‌های مسقط، اربیل، ابوظبی و دوحه همه زیر سؤال هستند.",
-    "<strong>صنعت نشر قبل از جنگ هم شکننده بود.</strong> هزینه کاغذ سر به فلک کشیده بود. ناشران کوچک از بازار حذف شده بودند. جنگ تخریب فیزیکی، قطع برق، قطع اینترنت و سقوط ارز را بر صنعت ضعیف‌شده تحمیل کرده.",
-    "<strong>معنای این برای ایران‌فرهنگ:</strong> حتی اگر مسیر حمل باز شود، سؤال اساسی این است: آیا ناشران در تهران واقعاً کتاب جدید تولید می‌کنند؟ ترکیب کمبود کاغذ، قطع برق، قطع اینترنت و آوارگی نیروی کار نشان می‌دهد تولید عنوان جدید به‌شدت کند شده یا متوقف شده. موجودی انبار (کتاب‌های چاپ‌شده قبل از جنگ) تنها منبع کوتاه‌مدت است."
+    "کاغذ: بحرانی. واردات متوقف. فقط موجودی انبار.",
+    "قطع اینترنت: ۲+ هفته و بدتر شده. فروش آنلاین ↓۸۰٪+. هفته سوم انزوای ارتباطی.",
+    "قطع برق: گسترده. چاپخانه‌ها نیاز به برق پایدار.",
+    "اصفهان: بمباران سنگین ۱۴-۱۵ مارس. زیرساخت فرهنگی در خطر.",
+    "۵۶+ سایت فرهنگی آسیب‌دیده. واقعی احتمالاً بیشتر.",
+    "تولید عنوان جدید: متوقف. فقط موجودی قبل جنگ.",
+    "ارزیابی: بحران وجودی نشر ایران. بازسازی ماه‌ها تا سال‌ها."
+  ],
+  "impactIranfarhang": [
+    "PRIMARY ROUTE DEAD: Tehran→Dubai→Atlanta via Emirates is completely non-functional. Dubai airport suspended flights Mar 16 from drone fire. 3rd airport drone incident in 4 days. This route will not reopen during conflict.",
+    "BEST ALTERNATIVE: Armenia (Agarak/Norduz) border confirmed open but domestic Iran leg (700km) through active combat zones is extremely hazardous. Coalition struck 6+ provinces overnight Mar 14-15. No internet for coordination.",
+    "SUPPLY SOURCE: Publishers in Iran cannot produce new titles — paper imports halted, power outages, internet blackout entering 3rd week. Only pre-war warehouse stock available. Isfahan (major publishing center) under bombardment.",
+    "OFAC STATUS: Informational materials exemption (31 CFR §560.210(c)) remains valid — statutory protection via Berman Amendment/IEEPA. Not affected by war. Payment via KEMCO SARL (France) third-country structure still viable in principle but practical execution depends on shipping route.",
+    "FINANCIAL: Rial in freefall. Any procurement denominated in rial is cheaper but requires functioning transfer mechanism. KEMCO route may face increased scrutiny from French compliance.",
+    "WINDOW: Pre-war book stocks are finite and depleting. If Armenia route can be established, priority procurement of available inventory should begin immediately. Every week of delay reduces available stock."
+  ],
+  "impactIranfarhang_fa": [
+    "مسیر اصلی مرده: تهران←دبی←آتلانتا کاملاً متوقف.",
+    "بهترین جایگزین: ارمنستان — مرز باز اما مسیر داخلی ایران پرخطر.",
+    "منبع تأمین: ناشران نمی‌توانند عنوان جدید تولید کنند. فقط موجودی انبار.",
+    "وضعیت OFAC: معافیت مواد اطلاعاتی همچنان معتبر.",
+    "مالی: ریال سقوط آزاد. پرداخت از طریق KEMCO ممکن اما عملی مشکل.",
+    "فرصت: موجودی قبل جنگ محدود. تدارک فوری از طریق ارمنستان."
+  ],
+  "prepIranfarhang": [
+    "Activate Armenia route exploration: Contact Yerevan-based logistics contacts. Assess Agarak/Norduz border crossing capacity for book freight.",
+    "Identify Tehran warehouse partners willing/able to load and dispatch to Armenian border despite domestic conditions (no internet, active strikes).",
+    "Pre-negotiate Yerevan→port (Poti, Georgia or Batumi)→sea freight→US routing and costs.",
+    "Accelerate procurement of any accessible pre-war inventory — prioritize high-demand university titles.",
+    "Brief university library clients on supply disruption timeline and potential delays. Set expectations for 3-6 month procurement window.",
+    "Monitor KEMCO payment channel capacity — confirm French bank compliance posture hasn't changed since war began.",
+    "Prepare contingency for total supply interruption lasting 6+ months."
+  ],
+  "prepIranfarhang_fa": [
+    "بررسی مسیر ارمنستان: تماس با شرکای لجستیکی ایروان.",
+    "شناسایی انبارهای تهران آماده ارسال به مرز ارمنستان.",
+    "مذاکره مسیر ایروان←بندر←دریا←آمریکا.",
+    "تسریع خرید موجودی قبل جنگ.",
+    "اطلاع‌رسانی به کتابخانه‌های دانشگاهی درباره تأخیرات.",
+    "بررسی کانال پرداخت KEMCO."
+  ],
+  "signalsIranfarhang": [
+    "WATCH: Houthi decision on Red Sea attacks — if resumed, alternative sea routes from Georgia/Turkey also disrupted. This is the highest-impact near-term variable for ALL shipping routes.",
+    "WATCH: Armenia border status in US Embassy Yerevan daily alerts (has been open every day Mar 8-16).",
+    "WATCH: Any resumption of limited internet in Iran — would indicate regime stabilization and enable supplier coordination.",
+    "WATCH: Dubai airport operations — currently suspended. If flights resume = UAE risk slightly lower. If attacks continue = route dead indefinitely.",
+    "WATCH: Rial exchange rate — further collapse makes procurement cheaper but transfer harder.",
+    "WATCH: IEA/OPEC monthly reports for Hormuz shipping resumption signals."
+  ],
+  "signalsIranfarhang_fa": [
+    "نظارت: تصمیم حوثی درباره دریای سرخ — اگر از سر گرفته شود، مسیرهای جایگزین هم مختل.",
+    "نظارت: وضعیت مرز ارمنستان در گزارش سفارت آمریکا.",
+    "نظارت: بازگشت اینترنت محدود در ایران.",
+    "نظارت: عملیات فرودگاه دبی.",
+    "نظارت: نرخ ریال."
+  ],
+  "impactKIP": [
+    "Iran-UAE corridor: Near-total disruption. Dubai airport suspended Mar 16. IRGC declared UAE bases 'legitimate targets' Mar 14. UAE-Iran banking risk EXTREME — UAE+Saudi leaders jointly condemned 'sinful Iranian attacks.'",
+    "UAE asset risk: MEDIUM-HIGH and rising. UAE considering freezing Iran-linked assets (TRT World/Chatham House). IRGC target declaration makes physical assets in UAE targets for diplomatic retaliation.",
+    "Hormuz: Closed. ~15 Mb/d removed from global supply. No escort operations despite Trump's plea. USS Tripoli deploying but no timeline for tanker convoys. All import-export via Hormuz is halted.",
+    "Dubai logistics hub: Severely degraded. Airport operations suspended. Port operations intermittent. Insurance premiums prohibitive for Iranian-linked cargo.",
+    "Banking: UAE banks likely tightening KYC/AML on Iran-connected accounts preemptively. French (KEMCO-adjacent) and UAE banking channels both under increased compliance pressure.",
+    "Physical security: UAE intercepted >1,800 Iranian projectiles. Civilian casualties including Abu Dhabi missile kill Mar 16. Operating environment for Iranian business personnel in UAE is dangerous."
+  ],
+  "impactKIP_fa": [
+    "مسیر ایران-امارات: تقریباً مختل. فرودگاه دبی متوقف. سپاه پایگاه‌های امارات را هدف مشروع اعلام کرد.",
+    "دارایی‌ها در امارات: خطر بالا و در حال افزایش.",
+    "هرمز: بسته. ~۱۵ م.ب/ر حذف. اسکورت نیست.",
+    "هاب لجستیکی دبی: به شدت تضعیف شده.",
+    "بانکداری: سخت‌گیری در حال افزایش."
+  ],
+  "prepKIP": [
+    "Assess all KIP assets in UAE for exposure to both military risk and potential asset freeze.",
+    "Establish emergency communication protocols that don't depend on Iranian internet (satellite phone, third-country relay).",
+    "Diversify banking away from UAE — consider Oman, Turkey, or other jurisdictions less directly involved in conflict.",
+    "Suspend any new UAE-bound shipments until Hormuz reopens and airport operations normalize.",
+    "Prepare legal contingency for potential UAE asset freeze or enhanced sanctions screening.",
+    "Identify alternative logistics hubs: Oman (Muscat/Sohar), Turkey (Mersin), Georgia (Poti/Batumi).",
+    "Monitor insurance market — current premiums for Gulf operations may be prohibitive.",
+    "Brief all personnel in UAE on physical security — avoid proximity to military installations, airports, and oil infrastructure."
+  ],
+  "prepKIP_fa": [
+    "ارزیابی دارایی‌های KIP در امارات.",
+    "پروتکل ارتباطی اضطراری بدون اینترنت ایران.",
+    "تنوع‌بخشی بانکی به عمان، ترکیه یا گرجستان.",
+    "توقف محموله‌های جدید تا بازگشایی هرمز.",
+    "آمادگی حقوقی برای انجماد احتمالی دارایی.",
+    "شناسایی هاب‌های جایگزین: مسقط، مرسین، پوتی."
+  ],
+  "signalsKIP": [
+    "CRITICAL: UAE asset freeze announcements — any move to freeze Iran-linked assets would require immediate action.",
+    "CRITICAL: Houthi Red Sea decision — if resumed, Suez alternative route also disrupted, isolating Gulf further.",
+    "WATCH: UAE-Iran diplomatic communications — any de-escalation signals reduce asset risk.",
+    "WATCH: Hormuz escort operations — USS Tripoli arrival + French 10-ship proposal = possible reopening timeline.",
+    "WATCH: UAE banking sector circulars on Iran-related compliance.",
+    "WATCH: Dubai airport operations resumption — indicator of normalization pace.",
+    "WATCH: Insurance market premiums for Gulf shipping and operations.",
+    "WATCH: China-Iran trade flows — if Chinese vessels transit Hormuz successfully, may signal partial reopening path."
+  ],
+  "signalsKIP_fa": [
+    "بحرانی: اعلام انجماد دارایی‌های امارات.",
+    "بحرانی: تصمیم حوثی درباره دریای سرخ.",
+    "نظارت: ارتباطات دیپلماتیک امارات-ایران.",
+    "نظارت: عملیات اسکورت هرمز.",
+    "نظارت: بخشنامه‌های بانکی امارات."
   ]
 }
