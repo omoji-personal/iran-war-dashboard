@@ -1,121 +1,121 @@
 {
   "meta": {
-    "lastUpdated": "2026-03-17T09:00:00-04:00",
+    "lastUpdated": "2026-03-17T17:30:00-04:00",
     "notes": [
-      "Day 18 (Mar 17). Full re-analysis. Sources: CNN live, AJ live, ABC, Haaretz, Euronews, Investing.com, Fortune, Wikipedia.",
-      "D1-D10: JPost. D11: UAE MoD. D12-D18: fragment estimates. D17 Saudi 37 drones (AJ). D18: UAE full airspace closure + Saudi 12+ drones + Baghdad Al-Rasheed drone attack + tanker struck off Fujairah.",
-      "KILLS: Israel killed Ali Larijani (security chief) + Basij cmdr Gholamreza Soleimani overnight. Decapitation campaign continuing into week 3.",
-      "IRAN DEAD REVISED: HRANA (US-based): 1,330 civilians (206 children) + 1,122 military + 613 unclassified = ~3,065 total. Significantly higher than Iran UN ambassador figure (1,300).",
-      "Oil: Mon close est $100.21 (Investing.com). Tue Brent $102.92 (+2.70%), range $100.75-103.21. WTI $95.03. First non-Iranian tanker (Karachi) transited Hormuz with AIS on (Marine Traffic).",
-      "Hormuz: EU rejected expanding naval ops. First Hormuz transit = potential crack in blockade. Trump hitting drone factories.",
-      "Lebanon: 886 killed (up from 773). 1M+ displaced. Israel expanding ground ops — additional troops deployed. G5 'gravely concerned.'"
+      "Day 18 (Mar 17) LATE 5:30PM ET. Sources: CNN live (5:19PM), AJ live, NBC live (5:18PM), ABC, Wikipedia, Investing.com, Fox.",
+      "CONFIRMED KILLS: Iran confirmed Larijani (SNSC secretary, 'de facto leader') + Soleimani (Basij). Larijani's son, security deputy, protection team also killed. IDF: killed near Tehran by IAF strike.",
+      "POLITICAL: Joe Kent (NCTC director) resigned — 'Iran posed no imminent threat.' Highest-profile admin defection. Trump: 'weak on security.' Gabbard backed Trump's threat determination.",
+      "LEBANON GROUND INVASION: Israel launched ground ops. Katz: 'similar to Gaza war,' could occupy indefinitely. G5 urged avoidance.",
+      "HORMUZ: Iran discussing yuan-denominated passage with 8 unnamed countries (CNN). First tanker (Karachi) transited D17. Hormuz shifting from blockade to managed access.",
+      "HUMANITARIAN: Amnesty confirmed US strike killed 170+ at primary school (mostly girls). Arak: newborn + toddler + mother + grandmother killed. HRANA: ~3,065 dead. Red Crescent: 1,200+.",
+      "Trump delayed China trip 1 month. 'WE DO NOT NEED THE HELP OF ANYONE.' State Dept ordered ALL posts worldwide to review security."
     ]
   },
-  "theoryBox": "<strong>Core question:</strong> Can the coalition degrade Iran's offensive capability faster than the Hormuz closure erodes political will? <strong>Day 18:</strong> Two crosscurrents: (1) Israel's decapitation campaign is accelerating — Larijani + Soleimani killed overnight, systematically destroying IRGC command structure; (2) But first non-Iranian tanker transited Hormuz with AIS on, suggesting Iran may be selectively allowing passage = Hormuz becoming a diplomatic tool, not an absolute blockade. War's center of gravity is shifting from military destruction to economic/diplomatic leverage.",
-  "theoryBox_fa": "<strong>پرسش اصلی:</strong> آیا ائتلاف سریع‌تر از فشار اقتصادی عمل می‌کند؟ <strong>روز ۱۸:</strong> دو جریان متقاطع: (۱) عملیات سربریدن تسریع — لاریجانی + سلیمانی. (۲) اولین تانکر غیرایرانی از هرمز عبور کرد = هرمز ابزار دیپلماتیک.",
+  "theoryBox": "<strong>Core question:</strong> Can the coalition degrade Iran's capability faster than economic/political costs accumulate? <strong>Day 18 late:</strong> Three simultaneous escalations: (1) Decapitation of Iran's 'de facto leader' Larijani; (2) Israel ground invasion of Lebanon; (3) Internal US fracture — NCTC director resigned over war. Meanwhile Iran is innovating diplomatically — offering yuan-denominated Hormuz passage to 8 countries, potentially creating a China-aligned alternative to US naval escort. The war is fragmenting in every dimension simultaneously.",
+  "theoryBox_fa": "<strong>روز ۱۸:</strong> سه تشدید همزمان: (۱) سربریدن رهبر عملی ایران لاریجانی؛ (۲) حمله زمینی اسرائیل به لبنان؛ (۳) شکاف داخلی آمریکا — استعفای کنت. ایران عبور یوانی از هرمز به ۸ کشور پیشنهاد داده.",
   "metrics": [
     {
-      "label": "Day of conflict",
+      "label": "Day",
       "value": "18",
-      "desc": "Since Feb 28. Week 3. Israel killed Larijani + Soleimani overnight. Planning 3+ more weeks."
+      "desc": "Week 3. Larijani + Soleimani confirmed dead. Lebanon ground invasion. Kent resigned. Trump delayed China trip."
     },
     {
       "label": "Cumul. missiles",
       "value": "~2,607",
-      "desc": "IRGC: 'cache intact, using decade-old missiles.' Decapitation eroding C2 but stockpile may be deeper."
+      "desc": "IDF: 70% of Iran's missile launchers destroyed. 85% air defenses knocked out. 7,600 strikes / 5,000 sorties."
     },
     {
       "label": "Cumul. drones",
       "value": "~4,065",
-      "desc": "Trump: 'decimated their manufacturing.' But UAE closed ALL airspace Tue = still incoming."
+      "desc": "Trump: 'decimated manufacturing.' But UAE closed airspace + Baghdad embassy hit = still incoming."
     },
     {
       "label": "Brent crude",
       "value": "$102.92",
-      "desc": "Tue morning +2.70%. Mon close ~$100.21 — pulled back from Sun $106. Range $100-106 band."
+      "desc": "Tue range $100.75–103.21. Pulled back from $106 peak. Iran offering yuan passage to 8 countries."
     },
     {
       "label": "US casualties",
       "value": "13 KIA / ~200 WIA",
-      "desc": "~200 across 7 countries. 180+ RTD. Al-Rasheed Hotel (Green Zone) drone attack = 'most intense' on embassy."
+      "desc": "Baghdad embassy hit again (6/7 intercepted). Al-Rasheed Hotel hit (EU/Saudi delegation). State Dept: ALL posts review security."
     },
     {
-      "label": "Iran dead (HRANA)",
+      "label": "Iran dead",
       "value": "~3,065",
-      "desc": "REVISED UP: 1,330 civilians (206 children) + 1,122 military + 613 unclassified. Far exceeds Iran UN figure (1,300)."
+      "desc": "HRANA: 1,330 civilian (206 children) + 1,122 military + 613 unclassified. Amnesty: 170+ schoolgirls in single strike."
     },
     {
       "label": "Lebanon",
-      "value": "886 killed / 1M+ displaced",
-      "desc": "Up from 773. Israel expanding ground ops in south. G5 'gravely concerned.'"
+      "value": "886+ killed",
+      "desc": "GROUND INVASION launched. Katz: 'similar to Gaza.' 1M+ displaced. G5 urged avoidance. Could occupy indefinitely."
     },
     {
       "label": "Hormuz",
-      "value": "CRACKING?",
-      "desc": "First non-Iranian tanker (Karachi) transited with AIS on = potential negotiated passage. But EU rejected naval ops. UAE closed all airspace."
+      "value": "EVOLVING",
+      "desc": "Iran offering yuan-denominated passage to 8 countries (CNN). First tanker transited D17. Shifting from blockade to managed/political access."
     }
   ],
   "metrics_fa": [
     {
       "label": "روز",
       "value": "۱۸",
-      "desc": "لاریجانی + سلیمانی کشته شدند."
+      "desc": "لاریجانی + سلیمانی تأیید. حمله زمینی لبنان. استعفای کنت."
     },
     {
       "label": "موشک",
       "value": "~۲,۶۰۷",
-      "desc": "سپاه: ذخایر سالم."
+      "desc": "۷۰٪ پرتاب‌گرها نابود. ۸۵٪ پدافند."
     },
     {
       "label": "پهپاد",
       "value": "~۴,۰۶۵",
-      "desc": "ترامپ: کارخانه‌ها نابود. اما امارات حریم هوایی بسته."
+      "desc": "هنوز شلیک ادامه دارد."
     },
     {
       "label": "نفت",
       "value": "$۱۰۲.۹۲",
-      "desc": "بازه ۱۰۰–۱۰۶."
+      "desc": "عبور یوانی به ۸ کشور پیشنهاد شده."
     },
     {
       "label": "تلفات آمریکا",
       "value": "۱۳/~۲۰۰",
-      "desc": "حمله سنگین به منطقه سبز."
+      "desc": "سفارت بغداد + هتل الرشید."
     },
     {
-      "label": "کشته ایران (HRANA)",
+      "label": "کشته ایران",
       "value": "~۳,۰۶۵",
-      "desc": "۱,۳۳۰ غیرنظامی + ۱,۱۲۲ نظامی + ۶۱۳."
+      "desc": "عفو بین‌الملل: ۱۷۰+ دختر مدرسه‌ای."
     },
     {
       "label": "لبنان",
-      "value": "۸۸۶ کشته / ۱م+ آواره",
-      "desc": "عملیات زمینی اسرائیل گسترش."
+      "value": "۸۸۶+ کشته",
+      "desc": "حمله زمینی. کاتز: مانند غزه."
     },
     {
       "label": "هرمز",
-      "value": "ترک خوردن؟",
-      "desc": "اولین تانکر غیرایرانی عبور کرد."
+      "value": "در حال تحول",
+      "desc": "عبور یوانی. تانکر کراچی عبور کرد."
     }
   ],
   "sitrep": [
-    "Day 18. DECAPITATION: Israel killed Ali Larijani (Secretary of Supreme National Security Council) and Basij commander Gholamreza Soleimani overnight. IDF: 'additional significant blow to regime security command-and-control.' Iran has not confirmed. Abu Ali al-Askari (Kata'ib Hezbollah security cmdr) also killed in Baghdad Mar 14 — confirmed today.",
-    "UAE CLOSED ALL AIRSPACE ('exceptional precautionary measure') as defense forces respond to incoming missile and drone threats Tuesday morning. Saudi intercepted 12+ drones in eastern region. Qatar: missile debris fire in industrial area. Baghdad: Al-Rasheed Hotel in Green Zone hit by drone attack — 'most intense assault on embassy since war began' — at least 5 drones used.",
-    "HORMUZ CRACK: First non-Iranian tanker (Karachi, carrying Abu Dhabi Das crude) transited Strait of Hormuz with AIS transponder on — Marine Traffic confirmed. Suggests 'select shipments may be receiving negotiated safe passage.' Game-changer if pattern continues.",
-    "Oil PULLED BACK: Brent Mon close ~$100.21 (down from Sun $106.12). Tue trading $102.92 (+2.70%). Market digesting pullback after last week's spike. Still solidly >$100. WTI $95.03.",
-    "IRAN CASUALTIES REVISED UP: HRANA reports ~3,065 total dead (1,330 civilian incl 206 children + 1,122 military + 613 unclassified). Far exceeds Iran UN ambassador figure of 1,300. Iran FM: 'hundreds of civilians including 200+ children killed.'",
-    "Lebanon: 886 killed (up from 773). Displaced now exceeds 1 million. Israel expanding ground operations — 'additional IDF troops deployed' in southern Lebanon. G5 leaders 'gravely concerned,' called for 'immediate de-escalation.'",
-    "EU foreign ministers REJECTED expanding naval operations around Hormuz. Trump criticized allies' lack of 'enthusiasm.' Still no named country has committed warships.",
-    "Trump (AF1): 'hitting Iran's drone factories.' 'Iran has very little firepower left. We decimated their manufacturing capability.' But UAE closing all airspace this morning suggests Iran still pushing volume."
+    "CONFIRMED: Iran state media confirmed Larijani + Soleimani deaths. Larijani's son, security deputy, and protection team also killed. IDF called Larijani the 'de facto leader of the Iranian regime' after Khamenei was injured. Killed in IAF strike near Tehran. This is the most significant decapitation since Khamenei Sr. on Day 1.",
+    "POLITICAL FRACTURE: Joe Kent, director of National Counterterrorism Center, resigned — 'Iran posed no imminent threat… we started this war due to pressure from Israel and its powerful American lobby.' Highest-profile admin defection. Trump: 'weak on security.' DNI Gabbard backed Trump's threat determination.",
+    "LEBANON GROUND INVASION: Israel launched ground operations in southern Lebanon. Defense Minister Katz said operation 'similar to Gaza war,' suggested indefinite occupation, ruled out return of displaced Lebanese. G5 (Canada/France/Germany/Italy/UK) said operation should be avoided. Additional IDF troops deployed.",
+    "HORMUZ DIPLOMACY: Iran in discussions with 8 unnamed countries over yuan-denominated oil passage through Hormuz (CNN source). Countries contacted Tehran after reports of the plan. Iran weighing 'managed maritime traffic' approach. This could create China-aligned alternative shipping framework bypassing US naval escort entirely.",
+    "Trump: 'WE DO NOT NEED THE HELP OF ANYONE!' Reversed position from asking for help to rejecting allies. Delayed China trip by 1 month ('we've got a war going on'). Xi summit was potential diplomatic off-ramp — now postponed. Senate leader Thune: not ruling ground troops in/out.",
+    "HUMANITARIAN: Amnesty International confirmed US strike on Iranian primary school killed 170+ people, mostly schoolgirls. Arak: newborn baby + 2-year-old sister + mother + grandmother killed in strike. Explosions near Saadabad Palace, Tehran. Strikes on Karaj, Shahriar, Shiraz.",
+    "Baghdad: US embassy hit by 6/7 drones+rockets from Iran-aligned militia — intercepted, no serious damage. Al-Rasheed Hotel in Green Zone hit (was hosting EU/Saudi delegation). State Department ordered ALL diplomatic posts worldwide to review security 'immediately.'",
+    "Oil: Brent $102.92 Tue (+2.70%). Pulled back from $106 peak. Yuan passage plan could fundamentally reshape global oil trading if implemented — Iran positioning Hormuz as political/currency weapon, not just military blockade."
   ],
   "sitrep_fa": [
-    "روز ۱۸. سربریدن: لاریجانی + فرمانده بسیج سلیمانی کشته شدند.",
-    "امارات کل حریم هوایی بسته. عربستان ۱۲+ پهپاد. قطر: آتش‌سوزی از ترکش. بغداد: حمله سنگین به منطقه سبز.",
-    "شکاف هرمز: اولین تانکر غیرایرانی عبور کرد.",
-    "نفت عقب‌نشینی: برنت ۱۰۲.۹۲ دلار. بازه ۱۰۰–۱۰۶.",
-    "تلفات ایران بازنگری: ~۳,۰۶۵ (HRANA). بسیار بالاتر از آمار رسمی.",
-    "لبنان: ۸۸۶ کشته. ۱ میلیون+ آواره. عملیات زمینی اسرائیل.",
-    "اتحادیه اروپا عملیات دریایی هرمز رد کرد.",
-    "ترامپ: کارخانه پهپاد می‌زنیم. اما امارات حریم هوایی بسته = ایران هنوز شلیک می‌کند."
+    "تأیید: لاریجانی + سلیمانی + پسر لاریجانی + تیم حفاظتی کشته شدند. لاریجانی رهبر عملی بود.",
+    "شکاف سیاسی: جو کنت استعفا — ایران تهدید فوری نبود. بالاترین استعفا. ترامپ: ضعیف.",
+    "حمله زمینی لبنان. کاتز: مانند غزه. اشغال نامحدود. G5: باید اجتناب شود.",
+    "دیپلماسی هرمز: ایران با ۸ کشور درباره عبور یوانی مذاکره. جایگزین چین‌محور.",
+    "ترامپ: به کمک کسی نیاز نداریم. سفر چین ۱ ماه عقب افتاد. نشست شی تعویق.",
+    "عفو بین‌الملل: حمله آمریکا به مدرسه ۱۷۰+ کشته. اراک: نوزاد + خواهر + مادر + مادربزرگ.",
+    "سفارت بغداد: ۶/۷ رهگیری. هتل الرشید ضربه خورد. وزارت خارجه: تمام پست‌ها امنیت بررسی.",
+    "نفت ۱۰۲.۹۲. طرح عبور یوانی = سلاح ارزی هرمز."
   ],
   "dailySeries": {
     "labels": [
@@ -539,122 +539,122 @@
   ],
   "scenarioProbabilities": [
     {
-      "name": "Protracted + negotiated passage",
-      "prob": "40%",
-      "body": "MOST LIKELY. First Hormuz transit suggests Iran moving from absolute blockade to selective passage = diplomatic leverage tool. War continues militarily but economic dimension shifts to managed disruption. Oil $95-110 range. Weeks to months."
+      "name": "Protracted + yuan passage framework",
+      "prob": "42%",
+      "body": "MOST LIKELY, INCREASED. Iran's yuan passage plan to 8 countries = Hormuz becoming a political/currency tool. War continues militarily but Iran building alternative economic order around strait access. Oil $95-110. China-aligned shipping framework bypasses US entirely."
+    },
+    {
+      "name": "Declared victory + phased withdrawal",
+      "prob": "20%",
+      "body": "INCREASED. Kent resignation + Trump 'don't need anyone' = political pressure mounting. Larijani kill gives material. Xi trip delayed = no near-term diplomatic venue. Trump may declare victory unilaterally within weeks."
     },
     {
       "name": "Full economic war",
-      "prob": "22%",
-      "body": "Decreased slightly — Hormuz transit suggests Iran may not want full global crisis. But if Houthis resume Red Sea → escalation back to economic war. Oil $120+ if dual chokepoint."
-    },
-    {
-      "name": "Declared victory",
       "prob": "18%",
-      "body": "INCREASED. Trump: 'wrapped up soon.' Admin: 'weeks or sooner.' Larijani/Soleimani kills give political material for victory declaration. Israel may declare after 3 more weeks of target completion."
+      "body": "DECREASED. Yuan passage plan suggests Iran prefers managed disruption over total blockade. But if plan fails or Houthis resume Red Sea → re-escalation."
     },
     {
       "name": "Negotiated deal",
-      "prob": "10%",
-      "body": "Low. Iran FM: no ceasefire. But Hormuz transit = possible quiet channel. China Xi summit March 31 = potential off-ramp if Trump uses it."
+      "prob": "8%",
+      "body": "DECREASED. Xi trip delayed 1 month. Iran FM: no ceasefire. Kent resignation shows internal US debate but no diplomatic channel. Yuan passage could BE the deal — de facto ceasefire on Hormuz without formal agreement."
     },
     {
       "name": "Regime fracture",
-      "prob": "7%",
-      "body": "Khamenei injured (fractured foot, bruised eye). Larijani killed. IRGC operating autonomously. Internet blackout = 3 weeks. HRANA: 3,065 dead. Pressure mounting but regime cohesion unclear."
+      "prob": "8%",
+      "body": "INCREASED slightly. Larijani was 'de facto leader' — his death creates genuine power vacuum. Khamenei injured. Soleimani (Basij) killed = internal security apparatus weakened. But internet blackout means zero visibility."
     },
     {
-      "name": "Major escalation",
-      "prob": "3%",
-      "body": "Israel ground ops in Lebanon expanding. Kharg Island seizure discussed. But Trump says Israel won't use nuclear weapon. USS Tripoli deploying."
+      "name": "Major escalation (Lebanon ground war)",
+      "prob": "4%",
+      "body": "INCREASED. Israel ground invasion of Lebanon is a FACT, not scenario. Katz compared to Gaza. Thune: ground troops in Iran 'not ruled out.' Multiple fronts = rising risk of miscalculation or quagmire."
     }
   ],
   "scenarioProbabilities_fa": [
     {
-      "name": "فرسایشی + عبور مذاکره‌ای",
-      "prob": "۴۰٪",
-      "body": "محتمل‌ترین. عبور تانکر = هرمز ابزار دیپلماتیک."
+      "name": "فرسایشی + چارچوب عبور یوانی",
+      "prob": "۴۲٪",
+      "body": "محتمل‌ترین. هرمز ابزار ارزی/سیاسی."
+    },
+    {
+      "name": "اعلام پیروزی + عقب‌نشینی",
+      "prob": "۲۰٪",
+      "body": "استعفای کنت + ترامپ. لاریجانی = مواد."
     },
     {
       "name": "جنگ اقتصادی",
-      "prob": "۲۲٪",
-      "body": "کاهش. عبور تانکر = ایران بحران جهانی نمی‌خواهد."
-    },
-    {
-      "name": "اعلام پیروزی",
       "prob": "۱۸٪",
-      "body": "افزایش. ترامپ: به‌زودی. لاریجانی/سلیمانی = مواد سیاسی."
+      "body": "کاهش. طرح یوانی = ایران انسداد کامل نمی‌خواهد."
     },
     {
       "name": "مذاکره",
-      "prob": "۱۰٪",
-      "body": "نشست شی ۳۱ مارس = فرصت."
+      "prob": "۸٪",
+      "body": "سفر شی عقب افتاد. عبور یوانی = توافق عملی."
     },
     {
-      "name": "فروپاشی",
-      "prob": "۷٪",
-      "body": "خامنه‌ای مجروح. لاریجانی کشته. ۳,۰۶۵ کشته."
+      "name": "فروپاشی رژیم",
+      "prob": "۸٪",
+      "body": "لاریجانی رهبر عملی بود — خلاء قدرت."
     },
     {
-      "name": "تشدید",
-      "prob": "۳٪",
-      "body": "عملیات زمینی لبنان. تصرف خارگ بحث شده."
+      "name": "تشدید (لبنان زمینی)",
+      "prob": "۴٪",
+      "body": "حمله زمینی واقعیت است. ثیون: نیروی زمینی رد نشده."
     }
   ],
   "theoryEvaluation": [
     {
-      "title": "Military suppression — decapitation accelerating",
-      "body": "Day 18 kills: Larijani (SNSC secretary = Iran's security architecture chief) + Soleimani (Basij commander). Added to Khamenei Sr. (killed D1), Mousavi (armed forces chief), Nasirzadeh (defense minister), Pakpour (IRGC commander-in-chief). Iran's command structure is being systematically dismantled. But IRGC spokesman's D17 claim that 'most weapons cache intact' + UAE full airspace closure D18 = Iran still has operational capability even without top leadership. Decentralized IRGC structure may be resilient to decapitation."
+      "title": "Military suppression — command structure collapsing",
+      "body": "Killed since D1: Khamenei Sr. (Supreme Leader), Larijani (SNSC secretary/'de facto leader'), Soleimani (Basij), Mousavi (armed forces chief), Nasirzadeh (defense minister), Pakpour (IRGC commander-in-chief), Abu Ali al-Askari (Kata'ib Hezbollah). IDF: 7,600 strikes, 85% air defenses, 70% launchers destroyed. But IRGC's decentralized structure + 'cache intact' claim = operational capability persists even without leadership. UAE airspace closure + Baghdad embassy attacks = Iran still fighting."
     },
     {
-      "title": "Economic leverage — Hormuz cracking",
-      "body": "CRITICAL SHIFT: First non-Iranian tanker (Karachi) transited Hormuz with AIS on, carrying Abu Dhabi Das crude. Marine Traffic: 'select shipments may be receiving negotiated safe passage.' This suggests Iran is moving from absolute blockade to selective passage — using Hormuz as diplomatic lever, not pure weapon. Oil pulled back from $106→$100-103 range. Gulf exports still ↓61% but if passage framework develops, economic pressure eases. EU rejected Hormuz naval ops = no military solution to blockade. Iran controls the off-ramp."
+      "title": "Economic/diplomatic — Iran innovating",
+      "body": "CRITICAL SHIFT: Iran offering yuan-denominated Hormuz passage to 8 countries (CNN). First tanker (Karachi) already transited. This could create China-aligned shipping framework that bypasses US naval escort entirely. Iran transforming Hormuz from military blockade to political/currency weapon. Oil $100-103. Gulf exports ↓61%. If yuan passage framework develops, it would be the most significant restructuring of global oil trading since petrodollar establishment."
     },
     {
-      "title": "Diplomatic trajectory — cracks emerging",
-      "body": "Several signals: (1) Karachi tanker transit = possible quiet back-channel on Hormuz passage. (2) Trump Xi summit March 31 = potential diplomatic venue. (3) Iran FM said open to talks with countries wanting strait access. (4) But Iran FM also said 'no ceasefire, prepared to continue.' Net: War has no formal off-ramp but informal channels may be developing through Hormuz passage negotiations."
+      "title": "Political cohesion — fracturing on both sides",
+      "body": "US: Kent (NCTC director) resigned publicly — 'Iran posed no imminent threat, war started due to Israeli lobby pressure.' Highest-profile defection. Trump pivoting from 'allies help us' to 'we don't need anyone.' Xi trip delayed. Israel: ground invasion of Lebanon opens massive second front. Iran: Larijani death creates genuine power vacuum — he was the strategic brain. Khamenei injured. IRGC autonomous. Both sides losing key decision-makers and political capital simultaneously."
     }
   ],
   "theoryEvaluation_fa": [
     {
-      "title": "سرکوب نظامی — سربریدن تسریع",
-      "body": "لاریجانی + سلیمانی + خامنه‌ای + موسوی + نصیرزاده + پاکپور. اما سپاه غیرمتمرکز مقاوم."
+      "title": "سرکوب — ساختار فرماندهی فروپاشی",
+      "body": "کشته‌شدگان: خامنه‌ای، لاریجانی، سلیمانی، موسوی، نصیرزاده، پاکپور. اما سپاه غیرمتمرکز هنوز عمل می‌کند."
     },
     {
-      "title": "اهرم اقتصادی — هرمز ترک خورده",
-      "body": "اولین تانکر عبور. ایران از انسداد مطلق به عبور انتخابی. نفت ۱۰۰–۱۰۳."
+      "title": "اقتصادی/دیپلماتیک — نوآوری ایران",
+      "body": "عبور یوانی به ۸ کشور = هرمز سلاح ارزی. تغییر بنیادین تجارت نفت جهانی."
     },
     {
-      "title": "دیپلماسی — شکاف‌های در حال ظهور",
-      "body": "عبور تانکر = کانال پنهان. نشست شی. اما آتش‌بس رد شده."
+      "title": "انسجام سیاسی — شکاف در هر دو طرف",
+      "body": "آمریکا: استعفای کنت. ایران: خلاء قدرت لاریجانی. هر دو طرف سرمایه سیاسی از دست می‌دهند."
     }
   ],
   "endstate": [
     {
-      "title": "Most likely (40%)",
-      "body": "Protracted conflict with negotiated Hormuz passage framework. Iran allows selective tanker transit (like Karachi) while maintaining leverage. Military operations continue but at diminishing intensity. Oil stabilizes $95-110. Weeks to months until formal end. Face-saving deal possible at Xi summit (Mar 31) or through Oman back-channel."
+      "title": "Most likely (42%)",
+      "body": "Protracted conflict with yuan-denominated Hormuz passage framework. Iran allows China-aligned tanker transit while blocking US/allied vessels. War continues at low intensity. Oil $95-110. Creates de facto two-tier global oil market. Formal end may never come — war fades into managed standoff like Korean armistice."
     },
     {
-      "title": "Second (22%)",
-      "body": "Full economic war if Hormuz transit experiment fails and/or Houthis resume Red Sea attacks. Oil $120-140. SPR exhaustion. Global recession. But Karachi transit suggests Iran prefers managed disruption over global crisis."
+      "title": "Second (20%)",
+      "body": "Trump declares victory after Larijani kill + 3 more weeks of Israeli strikes. Gradual withdrawal. Iran keeps Hormuz leverage + yuan passage framework. Neither side 'wins' but both claim to."
     },
     {
-      "title": "Wild card (7%)",
-      "body": "Regime fracture. HRANA: 3,065 dead. Larijani killed. Khamenei injured. Internet blackout 3 weeks. IRGC autonomous. Protests may reignite if regime seen as losing. But no visibility through blackout."
+      "title": "Wild card (8%)",
+      "body": "Regime fracture. Larijani was 'de facto leader' — his death + Khamenei injury = genuine power vacuum. IRGC factions may compete. Internet blackout hides internal dynamics. If regime cohesion breaks, war dynamics change overnight — but could go either direction (collapse OR hardening)."
     }
   ],
   "endstate_fa": [
     {
-      "title": "محتمل‌ترین (۴۰٪)",
-      "body": "فرسایشی با عبور مذاکره‌ای هرمز. نفت ۹۵–۱۱۰. توافق در نشست شی یا کانال عمان."
+      "title": "محتمل‌ترین (۴۲٪)",
+      "body": "فرسایشی + عبور یوانی. بازار نفت دوسطحی. مانند آتش‌بس کره."
     },
     {
-      "title": "دوم (۲۲٪)",
-      "body": "جنگ اقتصادی اگر عبور شکست + حوثی. نفت ۱۲۰–۱۴۰."
+      "title": "دوم (۲۰٪)",
+      "body": "ترامپ پیروزی اعلام. ایران هرمز + یوان نگه می‌دارد."
     },
     {
-      "title": "غیرمنتظره (۷٪)",
-      "body": "فروپاشی. ۳,۰۶۵ کشته. لاریجانی. خامنه‌ای. قطع اینترنت."
+      "title": "غیرمنتظره (۸٪)",
+      "body": "فروپاشی. لاریجانی + خامنه‌ای = خلاء. رقابت سپاه."
     }
   ],
   "shippingRoutes": [
