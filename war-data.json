@@ -1,121 +1,120 @@
 {
   "meta": {
-    "lastUpdated": "2026-03-17T17:30:00-04:00",
+    "lastUpdated": "2026-03-18T14:00:00-04:00",
     "notes": [
-      "Day 18 (Mar 17) LATE 5:30PM ET. Sources: CNN live (5:19PM), AJ live, NBC live (5:18PM), ABC, Wikipedia, Investing.com, Fox.",
-      "CONFIRMED KILLS: Iran confirmed Larijani (SNSC secretary, 'de facto leader') + Soleimani (Basij). Larijani's son, security deputy, protection team also killed. IDF: killed near Tehran by IAF strike.",
-      "POLITICAL: Joe Kent (NCTC director) resigned — 'Iran posed no imminent threat.' Highest-profile admin defection. Trump: 'weak on security.' Gabbard backed Trump's threat determination.",
-      "LEBANON GROUND INVASION: Israel launched ground ops. Katz: 'similar to Gaza war,' could occupy indefinitely. G5 urged avoidance.",
-      "HORMUZ: Iran discussing yuan-denominated passage with 8 unnamed countries (CNN). First tanker (Karachi) transited D17. Hormuz shifting from blockade to managed access.",
-      "HUMANITARIAN: Amnesty confirmed US strike killed 170+ at primary school (mostly girls). Arak: newborn + toddler + mother + grandmother killed. HRANA: ~3,065 dead. Red Crescent: 1,200+.",
-      "Trump delayed China trip 1 month. 'WE DO NOT NEED THE HELP OF ANYONE.' State Dept ordered ALL posts worldwide to review security."
+      "Day 19 (Mar 18) LATE 2PM ET. Sources: CNN live (12:20AM+), ABC live, Iran International, Euronews, ABC7.",
+      "ANOTHER KILL: Israel killed Esmail Khatib (intelligence minister) overnight Wed. Katz: 'significant surprises in all arenas.' Larijani intel from 'residents of Tehran' (Israeli official).",
+      "IRAN REJECTS PEACE: Khamenei said 'not the right time for peace' — rejected proposals from 2 intermediary countries (Reuters/Iran Intl). NOT the same as D17 when Iran reached out to Witkoff. Khamenei is now actively rejecting diplomacy.",
+      "RETALIATION CONTINUES: IRGC 'intense' attacks on Israel. 2 killed Ramat Gan. Cluster munitions. ALL Gulf states intercepting Wed morning — Kuwait says missiles/drones 'breached airspace.'",
+      "ESCALATION SIGNALS: Trump 'not afraid' of boots on ground. NATO Patriot to Turkey (Adana/Incirlik). Israel targeting Litani River crossings in Lebanon. 6 killed Beirut.",
+      "Turkey FM Fidan to Riyadh = first potential diplomatic track emerging. Iran FM: nuclear stance unlikely to change. Khamenei hasn't addressed nuclear fatwa."
     ]
   },
-  "theoryBox": "<strong>Core question:</strong> Can the coalition degrade Iran's capability faster than economic/political costs accumulate? <strong>Day 18 late:</strong> Three simultaneous escalations: (1) Decapitation of Iran's 'de facto leader' Larijani; (2) Israel ground invasion of Lebanon; (3) Internal US fracture — NCTC director resigned over war. Meanwhile Iran is innovating diplomatically — offering yuan-denominated Hormuz passage to 8 countries, potentially creating a China-aligned alternative to US naval escort. The war is fragmenting in every dimension simultaneously.",
-  "theoryBox_fa": "<strong>روز ۱۸:</strong> سه تشدید همزمان: (۱) سربریدن رهبر عملی ایران لاریجانی؛ (۲) حمله زمینی اسرائیل به لبنان؛ (۳) شکاف داخلی آمریکا — استعفای کنت. ایران عبور یوانی از هرمز به ۸ کشور پیشنهاد داده.",
+  "theoryBox": "<strong>Day 19 late:</strong> The war has entered a potentially irreversible escalation cycle. In 48 hours: 3 senior Iranian officials killed, Iran launched retaliation barrages, both sides explicitly rejected diplomacy, Trump signaled ground troops aren't ruled out, and Israel is cutting off civilian evacuation routes in Lebanon. The only active diplomatic track is Turkey's FM heading to Riyadh. The question is no longer whether the coalition can degrade Iran's capability — it's whether anyone can stop the escalation before it produces a catastrophic miscalculation.",
+  "theoryBox_fa": "<strong>روز ۱۹:</strong> جنگ وارد چرخه تشدید شده. ۳ مقام کشته در ۴۸ ساعت. هر دو طرف مذاکره رد. ترامپ: نیروی زمینی. اسرائیل: راه فرار لبنان بسته. تنها مسیر: فیدان به ریاض. سؤال: آیا کسی می‌تواند قبل از اشتباه فاجعه‌بار تشدید را متوقف کند؟",
   "metrics": [
     {
       "label": "Day",
-      "value": "18",
-      "desc": "Week 3. Larijani + Soleimani confirmed dead. Lebanon ground invasion. Kent resigned. Trump delayed China trip."
+      "value": "19",
+      "desc": "Week 3 Wed. Khatib (intel minister) killed. Khamenei: 'not time for peace.' Trump: 'not afraid' of ground troops."
     },
     {
       "label": "Cumul. missiles",
-      "value": "~2,607",
-      "desc": "IDF: 70% of Iran's missile launchers destroyed. 85% air defenses knocked out. 7,600 strikes / 5,000 sorties."
+      "value": "~2,637",
+      "desc": "Retaliation barrage + Gulf-wide intercepting. Kuwait says missiles 'breached airspace.' NATO Patriot to Turkey."
     },
     {
       "label": "Cumul. drones",
-      "value": "~4,065",
-      "desc": "Trump: 'decimated manufacturing.' But UAE closed airspace + Baghdad embassy hit = still incoming."
+      "value": "~4,115",
+      "desc": "Baghdad embassy hit again Wed AM. All Gulf states engaging. Israel targeting Litani crossings."
     },
     {
       "label": "Brent crude",
-      "value": "$102.92",
-      "desc": "Tue range $100.75–103.21. Pulled back from $106 peak. Iran offering yuan passage to 8 countries."
+      "value": "~$104",
+      "desc": "Retaliation spike holding. Sustained >$100 for 7th session. Gulf exports ↓61%."
     },
     {
       "label": "US casualties",
       "value": "13 KIA / ~200 WIA",
-      "desc": "Baghdad embassy hit again (6/7 intercepted). Al-Rasheed Hotel hit (EU/Saudi delegation). State Dept: ALL posts review security."
+      "desc": "Trump 'not afraid' of ground troops. Dover transfer today. Baghdad embassy under near-daily attack."
     },
     {
-      "label": "Iran dead",
-      "value": "~3,065",
-      "desc": "HRANA: 1,330 civilian (206 children) + 1,122 military + 613 unclassified. Amnesty: 170+ schoolgirls in single strike."
+      "label": "Israel dead",
+      "value": "17+",
+      "desc": "2 more killed Ramat Gan Wed (ballistic). Cluster munitions over Tel Aviv. 247+ wounded since D1."
     },
     {
       "label": "Lebanon",
-      "value": "886+ killed",
-      "desc": "GROUND INVASION launched. Katz: 'similar to Gaza.' 1M+ displaced. G5 urged avoidance. Could occupy indefinitely."
+      "value": "892+ killed",
+      "desc": "6 killed in Beirut strike Wed. Ground ops expanding. Israel targeting Litani crossings — cutting off evacuation. Tyre evacuation order."
     },
     {
-      "label": "Hormuz",
-      "value": "EVOLVING",
-      "desc": "Iran offering yuan-denominated passage to 8 countries (CNN). First tanker transited D17. Shifting from blockade to managed/political access."
+      "label": "Diplomacy",
+      "value": "BOTH SIDES REFUSING",
+      "desc": "D17: Trump refused Iran's outreach. D19: Khamenei rejected proposals from 2 intermediaries. Neither side will talk. Turkey FM to Riyadh = only active track."
     }
   ],
   "metrics_fa": [
     {
       "label": "روز",
-      "value": "۱۸",
-      "desc": "لاریجانی + سلیمانی تأیید. حمله زمینی لبنان. استعفای کنت."
+      "value": "۱۹",
+      "desc": "خطیب کشته. خامنه‌ای: زمان صلح نیست. ترامپ: از نیروی زمینی نمی‌ترسم."
     },
     {
       "label": "موشک",
-      "value": "~۲,۶۰۷",
-      "desc": "۷۰٪ پرتاب‌گرها نابود. ۸۵٪ پدافند."
+      "value": "~۲,۶۳۷",
+      "desc": "کویت: موشک وارد حریم هوایی شد. ناتو پاتریوت به ترکیه."
     },
     {
       "label": "پهپاد",
-      "value": "~۴,۰۶۵",
-      "desc": "هنوز شلیک ادامه دارد."
+      "value": "~۴,۱۱۵",
+      "desc": "سفارت بغداد دوباره. همه کشورهای خلیج درگیر."
     },
     {
       "label": "نفت",
-      "value": "$۱۰۲.۹۲",
-      "desc": "عبور یوانی به ۸ کشور پیشنهاد شده."
+      "value": "~$۱۰۴",
+      "desc": "هفتمین جلسه بالای ۱۰۰."
     },
     {
       "label": "تلفات آمریکا",
       "value": "۱۳/~۲۰۰",
-      "desc": "سفارت بغداد + هتل الرشید."
+      "desc": "ترامپ: از نیروی زمینی نمی‌ترسم."
     },
     {
-      "label": "کشته ایران",
-      "value": "~۳,۰۶۵",
-      "desc": "عفو بین‌الملل: ۱۷۰+ دختر مدرسه‌ای."
+      "label": "کشته اسرائیل",
+      "value": "۱۷+",
+      "desc": "۲ کشته دیگر رامات‌گان."
     },
     {
       "label": "لبنان",
-      "value": "۸۸۶+ کشته",
-      "desc": "حمله زمینی. کاتز: مانند غزه."
+      "value": "۸۹۲+",
+      "desc": "۶ کشته بیروت. پل لیتانی هدف = راه فرار بسته."
     },
     {
-      "label": "هرمز",
-      "value": "در حال تحول",
-      "desc": "عبور یوانی. تانکر کراچی عبور کرد."
+      "label": "دیپلماسی",
+      "value": "هر دو طرف رد",
+      "desc": "ترامپ رد. خامنه‌ای رد. فقط ترکیه."
     }
   ],
   "sitrep": [
-    "CONFIRMED: Iran state media confirmed Larijani + Soleimani deaths. Larijani's son, security deputy, and protection team also killed. IDF called Larijani the 'de facto leader of the Iranian regime' after Khamenei was injured. Killed in IAF strike near Tehran. This is the most significant decapitation since Khamenei Sr. on Day 1.",
-    "POLITICAL FRACTURE: Joe Kent, director of National Counterterrorism Center, resigned — 'Iran posed no imminent threat… we started this war due to pressure from Israel and its powerful American lobby.' Highest-profile admin defection. Trump: 'weak on security.' DNI Gabbard backed Trump's threat determination.",
-    "LEBANON GROUND INVASION: Israel launched ground operations in southern Lebanon. Defense Minister Katz said operation 'similar to Gaza war,' suggested indefinite occupation, ruled out return of displaced Lebanese. G5 (Canada/France/Germany/Italy/UK) said operation should be avoided. Additional IDF troops deployed.",
-    "HORMUZ DIPLOMACY: Iran in discussions with 8 unnamed countries over yuan-denominated oil passage through Hormuz (CNN source). Countries contacted Tehran after reports of the plan. Iran weighing 'managed maritime traffic' approach. This could create China-aligned alternative shipping framework bypassing US naval escort entirely.",
-    "Trump: 'WE DO NOT NEED THE HELP OF ANYONE!' Reversed position from asking for help to rejecting allies. Delayed China trip by 1 month ('we've got a war going on'). Xi summit was potential diplomatic off-ramp — now postponed. Senate leader Thune: not ruling ground troops in/out.",
-    "HUMANITARIAN: Amnesty International confirmed US strike on Iranian primary school killed 170+ people, mostly schoolgirls. Arak: newborn baby + 2-year-old sister + mother + grandmother killed in strike. Explosions near Saadabad Palace, Tehran. Strikes on Karaj, Shahriar, Shiraz.",
-    "Baghdad: US embassy hit by 6/7 drones+rockets from Iran-aligned militia — intercepted, no serious damage. Al-Rasheed Hotel in Green Zone hit (was hosting EU/Saudi delegation). State Department ordered ALL diplomatic posts worldwide to review security 'immediately.'",
-    "Oil: Brent $102.92 Tue (+2.70%). Pulled back from $106 peak. Yuan passage plan could fundamentally reshape global oil trading if implemented — Iran positioning Hormuz as political/currency weapon, not just military blockade."
+    "Day 19 late. THIRD DECAPITATION IN 48 HOURS: Israel killed Esmail Khatib (intelligence minister) overnight Wed, adding to Larijani + Soleimani killed Mon/Tue. Katz: 'significant surprises expected in all arenas.' Israeli official told Iran International that Larijani intel came from 'residents of Tehran' — Iran's internal security is penetrated.",
+    "PEACE REJECTED BY BOTH SIDES: (1) D17: Trump refused Iran's outreach to Witkoff. (2) D19: Khamenei said 'not the right time for peace' — rejected proposals from 2 intermediary countries (Reuters). Both the bombing side AND the side being bombed are now refusing diplomacy simultaneously. Unprecedented.",
+    "RETALIATION CONTINUES: IRGC launched 'intense' attacks on Israel overnight. 2 killed in Ramat Gan by ballistic missile. Cluster munitions over central Israel. IRGC Aerospace: 'the enemy's sky will become more spectacular.' Iran army commander: response to Larijani 'decisive and regrettable.'",
+    "GULF-WIDE BARRAGE Wed morning: Kuwait — 'hostile missiles and drones breached airspace,' air defenses intercepting. UAE, Saudi, Qatar all reporting intercepts. This is the broadest simultaneous Gulf engagement in days — retaliation for Larijani driving volume spike.",
+    "LEBANON ESCALATION: 6 killed + 24 injured in Israeli strikes on Beirut Wed morning. Israel targeting Litani River crossings — explicitly cutting off civilian evacuation routes from south. Tyre evacuation order. Katz compared operation to Gaza, suggested indefinite occupation.",
+    "GROUND TROOPS: Trump told reporters he is 'not afraid' of deploying boots on the ground in Iran. Senate leader Thune: 'not ruling it in or out.' USS Tripoli + 31st MEU en route. This is the first time Trump has explicitly not ruled out ground invasion.",
+    "NATO: Deploying additional US Patriot system to southern Turkey (Adana/Incirlik) — bolstering defenses as missiles threaten Turkish airspace. Turkey FM Fidan heading to Riyadh Wed = first potential diplomatic track that isn't DOA.",
+    "Iran FM Araghchi: nuclear weapon stance 'unlikely to change significantly.' Khamenei hasn't expressed view on nuclear fatwa. ACLED: 'war's trajectory more protracted and unpredictable than Washington anticipated.'"
   ],
   "sitrep_fa": [
-    "تأیید: لاریجانی + سلیمانی + پسر لاریجانی + تیم حفاظتی کشته شدند. لاریجانی رهبر عملی بود.",
-    "شکاف سیاسی: جو کنت استعفا — ایران تهدید فوری نبود. بالاترین استعفا. ترامپ: ضعیف.",
-    "حمله زمینی لبنان. کاتز: مانند غزه. اشغال نامحدود. G5: باید اجتناب شود.",
-    "دیپلماسی هرمز: ایران با ۸ کشور درباره عبور یوانی مذاکره. جایگزین چین‌محور.",
-    "ترامپ: به کمک کسی نیاز نداریم. سفر چین ۱ ماه عقب افتاد. نشست شی تعویق.",
-    "عفو بین‌الملل: حمله آمریکا به مدرسه ۱۷۰+ کشته. اراک: نوزاد + خواهر + مادر + مادربزرگ.",
-    "سفارت بغداد: ۶/۷ رهگیری. هتل الرشید ضربه خورد. وزارت خارجه: تمام پست‌ها امنیت بررسی.",
-    "نفت ۱۰۲.۹۲. طرح عبور یوانی = سلاح ارزی هرمز."
+    "روز ۱۹. سومین سربریدن در ۴۸ ساعت: خطیب (وزیر اطلاعات). کاتز: غافلگیری‌های مهم. اطلاعات لاریجانی از ساکنان تهران.",
+    "صلح رد شده از هر دو طرف: ترامپ D17 رد. خامنه‌ای D19 رد. بی‌سابقه.",
+    "انتقام ادامه: حملات شدید به اسرائیل. ۲ کشته رامات‌گان. مهمات خوشه‌ای.",
+    "باران خلیج: کویت — موشک وارد حریم شد. امارات، عربستان، قطر همه درگیر.",
+    "لبنان: ۶ کشته بیروت. پل لیتانی هدف = راه فرار بسته. اشغال نامحدود.",
+    "نیروی زمینی: ترامپ نمی‌ترسد. ثیون رد نکرد. تریپلی در راه.",
+    "ناتو: پاتریوت به ترکیه. فیدان به ریاض = اولین مسیر دیپلماتیک.",
+    "عراقچی: موضع هسته‌ای تغییر نمی‌کند. خامنه‌ای درباره فتوا صحبت نکرده."
   ],
   "dailySeries": {
     "labels": [
@@ -136,7 +135,8 @@
       "Mar 14",
       "Mar 15",
       "Mar 16",
-      "Mar 17"
+      "Mar 17",
+      "Mar 18"
     ],
     "missiles": [
       480,
@@ -156,7 +156,8 @@
       25,
       15,
       12,
-      12
+      12,
+      30
     ],
     "drones": [
       720,
@@ -176,10 +177,11 @@
       60,
       45,
       70,
-      60
+      60,
+      50
     ],
-    "sourceLabel": "D1-D10: JPost. D11: UAE MoD. D12-D18: fragment est. D17: Saudi 37 drones (AJ). D18: UAE full airspace closure + Saudi 12+ + Baghdad Al-Rasheed 5+ drones + tanker struck. IRGC: 'cache intact.'",
-    "throughDate": "Mar 17 (all days estimated)"
+    "sourceLabel": "D1-D10: JPost. D11: UAE MoD. D12-D19: fragment est. D19: Iran retaliation barrage for Larijani — Qatar 13/14 ballistic intercepted + 2 killed Israel + Abu Dhabi kill + Baghdad embassy + Majnoon. Missile SPIKE from retaliation.",
+    "throughDate": "Mar 18 (all days estimated)"
   },
   "oil": {
     "labels": [
@@ -200,7 +202,8 @@
       "Mar 13",
       "Mar 14",
       "Mar 15",
-      "Mar 16"
+      "Mar 16",
+      "Mar 17"
     ],
     "brent": [
       65.0,
@@ -220,6 +223,7 @@
       99.32,
       103.14,
       106.12,
+      100.21,
       100.21
     ],
     "wti": [
@@ -240,7 +244,8 @@
       93.75,
       98.71,
       101.53,
-      95.03
+      95.03,
+      92.46
     ],
     "note": "Full daily series. CNBC/Investing.com confirmed where noted. D8 REVISED: Investing.com 52w high = $119.50, IEA confirmed 'within whisker of $120.' Previous estimate of $107 was intraday not peak. Markets closed regular hours Sun Mar 16. D16 = Sunday evening futures."
   },
@@ -263,7 +268,8 @@
       "Mar 14",
       "Mar 15",
       "Mar 16",
-      "Mar 17"
+      "Mar 17",
+      "Mar 18"
     ],
     "attrition": [
       2,
@@ -281,6 +287,7 @@
       9,
       9.5,
       9.5,
+      10,
       10,
       10,
       10
@@ -303,29 +310,30 @@
       8.5,
       9,
       9.5,
-      9
+      9,
+      9.5
     ]
   },
   "latestTargetBreakdown": {
-    "note": "Mar 17 (D18). UAE: full airspace closure — heavy incoming. Saudi: 12+ drones east. Qatar: missile debris fire. Baghdad: Al-Rasheed Hotel 5+ drones (most intense embassy attack). Israel: missiles landed in open area. Tanker struck off Fujairah (UKMTO).",
+    "note": "Mar 18 (D19). Iran RETALIATION barrage for Larijani. Israel: 2 killed by ballistic + cluster munitions. Qatar: 13/14 ballistic intercepted. Abu Dhabi: 1 killed (shrapnel). Baghdad: embassy drones+rockets + Majnoon oil field. Saudi/UAE intercepting.",
     "missiles": {
-      "Israel": 3,
+      "Qatar": 14,
+      "Israel": 8,
       "UAE": 4,
-      "Qatar": 2,
-      "Saudi": 1,
+      "Saudi": 2,
       "Iraq": 2,
       "Bahrain": 0,
       "Kuwait": 0,
       "Jordan": 0
     },
     "drones": {
-      "Saudi": 12,
-      "UAE": 15,
-      "Iraq": 10,
-      "Israel": 5,
-      "Qatar": 3,
+      "Iraq": 15,
+      "UAE": 10,
+      "Israel": 8,
+      "Saudi": 6,
+      "Kuwait": 4,
       "Bahrain": 3,
-      "Kuwait": 5,
+      "Qatar": 2,
       "Jordan": 2
     }
   },
@@ -487,10 +495,19 @@
       "date": "Mar 17",
       "missiles": 12,
       "drones": 60,
-      "primary": "DECAPITATION: Larijani + Soleimani killed. UAE full airspace closure. Saudi 12+ drones. Baghdad Al-Rasheed Hotel 5+ drones ('most intense'). Qatar debris fire. Tanker struck off Fujairah. Israel ground ops expand in Lebanon.",
-      "capability": "Decapitation accelerating — Larijani was key SNSC figure. But Iran still pushing enough volume to close UAE airspace entirely. IRGC 'cache intact' claim from D17 partially validated by continued operations. First Hormuz transit suggests Iran using blockade as diplomatic lever, not absolute barrier.",
-      "cost": "Brent $100-103 range (pulled back from $106). HRANA: ~3,065 dead in Iran (far exceeds official figures). Lebanon 886 killed, 1M displaced. EU rejected Hormuz naval ops. Green Zone 'most intense' attack.",
+      "primary": "DECAPITATION: Larijani + Soleimani confirmed killed. UAE full airspace closure. Qatar 13/14 ballistic intercepted. Saudi 12+ drones. Baghdad Al-Rasheed Hotel + embassy targeted. Abu Dhabi 1 killed. Tanker struck off Fujairah. Israel ground invasion of Lebanon.",
+      "capability": "Decapitation accelerating but Qatar 13/14 ballistic missiles = Iran still has meaningful ballistic capability. IRGC 'cache intact' claim from D16 gaining credibility. Israel ground ops in Lebanon = second full front.",
+      "cost": "Joe Kent (NCTC director) resigned — 'Iran not a threat.' Trump: don't need NATO. Delayed China trip 1 month. France: 'never' Hormuz during war. Amnesty: 170+ schoolgirls killed in US strike.",
       "assessment": "Crosscurrents: Military decapitation vs economic leverage. Israel destroying command structure but Iran's remaining capability + Hormuz control = strategic stalemate. First tanker transit could signal beginning of negotiated passage framework."
+    },
+    {
+      "date": "Mar 18",
+      "missiles": 30,
+      "drones": 50,
+      "primary": "3RD KILL IN 48H: Khatib (intel minister) + earlier Larijani + Soleimani. 2 killed Ramat Gan. Gulf-wide barrage — Kuwait breached. 6 killed Beirut. Litani crossings targeted. Baghdad embassy again.",
+      "capability": "RETALIATION SPIKE confirmed — missile volume jumped from 12→30 on Larijani revenge. Gulf-wide simultaneous intercepts suggest Iran still has significant launch capability. IRGC: 'sky will become more spectacular.' Iran's internal security penetrated (Larijani intel from Tehran residents).",
+      "cost": "BOTH SIDES REJECTING PEACE. Trump refused D17. Khamenei rejected D19. Trump 'not afraid' of ground troops. NATO Patriot to Turkey. 6 killed Beirut. Litani crossings = cutting evacuation. Dover transfer today.",
+      "assessment": "War entering most dangerous phase since D1. Decapitation → retaliation → escalation cycle accelerating. Both sides refusing diplomacy. Ground invasion no longer ruled out. Turkey FM to Riyadh = only diplomatic movement. Nuclear fatwa status uncertain."
     }
   ],
   "timeline": [
@@ -539,122 +556,122 @@
   ],
   "scenarioProbabilities": [
     {
-      "name": "Protracted + yuan passage framework",
+      "name": "Protracted war of attrition",
       "prob": "42%",
-      "body": "MOST LIKELY, INCREASED. Iran's yuan passage plan to 8 countries = Hormuz becoming a political/currency tool. War continues militarily but Iran building alternative economic order around strait access. Oil $95-110. China-aligned shipping framework bypasses US entirely."
+      "body": "Still most likely but DECREASED from 45%. Both sides refusing peace = war can't end through negotiation. But 'protracted' assumes some stabilization — the current escalation cycle (decapitation→retaliation→escalation) may be unsustainable."
     },
     {
-      "name": "Declared victory + phased withdrawal",
+      "name": "Escalation spiral",
       "prob": "20%",
-      "body": "INCREASED. Kent resignation + Trump 'don't need anyone' = political pressure mounting. Larijani kill gives material. Xi trip delayed = no near-term diplomatic venue. Trump may declare victory unilaterally within weeks."
+      "body": "NEW/INCREASED. This is now a distinct scenario. Decapitation→retaliation cycle is ACCELERATING (3 kills in 48h). Trump 'not afraid' of ground troops. Katz: 'significant surprises in all arenas.' Litani crossings targeted. If either side makes a major miscalculation, this becomes the dominant trajectory."
     },
     {
-      "name": "Full economic war",
-      "prob": "18%",
-      "body": "DECREASED. Yuan passage plan suggests Iran prefers managed disruption over total blockade. But if plan fails or Houthis resume Red Sea → re-escalation."
+      "name": "Declared victory",
+      "prob": "15%",
+      "body": "Dover transfer today = political cost visible. Khatib + Larijani + Soleimani = major scalps. Trump has material to declare victory. But 'not afraid' of ground troops = he may be escalating, not wrapping up."
     },
     {
-      "name": "Negotiated deal",
-      "prob": "8%",
-      "body": "DECREASED. Xi trip delayed 1 month. Iran FM: no ceasefire. Kent resignation shows internal US debate but no diplomatic channel. Yuan passage could BE the deal — de facto ceasefire on Hormuz without formal agreement."
+      "name": "Economic war / dual chokepoint",
+      "prob": "10%",
+      "body": "Gulf exports ↓61%. Oil >$100 for 7th session. But Houthis still haven't resumed Red Sea. Yuan passage talks ongoing. If Houthis join = $120+ and this scenario dominates."
     },
     {
       "name": "Regime fracture",
       "prob": "8%",
-      "body": "INCREASED slightly. Larijani was 'de facto leader' — his death creates genuine power vacuum. Khamenei injured. Soleimani (Basij) killed = internal security apparatus weakened. But internet blackout means zero visibility."
+      "body": "Larijani ('de facto leader') dead. Khatib (intelligence) dead. Soleimani (Basij) dead. Khamenei injured. Intel penetrated by 'Tehran residents.' IRGC autonomous. Power vacuum is real and deepening with each kill."
     },
     {
-      "name": "Major escalation (Lebanon ground war)",
-      "prob": "4%",
-      "body": "INCREASED. Israel ground invasion of Lebanon is a FACT, not scenario. Katz compared to Gaza. Thune: ground troops in Iran 'not ruled out.' Multiple fronts = rising risk of miscalculation or quagmire."
+      "name": "Negotiated deal via Turkey",
+      "prob": "5%",
+      "body": "NEW. Turkey FM Fidan to Riyadh = first active diplomatic track. Turkey has relationships with both Iran and US. Khamenei rejected 2 intermediaries but Turkey wasn't named. Long shot but the only visible mechanism."
     }
   ],
   "scenarioProbabilities_fa": [
     {
-      "name": "فرسایشی + چارچوب عبور یوانی",
+      "name": "فرسایشی",
       "prob": "۴۲٪",
-      "body": "محتمل‌ترین. هرمز ابزار ارزی/سیاسی."
+      "body": "هنوز محتمل‌ترین. اما چرخه تشدید ممکن است ناپایدار باشد."
     },
     {
-      "name": "اعلام پیروزی + عقب‌نشینی",
+      "name": "مارپیچ تشدید",
       "prob": "۲۰٪",
-      "body": "استعفای کنت + ترامپ. لاریجانی = مواد."
+      "body": "جدید. ۳ کشتار در ۴۸ ساعت. ترامپ: نیروی زمینی. کاتز: غافلگیری."
+    },
+    {
+      "name": "اعلام پیروزی",
+      "prob": "۱۵٪",
+      "body": "داور امروز. خطیب + لاریجانی + سلیمانی."
     },
     {
       "name": "جنگ اقتصادی",
-      "prob": "۱۸٪",
-      "body": "کاهش. طرح یوانی = ایران انسداد کامل نمی‌خواهد."
-    },
-    {
-      "name": "مذاکره",
-      "prob": "۸٪",
-      "body": "سفر شی عقب افتاد. عبور یوانی = توافق عملی."
+      "prob": "۱۰٪",
+      "body": "صادرات ↓۶۱٪. حوثی هنوز وارد نشده."
     },
     {
       "name": "فروپاشی رژیم",
       "prob": "۸٪",
-      "body": "لاریجانی رهبر عملی بود — خلاء قدرت."
+      "body": "لاریجانی + خطیب + سلیمانی + خامنه‌ای. اطلاعات نفوذ شده."
     },
     {
-      "name": "تشدید (لبنان زمینی)",
-      "prob": "۴٪",
-      "body": "حمله زمینی واقعیت است. ثیون: نیروی زمینی رد نشده."
+      "name": "مذاکره ترکیه",
+      "prob": "۵٪",
+      "body": "فیدان به ریاض. تنها مسیر فعال."
     }
   ],
   "theoryEvaluation": [
     {
-      "title": "Military suppression — command structure collapsing",
-      "body": "Killed since D1: Khamenei Sr. (Supreme Leader), Larijani (SNSC secretary/'de facto leader'), Soleimani (Basij), Mousavi (armed forces chief), Nasirzadeh (defense minister), Pakpour (IRGC commander-in-chief), Abu Ali al-Askari (Kata'ib Hezbollah). IDF: 7,600 strikes, 85% air defenses, 70% launchers destroyed. But IRGC's decentralized structure + 'cache intact' claim = operational capability persists even without leadership. UAE airspace closure + Baghdad embassy attacks = Iran still fighting."
+      "title": "Military — decapitation producing chaos, not surrender",
+      "body": "3 kills in 48 hours: Larijani (de facto leader), Soleimani (Basij), Khatib (intelligence). Iran's command structure is being destroyed but each kill triggers a retaliation barrage — 2 killed in Israel, Gulf-wide barrage, cluster munitions over Tel Aviv. Larijani intel came from 'Tehran residents' = Iran's internal security penetrated. But IRGC's decentralized structure means units can operate without central command. The military campaign is succeeding tactically (destroying leadership) while failing strategically (not producing surrender or de-escalation)."
     },
     {
-      "title": "Economic/diplomatic — Iran innovating",
-      "body": "CRITICAL SHIFT: Iran offering yuan-denominated Hormuz passage to 8 countries (CNN). First tanker (Karachi) already transited. This could create China-aligned shipping framework that bypasses US naval escort entirely. Iran transforming Hormuz from military blockade to political/currency weapon. Oil $100-103. Gulf exports ↓61%. If yuan passage framework develops, it would be the most significant restructuring of global oil trading since petrodollar establishment."
+      "title": "Diplomatic — unprecedented deadlock",
+      "body": "BOTH sides now explicitly refusing diplomacy. D17: Trump refused Iran's outreach to Witkoff ('not confident Khamenei in charge'). D19: Khamenei said 'not the right time for peace,' rejected proposals from 2 intermediaries. This is historically extraordinary — the side being massively bombed AND the side doing the bombing simultaneously refusing to talk. Only active track: Turkey FM Fidan heading to Riyadh. Iran FM says nuclear stance unlikely to change. No mechanism to end this war exists."
     },
     {
-      "title": "Political cohesion — fracturing on both sides",
-      "body": "US: Kent (NCTC director) resigned publicly — 'Iran posed no imminent threat, war started due to Israeli lobby pressure.' Highest-profile defection. Trump pivoting from 'allies help us' to 'we don't need anyone.' Xi trip delayed. Israel: ground invasion of Lebanon opens massive second front. Iran: Larijani death creates genuine power vacuum — he was the strategic brain. Khamenei injured. IRGC autonomous. Both sides losing key decision-makers and political capital simultaneously."
+      "title": "Escalation risk — highest since D1",
+      "body": "Trump: 'not afraid' of ground troops. Thune: not ruled out. USS Tripoli en route with 5,000 Marines. Israel targeting Litani crossings (cutting evacuation). Katz: 'significant surprises in all arenas.' NATO Patriot to Turkey. 5,000-lb bunker busters on Hormuz. IRGC: 'sky will become more spectacular.' Iran's missile retaliation spike reversed the declining trend. Each side is locked into escalation by the other's actions — classic escalation spiral dynamics."
     }
   ],
   "theoryEvaluation_fa": [
     {
-      "title": "سرکوب — ساختار فرماندهی فروپاشی",
-      "body": "کشته‌شدگان: خامنه‌ای، لاریجانی، سلیمانی، موسوی، نصیرزاده، پاکپور. اما سپاه غیرمتمرکز هنوز عمل می‌کند."
+      "title": "نظامی — هرج‌ومرج نه تسلیم",
+      "body": "۳ کشتار ۴۸ ساعت. هر کشتار = انتقام. نفوذ از تهران. سپاه غیرمتمرکز."
     },
     {
-      "title": "اقتصادی/دیپلماتیک — نوآوری ایران",
-      "body": "عبور یوانی به ۸ کشور = هرمز سلاح ارزی. تغییر بنیادین تجارت نفت جهانی."
+      "title": "دیپلماتیک — بن‌بست بی‌سابقه",
+      "body": "هر دو طرف رد. ترامپ D17. خامنه‌ای D19. فقط ترکیه."
     },
     {
-      "title": "انسجام سیاسی — شکاف در هر دو طرف",
-      "body": "آمریکا: استعفای کنت. ایران: خلاء قدرت لاریجانی. هر دو طرف سرمایه سیاسی از دست می‌دهند."
+      "title": "خطر تشدید — بالاترین از D1",
+      "body": "ترامپ: نیروی زمینی. بمب سنگین. لیتانی. مارپیچ کلاسیک."
     }
   ],
   "endstate": [
     {
-      "title": "Most likely (42%)",
-      "body": "Protracted conflict with yuan-denominated Hormuz passage framework. Iran allows China-aligned tanker transit while blocking US/allied vessels. War continues at low intensity. Oil $95-110. Creates de facto two-tier global oil market. Formal end may never come — war fades into managed standoff like Korean armistice."
+      "title": "Most likely (45%)",
+      "body": "Protracted war of attrition lasting months. No diplomatic off-ramp (Trump refused Iran outreach). Each decapitation triggers retaliation cycle. War becomes self-sustaining. Oil $100-110 sustained. Ends only through exhaustion or domestic political crisis on one side — most likely US midterm pressure forcing Trump to declare victory and withdraw regardless of conditions."
     },
     {
-      "title": "Second (20%)",
-      "body": "Trump declares victory after Larijani kill + 3 more weeks of Israeli strikes. Gradual withdrawal. Iran keeps Hormuz leverage + yuan passage framework. Neither side 'wins' but both claim to."
+      "title": "Second (18%)",
+      "body": "Trump declares victory after completing 3-week Israeli strike plan + Larijani kill. Gradual drawdown. Iran keeps Hormuz leverage + yuan passage framework. Neither side 'wins' but fighting intensity drops to manageable level. Dover transfer tomorrow may accelerate this timeline — political cost of casualties becoming visible."
     },
     {
-      "title": "Wild card (8%)",
-      "body": "Regime fracture. Larijani was 'de facto leader' — his death + Khamenei injury = genuine power vacuum. IRGC factions may compete. Internet blackout hides internal dynamics. If regime cohesion breaks, war dynamics change overnight — but could go either direction (collapse OR hardening)."
+      "title": "Wild card (10%)",
+      "body": "Iranian regime fracture. Larijani (de facto leader) dead. Khamenei possibly not in charge. Soleimani (Basij internal security) dead. Who is running Iran? IRGC factions may compete for control. 3+ weeks of internet blackout = zero visibility. If regime fragments, war dynamics change overnight."
     }
   ],
   "endstate_fa": [
     {
-      "title": "محتمل‌ترین (۴۲٪)",
-      "body": "فرسایشی + عبور یوانی. بازار نفت دوسطحی. مانند آتش‌بس کره."
+      "title": "محتمل‌ترین (۴۵٪)",
+      "body": "فرسایشی ماه‌ها. خروجی نیست. فقط خستگی یا بحران سیاسی."
     },
     {
-      "title": "دوم (۲۰٪)",
-      "body": "ترامپ پیروزی اعلام. ایران هرمز + یوان نگه می‌دارد."
+      "title": "دوم (۱۸٪)",
+      "body": "ترامپ پیروزی اعلام. داور = هزینه سیاسی."
     },
     {
-      "title": "غیرمنتظره (۸٪)",
-      "body": "فروپاشی. لاریجانی + خامنه‌ای = خلاء. رقابت سپاه."
+      "title": "غیرمنتظره (۱۰٪)",
+      "body": "فروپاشی ایران. لاریجانی + خامنه‌ای + سلیمانی = خلاء."
     }
   ],
   "shippingRoutes": [
