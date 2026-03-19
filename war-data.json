@@ -1,43 +1,46 @@
 {
   "meta": {
-    "lastUpdated": "2026-03-19T08:15:00-04:00",
+    "lastUpdated": "2026-03-19T12:15:00-04:00",
     "notes": [
-      "Day 20 (Mar 19) UPDATE 8:15AM ET. Sources: CNN live D20, AJ liveblog D20, CNBC, Bloomberg, Fortune, CBS, NPR, NBC, Wikipedia, Investing.com, IAEA, DefenceSecurityAsia, Times of Israel liveblog, ABC, Newsweek, InsuranceJournal, Hengaw.",
-      "IRGC EVACUATION ORDERS — ENERGY WAR ESCALATION: IRGC declared Gulf energy sites 'legitimate targets' — named Samref refinery, Jubail petrochemical (Saudi), Ras Laffan, Mesaieed (Qatar), Al Hosn gas (UAE). Ordered immediate evacuations. Saudi Aramco reportedly evacuated Samref personnel. UAE shut down Habshan gas facilities in Abu Dhabi after Iranian attack. Saudi reports 2 refineries attacked.",
-      "IRAN 'REVENGE' CLUSTER STRIKES ON ISRAEL: Multiple-warhead + cluster munitions on central Israel — 2 killed Ramat Gan, 3 women killed West Bank hair salon by cluster fragments. Foreign worker killed by shrapnel at Moshav Adanim (earlier D20). Total Israel dead now 22+. Tel Aviv train station damaged.",
-      "OIL SURGES $110+: Brent surged to $110.40 Thursday AM (from $103.71 open). Asian markets plunging — Nikkei -2.7%, Kospi -2.6%, Hang Seng -1.4%. WTI $97.58. Energy war fully mutual = oil entering new price regime.",
+      "Day 20 (Mar 19) UPDATE 12:15PM ET. Sources: CNN live D20, AJ liveblog D20 ('trust gone'), CNBC, Bloomberg, Fortune, OilPrice.com, CBS, NPR, NBC, Wikipedia, Investing.com, IAEA, UKMTO, GlobalDefenseCorp, Euronews, PBS, CNBC Hormuz tracker, ABC, Newsweek, InsuranceJournal, Hengaw.",
+      "IRGC EVACUATION ORDERS — ENERGY WAR ESCALATION: IRGC declared Gulf energy sites 'legitimate targets' — named Samref refinery, Jubail petrochemical (Saudi), Ras Laffan, Mesaieed (Qatar), Al Hosn gas (UAE). Ordered immediate evacuations. Saudi Aramco evacuated Samref. UAE shut Habshan gas. Saudi 2 refineries attacked. Saudi Al-Kharj drone hit residential building — 2 killed (Indian, Bangladeshi nationals), 12 injured. Saudi shot down 2nd drone over Riyadh diplomatic quarter Thu AM.",
+      "IRAN 'REVENGE' CLUSTER STRIKES ON ISRAEL: Multiple-warhead + cluster munitions on central Israel — 2 killed Ramat Gan, 3 women killed West Bank hair salon by cluster fragments. Foreign worker killed by shrapnel at Moshav Adanim. Total Israel dead now 22+. Tel Aviv train station damaged.",
+      "OIL SURGES $112+: Brent now $112.21 (OilPrice.com Thu midday), up from $103.71 open. Asian markets plunging — Nikkei -2.7%, Kospi -2.6%, Hang Seng -1.4%. WTI $97.58. Jones Act waived 60 days to allow foreign-flagged ships between US ports. Energy war = new price regime.",
       "TRUMP THREATENS SOUTH PARS: 'US will massively blow up the entirety of the South Pars Gas Field' if Iran attacks Qatar again. Claims US 'knew nothing' about Israel's South Pars strike. Israel struck Asaluyeh energy complex.",
       "CASPIAN SEA STRIKES: Israel struck Iranian naval targets in Caspian Sea — first time in war. Geographic expansion beyond Persian Gulf. IRIS Dena sinking confirmed off Sri Lanka (87 killed, 32 rescued).",
-      "PEZESHKIAN RESIGNATION CRISIS: President weighing resignation — IRGC blocking all decisions. Called IRGC 'reckless,' accused them of exposing Larijani. 'Entire system collapsing.' Analysts: Iran = military dictatorship, IRGC controls Islamic Republic. Request to meet Mojtaba refused.",
+      "PEZESHKIAN RESIGNATION CRISIS: GlobalDefenseCorp confirms president requested meeting with Mojtaba to resign. IRGC blocking all decisions. 'Cut me out of military and strategic decisions.' No official confirmation yet. Analysts: Iran = military dictatorship.",
       "IRAN EXECUTES SWEDISH CITIZEN on espionage charges. Major diplomatic incident amid war.",
-      "FED HOLDS RATES: Uncertainty elevated. War impact unclear. Energy prices threatening inflation.",
-      "LEBANON 968+ KILLED: Up from 886. Israel striking Litani bridges to cut off Hezbollah. 2 additional divisions. ~1M displaced. Naim Qassem: 'ready for long confrontation.'",
-      "ZELENSKY WARNING: 800+ Patriots fired Day 1 of Iran war. US manufactures ~60-65/month. Ukraine short of air-defense missiles. Putin views prolonged Iran war as beneficial.",
-      "KATAIB HEZBOLLAH: 5-day conditional pause on Baghdad embassy attacks. If conditions not met, 'intensified' attacks."
+      "12 ARAB/ISLAMIC FM JOINT STATEMENT: Demanded Iran 'immediately halt attacks.' Denounced strikes on residential areas, airports, desalination plants, oil facilities, diplomatic premises. Fed holds rates.",
+      "TWO MORE SHIPS HIT: UKMTO reports vessel struck near Ras Laffan (4nm east) + vessel struck off UAE coast near Hormuz. Total 22+ vessel incidents since war began.",
+      "KUWAIT CONFIRMED: 4 ballistic missiles + 20 drones intercepted + 3 more drones fell outside threat zone. No material damage.",
+      "HORMUZ TRANSIT DATA: 89 ships crossed March 1-15 including 16 oil tankers (Lloyd's List). Iran exported 16M+ barrels since March 1. Permission-based transit expanding — India, Pakistan, Turkey, China granted passage. Still far below 100+/day pre-war.",
+      "LEBANON 968+ KILLED: 20+ killed in latest Wednesday strikes across Beirut, south, east. ~1M displaced. Approaching 1,000 total.",
+      "KENT FBI INVESTIGATION: Former NCTC director now under FBI probe for allegedly leaking classified info. Probe reportedly began before resignation.",
+      "SAUDI RAS TANURA RESTARTING: 550K bbl/day refinery restarting after March 2 shutdown. First major refinery to resume."
     ]
   },
-  "theoryBox": "<strong>Day 20 — ENERGY WAR FULLY IGNITED:</strong> IRGC declares Gulf sites 'legitimate targets,' orders evacuations from Samref, Jubail, Ras Laffan, Mesaieed, Al Hosn. UAE shuts Habshan. Saudi 2 refineries hit. Brent surges $110+. Trump: 'massively blow up' South Pars if Qatar attacked again. Israel strikes Caspian Sea (first time). Pezeshkian resignation crisis — IRGC military dictatorship. Iran executes Swedish citizen. 5 killed in Israel by cluster munitions. Lebanon 968+. Fed holds. Zelensky: 800+ Patriots Day 1, US makes 60-65/mo. Energy war + nuclear crisis + political disintegration = three simultaneous escalation spirals.",
-  "theoryBox_fa": "<strong>روز ۲۰ — جنگ انرژی کامل:</strong> سپاه: سایت‌های خلیج 'هدف مشروع.' تخلیه سامرف، جبیل، راس لفان، مسعید، الحصن. حبشان تعطیل. ۲ پالایشگاه سعودی. نفت ۱۱۰+. ترامپ: انهدام کامل پارس جنوبی. اسرائیل: خزر (اولین بار). پزشکیان استعفا — سپاه دیکتاتوری نظامی. اعدام شهروند سوئدی. ۵ کشته اسرائیل. لبنان ۹۶۸+. فدرال رزرو ثابت. زلنسکی: ۸۰۰+ پاتریوت روز اول. سه مارپیچ همزمان.",
+  "theoryBox": "<strong>Day 20 midday — ENERGY WAR INTENSIFYING:</strong> Brent now $112+ (OilPrice.com). IRGC energy target doctrine producing results: Saudi Al-Kharj 2 killed, 2nd drone over Riyadh diplomatic quarter. 2 more ships hit (UKMTO) — 22+ vessel incidents total. Kuwait: 4 ballistic + 23 drones confirmed. 12 FM joint statement demands Iran halt. Jones Act waived 60 days. Hormuz: 89 ships crossed March 1-15, permission-based transit expanding but far below normal. Ras Tanura restarting (550K bbl/day). Pezeshkian meeting with Mojtaba to resign (unconfirmed). Kent FBI probe. Three escalation spirals continue: energy ($112 oil), nuclear (Isfahan), political (IRGC dictatorship).",
+  "theoryBox_fa": "<strong>روز ۲۰ ظهر — جنگ انرژی تشدید:</strong> نفت ۱۱۲+. سپاه: الخرج ۲ کشته، ریاض پهپاد دوم. ۲ کشتی دیگر (UKMTO) — ۲۲+ حادثه. کویت: ۴ بالستیک + ۲۳ پهپاد. ۱۲ وزیر خارجه بیانیه. هرمز: ۸۹ کشتی ۱-۱۵ مارس. راس‌تنوره بازگشایی. پزشکیان جلسه استعفا (تأیید نشده). سه مارپیچ ادامه.",
   "metrics": [
     {
       "label": "Day",
       "value": "20",
-      "desc": "ENERGY WAR IGNITED. IRGC: Gulf sites 'legitimate targets.' Evacuations ordered. Trump: 'blow up' South Pars. Caspian strikes. Pezeshkian resignation. Iran = IRGC military dictatorship."
+      "desc": "ENERGY WAR INTENSIFYING. Brent $112+. Al-Kharj 2 killed. 2 more ships hit. 12 FM statement. Jones Act waived. Ras Tanura restarting. Pezeshkian resignation request (unconfirmed). Kent FBI probe."
     },
     {
       "label": "Cumul. missiles",
-      "value": "~2,682",
-      "desc": "D20 est. 30: 'Revenge' multi-warhead + cluster on Israel (2 killed Ramat Gan, 3 killed WB). Saudi refineries hit. IRGC naming new Gulf targets. Rate up from early-D20 estimate."
+      "value": "~2,687",
+      "desc": "D20 revised 30→35: Kuwait 4 ballistic confirmed + Saudi Al-Kharj + Riyadh diplomatic quarter + Israel cluster. 2 more vessels hit (UKMTO). IRGC energy doctrine producing casualties."
     },
     {
       "label": "Cumul. drones",
-      "value": "~4,180",
-      "desc": "D20 est. 55: Kuwait dawn shootdown. Baghdad airport + embassy. Continued Gulf harassment. IRGC threatening named energy targets."
+      "value": "~4,190",
+      "desc": "D20 revised 55→65: Kuwait 23 drones confirmed (20 intercepted + 3 fell). Saudi 3+ drones (Riyadh x2 + Al-Kharj). Continued Gulf harassment. IRGC energy targeting intensifying."
     },
     {
       "label": "Brent crude",
-      "value": "$110",
-      "desc": "Surged to $110.40 Thu AM from $103.71 open. Asian markets plunging: Nikkei -2.7%. WTI $97.58. Energy war = new price regime. IEA/SPR failing to contain."
+      "value": "$112",
+      "desc": "Now $112.21 (OilPrice.com Thu midday), up from $103.71 open. Jones Act waived 60 days. Ras Tanura restarting (550K bbl/day). WTI $97.58. IEA/SPR still failing to contain. Energy war = structural price regime."
     },
     {
       "label": "Iran dead (Hengaw)",
@@ -64,22 +67,22 @@
     {
       "label": "روز",
       "value": "۲۰",
-      "desc": "جنگ انرژی. سپاه: اهداف مشروع. تخلیه. ترامپ: پارس جنوبی. خزر. پزشکیان. دیکتاتوری."
+      "desc": "تشدید جنگ انرژی. نفت ۱۱۲+. الخرج ۲ کشته. ۲ کشتی. ۱۲ وزیر خارجه. راس‌تنوره. پزشکیان استعفا (تأیید نشده). کنت FBI."
     },
     {
       "label": "موشک",
-      "value": "~۲,۶۸۲",
-      "desc": "D20: ۳۰. انتقام خوشه‌ای اسرائیل (۵ کشته). پالایشگاه سعودی. اهداف جدید."
+      "value": "~۲,۶۸۷",
+      "desc": "D20: ۳۵. کویت ۴ بالستیک. الخرج + ریاض. ۲ کشتی (UKMTO). سپاه دکترین انرژی."
     },
     {
       "label": "پهپاد",
-      "value": "~۴,۱۸۰",
-      "desc": "D20: ۵۵. کویت. بغداد. خلیج. سپاه تهدید اهداف انرژی."
+      "value": "~۴,۱۹۰",
+      "desc": "D20: ۶۵. کویت ۲۳. سعودی ۳+. خلیج. سپاه تشدید انرژی."
     },
     {
       "label": "نفت",
-      "value": "$۱۱۰",
-      "desc": "۱۱۰.۴۰ پنجشنبه. آسیا سقوط. نیکی -۲.۷٪. جنگ انرژی = رژیم قیمتی جدید."
+      "value": "$۱۱۲",
+      "desc": "۱۱۲.۲۱ ظهر. جونز اکت لغو ۶۰ روز. راس‌تنوره بازگشایی. جنگ انرژی = ساختاری."
     },
     {
       "label": "کشته ایران",
@@ -103,28 +106,29 @@
     }
   ],
   "sitrep": [
-    "IRGC DECLARES GULF ENERGY SITES 'LEGITIMATE TARGETS': Named Samref refinery + Jubail petrochemical (Saudi), Ras Laffan + Mesaieed (Qatar), Al Hosn gas (UAE). Ordered immediate civilian evacuations. Saudi Aramco evacuated Samref personnel. UAE shut down Habshan gas facilities after Iranian attack. Saudi reports 2 refineries attacked. This is the most explicit energy escalation threat of the war — specific named targets with evacuation deadlines.",
-    "OIL SURGES TO $110+: Brent hit $110.40 Thursday AM, surging from $103.71 open. Asian markets plunging — Nikkei -2.7%, Kospi -2.6%, Hang Seng -1.4%, Taiex -1.4%. WTI $97.58. Dubai crude hit all-time high above $150 (unprecedented $50+ spread vs WTI). IEA/SPR release (400M bbl) failing to contain. EIA: >$95 next 2 months, <$80 Q3 if war ends. Energy war entering new price regime.",
-    "IRAN 'REVENGE' STRIKES ON ISRAEL: Multiple-warhead + cluster munitions on central Israel — 2 killed Ramat Gan area, 3 women killed in West Bank hair salon by cluster fragments. Foreign worker killed at Moshav Adanim. Tel Aviv train station damaged. Israel now 22+ dead, 3,727+ wounded. Cluster munitions increasingly effective at evading Iron Dome.",
-    "TRUMP THREATENS SOUTH PARS: Posted that US will 'massively blow up the entirety of South Pars Gas Field' if Iran attacks Qatar again. Claims US 'knew nothing' about Israel's South Pars strike. Israel struck Asaluyeh energy complex in coordination with Washington (per Israeli source to CNN). Trump distancing from Israel's energy strikes while threatening his own.",
-    "CASPIAN SEA STRIKES + GEOGRAPHIC EXPANSION: Israel struck Iranian naval targets in the Caspian Sea — first such strikes of the war. Major geographic expansion beyond Persian Gulf theater. Signals no Iranian maritime asset is safe. Combined with IRIS Dena sinking off Sri Lanka (87 killed, 32 rescued) — Iran's blue-water navy effectively destroyed.",
-    "PEZESHKIAN RESIGNATION CRISIS: President weighing resignation. IRGC blocking him from all military/strategic decisions. Won't let him speak to Supreme Leader. Called IRGC 'reckless,' accused them of exposing Larijani to Israeli strike. 'Entire system collapsing.' Analysts: Islamic Republic effectively ceased — Iran = IRGC military dictatorship. Mojtaba Khamenei refused meeting request.",
-    "IRAN EXECUTES SWEDISH CITIZEN on espionage charges during wartime — major diplomatic provocation. Demonstrates IRGC/judiciary operating independently of any peace framework.",
-    "LEBANON 968+ KILLED: Up from 886. Israel striking Litani bridges to cut off Hezbollah resupply. 2 additional divisions joining 3 already operating. Major battle at Khiam continues. ~1M displaced (19% population). Qassem: 'ready for long confrontation.' Trump admin backs operation but asked Israel to spare Beirut airport.",
-    "ZELENSKY WARNING: 800+ Patriot missiles fired on Day 1 of Iran war alone. US manufactures ~60-65/month. Ukraine critically short of air-defense missiles. Putin views prolonged Iran conflict as beneficial. War's resource consumption directly undermining Ukraine defense.",
-    "KATAIB HEZBOLLAH: 5-day conditional pause on Baghdad embassy attacks. If conditions not met, 'intensified' attacks. First crack in proxy coordination but conditions likely unmet. CIA Ratcliffe disputes Kent resignation over 'no imminent threat' claim. Fed holds rates — uncertainty elevated."
+    "IRGC ENERGY DOCTRINE PRODUCING CASUALTIES: IRGC named targets now being struck. Saudi Al-Kharj drone hit residential building — 2 killed (Indian, Bangladeshi nationals), 12 injured. 2nd drone shot down over Riyadh diplomatic quarter Thursday morning. UAE Habshan shutdown continues. Saudi Ras Tanura restarting (550K bbl/day — first major refinery to resume since war began). IRGC evacuation orders for Samref, Jubail, Ras Laffan, Mesaieed, Al Hosn remain in effect.",
+    "OIL SURGES TO $112+: Brent now $112.21 (OilPrice.com Thursday midday), up from $103.71 open. Jones Act waived 60 days to allow foreign-flagged ships between US ports. Saudi Ras Tanura restarting (550K bbl/day) = first sign of normalization attempt. But IRGC energy escalation contradicts. Dubai crude >$150 all-time high. IEA/SPR 400M bbl + US 172M bbl failing to contain. Asian markets plunging: Nikkei -2.7%.",
+    "TWO MORE SHIPS HIT: UKMTO reports vessel struck near Ras Laffan (4 nautical miles east, crew safe) + vessel struck off UAE coast near Hormuz late Wednesday. Total 22+ vessel incidents since war began. Hormuz permission-based transit: 89 ships crossed March 1-15 (Lloyd's List), including 16 oil tankers. Iran exported 16M+ barrels. India, Pakistan, Turkey, China granted passage. Far below 100+/day pre-war.",
+    "IRAN 'REVENGE' STRIKES ON ISRAEL: Multiple-warhead + cluster munitions on central Israel — 2 killed Ramat Gan, 3 women killed WB hair salon, foreign worker killed Moshav Adanim. Israel 22+ dead, 3,727+ wounded. Cluster munitions increasingly effective at evading Iron Dome.",
+    "12 ARAB/ISLAMIC FM JOINT STATEMENT: Foreign ministers of 12 states demanded Iran 'immediately halt attacks and respect international law.' Denounced strikes on residential areas, airports, desalination plants, oil facilities, diplomatic premises. Broadest diplomatic condemnation of Iran since war began.",
+    "PEZESHKIAN RESIGNATION CRISIS DEEPENING: GlobalDefenseCorp reports president requested meeting with Mojtaba Khamenei to resign. 'They don't let me do anything, have cut me out of military and strategic decisions.' No official confirmation. IRGC military dictatorship now analytical consensus, not hypothesis.",
+    "CASPIAN SEA STRIKES + GEOGRAPHIC EXPANSION: Israel struck Iranian naval targets in Caspian Sea — first time. Iran's blue-water navy effectively destroyed (IRIS Dena: 87 killed, 32 rescued off Sri Lanka).",
+    "KUWAIT CONFIRMED: 4 ballistic missiles + 20 drones intercepted + 3 drones fell outside threat zone. No material damage. Demonstrates both IRGC continued capability and Kuwait defense effectiveness.",
+    "KENT FBI PROBE: Former NCTC director now under FBI investigation for allegedly leaking classified information. Probe reportedly began before his resignation over Iran war. CIA Ratcliffe disputes Kent's 'no imminent threat' claim.",
+    "LEBANON 968+ KILLED: 20+ more killed in latest wave across Beirut, south, east Lebanon. Approaching 1,000 total. ~1M displaced (19% population). Litani bridges targeted. Ground ops continue.",
+    "IRAN EXECUTES SWEDISH CITIZEN on espionage charges. Major diplomatic provocation. Fed holds rates — uncertainty elevated. Zelensky: 800+ Patriots Day 1, US makes 60-65/mo."
   ],
   "sitrep_fa": [
-    "سپاه: سایت‌های انرژی خلیج 'هدف مشروع.' سامرف، جبیل، راس لفان، مسعید، الحصن. تخلیه فوری. آرامکو تخلیه. حبشان تعطیل. ۲ پالایشگاه سعودی.",
-    "نفت ۱۱۰+: پنجشنبه ۱۱۰.۴۰. آسیا سقوط — نیکی -۲.۷٪. دوبی ۱۵۰ بالاترین تاریخ. IEA/SPR ناکام. رژیم قیمتی جدید.",
-    "انتقام خوشه‌ای اسرائیل: ۲ رامات‌گان + ۳ کرانه باختری. ایستگاه تل‌آویو. اسرائیل ۲۲+ کشته. خوشه‌ای از گنبد آهنین فرار.",
-    "ترامپ: 'انهدام کامل پارس جنوبی' اگر قطر دوباره. آمریکا 'نمی‌دانست' درباره حمله اسرائیل. اما اسرائیل با واشنگتن هماهنگ.",
-    "خزر: اسرائیل حمله دریایی خزر — اولین بار. گسترش جغرافیایی. IRIS دنا غرق سریلانکا (۸۷ کشته). نیروی دریایی ایران نابود.",
-    "پزشکیان: استعفا. سپاه مانع تصمیمات. 'سیستم فروپاشی.' تحلیلگران: دیکتاتوری نظامی سپاه. مجتبی جلسه رد.",
-    "اعدام شهروند سوئدی — تحریک دیپلماتیک.",
-    "لبنان ۹۶۸+: پل‌های لیطانی. ۲ لشکر اضافه. خیام. قاسم: جنگ طولانی.",
-    "زلنسکی: ۸۰۰+ پاتریوت روز اول. آمریکا ۶۰-۶۵/ماه. اوکراین کم‌موشک. پوتین = جنگ طولانی مفید.",
-    "کتائب: توقف ۵ روزه مشروط. فدرال رزرو ثابت. عدم قطعیت."
+    "سپاه: دکترین انرژی. الخرج ۲ کشته + ریاض پهپاد دوم. حبشان تعطیل. راس‌تنوره بازگشایی (۵۵۰ هزار بشکه). تخلیه ادامه.",
+    "نفت ۱۱۲+: ظهر پنجشنبه. جونز اکت لغو ۶۰ روز. دوبی ۱۵۰+. IEA/SPR ناکام.",
+    "۲ کشتی دیگر (UKMTO): راس لفان + امارات. ۲۲+ حادثه. هرمز: ۸۹ کشتی ۱-۱۵ مارس. ایران ۱۶+ میلیون بشکه صادر.",
+    "انتقام خوشه‌ای اسرائیل: ۵ کشته. ۲۲+ کشته کل. گنبد آهنین ناکام.",
+    "۱۲ وزیر خارجه بیانیه: توقف فوری حملات. محکومیت گسترده‌ترین.",
+    "پزشکیان: درخواست جلسه استعفا (تأیید نشده). سپاه = دیکتاتوری رسمی.",
+    "کویت: ۴ بالستیک + ۲۳ پهپاد تأیید شده.",
+    "کنت FBI. اعدام سوئدی. خزر. فدرال رزرو ثابت.",
+    "لبنان ۹۶۸+: ۲۰+ کشته جدید. نزدیک ۱۰۰۰.",
+    "زلنسکی: ۸۰۰+ پاتریوت روز ۱. کتائب توقف مشروط."
   ],
   "dailySeries": {
     "labels": [
@@ -169,7 +173,7 @@
       12,
       12,
       40,
-      30
+      35
     ],
     "drones": [
       720,
@@ -191,10 +195,10 @@
       70,
       60,
       60,
-      55
+      65
     ],
-    "sourceLabel": "D1-D10: JPost. D11: UAE MoD. D12-D20: fragment est. D20: IRGC declares Gulf energy sites targets, orders evacuations. Revenge cluster strikes on Israel (5 killed). Caspian Sea naval strikes (first time). Saudi 2 refineries hit. UAE Habshan shutdown. Rate slightly up from early-D20 on revenge escalation.",
-    "throughDate": "Mar 19 intraday (all days estimated)"
+    "sourceLabel": "D1-D10: JPost. D11: UAE MoD. D12-D20: fragment est. D20 REVISED UP: Kuwait confirmed 4 ballistic + 23 drones. Saudi Al-Kharj strike (2 killed) + 2nd Riyadh drone. 2 more vessels hit (UKMTO). Israel cluster continues. IRGC energy doctrine intensifying.",
+    "throughDate": "Mar 19 midday (all days estimated)"
   },
   "oil": {
     "labels": [
@@ -241,7 +245,7 @@
       100.21,
       100.21,
       107.38,
-      110.0
+      112.0
     ],
     "wti": [
       62.0,
@@ -266,7 +270,7 @@
       96.32,
       97.58
     ],
-    "note": "Full daily series. D20: Brent surged to $110.40 Thu AM (Investing.com/Nation Thailand) on energy war escalation — IRGC evacuation orders + Habshan shutdown + Saudi refineries hit. Dubai crude hit all-time high >$150 (unprecedented $50+ spread vs WTI). IEA 400M bbl SPR release + US 172M bbl failing to contain prices. EIA: >$95 next 2mo, <$80 Q3 if war ends. Asian markets plunging. Energy war = new price regime."
+    "note": "Full daily series. D20 midday: Brent $112.21 (OilPrice.com Thu midday), up from $103.71 open. Jones Act waived 60 days. Saudi Ras Tanura restarting (550K bbl/day — first major refinery to resume). Dubai crude >$150 all-time high. IEA 400M bbl SPR + US 172M bbl failing. EIA: >$95 next 2mo, <$80 Q3 if war ends. Hormuz: 89 ships March 1-15 (Lloyd's List), Iran exported 16M+ bbl. Permission-based transit expanding but far below normal."
   },
   "pressure": {
     "labels": [
@@ -337,25 +341,25 @@
     ]
   },
   "latestTargetBreakdown": {
-    "note": "Mar 19 (D20) estimate. IRGC declares Gulf energy sites 'legitimate targets' with named list. Revenge cluster strikes on Israel. Saudi 2 refineries hit. UAE Habshan shutdown. Caspian Sea strikes. Volume revised up on revenge escalation.",
+    "note": "Mar 19 (D20) midday estimate. REVISED UP. Kuwait 4 ballistic + 23 drones confirmed. Saudi Al-Kharj drone (2 killed) + 2 Riyadh drones. 2 vessels struck (UKMTO). Israel cluster continues.",
     "missiles": {
       "Israel": 10,
-      "Saudi": 6,
+      "Saudi": 8,
       "Kuwait": 4,
-      "Qatar": 3,
-      "UAE": 3,
+      "Qatar": 4,
+      "UAE": 4,
       "Iraq": 2,
-      "Bahrain": 1,
+      "Bahrain": 2,
       "Jordan": 1
     },
     "drones": {
-      "Iraq": 15,
-      "Kuwait": 10,
-      "Saudi": 8,
+      "Kuwait": 23,
+      "Iraq": 12,
+      "Saudi": 10,
       "UAE": 7,
       "Israel": 5,
-      "Bahrain": 5,
-      "Qatar": 3,
+      "Bahrain": 4,
+      "Qatar": 2,
       "Jordan": 2
     }
   },
@@ -533,12 +537,12 @@
     },
     {
       "date": "Mar 19",
-      "missiles": 30,
-      "drones": 55,
-      "primary": "ENERGY WAR ESCALATION + REVENGE: IRGC declares Gulf energy sites 'legitimate targets' — names Samref, Jubail, Ras Laffan, Mesaieed, Al Hosn. Orders evacuations. UAE shuts Habshan gas. Saudi 2 refineries hit. Iran 'revenge' cluster munitions on Israel — 2 killed Ramat Gan, 3 women killed West Bank hair salon. Israel strikes Caspian Sea (first time). Trump: 'blow up' entire South Pars.",
-      "capability": "D20 revised up from 25→30 missiles on revenge cluster escalation. IRGC naming targets = systematic energy war doctrine, not opportunistic strikes. Cluster/multi-warhead missiles evading Iron Dome. Caspian Sea expansion = Iran's naval assets nowhere safe. CENTCOM: 7,800+ targets, 120+ vessels. Zelensky: 800+ Patriots Day 1 alone — US makes 60-65/mo.",
-      "cost": "Brent surges $110+ (from $103.71 open). Asian markets plunging: Nikkei -2.7%, Kospi -2.6%. Dubai crude >$150 all-time high. Pezeshkian resignation crisis — IRGC military dictatorship. Iran executes Swedish citizen. Fed holds. Lebanon 968+. Israel 22+ dead. Kataib 5-day pause.",
-      "assessment": "THREE SIMULTANEOUS ESCALATION SPIRALS: (1) Energy war — IRGC naming targets, evacuations, Habshan shutdown, $110 oil; (2) Nuclear crisis — Isfahan underground, IAEA locked out, Grossi 'can't eliminate'; (3) Political disintegration — Pezeshkian crisis, IRGC dictatorship, Swedish execution. War's political, economic, and military dimensions all escalating independently. No single off-ramp addresses all three."
+      "missiles": 35,
+      "drones": 65,
+      "primary": "ENERGY WAR ESCALATION + REVENGE: IRGC declares Gulf energy sites 'legitimate targets' — names Samref, Jubail, Ras Laffan, Mesaieed, Al Hosn. Orders evacuations. UAE shuts Habshan. Saudi 2 refineries hit + Al-Kharj residential drone (2 killed, 12 injured) + 2nd drone over Riyadh diplomatic quarter. Iran cluster munitions on Israel (5 killed). Kuwait: 4 ballistic + 23 drones confirmed. 2 more ships hit (UKMTO). Caspian Sea strikes. Trump: 'blow up' South Pars.",
+      "capability": "D20 REVISED UP 30→35 missiles, 55→65 drones. Kuwait 4 ballistic + 23 drones (confirmed). Saudi Al-Kharj = IRGC energy doctrine producing civilian casualties. UKMTO: 2 more vessels struck (near Ras Laffan + off UAE) = 22+ total incidents. Hormuz: 89 ships March 1-15 (Lloyd's List), permission-based transit expanding. CENTCOM: 7,800+ targets. Jones Act waived 60 days.",
+      "cost": "Brent $112+ midday (OilPrice.com). Asian markets plunging. Dubai crude >$150. Ras Tanura restarting (550K bbl/day — first refinery to resume). Pezeshkian meeting to resign (unconfirmed). Kent FBI probe. 12 FM joint statement demands Iran halt. Iran executes Swedish citizen. Fed holds. Lebanon 968+. Israel 22+. Kataib 5-day pause.",
+      "assessment": "THREE SIMULTANEOUS ESCALATION SPIRALS INTENSIFYING: (1) Energy — IRGC doctrine producing casualties (Al-Kharj), $112 oil, Jones Act waived, but Ras Tanura restart = first sign of normalization attempt; (2) Nuclear — Isfahan underground, IAEA locked out; (3) Political — Pezeshkian resignation request (unconfirmed), Kent FBI probe = domestic fractures. Hormuz permission-based transit = backdoor de-escalation channel but IRGC energy escalation contradicts. 12 FM statement = broadest diplomatic condemnation yet."
     }
   ],
   "timeline": [
@@ -651,8 +655,8 @@
   ],
   "theoryEvaluation": [
     {
-      "title": "Three simultaneous escalation spirals — D20's defining framework",
-      "body": "D20 reveals three independent escalation spirals, each capable of triggering further escalation in the others: (1) ENERGY: IRGC naming specific Gulf targets + ordering evacuations = systematic doctrine. Habshan shutdown + Saudi refineries = follow-through already beginning. Oil $110+ = market confirming. (2) NUCLEAR: Isfahan underground + IAEA locked out + Grossi 'can't eliminate' = breakout window expanding under fog of war. (3) POLITICAL: Pezeshkian crisis + IRGC dictatorship + Swedish execution = Iran losing civilian governance. These spirals interact: energy escalation demands diplomatic response but political disintegration removes negotiating partner; nuclear crisis demands verification but IRGC won't grant access. No single intervention addresses all three."
+      "title": "Three escalation spirals intensifying — D20 midday confirms pattern",
+      "body": "D20 midday data confirms all three spirals accelerating independently: (1) ENERGY: IRGC doctrine now producing civilian casualties (Al-Kharj: 2 killed, 12 injured). Oil $112+ = market pricing permanent disruption. Jones Act waived = US acknowledging supply emergency. Ras Tanura restart (550K bbl/day) = first counter-signal but tiny vs 20M bbl/day disruption. 2 more ships hit (22+ total). (2) NUCLEAR: No change — Isfahan underground, IAEA locked out. Silence itself is the escalation. (3) POLITICAL: Pezeshkian resignation request reported (unconfirmed). Kent FBI probe = US domestic fractures deepening. 12 FM joint statement = broadest condemnation yet but IRGC doesn't negotiate with FM statements. Hormuz permission-based transit (89 ships March 1-15) = parallel de-escalation channel that contradicts IRGC energy doctrine."
     },
     {
       "title": "US resource constraints becoming binding — Zelensky's data point",
@@ -665,8 +669,8 @@
   ],
   "theoryEvaluation_fa": [
     {
-      "title": "سه مارپیچ تشدید همزمان — چارچوب D20",
-      "body": "سه مارپیچ مستقل: (۱) انرژی: سپاه اهداف نام‌برده = دکترین. حبشان + سعودی = شروع. نفت ۱۱۰+. (۲) هسته‌ای: اصفهان + IAEA بسته + گروسی 'حذف نمی‌شود.' (۳) سیاسی: پزشکیان + دیکتاتوری سپاه + اعدام سوئدی. تعامل: تشدید انرژی = نیاز دیپلماسی اما فروپاشی سیاسی = بدون طرف."
+      "title": "سه مارپیچ تشدید — تأیید ظهر D20",
+      "body": "سه مارپیچ تسریع: (۱) انرژی: الخرج تلفات غیرنظامی. نفت ۱۱۲+. جونز اکت لغو. راس‌تنوره بازگشایی اما کوچک. ۲ کشتی دیگر. (۲) هسته‌ای: بدون تغییر — سکوت = تشدید. (۳) سیاسی: پزشکیان استعفا (تأیید نشده). کنت FBI. ۱۲ وزیر خارجه. هرمز: ۸۹ کشتی = کانال موازی."
     },
     {
       "title": "محدودیت منابع آمریکا — داده زلنسکی",
