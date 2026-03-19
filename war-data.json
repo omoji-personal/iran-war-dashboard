@@ -1,138 +1,131 @@
 {
   "meta": {
-    "lastUpdated": "2026-03-19T20:15:00-04:00",
+    "lastUpdated": "2026-03-20T00:15:00-04:00",
     "notes": [
-      "Day 20 (Mar 19) UPDATE 8:15PM ET. Sources: CNN D20, AJ liveblog D20, CNBC (Brent $114.13), Bloomberg, Fortune, OilPrice.com, CBS, NPR, NBC, Wikipedia, Investing.com, IAEA, UKMTO, GlobalDefenseCorp, Euronews, PBS, ArabTimesOnline, Haaretz, DevDiscourse, MarketScreener, IsraelHayom, IranIntl, RFERL, Citi, KPC.",
-      "KUWAIT TWO REFINERIES ABLAZE — MAJOR ESCALATION: Mina al-Ahmadi refinery (730K bbl/day, one of Middle East's largest) hit by drone — fire contained by KPC, no injuries. THEN Mina Abdullah refinery ALSO hit by drone — second refinery ablaze. First direct hits on Kuwait's oil refining infrastructure. Combined capacity ~1.4M bbl/day at risk. IRGC energy doctrine now producing real industrial damage beyond harassment.",
-      "QATARENERGY CONFIRMS 'SEVERAL' LNG FACILITIES HIT: QatarEnergy said several LNG facilities targeted in missile attacks causing 'sizeable fires' and 'extensive damage.' Goes beyond earlier Ras Laffan reports — multiple facilities across Qatar's LNG complex under attack. Qatar's entire LNG export capacity (~77M tonnes/year, ~25% of global LNG trade) threatened.",
-      "BRENT SURGES TO $114+: CNBC reports Brent up 6.3% to $114.13/barrel — highest since D8 spike. WTI $96.88. Citi forecast: Brent $120+ coming days, could average $130 Q2-Q3 if Strait stays closed. Kuwait refinery fires + Qatar LNG damage = supply crunch deepening. Energy war now producing cascading infrastructure damage.",
-      "BANDAR ANZALI HEAVY BOMBARDMENT: Overnight strikes expanded Caspian campaign — two drone attacks followed by heavy bombardment targeting IRGC + army naval units. Fuel storage sites damaged, several warships destroyed. Iran-Russia Caspian supply lifeline targeted (IsraelHayom). Shahin Shahr police station (near Isfahan) also hit. Tehran: fighter jet activity + explosions early Thursday.",
-      "GABBARD SENATE TESTIMONY — CONTRADICTS TRUMP: DNI told Senate Intelligence Committee Iran regime 'intact but largely degraded.' Written testimony stated Iran was NOT rebuilding enrichment after Operation Midnight Hammer — directly contradicting Trump's justification for war. Gabbard omitted this from oral testimony; Sen. Warner: 'You chose to omit the parts that contradict Trump.' Declined to call threat 'imminent.' Admitted IC 'long assessed' Iran would close Hormuz.",
-      "IRGC ENERGY DOCTRINE — NOW HITTING REAL TARGETS: IRGC named targets being struck AND follow-through accelerating. Kuwait 2 refineries. Qatar several LNG facilities. Saudi Al-Kharj 2 killed + Riyadh. UAE Habshan shutdown continues. This is NO LONGER just harassment — real industrial capacity being damaged. Saudi FM Prince Faisal warned of retaliation.",
-      "NUCLEAR: IAEA — 440kg at 60% = ~10 WEAPONS: Grossi confirms Isfahan underground status unknown. IAEA observing 'regular vehicular activity' at Isfahan tunnel entrance. E3: 'increasing risk of diversion.' Cannot discount facility 'already operational.' Iran's 4th known enrichment plant.",
-      "TRUMP THREATENS SOUTH PARS: 'US will massively blow up the entirety of the South Pars Gas Field' if Iran attacks Qatar again. Claims US 'knew nothing' about Israel's South Pars strike. Israel struck Asaluyeh energy complex.",
-      "PEZESHKIAN RESIGNATION CRISIS: President requested meeting with Mojtaba to resign. IRGC blocking all decisions. No official confirmation yet. Analysts: Iran = military dictatorship.",
-      "IRAN EXECUTES SWEDISH CITIZEN on espionage charges. Major diplomatic incident amid war.",
-      "12 ARAB/ISLAMIC FM JOINT STATEMENT: Demanded Iran 'immediately halt attacks.' Fed holds rates.",
-      "KUWAIT: 4 ballistic + 23 drones confirmed + 2 refinery drone hits + 26 total Hezbollah operatives detained.",
-      "HORMUZ TRANSIT DATA: 89 ships crossed March 1-15 including 16 oil tankers (Lloyd's List). Permission-based transit expanding but IRGC energy escalation contradicts.",
-      "LEBANON ~990+ KILLED: Approaching 1,000 total. ~1M displaced (19% population). Ground ops continue. Litani bridges targeted.",
-      "PENTAGON $200B+ SUPPLEMENTAL. Iran internet blackout now 250+ hours.",
-      "KENT FBI INVESTIGATION + GABBARD ALIGNMENT: War's domestic political legitimacy eroding from both directions.",
-      "SAUDI RAS TANURA RESTARTING: 550K bbl/day. BUT Saudi FM warns of retaliation against Iran — 'trust completely shattered.'"
+      "Day 21 (Mar 20 = NOWRUZ) UPDATE 12:15AM ET. Sources: CNN D20, AJ liveblog D20, ToI liveblog D20, CNBC, AP, Bloomberg, Fortune, OilPrice.com, NPR, NBC, Wikipedia, Investing.com, IAEA, Euronews, Azernews, Yahoo News, DevDiscourse, LasSun, Time, Britannica, Haaretz.",
+      "SAMREF REFINERY HIT — IRGC NAMED TARGET EXECUTED: Saudi Arabia confirmed drone hit SAMREF refinery in Yanbu on Red Sea coast — Saudi Aramco/ExxonMobil JV. Saudi Defense Ministry: damage assessment underway. Aramco says 'impact minimal.' CRITICAL: SAMREF was specifically NAMED by IRGC as target on D19. This is the FIRST named target on the RED SEA coast — meaning IRGC drones have now reached BOTH sides of Saudi Arabia. IRGC executing its target list systematically: Kuwait 2 refineries ✓, Qatar LNG ✓, SAMREF ✓. Remaining: Jubail, Mesaieed, Al Hosn.",
+      "NOWRUZ — DAY 21 = PERSIAN NEW YEAR: War enters 4th week on Nowruz (March 20). No ceasefire — Iran FM Araghchi: 'We never asked for a ceasefire.' Mojtaba Khamenei condition uncertain — may not deliver traditional Nowruz message. If absent: signals significant power vacuum. Pahlavi calls Iranians to celebrate Nowruz as 'national solidarity.' Potential for internal unrest if gatherings evolve into protests — war + domestic crisis converging.",
+      "6TH MISSILE SALVO AT ISRAEL: ToI reports Iran launched 6th missile salvo at Israel since midnight on March 19. Continued cluster munitions. Multiple salvos = Iran maintaining pressure on Israel despite depleted missile stocks.",
+      "OIL PULLING BACK FROM $114 PEAK: Brent overnight showing pullback from $114.13 evening high. Multiple sources showing ~$110-112 range. EIA forecast: Brent >$95 next 2 months, <$80 Q3 if conflict winds down. Citi maintains $120+ near-term. Market digesting Kuwait refinery + Qatar LNG + SAMREF — supply crunch vs SPR release. WTI ~$95.",
+      "TRUMP CLARIFIES SOUTH PARS: Israel won't re-strike South Pars gas field. BUT US will 'completely blow up' South Pars if Qatar attacked again. Distinguishing US from Israeli energy targeting.",
+      "RAFAH CROSSING REOPENED: First time since Feb 28. Egypt state media confirmed. Gaza humanitarian corridor reopening amid wider war.",
+      "IRAN REJECTS ALL CEASEFIRE: FM Araghchi: 'No, we never asked for a ceasefire, and we have never asked even for negotiation. We are ready to defend ourselves as long as it takes.' Senior official to Al-Mayadeen: 'no scenario for a ceasefire.' Time: 'The United States Must Be Held Accountable.'",
+      "LEBANON ~970+ KILLED: Health Ministry (Mar 18): 968 killed, 2,432 wounded. 1M+ displaced (19% pop). Ground ops continue south of Litani.",
+      "D20 REVISED: SAMREF hit added — missiles 40→45 (SAMREF ballistic), drones 75→80 (SAMREF drone). Cumul revised up.",
+      "IMO EMERGENCY: UN maritime body council could vote on safe corridor resolution. 40-member council. Practical measures to evacuate stranded ships/seafarers.",
+      "MACRON CALLS FOR ENERGY MORATORIUM: Spoke with Trump and Qatari emir — calling for moratorium on strikes targeting civilian infrastructure. First major Western leader to frame energy targeting as separate issue."
     ]
   },
-  "theoryBox": "<strong>Day 20 evening — ENERGY WAR PRODUCING REAL DAMAGE:</strong> IRGC energy doctrine no longer aspirational — Kuwait TWO refineries ablaze (Mina al-Ahmadi 730K bbl/day + Mina Abdullah), QatarEnergy confirms 'several' LNG facilities hit with 'sizeable fires.' Brent surges to $114+ (CNBC +6.3%). Citi: $120+ coming days. Bandar Anzali heavy bombardment — warships destroyed, fuel storage damaged. Gabbard contradicted Trump — Iran NOT rebuilding enrichment. IAEA: 440kg = ~10 weapons, Isfahan unknown. Saudi FM warns retaliation — 'trust completely shattered.' Lebanon ~990+. Pentagon $200B+. Internet 250+ hrs. Four spirals accelerating: energy infrastructure damage + nuclear + IRGC dictatorship + US war rationale collapsing.",
-  "theoryBox_fa": "<strong>روز ۲۰ شب — جنگ انرژی آسیب واقعی:</strong> کویت ۲ پالایشگاه آتش (مینا الاحمدی + مینا عبدالله). قطرانرژی: چند تأسیسات LNG. نفت ۱۱۴+. سیتی: ۱۲۰+. بندرانزلی: ناوها نابود. گابارد: تناقض. IAEA: ۱۰ سلاح. عربستان هشدار انتقام. لبنان ~۹۹۰+. چهار مارپیچ تسریع.",
+  "theoryBox": "<strong>Day 21 — NOWRUZ UNDER FIRE / IRGC EXECUTING TARGET LIST:</strong> SAMREF refinery (Yanbu, Red Sea) hit by drone — IRGC's NAMED target now struck. Target list execution: Kuwait 2 refineries ✓, Qatar LNG ✓, SAMREF ✓. Remaining: Jubail, Mesaieed, Al Hosn. Brent ~$112 (pulling back from $114). Nowruz — no ceasefire, Mojtaba uncertain, Pahlavi calls solidarity. Iran FM: 'never asked for ceasefire.' 6th salvo at Israel. Lebanon ~970+. Rafah reopened. Macron calls energy moratorium. IRGC systematically destroying Gulf energy infrastructure while rejecting all diplomacy.",
+  "theoryBox_fa": "<strong>روز ۲۱ — نوروز زیر آتش / سپاه لیست اهداف:</strong> سامرف (ینبع) حمله. لیست: کویت ✓، قطر ✓، سامرف ✓. باقی: جبیل، مسیعید، الحصن. نفت ~۱۱۲. نوروز بدون آتش‌بس. عراقچی: 'هرگز درخواست نکردیم.' مجتبی نامعلوم. پهلوی: همبستگی. لبنان ~۹۷۰+. رفح باز. ماکرون: توقف انرژی. سپاه تخریب سیستماتیک.",
   "metrics": [
     {
       "label": "Day",
-      "value": "20",
-      "desc": "ENERGY WAR PRODUCING REAL DAMAGE. Kuwait 2 refineries ablaze. Qatar several LNG facilities hit. Brent $114+. Gabbard contradicts Trump. IAEA: 10 weapons. Saudi FM warns retaliation. Internet 250+ hrs."
+      "value": "21",
+      "desc": "NOWRUZ UNDER FIRE. SAMREF hit — IRGC named target executed. Kuwait ✓ Qatar ✓ SAMREF ✓. Remaining: Jubail, Mesaieed, Al Hosn. No ceasefire. Mojtaba uncertain. Internet 260+ hrs."
     },
     {
       "label": "Cumul. missiles",
-      "value": "~2,692",
-      "desc": "D20 REVISED: 40. QatarEnergy confirms 'several' LNG facilities hit by missiles — additional strikes beyond earlier Ras Laffan count. Kuwait 4 ballistic. Saudi + Israel cluster. 22+ vessel incidents. IRGC energy doctrine producing industrial damage."
+      "value": "~2,732",
+      "desc": "D21 est: 35. D20 REVISED UP to 45 (SAMREF ballistic + 6th salvo at Israel). IRGC maintaining missile pressure despite depletion. 6+ salvos at Israel in single day. SAMREF = Red Sea coast now in range."
     },
     {
       "label": "Cumul. drones",
-      "value": "~4,200",
-      "desc": "D20 REVISED: 75. Kuwait 23 intercepted + Mina al-Ahmadi refinery hit + Mina Abdullah refinery hit. Saudi drones (Riyadh + Al-Kharj). IRGC now hitting real infrastructure — 2 refineries ablaze."
+      "value": "~4,265",
+      "desc": "D21 est: 60. D20 REVISED UP to 80 (SAMREF drone confirmed). IRGC drone range now proven across BOTH coasts of Saudi Arabia — Gulf AND Red Sea. Systematic infrastructure targeting."
     },
     {
       "label": "Brent crude",
-      "value": "$114+",
-      "desc": "SURGING — CNBC: $114.13 (+6.3%). Kuwait refinery fires + Qatar LNG damage = supply crunch. Citi: $120+ coming days, $130 avg Q2-Q3 if Strait stays closed. WTI $96.88. Jones Act waived 60 days."
+      "value": "~$112",
+      "desc": "Pulling back from $114 evening peak. Overnight ~$110-112. Citi: $120+ near-term. EIA: >$95/b next 2 months. SAMREF hit + continued supply disruption. Macron calls energy moratorium. Market volatile."
     },
     {
       "label": "Iran dead (Hengaw)",
-      "value": "~5,300+",
-      "desc": "Hengaw 5th report (D18): 4,789 military + 511 civilians. HRANA: 3,114. Health Ministry: 1,444 + 18,551 injured. No 6th report yet. 178 cities, 25 provinces. Internet blackout 240+ hrs."
+      "value": "~5,400+",
+      "desc": "No 6th Hengaw report. Extrapolated: 5,300+ (D18) + continued strikes D19-D21. Health Ministry: 1,444 + 18,551 injured. HRANA: 3,114. Internet blackout 260+ hrs. Nowruz under bombardment."
     },
     {
       "label": "Lebanon",
-      "value": "~990+ killed",
-      "desc": "Approaching 1,000. Israel ground ops + Litani bridges. 2 divisions deployed. ~1M displaced (19% pop). Qassem: 'long confrontation.'"
+      "value": "~1,000+ killed",
+      "desc": "Health Ministry (D19): 968 killed, 2,432 wounded. Approaching/crossing 1,000 with D20-D21 strikes. 1M+ displaced (19% pop). Ground ops south of Litani. Bridges targeted."
     },
     {
       "label": "Israel dead",
       "value": "22+",
-      "desc": "D20: 2 killed Ramat Gan (cluster), 3 women killed West Bank hair salon (cluster fragments), foreign worker Moshav Adanim. 3,727+ wounded."
+      "desc": "6th missile salvo since midnight D20. Cluster munitions continue. 3,727+ wounded. Interceptor crisis persists."
     },
     {
       "label": "Nuclear risk",
       "value": "CRITICAL",
-      "desc": "IAEA: 440kg at 60% = ~10 weapons (revised up). Isfahan underground status unknown — Grossi: 'haven't visited.' Regular vehicular activity at tunnel. E3: 'increasing risk of diversion.' Gabbard: Iran NOT rebuilding pre-war. 4th enrichment plant."
+      "desc": "IAEA: 440kg at 60% = ~10 weapons. Isfahan underground status unknown. E3: 'increasing risk of diversion.' Iran rejects ALL diplomacy — 'never asked for ceasefire.' Nuclear transparency = zero."
     }
   ],
   "metrics_fa": [
     {
       "label": "روز",
-      "value": "۲۰",
-      "desc": "جنگ انرژی آسیب واقعی. کویت ۲ پالایشگاه آتش. قطر چند LNG. نفت ۱۱۴+. گابارد تناقض. IAEA: ۱۰ سلاح. عربستان هشدار."
+      "value": "۲۱",
+      "desc": "نوروز زیر آتش. سامرف حمله. لیست سپاه اجرا. آتش‌بس: نه. مجتبی نامعلوم."
     },
     {
       "label": "موشک",
-      "value": "~۲,۶۹۲",
-      "desc": "D20 بازنگری: ۴۰. قطرانرژی: چند تأسیسات LNG موشک. کویت ۴ بالستیک. سپاه آسیب صنعتی."
+      "value": "~۲,۷۳۲",
+      "desc": "D21: ۳۵. D20 بازنگری ۴۵. سامرف بالستیک. ۶ حمله اسرائیل. ساحل دریای سرخ."
     },
     {
       "label": "پهپاد",
-      "value": "~۴,۲۰۰",
-      "desc": "D20 بازنگری: ۷۵. مینا الاحمدی + مینا عبدالله آتش. کویت ۲۳. سپاه زیرساخت واقعی."
+      "value": "~۴,۲۶۵",
+      "desc": "D21: ۶۰. D20 بازنگری ۸۰. سامرف پهپاد. هر دو ساحل عربستان."
     },
     {
       "label": "نفت",
-      "value": "$۱۱۴+",
-      "desc": "جهش — CNBC: ۱۱۴. پالایشگاه + LNG = بحران عرضه. سیتی: ۱۲۰+. جونز اکت لغو."
+      "value": "~$۱۱۲",
+      "desc": "عقب‌نشینی از ۱۱۴. سیتی: ۱۲۰+. EIA: ۹۵+. سامرف + بحران عرضه. ماکرون: توقف انرژی."
     },
     {
       "label": "کشته ایران",
-      "value": "~۵,۳۰۰+",
-      "desc": "هنگاو ۵: ۴,۷۸۹ نظامی + ۵۱۱ غیرنظامی. اینترنت ۲۴۰+ ساعت قطع."
+      "value": "~۵,۴۰۰+",
+      "desc": "برآورد. هنگاو ۶ هنوز. وزارت: ۱,۴۴۴. اینترنت ۲۶۰+ ساعت. نوروز زیر بمباران."
     },
     {
       "label": "لبنان",
-      "value": "~۹۹۰+ کشته",
-      "desc": "نزدیک ۱,۰۰۰. عملیات زمینی. پل لیطانی. ۱ میلیون آواره."
+      "value": "~۱,۰۰۰+ کشته",
+      "desc": "وزارت: ۹۶۸ + ادامه. ۱ میلیون آواره. عملیات زمینی. لیطانی."
     },
     {
       "label": "اسرائیل",
       "value": "۲۲+",
-      "desc": "D20: ۲ رامات‌گان + ۳ کرانه باختری (خوشه‌ای). ۳,۷۲۷+ زخمی."
+      "desc": "۶ حمله از نیمه‌شب. خوشه‌ای. ۳,۷۲۷+ زخمی."
     },
     {
       "label": "خطر هسته‌ای",
       "value": "بحرانی",
-      "desc": "IAEA: ۴۴۰ کیلو = ~۱۰ سلاح. اصفهان: فعالیت خودرویی. E3: خطر انحراف. گابارد: بازسازی نشده."
+      "desc": "IAEA: ۱۰ سلاح. اصفهان ناشناخته. ایران: 'هرگز درخواست نکردیم.' شفافیت = صفر."
     }
   ],
   "sitrep": [
-    "KUWAIT TWO REFINERIES ABLAZE — ENERGY WAR CROSSES THRESHOLD: Mina al-Ahmadi refinery (730K bbl/day, one of Middle East's largest) hit by drone — fire contained. THEN Mina Abdullah refinery ALSO ablaze. First direct hits on Kuwait's oil refining infrastructure. Combined capacity ~1.4M bbl/day at risk. IRGC energy doctrine no longer aspirational — real industrial capacity being destroyed. This changes the calculus for Gulf states considering military entry.",
-    "QATARENERGY: 'SEVERAL' LNG FACILITIES HIT: QatarEnergy confirmed multiple LNG facilities targeted in missile attacks causing 'sizeable fires' and 'extensive damage.' Beyond earlier Ras Laffan reports — Qatar's entire LNG export capacity (~25% of global LNG trade) under systematic attack. Qatar expelled Iranian attaches. Trump threatened total South Pars destruction if attacks continue.",
-    "BRENT SURGES $114+ — SUPPLY CRUNCH DEEPENING: CNBC reports Brent +6.3% to $114.13/barrel. Highest since D8 spike. Citi forecast: $120+ coming days, $130 avg Q2-Q3 if Strait stays closed. Kuwait refinery fires + Qatar LNG damage + Habshan shutdown + IRGC named targets = cascading supply destruction. Ras Tanura restart (550K bbl/day) overwhelmed by new damage. Jones Act waived 60 days. Pentagon $200B+ supplemental.",
-    "BANDAR ANZALI HEAVY BOMBARDMENT — CASPIAN EXPANSION: Overnight two drone attacks followed by heavy bombardment targeting IRGC + army naval units. Fuel storage sites damaged, warships destroyed. Iran-Russia Caspian supply lifeline targeted. Shahin Shahr police station (near Isfahan) also hit. Tehran: fighter jet activity + explosions early Thursday. Geographic expansion of strikes continues north.",
-    "GABBARD CONTRADICTS TRUMP — WAR RATIONALE CRACKING: DNI told Senate Iran was NOT rebuilding enrichment — contradicting Trump's justification. Declined to call threat 'imminent.' Admitted IC predicted Hormuz closure. Warner: 'You chose to omit the parts that contradict Trump.' Combined with Kent FBI probe = war legitimacy crisis deepening.",
-    "IAEA NUCLEAR UPDATE — 10 WEAPONS-WORTH: 440kg at 60% = ~10 weapons. Isfahan underground status unknown — 'regular vehicular activity' at tunnel entrance. E3: 'increasing risk of diversion.' Grossi: war cannot eliminate nuclear program. Nuclear risk intensifying while pre-war justification collapses.",
-    "SAUDI FM WARNS RETALIATION: Prince Faisal bin Farhan — 'trust completely shattered.' Called on Iran to end strikes, warning of military response. Saudi Al-Kharj 2 killed. Riyadh drones. Saudi increasingly close to military entry threshold.",
-    "IRAN 'REVENGE' STRIKES ON ISRAEL: Multiple-warhead + cluster munitions — 2 killed Ramat Gan, 3 women killed WB hair salon, foreign worker Moshav Adanim. Israel 22+ dead, 3,727+ wounded.",
-    "KUWAIT: 4 ballistic + 23 intercepted + Mina al-Ahmadi + Mina Abdullah refinery drones + 26 Hezbollah operatives detained. Most impacted Gulf state by industrial damage.",
-    "PEZESHKIAN RESIGNATION + IRGC DICTATORSHIP: President sought to resign. IRGC blocking decisions. No civilian negotiating partner.",
-    "LEBANON ~990+ KILLED: Approaching 1,000. ~1M displaced (19% pop). Ground ops + Litani bridges. 2 divisions deployed.",
-    "IRAN: Internet blackout 250+ hours. Swedish execution. Fed holds. 12 FM statement. Overnight: Tehran explosions, Bandar Anzali, Shahin Shahr. CENTCOM: 7,800+ targets."
+    "SAMREF REFINERY HIT — IRGC NAMED TARGET EXECUTED: Saudi Arabia confirmed drone struck SAMREF refinery in Yanbu on Red Sea coast (Saudi Aramco/ExxonMobil JV, ~400K bbl/day capacity). Saudi Defense Ministry: damage assessment underway. Aramco says 'impact minimal.' CRITICAL: SAMREF was SPECIFICALLY NAMED by IRGC as target on D19. This is the FIRST strike on Saudi Red Sea coast — IRGC drones now reaching BOTH sides of Saudi Arabia. Target execution scorecard: Kuwait Mina al-Ahmadi ✓, Kuwait Mina Abdullah ✓, Qatar several LNG ✓, SAMREF ✓. Remaining named: Jubail, Mesaieed, Al Hosn.",
+    "NOWRUZ — WAR ENTERS 4TH WEEK ON PERSIAN NEW YEAR: March 20 = Nowruz. No ceasefire — Iran FM Araghchi: 'We never asked for a ceasefire.' Mojtaba Khamenei condition uncertain — may not deliver traditional Nowruz message. If absent: signals power vacuum deepening. Pahlavi calls on Iranians to celebrate as 'national solidarity.' Potential for internal unrest if gatherings become protests. War + Nowruz + domestic crisis = triple pressure on IRGC.",
+    "OIL VOLATILE — BRENT ~$112: Pulling back from D20 evening $114.13 peak. Overnight ~$110-112. Citi maintains $120+ near-term forecast. EIA: >$95/b next 2 months, <$80 Q3 if conflict ends. SAMREF hit keeps supply anxiety elevated. Kuwait refineries + Qatar LNG + SAMREF = IRGC systematically degrading Gulf refining/export capacity. Jones Act waived 60 days.",
+    "6TH MISSILE SALVO AT ISRAEL: ToI reports Iran launched 6th missile salvo at Israel since midnight on March 19. Continued cluster munitions across central Israel. Multiple salvos = Iran maintaining pressure despite missile depletion narrative. Israel interceptor crisis persists (Semafor).",
+    "IRAN REJECTS ALL DIPLOMACY: FM Araghchi: 'No, we never asked for a ceasefire, and we have never asked even for negotiation. We are ready to defend ourselves as long as it takes.' Senior official to Al-Mayadeen: 'no scenario for a ceasefire.' Time: 'The United States Must Be Held Accountable.' This eliminates diplomatic off-ramp for foreseeable future.",
+    "MACRON CALLS ENERGY MORATORIUM: French president spoke with Trump and Qatari emir — calling for moratorium on strikes targeting civilian energy infrastructure. First major Western leader to separate energy targeting from military operations. Diplomatic significance: could build framework for energy de-escalation even without broader ceasefire.",
+    "TRUMP CLARIFIES SOUTH PARS: Israel won't re-strike South Pars gas field. BUT US will 'completely blow up' South Pars if Qatar attacked again. Creates escalatory trigger: next IRGC missile at Qatar = US strikes on Iran's largest gas field.",
+    "RAFAH CROSSING REOPENED: First time since Feb 28. Egyptian state media confirmed. Gaza humanitarian corridor reopening. Suggests Egypt negotiating separately from broader conflict.",
+    "KUWAIT REFINERIES — AFTERMATH: Mina al-Ahmadi (730K bbl/day) fire contained by KPC. Mina Abdullah also hit. Combined ~1.4M bbl/day at risk. Kuwait most affected Gulf state by industrial damage. 26+ Hezbollah operatives detained.",
+    "LEBANON ~1,000 KILLED: Health Ministry (D19): 968 killed, 2,432 wounded. Now likely crossing 1,000 with continued strikes. 1M+ displaced (19% pop). Ground ops south of Litani. German chancellor: ground invasion an 'error.'",
+    "IRAN: Internet blackout 260+ hours. Swedish execution diplomatic fallout. CENTCOM: 7,800+ targets. Bandar Anzali + Shahin Shahr + Tehran. Nowruz under bombardment — unprecedented in modern Iranian history."
   ],
   "sitrep_fa": [
-    "کویت ۲ پالایشگاه آتش: مینا الاحمدی (۷۳۰ هزار بشکه) + مینا عبدالله. سپاه دکترین انرژی واقعی شد. ~۱.۴ میلیون بشکه در خطر.",
-    "قطرانرژی: چند تأسیسات LNG حمله — آتش گسترده. ۲۵٪ تجارت LNG جهان تهدید. ترامپ: پارس جنوبی.",
-    "نفت ۱۱۴+ — CNBC +۶.۳٪. سیتی: ۱۲۰+ روزهای آینده. بحران عرضه تشدید. پنتاگون ۲۰۰+ میلیارد.",
-    "بندرانزلی: بمباران سنگین — ناوها نابود، مخازن سوخت. خزر = خط ایران-روسیه. شاهین‌شهر. تهران: انفجار.",
-    "گابارد: ایران بازسازی نمی‌کرد. تناقض با ترامپ. کنت FBI. مشروعیت فروریخت.",
-    "IAEA: ۴۴۰ کیلو = ۱۰ سلاح. اصفهان ناشناخته. E3 هشدار. گروسی: جنگ حذف نمی‌کند.",
-    "عربستان هشدار انتقام: 'اعتماد کاملاً شکسته.' الخرج ۲ کشته. نزدیک آستانه نظامی.",
-    "کویت: ۴ بالستیک + ۲۳ + ۲ پالایشگاه + ۲۶ حزب‌الله.",
-    "پزشکیان + سپاه دیکتاتوری. لبنان ~۹۹۰+.",
-    "اینترنت ۲۵۰+ ساعت. اعدام سوئدی. ۷,۸۰۰+ هدف."
+    "سامرف (ینبع) حمله — هدف نام‌برده سپاه: پهپاد آرامکو/اکسون. دریای سرخ = هر دو ساحل. لیست: کویت ✓ قطر ✓ سامرف ✓. جبیل، مسیعید، الحصن باقی.",
+    "نوروز — جنگ هفته ۴: آتش‌بس نه. عراقچی: 'هرگز.' مجتبی نامعلوم. پهلوی: همبستگی. اعتراض داخلی؟",
+    "نفت ~۱۱۲: عقب‌نشینی از ۱۱۴. سیتی: ۱۲۰+. سامرف + بحران عرضه.",
+    "۶ حمله موشکی اسرائیل از نیمه‌شب. خوشه‌ای. بحران رهگیر.",
+    "ایران: 'هرگز آتش‌بس نخواستیم.' هیچ مذاکره‌ای. راه دیپلماتیک بسته.",
+    "ماکرون: توقف حمله انرژی. ترامپ + امیر قطر. چارچوب جدا از آتش‌بس؟",
+    "ترامپ: اسرائیل پارس جنوبی نه. اما آمریکا اگر قطر = بله.",
+    "رفح باز — اولین بار از ۲۸ فوریه.",
+    "کویت پالایشگاه‌ها — مینا الاحمدی مهار. ۲۶+ حزب‌الله.",
+    "لبنان ~۱,۰۰۰. اینترنت ۲۶۰+. نوروز زیر بمباران."
   ],
   "dailySeries": {
     "labels": [
@@ -155,7 +148,8 @@
       "Mar 16",
       "Mar 17",
       "Mar 18",
-      "Mar 19"
+      "Mar 19",
+      "Mar 20"
     ],
     "missiles": [
       480,
@@ -177,7 +171,8 @@
       12,
       12,
       40,
-      40
+      45,
+      35
     ],
     "drones": [
       720,
@@ -199,10 +194,11 @@
       70,
       60,
       60,
-      75
+      80,
+      65
     ],
-    "sourceLabel": "D1-D10: JPost. D11: UAE MoD. D12-D20: fragment est. D20 EVE REVISED: QatarEnergy 'several' LNG facilities hit (missiles up). Kuwait Mina al-Ahmadi + Mina Abdullah refineries ablaze (drones up). IRGC energy doctrine now producing real industrial damage.",
-    "throughDate": "Mar 19 evening (all days estimated)"
+    "sourceLabel": "D1-D10: JPost. D11: UAE MoD. D12-D21: fragment est. D20 REVISED UP: SAMREF refinery (Yanbu) hit — ballistic+drone confirmed. D21 PRELIMINARY: Nowruz day, IRGC maintaining pressure. Target list execution: Kuwait ✓ Qatar ✓ SAMREF ✓.",
+    "throughDate": "Mar 20 midnight (all days estimated)"
   },
   "oil": {
     "labels": [
@@ -226,7 +222,8 @@
       "Mar 16",
       "Mar 17",
       "Mar 18",
-      "Mar 19"
+      "Mar 19",
+      "Mar 20"
     ],
     "brent": [
       65.0,
@@ -249,7 +246,8 @@
       100.21,
       100.21,
       107.38,
-      114.0
+      114.0,
+      112.0
     ],
     "wti": [
       62.0,
@@ -272,9 +270,10 @@
       95.03,
       92.46,
       96.32,
-      97.0
+      97.0,
+      95.0
     ],
-    "note": "Full daily series. D20 EVE: Brent SURGES $114.13 (CNBC +6.3%) — Kuwait 2 refineries ablaze + Qatar several LNG facilities = supply crunch. Open $103.71, spiked $112 midday, now $114+ evening. WTI $96.88. Citi: $120+ coming days, $130 avg Q2-Q3. Jones Act waived 60 days. Ras Tanura restarting but overwhelmed by new damage. Dubai crude >$150. Hormuz: 89 ships March 1-15. Permission-based transit expanding but contradicted by IRGC escalation."
+    "note": "Full daily series. D21 (NOWRUZ): Brent ~$112 — pulling back from D20 evening $114.13 peak (CNBC). Overnight volatile $110-112 range. SAMREF hit keeping supply anxiety elevated. Citi: $120+ near-term. EIA: >$95/b next 2 months, <$80 Q3 if conflict ends. WTI ~$95. Macron calling energy moratorium. Kuwait refineries + Qatar LNG + SAMREF = IRGC systematically degrading Gulf capacity. Ras Tanura restart overwhelmed. Hormuz: 21 tankers since war vs 100+/day pre-war."
   },
   "pressure": {
     "labels": [
@@ -297,7 +296,8 @@
       "Mar 16",
       "Mar 17",
       "Mar 18",
-      "Mar 19"
+      "Mar 19",
+      "Mar 20"
     ],
     "attrition": [
       2,
@@ -315,6 +315,7 @@
       9,
       9.5,
       9.5,
+      10,
       10,
       10,
       10,
@@ -341,29 +342,30 @@
       9.5,
       9,
       10,
+      10,
       10
     ]
   },
   "latestTargetBreakdown": {
-    "note": "Mar 19 (D20) evening estimate. REVISED UP AGAIN. QatarEnergy confirms 'several' LNG facilities hit by missiles. Kuwait Mina al-Ahmadi (730K bbl/day) + Mina Abdullah refineries both ablaze from drones. Kuwait 4 ballistic + 25+ drones. Saudi Al-Kharj 2 killed. 2 vessels (UKMTO). Israel cluster.",
+    "note": "Mar 20 (D21) preliminary estimate. NOWRUZ. SAMREF (Yanbu) hit late D20 — first Red Sea coast target. Continued Gulf + Israel attacks. Iran FM: no ceasefire ever. 6th salvo at Israel. Macron moratorium call.",
     "missiles": {
       "Israel": 10,
-      "Saudi": 8,
-      "Qatar": 7,
+      "Saudi": 7,
+      "Qatar": 5,
       "Kuwait": 4,
-      "UAE": 4,
+      "UAE": 3,
       "Iraq": 3,
       "Bahrain": 2,
-      "Jordan": 2
+      "Jordan": 1
     },
     "drones": {
-      "Kuwait": 25,
-      "Iraq": 14,
+      "Kuwait": 18,
+      "Iraq": 12,
       "Saudi": 12,
       "UAE": 8,
       "Israel": 5,
       "Bahrain": 4,
-      "Qatar": 4,
+      "Qatar": 3,
       "Jordan": 3
     }
   },
@@ -541,184 +543,193 @@
     },
     {
       "date": "Mar 19",
-      "missiles": 40,
-      "drones": 75,
-      "primary": "ENERGY WAR CROSSES THRESHOLD: Kuwait TWO refineries ablaze (Mina al-Ahmadi 730K bbl/day + Mina Abdullah). QatarEnergy: 'several' LNG facilities hit — 'sizeable fires.' IRGC named targets + Caspian. Israel cluster kills 5. Kuwait 4 ballistic + 25+ drones. Saudi Al-Kharj 2 killed. Gabbard contradicts Trump. IAEA: 440kg = ~10 weapons. Bandar Anzali heavy bombardment — warships destroyed. Shahin Shahr. Tehran overnight explosions.",
-      "capability": "D20 EVE REVISED: 40 missiles + 75 drones. IRGC energy doctrine now producing REAL INDUSTRIAL DAMAGE — not just harassment. Kuwait 2 refineries (~1.4M bbl/day combined at risk), Qatar several LNG facilities (~25% global trade), UAE Habshan still shut. 22+ vessel incidents. CENTCOM: 7,800+ targets. Bandar Anzali: warships destroyed, fuel storage damaged. Iran-Russia Caspian supply lifeline targeted.",
-      "cost": "Brent SURGES $114+ (CNBC +6.3%). Citi: $120+ coming days. Kuwait refineries + Qatar LNG = cascading supply crunch. Asian markets plunging. Saudi FM: 'trust completely shattered,' warns retaliation. Gabbard = war rationale cracking. Pezeshkian resignation (unconfirmed). Kent FBI probe. 12 FM statement. Swedish execution. Fed holds. Lebanon ~990+. Israel 22+. Internet 250+ hrs. Pentagon $200B+.",
-      "assessment": "FOUR CRISES ACCELERATING: (1) Energy — IRGC doctrine CROSSED FROM HARASSMENT TO INDUSTRIAL DAMAGE. Kuwait 2 refineries, Qatar several LNG facilities, UAE Habshan = real capacity destruction. Brent $114+ heading toward $120. Citi forecasts $130 if sustained. Ras Tanura restart overwhelmed. (2) Nuclear — IAEA: 440kg = ~10 weapons, Isfahan underground unknown, E3 diversion warning. (3) Political — Pezeshkian + IRGC dictatorship. (4) War legitimacy — Gabbard contradicts Trump, Kent FBI. Saudi FM retaliation warning = Gulf states approaching military entry threshold. The evening's Kuwait + Qatar damage is qualitatively different from earlier harassment — industrial infrastructure being destroyed."
+      "missiles": 45,
+      "drones": 80,
+      "primary": "SAMREF HIT + ENERGY WAR CONTINUES: Kuwait TWO refineries ablaze (Mina al-Ahmadi + Mina Abdullah). QatarEnergy: 'several' LNG facilities. SAMREF refinery (Yanbu, Red Sea) hit by drone — IRGC named target EXECUTED. 6th salvo at Israel. Kuwait 4 ballistic + 25+ drones. Saudi Al-Kharj 2 killed. Gabbard contradicts Trump. IAEA: 440kg = ~10 weapons. Bandar Anzali heavy bombardment.",
+      "capability": "D20 REVISED: 45 missiles + 80 drones. SAMREF = FIRST Red Sea coast target. IRGC executing named target list: Kuwait ✓ Qatar ✓ SAMREF ✓. Remaining: Jubail, Mesaieed, Al Hosn. 6 salvos at Israel since midnight = maintaining pressure. CENTCOM: 7,800+ targets. Bandar Anzali warships destroyed.",
+      "cost": "Brent surged $114+ (CNBC +6.3%), closed ~$114. Citi: $120+. SAMREF 'impact minimal' per Aramco but symbolic significance enormous — Red Sea coast reached. Gabbard contradicts Trump. Kent FBI probe. Saudi FM 'trust shattered.' Pezeshkian resignation crisis. Swedish execution. Pentagon $200B+.",
+      "assessment": "SAMREF is the inflection within the inflection. IRGC's named targets are being systematically executed. Red Sea coast = drones can reach Saudi Arabia's western export infrastructure, not just Gulf-facing facilities. This means pipeline bypass routes (East-West Pipeline to Yanbu) are no longer safe. The energy war has NO geographic limit within Saudi Arabia. Combined with Kuwait refineries + Qatar LNG = comprehensive assault on Gulf energy architecture."
+    },
+    {
+      "date": "Mar 20",
+      "missiles": 35,
+      "drones": 65,
+      "primary": "NOWRUZ — DAY 21: Persian New Year under fire. No ceasefire — Araghchi: 'never asked.' Mojtaba uncertain — may miss Nowruz message. Pahlavi calls solidarity. SAMREF aftermath. Continued Gulf + Israel attacks. Macron calls energy moratorium. Trump: US will hit South Pars if Qatar attacked. Rafah crossing reopened.",
+      "capability": "D21 PRELIMINARY: 35+65. NOWRUZ does not pause IRGC operations. Iran FM rejects all diplomacy permanently. Mojtaba's absence from Nowruz message = power vacuum signal. IRGC operating independently of any civilian authority. Target execution: 4 of 7 named targets hit in 48 hours.",
+      "cost": "Brent ~$112 (pulling back from $114). Macron energy moratorium = new diplomatic track possible. Trump South Pars trigger = next Qatar attack → US destroys Iran's largest gas field. Rafah reopened = Egypt separate negotiation. Lebanon crossing 1,000 killed. Internet 260+ hours. Nowruz under bombardment — cultural trauma.",
+      "assessment": "NOWRUZ PARADOX: Persian New Year should be moment of reflection/renewal — instead: war week 4, no ceasefire, IRGC dictatorship, Mojtaba possibly injured, 5,400+ dead, internet dark 11+ days. Pahlavi's call to celebrate = potential internal pressure. IRGC must manage Nowruz gatherings + war simultaneously. Macron moratorium + Trump South Pars trigger = two new diplomatic frameworks emerging even as IRGC rejects all talks. If Mojtaba fails to appear: succession crisis DURING Nowruz = maximum internal instability."
     }
   ],
   "timeline": [
     {
       "title": "Week 3 (Mar 16–22)",
-      "body": "ENERGY WAR — HARASSMENT TO INDUSTRIAL DAMAGE: IRGC named targets then HIT THEM. Kuwait TWO refineries ablaze (Mina al-Ahmadi 730K bbl/day + Mina Abdullah). QatarEnergy: 'several' LNG facilities — 'sizeable fires.' Brent $114+. Citi: $120+. Bandar Anzali heavy bombardment. Saudi FM 'trust shattered' warns retaliation. Gabbard contradicts Trump — Iran NOT rebuilding. IAEA: 10 weapons. Pezeshkian = IRGC dictatorship. Four crises accelerating: energy industrial damage + nuclear + political + US war legitimacy."
+      "body": "IRGC EXECUTING TARGET LIST: Named targets hit systematically — Kuwait 2 refineries ✓, Qatar LNG ✓, SAMREF (Yanbu, Red Sea) ✓. Remaining: Jubail, Mesaieed, Al Hosn. Brent $107→$114→$112. NOWRUZ (Mar 20) under fire — no ceasefire, Mojtaba uncertain. Iran FM: 'never asked for ceasefire.' Macron calls energy moratorium. Trump: US hits South Pars if Qatar attacked. Gabbard contradicts Trump. IAEA: 10 weapons. Lebanon crossing 1,000 killed. SAMREF = Red Sea coast reached = East-West Pipeline bypass no longer safe."
     },
     {
       "title": "Week 4–5 (Mar 23–Apr 5)",
-      "body": "IRGC follow-through on named targets = critical variable. If Samref, Jubail, Mesaieed, Al Hosn actually struck: oil $130+, Saudi military entry triggered, all Gulf logistics collapse. If threats remain aspirational: energy war as coercive pressure framework. Isfahan nuclear unresolved. US missile resupply crisis (Zelensky: 800+ Patriots Day 1, 60-65/mo produced). Lebanon Litani operation culminating. Pezeshkian resignation could formalize IRGC takeover."
+      "body": "IRGC remaining targets = critical: Jubail (world's largest industrial city), Mesaieed (Qatar petrochemicals), Al Hosn (UAE gas). If struck: Brent $130+, Saudi military entry triggered, total Gulf shutdown. Nowruz aftermath — did Mojtaba appear? Internal unrest? Macron moratorium — does energy de-escalation framework emerge? Trump South Pars trigger active. US missile resupply crisis. Lebanon Litani operation. Congress $200B+ supplemental fight."
     },
     {
       "title": "Month 2 (Apr–May)",
-      "body": "Three crises converge: (1) Energy — IRGC targeting doctrine vs Gulf defenses + bypass routes; (2) Nuclear — Isfahan underground + IAEA locked out = breakout window; (3) Political — IRGC dictatorship + Pezeshkian crisis = no negotiating partner. US missile supply becomes binding constraint. Hormuz permission-based framework either formalizes or collapses. Oil market in structural disruption."
+      "body": "Three crises converge: (1) Energy — IRGC target execution vs Gulf defenses + Macron moratorium framework; (2) Nuclear — Isfahan underground + IAEA locked out = breakout window; (3) Political — IRGC dictatorship + Mojtaba uncertainty + post-Nowruz unrest? US missile supply becomes binding constraint. Hormuz permission-based framework either formalizes or collapses."
     },
     {
       "title": "Month 3+ (May onward)",
-      "body": "If IRGC follows through on energy targets: permanent regional restructuring. Saudi entry = wider war. If political disintegration accelerates: IRGC-only government with no diplomatic facade. Nuclear verification crisis defines decade. US must choose between sustained ops (resource depletion) and exit (nuclear + energy unresolved). No clean outcome available."
+      "body": "If IRGC completes target list: permanent regional restructuring. Saudi entry = wider war. If post-Nowruz internal pressure builds: IRGC faces two-front challenge (war + domestic). Nuclear verification crisis defines decade. No clean outcome available."
     },
     {
       "title": "Endgame variables",
-      "body": "IRGC follow-through on named energy targets. Saudi military entry decision. US missile resupply timeline (Zelensky data). Isfahan nuclear breakout window. Pezeshkian resignation / IRGC formalization. Hormuz permission framework. Trump South Pars threat. Lebanon Litani outcome. Caspian Sea escalation. Swedish execution diplomatic fallout."
+      "body": "IRGC remaining targets (Jubail, Mesaieed, Al Hosn). Saudi military entry decision. Mojtaba's condition / Nowruz message. Post-Nowruz internal unrest. Macron energy moratorium. Trump South Pars trigger. US missile resupply. Isfahan nuclear. Congress $200B+. Lebanon Litani. Caspian escalation."
     }
   ],
   "timeline_fa": [
     {
       "title": "هفته ۳ (۱۶–۲۲ مارس)",
-      "body": "جنگ انرژی — از آزار به تخریب: کویت ۲ پالایشگاه آتش. قطر چند LNG. نفت ۱۱۴+. بندرانزلی. عربستان هشدار. گابارد تناقض. IAEA: ۱۰ سلاح. چهار بحران تسریع."
+      "body": "سپاه لیست اجرا: کویت ✓ قطر ✓ سامرف ✓. جبیل، مسیعید، الحصن باقی. نوروز زیر آتش. عراقچی: 'هرگز.' ماکرون: توقف انرژی. نفت ۱۱۲. لبنان ۱,۰۰۰+."
     },
     {
       "title": "هفته ۴–۵",
-      "body": "سپاه اهداف نام‌برده = متغیر حیاتی. اگر سامرف/جبیل: نفت ۱۳۰+، ورود عربستان. اصفهان حل‌نشده. موشک آمریکا بحران. لبنان لیطانی. پزشکیان = رسمی شدن سپاه."
+      "body": "اهداف باقی = حیاتی. جبیل = نفت ۱۳۰+. نوروز: مجتبی؟ اعتراض؟ ماکرون = چارچوب؟ کنگره ۲۰۰+ میلیارد."
     },
     {
       "title": "ماه ۲",
-      "body": "سه بحران: انرژی + هسته‌ای + سیاسی. موشک آمریکا محدودکننده. هرمز رسمی یا فروپاشی."
+      "body": "انرژی + هسته‌ای + سیاسی. موشک آمریکا محدود. هرمز رسمی یا فروپاشی."
     },
     {
       "title": "ماه ۳+",
-      "body": "سپاه اهداف انرژی = بازسازی دائمی. ورود عربستان = جنگ گسترده‌تر. سپاه بدون نما = بدون مذاکره. هسته‌ای دهه. آمریکا: ادامه یا خروج."
+      "body": "سپاه لیست کامل = بازسازی دائمی. نوروز = فشار داخلی؟ هسته‌ای دهه."
     },
     {
       "title": "متغیرهای پایانی",
-      "body": "سپاه اهداف انرژی. عربستان. موشک آمریکا (زلنسکی). اصفهان. پزشکیان. هرمز. ترامپ پارس جنوبی. لبنان. خزر. سوئد."
+      "body": "جبیل، مسیعید، الحصن. عربستان. مجتبی. نوروز اعتراض. ماکرون. ترامپ پارس جنوبی. موشک. اصفهان. کنگره. لبنان. خزر."
     }
   ],
   "scenarioProbabilities": [
     {
       "name": "Escalation spiral / total war",
-      "prob": "45%",
-      "body": "INCREASED from 40%. Kuwait TWO refineries ablaze + Qatar several LNG facilities = IRGC energy doctrine PRODUCING REAL INDUSTRIAL DAMAGE. This is the threshold crossing — from harassment to capacity destruction. Saudi FM 'trust completely shattered' + retaliation warning = Gulf states approaching military entry. Brent $114+ heading to $120. Citi: $130 if sustained. If Saudi enters militarily: total regional war. IRGC follow-through accelerating — no longer aspirational. Gabbard testimony = political brake on US side but IRGC escalation overriding."
+      "prob": "47%",
+      "body": "INCREASED from 45%. SAMREF hit = IRGC executing named target list systematically. Red Sea coast now in range = Saudi East-West Pipeline bypass compromised. 4 of 7 named targets hit in 48 hours. If Jubail/Mesaieed/Al Hosn struck: Brent $130+, Saudi military entry. Trump South Pars trigger = next Qatar attack → US destroys Iran's largest gas field. Iran FM permanently rejects ceasefire. Macron moratorium unlikely to restrain IRGC. Every trajectory points toward widening."
     },
     {
       "name": "Protracted attrition",
-      "prob": "20%",
-      "body": "DECREASED from 23%. Evening's industrial damage makes low-tempo harassment scenario LESS LIKELY. Kuwait refineries + Qatar LNG = IRGC escalating, not settling into harassment pattern. For attrition to hold: IRGC must stop hitting real industrial targets and revert to interceptable drones. Evening suggests opposite trajectory. However, if Gulf defenses improve and IRGC runs low on precision-strike capability, could still revert."
+      "prob": "18%",
+      "body": "DECREASED from 20%. SAMREF + target list execution = IRGC escalating, not settling. For attrition: IRGC must pause target list after SAMREF. Possible if: Macron moratorium gains traction + US restraint on South Pars + Gulf defenses improve. But Araghchi's 'never asked for ceasefire' makes this less likely."
     },
     {
       "name": "Declared victory + exit",
-      "prob": "16%",
-      "body": "DECREASED from 18%. Kuwait refineries ablaze + Brent $114 = war visibly worsening, not winding down. Johnson's 'objectives met' increasingly absurd against $114 oil and burning refineries. Gabbard testimony + collapsing justification + escalating economic damage = exit narrative has no credibility. CENTCOM stats meaningless when Gulf allies' infrastructure burns."
+      "prob": "14%",
+      "body": "DECREASED from 16%. SAMREF hit + target list execution = war visibly WIDENING. Exit narrative has zero credibility while named targets are being systematically struck. Brent $112. Johnson's 'objectives met' + Gabbard testimony = political pressure, but events overwhelm narrative."
     },
     {
       "name": "International intervention / ceasefire",
-      "prob": "12%",
-      "body": "SLIGHTLY INCREASED from 11%. Kuwait refinery damage + Qatar LNG + Brent $114 = global economic urgency intensifying. IMO + E3 + 12 FM momentum. Citi $130 forecast = recession trigger. International pressure to end war increasing as economic costs cascade globally. BUT: no Iranian negotiating partner (IRGC dictatorship). Most likely form: UN-brokered Hormuz corridor + partial oil flow."
+      "prob": "14%",
+      "body": "INCREASED from 12%. Macron energy moratorium = FIRST concrete diplomatic framework beyond general 'ceasefire' calls. Separating energy from military = potentially actionable. IMO corridor vote. Rafah reopened = separate tracks possible. BUT: Iran FM 'never asked for ceasefire' + IRGC dictatorship = no Iranian partner. Most likely form: unilateral energy de-escalation or maritime corridor."
     },
     {
       "name": "Regime fracture / IRGC formalization",
       "prob": "5%",
-      "body": "UNCHANGED. Already happening. Pezeshkian crisis + IRGC controlling everything = military dictatorship in all but name."
+      "body": "UNCHANGED but NOWRUZ adds variable. Mojtaba's failure to appear for Nowruz message = succession crisis on national holiday. Pahlavi's solidarity call = organized opposition pressure. Pezeshkian resignation still unconfirmed. IRGC controlling everything but internal legitimacy eroding. Nowruz gatherings → protests = wild card."
     },
     {
       "name": "Negotiated deal",
       "prob": "2%",
-      "body": "DECREASED from 3%. IRGC industrial damage campaign = they are escalating, not negotiating. No civilian partner. Isfahan underground unresolved. Hormuz permission-based transit = only backdoor channel but contradicted by refinery attacks."
+      "body": "UNCHANGED. Araghchi: 'We never asked for ceasefire, and we have never asked even for negotiation.' Definitive rejection. IRGC dictatorship = no civilian partner. Only backdoor: Macron moratorium framework evolving into broader arrangement. Extremely unlikely in near term."
     }
   ],
   "scenarioProbabilities_fa": [
     {
       "name": "مارپیچ تشدید / جنگ تمام‌عیار",
-      "prob": "۴۵٪",
-      "body": "افزایش از ۴۰٪. کویت ۲ پالایشگاه + قطر LNG = سپاه از آزار به تخریب صنعتی. عربستان: 'اعتماد شکسته.' نفت ۱۱۴+. ورود عربستان = کلید."
+      "prob": "۴۷٪",
+      "body": "افزایش. سامرف = لیست اجرا. دریای سرخ. ۴ از ۷ هدف. جبیل = ۱۳۰+. ترامپ پارس جنوبی = ماشه."
     },
     {
       "name": "فرسایشی",
-      "prob": "۲۰٪",
-      "body": "کاهش از ۲۳٪. تخریب صنعتی = سناریوی آزار کم‌شدت بعیدتر. سپاه تشدید."
+      "prob": "۱۸٪",
+      "body": "کاهش. سامرف + لیست = تشدید. ماکرون؟ اما عراقچی: 'هرگز.'"
     },
     {
       "name": "اعلام پیروزی + خروج",
-      "prob": "۱۶٪",
-      "body": "کاهش. پالایشگاه آتش + نفت ۱۱۴ = جنگ بدتر نه بهتر. جانسون بی‌اعتبار."
+      "prob": "۱۴٪",
+      "body": "کاهش. سامرف = جنگ گسترده‌تر. خروج بی‌اعتبار."
     },
     {
       "name": "مداخله بین‌المللی",
-      "prob": "۱۲٪",
-      "body": "افزایش جزئی. آسیب اقتصادی جهانی = فشار بین‌المللی. اما سپاه مذاکره نمی‌کند."
+      "prob": "۱۴٪",
+      "body": "افزایش. ماکرون = چارچوب اولین. IMO. رفح. اما ایران: نه."
     },
     {
       "name": "رسمی‌سازی سپاه",
       "prob": "۵٪",
-      "body": "ثابت. در حال وقوع."
+      "body": "نوروز: مجتبی؟ پهلوی: همبستگی. تظاهرات = کارت بدون‌برنامه."
     },
     {
       "name": "مذاکره",
       "prob": "۲٪",
-      "body": "کاهش. سپاه تشدید نه مذاکره."
+      "body": "عراقچی: 'هرگز.' تنها راه: ماکرون → گسترش."
     }
   ],
   "theoryEvaluation": [
     {
-      "title": "IRGC energy doctrine crossed from harassment to industrial damage",
-      "body": "D20 evening marks a QUALITATIVE SHIFT in the energy war. Kuwait's Mina al-Ahmadi (730K bbl/day) and Mina Abdullah refineries both ablaze. QatarEnergy confirms 'several' LNG facilities hit with 'sizeable fires' and 'extensive damage.' This is fundamentally different from intercepted drones and minor harassment: real industrial capacity is being destroyed. Combined capacity at risk: ~1.4M bbl/day Kuwait refining + ~25% of global LNG trade (Qatar). Brent surging to $114+ with Citi forecasting $120+ coming days, $130 Q2-Q3. The IRGC's naming of targets on D19 was not aspirational — they are executing their energy doctrine systematically. Saudi FM's retaliation warning ('trust completely shattered') = Gulf states approaching military entry threshold. This was THE scenario that drives escalation probability up to 45%."
+      "title": "IRGC target list execution — systematic industrial destruction",
+      "body": "SAMREF hit on D20 confirms pattern: IRGC is systematically executing the target list it announced on D19. Scorecard: Kuwait Mina al-Ahmadi ✓, Kuwait Mina Abdullah ✓, Qatar 'several' LNG ✓, SAMREF (Yanbu) ✓. Remaining named: Jubail, Mesaieed, Al Hosn. CRITICAL: SAMREF is on Saudi Arabia's RED SEA coast — meaning IRGC drones have range to reach the western side of the Arabian Peninsula. This compromises the East-West Pipeline bypass (5M bbl/day capacity, currently Saudi Arabia's main alternative to Hormuz). If Yanbu export terminals are also targeted: Saudi Arabia loses BOTH export routes. The energy war is no longer confined to the Gulf — it encompasses the entire Arabian Peninsula."
     },
     {
-      "title": "Nuclear paradox deepens as war legitimacy collapses",
-      "body": "Gabbard's testimony confirmed Iran was NOT rebuilding enrichment pre-war — Trump's justification collapsed. But IAEA reports: 440kg at 60% = ~10 weapons at Isfahan underground tunnel, 'regular vehicular activity' at entrance, inspectors haven't visited. E3: 'increasing risk of diversion.' Grossi: war cannot eliminate nuclear program. The war may be creating the nuclear risk it was supposed to prevent. Meanwhile, the energy war escalation = IRGC has zero incentive to cooperate on nuclear transparency. Isfahan underground remains Schrödinger's enrichment plant."
+      "title": "Nowruz paradox — war + holiday + succession crisis",
+      "body": "March 20 = Nowruz (Persian New Year), the most important cultural event in Iran. War enters 4th week on this day with: no ceasefire (FM: 'never asked'), Mojtaba's condition uncertain (may miss Nowruz message), internet blackout 260+ hours, 5,400+ dead, 25+ provinces under bombardment. Pahlavi's call to celebrate Nowruz as 'national solidarity' = organized opposition using cultural moment. IRGC must simultaneously manage: (1) ongoing war operations, (2) Nowruz security (preventing gatherings → protests), (3) power transition if Mojtaba absent. This triple demand could expose IRGC capacity limits. If Mojtaba fails to appear: strongest signal yet that succession is not resolved."
     },
     {
-      "title": "Convergence of constraints vs IRGC escalation = unstable equilibrium",
-      "body": "US faces converging constraints: (1) MILITARY: missile depletion, $200B+ supplemental; (2) POLITICAL: Gabbard + Kent = legitimacy crisis; (3) DIPLOMATIC: no partner. But IRGC is ESCALATING, not accommodating — Kuwait refineries, Qatar LNG, named targets. This creates unstable equilibrium: US political will declining while IRGC provocations increasing. Something must give. Either: (a) IRGC provocation triggers Saudi entry → total war; (b) US Congress revolts on funding → forced drawdown → IRGC claims victory; (c) informal accommodation emerges despite escalation. Evening's Kuwait damage makes (a) significantly more likely."
+      "title": "Diplomatic bifurcation — Macron moratorium vs Iran's total rejection",
+      "body": "Two contradictory diplomatic developments: (1) Macron calls energy moratorium (separating energy from military) — first concrete framework; (2) Iran FM: 'We never asked for ceasefire, and we have never asked even for negotiation.' Iran's total rejection of diplomacy makes Macron's framework irrelevant UNLESS it leads to: (a) unilateral Gulf + Western de-escalation on energy targeting, or (b) pressure on US/Israel to avoid South Pars re-strike. But IRGC IS the party striking Gulf energy — and they reject all restraint. Result: Macron framework can only constrain one side. Meanwhile Trump's South Pars trigger (next Qatar attack = US destroys entire field) creates ESCALATORY linkage that contradicts Macron's de-escalatory intent."
     }
   ],
   "theoryEvaluation_fa": [
     {
-      "title": "سپاه: از آزار به تخریب صنعتی",
-      "body": "کویت ۲ پالایشگاه آتش (~۱.۴ میلیون بشکه). قطر چند LNG (۲۵٪ جهان). نفت ۱۱۴+. سیتی: ۱۲۰+. تغییر کیفی. عربستان: 'اعتماد شکسته' = آستانه نظامی."
+      "title": "سپاه: اجرای سیستماتیک لیست اهداف",
+      "body": "سامرف = تأیید الگو. کویت ✓ قطر ✓ سامرف ✓. دریای سرخ = خط لوله شرق-غرب تهدید. اگر ینبع بندر هم: عربستان هر دو مسیر از دست."
     },
     {
-      "title": "پارادوکس هسته‌ای عمیق‌تر",
-      "body": "گابارد: بازسازی نشده. اما IAEA: ۱۰ سلاح + اصفهان ناشناخته. جنگ = خطری که قرار بود جلویش گرفته شود. سپاه تشدید = بدون انگیزه همکاری."
+      "title": "پارادوکس نوروز",
+      "body": "نوروز + جنگ + بحران جانشینی. مجتبی غایب؟ پهلوی: همبستگی. سپاه: جنگ + نوروز + قدرت = سه فشار. ظرفیت محدود."
     },
     {
-      "title": "تعادل ناپایدار: محدودیت آمریکا vs تشدید سپاه",
-      "body": "آمریکا: مشروعیت فروریخت. اما سپاه تشدید. یا ورود عربستان (جنگ تمام) یا کنگره بودجه رد (خروج) یا توافق غیررسمی."
+      "title": "دوگانگی دیپلماتیک",
+      "body": "ماکرون: توقف انرژی. اما عراقچی: 'هرگز.' ماکرون فقط یک طرف. ترامپ: پارس جنوبی = ماشه تشدید."
     }
   ],
   "endstate": [
     {
-      "title": "Most likely (45%)",
-      "body": "Escalation spiral — probability INCREASED by evening's industrial damage. IRGC crossed from harassment to capacity destruction: Kuwait 2 refineries ablaze, Qatar several LNG facilities, Brent $114+. Saudi FM 'trust shattered' + retaliation warning = military entry threshold approaching. If Saudi enters: total regional war. Gabbard legitimacy crisis = political brake on US but IRGC provocations overriding. The question is no longer IF IRGC hits industrial targets — they ARE. Now: does Saudi respond militarily?"
+      "title": "Most likely (47%)",
+      "body": "Escalation spiral — INCREASED. SAMREF hit = IRGC executing target list, Red Sea coast compromised, East-West Pipeline bypass threatened. 4 of 7 named targets in 48 hours. If Jubail/Al Hosn next: total Gulf shutdown, $130+ oil, Saudi entry. Iran permanently rejects diplomacy. Trump South Pars trigger = escalation ratchet. Macron moratorium cannot restrain IRGC. The question shifts from 'will IRGC hit more targets?' (yes) to 'can Gulf defenses stop the remaining 3?'"
     },
     {
-      "title": "Second (20%)",
-      "body": "Protracted attrition — less likely after evening's escalation. For this scenario: IRGC must stop hitting real industrial targets and revert to interceptable harassment. Evening suggests opposite trajectory. If Gulf defenses improve rapidly and IRGC precision-strike capability depletes, could still revert. Oil $100-115 range. Politically toxic but militarily sustainable."
+      "title": "Second (18%)",
+      "body": "Protracted attrition — less likely. SAMREF execution = IRGC NOT reverting to harassment. For attrition: IRGC must pause after SAMREF, Gulf defenses must improve dramatically. Both unlikely given Araghchi's permanent rejection of talks."
     },
     {
-      "title": "Emerging (12%)",
-      "body": "International intervention. Kuwait refineries + Qatar LNG + Brent $114 = global economic urgency. Citi $130 forecast = recession trigger. IMO + E3 + 12 FM momentum increasing. Most likely form: UN-brokered Hormuz corridor. But no Iranian negotiating partner."
+      "title": "Emerging (14%)",
+      "body": "International intervention. Macron moratorium = first concrete framework. IMO corridor vote. Rafah reopened. Global economic urgency at $112+ oil. But: no Iranian partner. Most likely form: unilateral maritime corridor OR energy moratorium imposed on US/Israel side only."
     },
     {
       "title": "Wild card (5%)",
-      "body": "IRGC hits Samref, Jubail, Mesaieed, Al Hosn simultaneously = oil $150+, total Gulf shutdown. Saudi declares war. OR: Congress revolts on $200B+ supplemental + Gabbard testimony = forced drawdown. OR: Isfahan underground operational = nuclear crisis. Evening's trajectory makes the first scenario increasingly plausible."
+      "body": "Nowruz internal unrest. Mojtaba absent + Pahlavi solidarity call + gatherings → protests = two-front IRGC crisis. OR: IRGC hits Jubail + Al Hosn simultaneously = oil $150+, total shutdown. OR: Trump South Pars trigger activated = US destroys Iran's largest gas field = total energy war. OR: Congress revolts on $200B+."
     }
   ],
   "endstate_fa": [
     {
-      "title": "محتمل‌ترین (۴۵٪)",
-      "body": "مارپیچ تشدید — افزایش. کویت ۲ پالایشگاه + قطر LNG = از آزار به تخریب. عربستان: 'شکسته.' اگر وارد: جنگ تمام. سؤال: عربستان پاسخ نظامی؟"
+      "title": "محتمل‌ترین (۴۷٪)",
+      "body": "مارپیچ تشدید — افزایش. سامرف = لیست اجرا. دریای سرخ = خط لوله تهدید. ۴ از ۷. جبیل = تعطیلی + ورود عربستان. ایران: 'هرگز.' سؤال: دفاع خلیج ۳ باقی؟"
     },
     {
-      "title": "دوم (۲۰٪)",
-      "body": "فرسایشی — بعیدتر. سپاه تشدید نه آزار. نفت ۱۰۰-۱۱۵."
+      "title": "دوم (۱۸٪)",
+      "body": "فرسایشی — بعیدتر. سامرف = تشدید نه آزار."
     },
     {
-      "title": "نوظهور (۱۲٪)",
-      "body": "مداخله. پالایشگاه + LNG + نفت ۱۱۴ = فوریت جهانی. هرمز کریدور ممکن."
+      "title": "نوظهور (۱۴٪)",
+      "body": "ماکرون = چارچوب. IMO. رفح. اما بدون شریک ایرانی."
     },
     {
       "title": "غیرمنتظره (۵٪)",
-      "body": "سپاه تمام اهداف = ۱۵۰+. یا کنگره رد = خروج. یا اصفهان = هسته‌ای."
+      "body": "نوروز اعتراض. جبیل + الحصن = ۱۵۰+. ترامپ پارس جنوبی. کنگره."
     }
   ],
   "shippingRoutes": [
@@ -726,7 +737,7 @@
       "route": "Tehran → Dubai → Atlanta (Emirates SkyCargo)",
       "status": "DEAD",
       "statusColor": "red",
-      "detail": "Unchanged. Regional aviation collapsed. Iran named UAE targets including Al Hosn gas. IRGC evacuation orders. Habshan shutdown. Dubai airport intermittently operating. This route remains permanently dead for duration of conflict.",
+      "detail": "Unchanged. IRGC executing target list — UAE next after Kuwait + Qatar + SAMREF. Qatar Airways suspended. Pegasus canceled until April 12. This route remains permanently dead.",
       "viability": "0%",
       "eta": "N/A — route permanently disrupted for duration of conflict"
     },
@@ -734,7 +745,7 @@
       "route": "Iran → Turkey (land freight)",
       "status": "CLOSED",
       "statusColor": "red",
-      "detail": "Closed. NATO intercepted missiles over Turkey. Iraq 250K bbl/day via Ceyhan = Turkey–Iraq oil corridor functional but Turkey–Iran border remains shut for commercial traffic. Swedish execution may complicate European transit arrangements.",
+      "detail": "Closed. NATO intercepted missiles over Turkey. Iraq 250K bbl/day via Ceyhan functional but Turkey–Iran border shut. Swedish execution + Nowruz = no improvement.",
       "viability": "~5%",
       "eta": "Not viable until conflict ends + diplomatic normalization"
     },
@@ -742,15 +753,15 @@
       "route": "Iran → Armenia (Agarak/Norduz border)",
       "status": "MOST VIABLE",
       "statusColor": "yellow",
-      "detail": "Still most viable but DECLINING FURTHER. Bandar Anzali HEAVY BOMBARDMENT = Caspian/northern theater intensifying significantly. Warships destroyed, fuel storage damaged at major northern port. Strikes reaching Shahin Shahr (Isfahan area), Tehran overnight. IRGC dictatorship = civilian logistics subordinated. Energy war producing real industrial damage = war intensifying not winding down.",
-      "viability": "~12-18%",
+      "detail": "Still most viable but declining. Bandar Anzali heavy bombardment = Caspian/northern theater intensifying. Warships destroyed, fuel storage damaged. NOWRUZ may briefly affect border operations. IRGC controls logistics. Internet 260+ hours = communication barriers. Strikes reaching all 25 provinces.",
+      "viability": "~10-15%",
       "eta": "If route established: 4-8 weeks Tehran→Yerevan→sea→Atlanta"
     },
     {
       "route": "Pakistan / Afghanistan / Turkmenistan",
       "status": "NOT RECOMMENDED",
       "statusColor": "red",
-      "detail": "Eastern borders not directly in combat zone but infrastructure minimal. Caspian Sea strikes = northern/eastern expansion. No change in assessment.",
+      "detail": "Eastern borders not in main combat zone but Caspian strikes expanding. No infrastructure improvement. Assessment unchanged.",
       "viability": "<5%",
       "eta": "Months to establish if even possible"
     }
@@ -760,7 +771,7 @@
       "route": "تهران → دبی → آتلانتا",
       "status": "مرده",
       "statusColor": "red",
-      "detail": "بدون تغییر. سپاه: الحصن هدف. حبشان تعطیل.",
+      "detail": "سپاه لیست اجرا — امارات بعدی. قطرایرویز معلق. مرده.",
       "viability": "۰٪",
       "eta": "غیرممکن"
     },
@@ -768,7 +779,7 @@
       "route": "ایران → ترکیه (زمینی)",
       "status": "بسته",
       "statusColor": "red",
-      "detail": "بسته. عراق نفت از ترکیه. اعدام سوئدی = پیچیدگی اروپا.",
+      "detail": "بسته. ناتو. اعدام سوئدی + نوروز.",
       "viability": "~۵٪",
       "eta": "تا پایان جنگ"
     },
@@ -776,162 +787,169 @@
       "route": "ایران → ارمنستان",
       "status": "بهترین گزینه",
       "statusColor": "yellow",
-      "detail": "هنوز بهترین اما بدتر. بندرانزلی بمباران سنگین = شمال تشدید. ناوها نابود. شاهین‌شهر + تهران.",
-      "viability": "~۱۲–۱۸٪",
+      "detail": "بهترین اما کاهشی. بندرانزلی. نوروز = مرز؟ اینترنت ۲۶۰+. ۲۵ استان.",
+      "viability": "~۱۰–۱۵٪",
       "eta": "۴–۸ هفته"
     },
     {
       "route": "پاکستان/افغانستان/ترکمنستان",
       "status": "توصیه نمی‌شود",
       "statusColor": "red",
-      "detail": "بدون تغییر. خزر = گسترش.",
+      "detail": "بدون تغییر.",
       "viability": "<۵٪",
       "eta": "ماه‌ها"
     }
   ],
   "publishingStatus": [
-    "Paper supply: CRITICAL. Hormuz closed + rial collapsed. IRGC dictatorship = civilian economy subordinated.",
-    "Internet blackout: 250+ hours (3+ weeks). Total communications isolation. IRGC controls all channels.",
-    "Power outages: WORSENING. Bandar Anzali fuel storage damaged. Shahin Shahr hit. Tehran overnight strikes. CENTCOM: 7,800+ targets. Energy infrastructure on BOTH sides being destroyed — Kuwait 2 refineries + Qatar LNG + Iran fuel/power.",
-    "Isfahan + Shiraz: Both under sustained bombardment. Shahin Shahr police station hit (near Isfahan). Caspian expansion = new strike regions daily.",
-    "56+ cultural sites damaged. 5,300+ dead. IRGC relocating to civilian spaces = increased collateral.",
-    "New title production: Effectively halted. No civilian economic planning. Energy war destroying infrastructure on all sides.",
-    "Assessment: Existential crisis deepening. IRGC energy doctrine producing real industrial damage globally — this war is INTENSIFYING not winding down. Recovery timeline: years minimum and extending."
+    "Paper supply: CRITICAL. Hormuz closed + rial collapsed. IRGC dictatorship = civilian economy subordinated. Nowruz = no reprieve.",
+    "Internet blackout: 260+ hours (11+ days). Total communications isolation. IRGC controls all channels. Nowruz messages going unsent.",
+    "Power outages: WORSENING. CENTCOM: 7,800+ targets across 25 provinces. Bandar Anzali fuel storage damaged. Energy infrastructure targeted on BOTH sides — Kuwait, Qatar, Saudi + Iran.",
+    "Isfahan + Shiraz: Both under sustained bombardment. Shahin Shahr + Caspian expansion. Nowruz under fire = unprecedented cultural trauma.",
+    "56+ cultural sites damaged. 5,400+ estimated dead. IRGC relocating to civilian spaces.",
+    "New title production: Effectively halted. Nowruz publishing season — normally peak — completely lost.",
+    "Assessment: Existential crisis. SAMREF hit = war widening geographically. Nowruz under bombardment = cultural devastation. Iran FM: 'never asked for ceasefire' = no end in sight. Recovery: years minimum."
   ],
   "publishingStatus_fa": [
-    "کاغذ: بحرانی. سپاه = اقتصاد تابع جنگ.",
-    "اینترنت: ۲۵۰+ ساعت قطع.",
-    "برق: بدتر. بندرانزلی مخازن. شاهین‌شهر. تهران. ۷,۸۰۰+ هدف.",
-    "اصفهان + شیراز: بمباران. شاهین‌شهر. خزر = مناطق جدید.",
-    "۵۶+ فرهنگی. ۵,۳۰۰+.",
-    "تولید متوقف. جنگ انرژی هر دو طرف.",
-    "بحران وجودی عمیق‌تر. جنگ تشدید نه کاهش. سال‌ها."
+    "کاغذ: بحرانی. نوروز = بدون بهبود.",
+    "اینترنت: ۲۶۰+ ساعت قطع. پیام‌های نوروزی ارسال نشده.",
+    "برق: بدتر. ۷,۸۰۰+ هدف. ۲۵ استان.",
+    "اصفهان + شیراز: بمباران. نوروز زیر آتش = تروما.",
+    "۵,۴۰۰+ کشته. ۵۶+ فرهنگی.",
+    "تولید متوقف. فصل نوروز = از دست رفته.",
+    "بحران وجودی. سامرف = گسترش. عراقچی: 'هرگز.' سال‌ها."
   ],
   "impactIranfarhang": [
-    "PRIMARY ROUTE DEAD: Tehran→Dubai→Atlanta completely non-functional. IRGC hitting UAE targets. Habshan shutdown. No improvement possible.",
-    "BEST ALTERNATIVE DECLINING: Armenia (Agarak/Norduz) — viability reduced to 15-20%. Bandar Anzali heavy bombardment = Caspian/northern theater intensifying. Warships destroyed, fuel storage damaged. IRGC dictatorship = civilian logistics subordinated.",
-    "SUPPLY SOURCE CRITICAL: CENTCOM 7,800+ targets, 25 provinces. Bandar Anzali + Shahin Shahr + Tehran overnight = strikes intensifying everywhere. 5,300+ dead. Internet 250+ hrs. No civilian economic recovery channel.",
-    "OFAC STATUS: Informational materials exemption (31 CFR §560.210(c)) remains valid. Swedish execution + IRGC dictatorship + energy war escalation = compliance tightening. Watch for new designations.",
-    "FINANCIAL: Rial collapsed. Brent $114+. Citi: $120+ coming days. Kuwait refineries ablaze + Qatar LNG = cascading supply crisis. IRGC controls economy.",
-    "WINDOW CLOSING RAPIDLY: IRGC energy doctrine crossed from threats to industrial damage. Kuwait 2 refineries + Qatar several LNG = real capacity destruction. Saudi FM warns retaliation = Gulf states approaching military entry. Brent trajectory toward $120-130. No off-ramp visible."
+    "PRIMARY ROUTE DEAD: Tehran→Dubai→Atlanta completely non-functional. IRGC executing target list across Gulf. Qatar Airways suspended. No improvement possible.",
+    "BEST ALTERNATIVE DECLINING FURTHER: Armenia (Agarak/Norduz) — viability 10-15%. Bandar Anzali heavy bombardment + Caspian expansion + Nowruz border disruption. IRGC dictatorship = civilian logistics subordinated.",
+    "SUPPLY SOURCE CRITICAL: CENTCOM 7,800+ targets, 25 provinces. Nowruz under bombardment = unprecedented. 5,400+ dead. Internet 260+ hrs. No civilian economic channel.",
+    "OFAC STATUS: Informational materials exemption (31 CFR §560.210(c)) remains valid. IRGC dictatorship formalized + Araghchi permanent rejection = compliance tightening further. Swedish execution fallout.",
+    "FINANCIAL: Rial collapsed. Brent ~$112. SAMREF hit = no Saudi energy safe. IRGC controls economy completely.",
+    "WINDOW CLOSED: IRGC executing named targets. SAMREF = Red Sea coast reached. FM: 'never asked for ceasefire.' No diplomatic off-ramp. Nowruz lost. Plan for 12+ month total interruption."
   ],
   "impactIranfarhang_fa": [
-    "مسیر اصلی مرده. حبشان تعطیل.",
-    "ارمنستان: ۱۵-۲۰٪. بندرانزلی بمباران = شمال بدتر. ناوها نابود.",
-    "منبع بحرانی: ۷,۸۰۰+ هدف. بندرانزلی + شاهین‌شهر + تهران. ۵,۳۰۰+ کشته. اینترنت ۲۵۰+.",
-    "OFAC: معتبر. اعدام سوئدی + سپاه = سخت‌تر.",
-    "مالی: ریال. نفت ۱۱۴+. سیتی: ۱۲۰+. کویت + قطر = بحران عرضه.",
-    "پنجره بسته: سپاه از تهدید به تخریب. ۲ پالایشگاه + LNG. عربستان هشدار. نفت ۱۲۰-۱۳۰."
+    "مسیر اصلی مرده. سپاه لیست اجرا.",
+    "ارمنستان: ۱۰-۱۵٪. بندرانزلی + نوروز.",
+    "منبع بحرانی: ۷,۸۰۰+ هدف. نوروز بمباران. ۵,۴۰۰+. اینترنت ۲۶۰+.",
+    "OFAC: معتبر. سپاه + عراقچی = سخت‌تر.",
+    "مالی: ریال. نفت ۱۱۲. سامرف = امنیت عربستان نه.",
+    "پنجره بسته. عراقچی: 'هرگز.' نوروز از دست رفته. ۱۲+ ماه."
   ],
   "prepIranfarhang": [
-    "Armenia route: REDUCED viability 12-18%. Bandar Anzali heavy bombardment = northern theater intensifying. Monitor daily for strikes near Agarak/Norduz.",
-    "Identify ANY Tehran warehouse partners still operational. Shahin Shahr + Tehran overnight strikes = access worsening.",
-    "Pre-negotiate Yerevan→Poti/Batumi→sea→US. Only viable option but declining.",
-    "Accelerate procurement of accessible pre-war inventory — window narrowing daily.",
-    "Brief clients: 12+ month supply interruption likely. War INTENSIFYING not winding down.",
-    "Monitor KEMCO — Swedish execution + IRGC dictatorship + Brent $114 = compliance tightening.",
-    "Prepare for TOTAL supply interruption 12+ months. Four crises accelerating = no resolution visible.",
-    "Isfahan nuclear: IAEA locked out, 10 weapons-worth. Any breakout = new sanctions regime.",
-    "URGENT: IRGC NOW EXECUTING named targets. Kuwait 2 refineries + Qatar LNG already hit. If Samref/Jubail/Al Hosn next: oil $130+, total logistics collapse.",
-    "Pezeshkian resignation + Saudi military entry = two triggers that could transform conflict overnight."
+    "Armenia route: REDUCED viability 10-15%. Bandar Anzali + Nowruz. Monitor daily.",
+    "Identify ANY Tehran partners still operational. Nowruz = brief pause or increased chaos?",
+    "Pre-negotiate Yerevan→Poti/Batumi→sea→US. Only viable path, declining.",
+    "Accelerate procurement of accessible pre-war inventory — window nearly closed.",
+    "Brief clients: 12+ month total interruption. Araghchi: 'We are ready to defend as long as it takes.'",
+    "Monitor KEMCO — IRGC dictatorship + permanent rejection = unprecedented compliance pressure.",
+    "Prepare for TOTAL supply interruption 12+ months. No ceasefire ever per Iran FM.",
+    "Isfahan nuclear: IAEA locked out. 10 weapons-worth. Breakout = new sanctions regime.",
+    "URGENT: SAMREF hit = Red Sea coast. East-West Pipeline bypass compromised. Jubail, Mesaieed, Al Hosn next?",
+    "Nowruz: Watch for internal unrest, Mojtaba message, protest crackdowns."
   ],
   "prepIranfarhang_fa": [
-    "ارمنستان: ۱۲-۱۸٪. بندرانزلی = شمال بدتر. نظارت.",
-    "انبارهای تهران — شاهین‌شهر + تهران حمله = بدتر.",
-    "ایروان←بندر←دریا. تنها گزینه اما کاهشی.",
-    "تسریع خرید. پنجره تنگ‌تر.",
-    "مشتریان: ۱۲+ ماه قطع. جنگ تشدید.",
-    "KEMCO — نفت ۱۱۴ + سپاه = سخت‌تر.",
-    "آمادگی قطع ۱۲+. چهار بحران = بدون حل.",
-    "اصفهان: ۱۰ سلاح. تحریم جدید؟",
-    "فوری: سپاه اجرا — کویت + قطر. اگر سامرف/جبیل: ۱۳۰+.",
-    "پزشکیان + ورود عربستان = تغییر شبانه."
+    "ارمنستان: ۱۰-۱۵٪. بندرانزلی + نوروز. نظارت.",
+    "شرکای تهران — نوروز: مکث یا هرج؟",
+    "ایروان←بندر←دریا. تنها مسیر، کاهشی.",
+    "تسریع خرید. پنجره تقریباً بسته.",
+    "مشتریان: ۱۲+ ماه قطع. عراقچی: 'آماده‌ایم.'",
+    "KEMCO — سپاه + رد دائمی = فشار بی‌سابقه.",
+    "آمادگی قطع ۱۲+. آتش‌بس هرگز.",
+    "اصفهان: ۱۰ سلاح. تحریم جدید.",
+    "سامرف = دریای سرخ. جبیل، مسیعید، الحصن بعدی؟",
+    "نوروز: اعتراض؟ مجتبی؟ سرکوب؟"
   ],
   "signalsIranfarhang": [
-    "CRITICAL: IRGC NOW EXECUTING named targets — Kuwait 2 refineries ablaze, Qatar several LNG. Samref, Jubail, Al Hosn still on list. If all struck: total collapse.",
-    "CRITICAL: Saudi military entry — FM 'trust completely shattered,' warns retaliation. Approaching threshold. If triggered: total Gulf war, all alternatives dead.",
-    "CRITICAL: Brent $114+ heading $120+. Citi: $130 avg Q2-Q3. Kuwait refineries + Qatar LNG = cascading supply crunch. Global recession trigger.",
-    "CRITICAL: Isfahan underground — IAEA: 440kg = ~10 weapons. E3 diversion warning. Nuclear breakout = new sanctions.",
-    "CRITICAL: Pezeshkian resignation — IRGC dictatorship formalized. No civilian channel.",
-    "WATCH: Bandar Anzali heavy bombardment = Caspian/northern theater intensifying. Armenia corridor viability declining.",
-    "WATCH: Gabbard + Congressional $200B+ — war rationale collapsing. If Congress revolts: forced drawdown.",
-    "WATCH: US missile resupply crisis. Internet 250+ hrs. Swedish execution = KEMCO?",
-    "WATCH: Next 24-48 hrs critical — does IRGC hit remaining named targets (Samref, Jubail, Al Hosn)?"
+    "CRITICAL: SAMREF HIT = Red Sea coast reached. East-West Pipeline bypass threatened. Jubail, Mesaieed, Al Hosn still on list. If all struck: total Arabian Peninsula shutdown.",
+    "CRITICAL: Iran FM: 'We never asked for ceasefire, and we have never asked even for negotiation.' PERMANENT diplomatic rejection. Plan accordingly.",
+    "CRITICAL: Brent ~$112 heading $120+. SAMREF + Kuwait + Qatar = cascading supply crunch. Citi: $130 Q2-Q3.",
+    "CRITICAL: Isfahan underground — IAEA: 440kg = ~10 weapons. Iran rejects ALL transparency. Breakout = new sanctions.",
+    "CRITICAL: Mojtaba Nowruz message — if absent: succession crisis on national holiday.",
+    "WATCH: Nowruz gatherings → protests? Pahlavi solidarity call. IRGC capacity stretched.",
+    "WATCH: Macron energy moratorium — first concrete framework. Could evolve.",
+    "WATCH: Trump South Pars trigger — next Qatar attack = US destroys Iran's largest gas field.",
+    "WATCH: Next 24-48 hrs: does IRGC hit Jubail, Mesaieed, or Al Hosn?"
   ],
   "signalsIranfarhang_fa": [
-    "بحرانی: سپاه اجرا — کویت ۲ پالایشگاه، قطر LNG. بقیه اهداف؟",
-    "بحرانی: عربستان — 'اعتماد شکسته.' آستانه نظامی. اگر وارد: همه مرده.",
-    "بحرانی: نفت ۱۱۴+ → ۱۲۰+. سیتی: ۱۳۰. رکود جهانی.",
-    "بحرانی: اصفهان — ۱۰ سلاح. E3 هشدار.",
-    "بحرانی: پزشکیان = سپاه رسمی.",
-    "نظارت: بندرانزلی = شمال بدتر. ارمنستان؟",
-    "نظارت: گابارد + کنگره. اینترنت ۲۵۰+. KEMCO؟",
-    "نظارت: ۲۴-۴۸ ساعت آینده حیاتی — سامرف، جبیل، الحصن؟"
+    "بحرانی: سامرف = دریای سرخ. خط لوله تهدید. جبیل، مسیعید، الحصن هنوز.",
+    "بحرانی: عراقچی: 'هرگز.' رد دائمی. برنامه‌ریزی.",
+    "بحرانی: نفت ۱۱۲ → ۱۲۰+. سیتی: ۱۳۰.",
+    "بحرانی: اصفهان — ۱۰ سلاح. ایران: نه شفافیت.",
+    "بحرانی: مجتبی نوروز — اگر غایب: بحران جانشینی.",
+    "نظارت: نوروز → اعتراض؟ پهلوی. سپاه فشار.",
+    "نظارت: ماکرون = چارچوب.",
+    "نظارت: ترامپ پارس جنوبی = ماشه.",
+    "نظارت: ۲۴-۴۸ ساعت: جبیل، مسیعید، الحصن؟"
   ],
   "impactKIP": [
-    "Iran-UAE corridor: DEAD. IRGC hitting UAE targets. Habshan shutdown continues. Risk maximum.",
-    "UAE asset risk: EXTREME. Habshan still shut. IRGC named targets being executed elsewhere (Kuwait, Qatar). UAE next. E3 military backing continues.",
-    "Hormuz: Permission-based transit but IRGC industrial damage campaign contradicts any normalization. Kuwait refineries + Qatar LNG = IRGC escalating not accommodating. 21 tankers since war began vs 100+/day pre-war.",
-    "QATAR: QatarEnergy confirms 'SEVERAL' LNG facilities hit — 'sizeable fires,' 'extensive damage.' Goes beyond Ras Laffan. ~25% of global LNG trade under systematic attack. Attaches expelled. Force majeure ongoing.",
-    "KUWAIT: TWO refineries ablaze — Mina al-Ahmadi (730K bbl/day) + Mina Abdullah. First direct hits on Kuwait oil refining infrastructure. Combined ~1.4M bbl/day at risk. IRGC energy doctrine producing real industrial damage.",
-    "Banking: IRGC dictatorship + Swedish execution + $114 oil = compliance TIGHTENING. Citi: $120+. Isfahan nuclear = potential new designations. KEMCO under pressure.",
-    "Physical security: IRGC energy doctrine EXECUTED — no longer aspirational. Real infrastructure burning. Saudi FM warns retaliation. Operating environment DETERIORATING rapidly."
+    "Iran-UAE corridor: DEAD. IRGC executing target list — UAE assets next after SAMREF. Pegasus canceled until April 12.",
+    "UAE asset risk: EXTREME. IRGC target execution: Kuwait ✓ Qatar ✓ SAMREF ✓. Al Hosn (UAE gas) still on list. Habshan shutdown continues.",
+    "Hormuz: 21 tankers since war vs 100+/day pre-war. Permission-based transit but IRGC target execution contradicts normalization. IMO corridor vote pending.",
+    "SAMREF HIT: Red Sea coast reached. East-West Pipeline (5M bbl/day) = Saudi's main Hormuz bypass now threatened. If Yanbu export terminals targeted: Saudi loses BOTH export routes.",
+    "QATAR: Force majeure ongoing. Several LNG facilities hit. Qatar Airways suspended. Attaches expelled. Trump: US will hit South Pars if Qatar attacked again.",
+    "KUWAIT: 2 refineries hit. ~1.4M bbl/day at risk. 26+ Hezbollah detained. Most industrially damaged Gulf state.",
+    "Banking: IRGC dictatorship + permanent diplomatic rejection (Araghchi) + $112 oil + SAMREF = compliance TIGHTENING. Watch for new designations.",
+    "Physical security: IRGC executing named targets systematically. 4 of 7 hit in 48 hours. Red Sea coast = ALL Gulf geography at risk."
   ],
   "impactKIP_fa": [
-    "ایران-امارات: مرده. حبشان تعطیل.",
-    "دارایی‌ها: شدید. سپاه اهداف اجرا. کویت + قطر = بعدی امارات.",
-    "هرمز: تناقض — سپاه تشدید صنعتی. ۲۱ نفتکش.",
-    "قطر: قطرانرژی — چند LNG حمله. ۲۵٪ جهان تهدید.",
-    "کویت: ۲ پالایشگاه آتش. ~۱.۴ میلیون بشکه. آسیب صنعتی واقعی.",
-    "بانکداری: سپاه + اعدام + نفت ۱۱۴ = سخت‌تر. KEMCO فشار.",
-    "امنیت: سپاه اجرا. زیرساخت می‌سوزد. عربستان هشدار. بدتر."
+    "ایران-امارات: مرده. سپاه لیست اجرا. پگاسوس لغو.",
+    "دارایی‌ها: شدید. کویت ✓ قطر ✓ سامرف ✓. الحصن هنوز.",
+    "هرمز: ۲۱ نفتکش. IMO رأی‌گیری.",
+    "سامرف: دریای سرخ. خط لوله = تهدید. ینبع؟",
+    "قطر: فورس ماژور. قطرایرویز معلق. ترامپ: پارس جنوبی.",
+    "کویت: ۲ پالایشگاه. ۱.۴ میلیون بشکه.",
+    "بانکداری: سپاه + عراقچی + نفت ۱۱۲ = سخت‌تر.",
+    "امنیت: ۴ از ۷. دریای سرخ = همه جغرافیا."
   ],
   "prepKIP": [
-    "URGENT: IRGC NOW EXECUTING energy targets — Kuwait 2 refineries ablaze, Qatar several LNG. UAE is NEXT on target list. All UAE assets at maximum risk.",
-    "Emergency communication protocols CRITICAL. Next 24-48 hrs = will IRGC hit remaining named targets (Samref, Jubail, Al Hosn)?",
-    "Diversify banking IMMEDIATELY. Brent $114+ → $120+. Swedish execution + IRGC dictatorship = European compliance tightening further.",
-    "ALL UAE-bound shipments remain suspended. Habshan shutdown. IRGC targeting UAE next after Kuwait + Qatar.",
-    "Legal contingency for UAE asset freeze / enhanced screening. IRGC executing industrial targets = new OFAC actions increasingly likely.",
-    "Alternative hubs: Oman (Muscat/Sohar), Turkey (Mersin), Georgia (Poti/Batumi). All Gulf logistics under threat from IRGC escalation.",
-    "Insurance: Kuwait refinery fires + Qatar LNG + Habshan = premiums CATASTROPHIC. Self-insure all Gulf assets immediately.",
-    "Personnel: TEMPORARY RELOCATION from UAE should be actively considered. Saudi FM 'trust shattered' = Gulf states may enter war.",
-    "Isfahan nuclear: IAEA locked out. 10 weapons-worth. Any breakout = unprecedented new sanctions.",
-    "CRITICAL: If IRGC hits Samref + Jubail + Al Hosn = total Gulf shutdown. Oil $150+. All operations end. Prepare NOW.",
-    "Saudi military entry = trigger for total Gulf war. FM warning strongest yet. Monitor hourly."
+    "URGENT: IRGC executing target list — SAMREF ✓ on Red Sea coast. Al Hosn (UAE) still on list. UAE assets at MAXIMUM risk.",
+    "Emergency: Red Sea coast = East-West Pipeline bypass threatened. Saudi may lose BOTH export routes. Diversify immediately.",
+    "Diversify banking NOW. Araghchi permanent rejection + IRGC dictatorship = unprecedented compliance pressure.",
+    "ALL UAE-bound shipments suspended. Habshan shutdown. Al Hosn on IRGC target list.",
+    "Legal contingency for UAE asset freeze. IRGC target execution = new OFAC actions likely.",
+    "Alternative hubs: Oman (Muscat/Sohar), Turkey (Mersin), Georgia (Poti/Batumi). ALL Gulf at risk.",
+    "Insurance: SAMREF + Kuwait + Qatar = premiums CATASTROPHIC. Self-insure all Gulf assets.",
+    "Personnel: TEMPORARY RELOCATION from UAE active consideration. IRGC executing targets systematically.",
+    "Isfahan nuclear: IAEA locked out. 10 weapons-worth. Breakout = new sanctions regime.",
+    "CRITICAL: If Jubail + Al Hosn struck = total Gulf shutdown. Oil $150+. Prepare NOW.",
+    "Nowruz: Monitor for internal unrest + Mojtaba status. Regime instability = additional unpredictability.",
+    "Macron moratorium: Could create partial de-escalation framework. But IRGC rejects all."
   ],
   "prepKIP_fa": [
-    "فوری: سپاه اجرا — کویت ۲ پالایشگاه، قطر LNG. امارات بعدی. حداکثر خطر.",
-    "پروتکل ارتباطی فوری. ۲۴-۴۸ ساعت = سامرف، جبیل، الحصن؟",
-    "تنوع بانکی فوری. نفت ۱۱۴+ → ۱۲۰+. سپاه = سخت‌تر.",
-    "محموله‌ها متوقف. حبشان تعطیل. امارات بعدی.",
-    "حقوقی: سپاه صنعتی = OFAC جدید.",
+    "فوری: سپاه لیست اجرا — سامرف ✓. الحصن هنوز. حداکثر خطر.",
+    "دریای سرخ = خط لوله تهدید. تنوع فوری.",
+    "بانکداری فوری. عراقچی + سپاه = فشار بی‌سابقه.",
+    "محموله‌ها متوقف. حبشان. الحصن لیست.",
+    "حقوقی: سپاه = OFAC جدید.",
     "هاب‌ها: عمان، ترکیه، گرجستان. خلیج تهدید.",
-    "بیمه فاجعه‌بار. خود-بیمه.",
-    "جابجایی موقت فعالانه. عربستان هشدار = جنگ خلیج.",
-    "اصفهان: ۱۰ سلاح. تحریم بی‌سابقه.",
-    "بحرانی: اگر تمام اهداف = تعطیلی. نفت ۱۵۰+. آماده حالا.",
-    "ورود عربستان = جنگ تمام خلیج. نظارت ساعتی."
+    "بیمه فاجعه‌بار.",
+    "جابجایی از امارات. سپاه سیستماتیک.",
+    "اصفهان: ۱۰ سلاح.",
+    "جبیل + الحصن = تعطیلی. ۱۵۰+. حالا.",
+    "نوروز: اعتراض؟ مجتبی؟ بی‌ثباتی.",
+    "ماکرون: چارچوب؟ اما سپاه: نه."
   ],
   "signalsKIP": [
-    "CRITICAL: IRGC EXECUTING named targets — Kuwait 2 refineries ablaze, Qatar several LNG. Samref, Jubail, Al Hosn STILL ON LIST. Next 24-48 hrs = will they hit remaining targets?",
-    "CRITICAL: Saudi military entry — FM 'trust completely shattered,' warns retaliation. If triggered: total Gulf shutdown. All operations end.",
-    "CRITICAL: Brent $114+ → $120+ (Citi). Kuwait + Qatar damage = cascading supply crunch. If $130+: global recession.",
-    "CRITICAL: Isfahan underground — IAEA: 440kg = ~10 weapons. E3 diversion warning. Nuclear breakout = unprecedented sanctions.",
-    "CRITICAL: Pezeshkian resignation — IRGC dictatorship formalized. New OFAC designations likely.",
-    "WATCH: UAE Habshan — shutdown continues. UAE is next on IRGC target list after Kuwait + Qatar.",
-    "WATCH: Gabbard + $200B+ supplemental — Congress may revolt. If drawdown forced, Gulf allies exposed.",
-    "WATCH: Insurance market — Kuwait refinery fires + Qatar LNG = premiums CATASTROPHIC. Self-insure.",
-    "WATCH: Bandar Anzali bombardment = Caspian expansion. Northern logistics threatened.",
-    "WATCH: Swedish execution + internet 250+ hrs — European compliance tightening?"
+    "CRITICAL: SAMREF HIT — Red Sea coast reached. East-West Pipeline bypass compromised. Jubail, Mesaieed, Al Hosn STILL ON LIST. 4 of 7 targets hit in 48 hours.",
+    "CRITICAL: Iran FM permanent rejection — 'We never asked for ceasefire, and we have never asked even for negotiation.' NO diplomatic off-ramp.",
+    "CRITICAL: Brent ~$112 → $120+ (Citi). SAMREF + Kuwait + Qatar = cascading. If $130+: global recession.",
+    "CRITICAL: Isfahan underground — IAEA: 440kg = ~10 weapons. E3 diversion warning. Iran rejects all transparency.",
+    "CRITICAL: Mojtaba Nowruz message — absence = succession crisis. Internal unrest potential.",
+    "WATCH: Trump South Pars trigger — next Qatar attack = US destroys Iran's largest gas field. Escalatory ratchet.",
+    "WATCH: Macron energy moratorium — first concrete framework. Could evolve into partial de-escalation.",
+    "WATCH: UAE Al Hosn — on IRGC target list. Habshan still shut. Next strike could come anytime.",
+    "WATCH: IMO corridor vote — safe maritime corridor could partially reopen Hormuz.",
+    "WATCH: Nowruz gatherings → protests? Pahlavi call. IRGC stretched across war + domestic + succession."
   ],
   "signalsKIP_fa": [
-    "بحرانی: سپاه اجرا — کویت ۲ پالایشگاه، قطر LNG. سامرف، جبیل، الحصن هنوز.",
-    "بحرانی: عربستان — 'اعتماد شکسته.' اگر وارد: تعطیلی کامل.",
-    "بحرانی: نفت ۱۱۴+ → ۱۲۰+. رکود اگر ۱۳۰+.",
-    "بحرانی: اصفهان — ۱۰ سلاح. E3 هشدار.",
-    "بحرانی: پزشکیان = سپاه. OFAC جدید.",
-    "نظارت: حبشان + امارات بعدی. گابارد + کنگره.",
-    "نظارت: بیمه فاجعه‌بار. بندرانزلی = شمال.",
-    "نظارت: اعدام + اینترنت ۲۵۰+ = بانک‌ها؟"
+    "بحرانی: سامرف — دریای سرخ. خط لوله. جبیل، مسیعید، الحصن هنوز. ۴ از ۷.",
+    "بحرانی: عراقچی — 'هرگز.' بدون راه دیپلماتیک.",
+    "بحرانی: نفت ۱۱۲ → ۱۲۰+. رکود اگر ۱۳۰+.",
+    "بحرانی: اصفهان — ۱۰ سلاح. ایران: نه شفافیت.",
+    "بحرانی: مجتبی نوروز — غایب = بحران. اعتراض؟",
+    "نظارت: ترامپ پارس جنوبی = ماشه.",
+    "نظارت: ماکرون = چارچوب.",
+    "نظارت: الحصن = لیست سپاه. حبشان تعطیل.",
+    "نظارت: IMO = کریدور.",
+    "نظارت: نوروز اعتراض؟ پهلوی. سپاه فشار."
   ]
 }
