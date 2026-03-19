@@ -1,136 +1,131 @@
 {
   "meta": {
-    "lastUpdated": "2026-03-20T16:15:00-04:00",
+    "lastUpdated": "2026-03-21T04:15:00-04:00",
     "notes": [
-      "Day 21 (Mar 20 = NOWRUZ) UPDATE 4:15PM ET. Sources: CNN D20, AJ liveblog D19-D21, CNBC, AP, Bloomberg, Fortune, OilPrice.com, OilPriceAPI, NPR, NBC, Wikipedia, Investing.com, IAEA, Euronews, NCRI, Iran International, Carnegie, Windward, PBS, UNHCR, Zelenskyy, Hengaw 5th report, FDD, HRW, JPost, Fox News, Britannica, NetBlocks, Militarnyi, TWZ, USNI News, EU Kallas, HRANA, Red Cross, ACLED, IranWire, Queen Farah Pahlavi.",
-      "NOWRUZ — MOJTABA ABSENT: Hard deadline passed. No video Nowruz message from Supreme Leader — only written statements read by TV anchor. Euronews: 'if no Nowruz message appears, it would signal significant shifts within Tehran's power structure.' Iran International: 'an empty entity who does not appear in public.' Trump: 'is not alive.' Hegseth: 'likely disfigured.' First written statement had typographical errors — JPost: 'dictated by IRGC.' Succession crisis CONFIRMED on the most symbolic day of Iranian calendar.",
-      "CHAHARSHANBE SURI — NIGHT OF DEFIANCE: Chaharshanbe Suri turned NATIONWIDE act of defiance. 111 'pro-monarchy cells' arrested in 26/31 provinces. 'Death to Mojtaba' + 'Long live the Shah' + 'Death to Islamic Republic' chants from homes (Tehran Saadat Abad confirmed). Carnegie: largest potential uprising since 1979. War + Nowruz + succession = triple internal pressure.",
-      "IRGC DESERTIONS DOCUMENTED (Wikipedia article created): Rising desertions within IRGC and police now MULTI-SOURCE CONFIRMED (Iran International, Militarnyi, Wikipedia). Desertions recorded in Isfahan and Tabriz, not just lower ranks. 4 Iranian diplomats applied for asylum in Western countries. Group desertions at conscript level — soldiers leaving bases. Some units issued only 20 bullets per 2 Artesh soldiers. Reports of IRGC EXECUTING soldiers for desertion. IRGC denying aid to Artesh units. Army-IRGC rift deepening. NYT (D17): 'no evidence of significant desertion' — but subsequent reports contradict. Pezeshkian warned of severe economic strain; IRGC dismissed. Pezeshkian APOLOGIZED to neighboring states for Oman strikes but IRGC continued attacks — exposing leadership rift.",
-      "OMAN — WIKIPEDIA ARTICLE CREATED: Attacks ongoing since D2 (Mar 1). Wikipedia '2026 Iranian strikes on Oman' now documents: D2 Duqm Port 2 drones, tanker Skylight hit off Khasab (4 injured); D3 tanker attacked off Muscat (1 killed); D14 Sohar drone strike (2 killed); Salalah port fuel tanks hit (operations suspended). Total: 3 killed, 5+ injured. Araghchi said attacks 'not their choice' — IRGC units acting independently. Pezeshkian apologized but IRGC continued. Oman neutral throughout — this expansion alienates last Gulf diplomatic channel to Iran.",
-      "OIL SURGING D21: Brent rallied from ~$110 overnight to ~$116 (OilPriceAPI live). OilPrice.com: $112.21. Surge driven by cumulative supply anxiety: Oman + SAMREF + Kuwait refineries + Qatar LNG + Hormuz near-closure. Brent up ~80% since war began. Citi: $120+ near-term. EIA: >$95 next 2 months. March average: $93.05 vs $70.89 Feb.",
-      "HORMUZ UPDATE: 21 tankers total since D1 (vs 100+/day pre-war). 89 ships crossed Mar 1-15 (Lloyd's List). US Navy NOT READY to escort — TWZ: 8-10 destroyers needed per convoy, could restore only ~10% of pre-war traffic. US dropped 5,000-lb deep penetrator bunker busters on hardened Iranian anti-ship cruise missile sites along Hormuz (CENTCOM). Energy Sec Wright deleted then retracted escort claim; WH denied any escort occurred. ~400 vessels stranded. Iran exporting 16M+ bbl to China. Kuwait official totals: 539 drones + 227 missiles.",
-      "HENGAW 5TH REPORT: 5,300 killed through D18 (511 civilians = 9.6%, 4,789 military). 120 minors, 160 women among civilian dead. 178 cities across 25 provinces struck. 223 military installations hit. Hormozgan school massacre = highest civilian toll. IRGC relocating to schools, mosques, dormitories — IHL violation documented.",
-      "LEBANON ~1,000+: Health Ministry (D19): 968 killed, 2,432 wounded. Crossing 1,000. 1M+ displaced (19% pop). Israel ground ops since D17. UN: attacks on residential buildings may constitute war crimes. HRW: 'complete impunity.'",
-      "INTERNET BLACKOUT ~480+ HOURS (NetBlocks: 'longest recorded shutdown in Iran's history,' 20th day as of D20). Israel using Iranian social media to geolocate and strike Basij checkpoints — new tactic. ~300 Basij commanders killed in targeted drone waves. 350 Starlink terminals CONFISCATED being smuggled into Iran. 21 arrested for sending videos to foreign media.",
-      "HRANA CROSS-REFERENCE: HRANA documented 3,114 deaths by D18 (1,354 civilians, 1,138 military, 622 unclassified). Vs Hengaw 5,300 (511 civilians, 4,789 military). Divergence suggests: HRANA lower civilian count but higher civilian RATIO (43% vs 9.6%). Both agree military casualties 'significantly higher than reported.' Red Cross: 'families gathering for funerals instead of festivities.' Queen Farah Pahlavi: Nowruz coincides with 'great awakening.'",
-      "PATRIOT SUPPLY CRISIS (Zelenskyy): 800+ Patriot missiles fired on D1 alone. US manufactures only 60-65 per month. Coalition consuming interceptors faster than production — structural limit on air defense. Zelensky: Putin counting on prolonged Iran war to sap Western stockpiles.",
-      "WARTIME PROSECUTION: Qazvin prosecutor announced wartime conditions — arrested protesters detained until late June 2027. Fars: some in Karaj arrested for 'burning images of martyred supreme leader.' Wartime legal framework = unprecedented repression tool.",
-      "DIPLOMACY: Araghchi: 'never asked for ceasefire.' Trump: 'eager to negotiate but not ready.' EU Kallas: 'We need an exit from the Iran war, not an escalation.' Netanyahu posted Nowruz greeting to Iranian people ('new beginning of hope'). Israel KILLED LARIJANI (pragmatic negotiator who led pre-war nuclear talks) — analysts: aimed at closing diplomatic avenues. Macron moratorium. South Pars trigger. Kataib Hezbollah 5-day pause."
+      "Day 22 (Mar 21 = NOWRUZ DAY 2) UPDATE 4:15AM ET. Sources: CNN D20-D22, AJ liveblog D19-D22, CNBC, AP, Bloomberg, Fortune, OilPrice.com, OilPriceAPI, NPR, NBC, Wikipedia, Investing.com, IAEA, Euronews, NCRI, Iran International, Carnegie, Windward, PBS, UNHCR, Zelenskyy, Hengaw 5th report, FDD, HRW, JPost, Fox News, Britannica, NetBlocks, Militarnyi, TWZ, USNI News, EU Kallas, HRANA, Red Cross, ACLED, IranWire, Queen Farah Pahlavi, The National, Stimson Center, Gulf International Forum, Amnesty International, Washington Post, Axios, Richard Haass/Substack.",
+      "NOWRUZ DAY 2 — MOJTABA STILL ABSENT: Second day of Nowruz with no video appearance. Succession crisis deepening. Telegraph leaked audio: Mojtaba survived with 'minor leg injury' — but continued absence contradicts. Araghchi claims 'excellent health' while regime produces zero proof. Iranian media attempting to cast Khamenei Jr as 'wartime leader' — but invisible wartime leaders lose authority daily. IRGC attempting to fill vacuum with written statements.",
+      "HOUTHI RESTRAINT — MAJOR STRATEGIC FINDING: Despite expectations, Houthis have NOT entered the war after 22 days. The National: 'mystery of no Houthi attacks.' AP (Mar 15): Houthi stockpiles RUNNING LOW after 2024-2025 Red Sea campaign + Iran supply disrupted by war. Possible US/Saudi deal. Stimson: 'must decide — join Iran's war or abandon Iran.' Houthi leader al-Houthi: 'hands on trigger.' BUT: Israeli 2025 strikes decapitated Sanaa leadership, southern secessionist threat diverts focus. FDD: 'rhetorical solidarity' only. This is CRITICAL — if Houthis stay out, Red Sea remains open = alternative route preserved. If they enter: both Hormuz AND Bab el-Mandeb closed simultaneously = unprecedented global shipping crisis.",
+      "ISFAHAN UNDERGROUND NUCLEAR — NEW FACILITY: IAEA confirms Iran has NEW uranium enrichment site at underground Isfahan complex. Grossi: 'many questions, underground, haven't visited.' E3 to IAEA Board (Mar 2026): 'increasing risk of diversion, particularly around Isfahan Fuel Enrichment Plant.' Would be Iran's FOURTH enrichment plant. IAEA observing 'regular vehicular activity around entrance to tunnel complex.' 440kg at 60% = ~10 weapons. Grossi: 'war cannot entirely eliminate nuclear program — vast, scattered, decades of effort.' This UPGRADES nuclear risk: Iran may be enriching in facility coalition has never struck.",
+      "DESERTIONS GRANULAR DATA: Iran International + Militarnyi detail: Police special units — salary payments DISRUPTED, personnel declined pro-government rallies. One base: ~350 police left posts. Some units: absence/desertion approaching 90%. Retirees + army personnel NOT PAID for 2nd consecutive month. IRGC recalling retirees to active duty. Prisoners offered amnesty for cooperation. Financial strain + supply crisis + two-front war = institutional breakdown accelerating.",
+      "LEBANON ESCALATING: Health Ministry Mar 2-16: 886 killed (67 women, 111 children, 38 health workers), 2,141 wounded. Now ~1,000+ with D17-D22 strikes. WHO: 28 healthcare attacks, 30 killed. 40 health workers killed total. Amnesty: halt attacks on healthcare. Israel planning MASSIVE Litani ground invasion (Axios: 'seize entire area south of Litani River'). Lebanese govt banned Hezbollah military activities (Mar 2), ordered IRGC deportation (Mar 5). Domestic backlash against Hezbollah (WashPost: 'anger even among Shiite supporters'). 85-90K crossed to Syria.",
+      "OIL CONSOLIDATING D22: Brent ~$115 (OilPriceAPI $116.01, steady from D21). Nowruz + weekend = reduced trading. Fortune Mar 19: $113.71. March avg $93.05. IEA: 'largest supply disruption in history — 20 Mb/d offline.' Gulf output declined 21M→14M bbl/day (Rystad). EIA: >$95 next 2 months, then <$80 Q3 if conflict ends. Citi: $120+ if continues.",
+      "HORMUZ STATUS: Still ~21-23 tankers since D1. Iran allowing 'permission-based transits to friendly countries' — growing number via Iranian territorial waters. Haass editorial (Mar 18): 'Open for All or Closed to All' — proposed no Iranian tanker permitted until Iran backs off. Lloyd's: 8-10 destroyers needed per convoy = 10% of pre-war traffic at best. France + UK + Germany + Italy working on escort framework (Operation Aspides expansion). US Navy escort 'could take month or more.'",
+      "HENGAW 5TH REPORT: 5,300 killed through D18 (511 civilians = 9.6%, 4,789 military). Extrapolating to D22: ~5,800+. HRANA: 3,114 (43% civilian ratio). Health Ministry: 1,444 official + 18,551 injured. 70,000+ civilian structures damaged Mar 3-17. 251 medical centers, 498 schools, 17 Red Crescent facilities damaged. 3.2M displaced.",
+      "INTERNET BLACKOUT ~504+ HOURS (22nd day). NetBlocks: connectivity at 4% of normal. 'Longest recorded shutdown in Iran's history.' Regime allowing only select users access. 350 Starlink terminals confiscated. 21 arrested sending videos abroad.",
+      "PATRIOT SUPPLY CRISIS (Zelenskyy): Zelensky BBC interview: 'For Putin, a long war in Iran is a plus.' 800+ Patriot missiles fired D1. 60-65/month production. Putin counting on drain. Western air defense stockpiles structurally unsustainable.",
+      "WARTIME PROSECUTION: Protesters detained to June 2027 under wartime conditions. Unprecedented repression tool.",
+      "DIPLOMACY: Araghchi: 'never asked for ceasefire.' Third round indirect talks (Oman-mediated, Geneva) — no breakthrough. Araghchi offered to 'dilute enriched material' — but continued attacks undermine. Trump: 'eager to negotiate, not ready.' Lebanese govt ready for direct ceasefire talks with Israel 'immediately and without preconditions.' Macron + several states: 'defensive escort mission' framework (Operation Aspides). Haass: 'Open for All or Closed to All.'"
     ]
   },
-  "theoryBox": "<strong>Day 21 — NOWRUZ: MOJTABA ABSENT + OIL $116 + IRGC FRACTURES + PATRIOT CRISIS:</strong> NOWRUZ HARD DEADLINE PASSED — no video message. Succession crisis CONFIRMED. Chaharshanbe Suri = 'Night of Defiance.' 111 arrests in 26/31 provinces. WARTIME prosecution (detained to June 2027). 350 Starlink terminals confiscated. IRGC desertions DOCUMENTED (multi-source). Pezeshkian-IRGC rift. Iran DENIED Oman. Brent ~$116. Hengaw: 5,300 / HRANA: 3,114. Target scorecard 4/7. Hormuz: 21 tankers. PATRIOT SUPPLY CRISIS: 800+ fired D1, only 60-65/month (Zelenskyy). Queen Farah: 'great awakening.' ~300 Basij commanders killed. Internet ~480+ hrs.",
-  "theoryBox_fa": "<strong>روز ۲۱ — نوروز: مجتبی غایب + نفت ۱۱۶ + شکاف سپاه + بحران پاتریوت:</strong> مهلت نوروز گذشت — بدون پیام تصویری. بحران جانشینی تأیید. چهارشنبه‌سوری نافرمانی. ۱۱۱ بازداشت. محاکمه جنگی. ۳۵۰ استارلینک ضبط. فرار سپاه (مستند). پزشکیان اختلاف. عمان انکار. نفت ~۱۱۶. هنگاو ۵,۳۰۰ / HRANA ۳,۱۱۴. پاتریوت: ۸۰۰+ روز اول، ۶۰-۶۵/ماه. ملکه فرح: 'بیداری.' بسیج ۳۰۰. اینترنت ۴۸۰+.",
+  "theoryBox": "<strong>Day 22 — NOWRUZ DAY 2: HOUTHIS STAYING OUT + ISFAHAN UNDERGROUND + DESERTIONS ACCELERATING:</strong> Mojtaba STILL absent Day 2. MAJOR: Houthis NOT entering war (22 days, AP: stockpiles low, possible US deal). Isfahan underground nuclear facility confirmed — IAEA 'never visited.' Desertions: police 350 left one base, 90% absence, salary crisis, retirees unpaid. Lebanon ~1,000+ (Israel planning Litani sweep). Brent ~$115 consolidating. Internet ~504+ hrs. Extrapolated ~5,800+ killed. 70K+ civilian structures damaged. Haass: 'Open for All or Closed to All.' Houthi restraint = Red Sea open = critical strategic variable.",
+  "theoryBox_fa": "<strong>روز ۲۲ — نوروز روز ۲: حوثی‌ها بیرون + اصفهان زیرزمینی + فرار تسریع:</strong> مجتبی هنوز غایب. مهم: حوثی‌ها وارد جنگ نشدند (AP: ذخایر کم، احتمال توافق آمریکا). اصفهان تأسیسات زیرزمینی جدید — IAEA 'هرگز بازدید نکرده.' فرار: پلیس ۳۵۰ ترک، ۹۰٪ غیبت، حقوق قطع. لبنان ~۱,۰۰۰+. نفت ~۱۱۵. اینترنت ۵۰۴+. ~۵,۸۰۰+ کشته. حوثی بیرون = دریای سرخ باز = متغیر کلیدی.",
   "metrics": [
     {
       "label": "Day",
-      "value": "21",
-      "desc": "NOWRUZ — MOJTABA ABSENT (no video message = succession crisis confirmed). Chaharshanbe Suri defiance. WARTIME prosecution (June 2027). 350 Starlink confiscated. IRGC desertions reported. Pezeshkian-IRGC rift. Iran denies Oman. Israel geolocating Basij. ~300 Basij commanders killed. PATRIOT CRISIS: 800+ fired D1, 60-65/month. Internet ~480+ hrs. 3.2M displaced. Queen Farah: 'great awakening.'"
+      "value": "22",
+      "desc": "NOWRUZ DAY 2 — Mojtaba STILL absent (no video, no audio, only written). HOUTHIS NOT ENTERING WAR (AP: stockpiles low, possible US deal). Isfahan underground nuclear = IAEA 'never visited.' Desertions: police 350 at one base, 90% absence, salary/food crisis. Lebanon ~1,000+ (Israel planning Litani sweep). 70K+ civilian structures damaged. Internet ~504+ hrs. 3.2M displaced."
     },
     {
       "label": "Cumul. missiles",
-      "value": "~2,737",
-      "desc": "D21 REVISED UP: 35→40 (Oman Duqm/Salalah added). D20: 45 (SAMREF + 6th salvo). Oman = NEW theater — IRGC targeting neutral states. Target list execution continues."
+      "value": "~2,772",
+      "desc": "D22: ~35 (declining as IRGC fractures). Cumul: 2,772. IRGC capacity degrading — desertions + supply crisis (10 rounds/soldier). BUT: IRGC D16 claim 'cache intact, using decade-old missiles' — if true, rationing not exhaustion. 4/7 named targets hit."
     },
     {
       "label": "Cumul. drones",
-      "value": "~4,272",
-      "desc": "D21 REVISED UP: 65→72 (Oman ports confirmed). IRGC drone range now proven: Gulf + Red Sea + Oman. Three coasts. 200+ Ukrainian anti-drone experts deployed to Gulf."
+      "value": "~4,337",
+      "desc": "D22: ~65 (sustained harassment). Cumul: 4,337. Drone production cheaper, harder to suppress. 200+ Ukrainian anti-drone experts in Gulf. IRGC drone range: Gulf + Red Sea + Oman = three coasts."
     },
     {
       "label": "Brent crude",
-      "value": "~$116",
-      "desc": "D21 SURGING from $110 overnight to ~$116 (OilPriceAPI live). Up ~80% since war began. March avg $93.05 vs Feb $70.89. Citi: $120+ near-term. EIA: >$95 next 2 months. Cumulative supply anxiety: Oman + SAMREF + Kuwait + Qatar + Hormuz near-closure. US Navy escort 'not ready yet.'"
+      "value": "~$115",
+      "desc": "D22 consolidating from D21 spike. OilPriceAPI: $116.01. Nowruz/weekend = reduced volume. IEA: 'largest supply disruption in history — 20 Mb/d offline.' Gulf output 21M→14M (Rystad). March avg $93.05. EIA: >$95 next 2 months. Citi: $120+ if war continues."
     },
     {
       "label": "Iran dead (Hengaw)",
-      "value": "~5,500+",
-      "desc": "Hengaw 5th report (D18): 5,300 killed (511 civilians, 4,789 military). HRANA cross-ref: 3,114 deaths (1,354 civilians = 43% civilian ratio). 120 minors, 160 women. Health Ministry: 1,444 + 18,551 injured. UNHCR: 3.2M displaced. Internet ~480+ hrs. 350 Starlink terminals confiscated. IRGC relocating to schools/mosques (IHL violation). 178 cities across 25 provinces struck."
+      "value": "~5,800+",
+      "desc": "Hengaw 5th report (D18): 5,300. Extrapolated D22: ~5,800+. HRANA: 3,114 (43% civilian). 70,000+ civilian structures damaged (Mar 3-17). 251 medical centers, 498 schools, 17 Red Crescent facilities. Health Ministry: 1,444 official + 18,551 injured. 3.2M displaced. Internet ~504+ hrs."
     },
     {
       "label": "Lebanon",
       "value": "~1,000+ killed",
-      "desc": "Health Ministry (D19): 968 killed, 2,432 wounded. Now crossing 1,000 with D20-D21 strikes. 1M+ displaced (19% pop). Litani bridges destroyed. Ground ops expanding."
+      "desc": "Health Ministry Mar 2-16: 886 killed (67 women, 111 children, 38 health workers), 2,141 wounded. Now ~1,000+ with continued D17-D22 strikes. Israel planning massive Litani ground invasion (Axios). 1M+ displaced. Lebanese govt banned Hezbollah military, ordered IRGC deportation. 85-90K crossed to Syria."
     },
     {
       "label": "Israel dead",
       "value": "22+",
-      "desc": "6th missile salvo since midnight D20. Cluster munitions continue. 3,727+ wounded. PATRIOT SUPPLY CRISIS: 800+ fired D1, only 60-65/month production (Zelenskyy). Interceptor depletion structural. 200+ US wounded (180+ returned to duty)."
+      "desc": "Continued salvos. 3,727+ wounded. 14 killed officially (12 civilians, 2 soldiers per Israeli authorities — some sources higher). PATRIOT CRISIS: 800+ fired D1, 60-65/month production. 200+ US wounded (180+ returned). 13 US KIA."
     },
     {
       "label": "Nuclear risk",
-      "value": "CRITICAL",
-      "desc": "IAEA: 440kg at 60% = ~10 weapons. Isfahan underground status unknown. E3: 'increasing risk of diversion.' Kent (resigned): 'no intelligence' of imminent attack, 'not on verge of nuclear weapon.' FBI investigating. Contradicts E3 assessment. IRGC fractures may affect nuclear command."
+      "value": "CRITICAL — UPGRADED",
+      "desc": "NEW: Isfahan UNDERGROUND enrichment plant confirmed by IAEA — 'never visited, many questions.' Would be Iran's 4th facility. 440kg at 60% = ~10 weapons. E3 to IAEA Board: 'increasing risk of diversion.' Grossi: 'war cannot entirely eliminate program — vast, scattered, decades.' Iran offered to dilute but attacks continue. IRGC fractures may lose control of nuclear assets."
     }
   ],
   "metrics_fa": [
     {
       "label": "روز",
-      "value": "۲۱",
-      "desc": "نوروز — مجتبی غایب. محاکمه جنگی. ۳۵۰ استارلینک ضبط. فرار سپاه. پاتریوت بحران: ۸۰۰+ روز اول. ملکه فرح: 'بیداری.' بسیج ۳۰۰. اینترنت ۴۸۰+."
+      "value": "۲۲",
+      "desc": "نوروز روز ۲ — مجتبی هنوز غایب. حوثی‌ها وارد جنگ نشدند (AP: ذخایر کم). اصفهان زیرزمینی = IAEA بازدید نکرده. فرار: ۳۵۰ پلیس ترک، ۹۰٪ غیبت. ۷۰هزار+ ساختمان آسیب. اینترنت ۵۰۴+."
     },
     {
       "label": "موشک",
-      "value": "~۲,۷۳۷",
-      "desc": "D21 بازنگری ۴۰. عمان = تئاتر جدید. سامرف + لیست."
+      "value": "~۲,۷۷۲",
+      "desc": "D22: ~۳۵. سپاه تحلیل — فرار + بحران تدارکات. ۴ از ۷ هدف."
     },
     {
       "label": "پهپاد",
-      "value": "~۴,۲۷۲",
-      "desc": "D21 بازنگری ۷۲. عمان + دریای سرخ + خلیج = سه ساحل. اوکراین ۲۰۰+ متخصص."
+      "value": "~۴,۳۳۷",
+      "desc": "D22: ~۶۵. پهپاد ادامه. اوکراین ۲۰۰+ متخصص."
     },
     {
       "label": "نفت",
-      "value": "~$۱۱۶",
-      "desc": "D21 جهش ۱۱۰→۱۱۶. +۸۰٪ از آغاز. سیتی: ۱۲۰+. ۲۱ نفتکش از D1. نیروی دریایی آمریکا: آماده نیست."
+      "value": "~$۱۱۵",
+      "desc": "D22 تثبیت. IEA: 'بزرگترین اختلال تاریخ — ۲۰ میلیون بشکه.' تولید خلیج ۲۱→۱۴ میلیون."
     },
     {
       "label": "کشته ایران",
-      "value": "~۵,۵۰۰+",
-      "desc": "هنگاو گزارش ۵: ۵,۳۰۰ (D18). ۵۱۱ غیرنظامی. ۱۲۰ نوجوان. سپاه به مدرسه/مسجد. ۱۷۸ شهر. اینترنت ۴۸۰+."
+      "value": "~۵,۸۰۰+",
+      "desc": "هنگاو ۵,۳۰۰ (D18). تخمین D22: ۵,۸۰۰+. ۷۰,۰۰۰+ ساختمان. ۲۵۱ مرکز پزشکی. ۳.۲ میلیون آواره."
     },
     {
       "label": "لبنان",
       "value": "~۱,۰۰۰+ کشته",
-      "desc": "وزارت: ۹۶۸ + ادامه. پل‌های لیطانی. ۱ میلیون آواره."
+      "desc": "۸۸۶ (مارس ۲-۱۶) + ادامه. ۱۱۱ کودک. اسرائیل: حمله لیطانی برنامه‌ریزی. ۱ میلیون آواره."
     },
     {
       "label": "اسرائیل",
       "value": "۲۲+",
-      "desc": "۶ حمله. خوشه‌ای. ۳,۷۲۷+ زخمی. آمریکا ۲۰۰+ زخمی."
+      "desc": "۱۴ کشته رسمی. ۳,۷۲۷+ زخمی. آمریکا ۱۳ کشته + ۲۰۰+ زخمی."
     },
     {
       "label": "خطر هسته‌ای",
-      "value": "بحرانی",
-      "desc": "IAEA: ۱۰ سلاح. کنت: 'در آستانه نه.' E3: 'انحراف.' شفافیت = صفر."
+      "value": "بحرانی — ارتقا",
+      "desc": "اصفهان زیرزمینی جدید — IAEA 'هرگز بازدید.' ۴۴۰ کیلو = ۱۰ سلاح. E3: 'خطر انحراف.' گروسی: 'جنگ حذف نمی‌کند.'"
     }
   ],
   "sitrep": [
-    "NOWRUZ — MOJTABA ABSENT (SUCCESSION CRISIS CONFIRMED): Hard deadline passed. No video Nowruz message — only written statements. Euronews: absence 'would signal significant shifts in Tehran's power structure.' Iran International: 'empty entity.' Trump: 'is not alive.' Hegseth: 'likely disfigured.' JPost: first written statement had errors, 'dictated by IRGC.' On the most symbolic day of Iranian calendar, the Supreme Leader is invisible. Power vacuum confirmed.",
-    "CHAHARSHANBE SURI — NIGHT OF DEFIANCE: Chaharshanbe Suri turned nationwide protest. 'Death to Mojtaba' + 'Long live the Shah' + 'Death to Islamic Republic' chants (Tehran Saadat Abad confirmed). 111 'pro-monarchy cells' arrested in 26/31 provinces. Carnegie: largest potential uprising since 1979. Netanyahu Nowruz congratulations to Iranian people. Pahlavi called diaspora solidarity. War + Nowruz + succession = triple pressure.",
-    "OMAN PORTS HIT — NEW GEOGRAPHIC EXPANSION: Several drones struck Oman's ports of Duqm and Salalah, damaging at least one fuel storage tank. CRITICAL: Oman has been NEUTRAL throughout conflict. This represents IRGC targeting expanding beyond belligerent/allied states. Oman = key alternative shipping hub. If Oman route compromised: Gulf states lose another bypass option. War now spans: Gulf + Red Sea + Oman Sea + Caspian = ALL of Iran's surrounding maritime space.",
-    "SAMREF REFINERY HIT — IRGC NAMED TARGET EXECUTED: Saudi Arabia confirmed drone struck SAMREF refinery in Yanbu on Red Sea coast (Saudi Aramco/ExxonMobil JV, ~400K bbl/day capacity). SAMREF was SPECIFICALLY NAMED by IRGC as target on D19. Target execution scorecard: Kuwait Mina al-Ahmadi ✓, Kuwait Mina Abdullah ✓, Qatar several LNG ✓, SAMREF ✓. Remaining named: Jubail, Mesaieed, Al Hosn. Red Sea coast reached = East-West Pipeline bypass compromised.",
-    "SELECTIVE HORMUZ PASSAGE FRAMEWORK: China, India, Pakistan, Turkey negotiating bilateral passage with Iran. March 16: only 2 crossings (Windward), 97% below normal. ~400 vessels waiting in Gulf of Oman. Iran exporting 16M+ barrels to China since March — Beijing largest buyer. Iran using Kooh Mobarak terminal to bypass Hormuz for its own exports. Permission-based framework crystallizing: allies get passage, US-aligned blocked.",
-    "OIL SURGING — BRENT ~$116: D21 rallied from $110 overnight to ~$116 (OilPriceAPI live). Up ~80% since war began. March avg $93.05 vs Feb $70.89. Only 21 tankers since D1 (vs 100+/day). US Navy 'not ready' to escort — Energy Sec: 'possibly by end of March.' Citi: $120+. EIA: >$95/b next 2 months. Gulf exports ↓61%. Russia BENEFITING.",
-    "200+ UKRAINIAN ANTI-DRONE EXPERTS: Zelenskyy confirmed deployment to Gulf states. Operational expertise from Russia-Ukraine war applied to Iranian drone defense. First major non-NATO military assistance to Gulf. Potential game-changer for Gulf air defense if sustained.",
-    "IRGC FRACTURING — NOW DOCUMENTED: Wikipedia article '2026 defection and desertion of Iranian security forces' created. Iran International + Militarnyi confirm desertions in Isfahan and Tabriz, not just lower ranks. 4 Iranian diplomats applied for asylum in Western countries. Group desertions at conscript level — soldiers leaving bases seeking refuge in towns. Supply crisis: some units issued only 20 bullets per 2 Artesh soldiers, no water/food. Reports of IRGC EXECUTING soldiers for desertion. IRGC denying aid to Artesh units — Army-IRGC rift deepening. Pezeshkian apologized to neighbors for Oman strikes but IRGC continued. Israel using social media to geolocate and strike Basij checkpoints — ~300 Basij commanders killed. NYT (D17): 'no evidence of significant desertion' — but subsequent multi-source reporting contradicts.",
-    "IRAN: 3.2 MILLION DISPLACED (UNHCR). Hengaw 5th report (D18): 5,300 killed (511 civilians = 9.6%, 4,789 military). HRANA cross-ref: 3,114 deaths (1,354 civilians = 43%). Divergence = methodological, but both confirm massive toll. 120 minors, 160 women among civilian dead. 178 cities across 25 provinces struck. 223 military installations hit. Health Ministry: 1,444 + 18,551 injured. Internet blackout ~480+ hours. 350 Starlink terminals confiscated. 21 arrested for sending videos abroad. IRGC relocating to schools, mosques, dormitories — IHL violation documented. 25 hospitals damaged, 9 out of service. Red Cross: 'families gathering for funerals instead of festivities.' Population NOT broken — Chaharshanbe Suri proves resilience. Queen Farah Pahlavi: 'great awakening.'",
-    "DIPLOMACY — AVENUES CLOSING: FM Araghchi: 'never asked for ceasefire.' Israel KILLED LARIJANI — pragmatic negotiator who led pre-war nuclear talks. Analysts: aimed at closing diplomatic avenues. Trump: 'eager to negotiate but not ready.' EU Kallas: 'We need an exit, not an escalation.' Netanyahu posted Nowruz greeting to Iranian people ('new beginning of hope'). Macron energy moratorium. South Pars trigger. Kataib Hezbollah 5-day pause = first crack in proxy unity.",
-    "LEBANON ~1,000+ KILLED: Health Ministry (D19): 968 killed, 2,432 wounded. Crossing 1,000 with continued strikes. 1M+ displaced (19% pop). Litani bridges destroyed. Ground ops expanding. German chancellor: 'error.'",
-    "KENT + HORMUZ: Former NCTC director: 'no intelligence' of imminent Iranian attack. FBI investigating. Kuwait official totals: 539 drones + 227 missiles targeting country. UAE (D17): 1,627 drones + 319 missiles launched; 8 killed, 157 injured. UN WFP: war driving 'significant long-term increases in global food prices.' IEA: 'largest supply disruption in history.'"
+    "NOWRUZ DAY 2 — MOJTABA STILL ABSENT: Second day with no video/audio. Telegraph leaked audio: survived with 'minor leg injury.' Araghchi claims 'excellent health.' Iranian media casting as 'wartime leader' but invisible leaders lose authority daily. Written statements only = IRGC ventriloquism. Succession crisis deepening, not resolving.",
+    "HOUTHI RESTRAINT — CRITICAL STRATEGIC FINDING: Despite 22 days of war, Houthis have NOT attacked. The National: 'mystery.' AP (Mar 15): stockpiles running low after 2024-2025 Red Sea campaign + Iran supply disrupted. Possible US/Saudi deal. Stimson: 'must decide — join or abandon Iran.' Israeli 2025 strikes decapitated Sanaa leadership. Southern secessionist threat. FDD: 'rhetorical solidarity' only. IF HOUTHIS STAY OUT: Red Sea open = alternative routes preserved, conflict partially contained. IF THEY ENTER: Hormuz + Bab el-Mandeb = 'first time in modern history, both major maritime corridors simultaneously blocked.'",
+    "ISFAHAN UNDERGROUND NUCLEAR — NEW FACILITY CONFIRMED: IAEA confirms Iran has NEW uranium enrichment site at underground Isfahan complex. Grossi: 'many questions, underground, haven't visited.' E3 to IAEA Board (Mar 2026): 'increasing risk of diversion.' Would be Iran's FOURTH enrichment plant. 440kg at 60% = ~10 weapons. Grossi: 'war cannot entirely eliminate program — vast, scattered, decades.' Iran offered to 'dilute enriched material' (Araghchi at Geneva) but attacks continued. Nuclear risk UPGRADED: Iran may be enriching in facility coalition has never struck.",
+    "IRGC FRACTURING — ACCELERATING: NEW GRANULAR DATA: Police special units salary payments DISRUPTED. ~350 police left posts at one base. Some units 90% absence/desertion. Retirees + army NOT PAID for 2nd consecutive month. IRGC recalling retirees to active duty. Prisoners offered amnesty for cooperation. Army-IRGC rift: supply crisis (10 rounds/soldier, no water/food). 4 diplomats asylum. IRGC executing deserters. ~300 Basij commanders killed via social media geolocating. Western security officials (WashPost) 'did not see defections among high-ranking' — but operational degradation at unit level is undeniable.",
+    "OMAN PORTS HIT — GEOGRAPHIC EXPANSION: Duqm + Salalah struck. Neutral state violated. War spans: Gulf + Red Sea + Oman Sea + Caspian. SAMREF (Yanbu, Red Sea) = 4/7 named targets executed. Remaining: Jubail, Mesaieed, Al Hosn. Autonomous IRGC units may still act despite institutional degradation.",
+    "OIL CONSOLIDATING — BRENT ~$115: Steady from D21 $116. IEA: 'largest supply disruption in history — 20 Mb/d offline.' Gulf output declined 21M→14M bbl/day (Rystad). March avg $93.05. EIA: >$95/b next 2 months. Citi: $120+ if war continues. Haass editorial: 'Open for All or Closed to All' — new framework proposal. France + UK + Germany + Italy: Operation Aspides escort expansion. US Navy: 'could take month or more.'",
+    "IRAN HUMANITARIAN CRISIS: 70,000+ civilian structures damaged (Mar 3-17). 251 medical centers, 498 schools, 17 Red Crescent facilities. Extrapolated ~5,800+ killed (D22). 3.2M displaced. Internet ~504+ hours (22nd day). NetBlocks: connectivity at 4% of normal. 350 Starlink confiscated. 25+ hospitals damaged. Population NOT broken — Chaharshanbe Suri proved resilience.",
+    "LEBANON ~1,000+ KILLED — LITANI INVASION PLANNED: Health Ministry Mar 2-16: 886 killed (67 women, 111 children, 38 health workers). Now ~1,000+. Israel planning massive Litani ground invasion (Axios: 'seize entire area south'). Lebanese govt banned Hezbollah military (Mar 2), ordered IRGC deportation (Mar 5). WashPost: 'backlash against Hezbollah even among Shiite supporters.' 85-90K crossed to Syria. Lebanon ready for direct ceasefire talks 'immediately and without preconditions.'",
+    "DIPLOMACY — MULTIPLE TRACKS: Third round indirect Geneva talks (Oman-mediated) — no breakthrough. Araghchi offered to dilute enrichment but attacks undermine. Trump: 'eager to negotiate, not ready.' Haass: 'Open for All or Closed to All.' Macron + several states: defensive escort mission. Lebanese govt: direct ceasefire talks. Kataib Hezbollah 5-day pause = proxy crack. E3 backing 'proportionate military defensive measures.'",
+    "PATRIOT + ZELENSKY: BBC interview: 'For Putin, a long war in Iran is a plus.' 800+ Patriot missiles fired D1, 60-65/month production. Western air defense structurally unsustainable. 200+ Ukrainian anti-drone experts in Gulf."
   ],
   "sitrep_fa": [
-    "نوروز — مجتبی غایب. بدون پیام تصویری. بحران جانشینی تأیید. ترامپ: 'زنده نیست.' هگست: 'معیوب.'",
-    "چهارشنبه‌سوری = شب نافرمانی. 'مرگ بر مجتبی' + 'زنده‌باد شاه.' ۱۱۱ بازداشت ۲۶ استان. کارنگی: ۱۹۷۹.",
-    "عمان حمله — دقم + صلاله. بی‌طرف بود. گسترش. خلیج + دریای سرخ + عمان + خزر.",
-    "سامرف ✓ (ینبع). لیست: کویت ✓ قطر ✓ سامرف ✓. جبیل، مسیعید، الحصن باقی.",
-    "هرمز گزینشی: چین، هند، ترکیه. ۲ عبور روزانه. ۴۰۰ کشتی منتظر. ایران ۱۶+ میلیون بشکه به چین.",
-    "سپاه شکاف: فرار مستند (ویکی‌پدیا). اصفهان/تبریز. ۴ دیپلمات پناهندگی. سپاه اعدام فراری. ۲۰ گلوله/۲ سرباز. ارتش-سپاه اختلاف. پزشکیان عذرخواهی عمان اما سپاه ادامه. بسیج ۳۰۰ فرمانده.",
-    "نفت ~۱۱۶. جهش ۱۱۰→۱۱۶. +۸۰٪. ۲۱ نفتکش از D1. نیروی دریایی: آماده نیست.",
-    "اوکراین ۲۰۰+ متخصص ضدپهپاد در خلیج. زلنسکی تأیید.",
-    "ایران: ۳.۲ میلیون آواره. هنگاو ۵: ۵,۳۰۰ (D18). ۵۱۱ غیرنظامی. سپاه به مدرسه/مسجد. اینترنت ۴۸۰+.",
-    "عراقچی: 'هرگز.' ترامپ: 'مشتاق مذاکره اما آماده نه.' حزب‌الله کتائب: ۵ روز مکث.",
-    "لبنان ~۱,۰۰۰+. لیطانی پل‌ها تخریب.",
-    "کنت + FBI. کویت: ۵۳۹ پهپاد + ۲۲۷ موشک. امارات: ۱,۶۲۷ + ۳۱۹. WFP: غذا. IEA: بزرگترین اختلال."
+    "نوروز روز ۲ — مجتبی هنوز غایب. بحران جانشینی عمیق‌تر. تلگراف: 'آسیب جزئی پا.' عراقچی: 'سلامت عالی.' اما هیچ اثباتی.",
+    "حوثی‌ها = یافته کلیدی: ۲۲ روز وارد جنگ نشدند. AP: ذخایر کم. احتمال توافق آمریکا/عربستان. اگر بیرون بمانند: دریای سرخ باز. اگر وارد شوند: هرمز + باب‌المندب = بحران بی‌سابقه.",
+    "اصفهان زیرزمینی — تأسیسات غنی‌سازی جدید. IAEA: 'هرگز بازدید نکردیم.' چهارمین تأسیسات. ۴۴۰ کیلو = ۱۰ سلاح. گروسی: 'جنگ حذف نمی‌کند.'",
+    "سپاه شکاف تسریع: پلیس ۳۵۰ ترک. ۹۰٪ غیبت. حقوق قطع ۲ ماه. بازنشسته‌ها فراخوان. زندانیان = عفو. بسیج ۳۰۰ فرمانده. ۱۰ گلوله/سرباز.",
+    "عمان + سامرف ✓. ۴ از ۷. جبیل، مسیعید، الحصن باقی.",
+    "نفت ~۱۱۵ تثبیت. IEA: ۲۰ میلیون بشکه آفلاین. تولید خلیج ۲۱→۱۴ میلیون. هاس: 'همه باز یا همه بسته.'",
+    "ایران: ۷۰,۰۰۰+ ساختمان آسیب. ۲۵۱ مرکز پزشکی. ~۵,۸۰۰+ کشته. ۳.۲ میلیون آواره. اینترنت ۵۰۴+.",
+    "لبنان ~۱,۰۰۰+. اسرائیل: حمله لیطانی. دولت لبنان: مذاکره مستقیم. حزب‌الله ممنوع. سپاه اخراج.",
+    "دیپلماسی: ژنو ناموفق. عراقچی: رقیق‌سازی اما حمله ادامه. ترامپ: 'آماده نه.' ماکرون + اسکورت.",
+    "پاتریوت + زلنسکی BBC: 'پوتین = جنگ طولانی.' ۸۰۰+ روز اول. ۶۰-۶۵/ماه. اوکراین ۲۰۰+."
   ],
   "dailySeries": {
     "labels": [
@@ -154,7 +149,8 @@
       "Mar 17",
       "Mar 18",
       "Mar 19",
-      "Mar 20"
+      "Mar 20",
+      "Mar 21"
     ],
     "missiles": [
       480,
@@ -177,7 +173,8 @@
       12,
       40,
       45,
-      40
+      40,
+      35
     ],
     "drones": [
       720,
@@ -200,10 +197,11 @@
       60,
       60,
       80,
-      72
+      72,
+      65
     ],
-    "sourceLabel": "D1-D10: JPost. D11: UAE MoD. D12-D21: fragment est. Kuwait official: 539 drones + 227 missiles. UAE (D17): 1,627 drones + 319 missiles. Oman + SAMREF ✓. 4/7 targets. IRGC fractures. Basij ~300 commanders killed.",
-    "throughDate": "Mar 20 midnight (all days estimated)"
+    "sourceLabel": "D1-D10: JPost. D11: UAE MoD. D12-D22: fragment est. Kuwait official: 539 drones + 227 missiles. UAE (D17): 1,627 drones + 319 missiles. IRGC fractures + desertions accelerating. Houthis NOT entering war. 4/7 targets.",
+    "throughDate": "Mar 21 midnight (all days estimated)"
   },
   "oil": {
     "labels": [
@@ -228,7 +226,8 @@
       "Mar 17",
       "Mar 18",
       "Mar 19",
-      "Mar 20"
+      "Mar 20",
+      "Mar 21"
     ],
     "brent": [
       65.0,
@@ -252,7 +251,8 @@
       100.21,
       107.38,
       114.0,
-      116.0
+      116.0,
+      115.0
     ],
     "wti": [
       62.0,
@@ -276,9 +276,10 @@
       92.46,
       96.32,
       99.29,
-      101.0
+      101.0,
+      100.0
     ],
-    "note": "Full daily series. D21 (NOWRUZ): Brent SURGING from ~$110 overnight to ~$116 (OilPriceAPI live, OilPrice.com $112.21). Up ~80% since war began. March avg $93.05 vs Feb $70.89. D20 settled ~$114. Cumulative supply crunch: Oman + SAMREF + Kuwait refineries + Qatar LNG + Hormuz near-closure. Only 21 tankers since D1 (vs 100+/day). US Navy escort 'not ready' — Energy Sec: 'possibly by end of March.' Citi: $120+ near-term. EIA: >$95/b next 2 months. Russia BENEFITING. WTI ~$101. Iran exporting 16M+ bbl to China."
+    "note": "Full daily series. D22 (NOWRUZ DAY 2): Brent ~$115 consolidating from D21 $116 spike. OilPriceAPI: $116.01. Nowruz/weekend = reduced trading. IEA: 'largest supply disruption in history — 20 Mb/d offline.' Gulf output dropped 21M→14M bbl/day (Rystad). March avg $93.05 vs Feb $70.89. EIA: >$95/b next 2 months, then <$80 Q3 if conflict ends. Citi: $120+ if continues. Only 21-23 tankers since D1. US Navy escort 'could take month or more.' France + UK + Germany + Italy: Aspides escort framework. Haass: 'Open for All or Closed to All.' WTI ~$100."
   },
   "pressure": {
     "labels": [
@@ -302,7 +303,8 @@
       "Mar 17",
       "Mar 18",
       "Mar 19",
-      "Mar 20"
+      "Mar 20",
+      "Mar 21"
     ],
     "attrition": [
       2,
@@ -320,6 +322,7 @@
       9,
       9.5,
       9.5,
+      10,
       10,
       10,
       10,
@@ -348,28 +351,29 @@
       9,
       10,
       10,
+      10,
       10
     ]
   },
   "latestTargetBreakdown": {
-    "note": "Mar 20 (D21) REVISED estimate. NOWRUZ + Chaharshanbe Suri defiance. OMAN ADDED — Duqm + Salalah = new theater. SAMREF aftermath. Continued Gulf + Israel attacks. Iran FM: no ceasefire ever.",
+    "note": "Mar 21 (D22) estimate. Nowruz Day 2 — reduced tempo. IRGC fractures degrading execution. Continued Gulf harassment + Israel salvos. Houthis NOT entering war = Red Sea unaffected.",
     "missiles": {
-      "Israel": 10,
-      "Saudi": 7,
-      "Qatar": 5,
-      "Kuwait": 4,
-      "Oman": 4,
+      "Israel": 8,
+      "Saudi": 6,
+      "Kuwait": 5,
+      "Qatar": 4,
       "UAE": 3,
+      "Oman": 3,
       "Iraq": 3,
       "Bahrain": 2,
-      "Jordan": 2
+      "Jordan": 1
     },
     "drones": {
-      "Kuwait": 18,
-      "Iraq": 12,
+      "Kuwait": 16,
       "Saudi": 12,
-      "Oman": 8,
-      "UAE": 8,
+      "Iraq": 10,
+      "UAE": 7,
+      "Oman": 6,
       "Israel": 5,
       "Bahrain": 4,
       "Qatar": 3,
@@ -565,12 +569,21 @@
       "capability": "D21: 40+72 (Oman theater). IRGC FRACTURE NOW DOCUMENTED: Wikipedia article on desertions created. Multi-source confirmed (Isfahan, Tabriz). 4 diplomats asylum. IRGC executing deserters. Supply crisis: 20 bullets/2 soldiers. Army-IRGC rift: IRGC denying Artesh aid. Pezeshkian apologized for Oman but IRGC continued. US dropped 5,000-lb bunker busters on Hormuz anti-ship sites. Target execution: 4/7. ~300 Basij commanders killed via social media geolocating.",
       "cost": "Brent SURGING ~$116 (up from $110 overnight). Up ~80% since war began. Only 21 tankers since D1. US Navy escort 'not ready.' Chaharshanbe Suri = IRGC TWO FRONTS. 111 arrests = massive security diversion. WARTIME PROSECUTION: detained until June 2027. 350 Starlink terminals confiscated. Carnegie: 1979 potential. Hengaw: 5,300 killed. HRANA: 3,114. 3.2M displaced. Internet ~480+ hrs. PATRIOT CRISIS: 800+ fired D1, 60-65/month production (Zelenskyy). Trump: 'eager to negotiate... not ready yet.' Kataib Hezbollah 5-day pause = first proxy crack. Queen Farah: 'great awakening.'",
       "assessment": "NOWRUZ INFLECTION — THREE SIMULTANEOUS FRACTURES: (1) LEADERSHIP: Mojtaba absent on Nowruz = succession crisis irrefutable. Netanyahu greeting Iranian people. Israel killed Larijani = closing diplomatic avenues. (2) MILITARY: Desertions NOW DOCUMENTED (Wikipedia, multi-source). 4 diplomats asylum. IRGC executing deserters. Supply crisis: 20 bullets/2 soldiers. Army-IRGC rift. US 5,000-lb bunker busters on Hormuz missile sites. Internet ~480+ hrs (NetBlocks: longest in history). (3) POLITICAL: Pezeshkian APOLOGIZED for Oman but IRGC continued = rift PUBLIC. EU Kallas: 'exit not escalation.' Combined with Chaharshanbe Suri's nationwide defiance, oil at $116, and 21 tankers in 21 days: the regime faces its most comprehensive crisis since 1979. The question is no longer IF IRGC fractures but HOW FAST."
+    },
+    {
+      "date": "Mar 21",
+      "missiles": 35,
+      "drones": 65,
+      "primary": "NOWRUZ DAY 2 — HOUTHIS STAYING OUT + ISFAHAN UNDERGROUND + DESERTIONS ACCELERATING: Mojtaba STILL absent (Day 2 no video/audio). Houthis NOT entering war despite 22 days (AP: stockpiles low, possible US/Saudi deal). IAEA confirms NEW Isfahan underground enrichment plant — 'never visited.' Desertions accelerating: police 350 at one base, 90% absence in some units, salary disruptions, retirees unpaid 2 months. IRGC recalling retirees + offering prisoner amnesty. Lebanon approaching massive Litani invasion (Axios). Continued Gulf harassment at reduced tempo.",
+      "capability": "D22: 35+65. IRGC launch tempo declining — desertions + supply crisis (10 rounds/soldier in some units) + Basij ~300 commanders killed = institutional degradation. Police 90% absence at some units. Financial strain: salaries unpaid. IRGC recalling retirees = desperation indicator. D16 claim 'cache intact' increasingly contradicted by operational evidence of declining capacity. BUT: autonomous units may still strike remaining targets (Jubail, Mesaieed, Al Hosn).",
+      "cost": "Brent ~$115 consolidating. IEA: '20 Mb/d offline, largest in history.' Gulf output 21M→14M (Rystad). 70K+ civilian structures damaged in Iran. 251 medical centers, 498 schools damaged. 3.2M displaced. Internet ~504+ hrs. HOUTHI RESTRAINT = CRITICAL strategic variable: if Red Sea stays open, alternative shipping survives. If Houthis join: BOTH chokepoints closed = unprecedented global crisis. Third round Geneva talks: no breakthrough. Araghchi offered to dilute enrichment but attacks continue. Lebanese govt ready for direct ceasefire talks.",
+      "assessment": "D22 STRATEGIC PICTURE — TWO CRITICAL VARIABLES EMERGING: (1) HOUTHI DECISION: 22 days in, Houthis have NOT attacked. AP: stockpiles low after 2024-2025 campaign. Possible US/Saudi deal. If they stay out: Red Sea open = alternative routes survive, conflict partially contained. If they enter: Hormuz + Bab el-Mandeb closed = 'for first time in modern history, both major maritime corridors simultaneously blocked.' (2) ISFAHAN UNDERGROUND: New enrichment facility IAEA has never visited. Could be operational. 440kg at 60% = ~10 weapons. War cannot eliminate scattered program (Grossi). These two variables define the war's trajectory: Houthi entry = total escalation, Isfahan breakout = nuclear crisis. Meanwhile IRGC fractures continue: desertions, salary crisis, 90% police absence — but autonomous units remain dangerous."
     }
   ],
   "timeline": [
     {
       "title": "Week 3 (Mar 16–22)",
-      "body": "IRGC FRACTURING + OIL $116 + MOJTABA ABSENT: Nowruz hard deadline passed — no video message. Chaharshanbe Suri 'Night of Defiance.' 111 arrests in 26/31 provinces. 'Long live the Shah.' IRGC desertions reported. Pezeshkian-IRGC rift. Iran DENIED Oman attacks (new behavior). Israel killing Basij via social media geolocating (~300 commanders). Brent $107→$119→$110→$116. Only 21 tankers since D1. US Navy 'not ready.' Hengaw: 5,300 killed. Kataib Hezbollah 5-day pause. Trump: 'eager to negotiate but not ready.' Target scorecard 4/7."
+      "body": "IRGC FRACTURING + HOUTHIS OUT + ISFAHAN UNDERGROUND: Nowruz Day 2 — Mojtaba STILL absent. MAJOR: Houthis NOT entering war (22 days, AP: stockpiles low, possible deal). Isfahan underground nuclear = IAEA 'never visited.' Desertions ACCELERATING: police 350 at one base, 90% absence, salary crisis. Chaharshanbe Suri defiance. 111 arrests in 26/31 provinces. Lebanon ~1,000+, Litani invasion planned. Brent $107→$119→$116→$115. IEA: 20 Mb/d offline. Hengaw: 5,300 killed (extrapolated ~5,800). 70K+ structures damaged. Geneva talks fail. Haass: 'Open for All or Closed to All.' Target scorecard 4/7."
     },
     {
       "title": "Week 4–5 (Mar 23–Apr 5)",
@@ -592,7 +605,7 @@
   "timeline_fa": [
     {
       "title": "هفته ۳ (۱۶–۲۲ مارس)",
-      "body": "سپاه شکاف + نفت ۱۱۶ + مجتبی غایب. بدون پیام تصویری نوروز. فرار سپاه. پزشکیان اختلاف. عمان انکار. بسیج ۳۰۰. 'زنده‌باد شاه.' ۱۱۱ بازداشت. ۲۱ نفتکش. حزب‌الله کتائب مکث. ترامپ: 'مشتاق مذاکره.' ۴ از ۷."
+      "body": "سپاه شکاف + حوثی بیرون + اصفهان زیرزمینی. مجتبی غایب نوروز روز ۲. حوثی ۲۲ روز وارد نشد (AP: ذخایر کم). فرار ۹۰٪ غیبت پلیس. لبنان ~۱,۰۰۰+. نفت ۱۱۵. IEA: ۲۰ میلیون آفلاین. ژنو شکست. هاس: 'همه باز یا بسته.' ۴ از ۷."
     },
     {
       "title": "هفته ۴–۵",
@@ -614,129 +627,129 @@
   "scenarioProbabilities": [
     {
       "name": "Escalation spiral / total war",
-      "prob": "38%",
-      "body": "DECREASED from 40%→38%. IRGC fracture signals = external escalation capacity degrading. PATRIOT supply crisis = coalition also degrading. Desertions + Basij decimation (~300 commanders) + Pezeshkian rift + Mojtaba absent = institutional coherence declining. Iran DENYING Oman (new behavior) = diplomatic damage control, not escalation posture. BUT: 4/7 targets hit, remaining 3 (Jubail, Mesaieed, Al Hosn) could still be struck by autonomous IRGC units. Trump South Pars trigger. Oil at $116 NOT deterring IRGC. If remaining targets hit: $130+, Saudi entry. Probability decreased because IRGC capacity to execute is degrading, NOT because intent has changed."
+      "prob": "36%",
+      "body": "DECREASED 38%→36%. IRGC fractures accelerating — desertions at 90% in some police units, salary crisis, retirees recalled = desperation. Institutional capacity to execute large-scale ops degrading. HOUTHI RESTRAINT = MAJOR factor: if Houthis stay out, escalation potential REDUCED (Red Sea open = pressure relief valve). BUT: autonomous IRGC units may still strike remaining targets (Jubail, Mesaieed, Al Hosn). Isfahan underground = nuclear wild card. If nuclear breakout detected: total escalation. Probability decreased because IRGC operational capacity is visibly degrading AND Houthi non-entry removes one escalation pathway."
     },
     {
       "name": "Protracted attrition + internal crisis",
-      "prob": "24%",
-      "body": "INCREASED from 22%→24%. IRGC fractures + two fronts + Hormuz 21 tankers = war grinding. Desertions + Basij losses degrade both external and internal capacity. US Navy NOT READY to escort = blockade persists. NEW: PATRIOT SUPPLY CRISIS (Zelenskyy: 800+ fired D1, 60-65/month production) = coalition air defense structurally unsustainable. Putin counting on this drain. Oil at $116. Kataib Hezbollah 5-day pause. Ukrainian anti-drone experts improving Gulf defenses. Wartime prosecution framework = regime digging in. Neither side achieves decisive outcome. This scenario GAINING probability because Patriot depletion + IRGC fracture = MUTUAL attrition, not one-sided."
+      "prob": "26%",
+      "body": "INCREASED 24%→26%. STRONGEST GAINING SCENARIO. Evidence mounting: (1) IRGC fractures prevent decisive Iranian victory. (2) Patriot crisis prevents decisive coalition victory. (3) Houthi restraint = conflict partially contained but unresolved. (4) US Navy escort 'could take month or more.' (5) Isfahan underground = verification crisis persists. (6) Geneva talks fail. (7) Lebanese govt seeking ceasefire = front may freeze. (8) IRGC recalling retirees + offering prisoner amnesty = regime digging in for long haul. (9) IEA: 20 Mb/d offline = economic pressure mounting on BOTH sides. Mutual degradation with no exit mechanism = definition of protracted attrition."
     },
     {
       "name": "International intervention / ceasefire",
-      "prob": "15%",
-      "body": "UNCHANGED at 15%. Iran denying Oman = regime aware of diplomatic cost. UN: Lebanon strikes 'may constitute war crimes.' WFP: global food price crisis from Hormuz. Trump: 'eager to negotiate but not ready' = back-channel exists. IRGC fractures could produce Iranian negotiation partner — but not yet. Most likely form: maritime corridor imposed unilaterally."
+      "prob": "16%",
+      "body": "INCREASED 15%→16%. Multiple frameworks advancing: Haass 'Open for All or Closed to All.' France + UK + Germany + Italy: Operation Aspides escort expansion. Lebanese govt: direct ceasefire talks 'immediately.' Geneva round 3 (Oman-mediated). Araghchi offered to dilute enrichment. IEA: 'largest supply disruption in history' = global urgency at maximum. Grossi: 'lasting solution on diplomatic table.' BUT: attacks continue despite offers. Most likely form: partial maritime corridor + Lebanon ceasefire, NOT comprehensive deal."
     },
     {
       "name": "Declared victory + exit",
       "prob": "10%",
-      "body": "INCREASED from 8%. IRGC fracture signals could enable exit narrative: 'regime is crumbling, mission accomplished.' Trump AF1: 'eager to negotiate' = testing exit framing. $116 oil + $200B+ cost + 13 US KIA = domestic pressure mounting. Kent FBI probe undermines war rationale. IRGC desertions (if confirmed) + Mojtaba absent = 'Iran is defeated' narrative more plausible. BUT: IRGC still executing target list, Hormuz still closed."
+      "body": "UNCHANGED at 10%. IRGC fractures (90% police absence, desertions) strengthen exit narrative. Trump: 'eager to negotiate.' $200B+ cost + 13 US KIA + $115 oil. Kent FBI probe. BUT: Hormuz still closed, IRGC still launching. Houthi restraint could enable partial 'victory' claim if spun correctly."
     },
     {
       "name": "Regime fracture / IRGC collapse",
-      "prob": "11%",
-      "body": "INCREASED from 8%→11%. NOWRUZ UPDATE: ALL fracture indicators accelerating. (1) Mojtaba absent on Nowruz = no authority figure. (2) IRGC desertions NOW DOCUMENTED — Wikipedia article, multi-source confirmed (Isfahan, Tabriz), 4 diplomats asylum, IRGC executing deserters. (3) Pezeshkian APOLOGIZED to neighbors but IRGC continued = leadership rift PUBLIC. (4) ~300 Basij commanders killed = suppression degrading. (5) Supply crisis: 20 bullets/2 soldiers, no water/food. (6) Army-IRGC rift: IRGC denying aid to Artesh. (7) 111 arrests in 26/31 provinces = national movement. (8) 'Long live the Shah' chants. Carnegie: 1979. Internet ~480+ hours. Desertions now CONFIRMED by multiple sources — upgrading from 'significant if true' to 'documented phenomenon, scale debated.' IRGC faces existential choice. This scenario = 'emerging possibility.'"
+      "prob": "10%",
+      "body": "ADJUSTED 11%→10% — slight decrease. NEW DATA complicates picture: WashPost reports Western security officials 'did not see defections among high-ranking.' Desertions REAL at unit level (police 350 at one base, 90% absence) but may not reach institutional collapse threshold. IRGC adapting: recalling retirees, prisoner amnesty, executing deserters. Regime survival instincts strong. Carnegie 1979 comparison still valid for SCALE of unrest but 1979 required IRGC refusal to fire — and IRGC is still firing. Slight downward adjustment reflects Western intelligence assessment, but remains 'emerging possibility' — watch post-Nowruz protest trajectory."
     },
     {
       "name": "Negotiated deal",
       "prob": "2%",
-      "body": "UNCHANGED. Araghchi: 'never asked for ceasefire, never asked for negotiation.' Definitive. IRGC dictatorship = no civilian partner. Selective Hormuz passage (China/India/Turkey) = backdoor partial normalization without formal deal. Most likely 'deal' is de facto: selective passage + energy moratorium + informal ceasefire — without any formal agreement."
+      "body": "UNCHANGED. Geneva round 3: no breakthrough. Araghchi offered dilution but attacks continued. Selective Hormuz passage = de facto framework without formal deal. Lebanon ceasefire talks = possible partial deal on one front. But comprehensive Iran deal: still near-zero probability."
     }
   ],
   "scenarioProbabilities_fa": [
     {
       "name": "مارپیچ تشدید / جنگ تمام‌عیار",
-      "prob": "۳۸٪",
-      "body": "کاهش ۴۰→۳۸. سپاه شکاف + بحران پاتریوت = هر دو طرف تحلیل. فرار + بسیج ۳۰۰. عمان انکار. ۴ از ۷."
+      "prob": "۳۶٪",
+      "body": "کاهش ۳۸→۳۶. سپاه تحلیل + حوثی بیرون = تشدید کاهش. اما واحدهای مستقل + اصفهان هسته‌ای = خطر."
     },
     {
       "name": "فرسایشی + بحران داخلی",
-      "prob": "۲۴٪",
-      "body": "افزایش ۲۲→۲۴. پاتریوت ۸۰۰+ روز اول / ۶۰-۶۵ ماه = دفاع محدود. فرسایش دوطرفه. نافرمانی + دو جبهه. هرمز."
+      "prob": "۲۶٪",
+      "body": "افزایش ۲۴→۲۶. قوی‌ترین سناریو. فرسایش دوطرفه. ژنو شکست. IEA: ۲۰ میلیون آفلاین. رژیم حفر."
     },
     {
       "name": "مداخله بین‌المللی",
-      "prob": "۱۵٪",
-      "body": "افزایش. ماکرون + IMO + عمان بی‌طرفی = خط قرمز جدید."
+      "prob": "۱۶٪",
+      "body": "افزایش ۱۵→۱۶. هاس + ماکرون + اسکورت. لبنان مذاکره مستقیم. گروسی: 'دیپلماسی.' اما حمله ادامه."
     },
     {
       "name": "اعلام پیروزی + خروج",
       "prob": "۱۰٪",
-      "body": "افزایش. سپاه شکاف = 'مأموریت تمام.' ترامپ: 'مشتاق مذاکره.' نفت ۱۱۶ + ۲۰۰+ = فشار داخلی."
+      "body": "ثابت. سپاه شکاف = 'مأموریت تمام.' ترامپ: 'مشتاق.' ۲۰۰+ میلیارد. اما هرمز بسته."
     },
     {
       "name": "شکست رژیم / فروپاشی سپاه",
-      "prob": "۱۱٪",
-      "body": "افزایش. مجتبی غایب + فرار + بسیج ۳۰۰ + پزشکیان اختلاف + عمان انکار + 'زنده‌باد شاه.' کارنگی: ۱۹۷۹. از 'غیرمنتظره' به 'نوظهور.'"
+      "prob": "۱۰٪",
+      "body": "تنظیم ۱۱→۱۰. واشنگتن‌پست: 'فرار بالارتبه ندید.' اما واحد = ۹۰٪ غیبت. رژیم سازگار: بازنشسته + زندانی. نوروز بعد = متغیر."
     },
     {
       "name": "مذاکره",
       "prob": "۲٪",
-      "body": "عراقچی: 'هرگز.' هرمز گزینشی = عملی بدون رسمی."
+      "body": "ژنو ۳: شکست. عراقچی رقیق‌سازی اما حمله. لبنان = ممکن جزئی."
     }
   ],
   "theoryEvaluation": [
     {
-      "title": "IRGC FRACTURING — three simultaneous crises",
-      "body": "The Nowruz paradox has been confirmed AND exceeded expectations. Three simultaneous fracture lines: (1) LEADERSHIP: Mojtaba's Nowruz absence = succession crisis irrefutable. Written statements with typos = IRGC ventriloquism confirmed. Trump: 'is not alive.' Netanyahu posted Nowruz greeting to Iranian people. (2) MILITARY: Desertions NOW DOCUMENTED — Wikipedia article created, Iran International + Militarnyi confirm Isfahan/Tabriz desertions. 4 diplomats seeking asylum. Group conscript desertions. IRGC EXECUTING deserters. Supply crisis: 20 bullets per 2 soldiers, no water/food. Army-IRGC aid denial. Israel's social media geolocating killing ~300 Basij commanders = enforcement capacity degrading. (3) POLITICAL: Pezeshkian APOLOGIZED to neighbors for Oman strikes but IRGC continued — leadership rift exposed publicly. EU Kallas: 'exit not escalation.' Israel killed Larijani (pragmatic negotiator) = closing diplomatic avenues. Combined with 111 arrests in 26/31 provinces, Carnegie's 1979 comparison: IRGC faces the most comprehensive institutional crisis since founding. Critical: can IRGC sustain external war, suppress dissent, AND manage leadership vacuum with degraded Basij, supply crisis, and fragmenting command?"
+      "title": "HOUTHI RESTRAINT — the dog that didn't bark",
+      "body": "22 days into the war, Yemen's Houthis have NOT attacked — despite rhetoric and expectations. This is arguably the most significant strategic development since Week 1. Analysis: (1) AP reports Houthi stockpiles RUNNING LOW after 2024-2025 Red Sea campaign; Iran supply disrupted by war. (2) Possible US/Saudi deal — Houthis may have been given assurances in exchange for restraint. (3) Israeli 2025 strikes decapitated Sanaa military leadership — deterrence effect. (4) Southern secessionist threat diverts Houthi focus internally. (5) Stimson Center: 'must decide — join Iran's war or abandon Iran.' STRATEGIC IMPLICATIONS: If Houthis stay out, Red Sea shipping remains viable as alternative route. The war's economic damage, while severe, stays partially contained to Hormuz. If Houthis enter: Hormuz + Bab el-Mandeb closed = 'first time in modern history, both major maritime corridors simultaneously blocked' = $150+ oil, global recession trigger. The Times: Houthis awaiting Iranian signal if US weakens Hormuz control. THIS IS THE SINGLE MOST IMPORTANT VARIABLE for whether war remains regional or becomes global crisis."
     },
     {
-      "title": "Oman expansion — war beyond belligerents",
-      "body": "Drone strikes on Oman's Duqm and Salalah ports represent a QUALITATIVE expansion. Oman has been neutral throughout the conflict — it hosted pre-war diplomacy and the Feb 27 'breakthrough.' Attacking neutral Oman: (1) alienates the only Gulf state that maintained a channel to Iran, (2) threatens alternative shipping routes (Duqm and Salalah were being used as bypass hubs), (3) demonstrates IRGC willingness to attack ANY infrastructure, regardless of political alignment. Combined with the Bahrain-Saudi bridge damage, this means every maritime and pipeline route in the region is now at risk. The war has expanded from Gulf + Red Sea + Caspian to include Oman Sea = effectively ALL of Iran's surrounding maritime space. Geographic containment of the conflict is failing."
+      "title": "Isfahan underground — nuclear verification crisis deepens",
+      "body": "IAEA confirms Iran has NEW uranium enrichment site at underground Isfahan complex. This is Iran's FOURTH known enrichment plant, and IAEA has 'never visited' it. E3 statement to IAEA Board (Mar 2026): 'increasing risk of diversion, particularly around Isfahan Fuel Enrichment Plant.' Regular vehicular activity observed at entrance. Grossi: war 'cannot entirely eliminate nuclear program — vast, scattered, decades of effort.' Araghchi offered to dilute enrichment at Geneva, but attacks continued, undermining credibility. 440kg at 60% = ~10 weapons-worth. Combined with IRGC fractures: WHO controls nuclear assets in a fragmenting command? If breakout detected: could trigger Israeli nuclear preemption scenario. Nuclear dimension is ESCALATING even as conventional capacity degrades."
     },
     {
-      "title": "Hormuz: 21 tankers in 21 days — selective blockade crystallized",
-      "body": "Hard data now available: only 21 tankers have transited Hormuz since D1, vs 100+/day pre-war. 89 ships total (including non-tankers) crossed Mar 1-15 (Lloyd's List). US Navy 'NOT READY' to escort tankers — Energy Sec Wright: 'possibly by end of March.' Treasury Sec Bessent confirmed US allowing Iranian tankers through. Iran continues exporting 16M+ barrels to China (~$1B+ revenue for IRGC via dark fleet). ~400 vessels stranded. IRGC deploying naval mines — US destroyed 30+ mine-laying vessels but Iran adapting with smaller boats. The selective blockade is now QUANTIFIED: Iran's trade partners (China, India, Pakistan, Turkey) get bilateral passage; US-aligned nations blocked. NEW DIMENSION — PATRIOT SUPPLY CRISIS (Zelenskyy): 800+ Patriot missiles fired on D1 alone, but US manufactures only 60-65/month. Coalition consuming interceptors faster than production = structural air defense limit. Putin counting on prolonged war to deplete Western stockpiles. Kuwait official totals (539 drones, 227 missiles) show IRGC's Gulf campaign continuing."
+      "title": "IRGC institutional degradation — detailed picture",
+      "body": "New granular data reveals IRGC degradation is deeper than initially assessed: (1) Police special units: salary payments DISRUPTED, some units 90% absence/desertion. ~350 police left posts at single base. (2) Military: 10 rounds per soldier, no water/food in some units. Retirees not paid 2 consecutive months. (3) IRGC response: recalling retirees to active duty + offering prisoners amnesty for cooperation = desperation measures. (4) Basij: ~300 commanders killed via social media geolocating. (5) Diplomats: 4 seeking Western asylum. (6) Army-IRGC rift: IRGC denying Artesh supplies. HOWEVER: WashPost cites Western officials who 'did not see defections among high-ranking military.' The picture = unit-level collapse alongside institutional survival. IRGC leadership holds, but enforcement capacity at ground level is degrading. This matters for: ability to suppress post-Nowruz protests, sustain Hormuz operations, execute remaining target list. The question: can institutional command survive unit-level hemorrhaging?"
     }
   ],
   "theoryEvaluation_fa": [
     {
-      "title": "سپاه شکاف — سه بحران همزمان",
-      "body": "رهبری: مجتبی غایب نوروز = بحران جانشینی. نظامی: فرار + بسیج ۳۰۰ فرمانده = سرکوب داخلی ضعیف. سیاسی: پزشکیان-سپاه اختلاف. عمان انکار = رفتار جدید. ۱۱۱ بازداشت. کارنگی: ۱۹۷۹. سؤال: سپاه سه بحران = توان؟"
+      "title": "حوثی بیرون — سگی که پارس نکرد",
+      "body": "۲۲ روز، حوثی حمله نکرد. AP: ذخایر کم. احتمال توافق آمریکا/عربستان. اسرائیل ۲۰۲۵ رهبری صنعا. اگر بیرون: دریای سرخ باز. اگر وارد: هرمز + باب‌المندب = بحران بی‌سابقه جهانی. مهم‌ترین متغیر."
     },
     {
-      "title": "عمان: جنگ فراتر از طرفین",
-      "body": "دقم + صلاله = بی‌طرف حمله. عمان = کانال دیپلماتیک بود. مسیرهای جایگزین تهدید. خلیج + دریای سرخ + خزر + عمان = همه فضای دریایی."
+      "title": "اصفهان زیرزمینی — بحران هسته‌ای عمیق‌تر",
+      "body": "IAEA: تأسیسات جدید اصفهان. 'هرگز بازدید.' چهارم. ۴۴۰ کیلو = ۱۰ سلاح. گروسی: 'جنگ حذف نمی‌کند.' عراقچی: رقیق‌سازی اما حمله ادامه. سپاه شکاف = چه کسی کنترل هسته‌ای؟"
     },
     {
-      "title": "هرمز: ۲۱ نفتکش در ۲۱ روز",
-      "body": "داده سخت: ۲۱ نفتکش vs ۱۰۰+/روز. نیروی دریایی آمریکا آماده نیست — 'شاید آخر مارس.' ۴۰۰ کشتی. بحران پاتریوت: ۸۰۰+ روز اول، فقط ۶۰-۶۵/ماه تولید. پوتین = جنگ طولانی = ذخیره غرب. کویت: ۵۳۹ پهپاد + ۲۲۷ موشک."
+      "title": "سپاه تحلیل نهادی — تصویر دقیق",
+      "body": "پلیس: ۹۰٪ غیبت، ۳۵۰ ترک. حقوق ۲ ماه. سپاه: بازنشسته فراخوان + زندانی عفو. بسیج ۳۰۰. ۱۰ گلوله/سرباز. اما واشنگتن‌پست: بالارتبه فرار ندید. = فروپاشی واحد + بقای نهادی."
     }
   ],
   "endstate": [
     {
-      "title": "Most likely (38%)",
-      "body": "Escalation spiral — FURTHER DECREASED 40%→38%. IRGC fracture signals (desertions, Basij decimation, Pezeshkian rift, Mojtaba absent) degrade escalation capacity. NEW: PATRIOT supply crisis (800+ fired D1, 60-65/month production) = coalition ALSO degrading. Mutual attrition now. Iran denying Oman = damage control. BUT: 4/7 targets hit, autonomous IRGC units could still strike. Oil at $116 not deterring. Probability shifts toward protracted scenario because BOTH sides face structural limits."
+      "title": "Most likely (36%)",
+      "body": "Escalation spiral — DECREASED 38%→36%. IRGC operational capacity visibly degrading (90% police absence, salary crisis, retirees recalled). HOUTHI RESTRAINT removes one escalation pathway (Red Sea stays open). BUT: autonomous IRGC units + Isfahan underground nuclear = wild cards. If remaining targets hit OR nuclear breakout detected: instant escalation. Decreasing because capacity is degrading AND Houthi non-entry = partial containment."
     },
     {
-      "title": "Second (24%)",
-      "body": "Protracted attrition + internal crisis — INCREASED 22%→24%. IRGC fractures + two fronts + Hormuz (21 tankers/21 days) = war grinding. NEW: PATRIOT SUPPLY CRISIS makes this scenario MORE LIKELY — coalition air defense structurally unsustainable at current rates (Zelenskyy: 800+ fired D1 vs 60-65/month). Putin counting on drain. US Navy NOT READY. Wartime prosecution = regime digging in for long haul. Kataib Hezbollah 5-day pause. Neither side achieves decisive outcome. GAINING probability as mutual attrition becomes evident."
+      "title": "Second (26%)",
+      "body": "Protracted attrition + internal crisis — INCREASED 24%→26%. STRONGEST GAINING SCENARIO. Geneva talks fail. IEA: 20 Mb/d offline. IRGC recalling retirees = regime digging in. Patriot crisis = coalition also structurally limited. Lebanon ceasefire talks = possible partial freeze. Houthi restraint = war doesn't become global but doesn't resolve. Neither side achieves decisive outcome. Mutual degradation with no exit mechanism."
     },
     {
-      "title": "Emerging (15%)",
-      "body": "International intervention. Oman neutrality violated = new red line. Macron moratorium + IMO corridor + selective Hormuz = multiple frameworks. Global urgency at $110+ oil. But: no Iranian partner. Most likely: unilateral maritime corridor OR energy moratorium. Oman attack may accelerate diplomatic action."
+      "title": "Emerging (16%)",
+      "body": "International intervention — INCREASED 15%→16%. Multiple frameworks advancing: Haass 'Open for All or Closed to All,' Aspides escort expansion, Lebanese direct ceasefire, Grossi diplomatic call. IEA 'largest disruption in history' = maximum urgency. Most likely form: partial maritime corridor + Lebanon ceasefire, NOT comprehensive deal."
     },
     {
-      "title": "Emerging (11%)",
-      "body": "Regime fracture / IRGC collapse — UPGRADED from 'wild card.' ALL fracture indicators now present: Mojtaba absent on Nowruz, desertions reported, Basij ~300 commanders killed, Pezeshkian rift, Iran denying Oman, 'Long live the Shah' chants. Carnegie: 1979. Moved from 8% to 11%. If post-Nowruz protests sustain AND desertions confirmed: IRGC faces existential choice. Also possible: IRGC hits all remaining targets in desperate escalation before capacity fully degrades = oil $150+, total Gulf shutdown."
+      "title": "Emerging (10%)",
+      "body": "Regime fracture — ADJUSTED 11%→10%. WashPost: Western officials 'did not see high-ranking defections.' Unit-level collapse real (90% police absence) but institutional command holding. IRGC adapting with retirees + prisoner amnesty. 1979 comparison: scale of unrest similar but IRGC still firing (1979 required military refusal). Post-Nowruz protests = THE variable. If sustained: upward revision."
     }
   ],
   "endstate_fa": [
     {
-      "title": "محتمل‌ترین (۳۸٪)",
-      "body": "مارپیچ تشدید — کاهش بیشتر ۴۰→۳۸. سپاه شکاف + بحران پاتریوت = فرسایش دوطرفه. عمان انکار. ۴ از ۷."
+      "title": "محتمل‌ترین (۳۶٪)",
+      "body": "تشدید — کاهش ۳۸→۳۶. سپاه تحلیل + حوثی بیرون. اما واحدهای مستقل + اصفهان هسته‌ای."
     },
     {
-      "title": "دوم (۲۴٪)",
-      "body": "فرسایشی — افزایش ۲۲→۲۴. پاتریوت بحران = فرسایش دوطرفه. ۲۱ نفتکش. محاکمه جنگی = رژیم حفر. هر دو طرف = محدود."
+      "title": "دوم (۲۶٪)",
+      "body": "فرسایشی — افزایش ۲۴→۲۶. قوی‌ترین. ژنو شکست. IEA: ۲۰ Mb/d. رژیم حفر. فرسایش دوطرفه."
     },
     {
-      "title": "نوظهور (۱۵٪)",
-      "body": "مداخله. عمان بی‌طرفی = خط قرمز. ماکرون + IMO. اما بدون شریک ایرانی."
+      "title": "نوظهور (۱۶٪)",
+      "body": "مداخله — افزایش ۱۵→۱۶. هاس + اسکورت + لبنان مذاکره. IEA: فوریت حداکثر."
     },
     {
-      "title": "نوظهور (۱۱٪)",
-      "body": "شکست سپاه — ارتقا از 'غیرمنتظره.' مجتبی غایب + فرار + بسیج + پزشکیان + 'زنده‌باد شاه.' کارنگی: ۱۹۷۹. از ۸٪ به ۱۱٪."
+      "title": "نوظهور (۱۰٪)",
+      "body": "شکست سپاه — تنظیم ۱۱→۱۰. واشنگتن‌پست: بالارتبه نه. واحد = ۹۰٪. نوروز بعد = متغیر."
     }
   ],
   "shippingRoutes": [
@@ -760,7 +773,7 @@
       "route": "Iran → Armenia (Agarak/Norduz border)",
       "status": "MOST VIABLE",
       "statusColor": "yellow",
-      "detail": "Still most viable but FURTHER DECLINING. Bandar Anzali heavy bombardment + Caspian strikes. NOWRUZ + Chaharshanbe Suri defiance = internal disruption. 111 arrests in 26 provinces = security forces diverted. IRGC managing two fronts = civilian logistics further subordinated. Internet ~480+ hrs. 3.2M displaced = population movement chaotic. Strikes in all 25 provinces.",
+      "detail": "Still most viable but FURTHER DECLINING. 70,000+ structures damaged. IRGC salary crisis = societal chaos. Police 90% absence = internal disruption but also less enforcement at borders (mixed effect). Internet ~504+ hrs. 3.2M displaced. Post-Nowruz trajectory = key. If protests sustain: even more chaotic. If suppressed: slight route stabilization possible.",
       "viability": "~8-12%",
       "eta": "If route established: 4-8 weeks Tehran→Yerevan→sea→Atlanta"
     },
@@ -824,179 +837,175 @@
     }
   ],
   "publishingStatus": [
-    "Paper supply: CRITICAL. Hormuz closed + rial collapsed + IRGC two-front crisis. Nowruz publishing season completely lost.",
-    "Internet blackout: ~480+ hours (20+ days). NetBlocks: 'longest recorded shutdown in Iran's history.' IRGC controls all channels. Chaharshanbe Suri defiance despite blackout = population using offline networks.",
-    "Power outages: WORSENING. CENTCOM: 7,800+ targets across 25 provinces. Energy infrastructure targeted on BOTH sides. 25 hospitals damaged, 9 out of service.",
-    "Isfahan + Shiraz: Both under sustained bombardment. Nowruz under fire = unprecedented cultural trauma. Chaharshanbe Suri defiance = cultural resilience.",
-    "56+ cultural sites damaged. 5,500+ estimated dead. 3.2M displaced. IRGC relocating to civilian spaces.",
-    "New title production: Effectively halted. Nowruz publishing season — normally peak — completely lost.",
-    "Assessment: Existential crisis. IRGC two-front (war + protests). Oman expansion. Iran FM: 'never.' Recovery: years minimum. Chaharshanbe Suri = hope signal for cultural survival."
+    "Paper supply: CRITICAL. Hormuz closed + rial collapsed + IRGC salary crisis. Nowruz publishing season completely lost.",
+    "Internet blackout: ~504+ hours (22nd day). NetBlocks: connectivity at 4% of normal. 'Longest recorded shutdown in Iran's history.' 350 Starlink confiscated.",
+    "Power outages: WORSENING. 70,000+ civilian structures damaged. 251 medical centers, 498 schools. 25+ hospitals damaged.",
+    "Isfahan + Shiraz: Both under sustained bombardment. NEW: Isfahan underground nuclear facility confirmed = city has strategic military significance beyond cultural.",
+    "~5,800+ estimated dead (extrapolated). 3.2M displaced. IRGC financial crisis (salaries unpaid) affecting all sectors.",
+    "New title production: Effectively halted. Nowruz publishing season completely lost.",
+    "Assessment: Existential crisis deepening. Geneva fails. IRGC institutional degradation (90% police absence). BUT: Houthi restraint = Red Sea open = some future supply chain hope. Recovery: years minimum."
   ],
   "publishingStatus_fa": [
-    "کاغذ: بحرانی. سپاه دو جبهه. نوروز از دست رفته.",
-    "اینترنت: ۴۸۰+ ساعت. چهارشنبه‌سوری = شبکه آفلاین.",
-    "برق: بدتر. ۷,۸۰۰+ هدف. ۲۵ بیمارستان.",
-    "اصفهان + شیراز: نوروز زیر آتش. چهارشنبه‌سوری = مقاومت فرهنگی.",
-    "۵,۵۰۰+ کشته. ۳.۲ میلیون آواره.",
-    "تولید متوقف. نوروز = از دست رفته.",
-    "بحران. دو جبهه. عمان. 'هرگز.' سال‌ها. چهارشنبه‌سوری = امید."
+    "کاغذ: بحرانی. حقوق قطع. نوروز از دست رفته.",
+    "اینترنت: ۵۰۴+ ساعت. ۴٪ عادی. استارلینک ۳۵۰ ضبط.",
+    "برق: بدتر. ۷۰,۰۰۰+ ساختمان. ۲۵۱ مرکز پزشکی. ۲۵+ بیمارستان.",
+    "اصفهان: زیر بمباران + تأسیسات هسته‌ای زیرزمینی جدید.",
+    "~۵,۸۰۰+ کشته. ۳.۲ میلیون آواره.",
+    "تولید متوقف.",
+    "بحران عمیق‌تر. ژنو شکست. سپاه تحلیل. حوثی بیرون = دریای سرخ امید. سال‌ها."
   ],
   "impactIranfarhang": [
-    "PRIMARY ROUTE DEAD: Tehran→Dubai→Atlanta completely non-functional. IRGC targeting neutral Oman now. No improvement possible.",
-    "BEST ALTERNATIVE DECLINING FURTHER: Armenia (Agarak/Norduz) — viability 8-12% (DOWN from 10-15%). Chaharshanbe Suri defiance + 111 arrests = internal disruption. IRGC two-front crisis = civilian logistics further subordinated. 3.2M displaced.",
-    "SUPPLY SOURCE CRITICAL: CENTCOM 7,800+ targets, 25 provinces. 5,500+ dead. Internet ~480+ hrs. Chaharshanbe Suri protests = population not broken but infrastructure destroyed.",
-    "OFAC STATUS: Informational materials exemption (31 CFR §560.210(c)) remains valid. IRGC dictatorship + Araghchi rejection = compliance pressure maximum. Kent resignation: 'no intelligence' = political context shifting.",
-    "FINANCIAL: Rial collapsed. Brent ~$110. Oman ports hit = alternative routes compromised. IRGC controls economy.",
-    "WINDOW CLOSED: IRGC executing targets + internal defiance. FM: 'never.' Nowruz lost. Plan for 12+ month total interruption. Chaharshanbe Suri = only hope sign for future cultural survival."
+    "PRIMARY ROUTE DEAD: Tehran→Dubai→Atlanta completely non-functional. IRGC targeting neutral states. No improvement possible.",
+    "BEST ALTERNATIVE DECLINING: Armenia (Agarak/Norduz) — viability ~8-12%. 70,000+ structures damaged. 3.2M displaced. Internet ~504+ hrs. IRGC two-front crisis = civilian logistics subordinated. Post-Nowruz trajectory = key.",
+    "SUPPLY SOURCE CRITICAL: ~5,800+ killed extrapolated. 251 medical centers, 498 schools damaged. Infrastructure destruction comprehensive across 25 provinces.",
+    "OFAC STATUS: Informational materials exemption (31 CFR §560.210(c)) remains valid. Geneva talks failing. Araghchi offered dilution but attacks continued. Political context shifting.",
+    "FINANCIAL: Rial collapsed. Brent ~$115. IRGC salaries unpaid — financial system breaking. Oman ports compromised.",
+    "HOUTHI VARIABLE: If Houthis stay out (currently are), Red Sea shipping survives as alternative. This PRESERVES some future supply chain options. Monitor closely.",
+    "WINDOW CLOSED: FM: 'never.' Geneva fails. Plan for 12+ month total interruption. Post-Nowruz protests + Houthi restraint = two hope signals."
   ],
   "impactIranfarhang_fa": [
-    "مسیر اصلی مرده. عمان هم حمله.",
-    "ارمنستان: ۸-۱۲٪ (کاهش). چهارشنبه‌سوری + ۱۱۱ بازداشت. ۳.۲ میلیون.",
-    "منبع بحرانی: ۷,۸۰۰+ هدف. ۵,۵۰۰+. اینترنت ۲۷۰+. نافرمانی = نشکسته.",
-    "OFAC: معتبر. سپاه + عراقچی. کنت = تحول سیاسی.",
-    "مالی: ریال. نفت ۱۱۰. عمان = مسیرها تهدید.",
-    "بسته. 'هرگز.' ۱۲+ ماه. چهارشنبه‌سوری = امید."
+    "مسیر اصلی مرده. عمان + بی‌طرف حمله.",
+    "ارمنستان: ۸-۱۲٪. ۷۰,۰۰۰+ ساختمان. ۳.۲ میلیون. اینترنت ۵۰۴+.",
+    "منبع بحرانی: ~۵,۸۰۰+. ۲۵۱ مرکز پزشکی. ۴۹۸ مدرسه.",
+    "OFAC: معتبر. ژنو شکست. عراقچی رقیق‌سازی اما حمله.",
+    "مالی: ریال. نفت ۱۱۵. حقوق سپاه قطع.",
+    "حوثی بیرون = دریای سرخ باز = مسیر جایگزین.",
+    "بسته. ژنو شکست. ۱۲+ ماه. نوروز بعد + حوثی = امید."
   ],
   "prepIranfarhang": [
-    "Armenia route: FURTHER REDUCED viability 8-12%. Chaharshanbe Suri + internal disruption. Monitor daily.",
-    "Identify ANY Tehran partners still operational. Post-Nowruz protests = chaotic environment.",
-    "Pre-negotiate Yerevan→Poti/Batumi→sea→US. Only viable path, further declining.",
-    "Accelerate procurement of accessible pre-war inventory — window essentially closed.",
-    "Brief clients: 12+ month total interruption. Araghchi: 'never.' Chaharshanbe Suri defiance = long-term cultural survival signal.",
-    "Monitor KEMCO — IRGC dictatorship + permanent rejection + two-front crisis = unprecedented compliance environment.",
-    "Prepare for TOTAL supply interruption 12+ months. No ceasefire per Iran FM.",
-    "Isfahan nuclear: IAEA locked out. 10 weapons-worth. Breakout = new sanctions regime.",
-    "URGENT: Oman ports hit = alternative shipping compromised. ~400 vessels stranded.",
-    "Post-Nowruz: Monitor protest trajectory, IRGC crackdown severity, and any opening in Armenia route."
+    "Armenia route: Viability ~8-12%. Post-Nowruz trajectory = key variable. Monitor daily.",
+    "Identify ANY Tehran partners still operational. IRGC salaries unpaid = societal chaos deepening.",
+    "Pre-negotiate Yerevan→Poti/Batumi→sea→US. Only viable path.",
+    "HOUTHI VARIABLE: If Houthis stay out, Red Sea-based routes survive. Monitor Houthi decision closely — could change overnight.",
+    "Brief clients: 12+ month total interruption. Geneva talks failing. No ceasefire in sight.",
+    "Isfahan underground nuclear: NEW facility, IAEA locked out. Breakout = new sanctions regime = additional compliance layer.",
+    "Monitor KEMCO — IRGC salary crisis + institutional degradation = unprecedented compliance environment.",
+    "Prepare for TOTAL supply interruption 12+ months.",
+    "Post-Nowruz: Monitor protest trajectory and IRGC capacity to suppress. 90% police absence = enforcement degraded.",
+    "Lebanon ceasefire talks = possible partial conflict resolution. Watch for domino effects."
   ],
   "prepIranfarhang_fa": [
-    "ارمنستان: ۸-۱۲٪. چهارشنبه‌سوری + اختلال. نظارت.",
-    "شرکای تهران — نوروز بعد: هرج.",
-    "ایروان←بندر←دریا. تنها مسیر، کاهشی بیشتر.",
-    "تسریع خرید. پنجره بسته.",
-    "مشتریان: ۱۲+ ماه. عراقچی: 'هرگز.' چهارشنبه‌سوری = امید.",
-    "KEMCO — دو جبهه = بی‌سابقه.",
-    "قطع ۱۲+. آتش‌بس هرگز.",
-    "اصفهان: ۱۰ سلاح.",
-    "عمان = مسیر جایگزین تهدید. ۴۰۰ کشتی.",
-    "نوروز بعد: اعتراض، سرکوب، ارمنستان؟"
+    "ارمنستان: ۸-۱۲٪. نوروز بعد = متغیر کلیدی.",
+    "شرکای تهران — حقوق قطع = هرج.",
+    "ایروان←بندر←دریا. تنها مسیر.",
+    "حوثی بیرون = دریای سرخ باز. نظارت فوری.",
+    "مشتریان: ۱۲+ ماه. ژنو شکست.",
+    "اصفهان زیرزمینی = تحریم جدید احتمالی.",
+    "KEMCO — حقوق قطع + تحلیل = بی‌سابقه.",
+    "قطع ۱۲+.",
+    "نوروز بعد: اعتراض + پلیس ۹۰٪ غیبت = سرکوب ضعیف.",
+    "لبنان مذاکره = احتمال تأثیر دومینو."
   ],
   "signalsIranfarhang": [
-    "CRITICAL: MOJTABA ABSENT ON NOWRUZ — no video message. Succession crisis CONFIRMED on most symbolic day. Trump: 'is not alive.' Hegseth: 'disfigured.' IRGC ventriloquism via written statements.",
-    "CRITICAL: IRGC FRACTURING — desertions NOW DOCUMENTED (Wikipedia article, Iran International, Militarnyi). Isfahan/Tabriz confirmed. 4 diplomats asylum. IRGC executing deserters. Supply crisis: 20 bullets/2 soldiers. Army-IRGC rift. Pezeshkian apologized for Oman but IRGC continued. ~300 Basij commanders killed. Internal enforcement capacity degrading.",
-    "CRITICAL: OIL $116 — up from $110 overnight. +80% since war began. Only 21 tankers since D1. US Navy 'not ready' to escort. WFP: global food price crisis.",
-    "CRITICAL: Chaharshanbe Suri DEFIANCE — 111 arrests in 26/31 provinces. 'Long live the Shah' + 'Death to Islamic Republic.' Carnegie: 1979. NATIONAL movement confirmed.",
-    "CRITICAL: Iran DENIED Oman attacks — new behavior. Regime aware of diplomatic cost. Losing confidence in escalation strategy?",
-    "CRITICAL: Hengaw 5th report — 5,300 killed (D18). 511 civilians. IRGC relocating to schools/mosques = IHL violation.",
-    "WATCH: Post-Nowruz protests — will Chaharshanbe Suri defiance sustain? THE key variable for all scenarios.",
-    "UPGRADED: IRGC desertions NOW DOCUMENTED — Wikipedia article created. Multi-source. Scale debated (NYT skeptical) but phenomenon confirmed. 4 diplomats asylum. IRGC executing deserters.",
-    "WATCH: Trump back-channel — 'eager to negotiate but not ready.' Could evolve into exit framework.",
-    "WATCH: Kataib Hezbollah 5-day pause — first crack in proxy unity. Will other proxies follow?",
-    "WATCH: Jubail, Mesaieed, Al Hosn — can fracturing IRGC still execute? Autonomous units may act independently.",
-    "WATCH: US Navy escort timeline — 'possibly end of March.' If achieved: Hormuz dynamics shift.",
-    "NEW: PATRIOT SUPPLY CRISIS — Zelenskyy: 800+ Patriot missiles fired on D1 alone, US produces only 60-65/month. Coalition consuming interceptors at unsustainable rate. Putin counting on prolonged war to deplete Western stockpiles. Structural limit on air defense duration.",
-    "NEW: WARTIME PROSECUTION — Qazvin prosecutor: protesters detained under wartime conditions until June 2027. Escalation from civilian to military legal framework = unprecedented repression tool.",
-    "NEW: 350 Starlink terminals confiscated being smuggled into Iran. 21 arrested for sending videos to foreign media. Regime tightening information control despite 480+ hr blackout."
+    "CRITICAL: HOUTHI RESTRAINT — 22 days, no attack. AP: stockpiles low. Possible US/Saudi deal. If stay out: Red Sea open = alternative routes survive. If enter: BOTH chokepoints = unprecedented. This is THE strategic variable.",
+    "CRITICAL: ISFAHAN UNDERGROUND NUCLEAR — IAEA confirms new enrichment facility, 'never visited.' Iran's 4th plant. 440kg = ~10 weapons. Grossi: 'war cannot eliminate program.' Nuclear risk UPGRADED.",
+    "CRITICAL: MOJTABA STILL ABSENT DAY 2 — no video/audio. Telegraph: 'minor leg injury.' Araghchi: 'excellent health.' Zero proof. Succession crisis deepening.",
+    "CRITICAL: IRGC DESERTIONS ACCELERATING — police 350 at one base, 90% absence. Salary unpaid 2 months. Retirees recalled. Prisoner amnesty. BUT: WashPost — Western officials 'no high-ranking defections.' Unit-level collapse, institutional survival.",
+    "CRITICAL: OIL $115 consolidating. IEA: 'largest supply disruption in history — 20 Mb/d offline.' Gulf output 21M→14M. Citi: $120+ if war continues.",
+    "CRITICAL: 70,000+ civilian structures damaged (Mar 3-17). 251 medical centers, 498 schools. Extrapolated ~5,800+ killed. 3.2M displaced. Internet ~504+ hrs.",
+    "WATCH: Post-Nowruz protests — Nowruz Day 2 monitoring. Will Chaharshanbe Suri defiance sustain? THE key variable for regime fracture scenario.",
+    "WATCH: Houthi decision — Times: awaiting Iranian signal if US weakens Hormuz control. Could change overnight.",
+    "WATCH: Lebanon — Israel planning massive Litani invasion. Lebanese govt: direct ceasefire talks. Could freeze one front.",
+    "WATCH: Geneva talks — third round failed. Araghchi offered dilution but attacks continued. Next diplomatic window?",
+    "WATCH: Jubail, Mesaieed, Al Hosn — can fracturing IRGC still execute? Autonomous units remain dangerous.",
+    "WATCH: US Navy escort — 'could take month or more.' France + UK + Germany + Italy: Aspides framework.",
+    "WATCH: Haass 'Open for All or Closed to All' proposal — new diplomatic framework for Hormuz. Could reshape blockade dynamics."
   ],
   "signalsIranfarhang_fa": [
-    "بحرانی: مجتبی غایب نوروز — بدون پیام تصویری. بحران جانشینی قطعی. ترامپ: 'زنده نیست.'",
-    "بحرانی: سپاه شکاف — فرار مستند (ویکی‌پدیا). ۴ دیپلمات. اعدام فراری. بسیج ۳۰۰. ارتش-سپاه. پزشکیان عذرخواهی.",
-    "بحرانی: نفت ۱۱۶. +۸۰٪. ۲۱ نفتکش. WFP: بحران غذا.",
-    "بحرانی: چهارشنبه‌سوری — ۱۱۱ بازداشت. 'زنده‌باد شاه.' کارنگی: ۱۹۷۹. ملی.",
-    "بحرانی: ایران عمان انکار — رفتار جدید. اعتماد به تشدید کاهش.",
-    "بحرانی: هنگاو ۵ — ۵,۳۰۰ کشته. سپاه به مدرسه/مسجد.",
-    "نظارت: نوروز بعد — ادامه؟ متغیر کلیدی.",
-    "ارتقا: فرار سپاه مستند. ویکی‌پدیا. ۴ دیپلمات. اعدام. مقیاس بحث.",
-    "نظارت: ترامپ: 'مشتاق مذاکره.' کانال پشتی؟",
-    "نظارت: حزب‌الله کتائب مکث — نماینده‌ها شکاف؟",
-    "نظارت: جبیل، مسیعید، الحصن — سپاه شکاف = توان؟",
-    "نظارت: نیروی دریایی آمریکا — 'آخر مارس.' اگر: تحول هرمز.",
-    "جدید: بحران پاتریوت — ۸۰۰+ روز اول، ۶۰-۶۵/ماه تولید. پوتین = ذخیره غرب تخلیه.",
-    "جدید: محاکمه جنگی — بازداشت‌شدگان تا ژوئن ۲۰۲۷. سرکوب بی‌سابقه.",
-    "جدید: ۳۵۰ استارلینک ضبط. ۲۱ بازداشت ویدئو."
+    "بحرانی: حوثی بیرون — ۲۲ روز حمله نکرد. AP: ذخایر کم. توافق آمریکا؟ دریای سرخ باز = مسیر جایگزین. مهم‌ترین متغیر.",
+    "بحرانی: اصفهان زیرزمینی — IAEA تأسیسات جدید. 'بازدید نکرده.' ۴۴۰ کیلو = ۱۰ سلاح. خطر ارتقا.",
+    "بحرانی: مجتبی هنوز غایب روز ۲. تلگراف: 'پا.' عراقچی: 'عالی.' اثبات = صفر.",
+    "بحرانی: فرار تسریع — پلیس ۳۵۰ ترک. ۹۰٪ غیبت. حقوق قطع. بازنشسته فراخوان. اما بالارتبه = نه.",
+    "بحرانی: نفت ۱۱۵. IEA: ۲۰ میلیون آفلاین. تولید ۲۱→۱۴ میلیون.",
+    "بحرانی: ۷۰,۰۰۰+ ساختمان. ۲۵۱ مرکز پزشکی. ~۵,۸۰۰+. اینترنت ۵۰۴+.",
+    "نظارت: نوروز بعد — ادامه؟ متغیر کلیدی رژیم.",
+    "نظارت: حوثی — تایمز: منتظر سیگنال ایران. یک‌شبه تغییر.",
+    "نظارت: لبنان — لیطانی. دولت: مذاکره مستقیم.",
+    "نظارت: ژنو — شکست. عراقچی رقیق‌سازی اما حمله.",
+    "نظارت: جبیل، مسیعید، الحصن — واحدهای مستقل.",
+    "نظارت: اسکورت — ماه+. فرانسه + بریتانیا + آلمان + ایتالیا.",
+    "نظارت: هاس — 'همه باز یا همه بسته.'"
   ],
   "impactKIP": [
-    "Iran-UAE corridor: DEAD. IRGC targeting neutral Oman now. Al Hosn (UAE) still on target list. Pegasus canceled until April 12.",
-    "UAE asset risk: EXTREME. IRGC executing target list + now attacking neutral states. Al Hosn on list. Habshan shutdown continues.",
-    "Hormuz: Selective passage — China/India/Turkey getting through. Only 2 crossings/day vs 100+. ~400 vessels waiting. Permission-based framework crystallizing. Iran exporting 16M+ bbl to China.",
-    "OMAN PORTS HIT: Duqm + Salalah. Alternative shipping hub COMPROMISED. ~400 vessels in Gulf of Oman at risk. Oman neutrality violated = regional alignment shifts.",
-    "SAMREF HIT: Red Sea coast reached. East-West Pipeline (5M bbl/day) threatened. Saudi loses BOTH export routes if Yanbu terminals targeted.",
-    "QATAR: Force majeure ongoing. Several LNG facilities hit. Attaches expelled. Trump South Pars trigger.",
-    "KUWAIT: 2 refineries hit. ~1.4M bbl/day at risk. 26+ Hezbollah detained.",
-    "CHAHARSHANBE SURI: IRGC now two-front crisis. 111 arrests in 26 provinces. Protests = IRGC capacity diverted from external war. May slow target execution.",
-    "Banking: IRGC dictatorship + permanent rejection + two-front crisis + $110 oil = compliance MAXIMUM pressure.",
-    "200+ Ukrainian anti-drone experts deployed to Gulf — potential shift in defense balance."
+    "Iran-UAE corridor: DEAD. IRGC targeting neutral states. Al Hosn (UAE) still on target list.",
+    "UAE asset risk: EXTREME. Al Hosn on list. IRGC capacity degrading but autonomous units dangerous.",
+    "Hormuz: Selective passage crystallizing. IEA: 20 Mb/d offline, 'largest disruption in history.' Gulf output 21M→14M. Haass: 'Open for All or Closed to All' framework. France + UK + Germany + Italy: Aspides escort. US Navy: 'month or more.'",
+    "HOUTHI RESTRAINT = CRITICAL: If Houthis stay out (22 days so far), Red Sea shipping survives. If they enter: BOTH chokepoints = unprecedented global crisis. AP: stockpiles low. Possible US/Saudi deal.",
+    "ISFAHAN UNDERGROUND: New enrichment plant, IAEA never visited. 440kg = ~10 weapons. Nuclear risk upgraded. Could trigger new sanctions/actions.",
+    "OMAN + SAMREF: 4/7 named targets executed. Remaining: Jubail, Mesaieed, Al Hosn. IRGC degrading but autonomous units may act.",
+    "QATAR: Force majeure ongoing. LNG facilities hit. Geneva talks failing.",
+    "KUWAIT: 2 refineries hit. Official totals: 539 drones + 227 missiles.",
+    "LEBANON: ~1,000+ killed. Israel planning massive Litani invasion. Lebanese govt: direct ceasefire 'immediately.' Could freeze one front.",
+    "IRGC FINANCIAL CRISIS: Salaries unpaid 2 months. Police 90% absence. Retirees recalled. Prisoner amnesty. Institutional degradation accelerating.",
+    "Banking: IRGC salary crisis + Geneva failure = unprecedented compliance environment."
   ],
   "impactKIP_fa": [
-    "ایران-امارات: مرده. عمان حمله. الحصن هنوز.",
-    "دارایی‌ها: شدید. عمان = بی‌طرف حمله. الحصن لیست.",
-    "هرمز: گزینشی — چین/هند/ترکیه. ۲ عبور. ۴۰۰ منتظر. ایران ۱۶+ میلیون به چین.",
-    "عمان: دقم + صلاله. مسیر جایگزین تهدید.",
-    "سامرف: دریای سرخ. خط لوله = تهدید.",
-    "قطر: فورس ماژور. ترامپ: پارس جنوبی.",
-    "کویت: ۲ پالایشگاه. ۱.۴ میلیون.",
-    "چهارشنبه‌سوری: سپاه دو جبهه. ۱۱۱ بازداشت. اعتراض = توان کاهش.",
-    "بانکداری: حداکثر فشار.",
-    "اوکراین ۲۰۰+ = دفاع."
+    "ایران-امارات: مرده. الحصن هنوز لیست.",
+    "دارایی‌ها: شدید. واحدهای مستقل خطرناک.",
+    "هرمز: IEA ۲۰ میلیون آفلاین. هاس: 'همه باز یا بسته.' اسکورت ماه+.",
+    "حوثی بیرون = دریای سرخ باز. اگر وارد: هر دو تنگه = بحران جهانی.",
+    "اصفهان زیرزمینی: IAEA بازدید نکرده. ۱۰ سلاح. خطر ارتقا.",
+    "۴ از ۷ هدف. جبیل، مسیعید، الحصن باقی.",
+    "لبنان ~۱,۰۰۰+. لیطانی. دولت: مذاکره مستقیم.",
+    "سپاه مالی: حقوق قطع. پلیس ۹۰٪ غیبت. بازنشسته + زندانی.",
+    "بانکداری: حقوق قطع + ژنو شکست = بی‌سابقه."
   ],
   "prepKIP": [
-    "URGENT: IRGC now targeting NEUTRAL states (Oman). Al Hosn (UAE) still on list. UAE assets at MAXIMUM risk. Oman ports compromised.",
-    "Emergency: Chaharshanbe Suri defiance = IRGC two-front crisis. May slow target execution but also increases unpredictability.",
-    "Diversify banking NOW. Two-front IRGC crisis + permanent rejection = unprecedented compliance environment.",
-    "ALL UAE-bound shipments suspended. Al Hosn on target list. Habshan shutdown.",
-    "Legal contingency for UAE asset freeze. IRGC expanding targets = new OFAC actions likely.",
-    "Alternative hubs: Oman COMPROMISED (Duqm/Salalah hit). Turkey (Mersin) via selective Hormuz. Georgia (Poti/Batumi). ALL Gulf at risk.",
-    "Insurance: Oman + SAMREF + Kuwait + Qatar = premiums CATASTROPHIC. Self-insure all regional assets.",
-    "Personnel: TEMPORARY RELOCATION from UAE active consideration. IRGC attacking neutral states = no safe zone in region.",
-    "Isfahan nuclear: IAEA locked out. 10 weapons-worth. Kent: 'not on verge.' E3 disagrees. Breakout = new sanctions.",
-    "CRITICAL: Post-Nowruz protests — if sustain: IRGC capacity degrades. Could create unexpected windows OR increase instability.",
-    "200+ Ukrainian anti-drone experts — monitor whether this shifts defense outcomes for Gulf states.",
-    "Selective Hormuz: Negotiate passage via China/India/Turkey frameworks if needed."
+    "URGENT: Al Hosn (UAE) still on IRGC target list. IRGC degrading but autonomous units dangerous. UAE assets at MAXIMUM risk.",
+    "HOUTHI VARIABLE: Monitor closely. If Houthis enter war: BOTH chokepoints = global crisis. If stay out: partial containment holds. Plan for both scenarios.",
+    "Diversify banking NOW. IRGC salary crisis + Geneva failure = unprecedented compliance environment.",
+    "ALL UAE-bound shipments suspended. Al Hosn on target list.",
+    "Isfahan underground nuclear: NEW facility, IAEA never visited. Breakout = new sanctions = additional compliance layer. Plan for escalated sanctions regime.",
+    "Alternative hubs: Oman COMPROMISED. Turkey (Mersin) via selective Hormuz. Georgia (Poti/Batumi). Red Sea routes DEPEND on Houthi restraint continuing.",
+    "Insurance: Premiums CATASTROPHIC. Self-insure all regional assets.",
+    "Personnel: TEMPORARY RELOCATION from UAE under active consideration.",
+    "Lebanon ceasefire talks = possible partial resolution. Could create diplomatic momentum. Monitor.",
+    "Post-Nowruz: IRGC enforcement capacity degraded (police 90% absence). Could create windows OR increase instability.",
+    "Haass 'Open for All or Closed to All' framework — monitor whether this gains traction. Could reshape Hormuz dynamics.",
+    "Selective Hormuz: Negotiate passage via China/India/Turkey frameworks if needed. Aspides escort expansion = European alternative."
   ],
   "prepKIP_fa": [
-    "فوری: عمان = بی‌طرف حمله. الحصن هنوز. حداکثر خطر.",
-    "چهارشنبه‌سوری = دو جبهه. غیرقابل پیش‌بینی.",
-    "بانکداری فوری. دو جبهه + رد = بی‌سابقه.",
+    "فوری: الحصن هنوز لیست. واحدهای مستقل خطرناک.",
+    "حوثی: نظارت فوری. اگر وارد = بحران جهانی. اگر بیرون = مهار.",
+    "بانکداری فوری. حقوق قطع + ژنو شکست = بی‌سابقه.",
     "محموله‌ها متوقف. الحصن لیست.",
-    "حقوقی: سپاه گسترش = OFAC جدید.",
-    "هاب‌ها: عمان تهدید. ترکیه هرمز. گرجستان.",
+    "اصفهان زیرزمینی: IAEA بازدید نکرده. تحریم جدید.",
+    "هاب‌ها: عمان تهدید. ترکیه هرمز. گرجستان. دریای سرخ = حوثی.",
     "بیمه فاجعه‌بار.",
-    "جابجایی از امارات. بی‌طرف = امن نه.",
-    "اصفهان: ۱۰ سلاح. کنت ≠ E3.",
-    "نوروز بعد: ادامه = ظرفیت سپاه کاهش. پنجره یا بی‌ثباتی.",
-    "اوکراین ۲۰۰+ = دفاع.",
-    "هرمز گزینشی: مذاکره چین/هند/ترکیه."
+    "جابجایی از امارات.",
+    "لبنان مذاکره = احتمال تأثیر.",
+    "نوروز بعد: پلیس ۹۰٪ = پنجره یا بی‌ثباتی.",
+    "هاس: 'همه باز یا بسته.' نظارت.",
+    "هرمز: اسکورت اروپایی + چین/هند/ترکیه."
   ],
   "signalsKIP": [
-    "CRITICAL: CHAHARSHANBE SURI DEFIANCE — 111 arrests in 26/31 provinces. 'Death to Mojtaba.' IRGC TWO-FRONT crisis. Carnegie: 1979. If sustains: game-changing for all scenarios.",
-    "CRITICAL: OMAN PORTS HIT — Duqm + Salalah. NEUTRAL state attacked. Alternative shipping compromised. ~400 vessels at risk. Regional alignment shifting.",
-    "CRITICAL: Iran FM permanent rejection — 'never asked for ceasefire.' NO diplomatic off-ramp.",
-    "CRITICAL: Brent ~$110. $119 spike. Citi: $120+. If $130+: global recession triggered.",
-    "CRITICAL: Isfahan underground — IAEA: 440kg = ~10 weapons. Kent vs E3 assessments contradictory.",
-    "CRITICAL: Mojtaba ABSENT from Nowruz = succession crisis confirmed. Power vacuum persists.",
-    "WATCH: Post-Nowruz protest trajectory — will defiance sustain? This is THE variable for all scenarios.",
-    "WATCH: Trump South Pars trigger — next Qatar attack = US destroys entire field. Escalatory ratchet.",
-    "WATCH: 200+ Ukrainian anti-drone experts — potential defense game-changer for Gulf.",
-    "WATCH: Selective Hormuz — China/India/Turkey passage. De facto framework emerging.",
-    "WATCH: Jubail, Mesaieed, Al Hosn — can IRGC execute remaining targets while fighting two fronts?",
-    "WATCH: Macron energy moratorium + IMO corridor — diplomatic tracks advancing despite Iran rejection.",
-    "NEW: PATRIOT SUPPLY CRISIS — 800+ fired D1, only 60-65/month production. Air defense duration structurally limited. Affects Gulf state protection umbrella.",
-    "NEW: Iran IRGC earning $1B+ from dark fleet oil exports to China despite blockade. 7+ dark fleet tankers observed."
+    "CRITICAL: HOUTHI RESTRAINT — 22 days, no attack. AP: stockpiles low. Possible US/Saudi deal. If stay out: Red Sea open. If enter: BOTH chokepoints = global crisis. SINGLE MOST IMPORTANT VARIABLE.",
+    "CRITICAL: ISFAHAN UNDERGROUND — NEW enrichment plant, IAEA 'never visited.' 440kg = ~10 weapons. Nuclear risk upgraded. Could trigger new actions/sanctions.",
+    "CRITICAL: Brent ~$115. IEA: 'largest disruption in history — 20 Mb/d offline.' Gulf 21M→14M. Citi: $120+. If $130+: global recession.",
+    "CRITICAL: IRGC SALARY CRISIS — unpaid 2 months. Police 90% absence. Retirees recalled. Prisoner amnesty. Unit-level collapse ongoing.",
+    "CRITICAL: Mojtaba STILL ABSENT Day 2. Power vacuum deepening.",
+    "CRITICAL: Geneva round 3 fails. Araghchi offered dilution but attacks continued. No diplomatic off-ramp.",
+    "WATCH: Post-Nowruz protests — will defiance sustain? Key for regime fracture scenario.",
+    "WATCH: Houthi decision — Times: awaiting Iranian signal. Could change overnight.",
+    "WATCH: Lebanon — Israel planning massive Litani invasion. Lebanese govt: direct ceasefire. Could freeze one front.",
+    "WATCH: Jubail, Mesaieed, Al Hosn — autonomous IRGC units may still execute. 4/7 hit.",
+    "WATCH: Haass 'Open for All or Closed to All' — new Hormuz framework. Aspides escort expansion.",
+    "WATCH: Trump South Pars trigger — escalatory ratchet remains.",
+    "WATCH: PATRIOT SUPPLY CRISIS — 800+ D1, 60-65/month. Structural air defense limit. Putin counting on drain."
   ],
   "signalsKIP_fa": [
-    "بحرانی: چهارشنبه‌سوری — ۱۱۱ بازداشت. 'مرگ بر مجتبی.' دو جبهه. کارنگی: ۱۹۷۹.",
-    "بحرانی: عمان — دقم + صلاله. بی‌طرف. ۴۰۰ کشتی.",
-    "بحرانی: عراقچی — 'هرگز.'",
-    "بحرانی: نفت ۱۱۰. جهش ۱۱۹. رکود اگر ۱۳۰+.",
-    "بحرانی: اصفهان — ۱۰ سلاح. کنت ≠ E3.",
-    "بحرانی: مجتبی غایب = بحران جانشینی.",
-    "نظارت: نوروز بعد — ادامه؟ متغیر کلیدی.",
-    "نظارت: ترامپ پارس جنوبی = ماشه.",
-    "نظارت: اوکراین ۲۰۰+ = دفاع.",
-    "نظارت: هرمز گزینشی — چارچوب.",
-    "نظارت: جبیل، مسیعید، الحصن — سپاه دو جبهه = توان؟",
-    "نظارت: ماکرون + IMO = دیپلماتیک.",
-    "جدید: بحران پاتریوت — ۸۰۰+ روز اول. دفاع هوایی = محدود.",
-    "جدید: سپاه ۱+ میلیارد از ناوگان تاریک نفت به چین."
+    "بحرانی: حوثی بیرون — ۲۲ روز. AP: ذخایر کم. اگر وارد: هر دو تنگه = بحران جهانی. مهم‌ترین.",
+    "بحرانی: اصفهان زیرزمینی — IAEA 'بازدید نکرده.' ۱۰ سلاح. خطر ارتقا.",
+    "بحرانی: نفت ۱۱۵. IEA: ۲۰ میلیون آفلاین. رکود اگر ۱۳۰+.",
+    "بحرانی: سپاه حقوق قطع. پلیس ۹۰٪. بازنشسته + زندانی.",
+    "بحرانی: مجتبی هنوز غایب روز ۲.",
+    "بحرانی: ژنو شکست. عراقچی رقیق‌سازی اما حمله.",
+    "نظارت: نوروز بعد — ادامه؟",
+    "نظارت: حوثی — سیگنال ایران. یک‌شبه.",
+    "نظارت: لبنان — لیطانی. دولت مذاکره.",
+    "نظارت: جبیل، مسیعید، الحصن — واحدهای مستقل.",
+    "نظارت: هاس + اسکورت اروپایی.",
+    "نظارت: ترامپ پارس جنوبی.",
+    "نظارت: پاتریوت — ۸۰۰+ روز اول. دفاع محدود."
   ]
 }
