@@ -1,125 +1,123 @@
 {
   "meta": {
-    "lastUpdated": "2026-03-19T00:15:00-04:00",
+    "lastUpdated": "2026-03-19T04:15:00-04:00",
     "notes": [
-      "Day 19 (Mar 18) FINAL UPDATE 12:15AM ET. Sources: CNN live, AJ D19, CNBC, Bloomberg, NPR, Euronews, Wikipedia, Hengaw 5th report, CNBC Ras Laffan x2, Times of Israel, IAEA, Rosatom, IMO.",
-      "RAS LAFFAN STRUCK TWICE: Iran ballistic missiles hit Qatar's Ras Laffan LNG complex TWICE on D19. 1st strike: extensive damage. 2nd strike: 'sizeable fires and extensive further damage' (QatarEnergy). No casualties. Qatar expelled Iranian attaches (persona non grata, 24h). World's largest LNG facility (~20% global).",
-      "BUSHEHR NUCLEAR PLANT HIT: 'Hostile projectile' struck Bushehr NPP site. IAEA: no reactor damage, no casualties. Rosatom SUSPENDED construction on new units, evacuated non-essential staff. IAEA Grossi: war cannot eliminate nuclear program. Bushehr Airport also struck — Iran Air A319 destroyed on tarmac.",
-      "ENERGY WAR MUTUAL: Israel struck South Pars + refineries (AM). Iran retaliated hitting Ras Laffan x2 + threatened Saudi/UAE/Qatar energy sites by name (Samref, Jubail, Mesaieed, Al Hosn). Abu Dhabi shut Habshan gas. Both sides destroying each other's energy production.",
-      "5TH SENIOR KILL: Basij head killed. Khatib (intel minister) + Basij head + Larijani + Soleimani in ~60h. Katz: open kill order on ALL senior officials.",
-      "HENGAW 5TH REPORT: 5,300 total killed (4,789 military + 511 civilians incl 120 minors + 160 women). Health Ministry: 1,444 + 18,551 injured. HRANA: 3,114 dead by D18 (1,354 civilians, 1,138 military, 622 unclassified).",
-      "OIL $107: Brent settled $107.38 (CNBC close), spiked $111.23 after-hours on 2nd Ras Laffan. WTI $96.32 close. Gas $3.84 (+29%), $4+ in 7 states, $5+ in CA/HI/WA. Fed held rates. Pentagon $200B+.",
-      "DIPLOMATIC SURGE: 12 Arab/Islamic FM joint statement demanding Iran halt attacks. E3 (UK/France/Germany) backing 'proportionate military defensive measures.' Saudi FM: 'right to military action.' Qatar expelled attaches. Kataib Hezbollah offered conditional 5-day pause on US Embassy attacks.",
-      "HORMUZ: 8 vessels Monday (~double recent). China-linked vessels transiting. IMO emergency meeting — proposed safe maritime corridor for stranded ships. Total traffic ↓97%. 21 tankers since D1 vs 100+/day pre-war."
+      "Day 20 (Mar 19) UPDATE 4:15AM ET. Sources: CNN live, AJ D19-20, CNBC, Bloomberg, Fortune, CBS, NPR, C-SPAN, Wikipedia, Investing.com, IAEA, Rosatom, USNI, The National, Windward, Al Jazeera Hormuz.",
+      "JOHNSON: OBJECTIVES 'BEEN MET': House Speaker declared war 'virtually accomplished.' Pentagon simultaneously requested $200B+ supplemental. CENTCOM: 7,800+ targets struck, 120+ vessels destroyed. US dropped 5,000-lb bunker busters on Iranian missile sites along Hormuz coastline. Dem Lieu: US 'running short of missiles.' Johnson hints reconciliation bill for war funding.",
+      "ISFAHAN UNDERGROUND FACILITY: IAEA reveals Iran has NEW underground enrichment facility at Isfahan. Grossi: 'many questions' — inspectors unable to visit since June 2025 12-day war strikes. Iran stored most highly enriched uranium (440kg at 60%) in underground tunnel complex. Enough for 9 weapons if enriched to 90%. IAEA has NO access to any of Iran's 4 declared enrichment sites.",
+      "HORMUZ TRAFFIC SLIGHTLY INCREASING: Vessels nearly doubled in recent days. Ships rerouting through Iranian territorial waters — 'permission-based transits to friendly countries.' 11 China-linked vessels since Mar 1 (Lloyd's). Shadow fleet = half of all transits. Bessent: US 'letting' Iranian tankers through. Iraq resumed 250K bbl/day via Ceyhan/Turkey.",
+      "OIL VOLATILE: Brent opened $103.71 (down from $107.38 close), trading range $100-112. WTI $96.40. Markets digesting Johnson 'objectives met' vs. continued escalation. EIA forecast: Brent >$95 next 2 months, <$80 by Q3 if war ends.",
+      "200+ UKRAINIAN EXPERTS: Zelenskyy confirmed 200+ Ukrainian anti-drone military experts deployed to several ME countries to help defend against Iranian-designed drones.",
+      "MACRON MORATORIUM: French President called for 'moratorium on strikes targeting civilian infrastructure, particularly energy and water supply facilities.' Pentagon: 5,000-lb GBU-57 deep penetrators on Hormuz missile sites = escalating bunker-busting campaign."
     ]
   },
-  "theoryBox": "<strong>Day 19 FINAL — NUCLEAR + ENERGY WAR:</strong> Both sides targeting energy production. Israel struck South Pars (AM). Iran hit Ras Laffan LNG TWICE — world's largest LNG facility (~20% global). Bushehr nuclear plant hit by 'hostile projectile' (IAEA: no reactor damage, Rosatom suspended construction). Iran named specific Gulf energy targets. 12 FM joint statement. E3 backing military defense. Kataib Hezbollah conditional 5-day pause. Brent $107 close. 5 senior officials killed ~60h. Hengaw: 5,300 dead. War entering nuclear-adjacent phase.",
-  "theoryBox_fa": "<strong>روز ۱۹ نهایی — هسته‌ای + جنگ انرژی:</strong> پارس جنوبی + راس لفان ۲ بار. بوشهر هسته‌ای پرتابه خورد (IAEA: بدون آسیب). روس‌اتم ساخت متوقف. ایران اهداف انرژی نام برد. ۱۲ وزیر بیانیه. E3 حمایت نظامی. حزب‌الله کتائب مهلت مشروط. نفت ۱۰۷. ۵ مقام. هنگاو ۵,۳۰۰.",
+  "theoryBox": "<strong>Day 20 — 'OBJECTIVES MET' vs REALITY:</strong> Johnson declared war 'virtually accomplished' while Pentagon requested $200B+. CENTCOM: 7,800+ targets, 120+ vessels. IAEA reveals NEW underground Isfahan enrichment facility — inspectors locked out. 440kg enriched uranium location unknown. Hormuz traffic slightly increasing (permission-based). Iraq resumed 250K bbl/day via Turkey. Brent volatile $100-112. 200+ Ukrainian anti-drone experts deployed. Dem Lieu: US 'running short of missiles.' War's political narrative diverging sharply from operational reality.",
+  "theoryBox_fa": "<strong>روز ۲۰ — 'اهداف محقق شده' در برابر واقعیت:</strong> جانسون: جنگ تقریباً تمام. پنتاگون ۲۰۰+ میلیارد. IAEA: تأسیسات زیرزمینی جدید اصفهان — ۴۴۰ کیلو اورانیوم نامعلوم. هرمز افزایش جزئی. عراق ۲۵۰ هزار بشکه از ترکیه. نفت ۱۰۰-۱۱۲. ۲۰۰+ متخصص اوکراینی. لیو: آمریکا 'کم‌موشک.'",
   "metrics": [
     {
       "label": "Day",
-      "value": "19",
-      "desc": "NUCLEAR + ENERGY WAR. South Pars + Ras Laffan x2 + Bushehr NPP. Oil $107. 5 officials killed ~60h. E3 backing defense. 12 FM statement."
+      "value": "20",
+      "desc": "'OBJECTIVES MET' — Johnson. But Pentagon $200B+. IAEA: new Isfahan underground. 7,800+ targets. 120+ vessels. GBU-57 on Hormuz. Lieu: 'short of missiles.'"
     },
     {
       "label": "Cumul. missiles",
-      "value": "~2,652",
-      "desc": "Ras Laffan hit TWICE (8 missiles total at Qatar). Kuwait 4 ballistic. Saudi 4 ballistic (Riyadh). Multi-warhead Khorramshahr-4 + Qadr at Israel."
+      "value": "~2,677",
+      "desc": "D20 est. 25: US bunker busters degrading Hormuz coastal sites. Continued Gulf + Israel harassment. Rate declining from D19 spike (40). 5,000-lb GBU-57 on launch sites."
     },
     {
       "label": "Cumul. drones",
-      "value": "~4,125",
-      "desc": "Kuwait 20 drones intercepted. Gulf-wide barrage. Iran issued evacuation warnings + named specific energy targets by name."
+      "value": "~4,175",
+      "desc": "D20 est. 50: Slightly lower. 200+ Ukrainian anti-drone experts now deployed. Baghdad embassy attacks continue. Drone harassment pattern sustained."
     },
     {
       "label": "Brent crude",
-      "value": "$107",
-      "desc": "Settled $107.38 (CNBC close). Spiked $111+ after-hours on 2nd Ras Laffan. WTI $96.32. Gas $3.84 (+29%). Fed held rates. Up ~40% since D1."
+      "value": "$104",
+      "desc": "Opened $103.71, range $100-112. Down from $107.38 close on Johnson 'objectives met.' EIA: >$95 next 2mo. Iraq 250K bbl/day via Ceyhan. Volatile."
     },
     {
       "label": "Iran dead (Hengaw)",
-      "value": "~5,300",
-      "desc": "Hengaw 5th report: 4,789 military + 511 civilians (120 minors, 160 women). HRANA: 3,114. Health Ministry: 1,444 + 18,551 injured."
+      "value": "~5,300+",
+      "desc": "Hengaw 5th report (D18): 4,789 military + 511 civilians (120 minors, 160 women). HRANA: 3,114. Health Ministry: 1,444 + 18,551 injured. Awaiting 6th report."
     },
     {
       "label": "Lebanon",
-      "value": "880+ killed",
-      "desc": "IDF ground ops south of Litani expanding. Expects 3+ more weeks. ~1M displaced (19% population). Hezbollah facing public anger from own base."
+      "value": "886+ killed",
+      "desc": "Updated from 880. IDF ground ops south of Litani expanding. 3+ more weeks expected. ~1M displaced. Khiam major battle underway."
     },
     {
       "label": "Israel dead",
       "value": "17+",
-      "desc": "2 killed Ramat Gan cluster munitions. 3,727+ wounded (AJ tracker). Multi-warhead + cluster missiles over Tel Aviv."
+      "desc": "3,727+ wounded. 30-year-old foreign worker killed by cluster bomb shrapnel at Moshav Adanim (D19). Multi-warhead + cluster continues."
     },
     {
       "label": "Nuclear risk",
-      "value": "ELEVATED",
-      "desc": "Bushehr NPP projectile hit. Rosatom suspended construction. IAEA: can't eliminate program. Natanz inaccessible. Isfahan enrichment status unknown."
+      "value": "CRITICAL",
+      "desc": "NEW: IAEA reveals underground Isfahan enrichment facility. 440kg at 60% = enough for 9 weapons. IAEA locked out of ALL 4 enrichment sites. Bushehr projectile. Grossi: 'many questions.'"
     }
   ],
   "metrics_fa": [
     {
       "label": "روز",
-      "value": "۱۹",
-      "desc": "هسته‌ای + انرژی. پارس جنوبی + راس لفان ۲ بار + بوشهر. نفت ۱۰۷. ۵ مقام. E3 + ۱۲ وزیر."
+      "value": "۲۰",
+      "desc": "جانسون: اهداف محقق. پنتاگون ۲۰۰+. اصفهان زیرزمینی. ۷,۸۰۰+ هدف. لیو: کم‌موشک."
     },
     {
       "label": "موشک",
-      "value": "~۲,۶۵۲",
-      "desc": "راس لفان ۲ بار (۸ موشک قطر). کویت ۴ بالستیک. ریاض. چندکلاهکی."
+      "value": "~۲,۶۷۷",
+      "desc": "D20: ۲۵. بمب‌های سنگر‌شکن هرمز. تخریب پایگاه‌های ساحلی."
     },
     {
       "label": "پهپاد",
-      "value": "~۴,۱۲۵",
-      "desc": "کویت ۲۰ پهپاد. هشدار تخلیه + نام بردن اهداف انرژی."
+      "value": "~۴,۱۷۵",
+      "desc": "D20: ۵۰. ۲۰۰+ متخصص اوکراینی مستقر. بغداد ادامه."
     },
     {
       "label": "نفت",
-      "value": "$۱۰۷",
-      "desc": "بسته شدن ۱۰۷.۳۸. جهش ۱۱۱+ بعد ساعت. WTI ۹۶.۳۲. +۴۰٪ از D1."
+      "value": "$۱۰۴",
+      "desc": "باز ۱۰۳.۷۱، محدوده ۱۰۰-۱۱۲. جانسون = کاهش. عراق ۲۵۰ هزار بشکه ترکیه."
     },
     {
       "label": "کشته ایران",
-      "value": "~۵,۳۰۰",
-      "desc": "هنگاو: ۴,۷۸۹ نظامی + ۵۱۱ غیرنظامی. HRANA: ۳,۱۱۴. وزارت بهداشت: ۱,۴۴۴."
+      "value": "~۵,۳۰۰+",
+      "desc": "هنگاو: ۴,۷۸۹ نظامی + ۵۱۱ غیرنظامی. انتظار گزارش ۶."
     },
     {
       "label": "لبنان",
-      "value": "۸۸۰+ کشته",
-      "desc": "عملیات زمینی جنوب لیطانی. ۳+ هفته دیگر. ۱ میلیون آواره. حزب‌الله زیر فشار."
+      "value": "۸۸۶+ کشته",
+      "desc": "عملیات زمینی خیام. ۳+ هفته. ۱ میلیون آواره."
     },
     {
       "label": "اسرائیل",
       "value": "۱۷+",
-      "desc": "۳,۷۲۷+ زخمی. خوشه‌ای + چندکلاهکی."
+      "desc": "۳,۷۲۷+ زخمی. بمب خوشه‌ای + چندکلاهکی."
     },
     {
       "label": "خطر هسته‌ای",
-      "value": "بالا",
-      "desc": "بوشهر پرتابه خورد. روس‌اتم متوقف. IAEA: نمی‌توان حذف کرد. نطنز غیرقابل‌دسترس."
+      "value": "بحرانی",
+      "desc": "جدید: اصفهان زیرزمینی. ۴۴۰ کیلو ۶۰٪. IAEA بسته. بوشهر. گروسی: سؤالات."
     }
   ],
   "sitrep": [
-    "RAS LAFFAN LNG HIT TWICE: Iran ballistic missiles struck Qatar's Ras Laffan Industrial City TWICE on D19. 1st strike: 'extensive damage' (5 missiles, 4 intercepted, 1 hit). 2nd strike: 'sizeable fires and extensive further damage' (QatarEnergy). No casualties. Qatar expelled Iranian military/security attaches. World's largest LNG facility (~20% global supply). Energy war FULLY MUTUAL — South Pars (AM) + Ras Laffan x2 (PM).",
-    "BUSHEHR NUCLEAR PLANT STRUCK: Iran's Atomic Energy Org reported 'hostile projectile' hit Bushehr NPP site. IAEA: no reactor damage, no casualties. Rosatom SUSPENDED construction on new units, evacuated non-essential staff due to 'loss of communication.' IAEA Grossi: war 'cannot entirely eliminate' nuclear program. Isfahan enrichment facility status UNKNOWN. Bushehr Airport also struck — Iran Air A319 destroyed on tarmac. Nuclear risk now ELEVATED.",
-    "SAUDI WARNS MILITARY ACTION + 12 FM STATEMENT: Saudi FM Prince Faisal: 'reserved right to military action.' 12 Arab/Islamic FMs issued joint statement demanding Iran 'immediately halt attacks.' Iran targeted Riyadh with ballistic missile DURING emergency FM meeting — intercepted over Prince Sultan Air Base. Saudi intercepted 4 ballistic missiles + drone attack on eastern gas facility.",
-    "E3 MILITARY BACKING + KATAIB HEZBOLLAH PAUSE: UK/France/Germany resolved to back 'proportionate military defensive measures' against Iranian drones and ballistic missiles — potential direct European involvement. Kataib Hezbollah offered conditional 5-day pause on US Embassy Baghdad attacks — if US/Israel meet conditions, otherwise 'intensified' attacks.",
-    "5TH SENIOR KILL: Israel killed Basij head + intel minister Khatib + Larijani + Soleimani in ~60h. Katz: open kill order on ALL senior officials. DNI Gabbard: regime 'largely degraded' but 'intact.' Iran: 'structure doesn't depend on any single individual.'",
-    "OIL $107 + ECONOMIC SHOCK: Brent settled $107.38 (CNBC close), spiked $111+ after-hours on 2nd Ras Laffan. WTI $96.32. Crude up ~40% since D1, ~80% over conflict arc. Gas $3.84 (+29%), $4+ in 7 states. Fed held rates. Pentagon $200B+ war budget. Iran listed specific Gulf targets by name: Samref, Jubail, Mesaieed, Al Hosn.",
-    "HENGAW 5TH REPORT: 5,300 killed in Iran (4,789 military + 511 civilians incl 120 minors, 160 women). HRANA: 3,114 dead (1,354 civilians, 1,138 military, 622 unclassified). Health Ministry: 1,444 + 18,551 injured. 178 cities across 25 provinces struck. Military relocating into civilian spaces.",
-    "HORMUZ + IMO: Traffic ↓97% — 21 tankers since D1 vs 100+/day pre-war. 8 vessels Monday (~double recent). China-linked vessels transiting via Iranian territorial waters. IMO emergency meeting — proposed safe maritime corridor resolution for 150+ stranded ships. Major carriers (Maersk, MSC, Hapag-Lloyd, CMA CGM) all suspended.",
-    "LEBANON: IDF ground ops expanding south of Litani. 880+ killed (Lebanese Health Ministry). ~1M displaced (19% population). IDF expects 3+ more weeks of ops. Hezbollah facing anger from own Shiite base (WaPo). Lebanese gov ready for direct ceasefire talks without preconditions."
+    "JOHNSON: 'OBJECTIVES MET' — House Speaker declared objectives targeting missile capabilities and naval forces 'been met,' war 'virtually accomplished.' Pentagon simultaneously requested $200B+ supplemental funding. Dem Vice Chair Lieu: US 'running short of missiles.' Johnson hinting at reconciliation bill for war funding. Sharp disconnect between political messaging ('nearly done') and military reality (requesting largest supplemental since WWII).",
+    "IAEA: NEW UNDERGROUND ISFAHAN FACILITY — IAEA Director General Grossi revealed Iran has NEW underground enrichment facility at Isfahan. Inspectors unable to visit since June 2025 strikes. Iran stored most highly enriched uranium (440kg at 60%) in underground tunnel complex — enough for 9 nuclear weapons if enriched to 90%. IAEA has NO ACCESS to any of Iran's 4 declared enrichment sites. Nuclear risk upgraded to CRITICAL.",
+    "HORMUZ TRAFFIC INCREASING: Vessel transits nearly doubled in recent days. Ships rerouting through Iranian territorial waters — 'permission-based transits to friendly countries' (Lloyd's). 11 China-linked vessels since Mar 1. Shadow fleet = half of all transits. Treasury Sec Bessent: US 'letting' Iranian tankers through. Iraq resumed 250K bbl/day via Turkey's Ceyhan port, bypassing Gulf.",
+    "BUNKER BUSTERS ON HORMUZ: CENTCOM confirmed 5,000-lb GBU-57 deep penetrator munitions on hardened Iranian missile sites along Hormuz coastline. CENTCOM cumulative: 7,800+ targets struck, 120+ vessels destroyed (up from 90+ on D16). DNI Gabbard: Iran's conventional military 'largely destroyed' but regime 'intact.'",
+    "OIL VOLATILE: Brent opened $103.71 (down from $107.38 close), trading range $100-112. Markets digesting Johnson 'objectives met' vs continued escalation. WTI $96.40. EIA forecast: Brent >$95 next 2 months, <$80 by Q3 if war ends. Iraq Ceyhan exports = first bypass of Hormuz blockade.",
+    "200+ UKRAINIAN ANTI-DRONE EXPERTS: Zelenskyy confirmed deployment to several ME countries to help defend against Iranian-designed drones. Significant — Ukraine has most practical experience defeating Iranian Shahed drones from Russia war.",
+    "MACRON MORATORIUM + DIPLOMATIC: French President called for 'moratorium on strikes targeting civilian infrastructure, particularly energy and water supply facilities.' E3 military backing from D19 continues. 12 FM joint statement in force. Saudi 'right to military action' unchanged. Kataib Hezbollah conditional pause status unclear.",
+    "LEBANON: 886+ killed (updated from 880). IDF ground ops expanding south of Litani. Major battle underway at Khiam. 2 additional divisions joining 3 already operating. ~1M displaced (19% population). IDF expects 3+ more weeks. Trump admin backs operation but asked Israel to spare Beirut airport.",
+    "HENGAW/CASUALTIES: 5,300+ killed in Iran (5th report, D18). HRANA: 3,114. Health Ministry: 1,444 + 18,551 injured. 178 cities across 25 provinces. US: 13 KIA. Israel: 17+ killed, 3,727+ wounded. Gulf: 21+ killed. Awaiting Hengaw 6th report."
   ],
   "sitrep_fa": [
-    "راس لفان ۲ بار: موشک بالستیک ایران ۲ بار. آسیب گسترده + آتش‌سوزی. قطر وابستگان اخراج. بزرگترین LNG جهان.",
-    "بوشهر هسته‌ای: پرتابه. IAEA: بدون آسیب. روس‌اتم متوقف. گروسی: نمی‌توان حذف. فرودگاه بوشهر + A319 تخریب.",
-    "عربستان + ۱۲ وزیر: حق اقدام نظامی. بیانیه مشترک: متوقف کنید. ریاض هدف حین جلسه.",
-    "E3 + کتائب: اروپا حمایت نظامی. کتائب مهلت ۵ روزه مشروط.",
-    "۵ مقام ~۶۰ ساعت: بسیج + خطیب + لاریجانی + سلیمانی. دستور کشتار باز.",
-    "نفت ۱۰۷: بسته ۱۰۷.۳۸. جهش ۱۱۱+. +۴۰٪. بنزین +۲۹٪. ایران اهداف نام برد.",
-    "هنگاو ۵: ۵,۳۰۰ کشته. HRANA: ۳,۱۱۴. ۱۷۸ شهر ۲۵ استان. نظامی در مدارس.",
-    "هرمز + IMO: ↓۹۷٪. ۸ کشتی دوشنبه. چین عبور. IMO جلسه اضطراری. کریدور امن.",
-    "لبنان: عملیات زمینی. ۸۸۰+ کشته. ۱ میلیون آواره. ۳+ هفته. آمادگی مذاکره مستقیم."
+    "جانسون: اهداف محقق. جنگ تقریباً تمام. پنتاگون ۲۰۰+ میلیارد. لیو: کم‌موشک. شکاف سیاسی-نظامی.",
+    "IAEA: اصفهان زیرزمینی جدید. ۴۴۰ کیلو ۶۰٪ = ۹ سلاح. IAEA بسته از ۴ سایت. خطر بحرانی.",
+    "هرمز افزایش: دو برابر. عبور از آب‌های ایران. ۱۱ کشتی چینی. ناوگان سایه. عراق ۲۵۰ هزار بشکه از ترکیه.",
+    "سنگرشکن هرمز: GBU-57 بر سایت‌های موشکی. ۷,۸۰۰+ هدف. ۱۲۰+ کشتی. گابارد: تخریب ولی سالم.",
+    "نفت: ۱۰۳.۷۱ باز، ۱۰۰-۱۱۲ محدوده. WTI ۹۶.۴۰. عراق = اولین دور‌زدن هرمز.",
+    "۲۰۰+ اوکراینی: متخصص ضد پهپاد. تجربه شاهد.",
+    "ماکرون: مهلت زیرساخت غیرنظامی. E3 + ۱۲ وزیر + عربستان ادامه. کتائب نامعلوم.",
+    "لبنان: ۸۸۶+ کشته. خیام نبرد بزرگ. ۲ لشکر اضافه. ۳+ هفته.",
+    "تلفات: ۵,۳۰۰+ هنگاو. آمریکا ۱۳. اسرائیل ۱۷+. خلیج ۲۱+. انتظار گزارش ۶."
   ],
   "dailySeries": {
     "labels": [
@@ -141,7 +139,8 @@
       "Mar 15",
       "Mar 16",
       "Mar 17",
-      "Mar 18"
+      "Mar 18",
+      "Mar 19"
     ],
     "missiles": [
       480,
@@ -162,7 +161,8 @@
       15,
       12,
       12,
-      40
+      40,
+      25
     ],
     "drones": [
       720,
@@ -183,10 +183,11 @@
       45,
       70,
       60,
-      60
+      60,
+      50
     ],
-    "sourceLabel": "D1-D10: JPost. D11: UAE MoD. D12-D19: fragment est. D19 REVISED UP: Ras Laffan struck TWICE (8 missiles at Qatar). Kuwait 4 ballistic + 20 drones. Saudi 4 ballistic Riyadh + drone at gas facility. Multi-warhead at Israel. Bushehr projectile.",
-    "throughDate": "Mar 18 final (all days estimated)"
+    "sourceLabel": "D1-D10: JPost. D11: UAE MoD. D12-D20: fragment est. D20: US bunker busters degrading Hormuz coastal sites. CENTCOM 7,800+ targets, 120+ vessels. 200+ Ukrainian anti-drone experts deployed. Continued Gulf + Israel harassment but rate declining from D19 spike.",
+    "throughDate": "Mar 19 intraday (all days estimated)"
   },
   "oil": {
     "labels": [
@@ -209,7 +210,8 @@
       "Mar 15",
       "Mar 16",
       "Mar 17",
-      "Mar 18"
+      "Mar 18",
+      "Mar 19"
     ],
     "brent": [
       65.0,
@@ -231,7 +233,8 @@
       106.12,
       100.21,
       100.21,
-      107.38
+      107.38,
+      104.0
     ],
     "wti": [
       62.0,
@@ -253,9 +256,10 @@
       101.53,
       95.03,
       92.46,
-      96.32
+      96.32,
+      96.40
     ],
-    "note": "Full daily series. CNBC/Investing.com confirmed where noted. D8: Investing.com 52w high = $119.50. D19 REVISED: Brent settled $107.38 (CNBC close), spiked $111.23 after-hours on 2nd Ras Laffan strike. WTI settled $96.32. Crude up ~40% since D1. Fortune AM: $108.28. Spot $107.12 (up 6.07%). Markets closed regular hours Sun Mar 16."
+    "note": "Full daily series. CNBC/Investing.com confirmed where noted. D20: Brent opened $103.71 (Investing.com), volatile range $100-112. Markets reacting to Johnson 'objectives met' + Iraq Ceyhan bypass + continued Hormuz uncertainty. WTI $96.40. EIA forecast: >$95 next 2mo, <$80 Q3 if war ends. Iraq resumed 250K bbl/day via Turkey Ceyhan."
   },
   "pressure": {
     "labels": [
@@ -277,7 +281,8 @@
       "Mar 15",
       "Mar 16",
       "Mar 17",
-      "Mar 18"
+      "Mar 18",
+      "Mar 19"
     ],
     "attrition": [
       2,
@@ -295,6 +300,7 @@
       9,
       9.5,
       9.5,
+      10,
       10,
       10,
       10,
@@ -319,29 +325,30 @@
       9,
       9.5,
       9,
-      10
+      10,
+      9.5
     ]
   },
   "latestTargetBreakdown": {
-    "note": "Mar 18 (D19) FINAL. Ras Laffan hit TWICE. Bushehr NPP projectile. Riyadh ballistic during FM meeting. Kuwait 4 ballistic + 20 drones. Saudi drone at gas facility. Israel multi-warhead + cluster. Habshan shut. Baghdad.",
+    "note": "Mar 19 (D20) estimate. Continued Gulf + Israel harassment. US bunker busters on Hormuz sites. Baghdad embassy attacks resume. Volume lower than D19 spike. 200+ Ukrainian anti-drone experts now deployed across ME.",
     "missiles": {
-      "Qatar": 8,
-      "Israel": 12,
-      "Kuwait": 5,
-      "Saudi": 5,
-      "UAE": 4,
-      "Iraq": 3,
-      "Bahrain": 2,
+      "Israel": 8,
+      "Kuwait": 4,
+      "Saudi": 4,
+      "Qatar": 3,
+      "UAE": 2,
+      "Iraq": 2,
+      "Bahrain": 1,
       "Jordan": 1
     },
     "drones": {
-      "Kuwait": 20,
-      "Iraq": 12,
-      "UAE": 8,
+      "Iraq": 14,
+      "Kuwait": 10,
+      "UAE": 7,
       "Saudi": 6,
       "Israel": 5,
-      "Bahrain": 3,
-      "Qatar": 3,
+      "Bahrain": 4,
+      "Qatar": 2,
       "Jordan": 2
     }
   },
@@ -516,170 +523,187 @@
       "capability": "ENERGY WAR FULLY MUTUAL + NUCLEAR DIMENSION. Ras Laffan x2, South Pars, Bushehr NPP all hit in single day. Iran named specific Gulf targets (Samref, Jubail, Mesaieed, Al Hosn). Multi-warhead Khorramshahr-4 + Qadr. Israel striking northern Iran. D19 missile count REVISED UP from 35→40 on 2nd Ras Laffan confirmation.",
       "cost": "Brent $107.38 close (CNBC), spiked $111+ after-hours. Gas $3.84 (+29%). Fed held rates. Pentagon $200B+. Qatar expelled attaches. Saudi: 'right to military action.' 12 FM joint statement. E3 backing military defense. Hengaw: 5,300 dead. Lebanon 880+. Kataib Hezbollah conditional pause. IMO emergency meeting.",
       "assessment": "INFLECTION: Energy + nuclear. Bushehr projectile = nuclear-adjacent escalation. Ras Laffan x2 = Qatar's LNG industry threatened. E3 military backing + 12 FM statement + Saudi warning = diplomatic momentum toward intervention OR escalation. Kataib Hezbollah pause offer = first crack in Iran proxy unity. IMO corridor = international shipping institutions mobilizing. Every constraint dissolving simultaneously."
+    },
+    {
+      "date": "Mar 19",
+      "missiles": 25,
+      "drones": 50,
+      "primary": "'OBJECTIVES MET' + NUCLEAR ESCALATION: Johnson declares war 'virtually accomplished.' Pentagon requests $200B+. IAEA reveals NEW underground Isfahan enrichment facility (440kg at 60% = 9 weapons). US 5,000-lb bunker busters on Hormuz missile sites. Hormuz traffic slightly increasing. Iraq 250K bbl/day via Ceyhan. 200+ Ukrainian anti-drone experts deployed.",
+      "capability": "D20 missile/drone rate declining from D19 spike as US bunker busters degrade Hormuz coastal launch sites. CENTCOM: 7,800+ targets, 120+ vessels destroyed. But Isfahan underground facility = nuclear capability MORE advanced than believed. IAEA locked out of ALL 4 enrichment sites. Lieu: US 'running short of missiles.'",
+      "cost": "Brent volatile: opened $103.71, range $100-112. Johnson 'objectives met' = political signal for war wind-down. But $200B+ supplemental + Lieu warning = military reality contradicts. Lebanon: 886+ killed. Khiam battle. 200+ Ukrainian experts = international involvement widening.",
+      "assessment": "DIVERGENCE DAY: Political messaging ('nearly done') vs military reality ($200B+, 'short of missiles'). Isfahan underground = nuclear crisis deepening. Hormuz traffic uptick = possible negotiated passage framework emerging. Iraq Ceyhan bypass = first economic adaptation. War entering phase where political endgame diverges from military reality."
     }
   ],
   "timeline": [
     {
       "title": "Week 3 (Mar 16–22)",
-      "body": "ENERGY + NUCLEAR DIMENSION — Ras Laffan hit TWICE + South Pars + Bushehr NPP projectile. Rosatom suspended. Iran naming specific Gulf targets. E3 backing military defense. 12 FM statement. Saudi warns military action. Oil $107. Kataib Hezbollah conditional pause = first proxy crack. IMO corridor proposal. Next 48-72h: does Iran follow through on Gulf energy threats? Does Saudi act?"
+      "body": "'OBJECTIVES MET' vs $200B+ SUPPLEMENTAL — Johnson declares war virtually done while Pentagon requests largest supplemental since WWII. IAEA reveals NEW underground Isfahan enrichment facility. 440kg enriched uranium at 60%. Nuclear risk CRITICAL. Hormuz traffic slightly increasing — permission-based. Iraq bypassing Hormuz via Ceyhan. 200+ Ukrainian experts deployed. Brent $100-112. Next 48h: does Hormuz passage framework formalize? Does Johnson's rhetoric lead to actual drawdown?"
     },
     {
       "title": "Week 4–5 (Mar 23–Apr 5)",
-      "body": "If mutual energy targeting continues, oil hits $120-130+. Bushehr NPP becomes red line for Russia — Rosatom suspension could strain Iran-Russia relations. Saudi entry as belligerent = OPEC fracture. E3 military involvement = NATO-adjacent escalation. SPR drawdowns accelerate. Gas $4.50+ nationally. Lebanon ceasefire talks could produce first diplomatic win."
+      "body": "If Johnson's 'objectives met' leads to actual drawdown: oil drops to $90-95 range, Hormuz gradually reopens with escorts, diplomatic track accelerates. If disconnect continues: $200B+ signals sustained ops, Isfahan underground becomes central crisis, Hormuz permission-based transit evolves into framework. Lebanon ground ops culminating around Litani. US missile resupply becomes critical issue per Lieu warning."
     },
     {
       "title": "Month 2 (Apr–May)",
-      "body": "Pentagon $200B+ budget = planning for sustained ops. But $107+ oil and mutual energy destruction is economically suicidal. Gulf states + E3 may force ceasefire. Nuclear dimension (Bushehr, unknown Isfahan status) keeps IAEA engaged. Lebanon ground ops likely culminating. Iran military in civilian spaces = grinding urban phase."
+      "body": "Isfahan enrichment facility becomes defining issue. IAEA locked out = verification crisis. 440kg at 60% = nuclear breakout risk during fog of war. Pentagon $200B+ = planning for sustained ops regardless of Johnson rhetoric. Hormuz partial reopening likely through permission-based framework. Iraq Ceyhan bypass could expand. Lebanon resolution possible if Khiam battle succeeds."
     },
     {
       "title": "Month 3+ (May onward)",
-      "body": "If no deal, regional economy in depression. Qatar LNG disruption hits Europe (winter planning). Ras Laffan repair timeline becomes critical. OPEC+ paralyzed. Nuclear program status becomes central negotiation issue. Frozen conflict most likely IF energy war de-escalates."
+      "body": "Nuclear verification crisis at Isfahan defines long-term trajectory. If IAEA access restored: negotiated framework possible. If not: permanent crisis. Hormuz either normalizes through framework or remains permission-based (China-friendly). Oil market adapts through bypass routes. Regional economy in restructuring, not recovery."
     },
     {
       "title": "Endgame variables",
-      "body": "Saudi military entry (transforms war). Bushehr NPP escalation (Russia red line). E3 military involvement (NATO). Mojtaba Khamenei appearance (legitimacy). Houthi Red Sea (2nd chokepoint). Ras Laffan repair timeline. China leverage (Xi summit delayed). Kataib Hezbollah pause (proxy fracture). IMO corridor (shipping). US gas at $4+ in 7 states."
+      "body": "Isfahan underground enrichment (nuclear breakout?). Johnson rhetoric vs Pentagon reality. US missile resupply timeline. Hormuz permission-based framework. Iraq Ceyhan bypass expansion. Saudi military entry decision. Lieu 'short of missiles' — war sustainability. 200+ Ukrainian experts effectiveness. Mojtaba Khamenei appearance. Reconciliation bill politics."
     }
   ],
   "timeline_fa": [
     {
       "title": "هفته ۳ (۱۶–۲۲ مارس)",
-      "body": "انرژی + هسته‌ای. راس لفان ۲ بار + بوشهر. روس‌اتم متوقف. E3 حمایت. ۱۲ وزیر. عربستان. کتائب مهلت = اولین شکاف. IMO کریدور."
+      "body": "جانسون 'اهداف محقق' در برابر ۲۰۰+ میلیارد. اصفهان زیرزمینی. ۴۴۰ کیلو. هرمز افزایش. عراق از ترکیه. ۲۰۰+ اوکراینی. ۴۸ ساعت: هرمز رسمی؟ خروج واقعی؟"
     },
     {
       "title": "هفته ۴–۵",
-      "body": "ادامه انرژی = نفت ۱۲۰-۱۳۰. بوشهر خط قرمز روسیه. ورود عربستان = شکاف اوپک. E3 = ناتو. لبنان مذاکره."
+      "body": "اگر خروج واقعی: نفت ۹۰-۹۵. هرمز بازگشایی تدریجی. اگر ادامه: اصفهان بحران مرکزی. موشک آمریکا کم. لبنان لیطانی."
     },
     {
       "title": "ماه ۲",
-      "body": "پنتاگون ۲۰۰+ میلیارد. تخریب متقابل خودکشی. خلیج + E3 آتش‌بس اجباری؟ هسته‌ای: IAEA. لبنان: اوج عملیات."
+      "body": "اصفهان تعیین‌کننده. IAEA بسته = بحران تأیید. ۴۴۰ کیلو = شکست هسته‌ای. پنتاگون ۲۰۰+. هرمز عادی‌سازی جزئی. عراق."
     },
     {
       "title": "ماه ۳+",
-      "body": "بدون توافق = رکود. قطر LNG = اروپا. تعمیر راس لفان. هسته‌ای محور مذاکره. منجمد."
+      "body": "اصفهان: IAEA دسترسی = چارچوب. نه = بحران دائمی. هرمز = عادی‌سازی یا مجوزی. بازسازی نه بهبود."
     },
     {
       "title": "متغیرهای پایانی",
-      "body": "عربستان. بوشهر (روسیه). E3 (ناتو). مجتبی. حوثی. راس لفان. چین. کتائب (شکاف). IMO. بنزین ۴+."
+      "body": "اصفهان (شکست؟). جانسون در برابر واقعیت. موشک آمریکا. هرمز چارچوب. عراق. عربستان. لیو 'کم‌موشک'. اوکراینی. مجتبی. لایحه."
     }
   ],
   "scenarioProbabilities": [
     {
       "name": "Escalation spiral / total war",
-      "prob": "42%",
-      "body": "LEADING. Bushehr NPP projectile = nuclear-adjacent escalation. Ras Laffan hit TWICE. Iran naming specific Gulf targets. E3 backing 'proportionate military defensive measures' = potential European involvement. Saudi FM: 'military action.' 12 FM joint statement. Pentagon $200B+. Escalation ladder nearly exhausted — nuclear threshold is only step remaining. Multiple new parties being drawn in (E3, Saudi potentially). Classic spiral with MORE actors and FEWER off-ramps than 24h ago."
-    },
-    {
-      "name": "Protracted attrition",
-      "prob": "22%",
-      "body": "DECREASED. Mutual energy targeting + Bushehr strike make sustained low-intensity nearly impossible. But Kataib Hezbollah conditional pause = first proxy crack. If proxies fracture and energy targeting stabilizes, could revert. IMO corridor could enable partial economic normalization. Iran's missile count ticked UP on D19 (40, highest since D10) — rationing theory from D16 gaining credibility."
+      "prob": "38%",
+      "body": "DECREASED slightly from 42%. Johnson 'objectives met' + Hormuz traffic uptick = signals of potential de-escalation. But Isfahan underground enrichment facility = nuclear crisis DEEPENING. IAEA locked out of all 4 sites. 440kg at 60% enrichment. E3 + Saudi + 12 FM statements still in force. Nuclear breakout risk during fog of war could re-escalate rapidly. Spiral risk now driven by NUCLEAR dimension more than conventional."
     },
     {
       "name": "Declared victory + exit",
-      "prob": "15%",
-      "body": "Stable. E3 + 12 FM statement = international pressure for resolution. Kataib Hezbollah pause = political cover for 'mission accomplished.' Lebanon direct talks offer = potential first win. But Bushehr NPP + $107 oil + Saudi warning complicate clean exit narrative."
+      "prob": "25%",
+      "body": "INCREASED from 15%. Johnson 'objectives met' = strongest US political signal for wind-down yet. CENTCOM: 7,800+ targets, 120+ vessels = impressive stats for victory narrative. But $200B+ supplemental + Lieu 'short of missiles' undercuts narrative. Lebanon resolution could provide clean exit opportunity. Hormuz permission-based framework = face-saving for both sides."
     },
     {
-      "name": "Regime fracture",
-      "prob": "8%",
-      "body": "Stable. 5 senior officials killed ~60h. Open kill order. Hengaw: 5,300 dead. Northern Iran now struck. But Kataib Hezbollah pause = proxy maintaining autonomy, not collapsing. DNI Gabbard: 'intact.' IRGC operating autonomously. Military relocating to civilian spaces = adaptation. Iran missile count UP on D19 suggests operational capability persists."
+      "name": "Protracted attrition",
+      "prob": "18%",
+      "body": "DECREASED from 22%. Hormuz traffic uptick + Iraq Ceyhan bypass = economic adaptation reducing attrition pressure. Johnson rhetoric pushes toward resolution. But Isfahan nuclear crisis + $200B+ signals contradictory. If declared victory stalls, reverts to grinding attrition. Ukraine anti-drone experts deployment = improving defense but extending capacity for sustained conflict."
     },
     {
       "name": "International intervention / ceasefire",
-      "prob": "8%",
-      "body": "INCREASED from 7%. E3 backing military measures is most significant. 12 FM joint statement = broadest Arab consensus. IMO corridor proposal = institutional mobilization. Macron infrastructure moratorium. Lebanon direct talks without preconditions. Bushehr NPP could trigger Russia diplomatic pressure. More actors pushing for resolution than at any point since D1."
+      "prob": "10%",
+      "body": "INCREASED from 8%. Macron moratorium on civilian infrastructure. E3 military backing. 12 FM statement. Lebanon direct talks. IMO corridor. Hormuz permission-based framework = emerging institutions for resolution. Isfahan nuclear dimension could trigger Russia diplomatic pressure (Rosatom suspended). More actors and mechanisms pushing toward intervention than at any point."
+    },
+    {
+      "name": "Regime fracture",
+      "prob": "5%",
+      "body": "DECREASED from 8%. DNI Gabbard: regime 'intact.' IRGC operating autonomously. Kataib Hezbollah conditional pause = proxy independence, not fracture. Isfahan underground facility = regime planning for post-war. Mojtaba Khamenei still absent but institutions functioning. Military relocating to civilian spaces = adaptation not collapse."
     },
     {
       "name": "Negotiated deal",
-      "prob": "5%",
-      "body": "Low but Kataib Hezbollah conditional pause = first signal from proxy. Iran allowing 8 Hormuz vessels = backdoor signaling. Lebanon talks offer. IMO corridor could become framework for broader passage agreement. But $107 oil and mutual energy targeting = pressure isn't producing negotiations, it's producing escalation."
+      "prob": "4%",
+      "body": "DECREASED slightly. Isfahan underground enrichment makes nuclear deal MORE complex, not less. Hormuz permission-based transit = backdoor de-escalation possible. Araghchi offered to dilute enriched material (Mar 15). But IAEA locked out = no verification mechanism. Political conditions don't support formal negotiations yet."
     }
   ],
   "scenarioProbabilities_fa": [
     {
       "name": "مارپیچ تشدید / جنگ تمام‌عیار",
-      "prob": "۴۲٪",
-      "body": "بوشهر + راس لفان ۲ بار. E3 حمایت نظامی. ۱۲ وزیر بیانیه. عربستان هشدار. آستانه هسته‌ای تنها مانده. بازیگران بیشتر، خروجی‌های کمتر."
+      "prob": "۳۸٪",
+      "body": "کاهش جزئی. جانسون 'محقق' + هرمز. اما اصفهان زیرزمینی = هسته‌ای عمیق‌تر. IAEA بسته. ۴۴۰ کیلو. خطر شکست هسته‌ای."
+    },
+    {
+      "name": "اعلام پیروزی + خروج",
+      "prob": "۲۵٪",
+      "body": "افزایش از ۱۵٪. جانسون 'محقق' = قوی‌ترین سیگنال. ۷,۸۰۰+ هدف. اما ۲۰۰+ میلیارد + لیو. لبنان = فرصت خروج."
     },
     {
       "name": "فرسایشی",
-      "prob": "۲۲٪",
-      "body": "کاهش. انرژی + بوشهر = فرسایش غیرممکن. اما کتائب مهلت = شکاف. IMO کریدور. موشک D19 ↑."
-    },
-    {
-      "name": "اعلام پیروزی",
-      "prob": "۱۵٪",
-      "body": "ثابت. E3 + ۱۲ وزیر = فشار. کتائب مهلت = پوشش. لبنان مذاکره. اما بوشهر + عربستان."
-    },
-    {
-      "name": "فروپاشی رژیم",
-      "prob": "۸٪",
-      "body": "ثابت. ۵ مقام. ۵,۳۰۰. شمال. اما کتائب = استقلال نه فروپاشی. سپاه مستقل. موشک ↑."
+      "prob": "۱۸٪",
+      "body": "کاهش. هرمز افزایش + عراق = سازگاری اقتصادی. اما اصفهان + ۲۰۰+ میلیارد."
     },
     {
       "name": "مداخله بین‌المللی",
-      "prob": "۸٪",
-      "body": "افزایش. E3 نظامی. ۱۲ وزیر. IMO. ماکرون. لبنان مذاکره. بوشهر = فشار روسیه."
+      "prob": "۱۰٪",
+      "body": "افزایش. ماکرون + E3 + ۱۲ وزیر + IMO + هرمز چارچوب. اصفهان = فشار روسیه."
+    },
+    {
+      "name": "فروپاشی رژیم",
+      "prob": "۵٪",
+      "body": "کاهش. رژیم سالم. سپاه مستقل. اصفهان = برنامه‌ریزی پس‌جنگ."
     },
     {
       "name": "مذاکره",
-      "prob": "۵٪",
-      "body": "کم. کتائب مهلت = اولین سیگنال. ۸ کشتی هرمز. لبنان مذاکره. IMO. اما تشدید نه مذاکره."
+      "prob": "۴٪",
+      "body": "کاهش جزئی. اصفهان = پیچیدگی بیشتر. هرمز = غیررسمی ممکن. اما IAEA بسته."
     }
   ],
   "theoryEvaluation": [
     {
-      "title": "Energy + nuclear war — crossing thresholds",
-      "body": "D19 crossed TWO new thresholds: (1) Bushehr nuclear plant projectile — first strike on an operating nuclear facility in this war. Rosatom suspended construction. IAEA warned against nuclear accident risk. (2) Ras Laffan hit TWICE — Qatar's entire LNG industry now threatened. Iran naming specific Gulf energy targets by name (Samref, Jubail, Mesaieed, Al Hosn). Both sides are destroying revenue sources AND approaching nuclear-adjacent escalation. IAEA Grossi: war cannot eliminate nuclear program. Isfahan enrichment status unknown. This is no longer just an energy war — it's approaching the nuclear threshold."
+      "title": "Political-military divergence — the defining D20 dynamic",
+      "body": "D20's central tension: Johnson declares war 'virtually accomplished' while Pentagon requests $200B+ supplemental. Lieu says US 'running short of missiles.' These cannot both be true. Either: (a) objectives ARE met and $200B+ is for cleanup/reconstruction/deterrence; (b) objectives are NOT met and Johnson is setting up political exit narrative while military continues; or (c) objectives are met against Iran's CONVENTIONAL capability but nuclear/Hormuz/proxy dimensions remain unresolved. Option (c) most likely — 7,800+ targets and 120+ vessels is genuinely impressive destruction, but Isfahan underground, Hormuz, and proxy networks are fundamentally different problems."
     },
     {
-      "title": "Military — decapitation + missile resurgence",
-      "body": "5 senior officials killed in ~60h. Israel striking northern Iran. But D19 missile count REVISED UP to 40 — highest since D10. 2nd Ras Laffan strike confirms Iran retains meaningful ballistic capability. IRGC 'cache intact' claim from D16 gaining further credibility. Hengaw: 5,300 killed. HRANA: 3,114. Health Ministry: 1,444. Multiple casualty sources now converging on devastating toll. Pentagon $200B+ = institutional preparation for extended war."
+      "title": "Nuclear crisis deepening — Isfahan underground",
+      "body": "IAEA revealing a NEW underground enrichment facility at Isfahan is D20's most significant strategic development. 440kg at 60% enrichment could produce 9 weapons if enriched to 90%. IAEA has NO ACCESS to any of Iran's 4 declared enrichment sites. Grossi: 'many questions.' This means: (1) The war has NOT eliminated Iran's nuclear capability — it may have accelerated it by removing verification; (2) Any ceasefire must address Isfahan or the nuclear crisis worsens; (3) Iran's underground infrastructure survived — bunker busters have limits; (4) Nuclear breakout risk is higher during fog of war than peacetime."
     },
     {
-      "title": "Political — broadening coalition + first cracks",
-      "body": "THREE significant political developments: (1) E3 backing 'proportionate military defensive measures' = potential European military involvement. (2) 12 Arab/Islamic FM joint statement = broadest consensus. (3) Kataib Hezbollah conditional 5-day pause = FIRST CRACK in Iran's proxy network. Saudi military warning unchanged but now backed by multilateral statement. Qatar expelled attaches. IMO emergency meeting on safe corridor. Lebanon offering direct talks. The political landscape is bifurcating: more actors joining against Iran (E3, 12 FMs, Saudi) while Iran's proxy network shows first fractures (Kataib Hezbollah). This combination could accelerate either resolution or escalation."
+      "title": "Hormuz emerging framework — permission-based transit",
+      "body": "Hormuz traffic nearly doubling + ships using Iranian territorial waters + Bessent saying US 'letting' Iranian tankers through = an informal framework emerging. Iraq's 250K bbl/day via Ceyhan = first bypass route. This is significant because: (1) Both sides benefit from partial oil flow; (2) Permission-based = Iran retains control while allowing economic pressure relief; (3) China-linked vessels leading = geopolitical alignment in transit rights; (4) If formalized, this becomes the skeleton of a ceasefire mechanism."
     }
   ],
   "theoryEvaluation_fa": [
     {
-      "title": "جنگ انرژی + هسته‌ای — عبور از آستانه",
-      "body": "D19: دو آستانه جدید. بوشهر = اولین حمله به نیروگاه فعال. روس‌اتم متوقف. راس لفان ۲ بار = صنعت LNG قطر تهدید. ایران اهداف انرژی نام برد. IAEA: نمی‌توان حذف. اصفهان نامعلوم. دیگر فقط انرژی نیست — آستانه هسته‌ای."
+      "title": "شکاف سیاسی-نظامی — پویایی D20",
+      "body": "جانسون 'محقق' در برابر ۲۰۰+ میلیارد. لیو: کم‌موشک. هر دو نمی‌تواند درست باشد. محتمل‌ترین: اهداف متعارف محقق اما هسته‌ای/هرمز/نیابتی حل نشده."
     },
     {
-      "title": "نظامی — سر بریدن + بازگشت موشک",
-      "body": "۵ مقام ~۶۰ ساعت. اما D19 موشک ۴۰ = بالاترین از D10. راس لفان ۲ بار = توانایی بالستیک. ادعای 'انبار سالم' D16 تقویت. هنگاو ۵,۳۰۰. پنتاگون ۲۰۰+ میلیارد."
+      "title": "بحران هسته‌ای — اصفهان زیرزمینی",
+      "body": "IAEA: تأسیسات زیرزمینی جدید. ۴۴۰ کیلو ۶۰٪ = ۹ سلاح. IAEA بسته. جنگ حذف نکرد — تأیید حذف کرد. آتش‌بس بدون اصفهان = بحران بدتر."
     },
     {
-      "title": "سیاسی — ائتلاف گسترده‌تر + اولین شکاف",
-      "body": "E3 حمایت نظامی. ۱۲ وزیر بیانیه. کتائب مهلت = اولین شکاف شبکه نیابتی. عربستان + چندجانبه. قطر اخراج. IMO. لبنان مذاکره. دوگانگی: بیشتر علیه ایران + شکاف نیابتی = تسریع."
+      "title": "هرمز — چارچوب مجوزی نوظهور",
+      "body": "ترافیک دو برابر + آب‌های ایران + بسنت = چارچوب غیررسمی. عراق ۲۵۰ هزار = اولین دور‌زدن. چین پیشرو. اگر رسمی شود = اسکلت آتش‌بس."
     }
   ],
   "endstate": [
     {
-      "title": "Most likely (42%)",
-      "body": "Escalation spiral accelerates with NUCLEAR DIMENSION. Bushehr projectile + Ras Laffan x2 + South Pars = energy war at max intensity. E3 military backing + 12 FM statement + Saudi warning = expanding belligerent pool. Either: (a) Saudi/E3 enter militarily, transforming into regional/international war; (b) Bushehr escalation triggers Russia diplomatic pressure that creates ceasefire opportunity; (c) Gulf states + E3 collectively force ceasefire to prevent nuclear accident + save economies; or (d) $120+ oil triggers global intervention. Multiple forcing mechanisms operating simultaneously with 48-72h decision windows."
+      "title": "Most likely (38%)",
+      "body": "Escalation spiral driven by NUCLEAR dimension. Isfahan underground enrichment facility + IAEA locked out = verification crisis that conventional military success cannot resolve. Johnson 'objectives met' rhetoric could produce premature exit leaving nuclear problem WORSE than pre-war. E3/Saudi/12 FM pressure continues. If nuclear breakout detected: immediate re-escalation. If not: slow-burn crisis. The war's central paradox: military success against conventional targets may have accelerated the nuclear timeline by removing inspectors."
     },
     {
-      "title": "Second (22%)",
-      "body": "Protracted attrition if energy threshold stabilizes. Kataib Hezbollah pause = first proxy crack could cascade. IMO corridor = partial economic normalization. Lebanon direct talks = first front potentially resolved. But Iran's D19 missile resurgence (40, highest since D10) + naming specific targets = not de-escalating. Only viable if both sides tacitly agree to pull back from energy/nuclear targeting."
+      "title": "Second (25%)",
+      "body": "Declared victory + exit. Johnson + CENTCOM stats (7,800+ targets, 120+ vessels) = strong narrative. Hormuz permission-based framework = face-saving for both sides. Lebanon resolution via Litani operation = clean win. $200B+ funds transition + deterrence. But Isfahan nuclear unresolved = ticking clock. This scenario is POLITICALLY likely but STRATEGICALLY incomplete."
     },
     {
-      "title": "Wild card (8%)",
-      "body": "Regime fracture or nuclear escalation. 5 officials killed ~60h. 5,300 dead. Bushehr projectile approaches nuclear red line. IAEA: Isfahan enrichment status UNKNOWN. If enrichment facility damaged and fissile material released, international crisis. Alternatively, IRGC hardliners could push for nuclear breakout under cover of war chaos. Mojtaba Khamenei still hasn't appeared publicly."
+      "title": "Emerging (10%)",
+      "body": "International intervention/ceasefire. Macron moratorium + E3 + 12 FM + IMO + Hormuz framework = more institutional momentum than any previous day. Isfahan nuclear could trigger Russia (Rosatom suspended). Lebanon direct talks. If multiple tracks converge: first comprehensive ceasefire framework possible within 2 weeks. Hormuz permission-based transit as pilot mechanism."
+    },
+    {
+      "title": "Wild card (5%)",
+      "body": "Nuclear breakout at Isfahan. 440kg at 60% + underground + IAEA locked out = capability exists. War chaos provides cover. International response would be unprecedented. Alternatively: US missile supply crisis (per Lieu) forces unplanned drawdown before objectives actually achieved."
     }
   ],
   "endstate_fa": [
     {
-      "title": "محتمل‌ترین (۴۲٪)",
-      "body": "مارپیچ + بعد هسته‌ای. بوشهر + راس لفان ۲ بار. E3 + ۱۲ وزیر + عربستان. روسیه؟ آتش‌بس اجباری؟ ۴۸-۷۲ ساعت."
+      "title": "محتمل‌ترین (۳۸٪)",
+      "body": "مارپیچ هسته‌ای. اصفهان + IAEA بسته = بحران تأیید. جانسون 'محقق' = خروج زودرس؟ هسته‌ای بدتر از قبل جنگ. تناقض: موفقیت نظامی = تسریع هسته‌ای."
     },
     {
-      "title": "دوم (۲۲٪)",
-      "body": "فرسایش اگر انرژی ثابت شود. کتائب شکاف. IMO عادی‌سازی. لبنان مذاکره. اما موشک D19 ↑ = تشدید."
+      "title": "دوم (۲۵٪)",
+      "body": "اعلام پیروزی. جانسون + ۷,۸۰۰+ = روایت قوی. هرمز مجوزی. لبنان. اما اصفهان حل‌نشده = ساعت."
     },
     {
-      "title": "غیرمنتظره (۸٪)",
-      "body": "فروپاشی یا هسته‌ای. ۵ مقام. بوشهر خط قرمز. اصفهان نامعلوم. شکست هسته‌ای؟ مجتبی غایب."
+      "title": "نوظهور (۱۰٪)",
+      "body": "مداخله. ماکرون + E3 + ۱۲ وزیر + IMO + هرمز. لبنان مذاکره. ۲ هفته؟"
+    },
+    {
+      "title": "غیرمنتظره (۵٪)",
+      "body": "شکست هسته‌ای اصفهان. ۴۴۰ کیلو + زیرزمینی. یا بحران موشک آمریکا = خروج اجباری."
     }
   ],
   "shippingRoutes": [
@@ -687,7 +711,7 @@
       "route": "Tehran → Dubai → Atlanta (Emirates SkyCargo)",
       "status": "DEAD",
       "statusColor": "red",
-      "detail": "UAE shut Habshan gas after debris. Turkish Airlines cancelled ALL regional flights until Mar 19+. Iran issued evacuation warnings for UAE energy sites + named specific targets (Al Hosn). Abu Dhabi gas facilities offline. Regional aviation in collapse. This route is permanently dead for duration of conflict.",
+      "detail": "Unchanged. Regional aviation collapsed. Iran named UAE targets. Turkish Airlines suspended. Abu Dhabi gas offline. This route remains permanently dead for duration of conflict and likely months beyond.",
       "viability": "0%",
       "eta": "N/A — route permanently disrupted for duration of conflict"
     },
@@ -695,7 +719,7 @@
       "route": "Iran → Turkey (land freight)",
       "status": "CLOSED",
       "statusColor": "red",
-      "detail": "Closed per on-ground intel despite official Turkish claims of neutrality. Turkey deployed F-16s and air defenses to Northern Cyprus. NATO intercepted 2 Iranian missiles over Turkish airspace (Gaziantep). Turkey–Iran land border effectively shut for commercial traffic. NATO missile over Gaziantep = Turkey is no longer a safe corridor.",
+      "detail": "Closed per on-ground intel. NATO intercepted missiles over Turkey. Iraq resumed 250K bbl/day via Ceyhan — suggests Turkey–Iraq corridor functional but Turkey–Iran border remains shut for commercial traffic. Slight improvement in regional logistics via Iraq but not direct Iran–Turkey route.",
       "viability": "~5%",
       "eta": "Not viable until conflict ends + diplomatic normalization"
     },
@@ -703,7 +727,7 @@
       "route": "Iran → Armenia (Agarak/Norduz border)",
       "status": "MOST VIABLE",
       "statusColor": "yellow",
-      "detail": "Border needs fresh verification. CRITICAL: Israel now striking NORTHERN Iran — brings strikes closer to Armenian border/Tabriz corridor. 178 cities across 25 provinces struck (Hengaw). Bushehr strikes show geographic expansion of targeting. Military relocating to civilian spaces. Internet blackout 3 weeks. This route's viability is DECLINING as war expands north.",
+      "detail": "Still most viable but declining. Israel continues striking northern Iran. 178 cities across 25 provinces. CENTCOM: 7,800+ targets. Bushehr strikes confirmed geographic expansion. Johnson 'objectives met' could reduce strike tempo IF rhetoric becomes reality. Armenia route viability depends on whether northern Iran strikes de-escalate.",
       "viability": "~20-25%",
       "eta": "If route established: 4-8 weeks Tehran→Yerevan→sea→Atlanta"
     },
@@ -711,7 +735,7 @@
       "route": "Pakistan / Afghanistan / Turkmenistan",
       "status": "NOT RECOMMENDED",
       "statusColor": "red",
-      "detail": "Eastern borders not directly in combat zone but infrastructure is minimal. Pakistan border areas have own security challenges. Afghanistan route non-viable. Turkmenistan transit requires diplomatic arrangements that don't exist. No established book logistics on any of these routes.",
+      "detail": "Eastern borders not directly in combat zone but infrastructure minimal. No change from previous assessment.",
       "viability": "<5%",
       "eta": "Months to establish if even possible"
     }
@@ -721,7 +745,7 @@
       "route": "تهران → دبی → آتلانتا",
       "status": "مرده",
       "statusColor": "red",
-      "detail": "حبشان بسته. ترکیش لغو. هشدار تخلیه + اهداف نام‌برده. هواپیمایی فروپاشی.",
+      "detail": "بدون تغییر. هواپیمایی فروپاشیده.",
       "viability": "۰٪",
       "eta": "غیرممکن"
     },
@@ -729,7 +753,7 @@
       "route": "ایران → ترکیه (زمینی)",
       "status": "بسته",
       "statusColor": "red",
-      "detail": "بسته. ناتو موشک غازیان‌تپ.",
+      "detail": "بسته. عراق از ترکیه بشکه نفت = کریدور عراق-ترکیه فعال اما ایران-ترکیه نه.",
       "viability": "~۵٪",
       "eta": "تا پایان جنگ"
     },
@@ -737,7 +761,7 @@
       "route": "ایران → ارمنستان",
       "status": "بهترین گزینه",
       "statusColor": "yellow",
-      "detail": "حملات شمال ایران = نزدیک مرز. بوشهر = گسترش جغرافیایی. ۱۷۸ شهر ۲۵ استان. کاهش.",
+      "detail": "هنوز بهترین اما کاهشی. حملات شمال ایران ادامه. جانسون 'محقق' = شاید کاهش حملات.",
       "viability": "~۲۰–۲۵٪",
       "eta": "۴–۸ هفته"
     },
@@ -745,44 +769,44 @@
       "route": "پاکستان/افغانستان/ترکمنستان",
       "status": "توصیه نمی‌شود",
       "statusColor": "red",
-      "detail": "زیرساخت ناکافی. امنیت ضعیف.",
+      "detail": "بدون تغییر.",
       "viability": "<۵٪",
       "eta": "ماه‌ها"
     }
   ],
   "publishingStatus": [
-    "Paper supply: CRITICAL. Iran imports virtually all pulp. Hormuz closed + rial collapsed → no imports. Existing warehouse stock only. South Pars strike + Ras Laffan x2 = energy crisis worsening.",
-    "Internet blackout: 3 weeks. Hengaw confirms phone checks at checkpoints, arrests for sharing info. Online book sales ↓80%+. Total communications isolation.",
-    "Power outages: Sustained and WORSENING. Bushehr region struck (NPP + airport). Israel striking northern Iran. 178 cities across 25 provinces (Hengaw). Military in schools/dormitories.",
-    "Isfahan + Shiraz: Both under sustained bombardment. Israel expanding strikes. Bushehr now targeted. Cultural infrastructure at extreme risk across entire country.",
-    "56+ cultural sites damaged. Hengaw: 5,300 dead. HRANA: 3,114. Strikes across 25 provinces = virtually no safe area for publishing operations.",
-    "New title production: Effectively halted. Only pre-war warehouse stock. Distribution networks non-functional. Military using civilian spaces = printing facilities at risk.",
-    "Assessment: Iranian publishing industry in existential crisis. Energy war escalation (South Pars + Bushehr) will worsen power further. Nuclear risk adds new dimension. Recovery timeline: years minimum."
+    "Paper supply: CRITICAL. No change. Hormuz closed + rial collapsed. South Pars + Ras Laffan damage persists. Iraq Ceyhan bypass = oil only, not paper.",
+    "Internet blackout: 3+ weeks. No change in connectivity. Total communications isolation continues.",
+    "Power outages: Sustained and WORSENING. CENTCOM: 7,800+ targets across country. 178 cities, 25 provinces. Bushehr nuclear area damaged.",
+    "Isfahan + Shiraz: Both under sustained bombardment. IAEA reveals Isfahan underground facility — suggests parts of Isfahan complex survived. Cultural infrastructure at extreme risk.",
+    "56+ cultural sites damaged. 5,300+ dead (Hengaw). 25 provinces struck. Publishing workforce in danger zones.",
+    "New title production: Effectively halted. Only pre-war warehouse stock. Johnson 'objectives met' could reduce strike tempo IF realized — but publishing recovery requires months after any cessation.",
+    "Assessment: Iranian publishing industry in existential crisis. Isfahan underground facility survival suggests some infrastructure resilience but above-ground is devastated. Recovery timeline: years minimum. No near-term improvement possible."
   ],
   "publishingStatus_fa": [
-    "کاغذ: بحرانی. واردات متوقف. پارس جنوبی + راس لفان ۲ بار = بحران انرژی.",
-    "قطع اینترنت: ۳ هفته. بازرسی گوشی. فروش آنلاین ↓۸۰٪+.",
-    "قطع برق: بدتر. بوشهر (NPP + فرودگاه). شمال ایران. ۱۷۸ شهر ۲۵ استان.",
-    "اصفهان + شیراز + بوشهر: بمباران. گسترش. زیرساخت فرهنگی.",
-    "۵۶+ سایت فرهنگی. ۵,۳۰۰ + ۳,۱۱۴. ۲۵ استان.",
-    "تولید متوقف. نظامی در مدارس. چاپخانه‌ها در خطر.",
-    "بحران وجودی. خطر هسته‌ای بعد جدید. بازسازی: سال‌ها."
+    "کاغذ: بحرانی. بدون تغییر. عراق فقط نفت نه کاغذ.",
+    "قطع اینترنت: ۳+ هفته. انزوای کامل.",
+    "قطع برق: بدتر. ۷,۸۰۰+ هدف. ۱۷۸ شهر ۲۵ استان.",
+    "اصفهان + شیراز: بمباران ادامه. زیرزمینی باقی اما روی‌زمین ویران.",
+    "۵۶+ فرهنگی. ۵,۳۰۰+. ۲۵ استان.",
+    "تولید متوقف. جانسون = شاید کاهش حملات اما بازسازی ماه‌ها.",
+    "بحران وجودی. بازسازی: سال‌ها."
   ],
   "impactIranfarhang": [
-    "PRIMARY ROUTE DEAD: Tehran→Dubai→Atlanta completely non-functional. Turkish Airlines cancelled flights. Regional aviation collapsing. Iran naming UAE targets = risk elevated further.",
-    "BEST ALTERNATIVE: Armenia (Agarak/Norduz) border — status needs fresh verification. Israel striking NORTHERN Iran + Bushehr = geographic expansion brings strikes closer to Armenian border. Domestic leg through 25 provinces being struck. Risk increasing.",
-    "SUPPLY SOURCE DETERIORATING: Military relocating into civilian spaces. Warehouse access compromised. South Pars + Bushehr strikes = worsening power/gas crisis. 178 cities struck across 25 provinces. HRANA confirms 3,114 killed.",
-    "OFAC STATUS: Informational materials exemption (31 CFR §560.210(c)) remains valid. Payment via KEMCO SARL viable in principle but Qatar expelled attaches + Saudi military warning + E3 military backing = regional compliance environment at tightest point.",
-    "FINANCIAL: Rial in freefall. Oil $107 close. Fed held rates. KEMCO/French banking under increased scrutiny. E3 military involvement could trigger new European compliance requirements.",
-    "WINDOW CLOSING: Pre-war stocks depleting. Military in civilian spaces. Armenia route declining. Bushehr nuclear dimension adds new risk layer. Every day of delay reduces accessible inventory."
+    "PRIMARY ROUTE DEAD: Tehran→Dubai→Atlanta completely non-functional. No change. Regional aviation collapsed.",
+    "BEST ALTERNATIVE: Armenia (Agarak/Norduz) border — declining but still most viable. Johnson 'objectives met' could reduce northern Iran strikes IF rhetoric becomes reality. Watch next 48-72h for actual tempo change.",
+    "SUPPLY SOURCE DETERIORATING: CENTCOM 7,800+ targets, 25 provinces struck. Military in civilian spaces. South Pars + Bushehr damage persists. Isfahan underground survival = some infrastructure but publishing infrastructure above-ground.",
+    "OFAC STATUS: Informational materials exemption (31 CFR §560.210(c)) remains valid. E3 military involvement + Macron moratorium = European compliance environment mixed — moratorium could ease, military involvement could tighten.",
+    "FINANCIAL: Rial in freefall. Brent $100-112 volatile. Johnson rhetoric could stabilize markets slightly. Iraq Ceyhan bypass = small positive for regional financial flows.",
+    "WINDOW: Johnson 'objectives met' = possible inflection. If strikes actually reduce, Armenia window could stabilize. If rhetoric only, continued deterioration. Next 48-72h critical for assessing whether political signals translate to operational changes."
   ],
   "impactIranfarhang_fa": [
-    "مسیر اصلی مرده: ترکیش لغو. ایران اهداف امارات نام برد.",
-    "ارمنستان: حملات شمال + بوشهر = گسترش جغرافیایی. خطر افزایش.",
-    "منبع تأمین بدتر: نظامی در مدارس. HRANA ۳,۱۱۴. ۱۷۸ شهر.",
-    "OFAC: معافیت معتبر. اما قطر + عربستان + E3 = سخت‌ترین.",
-    "مالی: ریال سقوط. نفت ۱۰۷. E3 = الزامات اروپایی جدید؟",
-    "پنجره بسته: موجودی کم. ارمنستان کاهش. بوشهر بعد جدید."
+    "مسیر اصلی مرده. بدون تغییر.",
+    "ارمنستان: کاهشی اما بهترین. جانسون = شاید کاهش حملات. ۴۸-۷۲ ساعت.",
+    "منبع بدتر: ۷,۸۰۰+ هدف. ۲۵ استان. زیرزمینی باقی اما روی‌زمین.",
+    "OFAC: معتبر. ماکرون = تسهیل؟ E3 = سخت‌تر؟",
+    "مالی: ریال. نفت ۱۰۰-۱۱۲. جانسون = ثبات جزئی؟",
+    "پنجره: جانسون = نقطه عطف؟ ۴۸-۷۲ ساعت حیاتی."
   ],
   "prepIranfarhang": [
     "Activate Armenia route exploration: Contact Yerevan-based logistics contacts. Assess Agarak/Norduz border crossing capacity for book freight.",
@@ -790,98 +814,102 @@
     "Pre-negotiate Yerevan→port (Poti, Georgia or Batumi)→sea freight→US routing and costs.",
     "Accelerate procurement of any accessible pre-war inventory — prioritize high-demand university titles.",
     "Brief university library clients on supply disruption timeline and potential delays. Set expectations for 3-6 month procurement window.",
-    "Monitor KEMCO payment channel capacity — confirm French bank compliance posture, especially re E3 military involvement and new compliance requirements.",
+    "Monitor KEMCO payment channel capacity — confirm French bank compliance posture, especially re E3 military involvement and Macron moratorium (contradictory signals).",
     "Prepare contingency for total supply interruption lasting 6+ months.",
-    "Monitor Bushehr/nuclear developments — any radiological incident would trigger new sanctions/compliance regime globally."
+    "Monitor Isfahan nuclear situation — IAEA locked out, 440kg enriched uranium status unknown. Any nuclear incident triggers new global sanctions.",
+    "NEW: Watch Johnson 'objectives met' for actual operational impact. If strikes reduce in 48-72h, Armenia window stabilizes."
   ],
   "prepIranfarhang_fa": [
-    "بررسی مسیر ارمنستان: تماس با شرکای لجستیکی ایروان.",
-    "شناسایی انبارهای تهران آماده ارسال به مرز ارمنستان.",
+    "بررسی مسیر ارمنستان: تماس با شرکای ایروان.",
+    "شناسایی انبارهای تهران آماده ارسال.",
     "مذاکره مسیر ایروان←بندر←دریا←آمریکا.",
-    "تسریع خرید موجودی قبل جنگ.",
-    "اطلاع‌رسانی به کتابخانه‌ها. انتظار ۳-۶ ماه.",
-    "بررسی KEMCO — E3 الزامات جدید؟",
-    "آمادگی قطع کامل ۶+ ماه.",
-    "نظارت بوشهر/هسته‌ای — حادثه = تحریم جدید."
+    "تسریع خرید موجودی.",
+    "اطلاع‌رسانی به کتابخانه‌ها. ۳-۶ ماه.",
+    "بررسی KEMCO — E3 + ماکرون.",
+    "آمادگی قطع ۶+ ماه.",
+    "نظارت اصفهان — IAEA بسته. تحریم جدید؟",
+    "جدید: جانسون 'محقق' = تأثیر واقعی؟ ۴۸-۷۲ ساعت."
   ],
   "signalsIranfarhang": [
-    "CRITICAL: Bushehr nuclear plant — any radiological incident triggers entirely new sanctions/compliance landscape. IAEA monitoring. Rosatom suspended.",
-    "CRITICAL: Israel strikes on NORTHERN Iran — if sustained, Armenia border route viability drops sharply. Watch Tabriz/East Azerbaijan.",
+    "CRITICAL: Isfahan underground enrichment — IAEA locked out, 440kg at 60%, nuclear breakout risk. Any nuclear incident = new global sanctions regime.",
+    "CRITICAL: Johnson 'objectives met' → actual strike tempo reduction? Watch next 48-72h for operational changes. If real, Armenia window stabilizes.",
     "CRITICAL: Iran follow-through on named Gulf energy targets (Samref, Jubail, Mesaieed, Al Hosn) — if struck, regional logistics completely collapse.",
-    "WATCH: E3 military involvement timeline — if European forces deploy, new compliance requirements likely for Iran-connected trade.",
+    "WATCH: Hormuz permission-based framework — if formalized, partial normalization possible. Iraq Ceyhan bypass expanding?",
+    "WATCH: E3 military deployment + Macron moratorium (contradictory signals) — which dominates European policy?",
     "WATCH: Saudi military action decision — if Saudi enters war, ALL Middle East logistics shut down.",
-    "WATCH: Ras Laffan damage assessment (hit TWICE) — duration of Qatar LNG outage determines regional trajectory.",
-    "WATCH: Kataib Hezbollah pause outcome — if conditions met, proxy fracture could cascade to other groups.",
-    "WATCH: IMO safe maritime corridor — if established, partial Hormuz normalization possible."
+    "WATCH: US missile resupply — Lieu 'running short.' If confirmed, forced drawdown regardless of objectives.",
+    "WATCH: Ras Laffan damage assessment — Qatar LNG outage duration determines regional trajectory."
   ],
   "signalsIranfarhang_fa": [
-    "بحرانی: بوشهر هسته‌ای — حادثه = تحریم جدید. IAEA. روس‌اتم.",
-    "بحرانی: شمال ایران — ارمنستان خطر. تبریز.",
-    "بحرانی: اهداف نام‌برده خلیج — فروپاشی لجستیک.",
-    "نظارت: E3 استقرار = الزامات جدید.",
-    "نظارت: تصمیم نظامی عربستان.",
-    "نظارت: آسیب راس لفان (۲ بار).",
-    "نظارت: نتیجه مهلت کتائب.",
-    "نظارت: IMO کریدور هرمز."
+    "بحرانی: اصفهان — IAEA بسته. ۴۴۰ کیلو. شکست = تحریم جدید.",
+    "بحرانی: جانسون 'محقق' = کاهش حملات واقعی؟ ۴۸-۷۲ ساعت.",
+    "بحرانی: اهداف نام‌برده خلیج.",
+    "نظارت: هرمز چارچوب مجوزی. عراق گسترش؟",
+    "نظارت: E3 + ماکرون (متناقض).",
+    "نظارت: تصمیم عربستان.",
+    "نظارت: موشک آمریکا — لیو 'کم.'",
+    "نظارت: راس لفان."
   ],
   "impactKIP": [
-    "Iran-UAE corridor: DEAD. Turkish Airlines cancelled. Abu Dhabi Habshan shut. Iran named UAE's Al Hosn as target. IRGC: UAE bases 'legitimate targets.' Risk maximum.",
-    "UAE asset risk: HIGH. Habshan gas shut. Iran naming specific UAE targets by name. Qatar expelled attaches = diplomatic rupture spreading. E3 military backing could accelerate UAE compliance actions.",
-    "Hormuz: ↓97% traffic. 8 vessels Monday (~double). China-linked transiting via Iranian waters. IMO emergency meeting — safe corridor proposed. But Iran threatened more energy strikes + named targets.",
-    "QATAR RUPTURED: Ras Laffan struck TWICE. Attaches expelled. Qatar LNG industry threatened. Force majeure on all shipments since Mar 4. This eliminates a diplomatic channel and Qatar's economic base simultaneously.",
-    "Banking: Qatar rupture + Saudi warning + E3 military backing = regional banking compliance at MAXIMUM tightness. Any Iran-connected financial flows face extreme scrutiny. E3 involvement may trigger new European compliance requirements.",
-    "Physical security: Iran named specific energy targets (Samref, Jubail, Mesaieed, Al Hosn). Bushehr nuclear dimension adds radiological risk. Operating environment extremely dangerous. Regional aviation collapsing."
+    "Iran-UAE corridor: DEAD. No change. Iran named UAE targets. IRGC: 'legitimate targets.' Risk maximum.",
+    "UAE asset risk: HIGH. Iran threats to specific UAE targets unchanged. E3 military backing continues. Macron moratorium could reduce strikes on civilian infrastructure IF adopted broadly.",
+    "Hormuz: Traffic slightly INCREASING — permission-based. Ships using Iranian waters. 11 China-linked vessels since Mar 1. Shadow fleet = half of transits. Bessent: US 'letting' Iranian tankers through. Iraq 250K bbl/day via Ceyhan = first bypass.",
+    "QATAR: Ras Laffan struck TWICE (D19). Attaches expelled. Force majeure ongoing. LNG industry threatened but Qatar not escalating — expelled attaches and joined 12 FM statement but no military action.",
+    "Banking: Johnson 'objectives met' + Hormuz traffic uptick = slight easing in compliance pressure. But Isfahan nuclear revelation could trigger NEW compliance requirements. E3 military + Macron moratorium = contradictory European signals.",
+    "Physical security: Iran named specific energy targets. Bushehr nuclear dimension. But 200+ Ukrainian anti-drone experts deployed = improving defenses. Operating environment remains extremely dangerous."
   ],
   "impactKIP_fa": [
-    "مسیر ایران-امارات: مرده. ایران الحصن نام برد. سپاه: هدف مشروع.",
-    "دارایی‌ها: بالا. حبشان بسته. اهداف نام‌برده. E3 = تسریع اقدام.",
-    "هرمز: ↓۹۷٪. ۸ کشتی. IMO کریدور. اما تهدید بیشتر.",
-    "قطر شکاف: راس لفان ۲ بار + اخراج. فورس ماژور. کانال دیپلماتیک از بین.",
-    "بانکداری: قطر + عربستان + E3 = حداکثر سخت‌گیری. الزامات اروپایی جدید؟",
-    "امنیت: اهداف نام‌برده. بوشهر هسته‌ای = خطر رادیولوژیک. بسیار خطرناک."
+    "ایران-امارات: مرده. بدون تغییر.",
+    "دارایی‌ها: بالا. تهدید ادامه. ماکرون = شاید کاهش.",
+    "هرمز: افزایش جزئی. مجوزی. چین. عراق ۲۵۰ هزار.",
+    "قطر: راس لفان ۲ بار. فورس ماژور. اما اقدام نظامی نه.",
+    "بانکداری: جانسون = تسهیل جزئی. اما اصفهان = الزامات جدید؟",
+    "امنیت: اهداف نام‌برده. ۲۰۰+ اوکراینی = بهبود دفاع."
   ],
   "prepKIP": [
-    "Assess all KIP assets in UAE for exposure to both military risk and potential asset freeze. Iran has named specific UAE targets.",
-    "Establish emergency communication protocols that don't depend on Iranian internet (satellite phone, third-country relay).",
-    "Diversify banking away from UAE — consider Oman, Turkey, or other jurisdictions. E3 military involvement may trigger new European compliance requirements.",
+    "Assess all KIP assets in UAE for exposure to military risk and potential asset freeze. Iran threats unchanged.",
+    "Establish emergency communication protocols (satellite phone, third-country relay).",
+    "Diversify banking away from UAE — consider Oman, Turkey, or other jurisdictions. Monitor Isfahan nuclear compliance implications.",
     "Suspend any new UAE-bound shipments until Hormuz reopens and airport operations normalize.",
     "Prepare legal contingency for potential UAE asset freeze or enhanced sanctions screening.",
-    "Identify alternative logistics hubs: Oman (Muscat/Sohar), Turkey (Mersin), Georgia (Poti/Batumi).",
-    "Monitor insurance market — Ras Laffan x2 + Bushehr nuclear will cause massive premium increases across Gulf.",
-    "Brief all personnel in UAE on physical security — Iran has named specific facilities. Avoid proximity to any energy infrastructure.",
-    "Monitor Bushehr nuclear situation — any radiological incident would trigger new global sanctions/compliance regime affecting all Iran-connected business."
+    "Identify alternative logistics hubs: Oman (Muscat/Sohar), Turkey (Mersin), Georgia (Poti/Batumi). Iraq Ceyhan route emerging as potential bypass.",
+    "Monitor insurance market — Ras Laffan x2 + Bushehr + Isfahan underground = massive premium environment.",
+    "Brief all personnel in UAE on physical security. 200+ Ukrainian experts deployed = improving air defense but ground risk remains.",
+    "Monitor Isfahan nuclear situation — IAEA locked out. Any nuclear development triggers new global compliance regime.",
+    "NEW: Johnson 'objectives met' — if realized, earliest possible window for UAE operations resumption planning (weeks/months, not days)."
   ],
   "prepKIP_fa": [
-    "ارزیابی دارایی‌های KIP — ایران اهداف امارات نام برد.",
-    "پروتکل ارتباطی اضطراری بدون اینترنت ایران.",
-    "تنوع‌بخشی بانکی. E3 = الزامات جدید.",
-    "توقف محموله‌های جدید.",
-    "آمادگی حقوقی انجماد دارایی.",
-    "هاب‌های جایگزین: مسقط، مرسین، پوتی.",
-    "بیمه — راس لفان ۲ بار + بوشهر = جهش حق بیمه.",
-    "امنیت — ایران تأسیسات نام برده. دور از زیرساخت انرژی.",
-    "نظارت بوشهر — حادثه = تحریم جهانی جدید."
+    "ارزیابی دارایی‌های KIP.",
+    "پروتکل ارتباطی اضطراری.",
+    "تنوع‌بخشی بانکی. اصفهان = الزامات؟",
+    "توقف محموله‌ها.",
+    "آمادگی حقوقی.",
+    "هاب‌های جایگزین. عراق = دور‌زدن جدید.",
+    "بیمه — راس لفان + بوشهر + اصفهان.",
+    "امنیت. ۲۰۰+ اوکراینی = بهبود.",
+    "اصفهان — IAEA بسته. تحریم جدید؟",
+    "جدید: جانسون 'محقق' = برنامه‌ریزی بازگشت (هفته‌ها/ماه‌ها)."
   ],
   "signalsKIP": [
-    "CRITICAL: Bushehr nuclear — any radiological incident transforms entire sanctions/compliance landscape globally. Rosatom suspended. IAEA monitoring.",
-    "CRITICAL: Iran follow-through on named targets (Samref, Jubail, Mesaieed, Al Hosn) — next 24-48h determines if energy war escalates to named targets.",
+    "CRITICAL: Isfahan underground enrichment — IAEA locked out. 440kg at 60%. Any nuclear development = new global compliance regime.",
+    "CRITICAL: Johnson 'objectives met' → actual drawdown? Watch 48-72h. If real, earliest window for UAE planning.",
     "CRITICAL: Saudi Arabia military action decision — if Saudi enters, all Gulf business operations shut down entirely.",
-    "CRITICAL: E3 military deployment — if European forces deploy, new compliance requirements for Iran-connected trade likely.",
-    "WATCH: Ras Laffan damage assessment (hit TWICE) — duration of Qatar LNG outage determines regional trajectory.",
-    "WATCH: Iran Hormuz traffic (8 vessels Monday) — increasing = possible negotiated passage. Decreasing = full blockade.",
-    "WATCH: IMO safe corridor proposal — if adopted, partial Hormuz normalization enables some trade.",
-    "WATCH: Kataib Hezbollah pause outcome — proxy fracture could cascade.",
-    "WATCH: Insurance market — Ras Laffan x2 + Bushehr will cause massive premium increases."
+    "CRITICAL: Iran follow-through on named targets — next 24-48h determines if energy war escalates further.",
+    "WATCH: Hormuz permission-based framework — if formalized, partial normalization enables some trade. Iraq Ceyhan bypass expanding.",
+    "WATCH: US missile resupply — Lieu 'short of missiles.' If confirmed, forced drawdown regardless of objectives.",
+    "WATCH: Macron moratorium vs E3 military — which European policy dominates? Contradictory signals.",
+    "WATCH: Insurance market — Isfahan nuclear + Ras Laffan x2 + Bushehr = unprecedented premium environment.",
+    "WATCH: 200+ Ukrainian anti-drone experts — effectiveness data in coming days will inform Gulf defense posture."
   ],
   "signalsKIP_fa": [
-    "بحرانی: بوشهر هسته‌ای — حادثه = تحریم جهانی. روس‌اتم. IAEA.",
-    "بحرانی: اهداف نام‌برده ایران — ۲۴-۴۸ ساعت.",
-    "بحرانی: تصمیم نظامی عربستان.",
-    "بحرانی: استقرار E3 = الزامات جدید.",
-    "نظارت: آسیب راس لفان (۲ بار).",
-    "نظارت: ترافیک هرمز (۸ کشتی).",
-    "نظارت: IMO کریدور.",
-    "نظارت: نتیجه کتائب.",
-    "نظارت: بیمه — جهش."
+    "بحرانی: اصفهان — IAEA بسته. تحریم جدید.",
+    "بحرانی: جانسون 'محقق' = خروج واقعی؟ ۴۸-۷۲ ساعت.",
+    "بحرانی: تصمیم عربستان.",
+    "بحرانی: اهداف نام‌برده — ۲۴-۴۸ ساعت.",
+    "نظارت: هرمز مجوزی. عراق.",
+    "نظارت: موشک آمریکا — لیو 'کم.'",
+    "نظارت: ماکرون در برابر E3.",
+    "نظارت: بیمه — اصفهان + راس لفان + بوشهر.",
+    "نظارت: اوکراینی — اثربخشی؟"
   ]
 }
