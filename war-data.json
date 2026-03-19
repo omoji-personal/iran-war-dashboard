@@ -1,121 +1,122 @@
 {
   "meta": {
-    "lastUpdated": "2026-03-18T16:30:00-04:00",
+    "lastUpdated": "2026-03-18T23:45:00-04:00",
     "notes": [
-      "Day 19 (Mar 18) LATE 4:30PM ET. Sources: CNN live (3:57PM), AJ D19, ABC live, CNBC, NPR, Euronews, Wikipedia, Iran Intl.",
-      "ENERGY ESCALATION: Israel struck South Pars (world's largest gas field) + refineries with US coordination. FIRST attack on Iranian energy production. Oil $108. Bushehr nuclear plant hit (no damage per IAEA).",
-      "4TH KILL: Khatib (intelligence minister) confirmed dead by Pezeshkian. Katz authorized killing 'any senior Iranian official' without additional approval. Open-ended kill order.",
-      "IRAN RETALIATION: IRGC fired Khorramshahr-4 + Qadr MULTIPLE-WARHEAD missiles. Claims 100+ targets hit in Israel. 2 killed Ramat Gan. Cluster munitions over Tel Aviv.",
-      "CASUALTIES REVISED: HRANA: 1,354 civilian + 1,138 military + 622 unclass = ~3,114 Iran dead. Hengaw: 4,800+ military killed (D18). Lebanon: 968 killed. Iraq: 50+ killed.",
-      "ECONOMIC: Gas $3.84/gal (+31% from month ago). Vance: 'rough road ahead.' WH lifting US oil/gas shipment limits. Iraq resumed 250K bpd via Ceyhan (bypassing Gulf).",
-      "DIPLOMATIC: Riyadh emergency Arab/Muslim FM meeting. Turkey FM Fidan attending. Germany: 'would have advised against' war. Russia condemned Larijani killing. IAEA chief: can't eliminate nuclear program."
+      "Day 19 (Mar 18) LATE 11:45PM ET. Sources: CNN live, AJ D19, ABC live, CNBC, Bloomberg, NPR, Euronews, Wikipedia, Hengaw 5th report, CNBC Ras Laffan, Times of Israel.",
+      "RAS LAFFAN STRUCK: Iran missile hit Qatar's Ras Laffan LNG complex (world's largest LNG export facility, ~20% global LNG). Extensive damage. Fire. Qatar expelled Iranian military/security attaches (persona non grata, 24h). CNBC/Bloomberg confirmed.",
+      "ENERGY WAR NOW MUTUAL: Israel struck South Pars + refineries (AM). Iran retaliated by hitting Ras Laffan (PM). Abu Dhabi shut Habshan gas after debris. Iran issued evacuation warnings for Saudi/UAE/Qatar energy sites. Both sides targeting each other's energy production.",
+      "5TH SENIOR KILL: Basij head also killed. Khatib (intel minister) + Basij head + Larijani + Soleimani in ~60h. Katz: open kill order on ALL senior officials.",
+      "HENGAW 5TH REPORT: 5,300 total killed (4,789 military + 511 civilians incl 120 minors + 160 women). Health Ministry: 1,444 + 18,551 injured. Authorities concealing true figures.",
+      "OIL $111: Brent surged 7% to $111.23 on Ras Laffan strike (CNBC). WTI $100. Gas $3.84 (+29%). Fed held rates citing war uncertainty. Pentagon seeking $200B+ budget.",
+      "SAUDI WARNS MILITARY ACTION: FM Prince Faisal: 'reserved right to take military actions.' Riyadh targeted DURING FM meeting. 'I cannot see as coincidental.' Intercepted ballistic missile over Prince Sultan Air Base.",
+      "DIPLOMATIC: Qatar expelled Iranian attaches. Macron called for moratorium on civilian infrastructure strikes. Germany: 'crisis of gravest order.' Israel striking NORTHERN Iran for first time."
     ]
   },
-  "theoryBox": "<strong>Day 19 evening — INFLECTION POINT:</strong> Israel struck South Pars, the world's largest natural gas field, with US coordination. This is the first attack on Iranian energy PRODUCTION facilities — crossing a threshold that was deliberately avoided for 19 days. Iran will almost certainly escalate further in response. With oil at $108 and climbing, the economic weapon is now being used BY BOTH SIDES against each other. Combined with 4 senior officials killed in 60 hours, Bushehr nuclear plant hit, and multiple-warhead missiles over Tel Aviv, the war is entering a phase where all constraints are dissolving simultaneously.",
-  "theoryBox_fa": "<strong>روز ۱۹ عصر — نقطه عطف:</strong> اسرائیل پارس جنوبی (بزرگترین میدان گاز جهان) را با هماهنگی آمریکا زد. اولین حمله به تأسیسات تولید انرژی ایران. نفت ۱۰۸. بوشهر ضربه خورد. ۴ مقام در ۶۰ ساعت. موشک چندکلاهکی بر فراز تل‌آویو. همه محدودیت‌ها در حال فروپاشی.",
+  "theoryBox": "<strong>Day 19 late — ENERGY WAR MUTUAL:</strong> Both sides are now targeting each other's energy production. Israel struck South Pars (AM). Iran retaliated by hitting Qatar's Ras Laffan LNG complex — the world's largest LNG export facility (~20% of global LNG). Extensive damage. Qatar expelled Iranian attaches. Abu Dhabi shut Habshan gas. Saudi FM: 'reserved right to military action.' Brent $111. 5 senior officials killed in 60 hours. Hengaw: 5,300 dead. The energy war has gone fully mutual — every major gas/oil facility in the region is now a target.",
+  "theoryBox_fa": "<strong>روز ۱۹ شب — جنگ انرژی متقابل:</strong> هر دو طرف تولید انرژی طرف مقابل را می‌زنند. اسرائیل پارس جنوبی. ایران راس لفان قطر (بزرگترین LNG جهان). آسیب گسترده. قطر وابستگان نظامی ایران را اخراج کرد. عربستان: حق اقدام نظامی. نفت ۱۱۱. ۵ مقام کشته. هنگاو: ۵,۳۰۰ کشته.",
   "metrics": [
     {
       "label": "Day",
       "value": "19",
-      "desc": "SOUTH PARS STRUCK. Oil $108. 4th official killed in 60h. Multiple-warhead missiles at Israel. Bushehr hit."
+      "desc": "ENERGY WAR MUTUAL. South Pars + Ras Laffan both struck. Oil $111. 5 officials killed ~60h. Saudi warns military action."
     },
     {
       "label": "Cumul. missiles",
-      "value": "~2,637",
-      "desc": "IRGC: Khorramshahr-4 + Qadr MULTIPLE-WARHEAD missiles. Claims 100+ targets in Israel. Technology escalation."
+      "value": "~2,647",
+      "desc": "IRGC: Khorramshahr-4 + Qadr multi-warhead. Kuwait intercepted 4 ballistic + Qatar 5 (1 hit Ras Laffan) + Saudi ballistic at Riyadh."
     },
     {
       "label": "Cumul. drones",
-      "value": "~4,115",
-      "desc": "Gulf-wide barrage continues. Australian base in UAE nearly hit. Baghdad embassy attacked again."
+      "value": "~4,125",
+      "desc": "Kuwait 20 drones intercepted. Gulf-wide barrage. Iran issued evacuation warnings for Saudi/UAE/Qatar energy sites."
     },
     {
       "label": "Brent crude",
-      "value": "$108",
-      "desc": "SPIKED on South Pars strike (CNN). +$5 intraday. WH lifting US oil/gas shipping limits. Gas $3.84 (+31% monthly)."
+      "value": "$111",
+      "desc": "SURGED 7% on Ras Laffan strike (CNBC/Bloomberg). WTI $100. Gas $3.84 (+29%). Fed held rates — war uncertainty. Pentagon seeking $200B+."
     },
     {
-      "label": "Iran dead (HRANA)",
-      "value": "~3,114",
-      "desc": "1,354 civilian (207 children) + 1,138 military + 622 unclass. Hengaw: 4,800+ military through D18."
+      "label": "Iran dead (Hengaw)",
+      "value": "~5,300",
+      "desc": "Hengaw 5th report: 4,789 military + 511 civilians (120 minors, 160 women). Health Ministry: 1,444 + 18,551 injured. Authorities concealing true figures."
     },
     {
       "label": "Lebanon",
-      "value": "968 killed",
-      "desc": "Up from 886 (2 days). 10+ killed Beirut Wed. 1M+ displaced. Ground ops expanding. Litani crossings targeted."
+      "value": "900+ killed",
+      "desc": "20+ killed in Israeli bombardment Wed (AJ). ~1M displaced (19% of population). Ground ops in south. Hezbollah facing public anger."
     },
     {
       "label": "Israel dead",
       "value": "17+",
-      "desc": "2 killed Ramat Gan Wed. Cluster munitions + multi-warhead missiles over Tel Aviv. 247+ wounded."
+      "desc": "14 killed in attacks + 2 medical + Ramat Gan. 3,727+ wounded (AJ tracker). Cluster + multi-warhead missiles over Tel Aviv."
     },
     {
       "label": "Energy war",
-      "value": "CROSSED THRESHOLD",
-      "desc": "South Pars (world's largest gas field) struck with US coord. Bushehr nuclear plant hit. First energy production attack. All constraints dissolving."
+      "value": "FULLY MUTUAL",
+      "desc": "South Pars (AM) + Ras Laffan (PM). Habshan shut. Iran warns Gulf energy sites. Saudi: 'right to military action.' Every major facility is a target."
     }
   ],
   "metrics_fa": [
     {
       "label": "روز",
       "value": "۱۹",
-      "desc": "پارس جنوبی. نفت ۱۰۸. ۴ مقام در ۶۰ ساعت. بوشهر."
+      "desc": "جنگ انرژی متقابل. پارس جنوبی + راس لفان. نفت ۱۱۱. ۵ مقام. عربستان: حق اقدام نظامی."
     },
     {
       "label": "موشک",
-      "value": "~۲,۶۳۷",
-      "desc": "خرمشهر-۴ + قدر چندکلاهکی. ۱۰۰+ هدف اسرائیل."
+      "value": "~۲,۶۴۷",
+      "desc": "کویت ۴ بالستیک + قطر ۵ (۱ به راس لفان خورد) + ریاض. چندکلاهکی."
     },
     {
       "label": "پهپاد",
-      "value": "~۴,۱۱۵",
-      "desc": "پایگاه استرالیا در امارات نزدیک بود."
+      "value": "~۴,۱۲۵",
+      "desc": "کویت ۲۰ پهپاد. هشدار تخلیه تأسیسات انرژی خلیج."
     },
     {
       "label": "نفت",
-      "value": "$۱۰۸",
-      "desc": "جهش پارس جنوبی. بنزین +۳۱٪."
+      "value": "$۱۱۱",
+      "desc": "جهش ۷٪ راس لفان. فدرال رزرو نرخ ثابت. پنتاگون ۲۰۰+ میلیارد."
     },
     {
       "label": "کشته ایران",
-      "value": "~۳,۱۱۴",
-      "desc": "حقوق بشر: ۴,۸۰۰+ نظامی."
+      "value": "~۵,۳۰۰",
+      "desc": "هنگاو: ۴,۷۸۹ نظامی + ۵۱۱ غیرنظامی. وزارت بهداشت: ۱,۴۴۴ + ۱۸,۵۵۱ زخمی."
     },
     {
       "label": "لبنان",
-      "value": "۹۶۸ کشته",
-      "desc": "۱۰+ بیروت. ۱ میلیون+ آواره."
+      "value": "۹۰۰+ کشته",
+      "desc": "۲۰+ بمباران چهارشنبه. ~۱ میلیون آواره. عملیات زمینی."
     },
     {
       "label": "اسرائیل",
       "value": "۱۷+",
-      "desc": "موشک چندکلاهکی."
+      "desc": "۳,۷۲۷+ زخمی. موشک چندکلاهکی + خوشه‌ای."
     },
     {
       "label": "جنگ انرژی",
-      "value": "آستانه عبور شد",
-      "desc": "پارس جنوبی + بوشهر. اولین حمله تولید."
+      "value": "کاملاً متقابل",
+      "desc": "پارس جنوبی + راس لفان. حبشان بسته. هر تأسیسات بزرگ هدف است."
     }
   ],
   "sitrep": [
-    "ENERGY WAR THRESHOLD CROSSED: Israel struck South Pars natural gas field — the WORLD'S LARGEST — and neighboring refineries, with US coordination (CNN/AJ/Wikipedia). First attack on Iranian energy PRODUCTION facilities in 19 days of war. This threshold was deliberately avoided until now. Iran vowed retaliation. Oil spiked to $108.",
-    "4TH SENIOR OFFICIAL IN 60 HOURS: Iran President Pezeshkian confirmed intelligence minister Esmail Khatib killed in overnight Israeli strike. Added to Larijani (Mon) + Soleimani (Mon) + Khatib (Tue). Katz issued open-ended authorization: killing 'any senior Iranian official' when opportunity arises, 'without additional approval needed.'",
-    "MULTIPLE-WARHEAD MISSILES: IRGC launched Khorramshahr-4 and Qadr multiple-warhead missiles at Israel in Larijani revenge. Claims hit 100+ military/security targets. 2 killed in Ramat Gan (near Tel Aviv). Cluster munitions captured on CNN cameras. Technology escalation — these are Iran's most advanced deployed systems.",
-    "BUSHEHR NUCLEAR PLANT HIT: Projectile struck premises of Iran's only operational nuclear power plant. IAEA: no damage or injuries. IAEA chief Grossi: war 'cannot entirely eliminate' Iran's nuclear program — 'material will still be there.' Nuclear dimension escalating.",
-    "Oil $108 + gas $3.84/gal: Brent spiked $5+ intraday on South Pars news (CNN). US gas +31% from month ago ($2.92→$3.84, AAA). Vance: 'rough road ahead for next few weeks.' White House temporarily lifting limits on domestic oil/gas shipments. Iraq resumed limited exports (250K bpd) via Turkey's Ceyhan port, bypassing Gulf.",
-    "CASUALTIES: HRANA updated: ~3,114 dead in Iran (1,354 civilian incl 207 children + 1,138 military + 622 unclass). Hengaw: 4,800+ military killed through D18. Lebanon: 968 killed (up from 886 in 2 days), 116 children. Iraq: 50+ killed. Israel: 17+ killed.",
-    "DIPLOMATIC: Riyadh hosting emergency Arab/Muslim foreign ministers meeting Wed. Turkey FM Fidan attending — only active diplomatic track. Germany's Merz: 'would have advised against' starting war, sees 'no convincing plan' for success. Russia 'firmly condemned' Larijani killing.",
-    "Australian PM Albanese: Iranian projectile struck near Australian military HQ in UAE — no injuries. Iran warned civilians to stay vigilant during Chaharshanbe Suri festivities, citing Israeli sabotage threats. Iran's internal security apparatus under extreme stress."
+    "RAS LAFFAN LNG STRUCK: Iran missile hit Qatar's Ras Laffan Industrial City — world's largest LNG export facility (~20% global LNG supply). Extensive damage, fire (CNBC/Bloomberg). 4 others intercepted. Qatar expelled Iranian military/security attaches (persona non grata, 24h). QatarEnergy: no casualties. Energy war now FULLY MUTUAL — South Pars (AM) + Ras Laffan (PM).",
+    "SAUDI WARNS MILITARY ACTION: FM Prince Faisal: Saudi Arabia 'reserved the right to take military actions if deemed necessary.' Iran targeted Riyadh with ballistic missile DURING emergency FM meeting. 'I cannot see as coincidental.' Intercepted over Prince Sultan Air Base. Most dramatic Saudi policy shift since 2016.",
+    "5TH SENIOR KILL: Israel killed Basij head + intel minister Khatib + Larijani + Soleimani in ~60 hours. Katz: open kill order on ALL senior officials. DNI Gabbard: regime 'largely degraded' but 'intact.' Araghchi: 'structure doesn't depend on any single individual.'",
+    "OIL $111 + ECONOMIC SHOCK: Brent surged 7% to $111.23 on Ras Laffan (CNBC). WTI $100. Gas $3.84 (+29%), $4+ in 7 states, $5+ in CA/HI/WA. +86 cents in 18 days. Fed held rates — war uncertainty. Pentagon seeking $200B+ war budget (Haaretz). Abu Dhabi shut Habshan gas facilities after debris hit.",
+    "IRAN EVACUATION WARNINGS: IRGC issued evacuation orders for energy assets in Qatar, Saudi Arabia, and UAE — threatening further strikes 'in the coming hours.' Iran listing specific oil/gas sites as 'legitimate targets.' Both sides now in energy infrastructure escalation spiral.",
+    "HENGAW 5TH REPORT: 5,300 killed in Iran (4,789 military + 511 civilians incl 120 minors, 160 women). 178 cities across 25 provinces struck. Iran military relocating into civilian spaces (schools, mosques, dormitories). Health Ministry: 1,444 killed + 18,551 injured (authorities concealing true figures).",
+    "LEBANON: 20+ killed in Israeli bombardment Wed including 6 in central Beirut (AJ). Ground ops continue in south. 900+ total killed. ~1M displaced (19% of population). Hezbollah facing public anger from own Shiite base for 'dragging them into another war' (WaPo). Herzog: Europe should 'eradicate' Hezbollah.",
+    "MULTI-WARHEAD MISSILES + NORTHERN IRAN: IRGC launched Khorramshahr-4 + Qadr multi-warhead at Israel. 2 killed Ramat Gan. Cluster munitions over Tel Aviv. Kuwait intercepted 4 ballistic + 20 drones. Israel striking NORTHERN Iran for first time. Macron called for moratorium on civilian infrastructure strikes."
   ],
   "sitrep_fa": [
-    "آستانه انرژی: پارس جنوبی زده شد. بزرگترین میدان گاز جهان. هماهنگی آمریکا. نفت ۱۰۸.",
-    "۴ مقام در ۶۰ ساعت: خطیب تأیید. کاتز: هر مقام ارشد بدون تأیید اضافی.",
-    "موشک چندکلاهکی: خرمشهر-۴ + قدر. ۱۰۰+ هدف اسرائیل. ۲ کشته رامات‌گان.",
-    "بوشهر ضربه خورد: آژانس: بدون آسیب. گروسی: جنگ نمی‌تواند برنامه هسته‌ای را حذف کند.",
-    "نفت ۱۰۸ + بنزین ۳.۸۴: +۳۱٪ ماهانه. ونس: جاده ناهموار. عراق ۲۵۰ هزار بشکه از جیحان.",
-    "تلفات: ۳,۱۱۴ ایران. ۴,۸۰۰+ نظامی (حقوق بشر). لبنان ۹۶۸. عراق ۵۰+. اسرائیل ۱۷+.",
-    "دیپلماسی: ریاض جلسه اضطراری. فیدان حاضر. آلمان: توصیه به عدم جنگ. روسیه: محکوم.",
-    "پرتابه نزدیک پایگاه استرالیا. هشدار چهارشنبه‌سوری."
+    "راس لفان: موشک ایران به بزرگترین LNG جهان. آسیب گسترده. قطر وابستگان نظامی ایران را اخراج کرد. جنگ انرژی متقابل.",
+    "عربستان: حق اقدام نظامی. ریاض هدف بالستیک حین جلسه وزرا. بزرگترین تغییر سیاست از ۲۰۱۶.",
+    "۵ مقام کشته ~۶۰ ساعت: فرمانده بسیج + خطیب + لاریجانی + سلیمانی. دستور کشتار باز.",
+    "نفت ۱۱۱ + شوک اقتصادی: +۷٪ راس لفان. بنزین +۸۶ سنت ۱۸ روز. فدرال رزرو ثابت. پنتاگون ۲۰۰+ میلیارد.",
+    "هشدار تخلیه: سپاه دستور تخلیه تأسیسات انرژی قطر/عربستان/امارات. حمله 'ساعات آینده.'",
+    "هنگاو گزارش ۵: ۵,۳۰۰ کشته (۴,۷۸۹ نظامی + ۵۱۱ غیرنظامی). ۱۷۸ شهر ۲۵ استان. وزارت بهداشت: ۱,۴۴۴ + ۱۸,۵۵۱ زخمی.",
+    "لبنان: ۲۰+ کشته بمباران چهارشنبه. ۹۰۰+ مجموع. ۱ میلیون آواره. حزب‌الله زیر فشار پایگاه شیعه.",
+    "موشک چندکلاهکی + شمال ایران: کویت ۴ بالستیک + ۲۰ پهپاد رهگیری. اسرائیل اولین بار شمال ایران. ماکرون: مهلت زیرساخت غیرنظامی."
   ],
   "dailySeries": {
     "labels": [
@@ -158,7 +159,7 @@
       15,
       12,
       12,
-      30
+      35
     ],
     "drones": [
       720,
@@ -179,10 +180,10 @@
       45,
       70,
       60,
-      50
+      60
     ],
-    "sourceLabel": "D1-D10: JPost. D11: UAE MoD. D12-D19: fragment est. D19: Iran retaliation barrage for Larijani — Qatar 13/14 ballistic intercepted + 2 killed Israel + Abu Dhabi kill + Baghdad embassy + Majnoon. Missile SPIKE from retaliation.",
-    "throughDate": "Mar 18 (all days estimated)"
+    "sourceLabel": "D1-D10: JPost. D11: UAE MoD. D12-D19: fragment est. D19 REVISED UP: Ras Laffan struck (5 missiles at Qatar, 1 hit). Kuwait 4 ballistic + 20 drones. Saudi ballistic at Riyadh. Multi-warhead at Israel. Iran evacuation warnings for Gulf energy.",
+    "throughDate": "Mar 18 late (all days estimated)"
   },
   "oil": {
     "labels": [
@@ -227,7 +228,7 @@
       106.12,
       100.21,
       100.21,
-      108.0
+      111.0
     ],
     "wti": [
       62.0,
@@ -249,9 +250,9 @@
       101.53,
       95.03,
       92.46,
-      101.0
+      100.0
     ],
-    "note": "Full daily series. CNBC/Investing.com confirmed where noted. D8 REVISED: Investing.com 52w high = $119.50, IEA confirmed 'within whisker of $120.' Previous estimate of $107 was intraday not peak. Markets closed regular hours Sun Mar 16. D16 = Sunday evening futures."
+    "note": "Full daily series. CNBC/Investing.com confirmed where noted. D8 REVISED: Investing.com 52w high = $119.50. D19 REVISED: Brent $111.23 on Ras Laffan strike (CNBC), WTI $100.04. Spot $107.12 (up 6.07%). AM was $108.78 before Ras Laffan. Markets closed regular hours Sun Mar 16."
   },
   "pressure": {
     "labels": [
@@ -319,25 +320,25 @@
     ]
   },
   "latestTargetBreakdown": {
-    "note": "Mar 18 (D19). Iran RETALIATION barrage for Larijani. Israel: 2 killed by ballistic + cluster munitions. Qatar: 13/14 ballistic intercepted. Abu Dhabi: 1 killed (shrapnel). Baghdad: embassy drones+rockets + Majnoon oil field. Saudi/UAE intercepting.",
+    "note": "Mar 18 (D19) LATE. Iran ENERGY RETALIATION. Ras Laffan LNG hit (1 missile, 4 intercepted). Riyadh ballistic during FM meeting. Kuwait 4 ballistic + 20 drones. Israel multi-warhead. Abu Dhabi Habshan shut. Baghdad embassy again.",
     "missiles": {
-      "Qatar": 14,
+      "Qatar": 5,
       "Israel": 8,
+      "Kuwait": 4,
+      "Saudi": 3,
       "UAE": 4,
-      "Saudi": 2,
       "Iraq": 2,
-      "Bahrain": 0,
-      "Kuwait": 0,
+      "Bahrain": 1,
       "Jordan": 0
     },
     "drones": {
-      "Iraq": 15,
-      "UAE": 10,
-      "Israel": 8,
+      "Kuwait": 20,
+      "Iraq": 12,
+      "UAE": 8,
       "Saudi": 6,
-      "Kuwait": 4,
+      "Israel": 5,
       "Bahrain": 3,
-      "Qatar": 2,
+      "Qatar": 3,
       "Jordan": 2
     }
   },
@@ -506,176 +507,176 @@
     },
     {
       "date": "Mar 18",
-      "missiles": 30,
-      "drones": 50,
-      "primary": "SOUTH PARS STRUCK (world's largest gas field) + refineries, US coord. Khatib (intel minister) confirmed dead = 4th kill in 60h. Khorramshahr-4 + Qadr multi-warhead missiles at Israel, 2 killed. Bushehr nuclear plant hit. Gulf-wide barrage. Baghdad embassy again.",
-      "capability": "ENERGY THRESHOLD CROSSED — first attack on Iranian energy production. Multi-warhead missile deployment = Iran's most advanced systems. IRGC claims 100+ targets in Israel. Katz: open kill order. But IAEA: can't eliminate nuclear program. War entering phase where all constraints dissolving.",
-      "cost": "Brent $108 (+$5 intraday). Gas $3.84 (+31% monthly). Vance: 'rough road.' Germany: 'would have advised against.' Russia condemned. Riyadh emergency FM meeting. HRANA: 3,114 Iran dead. Hengaw: 4,800+ military. Lebanon 968. Iraq 50+.",
-      "assessment": "INFLECTION POINT. South Pars + multi-warhead missiles + Bushehr + 4 kills = all previous constraints dissolving. War transitioning from managed campaign to potential total war. Economically unsustainable at current intensity for both sides."
+      "missiles": 35,
+      "drones": 60,
+      "primary": "ENERGY WAR MUTUAL: Israel struck South Pars (AM). Iran hit Ras Laffan LNG, Qatar (PM) — world's largest LNG facility. Extensive damage. Abu Dhabi Habshan shut. 5th senior kill (Basij head). Kuwait 4 ballistic + 20 drones. Multi-warhead at Israel (2 killed). Saudi ballistic at Riyadh DURING FM meeting.",
+      "capability": "ENERGY WAR FULLY MUTUAL — both sides now targeting each other's energy production. Iran issued evacuation warnings for Saudi/UAE/Qatar energy sites. Multi-warhead Khorramshahr-4 + Qadr deployed. Israel striking northern Iran for first time. Kuwait intercepted 4 ballistic + 20 drones.",
+      "cost": "Brent $111 (+7% on Ras Laffan, CNBC). WTI $100. Gas $3.84 (+29%), $4+ in 7 states. Fed held rates. Pentagon $200B+. Qatar expelled Iranian attaches. Saudi: 'right to military action.' Hengaw: 5,300 Iran dead. Lebanon 900+.",
+      "assessment": "INFLECTION TO ENERGY WAR. Ras Laffan strike = Iran retaliating against Gulf energy for South Pars. Saudi warning military action = potential new belligerent. Qatar expelling attaches = diplomatic rupture. $111 oil + $200B Pentagon ask = economically unsustainable. Every constraint dissolving."
     }
   ],
   "timeline": [
     {
       "title": "Week 3 (Mar 16–22)",
-      "body": "USS Tripoli arrives with 31st MEU. Possible initiation of Operation Epic Escort for Hormuz tanker convoys. Oil volatility continues — Brent likely $100-115 range. Houthi decision on Red Sea resumption imminent. Iran internet blackout entering 4th week."
+      "body": "ENERGY WAR MUTUAL — Ras Laffan + South Pars both hit. Iran evacuation warnings for more Gulf sites. Saudi warns military action. Oil $111 and climbing. USS Tripoli arriving. Iran allowing limited Hormuz traffic (8 ships Mon). Qatar expelled Iranian attaches. Next 48-72h critical — does Iran follow through on Gulf energy threats?"
     },
     {
       "title": "Week 4–5 (Mar 23–Apr 5)",
-      "body": "If Hormuz remains closed, SPR drawdowns accelerate. Oil may spike to $120+ if Houthis resume Red Sea attacks. Midterm election pressure builds on GOP — gas prices = top voter issue. First possible diplomatic probe window if backchannels exist."
+      "body": "If mutual energy targeting continues, oil hits $120-130+. Saudi entry as belligerent = OPEC fracture. SPR drawdowns accelerate. Gas $4.50+ nationally. Macron infrastructure moratorium could become formal proposal. Hormuz partial reopening possible if Iran allows Chinese vessels."
     },
     {
       "title": "Month 2 (Apr–May)",
-      "body": "Sustained economic war phase. Iran's domestic situation deteriorates but regime shows no fracture signs. Lebanon ceasefire more likely than Iran ceasefire. Coalition strike tempo may slow as target sets exhausted."
+      "body": "Pentagon $200B+ budget = planning for sustained ops. But $111+ oil and mutual energy destruction is economically suicidal for the region. Gulf states may force ceasefire to save economies. Lebanon ground ops likely culminating. Iran military relocating to civilian spaces = grinding urban phase."
     },
     {
       "title": "Month 3+ (May onward)",
-      "body": "If no deal, war becomes frozen conflict. Hormuz closure becomes new normal. Oil market adapts with permanent premium. OPEC+ non-Gulf producers benefit. Iran increasingly isolated economically but politically resilient."
+      "body": "If no deal, regional economy in depression. Qatar LNG disruption hits Europe hard (winter planning). OPEC+ paralyzed. Iran isolated but holding Hormuz leverage. Frozen conflict most likely IF energy war de-escalates."
     },
     {
       "title": "Endgame variables",
-      "body": "Khamenei's health/survival (if dead, succession crisis). Houthi Red Sea decision (second chokepoint = global crisis). China's role (only country with leverage over both sides). US midterm pressure (gas prices = GOP vulnerability)."
+      "body": "Saudi military entry (transforms war entirely). Mojtaba Khamenei's first public appearance (legitimacy signal). Houthi Red Sea decision (second chokepoint). Gulf energy infrastructure damage assessment (how fast can Ras Laffan repair?). China leverage (Xi summit delayed not cancelled). US gas prices at $4+ in 7 states."
     }
   ],
   "timeline_fa": [
     {
       "title": "هفته ۳ (۱۶–۲۲ مارس)",
-      "body": "ناو تریپلی می‌رسد. شروع احتمالی عملیات اسکورت. نفت ۱۰۰–۱۱۵. تصمیم حوثی‌ها درباره دریای سرخ."
+      "body": "جنگ انرژی متقابل. هشدار تخلیه ایران. عربستان: اقدام نظامی. نفت ۱۱۱. ۴۸-۷۲ ساعت بحرانی."
     },
     {
       "title": "هفته ۴–۵",
-      "body": "اگر هرمز بسته بماند، ذخایر سریع‌تر خالی می‌شود. نفت ممکن است ۱۲۰+ شود. فشار انتخاباتی."
+      "body": "ادامه جنگ انرژی = نفت ۱۲۰-۱۳۰. ورود عربستان = شکاف اوپک. بنزین ۴.۵۰+."
     },
     {
       "title": "ماه ۲",
-      "body": "فاز جنگ اقتصادی. وضع داخلی ایران بدتر اما رژیم مقاوم."
+      "body": "پنتاگون ۲۰۰+ میلیارد. اما تخریب متقابل = خودکشی اقتصادی. خلیج ممکن است آتش‌بس اجباری کند."
     },
     {
       "title": "ماه ۳+",
-      "body": "جنگ منجمد. هرمز بسته = عادی جدید. نفت با حق‌بیمه دائمی."
+      "body": "بدون توافق = رکود منطقه‌ای. قطر LNG = ضربه اروپا. منجمد اگر انرژی کاهش یابد."
     },
     {
       "title": "متغیرهای پایانی",
-      "body": "سلامت خامنه‌ای. تصمیم حوثی. نقش چین. فشار انتخاباتی آمریکا."
+      "body": "ورود نظامی عربستان. ظهور مجتبی خامنه‌ای. حوثی. تعمیر راس لفان. اجلاس شی. بنزین ۴+ در ۷ ایالت."
     }
   ],
   "scenarioProbabilities": [
     {
       "name": "Escalation spiral / total war",
-      "prob": "35%",
-      "body": "NOW CO-LEADING. South Pars strike crossed the energy threshold. Iran will retaliate — likely against Saudi/Gulf energy infrastructure. Multiple-warhead missiles deployed. Katz: open kill order. Bushehr hit. All constraints dissolving. Each side escalating to force the other to back down. Classic escalation spiral with no off-ramp."
+      "prob": "40%",
+      "body": "LEADING. Energy war went MUTUAL within hours — South Pars (AM) then Ras Laffan (PM). Iran threatening more Gulf energy strikes 'in coming hours.' Saudi Arabia warning military action = potential 4th belligerent. $111 oil. Pentagon $200B+ ask. Escalation ladder nearly exhausted — only nuclear threshold remains. Classic spiral with no off-ramp and now MULTIPLE parties being drawn in."
     },
     {
       "name": "Protracted attrition",
-      "prob": "30%",
-      "body": "DECREASED from 42%. The South Pars strike makes 'protracted low-intensity' less likely — hitting energy production is an escalation that demands a response. War may be too intense to sustain at current level for months."
+      "prob": "25%",
+      "body": "DECREASED further from 30%. Mutual energy targeting makes sustained low-intensity war nearly impossible — every day both sides' revenue sources are being destroyed. Can't fight a long war while destroying the money that pays for it. But if both sides exhaust advanced weapons and pull back from energy, could revert to this."
     },
     {
       "name": "Declared victory + exit",
       "prob": "15%",
-      "body": "Vance: 'rough road for next few weeks.' Admin still says 'weeks or sooner.' South Pars strike could be the culminating blow before declaration. But Iran's retaliation (multi-warhead missiles, 100+ targets) makes clean exit harder."
+      "body": "Admin narrative still 'weeks or sooner.' Pentagon $200B+ budget request suggests longer timeline though. South Pars + Ras Laffan mutual destruction could paradoxically create exit moment — both sides claim damage to other's energy as 'victory.' But Saudi military warning complicates clean US exit."
     },
     {
       "name": "Regime fracture",
       "prob": "8%",
-      "body": "4 senior officials killed in 60h. Katz: open kill order on ALL senior officials. Hengaw: 4,800+ military dead. Internal security penetrated (Larijani intel from Tehran residents). If there's a breaking point, it's approaching. But Araghchi: 'structure doesn't depend on any single individual.'"
+      "body": "5 senior officials killed ~60h. Open kill order. Hengaw: 5,300 dead. Israel striking northern Iran for first time. But DNI Gabbard: regime 'largely degraded but intact.' Araghchi: 'structure doesn't depend on any individual.' Military relocating into civilian spaces = adaptation, not collapse."
     },
     {
       "name": "Turkey-brokered ceasefire",
       "prob": "7%",
-      "body": "INCREASED. Riyadh emergency FM meeting + Turkey FM Fidan = most diplomatic activity since war began. Germany publicly questioning war. Russia condemning. International pressure building. But both sides still refusing direct talks."
+      "body": "Riyadh FM meeting happened but Iran targeted Riyadh DURING it. Qatar expelled Iranian attaches. Macron called for infrastructure moratorium. Diplomatic activity increasing but events outpacing diplomacy. Saudi military warning could either catalyze or destroy mediation."
     },
     {
       "name": "Negotiated deal",
       "prob": "5%",
-      "body": "Low. Both sides rejected diplomacy D17-D19. But South Pars + $108 oil creates new urgency. Yuan passage talks still in background. Xi summit delayed but not cancelled."
+      "body": "Low but $111 oil creates new pressure. Ras Laffan damage threatens Qatar's entire LNG business. Gulf states may force the issue. Xi summit delayed but China has leverage. Iran allowing limited Hormuz traffic (8 ships Monday) = possible backdoor signal."
     }
   ],
   "scenarioProbabilities_fa": [
     {
       "name": "مارپیچ تشدید / جنگ تمام‌عیار",
-      "prob": "۳۵٪",
-      "body": "پارس جنوبی آستانه عبور. موشک چندکلاهکی. بوشهر. همه محدودیت‌ها فروپاشی."
+      "prob": "۴۰٪",
+      "body": "جنگ انرژی متقابل. پارس جنوبی + راس لفان. عربستان: اقدام نظامی. نفت ۱۱۱. فقط آستانه هسته‌ای مانده."
     },
     {
       "name": "فرسایشی",
-      "prob": "۳۰٪",
-      "body": "کاهش. حمله انرژی = پاسخ لازم. شدت قابل ادامه نیست."
+      "prob": "۲۵٪",
+      "body": "کاهش. تخریب متقابل انرژی = جنگ طولانی غیرممکن. پول جنگ نابود می‌شود."
     },
     {
       "name": "اعلام پیروزی",
       "prob": "۱۵٪",
-      "body": "ونس: هفته‌ها. پارس جنوبی = ضربه نهایی؟"
+      "body": "پنتاگون ۲۰۰+ میلیارد = بلندمدت. تخریب متقابل = لحظه خروج؟"
     },
     {
       "name": "فروپاشی رژیم",
       "prob": "۸٪",
-      "body": "۴ مقام ۶۰ ساعت. دستور کشتار باز. ۴,۸۰۰+ نظامی."
+      "body": "۵ مقام ~۶۰ ساعت. ۵,۳۰۰ کشته. شمال ایران. اما رژیم 'سالم' (گابارد)."
     },
     {
       "name": "آتش‌بس ترکیه",
       "prob": "۷٪",
-      "body": "ریاض + فیدان. آلمان سؤال. روسیه محکوم."
+      "body": "ریاض هدف حین جلسه. قطر اخراج. ماکرون: مهلت. دیپلماسی عقب‌تر از رویدادها."
     },
     {
       "name": "مذاکره",
       "prob": "۵٪",
-      "body": "پارس جنوبی + ۱۰۸ = فوریت جدید."
+      "body": "نفت ۱۱۱. راس لفان = تهدید LNG قطر. ایران ۸ کشتی هرمز = سیگنال؟"
     }
   ],
   "theoryEvaluation": [
     {
-      "title": "Energy war — ALL constraints dissolving",
-      "body": "South Pars strike is the single most consequential escalation since D1. For 19 days, coalition deliberately avoided Iranian energy production — Kharg Island raids spared oil infrastructure, Trump said 'just military targets.' Now Israel struck the world's largest gas field + refineries WITH US coordination. Bushehr nuclear plant also hit. Oil spiked to $108. Iran will almost certainly retaliate against Gulf energy infrastructure — Saudi Aramco, UAE ADNOC already under drone harassment. If Iran strikes Saudi oil production, Brent goes to $130+. The energy restraint that limited this war's economic damage is GONE."
+      "title": "Energy war — NOW FULLY MUTUAL",
+      "body": "The prediction that Iran would retaliate against Gulf energy came true WITHIN HOURS. Israel struck South Pars (AM), Iran hit Qatar's Ras Laffan LNG (PM) — world's largest LNG facility, ~20% of global supply. Extensive damage. Abu Dhabi shut Habshan gas. Iran issued evacuation warnings for Saudi/UAE/Qatar energy sites, threatening more 'in coming hours.' Oil surged to $111. Both sides are now destroying the revenue sources that fund each other's war effort AND the global economy. This is economically suicidal for the region and unsustainable beyond days, not weeks."
     },
     {
-      "title": "Military — technology escalation on both sides",
-      "body": "US: 5,000-lb bunker busters on Hormuz (Tue). Israel: South Pars strike (Wed). Iran: Khorramshahr-4 + Qadr MULTIPLE-WARHEAD missiles (first deployment in this war). Cluster munitions over Tel Aviv. These are the most advanced weapons each side possesses. Both sides are climbing the escalation ladder simultaneously. Katz issued open-ended kill authorization for ANY senior Iranian official. Hengaw: 4,800+ Iranian military dead. 4 senior officials in 60 hours. Iran's state is being decapitated while its remaining forces use their most advanced weapons."
+      "title": "Military — decapitation + expansion",
+      "body": "5 senior officials killed in ~60h (Basij head confirmed). Israel striking northern Iran for first time — expanding geographic scope. Kuwait intercepted 4 ballistic + 20 drones in single day. Iran deploying Khorramshahr-4 + Qadr multi-warhead missiles. Hengaw 5th report: 5,300 killed (4,789 military). Iran military relocating into civilian spaces (schools, mosques, dormitories) — adaptation but also potential IHL violations that complicate international support. Pentagon seeking $200B+ = institutional preparation for extended war."
     },
     {
-      "title": "Political/diplomatic — pressure building but no mechanism",
-      "body": "Germany: 'would have advised against war, no convincing plan.' Russia: 'firmly condemned.' Riyadh emergency FM meeting = international alarm. Turkey FM only active mediator. Vance: 'rough road ahead.' Gas $3.84 (+31%). But Trump still refusing to negotiate. Khamenei: 'not time for peace.' Katz escalating. No off-ramp exists. The South Pars strike may force one — either Iran retaliates so hard it triggers full economic crisis, or the $108 oil + $3.84 gas forces Trump to seek exit. Either way, this is unsustainable at current intensity."
+      "title": "Political — Saudi Arabia as potential new belligerent",
+      "body": "The most consequential political development: Saudi FM 'reserved right to military action' after Iran targeted Riyadh DURING the emergency FM meeting. This is the most dramatic Saudi policy shift since 2016. Qatar expelled Iranian attaches. If Saudi Arabia enters as a belligerent, the war transforms entirely — OPEC fractures, oil could hit $130+, and Iran faces a full Arab coalition. Macron calling for moratorium. Germany: 'crisis of gravest order.' Fed held rates on uncertainty. Joe Kent resigned. The war is now generating its own political momentum that may be impossible to control."
     }
   ],
   "theoryEvaluation_fa": [
     {
-      "title": "جنگ انرژی — محدودیت‌ها فروپاشی",
-      "body": "پارس جنوبی مهم‌ترین تشدید پس از D1. نفت ۱۰۸. ایران به زیرساخت انرژی خلیج حمله خواهد کرد."
+      "title": "جنگ انرژی — کاملاً متقابل",
+      "body": "پیش‌بینی حمله ایران ظرف ساعات محقق شد. پارس جنوبی (صبح) + راس لفان (عصر). حبشان بسته. هشدار تخلیه. نفت ۱۱۱. خودکشی اقتصادی. روزها نه هفته‌ها."
     },
     {
-      "title": "نظامی — تشدید فناوری",
-      "body": "بمب ۵,۰۰۰ + پارس جنوبی + خرمشهر-۴ چندکلاهکی. پیشرفته‌ترین سلاح‌ها."
+      "title": "نظامی — سر بریدن + گسترش",
+      "body": "۵ مقام ~۶۰ ساعت. شمال ایران اولین بار. هنگاو ۵,۳۰۰. نظامیان به مدارس/مساجد. پنتاگون ۲۰۰+ میلیارد."
     },
     {
-      "title": "سیاسی — فشار بدون مکانیزم",
-      "body": "آلمان: توصیه ضد جنگ. روسیه: محکوم. ریاض: اضطراری. اما خروجی نیست. ناپایدار."
+      "title": "سیاسی — عربستان جنگ‌جوی بالقوه",
+      "body": "عربستان: حق اقدام نظامی. ریاض هدف حین جلسه. قطر اخراج. اوپک شکاف. ماکرون مهلت. جنگ شتاب خودی دارد."
     }
   ],
   "endstate": [
     {
-      "title": "Most likely (35%)",
-      "body": "Escalation spiral continues until economic pain forces a break. South Pars strike + $108 oil + $3.84 gas is politically unsustainable for both sides. Within 1-3 weeks, either: (a) Iran retaliates against Gulf energy, triggering global crisis that forces intervention; or (b) US domestic pressure ($4+ gas, midterms) forces Trump to accept a ceasefire he currently rejects. Turkey/Riyadh track is the most likely mechanism."
+      "title": "Most likely (40%)",
+      "body": "Escalation spiral accelerates as energy war goes mutual. Ras Laffan + South Pars = both sides destroying the revenue that funds war. $111 oil + $3.84 gas + Saudi military warning = crisis forcing mechanism within DAYS not weeks. Either: (a) Saudi Arabia enters as belligerent, transforming into regional war; (b) Gulf states collectively force ceasefire to save their own economies; or (c) $120+ oil triggers global intervention. Qatar expelling attaches = first diplomatic rupture that could cascade."
     },
     {
-      "title": "Second (30%)",
-      "body": "Protracted but at LOWER intensity than current pace. Both sides exhaust advanced weapons, strikes slow, war becomes a frozen conflict around Hormuz/Lebanon with occasional flare-ups. Oil stabilizes $100-110. No formal end. This was the lead scenario before South Pars — it's still possible if both sides pull back from the energy threshold."
+      "title": "Second (25%)",
+      "body": "Both sides pull back from energy threshold after mutual damage assessment. War reverts to military-only targeting at lower intensity. Possible if Ras Laffan damage proves limited and Iran doesn't follow through on evacuation warnings. But the precedent is set — energy infrastructure is now 'fair game' for both sides, making any de-escalation fragile."
     },
     {
       "title": "Wild card (8%)",
-      "body": "Regime fracture. 4 officials killed in 60h. Open kill order. 4,800+ military dead. Intelligence penetrated from within. If Khamenei (injured) loses control of IRGC factions, Iran could fragment — either into collapse or into a more extreme hardline takeover that escalates to nuclear brinkmanship."
+      "body": "Regime fracture. 5 officials killed ~60h. Open kill order. 5,300 dead (Hengaw). Military in civilian spaces = desperation. Northern Iran now being struck. But DNI Gabbard: 'intact.' Araghchi: 'doesn't depend on individuals.' More likely: IRGC hardliners seize full control, escalate to nuclear threshold. Mojtaba Khamenei still hasn't appeared in public."
     }
   ],
   "endstate_fa": [
     {
-      "title": "محتمل‌ترین (۳۵٪)",
-      "body": "مارپیچ تا شکست اقتصادی. ۱–۳ هفته. ایران حمله به انرژی خلیج یا فشار بنزین آمریکا."
+      "title": "محتمل‌ترین (۴۰٪)",
+      "body": "مارپیچ تشدید. جنگ انرژی متقابل. روزها نه هفته‌ها. عربستان جنگ‌جو یا آتش‌بس اجباری خلیج یا مداخله جهانی."
     },
     {
-      "title": "دوم (۳۰٪)",
-      "body": "فرسایشی اما کم‌شدت‌تر. سلاح‌های پیشرفته تمام. هرمز/لبنان منجمد."
+      "title": "دوم (۲۵٪)",
+      "body": "عقب‌نشینی از آستانه انرژی. بازگشت به هدف نظامی. اما سابقه = شکننده."
     },
     {
       "title": "غیرمنتظره (۸٪)",
-      "body": "فروپاشی. ۴ مقام ۶۰ ساعت. دستور باز. اگر خامنه‌ای کنترل از دست بدهد."
+      "body": "فروپاشی. ۵ مقام. ۵,۳۰۰ کشته. نظامی در مدارس. سپاه کنترل کامل؟ آستانه هسته‌ای؟"
     }
   ],
   "shippingRoutes": [
@@ -683,7 +684,7 @@
       "route": "Tehran → Dubai → Atlanta (Emirates SkyCargo)",
       "status": "DEAD",
       "statusColor": "red",
-      "detail": "UAE CLOSED ALL AIRSPACE March 17 as 'exceptional precautionary measure.' Dubai airport drone fire D17. Emirates only running limited flights. This route is not just dead — the entire UAE aviation system is periodically shutting down. IRGC declared UAE bases 'legitimate targets.'",
+      "detail": "UAE shut Habshan gas after debris. Turkish Airlines cancelled ALL regional flights until Mar 19+. Iran issued evacuation warnings for UAE energy sites. Abu Dhabi gas facilities offline. Regional aviation in collapse. This route is permanently dead for duration of conflict.",
       "viability": "0%",
       "eta": "N/A — route permanently disrupted for duration of conflict"
     },
@@ -699,8 +700,8 @@
       "route": "Iran → Armenia (Agarak/Norduz border)",
       "status": "MOST VIABLE",
       "statusColor": "yellow",
-      "detail": "Border confirmed open in every US Embassy Yerevan daily alert Mar 8-16. Normal flow: 400-450 trucks/day. Armenia maintaining neutrality. Key bottleneck: domestic Iran leg (Tehran→border, ~700km through active strike zones). HRANA confirms 3,065+ dead = entire country is combat zone. Internet blackout prevents coordination. IDF now striking Tehran, Tabriz (near Armenian border), Shiraz, Isfahan simultaneously.",
-      "viability": "~25-30%",
+      "detail": "Border needs fresh verification. CRITICAL NEW RISK: Israel now striking NORTHERN Iran for first time — brings strikes closer to Armenian border/Tabriz corridor. 178 cities across 25 provinces struck (Hengaw). Hengaw: 5,300 dead. Military relocating to civilian spaces. Internet blackout 3 weeks. This route's viability is DECLINING as war expands north.",
+      "viability": "~20-25%",
       "eta": "If route established: 4-8 weeks Tehran→Yerevan→sea→Atlanta"
     },
     {
@@ -717,7 +718,7 @@
       "route": "تهران → دبی → آتلانتا",
       "status": "مرده",
       "statusColor": "red",
-      "detail": "حریم هوایی امارات میدان جنگ. فرودگاه دبی متوقف. امارات هدف مشروع سپاه.",
+      "detail": "حبشان بسته. ترکیش ایرلاینز لغو. هشدار تخلیه انرژی. هواپیمایی فروپاشی.",
       "viability": "۰٪",
       "eta": "غیرممکن"
     },
@@ -733,8 +734,8 @@
       "route": "ایران → ارمنستان",
       "status": "بهترین گزینه",
       "statusColor": "yellow",
-      "detail": "مرز باز در گزارش‌های سفارت آمریکا. گلوگاه: مسیر داخلی ایران (۷۰۰ کیلومتر در مناطق بمباران).",
-      "viability": "~۳۰–۳۵٪",
+      "detail": "حملات شمال ایران اولین بار = نزدیک‌تر به مرز. ۱۷۸ شهر ۲۵ استان. امکان‌پذیری کاهش.",
+      "viability": "~۲۰–۲۵٪",
       "eta": "۴–۸ هفته"
     },
     {
@@ -747,38 +748,38 @@
     }
   ],
   "publishingStatus": [
-    "Paper supply: CRITICAL. Iran imports virtually all pulp. Hormuz closed + rial collapsed → no imports. Existing warehouse stock only.",
-    "Internet blackout: 2+ weeks and WORSENING (CNN D17: 'trickle of remaining connectivity dropped abruptly'). Online book sales ↓80%+. No digital coordination for publishers, distributors, or authors. Third week of total communications isolation.",
-    "Power outages: Sustained across country from infrastructure damage (65 schools, 32 medical facilities hit per Red Crescent). Printing presses require stable power.",
-    "Isfahan: Second cultural capital and major publishing center. Struck heavily overnight Mar 14-15 (20+ explosions in Shiraz, Isfahan targeted). Cultural infrastructure at severe risk.",
-    "56+ cultural sites damaged. HRANA: 3,065 dead including in Isfahan, Shiraz (major cultural/publishing centers both under sustained bombardment). Tabriz now also being struck.",
-    "New title production: Effectively halted. Only pre-war warehouse stock available. Distribution networks disrupted by strikes across 30 of 31 provinces.",
-    "Assessment: Iranian publishing industry in existential crisis. Even post-war, recovery will require months for paper imports, years for full reconstruction. Pre-war book stocks are finite and depleting — priority procurement window is NOW for any accessible inventory."
+    "Paper supply: CRITICAL. Iran imports virtually all pulp. Hormuz closed + rial collapsed → no imports. Existing warehouse stock only. South Pars strike + Ras Laffan = energy crisis worsening — gas shortages imminent.",
+    "Internet blackout: 3 weeks. Hengaw confirms authorities checking phones at checkpoints, arresting people for sharing information with foreign media. Online book sales ↓80%+. Total communications isolation deepening.",
+    "Power outages: Sustained and WORSENING. Israel now striking northern Iran for first time. 178 cities across 25 provinces struck (Hengaw). Military relocating into schools/dormitories = further civilian infrastructure damage.",
+    "Isfahan + Shiraz: Both under sustained bombardment. Israel expanding strikes to northern provinces. Cultural infrastructure at extreme risk across entire country.",
+    "56+ cultural sites damaged. Hengaw 5th report: 5,300 dead. Strikes across 25 provinces = virtually no safe area for publishing operations.",
+    "New title production: Effectively halted. Only pre-war warehouse stock available. Distribution networks non-functional. Military using civilian spaces = printing facilities at risk.",
+    "Assessment: Iranian publishing industry in existential crisis. Energy war escalation (South Pars) will worsen power situation further. Even warehouse stock access becoming difficult as military relocates into civilian areas. Recovery timeline: years minimum."
   ],
   "publishingStatus_fa": [
-    "کاغذ: بحرانی. واردات متوقف. فقط موجودی انبار.",
-    "قطع اینترنت: ۲+ هفته و بدتر شده. فروش آنلاین ↓۸۰٪+. هفته سوم انزوای ارتباطی.",
-    "قطع برق: گسترده. چاپخانه‌ها نیاز به برق پایدار.",
-    "اصفهان: بمباران سنگین ۱۴-۱۵ مارس. زیرساخت فرهنگی در خطر.",
-    "۵۶+ سایت فرهنگی آسیب‌دیده. واقعی احتمالاً بیشتر.",
-    "تولید عنوان جدید: متوقف. فقط موجودی قبل جنگ.",
-    "ارزیابی: بحران وجودی نشر ایران. بازسازی ماه‌ها تا سال‌ها."
+    "کاغذ: بحرانی. واردات متوقف. پارس جنوبی = بحران گاز.",
+    "قطع اینترنت: ۳ هفته. بازرسی گوشی در ایست‌بازرسی. فروش آنلاین ↓۸۰٪+.",
+    "قطع برق: بدتر. شمال ایران اولین بار. ۱۷۸ شهر ۲۵ استان.",
+    "اصفهان + شیراز: بمباران مداوم. گسترش به شمال.",
+    "۵۶+ سایت فرهنگی. هنگاو ۵,۳۰۰ کشته. ۲۵ استان.",
+    "تولید متوقف. نظامیان در مدارس = چاپخانه‌ها در خطر.",
+    "بحران وجودی. تشدید جنگ انرژی = برق بدتر. بازسازی: سال‌ها."
   ],
   "impactIranfarhang": [
-    "PRIMARY ROUTE DEAD: Tehran→Dubai→Atlanta via Emirates is completely non-functional. Dubai airport suspended flights Mar 16 from drone fire. 3rd airport drone incident in 4 days. This route will not reopen during conflict.",
-    "BEST ALTERNATIVE: Armenia (Agarak/Norduz) border confirmed open but domestic Iran leg (700km) through active combat zones is extremely hazardous. Coalition struck 6+ provinces overnight Mar 14-15. No internet for coordination.",
-    "SUPPLY SOURCE: Publishers in Iran cannot produce new titles — paper imports halted, power outages, internet blackout entering 3rd week. Only pre-war warehouse stock available. Isfahan (major publishing center) under bombardment.",
-    "OFAC STATUS: Informational materials exemption (31 CFR §560.210(c)) remains valid — statutory protection via Berman Amendment/IEEPA. Not affected by war. Payment via KEMCO SARL (France) third-country structure still viable in principle but practical execution depends on shipping route.",
-    "FINANCIAL: Rial in freefall. Any procurement denominated in rial is cheaper but requires functioning transfer mechanism. KEMCO route may face increased scrutiny from French compliance.",
-    "WINDOW: Pre-war book stocks are finite and depleting. If Armenia route can be established, priority procurement of available inventory should begin immediately. Every week of delay reduces available stock."
+    "PRIMARY ROUTE DEAD: Tehran→Dubai→Atlanta completely non-functional. Turkish Airlines cancelled flights to Iraq, Syria, Lebanon, Jordan, Doha, Dubai, Abu Dhabi, Kuwait, Bahrain, Dammam until Mar 19+. Regional aviation collapsing.",
+    "BEST ALTERNATIVE: Armenia (Agarak/Norduz) border — status needs fresh verification. Israel now striking NORTHERN Iran for first time, which brings strikes closer to Armenian border. Domestic Iran leg (700km) through 25 provinces being struck (Hengaw). Risk increased.",
+    "SUPPLY SOURCE DETERIORATING: Military relocating into civilian spaces including schools and dormitories (Hengaw). Warehouse access may be compromised. South Pars strike = worsening power/gas crisis. 178 cities across 25 provinces struck.",
+    "OFAC STATUS: Informational materials exemption (31 CFR §560.210(c)) remains valid. Not affected by war. Payment via KEMCO SARL still viable in principle but Qatar expelling Iranian attaches + Saudi military warning = regional compliance environment tightening significantly.",
+    "FINANCIAL: Rial in freefall. Oil $111 = global inflation pressure. Fed held rates on uncertainty. KEMCO/French banking under increased scrutiny as war expands.",
+    "WINDOW CLOSING: Pre-war stocks depleting. Military in civilian spaces = warehouse access risk. Armenia route viability decreased by northern Iran strikes. Every day of delay reduces accessible inventory."
   ],
   "impactIranfarhang_fa": [
-    "مسیر اصلی مرده: تهران←دبی←آتلانتا کاملاً متوقف.",
-    "بهترین جایگزین: ارمنستان — مرز باز اما مسیر داخلی ایران پرخطر.",
-    "منبع تأمین: ناشران نمی‌توانند عنوان جدید تولید کنند. فقط موجودی انبار.",
-    "وضعیت OFAC: معافیت مواد اطلاعاتی همچنان معتبر.",
-    "مالی: ریال سقوط آزاد. پرداخت از طریق KEMCO ممکن اما عملی مشکل.",
-    "فرصت: موجودی قبل جنگ محدود. تدارک فوری از طریق ارمنستان."
+    "مسیر اصلی مرده: ترکیش ایرلاینز همه پروازها لغو. هواپیمایی منطقه فروپاشی.",
+    "ارمنستان: حملات شمال ایران اولین بار = نزدیک‌تر به مرز. خطر افزایش.",
+    "منبع تأمین بدتر: نظامیان در مدارس/خوابگاه. دسترسی انبار مشکل. ۱۷۸ شهر.",
+    "OFAC: معافیت معتبر. اما قطر اخراج + عربستان نظامی = محیط سخت‌تر.",
+    "مالی: ریال سقوط. نفت ۱۱۱. فدرال رزرو. KEMCO تحت فشار.",
+    "پنجره بسته می‌شود: موجودی کم. نظامی در فضای غیرنظامی. شمال ایران."
   ],
   "prepIranfarhang": [
     "Activate Armenia route exploration: Contact Yerevan-based logistics contacts. Assess Agarak/Norduz border crossing capacity for book freight.",
@@ -798,34 +799,36 @@
     "بررسی کانال پرداخت KEMCO."
   ],
   "signalsIranfarhang": [
-    "WATCH: Houthi decision on Red Sea attacks — if resumed, alternative sea routes from Georgia/Turkey also disrupted. This is the highest-impact near-term variable for ALL shipping routes.",
-    "WATCH: Armenia border status in US Embassy Yerevan daily alerts (has been open every day Mar 8-16).",
-    "WATCH: Any resumption of limited internet in Iran — would indicate regime stabilization and enable supplier coordination.",
-    "WATCH: Dubai airport operations — currently suspended. If flights resume = UAE risk slightly lower. If attacks continue = route dead indefinitely.",
-    "WATCH: Rial exchange rate — further collapse makes procurement cheaper but transfer harder.",
-    "WATCH: IEA/OPEC monthly reports for Hormuz shipping resumption signals."
+    "CRITICAL: Israel strikes on NORTHERN Iran — if sustained, Armenia border route viability drops sharply. Watch for strikes near Tabriz/East Azerbaijan.",
+    "CRITICAL: Iran evacuation warnings for Gulf energy sites — if Iran follows through, regional logistics completely collapse. Supply routes via Georgia/Turkey also disrupted.",
+    "WATCH: Armenia border status in US Embassy Yerevan daily alerts. Northern Iran strikes make this urgent.",
+    "WATCH: Saudi military action decision — if Saudi enters war, ALL Middle East logistics shut down.",
+    "WATCH: Ras Laffan damage assessment — if Qatar LNG is offline long-term, Europe winter energy crisis = global repercussions.",
+    "WATCH: Iran allowing limited Hormuz traffic (8 ships Mon) — if this increases, partial reopening signal."
   ],
   "signalsIranfarhang_fa": [
-    "نظارت: تصمیم حوثی درباره دریای سرخ — اگر از سر گرفته شود، مسیرهای جایگزین هم مختل.",
-    "نظارت: وضعیت مرز ارمنستان در گزارش سفارت آمریکا.",
-    "نظارت: بازگشت اینترنت محدود در ایران.",
-    "نظارت: عملیات فرودگاه دبی.",
-    "نظارت: نرخ ریال."
+    "بحرانی: حملات شمال ایران — اگر ادامه یابد، مرز ارمنستان خطر.",
+    "بحرانی: هشدار تخلیه انرژی خلیج — لجستیک منطقه فروپاشی.",
+    "نظارت: وضعیت مرز ارمنستان — فوری.",
+    "نظارت: تصمیم نظامی عربستان.",
+    "نظارت: ارزیابی آسیب راس لفان.",
+    "نظارت: ترافیک محدود هرمز (۸ کشتی)."
   ],
   "impactKIP": [
-    "Iran-UAE corridor: Near-total disruption. Dubai airport suspended Mar 16. IRGC declared UAE bases 'legitimate targets' Mar 14. UAE-Iran banking risk EXTREME — UAE+Saudi leaders jointly condemned 'sinful Iranian attacks.'",
-    "UAE asset risk: MEDIUM-HIGH and rising. UAE considering freezing Iran-linked assets (TRT World/Chatham House). IRGC target declaration makes physical assets in UAE targets for diplomatic retaliation.",
-    "Hormuz: Closed. ~15 Mb/d removed from global supply. No escort operations despite Trump's plea. USS Tripoli deploying but no timeline for tanker convoys. All import-export via Hormuz is halted.",
-    "Dubai logistics hub: Severely degraded. Airport operations suspended. Port operations intermittent. Insurance premiums prohibitive for Iranian-linked cargo.",
-    "Banking: UAE banks likely tightening KYC/AML on Iran-connected accounts preemptively. French (KEMCO-adjacent) and UAE banking channels both under increased compliance pressure.",
-    "Physical security: UAE intercepted >1,800 Iranian projectiles. Civilian casualties including Abu Dhabi missile kill Mar 16. Operating environment for Iranian business personnel in UAE is dangerous."
+    "Iran-UAE corridor: DEAD. Turkish Airlines cancelled all regional flights. Abu Dhabi shut Habshan gas facilities after debris. Iran evacuation warnings for UAE energy sites. IRGC: UAE bases 'legitimate targets.'",
+    "UAE asset risk: HIGH. Abu Dhabi Habshan gas shut = first major UAE energy disruption from war. Qatar expelled Iranian attaches = diplomatic rupture spreading. UAE may follow with asset freezes.",
+    "Hormuz: Closed but Iran allowing LIMITED traffic — 8 vessels Monday, 'nearly double' recent days (AJ). Possible backdoor for negotiated passage. USS Tripoli arriving. But Iran threatened more energy strikes.",
+    "QATAR RUPTURED: Ras Laffan struck. Attaches expelled. Qatar was a potential mediator — now a target. This eliminates a diplomatic channel and escalates Gulf crisis significantly.",
+    "Banking: Qatar rupture + Saudi military warning = regional banking compliance at maximum tightness. Any Iran-connected financial flows face extreme scrutiny. KEMCO channel under pressure.",
+    "Physical security: Iran issued evacuation warnings for energy assets across Saudi/UAE/Qatar. Operating environment for ALL business personnel in Gulf is dangerous. Regional aviation shutting down."
   ],
   "impactKIP_fa": [
-    "مسیر ایران-امارات: تقریباً مختل. فرودگاه دبی متوقف. سپاه پایگاه‌های امارات را هدف مشروع اعلام کرد.",
-    "دارایی‌ها در امارات: خطر بالا و در حال افزایش.",
-    "هرمز: بسته. ~۱۵ م.ب/ر حذف. اسکورت نیست.",
-    "هاب لجستیکی دبی: به شدت تضعیف شده.",
-    "بانکداری: سخت‌گیری در حال افزایش."
+    "مسیر ایران-امارات: مرده. ترکیش ایرلاینز لغو. حبشان بسته. هشدار تخلیه.",
+    "دارایی‌ها امارات: بالا. حبشان = اولین اختلال انرژی امارات. قطر اخراج = شکاف دیپلماتیک.",
+    "هرمز: بسته اما ۸ کشتی دوشنبه. ناو تریپلی. اما تهدید انرژی.",
+    "قطر شکاف: راس لفان + اخراج. میانجی‌گری از بین رفت.",
+    "بانکداری: شکاف قطر + عربستان نظامی = حداکثر سخت‌گیری.",
+    "امنیت: هشدار تخلیه انرژی. هواپیمایی بسته. خطرناک."
   ],
   "prepKIP": [
     "Assess all KIP assets in UAE for exposure to both military risk and potential asset freeze.",
@@ -846,20 +849,21 @@
     "شناسایی هاب‌های جایگزین: مسقط، مرسین، پوتی."
   ],
   "signalsKIP": [
-    "CRITICAL: UAE asset freeze announcements — any move to freeze Iran-linked assets would require immediate action.",
-    "CRITICAL: Houthi Red Sea decision — if resumed, Suez alternative route also disrupted, isolating Gulf further.",
-    "WATCH: UAE-Iran diplomatic communications — any de-escalation signals reduce asset risk.",
-    "WATCH: Hormuz escort operations — USS Tripoli arrival + French 10-ship proposal = possible reopening timeline.",
-    "WATCH: UAE banking sector circulars on Iran-related compliance.",
-    "WATCH: Dubai airport operations resumption — indicator of normalization pace.",
-    "WATCH: Insurance market premiums for Gulf shipping and operations.",
-    "WATCH: China-Iran trade flows — if Chinese vessels transit Hormuz successfully, may signal partial reopening path."
+    "CRITICAL: Iran follow-through on Gulf energy evacuation warnings — next 24-48h determines if mutual energy war escalates further.",
+    "CRITICAL: Saudi Arabia military action decision — if Saudi enters as belligerent, all Gulf business operations shut down entirely.",
+    "CRITICAL: UAE/Qatar asset freeze announcements — Qatar expelled attaches, UAE may escalate to asset freezes next.",
+    "WATCH: Ras Laffan damage assessment — duration of Qatar LNG outage determines regional economic trajectory.",
+    "WATCH: Iran Hormuz traffic (8 ships Monday) — increasing traffic = possible negotiated passage. Decreasing = full blockade.",
+    "WATCH: Regional aviation resumption — Turkish Airlines cancelled until Mar 19+. Regional transport collapsing.",
+    "WATCH: Insurance market — Ras Laffan strike will cause massive premium increases across Gulf.",
+    "WATCH: China-Iran trade flows — Xi summit delayed but China's response to Ras Laffan is key."
   ],
   "signalsKIP_fa": [
-    "بحرانی: اعلام انجماد دارایی‌های امارات.",
-    "بحرانی: تصمیم حوثی درباره دریای سرخ.",
-    "نظارت: ارتباطات دیپلماتیک امارات-ایران.",
-    "نظارت: عملیات اسکورت هرمز.",
-    "نظارت: بخشنامه‌های بانکی امارات."
+    "بحرانی: پیگیری هشدار تخلیه انرژی ایران — ۲۴-۴۸ ساعت.",
+    "بحرانی: تصمیم نظامی عربستان — ورود = توقف کامل.",
+    "بحرانی: انجماد دارایی امارات/قطر.",
+    "نظارت: ارزیابی آسیب راس لفان.",
+    "نظارت: ترافیک هرمز (۸ کشتی).",
+    "نظارت: هواپیمایی منطقه. بیمه. چین."
   ]
 }
