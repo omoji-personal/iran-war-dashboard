@@ -1,129 +1,128 @@
 {
   "meta": {
-    "lastUpdated": "2026-03-25T00:00:00-04:00",
+    "lastUpdated": "2026-03-25T20:00:00-04:00",
     "notes": [
-      "Day 25 (Mar 24) UPDATE MIDNIGHT ET. Sources: CNN D25 live, AJ liveblog D25, CBS live, CNBC, AP, Bloomberg, Fortune, OilPrice.com, NPR, NBC, Wikipedia, Investing.com, IAEA, Euronews, Iran International, JPost, Fox News, PBS, WSJ, Haaretz, Israel Hayom, ToI, ABC News, WashPost, Al-Monitor, SCMP, The National, GCaptain, FDD LWJ, Goldman Sachs, IEA, NetBlocks, Gulf News, Newsweek, Middle East Eye, Times of Israel, Daily Post Nigeria, Polyester Time, TradingEconomics, Alma Center, bne IntelliNews, Freedom House, Chatham House, HRANA, ACLED, ad-hoc-news.",
-      "TRUMP POSTPONES POWER PLANT STRIKES 5 DAYS — 'PRODUCTIVE TALKS': Trump called off 48-hr ultimatum Monday, citing 'productive conversations' with Tehran. Kushner + Witkoff talked with 'top person' in Iran Sunday. BUT Iran DENIES all talks — Qalibaf: 'fake news.' IRGC: 'deceitful.' HOWEVER CBS exclusive: Iranian FM official confirms 'received points from US through mediators, being reviewed.' Pakistani-mediated talks reportedly planned later this week. Oil crashed ~14% on announcement. Five-day extension = new deadline ~Friday Mar 28.",
-      "LEBANON EXPELS IRANIAN ENVOY — PERSONA NON GRATA: Lebanon FM declared Iranian ambassador persona non grata, must leave by Mar 29. Lebanon blames Hezbollah for dragging country into war. Hezbollah refused government demands to disarm. MOST SIGNIFICANT diplomatic break between Lebanon and Iran in modern history.",
-      "TEL AVIV UNINTERCEPTED MISSILE — D25: Iranian missile struck central Tel Aviv Tuesday, ~220 lb warhead, defense systems DID NOT INTERCEPT. 6+ injured. 4 sites struck across Israel. Israeli Knesset session suspended due to incoming missiles. Dimona/Arad revised: 180 wounded (up from 175). Israel intercepted 92% of ballistic missiles overall.",
-      "IRANIAN MINES CONFIRMED IN HORMUZ: US officials told CBS at least a dozen underwater mines identified — Iranian-manufactured Maham 3 and Maham 7 Limpet Mines. This adds PHYSICAL dimension to Hormuz blockade beyond naval/missile threat. Mine clearance = weeks/months.",
-      "GULF D24-D25: UAE intercepted 7 ballistic + 16 drones D24 (cumul 352 ballistic, 15 cruise, 1,789 drones). Saudi 2 ballistic Riyadh + ~20 drones. Kuwait intercepting, 7 power lines damaged. IRGC attacked 5th Fleet Bahrain. D25: Saudi ~20 drones eastern province. Kuwait continued intercepts.",
-      "OIL CRASH + REBOUND: Brent crashed $112→$96.50 Monday (~14% drop) on Trump postponement. WTI $88.13. Dow surged 1,076 pts (+2.4%). D25 REBOUND: Brent climbed above $100 — $101.21 (CNBC), Fortune AM $102.47. Optimism faded as fighting continued unabated. Goldman Sachs: $110 avg March-April; if Hormuz 5% for 10 weeks → exceeds 2008 record ($147).",
-      "ZOLGHADR NAMED NEW SNSC SECRETARY: Mohammad Bagher Zolghadr appointed to replace killed Larijani. Signal of regime continuity despite decapitation campaign.",
-      "HOUTHI STATUS — ANNOUNCED ENTRY MAR 22 BUT NO CONFIRMED ATTACKS: Houthis declared entry into war, threatened US naval assets in Red Sea. But NO independently confirmed attacks yet as of D25. Maersk/CMA CGM/Hapag-Lloyd suspended all trans-Suez sailings. Still key wild card.",
-      "INTERNET BLACKOUT 552+ HOURS — DAY 25: NetBlocks: 'most severe recorded in any country.' Connectivity <1%. Not just social media — total communications shutdown including mobile, SMS, landlines. 'White SIM cards' for regime loyalists only. $35.7M/day. Food nearly tripled. Hospitals at 1/3 capacity.",
-      "IEA BIROL: 'WORSE THAN 1973 + 1979 COMBINED' — worst energy crisis statement from IEA head. Goldman: if Hormuz flows 5% for 10 weeks → exceeds $147 (2008 record). Asia imposing fuel-saving measures."
+      "Day 26 (Mar 25) UPDATE 8PM ET. Sources: CNN D26 live, AJ liveblog D26, CBS live, CNBC, AP, Bloomberg, Fortune, OilPrice.com, NPR, NBC, Wikipedia, Investing.com, IAEA, Euronews, Iran International, JPost, Fox News, PBS, WSJ, Haaretz, Israel Hayom, ToI, ABC News, WashPost, Al-Monitor, SCMP, The National, GCaptain, FDD LWJ, Goldman Sachs, IEA, NetBlocks, Gulf News, Newsweek, Middle East Eye, Times of Israel, NYT, ad-hoc-news, HRANA, Hengaw.",
+      "15-POINT PEACE PLAN: Trump admin sent 15-point ceasefire plan via Pakistan (NYT first reported). Demands: dismantle nuclear (Natanz, Isfahan, Fordow decommissioned), stop enrichment, transfer enriched material to IAEA, suspend missiles, cease proxy support, reopen Hormuz. In exchange: full sanctions relief, civilian nuclear program support, removal of snapback. Proposed 1-month ceasefire. Pakistan delivered. MOST CONCRETE diplomatic proposal since D1.",
+      "IRAN 'NON-HOSTILE' SAFE PASSAGE FORMAL: Iran told UN Security Council non-hostile ships can transit Hormuz with 'prior coordination with competent Iranian authorities.' Letter dated Mar 22. Pakistan, India, China given priority. Pakistan Aframax tanker = first non-Iranian vessel to transit since war began. India deal: released 3 Iranian tankers for safe passage. China in talks. Iraq, Malaysia also lobbying. FM Araghchi: 'strait is open, closed only to enemies.'",
+      "82ND AIRBORNE DEPLOYMENT: Pentagon ordered 2,000-3,000 paratroopers from 82nd Airborne. Maj. Gen. Tegtmeier + HQ deploying for 'joint forcible-entry missions' including potential Kharg Island seizure. Combined with 2 MEUs = 6,000-8,000 ground troops near Iran. ~50,000 already in region.",
+      "IRAN MOCKS TALKS + COUNTER-DEMANDS: IRGC Zolfaghari: 'Are you negotiating with yourselves?' Ambassador to Pakistan: no talks. FM Baghaei: 'responding to requests through intermediaries.' Iran prefers Vance over Witkoff/Kushner. Counter-demands: closure ALL US Gulf bases, reparations, Hormuz fee collection system.",
+      "STRIKES D26: Southern Tehran raid — 12 killed, 28 wounded. Eastern Tehran: school + residential destroyed. Saudi: 32 drones + 1 ballistic intercepted in 11 hours (Ras Tanura, Ghawar, Abqaiq). Kuwait airport fuel tank fire from drone. Bahrain: missile alerts, Moroccan civilian killed. Israel: David's Sling MALFUNCTION — 2 Iranian ballistic missiles struck southern Israel, wounding dozens. Israel strikes Beirut southern suburbs.",
+      "CASUALTIES D26: Iran Health Ministry: 1,500+ killed, 18,551 injured. HRANA D25 report: 1,455 civilian fatalities including 217 children. Lebanon: 1,072 killed (33 in last 24 hrs), 2,966 wounded. Israel: 18 killed, 4,800+ wounded. 82,000+ civilian structures damaged (Iranian Red Crescent). 17 Red Crescent bases struck. 94 ambulances hit. 55 healthcare workers wounded, 11 killed.",
+      "OIL D26: Brent fell ~$99 on ceasefire plan hopes (Fortune AM $99.75, Investing.com $98.57, CNN $99.5). Then fluctuated after Iran dismissed talks. WTI ~$89. Markets rallied — Dow up on deal hopes.",
+      "GLOBAL D26: Philippines declared state of national emergency (energy). Japan releasing 30 days reserves. North Korea Kim: 'proves nuclear weapons needed.' China gas +20%. G7 FM meeting Friday (Rubio to France). 400,000 IDF reservist mobilization authorized.",
+      "DAVID'S SLING MALFUNCTION — 2nd interceptor failure in 2 days. 2 Iranian ballistic missiles struck southern Israel. IDF authorized 400,000 reservist mobilization. IDF wants several more weeks of operations."
     ]
   },
-  "theoryBox": "<strong>Day 25 — TRUMP BLINKS + LEBANON EXPELS IRAN + TEL AVIV UNINTERCEPTED + MINES IN HORMUZ:</strong> Trump postponed power plant strikes 5 days citing 'productive talks.' Iran denies all talks but CBS: FM official confirms 'received points through mediators.' Lebanon expelled Iranian ambassador (persona non grata). Tel Aviv struck by unintercepted missile (~220 lb). Iranian mines confirmed in Hormuz (Maham 3/7). Oil crashed 14% then rebounded above $100 ($101 CNBC). Zolghadr named new SNSC secretary. Internet 552+ hours. Houthis declared entry but no confirmed attacks. Goldman: $110 avg or $147+ if Hormuz persists.",
-  "theoryBox_fa": "<strong>روز ۲۵ — ترامپ عقب‌نشینی + لبنان اخراج سفیر ایران + تل‌آویو بدون رهگیری + مین هرمز:</strong> ترامپ حمله نیروگاه ۵ روز تعویق. ایران رد مذاکره اما CBS: 'پیام از طریق میانجی دریافت.' لبنان سفیر ایران اخراج. تل‌آویو موشک بدون رهگیری (~۱۰۰ کیلو). مین ایرانی هرمز تأیید. نفت سقوط ۱۴٪ سپس بالای $۱۰۰ ($۱۰۱ CNBC). زلقدر دبیر شورای امنیت. اینترنت ۵۵۲+ ساعت. حوثی اعلام ورود بدون حمله تأیید‌شده. گلدمن: $۱۱۰ میانگین یا $۱۴۷+.",
+  "theoryBox": "<strong>Day 26 — 15-POINT PEACE PLAN + SAFE PASSAGE FORMAL + 82ND AIRBORNE:</strong> Trump admin sent 15-point ceasefire plan via Pakistan (NYT) — demands: dismantle nuclear, stop enrichment, transfer material to IAEA, suspend missiles, reopen Hormuz. In exchange: full sanctions relief + civilian nuclear. Iran told UNSC: non-hostile ships can transit Hormuz with 'prior coordination.' Pakistan Aframax = first non-Iranian transit. 82nd Airborne deploying (2,000-3,000) for 'forcible-entry' incl. Kharg Island. Iran mocks: 'negotiating with yourselves?' David's Sling MALFUNCTION — 2 ballistic missiles struck southern Israel. Oil fell ~$99 on peace plan hopes. Internet 576+ hours. 82,000+ structures damaged.",
+  "theoryBox_fa": "<strong>روز ۲۶ — طرح صلح ۱۵ بندی + عبور مطمئن رسمی + هوابرد ۸۲:</strong> ترامپ طرح ۱۵ بندی از طریق پاکستان (NYT). ایران به شورای امنیت: عبور غیرخصمانه با 'هماهنگی قبلی.' نفتکش پاکستان = اولین عبور. هوابرد ۸۲ (۲,۰۰۰-۳,۰۰۰) برای 'عملیات جزیره خارگ.' ایران: 'با خودتان مذاکره می‌کنید؟' نقص کلاه داوود — ۲ بالستیک جنوب اسرائیل. نفت ~$۹۹. اینترنت ۵۷۶+. ۸۲,۰۰۰+ سازه آسیب‌دیده.",
   "metrics": [
     {
       "label": "Day",
-      "value": "25",
-      "desc": "TRUMP POSTPONES 5 DAYS — called off power plant ultimatum citing 'productive talks.' Iran denies talks but CBS: FM confirms 'received points through mediators.' Lebanon expelled Iranian envoy (persona non grata). Tel Aviv unintercepted missile. Iranian mines confirmed in Hormuz. New SNSC secretary Zolghadr. Internet 552+ hours. Houthis declared entry no confirmed attacks. Mojtaba absent Day 16."
+      "value": "26",
+      "desc": "15-POINT PEACE PLAN sent via Pakistan (NYT). Iran formal safe passage to UNSC. 82nd Airborne deploying (Kharg Island). Iran mocks talks. David's Sling malfunction. 82,000+ structures. Internet 576+ hrs. Mojtaba absent Day 17. 400,000 IDF reservists authorized."
     },
     {
       "label": "Cumul. missiles",
-      "value": "~2,867",
-      "desc": "D24: ~30 (UAE 7 ballistic, Saudi 2 ballistic Riyadh, IRGC attacked 5th Fleet Bahrain, Israel multiple salvos, Kuwait intercepts). D25: ~25 (Tel Aviv unintercepted ~220 lb, 4 sites Israel, Saudi, Kuwait 7 power lines). Cumul: 2,867. Israel: intercepted 92% of ballistic missiles overall."
+      "value": "~2,887",
+      "desc": "D26: ~20 (Saudi 1 ballistic, Israel 2 ballistic struck via David's Sling failure, Bahrain alerts, Kuwait, others). Cumul: 2,887. David's Sling MALFUNCTION — 2nd interceptor failure in 2 days. IDF authorized 400,000 reservist mobilization."
     },
     {
       "label": "Cumul. drones",
-      "value": "~4,522",
-      "desc": "D24: ~55 (UAE 16 drones, Saudi ~20 drones eastern province, Bahrain, Kuwait). D25: ~50 (Saudi ~20 drones, Kuwait continued, others). UAE cumul: 1,789 drones. Cumul all-theater: 4,522."
+      "value": "~4,577",
+      "desc": "D26: ~55 (Saudi 32 in 11 hrs at Ras Tanura/Ghawar/Abqaiq, Kuwait airport fuel tank fire, UAE, others). Cumul: 4,577. Saudi 32 drones in 11 hours = sustained Gulf bombardment continues."
     },
     {
       "label": "Brent crude",
-      "value": "~$101",
-      "desc": "D24: CRASHED $112→$96.50 (~14% drop) on Trump postponement. Dow surged 1,076 pts. D25: REBOUNDED above $100 — $101.21 (CNBC). Optimism over de-escalation faded as fighting continued. Goldman: $110 avg Mar-Apr. If Hormuz 5% for 10 weeks: exceeds 2008 record ($147). Iranian mines in Hormuz = physical blockade dimension."
+      "value": "~$99",
+      "desc": "D26: FELL on 15-point peace plan hopes — Fortune AM $99.75, Investing.com $98.57, CNN $99.5. WTI ~$89. Then fluctuated after Iran dismissed talks. Dow rallied on deal hopes. Goldman: $110 avg. IEA: 'worst crisis.' Pakistan safe passage = first non-Iranian Hormuz transit."
     },
     {
       "label": "Iran dead (HRANA)",
-      "value": "~6,100+",
-      "desc": "HRANA D25: 1,047 civilians + 214 children + 657 unclassified = 1,704+ confirmed. Hengaw extrapolated ~6,100+. Red Crescent: 18,000+ injured. ~40+ officials killed. Zolghadr replaces Larijani. Internet Day 25 = most severe any country (NetBlocks). Food tripled. Hospitals 1/3 capacity."
+      "value": "~6,300+",
+      "desc": "Iran Health Ministry D26: 1,500+ killed, 18,551 injured. HRANA D25 report: 1,455 civilian + 217 children. Hengaw extrapolated ~6,300+. 82,000+ structures damaged (Red Crescent). 17 RC bases struck. 94 ambulances hit. 55 HCWs wounded, 11 killed. Southern Tehran: 12 killed, 28 wounded."
     },
     {
       "label": "Lebanon",
-      "value": "1,039+ killed",
-      "desc": "MoPH: 1,039+ killed including 118 children. ~1M displaced (20% of population). EXPELLED Iranian envoy (persona non grata, leave by Mar 29). IDF struck al-Dalafa Bridge on Litani. DM: destroy ALL bridges + homes along border. 865 Hezbollah attack waves identified. Ground ops since Mar 16."
+      "value": "1,072+ killed",
+      "desc": "1,072 killed (33 in last 24 hrs), 2,966 wounded. ~1M displaced. Israel strikes Beirut southern suburbs. Ground invasion south of Litani warned. IDF authorized 400,000 reservist mobilization. IDF wants several more weeks."
     },
     {
       "label": "Israel dead",
       "value": "20+",
-      "desc": "20+ killed (15 Iranian + 4 WB + 1 Hezbollah). D25: Tel Aviv UNINTERCEPTED missile (~220 lb warhead), 6+ injured. Dimona/Arad revised: 180 wounded. 4,564+ total hospital admissions. Knesset suspended due to incoming. 92% ballistic interception rate. 13 US KIA, ~200 wounded."
+      "desc": "18+ killed (revised — some sources 20+, keeping higher estimate). D26: David's Sling MALFUNCTION — 2 ballistic missiles struck southern Israel, wounding dozens. 2nd interceptor failure in 2 days. 4,800+ total hospital admissions. 400,000 reservist mobilization. 13 US KIA."
     },
     {
       "label": "Nuclear risk",
-      "value": "ELEVATED — TALKS WINDOW",
-      "desc": "Trump postponement = 5-day window. BUT: Iran mines in Hormuz = physical escalation. Tel Aviv unintercepted = air defense gaps. Nuclear tit-for-tat continues (Natanz→Dimona). Isfahan underground. 440kg = ~11 weapons. IAEA locked out. Trump demands enriched uranium surrender for deal. Lavrov: Bushehr strikes 'extremely dangerous.'"
+      "value": "ELEVATED — PLAN ON TABLE",
+      "desc": "15-point plan demands: dismantle Natanz, Isfahan, Fordow. Stop enrichment. Transfer material to IAEA. Suspend missiles. In exchange: full sanctions relief + civilian nuclear. Iran: 'negotiating with yourselves?' Counter-demands: close US bases, reparations. 440kg = ~11 weapons. IAEA locked out. 82nd Airborne deploying = military pressure concurrent with diplomacy."
     }
   ],
   "metrics_fa": [
     {
       "label": "روز",
-      "value": "۲۵",
-      "desc": "ترامپ ۵ روز تعویق. ایران رد اما CBS: 'پیام دریافت.' لبنان اخراج سفیر. تل‌آویو بدون رهگیری. مین هرمز. زلقدر. اینترنت ۵۵۲+ ساعت. مجتبی غایب ۱۶."
+      "value": "۲۶",
+      "desc": "طرح ۱۵ بندی. عبور مطمئن رسمی. هوابرد ۸۲. ایران رد. نقص کلاه داوود. ۸۲,۰۰۰+ سازه. اینترنت ۵۷۶+. مجتبی غایب ۱۷."
     },
     {
       "label": "موشک",
-      "value": "~۲,۸۶۷",
-      "desc": "D24: ~۳۰. D25: ~۲۵. تل‌آویو بدون رهگیری. اسرائیل: ۹۲٪ رهگیری بالستیک."
+      "value": "~۲,۸۸۷",
+      "desc": "D26: ~۲۰. نقص کلاه داوود — ۲ بالستیک جنوب اسرائیل. ۴۰۰,۰۰۰ ذخیره‌ارتش."
     },
     {
       "label": "پهپاد",
-      "value": "~۴,۵۲۲",
-      "desc": "D24: ~۵۵. D25: ~۵۰. امارات مجموع: ۱,۷۸۹ پهپاد."
+      "value": "~۴,۵۷۷",
+      "desc": "D26: ~۵۵. عربستان ۳۲ در ۱۱ ساعت. کویت فرودگاه آتش. مجموع ۴,۵۷۷."
     },
     {
       "label": "نفت",
-      "value": "~$۱۰۱",
-      "desc": "سقوط ۱۴٪ سپس بازگشت بالای $۱۰۰ — $۱۰۱ (CNBC). خوش‌بینی کاهش. گلدمن: $۱۱۰ میانگین. اگر هرمز ۵٪ ۱۰ هفته: بالای $۱۴۷."
+      "value": "~$۹۹",
+      "desc": "کاهش بر امید طرح صلح — $۹۹.۷۵ (Fortune). ایران رد. نوسان. گلدمن $۱۱۰. پاکستان عبور = اولین."
     },
     {
       "label": "کشته ایران",
-      "value": "~۶,۱۰۰+",
-      "desc": "HRANA: ۱,۰۴۷ غیرنظامی + ۲۱۴ کودک + ۶۵۷ نامشخص. هنگاو ~۶,۱۰۰+. غذا سه‌برابر. بیمارستان ۱/۳."
+      "value": "~۶,۳۰۰+",
+      "desc": "وزارت بهداشت: ۱,۵۰۰+ کشته، ۱۸,۵۵۱ زخمی. HRANA: ۱,۴۵۵ غیرنظامی + ۲۱۷ کودک. ۸۲,۰۰۰+ سازه. ۹۴ آمبولانس."
     },
     {
       "label": "لبنان",
-      "value": "۱,۰۳۹+ کشته",
-      "desc": "سفیر ایران اخراج. پل الدلافه لیطانی. ۸۶۵ موج حمله حزب‌الله. ۱ میلیون آواره."
+      "value": "۱,۰۷۲+ کشته",
+      "desc": "۳۳ در ۲۴ ساعت. بیروت جنوبی حمله. لیطانی هشدار. ۴۰۰,۰۰۰ ذخیره."
     },
     {
       "label": "اسرائیل",
       "value": "۲۰+",
-      "desc": "تل‌آویو بدون رهگیری ~۱۰۰ کیلو. دیمونا ۱۸۰ زخمی. کنست تعلیق. ۱۳ آمریکا کشته."
+      "desc": "نقص کلاه داوود — ۲ بالستیک. ۴,۸۰۰+ بستری. ۴۰۰,۰۰۰ ذخیره. ۱۳ آمریکا."
     },
     {
       "label": "خطر هسته‌ای",
-      "value": "بالا — پنجره مذاکره",
-      "desc": "تعویق ۵ روز = پنجره. مین هرمز = تشدید فیزیکی. ترامپ: تحویل اورانیوم. لاوروف: بوشهر 'خطرناک.'"
+      "value": "بالا — طرح روی میز",
+      "desc": "طرح ۱۵ بندی: نطنز + اصفهان + فردو. ایران رد. هوابرد ۸۲ = فشار نظامی همزمان با دیپلماسی."
     }
   ],
   "sitrep": [
-    "TRUMP POSTPONES 5 DAYS — 'PRODUCTIVE TALKS' BUT IRAN DENIES: Trump called off 48-hr power plant ultimatum Monday, citing 'productive conversations.' Kushner + Witkoff talked with 'top person' in Iran Sunday. BUT Iran DENIES: Qalibaf 'fake news,' IRGC 'deceitful.' HOWEVER CBS exclusive: Iranian FM official confirms 'received points from US through mediators, being reviewed.' Pakistani-mediated talks planned later this week (Israeli official to NPR). New 5-day deadline ~Friday Mar 28.",
-    "LEBANON EXPELS IRANIAN ENVOY — HISTORIC BREAK: Lebanon FM declared Iranian ambassador persona non grata (leave by Mar 29). Blames Hezbollah for dragging country into war. Hezbollah refused disarmament demands. MOST SIGNIFICANT diplomatic rupture between Lebanon and Iran in modern history. 865 Hezbollah attack waves since Mar 2.",
-    "TEL AVIV UNINTERCEPTED — AIR DEFENSE GAP: Iranian missile struck central Tel Aviv D25, ~220 lb warhead, defense systems FAILED. 6+ injured. 4 sites struck across Israel Tuesday. Knesset session suspended by incoming. Dimona/Arad revised: 180 wounded. Israel 92% ballistic interception rate overall — but gaps persist.",
-    "IRANIAN MINES IN HORMUZ — PHYSICAL BLOCKADE: US officials (CBS): at least a dozen underwater mines identified — Iranian-manufactured Maham 3 and Maham 7 Limpet Mines. This transforms Hormuz from military/naval blockade to PHYSICAL obstruction. Mine clearance = weeks to months even after ceasefire.",
-    "OIL CRASH + REBOUND — VOLATILITY EXTREME: D24 Brent crashed $112→$96.50 (~14%) on Trump postponement. Dow surged 1,076 pts. D25 REBOUNDED above $100 — $101.21 (CNBC) as optimism faded and fighting continued. Fortune AM: $102.47. Goldman Sachs: $110 avg Mar-Apr. If Hormuz flows 5% for 10 weeks: exceeds 2008 record $147. IEA Birol: 'worse than 1973 + 1979 combined.'",
-    "GULF D24-D25: UAE intercepted 7 ballistic + 16 drones D24 (cumul: 352 ballistic, 15 cruise, 1,789 drones since D1). Saudi 2 ballistic Riyadh + ~20 drones D24, ~20 drones D25. Kuwait intercepting, 7 power lines down from debris. IRGC attacked 5th Fleet Bahrain.",
-    "ZOLGHADR NEW SNSC SECRETARY: Mohammad Bagher Zolghadr appointed to replace killed Larijani at Supreme National Security Council. Signal of regime institutional continuity despite systematic decapitation. ~40+ senior officials killed.",
-    "HOUTHI — DECLARED ENTRY NO CONFIRMED ATTACKS: Houthis announced Mar 22 they are entering war, threatened US ships in Red Sea. BUT no independently confirmed attacks as of D25. Maersk/CMA CGM/Hapag-Lloyd suspended trans-Suez sailings. If confirmed: BOTH chokepoints. UK MTOC: threat level 'substantial.'",
-    "INTERNET 552+ HOURS — TOTAL SHUTDOWN: NetBlocks: 'most severe recorded in any country.' Not just social media — mobile, SMS, landlines all down. 'White SIM cards' for regime only. $35.7M/day. Food tripled. Hospitals 1/3 capacity. 80% online sales collapse.",
-    "CASUALTIES D25: HRANA 1,704+ (1,047 civilian + 214 children + 657 unclassified). Hengaw extrapolated ~6,100+. Lebanon 1,039+. Israel 20+. US 13 KIA. Gulf 21+. Iraq 61+. Iran: 18,000+ injured. 3.2M+ displaced."
+    "15-POINT PEACE PLAN — MOST CONCRETE PROPOSAL SINCE D1: Trump admin sent 15-point ceasefire plan via Pakistan (NYT first reported). Demands: dismantle Natanz/Isfahan/Fordow, stop enrichment, transfer enriched material to IAEA, suspend missiles, cease proxy support, reopen Hormuz. In exchange: full sanctions relief, civilian nuclear support, snapback removal. Proposed 1-month ceasefire. Pakistan delivered. IRGC Zolfaghari mocked: 'Are you negotiating with yourselves?' Iran FM Baghaei: 'responding to requests through intermediaries.' Iran prefers Vance channel over Witkoff/Kushner.",
+    "IRAN SAFE PASSAGE FORMAL — FIRST NON-IRANIAN TRANSIT: Iran told UNSC that non-hostile ships can transit Hormuz with 'prior coordination with competent Iranian authorities.' Letter dated Mar 22. Pakistan, India, China given priority. Pakistan Aframax tanker = FIRST non-Iranian vessel to transit since war began. India deal: released 3 Iranian tankers for safe passage. China in talks. Iraq, Malaysia lobbying. FM Araghchi: 'strait open, closed only to enemies.' THIS IS THE MOST SIGNIFICANT DE-ESCALATION SIGNAL ON HORMUZ since D1.",
+    "82ND AIRBORNE DEPLOYING — GROUND FORCE ESCALATION: Pentagon ordered 2,000-3,000 paratroopers from 82nd Airborne. Maj. Gen. Tegtmeier + HQ deploying for 'joint forcible-entry missions' including potential Kharg Island seizure. Combined with 2 MEUs = 6,000-8,000 ground troops near Iran. ~50,000 already in region. DIPLOMACY + MILITARY ESCALATION SIMULTANEOUSLY.",
+    "IRAN COUNTER-DEMANDS: Closure of ALL US bases in Gulf, reparations for attacks, Hormuz fee collection system. Ambassador to Pakistan: no talks. IRGC Zolfaghari: 'Are you negotiating with yourselves?' Classic maximalist opening — but engaging through intermediaries confirms channel exists.",
+    "DAVID'S SLING MALFUNCTION — 2ND FAILURE IN 2 DAYS: 2 Iranian ballistic missiles struck southern Israel, wounding dozens. Interceptor system failed. IDF authorized 400,000 reservist mobilization. IDF wants several more weeks of operations. Israel strikes Beirut southern suburbs.",
+    "STRIKES D26: Southern Tehran raid — 12 killed, 28 wounded. Eastern Tehran: school + residential destroyed. Saudi: 32 drones + 1 ballistic intercepted in 11 hrs (Ras Tanura, Ghawar, Abqaiq). Kuwait airport fuel tank fire. Bahrain: Moroccan civilian killed. Lebanon: Beirut suburbs struck.",
+    "OIL DROPPED ON PEACE PLAN: Brent ~$99 (Fortune AM $99.75, Investing.com $98.57, CNN $99.5). WTI ~$89. Fell on 15-point plan hopes. Then fluctuated after Iran dismissed. Dow rallied. Pakistan safe passage = PHYSICAL proof Hormuz reopening is possible bilaterally.",
+    "CASUALTIES D26: Iran Health Ministry: 1,500+ killed, 18,551 injured. HRANA: 1,455 civilian + 217 children. 82,000+ structures (Red Crescent). 17 RC bases struck. 94 ambulances. 55 HCWs wounded, 11 killed. Lebanon: 1,072 killed, 2,966 wounded. Israel: 18+, 4,800+ wounded.",
+    "GLOBAL D26: Philippines state of emergency (energy). Japan 30 days reserves. North Korea Kim: 'proves nuclear weapons needed.' China gas +20%. G7 FM Friday. Internet Day 26 = 576+ hours.",
+    "HUMANITARIAN: 82,000+ civilian structures damaged/destroyed (Iranian Red Crescent). 17 Red Crescent bases struck. 94 ambulances hit. 55 healthcare workers wounded, 11 killed. Internet 576+ hours. Food nearly tripled. Hospitals at 1/3 capacity."
   ],
   "sitrep_fa": [
-    "ترامپ ۵ روز تعویق — 'مذاکرات سازنده' اما ایران رد. کوشنر + ویتکاف با 'شخص ارشد.' CBS: وزارت خارجه تأیید 'پیام دریافت.' مهلت جدید ~جمعه ۲۸ مارس.",
-    "لبنان سفیر ایران اخراج — بزرگ‌ترین گسست. حزب‌الله ۸۶۵ موج حمله.",
-    "تل‌آویو بدون رهگیری — ~۱۰۰ کیلو. ۶+ زخمی. دیمونا ۱۸۰ زخمی. ۹۲٪ بالستیک رهگیری کلی.",
-    "مین ایرانی هرمز — ماهام ۳ و ۷. انسداد فیزیکی. پاکسازی = هفته‌ها/ماه‌ها.",
-    "نفت سقوط + بازگشت: $۱۱۲→$۹۶.۵۰ (−۱۴٪) → بالای $۱۰۰ ($۱۰۱ CNBC). خوش‌بینی کاهش. گلدمن: $۱۱۰ میانگین. IEA: 'بدتر از ۱۹۷۳+۱۹۷۹.'",
-    "خلیج: امارات ۷ بالستیک + ۱۶ پهپاد D24 (مجموع ۳۵۲/۱۵/۱,۷۸۹). عربستان + کویت ادامه.",
-    "زلقدر دبیر شورای امنیت ملی. تداوم نهادی علیرغم ترور سیستماتیک.",
-    "حوثی اعلام ورود اما بدون حمله تأیید‌شده. مرسک + CMA CGM تعلیق.",
-    "اینترنت ۵۵۲+ ساعت — موبایل، پیامک، تلفن ثابت. غذا سه‌برابر. بیمارستان ۱/۳.",
-    "HRANA ۱,۷۰۴+. هنگاو ~۶,۱۰۰+. لبنان ۱,۰۳۹+. اسرائیل ۲۰+. آمریکا ۱۳."
+    "طرح ۱۵ بندی — مشخص‌ترین پیشنهاد از D1: ترامپ از طریق پاکستان (NYT). خلع هسته‌ای، توقف غنی‌سازی، انتقال به IAEA، تعلیق موشک، باز هرمز. در عوض: رفع تحریم + هسته‌ای غیرنظامی. سپاه: 'با خودتان مذاکره می‌کنید؟'",
+    "عبور مطمئن رسمی — اولین عبور غیرایرانی: ایران به شورای امنیت. نفتکش پاکستان = اولین. هند معامله: ۳ نفتکش ایرانی آزاد. چین مذاکره. عراقچی: 'فقط برای دشمنان بسته.'",
+    "هوابرد ۸۲ — ۲,۰۰۰-۳,۰۰۰ + ۲ MEU = ۶,۰۰۰-۸,۰۰۰ نیروی زمینی. خارگ. ~۵۰,۰۰۰ قبلاً.",
+    "ضدپیشنهاد ایران: بستن تمام پایگاه‌ها، غرامت، عوارض هرمز. سفیر پاکستان: مذاکره نه. اما کانال فعال.",
+    "نقص کلاه داوود — دومین شکست در ۲ روز. ۲ بالستیک جنوب اسرائیل. ۴۰۰,۰۰۰ ذخیره. بیروت.",
+    "حملات: تهران جنوبی ۱۲ کشته. عربستان ۳۲ پهپاد ۱۱ ساعت. کویت فرودگاه. بحرین مراکشی کشته.",
+    "نفت ~$۹۹ — کاهش بر امید طرح. سپس نوسان. داو بالا. پاکستان عبور = اثبات فیزیکی.",
+    "تلفات: وزارت بهداشت ۱,۵۰۰+ کشته، ۱۸,۵۵۱ زخمی. HRANA ۱,۴۵۵. ۸۲,۰۰۰+ سازه. لبنان ۱,۰۷۲.",
+    "جهان: فیلیپین وضعیت اضطراری. ژاپن ۳۰ روز ذخایر. کره شمالی. چین +۲۰٪. G7 جمعه.",
+    "بشردوستانه: ۸۲,۰۰۰+ سازه. ۱۷ پایگاه هلال. ۹۴ آمبولانس. ۵۵ بهداشتی زخمی. اینترنت ۵۷۶+."
   ],
   "dailySeries": {
     "labels": [
@@ -151,7 +150,8 @@
       "Mar 21",
       "Mar 22",
       "Mar 23",
-      "Mar 24"
+      "Mar 24",
+      "Mar 25"
     ],
     "missiles": [
       480,
@@ -178,7 +178,8 @@
       40,
       35,
       30,
-      25
+      25,
+      20
     ],
     "drones": [
       720,
@@ -205,10 +206,11 @@
       75,
       70,
       55,
-      50
+      50,
+      55
     ],
-    "sourceLabel": "D1-D10: JPost. D11: UAE MoD. D12-D25: fragment est. D24: UAE 7 ballistic + 16 drones (cumul 352/15/1,789). Saudi 2 ballistic + ~20 drones. IRGC attacked 5th Fleet. D25: Tel Aviv unintercepted. Saudi ~20 drones. Kuwait 7 power lines. Houthis declared entry no confirmed attacks.",
-    "throughDate": "Mar 24 end of day (all days estimated)"
+    "sourceLabel": "D1-D10: JPost. D11: UAE MoD. D12-D26: fragment est. D25: Tel Aviv unintercepted. Saudi ~20 drones. D26: Saudi 32 drones + 1 ballistic in 11 hrs. Kuwait airport fire. David's Sling malfunction — 2 ballistic struck Israel. Bahrain Moroccan killed.",
+    "throughDate": "Mar 25 end of day (all days estimated)"
   },
   "oil": {
     "labels": [
@@ -237,7 +239,8 @@
       "Mar 21",
       "Mar 22",
       "Mar 23",
-      "Mar 24"
+      "Mar 24",
+      "Mar 25"
     ],
     "brent": [
       65.0,
@@ -265,7 +268,8 @@
       112.0,
       112.0,
       96.50,
-      101.21
+      101.21,
+      99.0
     ],
     "wti": [
       62.0,
@@ -293,9 +297,10 @@
       98.0,
       98.0,
       88.13,
-      90.19
+      90.19,
+      89.0
     ],
-    "note": "Full daily series. D24: Brent CRASHED $112→$96.50 (~14% drop, Bloomberg) on Trump postponement. WTI $88.13. Dow surged 1,076 pts. D25: Brent REBOUNDED above $100 — $101.21 (CNBC midday), Fortune AM $102.47. WTI $90.19. Optimism over de-escalation faded as fighting continued. Goldman Sachs: $110 avg Mar-Apr. If Hormuz flows at 5% for 10 weeks: exceeds 2008 record $147. IEA Birol: 'worse than 1973 + 1979 combined.' Iranian mines in Hormuz = weeks/months to clear."
+    "note": "Full daily series. D26: Brent fell ~$99 on 15-point peace plan hopes (Fortune AM $99.75, Investing.com $98.57, CNN $99.5). WTI ~$89. Fluctuated after Iran dismissed talks. Dow rallied. Pakistan safe passage = first non-Iranian Hormuz transit = physical de-escalation proof. Goldman Sachs: $110 avg Mar-Apr. IEA: worst crisis. Philippines emergency. Japan 30-day reserves."
   },
   "pressure": {
     "labels": [
@@ -323,7 +328,8 @@
       "Mar 21",
       "Mar 22",
       "Mar 23",
-      "Mar 24"
+      "Mar 24",
+      "Mar 25"
     ],
     "attrition": [
       2,
@@ -341,6 +347,7 @@
       9,
       9.5,
       9.5,
+      10,
       10,
       10,
       10,
@@ -377,27 +384,28 @@
       10,
       10,
       8.5,
-      9.5
+      9.5,
+      9
     ]
   },
   "latestTargetBreakdown": {
-    "note": "Mar 24 (D25). Tel Aviv unintercepted (~220 lb). Saudi ~20 drones eastern province. Kuwait intercepting, 7 power lines. UAE continued intercepts. Iran: gas supply line struck.",
+    "note": "Mar 25 (D26). Saudi 32 drones + 1 ballistic in 11 hrs (Ras Tanura, Ghawar, Abqaiq). Kuwait airport fuel tank fire. Bahrain Moroccan killed. Israel: David's Sling malfunction — 2 ballistic struck southern Israel. Beirut suburbs struck.",
     "missiles": {
-      "Israel": 8,
+      "Israel": 6,
       "Saudi": 3,
-      "UAE": 3,
-      "Kuwait": 3,
-      "Bahrain": 2,
-      "Qatar": 2,
-      "Iraq": 2,
+      "UAE": 2,
+      "Kuwait": 2,
+      "Bahrain": 3,
+      "Qatar": 1,
+      "Iraq": 1,
       "Oman": 1,
       "Jordan": 1
     },
     "drones": {
-      "Saudi": 20,
-      "UAE": 10,
-      "Kuwait": 8,
-      "Iraq": 4,
+      "Saudi": 32,
+      "UAE": 6,
+      "Kuwait": 6,
+      "Iraq": 3,
       "Bahrain": 3,
       "Oman": 2,
       "Israel": 1,
@@ -456,7 +464,7 @@
       "missiles": 150,
       "drones": 220,
       "primary": "Qatar (14 ballistic + 4 drones per MoD), Kuwait, Bahrain, UAE",
-      "capability": "150+220. Fars claims >500 missiles, ~2,000 drones cumul. Rate ↓69% missiles, ↓74% drones.",
+      "capability": "150+220. Fars claims >500 missiles, ~2,000 drones cumul. Rate down 69% missiles, 74% drones.",
       "cost": "Brent ~$92. IEA triggers largest coordinated SPR release in history (400M bbl). War cost ~$2B/day.",
       "assessment": "Iran's ballistic capability declining structurally. Economic war intensifying."
     },
@@ -465,7 +473,7 @@
       "missiles": 100,
       "drones": 160,
       "primary": "Continued Gulf + Israel harassment. Iraq: PMF HQs struck across multiple provinces.",
-      "capability": "100+160. Rate ↓79% missiles. >60% of Iranian launchers neutralized. 43 naval vessels destroyed.",
+      "capability": "100+160. Rate down 79% missiles. >60% of Iranian launchers neutralized. 43 naval vessels destroyed.",
       "cost": "Brent $92.69 (CNBC). VLCC freight rates approaching records. Ruwais refinery shut (922K bbl/day offline).",
       "assessment": "Iran losing conventional capability. Asymmetric phase beginning."
     },
@@ -474,7 +482,7 @@
       "missiles": 70,
       "drones": 110,
       "primary": "Diminished volume across Gulf. Iraq militia attacks intensify. F-35 shoots down Iranian Yak-130 — first F-35 air-to-air kill.",
-      "capability": "70+110. Rate ↓85%. Red Crescent: 65 schools, 32 medical facilities damaged.",
+      "capability": "70+110. Rate down 85%. Red Crescent: 65 schools, 32 medical facilities damaged.",
       "cost": "Brent intraday volatility. IEA Oil Market Report: 'largest supply disruption in history.' 20 Mb/d offline. Iran internet blackout persists.",
       "assessment": "Conventional campaign near-spent. Iran shifting to economic leverage."
     },
@@ -483,7 +491,7 @@
       "missiles": 50,
       "drones": 80,
       "primary": "UAE MoD cumul: 1,422 UAVs detected (1,342 intercepted). All 8 cruise missiles intercepted.",
-      "capability": "50+80. Rate ↓90%. UAE air defenses showing strain but holding.",
+      "capability": "50+80. Rate down 90%. UAE air defenses showing strain but holding.",
       "cost": "Brent hits $119.50 — 52-week high (Investing.com). IEA: 'within whisker of $120.' Then crashes on SPR release news. Extreme volatility.",
       "assessment": "Oil price spike signals market panic. SPR intervention buys temporary relief."
     },
@@ -492,7 +500,7 @@
       "missiles": 40,
       "drones": 60,
       "primary": "Mojtaba Khamenei designated new Supreme Leader by Assembly of Experts. NATO intercepts 2nd missile over Turkey.",
-      "capability": "40+60. Rate ↓92%. Trump claims war 'very complete, pretty much.' Then backtracks.",
+      "capability": "40+60. Rate down 92%. Trump claims war 'very complete, pretty much.' Then backtracks.",
       "cost": "Brent crashes to $88.43 (CNBC) — post-SPR selloff. EIA settles $94. Turkey deploys F-16s to N. Cyprus. 10,000+ civilian sites damaged in Iran.",
       "assessment": "Political transition in Iran. Conventional capability near-exhausted but regime intact."
     },
@@ -528,7 +536,7 @@
       "missiles": 20,
       "drones": 70,
       "primary": "New Supreme Leader Khamenei first statement (written only — no video). Vows Hormuz stays closed. 3 more ships struck. Kuwait power lines hit by debris.",
-      "capability": "10+30. CENTCOM: 6,000+ US targets struck. 90+ Iranian vessels destroyed. Ballistic ↓86% from D1. UNSC Res 2817 condemns Iran 13-0-2.",
+      "capability": "10+30. CENTCOM: 6,000+ US targets struck. 90+ Iranian vessels destroyed. Ballistic down 86% from D1. UNSC Res 2817 condemns Iran 13-0-2.",
       "cost": "Brent $99.32 (CNBC). Khamenei statement fuels speculation on injuries. $10M bounty on Khamenei. State Dept: 'likely disfigured.'",
       "assessment": "Khamenei's absence and written-only statement suggests serious injuries. IRGC operating autonomously."
     },
@@ -537,7 +545,7 @@
       "missiles": 25,
       "drones": 60,
       "primary": "UAE 9 ballistic + 33 drones intercepted (AJ). Qatar 4 ballistic + drones. Saudi 51 drones — LARGEST single-day barrage targeting kingdom. Kuwait airport drones. Jordan: 79/85 intercepted over week 2.",
-      "capability": "20+70. DRONE VOLUME TICKED UP — Saudi's 51-drone barrage a significant escalation. Kharg Island: 90+ military targets struck by CENTCOM (sparing oil). White House: ballistic ↓90%, drones ↓95%, 65+ vessels sunk.",
+      "capability": "20+70. DRONE VOLUME TICKED UP — Saudi's 51-drone barrage a significant escalation. Kharg Island: 90+ military targets struck by CENTCOM (sparing oil). White House: ballistic down 90%, drones down 95%, 65+ vessels sunk.",
       "cost": "Brent $103.14 Fri close (CNBC). Fujairah oil hub fire from drone debris. IRGC declares UAE bases 'legitimate targets.' Trump 'not ready for deal.' May hit Kharg 'a few more times just for fun.'",
       "assessment": "Drone escalation despite missile depletion. Saudi barrage = Iran still has UAV stockpile. Kharg strike shows coalition restraint on oil — but for how long?"
     },
@@ -554,9 +562,9 @@
       "date": "Mar 16",
       "missiles": 12,
       "drones": 70,
-      "primary": "Israel new Tehran strikes (smoke over capital). Dubai airport drone fire (flights suspended→limited). Abu Dhabi missile kill. Fujairah drone fire. Saudi 37 drones intercepted (AJ). Baghdad airport rockets. Israel: 245 attack waves total.",
-      "capability": "DRONE VOLUME SURGED — Saudi 37 drones alone is highest single-day count from kingdom. IRGC claims most weapons cache intact and hasn't used post-2025 missiles yet. If true, Iran's offensive depth is much greater than ↓90% suggests. Israel planning 3+ more weeks of strikes.",
-      "cost": "Brent $106+. Gulf exports ↓61% (Reuters/Kpler). US wounded revised to ~200. Hormuz coalition failing — Australia, Japan, Germany all declined. G5 'gravely concerned' re Lebanon. Trump threatens NATO umbrella + Xi summit.",
+      "primary": "Israel new Tehran strikes (smoke over capital). Dubai airport drone fire (flights suspended). Abu Dhabi missile kill. Fujairah drone fire. Saudi 37 drones intercepted (AJ). Baghdad airport rockets. Israel: 245 attack waves total.",
+      "capability": "DRONE VOLUME SURGED — Saudi 37 drones alone is highest single-day count from kingdom. IRGC claims most weapons cache intact and hasn't used post-2025 missiles yet. If true, Iran's offensive depth is much greater than down 90% suggests. Israel planning 3+ more weeks of strikes.",
+      "cost": "Brent $106+. Gulf exports down 61% (Reuters/Kpler). US wounded revised to ~200. Hormuz coalition failing — Australia, Japan, Germany all declined. G5 'gravely concerned' re Lebanon. Trump threatens NATO umbrella + Xi summit.",
       "assessment": "IRGC 'arsenal intact' claim is the most significant D17 development. If true, Iran has been deliberately rationing — using old stock while preserving modern missiles. This reframes the entire attrition narrative. War may have much longer tail than assumed."
     },
     {
@@ -573,491 +581,502 @@
       "missiles": 40,
       "drones": 60,
       "primary": "ENERGY + NUCLEAR WAR: Israel struck South Pars (AM). Iran hit Ras Laffan LNG TWICE (PM). Bushehr NPP 'hostile projectile' (IAEA: no reactor damage, Rosatom suspended construction). 5th senior kill (Basij head + Khatib). Kuwait 4 ballistic + 20 drones. Multi-warhead at Israel (2 killed). Saudi 4 ballistic at Riyadh DURING FM meeting + drone at gas facility.",
-      "capability": "ENERGY WAR FULLY MUTUAL + NUCLEAR DIMENSION. Ras Laffan x2, South Pars, Bushehr NPP all hit in single day. Iran named specific Gulf targets (Samref, Jubail, Mesaieed, Al Hosn). Multi-warhead Khorramshahr-4 + Qadr. Israel striking northern Iran. D19 missile count REVISED UP from 35→40 on 2nd Ras Laffan confirmation.",
+      "capability": "ENERGY WAR FULLY MUTUAL + NUCLEAR DIMENSION. Ras Laffan x2, South Pars, Bushehr NPP all hit in single day. Iran named specific Gulf targets (Samref, Jubail, Mesaieed, Al Hosn). Multi-warhead Khorramshahr-4 + Qadr. Israel striking northern Iran.",
       "cost": "Brent $107.38 close (CNBC), spiked $111+ after-hours. Gas $3.84 (+29%). Fed held rates. Pentagon $200B+. Qatar expelled attaches. Saudi: 'right to military action.' 12 FM joint statement. E3 backing military defense. Hengaw: 5,300 dead. Lebanon 880+. Kataib Hezbollah conditional pause. IMO emergency meeting.",
-      "assessment": "INFLECTION: Energy + nuclear. Bushehr projectile = nuclear-adjacent escalation. Ras Laffan x2 = Qatar's LNG industry threatened. E3 military backing + 12 FM statement + Saudi warning = diplomatic momentum toward intervention OR escalation. Kataib Hezbollah pause offer = first crack in Iran proxy unity. IMO corridor = international shipping institutions mobilizing. Every constraint dissolving simultaneously."
+      "assessment": "INFLECTION: Energy + nuclear. Bushehr projectile = nuclear-adjacent escalation. Ras Laffan x2 = Qatar's LNG industry threatened. E3 military backing + 12 FM statement + Saudi warning = diplomatic momentum toward intervention OR escalation."
     },
     {
       "date": "Mar 19",
       "missiles": 45,
       "drones": 80,
-      "primary": "SAMREF HIT + ENERGY WAR CONTINUES: Kuwait TWO refineries ablaze (Mina al-Ahmadi + Mina Abdullah). QatarEnergy: 'several' LNG facilities. SAMREF refinery (Yanbu, Red Sea) hit by drone — IRGC named target EXECUTED. 6th salvo at Israel. Kuwait 4 ballistic + 25+ drones. Saudi Al-Kharj 2 killed. Gabbard contradicts Trump. IAEA: 440kg = ~10 weapons. Bandar Anzali heavy bombardment.",
-      "capability": "D20 REVISED: 45 missiles + 80 drones. SAMREF = FIRST Red Sea coast target. IRGC executing named target list: Kuwait ✓ Qatar ✓ SAMREF ✓. Remaining: Jubail, Mesaieed, Al Hosn. 6 salvos at Israel since midnight = maintaining pressure. CENTCOM: 7,800+ targets. Bandar Anzali warships destroyed.",
-      "cost": "Brent surged $119.11 intraday (CNBC), settled ~$114 close. Citi: $120+. SAMREF 'impact minimal' per Aramco but symbolic significance enormous — Red Sea coast reached. Gabbard contradicts Trump. Kent FBI probe. Saudi FM 'trust shattered.' Pezeshkian resignation crisis. Swedish execution. Pentagon $200B+.",
-      "assessment": "SAMREF is the inflection within the inflection. IRGC's named targets are being systematically executed. Red Sea coast = drones can reach Saudi Arabia's western export infrastructure, not just Gulf-facing facilities. This means pipeline bypass routes (East-West Pipeline to Yanbu) are no longer safe. The energy war has NO geographic limit within Saudi Arabia. Combined with Kuwait refineries + Qatar LNG = comprehensive assault on Gulf energy architecture."
+      "primary": "SAMREF HIT + ENERGY WAR CONTINUES: Kuwait TWO refineries ablaze (Mina al-Ahmadi + Mina Abdullah). QatarEnergy: 'several' LNG facilities. SAMREF refinery (Yanbu, Red Sea) hit by drone — IRGC named target EXECUTED. 6th salvo at Israel. Kuwait 4 ballistic + 25+ drones. Saudi Al-Kharj 2 killed.",
+      "capability": "D20 REVISED: 45 missiles + 80 drones. SAMREF = FIRST Red Sea coast target. IRGC executing named target list: Kuwait, Qatar, SAMREF. Remaining: Jubail, Mesaieed, Al Hosn.",
+      "cost": "Brent surged $119.11 intraday (CNBC), settled ~$114 close. Citi: $120+. SAMREF 'impact minimal' per Aramco but symbolic significance enormous — Red Sea coast reached.",
+      "assessment": "SAMREF is the inflection within the inflection. IRGC's named targets systematically executed. Red Sea coast = drones reach Saudi western export infrastructure. Pipeline bypass routes no longer safe."
     },
     {
       "date": "Mar 20",
       "missiles": 40,
       "drones": 72,
-      "primary": "NOWRUZ DAY 1 — BESSENT 140M BARRELS + NETANYAHU 'IRAN DESTROYED' + TEHRAN STRUCK: Israel hit Tehran on Nowruz. Iran attacked Gulf: Kuwait Al-Ahmadi refinery fire (KPC confirmed), Saudi 15 drones intercepted (Al-Jawf/Eastern), Bahrain 'successive waves' intercepted, UAE 7 missiles + 15 drones intercepted. BESSENT: US may unsanction 140M barrels Iranian oil at sea. NETANYAHU: 'Iran can no longer enrich or produce missiles' — IAEA contradicts. Mojtaba absent since Mar 8 — Pezeshkian NO CONTACT. 3 protesters executed Qom Mar 19. 11th MEU (2,200 Marines) deploying. Lebanon confirmed 1,000+.",
-      "capability": "D21: 40+72. NETANYAHU claims Iran ballistic/enrichment capability destroyed — directly contradicted by ongoing launches AND IAEA assessment. Iran still launching daily: Kuwait refinery fire proves continued operational capacity. IRGC desertions real at unit level (90% police absence, salary crisis) but disputed by Western analysts at institutional level. 7,000+ US targets struck. Joint Chiefs: 'attacking deeper.' BUT: autonomous IRGC units continue executing target list (4/7 hit). Remaining: Jubail, Mesaieed, Al Hosn.",
-      "cost": "Brent DROPPED ~$110 (from $119 intraday D20). BESSENT intervention: 140M barrels Iranian + 130M barrels Russian oil unsanctioned. G7 SPR 400M barrels. Saudi officials (WSJ): $180/b if disruptions last through April. 1,000 tankers stranded at Hormuz. Operation Maritime Shield G7 launched — but US Navy 'does not have naval availability.' Multiple EU states DECLINED military involvement. Israel 15 killed (up from 14) + 4 West Bank. 13 US KIA. 11th MEU deploying. Pentagon $200B+ supplemental. CNN: 2,200+ killed across Middle East. 3 executions before Nowruz. Iranian diaspora: cancelled festivities.",
-      "assessment": "D21 — NOWRUZ INFLECTION + SUPPLY-SIDE WAR BEGINS: (1) BESSENT 140M BARRELS = most aggressive supply-side intervention of war. Using Iranian oil against Iran. Combined with Russian oil + SPR = massive supply injection. Oil dropped $110 from $119. (2) NETANYAHU 'CAPABILITY DESTROYED' = strategic messaging. IAEA contradicts on nuclear. Ongoing launches contradict on missiles. (3) MOJTABA: absent since Mar 8, Pezeshkian has NO CONTACT = governance vacuum confirmed. (4) HOUTHIS: still out Day 21 = Red Sea open = partial containment holding. (5) 3 EXECUTIONS before Nowruz = regime using maximum repression. (6) 11th MEU deploying = US reinforcing despite Trump 'no troops' claim. The war is shifting from purely military to ECONOMIC WARFARE: Bessent weaponizing oil supply, Netanyahu claiming victory to create political off-ramp, IRGC still fighting but fracturing. Two wars: military (continuing) and economic/narrative (intensifying)."
+      "primary": "NOWRUZ DAY 1 — BESSENT 140M BARRELS + NETANYAHU 'IRAN DESTROYED' + TEHRAN STRUCK: Israel hit Tehran on Nowruz. Kuwait Al-Ahmadi refinery fire (KPC confirmed). Saudi 15 drones intercepted. UAE 7 missiles + 15 drones. BESSENT: US may unsanction 140M barrels Iranian oil at sea. Mojtaba absent since Mar 8.",
+      "capability": "D21: 40+72. NETANYAHU claims Iran capability destroyed — directly contradicted by ongoing launches AND IAEA. IRGC desertions at unit level but institutional level disputed.",
+      "cost": "Brent dropped ~$110 (from $119 intraday D20). BESSENT intervention: 140M barrels. G7 SPR 400M barrels. Saudi (WSJ): $180/b if disruptions last through April. 1,000 tankers stranded at Hormuz.",
+      "assessment": "NOWRUZ INFLECTION + SUPPLY-SIDE WAR BEGINS. Bessent weaponizing oil supply. Netanyahu claiming victory for political off-ramp. IRGC still fighting but fracturing."
     },
     {
       "date": "Mar 21",
       "missiles": 40,
       "drones": 75,
-      "primary": "TRUMP 48-HR ULTIMATUM + DIMONA/ARAD + DIEGO GARCIA + NATANZ: Trump: 'obliterate' power plants if Hormuz not reopened 48 hrs. Iran struck Dimona + Arad (near Negev nuclear center) — interceptors FAILED — 100+ wounded. Diego Garcia 2 IRBMs (4,000 km). Natanz bunker-busted. Saudi 38 drones in 3 hrs. Bahrain cumul 143/242. IDF fresh Tehran strikes. IRGC 70th wave.",
-      "capability": "D22 REVISED: 40+75. DIMONA/ARAD = Iran's most impactful Israel strike since D1. Interceptors FAILED = air defense vulnerability exposed. Ghalibaf: 'new phase.' Naini killed but 'full manufacturing' proven by results. Diego Garcia = 4,000 km IRBM. Saudi 38 drones = largest barrage. ~40 officials killed total. IDF Chief Zamir: 'HALFWAY.' CENTCOM: 5,000-lb bombs on Iranian coastal facility = degraded Hormuz capability.",
-      "cost": "Brent $112.19 Friday close (highest of war). TRUMP 48-HR ULTIMATUM = most dangerous escalation since D1. Iran counter-threat: 'all energy/IT/desalination in region targeted.' Saudi expels military attaché + 4 staff (24 hrs). 22-country Hormuz coalition. IEA Birol: 'greatest global energy security threat in history.' 400M barrel SPR = 'won't be enough.' 3,000+ vessels stranded. IEA urged work from home, reduce speeds. Israel cancelled nationwide schools. G7+EU demand 'immediate halt.' Nowruz + Eid al-Fitr = rare double holiday under bombardment. Internet <1%.",
-      "assessment": "D22 — FOUR ESCALATIONS COLLIDE: (1) TRUMP 48-HR ULTIMATUM vs IRAN COUNTER-THREAT = power plants vs regional energy infrastructure = most dangerous escalation exchange of war. Barely 1 day after 'winding down.' (2) DIMONA/ARAD = nuclear tit-for-tat (Natanz→Dimona). Interceptor failure = air defense crisis for Israel. Ghalibaf: 'new phase.' (3) DIEGO GARCIA = global reach proven. IRBM 4,000 km. (4) SAUDI EXPULSION = diplomatic rupture accelerating. 22-country coalition = international alignment against Iran but also against escalation. IDF Chief Zamir: 'HALFWAY' = Israel sees this as a LONG war. IEA: 'greatest energy security threat in history.' The 48-hour ultimatum is now the single most important variable — if Trump follows through on power plant strikes, Iran's counter-threat targeting ALL regional energy/IT infrastructure could trigger the total war scenario. If bluff: credibility damaged."
+      "primary": "TRUMP 48-HR ULTIMATUM + DIMONA/ARAD + DIEGO GARCIA + NATANZ: Trump: 'obliterate' power plants if Hormuz not reopened 48 hrs. Iran struck Dimona + Arad — interceptors FAILED — 100+ wounded. Diego Garcia 2 IRBMs (4,000 km). Saudi 38 drones in 3 hrs. IDF fresh Tehran strikes.",
+      "capability": "D22: 40+75. DIMONA/ARAD = most impactful Israel strike since D1. Interceptors FAILED. Diego Garcia = 4,000 km IRBM. ~40 officials killed. IDF Chief Zamir: 'HALFWAY.'",
+      "cost": "Brent $112.19 Friday close (highest of war). TRUMP 48-HR ULTIMATUM = most dangerous escalation since D1. Saudi expels military attache. 22-country Hormuz coalition. IEA Birol: 'greatest energy threat in history.'",
+      "assessment": "FOUR ESCALATIONS COLLIDE: (1) Trump ultimatum vs Iran counter-threat = most dangerous exchange. (2) Dimona/Arad = nuclear tit-for-tat. (3) Diego Garcia = global reach. (4) Saudi expulsion. IDF Zamir: 'HALFWAY' = long war."
     },
     {
       "date": "Mar 22",
       "missiles": 35,
       "drones": 70,
-      "primary": "48-HR COUNTDOWN + IDF 200+ TARGETS + IRGC 3RD JET CLAIM: IDF launched 'wide-scale' strikes on Iran + Lebanon (200+ targets, weapons compounds). New Tehran strikes Sunday (explosions east of capital). IRGC: F-16 shot down over central Iran (3rd fighter jet) + armed drone intercepted over Tehran. Saudi: 3 ballistic at Riyadh + ~60 drones eastern province. UAE: 4 ballistic + 25 drones. Iran UN rep: Hormuz 'open to all except enemies.'",
-      "capability": "D23: 35+70. IRGC claims 200+ coalition aircraft destroyed in 3 weeks. 3rd fighter jet claim = air defense narrative. Iran maintaining daily launches week 4. Israel DM Katz: strikes 'INCREASE SIGNIFICANTLY' this week = campaign intensifying, NOT winding down. IDF 200+ targets = weapons destruction phase. Zamir 'HALFWAY' = midpoint. Mojtaba absent Day 14.",
-      "cost": "Brent $112 (weekend, Friday close reference). 48-hr deadline approaching ~Monday evening. Internet Day 23 = longest in Iran history. $35.7M/day internet cost. Lebanon 1,024+ killed (revised up). Iran 1,444+ (AJ). ~5,900+ Hengaw extrapolated. Ghalibaf: 'irreversible damage' if power plants struck. EIA: above $95/b for 2 months.",
-      "assessment": "D23 — THE WAIT: The war is in a holding pattern defined by Trump's 48-hr ultimatum deadline. (1) IDF 'wide-scale' 200+ targets = military operations INTENSIFYING not pausing. Katz 'increase significantly' = strongest Israeli signal yet that this is far from over. (2) IRGC maintaining capability narrative (3rd jet, drone interception, 200+ aircraft claim) even as IRGC command being systematically destroyed. (3) Iran UN rep 'open except enemies' = first articulation of selective Hormuz framework = potential diplomatic off-ramp BUT requires Trump to accept partial rather than full reopening. (4) Monday morning = THE moment. Three outcomes: (a) Trump strikes power plants → total war, (b) Trump backs down → credibility damaged but de-escalation, (c) partial deal → selective passage framework. Each transforms the entire war trajectory."
+      "primary": "48-HR COUNTDOWN + IDF 200+ TARGETS + IRGC 3RD JET CLAIM: IDF 'wide-scale' strikes (200+ targets, weapons compounds). IRGC: F-16 shot down (3rd fighter jet) + drone intercepted over Tehran. Saudi: 3 ballistic Riyadh + ~60 drones. UAE: 4 ballistic + 25 drones. Iran UN rep: Hormuz 'open to all except enemies.'",
+      "capability": "D23: 35+70. IRGC claims 200+ coalition aircraft destroyed in 3 weeks. Israel DM Katz: strikes 'INCREASE SIGNIFICANTLY.' Mojtaba absent Day 14.",
+      "cost": "Brent $112 (weekend). 48-hr deadline approaching. Internet Day 23 = longest in Iran history. Lebanon 1,024+. Iran 1,444+ (AJ).",
+      "assessment": "THE WAIT: War in holding pattern defined by Trump's 48-hr deadline. IDF intensifying not pausing. Iran UN 'open except enemies' = first selective Hormuz framework = potential off-ramp."
     },
     {
       "date": "Mar 23",
       "missiles": 30,
       "drones": 55,
-      "primary": "TRUMP BLINKS — POSTPONES 5 DAYS + OIL CRASH: Trump called off 48-hr ultimatum citing 'productive talks' with Iran. Kushner + Witkoff talked with 'top person' Sunday. Iran DENIES talks (Qalibaf: 'fake news,' IRGC: 'deceitful') BUT CBS: FM official confirms 'received points through mediators.' UAE intercepted 7 ballistic + 16 drones (cumul 352/15/1,789). Saudi 2 ballistic Riyadh + ~20 drones. IRGC attacked 5th Fleet Bahrain. Zolghadr named new SNSC secretary.",
-      "capability": "D24: 30+55. UAE cumul 352 ballistic + 15 cruise + 1,789 drones = most comprehensive official count. IRGC maintaining multi-theater operations despite Trump's 'talks' claim. Attacking 5th Fleet = continued military escalation even as diplomatic signals emerge. Israel 92% ballistic interception rate overall. Dimona revised: 180 wounded.",
-      "cost": "Brent CRASHED $112→$96.50 (~14% drop, Bloomberg). WTI below $90. Dow surged 1,076 pts (+2.4%). Markets interpreted Trump postponement as de-escalation signal. BUT fighting continued unabated overnight. Goldman Sachs: $110 avg Mar-Apr if Hormuz persists. 5-day deadline = new uncertainty window to Friday Mar 28.",
-      "assessment": "D24 — TRUMP BLINKS: The 48-hr ultimatum resolved as OPTION B (backs down) — not option A (total war) or C (deal). (1) TRUMP POSTPONEMENT = credibility damaged with Iran and allies. Iran claims 'retreat out of fear.' But the off-ramp creates space for mediation (Pakistan channel confirmed). (2) OIL CRASH 14% = markets pricing in de-escalation. But premature — fighting continues, mines in Hormuz. (3) IRAN'S DUAL RESPONSE: publicly deny talks (IRGC 'deceitful') while privately reviewing mediator messages (CBS exclusive). Classic Iranian negotiating posture. (4) ZOLGHADR = regime institutional continuity despite ~40+ killed. (5) 5-day extension to Friday = new deadline but Trump deadlines 'elastic' (AJ analyst). The war is shifting from military confrontation to DIPLOMATIC UNCERTAINTY — the question is no longer 'will Trump strike power plants' but 'can the mediation channel produce anything before Friday?'"
+      "primary": "TRUMP BLINKS — POSTPONES 5 DAYS + OIL CRASH: Trump called off ultimatum citing 'productive talks.' CBS: FM confirms 'received points through mediators.' UAE 7 ballistic + 16 drones (cumul 352/15/1,789). Saudi 2 ballistic Riyadh + ~20 drones. IRGC attacked 5th Fleet. Zolghadr new SNSC secretary.",
+      "capability": "D24: 30+55. UAE cumul 352 ballistic + 15 cruise + 1,789 drones. IRGC maintaining multi-theater despite talks claim. Israel 92% ballistic interception.",
+      "cost": "Brent CRASHED $112 to $96.50 (~14%). WTI below $90. Dow surged 1,076 pts. Goldman: $110 avg. 5-day deadline = Friday Mar 28.",
+      "assessment": "TRUMP BLINKS: 48-hr ultimatum resolved as OPTION B (backs down). Credibility damaged. But off-ramp creates space. Iran dual posture: deny publicly, engage privately. Zolghadr = regime continuity."
     },
     {
       "date": "Mar 24",
       "missiles": 25,
       "drones": 50,
-      "primary": "LEBANON EXPELS IRAN ENVOY + TEL AVIV UNINTERCEPTED + MINES IN HORMUZ: Lebanon declared Iranian ambassador persona non grata (leave by Mar 29) — historic break. Iranian missile struck central Tel Aviv UNINTERCEPTED (~220 lb warhead, 6+ injured). 4 sites struck across Israel. Iranian Maham 3/7 mines confirmed in Hormuz (dozen+). Saudi ~20 drones eastern province. Kuwait intercepting, 7 power lines down. IDF struck al-Dalafa Bridge Litani + gas line in SW Iran. Iran: preparing plans targeting Tel Aviv + regional allies (Fars).",
-      "capability": "D25: 25+50. TEL AVIV UNINTERCEPTED = critical air defense gap despite 92% overall rate. ~220 lb warhead penetrated. Knesset suspended. Iran's capability PROVEN by results even in week 4. MINES in Hormuz = physical blockade layer beyond naval/missile. Mine clearance = weeks/months even post-ceasefire. Hezbollah 865 attack waves since Mar 2. Iran planning strikes on Tel Aviv + allies (Fars) = escalation signal despite Trump postponement.",
-      "cost": "Brent REBOUNDED above $100 — $101.21 (CNBC) from $96.50 crash. Fortune AM $102.47. WTI $90.19. Goldman: $110 avg; if Hormuz 5% for 10 weeks → exceeds $147 (2008 record). IEA Birol: 'worse than 1973 + 1979 combined.' Lebanon expulsion = HISTORIC diplomatic rupture. HRANA: 1,704+ killed Iran (1,047 civilian + 214 children + 657 unclassified). Hospitals 1/3 capacity. Food tripled. Russia Lavrov: Bushehr strikes 'extremely dangerous.' UK sending short-range air defense. Internet 552+ hours.",
-      "assessment": "D25 — DIVERGENT SIGNALS: (1) LEBANON EXPULSION of Iran envoy = most significant diplomatic break in modern Lebanon-Iran relations. Iran's proxy strategy losing its political cover. (2) TEL AVIV UNINTERCEPTED = Iran can still land devastating hits despite degraded capability. Air defense is NOT absolute. (3) MINES IN HORMUZ = physical dimension means Hormuz won't reopen quickly even with ceasefire. Clearance takes weeks/months. This LIMITS the value of any diplomatic breakthrough. (4) TRUMP'S 5-DAY WINDOW: Pakistani mediation channel + CBS confirmation of Iranian engagement = real but fragile. Iran's dual posture (deny publicly, engage privately) is traditional. (5) OIL REBOUND from crash = markets correcting premature optimism. Goldman $147 scenario = worst case but credible. (6) IEA 'worse than 73+79 combined' = strongest institutional warning yet. War in week 4 with no clear exit but first diplomatic opening since D1."
+      "primary": "LEBANON EXPELS IRAN ENVOY + TEL AVIV UNINTERCEPTED + MINES IN HORMUZ: Lebanon declared Iranian ambassador persona non grata. Tel Aviv UNINTERCEPTED missile (~220 lb). Maham 3/7 mines confirmed in Hormuz. Saudi ~20 drones. Kuwait intercepting, 7 power lines. IDF struck al-Dalafa Bridge Litani.",
+      "capability": "D25: 25+50. TEL AVIV UNINTERCEPTED = critical defense gap. MINES = physical blockade. Hezbollah 865 attack waves. Iran planning Tel Aviv + allies (Fars).",
+      "cost": "Brent REBOUNDED above $100 — $101.21 (CNBC). Fortune AM $102.47. Goldman: $110 avg; $147 worst case. IEA: 'worse than 73+79.' HRANA: 1,704+ killed. Hospitals 1/3. Internet 552+.",
+      "assessment": "DIVERGENT SIGNALS: Lebanon expulsion = proxy fracturing. Tel Aviv unintercepted = Iran still dangerous. Mines = Hormuz slow to reopen. Trump 5-day window. Oil rebound = premature optimism corrected."
+    },
+    {
+      "date": "Mar 25",
+      "missiles": 20,
+      "drones": 55,
+      "primary": "15-POINT PEACE PLAN + SAFE PASSAGE FORMAL + 82ND AIRBORNE: Trump admin sent 15-point ceasefire plan via Pakistan (NYT). Iran told UNSC: non-hostile ships can transit with 'prior coordination.' Pakistan Aframax = first non-Iranian transit. 82nd Airborne deploying (2,000-3,000) for Kharg Island. David's Sling MALFUNCTION — 2 ballistic struck southern Israel. Saudi 32 drones + 1 ballistic in 11 hrs. Kuwait airport fuel tank fire. Bahrain: Moroccan civilian killed.",
+      "capability": "D26: 20+55. SAFE PASSAGE = Iran creating bilateral Hormuz framework. Pakistan tanker transited = physical proof. India traded 3 Iranian tankers for passage. China in talks. IRGC still launching: Saudi 32 drones 11 hrs = sustained. David's Sling malfunction = 2nd interceptor failure in 2 days. 82nd Airborne + 2 MEUs = 6,000-8,000 ground troops = credible Kharg Island threat.",
+      "cost": "Brent fell ~$99 on peace plan hopes (Fortune $99.75, Investing.com $98.57). WTI ~$89. Iran Health Ministry: 1,500+ killed, 18,551 injured. 82,000+ structures damaged (Red Crescent). Lebanon: 1,072 killed. IDF authorized 400,000 reservist mobilization. Philippines state of emergency. Japan 30-day reserves. China gas +20%. G7 FM Friday.",
+      "assessment": "D26 — DUAL-TRACK INFLECTION: (1) 15-POINT PLAN = most concrete diplomatic proposal since D1. Ambitious demands (dismantle nuclear) but framework exists. Iran mocks publicly but engages through intermediaries. (2) SAFE PASSAGE FORMAL = MOST SIGNIFICANT Hormuz de-escalation signal. Pakistan tanker actually transited = not theoretical. India, China, Iraq, Malaysia also engaging. This creates bilateral bypass of US-Iran standoff. (3) 82ND AIRBORNE = credible ground threat (Kharg Island) = military pressure concurrent with diplomacy. Classic negotiate-from-strength. (4) IRAN COUNTER-DEMANDS = maximalist but engaging = negotiation opening. (5) DAVID'S SLING = air defense deteriorating. (6) OIL FELL on plan hopes = markets want deal. TWO WARS DIVERGING: diplomatic track gaining substance (15-point plan + safe passage) while military track escalating (82nd Airborne + Kharg + 400K reservists). The question is which track dominates by Friday."
     }
   ],
   "timeline": [
     {
-      "title": "Week 3–4 (Mar 16–24)",
-      "body": "48-HR ULTIMATUM → TRUMP BLINKS + MINES + LEBANON BREAK: Trump threatened power plants, then postponed 5 days citing 'talks.' Iran denies but CBS: FM confirms mediator messages. Dimona/Arad struck (180 wounded). Diego Garcia IRBMs (4,000 km). IDF 200+ targets. Lebanon expelled Iranian envoy. Tel Aviv unintercepted missile. Iranian mines confirmed in Hormuz. Oil spike $112 → crash $96.50 → rebound $99. Internet 552+ hours. Houthis declared entry, no confirmed attacks."
+      "title": "Week 3-4 (Mar 16-25)",
+      "body": "ULTIMATUM -> BLINKS -> 15-POINT PLAN + SAFE PASSAGE: Trump threatened power plants, blinked 5 days, then sent 15-point peace plan via Pakistan (NYT). Iran told UNSC non-hostile ships can transit Hormuz. Pakistan tanker = first non-Iranian transit. 82nd Airborne deploying for Kharg. Dimona/Arad struck. Diego Garcia IRBMs. Lebanon expelled envoy. Tel Aviv unintercepted. Mines in Hormuz. David's Sling malfunction. Oil $112->$96.50->$101->$99. Internet 576+ hrs."
     },
     {
-      "title": "Week 4–5 (Mar 25–Apr 5)",
-      "body": "FIVE-DAY WINDOW + MINE CLEARANCE + FRIDAY DEADLINE: Trump's 5-day extension expires ~Friday Mar 28. Pakistani mediation channel active. Key questions: (1) Can mediators produce framework before Friday? (2) Will Iran's 'private engagement' translate to concrete offers? (3) Will Houthi threat materialize? (4) Mine clearance = weeks/months regardless. IDF Zamir 'HALFWAY' = midpoint ~D44. Lebanon ground ops continuing. Goldman: $110 avg or $147+ worst case."
+      "title": "Week 4-5 (Mar 26-Apr 5)",
+      "body": "FRIDAY DEADLINE + SAFE PASSAGE EXPANSION + GROUND THREAT: Trump's 5-day extension expires ~Friday Mar 28. 15-point plan under review. Safe passage framework expanding (Pakistan, India, China). 82nd Airborne near Kharg. Key: (1) Does Iran engage on 15-point plan? (2) Safe passage expands to more countries? (3) 82nd Airborne = bluff or action? (4) G7 FM Friday. (5) Mine clearance. Goldman: $110 avg. IDF 'several more weeks.'"
     },
     {
-      "title": "Month 2 (Apr–May)",
-      "body": "Three crises converge: (1) Energy — mines in Hormuz + IRGC target execution vs improved Gulf defenses; (2) Nuclear — Isfahan underground + IAEA locked out = breakout window; (3) Internal — post-Nowruz protest wave + succession crisis + IRGC two-front strain. Hormuz mine clearance timeline. Lebanon expelled envoy = proxy network fracturing."
+      "title": "Month 2 (Apr-May)",
+      "body": "Three crises converge: (1) Hormuz — safe passage framework vs mines vs 82nd Airborne; (2) Nuclear — 15-point plan demands vs Isfahan underground + IAEA locked out; (3) Internal — post-Nowruz + succession + IRGC strain. If safe passage expands: partial Hormuz normalization. If 82nd Airborne activates: total war."
     },
     {
       "title": "Month 3+ (May onward)",
-      "body": "If mediation fails: permanent regional restructuring. Saudi entry = wider war. If post-Nowruz internal pressure sustains: IRGC faces existential two-front challenge. Nuclear verification crisis defines decade. Mine-clearance timeline determines Hormuz recovery. No clean outcome available."
+      "body": "If 15-point plan framework holds: phased de-escalation possible. If rejected: permanent restructuring. Saudi entry = wider war. Nuclear verification crisis defines decade. Mine-clearance + safe passage determine Hormuz recovery."
     },
     {
       "title": "Endgame variables",
-      "body": "Friday Mar 28 deadline. Pakistani mediation outcome. Hormuz mine clearance timeline. IRGC remaining targets (Jubail, Mesaieed, Al Hosn). Houthi activation. Post-Nowruz protests. Saudi military entry. Mojtaba's condition. Trump's deal terms (enriched uranium surrender). Lebanon-Iran diplomatic rupture. Goldman $147 scenario. US missile resupply. Isfahan nuclear."
+      "body": "Friday Mar 28 deadline. 15-point plan response. Safe passage expansion rate. 82nd Airborne activation. Kharg Island. G7 FM meeting. Mine clearance. Houthi activation. Post-Nowruz protests. 400,000 IDF reservists. Iran counter-demands (US bases, reparations). Goldman $147 scenario. David's Sling degradation."
     }
   ],
   "timeline_fa": [
     {
-      "title": "هفته ۳–۴ (۱۶–۲۴ مارس)",
-      "body": "اولتیماتوم → ترامپ عقب‌نشینی + مین + گسست لبنان: ترامپ ۵ روز تعویق. ایران رد اما CBS تأیید. دیمونا ۱۸۰ زخمی. دیگو گارسیا. ۲۰۰+ هدف. لبنان اخراج سفیر. تل‌آویو بدون رهگیری. مین هرمز. نفت $۱۱۲→$۹۶.۵۰→$۱۰۱. اینترنت ۵۵۲+. حوثی اعلام بدون حمله."
+      "title": "هفته ۳-۴ (۱۶-۲۵ مارس)",
+      "body": "اولتیماتوم -> عقب‌نشینی -> طرح ۱۵ بندی + عبور مطمئن: ترامپ تعویق ۵ روز سپس طرح ۱۵ بندی از پاکستان (NYT). ایران به شورای امنیت: عبور غیرخصمانه. نفتکش پاکستان = اولین. هوابرد ۸۲ خارگ. دیمونا. لبنان اخراج. نقص کلاه داوود. نفت $۱۱۲->$۹۶->$۱۰۱->$۹۹. اینترنت ۵۷۶+."
     },
     {
-      "title": "هفته ۴–۵",
-      "body": "پنجره ۵ روزه — مهلت ~جمعه ۲۸ مارس. میانجی‌گری پاکستان. سؤالات: مذاکره قبل جمعه؟ حوثی؟ پاکسازی مین = هفته‌ها. زامیر 'نیمه راه' ~D44. لبنان. گلدمن $۱۱۰ یا $۱۴۷+."
+      "title": "هفته ۴-۵",
+      "body": "مهلت جمعه + گسترش عبور + تهدید زمینی: ۱۵ بند بررسی. عبور: پاکستان + هند + چین. هوابرد ۸۲ نزدیک خارگ. G7 جمعه. مین. گلدمن $۱۱۰."
     },
     {
       "title": "ماه ۲",
-      "body": "مین هرمز + انرژی + هسته‌ای + داخلی. لبنان اخراج = شبکه نیابتی شکسته. نوروز بعد + جانشینی + سپاه دو جبهه."
+      "body": "هرمز: عبور مطمئن در برابر مین در برابر هوابرد ۸۲. هسته‌ای: ۱۵ بند در برابر اصفهان زیرزمینی. داخلی: نوروز + جانشینی + سپاه."
     },
     {
       "title": "ماه ۳+",
-      "body": "اگر مذاکره شکست: بازسازی دائمی. عربستان = جنگ گسترده‌تر. هسته‌ای دهه. مین تعیین‌کننده."
+      "body": "اگر ۱۵ بند: کاهش تنش مرحله‌ای. اگر رد: بازسازی دائمی. عربستان = گسترده‌تر. هسته‌ای دهه."
     },
     {
       "title": "متغیرهای پایانی",
-      "body": "جمعه ۲۸. پاکستان مذاکره. مین هرمز. جبیل، مسیعید، الحصن. حوثی. نوروز. عربستان. مجتبی. ترامپ اورانیوم. لبنان-ایران. گلدمن $۱۴۷. اصفهان."
+      "body": "جمعه ۲۸. ۱۵ بند. عبور گسترش. هوابرد ۸۲ خارگ. G7. مین. حوثی. نوروز. ۴۰۰,۰۰۰ ذخیره. ضدپیشنهاد ایران. گلدمن $۱۴۷. کلاه داوود."
     }
   ],
   "scenarioProbabilities": [
     {
       "name": "Escalation spiral / total war",
-      "prob": "25%",
-      "body": "DECREASED 37%→25%. Trump BLINKED on power plant strikes — 48-hr ultimatum resolved as postponement, NOT escalation. The single biggest escalation trigger (power plants) has been deferred 5 days. BUT: Tel Aviv unintercepted missile + mines in Hormuz + Iran preparing plans for Tel Aviv strikes (Fars) + Houthi entry declaration = escalation pathways still active. If Friday deadline passes without progress AND fighting intensifies: rebounds. Probability is LOWEST since D18 because diplomatic channel is now open."
+      "prob": "22%",
+      "body": "DECREASED 25%->22%. 15-point plan = most concrete diplomatic proposal since D1. Safe passage framework = Hormuz partially reopening bilaterally. Pakistan tanker transited = physical proof. BUT: 82nd Airborne deploying for Kharg = credible ground invasion threat. David's Sling malfunction = Israel more vulnerable. 400,000 reservists = Israel escalating. If Friday deadline passes AND 82nd activates: rebounds sharply. Safe passage + plan keep this lower."
     },
     {
       "name": "Protracted attrition + internal crisis",
       "prob": "30%",
-      "body": "INCREASED 24%→30%. NOW THE MOST LIKELY SCENARIO. Trump blinked = war continues without total escalation. IDF Zamir 'HALFWAY' = months planned. Mines in Hormuz = physical blockade persists regardless of diplomacy. Internet Day 25. IRGC institutional capability intact (Zolghadr appointment). Lebanon expulsion = proxy fracturing but war continues. Goldman $110 avg = sustained high oil. Both sides degrading but neither collapsing."
+      "body": "UNCHANGED at 30%. STILL #1 MOST LIKELY. 15-point plan exists but Iran mocking it. Safe passage = partial Hormuz normalization but mines remain. IDF wants 'several more weeks.' 82,000+ structures. Internet Day 26. Both sides degrading. Goldman $110 avg. War has rhythm: diplomatic proposals + military strikes simultaneously. Neither side ready to stop."
     },
     {
       "name": "Declared victory + exit",
-      "prob": "18%",
-      "body": "INCREASED 11%→18%. STRONGEST GAIN. Trump actively seeking off-ramp: postponed strikes, claimed 'productive talks,' seeking deal. AJ analyst: 'looking for dignified exit.' Trump demands enriched uranium surrender = ambitious but signals deal-making posture. If Pakistani mediation produces framework: Trump declares 'victory' and exits. Israel has own timeline (Zamir 'HALFWAY') and may continue regardless."
+      "prob": "20%",
+      "body": "INCREASED 18%->20%. Trump has ACTUAL 15-point plan — most concrete framework since D1. If Iran engages even partially: Trump can declare 'deal' and exit. Safe passage = physical proof Hormuz reopening. Oil dropped on plan = markets want deal. 82nd Airborne = leverage for negotiations. AJ: Trump 'looking for dignified exit.' Plan is ambitious (dismantle nuclear) but creates negotiation framework."
+    },
+    {
+      "name": "Negotiated deal",
+      "prob": "10%",
+      "body": "INCREASED 7%->10%. BIGGEST PROPORTIONAL GAIN AGAIN. 15-point plan = first concrete framework. Safe passage = bilateral mechanism working. Pakistan delivered plan. India trading tankers for passage. China in talks. Iran counter-demands (bases, reparations, fees) = maximalist but ENGAGING. FM Baghaei: 'responding through intermediaries.' Multiple intermediary channels active simultaneously. Still low because demands are far apart — but mechanism exists."
     },
     {
       "name": "International intervention / ceasefire",
-      "prob": "12%",
-      "body": "DECREASED 17%→12%. Trump's postponement REDUCES intervention urgency — the humanitarian catastrophe of power plant strikes (which would have forced intervention) has been averted for now. 22-country coalition. IEA 'worse than 73+79.' UK sending air defense. But momentum shifted from multilateral intervention to bilateral US-Iran mediation channel."
+      "prob": "10%",
+      "body": "DECREASED 12%->10%. Safe passage framework = bilateral solutions emerging, reducing need for multilateral intervention. G7 FM meeting Friday. Philippines emergency. Japan reserves. But momentum is toward bilateral channels (Pakistan, India, China) not multilateral. 82nd Airborne = US acting unilaterally not through coalition."
     },
     {
       "name": "Regime fracture / IRGC collapse",
       "prob": "8%",
-      "body": "UNCHANGED at 8%. Zolghadr appointment = regime continuity signal. IRGC still functioning: attacking 5th Fleet, launching at Israel daily, maintaining mines in Hormuz. ~40+ officials killed but command reconstituting. Lebanon expulsion of envoy = proxy network fracturing but IRGC domestic control intact. Internet blackout = suppression working. Post-Nowruz protests deferred."
-    },
-    {
-      "name": "Negotiated deal",
-      "prob": "7%",
-      "body": "INCREASED 3%→7%. BIGGEST PROPORTIONAL GAIN. CBS exclusive: Iranian FM official confirms 'received points through mediators.' Pakistani channel active. Israeli official: talks planned later this week. Trump demands enriched uranium surrender — ambitious but negotiation opening. Iran's dual posture (deny publicly, engage privately) = classic Iranian diplomacy. Mines in Hormuz COMPLICATE any quick deal (clearance = weeks). But the seed is real for the first time since D1."
+      "body": "UNCHANGED at 8%. IRGC Zolfaghari publicly mocking peace plan = institutional confidence. Safe passage framework = Iran exerting sovereignty over Hormuz. Counter-demands = regime coherent enough to negotiate. 82,000+ structures damaged but IRGC still launching 32 drones in 11 hours at Saudi Arabia. Internet suppression working. Mojtaba absent Day 17 but regime functioning."
     }
   ],
   "scenarioProbabilities_fa": [
     {
       "name": "مارپیچ تشدید / جنگ تمام‌عیار",
-      "prob": "۲۵٪",
-      "body": "کاهش ۳۷→۲۵. ترامپ عقب‌نشینی. مهلت تعویق. اما تل‌آویو بدون رهگیری + مین + حوثی = مسیرها فعال. کمترین از D18."
+      "prob": "۲۲٪",
+      "body": "کاهش ۲۵->۲۲. طرح ۱۵ بندی + عبور مطمئن = دیپلماسی ملموس. اما هوابرد ۸۲ خارگ + نقص کلاه داوود + ۴۰۰,۰۰۰ ذخیره = تشدید نظامی."
     },
     {
       "name": "فرسایشی + بحران داخلی",
       "prob": "۳۰٪",
-      "body": "افزایش ۲۴→۳۰. محتمل‌ترین. ترامپ عقب‌نشینی = جنگ ادامه بدون تشدید کامل. مین = انسداد فیزیکی. زامیر 'نیمه راه.' گلدمن $۱۱۰."
+      "body": "ثابت ۳۰. #۱. طرح هست اما ایران رد. عبور = بخشی. مین ادامه. ارتش اسرائیل 'چند هفته دیگر.' ۸۲,۰۰۰+ سازه. ریتم جنگ = دیپلماسی + حمله همزمان."
     },
     {
       "name": "اعلام پیروزی + خروج",
-      "prob": "۱۸٪",
-      "body": "افزایش ۱۱→۱۸. بیشترین رشد. ترامپ فعالانه خروج. 'مذاکرات سازنده.' تحویل اورانیوم. AJ: 'خروج آبرومندانه.'"
+      "prob": "۲۰٪",
+      "body": "افزایش ۱۸->۲۰. ترامپ طرح واقعی دارد. عبور = اثبات فیزیکی. نفت کاهش = بازار خواهان. هوابرد ۸۲ = اهرم."
+    },
+    {
+      "name": "مذاکره",
+      "prob": "۱۰٪",
+      "body": "افزایش ۷->۱۰. بیشترین رشد. طرح ۱۵ بندی = چارچوب. عبور = مکانیزم. پاکستان + هند + چین. ایران ضدپیشنهاد = حداکثری اما درگیر."
     },
     {
       "name": "مداخله بین‌المللی",
-      "prob": "۱۲٪",
-      "body": "کاهش ۱۷→۱۲. تعویق = کاهش فوریت. اما IEA 'بدتر از ۷۳+۷۹.' ائتلاف ۲۲."
+      "prob": "۱۰٪",
+      "body": "کاهش ۱۲->۱۰. عبور = دوجانبه = کاهش نیاز چندجانبه. G7 جمعه. فیلیپین اضطراری. اما پاکستان/هند/چین."
     },
     {
       "name": "شکست رژیم / فروپاشی سپاه",
       "prob": "۸٪",
-      "body": "ثابت. زلقدر = تداوم. سپاه فعال: ناوگان پنجم + اسرائیل + مین. ~۴۰+ اما بازسازی."
-    },
-    {
-      "name": "مذاکره",
-      "prob": "۷٪",
-      "body": "افزایش ۳→۷. بیشترین رشد نسبی. CBS: وزارت خارجه تأیید. پاکستان کانال. ترامپ اورانیوم. اما مین = پیچیدگی."
+      "body": "ثابت. سپاه ذلفقاری طرح مسخره. عبور = حاکمیت هرمز. ضدپیشنهاد = منسجم. ۳۲ پهپاد ۱۱ ساعت. اینترنت. مجتبی ۱۷."
     }
   ],
   "theoryEvaluation": [
     {
-      "title": "TRUMP BLINKS — what the postponement means",
-      "body": "Trump called off the 48-hr ultimatum — resolved as OPTION B (backs down, not total war). Five key implications: (1) CREDIBILITY DAMAGED: Iran claims 'retreat out of fear.' Future threats carry less weight. (2) DIPLOMATIC OPENING: Pakistani mediation + Kushner/Witkoff engagement + CBS confirmation = first real channel since D1. (3) OIL CRASH/REBOUND: Markets priced in de-escalation (14% drop) then corrected (rebound to $99). Shows extreme sensitivity to diplomatic signals. (4) NEW DEADLINE FRIDAY: Trump's deadlines are 'elastic' — but creates 5-day negotiation window. (5) ISRAEL INDEPENDENT: IDF continuing strikes regardless. Zamir 'HALFWAY.' Israel is NOT party to Trump's de-escalation signal."
+      "title": "15-POINT PLAN — framework exists but gap is enormous",
+      "body": "Trump's 15-point plan via Pakistan is the most concrete diplomatic proposal since D1. Five key dimensions: (1) DEMANDS are maximalist: dismantle Natanz/Isfahan/Fordow, stop enrichment, transfer material, suspend missiles, cease proxies, reopen Hormuz. This is essentially regime strategic surrender. (2) OFFER is significant: full sanctions relief, civilian nuclear support, snapback removal. (3) IRAN'S RESPONSE: publicly mocking ('negotiating with yourselves') but FM Baghaei confirms 'responding through intermediaries' = engaging. Counter-demands (US bases, reparations, Hormuz fees) = maximalist but structured. (4) MECHANISM: Pakistan delivered. India, China, Iraq, Malaysia also engaged. Multiple intermediary channels = robust. (5) REALISTIC: Demands as stated are unacceptable to Iran. But creates FRAMEWORK for counter-proposals. The plan's value is in creating the negotiation structure, not in being accepted as-is."
     },
     {
-      "title": "MINES IN HORMUZ — physical blockade changes everything",
-      "body": "Iranian Maham 3 and Maham 7 Limpet Mines confirmed in Hormuz. THIS CHANGES THE ENDGAME CALCULUS: (1) Even a ceasefire doesn't reopen Hormuz quickly — mine clearance takes weeks to months. (2) Mines are passive — they threaten shipping even if Iran stops all active military operations. (3) Combined with 3,000+ stranded vessels + port damage + insurance crisis = Hormuz recovery is a MONTHS-long process. (4) Goldman's $147 scenario (Hormuz at 5% for 10 weeks) becomes more plausible because mines ensure flows stay low. (5) Any negotiated deal must include mine clearance framework — this adds enormous complexity."
+      "title": "SAFE PASSAGE — Hormuz reopening bilaterally",
+      "body": "Iran's formal UNSC notification that non-hostile ships can transit with 'prior coordination' is THE most significant Hormuz de-escalation since D1. Key implications: (1) PHYSICAL PROOF: Pakistan Aframax tanker actually transited = not theoretical. (2) BILATERAL FRAMEWORK: India traded 3 Iranian tankers for passage. China in talks. Iraq, Malaysia lobbying. This creates a BILATERAL bypass of the US-Iran standoff on Hormuz. (3) SELECTIVE SOVEREIGNTY: Iran positioning itself as Hormuz gatekeeper — 'closed to enemies, open to friends.' This is a NEW strategic posture. (4) UNDERMINES COALITION: If countries can get bilateral deals, 22-country coalition loses urgency. (5) OIL IMPACT: If safe passage expands, Goldman's $147 worst case becomes less likely. But mines still physical barrier. (6) US EXCLUDED: The bilateral framework explicitly excludes US-flagged vessels = Iran retains leverage."
     },
     {
-      "title": "LEBANON EXPELS ENVOY — proxy network fracturing",
-      "body": "Lebanon declaring Iranian ambassador persona non grata is the MOST SIGNIFICANT diplomatic break in modern Lebanon-Iran relations. Implications: (1) Lebanon officially blaming Hezbollah/Iran for dragging it into war. (2) 865 Hezbollah attack waves = Hezbollah operating autonomously regardless of Lebanese government. (3) Signal to other countries hosting Iranian proxies. (4) Doesn't change military reality (Hezbollah still fighting) but POLITICAL COVER for Iran's regional network is dissolving. (5) Combined with Saudi expulsion (D22) = Iran's diplomatic position weakening across multiple countries simultaneously."
+      "title": "82ND AIRBORNE — negotiate from strength or escalation?",
+      "body": "Pentagon deploying 2,000-3,000 paratroopers from 82nd Airborne simultaneously with 15-point peace plan. This is CLASSIC negotiate-from-strength: (1) KHARG ISLAND: 'forcible-entry missions' = seizure of Iran's primary oil export terminal. Would end Hormuz standoff but = ground war. (2) COMBINED FORCE: 82nd + 2 MEUs = 6,000-8,000 ground troops. ~50,000 already in region. (3) SIGNAL TO IRAN: Accept diplomatic framework or face ground escalation. (4) CONTRADICTS TRUMP: Trump seeking 'dignified exit' but deploying ground troops = dual signal. (5) FRIDAY: If diplomatic track fails by Friday, military track is ready. This is the most dangerous dual-track since D1."
     },
     {
-      "title": "IRAN'S DUAL POSTURE — classic negotiating pattern",
-      "body": "Iran is simultaneously: (a) Publicly denying talks (Qalibaf: 'fake news,' IRGC: 'deceitful'), (b) Privately engaging through mediators (CBS: 'received points, being reviewed'). This is CLASSIC Iranian negotiating behavior — deny engagement while engaging. It serves multiple purposes: (1) Maintains domestic narrative of defiance. (2) Preserves negotiating leverage (not appearing eager). (3) Allows regime to walk away without losing face if talks fail. (4) Tests what mediators can offer before committing. The CBS exclusive is the most important signal — it confirms Iran HAS received and IS reviewing US proposals through intermediaries."
+      "title": "DUAL-TRACK WAR — diplomacy and escalation simultaneously",
+      "body": "D26 crystallizes the war's defining dynamic: two tracks running in parallel. DIPLOMATIC: 15-point plan + safe passage + Pakistan/India/China channels + Iran counter-demands = most substance since D1. MILITARY: 82nd Airborne + 400,000 IDF reservists + David's Sling failures + Kharg Island threat + 32 drones in 11 hours at Saudi = continued escalation. These tracks are NOT contradictory — they reinforce each other. Military pressure makes diplomacy more urgent. Diplomatic framework makes military restraint possible. The question is which track DOMINATES by Friday. If diplomatic: war winds toward protracted negotiation. If military: 82nd Airborne at Kharg = new phase."
     }
   ],
   "theoryEvaluation_fa": [
     {
-      "title": "ترامپ عقب‌نشینی — معنای تعویق",
-      "body": "اعتبار آسیب. فضای دیپلماتیک. نفت سقوط/بازگشت. مهلت جدید جمعه. اسرائیل مستقل: زامیر 'نیمه راه.' ادامه بدون توجه به ترامپ."
+      "title": "طرح ۱۵ بندی — چارچوب هست اما شکاف بزرگ",
+      "body": "مشخص‌ترین پیشنهاد از D1. خواسته‌ها حداکثری: نطنز/اصفهان/فردو. پیشنهاد: رفع تحریم + هسته‌ای غیرنظامی. ایران رد علنی اما 'پاسخ از طریق میانجی.' ضدپیشنهاد = ساختاریافته. ارزش: ساختار مذاکره نه پذیرش."
     },
     {
-      "title": "مین هرمز — انسداد فیزیکی",
-      "body": "ماهام ۳ و ۷ تأیید. حتی آتش‌بس = هفته‌ها پاکسازی. گلدمن $۱۴۷ محتمل‌تر. هر توافقی باید شامل پاکسازی مین."
+      "title": "عبور مطمئن — هرمز دوجانبه باز",
+      "body": "مهم‌ترین سیگنال هرمز از D1. نفتکش پاکستان = اثبات فیزیکی. هند معامله. چین مذاکره. ایران = دروازه‌بان هرمز. دوجانبه = دور زدن آمریکا-ایران."
     },
     {
-      "title": "لبنان اخراج سفیر — شبکه نیابتی شکسته",
-      "body": "بزرگ‌ترین گسست مدرن لبنان-ایران. ۸۶۵ موج حزب‌الله = مستقل. عربستان اخراج D22. موقعیت دیپلماتیک ایران تضعیف."
+      "title": "هوابرد ۸۲ — مذاکره از موضع قدرت یا تشدید؟",
+      "body": "همزمان با طرح ۱۵ بندی. خارگ = ترمینال صادرات نفت. ۶,۰۰۰-۸,۰۰۰ نیرو. اگر دیپلماسی شکست: آماده. خطرناک‌ترین دوگانگی از D1."
     },
     {
-      "title": "ایران دوگانگی — الگوی مذاکره کلاسیک",
-      "body": "علنی: رد (قالیباف 'دروغ'). خصوصی: بررسی (CBS وزارت خارجه). کلاسیک ایرانی = حفظ آبرو + آزمایش پیشنهادات."
+      "title": "جنگ دو مسیره — دیپلماسی و تشدید همزمان",
+      "body": "D26: دو مسیر موازی. دیپلماتیک: ۱۵ بند + عبور + کانال‌ها. نظامی: هوابرد ۸۲ + ۴۰۰,۰۰۰ ذخیره + خارگ. تقویت متقابل. سؤال: کدام تا جمعه غالب؟"
     }
   ],
   "endstate": [
     {
       "title": "Most likely (30%)",
-      "body": "Protracted attrition — INCREASED 24%→30%. NOW #1. Trump blinked = war continues without total escalation. Mines in Hormuz = physical blockade persists. Zamir 'HALFWAY.' Both sides degrading. Goldman $110 avg."
+      "body": "Protracted attrition — UNCHANGED at 30%. Still #1. 15-point plan exists but gap enormous. Safe passage = partial. Mines remain. IDF 'several more weeks.' 82nd Airborne deploying. Both sides have frameworks but neither ready to stop. Goldman $110 avg."
     },
     {
-      "title": "Second (25%)",
-      "body": "Escalation spiral — DECREASED 37%→25%. Power plant threat deferred. Diplomatic channel open. But Tel Aviv unintercepted + mines + Houthi entry = pathways active. Friday deadline key."
+      "title": "Second (22%)",
+      "body": "Escalation spiral — DECREASED 25%->22%. 15-point plan + safe passage = diplomatic substance reduces escalation probability. But 82nd Airborne + Kharg + 400K IDF reservists + David's Sling failures = military escalation pathways active. Friday deadline key."
     },
     {
-      "title": "Third (18%)",
-      "body": "Declared victory + exit — INCREASED 11%→18%. Trump actively seeking off-ramp. 'Productive talks.' Pakistani mediation. AJ: 'dignified exit.' But Israel has own timeline."
+      "title": "Third (20%)",
+      "body": "Declared victory + exit — INCREASED 18%->20%. Trump has actual 15-point plan. Safe passage = physical proof Hormuz reopening. Oil fell on hopes. 82nd Airborne = leverage. If Iran engages: Trump declares victory."
     },
     {
-      "title": "Emerging (12%)",
-      "body": "International intervention — DECREASED 17%→12%. Trump postponement reduced intervention urgency. IEA 'worst crisis.' UK air defense. But momentum shifted to bilateral."
+      "title": "Fourth (10% each)",
+      "body": "Negotiated deal (10%) — 15-point plan + safe passage + multiple channels = most substance since D1. International intervention (10%) — bilateral framework reducing multilateral urgency. Regime fracture (8%) — IRGC coherent, still launching."
     }
   ],
   "endstate_fa": [
     {
       "title": "محتمل‌ترین (۳۰٪)",
-      "body": "فرسایشی — افزایش ۲۴→۳۰. #۱ حالا. ترامپ عقب‌نشینی = ادامه بدون تشدید. مین = انسداد. زامیر 'نیمه راه.'"
+      "body": "فرسایشی — ثابت ۳۰. #۱. طرح هست اما شکاف بزرگ. عبور = بخشی. مین. ارتش 'هفته‌ها.' هوابرد. گلدمن $۱۱۰."
     },
     {
-      "title": "دوم (۲۵٪)",
-      "body": "تشدید — کاهش ۳۷→۲۵. نیروگاه تعویق. کانال دیپلماتیک. اما تل‌آویو + مین + حوثی. جمعه کلیدی."
+      "title": "دوم (۲۲٪)",
+      "body": "تشدید — کاهش ۲۵->۲۲. ۱۵ بند + عبور = دیپلماسی. اما هوابرد ۸۲ + خارگ + ۴۰۰,۰۰۰ ذخیره + کلاه داوود. جمعه."
     },
     {
-      "title": "سوم (۱۸٪)",
-      "body": "اعلام پیروزی — افزایش ۱۱→۱۸. ترامپ خروج. 'مذاکرات سازنده.' پاکستان. AJ: 'خروج آبرومندانه.'"
+      "title": "سوم (۲۰٪)",
+      "body": "اعلام پیروزی — افزایش ۱۸->۲۰. طرح واقعی. عبور = اثبات. نفت کاهش. هوابرد = اهرم."
     },
     {
-      "title": "نوظهور (۱۲٪)",
-      "body": "مداخله — کاهش ۱۷→۱۲. تعویق = کاهش فوریت. IEA 'بدترین.' اما دوجانبه."
+      "title": "چهارم (۱۰٪ هر کدام)",
+      "body": "مذاکره (۱۰٪) — ۱۵ بند + عبور + کانال‌ها. مداخله (۱۰٪) — دوجانبه = کاهش چندجانبه. فروپاشی (۸٪) — سپاه منسجم."
     }
   ],
   "shippingRoutes": [
     {
-      "route": "Tehran → Dubai → Atlanta (Emirates SkyCargo)",
+      "route": "Tehran -> Dubai -> Atlanta (Emirates SkyCargo)",
       "status": "DEAD",
       "statusColor": "red",
-      "detail": "Permanently dead. 3,000+ vessels stranded. Iranian mines in Hormuz (Maham 3/7) = physical blockade. Mine clearance = weeks/months even post-ceasefire. UKMTO: threat level 'critical.'",
-      "viability": "0%",
-      "eta": "N/A — mines + naval blockade + infrastructure damage = months minimum"
+      "detail": "Permanently dead. Mines in Hormuz. BUT: Iran's safe passage framework = bilateral transit possible for 'non-hostile' nations. Pakistan Aframax tanker transited. US-flagged vessels EXCLUDED. Mine clearance still weeks/months.",
+      "viability": "0% for US-linked",
+      "eta": "N/A for US route. Bilateral routes emerging for Pakistan/India/China"
     },
     {
-      "route": "Iran → Turkey (land freight)",
+      "route": "Iran -> Turkey (land freight)",
       "status": "CLOSED",
       "statusColor": "red",
-      "detail": "Closed. NATO intercepted missiles over Turkey. Turkey-Iran land border shut. Internet blackout Day 25 (552+ hours). No improvement signals.",
+      "detail": "Closed. NATO airspace restrictions. Turkey-Iran land border shut. Internet Day 26 (576+ hrs). No improvement signals.",
       "viability": "~5%",
       "eta": "Not viable until conflict ends + diplomatic normalization"
     },
     {
-      "route": "Iran → Armenia (Agarak/Norduz border)",
+      "route": "Iran -> Armenia (Agarak/Norduz border)",
       "status": "MOST VIABLE",
       "statusColor": "yellow",
-      "detail": "Still most viable. Power plant threat DEFERRED 5 days (Trump blinked). Internet Day 25. Hospitals 1/3 capacity. Food tripled. Infrastructure stressed but power grid INTACT for now. Friday deadline = next decision point.",
+      "detail": "Still most viable. Power plant threat deferred. 82nd Airborne focus = Kharg not internal Iran. Internet Day 26. 82,000+ structures. Hospitals 1/3. Food tripled. Grid INTACT. Friday deadline = next decision.",
       "viability": "~10-15%",
-      "eta": "If power grid survives: 4-8 weeks Tehran→Yerevan→sea. Viability IMPROVED slightly from Trump postponement"
+      "eta": "If power grid survives: 4-8 weeks Tehran->Yerevan->sea. Viability stable"
     },
     {
       "route": "Pakistan / Afghanistan / Turkmenistan",
-      "status": "WATCHING",
+      "status": "UPGRADED — WATCHING",
       "statusColor": "yellow",
-      "detail": "Pakistan now mediating between US and Iran. Pakistani channel = diplomatic opening. Eastern borders not in main combat zone. But no direct route improvement yet. Monitor Pakistani mediation outcome.",
-      "viability": "<5%",
-      "eta": "Months to establish if even possible. Pakistan mediation = potential positive signal"
+      "detail": "UPGRADED: Pakistan now active mediator AND first non-Iranian Hormuz transit. Pakistan Aframax tanker transited. Pakistan channel = strongest intermediary. Eastern borders not in combat zone. Safe passage framework could enable Pakistan-route goods eventually.",
+      "viability": "~5-8%",
+      "eta": "Months to establish direct route. But Pakistan safe passage = positive precedent"
     },
     {
       "route": "Oman (Duqm/Salalah) bypass",
       "status": "COMPROMISED",
       "statusColor": "red",
-      "detail": "Oman ports hit by IRGC drones. Mines in Hormuz = Oman bypass also blocked. UKMTO threat level 'critical.' ~400 vessels waiting in Gulf of Oman.",
+      "detail": "Oman ports hit by IRGC drones. Mines in Hormuz. BUT safe passage framework could include Oman eventually. Iran letter = 'non-hostile' nations. Monitor.",
       "viability": "~5%",
-      "eta": "Uncertain — mines complicate ALL Gulf maritime routes"
+      "eta": "Uncertain — mines + safe passage framework = competing dynamics"
     }
   ],
   "shippingRoutes_fa": [
     {
-      "route": "تهران → دبی → آتلانتا",
+      "route": "تهران -> دبی -> آتلانتا",
       "status": "مرده",
       "statusColor": "red",
-      "detail": "مرده. ۳,۰۰۰+ کشتی. مین هرمز = هفته‌ها/ماه‌ها. UKMTO 'بحرانی.'",
-      "viability": "۰٪",
-      "eta": "ماه‌ها حداقل"
+      "detail": "مرده. مین. اما عبور مطمئن = دوجانبه ممکن. نفتکش پاکستان. آمریکا خارج.",
+      "viability": "۰٪ آمریکا",
+      "eta": "دوجانبه = پاکستان/هند/چین ممکن"
     },
     {
-      "route": "ایران → ترکیه (زمینی)",
+      "route": "ایران -> ترکیه (زمینی)",
       "status": "بسته",
       "statusColor": "red",
-      "detail": "بسته. ناتو. مرز بسته. اینترنت ۲۵.",
+      "detail": "بسته. ناتو. مرز بسته. اینترنت ۲۶.",
       "viability": "~۵٪",
       "eta": "تا پایان جنگ"
     },
     {
-      "route": "ایران → ارمنستان",
+      "route": "ایران -> ارمنستان",
       "status": "بهترین گزینه",
       "statusColor": "yellow",
-      "detail": "بهترین. نیروگاه تعویق ۵ روز. اینترنت ۲۵. بیمارستان ۱/۳. غذا سه‌برابر. اما برق سالم فعلاً.",
-      "viability": "~۱۰–۱۵٪",
-      "eta": "اگر برق: ۴–۸ هفته. بهبود جزئی از تعویق"
+      "detail": "بهترین. نیروگاه تعویق. هوابرد ۸۲ = خارگ نه داخل. اینترنت ۲۶. ۸۲,۰۰۰+ سازه. برق سالم.",
+      "viability": "~۱۰-۱۵٪",
+      "eta": "اگر برق: ۴-۸ هفته. ثابت"
     },
     {
       "route": "پاکستان/افغانستان/ترکمنستان",
-      "status": "نظارت",
+      "status": "ارتقاء — نظارت",
       "statusColor": "yellow",
-      "detail": "پاکستان میانجی. کانال دیپلماتیک. مسیر بهبود نیافته اما سیگنال مثبت.",
-      "viability": "<۵٪",
-      "eta": "ماه‌ها"
+      "detail": "پاکستان میانجی + اولین عبور هرمز. کانال قوی‌ترین. عبور مطمئن = مثبت.",
+      "viability": "~۵-۸٪",
+      "eta": "ماه‌ها. اما عبور = سابقه مثبت"
     },
     {
       "route": "عمان (دقم/صلاله)",
       "status": "تهدید",
       "statusColor": "red",
-      "detail": "عمان حمله شد. مین هرمز = تمام مسیرهای خلیج پیچیده.",
+      "detail": "حمله شد. مین. اما عبور مطمئن = شامل عمان احتمالاً.",
       "viability": "~۵٪",
-      "eta": "نامشخص"
+      "eta": "نامشخص — مین + عبور = پویایی متضاد"
     }
   ],
   "publishingStatus": [
-    "Paper supply: CRITICAL. Hormuz blocked + MINES (Maham 3/7) = physical blockade. 3,000+ vessels stranded. Mine clearance = weeks/months. Trump postponed power plant strikes 5 days.",
-    "Internet blackout: Day 25 — 552+ HOURS. MOST SEVERE ANY COUNTRY (NetBlocks). Total shutdown: mobile, SMS, landlines. 'White SIM cards' regime only. $35.7M/day. Food tripled. Hospitals 1/3.",
-    "Power outages: THREAT DEFERRED 5 DAYS. Trump blinked on power plant strikes. New deadline ~Friday Mar 28. If struck then: 90M without electricity. Infrastructure stressed but grid INTACT.",
-    "Isfahan + Natanz: IAEA locked out. Isfahan underground. 440kg = ~11 weapons. Trump demands enriched uranium surrender for deal. Lavrov: Bushehr 'extremely dangerous.' Nuclear verification crisis deepening.",
-    "~6,100+ estimated dead (Hengaw extrapolated D25). HRANA: 1,704+ (1,047 civilian + 214 children + 657 unclassified). 18,000+ injured. ~40+ officials. Zolghadr replaces Larijani.",
-    "New title production: Halted. Week 4 = no recovery timeline. Lebanon expelled Iranian envoy. Proxy network fracturing politically.",
-    "Assessment: Trump postponement = 5-day window. Mines in Hormuz = weeks/months regardless. Goldman $110 avg, $147 worst case. IEA: 'worse than 73+79.' Recovery: years minimum."
+    "Paper supply: CRITICAL. Mines in Hormuz BUT safe passage framework emerging — Pakistan tanker transited. India, China in talks. US-linked routes still dead. Mine clearance = weeks/months.",
+    "Internet blackout: Day 26 — 576+ HOURS. MOST SEVERE ANY COUNTRY (NetBlocks). Total shutdown: mobile, SMS, landlines. 'White SIM cards' regime only. $35.7M/day. Food tripled. Hospitals 1/3.",
+    "Power outages: THREAT DEFERRED. 82nd Airborne focus = Kharg not power plants. Friday deadline. If struck: 90M without electricity. Grid INTACT for now.",
+    "Isfahan + Natanz: 15-point plan demands dismantlement of Natanz, Isfahan, Fordow. Iran: 'negotiating with yourselves.' 440kg = ~11 weapons. IAEA locked out. Nuclear verification crisis.",
+    "~6,300+ estimated dead (Hengaw extrapolated D26). Iran Health Ministry: 1,500+ killed, 18,551 injured. HRANA: 1,455 civilian + 217 children. 82,000+ structures (Red Crescent). 94 ambulances hit.",
+    "New title production: Halted. Week 4 = no recovery timeline. Safe passage framework = positive for eventual Hormuz recovery but months away.",
+    "Assessment: 15-point plan + safe passage = most diplomatic substance since D1. But 82nd Airborne + 400K reservists = military escalation concurrent. Dual-track. Goldman $110. Recovery: years minimum."
   ],
   "publishingStatus_fa": [
-    "کاغذ: بحرانی. مین هرمز = هفته‌ها/ماه‌ها. ۳,۰۰۰+ کشتی. تعویق ۵ روز.",
-    "اینترنت: ۲۵ = شدیدترین هر کشور (NetBlocks). موبایل + پیامک + ثابت. غذا سه‌برابر. بیمارستان ۱/۳.",
-    "برق: تعویق ۵ روز. مهلت جمعه. اگر حمله: ۹۰ میلیون. فعلاً سالم.",
-    "نطنز + اصفهان: IAEA قفل. ۴۴۰ کیلو = ۱۱ سلاح. ترامپ تحویل اورانیوم. لاوروف: 'خطرناک.'",
-    "~۶,۱۰۰+ کشته. HRANA ۱,۷۰۴+. زلقدر جانشین لاریجانی.",
-    "تولید متوقف. لبنان اخراج سفیر. شبکه نیابتی شکسته.",
-    "تعویق = ۵ روز. مین = هفته‌ها. گلدمن $۱۱۰/$۱۴۷. IEA: 'بدتر از ۷۳+۷۹.' سال‌ها."
+    "کاغذ: بحرانی. مین اما عبور مطمئن = پاکستان عبور. هند + چین. آمریکا هنوز مرده. پاکسازی = هفته‌ها.",
+    "اینترنت: ۲۶ = ۵۷۶+ ساعت. شدیدترین. موبایل + پیامک + ثابت. غذا سه‌برابر. بیمارستان ۱/۳.",
+    "برق: تعویق. هوابرد ۸۲ = خارگ نه نیروگاه. جمعه. اگر حمله: ۹۰ میلیون. سالم فعلاً.",
+    "نطنز + اصفهان: طرح ۱۵ بندی خواستار تخریب. ایران رد. ۴۴۰ کیلو = ۱۱ سلاح. IAEA قفل.",
+    "~۶,۳۰۰+ کشته. وزارت بهداشت ۱,۵۰۰+. HRANA ۱,۴۵۵. ۸۲,۰۰۰+ سازه. ۹۴ آمبولانس.",
+    "تولید متوقف. عبور مطمئن = مثبت بلندمدت اما ماه‌ها.",
+    "طرح ۱۵ بندی + عبور = بیشترین دیپلماسی از D1. اما هوابرد ۸۲ + ۴۰۰,۰۰۰ = تشدید نظامی. دو مسیره. سال‌ها."
   ],
   "impactIranfarhang": [
-    "PRIMARY ROUTE DEAD: Tehran→Dubai→Atlanta completely non-functional. Mines in Hormuz (Maham 3/7) = physical blockade even post-ceasefire. Mine clearance = weeks/months.",
-    "BEST ALTERNATIVE IMPROVED SLIGHTLY: Armenia (Agarak/Norduz) — viability ~10-15% (up from 5-10%). Power plant threat DEFERRED 5 days. Grid intact for now. Friday deadline = next decision.",
-    "SUPPLY SOURCE CRITICAL: ~6,100+ killed (Hengaw). HRANA 1,704+. 18,000+ injured. Food tripled. Hospitals 1/3. Internet 552+ hours = total isolation.",
-    "OFAC STATUS: Informational materials exemption valid. Trump seeking deal = potential positive shift long-term. But war continues. IDF Zamir: 'HALFWAY.'",
-    "FINANCIAL: Brent $101 (rebounded above $100 from $96.50 crash). Oil crash/rebound = extreme volatility. Goldman $110 avg. Rial collapsed. Internet $35.7M/day. 80% online sales collapsed.",
-    "HOUTHI VARIABLE: Declared entry into war Mar 22. No confirmed attacks yet. If activated = BOTH chokepoints. Maersk/CMA CGM suspended trans-Suez.",
-    "DIPLOMATIC OPENING: Trump postponement + Pakistani mediation + CBS: Iran reviewing messages = first real channel since D1. Could enable framework. But mines = Hormuz slow to reopen."
+    "PRIMARY ROUTE DEAD FOR US: Tehran->Dubai->Atlanta non-functional. BUT safe passage framework = bilateral transit for 'non-hostile' nations. Pakistan tanker transited. India deal. China in talks. US-linked routes excluded.",
+    "BEST ALTERNATIVE STABLE: Armenia (Agarak/Norduz) — viability ~10-15%. Power grid intact. 82nd Airborne focus = Kharg not internal. Internet Day 26. Food tripled. Hospitals 1/3.",
+    "SAFE PASSAGE FRAMEWORK — NEW DEVELOPMENT: Iran told UNSC non-hostile ships can transit with 'prior coordination.' Pakistan Aframax = first. India traded 3 tankers. This creates bilateral bypass of US-Iran standoff. Could eventually benefit non-US shipping to/from Iran.",
+    "SUPPLY SOURCE CRITICAL: Iran Health Ministry: 1,500+ killed, 18,551 injured. HRANA: 1,455 civilian + 217 children. 82,000+ structures. Internet 576+ hours = total isolation.",
+    "OFAC STATUS: Informational materials exemption valid. 15-point plan = most concrete framework. If deal eventually: transformative. But demands are maximalist and Iran mocking.",
+    "FINANCIAL: Brent ~$99 (fell on peace plan hopes). Goldman $110 avg. Oil DROPPED = markets want deal. Pakistan safe passage = positive Hormuz signal. But mines + 82nd Airborne = uncertainty.",
+    "DIPLOMATIC MOMENTUM: 15-point plan + safe passage + Pakistan/India/China channels = most substance since D1. Iran counter-demands = engaging. Multiple intermediaries. Friday deadline.",
+    "82ND AIRBORNE: Deploying for Kharg Island = ground war threat. BUT focus is Kharg not internal Iran. Armenia route not directly threatened by Kharg operations."
   ],
   "impactIranfarhang_fa": [
-    "مسیر اصلی مرده. مین هرمز = هفته‌ها/ماه‌ها حتی بعد آتش‌بس.",
-    "ارمنستان: ۱۰-۱۵٪ (بهبود). نیروگاه تعویق ۵ روز. برق سالم فعلاً. جمعه = تصمیم.",
-    "منبع بحرانی: ~۶,۱۰۰+. HRANA ۱,۷۰۴+. غذا سه‌برابر. بیمارستان ۱/۳. اینترنت ۵۵۲+.",
-    "OFAC: معتبر. ترامپ خروج = مثبت بلندمدت. اما جنگ ادامه.",
-    "مالی: نفت $۱۰۱ (بازگشت بالای $۱۰۰). نوسان شدید. گلدمن $۱۱۰. ریال. $۳۵.۷ میلیون/روز.",
-    "حوثی اعلام ورود. بدون حمله تأیید‌شده. اگر فعال = هر دو تنگه.",
-    "فضای دیپلماتیک: تعویق + پاکستان + CBS تأیید. اما مین = کند."
+    "مسیر اصلی مرده برای آمریکا. اما عبور مطمئن = دوجانبه. نفتکش پاکستان. هند. چین.",
+    "ارمنستان: ۱۰-۱۵٪. ثابت. برق سالم. هوابرد ۸۲ = خارگ نه داخل. اینترنت ۲۶. غذا سه‌برابر.",
+    "عبور مطمئن — جدید: ایران شورای امنیت. پاکستان = اولین. هند معامله. دور زدن دوجانبه.",
+    "منبع بحرانی: وزارت بهداشت ۱,۵۰۰+. HRANA ۱,۴۵۵. ۸۲,۰۰۰+ سازه. اینترنت ۵۷۶+.",
+    "OFAC: معتبر. ۱۵ بند = چارچوب. اما حداکثری و ایران رد.",
+    "مالی: نفت ~$۹۹ (کاهش بر امید). گلدمن $۱۱۰. نوسان. عبور = مثبت هرمز.",
+    "دیپلماتیک: ۱۵ بند + عبور + پاکستان/هند/چین = بیشترین از D1. ضدپیشنهاد. جمعه.",
+    "هوابرد ۸۲: خارگ نه داخل ایران. ارمنستان مستقیماً تهدید نمی‌شود."
   ],
   "prepIranfarhang": [
-    "FRIDAY MAR 28 DEADLINE: Trump's new 5-day window expires. Monitor closely. If no progress: power plant threat returns. If progress: potential framework.",
-    "Armenia route: Viability improved ~10-15%. Power grid intact for now. Internet Day 25. But food tripled, hospitals 1/3. Infrastructure under extreme stress.",
-    "HOUTHI VARIABLE: Declared entry but no confirmed attacks. If activated: BOTH chokepoints. Plan for ZERO maritime access scenario.",
-    "MINES IN HORMUZ: Physical blockade. Even ceasefire = weeks/months clearance. Factor into ALL planning. Hormuz won't reopen quickly.",
-    "DIPLOMATIC CHANNEL: Pakistani mediation + CBS confirmation. Monitor for concrete proposals. Could enable framework. Trump demands enriched uranium surrender.",
-    "Identify ANY Tehran partners still operational. HRANA: 1,704+ killed. Food tripled. Hospitals 1/3. Internet 552+ hours = total isolation.",
-    "Pre-negotiate Yerevan→Poti/Batumi→sea→US. Best remaining path. Slightly improved from Trump postponement.",
-    "Brief clients: 6-12 month MINIMUM disruption. IEA: 'worse than 73+79.' Goldman $110 avg. Mines = slow recovery.",
-    "Lebanon expelled Iranian envoy: Proxy network fracturing. Monitor for further diplomatic breaks.",
-    "Post-Nowruz: Monitor protest trajectory. Internet blackout = longest ever. But regime maintaining control."
+    "FRIDAY MAR 28 DEADLINE: 15-point plan under review. Safe passage expanding. 82nd Airborne deploying. DUAL-TRACK: if diplomatic wins = framework. If military wins = Kharg.",
+    "Armenia route: Viability ~10-15%. Stable. Grid intact. 82nd Airborne focus = Kharg not internal. Internet Day 26. But food tripled, hospitals 1/3.",
+    "SAFE PASSAGE MONITORING: Pakistan transited. India deal. China in talks. Monitor expansion rate. If framework includes commercial goods: potential new supply chain.",
+    "MINES IN HORMUZ: Physical blockade. Even with safe passage, mine risk to vessels. Factor into ALL planning. Weeks/months clearance.",
+    "15-POINT PLAN: Monitor Iran's response through intermediaries. Counter-demands (bases, reparations, fees) = engagement signal. Framework for negotiation exists.",
+    "Identify ANY Tehran partners still operational. 82,000+ structures. Internet 576+ hours. Hospitals 1/3. Total isolation continues.",
+    "Pre-negotiate Yerevan->Poti/Batumi->sea->US. Best remaining path. Stable from D25.",
+    "Brief clients: 6-12 month MINIMUM disruption. Goldman $110. Safe passage = positive but limited. 82nd Airborne = new risk factor.",
+    "82ND AIRBORNE: Kharg Island focus. NOT direct threat to internal Iran logistics. But if activated = total war scenario. Monitor.",
+    "G7 FM FRIDAY: Rubio to France. Could produce additional diplomatic framework. Monitor."
   ],
   "prepIranfarhang_fa": [
-    "جمعه ۲۸ مارس: مهلت جدید. نظارت. اگر پیشرفت نه = نیروگاه بازگشت.",
-    "ارمنستان: ۱۰-۱۵٪. برق سالم فعلاً. غذا سه‌برابر. بیمارستان ۱/۳.",
-    "حوثی: اعلام اما بدون حمله. اگر فعال = صفر دریایی.",
-    "مین هرمز: انسداد فیزیکی. آتش‌بس هم = هفته‌ها پاکسازی.",
-    "کانال دیپلماتیک: پاکستان + CBS. ترامپ اورانیوم. نظارت.",
-    "شرکای تهران: HRANA ۱,۷۰۴+. غذا. بیمارستان. اینترنت ۵۵۲+.",
-    "ایروان←بندر←دریا. بهبود جزئی.",
-    "مشتریان: ۶-۱۲ ماه حداقل. گلدمن $۱۱۰. مین = کند.",
-    "لبنان اخراج سفیر: شبکه شکسته. نظارت.",
-    "نوروز: اینترنت = طولانی‌ترین. رژیم کنترل."
+    "جمعه ۲۸: ۱۵ بند + عبور + هوابرد. دو مسیره: دیپلماسی یا نظامی.",
+    "ارمنستان: ۱۰-۱۵٪. ثابت. برق سالم. هوابرد = خارگ نه داخل.",
+    "عبور مطمئن: پاکستان + هند + چین. گسترش نظارت. اگر کالای تجاری = زنجیره جدید.",
+    "مین هرمز: انسداد فیزیکی. حتی با عبور مطمئن = ریسک مین.",
+    "۱۵ بند: پاسخ ایران نظارت. ضدپیشنهاد = سیگنال درگیری. چارچوب.",
+    "شرکای تهران: ۸۲,۰۰۰+ سازه. اینترنت ۵۷۶+. بیمارستان ۱/۳.",
+    "ایروان->بندر->دریا. بهترین. ثابت.",
+    "مشتریان: ۶-۱۲ ماه. گلدمن $۱۱۰. عبور = مثبت اما محدود. هوابرد = ریسک.",
+    "هوابرد ۸۲: خارگ. تهدید مستقیم لجستیک داخل نه. اما فعال = جنگ تمام. نظارت.",
+    "G7 جمعه: روبیو فرانسه. چارچوب اضافی احتمالی."
   ],
   "signalsIranfarhang": [
-    "CRITICAL: TRUMP POSTPONED 5 DAYS — power plant threat deferred to ~Friday Mar 28. Kushner/Witkoff engaged. CBS: Iran FM confirms 'received points through mediators.' First real diplomatic channel since D1. BUT fighting continues.",
-    "CRITICAL: MINES IN HORMUZ (Maham 3/7) — Physical blockade dimension. Even ceasefire = weeks/months clearance. Hormuz recovery timeline EXTENDED significantly. Goldman: $147 if 5% for 10 weeks.",
-    "CRITICAL: LEBANON EXPELLED IRANIAN ENVOY — Historic diplomatic break. Proxy network fracturing politically. 865 Hezbollah attack waves but political cover dissolving.",
-    "CRITICAL: TEL AVIV UNINTERCEPTED — ~220 lb warhead. Defense systems FAILED. 6+ injured. Iran capability PROVEN week 4. Knesset suspended. 92% overall but gaps persist.",
-    "CRITICAL: OIL $101 — Crashed 14% D24, rebounded above $100 D25 ($101 CNBC). Extreme volatility. Goldman $110 avg or $147 worst case. IEA: 'worse than 73+79 combined.' Markets hypersensitive to diplomatic signals.",
-    "NEW: HOUTHI DECLARED ENTRY — Threatened US ships Red Sea. No confirmed attacks yet. Maersk/CMA CGM/Hapag-Lloyd suspended. If confirmed: BOTH chokepoints.",
-    "WATCH: INTERNET 552+ HOURS — Total shutdown. Not just social media. Mobile, SMS, landlines. White SIM cards regime only. Food tripled. Hospitals 1/3.",
-    "WATCH: FRIDAY MAR 28 — New deadline. Pakistani mediation. Trump demands enriched uranium surrender. Iran dual posture: deny publicly, engage privately.",
-    "WATCH: Post-Nowruz — Day 5 Nowruz. Internet suppressing. Regime control intact. Deferred variable.",
-    "WATCH: IRGC TARGETS — Jubail, Mesaieed, Al Hosn remaining. Zolghadr = continuity. IRGC preparing Tel Aviv + allies strikes (Fars)."
+    "CRITICAL: 15-POINT PEACE PLAN — Trump admin sent via Pakistan (NYT). Demands: dismantle nuclear, stop enrichment, transfer material, suspend missiles, reopen Hormuz. In exchange: full sanctions relief + civilian nuclear. MOST CONCRETE proposal since D1. Iran mocking publicly but engaging through intermediaries.",
+    "CRITICAL: SAFE PASSAGE FORMAL — Iran told UNSC non-hostile ships transit with 'prior coordination.' Pakistan Aframax = FIRST non-Iranian transit. India traded 3 tankers. China in talks. MOST SIGNIFICANT Hormuz de-escalation since D1. Bilateral bypass of US-Iran standoff.",
+    "CRITICAL: 82ND AIRBORNE — 2,000-3,000 deploying for 'forcible-entry' incl. Kharg Island. Combined 6,000-8,000 ground troops. Military escalation CONCURRENT with diplomacy. Negotiate-from-strength OR preparation for ground war.",
+    "CRITICAL: DAVID'S SLING MALFUNCTION — 2nd interceptor failure in 2 days. 2 ballistic missiles struck southern Israel. Air defense deteriorating. 400,000 reservist mobilization. IDF wants several more weeks.",
+    "CRITICAL: OIL ~$99 — FELL on peace plan hopes. Markets WANT deal. Goldman $110 avg. Safe passage = positive Hormuz signal. Fluctuated after Iran dismissed. Extreme sensitivity continues.",
+    "WATCH: IRAN COUNTER-DEMANDS — Close ALL US Gulf bases, reparations, Hormuz fee collection. Maximalist but STRUCTURED = engaging in negotiation framework.",
+    "WATCH: FRIDAY MAR 28 — Deadline. 15-point plan + safe passage + G7 FM. Multiple diplomatic tracks converging.",
+    "WATCH: INTERNET 576+ HOURS — Day 26. Total shutdown. 82,000+ structures. Hospitals 1/3. Food tripled.",
+    "WATCH: HOUTHI — Still declared but no confirmed attacks. If activated: BOTH chokepoints. Maersk/CMA CGM suspended.",
+    "WATCH: MOJTABA — Absent Day 17. Pezeshkian no contact. Governance vacuum. But IRGC functioning."
   ],
   "signalsIranfarhang_fa": [
-    "بحرانی: ترامپ ۵ روز تعویق. کوشنر/ویتکاف. CBS: ایران تأیید 'پیام دریافت.' اولین کانال از D1.",
-    "بحرانی: مین هرمز ماهام ۳/۷ — انسداد فیزیکی. حتی آتش‌بس = هفته‌ها. گلدمن $۱۴۷.",
-    "بحرانی: لبنان اخراج سفیر — گسست تاریخی. شبکه نیابتی شکسته سیاسی.",
-    "بحرانی: تل‌آویو بدون رهگیری — ~۱۰۰ کیلو. کنست تعلیق. ۹۲٪ کلی اما شکاف.",
-    "بحرانی: نفت $۱۰۱ — سقوط ۱۴٪ + بازگشت بالای $۱۰۰. گلدمن $۱۱۰/$۱۴۷. IEA 'بدتر از ۷۳+۷۹.'",
-    "جدید: حوثی اعلام ورود — تهدید ناوهای آمریکا. بدون حمله تأیید‌شده. مرسک تعلیق.",
-    "نظارت: اینترنت ۵۵۲+ ساعت — موبایل + پیامک + ثابت. غذا سه‌برابر.",
-    "نظارت: جمعه ۲۸ — پاکستان مذاکره. ترامپ اورانیوم. ایران دوگانگی.",
-    "نظارت: نوروز ۵. اینترنت سرکوب. رژیم کنترل.",
-    "نظارت: جبیل، مسیعید، الحصن. زلقدر = تداوم. سپاه تل‌آویو (فارس)."
+    "بحرانی: طرح ۱۵ بندی — ترامپ از پاکستان (NYT). هسته‌ای + موشک + هرمز. رفع تحریم. مشخص‌ترین از D1.",
+    "بحرانی: عبور مطمئن رسمی — شورای امنیت. نفتکش پاکستان = اولین. هند معامله. چین مذاکره. بزرگ‌ترین کاهش تنش هرمز.",
+    "بحرانی: هوابرد ۸۲ — ۲,۰۰۰-۳,۰۰۰ خارگ. ۶,۰۰۰-۸,۰۰۰ نیرو. تشدید نظامی همزمان دیپلماسی.",
+    "بحرانی: نقص کلاه داوود — دومین شکست. ۲ بالستیک. ۴۰۰,۰۰۰ ذخیره.",
+    "بحرانی: نفت ~$۹۹ — کاهش بر امید. بازار خواهان معامله. گلدمن $۱۱۰. نوسان.",
+    "نظارت: ضدپیشنهاد ایران — پایگاه‌ها + غرامت + عوارض. حداکثری اما ساختاریافته.",
+    "نظارت: جمعه ۲۸ — مهلت. ۱۵ بند + عبور + G7. مسیرهای دیپلماتیک متعدد.",
+    "نظارت: اینترنت ۵۷۶+ — روز ۲۶. ۸۲,۰۰۰+ سازه. بیمارستان ۱/۳.",
+    "نظارت: حوثی — اعلام بدون حمله. اگر فعال = هر دو تنگه.",
+    "نظارت: مجتبی — غایب ۱۷. خلأ حکمرانی. اما سپاه فعال."
   ],
   "impactKIP": [
-    "TRUMP POSTPONED 5 DAYS: Power plant threat deferred to ~Friday Mar 28. Pakistan mediating. CBS: Iran FM confirms messages received. Oil crashed 14% then rebounded above $100 ($101 CNBC). Goldman: $110 avg or $147 if Hormuz persists 10 weeks.",
-    "MINES IN HORMUZ: Iranian Maham 3/7 limpet mines confirmed. PHYSICAL blockade. Even ceasefire = weeks/months clearance. ALL Gulf maritime routes affected. IEA: 'worse than 73+79 combined.'",
-    "UAE asset risk: ELEVATED but reduced from EXTREME. Al Hosn still on IRGC list. But Trump postponement = lower immediate escalation risk. UAE cumul: 352 ballistic + 15 cruise + 1,789 drones intercepted.",
-    "LEBANON EXPELLED ENVOY: Historic break. Proxy network fracturing. 865 Hezbollah attack waves. Iran's regional political position weakening. Saudi expelled attaché D22.",
-    "TEL AVIV UNINTERCEPTED: ~220 lb warhead penetrated Israeli defenses. Air defense is NOT absolute. Iran capability proven week 4. IRGC preparing plans for Tel Aviv + allies (Fars). Knesset suspended.",
-    "HOUTHI DECLARED ENTRY — NO CONFIRMED ATTACKS: Threatened US ships Red Sea. Maersk/CMA CGM/Hapag-Lloyd suspended. If confirmed: BOTH chokepoints = global crisis. UK MTOC: 'substantial.'",
-    "OIL VOLATILITY EXTREME: $112→$96.50→$101 in 48 hours. Brent rebounded above $100 (CNBC $101.21). Goldman $110 avg. 14% crash on Trump announcement = markets hypersensitive. Banking: extreme uncertainty persists despite diplomatic opening.",
-    "DIPLOMATIC OPENING: Pakistani channel + Kushner/Witkoff + CBS confirmation = first real negotiation since D1. Trump demands enriched uranium surrender. Iran dual posture. Friday deadline.",
-    "IDF CONTINUING: Zamir 'HALFWAY.' Israel independent of Trump's de-escalation. Struck al-Dalafa Bridge Litani. DM: destroy ALL bridges + homes. 2-front war continues.",
-    "IEA BIROL: 'worse than 1973 + 1979 combined.' Countries imposing fuel-saving. 4-day weeks, work from home = structural shift. Internet Day 25 = most severe any country."
+    "15-POINT PEACE PLAN: Most concrete proposal since D1. Demands: dismantle nuclear, stop enrichment, reopen Hormuz. Exchange: full sanctions relief. Pakistan delivered. Iran mocking but engaging through intermediaries. Counter-demands = structured. Framework exists for negotiation.",
+    "SAFE PASSAGE — GAME CHANGER FOR HORMUZ: Iran UNSC letter = non-hostile ships transit with coordination. Pakistan tanker = FIRST. India deal. China in talks. Creates bilateral bypass of standoff. If expands: partial Hormuz normalization. Goldman worst case becomes less likely. US-flagged excluded.",
+    "82ND AIRBORNE: 2,000-3,000 paratroopers for Kharg Island 'forcible-entry.' Combined 6,000-8,000 ground troops. CONCURRENT with diplomacy = negotiate-from-strength. If diplomatic track fails: ground war at Kharg. Most significant US ground force escalation of war.",
+    "UAE RISK: ELEVATED. 82nd Airborne focus = Kharg not UAE. Safe passage framework = bilateral solutions emerging. But IRGC Zolfaghari still defiant. Saudi 32 drones 11 hrs. Al Hosn still on target list.",
+    "DAVID'S SLING MALFUNCTION: 2nd failure in 2 days. Israel air defense deteriorating. 400,000 reservist mobilization. IDF wants several more weeks. Israel strikes Beirut suburbs. Ground invasion south of Litani warned.",
+    "OIL DROPPED ~$99: Markets WANT deal. 15-point plan + safe passage = positive signals. Goldman $110 avg. If safe passage expands: $147 worst case recedes. But mines + 82nd Airborne = volatility continues.",
+    "GLOBAL EMERGENCY: Philippines state of emergency (energy). Japan 30-day reserves. China gas +20%. North Korea Kim weaponizes narrative. G7 FM Friday. War causing cascading energy emergencies globally.",
+    "DIPLOMATIC CONVERGENCE: 15-point plan + safe passage + Pakistan/India/China channels + Iran counter-demands + G7 Friday = most diplomatic activity since D1. Multiple tracks simultaneously. Friday = convergence point.",
+    "HUMANITARIAN: 82,000+ structures (Red Crescent). 17 bases struck. 94 ambulances. Iran Health Ministry: 1,500+ killed, 18,551 injured. Lebanon: 1,072 killed. Internet 576+ hours.",
+    "DUAL-TRACK: Diplomacy and military escalation SIMULTANEOUSLY. 15-point plan + safe passage vs 82nd Airborne + 400K reservists. Which dominates by Friday determines war trajectory."
   ],
   "impactKIP_fa": [
-    "ترامپ ۵ روز تعویق. پاکستان. CBS تأیید. نفت $۱۰۱. گلدمن $۱۱۰/$۱۴۷.",
-    "مین هرمز ماهام ۳/۷ — انسداد فیزیکی. حتی آتش‌بس = هفته‌ها. IEA 'بدتر از ۷۳+۷۹.'",
-    "دارایی امارات: کاهش از شدید. الحصن لیست. اما تعویق = فوریت کمتر. مجموع ۳۵۲/۱۵/۱,۷۸۹.",
-    "لبنان اخراج — گسست تاریخی. شبکه شکسته. عربستان اخراج D22.",
-    "تل‌آویو بدون رهگیری — ~۱۰۰ کیلو. سپاه تل‌آویو + متحدان (فارس). کنست تعلیق.",
-    "حوثی اعلام — بدون حمله. مرسک تعلیق. اگر فعال = هر دو تنگه.",
-    "نفت نوسان شدید: $۱۱۲→$۹۶.۵۰→$۱۰۱. بازگشت بالای $۱۰۰. گلدمن $۱۱۰. سقوط ۱۴٪ = حساسیت بازار.",
-    "فضای دیپلماتیک: پاکستان + کوشنر + CBS. ترامپ اورانیوم. ایران دوگانگی. جمعه.",
-    "ارتش اسرائیل ادامه: زامیر 'نیمه راه.' لیطانی + ایران = دو جبهه.",
-    "IEA: 'بدتر از ۱۹۷۳+۱۹۷۹.' ۴ روز هفته + دورکاری = ساختاری."
+    "طرح ۱۵ بندی: مشخص‌ترین از D1. هسته‌ای + هرمز. رفع تحریم. ایران رد اما درگیر. چارچوب.",
+    "عبور مطمئن — تحول‌آفرین: نفتکش پاکستان = اولین. هند. چین. دوجانبه = دور زدن. گلدمن $۱۴۷ کمتر محتمل. آمریکا خارج.",
+    "هوابرد ۸۲: ۲,۰۰۰-۳,۰۰۰ خارگ. ۶,۰۰۰-۸,۰۰۰ نیرو. همزمان دیپلماسی. شکست = جنگ زمینی.",
+    "امارات: بالا. هوابرد = خارگ نه امارات. عبور = دوجانبه. اما ذلفقاری. الحصن.",
+    "کلاه داوود: دومین شکست. ۴۰۰,۰۰۰ ذخیره. بیروت. لیطانی.",
+    "نفت ~$۹۹: بازار خواهان معامله. گلدمن $۱۱۰. عبور = مثبت. مین + هوابرد = نوسان.",
+    "اضطراری جهانی: فیلیپین + ژاپن + چین + کره شمالی. G7 جمعه. بحران انرژی آبشاری.",
+    "همگرایی دیپلماتیک: ۱۵ بند + عبور + کانال‌ها + ضدپیشنهاد + G7 = بیشترین فعالیت از D1. جمعه.",
+    "بشردوستانه: ۸۲,۰۰۰+ سازه. ۱۷ پایگاه. ۹۴ آمبولانس. وزارت بهداشت ۱,۵۰۰+. لبنان ۱,۰۷۲. اینترنت ۵۷۶+.",
+    "دو مسیره: دیپلماسی + نظامی همزمان. ۱۵ بند + عبور در برابر هوابرد + ۴۰۰,۰۰۰. جمعه تعیین‌کننده."
   ],
   "prepKIP": [
-    "MONITOR FRIDAY MAR 28: Trump's 5-day window expires. If no progress: power plant threat returns. If Pakistani mediation produces framework: potential de-escalation. Prepare for BOTH outcomes.",
-    "MINES IN HORMUZ: Physical blockade regardless of diplomacy. Mine clearance = weeks/months. Factor into ALL shipping and logistics planning. Goldman $147 worst case.",
-    "HOUTHI ACTIVATION: Declared entry, no confirmed attacks. If activated: BOTH chokepoints = global shipping crisis. Maintain ZERO Red Sea exposure.",
-    "UAE RISK REDUCED BUT NOT ELIMINATED: Al Hosn still on IRGC list. Trump postponement = lower immediate risk. But Iran preparing plans for allies (Fars). Monitor Friday.",
-    "OIL VOLATILITY: 14% crash then rebound. Goldman $110 avg. Markets hypersensitive. Hedge accordingly. IEA demand-side measures = structural.",
-    "DIPLOMATIC CHANNEL: Pakistani mediation + CBS confirmation = monitor closely. Could enable shipping framework. But mines = slow recovery regardless.",
-    "Alternative hubs: Armenia route viability improved slightly (~10-15%). Oman COMPROMISED by mines. Turkey closed. Georgia (Poti/Batumi) via Armenia = best.",
-    "Insurance: Premiums remain catastrophic. Mines ADD risk. Self-insure recommendation unchanged.",
-    "LEBANON-IRAN BREAK: Monitor for cascading diplomatic ruptures across region. Iran's proxy cover dissolving.",
-    "IDF INDEPENDENT TIMELINE: Israel continuing regardless of Trump. Zamir 'HALFWAY.' 2-front war. Factor Israeli escalation into scenarios.",
-    "PERSONNEL: UAE temporary relocation still recommended. Risk reduced from 'extreme' to 'elevated' but Al Hosn + IRGC plans = ongoing threat.",
-    "IEA: 'worse than 73+79 combined.' 4-day weeks, fuel rationing. Factor structural economic changes into all planning."
+    "MONITOR FRIDAY MAR 28: 15-point plan response. Safe passage expansion. 82nd Airborne status. G7 FM meeting. CONVERGENCE POINT. Prepare for deal framework OR military escalation.",
+    "SAFE PASSAGE: Monitor expansion — Pakistan transited, India dealt, China in talks. If framework expands to 10+ nations: Hormuz partially normalizing. Reduces Goldman $147 worst case. Factor into shipping/logistics.",
+    "82ND AIRBORNE: Kharg Island focus. If activated: total war scenario. If leverage: supports diplomacy. Monitor deployment status daily. Combined 6,000-8,000 ground troops = credible threat.",
+    "15-POINT PLAN: Monitor Iran's intermediary response. Counter-demands (bases, reparations, fees) = opening position. Framework exists. Gap is enormous but mechanism is real.",
+    "UAE RISK: Reduced slightly. 82nd Airborne = Kharg not UAE. Safe passage = bilateral solutions. But Al Hosn still on list. IRGC still launching 32 drones/11 hrs at Saudi. Not safe.",
+    "OIL STRATEGY: Markets want deal (oil dropped). If 15-point plan gains traction: oil drops further. If fails: rebounds. Goldman $110 avg. Hedge for both. Safe passage = positive structural factor.",
+    "HOUTHI: Still declared, no confirmed attacks. If activated = BOTH chokepoints. Maintain ZERO Red Sea exposure. G7 may address.",
+    "Alternative hubs: Armenia ~10-15%. Pakistan upgraded ~5-8% (safe passage precedent). Oman ~5% (mines but safe passage possible). Turkey closed.",
+    "Insurance: Mines + safe passage = competing dynamics. Safe passage reduces SOME risk for bilateral partners. US-linked still catastrophic. Self-insure.",
+    "PERSONNEL: UAE temporary relocation still recommended. Risk 'elevated' not 'extreme.' Kharg focus reduces UAE immediate threat. Monitor IRGC target list.",
+    "G7 FM FRIDAY: Rubio in France. Could produce multilateral framework complementing bilateral safe passage. Monitor for shipping/energy agreements.",
+    "DAVID'S SLING: Israel air defense deteriorating. 400K reservists = Israel escalating independently. IDF timeline 'several more weeks.' Factor Israeli escalation into all scenarios."
   ],
   "prepKIP_fa": [
-    "جمعه ۲۸: نظارت. اگر پیشرفت نه = نیروگاه بازگشت. آماده هر دو نتیجه.",
-    "مین هرمز: انسداد فیزیکی. پاکسازی = هفته‌ها. گلدمن $۱۴۷.",
-    "حوثی: اعلام بدون حمله. اگر فعال = هر دو تنگه. دسترسی دریایی صفر.",
-    "امارات: کاهش از شدید اما الحصن لیست. سپاه برنامه متحدان (فارس). جمعه.",
-    "نفت نوسان: سقوط ۱۴٪ + بازگشت. گلدمن $۱۱۰. IEA = ساختاری.",
-    "کانال دیپلماتیک: پاکستان + CBS. اما مین = کند.",
-    "هاب: ارمنستان ۱۰-۱۵٪ (بهبود). عمان مین. ترکیه بسته. گرجستان.",
-    "بیمه: مین = ریسک اضافه. خود‌بیمه.",
-    "لبنان-ایران: گسست‌های بعدی نظارت.",
-    "اسرائیل مستقل: زامیر 'نیمه راه.' دو جبهه. تشدید اسرائیل در سناریوها.",
-    "پرسنل: امارات جابجایی. کاهش از 'شدید' به 'بالا.' الحصن + سپاه.",
-    "IEA: 'بدتر از ۷۳+۷۹.' ۴ روز هفته. تحول ساختاری."
+    "جمعه ۲۸: ۱۵ بند + عبور + هوابرد + G7. همگرایی. آماده معامله یا تشدید.",
+    "عبور مطمئن: گسترش نظارت. پاکستان + هند + چین. اگر ۱۰+ کشور = عادی‌سازی بخشی. گلدمن $۱۴۷ کمتر.",
+    "هوابرد ۸۲: خارگ. اگر فعال = جنگ تمام. اگر اهرم = دیپلماسی. نظارت روزانه.",
+    "۱۵ بند: پاسخ میانجی نظارت. ضدپیشنهاد = موضع اولیه. شکاف بزرگ اما مکانیزم واقعی.",
+    "امارات: کاهش جزئی. هوابرد = خارگ نه امارات. اما الحصن. ۳۲ پهپاد.",
+    "نفت: بازار خواهان. اگر ۱۵ بند پیشرفت = کاهش بیشتر. اگر شکست = بازگشت. گلدمن $۱۱۰. هج.",
+    "حوثی: اعلام بدون حمله. دسترسی دریایی صفر حفظ.",
+    "هاب: ارمنستان ۱۰-۱۵٪. پاکستان ۵-۸٪ (ارتقاء). عمان ۵٪. ترکیه بسته.",
+    "بیمه: مین + عبور = متضاد. دوجانبه کاهش بخشی. آمریکا بحرانی. خودبیمه.",
+    "پرسنل: امارات جابجایی. 'بالا.' خارگ = کاهش تهدید فوری.",
+    "G7 جمعه: روبیو. چارچوب چندجانبه مکمل عبور دوجانبه.",
+    "کلاه داوود: دفاع تخریب. ۴۰۰,۰۰۰ ذخیره. 'چند هفته دیگر.' تشدید اسرائیل مستقل."
   ],
   "signalsKIP": [
-    "CRITICAL: TRUMP POSTPONED 5 DAYS — power plant threat deferred ~Friday Mar 28. Pakistani mediation. Kushner/Witkoff engaged. CBS: Iran FM 'received points.' Oil crashed 14%. First diplomatic opening since D1.",
-    "CRITICAL: MINES IN HORMUZ (Maham 3/7) — PHYSICAL blockade. Mine clearance weeks/months. Even ceasefire doesn't reopen quickly. Goldman: $147 if 5% for 10 weeks. IEA: 'worse than 73+79.'",
-    "CRITICAL: TEL AVIV UNINTERCEPTED — ~220 lb warhead. Defense FAILED. Iran capability week 4. IRGC preparing Tel Aviv + allies plans (Fars). Air defense is not absolute.",
-    "CRITICAL: LEBANON EXPELLED ENVOY — Historic diplomatic break. Proxy network fracturing. Saudi expelled D22. Iran regional position weakening. 865 Hezbollah waves but political cover gone.",
-    "CRITICAL: OIL $101 — From $112 to $96.50 to $101 in 48 hrs. Goldman $110 avg. 14% sensitivity to diplomatic signals. Extreme volatility. Banking uncertainty.",
-    "CRITICAL: HOUTHI DECLARED ENTRY — Threatened US ships Red Sea. NO confirmed attacks. Maersk/CMA CGM suspended. If confirmed: BOTH chokepoints. THE most dangerous shipping variable.",
-    "WATCH: FRIDAY MAR 28 — New Trump deadline. Pakistani mediation. Trump demands enriched uranium. Iran dual posture. Israeli official: talks planned this week.",
-    "WATCH: INTERNET 552+ HOURS — Total shutdown. Mobile, SMS, landlines. White SIM cards only. Food tripled. Hospitals 1/3. Most severe any country ever.",
-    "WATCH: IDF INDEPENDENT — Zamir 'HALFWAY.' Continuing strikes regardless of Trump. Al-Dalafa Bridge Litani. DM: destroy ALL bridges + homes. Two-front war.",
-    "WATCH: IRGC TARGETS — Jubail, Mesaieed, Al Hosn remaining. Zolghadr = continuity. IRGC still operational despite ~40+ killed. Mines = capability.",
-    "WATCH: Post-Nowruz Day 5 — Internet suppressing. Regime control. But food crisis + hospitals = growing pressure.",
-    "WATCH: Goldman $147 SCENARIO — If Hormuz at 5% for 10 weeks → exceeds 2008 record. Mines make this increasingly likely. Plan for sustained extreme oil."
+    "CRITICAL: 15-POINT PEACE PLAN — Trump admin via Pakistan (NYT). Dismantle nuclear + reopen Hormuz = sanctions relief. MOST CONCRETE since D1. Iran mocking but engaging through intermediaries. Counter-demands = structured. Framework for negotiation.",
+    "CRITICAL: SAFE PASSAGE — Iran UNSC letter. Pakistan Aframax = FIRST non-Iranian transit. India traded 3 tankers. China in talks. BILATERAL BYPASS of standoff. If expands: partial Hormuz normalization. GAME CHANGER for shipping.",
+    "CRITICAL: 82ND AIRBORNE — 2,000-3,000 for Kharg 'forcible-entry.' Combined 6,000-8,000 ground. Military escalation CONCURRENT with diplomacy. Negotiate-from-strength or ground war preparation.",
+    "CRITICAL: DAVID'S SLING — 2nd malfunction in 2 days. 2 ballistic struck Israel. Air defense deteriorating. 400,000 reservist mobilization. IDF several more weeks. Beirut suburbs struck.",
+    "CRITICAL: OIL ~$99 — Fell on peace plan. Markets want deal. Goldman $110 avg. Safe passage = positive. If plan gains traction: drops further. If fails: rebounds sharply.",
+    "CRITICAL: IRAN COUNTER-DEMANDS — Close US bases, reparations, Hormuz fees. Maximalist but ENGAGING. FM Baghaei: 'through intermediaries.' Signal negotiation framework accepted.",
+    "WATCH: FRIDAY MAR 28 — 15-point plan + safe passage + G7 FM + 82nd Airborne status. CONVERGENCE POINT. Multiple tracks simultaneously.",
+    "WATCH: GLOBAL ENERGY EMERGENCY — Philippines state of emergency. Japan 30-day reserves. China gas +20%. North Korea weaponizing. G7 Friday. Cascading crises.",
+    "WATCH: INTERNET 576+ HOURS — Day 26. 82,000+ structures. Hospitals 1/3. Food tripled. Total isolation. Humanitarian crisis deepening.",
+    "WATCH: SAFE PASSAGE EXPANSION — Monitor daily: which countries secure bilateral deals? India, China, Iraq, Malaysia in queue. Rate of expansion = Hormuz recovery speed.",
+    "WATCH: HOUTHI — Still declared, no confirmed attacks. If activated = BOTH chokepoints. Maersk/CMA CGM suspended. THE most dangerous shipping variable.",
+    "WATCH: IDF INDEPENDENT — 400,000 reservists. Several more weeks. Beirut suburbs. South of Litani. Israel escalating regardless of US diplomacy."
   ],
   "signalsKIP_fa": [
-    "بحرانی: ترامپ ۵ روز تعویق. پاکستان. CBS تأیید. نفت سقوط ۱۴٪. اولین فضای دیپلماتیک.",
-    "بحرانی: مین هرمز ماهام ۳/۷ — انسداد فیزیکی. هفته‌ها. گلدمن $۱۴۷. IEA 'بدتر از ۷۳+۷۹.'",
-    "بحرانی: تل‌آویو بدون رهگیری — ~۱۰۰ کیلو. سپاه تل‌آویو + متحدان. کنست تعلیق.",
-    "بحرانی: لبنان اخراج — گسست. عربستان D22. موقعیت ایران تضعیف.",
-    "بحرانی: نفت $۱۰۱ — $۱۱۲→$۹۶.۵۰→$۱۰۱. گلدمن $۱۱۰. نوسان شدید.",
-    "بحرانی: حوثی اعلام — بدون حمله. مرسک تعلیق. اگر تأیید = هر دو تنگه.",
-    "نظارت: جمعه ۲۸ — مهلت جدید. پاکستان. ترامپ اورانیوم. ایران دوگانگی.",
-    "نظارت: اینترنت ۵۵۲+ — موبایل + پیامک + ثابت. غذا سه‌برابر. بیمارستان ۱/۳.",
-    "نظارت: ارتش اسرائیل مستقل — زامیر 'نیمه راه.' لیطانی. دو جبهه.",
-    "نظارت: جبیل، مسیعید، الحصن. زلقدر = تداوم. مین = توانمندی.",
-    "نظارت: نوروز ۵. اینترنت سرکوب. غذا + بیمارستان = فشار.",
-    "نظارت: گلدمن $۱۴۷ — هرمز ۵٪ ۱۰ هفته. مین = محتمل‌تر."
+    "بحرانی: طرح ۱۵ بندی — ترامپ از پاکستان (NYT). هسته‌ای + هرمز = تحریم. مشخص‌ترین از D1. ایران درگیر.",
+    "بحرانی: عبور مطمئن — نفتکش پاکستان = اولین. هند معامله. چین. دوجانبه = دور زدن. تحول‌آفرین.",
+    "بحرانی: هوابرد ۸۲ — خارگ. ۶,۰۰۰-۸,۰۰۰ نیرو. تشدید نظامی همزمان دیپلماسی.",
+    "بحرانی: کلاه داوود — دومین نقص. ۲ بالستیک. ۴۰۰,۰۰۰ ذخیره. بیروت.",
+    "بحرانی: نفت ~$۹۹ — کاهش بر امید. بازار خواهان. گلدمن $۱۱۰. نوسان.",
+    "بحرانی: ضدپیشنهاد ایران — پایگاه‌ها + غرامت + عوارض. حداکثری اما ساختاریافته.",
+    "نظارت: جمعه ۲۸ — ۱۵ بند + عبور + G7 + هوابرد. همگرایی.",
+    "نظارت: اضطراری جهانی — فیلیپین + ژاپن + چین + کره شمالی. G7 جمعه.",
+    "نظارت: اینترنت ۵۷۶+ — ۸۲,۰۰۰+ سازه. بیمارستان ۱/۳. بشردوستانه عمیق‌تر.",
+    "نظارت: گسترش عبور — کدام کشورها؟ هند + چین + عراق + مالزی. سرعت = بازیابی هرمز.",
+    "نظارت: حوثی — اعلام بدون حمله. اگر فعال = هر دو تنگه.",
+    "نظارت: ارتش اسرائیل — ۴۰۰,۰۰۰. بیروت. لیطانی. مستقل از دیپلماسی آمریکا."
   ]
 }
