@@ -1,34 +1,34 @@
 {
   "meta": {
-    "lastUpdated": "2026-03-26T16:00:00-04:00",
+    "lastUpdated": "2026-03-26T20:00:00-04:00",
     "notes": [
-      "Day 27 (Mar 26) UPDATE 4PM ET. Sources: CNN D27 live, AJ liveblog D27, NPR, CNBC, AP, Bloomberg, Fortune, The National, Times of Israel, Investing.com, Euronews, Iran International, JPost, Fox News, PBS, WSJ, Haaretz, Israel Hayom, ToI, ABC News, WashPost, Al-Monitor, SCMP, Kurdistan24, Sunday Guardian, Pew Research, HRANA, Hengaw, Wikipedia, IndiaTV, TheWeek India, Insurance Journal.",
-      "TANGSIRI KILLED — IRGC NAVY COMMANDER: Israel confirmed killing Alireza Tangsiri, IRGC Navy Commander since 2018, in strike on Bandar Abbas. Defense Minister Katz confirmed. Tangsiri ARCHITECTED Hormuz blockade, commanded 1st Naval District. Born Bushehr, Iran-Iraq War veteran. KEY figure behind Hormuz closure + safe passage framework. Death disrupts IRGC naval command structure.",
-      "ISRAEL SPEEDING UP STRIKES — 48-HR TARGETING BLITZ: IDF completed 'wave of extensive strikes in Isfahan targeting infrastructure.' NPR: military officials say IDF speeding up targeting over next 48 hours, hitting arms factories 'in case ceasefire is declared.' Creating fait accompli before potential deal. Ambassador Danon: Israel NOT part of US-Iran talks, ops continue until nuclear/missile eliminated.",
-      "IRAN 6 MISSILE SALVOS AT ISRAEL: Iran fired 6 missile salvos at central Israel within hours. Bnei Brak apartment hit (2 injured). Kfar Qassem struck (Mar 26). Tel Aviv shrapnel (3 wounded — possible cluster munition). Hezbollah drone downed over Galilee (2 lightly hurt). Total D27 Israel injuries: 9+.",
-      "IRAN FORMALLY REJECTED 15-POINT PLAN — 5 COUNTER-CONDITIONS: FM Araghchi: 'no negotiations,' 'war ends on our terms.' 5 conditions: (1) end aggression, (2) guarantees no recurrence, (3) reparations, (4) comprehensive end ALL fronts incl Lebanon, (5) sovereignty over Hormuz. Called US plan 'maximalist and unreasonable.' US official: Iran conditions 'ridiculous and unrealistic' (WSJ).",
-      "TRUMP: 4 MORE DAYS — FRIDAY DEADLINE: Trump said Tehran has 4 more days (from Mar 25) to agree before US targets energy infrastructure. Friday Mar 28 = expiration of 5-day postponement from Mar 23. Day 4 of 5. White House: 'productive talks.' Pentagon: war 'ahead of schedule.'",
-      "OIL SURGED D27: Brent $106.12 (+3.8%, CNBC). WTI $93.61 (+3.6%, CNBC). Surged after Iran rejected direct talks. Previous day had dropped to $102.22. Market in backwardation — Dec futures $79.70 (17% below front-month). Iran Hormuz toll legislation being prepared.",
-      "CASUALTIES D27: Iran: 1,750+ killed (IRNA, up from 1,500+). HRANA: 1,455 civilian + 217 children + 1,167 military + 669 unclassified. Hengaw D25 report: 6,530 killed incl 640 civilians. Lebanon: 1,094 killed (up from 1,072), 121 children. Iraq: 96 killed. Israel: 18+. Gulf: 22+ dead. UAE national death toll: 11. IDF soldier killed Lebanon (Staff Sgt. Greenberg, Golani).",
-      "UAE D27: Ballistic missile intercepted over Abu Dhabi — debris killed 2, injured 3. National death toll now 11. UAE reports 2,100+ missiles/drones received total since D1. Sirens sounded Thursday morning.",
-      "SAFE PASSAGE EXPANDING: India declared 'Strait of Hormuz open for India.' Two Indian LPG tankers passed through. Thailand Bangchak tanker passed after talks with Iran. Iran preparing Hormuz toll legislation (Fars). Insurance premiums surged 5-10% of hull value (from 0.15-0.25% pre-war). 2,000 vessels / 20,000 seafarers stranded.",
-      "PEW POLL D27: 59% Americans say WRONG decision. 61% disapprove Trump handling. 54% expect 6+ months. 88% Dems oppose. 71% Reps support. AP-NORC: 59% gone too far. Quinnipiac: 54-39 oppose. House Armed Services Committee unsatisfied with briefing.",
-      "GCC JOINT STATEMENT: UAE, Qatar, Saudi, Kuwait, Bahrain, Jordan condemned Iran attacks. GCC SG: Iran 'overcome all red lines.' Germany defense minister: 'catastrophe for world's economies.'",
-      "8,000 TONS ARMS TO ISRAEL: 200+ aircraft and ships delivering since D1. US embassy Baghdad: advise Americans leave Iraq immediately."
+      "Day 27 (Mar 26) UPDATE 8PM ET. Sources: CNN D27 live, AJ liveblog D27, NPR, CNBC, AP, Bloomberg, Fortune, The National, Times of Israel liveblog, Investing.com, Euronews, Iran International, JPost, Fox News, PBS, WSJ, Haaretz, ToI, ABC News, WashPost, Al-Monitor, SCMP, Pew Research, HRANA, Hengaw, Wikipedia, RBC-Ukraine, NewKerala, Time, Newsweek, Defence Security Asia, AAA gas.",
+      "TANGSIRI KILLED — IRGC NAVY COMMANDER: Israel confirmed killing Alireza Tangsiri, IRGC Navy Commander since 2018, in strike on Bandar Abbas. Defense Minister Katz confirmed. Tangsiri ARCHITECTED Hormuz blockade, commanded 1st Naval District. Born Bushehr, Iran-Iraq War veteran. Death disrupts IRGC naval command structure.",
+      "ISRAEL SPEEDING UP — CENTCOM: 2/3 ARMS MFG DESTROYED: IDF extensive strikes Isfahan. NPR: speeding up arms factory targeting 48 hrs 'in case ceasefire declared.' CENTCOM chief: US has destroyed two-thirds of Iran's arms manufacturing facilities. Danon: Israel NOT part of US-Iran talks. Fait accompli strategy.",
+      "IRAN 7 MISSILE SALVOS AT ISRAEL (updated from 6): 7th salvo triggered sirens across central Israel AND outskirts of Jerusalem — first Jerusalem-area sirens of war. Some intercepted, impact reported central Israel. Total D27 injuries: 11 (ToI). Bnei Brak, Kfar Qassem, Tel Aviv (possible cluster munition), Hezbollah drone Galilee.",
+      "IRAN FORMALLY REJECTED PLAN — BUT WHITE HOUSE DENIES REJECTION: FM Araghchi: 'no negotiations, war ends on our terms.' 5 conditions. BUT WH Press Sec Leavitt: 'reports of rejection FALSE, negotiations ongoing.' Trump posted Iran 'begging' for deal. CONTRADICTORY — Iran says rejected, WH says not. Both spinning for domestic audiences.",
+      "IRAN FORTIFYING KHARG ISLAND — MINES + TRAPS + AIR DEFENSES (CNN): Anti-personnel + anti-tank mines along coastline where US could launch amphibious op. Moving additional military personnel + air defense systems. Setting traps. Parliament Speaker Ghalibaf: 'relentless attacks on regional country infrastructure' if any island occupied. Tasnim: Iran could open new Red Sea front if islands attacked. MAJOR ESCALATION SIGNAL.",
+      "US MULLING 'FINAL BLOW' GROUND OPTIONS (ToI): Kharg Island seizure considered = 90% of Iran crude exports. 82nd Airborne + 2 MEUs = ~7,000 additional troops + 50K already in region. Gulf allies privately urging AGAINST ground op. CNBC: 'technically feasible but escalatory.'",
+      "OIL D27: Brent $106.12 (+3.8%, CNBC daytime). WTI $93.61. Late Asia trading: pulled back toward $100 region. Market backwardation (Dec $79.70). Gas prices: FIRST DROP since war — $3.981 avg (AAA), down fraction of penny. Iran Hormuz toll legislation.",
+      "CASUALTIES D27 UPDATED: Iran 1,937 killed (AJ tracker, new figure). IRNA: 1,750+. HRANA: 3,291+ tracked. Hengaw D25: 6,530. Red Crescent: 6,668 civilian units targeted (5,535 residential, 1,041 commercial, 14 medical, 65 schools). Lebanon: 1,094. Iraq: 96. Israel: 18+. Gulf: 25+ dead (up from 22+). UAE: 11. UAE MoD cumul: 357 ballistic + 15 cruise + 1,815 drones.",
+      "SAFE PASSAGE EXPANDING: India 'open.' Thailand tanker. GCC: Iran already charging fees — violating int'l law. Insurance 5-10% hull. 2,000 vessels / 20,000 seafarers stranded.",
+      "PEW 59% WRONG. AP-NORC 59% too far. Quinnipiac 54-39 oppose. House Armed Services unsatisfied.",
+      "GCC 6-COUNTRY + GHALIBAF: Joint condemnation. Germany 'catastrophe.' Ghalibaf: 'relentless attacks' if islands occupied. Tasnim: Red Sea front threat.",
+      "8,000 TONS ARMS. CENTCOM: 2/3 arms mfg destroyed. US embassy Baghdad: leave immediately."
     ]
   },
-  "theoryBox": "<strong>Day 27 — TANGSIRI KILLED + IRAN REJECTS PLAN + ISRAEL SPEEDING UP:</strong> Israel killed IRGC Navy Commander Tangsiri in Bandar Abbas — he architected Hormuz blockade. IDF 'extensive strikes in Isfahan,' speeding up targeting arms factories before potential ceasefire. Iran fired 6 missile salvos at central Israel (9+ injured). FM Araghchi formally rejected 15-point plan with 5 counter-conditions: 'war ends on our terms.' Trump: 4 more days (Friday deadline). Oil surged $106.12 (+3.8%). Safe passage expanding — India, Thailand transiting. Pew: 59% Americans say wrong decision. Internet 600+ hours.",
-  "theoryBox_fa": "<strong>روز ۲۷ — تانگسیری کشته + ایران طرح را رد کرد + اسرائیل سرعت حملات:</strong> اسرائیل فرمانده نیروی دریایی سپاه تانگسیری را در بندرعباس کشت — معمار انسداد هرمز. حملات گسترده اصفهان. ایران ۶ سالوو موشکی به اسرائیل. عراقچی: 'جنگ به شرایط ما تمام می‌شود.' ترامپ: ۴ روز دیگر (جمعه). نفت $۱۰۶ (+۳.۸٪). عبور مطمئن: هند + تایلند. پیو: ۵۹٪ آمریکایی‌ها اشتباه.",
+  "theoryBox": "<strong>Day 27 — TANGSIRI KILLED + KHARG ISLAND FORTIFIED + IRAN REJECTS (WH DENIES):</strong> Israel killed IRGC Navy Commander Tangsiri in Bandar Abbas. Iran fired 7 missile salvos at Israel (11 injured, first Jerusalem-area sirens). CENTCOM: destroyed 2/3 of Iran's arms manufacturing. Iran fortifying Kharg Island with mines/traps/air defenses — Ghalibaf warns 'relentless attacks' if islands occupied. FM Araghchi rejected 15-point plan BUT White House denies rejection ('negotiations ongoing'). US mulling 'final blow' ground options. Trump: 4 more days (Friday). Oil $106.12 (+3.8%). Gas: first drop since war ($3.981). Pew: 59% wrong.",
+  "theoryBox_fa": "<strong>روز ۲۷ — تانگسیری کشته + خارگ تقویت + ایران رد (کاخ سفید انکار):</strong> تانگسیری بندرعباس کشته. ۷ سالوو موشکی (۱۱ زخمی، اولین آژیر نزدیک اورشلیم). CENTCOM: ۲/۳ تسلیحات‌سازی نابود. ایران خارگ تقویت — مین + تله + پدافند. قالیباف: 'حملات بی‌رحم.' عراقچی رد اما کاخ سفید: 'رد دروغ.' ترامپ ۴ روز. نفت $۱۰۶. بنزین: اولین کاهش ($۳.۹۸۱). پیو ۵۹٪.",
   "metrics": [
     {
       "label": "Day",
       "value": "27",
-      "desc": "TANGSIRI KILLED (IRGC Navy Commander, Hormuz architect). Israel speeding up strikes (Isfahan, arms factories before ceasefire). Iran rejected 15-point plan — 5 counter-conditions. Trump: 4 more days (Friday). Pew: 59% wrong decision. Internet 600+ hrs. Mojtaba absent Day 18."
+      "desc": "TANGSIRI KILLED + KHARG FORTIFIED. Israel speeding up (CENTCOM: 2/3 arms mfg destroyed). Iran rejected plan (WH denies). 7 salvos at Israel (first Jerusalem sirens). Kharg: mines/traps/air defenses. US mulling ground ops. Pew 59%. Gas first drop. Internet 600+ hrs."
     },
     {
       "label": "Cumul. missiles",
       "value": "~2,912",
-      "desc": "D27: ~25 (6 salvos at Israel — Bnei Brak, Kfar Qassem, Tel Aviv, 9+ injured. UAE 1 ballistic intercepted — debris killed 2 Abu Dhabi. Saudi/Kuwait intercepting). Cumul: 2,912. Iran still launching multi-salvo attacks despite Tangsiri death."
+      "desc": "D27: ~25 (7 salvos at Israel — Bnei Brak, Kfar Qassem, Tel Aviv, Jerusalem outskirts, 11 injured. UAE 1 ballistic intercepted — debris killed 2. Saudi/Kuwait intercepting). Cumul: 2,912. Iran still launching despite Tangsiri death + CENTCOM 2/3 arms mfg destroyed."
     },
     {
       "label": "Cumul. drones",
@@ -53,19 +53,19 @@
     {
       "label": "Israel dead",
       "value": "20+",
-      "desc": "18+ killed. D27: 6 missile salvos — Bnei Brak (2 injured), Kfar Qassem, Tel Aviv (3 wounded, possible cluster munition), Hezbollah drone Galilee (2 hurt). 8,000 tons arms delivered. 13 US KIA. IDF wants weeks more."
+      "desc": "18+ killed. D27: 7 missile salvos (up from 6) — first Jerusalem-area sirens. 11 injured total (ToI). Bnei Brak, Kfar Qassem, Tel Aviv (possible cluster munition), Hezbollah drone Galilee. 8,000 tons arms delivered. 13 US KIA. US mulling 'final blow' ground options."
     },
     {
       "label": "Nuclear risk",
       "value": "ELEVATED — PLAN REJECTED",
-      "desc": "Iran formally rejected 15-point plan. 5 counter-conditions 'maximalist.' US: conditions 'ridiculous' (WSJ). Israel speeding up arms factory targeting. Danon: Israel NOT part of US-Iran talks, ops until nuclear/missile eliminated. 440kg enriched. IAEA locked out. Friday deadline."
+      "desc": "Iran formally rejected 15-point plan (WH denies rejection). CENTCOM: 2/3 arms mfg destroyed. Israel speeding up. Danon: NOT part of talks. Iran fortifying Kharg Island (mines/traps/air defenses). Ghalibaf: attacks if occupied. 440kg enriched. IAEA locked out. Friday deadline."
     }
   ],
   "metrics_fa": [
     {
       "label": "روز",
       "value": "۲۷",
-      "desc": "تانگسیری کشته. اسرائیل سرعت حملات. ایران طرح رد. ترامپ ۴ روز. پیو ۵۹٪. اینترنت ۶۰۰+. مجتبی ۱۸."
+      "desc": "تانگسیری کشته + خارگ تقویت. CENTCOM ۲/۳. ایران رد (WH انکار). ۷ سالوو. آمریکا زمینی. پیو ۵۹٪. بنزین کاهش."
     },
     {
       "label": "موشک",
@@ -95,37 +95,37 @@
     {
       "label": "اسرائیل",
       "value": "۲۰+",
-      "desc": "۶ سالوو — بنی براک + کفر قاسم + تل‌آویو. ۸,۰۰۰ تن تسلیحات. ۱۳ آمریکا."
+      "desc": "۱۸+ شامل ۱۳ آمریکا. ۷ سالوو — اولین آژیر اورشلیم. ۱۱ زخمی. آمریکا 'ضربه نهایی' زمینی بررسی."
     },
     {
       "label": "خطر هسته‌ای",
       "value": "بالا — طرح رد شد",
-      "desc": "ایران ۱۵ بند رد. ۵ ضدشرط. اسرائیل سرعت تسلیحاتی. دانون: اسرائیل طرف مذاکره نیست. جمعه."
+      "desc": "ایران رد (کاخ سفید انکار). CENTCOM ۲/۳ تسلیحات نابود. خارگ مین + تله + پدافند. قالیباف. جمعه."
     }
   ],
   "sitrep": [
-    "TANGSIRI KILLED — IRGC NAVY COMMANDER ELIMINATED: Israel confirmed killing Alireza Tangsiri, IRGC Navy Commander since 2018, in strike on Bandar Abbas. Defense Minister Katz confirmed. Tangsiri ARCHITECTED Hormuz blockade — commanded 1st Naval District, shaped Iran's maritime defense strategy. His death disrupts IRGC naval command structure at critical moment when safe passage framework is expanding. KEY QUESTION: Does Tangsiri's death weaken or harden Iran's Hormuz posture?",
-    "ISRAEL SPEEDING UP STRIKES — FAIT ACCOMPLI STRATEGY: IDF completed 'wave of extensive strikes in Isfahan targeting infrastructure.' NPR: military officials say IDF speeding up targeting arms factories over next 48 hours 'in case ceasefire is declared.' CLASSIC FAIT ACCOMPLI — destroy as much as possible before political deal. Ambassador Danon: Israel NOT part of US-Iran talks, military ops continue until nuclear/missile capabilities eliminated. US-Israel divergence deepening.",
-    "IRAN FORMALLY REJECTED 15-POINT PLAN — 5 COUNTER-CONDITIONS: FM Araghchi: 'no negotiations, war ends on our terms.' Five conditions: (1) end aggression/assassinations, (2) mechanisms guaranteeing no recurrence, (3) war reparations, (4) comprehensive end ALL fronts incl Lebanon/Iraq, (5) international recognition of Iranian sovereignty over Hormuz. Called US plan 'maximalist and unreasonable.' Iranian security official: conditions 'excessive and detached from US failure on battlefield.' US official: Iran conditions 'ridiculous and unrealistic' (WSJ). GAP IS ENORMOUS.",
-    "IRAN 6 MISSILE SALVOS AT ISRAEL — SUSTAINED FIRE: 6 missile salvos at central Israel within hours. Bnei Brak apartment hit (2 injured). Kfar Qassem projectile strike (Mar 26). Tel Aviv shrapnel wounds (3 injured — possible cluster munition). Hezbollah drone downed Galilee (2 lightly hurt). Despite Tangsiri death and 27 days of bombing, Iran STILL launching multi-salvo attacks at Israel's heartland.",
-    "TRUMP: 4 MORE DAYS — FRIDAY DEADLINE APPROACHING: Trump said Tehran has 4 more days to agree before US targets energy infrastructure. Day 4 of 5-day postponement (from Mar 23). Friday Mar 28 = deadline. White House: 'productive talks,' war 'ahead of schedule.' Pentagon deploying 82nd Airborne. Diplomatic window closing.",
-    "OIL SURGED D27: Brent $106.12 (+3.8%, CNBC). WTI $93.61 (+3.6%). Surged after Iran rejected talks. Market in backwardation (Dec $79.70 = 17% below front-month). Iran preparing Hormuz toll legislation. Insurance 5-10% hull value. Oil whipsawing daily on diplomacy signals.",
-    "SAFE PASSAGE EXPANDING DESPITE TANGSIRI DEATH: India declared 'Strait of Hormuz open for India' — two LPG tankers passed. Thailand Bangchak tanker passed after talks with Iran. Safe passage framework expanding even as architect killed. Iran preparing toll legislation. 2,000 vessels / 20,000 seafarers still stranded. Legal experts: Iran has no legal basis for controlling passage.",
-    "CASUALTIES D27: Iran: 1,750+ killed (IRNA, up from 1,500+). Hengaw: 6,530 killed. HRANA: 3,291+ tracked. Lebanon: 1,094 killed (up from 1,072), 121 children. Iraq: 96 killed. Israel: 18+. Gulf: 22+. UAE: 11 national dead. IDF soldier killed Lebanon (Golani). 82,000+ structures.",
-    "PEW POLL — 59% WRONG DECISION: 61% disapprove Trump handling. 54% expect 6+ months more war. 88% Democrats oppose. 71% Republicans support. AP-NORC: 59% gone too far. House Armed Services Committee unsatisfied with briefing. Political pressure mounting.",
-    "GCC JOINT CONDEMNATION: UAE, Qatar, Saudi, Kuwait, Bahrain, Jordan joint statement condemning Iran. GCC SG: 'overcome all red lines.' Germany defense minister: 'catastrophe for world's economies.' 8,000 tons arms delivered to Israel (200+ aircraft/ships)."
+    "TANGSIRI KILLED — IRGC NAVY COMMANDER ELIMINATED: Israel confirmed killing Alireza Tangsiri in Bandar Abbas. Tangsiri ARCHITECTED Hormuz blockade — commanded 1st Naval District since 2018. His death disrupts IRGC naval command at critical moment. KEY QUESTION: Does blockade survive its architect? Evidence: safe passage expanded SAME DAY (India, Thailand). Framework appears institutional not personal.",
+    "IRAN FORTIFYING KHARG ISLAND — MINES + TRAPS (CNN): Iran laying anti-personnel and anti-tank mines around Kharg Island coastline where US could launch amphibious operation. Moving military personnel + air defense systems. Setting traps in recent weeks. Parliament Speaker Ghalibaf: 'relentless attacks on regional country infrastructure' if any island occupied. Tasnim: Iran could open NEW RED SEA FRONT if islands attacked. THIS IS THE BIGGEST ESCALATION SIGNAL OF D27 — Iran preparing for ground war.",
+    "CENTCOM: DESTROYED 2/3 OF IRAN'S ARMS MANUFACTURING: CENTCOM chief confirmed US/Israel have destroyed two-thirds of Iran's arms manufacturing facilities. IDF speeding up targeting remaining factories 'in case ceasefire declared.' FAIT ACCOMPLI strategy. Danon: Israel NOT part of US-Iran talks. US-Israel divergence deepening — Trump seeks deal, Israel destroys capacity.",
+    "IRAN 7 MISSILE SALVOS AT ISRAEL — JERUSALEM SIRENS: Iran fired 7 missile salvos at central Israel during D27 (updated from earlier count of 6). 7th salvo triggered sirens across central Israel AND outskirts of Jerusalem — first Jerusalem-area sirens of the war. 11 total injured (ToI). Despite CENTCOM 2/3 arms mfg destroyed, Iran STILL launching multi-salvo attacks.",
+    "CONTRADICTORY MESSAGING ON PLAN REJECTION: Iran FM Araghchi: 'no negotiations, war ends on our terms.' 5 counter-conditions far from 15-point plan. BUT White House Press Sec Leavitt: 'reports of rejection are FALSE, negotiations ongoing.' Trump posted Iran 'begging' for deal. KEY: Both sides spinning for domestic audiences. Iran needs to look strong. Trump needs to look like deal is close (Pew 59%).",
+    "US MULLING 'FINAL BLOW' GROUND OPTIONS (ToI): Kharg Island seizure under active consideration = 90% of Iran crude exports. 82nd Airborne + 2 MEUs = ~7,000 additional + 50K already. Gulf allies PRIVATELY urging against ground op — fear retaliation against their infrastructure (Ghalibaf confirmed this threat). CNBC: 'technically feasible but escalatory.'",
+    "OIL D27: Brent $106.12 (+3.8%, CNBC daytime). WTI $93.61. Late Asia: pulled back toward $100. Gas: FIRST DROP since war — $3.981 avg (AAA). Market backwardation (Dec $79.70). Iran toll legislation. Oil whipsawing daily on diplomacy vs escalation signals.",
+    "SAFE PASSAGE EXPANDING DESPITE TANGSIRI DEATH: India, Thailand transiting. GCC reports Iran already charging fees — violating international law. Safe passage framework expanding even as architect killed = institutional not personal. 2,000 vessels / 20,000 seafarers stranded. Insurance 5-10% hull.",
+    "CASUALTIES D27 UPDATED: Iran 1,937 killed (AJ tracker). IRNA: 1,750+. Hengaw: 6,530. Red Crescent: 6,668 civilian units (5,535 residential, 14 medical, 65 schools). Lebanon: 1,094. Iraq: 96. Israel: 18+. Gulf: 25+. UAE: 11. IDF soldier killed Lebanon (Golani).",
+    "PEW 59% + GCC + GHALIBAF: 59% wrong decision. 61% disapprove. Gas $3.981 = voter pain. GCC 6-country condemnation. Ghalibaf island threat + Tasnim Red Sea threat = Iran deterring Gulf cooperation with ground ops."
   ],
   "sitrep_fa": [
-    "تانگسیری کشته — فرمانده نیروی دریایی سپاه: اسرائیل تأیید کشتن تانگسیری در بندرعباس. معمار انسداد هرمز. از ۲۰۱۸ فرمانده. ساختار فرماندهی دریایی مختل.",
-    "اسرائیل سرعت حملات — استراتژی عمل انجام‌شده: اصفهان حملات گسترده. NPR: هدف‌گیری تسلیحاتی ۴۸ ساعته 'در صورت آتش‌بس.' دانون: اسرائیل طرف مذاکره نیست.",
-    "ایران ۱۵ بند رد — ۵ ضدشرط: عراقچی: 'مذاکره نه.' ۵ شرط: پایان تجاوز، تضمین، غرامت، جامع (لبنان)، حاکمیت هرمز. آمریکا: 'مسخره' (WSJ).",
-    "۶ سالوو موشکی اسرائیل — بنی براک + کفر قاسم + تل‌آویو. ۹+ زخمی. حزب‌الله پهپاد جلیل. ایران هنوز چندسالوو.",
-    "ترامپ: ۴ روز — جمعه مهلت. روز ۴ از ۵. زیرساخت انرژی هدف. کاخ سفید: 'سازنده.' پنتاگون: 'جلوتر از برنامه.'",
-    "نفت $۱۰۶.۱۲ (+۳.۸٪ CNBC). ایران رد مذاکره = افزایش. بازار بکواردیشن. عوارض هرمز.",
-    "عبور مطمئن گسترش: هند 'هرمز باز.' تایلند عبور. با وجود مرگ تانگسیری. عوارض قانون‌گذاری. ۲,۰۰۰ کشتی گیر.",
-    "تلفات: ایران ۱,۷۵۰+ (IRNA). هنگاو ۶,۵۳۰. لبنان ۱,۰۹۴. عراق ۹۶. امارات ۱۱. سرباز اسرائیلی لبنان.",
-    "پیو: ۵۹٪ اشتباه. ۶۱٪ نارضایی ترامپ. ۵۴٪ ۶+ ماه. فشار سیاسی.",
-    "GCC محکومیت مشترک: ۶ کشور. آلمان: 'فاجعه اقتصاد جهان.' ۸,۰۰۰ تن تسلیحات اسرائیل."
+    "تانگسیری کشته — معمار انسداد هرمز. بندرعباس. از ۲۰۱۸. فرماندهی مختل. اما عبور گسترش همان روز = نهادی.",
+    "ایران خارگ تقویت — مین + تله + پدافند (CNN): ضدنفر + ضدتانک ساحل. نیروی نظامی + پدافند هوایی. قالیباف: 'حملات بی‌رحم.' تسنیم: جبهه جدید دریای سرخ. بزرگ‌ترین سیگنال تشدید D27.",
+    "CENTCOM: ۲/۳ تسلیحات‌سازی ایران نابود. اسرائیل سرعت. دانون: طرف مذاکره نیست. عمل انجام‌شده. واگرایی آمریکا-اسرائیل.",
+    "۷ سالوو موشکی اسرائیل — اولین آژیر اورشلیم. ۱۱ زخمی. با وجود ۲/۳ نابودی هنوز چندسالوو.",
+    "پیام‌رسانی متناقض: عراقچی 'مذاکره نه.' اما لاویت کاخ سفید: 'رد دروغ است.' ترامپ: ایران 'التماس.' هر دو طرف برای داخل.",
+    "آمریکا 'ضربه نهایی' زمینی بررسی (ToI): خارگ ۹۰٪ صادرات نفت. هوابرد ۸۲ + تفنگداران = ~۷,۰۰۰. متحدان خلیج مخالف. CNBC: 'فنی ممکن اما تشدیدی.'",
+    "نفت $۱۰۶.۱۲ (+۳.۸٪). بنزین: اولین کاهش ($۳.۹۸۱). آسیا شب ~$۱۰۰. عوارض هرمز.",
+    "عبور مطمئن: هند + تایلند. GCC: ایران عوارض = نقض. ۲,۰۰۰ کشتی. بیمه ۵-۱۰٪.",
+    "تلفات: ایران ۱,۹۳۷ (AJ). IRNA ۱,۷۵۰+. هنگاو ۶,۵۳۰. هلال ۶,۶۶۸ واحد. لبنان ۱,۰۹۴. عراق ۹۶. خلیج ۲۵+.",
+    "پیو ۵۹٪ + GCC + قالیباف: اشتباه. بنزین = درد رأی‌دهنده. قالیباف = بازدارندگی همکاری خلیج با عملیات زمینی."
   ],
   "dailySeries": {
     "labels": [
@@ -274,7 +274,7 @@
       110.0,
       112.0,
       112.0,
-      96.50,
+      96.5,
       101.21,
       99.0,
       106.12
@@ -664,10 +664,10 @@
       "date": "Mar 26",
       "missiles": 25,
       "drones": 45,
-      "primary": "TANGSIRI KILLED + IRAN REJECTS PLAN + ISRAEL SPEEDING UP: Israel killed IRGC Navy Commander Tangsiri in Bandar Abbas (Katz confirmed) — he architected Hormuz blockade. IDF extensive strikes Isfahan infrastructure. NPR: IDF speeding up arms factory targeting 48 hrs before potential ceasefire. Iran fired 6 missile salvos at central Israel (Bnei Brak, Kfar Qassem, Tel Aviv). UAE ballistic intercepted Abu Dhabi — debris killed 2. Saudi/Kuwait intercepting. IDF soldier killed Lebanon (Golani).",
-      "capability": "D27: 25+45. TANGSIRI = most significant naval decapitation of war. He ran Hormuz blockade + 1st Naval District since 2018. Safe passage framework expanding DESPITE his death (India 2 LPG tankers, Thailand tanker passed). Iran STILL launching 6 salvos at Israel = capability persists. UAE total: 2,100+ missiles/drones received. Israel Danon: NOT part of US-Iran talks. IDF accelerating — creating fait accompli.",
-      "cost": "Brent SURGED $106.12 (+3.8%, CNBC). WTI $93.61 (+3.6%). Iran rejected talks = oil up. Iran preparing Hormuz toll legislation. Insurance 5-10% hull. Iran casualties: 1,750+ (IRNA). Hengaw: 6,530. Lebanon: 1,094. Pew: 59% Americans say wrong decision. GCC 6-country joint statement condemning Iran. Germany: 'catastrophe.' 8,000 tons arms to Israel.",
-      "assessment": "D27 — THREE COLLIDING DYNAMICS: (1) TANGSIRI DEATH = Hormuz blockade architect eliminated. Disrupts IRGC naval command at critical moment. But safe passage framework EXPANDING without him (India, Thailand) — suggesting institutional not personal. (2) IRAN FORMAL REJECTION = 5 counter-conditions far from 15-point plan. FM Araghchi: 'no negotiations.' Both sides calling other's conditions 'unrealistic.' GAP ENORMOUS. (3) ISRAEL FAIT ACCOMPLI = IDF speeding up strikes on arms factories before ceasefire. Creating irreversible military facts. Danon: Israel NOT part of US-Iran talks = US-Israel divergence deepening. FRIDAY DEADLINE = 2 days. If no deal: power plant strikes resume. If deal: Israel may not comply."
+      "primary": "TANGSIRI KILLED + KHARG FORTIFIED + 7 SALVOS + WH DENIES REJECTION: Israel killed IRGC Navy Commander Tangsiri in Bandar Abbas. Iran fortifying Kharg Island (mines/traps/air defenses — CNN). 7 missile salvos at Israel (first Jerusalem-area sirens, 11 injured). CENTCOM: 2/3 arms mfg destroyed. Iran FM rejected plan but WH Leavitt: 'rejection reports FALSE.' Ghalibaf: attacks if islands occupied. Tasnim: Red Sea front threat.",
+      "capability": "D27: 25+45. TANGSIRI = most significant naval decapitation. CENTCOM: 2/3 arms mfg destroyed = massive industrial damage. BUT Iran STILL launching 7 salvos/day + fortifying Kharg with mines/traps = preparing for ground war phase. Iran's counter-escalation posture: if you come to our islands, we attack your Gulf allies' infrastructure + open Red Sea front. Safe passage expanding despite Tangsiri death = institutional.",
+      "cost": "Brent $106.12 (+3.8%). Gas $3.981 (first drop). Iran 1,937 killed (AJ). Gulf 25+. UAE 11 dead, 357 ballistic + 1,815 drones cumul. Pew 59% wrong. Ghalibaf + Tasnim threats = Iran deterring Gulf cooperation. GCC 6-country condemnation. WH/Iran contradictory messaging on rejection.",
+      "assessment": "D27 — FOUR COLLIDING DYNAMICS: (1) TANGSIRI KILLED + Kharg fortified = Iran losing commanders but preparing ground defense. (2) CENTCOM 2/3 destroyed + IDF fait accompli = industrial base being eliminated. (3) WH denies rejection while Iran says 'no negotiations' = contradictory messaging for domestic audiences. (4) Kharg mines/traps + Ghalibaf threat + Tasnim Red Sea = Iran preparing deterrence against ground ops. FRIDAY = 2 days. Kharg fortification + 'final blow' deliberations = ground war risk rising."
     }
   ],
   "timeline": [
@@ -677,7 +677,7 @@
     },
     {
       "title": "FRIDAY MAR 28 DEADLINE (2 days)",
-      "body": "CRITICAL: 5-day postponement expires Friday. Trump: 4 more days for Iran to agree or US targets energy infrastructure. Iran formally rejected plan + 5 counter-conditions. Israel speeding up independently (fait accompli). Tangsiri death = Hormuz command vacuum. Safe passage expanding. G7 FM meeting. 82nd Airborne ready. If no deal: power plants. If deal: Israel may not comply."
+      "body": "CRITICAL: 5-day postponement expires Friday. Iran rejected plan (WH denies rejection). Iran fortifying Kharg Island (mines/traps/air defenses). US mulling 'final blow' ground options. Ghalibaf: attacks if islands occupied. Tasnim: Red Sea front. 82nd Airborne ready. CENTCOM 2/3 destroyed. G7 FM meeting. If no deal: power plants + potential Kharg op. If deal: Israel may not comply."
     },
     {
       "title": "Month 2 (Apr-May)",
@@ -699,7 +699,7 @@
     },
     {
       "title": "جمعه ۲۸ مهلت (۲ روز)",
-      "body": "بحرانی: تعویق ۵ روزه جمعه منقضی. ایران رد. اسرائیل مستقل سرعت. تانگسیری = خلأ فرماندهی. عبور گسترش. G7. هوابرد."
+      "body": "بحرانی: ایران رد (WH انکار). خارگ تقویت (مین/تله/پدافند). آمریکا 'ضربه نهایی.' قالیباف تهدید. هوابرد. CENTCOM ۲/۳. G7. اگر بدون معامله: نیروگاه + خارگ. اگر معامله: اسرائیل شاید پیروی نکند."
     },
     {
       "title": "ماه ۲",
@@ -717,65 +717,65 @@
   "scenarioProbabilities": [
     {
       "name": "Escalation spiral / total war",
-      "prob": "20%",
-      "body": "DECREASED 22%->20%. Tangsiri killed = IRGC Navy command disrupted. Safe passage expanding (India, Thailand) = Hormuz normalizing bilaterally. Iran's 5 conditions include 'comprehensive end' = seeking exit. BUT: Israel speeding up fait accompli. 82nd Airborne ready. If Friday deadline fails AND 82nd activates: rebounds sharply. Tangsiri death could provoke retaliation OR create command vacuum that reduces capability."
+      "prob": "22%",
+      "body": "INCREASED 20%->22%. KHARG ISLAND FORTIFICATION = Iran preparing for ground war (mines, traps, air defenses). US mulling 'final blow' ground options. Ghalibaf: attacks on Gulf if islands occupied. Tasnim: new Red Sea front. 82nd Airborne + MEUs deploying. Gulf allies urging against but military planning advancing. If Friday deadline fails + Kharg op authorized: total war. Counter: safe passage expanding, both sides spinning 'negotiations ongoing.'"
     },
     {
       "name": "Protracted attrition + internal crisis",
-      "prob": "30%",
-      "body": "UNCHANGED at 30%. STILL #1 MOST LIKELY. Iran formally rejected plan but offered counter-conditions. Israel speeding up independently. IDF wants weeks more. Iran still launching 6 salvos/day at Israel. Safe passage expanding but mines remain. Both sides have positions but gap enormous. Pew 59% = domestic pressure building but not yet decisive. War has rhythm of rejection + continued fighting."
+      "prob": "28%",
+      "body": "DECREASED 30%->28%. Kharg fortification + 'final blow' deliberations suggest conflict approaching decision point rather than steady attrition. CENTCOM 2/3 destroyed = running out of industrial targets. BUT contradictory messaging (WH denies rejection) = both sides preserving space. 7 salvos/day continues. Safe passage expanding. If Friday passes without action: rebounds to 30%+."
     },
     {
       "name": "Declared victory + exit",
-      "prob": "22%",
-      "body": "INCREASED 20%->22%. Trump can now claim Tangsiri kill as major victory (Hormuz blockade architect eliminated). IDF speeding up = creating fait accompli FOR exit. Israel destroying arms factories 'before ceasefire' = assumes ceasefire coming. Safe passage expanding = Hormuz reopening without formal deal. Pew 59% = political pressure for exit. Pentagon: 'ahead of schedule.' Multiple off-ramps exist even without formal agreement."
+      "prob": "23%",
+      "body": "INCREASED 22%->23%. CENTCOM '2/3 destroyed' = strongest victory metric yet. Tangsiri kill = Hormuz architect eliminated. Gas dropped (first time). Pew 59% = political urgency for exit. WH calling rejection 'false' = maintaining deal narrative. IDF fait accompli creating conditions for exit declaration. But Kharg fortification means Iran is preparing to fight on, complicating exit."
     },
     {
       "name": "Negotiated deal",
       "prob": "7%",
-      "body": "DECREASED 10%->7%. Iran FORMALLY rejected 15-point plan. FM Araghchi: 'no negotiations.' 5 counter-conditions far from US demands. US called Iran conditions 'ridiculous' (WSJ). Gap between positions ENORMOUS. But intermediary channels still active (Pakistan, others). MECHANISM exists but SUBSTANCE rejected. Could revive after Friday deadline."
+      "body": "UNCHANGED at 7%. WH denying rejection = preserving negotiation narrative. BUT Iran FM unambiguous: 'no negotiations.' Contradictory messaging = diplomatic theater not substance. Gap enormous. Mechanism exists (Pakistan, intermediaries). Substance rejected. Could revive post-Friday if power plants NOT struck."
     },
     {
       "name": "International intervention / ceasefire",
       "prob": "11%",
-      "body": "INCREASED 10%->11%. GCC 6-country joint condemnation. Germany: 'catastrophe for world's economies.' Pew 59% = US domestic pressure. House Armed Services unsatisfied. 2,000 vessels / 20,000 seafarers stranded. G7 FM Friday = multilateral pressure. Iran's 5th condition demands ALL fronts = comprehensive framework. International pressure building but no mechanism yet."
+      "body": "UNCHANGED at 11%. GCC condemnation + Germany + Pew + G7 Friday. Ghalibaf threat to Gulf allies = Iran deterring their cooperation with US ground ops. Gas first drop = tiny relief but political pressure building. No enforcement mechanism. G7 FM Friday = multilateral pressure peak."
     },
     {
       "name": "Regime fracture / IRGC collapse",
-      "prob": "10%",
-      "body": "INCREASED 8%->10%. TANGSIRI DEATH = most significant IRGC command kill for Hormuz operations. Navy commander since 2018 eliminated. Combined with Larijani, Soleimani, Basij head, Khatib = decapitation accelerating. Safe passage expanding WITHOUT Tangsiri = institutional framework. But IRGC still launching 6 salvos at Israel = capability persists. Mojtaba absent Day 18. IF successor command breaks down: Hormuz posture fragments."
+      "prob": "9%",
+      "body": "DECREASED 10%->9%. Kharg Island fortification = IRGC mobilizing for ground defense = regime showing organizational capability despite decapitation. Tangsiri dead but successors appointed. Safe passage institutional. Ghalibaf coordinating deterrence threats = political class functioning. CENTCOM 2/3 destroyed weakens industrial base but regime command intact."
     }
   ],
   "scenarioProbabilities_fa": [
     {
       "name": "مارپیچ تشدید / جنگ تمام‌عیار",
-      "prob": "۲۰٪",
-      "body": "کاهش ۲۲->۲۰. تانگسیری = فرماندهی دریایی مختل. عبور گسترش. ایران ۵ شرط = خواهان خروج. اما اسرائیل سرعت + هوابرد."
+      "prob": "۲۲٪",
+      "body": "افزایش ۲۰->۲۲. خارگ تقویت = آمادگی جنگ زمینی. آمریکا 'ضربه نهایی.' قالیباف تهدید. هوابرد + تفنگداران. اگر جمعه + خارگ = جنگ تمام‌عیار."
     },
     {
       "name": "فرسایشی + بحران داخلی",
-      "prob": "۳۰٪",
-      "body": "ثابت ۳۰. #۱. ایران رد اما ضدشرط. اسرائیل مستقل. ۶ سالوو روزانه. مین. شکاف بزرگ. پیو ۵۹٪ اما نه تعیین‌کننده. ریتم جنگ."
+      "prob": "۲۸٪",
+      "body": "کاهش ۳۰->۲۸. خارگ + 'ضربه نهایی' = نقطه تصمیم نه فرسایش. CENTCOM ۲/۳. اما WH 'رد دروغ' = فضا حفظ. ۷ سالوو."
     },
     {
       "name": "اعلام پیروزی + خروج",
-      "prob": "۲۲٪",
-      "body": "افزایش ۲۰->۲۲. ترامپ = تانگسیری پیروزی. اسرائیل عمل انجام‌شده. عبور = هرمز بدون قرارداد. پیو ۵۹٪ = فشار. پنتاگون 'جلوتر.'"
+      "prob": "۲۳٪",
+      "body": "افزایش ۲۲->۲۳. CENTCOM '۲/۳' = قوی‌ترین معیار. تانگسیری. بنزین کاهش. پیو ۵۹٪. WH 'رد دروغ.' اما خارگ تقویت."
     },
     {
       "name": "مذاکره",
       "prob": "۷٪",
-      "body": "کاهش ۱۰->۷. ایران رسماً رد. عراقچی: 'مذاکره نه.' ۵ شرط دور. آمریکا: 'مسخره.' مکانیزم هست اما ماهیت رد. شاید بعد جمعه."
+      "body": "ثابت ۷. WH انکار رد. اما عراقچی صریح. تناقض. شکاف بزرگ. مکانیزم هست. شاید بعد جمعه."
     },
     {
       "name": "مداخله بین‌المللی",
       "prob": "۱۱٪",
-      "body": "افزایش ۱۰->۱۱. GCC ۶ کشور. آلمان 'فاجعه.' پیو ۵۹٪. ۲,۰۰۰ کشتی. G7 جمعه. اما مکانیزم ندارد."
+      "body": "ثابت ۱۱. GCC + آلمان + پیو + G7. قالیباف = بازدارندگی. بنزین کاهش. مکانیزم ندارد."
     },
     {
       "name": "شکست رژیم / فروپاشی سپاه",
-      "prob": "۱۰٪",
-      "body": "افزایش ۸->۱۰. تانگسیری = مهم‌ترین ضربه فرماندهی دریایی. + لاریجانی + سلیمانی + بسیج + خطیب. مجتبی ۱۸. اما ۶ سالوو = توانایی."
+      "prob": "۹٪",
+      "body": "کاهش ۱۰->۹. خارگ تقویت = سپاه سازماندهی دفاع زمینی. رژیم توانایی سازمانی. CENTCOM ۲/۳ صنعتی اما فرماندهی سالم."
     }
   ],
   "theoryEvaluation": [
@@ -794,6 +794,10 @@
     {
       "title": "DOMESTIC PRESSURE — Pew 59% and political dynamics",
       "body": "Pew: 59% wrong decision, 61% disapprove handling, 54% expect 6+ months. AP-NORC: 59% gone too far. House Armed Services unsatisfied. KEY: (1) These numbers are UNPRECEDENTED for a war only 27 days old. (2) Iraq War didn't reach these disapproval levels for MONTHS. (3) 88% Dem oppose vs 71% Rep support = deep partisan divide. (4) Republican-leaning independents SPLIT 52-45 = Trump's coalition fraying. (5) Oil prices + gas prices directly visible to voters. (6) This creates political incentive for Trump to seek quick exit — reinforcing declared victory scenario. (7) But also constrains escalation options (power plants). CONCLUSION: Pew numbers accelerate political timeline for deal/exit. Trump NEEDS off-ramp more than Iran does domestically."
+    },
+    {
+      "title": "KHARG ISLAND — the ground war question",
+      "body": "Iran is fortifying Kharg Island with anti-personnel mines, anti-tank mines, traps, and air defenses (CNN). Ghalibaf threatens 'relentless attacks on regional infrastructure' if occupied. Tasnim warns of new Red Sea front. Meanwhile US mulling 'final blow' ground options. KEY ANALYSIS: (1) Kharg = 90% of Iran crude exports. Seizing it would be devastating leverage. (2) But Iran knows this and is preparing — mines + traps make amphibious assault costly. (3) Gulf allies PRIVATELY opposing — Ghalibaf's threat is directly at them. (4) 82nd Airborne is forced-entry unit but deploys without heavy armor initially = vulnerable to mined beaches. (5) If US seizes Kharg: Iran loses exports AND Hormuz leverage simultaneously. (6) If Iran successfully defends: US credibility damaged. (7) Tasnim Red Sea threat = Houthi activation. CONCLUSION: Kharg fortification changes the escalation calculus. Ground ops now involve contested beach landings against prepared defenses. This makes the declared victory + exit scenario MORE attractive to Trump than actual ground combat."
     }
   ],
   "theoryEvaluation_fa": [
@@ -812,42 +816,46 @@
     {
       "title": "فشار داخلی — پیو ۵۹٪",
       "body": "بی‌سابقه برای ۲۷ روز. عراق ماه‌ها طول کشید. جمهوری‌خواهان مستقل شکاف ۵۲-۴۵. ترامپ خروج نیاز. نفت + بنزین = مستقیم رأی‌دهنده."
+    },
+    {
+      "title": "خارگ — سؤال جنگ زمینی",
+      "body": "ایران خارگ تقویت: مین + تله + پدافند. قالیباف تهدید. تسنیم: دریای سرخ. آمریکا 'ضربه نهایی.' خارگ ۹۰٪ صادرات. تصرف = اهرم. اما ایران آماده = حمله دوزیست پرهزینه. خلیج مخالف. هوابرد ۸۲ بدون زره سنگین. اگر تصرف: ایران هم صادرات هم هرمز. اگر دفاع: اعتبار آمریکا. تسنیم = حوثی. نتیجه: تقویت = محاسبه تشدید عوض. اعلام پیروزی + خروج جذاب‌تر از جنگ زمینی واقعی."
     }
   ],
   "endstate": [
     {
-      "title": "Most likely (30%)",
-      "body": "Protracted attrition — UNCHANGED at 30%. Still #1. Iran rejected plan but offered counter-conditions. Israel speeding up independently. Both sides have positions but gap enormous. Pew 59% = pressure but not decisive yet. Tangsiri dead but IRGC still launching. Safe passage expanding. War rhythm continues."
+      "title": "Most likely (28%)",
+      "body": "Protracted attrition — DECREASED 30%->28%. Kharg fortification + 'final blow' deliberations suggest approaching decision point. CENTCOM 2/3 destroyed = running out of targets. But contradictory messaging preserves space. If Friday passes without action: rebounds."
     },
     {
-      "title": "Second (22%)",
-      "body": "Declared victory + exit — INCREASED 20%->22%. Tangsiri kill = major trophy. IDF fait accompli = creating conditions for exit. Safe passage = Hormuz reopening without deal. Pew 59% = political need for exit. Pentagon 'ahead of schedule.' Multiple off-ramps even without agreement."
+      "title": "Second (23%)",
+      "body": "Declared victory + exit — INCREASED 22%->23%. CENTCOM '2/3 destroyed' = strongest metric. Tangsiri kill. Gas dropped. Pew 59%. WH maintaining deal narrative. Kharg fortification makes ground war COSTLY = more incentive for political exit over military completion."
     },
     {
-      "title": "Third (20%)",
-      "body": "Escalation spiral — DECREASED 22%->20%. Tangsiri disrupts Hormuz command. Safe passage expanding. Iran seeking exit via 5 conditions. But Friday deadline + 82nd Airborne + Israel fait accompli = escalation pathways still active."
+      "title": "Third (22%)",
+      "body": "Escalation spiral — INCREASED 20%->22%. KHARG FORTIFICATION = Iran preparing ground defense. US mulling 'final blow.' Ghalibaf threatens Gulf. Tasnim threatens Red Sea. 82nd deploying. If Friday deadline fails + Kharg op: total war. Highest since D23."
     },
     {
-      "title": "Fourth (11% / 10% / 7%)",
-      "body": "International intervention (11%) — GCC condemnation + Germany + Pew + G7 Friday. Regime fracture (10%) — Tangsiri + ongoing decapitation + Mojtaba D18. Negotiated deal (7%) — Iran formally rejected, gap enormous, mechanism exists but substance rejected."
+      "title": "Fourth (11% / 9% / 7%)",
+      "body": "International intervention (11%) — GCC + Ghalibaf threats + G7 Friday. Regime fracture (9%) — decreased: Kharg fortification shows organizational capability. Negotiated deal (7%) — WH denies rejection but substance unchanged."
     }
   ],
   "endstate_fa": [
     {
-      "title": "محتمل‌ترین (۳۰٪)",
-      "body": "فرسایشی — ثابت ۳۰. #۱. ایران رد اما ضدشرط. اسرائیل مستقل. شکاف بزرگ. پیو ۵۹٪. تانگسیری مرده اما ۶ سالوو. عبور گسترش. ریتم."
+      "title": "محتمل‌ترین (۲۸٪)",
+      "body": "فرسایشی — کاهش ۳۰->۲۸. خارگ + 'ضربه نهایی' = نقطه تصمیم. CENTCOM ۲/۳. اما پیام متناقض. اگر جمعه بدون اقدام: بازگشت."
     },
     {
-      "title": "دوم (۲۲٪)",
-      "body": "اعلام پیروزی — افزایش ۲۰->۲۲. تانگسیری = جایزه. عمل انجام‌شده. عبور = هرمز بدون قرارداد. پیو ۵۹٪ = خروج سیاسی."
+      "title": "دوم (۲۳٪)",
+      "body": "اعلام پیروزی — افزایش ۲۲->۲۳. CENTCOM '۲/۳.' تانگسیری. بنزین. پیو ۵۹٪. خارگ تقویت = زمینی پرهزینه = انگیزه خروج سیاسی."
     },
     {
-      "title": "سوم (۲۰٪)",
-      "body": "تشدید — کاهش ۲۲->۲۰. تانگسیری = فرماندهی مختل. عبور. ایران ۵ شرط. اما جمعه + هوابرد + عمل انجام‌شده."
+      "title": "سوم (۲۲٪)",
+      "body": "تشدید — افزایش ۲۰->۲۲. خارگ = دفاع زمینی. آمریکا 'ضربه نهایی.' قالیباف. تسنیم دریای سرخ. هوابرد. اگر جمعه + خارگ = جنگ تمام‌عیار."
     },
     {
-      "title": "چهارم (۱۱٪ / ۱۰٪ / ۷٪)",
-      "body": "مداخله (۱۱٪) — GCC + آلمان + پیو + G7. فروپاشی (۱۰٪) — تانگسیری + مجتبی ۱۸. مذاکره (۷٪) — ایران رسماً رد. شکاف بزرگ."
+      "title": "چهارم (۱۱٪ / ۹٪ / ۷٪)",
+      "body": "مداخله (۱۱٪). فروپاشی (۹٪ — کاهش: خارگ = سازمانی). مذاکره (۷٪ — WH انکار اما ماهیت ثابت)."
     }
   ],
   "shippingRoutes": [
@@ -1065,7 +1073,7 @@
       "group": "Iran",
       "figure": "~6,530+ killed",
       "statusColor": "red",
-      "detail": "Hengaw (D25): 6,530 killed incl 640 civilians. IRNA (state): 1,750+ killed (up from 1,500+). HRANA: 1,455 civilian + 217 children + 1,167 military + 669 unclassified = 3,291+ tracked. 18,551 injured. 82,000+ structures destroyed. 94 ambulances hit. Isfahan struck extensively D27."
+      "detail": "AJ tracker: 1,937 killed. IRNA (state): 1,750+. HRANA: 1,455 civilian + 217 children + 1,167 military + 669 unclassified = 3,291+ tracked. Hengaw D25: 6,530. Red Crescent: 6,668 civilian units targeted (5,535 residential, 1,041 commercial, 14 medical, 65 schools). 18,551 injured. 82,000+ structures. CENTCOM: 2/3 arms mfg destroyed."
     },
     {
       "group": "Lebanon",
@@ -1087,9 +1095,9 @@
     },
     {
       "group": "Gulf States (UAE/Saudi/Kuwait/Bahrain)",
-      "figure": "22+ killed",
+      "figure": "25+ killed",
       "statusColor": "red",
-      "detail": "UAE: 11 dead (debris killed 2 Abu Dhabi D27). UAE received 2,100+ missiles/drones total. Saudi: 32 drones + 1 ballistic targeting Ras Tanura/Ghawar/Abqaiq. Kuwait: airport fuel tank fire. Bahrain: 1 Moroccan killed. GCC 6-country joint condemnation."
+      "detail": "UAE: 11 dead (debris killed 2 Abu Dhabi D27). UAE MoD cumul: 357 ballistic + 15 cruise + 1,815 drones. Saudi: 32 drones + 1 ballistic targeting Ras Tanura/Ghawar/Abqaiq. Kuwait: airport fuel tank fire. Bahrain: 1 Moroccan killed. GCC 6-country condemnation. Ghalibaf: 'relentless attacks' if islands occupied."
     },
     {
       "group": "Source discrepancy note",
@@ -1103,7 +1111,7 @@
       "group": "ایران",
       "figure": "~۶,۵۳۰+ کشته",
       "statusColor": "red",
-      "detail": "هنگاو: ۶,۵۳۰ شامل ۶۴۰ غیرنظامی. IRNA: ۱,۷۵۰+. HRANA: ۳,۲۹۱+ ردیابی. ۱۸,۵۵۱ زخمی. ۸۲,۰۰۰+ سازه. ۹۴ آمبولانس. اصفهان."
+      "detail": "AJ: ۱,۹۳۷. IRNA: ۱,۷۵۰+. HRANA: ۳,۲۹۱+. هنگاو ۶,۵۳۰. هلال ۶,۶۶۸ واحد. ۱۸,۵۵۱ زخمی. ۸۲,۰۰۰+ سازه. CENTCOM: ۲/۳ نابود."
     },
     {
       "group": "لبنان",
@@ -1125,9 +1133,9 @@
     },
     {
       "group": "خلیج فارس",
-      "figure": "۲۲+ کشته",
+      "figure": "۲۵+ کشته",
       "statusColor": "red",
-      "detail": "امارات ۱۱. عربستان ۳۲ پهپاد + ۱ بالستیک. کویت فرودگاه. بحرین مراکشی. GCC محکومیت."
+      "detail": "امارات ۱۱. MoD: ۳۵۷ بالستیک + ۱,۸۱۵ پهپاد. عربستان ۳۲ پهپاد. کویت فرودگاه. بحرین مراکشی. GCC محکومیت. قالیباف تهدید."
     },
     {
       "group": "اختلاف منابع",
@@ -1142,7 +1150,7 @@
     "<strong>Infrastructure:</strong> 82,000+ structures destroyed in Iran. 94 ambulances hit. Hospitals operating at 1/3 capacity. Food prices tripled. Power grid INTACT but Friday deadline threatens 90M without electricity.",
     "<strong>Nuclear safety:</strong> IAEA locked out. Isfahan/Natanz/Fordow under strike. 440kg enriched uranium (~11 weapons worth). Israel speeding up arms factory targeting. Environmental contamination risk.",
     "<strong>Medical crisis:</strong> HRANA: 18,551 injured in Iran. 217 children killed. Hospitals overwhelmed. Medical supply chains severed. Internet blackout prevents coordination.",
-    "<strong>Economic:</strong> Oil $106 (+3.8%). Insurance 5-10% hull (from 0.15-0.25%). Global shipping disrupted. 2,000 vessels stranded. Iran toll legislation. Philippines declared national emergency. Japan 30-day reserves."
+    "<strong>Economic:</strong> Oil $106 (+3.8%). Gas $3.981 — FIRST DROP since war (AAA). Insurance 5-10% hull. 2,000 vessels stranded. Iran toll legislation. Philippines emergency. Japan 30-day reserves. Kharg fortification = if seized/attacked, oil spike to $120+."
   ],
   "humanitarian_fa": [
     "<strong>اینترنت:</strong> ۲۷ = ۶۰۰+ ساعت. طولانی‌ترین تاریخ هر کشور. عفو بین‌الملل: 'عمدی.' $۳۵.۷M/روز. انزوای ۹۰ میلیون.",
@@ -1150,11 +1158,11 @@
     "<strong>زیرساخت:</strong> ۸۲,۰۰۰+ سازه. ۹۴ آمبولانس. بیمارستان ۱/۳. غذا سه‌برابر. برق سالم اما جمعه.",
     "<strong>هسته‌ای:</strong> IAEA قفل. ۴۴۰kg. اسرائیل سرعت تسلیحاتی. آلودگی محیطی.",
     "<strong>پزشکی:</strong> ۱۸,۵۵۱ زخمی. ۲۱۷ کودک کشته. بیمارستان. اینترنت = هماهنگی ندارد.",
-    "<strong>اقتصادی:</strong> نفت $۱۰۶. بیمه ۵-۱۰٪. ۲,۰۰۰ کشتی. فیلیپین اضطراری. ژاپن ۳۰ روز."
+    "<strong>اقتصادی:</strong> نفت $۱۰۶. بنزین $۳.۹۸۱ — اولین کاهش. بیمه ۵-۱۰٪. ۲,۰۰۰ کشتی. خارگ: اگر حمله = نفت $۱۲۰+."
   ],
   "diplomacy": [
     "<strong>15-Point Peace Plan (D26):</strong> NYT: Pakistan delivered US plan demanding nuclear dismantlement (Natanz/Isfahan/Fordow), enrichment stop, IAEA transfer, missile suspension, proxy ceasefire, Hormuz reopening. Offers sanctions relief + civilian nuclear + snapback removal. 1-month ceasefire proposed.",
-    "<strong>Iran FORMALLY REJECTED (D27):</strong> FM Araghchi: 'no negotiations, war ends on our terms.' 5 counter-conditions: (1) end aggression, (2) guarantees no recurrence, (3) reparations, (4) comprehensive end ALL fronts incl Lebanon, (5) sovereignty over Hormuz. US: conditions 'ridiculous and unrealistic' (WSJ).",
+    "<strong>Iran REJECTED + WHITE HOUSE DENIES (D27):</strong> FM Araghchi: 'no negotiations, war ends on our terms.' 5 counter-conditions. BUT WH Press Sec Leavitt: 'reports of rejection FALSE, negotiations ongoing.' Trump: Iran 'begging' for deal. CONTRADICTORY — both spinning for domestic audiences. Iran needs strength narrative. Trump needs deal narrative (Pew 59%).",
     "<strong>Trump 5-day postponement (D23):</strong> Postponed power plant strikes citing 'productive talks.' Iran denied direct talks but CBS: FM confirmed 'received points through mediators.' Deadline: Friday Mar 28 = 2 days remaining.",
     "<strong>Intermediaries:</strong> Pakistan (primary — delivered plan, first Hormuz transit). Oman (traditional channel). Qatar. China (tacit support via safe passage). India (bilateral Hormuz deal). No direct US-Iran channel.",
     "<strong>Israel position:</strong> Ambassador Danon: Israel NOT part of US-Iran talks. IDF speeding up independently. Katz: 'increase significantly.' IDF wants 'several more weeks.' Creating fait accompli. US-Israel divergence deepest since D1.",
@@ -1162,7 +1170,7 @@
   ],
   "diplomacy_fa": [
     "<strong>طرح ۱۵ بندی (D26):</strong> NYT: پاکستان تحویل. خلع سلاح هسته‌ای + IAEA + موشک + پروکسی + هرمز. تحریم‌ها + هسته‌ای غیرنظامی. آتش‌بس ۱ ماهه.",
-    "<strong>ایران رسماً رد (D27):</strong> عراقچی: 'مذاکره نه.' ۵ شرط: توقف تجاوز، تضمین، غرامت، همه جبهه‌ها، حاکمیت هرمز. آمریکا: 'مسخره.'",
+    "<strong>ایران رد + کاخ سفید انکار (D27):</strong> عراقچی: 'مذاکره نه.' ۵ شرط. اما لاویت: 'رد دروغ.' ترامپ: 'التماس.' متناقض — هر دو برای داخل.",
     "<strong>ترامپ تعویق ۵ روزه (D23):</strong> نیروگاه تعویق. مهلت جمعه ۲۸ = ۲ روز.",
     "<strong>میانجی‌ها:</strong> پاکستان (اصلی). عمان. قطر. چین. هند. مستقیم ندارد.",
     "<strong>اسرائیل:</strong> دانون: طرف نیست. سرعت. واگرایی عمیق‌ترین.",
@@ -1186,6 +1194,7 @@
   ],
   "hormuz": [
     "<strong>Blockade status:</strong> Strait of Hormuz physically blocked by confirmed Iranian mines (Maham 3/7). IRGC Navy Commander Tangsiri — architect of blockade — killed D27 in Bandar Abbas strike. Naval command succession uncertain. 21% of global oil transits Hormuz.",
+    "<strong>KHARG ISLAND FORTIFICATION (CNN):</strong> Iran laying anti-personnel + anti-tank mines around Kharg Island coastline. Moving military personnel + air defense systems. Setting traps for potential US amphibious operation. Ghalibaf: 'relentless attacks on regional infrastructure' if islands occupied. Tasnim: could open new Red Sea front. Iran preparing to defend 90% of its crude export capacity with physical fortifications.",
     "<strong>Safe passage framework:</strong> Iran established bilateral safe passage via UN letter (D26). Non-hostile ships transit with coordination. Expanding: Pakistan (first Aframax), India ('open' — 2 LPG tankers), Thailand (tanker), China (priority). Explicitly EXCLUDES US-flagged/linked vessels.",
     "<strong>Mine threat:</strong> Physical mines confirmed. Clearance estimated weeks to months even without opposition. Tangsiri death may affect mine-laying coordination but mines already deployed. US/coalition mine countermeasures would require Hormuz entry.",
     "<strong>Toll legislation:</strong> Iran preparing Hormuz toll legislation (Fars News). Would formalize Iran's claim of sovereignty over strait. Bureaucratic momentum suggests institutional policy, not personal to Tangsiri.",
@@ -1195,6 +1204,7 @@
   ],
   "hormuz_fa": [
     "<strong>انسداد:</strong> مین تأیید شده (ماهام ۳/۷). تانگسیری (معمار) کشته. جانشینی نامشخص. ۲۱٪ نفت جهان.",
+    "<strong>تقویت خارگ (CNN):</strong> مین ضدنفر + ضدتانک ساحل. نیروی نظامی + پدافند. تله. قالیباف: 'حملات بی‌رحم.' تسنیم: جبهه دریای سرخ. ایران دفاع از ۹۰٪ صادرات نفت.",
     "<strong>عبور مطمئن:</strong> نامه سازمان ملل. پاکستان + هند + تایلند + چین. آمریکا خارج.",
     "<strong>مین:</strong> هفته‌ها تا ماه‌ها پاکسازی. تانگسیری مرده اما مین‌ها مستقر.",
     "<strong>عوارض:</strong> قانون‌گذاری هرمز. حاکمیت رسمی. بروکراتیک.",
@@ -1203,27 +1213,27 @@
     "<strong>سؤال:</strong> انسداد بدون تانگسیری؟ شواهد = بله. عبور همان روز = نهادی. جانشین تعیین‌کننده."
   ],
   "keyActors": [
-    "<strong>United States:</strong> Primary belligerent. 50K+ troops in region. 82nd Airborne deploying. 8,000 tons arms to Israel. Trump seeking deal (Pew 59% pressure). Friday deadline for power plants. Diverging from Israel on timeline.",
+    "<strong>United States:</strong> Primary belligerent. 50K+ troops. 82nd Airborne deploying. Mulling 'final blow' ground options (ToI) including Kharg Island seizure. CENTCOM: 2/3 arms mfg destroyed. Trump seeking deal (Pew 59%). WH denying Iran rejection. Friday deadline. Gulf allies urging against ground ops.",
     "<strong>Israel:</strong> Operating independently. IDF speeding up strikes (Isfahan arms factories). Ambassador Danon: NOT part of US-Iran talks. Wants 'several more weeks.' Creating fait accompli. US-Israel divergence deepest since D1.",
-    "<strong>Iran (IRGC):</strong> Still launching 6+ salvos/day at Israel. Tangsiri (Navy Commander) killed D27. Formally rejected 15-point plan. 5 counter-conditions. Safe passage framework expanding. Mojtaba absent Day 18. Toll legislation.",
+    "<strong>Iran (IRGC):</strong> 7 salvos/day at Israel (first Jerusalem sirens). Tangsiri killed D27. Formally rejected plan (WH denies). FORTIFYING Kharg Island (mines/traps/air defenses). Ghalibaf: attacks if islands occupied. Tasnim: Red Sea front threat. Safe passage expanding. Mojtaba absent Day 18. Toll legislation.",
     "<strong>Pakistan:</strong> Primary mediator. Delivered 15-point plan. First non-Iranian Hormuz transit (Aframax). Bridge between US and Iran.",
     "<strong>India:</strong> Declared Hormuz 'open.' 2 LPG tankers transited. 3 tankers released by Iran. Bilateral safe passage deal. Balancing US relations with energy needs.",
     "<strong>Hezbollah/Lebanon:</strong> Active front. 1,094+ killed. Drone from Galilee downed. IDF Litani operations expanding. Iran's 5th condition: comprehensive end ALL fronts.",
     "<strong>Houthis (Yemen):</strong> Declared entry but NO confirmed attacks yet. If activated: BOTH chokepoints (Hormuz + Bab al-Mandab). Biggest wild card.",
     "<strong>GCC (UAE/Saudi/Kuwait/Bahrain/Qatar/Jordan):</strong> 6-country joint condemnation. UAE: 11 dead, 2,100+ missiles/drones received. Saudi: Ras Tanura/Ghawar/Abqaiq targeted. Demanding ceasefire.",
-    "<strong>82nd Airborne:</strong> 2-3K paratroopers. Maj Gen Tegtmeier. Kharg Island contingency. Combined with 2 MEUs = 6-8K ground troops. Escalation trigger.",
+    "<strong>82nd Airborne + Ground Forces:</strong> ~3K paratroopers + 2 MEUs (~5K Marines) = ~7-8K additional ground troops. Kharg Island seizure under active deliberation. Iran fortifying Kharg with mines/traps/air defenses in response. Gulf allies urging against. If authorized: highest-risk escalation of war.",
     "<strong>IAEA:</strong> Locked out of Iran nuclear sites. 440kg enriched uranium. Environmental verification impossible. Nuclear dimension unresolved regardless of ceasefire."
   ],
   "keyActors_fa": [
-    "<strong>آمریکا:</strong> ۵۰ هزار+. هوابرد ۸۲. ۸,۰۰۰ تن تسلیحات اسرائیل. ترامپ معامله (پیو ۵۹٪). جمعه نیروگاه. واگرایی اسرائیل.",
+    "<strong>آمریکا:</strong> ۵۰ هزار+. هوابرد ۸۲. 'ضربه نهایی' خارگ بررسی. CENTCOM ۲/۳. ترامپ معامله. WH انکار رد. جمعه. متحدان خلیج مخالف زمینی.",
     "<strong>اسرائیل:</strong> مستقل. اصفهان تسلیحاتی سرعت. دانون: طرف نیست. 'هفته‌ها.' عمل انجام‌شده.",
-    "<strong>ایران (سپاه):</strong> ۶+ سالوو/روز. تانگسیری کشته. رد ۱۵ بند. ۵ ضدشرط. عبور گسترش. مجتبی ۱۸. عوارض.",
+    "<strong>ایران (سپاه):</strong> ۷ سالوو (اورشلیم). تانگسیری کشته. رد (WH انکار). خارگ تقویت (مین/تله/پدافند). قالیباف تهدید. تسنیم: دریای سرخ. مجتبی ۱۸.",
     "<strong>پاکستان:</strong> میانجی اصلی. طرح تحویل. اولین عبور غیرایرانی.",
     "<strong>هند:</strong> هرمز 'باز.' ۲ نفتکش. ۳ آزاد. دوجانبه.",
     "<strong>حزب‌الله/لبنان:</strong> جبهه فعال. ۱,۰۹۴+. لیطانی. شرط ۵ ایران.",
     "<strong>حوثی:</strong> اعلام بدون حمله. هر دو تنگه. بزرگ‌ترین ناشناخته.",
     "<strong>GCC:</strong> ۶ کشور محکومیت. امارات ۱۱. عربستان هدف. آتش‌بس خواهان.",
-    "<strong>هوابرد ۸۲:</strong> ۲-۳ هزار. خارگ. ۶-۸ هزار زمینی. محرک تشدید.",
+    "<strong>هوابرد ۸۲ + زمینی:</strong> ~۳ هزار + تفنگداران ~۵ هزار = ~۷-۸ هزار. خارگ بررسی فعال. ایران تقویت. خلیج مخالف. اگر فعال: بالاترین ریسک.",
     "<strong>IAEA:</strong> قفل. ۴۴۰kg. تأیید غیرممکن. هسته‌ای حل‌نشده."
   ]
 }
