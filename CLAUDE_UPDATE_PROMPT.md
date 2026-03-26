@@ -60,6 +60,42 @@ You are updating the Iran War Dashboard (iran-war-dashboard-murex.vercel.app).
 
 Iran claims ~700 missiles / ~3,600 drones total. JPost/Israeli estimates are much higher. IRGC claimed D16 that "most weapons cache intact, using decade-old missiles." Dashboard uses JPost series for trend continuity but documents the discrepancy in source notes.
 
+## Business context for impact analysis
+
+### Iranfarhang (Book Supply)
+- Tehran-based supplier of Persian-language books to US/Canadian university and research libraries for 25+ years
+- Original shipping route: Air cargo Tehran → Dubai (Emirates SkyCargo) → Atlanta office → UPS to institutions
+- OFAC exemption: 31 CFR §560.210(c) — informational materials (Berman Amendment). STATUTORY, not executive — survives any sanctions regime
+- Payment: Via KEMCO SARL, a third-country entity in France
+- Key dependencies: Tehran warehouse inventory, Iranian publishing industry (paper imports, printing, internet), shipping routes, power grid
+- Analysis should focus on: route viability, inventory status, publishing industry conditions, client communications, OFAC/legal status, family safety
+
+### KIP (Import-Export)
+- Private Iranian family import-export company using Dubai/UAE as logistics hub, re-export point, and financial gateway
+- The Iran-UAE trade corridor is the lifeblood of this business
+- Key dependencies: Hormuz strait (shipping), UAE banking (trade finance), Dubai free zones (warehousing), UAE airspace (cargo flights), personnel safety in UAE
+- Analysis should focus on: Dubai hub operability, banking freeze risk, alternative hub assessment (Turkey/Georgia/Oman/Malaysia), stranded inventory, insurance, personnel safety, Hormuz reopening timeline
+
+### Writing style for business sections
+- Every bullet should be SPECIFIC to the business, not a restatement of general war news
+- Lead with the business impact, then explain why (the war event)
+- Impact = what happened TO the business. Prep = what the business should DO. Signals = what to WATCH that would change the picture
+- Prep items should be actionable: "do X this week" not "monitor developments"
+- Use `<strong>Label:</strong>` formatting for lead-in
+
+## New analytical sections (added D27)
+
+In addition to the core data, update these analytical sections each cycle:
+
+- **`casualties` / `casualties_fa`**: Array of objects `{group, figure, statusColor, detail}`. Track by group: Iran, Lebanon, Israel, Iraq, Gulf States. Include source discrepancy note. Update figures from IRNA, HRANA, Hengaw, Health Ministries.
+- **`humanitarian` / `humanitarian_fa`**: Array of HTML-safe strings. Cover: internet blackout duration, displacement, infrastructure damage, nuclear safety, medical crisis, economic impact.
+- **`diplomacy` / `diplomacy_fa`**: Array of HTML-safe strings. Track: peace proposals, intermediary channels, positions of each side, deadlines, G7/UN moves.
+- **`publicOpinion` / `publicOpinion_fa`**: Array of HTML-safe strings. Track: US polls (Pew, AP-NORC, Quinnipiac, etc.), congressional reactions, international statements.
+- **`hormuz` / `hormuz_fa`**: Array of HTML-safe strings. Track: blockade status, safe passage framework expansion, mine threat, toll legislation, insurance crisis, military deployments (82nd Airborne), key questions.
+- **`keyActors` / `keyActors_fa`**: Array of HTML-safe strings. Track: each major actor (US, Israel, Iran/IRGC, Pakistan, India, Hezbollah, Houthis, GCC, 82nd Airborne, IAEA) with current status and role.
+
+All of these use `<strong>Label:</strong>` formatting for the lead-in of each bullet point.
+
 ## What NOT to do
 
 - Do NOT just append a new day without reviewing all previous data
@@ -67,3 +103,4 @@ Iran claims ~700 missiles / ~3,600 drones total. JPost/Israeli estimates are muc
 - Do NOT create duplicate date entries in dailyRows
 - Do NOT skip the validation step
 - Do NOT change the JSON structure/schema — only update values within existing keys
+- Do NOT remove any of the new analytical sections (casualties, humanitarian, diplomacy, publicOpinion, hormuz, keyActors)

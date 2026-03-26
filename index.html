@@ -133,12 +133,15 @@
     </section>
     <section class="grid cols-2" style="margin-top:16px">
       <div class="panel"><h3 data-i18n="hCombo">Combined launch tempo</h3><div class="sub" data-i18n="subCombo">Missiles and drones together — converging or diverging?</div><div class="chart-box tall"><canvas id="comboChart"></canvas></div></div>
-      <div class="panel"><h3 data-i18n="hOil">Oil shock monitor</h3><div class="sub" data-i18n="subOil">Brent and WTI benchmark pressure.</div><div class="chart-box tall"><canvas id="oilChart"></canvas></div><div class="footnote" id="oilFoot"></div></div>
+      <div class="panel"><h3 data-i18n="hCumul">Cumulative strikes</h3><div class="sub" data-i18n="subCumul">Running total of all projectiles launched since Day 1.</div><div class="chart-box tall"><canvas id="cumulChart"></canvas></div></div>
     </section>
-    <section class="grid cols-3" style="margin-top:16px">
-      <div class="panel"><h3 data-i18n="hTargetM">Latest daily missile strikes by target</h3><div class="sub" data-i18n="subTarget">Latest daily slice.</div><div class="chart-box short"><canvas id="targetMissileChart"></canvas></div><div class="footnote" id="targetMissileFoot"></div></div>
+    <section class="grid cols-2" style="margin-top:16px">
+      <div class="panel"><h3 data-i18n="hOil">Oil shock monitor</h3><div class="sub" data-i18n="subOil">Brent and WTI benchmark pressure.</div><div class="chart-box tall"><canvas id="oilChart"></canvas></div><div class="footnote" id="oilFoot"></div></div>
+      <div class="panel"><h3 data-i18n="hPressure">Attrition vs cost pressure</h3><div class="sub" data-i18n="subPressure">Strategic hinge — operational degradation vs economic/political cost.</div><div class="chart-box tall"><canvas id="pressureChart"></canvas></div></div>
+    </section>
+    <section class="grid cols-2" style="margin-top:16px">
+      <div class="panel"><h3 data-i18n="hTargetM">Latest daily missile strikes by target</h3><div class="sub" data-i18n="subTarget">Latest daily slice — who's being hit?</div><div class="chart-box short"><canvas id="targetMissileChart"></canvas></div><div class="footnote" id="targetMissileFoot"></div></div>
       <div class="panel"><h3 data-i18n="hTargetD">Latest daily drone strikes by target</h3><div class="sub" data-i18n="subTargetD">Theater narrowing or spreading?</div><div class="chart-box short"><canvas id="targetDroneChart"></canvas></div><div class="footnote" id="targetDroneFoot"></div></div>
-      <div class="panel"><h3 data-i18n="hPressure">Attrition vs cost pressure</h3><div class="sub" data-i18n="subPressure">Strategic hinge.</div><div class="chart-box short"><canvas id="pressureChart"></canvas></div></div>
     </section>
     <section class="panel" style="margin-top:16px">
       <h3 data-i18n="hLog">Event log</h3><div class="sub" data-i18n="subLog">Newest first.</div>
@@ -152,14 +155,25 @@
       <div class="panel"><h3 data-i18n="hTimeline">Projected timeline</h3><ul class="list" id="timeline"></ul></div>
       <div class="panel"><h3 data-i18n="hScenario">Scenario probabilities</h3><div id="scenarioProbs"></div></div>
     </section>
+    <section class="panel" style="margin-top:16px">
+      <h3 data-i18n="hTheoryEval">Working theory evaluation</h3>
+      <ul class="list" id="theoryEval"></ul>
+    </section>
     <section class="grid cols-2" style="margin-top:16px">
-      <div class="panel"><h3 data-i18n="hTheoryEval">Working theory evaluation</h3><ul class="list" id="theoryEval"></ul></div>
-      <div class="panel"><h3 data-i18n="hEndstate">Most likely end-state</h3><ul class="list" id="endstate"></ul></div>
+      <div class="panel"><h3 data-i18n="hCasualties">Casualty tracker</h3><div class="sub" data-i18n="subCasualties">Multi-source figures — discrepancies noted.</div><div id="casualtyBox"></div></div>
+      <div class="panel"><h3 data-i18n="hHumanitarian">Humanitarian crisis</h3><div class="sub" data-i18n="subHumanitarian">Infrastructure, displacement, and civilian impact.</div><ul class="list" id="humanitarianBox"></ul></div>
+    </section>
+    <section class="grid cols-2" style="margin-top:16px">
+      <div class="panel"><h3 data-i18n="hDiplomacy">Diplomacy & negotiations</h3><div class="sub" data-i18n="subDiplomacy">Peace proposals, intermediaries, and positions.</div><ul class="list" id="diplomacyBox"></ul></div>
+      <div class="panel"><h3 data-i18n="hPublicOpinion">Public opinion</h3><div class="sub" data-i18n="subPublicOpinion">US polling and international reaction.</div><ul class="list" id="publicOpinionBox"></ul></div>
+    </section>
+    <section class="grid cols-2" style="margin-top:16px">
+      <div class="panel"><h3 data-i18n="hHormuz">Hormuz Strait & safe passage</h3><div class="sub" data-i18n="subHormuz">Blockade status, mine fields, and transit frameworks.</div><ul class="list" id="hormuzBox"></ul><div style="margin-top:14px" id="shippingRoutesStandalone"></div></div>
+      <div class="panel"><h3 data-i18n="hKeyActors">Key actors & alliances</h3><div class="sub" data-i18n="subKeyActors">Who's involved and their roles.</div><ul class="list" id="keyActorsBox"></ul></div>
     </section>
     <section class="grid cols-2" style="margin-top:16px">
       <div class="panel"><h3>Iranfarhang</h3>
         <div class="biz-section"><h4 data-i18n="hImpact">Impact</h4><ul class="list" id="impactIranfarhang"></ul></div>
-        <div class="biz-section"><h4 data-i18n="hRoutes" style="color:var(--blue)">Shipping route analysis</h4><div id="shippingRoutesBox"></div></div>
         <div class="biz-section"><h4 data-i18n="hPublishing" style="color:var(--purple)">Iranian publishing industry status</h4><ul class="list" id="publishingStatusBox"></ul></div>
         <div class="biz-section"><h4 data-i18n="hPrep">Preparation priorities</h4><ul class="list" id="prepIranfarhang"></ul></div>
         <div class="biz-section"><h4 data-i18n="hSignals">Signals to watch</h4><ul class="list" id="signalsIranfarhang"></ul></div>
@@ -191,9 +205,18 @@
         thDate:"Date", thMissiles:"Daily ballistic missiles", thDrones:"Daily drones",
         thPrimary:"Primary target distribution", thCap:"Capability read", thCost:"Cost / escalation read", thAssess:"Assessment",
         hTimeline:"Projected timeline", hScenario:"Scenario probabilities",
-        hTheoryEval:"Working theory evaluation", hEndstate:"Most likely end-state",
+        hTheoryEval:"Working theory evaluation",
+        hCasualties:"Casualty tracker", subCasualties:"Multi-source figures — discrepancies noted.",
+        hHumanitarian:"Humanitarian crisis", subHumanitarian:"Infrastructure, displacement, and civilian impact.",
+        hDiplomacy:"Diplomacy & negotiations", subDiplomacy:"Peace proposals, intermediaries, and positions.",
+        hPublicOpinion:"Public opinion", subPublicOpinion:"US polling and international reaction.",
+        hHormuz:"Hormuz Strait & safe passage", subHormuz:"Blockade status, mine fields, and transit frameworks.",
+        hKeyActors:"Key actors & alliances", subKeyActors:"Who's involved and their roles.",
+        hMissile:"Daily ballistic missile launches", subMissile:"Daily counts, not cumulative. Trend line included.",
+        hDrone:"Daily drone launches", subDrone:"Daily counts, not cumulative.",
+        hCumul:"Cumulative strikes", subCumul:"Running total of all projectiles launched since Day 1.",
         hImpact:"Impact", hPrep:"Preparation priorities", hSignals:"Signals to watch",
-        hRoutes:"Shipping route analysis", hPublishing:"Iranian publishing industry status",
+        hPublishing:"Iranian publishing industry status",
         langBtn:"فارسی"
       },
       fa: {
@@ -213,9 +236,18 @@
         thDate:"تاریخ", thMissiles:"موشک بالستیک", thDrones:"پهپاد",
         thPrimary:"توزیع هدف اصلی", thCap:"ارزیابی توان", thCost:"هزینه / تشدید", thAssess:"ارزیابی",
         hTimeline:"جدول زمانی پیش‌بینی‌شده", hScenario:"احتمال سناریوها",
-        hTheoryEval:"ارزیابی فرضیه کاری", hEndstate:"محتمل‌ترین نتیجه نهایی",
+        hTheoryEval:"ارزیابی فرضیه کاری",
+        hCasualties:"تلفات", subCasualties:"ارقام چندمنبعی — اختلافات ذکر شده.",
+        hHumanitarian:"بحران انسانی", subHumanitarian:"زیرساخت، آوارگی و تأثیر بر غیرنظامیان.",
+        hDiplomacy:"دیپلماسی و مذاکرات", subDiplomacy:"پیشنهادات صلح، میانجی‌ها و مواضع.",
+        hPublicOpinion:"افکار عمومی", subPublicOpinion:"نظرسنجی‌های آمریکا و واکنش بین‌المللی.",
+        hHormuz:"تنگه هرمز و عبور مطمئن", subHormuz:"وضعیت انسداد، میدان‌های مین و چارچوب‌های عبور.",
+        hKeyActors:"بازیگران کلیدی و اتحادها", subKeyActors:"چه کسانی درگیر و نقش‌هایشان.",
+        hMissile:"پرتاب روزانه موشک بالستیک", subMissile:"شمارش روزانه، نه تجمعی. خط روند.",
+        hDrone:"پرتاب روزانه پهپاد", subDrone:"شمارش روزانه، نه تجمعی.",
+        hCumul:"حملات تجمعی", subCumul:"مجموع کل پرتاب‌ها از روز اول.",
         hImpact:"تأثیر", hPrep:"اولویت‌های آماده‌سازی", hSignals:"نشانه‌های کلیدی",
-        hRoutes:"تحلیل مسیرهای حمل", hPublishing:"وضعیت صنعت نشر ایران",
+        hPublishing:"وضعیت صنعت نشر ایران",
         langBtn:"English"
       }
     };
@@ -251,7 +283,8 @@
       pressure:{labels:[],attrition:[],cost:[]}, dailyRows:[], timeline:[], endstate:[],
       impactIranfarhang:[], prepIranfarhang:[], signalsIranfarhang:[],
       impactKIP:[], prepKIP:[], signalsKIP:[],
-      shippingRoutes:[], publishingStatus:[], theoryBox:""
+      shippingRoutes:[], publishingStatus:[], theoryBox:"",
+      casualties:[], humanitarian:[], diplomacy:[], publicOpinion:[], hormuz:[], keyActors:[]
     };
 
     let state = structuredClone(DEFAULT_DATA);
@@ -353,15 +386,27 @@
         '<div class="scenario"><div><strong>'+s.name+'</strong>'+s.body+'</div><div class="prob">'+s.prob+'</div></div>'
       ).join('');
       if ($('theoryEval')) $('theoryEval').innerHTML = L('theoryEvaluation').map(t => '<li><strong>'+t.title+':</strong> '+t.body+'</li>').join('');
-      if ($('endstate')) $('endstate').innerHTML = L('endstate').map(t => '<li><strong>'+t.title+':</strong> '+t.body+'</li>').join('');
 
-      renderList('impactIranfarhang', L('impactIranfarhang'));
+      // Casualty tracker
+      const casualties = L('casualties');
+      if ($('casualtyBox')) $('casualtyBox').innerHTML = casualties.map(c =>
+        '<div class="route-card"><div class="route-header"><div class="route-name">'+c.group+'</div><span class="route-status '+(c.statusColor||'red')+'">'+c.figure+'</span></div><div class="route-detail">'+c.detail+'</div></div>'
+      ).join('');
 
+      // New analytical sections
+      renderList('humanitarianBox', L('humanitarian'));
+      renderList('diplomacyBox', L('diplomacy'));
+      renderList('publicOpinionBox', L('publicOpinion'));
+      renderList('hormuzBox', L('hormuz'));
+      renderList('keyActorsBox', L('keyActors'));
+
+      // Shipping routes in standalone Hormuz section
       const routes = L('shippingRoutes');
-      if ($('shippingRoutesBox')) $('shippingRoutesBox').innerHTML = routes.map(r =>
+      if ($('shippingRoutesStandalone')) $('shippingRoutesStandalone').innerHTML = routes.map(r =>
         '<div class="route-card"><div class="route-header"><div class="route-name">'+r.route+'</div><span class="route-status '+(r.statusColor||'yellow')+'">'+r.status+'</span></div><div class="route-detail">'+r.detail+'</div><div class="route-meta"><span>'+(currentLang==='fa'?'قابلیت اجرا: ':'Viability: ')+'<strong>'+r.viability+'</strong></span><span>'+(currentLang==='fa'?'زمان تخمینی: ':'ETA: ')+'<strong>'+r.eta+'</strong></span></div></div>'
       ).join('');
 
+      renderList('impactIranfarhang', L('impactIranfarhang'));
       renderList('publishingStatusBox', L('publishingStatus'));
       renderList('prepIranfarhang', L('prepIranfarhang'));
       renderList('signalsIranfarhang', L('signalsIranfarhang'));
@@ -413,6 +458,23 @@
         {label:currentLang==='fa'?'پهپاد روزانه':'Daily drones',data:drones,borderColor:'#ff9f43',backgroundColor:'rgba(255,159,67,.08)',fill:true,tension:.24,borderWidth:3,pointRadius:4,spanGaps:true},
         {label:currentLang==='fa'?'خط روند':'Trend',data:trendLineUpToLastReal(drones),borderColor:'#63b3ff',borderDash:[8,5],pointRadius:0,borderWidth:2,tension:0,spanGaps:true}
       ]},options:deepClone(launchOpts)});
+
+      // Cumulative chart — running totals
+      const cumulM = [], cumulD = [];
+      let runM = 0, runD = 0;
+      for (let i = 0; i < missiles.length; i++) {
+        runM += (Number.isFinite(missiles[i]) ? missiles[i] : 0);
+        runD += (Number.isFinite(drones[i]) ? drones[i] : 0);
+        cumulM.push(runM); cumulD.push(runD);
+      }
+      const cumulOpts = deepClone(launchOpts);
+      cumulOpts.scales.y.beginAtZero = true;
+      kill('cumul');
+      if ($('cumulChart')) charts.cumul = new Chart($('cumulChart'), {type:'line',data:{labels,datasets:[
+        {label:currentLang==='fa'?'موشک تجمعی':'Cumul. missiles',data:cumulM,borderColor:'#ff6b6b',backgroundColor:'rgba(255,107,107,.08)',fill:true,tension:.22,borderWidth:3,pointRadius:3},
+        {label:currentLang==='fa'?'پهپاد تجمعی':'Cumul. drones',data:cumulD,borderColor:'#ff9f43',backgroundColor:'rgba(255,159,67,.08)',fill:true,tension:.22,borderWidth:3,pointRadius:3},
+        {label:currentLang==='fa'?'مجموع':'Total',data:cumulM.map((v,i)=>v+cumulD[i]),borderColor:'#b084ff',borderWidth:2,borderDash:[6,4],pointRadius:0,tension:.22}
+      ]},options:cumulOpts});
 
       kill('combo');
       if ($('comboChart')) charts.combo = new Chart($('comboChart'), {type:'line',data:{labels,datasets:[
