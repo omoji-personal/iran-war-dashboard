@@ -12,8 +12,8 @@ const UI = {
     chipWindow: "Data window:",
     langLabel: "فارسی",
     kickerTheory: "Working theory",
-    hSitrep: "SITREP",
-    subSitrep: "Concise and grounded.",
+    hSitrep: "Situation Report",
+    subSitrep: "",
     hMissile: "Daily ballistic missile launches",
     subMissile: "Daily counts, not cumulative. Trend line included.",
     hDrone: "Daily drone launches",
@@ -60,13 +60,13 @@ const UI = {
     hTheoryEval: "Working theory evaluation",
     // New v2 keys
     kickerPrediction: "War outcome forecast",
-    convergence: "Convergence:",
+    convergence: "Resolution pressure:",
     kickerThesis: "Capability thesis",
     hThesis: "Depleted or Rationing?",
     subThesis: "Two models of Iran's launch tempo — each implies a different war outcome. Dashed lines = 14-day forecast.",
-    kickerVectors: "Predictive vectors",
-    hVectors: "5-Vector Convergence",
-    subVectors: "The war ends when 3+ vectors simultaneously cross critical thresholds. Each scored 0-10.",
+    kickerVectors: "Resolution pressure",
+    hVectors: "War-Ending Pressure Index",
+    subVectors: "All vectors normalized: higher = more pressure to end the war. Resolution likely when 3+ vectors exceed 7.",
     hOilOverlay: "Oil price vs conflict intensity",
     subOilOverlay: "Dual axis: are markets responding to military tempo or diplomatic signals?",
     hGeoSpread: "Geographic spread index",
@@ -86,8 +86,8 @@ const UI = {
     vecMilitary: "Military Exhaustion",
     vecEconomic: "Economic Pain",
     vecDiplomatic: "Diplomatic Momentum",
-    vecPolitical: "US Political Sustainability",
-    vecEscalation: "Escalation Ceiling Distance"
+    vecPolitical: "US Domestic Pressure",
+    vecEscalation: "Escalation Risk"
   },
   fa: {
     title: "داشبورد جنگ ایران",
@@ -413,8 +413,8 @@ function setText() {
   if ($('dailyRows') && state.dailyRows) {
     var rows = state.dailyRows.slice().sort(function(a, b) { return parseLogDate(b.date) - parseLogDate(a.date); });
     $('dailyRows').innerHTML = rows.map(function(r) {
-      return '<tr><td>' + r.date + '</td><td>' + r.missiles + '</td><td>' + r.drones + '</td>' +
-        '<td>' + r.primary + '</td><td>' + r.capability + '</td><td>' + r.cost + '</td><td>' + r.assessment + '</td></tr>';
+      return '<tr><td>' + r.date + '</td><td><span class="pill missile">' + (r.missiles != null ? r.missiles : '\u2014') + '</span></td><td><span class="pill drone">' + (r.drones != null ? r.drones : '\u2014') + '</span></td>' +
+        '<td>' + (r.primary || '\u2014') + '</td><td>' + (r.capability || '\u2014') + '</td><td>' + (r.cost || '\u2014') + '</td><td>' + (r.assessment || '\u2014') + '</td></tr>';
     }).join('');
   }
 
@@ -431,8 +431,7 @@ function setText() {
   var sp = L('scenarioProbabilities');
   if ($('scenarioProbs') && sp.length) {
     $('scenarioProbs').innerHTML = sp.map(function(s) {
-      return '<div class="scenario"><div class="scenario-header"><span class="scenario-name">' + s.name + '</span><span class="scenario-prob">' + s.prob + '</span></div>' +
-        '<div class="scenario-body">' + s.body + '</div></div>';
+      return '<div class="scenario"><div><strong>' + s.name + '</strong><div style="font-size:12px;color:var(--soft);margin-top:4px;line-height:1.45">' + s.body + '</div></div><div class="prob">' + s.prob + '</div></div>';
     }).join('');
   }
 
@@ -811,6 +810,32 @@ function renderAdditionalCharts() {
         ]
       },
       options: stackOpts
+    });
+  }
+
+  // Cumulative strikes by country (stacked horizontal bar)
+  kill('cumulByCountry');
+  var cbc = state.cumulativeByCountry;
+  if ($('cumulByCountryChart') && cbc) {
+    var countries = Object.keys(cbc).filter(function(k) { return k !== '_note'; }).sort(function(a, b) {
+      return ((cbc[b].missiles || 0) + (cbc[b].drones || 0)) - ((cbc[a].missiles || 0) + (cbc[a].drones || 0));
+    });
+    var cbcOpts = deepClone(BASE_OPTS);
+    cbcOpts.indexAxis = 'y';
+    cbcOpts.scales = {
+      x: { stacked: true, ticks: { color: '#9eb5d0', font: { size: 10 } }, grid: { color: 'rgba(255,255,255,.05)' }, beginAtZero: true },
+      y: { stacked: true, ticks: { color: '#9eb5d0', font: { size: 11 } }, grid: { display: false } }
+    };
+    charts.cumulByCountry = new Chart($('cumulByCountryChart'), {
+      type: 'bar',
+      data: {
+        labels: countries,
+        datasets: [
+          { label: currentLang === 'fa' ? 'موشک' : 'Missiles', data: countries.map(function(c) { return cbc[c].missiles || 0; }), backgroundColor: 'rgba(255,107,107,.7)', borderRadius: 4 },
+          { label: currentLang === 'fa' ? 'پهپاد' : 'Drones', data: countries.map(function(c) { return cbc[c].drones || 0; }), backgroundColor: 'rgba(99,179,255,.7)', borderRadius: 4 }
+        ]
+      },
+      options: cbcOpts
     });
   }
 }
