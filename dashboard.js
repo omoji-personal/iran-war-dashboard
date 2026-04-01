@@ -328,7 +328,14 @@ function mountDashboard() {
 function setText() {
   // Last updated chip
   var ts = state.meta && state.meta.lastUpdated;
-  if ($('lastUpdated')) $('lastUpdated').textContent = ts ? new Date(ts).toLocaleString() : '—';
+  if ($('lastUpdated') && ts) {
+    var d = new Date(ts);
+    var est = d.toLocaleString('en-US', { timeZone: 'America/New_York', month: 'short', day: 'numeric', hour: 'numeric', minute: '2-digit', hour12: true });
+    var teh = d.toLocaleString('en-US', { timeZone: 'Asia/Tehran', month: 'short', day: 'numeric', hour: 'numeric', minute: '2-digit', hour12: true });
+    $('lastUpdated').innerHTML = est + ' <span style="color:var(--muted)">ET</span> / ' + teh + ' <span style="color:var(--muted)">Tehran</span>';
+  } else if ($('lastUpdated')) {
+    $('lastUpdated').textContent = '\u2014';
+  }
   var fr = computeFreshness();
   if ($('freshnessStatus')) {
     $('freshnessStatus').innerHTML = '<span class="tag ' + fr.cls + '">' + fr.label + '</span>';
