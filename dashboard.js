@@ -418,8 +418,14 @@ function setText() {
     }).join('');
   }
 
-  // Timeline
-  renderList('timeline', L('timeline'));
+  // Timeline (array of {title, body} objects)
+  var tl = L('timeline');
+  if ($('timeline') && tl.length) {
+    $('timeline').innerHTML = tl.map(function(t) {
+      if (typeof t === 'string') return '<li>' + t + '</li>';
+      return '<li><strong>' + (t.title || '') + ':</strong> ' + (t.body || '') + '</li>';
+    }).join('');
+  }
 
   // Scenario probabilities
   var sp = L('scenarioProbabilities');
@@ -430,8 +436,14 @@ function setText() {
     }).join('');
   }
 
-  // Theory evaluation
-  renderList('theoryEval', L('theoryEvaluation'));
+  // Theory evaluation (array of {title, body} objects)
+  var te = L('theoryEvaluation');
+  if ($('theoryEval') && te.length) {
+    $('theoryEval').innerHTML = te.map(function(t) {
+      if (typeof t === 'string') return '<li>' + t + '</li>';
+      return '<li><strong>' + (t.title || '') + ':</strong> ' + (t.body || '') + '</li>';
+    }).join('');
+  }
 }
 
 /* ---------- renderCharts() — 8 original charts ---------- */
@@ -534,26 +546,7 @@ function renderCharts() {
     });
   }
 
-  // 6. Pressure chart
-  kill('pressure');
-  if ($('pressureChart') && state.pressure.labels) {
-    var pOpts = deepClone(BASE_OPTS);
-    pOpts.scales.y.beginAtZero = true;
-    pOpts.scales.y.suggestedMax = 10;
-    charts.pressure = new Chart($('pressureChart'), {
-      type: 'line',
-      data: {
-        labels: state.pressure.labels,
-        datasets: [
-          { label: currentLang === 'fa' ? 'فرسایش' : 'Attrition index', data: state.pressure.attrition, borderColor: '#ff6b6b', backgroundColor: 'rgba(255,107,107,.08)', fill: true, tension: .22, borderWidth: 2.5, pointRadius: 3 },
-          { label: currentLang === 'fa' ? 'فشار هزینه' : 'Cost pressure', data: state.pressure.cost, borderColor: '#ffd166', backgroundColor: 'rgba(255,209,102,.08)', fill: true, tension: .22, borderWidth: 2.5, pointRadius: 3 }
-        ]
-      },
-      options: pOpts
-    });
-  }
-
-  // 7. Target breakdown — missiles (horizontal bar)
+  // 6. Target breakdown — missiles (horizontal bar)
   kill('targetMissile');
   if ($('targetMissileChart') && state.latestTargetBreakdown && state.latestTargetBreakdown.missiles) {
     var tm = state.latestTargetBreakdown.missiles;
@@ -715,11 +708,14 @@ function renderVectorChart(vectors) {
   kill('vector');
   if (!$('vectorChart') || !vectors.labels) return;
 
+  // Invert vectors where LOW value = MORE pressure (so all lines UP = more pressure to end war)
+  function invert(arr) { return (arr || []).map(function(v) { return 10 - v; }); }
+
   var vecOpts = deepClone(BASE_OPTS);
   vecOpts.scales.y.beginAtZero = true;
   vecOpts.scales.y.suggestedMax = 10;
   vecOpts.scales.y.ticks = { color: '#7d8da1', font: { size: 10 }, callback: function(v) {
-    var sem = {0:'',2:'LOW',5:'MED',8:'HIGH',10:'CRIT'};
+    var sem = {0:'Low',5:'Med',10:'High'};
     return sem[v] !== undefined ? sem[v] : '';
   }};
 
@@ -733,8 +729,8 @@ function renderVectorChart(vectors) {
         { label: s.vecMilitary || 'Military Exhaustion', data: vectors.militaryExhaustion || [], borderColor: '#ff6b6b', borderWidth: 2.5, pointRadius: 3, tension: .25 },
         { label: s.vecEconomic || 'Economic Pain', data: vectors.economicPain || [], borderColor: '#ffd166', borderWidth: 2.5, pointRadius: 3, tension: .25 },
         { label: s.vecDiplomatic || 'Diplomatic Momentum', data: vectors.diplomaticMomentum || [], borderColor: '#46d7b0', borderWidth: 2.5, pointRadius: 3, tension: .25 },
-        { label: s.vecPolitical || 'US Political Sustainability', data: vectors.usPoliticalSustainability || [], borderColor: '#63b3ff', borderWidth: 2.5, pointRadius: 3, tension: .25 },
-        { label: s.vecEscalation || 'Escalation Ceiling', data: vectors.escalationCeilingDistance || [], borderColor: '#b084ff', borderWidth: 2.5, pointRadius: 3, tension: .25 }
+        { label: s.vecPolitical || 'US Domestic Pressure', data: invert(vectors.usPoliticalSustainability), borderColor: '#63b3ff', borderWidth: 2.5, pointRadius: 3, tension: .25 },
+        { label: s.vecEscalation || 'Escalation Risk', data: invert(vectors.escalationCeilingDistance), borderColor: '#b084ff', borderWidth: 2.5, pointRadius: 3, tension: .25 }
       ]
     },
     options: vecOpts
@@ -745,16 +741,17 @@ function renderVectorCards(notes, vectors) {
   if (!$('vectorCards')) return;
 
   var configs = [
-    { key: 'militaryExhaustion', noteKey: 'militaryExhaustion', label: UI[currentLang].vecMilitary || 'Military Exhaustion', color: '#ff6b6b' },
-    { key: 'economicPain', noteKey: 'economicPain', label: UI[currentLang].vecEconomic || 'Economic Pain', color: '#ffd166' },
-    { key: 'diplomaticMomentum', noteKey: 'diplomaticMomentum', label: UI[currentLang].vecDiplomatic || 'Diplomatic Momentum', color: '#46d7b0' },
-    { key: 'usPoliticalSustainability', noteKey: 'usPoliticalSustainability', label: UI[currentLang].vecPolitical || 'US Political Sustainability', color: '#63b3ff' },
-    { key: 'escalationCeilingDistance', noteKey: 'escalationCeilingDistance', label: UI[currentLang].vecEscalation || 'Escalation Ceiling', color: '#b084ff' }
+    { key: 'militaryExhaustion', noteKey: 'militaryExhaustion', label: UI[currentLang].vecMilitary || 'Military Exhaustion', color: '#ff6b6b', invert: false },
+    { key: 'economicPain', noteKey: 'economicPain', label: UI[currentLang].vecEconomic || 'Economic Pain', color: '#ffd166', invert: false },
+    { key: 'diplomaticMomentum', noteKey: 'diplomaticMomentum', label: UI[currentLang].vecDiplomatic || 'Diplomatic Momentum', color: '#46d7b0', invert: false },
+    { key: 'usPoliticalSustainability', noteKey: 'usPoliticalSustainability', label: 'US Domestic Pressure', color: '#63b3ff', invert: true },
+    { key: 'escalationCeilingDistance', noteKey: 'escalationCeilingDistance', label: 'Escalation Risk', color: '#b084ff', invert: true }
   ];
 
   $('vectorCards').innerHTML = configs.map(function(c) {
     var vals = vectors[c.key] || [];
-    var latest = vals.length > 0 ? vals[vals.length - 1] : '\u2014';
+    var raw = vals.length > 0 ? vals[vals.length - 1] : '\u2014';
+    var latest = (c.invert && typeof raw === 'number') ? (10 - raw) : raw;
     var noteText = currentLang === 'fa' ? (notes[c.noteKey + '_fa'] || notes[c.noteKey] || '') : (notes[c.noteKey] || '');
     return '<div class="vector-card">' +
       '<div class="vec-label">' + c.label + '</div>' +
@@ -788,77 +785,6 @@ function renderAdditionalCharts() {
         ]
       },
       options: dualOpts
-    });
-  }
-
-  // Geographic Spread Index
-  kill('geoSpread');
-  if ($('geoSpreadChart') && ac.countriesTargetedPerDay) {
-    var geoOpts = deepClone(BASE_OPTS);
-    geoOpts.scales.y.beginAtZero = true;
-    geoOpts.scales.y.suggestedMax = 12;
-
-    charts.geoSpread = new Chart($('geoSpreadChart'), {
-      type: 'bar',
-      data: {
-        labels: ac.geoSpreadLabels || state.dailySeries.labels || [],
-        datasets: [{
-          label: currentLang === 'fa' ? '\u06A9\u0634\u0648\u0631\u0647\u0627\u06CC \u0647\u062F\u0641' : 'Countries targeted',
-          data: ac.countriesTargetedPerDay,
-          backgroundColor: 'rgba(99,179,255,.5)',
-          borderColor: '#63b3ff',
-          borderWidth: 1,
-          borderRadius: 4
-        }]
-      },
-      options: geoOpts
-    });
-  }
-
-  // Missile-to-Drone Ratio
-  kill('mdRatio');
-  if ($('mdRatioChart') && ac.missileDroneRatio) {
-    var ratioOpts = deepClone(BASE_OPTS);
-    ratioOpts.scales.y.suggestedMin = 0;
-    ratioOpts.scales.y.suggestedMax = 1;
-
-    charts.mdRatio = new Chart($('mdRatioChart'), {
-      type: 'line',
-      data: {
-        labels: state.dailySeries.labels || [],
-        datasets: [
-          { label: currentLang === 'fa' ? '\u0646\u0633\u0628\u062A \u0645\u0648\u0634\u06A9/\u067E\u0647\u067E\u0627\u062F' : 'Missile/Drone ratio', data: ac.missileDroneRatio, borderColor: '#b084ff', borderWidth: 2.5, pointRadius: 3, tension: .25, fill: { target: 'origin', above: 'rgba(176,132,255,.08)' } },
-          { label: currentLang === 'fa' ? '\u0622\u0633\u062A\u0627\u0646\u0647 \u067E\u0647\u067E\u0627\u062F\u200C\u0645\u062D\u0648\u0631' : 'Drone-dominant threshold', data: ac.missileDroneRatio.map(function() { return 0.5; }), borderColor: '#ff6b6b', borderDash: [6, 4], borderWidth: 1.5, pointRadius: 0 }
-        ]
-      },
-      options: ratioOpts
-    });
-  }
-
-  // Intercept Rate Trends
-  kill('intercept');
-  if ($('interceptChart') && ac.interceptRate) {
-    var intOpts = deepClone(BASE_OPTS);
-    intOpts.scales.y.suggestedMin = 0.7;
-    intOpts.scales.y.suggestedMax = 1;
-    intOpts.scales.y.ticks = { color: '#7d8da1', font: { size: 10 }, callback: function(v) { return Math.round(v * 100) + '%'; } };
-
-    charts.intercept = new Chart($('interceptChart'), {
-      type: 'line',
-      data: {
-        labels: ac.interceptRateLabels || state.dailySeries.labels || [],
-        datasets: [{
-          label: currentLang === 'fa' ? '\u0646\u0631\u062E \u0631\u0647\u06AF\u06CC\u0631\u06CC' : 'Intercept rate',
-          data: ac.interceptRate,
-          borderColor: '#46d7b0',
-          backgroundColor: 'rgba(70,215,176,.08)',
-          fill: true,
-          borderWidth: 2.5,
-          pointRadius: 3,
-          tension: .25
-        }]
-      },
-      options: intOpts
     });
   }
 
