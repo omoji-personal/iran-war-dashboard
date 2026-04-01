@@ -1,0 +1,369 @@
+/* ============================================
+   Iran War Dashboard v2 — dashboard.css
+   ============================================ */
+
+/* --- CSS Variables --- */
+:root{
+  --bg:#07111f; --bg2:#0e1a2e; --panel:#0f1c31; --panel2:#15253f; --border:#29415f;
+  --text:#eef5fc; --muted:#9eb5d0; --soft:#7f97b1; --gold:#ffd166; --blue:#63b3ff;
+  --cyan:#46d7b0; --orange:#ff9f43; --red:#ff6b6b; --purple:#b084ff;
+}
+
+/* --- Base --- */
+*{box-sizing:border-box}
+body{
+  margin:0; color:var(--text);
+  font-family:Inter,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;
+  background:
+    radial-gradient(circle at top right, rgba(99,179,255,.16), transparent 24%),
+    radial-gradient(circle at top left, rgba(255,209,102,.10), transparent 22%),
+    linear-gradient(180deg,var(--bg) 0%,var(--bg2) 100%);
+}
+html[dir="rtl"] body{font-family:"Vazirmatn",Tahoma,"Segoe UI",system-ui,sans-serif}
+
+/* --- Topbar --- */
+.topbar{position:sticky;top:0;z-index:5;backdrop-filter:blur(16px);background:rgba(7,17,31,.84);border-bottom:1px solid var(--border);margin-bottom:18px}
+.topbar-inner,.shell{max-width:1520px;margin:0 auto;padding-left:18px;padding-right:18px}
+.topbar-inner{padding-top:14px;padding-bottom:14px;display:flex;gap:16px;justify-content:space-between;align-items:center;flex-wrap:wrap}
+.title h1{margin:0;font-size:22px;letter-spacing:.2px}
+.title p{margin:6px 0 0;color:var(--muted);font-size:13px;line-height:1.45;max-width:960px}
+.chips{display:flex;gap:10px;flex-wrap:wrap;align-items:center}
+.chip{border:1px solid var(--border);border-radius:12px;padding:10px 14px;background:linear-gradient(180deg,#182947,#101b31);font-size:13px}
+.chip strong{color:#fff}
+.lang-btn{border:1px solid var(--gold);border-radius:12px;padding:8px 16px;background:rgba(255,209,102,.08);color:var(--gold);font-size:13px;font-weight:700;cursor:pointer;transition:all .15s;letter-spacing:.3px}
+.lang-btn:hover{background:rgba(255,209,102,.18)}
+
+/* --- Shell / Grid Layout --- */
+.shell{padding-top:18px;padding-bottom:28px}
+.grid{display:grid;gap:16px}
+.hero{grid-template-columns:1.22fr .78fr}
+.cols-2{grid-template-columns:repeat(2,minmax(0,1fr))}
+.cols-3{grid-template-columns:repeat(3,minmax(0,1fr))}
+
+/* --- Panel --- */
+.panel{border:1px solid var(--border);border-radius:22px;padding:18px;background:linear-gradient(180deg,rgba(15,28,49,.96),rgba(21,37,63,.94));box-shadow:0 20px 60px rgba(0,0,0,.24)}
+.panel h2,.panel h3{margin:0 0 8px}
+.sub{color:var(--muted);font-size:13px;line-height:1.45;margin-bottom:12px}
+.kicker{color:var(--gold);font-weight:800;font-size:12px;text-transform:uppercase;letter-spacing:.85px;margin-bottom:8px}
+.theory{background:rgba(255,209,102,.06);border-left:4px solid var(--gold);border-radius:0 16px 16px 0;padding:14px 16px;line-height:1.6;font-size:14px}
+html[dir="rtl"] .theory{border-left:none;border-right:4px solid var(--gold);border-radius:16px 0 0 16px}
+
+/* --- Metric Grid --- */
+.metric-grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:12px;margin-top:16px}
+.metric{border:1px solid var(--border);border-radius:18px;padding:14px;background:rgba(255,255,255,.028)}
+.metric .label{font-size:12px;color:var(--muted);margin-bottom:6px}
+.metric .value{font-size:28px;font-weight:800;line-height:1.05}
+.metric .desc{font-size:12px;color:var(--soft);margin-top:6px;line-height:1.4}
+
+/* --- List, Footnote, Chart-box --- */
+.list{margin:0;padding-left:18px}
+html[dir="rtl"] .list{padding-left:0;padding-right:18px}
+.list li{margin-bottom:10px;line-height:1.5}
+.footnote{margin-top:10px;color:var(--soft);font-size:12px;line-height:1.45}
+.chart-box{position:relative;height:340px}
+.chart-box.tall{height:400px}
+.chart-box.short{height:300px}
+
+/* --- Table --- */
+.table-wrap{overflow:auto;border:1px solid var(--border);border-radius:16px}
+table{width:100%;border-collapse:collapse;min-width:1220px}
+th,td{padding:12px 10px;border-bottom:1px solid var(--border);text-align:left;font-size:13px;vertical-align:top}
+html[dir="rtl"] th,html[dir="rtl"] td{text-align:right}
+th{position:sticky;top:0;background:rgba(255,255,255,.03);color:var(--muted)}
+
+/* --- Pill, Tag, Scenario --- */
+.pill{display:inline-block;border:1px solid var(--border);border-radius:999px;padding:4px 9px;font-size:11px;font-weight:800;background:rgba(255,255,255,.03)}
+.missile{color:var(--red)} .drone{color:var(--orange)}
+.tag{display:inline-block;padding:5px 10px;border-radius:999px;font-size:11px;font-weight:800}
+.good{background:rgba(70,215,176,.14);color:var(--cyan)}
+.warn{background:rgba(255,209,102,.14);color:var(--gold)}
+.bad{background:rgba(255,107,107,.14);color:var(--red)}
+.scenario{display:flex;justify-content:space-between;gap:10px;align-items:flex-start;padding:12px;border:1px solid var(--border);border-radius:16px;margin-bottom:10px;background:rgba(255,255,255,.02)}
+.scenario strong{display:block;margin-bottom:4px}
+.scenario .prob{font-size:22px;font-weight:900;color:var(--gold);white-space:nowrap}
+
+/* --- Route Card --- */
+.route-card{border:1px solid var(--border);border-radius:14px;padding:14px;margin-bottom:10px;background:rgba(255,255,255,.02)}
+.route-card:last-child{margin-bottom:0}
+.route-header{display:flex;justify-content:space-between;align-items:flex-start;gap:8px;margin-bottom:8px}
+.route-name{font-weight:700;font-size:13px}
+.route-status{font-size:11px;font-weight:800;padding:4px 10px;border-radius:999px;white-space:nowrap}
+.route-status.red{background:rgba(255,107,107,.14);color:var(--red)}
+.route-status.yellow{background:rgba(255,209,102,.14);color:var(--gold)}
+.route-status.green{background:rgba(70,215,176,.14);color:var(--cyan)}
+.route-detail{font-size:12px;color:var(--soft);line-height:1.55;margin-bottom:8px}
+.route-meta{display:flex;gap:16px;font-size:11px;color:var(--muted)}
+.route-meta strong{color:var(--text)}
+
+/* --- Business Section --- */
+.biz-section{margin-top:14px}
+.biz-section h4{margin:0 0 8px;font-size:13px;color:var(--gold);letter-spacing:.4px;text-transform:uppercase}
+code{background:rgba(255,255,255,.06);padding:2px 6px;border-radius:6px}
+
+/* --- Loading --- */
+.loading-msg{text-align:center;padding:60px 20px;color:var(--muted);font-size:14px}
+
+
+/* ============================================
+   NEW STYLES — Predictive Framework & Expanded Sections
+   ============================================ */
+
+/* --- Prediction Hero Section --- */
+.prediction-hero {
+  background: linear-gradient(135deg, rgba(255,209,102,.06), rgba(99,179,255,.06));
+  border: 1px solid var(--gold);
+  border-radius: 22px;
+  padding: 24px;
+}
+.outcome-forecast {
+  background: rgba(255,209,102,.06);
+  border-left: 4px solid var(--gold);
+  border-radius: 0 16px 16px 0;
+  padding: 18px 20px;
+  line-height: 1.65;
+  font-size: 15px;
+  margin-bottom: 16px;
+}
+html[dir="rtl"] .outcome-forecast {
+  border-left: none;
+  border-right: 4px solid var(--gold);
+  border-radius: 16px 0 0 16px;
+}
+.convergence-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background: rgba(255,209,102,.12);
+  border: 1px solid var(--gold);
+  border-radius: 999px;
+  padding: 8px 18px;
+  font-size: 14px;
+  font-weight: 800;
+  color: var(--gold);
+  margin-bottom: 16px;
+}
+.convergence-badge .score {
+  font-size: 22px;
+}
+
+/* --- Model Comparison Cards --- */
+.model-cards {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 14px;
+  margin-top: 16px;
+}
+.model-card {
+  border: 1px solid var(--border);
+  border-radius: 18px;
+  padding: 16px;
+  background: rgba(255,255,255,.02);
+}
+.model-card.leading {
+  border-color: var(--gold);
+  background: rgba(255,209,102,.04);
+}
+.model-card h4 {
+  margin: 0 0 6px;
+  font-size: 14px;
+}
+.model-card .confidence {
+  font-size: 28px;
+  font-weight: 900;
+  margin: 8px 0;
+}
+.model-card .confidence.high { color: var(--cyan); }
+.model-card .confidence.medium { color: var(--gold); }
+.model-card .confidence.low { color: var(--red); }
+.model-card .detail {
+  font-size: 12px;
+  color: var(--soft);
+  line-height: 1.5;
+}
+.model-card .falsify {
+  margin-top: 10px;
+  font-size: 11px;
+  color: var(--muted);
+  font-style: italic;
+}
+
+/* --- Vector Mini-Cards --- */
+.vector-grid {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 10px;
+  margin-top: 14px;
+}
+.vector-card {
+  border: 1px solid var(--border);
+  border-radius: 14px;
+  padding: 12px;
+  background: rgba(255,255,255,.02);
+}
+.vector-card .vec-label {
+  font-size: 11px;
+  color: var(--muted);
+  text-transform: uppercase;
+  letter-spacing: .5px;
+  margin-bottom: 6px;
+}
+.vector-card .vec-score {
+  font-size: 24px;
+  font-weight: 900;
+  line-height: 1;
+}
+.vector-card .vec-note {
+  font-size: 11px;
+  color: var(--soft);
+  margin-top: 6px;
+  line-height: 1.4;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+/* --- Supply Chain Timeline --- */
+.timeline-vertical {
+  position: relative;
+  padding-left: 24px;
+  margin: 12px 0;
+}
+html[dir="rtl"] .timeline-vertical {
+  padding-left: 0;
+  padding-right: 24px;
+}
+.timeline-vertical::before {
+  content: '';
+  position: absolute;
+  left: 8px;
+  top: 0;
+  bottom: 0;
+  width: 2px;
+  background: var(--border);
+}
+html[dir="rtl"] .timeline-vertical::before {
+  left: auto;
+  right: 8px;
+}
+.tl-item {
+  position: relative;
+  margin-bottom: 16px;
+  padding: 12px;
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  background: rgba(255,255,255,.02);
+}
+.tl-item::before {
+  content: '';
+  position: absolute;
+  left: -20px;
+  top: 16px;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  border: 2px solid var(--border);
+  background: var(--bg);
+}
+html[dir="rtl"] .tl-item::before {
+  left: auto;
+  right: -20px;
+}
+.tl-item.blocked::before { border-color: var(--red); background: rgba(255,107,107,.3); }
+.tl-item.exploring::before { border-color: var(--gold); background: rgba(255,209,102,.3); }
+.tl-item.partial::before { border-color: var(--cyan); background: rgba(70,215,176,.3); }
+.tl-item .tl-milestone { font-weight: 700; font-size: 13px; margin-bottom: 4px; }
+.tl-item .tl-estimate { font-size: 12px; color: var(--gold); font-weight: 600; }
+.tl-item .tl-detail { font-size: 12px; color: var(--soft); margin-top: 6px; line-height: 1.45; }
+
+/* --- Hub Matrix Table --- */
+.hub-matrix {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 12px;
+  min-width: auto;
+}
+.hub-matrix th {
+  background: rgba(255,255,255,.03);
+  color: var(--muted);
+  font-size: 11px;
+  text-transform: uppercase;
+  letter-spacing: .4px;
+  padding: 10px 8px;
+}
+.hub-matrix td {
+  padding: 10px 8px;
+  border-bottom: 1px solid var(--border);
+}
+.hub-matrix .score-cell {
+  font-weight: 800;
+  text-align: center;
+}
+.score-high { color: var(--cyan); }
+.score-mid { color: var(--gold); }
+.score-low { color: var(--red); }
+
+/* --- Gauge / Risk Score --- */
+.risk-gauge {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  padding: 14px;
+  border: 1px solid var(--border);
+  border-radius: 16px;
+  background: rgba(255,255,255,.02);
+  margin-bottom: 12px;
+}
+.risk-gauge .gauge-score {
+  font-size: 36px;
+  font-weight: 900;
+  min-width: 60px;
+  text-align: center;
+}
+.risk-gauge .gauge-trend {
+  font-size: 18px;
+  margin-left: 4px;
+}
+.risk-gauge .gauge-detail {
+  font-size: 12px;
+  color: var(--soft);
+  line-height: 1.5;
+  flex: 1;
+}
+
+/* --- OFAC / Status Card --- */
+.status-card {
+  border: 1px solid var(--border);
+  border-radius: 16px;
+  padding: 14px;
+  background: rgba(255,255,255,.02);
+  margin-bottom: 12px;
+}
+.status-card .sc-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 8px;
+}
+.status-card .sc-title {
+  font-weight: 700;
+  font-size: 13px;
+}
+.status-card .sc-detail {
+  font-size: 12px;
+  color: var(--soft);
+  line-height: 1.5;
+}
+
+/* --- Responsive Breakpoints --- */
+@media(max-width:1180px) {
+  .hero,.cols-2,.cols-3 { grid-template-columns: 1fr; }
+  .metric-grid { grid-template-columns: repeat(2,minmax(0,1fr)); }
+  .model-cards { grid-template-columns: 1fr; }
+  .vector-grid { grid-template-columns: repeat(3, 1fr); }
+}
+@media(max-width:700px) {
+  .metric-grid { grid-template-columns: 1fr; }
+  .title h1 { font-size: 19px; }
+  .vector-grid { grid-template-columns: repeat(2, 1fr); }
+}

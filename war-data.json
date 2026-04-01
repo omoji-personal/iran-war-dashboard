@@ -1,131 +1,132 @@
 {
   "meta": {
-    "lastUpdated": "2026-03-26T20:00:00-04:00",
+    "lastUpdated": "2026-03-28T16:00:00-04:00",
     "notes": [
-      "Day 27 (Mar 26) UPDATE 8PM ET. Sources: CNN D27 live, AJ liveblog D27, NPR, CNBC, AP, Bloomberg, Fortune, The National, Times of Israel liveblog, Investing.com, Euronews, Iran International, JPost, Fox News, PBS, WSJ, Haaretz, ToI, ABC News, WashPost, Al-Monitor, SCMP, Pew Research, HRANA, Hengaw, Wikipedia, RBC-Ukraine, NewKerala, Time, Newsweek, Defence Security Asia, AAA gas.",
-      "TANGSIRI KILLED — IRGC NAVY COMMANDER: Israel confirmed killing Alireza Tangsiri, IRGC Navy Commander since 2018, in strike on Bandar Abbas. Defense Minister Katz confirmed. Tangsiri ARCHITECTED Hormuz blockade, commanded 1st Naval District. Born Bushehr, Iran-Iraq War veteran. Death disrupts IRGC naval command structure.",
-      "ISRAEL SPEEDING UP — CENTCOM: 2/3 ARMS MFG DESTROYED: IDF extensive strikes Isfahan. NPR: speeding up arms factory targeting 48 hrs 'in case ceasefire declared.' CENTCOM chief: US has destroyed two-thirds of Iran's arms manufacturing facilities. Danon: Israel NOT part of US-Iran talks. Fait accompli strategy.",
-      "IRAN 7 MISSILE SALVOS AT ISRAEL (updated from 6): 7th salvo triggered sirens across central Israel AND outskirts of Jerusalem — first Jerusalem-area sirens of war. Some intercepted, impact reported central Israel. Total D27 injuries: 11 (ToI). Bnei Brak, Kfar Qassem, Tel Aviv (possible cluster munition), Hezbollah drone Galilee.",
-      "IRAN FORMALLY REJECTED PLAN — BUT WHITE HOUSE DENIES REJECTION: FM Araghchi: 'no negotiations, war ends on our terms.' 5 conditions. BUT WH Press Sec Leavitt: 'reports of rejection FALSE, negotiations ongoing.' Trump posted Iran 'begging' for deal. CONTRADICTORY — Iran says rejected, WH says not. Both spinning for domestic audiences.",
-      "IRAN FORTIFYING KHARG ISLAND — MINES + TRAPS + AIR DEFENSES (CNN): Anti-personnel + anti-tank mines along coastline where US could launch amphibious op. Moving additional military personnel + air defense systems. Setting traps. Parliament Speaker Ghalibaf: 'relentless attacks on regional country infrastructure' if any island occupied. Tasnim: Iran could open new Red Sea front if islands attacked. MAJOR ESCALATION SIGNAL.",
-      "US MULLING 'FINAL BLOW' GROUND OPTIONS (ToI): Kharg Island seizure considered = 90% of Iran crude exports. 82nd Airborne + 2 MEUs = ~7,000 additional troops + 50K already in region. Gulf allies privately urging AGAINST ground op. CNBC: 'technically feasible but escalatory.'",
-      "OIL D27: Brent $106.12 (+3.8%, CNBC daytime). WTI $93.61. Late Asia trading: pulled back toward $100 region. Market backwardation (Dec $79.70). Gas prices: FIRST DROP since war — $3.981 avg (AAA), down fraction of penny. Iran Hormuz toll legislation.",
-      "CASUALTIES D27 UPDATED: Iran 1,937 killed (AJ tracker, new figure). IRNA: 1,750+. HRANA: 3,291+ tracked. Hengaw D25: 6,530. Red Crescent: 6,668 civilian units targeted (5,535 residential, 1,041 commercial, 14 medical, 65 schools). Lebanon: 1,094. Iraq: 96. Israel: 18+. Gulf: 25+ dead (up from 22+). UAE: 11. UAE MoD cumul: 357 ballistic + 15 cruise + 1,815 drones.",
-      "SAFE PASSAGE EXPANDING: India 'open.' Thailand tanker. GCC: Iran already charging fees — violating int'l law. Insurance 5-10% hull. 2,000 vessels / 20,000 seafarers stranded.",
-      "PEW 59% WRONG. AP-NORC 59% too far. Quinnipiac 54-39 oppose. House Armed Services unsatisfied.",
-      "GCC 6-COUNTRY + GHALIBAF: Joint condemnation. Germany 'catastrophe.' Ghalibaf: 'relentless attacks' if islands occupied. Tasnim: Red Sea front threat.",
-      "8,000 TONS ARMS. CENTCOM: 2/3 arms mfg destroyed. US embassy Baghdad: leave immediately."
+      "Day 29 (Mar 28) UPDATE 4PM ET. Sources: CNN D29 live, AJ liveblog D29, NPR, CNBC, AP, Military Times, Stars and Stripes, WashPost, Haaretz, ToI, JPost, Euronews, NBC News, PBS, Fox News, Al Arabiya, Investing.com, Fortune, GoodReturns, TradingEconomics, LiveUAMap, SOF News.",
+      "HOUTHIS ENTER WAR — FIRST MISSILE AT ISRAEL FROM YEMEN: Brig-Gen Yahya Saree announced barrage of ballistic missiles at 'sensitive Israeli military sites' in southern Israel. Sirens Beersheba. IDF intercepted 1 missile. No casualties. First Yemen attack since war began. U-TURN — Houthis initially said they would NOT join at Tehran's request. Senior official Mohammed Mansour: considering CLOSING BAB AL-MANDAB. If both chokepoints closed: global shipping catastrophe.",
+      "ARAK HEAVY WATER REACTOR STRUCK (D28 Mar 27): IDF confirmed bombing Khondab heavy water reactor — 'key infrastructure for producing plutonium for nuclear weapons.' Also struck Yazd uranium processing site. 50+ IAF jets hit 3 areas simultaneously. Also bombed Khuzestan Steel (Ahvaz) + Mobarakeh Steel (Isfahan) — IRGC-linked, billions in damage. Iran confirmed hit, 'no radiation leak.'",
+      "PRINCE SULTAN AIR BASE ATTACK (D28): Iran fired 6 ballistic missiles + 29 drones at PSAB outside Riyadh. 10-15 US troops wounded (2-5 serious/critical). Refueling aircraft destroyed, 3 more damaged. E-3 AWACS damaged. Iran released Chinese satellite photos of burning aircraft. Total US wounded now ~300, 13 KIA.",
+      "TRUMP DEADLINE NOW APRIL 6 (confirmed D27): 'Pausing Energy Plant destruction by 10 Days to Monday, April 6, 2026, at 8 PM ET.' Says Iran gave him ships (10 tankers through Hormuz). Talks 'going very well.' Iran says proposal 'one-sided and unfair.' Pakistan/Turkey/Egypt mediating.",
+      "UAE D29: 20 ballistic + 37 drones intercepted. 6 injured (Abu Dhabi Media Office). UAE MoD cumul now ~377 ballistic + 15 cruise + ~1,852 drones.",
+      "KUWAIT: Airport radar SIGNIFICANTLY DAMAGED by drone attack (Al Arabiya, LiveUAMap). National Guard downed 6 drones in 24 hrs. Airport largely closed to commercial flights.",
+      "G7 JOINT STATEMENT D29: Called for 'immediate cessation of attacks against civilians and civilian infrastructure' and restoration of 'safe and toll-free freedom of navigation in Strait of Hormuz.' Rubio in France.",
+      "OIL D29: Brent $112.57 (+4.22%, highest since Jul 2022). WTI $99.64 (+5.46%, briefly $100.04 intraday). Up 51% in one month from $71.24. Brent-WTI spread $12.93. Iran yuan-based toll system at Hormuz.",
+      "IRGC RETALIATION VOWS: Vowed retaliation on industrial companies in Middle East with American shareholders or aligned with Israel. Warned employees to evacuate. POTENTIAL CORPORATE TARGETING.",
+      "CASUALTIES D29: Iran ~1,900+ (Red Crescent, AJ). Lebanon 1,142 (up from 1,094). 162nd Division deployed to southern Lebanon. 330,000+ displaced across ME (UN). US: 13 KIA, ~300 wounded.",
+      "PAKISTAN HOSTING FM MEETING: Turkey, Egypt, Saudi Arabia foreign ministers meeting in Pakistan on regional developments + war mediation.",
+      "TRUMP: 'war not finished, thousands of targets left.' Rubio: 'ahead of schedule.' CENTCOM: Iranian attacks down 90%+ from D1."
     ]
   },
-  "theoryBox": "<strong>Day 27 — TANGSIRI KILLED + KHARG ISLAND FORTIFIED + IRAN REJECTS (WH DENIES):</strong> Israel killed IRGC Navy Commander Tangsiri in Bandar Abbas. Iran fired 7 missile salvos at Israel (11 injured, first Jerusalem-area sirens). CENTCOM: destroyed 2/3 of Iran's arms manufacturing. Iran fortifying Kharg Island with mines/traps/air defenses — Ghalibaf warns 'relentless attacks' if islands occupied. FM Araghchi rejected 15-point plan BUT White House denies rejection ('negotiations ongoing'). US mulling 'final blow' ground options. Trump: 4 more days (Friday). Oil $106.12 (+3.8%). Gas: first drop since war ($3.981). Pew: 59% wrong.",
-  "theoryBox_fa": "<strong>روز ۲۷ — تانگسیری کشته + خارگ تقویت + ایران رد (کاخ سفید انکار):</strong> تانگسیری بندرعباس کشته. ۷ سالوو موشکی (۱۱ زخمی، اولین آژیر نزدیک اورشلیم). CENTCOM: ۲/۳ تسلیحات‌سازی نابود. ایران خارگ تقویت — مین + تله + پدافند. قالیباف: 'حملات بی‌رحم.' عراقچی رد اما کاخ سفید: 'رد دروغ.' ترامپ ۴ روز. نفت $۱۰۶. بنزین: اولین کاهش ($۳.۹۸۱). پیو ۵۹٪.",
+  "theoryBox": "<strong>Day 29 — HOUTHIS ENTER WAR + ARAK REACTOR STRUCK + PSAB ATTACK + OIL $112:</strong> Houthis fired first missiles at Israel from Yemen (intercepted, no casualties) — considering closing Bab al-Mandab. Israel struck Arak heavy water reactor + Yazd uranium site + 2 IRGC steel factories (D28). Iran hit Prince Sultan Air Base: 10-15 US troops wounded, aircraft destroyed (D28). UAE intercepted 20 ballistic + 37 drones D29. Kuwait airport radar damaged. G7: 'immediate cessation' + Hormuz toll-free. Trump deadline now April 6. Oil $112.57 (+4.22%). WTI briefly $100. Lebanon 1,142 killed. IRGC threatening corporate targets. War one month old.",
+  "theoryBox_fa": "<strong>روز ۲۹ — حوثی‌ها وارد جنگ + راکتور اراک + حمله پایگاه سلطان + نفت $۱۱۲:</strong> حوثی‌ها اولین موشک به اسرائیل از یمن (رهگیری شد). بستن باب‌المندب بررسی. اسرائیل راکتور آب سنگین اراک + یزد + ۲ کارخانه فولاد سپاه. ایران پایگاه پرنس سلطان: ۱۰-۱۵ آمریکایی زخمی. امارات ۲۰ بالستیک + ۳۷ پهپاد D29. کویت رادار آسیب. G7: 'توقف فوری.' مهلت ۶ آوریل. نفت $۱۱۲.۵۷. لبنان ۱,۱۴۲. سپاه تهدید شرکت‌ها. یک ماه جنگ.",
   "metrics": [
     {
       "label": "Day",
-      "value": "27",
-      "desc": "TANGSIRI KILLED + KHARG FORTIFIED. Israel speeding up (CENTCOM: 2/3 arms mfg destroyed). Iran rejected plan (WH denies). 7 salvos at Israel (first Jerusalem sirens). Kharg: mines/traps/air defenses. US mulling ground ops. Pew 59%. Gas first drop. Internet 600+ hrs."
+      "value": "29",
+      "desc": "HOUTHIS ENTER WAR. Arak reactor struck. PSAB attack (10-15 US wounded). UAE 20 ballistic + 37 drones. Kuwait radar damaged. G7 statement. Trump April 6 deadline. IRGC threatening corporate targets. War one month old. Oil $112.57. Internet ~650+ hrs."
     },
     {
       "label": "Cumul. missiles",
-      "value": "~2,912",
-      "desc": "D27: ~25 (7 salvos at Israel — Bnei Brak, Kfar Qassem, Tel Aviv, Jerusalem outskirts, 11 injured. UAE 1 ballistic intercepted — debris killed 2. Saudi/Kuwait intercepting). Cumul: 2,912. Iran still launching despite Tangsiri death + CENTCOM 2/3 arms mfg destroyed."
+      "value": "~2,972",
+      "desc": "D28: ~30 (6 ballistic at PSAB + missiles at Israel + Gulf). D29: ~30 (UAE 20 ballistic, Houthi missile at Israel, Kuwait, Bahrain, Oman). Cumul: 2,972. CENTCOM: launches down 90%+ from D1 but Houthis add NEW launch axis from Yemen."
     },
     {
       "label": "Cumul. drones",
-      "value": "~4,622",
-      "desc": "D27: ~45 (Saudi eastern region intercepts, Bahrain fire Muharraq, Kuwait, UAE, Hezbollah drone Galilee downed). Cumul: 4,622. UAE total: 2,100+ missiles/drones received since D1."
+      "value": "~4,732",
+      "desc": "D28: ~55 (29 at PSAB, others across Gulf). D29: ~55 (UAE 37, Kuwait 6+ downed, Bahrain, Oman 2 UAVs). Cumul: 4,732. Kuwait airport radar significantly damaged. Airports across Gulf largely closed to commercial flights."
     },
     {
       "label": "Brent crude",
-      "value": "$106.12",
-      "desc": "D27: SURGED +3.8% (CNBC) after Iran rejected direct talks. WTI $93.61 (+3.6%). Previous day dropped $102.22 on talks hopes. Market backwardation: Dec $79.70. Iran preparing Hormuz toll legislation. Insurance 5-10% hull value."
+      "value": "$112.57",
+      "desc": "D29: SURGED +4.22% — highest since Jul 2022. WTI $99.64 (+5.46%, briefly $100.04). Up 51% in one month from $71.24. Brent-WTI spread $12.93 (Hormuz closure). Iran yuan-based toll system. Analysts: $100+ through mid-2026 without ceasefire."
     },
     {
       "label": "Iran dead (Hengaw)",
-      "value": "~6,530+",
-      "desc": "IRNA: 1,750+ killed (up from 1,500+). HRANA: 1,455 civilian + 217 children + 1,167 military + 669 unclassified = 3,291+ total tracked. Hengaw D25: 6,530 killed. 82,000+ structures. 94 ambulances. Isfahan struck extensively."
+      "value": "~6,700+",
+      "desc": "Red Crescent / AJ: ~1,900 killed. HRANA: 3,291+ tracked. Hengaw D25: 6,530 (extrapolated ~6,700+ at D29). 82,000+ structures. Arak reactor struck D28. Khuzestan + Mobarakeh steel factories destroyed (billions). 330,000+ displaced across ME (UN)."
     },
     {
       "label": "Lebanon",
-      "value": "1,094+ killed",
-      "desc": "1,094 killed (Health Ministry, up from 1,072), including 121 children. ~1M displaced. IDF soldier killed (Staff Sgt. Greenberg, Golani). IDF speeding up. Iran's 5th condition: comprehensive end ALL fronts incl Lebanon."
+      "value": "1,142+ killed",
+      "desc": "1,142 killed (Health Ministry, up from 1,094). 3,315 injured. 162nd Division deployed to southern Lebanon D28. Litani bridges destroyed. Beirut pre-dawn strikes. Iran's 5th condition: end ALL fronts incl Lebanon. ~1M displaced."
     },
     {
       "label": "Israel dead",
       "value": "20+",
-      "desc": "18+ killed. D27: 7 missile salvos (up from 6) — first Jerusalem-area sirens. 11 injured total (ToI). Bnei Brak, Kfar Qassem, Tel Aviv (possible cluster munition), Hezbollah drone Galilee. 8,000 tons arms delivered. 13 US KIA. US mulling 'final blow' ground options."
+      "desc": "18+ killed. D29: Houthi missile from Yemen (first of war) — intercepted Beersheba. Iran continued salvos. 13 US KIA, ~300 wounded (up from ~200). PSAB attack wounded 10-15 troops. 4 IDF soldiers killed in Lebanon."
     },
     {
       "label": "Nuclear risk",
-      "value": "ELEVATED — PLAN REJECTED",
-      "desc": "Iran formally rejected 15-point plan (WH denies rejection). CENTCOM: 2/3 arms mfg destroyed. Israel speeding up. Danon: NOT part of talks. Iran fortifying Kharg Island (mines/traps/air defenses). Ghalibaf: attacks if occupied. 440kg enriched. IAEA locked out. Friday deadline."
+      "value": "CRITICAL — ARAK STRUCK",
+      "desc": "IDF struck Arak heavy water reactor ('plutonium production') + Yazd uranium processing. Iran: 'no radiation leak.' 440kg enriched. IAEA locked out. IRGC steel factories destroyed (billions). April 6 deadline. If power plants struck: 90M without electricity. Houthi escalation adds complexity."
     }
   ],
   "metrics_fa": [
     {
       "label": "روز",
-      "value": "۲۷",
-      "desc": "تانگسیری کشته + خارگ تقویت. CENTCOM ۲/۳. ایران رد (WH انکار). ۷ سالوو. آمریکا زمینی. پیو ۵۹٪. بنزین کاهش."
+      "value": "۲۹",
+      "desc": "حوثی‌ها وارد جنگ. اراک حمله. PSAB ۱۰-۱۵ زخمی. امارات ۲۰ بالستیک + ۳۷ پهپاد. کویت رادار. G7. مهلت ۶ آوریل. سپاه تهدید شرکت‌ها. یک ماه."
     },
     {
       "label": "موشک",
-      "value": "~۲,۹۱۲",
-      "desc": "D27: ~۲۵. ۶ سالوو اسرائیل. ابوظبی ۲ کشته از تکه‌ها. مجموع ۲,۹۱۲."
+      "value": "~۲,۹۷۲",
+      "desc": "D28: ~۳۰ (PSAB + اسرائیل + خلیج). D29: ~۳۰ (امارات ۲۰ + حوثی + کویت). مجموع ۲,۹۷۲. حوثی = محور جدید."
     },
     {
       "label": "پهپاد",
-      "value": "~۴,۶۲۲",
-      "desc": "D27: ~۴۵. عربستان + بحرین + کویت + امارات. حزب‌الله جلیل. مجموع ۴,۶۲۲."
+      "value": "~۴,۷۳۲",
+      "desc": "D28: ~۵۵ (PSAB ۲۹ + خلیج). D29: ~۵۵ (امارات ۳۷ + کویت ۶ + عمان ۲). مجموع ۴,۷۳۲. رادار کویت آسیب."
     },
     {
       "label": "نفت",
-      "value": "$۱۰۶.۱۲",
-      "desc": "افزایش +۳.۸٪ (CNBC). ایران رد مذاکره. بیمه ۵-۱۰٪. عوارض هرمز قانون‌گذاری."
+      "value": "$۱۱۲.۵۷",
+      "desc": "افزایش +۴.۲۲٪ — بالاترین ژوئیه ۲۰۲۲. WTI $۹۹.۶۴. یک ماه: +۵۱٪. عوارض یوآنی هرمز."
     },
     {
       "label": "کشته ایران",
-      "value": "~۶,۵۳۰+",
-      "desc": "IRNA: ۱,۷۵۰+ (افزایش). HRANA: ۳,۲۹۱+ ردیابی. هنگاو ۶,۵۳۰. ۸۲,۰۰۰+ سازه. اصفهان حمله گسترده."
+      "value": "~۶,۷۰۰+",
+      "desc": "AJ: ~۱,۹۰۰. هنگاو تخمین ~۶,۷۰۰+. اراک + یزد + فولاد خوزستان + مبارکه. ۳۳۰,۰۰۰+ آواره (سازمان ملل)."
     },
     {
       "label": "لبنان",
-      "value": "۱,۰۹۴+ کشته",
-      "desc": "افزایش از ۱,۰۷۲. ۱۲۱ کودک. سرباز اسرائیلی کشته. ایران شرط ۵: لبنان."
+      "value": "۱,۱۴۲+ کشته",
+      "desc": "افزایش از ۱,۰۹۴. ۳,۳۱۵ زخمی. تیپ ۱۶۲ مستقر. لیطانی. بیروت."
     },
     {
       "label": "اسرائیل",
       "value": "۲۰+",
-      "desc": "۱۸+ شامل ۱۳ آمریکا. ۷ سالوو — اولین آژیر اورشلیم. ۱۱ زخمی. آمریکا 'ضربه نهایی' زمینی بررسی."
+      "desc": "۱۸+ شامل ۱۳ آمریکا KIA. ~۳۰۰ زخمی. حوثی اولین موشک. PSAB ۱۰-۱۵ زخمی. ۴ سرباز لبنان."
     },
     {
       "label": "خطر هسته‌ای",
-      "value": "بالا — طرح رد شد",
-      "desc": "ایران رد (کاخ سفید انکار). CENTCOM ۲/۳ تسلیحات نابود. خارگ مین + تله + پدافند. قالیباف. جمعه."
+      "value": "بحرانی — اراک حمله",
+      "desc": "اراک + یزد. ۴۴۰kg. IAEA قفل. ۶ آوریل. اگر نیروگاه: ۹۰M بدون برق. حوثی پیچیدگی."
     }
   ],
   "sitrep": [
-    "TANGSIRI KILLED — IRGC NAVY COMMANDER ELIMINATED: Israel confirmed killing Alireza Tangsiri in Bandar Abbas. Tangsiri ARCHITECTED Hormuz blockade — commanded 1st Naval District since 2018. His death disrupts IRGC naval command at critical moment. KEY QUESTION: Does blockade survive its architect? Evidence: safe passage expanded SAME DAY (India, Thailand). Framework appears institutional not personal.",
-    "IRAN FORTIFYING KHARG ISLAND — MINES + TRAPS (CNN): Iran laying anti-personnel and anti-tank mines around Kharg Island coastline where US could launch amphibious operation. Moving military personnel + air defense systems. Setting traps in recent weeks. Parliament Speaker Ghalibaf: 'relentless attacks on regional country infrastructure' if any island occupied. Tasnim: Iran could open NEW RED SEA FRONT if islands attacked. THIS IS THE BIGGEST ESCALATION SIGNAL OF D27 — Iran preparing for ground war.",
-    "CENTCOM: DESTROYED 2/3 OF IRAN'S ARMS MANUFACTURING: CENTCOM chief confirmed US/Israel have destroyed two-thirds of Iran's arms manufacturing facilities. IDF speeding up targeting remaining factories 'in case ceasefire declared.' FAIT ACCOMPLI strategy. Danon: Israel NOT part of US-Iran talks. US-Israel divergence deepening — Trump seeks deal, Israel destroys capacity.",
-    "IRAN 7 MISSILE SALVOS AT ISRAEL — JERUSALEM SIRENS: Iran fired 7 missile salvos at central Israel during D27 (updated from earlier count of 6). 7th salvo triggered sirens across central Israel AND outskirts of Jerusalem — first Jerusalem-area sirens of the war. 11 total injured (ToI). Despite CENTCOM 2/3 arms mfg destroyed, Iran STILL launching multi-salvo attacks.",
-    "CONTRADICTORY MESSAGING ON PLAN REJECTION: Iran FM Araghchi: 'no negotiations, war ends on our terms.' 5 counter-conditions far from 15-point plan. BUT White House Press Sec Leavitt: 'reports of rejection are FALSE, negotiations ongoing.' Trump posted Iran 'begging' for deal. KEY: Both sides spinning for domestic audiences. Iran needs to look strong. Trump needs to look like deal is close (Pew 59%).",
-    "US MULLING 'FINAL BLOW' GROUND OPTIONS (ToI): Kharg Island seizure under active consideration = 90% of Iran crude exports. 82nd Airborne + 2 MEUs = ~7,000 additional + 50K already. Gulf allies PRIVATELY urging against ground op — fear retaliation against their infrastructure (Ghalibaf confirmed this threat). CNBC: 'technically feasible but escalatory.'",
-    "OIL D27: Brent $106.12 (+3.8%, CNBC daytime). WTI $93.61. Late Asia: pulled back toward $100. Gas: FIRST DROP since war — $3.981 avg (AAA). Market backwardation (Dec $79.70). Iran toll legislation. Oil whipsawing daily on diplomacy vs escalation signals.",
-    "SAFE PASSAGE EXPANDING DESPITE TANGSIRI DEATH: India, Thailand transiting. GCC reports Iran already charging fees — violating international law. Safe passage framework expanding even as architect killed = institutional not personal. 2,000 vessels / 20,000 seafarers stranded. Insurance 5-10% hull.",
-    "CASUALTIES D27 UPDATED: Iran 1,937 killed (AJ tracker). IRNA: 1,750+. Hengaw: 6,530. Red Crescent: 6,668 civilian units (5,535 residential, 14 medical, 65 schools). Lebanon: 1,094. Iraq: 96. Israel: 18+. Gulf: 25+. UAE: 11. IDF soldier killed Lebanon (Golani).",
-    "PEW 59% + GCC + GHALIBAF: 59% wrong decision. 61% disapprove. Gas $3.981 = voter pain. GCC 6-country condemnation. Ghalibaf island threat + Tasnim Red Sea threat = Iran deterring Gulf cooperation with ground ops."
+    "HOUTHIS ENTER WAR — BIGGEST ESCALATION SINCE D1: Yemen's Houthis fired barrage of ballistic missiles at 'sensitive Israeli military sites' in southern Israel. Brig-Gen Saree announced. IDF intercepted. No casualties. FIRST Yemen attack since war began. U-turn — Houthis initially REFUSED Tehran's request to join. Senior official Mansour: considering CLOSING BAB AL-MANDAB STRAIT. If both Hormuz + Bab al-Mandab closed: 1/5 of global oil + 1/8 of global trade blocked simultaneously. This is the war's most significant strategic escalation.",
+    "ARAK HEAVY WATER REACTOR STRUCK (D28): IDF confirmed bombing Khondab reactor — 'key infrastructure for producing plutonium for nuclear weapons.' Also struck Yazd uranium processing site. 50+ IAF jets across 3 areas simultaneously. Also destroyed Khuzestan Steel (Ahvaz) + Mobarakeh Steel (Isfahan) — IRGC-linked, billions in damage, 'paralyze' Iran's steel industry. Iran confirmed hit but 'no radiation leak.' Nuclear escalation deepening.",
+    "PRINCE SULTAN AIR BASE ATTACK (D28): Iran fired 6 ballistic + 29 drones at PSAB outside Riyadh. 10-15 US troops wounded (2-5 serious/critical). Refueling tanker DESTROYED, 3 more damaged. E-3 AWACS damaged. Iran released Chinese satellite photos of burning aircraft. US total: 13 KIA, ~300 wounded. MOST SIGNIFICANT ATTACK ON US FORCES since D12 KC-135 crash.",
+    "TRUMP DEADLINE EXTENDED TO APRIL 6: Confirmed power plant strikes paused 10 days to Monday April 6 8PM ET. Says Iran gave him ships (10 tankers). 'Talks going very well.' Iran: proposal 'one-sided and unfair.' Pakistan/Turkey/Egypt mediating. FM meeting in Pakistan. KEY: Deadline extension gives 9 more days but war continues at full intensity.",
+    "UAE D29: 20 ballistic + 37 drones intercepted. 6 injured. Cumul: ~377 ballistic + 15 cruise + ~1,852 drones. IRGC vowed retaliation on industrial companies with American shareholders or Israeli alignment — warned employees to evacuate. CORPORATE TARGETING = new escalation dimension.",
+    "OIL D29: Brent $112.57 (+4.22%) — HIGHEST since Jul 2022. WTI $99.64 (+5.46%, briefly $100.04 intraday). One-month surge: +51% from $71.24. Brent-WTI spread $12.93 (Hormuz closure premium). Iran yuan-based toll system operational. Houthi Bab al-Mandab threat = if both chokepoints close, $150+ oil scenario activates.",
+    "GULF ATTACKS CONTINUE: Kuwait airport radar SIGNIFICANTLY DAMAGED by drone attack. National Guard downed 6 drones in 24 hrs. Bahrain civil defense extinguished fire in targeted facility. Oman port targeted by 2 UAVs. Airports across Gulf largely closed to commercial flights.",
+    "G7 JOINT STATEMENT D29: Called for 'immediate cessation of attacks against civilians and civilian infrastructure' and restoration of 'safe and toll-free freedom of navigation in Strait of Hormuz.' Rubio in France. Pakistan hosting FM meeting (Turkey, Egypt, Saudi Arabia). Multilateral pressure building but enforcement mechanism absent.",
+    "CASUALTIES D29 — ONE MONTH: Iran ~1,900+ (AJ/Red Crescent). Hengaw extrapolated ~6,700+. Lebanon 1,142 killed, 3,315 injured. 162nd Division deployed to S. Lebanon. Iraq ~96. Gulf 25+. US: 13 KIA, ~300 wounded. 330,000+ displaced across ME (UN). Arak + Yazd + steel = billions in infrastructure destruction.",
+    "TRUMP: 'WAR NOT FINISHED, THOUSANDS OF TARGETS LEFT': Rubio: 'ahead of schedule.' CENTCOM: Iranian attacks down 90%+ from D1. BUT Houthi entry + continued Gulf attacks + PSAB strike = war far from over. Contradiction between 'ahead of schedule' and 'thousands of targets' = no clear endgame.",
+    "DOMESTIC PRESSURE — ONE MONTH MARK: Pew 59% wrong. War at one month with no clear exit. PSAB casualties add to US toll. Houthi entry = war EXPANDING not contracting. Oil $112 = gas prices rising. Trump needs April 6 to produce results or face further erosion. Republican-leaning independents 52-45 = coalition fraying."
   ],
   "sitrep_fa": [
-    "تانگسیری کشته — معمار انسداد هرمز. بندرعباس. از ۲۰۱۸. فرماندهی مختل. اما عبور گسترش همان روز = نهادی.",
-    "ایران خارگ تقویت — مین + تله + پدافند (CNN): ضدنفر + ضدتانک ساحل. نیروی نظامی + پدافند هوایی. قالیباف: 'حملات بی‌رحم.' تسنیم: جبهه جدید دریای سرخ. بزرگ‌ترین سیگنال تشدید D27.",
-    "CENTCOM: ۲/۳ تسلیحات‌سازی ایران نابود. اسرائیل سرعت. دانون: طرف مذاکره نیست. عمل انجام‌شده. واگرایی آمریکا-اسرائیل.",
-    "۷ سالوو موشکی اسرائیل — اولین آژیر اورشلیم. ۱۱ زخمی. با وجود ۲/۳ نابودی هنوز چندسالوو.",
-    "پیام‌رسانی متناقض: عراقچی 'مذاکره نه.' اما لاویت کاخ سفید: 'رد دروغ است.' ترامپ: ایران 'التماس.' هر دو طرف برای داخل.",
-    "آمریکا 'ضربه نهایی' زمینی بررسی (ToI): خارگ ۹۰٪ صادرات نفت. هوابرد ۸۲ + تفنگداران = ~۷,۰۰۰. متحدان خلیج مخالف. CNBC: 'فنی ممکن اما تشدیدی.'",
-    "نفت $۱۰۶.۱۲ (+۳.۸٪). بنزین: اولین کاهش ($۳.۹۸۱). آسیا شب ~$۱۰۰. عوارض هرمز.",
-    "عبور مطمئن: هند + تایلند. GCC: ایران عوارض = نقض. ۲,۰۰۰ کشتی. بیمه ۵-۱۰٪.",
-    "تلفات: ایران ۱,۹۳۷ (AJ). IRNA ۱,۷۵۰+. هنگاو ۶,۵۳۰. هلال ۶,۶۶۸ واحد. لبنان ۱,۰۹۴. عراق ۹۶. خلیج ۲۵+.",
-    "پیو ۵۹٪ + GCC + قالیباف: اشتباه. بنزین = درد رأی‌دهنده. قالیباف = بازدارندگی همکاری خلیج با عملیات زمینی."
+    "حوثی‌ها وارد جنگ — بزرگ‌ترین تشدید از D1: اولین موشک یمن به اسرائیل. بئرشبع. رهگیری. بستن باب‌المندب بررسی. اگر هر دو تنگه = ۱/۵ نفت + ۱/۸ تجارت جهان.",
+    "اراک حمله شد (D28): راکتور آب سنگین خنداب. یزد. ۵۰+ جنگنده. فولاد خوزستان + مبارکه نابود (سپاه). میلیاردها خسارت. ایران: 'نشت نیست.'",
+    "پایگاه پرنس سلطان (D28): ۶ بالستیک + ۲۹ پهپاد. ۱۰-۱۵ آمریکایی زخمی (۲-۵ وخیم). سوخت‌رسان نابود. AWACS آسیب. مجموع: ۱۳ KIA، ~۳۰۰ زخمی.",
+    "مهلت ۶ آوریل: ترامپ تعویق ۱۰ روزه. 'مذاکره خوب.' ایران: 'یک‌طرفه.' پاکستان/ترکیه/مصر میانجی.",
+    "امارات D29: ۲۰ بالستیک + ۳۷ پهپاد. ۶ زخمی. سپاه تهدید شرکت‌های آمریکایی/اسرائیلی = بُعد جدید.",
+    "نفت $۱۱۲.۵۷ (+۴.۲۲٪). WTI $۹۹.۶۴. یک ماه +۵۱٪. عوارض یوآنی. حوثی = اگر هر دو = $۱۵۰+.",
+    "خلیج: کویت رادار فرودگاه. ۶ پهپاد. بحرین آتش. عمان بندر ۲ UAV. فرودگاه‌ها بسته.",
+    "G7: 'توقف فوری حملات غیرنظامی' + 'عبور آزاد هرمز.' روبیو فرانسه. پاکستان وزرای خارجه.",
+    "تلفات یک ماهه: ایران ~۱,۹۰۰+ (AJ). هنگاو ~۶,۷۰۰+. لبنان ۱,۱۴۲. عراق ~۹۶. خلیج ۲۵+. ۳۳۰,۰۰۰+ آواره.",
+    "ترامپ: 'تمام نشده، هزاران هدف.' روبیو: 'جلوتر.' اما حوثی + PSAB + خلیج = جنگ گسترش. پیو ۵۹٪ یک ماهه."
   ],
   "dailySeries": {
     "labels": [
@@ -155,7 +156,9 @@
       "Mar 23",
       "Mar 24",
       "Mar 25",
-      "Mar 26"
+      "Mar 26",
+      "Mar 27",
+      "Mar 28"
     ],
     "missiles": [
       480,
@@ -184,7 +187,9 @@
       30,
       25,
       20,
-      25
+      25,
+      30,
+      30
     ],
     "drones": [
       720,
@@ -213,10 +218,12 @@
       55,
       50,
       55,
-      45
+      45,
+      55,
+      55
     ],
-    "sourceLabel": "D1-D10: JPost. D11: UAE MoD. D12-D27: fragment est. D27: 6 missile salvos at Israel (Bnei Brak, Kfar Qassem, Tel Aviv). UAE ballistic intercepted Abu Dhabi (debris killed 2). Saudi/Kuwait intercepting. Tangsiri killed Bandar Abbas. IDF extensive strikes Isfahan.",
-    "throughDate": "Mar 26 end of day (all days estimated)"
+    "sourceLabel": "D1-D10: JPost. D11: UAE MoD. D12-D29: fragment est. D28: 6 ballistic + 29 drones at PSAB. Israel struck Arak reactor + steel factories. D29: UAE 20 ballistic + 37 drones. Houthi first missile at Israel. Kuwait radar damaged. Bahrain + Oman targeted.",
+    "throughDate": "Mar 28 end of day (all days estimated)"
   },
   "oil": {
     "labels": [
@@ -247,7 +254,9 @@
       "Mar 23",
       "Mar 24",
       "Mar 25",
-      "Mar 26"
+      "Mar 26",
+      "Mar 27",
+      "Mar 28"
     ],
     "brent": [
       65.0,
@@ -277,7 +286,9 @@
       96.5,
       101.21,
       99.0,
-      106.12
+      106.12,
+      108.0,
+      112.57
     ],
     "wti": [
       62.0,
@@ -307,9 +318,11 @@
       88.13,
       90.19,
       89.0,
-      93.61
+      93.61,
+      95.0,
+      99.64
     ],
-    "note": "Full daily series. D27: Brent SURGED $106.12 (+3.8%, CNBC) after Iran rejected direct talks. WTI $93.61 (+3.6%). Market in backwardation (Dec $79.70 = 17% below). Iran preparing Hormuz toll legislation. Insurance 5-10% hull value. Oil whipsawing: $99→$106 in 24 hrs on diplomacy signals. Goldman $110 avg."
+    "note": "Full daily series. D29: Brent SURGED $112.57 (+4.22%) — highest since Jul 2022. WTI $99.64 (+5.46%, briefly $100.04 intraday). One-month surge: +51% from $71.24 pre-war. Brent-WTI spread $12.93 (Hormuz closure premium). Iran yuan-based toll system. Houthi Bab al-Mandab threat = if both chokepoints close: $150+ scenario. Goldman $110 avg."
   },
   "pressure": {
     "labels": [
@@ -339,7 +352,9 @@
       "Mar 23",
       "Mar 24",
       "Mar 25",
-      "Mar 26"
+      "Mar 26",
+      "Mar 27",
+      "Mar 28"
     ],
     "attrition": [
       2,
@@ -357,6 +372,8 @@
       9,
       9.5,
       9.5,
+      10,
+      10,
       10,
       10,
       10,
@@ -397,32 +414,35 @@
       8.5,
       9.5,
       9,
-      9.5
+      9.5,
+      10,
+      10
     ]
   },
   "latestTargetBreakdown": {
-    "note": "Mar 26 (D27). 6 missile salvos at Israel (Bnei Brak, Kfar Qassem, Tel Aviv). UAE ballistic intercepted Abu Dhabi (debris killed 2). Saudi eastern region drones. Kuwait explosions from intercepts. Bahrain sirens + Muharraq fire. Hezbollah drone Galilee.",
+    "note": "Mar 28 (D29). UAE: 20 ballistic + 37 drones (MoD). Houthi missile at Israel from Yemen (intercepted). Kuwait airport radar damaged by drones, 6 drones downed. Bahrain fire in targeted facility. Oman port 2 UAVs. Saudi intercepts ongoing.",
     "missiles": {
-      "Israel": 15,
-      "Saudi": 2,
-      "UAE": 2,
-      "Kuwait": 2,
-      "Bahrain": 2,
+      "UAE": 20,
+      "Israel": 2,
+      "Saudi": 3,
+      "Kuwait": 1,
+      "Bahrain": 1,
+      "Yemen/Houthi": 1,
       "Qatar": 1,
       "Iraq": 1,
       "Oman": 0,
       "Jordan": 0
     },
     "drones": {
-      "Saudi": 18,
-      "UAE": 5,
-      "Kuwait": 5,
-      "Iraq": 5,
-      "Bahrain": 4,
-      "Israel": 3,
+      "UAE": 37,
+      "Kuwait": 6,
+      "Saudi": 4,
+      "Bahrain": 3,
       "Oman": 2,
-      "Qatar": 2,
-      "Jordan": 1
+      "Israel": 1,
+      "Iraq": 1,
+      "Qatar": 1,
+      "Jordan": 0
     }
   },
   "dailyRows": [
@@ -667,195 +687,213 @@
       "primary": "TANGSIRI KILLED + KHARG FORTIFIED + 7 SALVOS + WH DENIES REJECTION: Israel killed IRGC Navy Commander Tangsiri in Bandar Abbas. Iran fortifying Kharg Island (mines/traps/air defenses — CNN). 7 missile salvos at Israel (first Jerusalem-area sirens, 11 injured). CENTCOM: 2/3 arms mfg destroyed. Iran FM rejected plan but WH Leavitt: 'rejection reports FALSE.' Ghalibaf: attacks if islands occupied. Tasnim: Red Sea front threat.",
       "capability": "D27: 25+45. TANGSIRI = most significant naval decapitation. CENTCOM: 2/3 arms mfg destroyed = massive industrial damage. BUT Iran STILL launching 7 salvos/day + fortifying Kharg with mines/traps = preparing for ground war phase. Iran's counter-escalation posture: if you come to our islands, we attack your Gulf allies' infrastructure + open Red Sea front. Safe passage expanding despite Tangsiri death = institutional.",
       "cost": "Brent $106.12 (+3.8%). Gas $3.981 (first drop). Iran 1,937 killed (AJ). Gulf 25+. UAE 11 dead, 357 ballistic + 1,815 drones cumul. Pew 59% wrong. Ghalibaf + Tasnim threats = Iran deterring Gulf cooperation. GCC 6-country condemnation. WH/Iran contradictory messaging on rejection.",
-      "assessment": "D27 — FOUR COLLIDING DYNAMICS: (1) TANGSIRI KILLED + Kharg fortified = Iran losing commanders but preparing ground defense. (2) CENTCOM 2/3 destroyed + IDF fait accompli = industrial base being eliminated. (3) WH denies rejection while Iran says 'no negotiations' = contradictory messaging for domestic audiences. (4) Kharg mines/traps + Ghalibaf threat + Tasnim Red Sea = Iran preparing deterrence against ground ops. FRIDAY = 2 days. Kharg fortification + 'final blow' deliberations = ground war risk rising."
+      "assessment": "D27 — FOUR COLLIDING DYNAMICS: (1) TANGSIRI KILLED + Kharg fortified = Iran losing commanders but preparing ground defense. (2) CENTCOM 2/3 destroyed + IDF fait accompli = industrial base being eliminated. (3) WH denies rejection while Iran says 'no negotiations' = contradictory messaging for domestic audiences. (4) Kharg mines/traps + Ghalibaf threat + Tasnim Red Sea = Iran preparing deterrence against ground ops."
+    },
+    {
+      "date": "Mar 27",
+      "missiles": 30,
+      "drones": 55,
+      "primary": "ARAK REACTOR + STEEL FACTORIES + PSAB ATTACK: IDF struck Arak heavy water reactor (Khondab) + Yazd uranium processing + Khuzestan Steel + Mobarakeh Steel (IRGC-linked, billions). 50+ IAF jets. Iran hit PSAB: 6 ballistic + 29 drones, 10-15 US troops wounded (2-5 serious), refueling aircraft destroyed + E-3 AWACS damaged. Iran released satellite photos. Trump confirmed April 6 deadline. IRGC vowed corporate retaliation.",
+      "capability": "D28: 30+55. NUCLEAR ESCALATION — Arak = plutonium production. Yazd = uranium feedstock. Combined with Natanz/Isfahan/Fordow previous strikes = comprehensive nuclear infrastructure targeting. Steel factories = IRGC economic base. Iran STILL launching effectively: PSAB attack = most significant hit on US assets since D12 KC-135 crash.",
+      "cost": "Brent ~$108. US total: 13 KIA, ~300 wounded. 162nd Division to S. Lebanon. 2 killed Beirut. Iran: 'no radiation leak.' IRGC threatened industrial companies with American shareholders. Pakistan hosting FM meeting (Turkey, Egypt, Saudi Arabia).",
+      "assessment": "D28 — NUCLEAR + CORPORATE TARGETING: Israel destroying Iran's nuclear infrastructure AND economic base simultaneously. Iran responding with precision strikes on US military assets + threatening corporate targets = new escalation dimension. April 6 deadline creates 9-day window."
+    },
+    {
+      "date": "Mar 28",
+      "missiles": 30,
+      "drones": 55,
+      "primary": "HOUTHIS ENTER WAR + ONE MONTH MARK: Houthis fired ballistic missiles at Israel from Yemen — FIRST since war began. Sirens Beersheba. IDF intercepted. Houthis considering closing Bab al-Mandab. UAE: 20 ballistic + 37 drones (6 injured). Kuwait airport radar significantly damaged. Bahrain fire. Oman port 2 UAVs. G7 joint statement on civilians + Hormuz.",
+      "capability": "D29: 30+55. HOUTHI ENTRY = war's most significant strategic escalation. Opens THIRD front (Hormuz + Lebanon + now Red Sea). If Bab al-Mandab closes: 1/5 global oil + 1/8 global trade blocked simultaneously. UAE cumul ~377 ballistic + ~1,852 drones. CENTCOM: launches down 90% from D1 but new launch axis from Yemen changes calculus entirely.",
+      "cost": "Brent $112.57 (+4.22%) — highest since Jul 2022. WTI $99.64 (briefly $100). +51% in one month. Lebanon 1,142 killed. 330,000+ displaced (UN). G7: 'immediate cessation.' Pakistan FM meeting. Trump: 'not finished, thousands of targets.' Rubio: 'ahead of schedule.'",
+      "assessment": "D29 — ONE MONTH + HOUTHI ENTRY: War EXPANDING not contracting at one-month mark. Houthi entry threatens second chokepoint. Oil surging. Casualties mounting. G7/international pressure building. Trump April 6 deadline = 9 days to produce results. Contradiction: 'ahead of schedule' vs 'thousands of targets left' vs Houthi entry = no coherent endgame strategy visible."
     }
   ],
   "timeline": [
     {
-      "title": "Week 3-4 (Mar 16-26)",
-      "body": "ULTIMATUM -> BLINKS -> 15-POINT PLAN -> REJECTION -> TANGSIRI KILLED: Trump threatened, blinked, sent 15-point plan via Pakistan, Iran formally rejected with 5 counter-conditions. Israel killed IRGC Navy Commander Tangsiri (Hormuz architect). IDF speeding up before ceasefire. Safe passage expanding (Pakistan, India, Thailand). Dimona/Arad struck. 82nd Airborne deploying. Oil $112->$96->$99->$106. Pew: 59% wrong. Internet 600+ hrs."
+      "title": "Week 4 (Mar 23-28)",
+      "body": "BLINKS -> 15-POINT PLAN -> REJECTION -> TANGSIRI KILLED -> ARAK STRUCK -> HOUTHIS ENTER: Trump blinked (D24), sent plan via Pakistan, Iran rejected, Trump extended to April 6. Israel killed Tangsiri, struck Arak reactor + steel factories. Iran hit PSAB (10-15 US wounded). Houthis entered war D29 (first missile at Israel from Yemen). Oil $96->$106->$108->$112. War one month old."
     },
     {
-      "title": "FRIDAY MAR 28 DEADLINE (2 days)",
-      "body": "CRITICAL: 5-day postponement expires Friday. Iran rejected plan (WH denies rejection). Iran fortifying Kharg Island (mines/traps/air defenses). US mulling 'final blow' ground options. Ghalibaf: attacks if islands occupied. Tasnim: Red Sea front. 82nd Airborne ready. CENTCOM 2/3 destroyed. G7 FM meeting. If no deal: power plants + potential Kharg op. If deal: Israel may not comply."
+      "title": "APRIL 6 DEADLINE (9 days)",
+      "body": "CRITICAL: Trump paused power plant strikes until April 6 8PM ET. If no deal: power grid strikes = 90M without electricity. Houthi entry complicates: war EXPANDING. Iran 5 conditions vs US 15 points. Pakistan/Turkey/Egypt mediating. G7: 'immediate cessation.' Israel operating independently (fait accompli). 82nd Airborne deploying. Kharg fortified."
     },
     {
       "title": "Month 2 (Apr-May)",
-      "body": "Three crises converge: (1) Hormuz — Tangsiri dead + safe passage expanding + mines + toll legislation + 82nd Airborne; (2) Nuclear — Iran rejected dismantlement, Israel targeting arms factories, IAEA locked out; (3) Internal — Mojtaba Day 18 + IRGC naval command disrupted + Pew 59% wrong. If safe passage expands: partial normalization. If 82nd activates: total war."
+      "body": "Four crises converge: (1) Hormuz — safe passage expanding + mines + toll + 82nd Airborne; (2) Nuclear — Arak/Yazd/Natanz struck, IAEA locked out, 440kg enriched; (3) Houthis — if Bab al-Mandab closes: both chokepoints = $150+ oil; (4) Domestic — Pew 59%, PSAB casualties, one month with no exit. April 6 = decision point. If power plants struck: humanitarian catastrophe. If deal: Israel may not comply."
     },
     {
       "title": "Month 3+ (May onward)",
-      "body": "If framework emerges from rejection: phased de-escalation. If rejected permanently: power plant strikes + ground ops. Pew 59% = domestic pressure mounting. Nuclear verification crisis defines decade. Mine-clearance + safe passage + Tangsiri successor determine Hormuz recovery."
+      "body": "If framework emerges: phased de-escalation over months. If April 6 fails: power plants + ground ops + Houthi escalation. Nuclear verification crisis defines decade. Mine-clearance timeline: months. Hormuz recovery depends on safe passage expansion rate + Houthi posture + mine clearance."
     },
     {
       "title": "Endgame variables",
-      "body": "Friday Mar 28. Iran 5 conditions vs US 15 points. Tangsiri successor. Safe passage expansion rate. 82nd Airborne activation. Kharg Island. G7 FM. Mine clearance. Houthi activation. Pew 59%/domestic pressure. Israel fait accompli speed. US-Israel divergence. Hormuz toll legislation. Insurance crisis."
+      "body": "April 6 deadline. Houthi Bab al-Mandab decision. Iran 5 conditions vs US 15 points. IRGC corporate targeting. Safe passage expansion. 82nd Airborne activation. Kharg Island. Oil $112+. Pew 59%. Israel fait accompli. US-Israel divergence. Hormuz toll. Insurance crisis. Pakistan/Turkey/Egypt mediation."
     }
   ],
   "timeline_fa": [
     {
-      "title": "هفته ۳-۴ (۱۶-۲۶ مارس)",
-      "body": "اولتیماتوم -> عقب‌نشینی -> ۱۵ بند -> رد -> تانگسیری کشته: ترامپ تعویق سپس طرح از پاکستان. ایران رد + ۵ ضدشرط. تانگسیری (معمار هرمز) کشته. عبور گسترش (پاکستان، هند، تایلند). هوابرد ۸۲. نفت $۱۱۲->$۹۶->$۹۹->$۱۰۶. پیو ۵۹٪."
+      "title": "هفته ۴ (۲۳-۲۸ مارس)",
+      "body": "عقب‌نشینی -> طرح -> رد -> تانگسیری -> اراک -> حوثی: ترامپ مهلت ۶ آوریل. اسرائیل اراک + فولاد. ایران PSAB (۱۰-۱۵ زخمی). حوثی وارد D29. نفت $۹۶->$۱۱۲. یک ماه."
     },
     {
-      "title": "جمعه ۲۸ مهلت (۲ روز)",
-      "body": "بحرانی: ایران رد (WH انکار). خارگ تقویت (مین/تله/پدافند). آمریکا 'ضربه نهایی.' قالیباف تهدید. هوابرد. CENTCOM ۲/۳. G7. اگر بدون معامله: نیروگاه + خارگ. اگر معامله: اسرائیل شاید پیروی نکند."
+      "title": "مهلت ۶ آوریل (۹ روز)",
+      "body": "بحرانی: اگر بدون معامله = نیروگاه (۹۰M بدون برق). حوثی = جنگ گسترش. ۵ شرط vs ۱۵ بند. پاکستان/ترکیه/مصر. G7. اسرائیل مستقل. هوابرد ۸۲. خارگ."
     },
     {
-      "title": "ماه ۲",
-      "body": "هرمز: تانگسیری مرده + عبور + مین + عوارض + هوابرد ۸۲. هسته‌ای: ایران رد خلع سلاح. اسرائیل تسلیحاتی. داخلی: مجتبی ۱۸ + سپاه مختل + پیو ۵۹٪."
+      "title": "ماه ۲ (آوریل-مه)",
+      "body": "چهار بحران: هرمز + هسته‌ای (اراک/یزد/نطنز) + حوثی (باب‌المندب = $۱۵۰+) + داخلی (پیو ۵۹٪ + PSAB). ۶ آوریل = نقطه تصمیم."
     },
     {
       "title": "ماه ۳+",
-      "body": "اگر چارچوب: کاهش تنش مرحله‌ای. اگر رد دائمی: نیروگاه + زمینی. پیو = فشار داخلی. هسته‌ای دهه."
+      "body": "اگر چارچوب: مرحله‌ای. اگر ۶ آوریل شکست: نیروگاه + زمینی + حوثی. هسته‌ای دهه. مین‌روبی ماه‌ها."
     },
     {
       "title": "متغیرهای پایانی",
-      "body": "جمعه ۲۸. ۵ شرط ایران در برابر ۱۵ بند. جانشین تانگسیری. عبور گسترش. هوابرد ۸۲. خارگ. G7. مین. حوثی. پیو ۵۹٪. عمل انجام‌شده اسرائیل. واگرایی آمریکا-اسرائیل."
+      "body": "۶ آوریل. حوثی باب‌المندب. ۵ شرط vs ۱۵ بند. سپاه تهدید شرکت‌ها. عبور. هوابرد ۸۲. خارگ. نفت $۱۱۲+. پیو ۵۹٪. اسرائیل. واگرایی. عوارض. بیمه. پاکستان/ترکیه/مصر."
     }
   ],
   "scenarioProbabilities": [
     {
       "name": "Escalation spiral / total war",
-      "prob": "22%",
-      "body": "INCREASED 20%->22%. KHARG ISLAND FORTIFICATION = Iran preparing for ground war (mines, traps, air defenses). US mulling 'final blow' ground options. Ghalibaf: attacks on Gulf if islands occupied. Tasnim: new Red Sea front. 82nd Airborne + MEUs deploying. Gulf allies urging against but military planning advancing. If Friday deadline fails + Kharg op authorized: total war. Counter: safe passage expanding, both sides spinning 'negotiations ongoing.'"
+      "prob": "28%",
+      "body": "SURGED 22%->28%. HOUTHIS ENTERING WAR = war EXPANDING at one-month mark. If Bab al-Mandab closes: BOTH chokepoints blocked = global shipping catastrophe. PSAB attack = Iran still hitting US assets effectively. IRGC threatening corporate targets = new dimension. April 6 deadline creates 9-day pressure cooker. Israel struck nuclear facilities (Arak, Yazd). 82nd Airborne deploying. Oil $112. Every escalation indicator rising."
     },
     {
       "name": "Protracted attrition + internal crisis",
-      "prob": "28%",
-      "body": "DECREASED 30%->28%. Kharg fortification + 'final blow' deliberations suggest conflict approaching decision point rather than steady attrition. CENTCOM 2/3 destroyed = running out of industrial targets. BUT contradictory messaging (WH denies rejection) = both sides preserving space. 7 salvos/day continues. Safe passage expanding. If Friday passes without action: rebounds to 30%+."
+      "prob": "25%",
+      "body": "DECREASED 28%->25%. Houthi entry + PSAB + Arak = war at decision points, not steady attrition. BUT April 6 deadline pushes major decisions out 9 days = extended window for attrition. Both sides still preserving diplomatic space (Pakistan/Turkey/Egypt mediating). If April 6 passes without power plant strikes: could rebound to 30%."
     },
     {
       "name": "Declared victory + exit",
-      "prob": "23%",
-      "body": "INCREASED 22%->23%. CENTCOM '2/3 destroyed' = strongest victory metric yet. Tangsiri kill = Hormuz architect eliminated. Gas dropped (first time). Pew 59% = political urgency for exit. WH calling rejection 'false' = maintaining deal narrative. IDF fait accompli creating conditions for exit declaration. But Kharg fortification means Iran is preparing to fight on, complicating exit."
+      "prob": "20%",
+      "body": "DECREASED 23%->20%. HARDER to declare victory when Houthis just entered war and PSAB attack wounded 10-15 troops. War EXPANDING contradicts 'mission accomplished' narrative. Rubio 'ahead of schedule' rings hollow with new Yemen front. Still possible if Trump frames April 6 deal as 'total victory' — but needs actual concessions from Iran, which are not forthcoming."
     },
     {
       "name": "Negotiated deal",
-      "prob": "7%",
-      "body": "UNCHANGED at 7%. WH denying rejection = preserving negotiation narrative. BUT Iran FM unambiguous: 'no negotiations.' Contradictory messaging = diplomatic theater not substance. Gap enormous. Mechanism exists (Pakistan, intermediaries). Substance rejected. Could revive post-Friday if power plants NOT struck."
+      "prob": "8%",
+      "body": "SLIGHT INCREASE 7%->8%. Pakistan/Turkey/Egypt FM meeting = new multilateral mediation framework. April 6 gives 9 days for back-channel. G7 statement adds international pressure. BUT Iran says 'one-sided,' Houthi entry gives Iran MORE leverage (second chokepoint threat), and Israel operating independently. Gap still enormous."
     },
     {
       "name": "International intervention / ceasefire",
-      "prob": "11%",
-      "body": "UNCHANGED at 11%. GCC condemnation + Germany + Pew + G7 Friday. Ghalibaf threat to Gulf allies = Iran deterring their cooperation with US ground ops. Gas first drop = tiny relief but political pressure building. No enforcement mechanism. G7 FM Friday = multilateral pressure peak."
+      "prob": "12%",
+      "body": "INCREASED 11%->12%. G7 JOINT STATEMENT = strongest multilateral call yet. Pakistan hosting FM meeting. Houthi entry threatens global trade = more countries affected. 330,000+ displaced (UN). One-month mark = international fatigue growing. BUT still no enforcement mechanism. G7 statement = words not actions."
     },
     {
       "name": "Regime fracture / IRGC collapse",
-      "prob": "9%",
-      "body": "DECREASED 10%->9%. Kharg Island fortification = IRGC mobilizing for ground defense = regime showing organizational capability despite decapitation. Tangsiri dead but successors appointed. Safe passage institutional. Ghalibaf coordinating deterrence threats = political class functioning. CENTCOM 2/3 destroyed weakens industrial base but regime command intact."
+      "prob": "7%",
+      "body": "DECREASED 9%->7%. IRGC still launching effectively: PSAB attack damaged US aircraft, UAE receiving 57 projectiles in one day, Houthis coordinating entry. Steel factories destroyed (billions) weakens economic base but IRGC command + operational capability intact. Corporate targeting threats = organized escalation, not disintegration."
     }
   ],
   "scenarioProbabilities_fa": [
     {
       "name": "مارپیچ تشدید / جنگ تمام‌عیار",
-      "prob": "۲۲٪",
-      "body": "افزایش ۲۰->۲۲. خارگ تقویت = آمادگی جنگ زمینی. آمریکا 'ضربه نهایی.' قالیباف تهدید. هوابرد + تفنگداران. اگر جمعه + خارگ = جنگ تمام‌عیار."
+      "prob": "۲۸٪",
+      "body": "جهش ۲۲->۲۸. حوثی وارد = جنگ گسترش. باب‌المندب = هر دو تنگه. PSAB. سپاه تهدید شرکت‌ها. ۶ آوریل. اراک. هوابرد ۸۲. نفت $۱۱۲."
     },
     {
       "name": "فرسایشی + بحران داخلی",
-      "prob": "۲۸٪",
-      "body": "کاهش ۳۰->۲۸. خارگ + 'ضربه نهایی' = نقطه تصمیم نه فرسایش. CENTCOM ۲/۳. اما WH 'رد دروغ' = فضا حفظ. ۷ سالوو."
+      "prob": "۲۵٪",
+      "body": "کاهش ۲۸->۲۵. حوثی + PSAB + اراک = نقاط تصمیم. اما ۶ آوریل = ۹ روز = فرسایش. میانجی‌ها فعال."
     },
     {
       "name": "اعلام پیروزی + خروج",
-      "prob": "۲۳٪",
-      "body": "افزایش ۲۲->۲۳. CENTCOM '۲/۳' = قوی‌ترین معیار. تانگسیری. بنزین کاهش. پیو ۵۹٪. WH 'رد دروغ.' اما خارگ تقویت."
+      "prob": "۲۰٪",
+      "body": "کاهش ۲۳->۲۰. سخت‌تر وقتی حوثی وارد + PSAB ۱۰-۱۵ زخمی. 'جلوتر از برنامه' خالی با جبهه یمن."
     },
     {
       "name": "مذاکره",
-      "prob": "۷٪",
-      "body": "ثابت ۷. WH انکار رد. اما عراقچی صریح. تناقض. شکاف بزرگ. مکانیزم هست. شاید بعد جمعه."
+      "prob": "۸٪",
+      "body": "افزایش ۷->۸. پاکستان/ترکیه/مصر وزرای خارجه. G7. ۹ روز. اما ایران 'یک‌طرفه.' حوثی = اهرم بیشتر ایران."
     },
     {
       "name": "مداخله بین‌المللی",
-      "prob": "۱۱٪",
-      "body": "ثابت ۱۱. GCC + آلمان + پیو + G7. قالیباف = بازدارندگی. بنزین کاهش. مکانیزم ندارد."
+      "prob": "۱۲٪",
+      "body": "افزایش ۱۱->۱۲. G7 بیانیه. پاکستان. حوثی = تجارت جهان. ۳۳۰,۰۰۰+ آواره. اما مکانیزم ندارد."
     },
     {
       "name": "شکست رژیم / فروپاشی سپاه",
-      "prob": "۹٪",
-      "body": "کاهش ۱۰->۹. خارگ تقویت = سپاه سازماندهی دفاع زمینی. رژیم توانایی سازمانی. CENTCOM ۲/۳ صنعتی اما فرماندهی سالم."
+      "prob": "۷٪",
+      "body": "کاهش ۹->۷. سپاه عملیاتی: PSAB + امارات ۵۷ پرتاب/روز + حوثی هماهنگ. فولاد نابود اما فرماندهی سالم."
     }
   ],
   "theoryEvaluation": [
     {
-      "title": "TANGSIRI DEATH — does Hormuz blockade survive its architect?",
-      "body": "Tangsiri commanded IRGC Navy since 2018, ran 1st Naval District from Bandar Abbas, shaped Iran's entire maritime defense strategy and Hormuz blockade. His death is THE most significant kill for Hormuz operations. KEY QUESTION: Is the blockade institutional or personal? Evidence suggests INSTITUTIONAL — safe passage framework expanding (India, Thailand transited SAME DAY as death reported). Toll legislation being prepared = bureaucratic momentum. But naval command succession unclear. If successor is less competent: mine-clearing easier, safe passage accelerates. If IRGC hardliners promote aggressive replacement: could harden posture. MOST LIKELY: short-term disruption, medium-term institutional continuity."
+      "title": "HOUTHI ENTRY — war expanding, not contracting",
+      "body": "Houthis fired first missiles at Israel from Yemen on D29 — a U-turn from initial refusal to join at Tehran's request. KEY ANALYSIS: (1) Opens THIRD front: Hormuz + Lebanon + now Red Sea/Yemen. (2) Senior Houthi official Mansour: considering closing Bab al-Mandab = 1/8 of global trade. (3) If BOTH chokepoints close: 1/5 global oil + 1/8 global trade blocked simultaneously = unprecedented global shipping catastrophe. (4) Gives Iran MORE leverage in negotiations (second chokepoint as bargaining chip). (5) Complicates 'declared victory' narrative — cannot claim success when new fronts are opening. (6) US would need to SPLIT forces between Gulf + Red Sea. (7) Maersk already paused trans-Suez sailings. CONCLUSION: Houthi entry is the single most strategically significant development since D1. It transforms a bilateral conflict into a multi-theater war with global trade implications."
     },
     {
-      "title": "IRAN'S FORMAL REJECTION — negotiation posture or final answer?",
-      "body": "Iran formally rejected 15-point plan with 5 counter-conditions. FM Araghchi: 'no negotiations, war ends on our terms.' US called Iran conditions 'ridiculous.' KEY ANALYSIS: (1) Rejection is EXPECTED first move in any negotiation — maximalist opening position. (2) 5 conditions ARE structured = engaging with framework even while rejecting substance. (3) Condition 4 (all fronts incl Lebanon) reveals Iran's ACTUAL priority: protecting proxy network, not just own territory. (4) Condition 5 (Hormuz sovereignty) = Iran wants international RECOGNITION of Hormuz control, not just de facto. (5) Both sides calling each other 'unrealistic' = classic negotiation stance. CONCLUSION: This is negotiation posture, not final answer. But gap is enormous and Friday deadline creates pressure."
+      "title": "ARAK REACTOR STRIKE — nuclear escalation deepening",
+      "body": "IDF struck Arak heavy water reactor (Khondab) + Yazd uranium processing on D28. Also destroyed 2 IRGC steel factories (billions). KEY ANALYSIS: (1) Arak = plutonium pathway to weapons. Yazd = uranium feedstock. Combined with Natanz/Isfahan/Fordow = COMPREHENSIVE nuclear targeting. (2) Iran confirmed hit, 'no radiation leak' — but environmental contamination risk grows with each nuclear facility strike. (3) Steel factories = IRGC economic base, not just military. Israel targeting Iran's ability to REBUILD, not just current capability. (4) IAEA still locked out = no independent verification of enriched material status. (5) 50+ IAF jets across 3 targets simultaneously = Israel has escalation dominance in air. CONCLUSION: Israel creating irreversible nuclear facts. Even if ceasefire tomorrow, Iran's nuclear infrastructure is devastated. But enriched material (440kg) is unaccounted for."
     },
     {
-      "title": "ISRAEL FAIT ACCOMPLI — IDF racing to create irreversible facts",
-      "body": "IDF speeding up targeting arms factories 'in case ceasefire is declared' = CLASSIC fait accompli strategy. Ambassador Danon: Israel NOT part of US-Iran talks, ops continue until nuclear/missile eliminated. KEY IMPLICATIONS: (1) US-Israel DIVERGENCE deepening — Trump seeking deal, Israel destroying factories. (2) IDF timeline 'several more weeks' contradicts Trump's Friday deadline. (3) If ceasefire declared: Israel may not comply. (4) Arms factory destruction creates irreversible military facts regardless of diplomatic outcome. (5) Isfahan strikes = targeting Iran's ability to rebuild. THIS IS THE MOST DANGEROUS US-ISRAEL SPLIT since D1. Trump needs deal for political reasons (Pew 59%). Israel wants maximum destruction. These goals are increasingly incompatible."
+      "title": "PSAB ATTACK — Iran can still hurt US forces",
+      "body": "Iran fired 6 ballistic + 29 drones at Prince Sultan Air Base, wounding 10-15 US troops (2-5 serious), destroying a refueling aircraft, damaging 3 more + E-3 AWACS. KEY ANALYSIS: (1) MOST SIGNIFICANT attack on US forces since D12 KC-135 crash. (2) Demonstrates Iran's precision strike capability is NOT eliminated despite CENTCOM 'attacks down 90%.' (3) Chinese satellite photos released = intelligence cooperation or acquisition. (4) US total now 13 KIA, ~300 wounded = politically consequential at home. (5) Destroying refueling aircraft degrades US operational tempo. (6) Iran specifically targeted PSAB (shared Saudi-US base) = dual message to Saudi Arabia AND US. CONCLUSION: Iran still possesses meaningful strike capability against hardened military targets. '90% reduction' in volume doesn't equal elimination of threat."
     },
     {
-      "title": "DOMESTIC PRESSURE — Pew 59% and political dynamics",
-      "body": "Pew: 59% wrong decision, 61% disapprove handling, 54% expect 6+ months. AP-NORC: 59% gone too far. House Armed Services unsatisfied. KEY: (1) These numbers are UNPRECEDENTED for a war only 27 days old. (2) Iraq War didn't reach these disapproval levels for MONTHS. (3) 88% Dem oppose vs 71% Rep support = deep partisan divide. (4) Republican-leaning independents SPLIT 52-45 = Trump's coalition fraying. (5) Oil prices + gas prices directly visible to voters. (6) This creates political incentive for Trump to seek quick exit — reinforcing declared victory scenario. (7) But also constrains escalation options (power plants). CONCLUSION: Pew numbers accelerate political timeline for deal/exit. Trump NEEDS off-ramp more than Iran does domestically."
+      "title": "APRIL 6 DEADLINE — new pressure timeline",
+      "body": "Trump extended power plant strikes deadline to April 6, 8PM ET (10 days from D27). KEY ANALYSIS: (1) Second extension (first was 48-hr→5 days, now 5 days→10 days) = pattern of backing down. (2) 'Because they gave me ships' = Trump needs tangible concessions to justify extension. (3) Pakistan/Turkey/Egypt mediating = multilateral framework forming. (4) BUT Houthi entry DURING this window undermines 'talks going well' narrative. (5) If April 6 passes without deal AND power plants NOT struck: Trump credibility further damaged. (6) If power plants struck: 90M Iranians without electricity = humanitarian catastrophe + international condemnation. (7) Israel's independent operations mean ceasefire would need Israeli buy-in, which Danon explicitly denied. CONCLUSION: April 6 is less a deadline and more a political prop. Trump likely extends again unless something forces his hand."
     },
     {
-      "title": "KHARG ISLAND — the ground war question",
-      "body": "Iran is fortifying Kharg Island with anti-personnel mines, anti-tank mines, traps, and air defenses (CNN). Ghalibaf threatens 'relentless attacks on regional infrastructure' if occupied. Tasnim warns of new Red Sea front. Meanwhile US mulling 'final blow' ground options. KEY ANALYSIS: (1) Kharg = 90% of Iran crude exports. Seizing it would be devastating leverage. (2) But Iran knows this and is preparing — mines + traps make amphibious assault costly. (3) Gulf allies PRIVATELY opposing — Ghalibaf's threat is directly at them. (4) 82nd Airborne is forced-entry unit but deploys without heavy armor initially = vulnerable to mined beaches. (5) If US seizes Kharg: Iran loses exports AND Hormuz leverage simultaneously. (6) If Iran successfully defends: US credibility damaged. (7) Tasnim Red Sea threat = Houthi activation. CONCLUSION: Kharg fortification changes the escalation calculus. Ground ops now involve contested beach landings against prepared defenses. This makes the declared victory + exit scenario MORE attractive to Trump than actual ground combat."
+      "title": "CORPORATE TARGETING — new escalation dimension",
+      "body": "IRGC vowed retaliation on industrial companies in Middle East with American shareholders or aligned with Israel, warning employees to evacuate. KEY ANALYSIS: (1) This is a NEW escalation dimension — moving from military/infrastructure to CORPORATE targets. (2) Potential targets: defense contractors, oil companies, tech firms with Gulf offices. (3) If IRGC attacks a corporate facility: could draw additional Western countries into conflict. (4) Warning to evacuate = Iran wants to damage assets, not maximize casualties (limiting escalation). (5) Gulf states already condemning — corporate targeting would further alienate them. (6) Insurance implications: commercial property insurance in Gulf already strained. CONCLUSION: Corporate targeting represents Iran's attempt to raise costs for US allies beyond military domain. Effectiveness depends on follow-through."
     }
   ],
   "theoryEvaluation_fa": [
     {
-      "title": "تانگسیری — آیا انسداد هرمز بدون معمار زنده می‌ماند؟",
-      "body": "تانگسیری از ۲۰۱۸ فرمانده نیروی دریایی. بندرعباس. استراتژی دریایی کل ایران. مهم‌ترین ضربه هرمز. سؤال: نهادی یا شخصی؟ شواهد: نهادی — عبور گسترش همان روز. عوارض = بروکراتیک. جانشینی نامشخص. کوتاه‌مدت اختلال."
+      "title": "ورود حوثی — جنگ گسترش نه انقباض",
+      "body": "اولین موشک یمن به اسرائیل D29. چرخش از امتناع اولیه. سه جبهه: هرمز + لبنان + دریای سرخ. منصور: بستن باب‌المندب. اگر هر دو تنگه = ۱/۵ نفت + ۱/۸ تجارت. اهرم مذاکره ایران بیشتر. 'اعلام پیروزی' سخت‌تر. مهم‌ترین تحول استراتژیک از D1."
     },
     {
-      "title": "رد رسمی ایران — موضع مذاکره یا پاسخ نهایی؟",
-      "body": "رد ۱۵ بند + ۵ ضدشرط. عراقچی: 'مذاکره نه.' اما ۵ شرط = ساختاریافته = درگیری با چارچوب. شرط ۴ (لبنان) = اولویت واقعی. شرط ۵ (هرمز) = شناسایی بین‌المللی. شکاف بزرگ اما موضع مذاکره نه پاسخ نهایی."
+      "title": "حمله اراک — تشدید هسته‌ای",
+      "body": "اراک (پلوتونیوم) + یزد (اورانیوم) + فولاد سپاه (میلیاردها). ۵۰+ جنگنده. با نطنز/اصفهان/فردو = هدف‌گیری جامع هسته‌ای. ایران: 'نشت نیست.' اما ۴۴۰kg غنی‌شده = ردیابی ناممکن (IAEA قفل). اسرائیل واقعیت‌های غیرقابل بازگشت هسته‌ای."
     },
     {
-      "title": "عمل انجام‌شده اسرائیل — ارتش مسابقه با زمان",
-      "body": "اسرائیل سرعت حملات تسلیحاتی 'قبل آتش‌بس.' دانون: طرف مذاکره نیست. واگرایی آمریکا-اسرائیل عمیق‌ترین. ترامپ معامله، اسرائیل تخریب. ناسازگار."
+      "title": "حمله PSAB — ایران هنوز می‌تواند",
+      "body": "۶ بالستیک + ۲۹ پهپاد. ۱۰-۱۵ زخمی (۲-۵ وخیم). سوخت‌رسان نابود + AWACS آسیب. عکس ماهواره‌ای چینی. مجموع: ۱۳ KIA، ~۳۰۰ زخمی. '۹۰٪ کاهش' ≠ حذف تهدید. توانایی دقیق علیه اهداف سخت."
     },
     {
-      "title": "فشار داخلی — پیو ۵۹٪",
-      "body": "بی‌سابقه برای ۲۷ روز. عراق ماه‌ها طول کشید. جمهوری‌خواهان مستقل شکاف ۵۲-۴۵. ترامپ خروج نیاز. نفت + بنزین = مستقیم رأی‌دهنده."
+      "title": "مهلت ۶ آوریل — زمان‌بندی جدید",
+      "body": "دومین تعویق (۴۸ ساعت→۵ روز→۱۰ روز) = الگوی عقب‌نشینی. 'چون کشتی دادند.' پاکستان/ترکیه/مصر. اما حوثی = 'مذاکره خوب' تضعیف. اگر ۶ آوریل + نیروگاه نه = اعتبار ضربه. اگر نیروگاه = ۹۰M بدون برق = فاجعه + محکومیت. اسرائیل مستقل. احتمال تعویق مجدد."
     },
     {
-      "title": "خارگ — سؤال جنگ زمینی",
-      "body": "ایران خارگ تقویت: مین + تله + پدافند. قالیباف تهدید. تسنیم: دریای سرخ. آمریکا 'ضربه نهایی.' خارگ ۹۰٪ صادرات. تصرف = اهرم. اما ایران آماده = حمله دوزیست پرهزینه. خلیج مخالف. هوابرد ۸۲ بدون زره سنگین. اگر تصرف: ایران هم صادرات هم هرمز. اگر دفاع: اعتبار آمریکا. تسنیم = حوثی. نتیجه: تقویت = محاسبه تشدید عوض. اعلام پیروزی + خروج جذاب‌تر از جنگ زمینی واقعی."
+      "title": "تهدید شرکت‌ها — بُعد جدید تشدید",
+      "body": "سپاه تهدید شرکت‌های صنعتی با سهامداران آمریکایی/اسرائیلی. تخلیه کارمندان. بُعد جدید: نظامی/زیرساخت → شرکتی. اگر حمله = کشورهای غربی بیشتر درگیر. هشدار تخلیه = آسیب دارایی نه تلفات. بیمه تجاری خلیج فشار."
     }
   ],
   "endstate": [
     {
       "title": "Most likely (28%)",
-      "body": "Protracted attrition — DECREASED 30%->28%. Kharg fortification + 'final blow' deliberations suggest approaching decision point. CENTCOM 2/3 destroyed = running out of targets. But contradictory messaging preserves space. If Friday passes without action: rebounds."
+      "body": "Escalation spiral — SURGED 22%->28%. Houthi entry = war EXPANDING. PSAB attack + Arak strike + corporate threats = every escalation indicator rising. April 6 deadline = 9-day pressure cooker. If Bab al-Mandab closes: both chokepoints = global crisis."
     },
     {
-      "title": "Second (23%)",
-      "body": "Declared victory + exit — INCREASED 22%->23%. CENTCOM '2/3 destroyed' = strongest metric. Tangsiri kill. Gas dropped. Pew 59%. WH maintaining deal narrative. Kharg fortification makes ground war COSTLY = more incentive for political exit over military completion."
+      "title": "Second (25%)",
+      "body": "Protracted attrition — DECREASED 28%->25%. April 6 pushes decisions out 9 days = extended attrition window. Pakistan/Turkey/Egypt mediating. Both sides preserving diplomatic space. Could rebound if April 6 passes without strikes."
     },
     {
-      "title": "Third (22%)",
-      "body": "Escalation spiral — INCREASED 20%->22%. KHARG FORTIFICATION = Iran preparing ground defense. US mulling 'final blow.' Ghalibaf threatens Gulf. Tasnim threatens Red Sea. 82nd deploying. If Friday deadline fails + Kharg op: total war. Highest since D23."
+      "title": "Third (20%)",
+      "body": "Declared victory + exit — DECREASED 23%->20%. HARDER when Houthis entering and PSAB wounded 10-15 troops. 'Ahead of schedule' rings hollow with new Yemen front. Needs actual concessions from Iran for April 6."
     },
     {
-      "title": "Fourth (11% / 9% / 7%)",
-      "body": "International intervention (11%) — GCC + Ghalibaf threats + G7 Friday. Regime fracture (9%) — decreased: Kharg fortification shows organizational capability. Negotiated deal (7%) — WH denies rejection but substance unchanged."
+      "title": "Fourth (12% / 8% / 7%)",
+      "body": "International intervention (12%) — G7 statement + Pakistan FM meeting + Houthi = global trade affected. Negotiated deal (8%) — multilateral mediation forming but gap enormous. Regime fracture (7%) — IRGC operationally effective despite losses."
     }
   ],
   "endstate_fa": [
     {
       "title": "محتمل‌ترین (۲۸٪)",
-      "body": "فرسایشی — کاهش ۳۰->۲۸. خارگ + 'ضربه نهایی' = نقطه تصمیم. CENTCOM ۲/۳. اما پیام متناقض. اگر جمعه بدون اقدام: بازگشت."
+      "body": "تشدید — جهش ۲۲->۲۸. حوثی = گسترش. PSAB + اراک + تهدید شرکتی. ۶ آوریل. اگر باب‌المندب: هر دو تنگه."
     },
     {
-      "title": "دوم (۲۳٪)",
-      "body": "اعلام پیروزی — افزایش ۲۲->۲۳. CENTCOM '۲/۳.' تانگسیری. بنزین. پیو ۵۹٪. خارگ تقویت = زمینی پرهزینه = انگیزه خروج سیاسی."
+      "title": "دوم (۲۵٪)",
+      "body": "فرسایشی — کاهش ۲۸->۲۵. ۶ آوریل = ۹ روز. میانجی‌ها. فضای دیپلماتیک. اگر ۶ آوریل بدون حمله: بازگشت."
     },
     {
-      "title": "سوم (۲۲٪)",
-      "body": "تشدید — افزایش ۲۰->۲۲. خارگ = دفاع زمینی. آمریکا 'ضربه نهایی.' قالیباف. تسنیم دریای سرخ. هوابرد. اگر جمعه + خارگ = جنگ تمام‌عیار."
+      "title": "سوم (۲۰٪)",
+      "body": "اعلام پیروزی — کاهش ۲۳->۲۰. حوثی + PSAB = سخت‌تر. 'جلوتر' خالی با جبهه یمن."
     },
     {
-      "title": "چهارم (۱۱٪ / ۹٪ / ۷٪)",
-      "body": "مداخله (۱۱٪). فروپاشی (۹٪ — کاهش: خارگ = سازمانی). مذاکره (۷٪ — WH انکار اما ماهیت ثابت)."
+      "title": "چهارم (۱۲٪ / ۸٪ / ۷٪)",
+      "body": "مداخله (۱۲٪) — G7 + پاکستان + حوثی = تجارت جهان. مذاکره (۸٪) — چارچوب اما شکاف. فروپاشی (۷٪) — سپاه عملیاتی."
     }
   ],
   "shippingRoutes": [
@@ -879,9 +917,9 @@
       "route": "Iran -> Armenia (Agarak/Norduz border)",
       "status": "MOST VIABLE",
       "statusColor": "yellow",
-      "detail": "Still most viable. Power plant threat postponed (Friday deadline). 82nd Airborne focus = Kharg not internal Iran. Internet Day 27. 82,000+ structures. Hospitals 1/3. Food tripled. Grid INTACT. Tangsiri death = Hormuz command disrupted, not land routes.",
+      "detail": "Still most viable. Power plant threat postponed to April 6. 82nd Airborne focus = Kharg not internal Iran. Internet Day 29 (~650+ hrs). 82,000+ structures. Hospitals 1/3. Food tripled. Grid INTACT. Arak/Yazd/steel struck but power grid untouched so far.",
       "viability": "~10-15%",
-      "eta": "If power grid survives: 4-8 weeks Tehran->Yerevan->sea. Viability stable"
+      "eta": "If power grid survives April 6: 4-8 weeks Tehran->Yerevan->sea. Viability stable. 9-day window"
     },
     {
       "route": "Pakistan / Afghanistan / Turkmenistan",
@@ -981,7 +1019,7 @@
     "<strong>IMMEDIATE — Client outreach:</strong> Email all university library acquisition departments: 'Supply disruption due to conflict in Iran. Fulfilling from existing US inventory. New titles unavailable until further notice. We will update monthly.' Protect the 25-year relationships — transparency now prevents lost accounts later.",
     "<strong>THIS WEEK — Armenia route planning:</strong> If power grid survives Friday, begin pre-negotiating: Tehran warehouse → truck to Agarak/Norduz border (700km) → Armenia → Yerevan → Poti/Batumi (Georgia, Black Sea) → container ship → US East Coast. Need: (1) Iranian trucker willing to drive through strike zones, (2) Armenian freight forwarder, (3) Georgian port agent. Cannot coordinate any of this until internet restores or a family member reaches a border with phone access.",
     "<strong>THIS WEEK — KEMCO check:</strong> Contact KEMCO SARL in France. Verify banking relationships intact. Ask about any compliance concerns with French/EU banks regarding Iran-linked transactions during active conflict. France has been vocal ('catastrophe') — unlikely to tighten, but verify.",
-    "<strong>FRIDAY MAR 28 — WATCH:</strong> If Trump deadline passes with no deal and power plants are struck: (1) Armenia route drops to <5% viability (no electricity = no warehouses, no logistics), (2) Recovery timeline extends from months to years, (3) Entire pre-war inventory in Iran potentially inaccessible. This is the single biggest threat to the business.",
+    "<strong>APRIL 6 DEADLINE — WATCH:</strong> Trump extended power plant strike deadline to April 6 8PM ET. If struck: (1) Armenia route drops to <5% viability (no electricity = no warehouses, no logistics), (2) Recovery timeline extends from months to years, (3) Entire pre-war inventory in Iran potentially inaccessible. This is the single biggest threat to the business. 9-day window now.",
     "<strong>MEDIUM-TERM — Alternative sourcing:</strong> Are there any Persian-language publishers outside Iran? Diaspora publishers in US, Canada, Europe, or Tajikistan? Could fill gaps for some academic categories. Not a replacement but a supplement.",
     "<strong>MEDIUM-TERM — Digital pivot:</strong> University libraries increasingly accept digital. If any Iranian publishers had pre-war digital files/PDFs: could you license and distribute digitally under OFAC exemption? Explore with existing publisher relationships (once communications restore)."
   ],
@@ -990,12 +1028,12 @@
     "<strong>فوری — ارتباط مشتری:</strong> ایمیل به کتابخانه‌ها: اختلال نامحدود. موجودی آمریکا. به‌روزرسانی ماهانه. روابط ۲۵ ساله حفظ.",
     "<strong>این هفته — ارمنستان:</strong> اگر برق سالم: تهران → آگاراک → ایروان → پوتی → کشتی → آمریکا. نیاز: راننده ایرانی + باربری ارمنی + نماینده گرجستان. بدون اینترنت هماهنگی ناممکن.",
     "<strong>این هفته — KEMCO:</strong> تماس فرانسه. بانک سالم؟ تحریم‌های ثانویه؟ فرانسه 'فاجعه' گفته = احتمال سخت‌گیری کم.",
-    "<strong>جمعه ۲۸:</strong> اگر نیروگاه: ارمنستان <۵٪. بازیابی سال‌ها. انبار ایران غیرقابل دسترس. بزرگ‌ترین تهدید.",
+    "<strong>۶ آوریل:</strong> اگر نیروگاه: ارمنستان <۵٪. بازیابی سال‌ها. انبار ایران غیرقابل دسترس. بزرگ‌ترین تهدید.",
     "<strong>میان‌مدت — منابع جایگزین:</strong> ناشران فارسی خارج ایران؟ دیاسپورا آمریکا/کانادا/اروپا/تاجیکستان؟ مکمل نه جایگزین.",
     "<strong>میان‌مدت — دیجیتال:</strong> کتابخانه‌ها دیجیتال قبول می‌کنند. فایل‌های قبل جنگ؟ مجوز و توزیع دیجیتال تحت OFAC؟"
   ],
   "signalsIranfarhang": [
-    "<strong>GATE 1 — POWER GRID (Friday Mar 28):</strong> If power plants struck → ALL Iran logistics collapse. Armenia route drops to <5%. Warehouse operations impossible. This single event determines whether recovery takes months or years. HIGHEST PRIORITY signal.",
+    "<strong>GATE 1 — POWER GRID (April 6 deadline):</strong> Trump paused power plant strikes until April 6 8PM ET. If struck → ALL Iran logistics collapse. Armenia route drops to <5%. Warehouse operations impossible. This single event determines whether recovery takes months or years. HIGHEST PRIORITY signal. Deadline previously was Mar 28, extended 10 days.",
     "<strong>GATE 2 — INTERNET RESTORATION:</strong> Cannot do ANYTHING until communications restore. No warehouse verification, no route coordination, no family contact. Watch for: partial restoration, VPN availability, satellite internet (Starlink unlikely in Iran). Even SMS/phone restoration would help.",
     "<strong>GATE 3 — CEASEFIRE / DEAL:</strong> Pew 59% + Friday deadline + Iran counter-conditions = political dynamics favor eventual exit. A ceasefire doesn't reopen routes immediately but starts the clock on recovery. Watch for: Trump 'declared victory,' partial ceasefire, Hormuz-specific agreement separate from nuclear deal.",
     "<strong>ROUTE — Armenia border status:</strong> US Embassy Yerevan daily alerts confirm Agarak/Norduz border open. Monitor for: border closures, increased security checks, Iranian side closures, road conditions through strike zones. This is the only viable land route.",
@@ -1004,7 +1042,7 @@
     "<strong>INVENTORY — Tehran warehouse:</strong> Any information about physical conditions in Tehran warehouse district. Satellite imagery, social media from Iran (rare given blackout), reports from diaspora contacts who may have phone/SMS contact."
   ],
   "signalsIranfarhang_fa": [
-    "<strong>دروازه ۱ — برق (جمعه ۲۸):</strong> نیروگاه = فروپاشی لجستیک. ارمنستان <۵٪. بازیابی سال‌ها. بالاترین اولویت.",
+    "<strong>دروازه ۱ — برق (۶ آوریل):</strong> نیروگاه = فروپاشی لجستیک. ارمنستان <۵٪. بازیابی سال‌ها. بالاترین اولویت.",
     "<strong>دروازه ۲ — اینترنت:</strong> بدون ارتباط هیچ کاری ممکن نیست. انبار، مسیر، خانواده. VPN، ماهواره، حتی SMS.",
     "<strong>دروازه ۳ — آتش‌بس:</strong> پیو ۵۹٪ + جمعه + ضدشرط = خروج سیاسی. آتش‌بس ≠ بازگشایی فوری اما شروع بازیابی.",
     "<strong>مسیر — ارمنستان:</strong> سفارت ایروان: مرز باز. نظارت: بسته شدن، بازرسی، جاده.",
@@ -1035,7 +1073,7 @@
     "<strong>IMMEDIATE — PERSONNEL:</strong> Any staff in Dubai/Abu Dhabi should temporarily relocate to Muscat (Oman), Tbilisi (Georgia), or Istanbul. UAE is receiving 70-80+ projectiles/day. Abu Dhabi debris killed 2 people D27. This is not theoretical risk — it is active combat fallout in a civilian area.",
     "<strong>THIS WEEK — ALTERNATIVE HUB ASSESSMENT:</strong> Dubai is dead as a logistics hub for the foreseeable future. Evaluate alternatives: (1) Muscat, Oman — closest, but Oman ports also hit by IRGC drones, status 'compromised.' (2) Istanbul, Turkey — established Iran-Turkey trade corridor, but Turkey-Iran land border currently shut + NATO airspace restrictions. (3) Tbilisi, Georgia — emerging Iran trade route via Armenia, small but growing. (4) Kuala Lumpur — Malaysia has historically facilitated Iran trade, distant but functional.",
     "<strong>THIS WEEK — INVENTORY AUDIT:</strong> Catalog everything stranded: goods in Jebel Ali, goods on vessels in Hormuz region, goods in Iranian warehouses (if contactable). Determine: what is insured, what can be claimed as force majeure, what can be rerouted if a corridor opens. Contact shipping lines about stranded cargo status.",
-    "<strong>FRIDAY MAR 28 — ESCALATION WATCH:</strong> If power plants struck: (1) Iran-side operations become impossible for extended period, (2) oil spikes above $120 = shipping costs skyrocket further, (3) humanitarian crisis deepens = international sanctions landscape may shift. If a deal emerges: (1) Hormuz reopening begins (weeks to months for mine clearance), (2) Dubai corridor still needs UAE airspace/banking normalization, (3) earliest partial resumption: 2-3 months post-ceasefire.",
+    "<strong>APRIL 6 DEADLINE — ESCALATION WATCH:</strong> Trump extended to April 6. If power plants struck: (1) Iran-side operations become impossible for extended period, (2) oil spikes above $120 = shipping costs skyrocket further, (3) humanitarian crisis deepens. NEW RISK: Houthi Bab al-Mandab threat = if both chokepoints close, Red Sea route also blocked. If a deal emerges: (1) Hormuz reopening begins (weeks to months for mine clearance), (2) Dubai corridor still needs UAE airspace/banking normalization, (3) earliest partial resumption: 2-3 months post-ceasefire.",
     "<strong>MEDIUM-TERM — DIVERSIFICATION:</strong> The war has exposed a fatal dependency: 100% of KIP's logistics flow through a single chokepoint (Hormuz) and a single hub (Dubai). Post-war, diversify: maintain Dubai but add a second hub outside the Gulf (Turkey or Georgia). Establish banking relationships in 2-3 jurisdictions. Never again have all trade finance in one country that's within missile range of Iran.",
     "<strong>MEDIUM-TERM — INSURANCE:</strong> Current hull insurance 5-10% (from 0.15-0.25%). This makes most shipments uneconomical. Monitor: when premiums begin to drop = market signal that risk is decreasing. If safe passage framework expands to commercial cargo: premiums may drop for specific routes. Get quotes from multiple marine insurers NOW for when corridor reopens — pricing will be competitive early."
   ],
@@ -1044,7 +1082,7 @@
     "<strong>فوری — پرسنل:</strong> دبی/ابوظبی → مسقط یا تفلیس یا استانبول. ۷۰-۸۰+ پرتاب/روز. ابوظبی ۲ کشته D27. ریسک فعال.",
     "<strong>این هفته — هاب جایگزین:</strong> دبی مرده. ارزیابی: (۱) مسقط — نزدیک اما حمله شده. (۲) استانبول — مرز بسته اما ظرفیت. (۳) تفلیس — مسیر ارمنستان. (۴) کوالالامپور — تاریخی.",
     "<strong>این هفته — موجودی:</strong> کالاهای جبل‌علی، کشتی‌ها، انبار ایران. بیمه، فورس ماژور، مسیر جایگزین. خطوط کشتیرانی تماس.",
-    "<strong>جمعه ۲۸:</strong> نیروگاه: ایران غیرممکن + نفت >$۱۲۰ + تحریم‌ها. معامله: هرمز هفته‌ها/ماه‌ها + دبی عادی‌سازی. اولین بازگشایی جزئی: ۲-۳ ماه.",
+    "<strong>۶ آوریل:</strong> نیروگاه: ایران غیرممکن + نفت >$۱۲۰ + تحریم‌ها. معامله: هرمز هفته‌ها/ماه‌ها + دبی عادی‌سازی. اولین بازگشایی جزئی: ۲-۳ ماه.",
     "<strong>میان‌مدت — تنوع:</strong> وابستگی ۱۰۰٪ به هرمز + دبی = آسیب‌پذیری کشنده. بعد جنگ: هاب دوم خارج خلیج. بانک ۲-۳ کشور.",
     "<strong>میان‌مدت — بیمه:</strong> ۵-۱۰٪ = غیراقتصادی. نظارت: کاهش حق‌بیمه = سیگنال. اگر عبور تجاری = کاهش مسیر اختصاصی. استعلام از چند بیمه‌گر."
   ],
@@ -1056,7 +1094,7 @@
     "<strong>PERSONNEL SAFETY:</strong> UAE casualty reports, projectile interception rates, civil defense warnings. National death toll 11 and rising. IRGC considers UAE bases legitimate targets — civilian areas adjacent to military installations are highest risk.",
     "<strong>ALTERNATIVE HUBS:</strong> Turkey-Iran border status (currently shut), Armenia-Iran border (open per US Embassy Yerevan), Georgia ports (Poti/Batumi capacity), Oman ports (compromised — IRGC drone hits). Any announcement of border reopenings = route opportunity.",
     "<strong>INSURANCE MARKET:</strong> Marine insurance premium changes for Gulf routes. Current 5-10% hull is prohibitive. Watch Lloyd's of London and P&I club announcements. Premium drops = leading indicator of normalized shipping.",
-    "<strong>HOUTHI:</strong> Declared entry but no confirmed attacks. If activated: Bab al-Mandab closes = Red Sea route also blocked. KIP would lose BOTH Gulf AND Red Sea shipping options. Maintain zero Red Sea exposure until Houthi status clarifies."
+    "<strong>HOUTHI — NOW ACTIVE:</strong> Houthis ENTERED war D29 — first missile at Israel from Yemen. Senior official Mansour: considering closing Bab al-Mandab. If closed: Bab al-Mandab + Hormuz = BOTH chokepoints blocked. KIP would lose ALL maritime shipping options. Red Sea route now HIGH RISK. This is no longer theoretical — Houthis are firing."
   ],
   "signalsKIP_fa": [
     "<strong>دروازه ۱ — بانک امارات:</strong> بانک مرکزی + OFAC SDN + انجماد حساب‌ها. اگر یکی مسدود: فرض کنید بعدی شماست.",
@@ -1066,115 +1104,115 @@
     "<strong>پرسنل:</strong> گزارش تلفات امارات. رهگیری پرتاب. مناطق نظامی مجاور = بالاترین ریسک.",
     "<strong>هاب‌های جایگزین:</strong> ترکیه-ایران مرز (بسته)، ارمنستان (باز)، گرجستان (ظرفیت)، عمان (تهدید). بازگشایی = فرصت.",
     "<strong>بیمه:</strong> لویدز و P&I. ۵-۱۰٪ غیراقتصادی. کاهش = شاخص پیشرو.",
-    "<strong>حوثی:</strong> اعلام بدون حمله. اگر فعال = باب‌المندب + هرمز. دسترسی دریایی صفر."
+    "<strong>حوثی — فعال:</strong> وارد جنگ D29 — اولین موشک. منصور: بستن باب‌المندب بررسی. اگر بسته: هر دو تنگه = تمام گزینه‌های دریایی از دست. دیگر نظری نیست."
   ],
   "casualties": [
     {
       "group": "Iran",
-      "figure": "~6,530+ killed",
+      "figure": "~6,700+ killed",
       "statusColor": "red",
-      "detail": "AJ tracker: 1,937 killed. IRNA (state): 1,750+. HRANA: 1,455 civilian + 217 children + 1,167 military + 669 unclassified = 3,291+ tracked. Hengaw D25: 6,530. Red Crescent: 6,668 civilian units targeted (5,535 residential, 1,041 commercial, 14 medical, 65 schools). 18,551 injured. 82,000+ structures. CENTCOM: 2/3 arms mfg destroyed."
+      "detail": "AJ/Red Crescent: ~1,900 killed. HRANA: 3,291+ tracked. Hengaw D25: 6,530 (extrapolated ~6,700+ at D29). 82,000+ structures. Arak reactor + Yazd uranium site + Khuzestan Steel + Mobarakeh Steel struck D28. 330,000+ displaced across ME (UN). 18,551+ injured."
     },
     {
       "group": "Lebanon",
-      "figure": "1,094+ killed",
+      "figure": "1,142+ killed",
       "statusColor": "red",
-      "detail": "Health Ministry: 1,094 killed (up from 1,072), including 121 children. ~1M displaced. IDF soldier killed (Staff Sgt. Greenberg, Golani). IDF speeding up Litani ops. Bridges destroyed. Beirut suburbs struck. Iran's 5th condition demands comprehensive end ALL fronts incl Lebanon."
+      "detail": "Health Ministry: 1,142 killed (up from 1,094). 3,315 injured. 162nd Division deployed to southern Lebanon D28. Litani bridges destroyed. Pre-dawn Beirut strikes. Iran's 5th condition demands comprehensive end ALL fronts incl Lebanon. ~1M displaced."
     },
     {
       "group": "Israel",
       "figure": "20+ killed",
       "statusColor": "yellow",
-      "detail": "18+ killed including 13 US military KIA. D27: 6 missile salvos — Bnei Brak (2 injured), Kfar Qassem, Tel Aviv (3 wounded, possible cluster munition), Hezbollah drone Galilee (2 hurt). 8,000 tons arms delivered via 200+ aircraft/ships."
+      "detail": "18+ killed including 13 US KIA. ~300 US wounded (up from ~200). D28: PSAB attack wounded 10-15 troops (2-5 serious). D29: Houthi missile from Yemen intercepted. 4 IDF soldiers killed in Lebanon. Refueling aircraft destroyed."
     },
     {
       "group": "Iraq",
-      "figure": "96 killed",
+      "figure": "96+ killed",
       "statusColor": "red",
-      "detail": "96 killed in strikes. US embassy Baghdad: Americans leave immediately. PMF positions struck. US bases in Iraq region targeted."
+      "detail": "~96 killed including 80 security forces. US embassy Baghdad: Americans leave immediately. PMF positions struck. US bases targeted."
     },
     {
-      "group": "Gulf States (UAE/Saudi/Kuwait/Bahrain)",
-      "figure": "25+ killed",
+      "group": "Gulf States (UAE/Saudi/Kuwait/Bahrain/Oman)",
+      "figure": "27+ killed",
       "statusColor": "red",
-      "detail": "UAE: 11 dead (debris killed 2 Abu Dhabi D27). UAE MoD cumul: 357 ballistic + 15 cruise + 1,815 drones. Saudi: 32 drones + 1 ballistic targeting Ras Tanura/Ghawar/Abqaiq. Kuwait: airport fuel tank fire. Bahrain: 1 Moroccan killed. GCC 6-country condemnation. Ghalibaf: 'relentless attacks' if islands occupied."
+      "detail": "UAE: 11+ dead. D29: 20 ballistic + 37 drones (6 injured). Cumul ~377 ballistic + ~1,852 drones. Saudi: PSAB attack. Kuwait: airport radar significantly damaged. Bahrain: fire in targeted facility. Oman: port hit by 2 UAVs, worker injured. GCC condemnation."
     },
     {
       "group": "Source discrepancy note",
       "figure": "SIGNIFICANT",
       "statusColor": "yellow",
-      "detail": "Iran casualty figures vary 3-4x between sources. IRNA (state media): 1,750+. HRANA (human rights): 3,291+ tracked. Hengaw (Kurdish org, D25 report): 6,530. Fog of war + internet blackout (600+ hours) makes independent verification impossible. All figures should be treated as estimates."
+      "detail": "Iran casualty figures vary 3-4x between sources. IRNA: 1,750+. AJ/Red Crescent: ~1,900. HRANA: 3,291+. Hengaw D25: 6,530. Internet blackout (~650+ hours) makes independent verification impossible. All figures are estimates. One-month mark = cumulative toll staggering regardless of which source."
     }
   ],
   "casualties_fa": [
     {
       "group": "ایران",
-      "figure": "~۶,۵۳۰+ کشته",
+      "figure": "~۶,۷۰۰+ کشته",
       "statusColor": "red",
-      "detail": "AJ: ۱,۹۳۷. IRNA: ۱,۷۵۰+. HRANA: ۳,۲۹۱+. هنگاو ۶,۵۳۰. هلال ۶,۶۶۸ واحد. ۱۸,۵۵۱ زخمی. ۸۲,۰۰۰+ سازه. CENTCOM: ۲/۳ نابود."
+      "detail": "AJ/هلال: ~۱,۹۰۰. HRANA: ۳,۲۹۱+. هنگاو ~۶,۷۰۰+. اراک + یزد + فولاد D28. ۳۳۰,۰۰۰+ آواره. ۸۲,۰۰۰+ سازه."
     },
     {
       "group": "لبنان",
-      "figure": "۱,۰۹۴+ کشته",
+      "figure": "۱,۱۴۲+ کشته",
       "statusColor": "red",
-      "detail": "۱,۰۹۴ شامل ۱۲۱ کودک. ~۱ میلیون آواره. سرباز اسرائیلی کشته. عملیات لیطانی. بیروت."
+      "detail": "افزایش از ۱,۰۹۴. ۳,۳۱۵ زخمی. تیپ ۱۶۲ مستقر. لیطانی. بیروت."
     },
     {
       "group": "اسرائیل",
       "figure": "۲۰+ کشته",
       "statusColor": "yellow",
-      "detail": "۱۸+ شامل ۱۳ نظامی آمریکا. ۶ سالوو — بنی‌براک + کفرقاسم + تل‌آویو. ۸,۰۰۰ تن تسلیحات."
+      "detail": "۱۸+ شامل ۱۳ آمریکا KIA. ~۳۰۰ زخمی. PSAB ۱۰-۱۵ زخمی. حوثی موشک رهگیری. ۴ سرباز لبنان."
     },
     {
       "group": "عراق",
-      "figure": "۹۶ کشته",
+      "figure": "۹۶+ کشته",
       "statusColor": "red",
-      "detail": "۹۶ کشته. سفارت بغداد: آمریکایی‌ها خروج. PMF."
+      "detail": "~۹۶ شامل ۸۰ امنیتی. سفارت بغداد خروج."
     },
     {
       "group": "خلیج فارس",
-      "figure": "۲۵+ کشته",
+      "figure": "۲۷+ کشته",
       "statusColor": "red",
-      "detail": "امارات ۱۱. MoD: ۳۵۷ بالستیک + ۱,۸۱۵ پهپاد. عربستان ۳۲ پهپاد. کویت فرودگاه. بحرین مراکشی. GCC محکومیت. قالیباف تهدید."
+      "detail": "امارات ۱۱+. D29: ۲۰ بالستیک + ۳۷ پهپاد. کویت رادار آسیب. بحرین آتش. عمان بندر ۲ UAV. PSAB عربستان."
     },
     {
       "group": "اختلاف منابع",
       "figure": "قابل توجه",
       "statusColor": "yellow",
-      "detail": "IRNA: ۱,۷۵۰+. HRANA: ۳,۲۹۱+. هنگاو: ۶,۵۳۰. اینترنت ۶۰۰+ ساعت = تأیید مستقل غیرممکن."
+      "detail": "IRNA: ۱,۷۵۰+. AJ: ~۱,۹۰۰. HRANA: ۳,۲۹۱+. هنگاو: ۶,۵۳۰ (D25). اینترنت ~۶۵۰+ ساعت. یک ماه."
     }
   ],
   "humanitarian": [
-    "<strong>Internet blackout:</strong> Day 27 — 600+ HOURS total. LONGEST IN ANY COUNTRY'S HISTORY (NetBlocks). Amnesty: 'deliberate.' $35.7M/day economic loss. Total communication isolation for 90M people.",
-    "<strong>Displacement:</strong> Lebanon ~1M displaced. Iran unknown (no communications). UAE, Kuwait, Bahrain partial evacuations. 2,000 vessels / 20,000 seafarers stranded in Hormuz region.",
-    "<strong>Infrastructure:</strong> 82,000+ structures destroyed in Iran. 94 ambulances hit. Hospitals operating at 1/3 capacity. Food prices tripled. Power grid INTACT but Friday deadline threatens 90M without electricity.",
-    "<strong>Nuclear safety:</strong> IAEA locked out. Isfahan/Natanz/Fordow under strike. 440kg enriched uranium (~11 weapons worth). Israel speeding up arms factory targeting. Environmental contamination risk.",
-    "<strong>Medical crisis:</strong> HRANA: 18,551 injured in Iran. 217 children killed. Hospitals overwhelmed. Medical supply chains severed. Internet blackout prevents coordination.",
-    "<strong>Economic:</strong> Oil $106 (+3.8%). Gas $3.981 — FIRST DROP since war (AAA). Insurance 5-10% hull. 2,000 vessels stranded. Iran toll legislation. Philippines emergency. Japan 30-day reserves. Kharg fortification = if seized/attacked, oil spike to $120+."
+    "<strong>Internet blackout:</strong> Day 29 — ~650+ HOURS total. LONGEST IN ANY COUNTRY'S HISTORY (NetBlocks). Amnesty: 'deliberate.' $35.7M/day economic loss. Total communication isolation for 90M people. One month of blackout.",
+    "<strong>Displacement:</strong> 330,000+ displaced across Middle East (UN estimate). Lebanon ~1M displaced. Iran unknown (no communications). UAE, Kuwait, Bahrain partial evacuations. 2,000 vessels / 20,000 seafarers stranded in Hormuz region.",
+    "<strong>Infrastructure:</strong> 82,000+ structures destroyed in Iran. Arak reactor + Yazd + 2 steel factories struck D28 (billions in damage). 94 ambulances hit. Hospitals 1/3 capacity. Food tripled. Power grid INTACT but April 6 deadline threatens 90M without electricity.",
+    "<strong>Nuclear safety:</strong> IAEA locked out. Arak heavy water reactor struck D28 (Iran: 'no radiation leak'). Yazd uranium processing struck. Isfahan/Natanz/Fordow previously struck. 440kg enriched uranium (~11 weapons worth) unaccounted for. Environmental contamination risk growing with each nuclear facility strike.",
+    "<strong>Medical crisis:</strong> 18,551+ injured in Iran. 217+ children killed. Hospitals overwhelmed. Medical supply chains severed. Internet blackout prevents coordination. One-month mark = cumulative medical capacity erosion.",
+    "<strong>Economic:</strong> Oil $112.57 (+4.22%) — highest since Jul 2022. +51% in one month. WTI briefly $100. Insurance 5-10% hull. 2,000 vessels stranded. Iran yuan-based toll. Houthi Bab al-Mandab threat = if both chokepoints: $150+. Khuzestan + Mobarakeh steel = Iran's industrial base devastated. Philippines emergency. Japan 30-day reserves."
   ],
   "humanitarian_fa": [
-    "<strong>اینترنت:</strong> ۲۷ = ۶۰۰+ ساعت. طولانی‌ترین تاریخ هر کشور. عفو بین‌الملل: 'عمدی.' $۳۵.۷M/روز. انزوای ۹۰ میلیون.",
-    "<strong>آوارگی:</strong> لبنان ~۱M. ایران نامشخص. خلیج تخلیه بخشی. ۲,۰۰۰ کشتی / ۲۰,۰۰۰ دریانورد.",
-    "<strong>زیرساخت:</strong> ۸۲,۰۰۰+ سازه. ۹۴ آمبولانس. بیمارستان ۱/۳. غذا سه‌برابر. برق سالم اما جمعه.",
-    "<strong>هسته‌ای:</strong> IAEA قفل. ۴۴۰kg. اسرائیل سرعت تسلیحاتی. آلودگی محیطی.",
-    "<strong>پزشکی:</strong> ۱۸,۵۵۱ زخمی. ۲۱۷ کودک کشته. بیمارستان. اینترنت = هماهنگی ندارد.",
-    "<strong>اقتصادی:</strong> نفت $۱۰۶. بنزین $۳.۹۸۱ — اولین کاهش. بیمه ۵-۱۰٪. ۲,۰۰۰ کشتی. خارگ: اگر حمله = نفت $۱۲۰+."
+    "<strong>اینترنت:</strong> ۲۹ = ~۶۵۰+ ساعت. طولانی‌ترین تاریخ هر کشور. یک ماه. $۳۵.۷M/روز. انزوای ۹۰ میلیون.",
+    "<strong>آوارگی:</strong> ۳۳۰,۰۰۰+ خاورمیانه (سازمان ملل). لبنان ~۱M. ایران نامشخص. ۲,۰۰۰ کشتی / ۲۰,۰۰۰ دریانورد.",
+    "<strong>زیرساخت:</strong> ۸۲,۰۰۰+ سازه. اراک + یزد + فولاد D28 (میلیاردها). بیمارستان ۱/۳. غذا سه‌برابر. برق سالم اما ۶ آوریل.",
+    "<strong>هسته‌ای:</strong> اراک D28 حمله ('نشت نیست'). یزد. IAEA قفل. ۴۴۰kg. آلودگی محیطی هر حمله هسته‌ای افزایش.",
+    "<strong>پزشکی:</strong> ۱۸,۵۵۱+ زخمی. ۲۱۷+ کودک. بیمارستان. اینترنت = هماهنگی ندارد. یک ماهه = فرسایش ظرفیت.",
+    "<strong>اقتصادی:</strong> نفت $۱۱۲.۵۷. +۵۱٪ یک ماه. WTI $۱۰۰. بیمه ۵-۱۰٪. حوثی = اگر هر دو تنگه $۱۵۰+. فولاد ایران نابود."
   ],
   "diplomacy": [
-    "<strong>15-Point Peace Plan (D26):</strong> NYT: Pakistan delivered US plan demanding nuclear dismantlement (Natanz/Isfahan/Fordow), enrichment stop, IAEA transfer, missile suspension, proxy ceasefire, Hormuz reopening. Offers sanctions relief + civilian nuclear + snapback removal. 1-month ceasefire proposed.",
-    "<strong>Iran REJECTED + WHITE HOUSE DENIES (D27):</strong> FM Araghchi: 'no negotiations, war ends on our terms.' 5 counter-conditions. BUT WH Press Sec Leavitt: 'reports of rejection FALSE, negotiations ongoing.' Trump: Iran 'begging' for deal. CONTRADICTORY — both spinning for domestic audiences. Iran needs strength narrative. Trump needs deal narrative (Pew 59%).",
-    "<strong>Trump 5-day postponement (D23):</strong> Postponed power plant strikes citing 'productive talks.' Iran denied direct talks but CBS: FM confirmed 'received points through mediators.' Deadline: Friday Mar 28 = 2 days remaining.",
-    "<strong>Intermediaries:</strong> Pakistan (primary — delivered plan, first Hormuz transit). Oman (traditional channel). Qatar. China (tacit support via safe passage). India (bilateral Hormuz deal). No direct US-Iran channel.",
-    "<strong>Israel position:</strong> Ambassador Danon: Israel NOT part of US-Iran talks. IDF speeding up independently. Katz: 'increase significantly.' IDF wants 'several more weeks.' Creating fait accompli. US-Israel divergence deepest since D1.",
-    "<strong>G7 FM meeting (Friday):</strong> Rubio in France. Coincides with deadline. Could produce multilateral framework. GCC 6-country condemnation. Germany: 'catastrophe for world's economies.' International pressure building but no enforcement mechanism."
+    "<strong>April 6 Deadline (D29):</strong> Trump extended power plant strikes to April 6 8PM ET — second extension (48hr→5 days→10 days). 'Because they gave me ships' (10 tankers). Says talks 'going very well.' Iran: proposal 'one-sided and unfair.' Pattern of backing down but maintaining threat.",
+    "<strong>Pakistan/Turkey/Egypt Mediation (D29):</strong> Pakistan hosting FM meeting with Turkey, Egypt, Saudi Arabia. Multilateral mediation framework forming. Pakistan = primary intermediary (delivered 15-point plan, first Hormuz transit). No direct US-Iran channel.",
+    "<strong>15-Point Plan Status:</strong> Iran rejected with 5 counter-conditions including reparations, Hormuz sovereignty, all US troops leave ME. US called conditions 'ridiculous.' Gap enormous but engagement through intermediaries continues.",
+    "<strong>G7 Joint Statement (D29):</strong> Called for 'immediate cessation of attacks against civilians' and 'safe and toll-free freedom of navigation in Strait of Hormuz.' Rubio in France. Strongest multilateral language yet. Still no enforcement mechanism.",
+    "<strong>Israel position:</strong> Danon: NOT part of US-Iran talks. IDF struck Arak reactor + Yazd + steel factories D28. Creating irreversible nuclear facts. US-Israel divergence deepest since D1.",
+    "<strong>Houthi complication:</strong> Houthi entry D29 gives Iran MORE leverage (second chokepoint threat). Mansour: considering Bab al-Mandab closure = new bargaining chip. War expanding = harder to reach deal."
   ],
   "diplomacy_fa": [
-    "<strong>طرح ۱۵ بندی (D26):</strong> NYT: پاکستان تحویل. خلع سلاح هسته‌ای + IAEA + موشک + پروکسی + هرمز. تحریم‌ها + هسته‌ای غیرنظامی. آتش‌بس ۱ ماهه.",
-    "<strong>ایران رد + کاخ سفید انکار (D27):</strong> عراقچی: 'مذاکره نه.' ۵ شرط. اما لاویت: 'رد دروغ.' ترامپ: 'التماس.' متناقض — هر دو برای داخل.",
-    "<strong>ترامپ تعویق ۵ روزه (D23):</strong> نیروگاه تعویق. مهلت جمعه ۲۸ = ۲ روز.",
-    "<strong>میانجی‌ها:</strong> پاکستان (اصلی). عمان. قطر. چین. هند. مستقیم ندارد.",
-    "<strong>اسرائیل:</strong> دانون: طرف نیست. سرعت. واگرایی عمیق‌ترین.",
-    "<strong>G7 جمعه:</strong> روبیو. همزمان مهلت. GCC ۶ کشور. آلمان 'فاجعه.' فشار اما مکانیزم ندارد."
+    "<strong>مهلت ۶ آوریل (D29):</strong> ترامپ تعویق دوم (۴۸ ساعت→۵→۱۰ روز). 'چون کشتی دادند.' 'مذاکره خوب.' ایران: 'یک‌طرفه.' الگوی عقب‌نشینی.",
+    "<strong>میانجیگری پاکستان/ترکیه/مصر:</strong> پاکستان میزبان وزرای خارجه. چارچوب چندجانبه. مستقیم ندارد.",
+    "<strong>وضعیت ۱۵ بند:</strong> ایران رد + ۵ شرط (غرامت، هرمز، خروج آمریکا). شکاف بزرگ اما میانجی‌ها ادامه.",
+    "<strong>G7 بیانیه (D29):</strong> 'توقف فوری حملات غیرنظامی' + 'عبور آزاد هرمز.' قوی‌ترین. مکانیزم ندارد.",
+    "<strong>اسرائیل:</strong> دانون: طرف نیست. اراک + یزد + فولاد D28. واقعیت‌های غیرقابل بازگشت هسته‌ای.",
+    "<strong>حوثی:</strong> ورود D29 = اهرم بیشتر ایران (تنگه دوم). منصور: بستن باب‌المندب. جنگ گسترش = سخت‌تر."
   ],
   "publicOpinion": [
     "<strong>Pew Research (D27):</strong> 59% Americans say WRONG decision to attack Iran. 61% disapprove Trump handling. 54% expect 6+ months. 88% Democrats oppose. 71% Republicans support. UNPRECEDENTED for 27-day-old conflict — Iraq War took months to reach similar disapproval.",
@@ -1219,7 +1257,7 @@
     "<strong>Pakistan:</strong> Primary mediator. Delivered 15-point plan. First non-Iranian Hormuz transit (Aframax). Bridge between US and Iran.",
     "<strong>India:</strong> Declared Hormuz 'open.' 2 LPG tankers transited. 3 tankers released by Iran. Bilateral safe passage deal. Balancing US relations with energy needs.",
     "<strong>Hezbollah/Lebanon:</strong> Active front. 1,094+ killed. Drone from Galilee downed. IDF Litani operations expanding. Iran's 5th condition: comprehensive end ALL fronts.",
-    "<strong>Houthis (Yemen):</strong> Declared entry but NO confirmed attacks yet. If activated: BOTH chokepoints (Hormuz + Bab al-Mandab). Biggest wild card.",
+    "<strong>Houthis (Yemen):</strong> ENTERED WAR D29 — first missile at Israel from Yemen (intercepted). Considering closing Bab al-Mandab. If both chokepoints: 1/5 global oil + 1/8 global trade. Biggest strategic escalation since D1.",
     "<strong>GCC (UAE/Saudi/Kuwait/Bahrain/Qatar/Jordan):</strong> 6-country joint condemnation. UAE: 11 dead, 2,100+ missiles/drones received. Saudi: Ras Tanura/Ghawar/Abqaiq targeted. Demanding ceasefire.",
     "<strong>82nd Airborne + Ground Forces:</strong> ~3K paratroopers + 2 MEUs (~5K Marines) = ~7-8K additional ground troops. Kharg Island seizure under active deliberation. Iran fortifying Kharg with mines/traps/air defenses in response. Gulf allies urging against. If authorized: highest-risk escalation of war.",
     "<strong>IAEA:</strong> Locked out of Iran nuclear sites. 440kg enriched uranium. Environmental verification impossible. Nuclear dimension unresolved regardless of ceasefire."
@@ -1231,9 +1269,202 @@
     "<strong>پاکستان:</strong> میانجی اصلی. طرح تحویل. اولین عبور غیرایرانی.",
     "<strong>هند:</strong> هرمز 'باز.' ۲ نفتکش. ۳ آزاد. دوجانبه.",
     "<strong>حزب‌الله/لبنان:</strong> جبهه فعال. ۱,۰۹۴+. لیطانی. شرط ۵ ایران.",
-    "<strong>حوثی:</strong> اعلام بدون حمله. هر دو تنگه. بزرگ‌ترین ناشناخته.",
+    "<strong>حوثی:</strong> وارد جنگ D29 — اولین موشک به اسرائیل. بستن باب‌المندب بررسی. اگر هر دو تنگه = ۱/۵ نفت + ۱/۸ تجارت. بزرگ‌ترین تشدید.",
     "<strong>GCC:</strong> ۶ کشور محکومیت. امارات ۱۱. عربستان هدف. آتش‌بس خواهان.",
     "<strong>هوابرد ۸۲ + زمینی:</strong> ~۳ هزار + تفنگداران ~۵ هزار = ~۷-۸ هزار. خارگ بررسی فعال. ایران تقویت. خلیج مخالف. اگر فعال: بالاترین ریسک.",
     "<strong>IAEA:</strong> قفل. ۴۴۰kg. تأیید غیرممکن. هسته‌ای حل‌نشده."
-  ]
+  ],
+  "predictive": {
+    "models": {
+      "exponentialDecay": {
+        "label": "Depletion Model",
+        "label_fa": "مدل اتمام",
+        "description": "Assumes stockpiles structurally depleted — exponential decay continues to zero",
+        "description_fa": "فرض بر اتمام ساختاری ذخایر — کاهش نمایی تا صفر ادامه دارد",
+        "halfLife_days": 2.8,
+        "projectedZeroDay": "Apr 12",
+        "projectedOutcome": "Iran ceases offensive operations by mid-April. War ends via military exhaustion + negotiated exit. Coalition declares victory.",
+        "projectedOutcome_fa": "ایران عملیات تهاجمی را تا اواسط آوریل متوقف می‌کند. جنگ با فرسایش نظامی + خروج مذاکره‌ای پایان می‌یابد.",
+        "confidence": 0.35,
+        "falsifiedBy": "Sustained launches above 25/day past April 10 would falsify this model."
+      },
+      "plateauRationing": {
+        "label": "Rationing Model",
+        "label_fa": "مدل جیره‌بندی",
+        "description": "Assumes plateau at ~30/day = strategic rationing from deeper stockpiles (IRGC D16 claim)",
+        "description_fa": "فرض بر جیره‌بندی استراتژیک از ذخایر عمیق‌تر (ادعای سپاه D16)",
+        "plateauRate": 30,
+        "projectedDuration_weeks": 8,
+        "projectedOutcome": "Iran maintains harassment for 2+ months. War ends via negotiation under mutual exhaustion, or escalation spiral if ceiling breached.",
+        "projectedOutcome_fa": "ایران آزار را ۲+ ماه حفظ می‌کند. جنگ با مذاکره یا مارپیچ تشدید پایان می‌یابد.",
+        "confidence": 0.65,
+        "falsifiedBy": "Launches dropping below 15/day for 5 consecutive days would falsify this model."
+      },
+      "projectionLabels": ["Feb 28","Mar 01","Mar 02","Mar 03","Mar 04","Mar 05","Mar 06","Mar 07","Mar 08","Mar 09","Mar 10","Mar 11","Mar 12","Mar 13","Mar 14","Mar 15","Mar 16","Mar 17","Mar 18","Mar 19","Mar 20","Mar 21","Mar 22","Mar 23","Mar 24","Mar 25","Mar 26","Mar 27","Mar 28","Mar 29","Mar 30","Mar 31","Apr 01","Apr 02","Apr 03","Apr 04","Apr 05","Apr 06","Apr 07","Apr 08","Apr 09","Apr 10","Apr 11"],
+      "decayProjection": [480,520,400,350,250,150,100,70,50,40,27,8,10,20,25,15,12,12,40,45,40,40,35,30,25,20,25,30,30,22,16,12,9,7,5,4,3,2,2,1,1,1,0],
+      "plateauProjection": [480,520,400,350,250,150,100,70,50,40,27,8,10,20,25,15,12,12,40,45,40,40,35,30,25,20,25,30,30,30,30,30,28,28,28,27,27,26,26,25,25,25,24]
+    },
+    "vectors": {
+      "labels": ["Feb 28","Mar 01","Mar 02","Mar 03","Mar 04","Mar 05","Mar 06","Mar 07","Mar 08","Mar 09","Mar 10","Mar 11","Mar 12","Mar 13","Mar 14","Mar 15","Mar 16","Mar 17","Mar 18","Mar 19","Mar 20","Mar 21","Mar 22","Mar 23","Mar 24","Mar 25","Mar 26","Mar 27","Mar 28"],
+      "militaryExhaustion": [1,1.5,2,2.5,3.5,5,6,7,7.5,8,8.5,9,9,8.5,8.5,8,8,8,7.5,7,7.5,7,7.5,8,8,8.5,8.5,8,8],
+      "economicPain": [1,2,3,3.5,4,5,5.5,6,8,6.5,7,7,8,7.5,8,8.5,8.5,9,9.5,10,9.5,10,10,7,8.5,8,9,9.5,10],
+      "diplomaticMomentum": [0,0,0.5,0.5,1,1,1,1.5,1.5,2,2,2,2.5,2.5,2.5,3,3,3,3.5,3.5,4,3,3.5,5,4.5,6,5,5.5,5],
+      "usPoliticalSustainability": [8,7.5,6.5,6,6,5.5,5.5,5,5,5,5,5,4,4.5,4,3.5,3.5,3.5,3,3,3,2.5,2.5,3,2.5,3,2.5,2,2],
+      "escalationCeilingDistance": [7,6.5,6,5,5,5,5,4.5,4,4.5,4.5,4.5,4,4,3.5,2.5,3,2.5,2,1.5,2,1,1.5,2.5,2,2,1.5,1,1]
+    },
+    "vectorNotes": {
+      "militaryExhaustion": "Launch rate down 94% from D1. CENTCOM: 2/3 arms manufacturing destroyed. BUT plateau at ~30/day for 19 days suggests rationing, not exhaustion. IRGC claims cache intact. Score reflects partial exhaustion with significant uncertainty.",
+      "militaryExhaustion_fa": "نرخ پرتاب ۹۴٪ کاهش از D1. سنتکام: ۲/۳ تولید تسلیحات نابود. اما سکوی ~۳۰/روز برای ۱۹ روز = جیره‌بندی نه اتمام. سپاه مدعی ذخیره سالم.",
+      "economicPain": "Brent $112.57 — highest since Jul 2022. +51% in one month. Gulf exports -61%. Gas approaching $4. Hormuz toll system. Houthi Bab al-Mandab threat = if both chokepoints: $150+. At maximum economic pain for all parties.",
+      "economicPain_fa": "برنت $۱۱۲.۵۷ — بالاترین از ژوئیه ۲۰۲۲. +۵۱٪ یک ماهه. صادرات خلیج -۶۱٪. بنزین نزدیک $۴. عوارض هرمز. حوثی = اگر هر دو تنگه: $۱۵۰+.",
+      "diplomaticMomentum": "G7 joint statement + Pakistan FM meeting (Turkey/Egypt/Saudi) = net positive. BUT Iran rejected 15-point plan. Houthi entry gives Iran MORE leverage. April 6 deadline creates window. Score: moderate positive momentum, fragile.",
+      "diplomaticMomentum_fa": "بیانیه G7 + نشست وزرای پاکستان = مثبت. اما ایران طرح ۱۵ بند رد کرد. حوثی = اهرم بیشتر ایران. مهلت ۶ آوریل.",
+      "usPoliticalSustainability": "Pew 59% say wrong decision. 13 KIA, ~300 wounded. Gas rising. One month with no exit. PSAB casualties add pressure. Republican-leaning independents 52-45 eroding. Houthi entry = war expanding not contracting. Political runway shrinking fast.",
+      "usPoliticalSustainability_fa": "پیو ۵۹٪ اشتباه. ۱۳ کشته، ~۳۰۰ زخمی. بنزین بالا. یک ماه بدون خروج. PSAB فشار. مستقل‌ها ۵۲-۴۵. حوثی = گسترش.",
+      "escalationCeilingDistance": "CRITICAL — multiple ceilings closing: (1) Arak reactor struck = nuclear tit-for-tat active, (2) Houthis considering Bab al-Mandab closure = second chokepoint, (3) 82nd Airborne deploying = ground invasion approaching, (4) April 6 power grid deadline = 90M without electricity. Distance to irreversible escalation: minimal.",
+      "escalationCeilingDistance_fa": "بحرانی — چندین سقف نزدیک: (۱) اراک = هسته‌ای، (۲) حوثی باب‌المندب = تنگه دوم، (۳) هوابرد ۸۲ = زمینی، (۴) ۶ آوریل نیروگاه = ۹۰M بدون برق."
+    },
+    "warOutcome": {
+      "prediction": "Most likely: Partial ceasefire framework by mid-April (35%), with continued low-intensity conflict. War ends not with victory but with exhaustion + face-saving deal under April 6 pressure. Houthi entry is the wild card — if Bab al-Mandab closes, all bets off.",
+      "prediction_fa": "محتمل‌ترین: چارچوب آتش‌بس جزئی تا اواسط آوریل (۳۵٪). جنگ نه با پیروزی بلکه با فرسایش + توافق حفظ آبرو. حوثی = کارت وحشی.",
+      "derivation": "Military exhaustion at 8/10 + economic pain at 10/10 = maximum pressure for deal. But escalation ceiling at 1/10 (extremely close) means miscalculation risk dominates. US political sustainability at 2/10 = Trump needs an exit. Diplomatic momentum at 5/10 = channels exist but no framework. The binding constraint is the April 6 deadline — it forces a decision point.",
+      "derivation_fa": "فرسایش نظامی ۸/۱۰ + فشار اقتصادی ۱۰/۱۰ = حداکثر فشار برای معامله. اما سقف تشدید ۱/۱۰ = خطر اشتباه محاسبه. پایداری سیاسی ۲/۱۰ = ترامپ نیاز به خروج. دیپلماسی ۵/۱۰. ۶ آوریل = نقطه تصمیم.",
+      "convergenceScore": 7.2,
+      "convergenceInterpretation": "7.2/10 = HIGH convergence pressure. Multiple vectors approaching thresholds simultaneously. Resolution likely within 2-3 weeks — but the form (deal vs escalation) remains genuinely uncertain.",
+      "convergenceInterpretation_fa": "۷.۲/۱۰ = فشار همگرایی بالا. چندین بردار همزمان به آستانه نزدیک. حل‌وفصل احتمالاً ۲-۳ هفته — اما شکل (معامله یا تشدید) واقعاً نامشخص.",
+      "lastUpdated": "2026-03-28T16:00:00-04:00"
+    }
+  },
+  "additionalCharts": {
+    "conflictIntensity": [0,1200,1370,930,830,600,370,260,180,130,100,108,48,40,90,85,60,82,72,72,100,125,112,115,105,85,75,75,85,85],
+    "geoSpreadLabels": ["Feb 28","Mar 01","Mar 02","Mar 03","Mar 04","Mar 05","Mar 06","Mar 07","Mar 08","Mar 09","Mar 10","Mar 11","Mar 12","Mar 13","Mar 14","Mar 15","Mar 16","Mar 17","Mar 18","Mar 19","Mar 20","Mar 21","Mar 22","Mar 23","Mar 24","Mar 25","Mar 26","Mar 27","Mar 28"],
+    "countriesTargetedPerDay": [8,9,7,6,5,5,5,4,4,4,5,5,6,5,7,6,7,8,9,8,7,8,7,6,7,8,7,7,8],
+    "missileDroneRatio": [0.67,0.61,0.75,0.73,0.71,0.68,0.63,0.64,0.63,0.67,0.33,0.20,0.33,0.29,0.42,0.33,0.17,0.20,0.67,0.56,0.56,0.53,0.50,0.55,0.50,0.36,0.56,0.55,0.55],
+    "interceptRateLabels": ["Feb 28","Mar 01","Mar 02","Mar 03","Mar 04","Mar 05","Mar 06","Mar 07","Mar 08","Mar 09","Mar 10","Mar 11","Mar 12","Mar 13","Mar 14","Mar 15","Mar 16","Mar 17","Mar 18","Mar 19","Mar 20","Mar 21","Mar 22","Mar 23","Mar 24","Mar 25","Mar 26","Mar 27","Mar 28"],
+    "interceptRate": [0.82,0.84,0.85,0.87,0.88,0.89,0.90,0.91,0.92,0.92,0.91,0.93,0.90,0.92,0.91,0.88,0.89,0.90,0.87,0.86,0.88,0.85,0.88,0.92,0.86,0.84,0.87,0.88,0.89],
+    "scenarioHistory": {
+      "labels": ["D1","D5","D10","D15","D20","D25","D29"],
+      "escalationSpiral": [15,20,18,22,25,26,28],
+      "protractedAttrition": [30,28,30,28,26,25,25],
+      "declaredVictory": [25,25,22,20,20,20,20],
+      "negotiatedDeal": [15,12,15,12,10,8,8],
+      "internationalIntervention": [10,10,10,12,12,12,12],
+      "regimeFracture": [5,5,5,6,7,9,7]
+    }
+  },
+  "iranfarhangExpanded": {
+    "supplyChainTimeline": [
+      {"milestone": "Tehran warehouse accessible", "estimate": "Ceasefire + 1-2 weeks", "confidence": "medium", "status": "blocked", "detail": "Requires: power grid intact, internet restored, staff able to commute. If April 6 power plant strikes happen, add months."},
+      {"milestone": "Inventory verified", "estimate": "Ceasefire + 2-4 weeks", "confidence": "low", "status": "blocked", "detail": "82,000+ structures damaged. Warehouse status unknown. Need physical inspection + digital inventory reconciliation."},
+      {"milestone": "Armenia route operational", "estimate": "Ceasefire + 3-6 weeks", "confidence": "low", "status": "exploring", "detail": "700km overland through Tabriz-Agarak. Border congestion likely. Customs uncertain. 3x normal cost. 14-21 day transit."},
+      {"milestone": "Books flowing to US institutions", "estimate": "Ceasefire + 6-10 weeks", "confidence": "low", "status": "blocked", "detail": "Full chain: Tehran warehouse → overland → Armenia/Turkey → air freight → Atlanta → UPS. Every link currently broken."},
+      {"milestone": "Normal operations resume", "estimate": "Ceasefire + 4-8 months", "confidence": "very low", "status": "blocked", "detail": "Requires: Hormuz open, Dubai air cargo resumed, banking normalized, publishing industry recovered. Each is months away."}
+    ],
+    "supplyChainTimeline_fa": [
+      {"milestone": "دسترسی به انبار تهران", "estimate": "آتش‌بس + ۱-۲ هفته", "confidence": "متوسط", "status": "مسدود", "detail": "نیاز: برق، اینترنت، رفت‌وآمد. اگر ۶ آوریل نیروگاه: ماه‌ها اضافه."},
+      {"milestone": "تأیید موجودی", "estimate": "آتش‌بس + ۲-۴ هفته", "confidence": "پایین", "status": "مسدود", "detail": "۸۲,۰۰۰+ ساختمان آسیب. وضعیت انبار نامشخص."},
+      {"milestone": "مسیر ارمنستان فعال", "estimate": "آتش‌بس + ۳-۶ هفته", "confidence": "پایین", "status": "بررسی", "detail": "۷۰۰ کیلومتر زمینی. ۳ برابر هزینه. ۱۴-۲۱ روز."},
+      {"milestone": "ارسال کتاب به آمریکا", "estimate": "آتش‌بس + ۶-۱۰ هفته", "confidence": "پایین", "status": "مسدود", "detail": "کل زنجیره فعلاً قطع."},
+      {"milestone": "عملیات عادی", "estimate": "آتش‌بس + ۴-۸ ماه", "confidence": "خیلی پایین", "status": "مسدود", "detail": "هرمز + دبی + بانک + نشر. هرکدام ماه‌ها."}
+    ],
+    "routeViability": [
+      {"route": "Armenia (Agarak/Norduz)", "status": "Most viable", "statusColor": "yellow", "cost_vs_normal": "3x", "transit_days": "14-21", "risk": "Border congestion, customs uncertainty, road conditions", "detail": "Only route not dependent on airspace or Hormuz. Requires functioning Tehran logistics + internet for coordination. Currently theoretical — no shipments attempted since D1."},
+      {"route": "Turkey (land via Bazargan)", "status": "Restricted", "statusColor": "red", "cost_vs_normal": "4x", "transit_days": "10-14", "risk": "Turkey border policy unpredictable, NATO airspace restrictions", "detail": "Erdogan positioning as mediator but border sealed for commercial cargo from Iran. Could reopen post-ceasefire."},
+      {"route": "Direct air (Tehran-Dubai-Atlanta)", "status": "Dead", "statusColor": "red", "cost_vs_normal": "N/A", "transit_days": "N/A", "risk": "Airspace closed, Hormuz blocked, Dubai hub inoperable", "detail": "Pre-war primary route. Emirates SkyCargo suspended all Iran service. UAE airspace closed multiple times. Will be LAST route to resume."},
+      {"route": "Qatar/Oman indirect air", "status": "Dead", "statusColor": "red", "cost_vs_normal": "N/A", "transit_days": "N/A", "risk": "Both countries under attack, airports damaged/closed", "detail": "Qatar LNG facilities struck. Oman port targeted D29. No viable air cargo path through either."}
+    ],
+    "routeViability_fa": [
+      {"route": "ارمنستان (آگاراک/نوردوز)", "status": "بهترین گزینه", "statusColor": "yellow", "cost_vs_normal": "۳ برابر", "transit_days": "۱۴-۲۱", "risk": "ازدحام مرز، گمرک نامشخص", "detail": "تنها مسیر بدون وابستگی به حریم هوایی یا هرمز."},
+      {"route": "ترکیه (زمینی بازرگان)", "status": "محدود", "statusColor": "red", "cost_vs_normal": "۴ برابر", "transit_days": "۱۰-۱۴", "risk": "سیاست مرزی ترکیه نامشخص", "detail": "مرز بسته. ممکن بعد آتش‌بس."},
+      {"route": "هوایی مستقیم (تهران-دبی-آتلانتا)", "status": "قطع", "statusColor": "red", "cost_vs_normal": "—", "transit_days": "—", "risk": "حریم هوایی بسته، هرمز مسدود", "detail": "مسیر اصلی قبل جنگ. آخرین مسیر بازگشت."},
+      {"route": "قطر/عمان هوایی غیرمستقیم", "status": "قطع", "statusColor": "red", "cost_vs_normal": "—", "transit_days": "—", "risk": "هر دو تحت حمله", "detail": "تأسیسات LNG قطر + بندر عمان هدف."}
+    ],
+    "ofacStatus": {
+      "exemptionValid": true,
+      "citation": "31 CFR §560.210(c) — Berman Amendment",
+      "type": "STATUTORY — survives any executive order or sanctions regime change",
+      "risk": "LOW for exemption itself. MEDIUM for payment channel — KEMCO SARL (France) may face enhanced banking scrutiny on Iran-linked transfers during wartime.",
+      "risk_fa": "پایین برای معافیت. متوسط برای کانال پرداخت — KEMCO (فرانسه) ممکن بررسی بانکی تشدید شود.",
+      "lastChecked": "2026-03-28",
+      "action": "No action needed on exemption. Monitor KEMCO payment processing for delays. Have backup payment intermediary identified."
+    },
+    "tehranCommsStatus": {
+      "status": "BLACKOUT",
+      "statusColor": "red",
+      "internetDownHours": 650,
+      "lastConfirmedContact": "Feb 28 (D1)",
+      "detail": "Iran internet blackout since D1 — 650+ hours. Longest in Iranian history. SMS intermittent. Starlink unavailable. No way to verify warehouse status, staff safety, or inventory. CEO Mozhgan Jalalzadeh last confirmed D1.",
+      "detail_fa": "قطع اینترنت ایران از D1 — ۶۵۰+ ساعت. SMS متناوب. استارلینک ناموجود. تأیید وضعیت انبار، کارکنان، موجودی ناممکن."
+    },
+    "inventoryRunway": {
+      "months_remaining": 4,
+      "detail": "Atlanta warehouse holds approximately 4 months of typical institutional order volume. No resupply possible until at least one route reopens + Tehran warehouse confirmed intact. If April 6 power grid struck: publishing industry collapse extends timeline to 8-12+ months.",
+      "detail_fa": "انبار آتلانتا تقریباً ۴ ماه حجم سفارش معمول. بازپرسازی تا بازگشت مسیر + تأیید انبار ناممکن. اگر ۶ آوریل نیروگاه: صنعت نشر فرو می‌ریزد.",
+      "burnRate": "~$15K-20K/month in fulfilled orders",
+      "criticalDate": "Late July 2026 — inventory hits critical low if no resupply"
+    },
+    "publishingDeepDive": [
+      "<strong>PAPER/INK SUPPLY:</strong> Iran imports 70%+ of printing paper. Hormuz closure + sanctions = supply chain severed. Domestic paper mills operating at estimated 20-30% capacity due to power disruptions. Quality declining.",
+      "<strong>PRINTING CAPACITY:</strong> Tehran's major printing houses (Offset, Sepehr, etc.) operating intermittently due to power outages. 650+ hour internet blackout prevents digital prepress. Estimated 80-90% capacity reduction.",
+      "<strong>DISTRIBUTION NETWORKS:</strong> Domestic book distribution (Shahre Ketab, Book City, etc.) severely disrupted. 82,000+ structures damaged. Physical bookstores in strike zones closed. Online ordering impossible without internet.",
+      "<strong>CENSORSHIP APPARATUS:</strong> Ministry of Culture and Islamic Guidance (Ershad) presumably still operating but capacity unknown. Book permits may be delayed or suspended. Paradoxically, war may reduce censorship bandwidth.",
+      "<strong>PUBLISHER SOLVENCY:</strong> Small and medium publishers facing existential crisis. No sales, no distribution, no printing capacity. University presses better positioned (institutional backing) but still severely impacted. Expect consolidation/closures post-war.",
+      "<strong>DIGITAL ALTERNATIVES:</strong> Iran's digital book ecosystem (Taaghche, Fidibo) non-functional during internet blackout. Post-restoration, digital may recover faster than print. However, academic institutions require physical copies for cataloging and archival."
+    ],
+    "publishingDeepDive_fa": [
+      "<strong>کاغذ و مرکب:</strong> ایران ۷۰٪+ کاغذ چاپ وارد می‌کند. هرمز + تحریم = زنجیره قطع. کارخانه‌ها ۲۰-۳۰٪ ظرفیت.",
+      "<strong>ظرفیت چاپ:</strong> چاپخانه‌های تهران متناوب. قطع اینترنت ۶۵۰+ ساعت = پیش‌چاپ دیجیتال ناممکن. ۸۰-۹۰٪ کاهش.",
+      "<strong>توزیع:</strong> شبکه (شهر کتاب و غیره) مختل. ۸۲,۰۰۰+ ساختمان آسیب. فروشگاه‌ها بسته. سفارش آنلاین ناممکن.",
+      "<strong>سانسور:</strong> ارشاد احتمالاً فعال اما ظرفیت نامشخص. مجوز کتاب ممکن تعلیق.",
+      "<strong>بقای ناشران:</strong> ناشران کوچک/متوسط بحران وجودی. انتشارات دانشگاهی بهتر. انتظار ادغام/تعطیلی پس از جنگ.",
+      "<strong>جایگزین دیجیتال:</strong> طاقچه، فیدیبو غیرفعال. پس بازگشت اینترنت سریع‌تر. اما دانشگاه‌ها نسخه فیزیکی نیاز دارند."
+    ]
+  },
+  "kipExpanded": {
+    "dubaiBankingRisk": {
+      "score": 8,
+      "trend": "rising",
+      "detail": "UAE Central Bank enhanced KYC for all Iran-linked accounts since D3. ENBD + Mashreq freezing transfers without notice. ADCB processing delays 5-10 business days. IRGC corporate targeting threats (D29) may trigger additional UAE compliance crackdown. Risk of account freeze WITHOUT prior notice = HIGH.",
+      "detail_fa": "بانک مرکزی امارات KYC تشدید از D3. ENBD + مشرق بدون اطلاع مسدود. ADCB تأخیر ۵-۱۰ روز. تهدید سپاه شرکت‌ها (D29) = بیشتر. خطر مسدودی بدون اخطار = بالا.",
+      "action": "URGENT: Withdraw accessible funds to non-UAE account. Diversify banking immediately."
+    },
+    "alternativeHubs": [
+      {"city": "Istanbul", "banking": 6, "logistics": 7, "cost": 5, "risk": 4, "overall": 5.5, "notes": "Strong logistics infrastructure. Turkish banks cautious on Iran-linked trade but not frozen. Erdogan mediator role creates political cover. Risk: Turkey's NATO membership creates compliance friction. Currency volatility (TRY)."},
+      {"city": "Muscat", "banking": 7, "logistics": 5, "cost": 6, "risk": 5, "overall": 5.8, "notes": "Oman traditionally neutral. Banking corridor to Iran still partially open. BUT port targeted by 2 UAVs D29 — risk profile changing. Proximity to conflict zone."},
+      {"city": "Tbilisi", "banking": 5, "logistics": 3, "cost": 8, "risk": 8, "overall": 6.0, "notes": "Safe from conflict. Growing Iranian diaspora + business presence. Limited logistics infrastructure. Small banking sector. Good for cash preservation, poor for trade operations."},
+      {"city": "Kuala Lumpur", "banking": 6, "logistics": 6, "cost": 7, "risk": 9, "overall": 7.0, "notes": "Furthest from conflict. CIMB + Maybank process Iran-adjacent trade. Free zones available. Challenge: time zone, distance from customers, unfamiliar regulatory environment. BEST for risk-averse repositioning."}
+    ],
+    "alternativeHubs_fa": [
+      {"city": "استانبول", "banking": 6, "logistics": 7, "cost": 5, "risk": 4, "overall": 5.5, "notes": "لجستیک قوی. بانک‌ها محتاط. اردوغان میانجی. ریسک: ناتو + نوسان لیر."},
+      {"city": "مسقط", "banking": 7, "logistics": 5, "cost": 6, "risk": 5, "overall": 5.8, "notes": "عمان خنثی. بانک باز. اما بندر هدف D29. نزدیک منطقه درگیری."},
+      {"city": "تفلیس", "banking": 5, "logistics": 3, "cost": 8, "risk": 8, "overall": 6.0, "notes": "امن. لجستیک محدود. بانک کوچک. برای حفظ نقدینگی."},
+      {"city": "کوالالامپور", "banking": 6, "logistics": 6, "cost": 7, "risk": 9, "overall": 7.0, "notes": "دورترین. CIMB + Maybank. منطقه آزاد. بهترین برای ریسک‌گریزی."}
+    ],
+    "hormuzReopeningTimeline": [
+      {"milestone": "Safe passage >30 vessels/day", "estimate": "Ceasefire + 1-2 weeks", "status": "partial", "detail": "Currently ~5-10 vessels/day via Iran's yuan-based toll. Pakistan Aframax transited. Needs: formal multilateral framework + navy escort."},
+      {"milestone": "Mine clearance (est. 200+ mines)", "estimate": "Ceasefire + 2-6 months", "status": "not_started", "detail": "Maham 3/7 mines confirmed. Clearance requires specialized MCM vessels. US + UK + France MCM assets in region but not deployed to clear yet."},
+      {"milestone": "Insurance rates normalize", "estimate": "Ceasefire + 6-12 months", "status": "not_started", "detail": "Lloyd's JWC listed entire Persian Gulf. War risk premium 3.8% of hull value (from 0.02% pre-war). Won't normalize until mines cleared + 90 days incident-free."},
+      {"milestone": "Full commercial traffic restored", "estimate": "Ceasefire + 12-18 months", "status": "not_started", "detail": "Requires: mines cleared, insurance normalized, port infrastructure repaired, Bab al-Mandab safe (Houthi factor). 1,000+ stranded tankers to process."}
+    ],
+    "hormuzReopeningTimeline_fa": [
+      {"milestone": "عبور امن >۳۰ کشتی/روز", "estimate": "آتش‌بس + ۱-۲ هفته", "status": "جزئی", "detail": "فعلاً ~۵-۱۰ با عوارض یوآنی. نیاز: چارچوب چندجانبه + اسکورت."},
+      {"milestone": "مین‌روبی (۲۰۰+ مین)", "estimate": "آتش‌بس + ۲-۶ ماه", "status": "شروع نشده", "detail": "مهام ۳/۷ تأیید. نیاز به ناوهای MCM تخصصی."},
+      {"milestone": "عادی‌سازی بیمه", "estimate": "آتش‌بس + ۶-۱۲ ماه", "status": "شروع نشده", "detail": "لویدز کل خلیج. حق‌بیمه ۳.۸٪ (از ۰.۰۲٪). نیاز: مین‌روبی + ۹۰ روز بدون حادثه."},
+      {"milestone": "ترافیک تجاری کامل", "estimate": "آتش‌بس + ۱۲-۱۸ ماه", "status": "شروع نشده", "detail": "مین + بیمه + بندر + باب‌المندب. ۱,۰۰۰+ نفتکش معطل."}
+    ],
+    "strandedCargo": {
+      "containers_estimated": 45,
+      "value_usd": "~$2.1M",
+      "location": "Jebel Ali Free Zone + Hamriyah Free Zone",
+      "insured": true,
+      "detail": "Most cargo insured under pre-war marine policies. Claims processing delayed — Lloyd's overwhelmed. Perishables (~15% by value) written off. Non-perishable goods safe in bonded storage but incurring daily storage fees (~$150/container/day).",
+      "detail_fa": "اکثر بار بیمه. پردازش خسارت تأخیر. فاسدشدنی (~۱۵٪) از دست رفته. غیرفاسدشدنی در انبار اما هزینه روزانه (~$۱۵۰/کانتینر/روز)."
+    },
+    "insuranceCostIndex": {
+      "labels": ["Pre-war", "D7", "D14", "D21", "D29"],
+      "warRiskPremium_pct": [0.02, 0.5, 1.2, 2.5, 3.8],
+      "hullInsurance_pct": [0.15, 2.0, 5.0, 8.0, 10.0],
+      "note": "War risk premium for Gulf transit. Pre-war: 0.02% of hull value. Now 3.8%. Hull insurance jumped from 0.15% to 10% — functionally uninsurable for standard carriers. Only state-backed or high-risk specialty insurers writing Gulf coverage."
+    }
+  }
 }
