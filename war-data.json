@@ -1,122 +1,122 @@
 {
   "meta": {
-    "lastUpdated": "2026-04-01T18:00:00-04:00",
+    "lastUpdated": "2026-04-02T00:00:00-04:00",
     "notes": [
-      "Day 33 (Apr 01) UPDATE 6PM ET. Sources: CNN, AJ, NPR, CNBC, Bloomberg, AP, Al Arabiya, Axios, CBS, Fortune, Investing.com, France24, Middle East Eye, Critical Threats, Breaking Defense, Euronews, Pakistan Today, Daily Sabah, Washington Times.",
-      "TRUMP '2-3 WEEKS' — Iran FM '6 MONTHS.' China-Pakistan 5-point plan (D32). B-52 bombers over Iran (D31). Kuwaiti tanker Al-Salmi struck in Dubai port (D32). Oil dropped $105 on peace hopes. Houthis sustaining. UAE cumul: 433+19+1,977. HRANA: 3,461+ killed. April 6 = 5 days."
+      "Day 33 (Apr 01) LATE UPDATE midnight ET. Sources: CNN, AJ, NPR, CNBC, Bloomberg, AP, Al Arabiya, Axios, CBS, Fortune, Investing.com, Times of Israel, JNS, NBC, Washington Times, Euronews, Al-Monitor, Peninsula Qatar, Gulf News, Alma Center.",
+      "PASSOVER BARRAGE — LARGEST AT ISRAEL SINCE D1. Iran 6 salvos ~10 ballistic per. 15+ wounded. Cluster warheads. QatarEnergy tanker Aqua 1 hit by cruise missile (17nm Ras Laffan). Kuwait airport KAFCO fuel tanks fire. Bahrain fire. 1 killed UAE. Oil CRASHED $102 (from $111 D31). Isfahan/Ahvaz/Borujen steel plants struck. Lebanon 1,200+. Hezbollah Southern Front commander killed. Houthis 2 drones Eilat. April 6 = 5 days."
     ]
   },
-  "theoryBox": "<strong>Day 33 — TRUMP '2-3 WEEKS' + CHINA-PAKISTAN PLAN + B-52s + TANKER + OIL $105:</strong> Trump: war ends in 2-3 weeks. Iran FM: 6 months. China-Pakistan 5-point plan (ceasefire + Hormuz + UN Charter). B-52 bombers over Iran first time (D31). Kuwaiti tanker struck in Dubai port (D32). Oil dropped to $105 on peace hopes. Houthis sustaining. UAE cumul: 433+19+1,977. HRANA: 3,461+. Lebanon 1,189+. US 15 KIA. April 6 = 5 days. Internet 720+ hrs.",
-  "theoryBox_fa": "<strong>روز ۳۳ — ترامپ '۲-۳ هفته' + طرح چین-پاکستان + B-52 + نفتکش + نفت $۱۰۵:</strong> ترامپ: ۲-۳ هفته. ایران: ۶ ماه. طرح ۵ بندی. B-52 اولین بار. نفتکش کویتی بندر دبی. نفت $۱۰۵. حوثی. امارات ۴۳۳+۱۹+۱,۹۷۷. HRANA ۳,۴۶۱+. لبنان ۱,۱۸۹+. ۶ آوریل = ۵ روز.",
+  "theoryBox": "<strong>Day 33 — PASSOVER BARRAGE + QATAR TANKER + KUWAIT AIRPORT + OIL CRASH $102:</strong> Iran fired LARGEST missile salvo at Israel since D1 on Passover eve — 6 salvos, ~10 ballistic each, 15+ wounded, cluster warheads. QatarEnergy tanker Aqua 1 struck by cruise missile (Qatari waters, 17nm Ras Laffan). Kuwait airport KAFCO fuel tanks fire. Bahrain fire. 1 killed UAE. Oil CRASHED to $102 (from $111 D31). Isfahan + Ahvaz + Borujen steel plants struck. Lebanon 1,200+. Hezbollah Southern Front cmdr killed. Houthis 2 drones Eilat. Trump '2-3 weeks.' Iran FM '6 months.' China-Pakistan plan. April 6 = 5 days. Internet 744+ hrs.",
+  "theoryBox_fa": "<strong>روز ۳۳ — حمله شب پسح + نفتکش قطر + فرودگاه کویت + سقوط نفت $۱۰۲:</strong> ایران بزرگترین حمله موشکی به اسرائیل از D1 — ۶ سالوو، ۱۵+ زخمی، بمب خوشه‌ای. نفتکش Aqua 1 قطر. فرودگاه کویت آتش. بحرین آتش. ۱ کشته امارات. نفت $۱۰۲. فولاد اصفهان+اهواز+بروجن. لبنان ۱,۲۰۰+. فرمانده حزب‌الله کشته. حوثی ایلات. ۶ آوریل = ۵ روز.",
   "metrics": [
     {
       "label": "Day",
       "value": "33",
-      "desc": "TRUMP '2-3 WEEKS' vs Iran FM '6 MONTHS.' China-Pakistan 5-point plan. B-52s over Iran. Kuwaiti tanker attacked. Houthis sustaining. April 6 = 5 days. Oil $105. Internet 720+ hrs."
+      "desc": "PASSOVER BARRAGE — largest at Israel since D1. 6 salvos. Qatar tanker. Kuwait airport fire. Oil CRASHED $102. Isfahan/Ahvaz steel struck. Lebanon 1,200+. April 6 = 5 days."
     },
     {
       "label": "Cumul. missiles",
-      "value": "~3,090",
-      "desc": "D30-D33: 35+30+28+25 = 118 added. Cumul ~3,090. Al Arabiya D30: 550 at Israel + 1,119 at Gulf. UAE MoD D32 cumul: 433 ballistic + 19 cruise."
+      "value": "~3,130",
+      "desc": "D33 REVISED: 65 missiles (Passover 6 salvos ~40 at Israel + Qatar 3 cruise + Gulf). Cumul ~3,130. UAE MoD D32: 433+19."
     },
     {
       "label": "Cumul. drones",
-      "value": "~4,962",
-      "desc": "D30-D33: 65+60+55+50 = 230 added. Cumul ~4,962. UAE MoD D32 cumul: 1,977 drones."
+      "value": "~4,992",
+      "desc": "D33 REVISED: 80 drones (Kuwait airport fire + UAE + Saudi + Bahrain + Houthi Eilat). Cumul ~4,992."
     },
     {
       "label": "Brent crude",
-      "value": "$105.00",
-      "desc": "DROPPED from $111 (D31) on Trump optimism + China-Pakistan plan. March: +60%+ biggest since 1988. WTI $102.28. Gas >$4.08. Binary April 6."
+      "value": "$102.00",
+      "desc": "CRASHED from $111 (D31) to $102 close. Intraday low $98.52. March +60%+ biggest since 1988. WTI ~$99. Binary April 6."
     },
     {
       "label": "Iran dead",
-      "value": "~7,100+",
-      "desc": "HRANA: 3,461+ (1,551 civilians, 236 children). Iran Intl: 4,700+ security forces. Hengaw extrap ~7,100+. B-52 Isfahan."
+      "value": "~7,200+",
+      "desc": "HRANA 3,461+ (1,551 civilians). Iran Intl 4,700+ security. Hengaw ~7,200+. Isfahan/Ahvaz/Borujen steel plants struck D33."
     },
     {
       "label": "Lebanon",
-      "value": "1,189+ killed",
-      "desc": "Up from 1,142. 124 children. 3,500+ injured. 162nd Div south. ~1M displaced."
+      "value": "1,200+ killed",
+      "desc": "Up from 1,189. Hezbollah Southern Front commander killed (naval strike south Beirut). 7 killed overnight Beirut. ~1M displaced."
     },
     {
       "label": "Israel dead",
-      "value": "20+",
-      "desc": "20+ incl 15 US KIA (up from 13). ~300+ US wounded. 6,008+ Israeli wounded. Houthi fresh D33."
+      "value": "23+",
+      "desc": "PASSOVER: 15+ wounded central Israel incl child serious. 18+ Israeli civilian dead (ToI). 15 US KIA. 6,008+ Israeli wounded. Cluster warheads."
     },
     {
       "label": "Nuclear risk",
       "value": "CRITICAL",
-      "desc": "Arak+Yazd+Natanz+Isfahan+Fordow ALL struck. 440kg enriched unaccounted. IAEA locked out. B-52 Isfahan. April 6 = 90M without electricity+water."
+      "desc": "Arak+Yazd+Natanz+Isfahan+Fordow ALL struck. 440kg unaccounted. IAEA locked out. Steel plants (IRGC-linked) targeted D33. April 6 = 5 days."
     }
   ],
   "metrics_fa": [
     {
       "label": "روز",
       "value": "۳۳",
-      "desc": "ترامپ '۲-۳ هفته' vs ایران '۶ ماه.' طرح چین-پاکستان. B-52. نفتکش. حوثی. ۶ آوریل = ۵ روز."
+      "desc": "حمله شب پسح — بزرگترین از D1. ۶ سالوو. نفتکش قطر. فرودگاه کویت. نفت $۱۰۲. ۶ آوریل = ۵ روز."
     },
     {
       "label": "موشک",
-      "value": "~۳,۰۹۰",
-      "desc": "D30-D33: ۱۱۸ اضافه. مجموع ~۳,۰۹۰. امارات ۴۳۳+۱۹."
+      "value": "~۳,۱۳۰",
+      "desc": "D33 بازنگری: ۶۵ موشک (پسح + قطر + خلیج). مجموع ~۳,۱۳۰."
     },
     {
       "label": "پهپاد",
-      "value": "~۴,۹۶۲",
-      "desc": "D30-D33: ۲۳۰ اضافه. مجموع ~۴,۹۶۲. امارات ۱,۹۷۷."
+      "value": "~۴,۹۹۲",
+      "desc": "D33 بازنگری: ۸۰ پهپاد (فرودگاه کویت + خلیج + حوثی). مجموع ~۴,۹۹۲."
     },
     {
       "label": "نفت",
-      "value": "$۱۰۵",
-      "desc": "کاهش از $۱۱۱. مارس +۶۰٪. WTI $۱۰۲. بنزین >$۴."
+      "value": "$۱۰۲",
+      "desc": "سقوط از $۱۱۱. مارس +۶۰٪. WTI ~$۹۹."
     },
     {
       "label": "کشته ایران",
-      "value": "~۷,۱۰۰+",
-      "desc": "HRANA ۳,۴۶۱+. ایران‌اینترنشنال ۴,۷۰۰+. هنگاو ~۷,۱۰۰+."
+      "value": "~۷,۲۰۰+",
+      "desc": "HRANA ۳,۴۶۱+. ایران‌اینترنشنال ۴,۷۰۰+. هنگاو ~۷,۲۰۰+."
     },
     {
       "label": "لبنان",
-      "value": "۱,۱۸۹+",
-      "desc": "از ۱,۱۴۲. ۱۲۴ کودک. ~۱M آواره."
+      "value": "۱,۲۰۰+",
+      "desc": "فرمانده جبهه جنوب کشته. ۷ کشته بیروت."
     },
     {
       "label": "اسرائیل",
-      "value": "۲۰+",
-      "desc": "۱۵ آمریکا KIA. حوثی D33."
+      "value": "۲۳+",
+      "desc": "پسح ۱۵+ زخمی. بمب خوشه‌ای. ۱۵ آمریکا KIA."
     },
     {
       "label": "هسته‌ای",
       "value": "بحرانی",
-      "desc": "۵ تأسیسات. ۴۴۰kg. B-52. ۶ آوریل."
+      "desc": "۵ تأسیسات. فولاد اصفهان/اهواز. ۶ آوریل."
     }
   ],
   "sitrep": [
-    "TRUMP: '2-3 WEEKS' — IRAN FM: '6 MONTHS': Trump told allies war ends shortly. Iran FM Araghchi: preparing 6 months. Rejected ceasefire claim. Gap = negotiation tactic or genuine disagreement.",
-    "CHINA-PAKISTAN 5-POINT PLAN (D32): Ceasefire + talks + non-military targets + Hormuz + UN Charter. Most credible framework. WH 'doesn't oppose.' China = Iran's top trade partner.",
-    "B-52 BOMBERS (D31): First strategic bombers over Iran. Isfahan ammo depot + air base destroyed. Trump threatened ALL power plants + oil + Kharg + desalination = 90M without WATER.",
-    "KUWAITI TANKER (D32): Al-Salmi (2M bbl) struck at Dubai port. Fire contained. Attacking tankers IN PORT = new escalation dimension.",
-    "HOUTHIS SUSTAINING: 2nd + 3rd operations at Israel. Fresh D33. Bab al-Mandab 'among options' but NOT closed. US Op Rough Rider.",
-    "OIL $105: Down from $111 on peace hopes. March +60%+ biggest since 1988. WTI $102. Gas >$4.08. Binary April 6: deal=$85 or strikes=$130+.",
-    "UAE CUMUL D32: 433 ballistic + 19 cruise + 1,977 drones. Cruise = advanced capability retained.",
-    "CASUALTIES D33: Iran HRANA 3,461+ (1,551 civilians). Iran Intl 4,700+ security. Lebanon 1,189+. US 15 KIA. 330,000+ displaced.",
-    "RUBIO: 'WEEKS NOT MONTHS.' Communication through intermediaries. CENTCOM continuing.",
-    "APRIL 6 = 5 DAYS: No strikes = diplomatic window. Strikes = 90M without electricity+water + oil $130+.",
-    "INTERNET 720+ HRS: 33 days blackout. Longest in history. $1.18B+ economic loss."
+    "PASSOVER BARRAGE — LARGEST AT ISRAEL SINCE D1: Iran fired 6 salvos at central Israel on Seder night. ~10 ballistic per salvo = ~40 at Israel alone. 15+ wounded incl child serious. Cluster warheads confirmed. Rosh HaAyin + Petah Tikva damage. IDF had warned missile attack expected on Seder night.",
+    "QATARENERGY TANKER HIT: Iranian cruise missile struck Aqua 1 fuel oil tanker in Qatari waters (17nm from Ras Laffan — world's largest gas plant). 21 crew evacuated. Qatar intercepted 2 of 3 cruise missiles. IRGC claimed 'Israeli ties.' Qatar LNG capacity -17%.",
+    "KUWAIT AIRPORT FIRE: Iranian drones struck KAFCO fuel tanks at Kuwait International Airport — major fire. Airport remains closed since earlier attacks. Compounds radar + Terminal 1 damage from previous strikes.",
+    "BAHRAIN + UAE: Iran attacks caused fire in Bahrain facility. 1 man killed in UAE (D33 total: 12+ killed UAE cumul). Multi-theater harassment continues.",
+    "OIL CRASHED $102: Down from $111 (D31). Intraday low $98.52. Trading range $98.52-$105.93. 'Diplomatic breakthrough' sentiment. WTI ~$99. BUT Passover barrage late-day = may reverse tomorrow.",
+    "ISFAHAN/AHVAZ/BORUJEN STEEL: Mobarakeh Steel (Isfahan) struck 2nd time + Al-Ahwaz steel plant + Sefiddasht Steel Complex (Borujen). IRGC-linked industrial base being systematically destroyed.",
+    "LEBANON 1,200+: IDF eliminated Hezbollah Southern Front commander Hajj Youssef Ismail Hashem (naval strike south Beirut). 7 killed overnight strikes Beirut + Bekaa + south. 1M+ displaced.",
+    "TRUMP '2-3 WEEKS': No deal needed. Iran FM rejects — '6 months.' China-Pakistan plan = WH 'doesn't oppose.' Contradiction: peace rhetoric while Passover barrage escalates.",
+    "HOUTHIS: 2 drones intercepted near Eilat. Sustained since D29. Bab al-Mandab 'option' but not closed.",
+    "APRIL 6 = 5 DAYS: Binary. No strikes = China-Pakistan framework. Strikes = humanitarian catastrophe + $130+.",
+    "INTERNET 744+ HRS: 33 days. Passover barrage shows Iran NOT exhausted despite 744 hrs blackout + 33 days bombing."
   ],
   "sitrep_fa": [
-    "ترامپ '۲-۳ هفته' — ایران '۶ ماه.' رد آتش‌بس.",
-    "طرح ۵ بندی چین-پاکستان. WH 'مخالف نیست.' چین شریک اول.",
-    "B-52 اولین بار. اصفهان نابود. تهدید آب‌شیرین‌کن = ۹۰M بدون آب.",
-    "نفتکش کویتی بندر دبی. حمله بندر = بُعد جدید.",
-    "حوثی مستمر. باب‌المندب 'گزینه' اما نبسته.",
-    "نفت $۱۰۵ کاهش. مارس +۶۰٪. WTI $۱۰۲. بنزین >$۴.",
-    "امارات ۴۳۳+۱۹+۱,۹۷۷. کروز = قابلیت پیشرفته.",
-    "تلفات: HRANA ۳,۴۶۱+. لبنان ۱,۱۸۹+. آمریکا ۱۵ KIA.",
-    "روبیو 'هفته‌ها نه ماه‌ها.' میانجی‌ها.",
-    "۶ آوریل = ۵ روز. بدون حمله = دیپلماسی. حمله = فاجعه.",
-    "اینترنت ۷۲۰+. ۳۳ روز. $۱.۱۸B+."
+    "حمله شب پسح — بزرگترین از D1: ۶ سالوو به اسرائیل. ۱۵+ زخمی. بمب خوشه‌ای.",
+    "نفتکش Aqua 1 قطر: کروز ایرانی. ۱۷ مایل از راس‌لفان. ۲۱ خدمه تخلیه. LNG -۱۷٪.",
+    "فرودگاه کویت: پهپاد. مخازن سوخت KAFCO آتش.",
+    "بحرین آتش + ۱ کشته امارات. حملات چندجبهه‌ای مستمر.",
+    "نفت سقوط $۱۰۲. از $۱۱۱. کف $۹۸.۵۲. امید دیپلماسی. اما حمله شب = بازگشت؟",
+    "فولاد اصفهان/اهواز/بروجن: مبارکه بار دوم + الاهواز + سفیددشت. زیرساخت سپاه.",
+    "لبنان ۱,۲۰۰+. فرمانده جبهه جنوب حزب‌الله کشته. ۷ کشته شبانه.",
+    "ترامپ '۲-۳ هفته.' ایران '۶ ماه.' طرح چین-پاکستان.",
+    "حوثی: ۲ پهپاد ایلات. مستمر.",
+    "۶ آوریل = ۵ روز. دوگانه.",
+    "اینترنت ۷۴۴+. ایران خسته نشده."
   ],
   "dailySeries": {
     "labels": [
@@ -187,7 +187,7 @@
       35,
       30,
       28,
-      25
+      65
     ],
     "drones": [
       720,
@@ -222,10 +222,10 @@
       65,
       60,
       55,
-      50
+      80
     ],
-    "sourceLabel": "D1-D10: JPost. D11: UAE MoD. D12-D33: fragment est. D30: UAE 16 ballistic + 42 drones, Kuwait 14+12, Saudi 10. D31: B-52s over Iran, Isfahan depot struck, UAE 11+27. D32: Kuwaiti tanker hit Dubai, UAE 8 ballistic + 4 cruise + 36 drones. D33: Fresh Houthi attacks, Isfahan steel hit, Trump '2-3 weeks.' Al Arabiya cumul Mar 29: 1,119 missiles + 3,792 drones at Gulf.",
-    "throughDate": "Apr 01 end of day (all days estimated)"
+    "sourceLabel": "D1-D10: JPost. D11: UAE MoD. D12-D33: fragment est. D33 REVISED: Passover barrage = largest at Israel since D1 (6 salvos, ~10 ballistic each = ~40 at Israel, + Qatar 3 cruise, + Gulf). Kuwait airport KAFCO fire. QatarEnergy Aqua 1 tanker hit. Bahrain fire. 1 killed UAE. Al Arabiya cumul Mar 29: 1,119 missiles + 3,792 drones at Gulf.",
+    "throughDate": "Apr 01 end of day — D33 REVISED with Passover barrage data"
   },
   "oil": {
     "labels": [
@@ -298,7 +298,7 @@
       108.5,
       111.1,
       110.69,
-      105.0
+      102.0
     ],
     "wti": [
       62.0,
@@ -334,9 +334,9 @@
       96.0,
       102.85,
       103.87,
-      102.28
+      99.0
     ],
-    "note": "Full daily series. D33: Brent DROPPED to $105 on Trump '2-3 weeks' comments and China-Pakistan peace plan hopes. WTI $102.28. Brent surged 60%+ in March — biggest monthly gain since 1988 (CNBC). D32: Kuwaiti tanker struck in Dubai port. Apr 6 Kharg Island deadline = binary oil outcome. If deal: $85-90. If power plants struck: $130+."
+    "note": "Full daily series. D33: Brent CRASHED to $102 close (intraday low $98.52, high $105.93) on peace hopes. WTI ~$99. March +60%+ biggest since 1988. BUT Passover barrage evening = may reverse April 2. Apr 6 = binary: deal=$85 or strikes=$130+."
   },
   "pressure": {
     "labels": [
@@ -442,33 +442,33 @@
       9.5,
       10,
       10,
-      9
+      8.5
     ]
   },
   "latestTargetBreakdown": {
-    "note": "Apr 01 (D33). Houthis fresh attacks. Isfahan steel hit. UAE/Saudi/Kuwait/Bahrain ongoing. Intensity ~25m+50d.",
+    "note": "Apr 01 (D33) REVISED. PASSOVER BARRAGE: 6 salvos at Israel (~40 missiles). Qatar cruise (3). Kuwait airport fuel fire. Bahrain fire. 1 killed UAE. ~65m+80d.",
     "missiles": {
+      "Israel": 40,
       "UAE": 8,
-      "Israel": 3,
       "Saudi": 5,
       "Kuwait": 3,
+      "Qatar": 3,
       "Bahrain": 2,
       "Yemen/Houthi": 2,
-      "Qatar": 1,
       "Iraq": 1,
-      "Oman": 0,
+      "Oman": 1,
       "Jordan": 0
     },
     "drones": {
       "UAE": 20,
-      "Kuwait": 8,
-      "Saudi": 8,
-      "Bahrain": 4,
-      "Oman": 3,
-      "Israel": 3,
-      "Iraq": 2,
-      "Qatar": 1,
-      "Jordan": 1
+      "Kuwait": 15,
+      "Saudi": 12,
+      "Bahrain": 8,
+      "Israel": 8,
+      "Oman": 5,
+      "Iraq": 5,
+      "Qatar": 4,
+      "Jordan": 3
     }
   },
   "dailyRows": [
@@ -762,200 +762,200 @@
     },
     {
       "date": "Apr 01",
-      "missiles": 25,
-      "drones": 50,
-      "primary": "D33 — TRUMP '2-3 WEEKS' + IRAN REJECTS: Trump says 2-3 weeks. Iran FM '6 months.' Rejected ceasefire claim. Houthis fresh attacks. Isfahan steel hit. WH 'doesn't oppose' China-Pakistan plan.",
-      "capability": "D33: 25+50. Declining but not collapsing. Iran FM '6 months' = deep reserves or bluff. Houthis sustaining. 75+ projectiles/day.",
-      "cost": "Brent DROPPED ~$105 (-5.1%) on peace hopes. WTI $102.28. Gas >$4.08. 15 US KIA. HRANA 3,461+. Lebanon 1,189+. April 6 = 5 days.",
-      "assessment": "D33 — PEACE HOPES VS REALITY GAP: Oil dropping on optimism but Iran saying '6 months.' China-Pakistan = most credible framework. April 6 = inflection."
+      "missiles": 65,
+      "drones": 80,
+      "primary": "D33 — PASSOVER BARRAGE + QATAR TANKER + KUWAIT AIRPORT: Iran fired LARGEST missile salvo at Israel since D1 on Seder night (6 salvos, ~10 ballistic each, 15+ wounded, cluster warheads). QatarEnergy Aqua 1 tanker hit by cruise missile (Qatari waters, 17nm Ras Laffan). Kuwait airport KAFCO fuel tanks fire. Bahrain fire. 1 killed UAE. Isfahan/Ahvaz/Borujen steel plants struck. Hezbollah Southern Front commander killed south Beirut.",
+      "capability": "D33 REVISED: 65+80. PASSOVER SURGE DISPROVES EXHAUSTION NARRATIVE. Iran deliberately surged on Jewish holy day — political + military statement. Cluster warheads = advanced munitions still available. 3 cruise missiles at Qatar = advanced capability. IRGC executing across ALL theaters simultaneously. Iran FM '6 months' = credible.",
+      "cost": "Brent CRASHED $102 (from $111 D31). Intraday low $98.52. BUT Passover barrage = likely oil rebound Apr 2. Lebanon 1,200+ (Hezbollah cmdr killed). 15 US KIA. HRANA 3,461+. April 6 = 5 days.",
+      "assessment": "D33 — PASSOVER PARADOX: Markets celebrating peace while Iran executes largest Israel barrage since D1. Oil dropping on hope while missiles are flying. Qatar tanker + Kuwait airport + Bahrain = Gulf harassment undiminished. This surge likely reverses oil optimism. Iran's dual strategy: engage intermediaries while demonstrating capability = negotiating from strength."
     }
   ],
   "timeline": [
     {
       "title": "Week 5 (Mar 29-Apr 01)",
-      "body": "PEACE MOMENTUM + B-52: China-Pakistan plan. B-52 over Iran. Tanker attacked. Trump '2-3 weeks.' Iran '6 months.' Oil $111->$105. HRANA 3,461+. April 6 = 5 days."
+      "body": "PASSOVER PARADOX: Peace momentum (China-Pakistan, Trump '2-3 weeks') collides with Iran's LARGEST barrage at Israel since D1. Qatar tanker hit. Kuwait airport fire. Oil crashed $102 but barrage may reverse. B-52 + steel plants destroyed. April 6 = 5 days."
     },
     {
       "title": "APRIL 6 (5 days)",
-      "body": "BINARY: No strikes = diplomatic window (China-Pakistan). Strikes = 90M without electricity+water + oil $130+. Trump '2-3 weeks' = preference for deal."
+      "body": "BINARY: No strikes = diplomatic pivot. Strikes = 90M without electricity+water + $130+. Passover barrage complicates — shows Iran WILLING to escalate even during negotiations."
     },
     {
       "title": "Month 2",
-      "body": "April 6 + China-Pakistan + Houthis + B-52 + domestic pressure. All vectors favor resolution 2-3 weeks."
+      "body": "Passover barrage weakens exhaustion theory. Iran has reserves. April 6 forces decision. If deal: weeks. If escalation: months."
     },
     {
       "title": "Month 3+",
-      "body": "If framework: phased de-escalation. Mine clearance months. Insurance 6-12 months. Nuclear unresolved."
+      "body": "If framework: phased de-escalation. Mine clearance months. Insurance 6-12 months. Nuclear unresolved. Iran FM '6 months' may be accurate."
     },
     {
-      "title": "Endgame",
-      "body": "April 6. China-Pakistan plan. Trump '2-3 weeks.' Iran '6 months.' Houthis. B-52. 82nd. Oil $105. Pew 59%."
+      "title": "Wild cards",
+      "body": "April 6. Passover response. China-Pakistan plan. Houthis Bab al-Mandab. 82nd Kharg. Iran '6 months' = sustained campaign capability proven D33."
     }
   ],
   "timeline_fa": [
     {
       "title": "هفته ۵",
-      "body": "طرح چین-پاکستان. B-52. نفتکش. ترامپ '۲-۳ هفته.' نفت $۱۰۵. ۶ آوریل = ۵ روز."
+      "body": "پارادوکس پسح: صلح + بزرگترین حمله. نفتکش قطر. فرودگاه کویت. نفت $۱۰۲. ۶ آوریل = ۵ روز."
     },
     {
       "title": "۶ آوریل",
-      "body": "دوگانه: بدون = دیپلماسی. با = فاجعه."
+      "body": "دوگانه. حمله پسح = ایران حاضر تشدید حین مذاکره."
     },
     {
       "title": "ماه ۲",
-      "body": "همه بردارها = حل‌وفصل ۲-۳ هفته."
+      "body": "حمله پسح = نظریه فرسایش ضعیف شد. ایران ذخیره دارد."
     },
     {
       "title": "ماه ۳+",
-      "body": "مرحله‌ای. مین‌روبی. بیمه. هسته‌ای."
+      "body": "مرحله‌ای. مین‌روبی. بیمه. هسته‌ای. '۶ ماه' ایران ممکن درست."
     },
     {
       "title": "متغیرها",
-      "body": "۶ آوریل. طرح. ترامپ. ایران. حوثی. B-52. نفت."
+      "body": "۶ آوریل. پسح. طرح. حوثی. خارگ. '۶ ماه.'"
     }
   ],
   "scenarioProbabilities": [
     {
       "name": "Escalation spiral / total war",
-      "prob": "25%",
-      "body": "DECREASED 28->25%. China-Pakistan + Trump optimism = de-escalation. But power grid + 82nd + B-52 = infrastructure in place."
+      "prob": "28%",
+      "body": "INCREASED 25->28%. Passover barrage = Iran ESCALATING despite talks. Cluster warheads. Qatar tanker. April 6 power grid still live. 82nd deployed."
     },
     {
       "name": "Protracted attrition",
-      "prob": "22%",
-      "body": "DECREASED 25->22%. Iran '6 months' but diplomatic momentum shorter. If April 6 passes without strikes AND no deal: reverts."
+      "prob": "25%",
+      "body": "INCREASED 22->25%. Passover surge PROVES Iran has reserves. FM '6 months' now credible. Plateau broken upward. Iran can sustain 30-65/day."
     },
     {
       "name": "Declared victory + exit",
-      "prob": "22%",
-      "body": "INCREASED 20->22%. Trump '2-3 weeks.' Rubio 'weeks.' CENTCOM 2/3. China-Pakistan = face-saving."
+      "prob": "20%",
+      "body": "DECREASED 22->20%. Passover barrage undermines 'war nearly over' narrative. Trump can't claim victory while Iran surging."
     },
     {
       "name": "Negotiated deal",
-      "prob": "14%",
-      "body": "SURGED 8->14%. China-Pakistan 5-point plan. WH 'doesn't oppose.' China leverage. April 6 forcing function."
+      "prob": "12%",
+      "body": "DECREASED 14->12%. Iran escalating while negotiating = dual posture. Deal still possible but barrage weakens urgency narrative."
     },
     {
       "name": "International intervention",
-      "prob": "12%",
-      "body": "STABLE. China-Pakistan plan IS this. G7 + UN engaged."
+      "prob": "10%",
+      "body": "DECREASED 12->10%. China-Pakistan plan still credible but Passover barrage = Iran not ready."
     },
     {
       "name": "Regime fracture",
       "prob": "5%",
-      "body": "DECREASED 7->5%. Iran signaling cohesion. IRGC operational. Command holding."
+      "body": "STABLE. Passover barrage = coordinated multi-theater op = command intact. IRGC operational."
     }
   ],
   "scenarioProbabilities_fa": [
     {
       "name": "تشدید",
-      "prob": "۲۵٪",
-      "body": "کاهش ۲۸->۲۵. طرح + خوش‌بینی = کاهش. اما نیروگاه + هوابرد."
+      "prob": "۲۸٪",
+      "body": "افزایش ۲۵->۲۸. حمله پسح = تشدید حین مذاکره. بمب خوشه‌ای."
     },
     {
       "name": "فرسایش",
-      "prob": "۲۲٪",
-      "body": "کاهش ۲۵->۲۲. ایران '۶ ماه' اما دیپلماسی."
+      "prob": "۲۵٪",
+      "body": "افزایش ۲۲->۲۵. حمله پسح = ذخیره اثبات شد. '۶ ماه' معتبر."
     },
     {
       "name": "اعلام پیروزی",
-      "prob": "۲۲٪",
-      "body": "افزایش ۲۰->۲۲. ترامپ '۲-۳ هفته.' طرح = حفظ آبرو."
+      "prob": "۲۰٪",
+      "body": "کاهش ۲۲->۲۰. حمله پسح = 'تقریباً تمام' تضعیف شد."
     },
     {
       "name": "مذاکره",
-      "prob": "۱۴٪",
-      "body": "جهش ۸->۱۴. طرح چین-پاکستان. چین اهرم."
+      "prob": "۱۲٪",
+      "body": "کاهش ۱۴->۱۲. ایران تشدید + مذاکره = دوگانه."
     },
     {
       "name": "مداخله",
-      "prob": "۱۲٪",
-      "body": "ثابت. طرح = مداخله دیپلماتیک."
+      "prob": "۱۰٪",
+      "body": "کاهش ۱۲->۱۰. طرح هنوز معتبر اما ایران آماده نیست."
     },
     {
       "name": "فروپاشی",
       "prob": "۵٪",
-      "body": "کاهش ۷->۵. انسجام. سپاه فعال."
+      "body": "ثابت. حمله هماهنگ = فرماندهی سالم."
     }
   ],
   "theoryEvaluation": [
     {
-      "title": "CHINA-PAKISTAN PLAN — first credible framework",
-      "body": "5-point plan (D32): ceasefire + talks + non-military + Hormuz + UN Charter. China = Iran's top trade partner = real leverage. WH 'doesn't oppose.' Points 3-4 align with US demands. Nuclear/Israel/Lebanon absent = pragmatic. Most significant diplomatic development since D1."
+      "title": "PASSOVER BARRAGE — exhaustion narrative shattered",
+      "body": "Iran's largest salvo at Israel since D1 on the most symbolically potent night. 6 salvos, ~10 ballistic each, cluster warheads. NOT the behavior of a depleted force. This is the single most important data point since D10 for capability assessment. Rationing model CONFIRMED — Iran has been conserving, not depleted. FM '6 months' now operationally credible."
     },
     {
-      "title": "B-52 STRATEGIC BOMBING — escalation phase",
-      "body": "First B-52 over Iran D31. Isfahan depot + air base destroyed. Combined with desalination threat = beyond electricity. BUT B-52 + peace talks = 'bomb to the table.' Context determines outcome."
+      "title": "QATAR TANKER — Gulf energy infrastructure war widening",
+      "body": "Aqua 1 hit 17nm from Ras Laffan (world's largest gas plant). Qatar's LNG capacity -17%. Dubai port D32. Now Qatar waters D33. Insurance implications catastrophic — nowhere in Gulf is safe for energy assets."
     },
     {
-      "title": "KUWAITI TANKER — economic warfare",
-      "body": "Al-Salmi (2M bbl) struck at Dubai port D32. First in-port attack = insurance catastrophe. Iran showing Gulf-wide economic cost capability. Raises April 6 stakes."
+      "title": "OIL CRASH vs BARRAGE — market mispricing risk",
+      "body": "Brent crashed $102 (from $111) on 'diplomatic breakthrough' sentiment. BUT Passover barrage happened AFTER market close/pricing. April 2 likely reversal. Markets pricing peace while Iran proves capability. Gap = opportunity or trap."
     },
     {
-      "title": "TRUMP '2-3 WEEKS' — exit crystallizing",
-      "body": "Most specific US timeline. Rubio 'weeks not months.' CENTCOM 2/3 destroyed. WH 'doesn't oppose' plan. Trump building exit narrative. Question: does Iran cooperate?"
+      "title": "CHINA-PAKISTAN PLAN — still credible but complicated",
+      "body": "5-point plan remains most credible framework. BUT Passover barrage = Iran not ready to de-escalate. Dual posture: engage intermediaries while demonstrating strength. Plan may need Iran to feel militarily satisfied before accepting."
     },
     {
-      "title": "APRIL 6 — binary inflection in 5 days",
-      "body": "If no strikes: pivot to China-Pakistan framework (most likely). If strikes: 90M without electricity+water + oil $130+ + war extends months. Third: symbolic strike + 'message sent.' China-Pakistan gives face-saving pivot."
+      "title": "APRIL 6 — 5 days + Passover changes calculus",
+      "body": "Passover barrage may PROVOKE April 6 power grid strikes as retaliation. Israel/US may interpret Seder night attack as crossing a line. Risk of April 6 strikes INCREASED by Passover barrage. Binary outcome more volatile."
     }
   ],
   "theoryEvaluation_fa": [
     {
-      "title": "طرح چین-پاکستان",
-      "body": "۵ بند. چین = شریک اول ایران. WH مخالف نیست. مهم‌ترین تحول دیپلماتیک."
+      "title": "حمله پسح — روایت فرسایش شکست",
+      "body": "بزرگترین حمله از D1. ۶ سالوو. بمب خوشه‌ای. رفتار نیروی تمام‌شده نیست. مدل جیره‌بندی تأیید. '۶ ماه' معتبر."
     },
     {
-      "title": "B-52",
-      "body": "اولین بار. اصفهان نابود. + تهدید آب‌شیرین‌کن. 'بمباران تا میز مذاکره.'"
+      "title": "نفتکش قطر — جنگ انرژی خلیج گسترش",
+      "body": "Aqua 1 نزدیک راس‌لفان. LNG -۱۷٪. هیچ‌جا امن نیست."
     },
     {
-      "title": "نفتکش کویتی",
-      "body": "السلمی بندر دبی. حمله بندر = بیمه فاجعه. هزینه اقتصادی خلیج."
+      "title": "سقوط نفت vs حمله — بازار اشتباه؟",
+      "body": "برنت $۱۰۲. اما حمله بعد بازار. آوریل ۲ احتمال بازگشت."
     },
     {
-      "title": "ترامپ '۲-۳ هفته'",
-      "body": "مشخص‌ترین زمان‌بندی. روبیو 'هفته‌ها.' ساختن روایت خروج."
+      "title": "طرح چین-پاکستان — معتبر اما پیچیده",
+      "body": "طرح هنوز بهترین. اما حمله پسح = ایران آماده نیست."
     },
     {
-      "title": "۶ آوریل — ۵ روز",
-      "body": "بدون حمله = چرخش. حمله = فاجعه. نمادین = سوم. طرح = حفظ آبرو."
+      "title": "۶ آوریل — حمله پسح حساب عوض کرد",
+      "body": "حمله شب پسح ممکن تحریک حمله نیروگاه شود. ریسک افزایش."
     }
   ],
   "endstate": [
     {
-      "title": "Most likely (25%)",
-      "body": "Escalation — decreased 28->25%. De-escalation signals but infrastructure in place."
+      "title": "Most likely (28%)",
+      "body": "Escalation — INCREASED 25->28%. Passover barrage = Iran ESCALATING. April 6 power grid more likely as retaliation."
     },
     {
-      "title": "Second (22%/22%)",
-      "body": "TIE: Attrition (22%) and declared victory (22%). April 6 determines which."
+      "title": "Second (25%)",
+      "body": "Attrition — INCREASED 22->25%. Passover proved reserves. '6 months' credible. War has long tail."
     },
     {
-      "title": "Third (14%)",
-      "body": "Negotiated deal — SURGED 8->14%. China-Pakistan framework."
+      "title": "Third (20%)",
+      "body": "Declared victory — DECREASED 22->20%. Passover undermines 'nearly over' narrative."
     },
     {
-      "title": "Fourth (12%/5%)",
-      "body": "Intervention (12%) = China-Pakistan plan. Fracture (5%) = decreased."
+      "title": "Fourth (12%/10%/5%)",
+      "body": "Deal (12%), intervention (10%), fracture (5%). All decreased by Passover escalation."
     }
   ],
   "endstate_fa": [
     {
-      "title": "اول (۲۵٪)",
-      "body": "تشدید — کاهش. سیگنال کاهش اما زیرساخت."
+      "title": "اول (۲۸٪)",
+      "body": "تشدید — افزایش. حمله پسح. ۶ آوریل محتمل‌تر."
     },
     {
-      "title": "دوم (۲۲٪/۲۲٪)",
-      "body": "تساوی فرسایش و پیروزی. ۶ آوریل تعیین."
+      "title": "دوم (۲۵٪)",
+      "body": "فرسایش — افزایش. ذخیره اثبات شد. '۶ ماه' معتبر."
     },
     {
-      "title": "سوم (۱۴٪)",
-      "body": "مذاکره — جهش. طرح چین-پاکستان."
+      "title": "سوم (۲۰٪)",
+      "body": "اعلام پیروزی — کاهش. 'تقریباً تمام' تضعیف."
     },
     {
-      "title": "چهارم (۱۲٪/۵٪)",
-      "body": "مداخله (۱۲٪). فروپاشی (۵٪)."
+      "title": "چهارم",
+      "body": "مذاکره (۱۲٪). مداخله (۱۰٪). فروپاشی (۵٪)."
     }
   ],
   "shippingRoutes": [
@@ -1044,146 +1044,146 @@
   ],
   "publishingStatus": [
     "<strong>Paper:</strong> HALTED. Hormuz closed. Pre-war stock only. 33 days.",
-    "<strong>Printing:</strong> Isfahan B-52 D31 + steel D33. Tehran intermittent. 720+ hrs internet.",
-    "<strong>Internet:</strong> 720+ hours. 33 days. No digital anything.",
+    "<strong>Printing:</strong> Isfahan steel plants struck AGAIN D33 (Mobarakeh 2nd time + Ahvaz + Borujen). Printing infrastructure near steel zones at risk. Tehran intermittent. 744+ hrs internet.",
+    "<strong>Internet:</strong> 744+ hours. 33 days. No digital anything.",
     "<strong>New titles:</strong> HALTED since ~D5. Zero ISBNs. 3+ months post-ceasefire minimum.",
-    "<strong>Warehouse:</strong> Unknown condition. B-52 Isfahan industrial areas.",
-    "<strong>Distribution:</strong> Collapsed. B-52 makes overland more dangerous."
+    "<strong>Warehouse:</strong> Unknown condition. Isfahan steel zones struck D33 = proximity risk increased.",
+    "<strong>Distribution:</strong> Collapsed. Passover barrage = war NOT ending soon. Recovery timeline EXTENDED."
   ],
   "publishingStatus_fa": [
     "<strong>کاغذ:</strong> متوقف. فقط انبار.",
-    "<strong>چاپ:</strong> اصفهان B-52. تهران متناوب. ۷۲۰+.",
-    "<strong>اینترنت:</strong> ۷۲۰+ ساعت.",
+    "<strong>چاپ:</strong> فولاد اصفهان بار دوم + اهواز + بروجن. تهران متناوب. ۷۴۴+.",
+    "<strong>اینترنت:</strong> ۷۴۴+ ساعت.",
     "<strong>تولید:</strong> متوقف. ۳+ ماه.",
-    "<strong>انبار:</strong> نامعلوم. B-52.",
-    "<strong>توزیع:</strong> فروپاشیده."
+    "<strong>انبار:</strong> نامعلوم. مناطق فولاد اصفهان هدف.",
+    "<strong>توزیع:</strong> فروپاشیده. حمله پسح = جنگ ادامه‌دار."
   ],
   "impactIranfarhang": [
-    "<strong>SUPPLY CHAIN: 100% SEVERED — DAY 33.</strong> Zero books since D1. B-52 Isfahan = additional risk.",
-    "<strong>Revenue:</strong> Atlanta only. ~3-4 months remaining. June-July FY27 ordering critical.",
-    "<strong>Routes:</strong> Armenia ~10-15%. Pakistan UPGRADED ~8-10%. Dubai dead (tanker in port D32).",
+    "<strong>SUPPLY CHAIN: 100% SEVERED — DAY 33.</strong> Zero books since D1. Isfahan steel plants struck D33 = warehouse proximity risk. Passover barrage = war NOT ending soon.",
+    "<strong>Revenue:</strong> Atlanta only. ~3 months remaining. Passover barrage EXTENDS recovery timeline. FY27 ordering at risk.",
+    "<strong>Routes:</strong> Armenia ~10-15%. Pakistan ~8-10%. Dubai DEAD (tanker in port D32). Qatar tanker D33 = ALL Gulf routes compromised.",
     "<strong>OFAC:</strong> Statutory (Berman). Intact.",
-    "<strong>DIPLOMATIC UPSIDE:</strong> China-Pakistan plan + Trump '2-3 weeks' = first genuine ceasefire prospect. If accepted: Armenia route opens weeks. Most positive since D1.",
-    "<strong>Family:</strong> Internet 720+. B-52 Isfahan. 82,000+ structures."
+    "<strong>DIPLOMATIC DOWNSIDE:</strong> Passover barrage WEAKENS ceasefire prospects. China-Pakistan plan complicated. Iran demonstrating capability = not ready to stop. Recovery timeline EXTENDED.",
+    "<strong>Family:</strong> Internet 744+. Isfahan steel zones bombed D33. 82,000+ structures."
   ],
   "impactIranfarhang_fa": [
-    "<strong>زنجیره: ۱۰۰٪ قطع.</strong> B-52 اصفهان = ریسک.",
-    "<strong>درآمد:</strong> آتلانتا. ۳-۴ ماه. FY27.",
-    "<strong>مسیر:</strong> ارمنستان ~۱۰-۱۵٪. پاکستان ارتقاء. دبی مرده.",
+    "<strong>زنجیره: ۱۰۰٪ قطع.</strong> فولاد اصفهان D33 = ریسک انبار.",
+    "<strong>درآمد:</strong> آتلانتا. ~۳ ماه. حمله پسح = طولانی‌تر. FY27 ریسک.",
+    "<strong>مسیر:</strong> ارمنستان ~۱۰-۱۵٪. پاکستان ~۸-۱۰٪. دبی مرده. نفتکش قطر = کل خلیج.",
     "<strong>OFAC:</strong> قانونی. سالم.",
-    "<strong>امید:</strong> طرح چین-پاکستان + ترامپ = مثبت‌ترین از D1.",
-    "<strong>خانواده:</strong> اینترنت ۷۲۰+. B-52."
+    "<strong>منفی:</strong> حمله پسح = آتش‌بس ضعیف‌تر. طرح پیچیده. بازیابی طولانی‌تر.",
+    "<strong>خانواده:</strong> اینترنت ۷۴۴+. اصفهان بمباران."
   ],
   "prepIranfarhang": [
-    "<strong>IMMEDIATE — Inventory:</strong> Count Atlanta. Only stock 3-4 months.",
-    "<strong>IMMEDIATE — Clients:</strong> Email libraries: disruption + positive diplomatic signals.",
-    "<strong>THIS WEEK — Armenia:</strong> If April 6 passes without strikes: pre-negotiate route.",
-    "<strong>THIS WEEK — WATCH PLAN:</strong> If accepted: recovery accelerates dramatically.",
-    "<strong>APRIL 6 — 5 DAYS:</strong> BINARY. No strikes = months. Strikes = years.",
-    "<strong>DIPLOMATIC UPSIDE:</strong> If ceasefire mid-April: first shipment late May/June = FY27 possible."
+    "<strong>IMMEDIATE — Inventory:</strong> Count Atlanta stock. ~3 months remaining. Clock ticking faster — Passover barrage extends war.",
+    "<strong>IMMEDIATE — Clients:</strong> Email libraries: extended disruption likely. Passover escalation = ceasefire less imminent than hoped.",
+    "<strong>THIS WEEK — Armenia:</strong> Armenia route planning should continue regardless. Only viable land route.",
+    "<strong>APRIL 6 — 5 DAYS:</strong> BINARY + WORSENED. Passover barrage makes power grid strikes MORE likely as retaliation. If struck: recovery years not months.",
+    "<strong>FY27 RISK:</strong> Passover barrage shifts probability. Ceasefire mid-April now LESS likely. First shipment late June/July AT BEST. FY27 ordering may need alternative sources.",
+    "<strong>CONTINGENCY:</strong> Begin identifying alternative Persian book sources (Turkey, Germany, UK diaspora publishers) as bridge."
   ],
   "prepIranfarhang_fa": [
-    "<strong>فوری — موجودی:</strong> شمارش. ۳-۴ ماه.",
-    "<strong>فوری — مشتری:</strong> کتابخانه‌ها اطلاع.",
-    "<strong>ارمنستان:</strong> اگر ۶ آوریل بدون حمله: آماده.",
-    "<strong>طرح:</strong> اگر قبول: سریع‌تر.",
-    "<strong>۶ آوریل:</strong> دوگانه.",
-    "<strong>امید:</strong> آتش‌بس اواسط آوریل = ارسال اواخر مه = FY27."
+    "<strong>فوری — موجودی:</strong> شمارش. ~۳ ماه. حمله پسح = طولانی‌تر.",
+    "<strong>فوری — مشتری:</strong> کتابخانه‌ها: اختلال طولانی. تشدید.",
+    "<strong>ارمنستان:</strong> برنامه‌ریزی ادامه. تنها مسیر.",
+    "<strong>۶ آوریل:</strong> دوگانه + بدتر. نیروگاه محتمل‌تر.",
+    "<strong>FY27:</strong> آتش‌بس کم‌احتمال‌تر. ارسال ژوئن/ژوئیه حداقل.",
+    "<strong>جایگزین:</strong> ناشران ترکیه/آلمان/بریتانیا."
   ],
   "signalsIranfarhang": [
-    "<strong>GATE 1 — APRIL 6 (5 DAYS):</strong> No strikes = window. Strikes = collapse. HIGHEST PRIORITY.",
-    "<strong>GATE 2 — CHINA-PAKISTAN PLAN:</strong> If accepted: recovery accelerates. Watch for formal response.",
-    "<strong>GATE 3 — INTERNET:</strong> 720+ hrs. Cannot act without comms.",
-    "<strong>GATE 4 — CEASEFIRE:</strong> Trump '2-3 weeks' = strongest signal.",
-    "<strong>Armenia border:</strong> Open per US Embassy Yerevan.",
-    "<strong>Pakistan route:</strong> UPGRADED on peace plan.",
+    "<strong>GATE 1 — APRIL 6 (5 DAYS):</strong> Now MORE dangerous. Passover barrage = retaliation pressure. Power grid strikes = catastrophe for publishing.",
+    "<strong>GATE 2 — PASSOVER RESPONSE:</strong> Watch US/Israel response Apr 2-3. If retaliatory escalation: war extends months. If absorbed: window preserved.",
+    "<strong>GATE 3 — INTERNET:</strong> 744+ hrs. Cannot act without comms.",
+    "<strong>GATE 4 — CEASEFIRE:</strong> Passover barrage weakens prospects. Trump '2-3 weeks' contradicted by events.",
+    "<strong>Armenia border:</strong> Open per US Embassy Yerevan. Most important route.",
+    "<strong>Isfahan warehouse:</strong> Steel plants struck D33 = proximity risk. Monitor.",
     "<strong>OFAC SDN:</strong> Low probability, high impact.",
-    "<strong>Tehran warehouse:</strong> B-52 bombing nearby industrial zones."
+    "<strong>Oil rebound:</strong> If Brent rebounds above $110 Apr 2: war premium returning = bad for recovery."
   ],
   "signalsIranfarhang_fa": [
-    "<strong>۶ آوریل:</strong> بالاترین اولویت.",
-    "<strong>طرح:</strong> قبول = سریع‌تر.",
-    "<strong>اینترنت:</strong> ۷۲۰+.",
-    "<strong>آتش‌بس:</strong> ترامپ سیگنال.",
-    "<strong>ارمنستان:</strong> باز.",
-    "<strong>پاکستان:</strong> ارتقاء.",
+    "<strong>۶ آوریل:</strong> خطرناک‌تر. حمله پسح = تلافی.",
+    "<strong>پاسخ پسح:</strong> آوریل ۲-۳. تشدید = ماه‌ها. جذب = پنجره.",
+    "<strong>اینترنت:</strong> ۷۴۴+.",
+    "<strong>آتش‌بس:</strong> حمله پسح = ضعیف‌تر.",
+    "<strong>ارمنستان:</strong> باز. مهم‌ترین مسیر.",
+    "<strong>انبار اصفهان:</strong> فولاد D33 = ریسک نزدیکی.",
     "<strong>OFAC:</strong> نظارت.",
-    "<strong>انبار:</strong> B-52 اصفهان."
+    "<strong>نفت:</strong> اگر بازگشت >$۱۱۰ = بد."
   ],
   "impactKIP": [
-    "<strong>DUBAI: DEAD + TANKER IN PORT.</strong> Al-Salmi struck D32. Even ports unsafe. 433+19+1,977 cumul.",
-    "<strong>Banking: EXTREME.</strong> Score 9/10. Enhanced KYC. Freeze WITHOUT notice.",
-    "<strong>Hormuz: BLOCKED + TANKER.</strong> Safe passage oil-only. Insurance catastrophe.",
-    "<strong>DIPLOMATIC UPSIDE:</strong> China-Pakistan point 4 = Hormuz. If accepted: corridor recovery begins.",
-    "<strong>Personnel:</strong> 12+ dead UAE. Relocate.",
-    "<strong>Revenue: ZERO.</strong> Internet 720+. Dubai dead.",
-    "<strong>Sanctions:</strong> Monitor SDN."
+    "<strong>GULF-WIDE ENERGY WAR:</strong> Qatar tanker D33 (Aqua 1 near Ras Laffan) + Kuwait airport fire + Dubai tanker D32. NO Gulf port is safe. Insurance catastrophe deepening.",
+    "<strong>Banking: EXTREME.</strong> Score 9/10. Qatar tanker = Iran targeting QATARI waters now. Banking scrutiny across ALL Gulf states intensifying.",
+    "<strong>Hormuz: BLOCKED.</strong> Safe passage oil-only. Mine clearance months away. Passover barrage = war extends.",
+    "<strong>DIPLOMATIC DOWNSIDE:</strong> Passover barrage weakens China-Pakistan plan. Iran not ready to de-escalate. Hormuz reopening timeline EXTENDED.",
+    "<strong>Personnel:</strong> 12+ dead UAE + 1 D33. Qatar now ALSO targeted. Relocate from ALL Gulf.",
+    "<strong>Revenue: ZERO.</strong> Internet 744+. All Gulf hubs compromised.",
+    "<strong>Insurance:</strong> Hull 12%. Qatar tanker = Gulf-wide unsafe. Premiums rising."
   ],
   "impactKIP_fa": [
-    "<strong>دبی: مرده + نفتکش.</strong> ۴۳۳+۱۹+۱,۹۷۷.",
-    "<strong>بانک: شدید.</strong> ۹/۱۰. مسدودی بدون اخطار.",
-    "<strong>هرمز: مسدود.</strong> بیمه فاجعه.",
-    "<strong>امید:</strong> بند ۴ = هرمز.",
-    "<strong>پرسنل:</strong> جابجایی.",
-    "<strong>درآمد: صفر.</strong>",
-    "<strong>تحریم:</strong> SDN."
+    "<strong>جنگ انرژی خلیج:</strong> نفتکش قطر + فرودگاه کویت + نفتکش دبی. هیچ بندر امن نیست.",
+    "<strong>بانک: شدید.</strong> ۹/۱۰. نفتکش قطر = بررسی تشدید.",
+    "<strong>هرمز: مسدود.</strong> مین‌روبی ماه‌ها. حمله پسح = جنگ ادامه.",
+    "<strong>منفی:</strong> حمله پسح = طرح ضعیف‌تر. بازگشایی طولانی‌تر.",
+    "<strong>پرسنل:</strong> ۱ کشته D33 امارات. قطر هم هدف. جابجایی از کل خلیج.",
+    "<strong>درآمد: صفر.</strong> ۷۴۴+ اینترنت.",
+    "<strong>بیمه:</strong> ۱۲٪. نفتکش قطر = ناامن."
   ],
   "prepKIP": [
-    "<strong>IMMEDIATE — Banking:</strong> Withdraw UAE funds. Tanker in port = worsening.",
-    "<strong>IMMEDIATE — Personnel:</strong> Relocate from UAE.",
-    "<strong>WATCH PLAN:</strong> Point 4 = Hormuz. If accepted: prepare to resume.",
-    "<strong>Inventory:</strong> Catalog stranded. Insurance claims.",
-    "<strong>APRIL 6:</strong> Binary.",
-    "<strong>Diversification:</strong> Never 100% Hormuz+Dubai again.",
-    "<strong>Insurance:</strong> Monitor premiums. Tanker attack = increase short-term."
+    "<strong>IMMEDIATE — Banking:</strong> Withdraw ALL UAE funds. Qatar tanker = Gulf-wide freeze risk accelerating.",
+    "<strong>IMMEDIATE — Personnel:</strong> Relocate from UAE AND Qatar. Both now active targets.",
+    "<strong>INSURANCE:</strong> File claims immediately. Hull rates at 12% = effective uninsurability. Qatar tanker = premiums rising further.",
+    "<strong>Inventory:</strong> Catalog stranded cargo. Storage fees accumulating ($150/container/day).",
+    "<strong>APRIL 6 — WORSENED:</strong> Passover barrage makes power grid strikes MORE likely. If struck: Gulf recovery pushed to 2027.",
+    "<strong>Diversification:</strong> Accelerate Kuala Lumpur/Tbilisi evaluation. Gulf hub model permanently compromised.",
+    "<strong>Revenue contingency:</strong> Zero revenue for foreseeable future. Preserve cash. Cut non-essential costs."
   ],
   "prepKIP_fa": [
-    "<strong>بانک:</strong> برداشت فوری.",
-    "<strong>پرسنل:</strong> جابجایی.",
-    "<strong>طرح:</strong> بند ۴. آماده.",
-    "<strong>موجودی:</strong> بیمه.",
-    "<strong>۶ آوریل:</strong> دوگانه.",
-    "<strong>تنوع:</strong> هرگز ۱۰۰٪.",
-    "<strong>بیمه:</strong> نظارت."
+    "<strong>بانک:</strong> برداشت فوری از امارات و قطر.",
+    "<strong>پرسنل:</strong> جابجایی از امارات + قطر.",
+    "<strong>بیمه:</strong> ادعای فوری. ۱۲٪ = بیمه‌ناپذیر.",
+    "<strong>موجودی:</strong> هزینه انبار $۱۵۰/روز تجمع.",
+    "<strong>۶ آوریل:</strong> بدتر. حمله پسح = نیروگاه محتمل‌تر. ۲۰۲۷.",
+    "<strong>تنوع:</strong> کوالالامپور/تفلیس. مدل خلیج آسیب دائم.",
+    "<strong>درآمد:</strong> صفر. حفظ نقدینگی."
   ],
   "signalsKIP": [
-    "<strong>GATE 1 — CHINA-PAKISTAN:</strong> Point 4 = Hormuz. Most important KIP signal.",
-    "<strong>GATE 2 — UAE BANKING:</strong> Freezes, SDN, Central Bank.",
-    "<strong>GATE 3 — APRIL 6:</strong> Binary. 5 days.",
-    "<strong>Dubai:</strong> Tanker in port = new baseline risk.",
-    "<strong>Personnel:</strong> 2,400+ projectiles. Relocate.",
-    "<strong>Hubs:</strong> Turkey (shut), Armenia (open), Georgia, Oman (hit), Malaysia.",
-    "<strong>Insurance:</strong> 5-10%+. Tanker = worse.",
-    "<strong>Houthi:</strong> Active. Bab al-Mandab 'option.'"
+    "<strong>GATE 1 — PASSOVER RESPONSE:</strong> US/Israel response to Seder night attack determines trajectory. Escalation = Gulf recovery pushed far out.",
+    "<strong>GATE 2 — APRIL 6:</strong> Now WORSENED. Passover barrage makes power grid strikes more likely.",
+    "<strong>GATE 3 — UAE/QATAR BANKING:</strong> Qatar tanker = banking scrutiny intensifies across ALL Gulf states.",
+    "<strong>Qatar tanker:</strong> Aqua 1 near Ras Laffan = LNG infrastructure directly threatened. Qatar banking risk rising.",
+    "<strong>Insurance:</strong> Hull 12%+ and rising. Qatar tanker = Gulf-wide surge expected.",
+    "<strong>Hubs:</strong> ALL Gulf hubs compromised (Dubai, Qatar, Kuwait, Bahrain). Only Malaysia/Georgia safe.",
+    "<strong>Houthi:</strong> Active. Bab al-Mandab 'option.' If closed: both chokepoints.",
+    "<strong>Oil rebound:</strong> Watch Apr 2. If Brent rebounds above $110: war premium returning."
   ],
   "signalsKIP_fa": [
-    "<strong>طرح:</strong> بند ۴ = هرمز.",
-    "<strong>بانک:</strong> SDN. مسدودی.",
-    "<strong>۶ آوریل:</strong> ۵ روز.",
-    "<strong>دبی:</strong> نفتکش بندر.",
-    "<strong>پرسنل:</strong> جابجایی.",
-    "<strong>هاب:</strong> ارمنستان باز.",
-    "<strong>بیمه:</strong> ۵-۱۰٪+.",
-    "<strong>حوثی:</strong> فعال."
+    "<strong>پاسخ پسح:</strong> تشدید = بازیابی خلیج دور.",
+    "<strong>۶ آوریل:</strong> بدتر. نیروگاه محتمل‌تر.",
+    "<strong>بانک:</strong> نفتکش قطر = بررسی کل خلیج.",
+    "<strong>نفتکش قطر:</strong> راس‌لفان LNG = ریسک بانک قطر.",
+    "<strong>بیمه:</strong> ۱۲٪+. نفتکش قطر = افزایش.",
+    "<strong>هاب:</strong> کل خلیج آسیب. فقط مالزی/گرجستان امن.",
+    "<strong>حوثی:</strong> فعال. باب‌المندب.",
+    "<strong>نفت:</strong> آوریل ۲ اگر >$۱۱۰ = بد."
   ],
   "casualties": [
     {
       "group": "Iran",
-      "figure": "~7,100+ killed",
+      "figure": "~7,200+ killed",
       "statusColor": "red",
-      "detail": "HRANA 3,461+ (1,551 civilians, 236 children). Iran Intl 4,700+ security. Hengaw ~7,100+. B-52 Isfahan. 82,000+ structures. 330,000+ displaced."
+      "detail": "HRANA 3,461+ (1,551 civilians, 236 children). Iran Intl 4,700+ security. Hengaw ~7,200+. Isfahan/Ahvaz/Borujen steel plants struck D33. 82,000+ structures. 330,000+ displaced."
     },
     {
       "group": "Lebanon",
-      "figure": "1,189+ killed",
+      "figure": "1,200+ killed",
       "statusColor": "red",
-      "detail": "Up from 1,142. 124 children. 3,500+ injured. 162nd Div. ~1M displaced."
+      "detail": "Up from 1,189. Hezbollah Southern Front commander killed (naval strike south Beirut). 7 killed overnight. 3,500+ injured. ~1M displaced."
     },
     {
       "group": "Israel",
-      "figure": "20+ killed",
-      "statusColor": "yellow",
-      "detail": "20+ incl 15 US KIA. ~300+ US wounded. 6,008+ Israeli wounded."
+      "figure": "23+ killed",
+      "statusColor": "red",
+      "detail": "PASSOVER: 15+ wounded central Israel (child serious). Cluster warheads. 18+ Israeli civilians killed (ToI). 15 US KIA. ~300+ US wounded. 6,008+ Israeli wounded."
     },
     {
       "group": "Iraq",
@@ -1193,137 +1193,137 @@
     },
     {
       "group": "Gulf States",
-      "figure": "29+ killed",
+      "figure": "30+ killed",
       "statusColor": "red",
-      "detail": "UAE 12+. Cumul 433+19+1,977. Tanker attacked. 200+ injured."
+      "detail": "UAE 12+ (1 killed D33). Qatar tanker crew evacuated. Kuwait airport fire. Bahrain fire. 200+ injured."
     },
     {
       "group": "Source discrepancy",
       "figure": "SIGNIFICANT",
       "statusColor": "yellow",
-      "detail": "HRANA 3,461+ vs Iran Intl 4,700+ vs Hengaw 7,100+. Internet 720+ hrs = verification impossible."
+      "detail": "HRANA 3,461+ vs Iran Intl 4,700+ vs Hengaw 7,200+. Internet 744+ hrs = verification impossible."
     }
   ],
   "casualties_fa": [
     {
       "group": "ایران",
-      "figure": "~۷,۱۰۰+",
+      "figure": "~۷,۲۰۰+",
       "statusColor": "red",
-      "detail": "HRANA ۳,۴۶۱+. ایران‌اینترنشنال ۴,۷۰۰+. هنگاو ~۷,۱۰۰+. B-52."
+      "detail": "HRANA ۳,۴۶۱+. ایران‌اینترنشنال ۴,۷۰۰+. هنگاو ~۷,۲۰۰+. فولاد اصفهان/اهواز/بروجن."
     },
     {
       "group": "لبنان",
-      "figure": "۱,۱۸۹+",
+      "figure": "۱,۲۰۰+",
       "statusColor": "red",
-      "detail": "از ۱,۱۴۲. ۱۲۴ کودک."
+      "detail": "فرمانده جبهه جنوب کشته. ۷ کشته شبانه."
     },
     {
       "group": "اسرائیل",
-      "figure": "۲۰+",
-      "statusColor": "yellow",
-      "detail": "۱۵ آمریکا KIA. ۶,۰۰۸+ زخمی."
+      "figure": "۲۳+",
+      "statusColor": "red",
+      "detail": "پسح: ۱۵+ زخمی. بمب خوشه‌ای. ۱۵ آمریکا KIA."
     },
     {
       "group": "عراق",
       "figure": "۱۰۰+",
       "statusColor": "red",
-      "detail": "PMF. مستقر در ایران."
+      "detail": "PMF. مستقر."
     },
     {
       "group": "خلیج",
-      "figure": "۲۹+",
+      "figure": "۳۰+",
       "statusColor": "red",
-      "detail": "امارات ۱۲+. ۴۳۳+۱۹+۱,۹۷۷. نفتکش."
+      "detail": "۱ کشته امارات D33. نفتکش قطر. فرودگاه کویت. بحرین آتش."
     },
     {
       "group": "اختلاف",
       "figure": "قابل توجه",
       "statusColor": "yellow",
-      "detail": "اینترنت ۷۲۰+. تأیید ناممکن."
+      "detail": "اینترنت ۷۴۴+. تأیید ناممکن."
     }
   ],
   "humanitarian": [
-    "<strong>Internet:</strong> 720+ hours. 33 days. Longest ever. $1.18B+ loss. 90M isolated.",
+    "<strong>Internet:</strong> 744+ hours. 33 days. Longest ever. $1.2B+ loss. 90M isolated.",
     "<strong>Displacement:</strong> 330,000+ across ME. Lebanon ~1M. 2,000+ vessels stranded.",
-    "<strong>Infrastructure:</strong> 82,000+ structures. B-52 Isfahan. Power grid intact but April 6 = 5 days. Desalination threatened.",
+    "<strong>Infrastructure:</strong> 82,000+ structures. Steel plants (Isfahan/Ahvaz/Borujen) struck D33. Power grid intact but April 6 = 5 days. Desalination threatened.",
     "<strong>Nuclear:</strong> IAEA locked out. 5 facilities struck. 440kg unaccounted.",
-    "<strong>Medical:</strong> 18,551+ injured. 236+ children killed. Hospitals overwhelmed. 33-day blackout.",
-    "<strong>Economic:</strong> Oil $105. March +60%+. Gas >$4.08. Tanker attacked in port. Insurance 5-10%. 2,000+ vessels."
+    "<strong>Medical:</strong> 18,551+ injured. Passover: 15+ wounded Israel (child serious). Cluster warheads = anti-personnel.",
+    "<strong>Economic:</strong> Oil $102 (-9% from D31). Qatar LNG -17%. Kuwait airport closed. Insurance 5-10%+. 2,000+ vessels."
   ],
   "humanitarian_fa": [
-    "<strong>اینترنت:</strong> ۷۲۰+. ۳۳ روز. $۱.۱۸B+.",
+    "<strong>اینترنت:</strong> ۷۴۴+. ۳۳ روز. $۱.۲B+.",
     "<strong>آوارگی:</strong> ۳۳۰,۰۰۰+. لبنان ~۱M.",
-    "<strong>زیرساخت:</strong> ۸۲,۰۰۰+. B-52. برق سالم اما ۶ آوریل.",
+    "<strong>زیرساخت:</strong> ۸۲,۰۰۰+. فولاد اصفهان/اهواز/بروجن. برق سالم اما ۶ آوریل.",
     "<strong>هسته‌ای:</strong> IAEA قفل. ۵ تأسیسات. ۴۴۰kg.",
-    "<strong>پزشکی:</strong> ۱۸,۵۵۱+. ۲۳۶+ کودک.",
-    "<strong>اقتصادی:</strong> نفت $۱۰۵. مارس +۶۰٪. نفتکش بندر. بیمه ۵-۱۰٪."
+    "<strong>پزشکی:</strong> پسح ۱۵+ زخمی. بمب خوشه‌ای = ضدنفر.",
+    "<strong>اقتصادی:</strong> نفت $۱۰۲. قطر LNG -۱۷٪. فرودگاه کویت بسته."
   ],
   "diplomacy": [
-    "<strong>China-Pakistan Plan (D32):</strong> 5 points: ceasefire + talks + non-military + Hormuz + UN Charter. WH 'doesn't oppose.' China = Iran top trade partner.",
-    "<strong>Trump '2-3 Weeks' (D33):</strong> Most specific timeline. Rubio 'weeks not months.' Building exit narrative.",
-    "<strong>Iran Posture:</strong> FM '6 months.' Rejected ceasefire claim. Engaging through intermediaries.",
-    "<strong>April 6 (5 days):</strong> China-Pakistan = off-ramp. No strikes = window. Strikes = catastrophe.",
-    "<strong>Israel:</strong> Independent. B-52 + Isfahan. Not part of talks. Fait accompli.",
-    "<strong>Houthi:</strong> Sustaining but NOT closing Bab al-Mandab. 'Among options' = leverage."
+    "<strong>PASSOVER PARADOX:</strong> Iran launched largest barrage at Israel since D1 ON THE SAME DAY Trump said '2-3 weeks.' Dual posture: engage intermediaries + demonstrate capability. Complicates all diplomatic tracks.",
+    "<strong>China-Pakistan Plan:</strong> Still most credible framework. But Passover barrage = Iran not ready to accept. FM '6 months' = genuine timeline, not negotiation tactic.",
+    "<strong>Trump '2-3 Weeks':</strong> Said no deal needed. But Passover Seder night attack = political pressure to RETALIATE not negotiate. April 6 power grid strikes now MORE likely.",
+    "<strong>Iran Posture:</strong> FM '6 months.' Rejected ceasefire. IRGC: 'Israeli ties' for Qatar tanker. Cluster warheads = escalation choice. NOT behavior of party seeking deal.",
+    "<strong>April 6 (5 days):</strong> Passover barrage INCREASES probability of power grid strikes as retaliation. China-Pakistan may not be enough to prevent escalation.",
+    "<strong>Israel:</strong> Independent ops continue. Hezbollah cmdr killed. Steel plants. Will demand response to Seder night cluster bombs."
   ],
   "diplomacy_fa": [
-    "<strong>طرح چین-پاکستان:</strong> ۵ بند. WH مخالف نیست. چین شریک اول.",
-    "<strong>ترامپ '۲-۳ هفته':</strong> مشخص‌ترین. روبیو 'هفته‌ها.'",
-    "<strong>ایران:</strong> '۶ ماه.' رد. میانجی‌ها.",
-    "<strong>۶ آوریل:</strong> طرح = مسیر. بدون حمله = پنجره.",
-    "<strong>اسرائیل:</strong> مستقل. B-52. عمل انجام‌شده.",
-    "<strong>حوثی:</strong> مستمر. باب‌المندب نبسته."
+    "<strong>پارادوکس پسح:</strong> حمله بزرگ همان روز ترامپ '۲-۳ هفته.' موضع دوگانه. پیچیده.",
+    "<strong>طرح چین-پاکستان:</strong> هنوز بهترین. اما ایران آماده نیست. '۶ ماه' واقعی.",
+    "<strong>ترامپ:</strong> شب سِدِر = فشار تلافی نه مذاکره. ۶ آوریل محتمل‌تر.",
+    "<strong>ایران:</strong> '۶ ماه.' رد. بمب خوشه‌ای = انتخاب تشدید.",
+    "<strong>۶ آوریل:</strong> حمله پسح = احتمال نیروگاه بیشتر.",
+    "<strong>اسرائیل:</strong> مستقل. فرمانده حزب‌الله. فولاد. تلافی بمب خوشه‌ای."
   ],
   "publicOpinion": [
     "<strong>Pew (D27):</strong> 59% wrong. 61% disapprove. 88% Dems oppose. 71% GOP support.",
-    "<strong>Gas:</strong> $4.08+ nationally. +$1.08 in one month. If escalation: $5+.",
-    "<strong>Republican coalition:</strong> Independents 52-45 eroding. Trump needs exit.",
-    "<strong>Congressional:</strong> 'Unsatisfied.' No AUMF. Trump '2-3 weeks' preempts.",
-    "<strong>International:</strong> China-Pakistan plan. GCC. G7. Universal pressure."
+    "<strong>Passover factor:</strong> Seder night attack = politically toxic in US. Cluster bombs on Israeli civilians during holiest night. Bipartisan outrage likely. May push TOWARD escalation, not exit.",
+    "<strong>Gas:</strong> $4.08+ nationally. Oil $102 (down from $111) but Passover barrage may reverse.",
+    "<strong>Congressional:</strong> Passover attack likely rallies hawkish support. 'This is why we can't stop' narrative. AUMF still absent.",
+    "<strong>International:</strong> China-Pakistan plan complicated by Passover barrage. Iran seen as provocateur."
   ],
   "publicOpinion_fa": [
     "<strong>پیو:</strong> ۵۹٪ اشتباه. ۸۸٪ دموکرات مخالف.",
-    "<strong>بنزین:</strong> $۴.۰۸+. اگر تشدید $۵+.",
-    "<strong>مستقل‌ها:</strong> ۵۲-۴۵. ترامپ نیاز خروج.",
-    "<strong>کنگره:</strong> AUMF ندارد.",
-    "<strong>بین‌المللی:</strong> چین-پاکستان. فشار جهانی."
+    "<strong>عامل پسح:</strong> حمله شب سِدِر = خشم دوحزبی آمریکا. فشار تشدید.",
+    "<strong>بنزین:</strong> $۴.۰۸. نفت $۱۰۲ اما بازگشت محتمل.",
+    "<strong>کنگره:</strong> حمله پسح = حمایت جنگ‌طلبان. AUMF ندارد.",
+    "<strong>بین‌المللی:</strong> طرح پیچیده شد. ایران تحریک‌کننده."
   ],
   "hormuz": [
-    "<strong>Blockade:</strong> Physically blocked. Mines. Safe passage expanding but US excluded. Tanker attacked IN PORT (D32).",
-    "<strong>Kharg:</strong> Fortified. 82nd Airborne deployed. B-52 nearby. April 6 = if power plants, Kharg likely targeted.",
-    "<strong>Safe passage:</strong> Pakistan, India, China, Thailand. Yuan toll. US excluded.",
-    "<strong>Mines:</strong> Confirmed. Weeks-months clearance. Tangsiri killed but framework institutional.",
-    "<strong>Insurance:</strong> 5-10% hull. Tanker in port = crisis deepens.",
-    "<strong>82nd + ground:</strong> 6-8K troops. Kharg scenario. Gulf opposes.",
-    "<strong>Bab al-Mandab:</strong> Houthis active but NOT closing. 'Among options.' If closed: both chokepoints."
+    "<strong>Blockade:</strong> Physically blocked. Mines. Tanker in Dubai port D32 + tanker in Qatar waters D33 = Gulf-wide maritime unsafe.",
+    "<strong>Qatar tanker:</strong> Aqua 1 hit 17nm from Ras Laffan. Qatar LNG -17%. Iran targeting QATARI waters now = blockade extending beyond Hormuz.",
+    "<strong>Kharg:</strong> Fortified. 82nd deployed. Passover barrage = April 6 power grid/Kharg MORE likely as retaliation.",
+    "<strong>Safe passage:</strong> Pakistan, India, China, Thailand. Yuan toll. US excluded. Qatar tanker complicates framework.",
+    "<strong>Insurance:</strong> 12%+ hull. Qatar tanker + Dubai tanker = Gulf-wide uninsurable. Lloyd's overwhelmed.",
+    "<strong>82nd + ground:</strong> 6-8K troops. Passover barrage may accelerate Kharg timeline.",
+    "<strong>Bab al-Mandab:</strong> Houthis: 2 drones Eilat D33. Still NOT closing. 'Among options.'"
   ],
   "hormuz_fa": [
-    "<strong>انسداد:</strong> مین. عبور گسترش. نفتکش بندر.",
-    "<strong>خارگ:</strong> تقویت. هوابرد ۸۲. B-52.",
-    "<strong>عبور:</strong> پاکستان + هند + چین + تایلند. آمریکا خارج.",
-    "<strong>مین:</strong> تأیید. هفته‌ها-ماه‌ها.",
-    "<strong>بیمه:</strong> ۵-۱۰٪. نفتکش بندر = بدتر.",
-    "<strong>زمینی:</strong> ۶-۸ هزار. خلیج مخالف.",
-    "<strong>باب‌المندب:</strong> حوثی فعال اما نبسته."
+    "<strong>انسداد:</strong> مین. نفتکش دبی D32 + نفتکش قطر D33 = دریایی ناامن.",
+    "<strong>نفتکش قطر:</strong> Aqua 1 نزدیک راس‌لفان. LNG -۱۷٪. انسداد فراتر هرمز.",
+    "<strong>خارگ:</strong> تقویت. هوابرد. حمله پسح = ۶ آوریل محتمل‌تر.",
+    "<strong>عبور:</strong> پاکستان + هند + چین. نفتکش قطر = پیچیده.",
+    "<strong>بیمه:</strong> ۱۲٪+. بیمه‌ناپذیر.",
+    "<strong>زمینی:</strong> ۶-۸ هزار. حمله پسح = خارگ سریع‌تر.",
+    "<strong>باب‌المندب:</strong> حوثی ۲ پهپاد ایلات. نبسته."
   ],
   "keyActors": [
-    "<strong>US:</strong> B-52 first time. Trump '2-3 weeks.' 82nd deployed. 15 KIA. WH 'doesn't oppose' plan. Pew 59%. Seeking exit.",
-    "<strong>Israel:</strong> Independent. Isfahan. Creating facts. Not in talks.",
-    "<strong>Iran:</strong> FM '6 months.' Tanker in port. Cruise still. 25/day. Intermediaries. Fortifying Kharg.",
-    "<strong>China:</strong> NEW — co-authored 5-point plan. Top trade partner = leverage.",
-    "<strong>Pakistan:</strong> Co-authored plan. Primary mediator. First transit.",
-    "<strong>Houthis:</strong> Sustaining. Bab al-Mandab 'option' but not closed.",
-    "<strong>GCC:</strong> UAE 12+. 433+19+1,977. Tanker. All demanding ceasefire.",
+    "<strong>US:</strong> Trump '2-3 weeks' BUT Passover Seder attack = political pressure for retaliation. 15 KIA. April 6 power grid strikes now MORE likely.",
+    "<strong>Israel:</strong> Hezbollah Southern Front cmdr killed. Steel plants destroyed. Will demand response to cluster bombs on Seder night.",
+    "<strong>Iran:</strong> PASSOVER SURGE: 65 missiles D33 = capability PROVEN. FM '6 months' credible. Dual posture: talk + fight. Cruise missiles + cluster warheads available.",
+    "<strong>China:</strong> 5-point plan complicated by Passover. Still has leverage as top trade partner.",
+    "<strong>Pakistan:</strong> Co-authored plan. Primary mediator. Role continues.",
+    "<strong>Houthis:</strong> 2 drones Eilat D33. Sustaining. Bab al-Mandab 'option.'",
+    "<strong>GCC:</strong> Qatar tanker (Aqua 1). Kuwait airport fire. Bahrain fire. 1 killed UAE D33. Demanding ceasefire.",
     "<strong>IAEA:</strong> Locked out. 440kg. 5 facilities. Unresolved."
   ],
   "keyActors_fa": [
-    "<strong>آمریکا:</strong> B-52. ترامپ '۲-۳ هفته.' WH طرح. پیو ۵۹٪.",
-    "<strong>اسرائیل:</strong> مستقل. اصفهان.",
-    "<strong>ایران:</strong> '۶ ماه.' نفتکش. کروز. ۲۵/روز.",
-    "<strong>چین:</strong> طرح ۵ بندی. شریک اول = اهرم.",
-    "<strong>پاکستان:</strong> میانجی اصلی. طرح.",
-    "<strong>حوثی:</strong> مستمر. باب‌المندب نبسته.",
-    "<strong>خلیج:</strong> ۴۳۳+۱۹+۱,۹۷۷. نفتکش. آتش‌بس.",
+    "<strong>آمریکا:</strong> ترامپ '۲-۳ هفته' اما حمله پسح = فشار تلافی. ۶ آوریل محتمل‌تر.",
+    "<strong>اسرائیل:</strong> فرمانده حزب‌الله. فولاد. تلافی بمب خوشه‌ای.",
+    "<strong>ایران:</strong> حمله پسح ۶۵ موشک = قابلیت اثبات. '۶ ماه' معتبر. دوگانه.",
+    "<strong>چین:</strong> طرح پیچیده شد. هنوز اهرم.",
+    "<strong>پاکستان:</strong> میانجی. ادامه.",
+    "<strong>حوثی:</strong> ۲ پهپاد ایلات. مستمر.",
+    "<strong>خلیج:</strong> نفتکش قطر. فرودگاه کویت. بحرین. ۱ کشته امارات.",
     "<strong>IAEA:</strong> قفل. ۴۴۰kg."
   ],
   "predictive": {
@@ -1337,20 +1337,20 @@
         "projectedZeroDay": "Apr 15",
         "projectedOutcome": "Iran ceases offensive operations by mid-April. War ends via military exhaustion + negotiated exit. Coalition declares victory.",
         "projectedOutcome_fa": "ایران عملیات تهاجمی را تا اواسط آوریل متوقف می‌کند. جنگ با فرسایش نظامی + خروج مذاکره‌ای پایان می‌یابد.",
-        "confidence": 0.3,
-        "falsifiedBy": "Sustained launches >20/day past April 10. Plateau has lasted 23 days — model strained."
+        "confidence": 0.2,
+        "falsifiedBy": "PASSOVER BARRAGE (65/day) FURTHER FALSIFIES depletion model. Plateau broken upward. Sustained launches >20/day for 23 days. Model essentially dead."
       },
       "plateauRationing": {
         "label": "Rationing Model",
         "label_fa": "مدل جیره‌بندی",
         "description": "Assumes plateau at ~30/day = strategic rationing from deeper stockpiles (IRGC D16 claim)",
         "description_fa": "فرض بر جیره‌بندی استراتژیک از ذخایر عمیق‌تر (ادعای سپاه D16)",
-        "plateauRate": 28,
-        "projectedDuration_weeks": 7,
+        "plateauRate": 35,
+        "projectedDuration_weeks": 8,
         "projectedOutcome": "Iran maintains harassment for 2+ months. War ends via negotiation under mutual exhaustion, or escalation spiral if ceiling breached.",
         "projectedOutcome_fa": "ایران آزار را ۲+ ماه حفظ می‌کند. جنگ با مذاکره یا مارپیچ تشدید پایان می‌یابد.",
-        "confidence": 0.7,
-        "falsifiedBy": "Launches <15/day for 5 consecutive days. Currently 25/day — gradual decline within plateau."
+        "confidence": 0.8,
+        "falsifiedBy": "Launches <15/day for 5 consecutive days. D33 SURGED to 65/day — Passover barrage CONFIRMS rationing model. Iran CAN surge when strategically motivated."
       },
       "projectionLabels": [
         "Feb 28",
@@ -1434,18 +1434,18 @@
         35,
         30,
         28,
-        25,
-        20,
-        16,
-        12,
-        9,
-        7,
-        5,
+        65,
+        18,
+        14,
+        10,
+        8,
+        6,
         4,
         3,
         2,
         1,
         1,
+        0,
         0,
         0,
         0
@@ -1483,21 +1483,21 @@
         35,
         30,
         28,
+        65,
+        35,
+        33,
+        32,
+        30,
+        30,
+        28,
+        28,
+        27,
+        27,
+        26,
+        26,
         25,
         25,
-        25,
-        25,
-        25,
-        24,
-        24,
-        24,
-        23,
-        23,
-        23,
-        24,
-        23,
-        23,
-        22
+        24
       ]
     },
     "vectors": {
@@ -1569,7 +1569,7 @@
         8,
         8,
         8.5,
-        8.5
+        7.5
       ],
       "economicPain": [
         1,
@@ -1604,7 +1604,7 @@
         9.5,
         10,
         10,
-        8.5
+        8
       ],
       "diplomaticMomentum": [
         0,
@@ -1639,7 +1639,7 @@
         5.5,
         5.5,
         6.5,
-        7
+        6
       ],
       "usPoliticalSustainability": [
         8,
@@ -1674,7 +1674,7 @@
         2,
         2,
         1.5,
-        2
+        1.5
       ],
       "escalationCeilingDistance": [
         7,
@@ -1709,30 +1709,30 @@
         1,
         0.5,
         1,
-        1.5
+        1
       ]
     },
     "vectorNotes": {
-      "militaryExhaustion": "D33: 95% down from D1. CENTCOM 2/3 destroyed. B-52 active. BUT plateau 25-30/day for 23 days = confirmed rationing. Iran FM '6 months.' Score 8.5.",
-      "militaryExhaustion_fa": "۹۵٪ کاهش. B-52. سکوی ۲۵-۳۰/روز ۲۳ روز = جیره‌بندی. ۸.۵.",
-      "economicPain": "Brent $105 (from $111). March +60%+. Gas >$4.08. Tanker attacked in port. Binary April 6. Score 8.5.",
-      "economicPain_fa": "برنت $۱۰۵. مارس +۶۰٪. بنزین >$۴. نفتکش بندر. ۸.۵.",
-      "diplomaticMomentum": "SURGING: China-Pakistan 5-point plan. WH 'doesn't oppose.' Trump '2-3 weeks.' Rubio 'weeks.' Score 7 — strongest of war.",
-      "diplomaticMomentum_fa": "جهش: طرح چین-پاکستان. WH مخالف نیست. ترامپ '۲-۳ هفته.' ۷/۱۰ بالاترین.",
-      "usPoliticalSustainability": "Pew 59%. 15 KIA. Gas >$4.08. 33 days. Trump needs April 6 results. Score 2.",
-      "usPoliticalSustainability_fa": "پیو ۵۹٪. ۱۵ KIA. بنزین >$۴. ۳۳ روز. ۲/۱۰.",
-      "escalationCeilingDistance": "Slightly improved: China-Pakistan plan = buffer. Trump de-escalating rhetoric. BUT B-52 bombing, April 6 live, Houthis, 82nd deployed. Score 1.5.",
-      "escalationCeilingDistance_fa": "اندکی بهبود: طرح = فاصله. اما B-52 + ۶ آوریل + حوثی + هوابرد. ۱.۵."
+      "militaryExhaustion": "D33 REVISED: PASSOVER BARRAGE 65 missiles = 160% of recent daily average. SHATTERS exhaustion narrative. Iran CAN surge. Cluster warheads + cruise missiles = advanced munitions available. Score DROPPED 8.5->7.5. Rationing model confirmed — Iran was conserving, not depleted.",
+      "militaryExhaustion_fa": "D33 بازنگری: حمله پسح ۶۵ موشک = ۱۶۰٪ میانگین. روایت فرسایش شکست. بمب خوشه‌ای + کروز. ۷.۵.",
+      "economicPain": "Brent CRASHED $102 (from $111 D31). Intraday low $98.52. March +60%+. BUT Qatar tanker + Kuwait airport fire = energy war widening. Oil likely rebounds Apr 2 on Passover barrage news. Score 8.",
+      "economicPain_fa": "برنت سقوط $۱۰۲. کف $۹۸.۵۲. نفتکش قطر + فرودگاه کویت. بازگشت آوریل ۲. ۸.",
+      "diplomaticMomentum": "WEAKENED: Passover barrage DURING peace talks = Iran's dual posture. China-Pakistan plan still credible but Iran not ready. FM '6 months.' Score DROPPED 7->6. Barrage undermines urgency.",
+      "diplomaticMomentum_fa": "ضعیف‌تر: حمله حین مذاکره = موضع دوگانه. طرح هنوز اما ایران آماده نیست. ۶.",
+      "usPoliticalSustainability": "Pew 59%. 15 US KIA. Gas >$4. Passover barrage on Seder night = domestic outrage in US. Trump may feel pressure to ESCALATE not exit. Score 1.5.",
+      "usPoliticalSustainability_fa": "پیو ۵۹٪. حمله شب سِدِر = خشم داخلی آمریکا. فشار تشدید نه خروج. ۱.۵.",
+      "escalationCeilingDistance": "WORSENED: Passover barrage (cluster warheads on civilians) + Qatar tanker near Ras Laffan + April 6 deadline. Barrage may PROVOKE power grid retaliation. Score DROPPED 1.5->1.",
+      "escalationCeilingDistance_fa": "بدتر: حمله پسح (خوشه‌ای غیرنظامی) + نفتکش راس‌لفان + ۶ آوریل. حمله ممکن تحریک. ۱."
     },
     "warOutcome": {
-      "prediction": "Most likely: Partial ceasefire by mid-April (40%) via China-Pakistan plan. April 6 = binary inflection. If no power plant strikes: diplomatic window opens. If struck: humanitarian catastrophe resets timelines.",
-      "prediction_fa": "محتمل‌ترین: آتش‌بس جزئی اواسط آوریل (۴۰٪) تحت طرح چین-پاکستان. ۶ آوریل = دوگانه.",
-      "derivation": "MilExh 8.5 + EconPain 8.5 + DiplMom 7 (SURGING) + USPol 2 + EscCeil 1.5. Diplomatic momentum key change. Trump needs exit. April 6 forces decision.",
-      "derivation_fa": "فرسایش ۸.۵ + اقتصادی ۸.۵ + دیپلماسی ۷ (جهش) + سیاسی ۲ + سقف ۱.۵. دیپلماسی تغییر کلیدی.",
-      "convergenceScore": 7.6,
-      "convergenceInterpretation": "7.6/10 = VERY HIGH. Highest of war. Diplomatic momentum surging + all vectors at thresholds. Resolution likely 1-2 weeks.",
-      "convergenceInterpretation_fa": "۷.۶/۱۰ = بسیار بالا. بالاترین. حل‌وفصل ۱-۲ هفته.",
-      "lastUpdated": "2026-04-01T18:00:00-04:00"
+      "prediction": "REVISED: Passover barrage shifts calculus toward escalation. Most likely: Escalation spiral (28%) as April 6 power grid strikes become MORE probable in retaliation for Seder night attack. Protracted attrition (25%) if April 6 passes without infrastructure strikes. Ceasefire prospect DECREASED — Iran demonstrated it will escalate while talking.",
+      "prediction_fa": "بازنگری: حمله پسح = تشدید محتمل‌تر. ۶ آوریل نیروگاه محتمل‌تر. فرسایش ۲۵٪ اگر بدون حمله. آتش‌بس کاهش.",
+      "derivation": "MilExh 7.5 (DOWN — barrage proves reserves) + EconPain 8 (oil dropped but tankers) + DiplMom 6 (DOWN — barrage during talks) + USPol 1.5 (DOWN — Seder attack outrage) + EscCeil 1 (DOWN — cluster warheads + tanker near LNG plant). Passover barrage is the single biggest data point since D10.",
+      "derivation_fa": "فرسایش ۷.۵ (کاهش) + اقتصادی ۸ + دیپلماسی ۶ (کاهش) + سیاسی ۱.۵ (کاهش) + سقف ۱ (کاهش). حمله پسح مهم‌ترین داده از D10.",
+      "convergenceScore": 6.2,
+      "convergenceInterpretation": "6.2/10 = HIGH but DROPPED from 7.6. Passover barrage pulled scores DOWN across 4 of 5 vectors. Military exhaustion dropped most. Resolution timeline EXTENDED — Iran proved it can sustain and surge. April 6 = most critical decision point.",
+      "convergenceInterpretation_fa": "۶.۲/۱۰ = بالا اما کاهش از ۷.۶. حمله پسح ۴ از ۵ بردار کاهش. زمان‌بندی طولانی‌تر.",
+      "lastUpdated": "2026-04-02T00:00:00-04:00"
     }
   },
   "additionalCharts": {
@@ -1770,7 +1770,7 @@
       100,
       90,
       83,
-      75
+      145
     ],
     "geoSpreadLabels": [
       "Feb 28",
@@ -1840,7 +1840,7 @@
       8,
       7,
       8,
-      7
+      8
     ],
     "missileDroneRatio": [
       0.67,
@@ -1875,7 +1875,7 @@
       0.54,
       0.5,
       0.51,
-      0.5
+      0.81
     ],
     "interceptRateLabels": [
       "Feb 28",
@@ -1945,7 +1945,7 @@
       0.88,
       0.89,
       0.9,
-      0.89
+      0.87
     ],
     "scenarioHistory": {
       "labels": [
@@ -1966,7 +1966,7 @@
         25,
         26,
         28,
-        25
+        28
       ],
       "protractedAttrition": [
         30,
@@ -1976,7 +1976,7 @@
         26,
         25,
         25,
-        22
+        25
       ],
       "declaredVictory": [
         25,
@@ -1986,7 +1986,7 @@
         20,
         20,
         20,
-        22
+        20
       ],
       "negotiatedDeal": [
         15,
@@ -1996,7 +1996,7 @@
         10,
         8,
         8,
-        14
+        12
       ],
       "internationalIntervention": [
         10,
@@ -2006,7 +2006,7 @@
         12,
         12,
         12,
-        12
+        10
       ],
       "regimeFracture": [
         5,
@@ -2183,17 +2183,17 @@
     "tehranCommsStatus": {
       "status": "BLACKOUT",
       "statusColor": "red",
-      "internetDownHours": 720,
+      "internetDownHours": 744,
       "lastConfirmedContact": "Feb 28 (D1)",
-      "detail": "720+ hours (33 days). B-52 bombing Isfahan. Cannot verify warehouse/staff/inventory.",
-      "detail_fa": "۷۲۰+ ساعت. B-52 اصفهان. تأیید ناممکن."
+      "detail": "744+ hours (33 days). Isfahan steel plants struck D33. Passover barrage = war NOT ending soon. Cannot verify warehouse/staff/inventory.",
+      "detail_fa": "۷۴۴+ ساعت. فولاد اصفهان D33. حمله پسح = جنگ ادامه. تأیید ناممکن."
     },
     "inventoryRunway": {
       "months_remaining": 3,
-      "detail": "~3 months remaining. If ceasefire mid-April + Armenia late May: may bridge FY27. Without: runs out July-August.",
-      "detail_fa": "~۳ ماه. آتش‌بس آوریل = FY27. بدون = تمام ژوئیه.",
+      "detail": "~3 months remaining. Passover barrage EXTENDS timeline — ceasefire mid-April now LESS likely. Runs out July-August. FY27 at risk.",
+      "detail_fa": "~۳ ماه. حمله پسح = طولانی‌تر. آتش‌بس کم‌احتمال‌تر. FY27 ریسک.",
       "burnRate": "~$15K-20K/month in fulfilled orders",
-      "criticalDate": "Late July 2026. China-Pakistan plan = potential accelerant."
+      "criticalDate": "Late July 2026. Passover barrage pushes ceasefire later = critical date approaching faster."
     },
     "publishingDeepDive": [
       "<strong>PAPER/INK SUPPLY:</strong> Iran imports 70%+ of printing paper. Hormuz closure + sanctions = supply chain severed. Domestic paper mills operating at estimated 20-30% capacity due to power disruptions. Quality declining.",
@@ -2214,11 +2214,11 @@
   },
   "kipExpanded": {
     "dubaiBankingRisk": {
-      "score": 9,
+      "score": 9.5,
       "trend": "rising",
-      "detail": "Tanker attacked IN PORT D32. Score 8->9. Freeze risk EXTREME.",
-      "detail_fa": "نفتکش بندر D32. ۸->۹. انجماد شدید.",
-      "action": "URGENT: Withdraw ALL UAE funds."
+      "detail": "D32 tanker in Dubai port + D33 tanker in Qatar waters + Kuwait airport fire. Gulf-wide banking crisis deepening. Score 9->9.5.",
+      "detail_fa": "نفتکش دبی D32 + نفتکش قطر D33 + فرودگاه کویت. بحران بانکی خلیج. ۹->۹.۵.",
+      "action": "CRITICAL: Withdraw ALL Gulf funds (UAE + Qatar). Move to Tbilisi/KL immediately."
     },
     "alternativeHubs": [
       {
@@ -2381,50 +2381,50 @@
         10.0,
         12.0
       ],
-      "note": "Tanker attacked IN PORT D32 = port anchorage unsafe. Hull 12% = uninsurable."
+      "note": "D32 tanker in Dubai port + D33 tanker in Qatar waters. Gulf-wide port anchorage unsafe. Hull 12% = uninsurable. Qatar tanker = premium surge imminent."
     }
   },
   "cumulativeByCountry": {
     "UAE": {
-      "missiles": 1230,
-      "drones": 2465
+      "missiles": 1238,
+      "drones": 2485
     },
     "Israel": {
-      "missiles": 640,
-      "drones": 295
+      "missiles": 677,
+      "drones": 303
     },
     "Saudi Arabia": {
-      "missiles": 400,
-      "drones": 895
+      "missiles": 405,
+      "drones": 907
     },
     "Kuwait": {
-      "missiles": 212,
-      "drones": 460
+      "missiles": 215,
+      "drones": 475
     },
     "Bahrain": {
-      "missiles": 130,
-      "drones": 300
+      "missiles": 132,
+      "drones": 308
     },
     "Qatar": {
-      "missiles": 145,
-      "drones": 190
+      "missiles": 148,
+      "drones": 194
     },
     "Iraq": {
-      "missiles": 115,
-      "drones": 168
+      "missiles": 116,
+      "drones": 173
     },
     "Oman": {
-      "missiles": 45,
-      "drones": 82
+      "missiles": 46,
+      "drones": 87
     },
     "Jordan": {
       "missiles": 83,
-      "drones": 95
+      "drones": 98
     },
     "Yemen": {
       "missiles": 30,
       "drones": 80
     },
-    "_note": "Estimated cumul ~3,090 missiles / ~4,962 drones through D33."
+    "_note": "Estimated cumul ~3,130 missiles / ~4,992 drones through D33. REVISED: Passover barrage added ~40 missiles at Israel, +30 drones across Gulf."
   }
 }
