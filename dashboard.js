@@ -239,11 +239,11 @@ function applyI18n() {
 
 function computeFreshness() {
   var ts = state.meta && state.meta.lastUpdated;
-  if (!ts) return { label: '—', cls: '' };
+  if (!ts) return { label: '—', cls: 'warn' };
   var diff = (Date.now() - new Date(ts).getTime()) / 36e5;
-  if (diff < 6) return { label: '<6 h', cls: 'fresh' };
-  if (diff < 24) return { label: '<24 h', cls: 'stale' };
-  return { label: '>24 h', cls: 'old' };
+  if (diff <= 12) return { label: currentLang === 'fa' ? 'به\u200cروز' : 'Current', cls: 'good' };
+  if (diff <= 48) return { label: currentLang === 'fa' ? 'کمی قدیمی' : 'Aging', cls: 'warn' };
+  return { label: currentLang === 'fa' ? 'قدیمی' : 'Stale', cls: 'bad' };
 }
 
 function parseLogDate(d) {
@@ -331,8 +331,7 @@ function setText() {
   if ($('lastUpdated')) $('lastUpdated').textContent = ts ? new Date(ts).toLocaleString() : '—';
   var fr = computeFreshness();
   if ($('freshnessStatus')) {
-    $('freshnessStatus').textContent = fr.label;
-    $('freshnessStatus').className = fr.cls;
+    $('freshnessStatus').innerHTML = '<span class="tag ' + fr.cls + '">' + fr.label + '</span>';
   }
   if ($('seriesThrough')) $('seriesThrough').textContent = state.dailySeries.throughDate || '—';
 
@@ -344,18 +343,21 @@ function setText() {
   var metricsArr = currentLang === 'fa' ? (state.metrics_fa && state.metrics_fa.length ? state.metrics_fa : state.metrics) : state.metrics;
   if ($('metrics') && metricsArr) {
     $('metrics').innerHTML = metricsArr.map(function(m) {
-      return '<div class="metric"><div class="metric-label">' + m.label + '</div>' +
-        '<div class="metric-value">' + m.value + '</div>' +
-        '<div class="metric-desc">' + m.desc + '</div></div>';
+      return '<div class="metric"><div class="label">' + m.label + '</div>' +
+        '<div class="value">' + m.value + '</div>' +
+        '<div class="desc">' + m.desc + '</div></div>';
     }).join('');
   }
 
   // SITREP
   renderList('sitrep', L('sitrep'));
 
-  // Source notes
-  if ($('sourceNotes') && state.meta && state.meta.notes) {
-    $('sourceNotes').innerHTML = state.meta.notes.map(function(n) { return '<p>' + n + '</p>'; }).join('');
+  // Source notes — compact: just show first note (date/source line)
+  if ($('sourceNotes') && state.meta && state.meta.notes && state.meta.notes.length) {
+    var firstNote = state.meta.notes[0];
+    // Truncate to first sentence or 200 chars
+    var short = firstNote.length > 200 ? firstNote.substring(0, 200) + '...' : firstNote;
+    $('sourceNotes').innerHTML = '<div>' + short + '</div>';
   }
 
   // Footnotes
@@ -385,11 +387,17 @@ function setText() {
   renderList('hormuzBox', L('hormuz'));
   renderList('keyActorsBox', L('keyActors'));
 
-  // Shipping routes (standalone in Hormuz section)
+  // Shipping routes (standalone in Hormuz section) — render as route cards
   var routes = L('shippingRoutes');
   if ($('shippingRoutesStandalone') && routes.length) {
-    $('shippingRoutesStandalone').innerHTML = '<strong>' + (currentLang === 'fa' ? 'مسیرهای کشتیرانی:' : 'Shipping routes:') + '</strong><ul class="list">' +
-      routes.map(function(r) { return '<li>' + r + '</li>'; }).join('') + '</ul>';
+    $('shippingRoutesStandalone').innerHTML = routes.map(function(r) {
+      if (typeof r === 'string') return '<div class="route-card"><div class="route-detail">' + r + '</div></div>';
+      return '<div class="route-card"><div class="route-header"><div class="route-name">' + (r.route || '') + '</div>' +
+        '<span class="route-status ' + (r.statusColor || 'yellow') + '">' + (r.status || '') + '</span></div>' +
+        '<div class="route-detail">' + (r.detail || '') + '</div>' +
+        '<div class="route-meta"><span>' + (currentLang === 'fa' ? 'قابلیت: ' : 'Viability: ') + '<strong>' + (r.viability || '') + '</strong></span>' +
+        '<span>' + (currentLang === 'fa' ? 'زمان: ' : 'ETA: ') + '<strong>' + (r.eta || '') + '</strong></span></div></div>';
+    }).join('');
   }
 
   // Business impact lists
@@ -545,37 +553,41 @@ function renderCharts() {
     });
   }
 
-  // 7. Target breakdown — missiles
+  // 7. Target breakdown — missiles (horizontal bar)
   kill('targetMissile');
   if ($('targetMissileChart') && state.latestTargetBreakdown && state.latestTargetBreakdown.missiles) {
     var tm = state.latestTargetBreakdown.missiles;
-    var tmLabels = Object.keys(tm);
-    var tmData = Object.values(tm);
-    var tmColors = ['#ff6b6b', '#ff9f43', '#ffd166', '#46d7b0', '#63b3ff', '#b084ff', '#e056a0', '#8bc5a3'];
+    var tmEntries = Object.entries(tm).sort(function(a, b) { return b[1] - a[1]; });
+    var barOpts = deepClone(BASE_OPTS);
+    barOpts.indexAxis = 'y';
+    barOpts.plugins.legend = { display: false };
+    barOpts.scales = { x: { ticks: { color: '#9eb5d0', precision: 0 }, grid: { color: 'rgba(255,255,255,.05)' }, beginAtZero: true }, y: { ticks: { color: '#9eb5d0' }, grid: { display: false } } };
     charts.targetMissile = new Chart($('targetMissileChart'), {
-      type: 'doughnut',
+      type: 'bar',
       data: {
-        labels: tmLabels,
-        datasets: [{ data: tmData, backgroundColor: tmColors.slice(0, tmLabels.length), borderWidth: 0 }]
+        labels: tmEntries.map(function(e) { return e[0]; }),
+        datasets: [{ label: currentLang === 'fa' ? 'موشک' : 'Missiles', data: tmEntries.map(function(e) { return e[1]; }), backgroundColor: 'rgba(255,107,107,.72)', borderRadius: 8, barThickness: 18 }]
       },
-      options: { responsive: true, maintainAspectRatio: false, plugins: { legend: { position: 'right', labels: { color: '#eef5fc', font: { size: 10 }, padding: 8 } } } }
+      options: barOpts
     });
   }
 
-  // 8. Target breakdown — drones
+  // 8. Target breakdown — drones (horizontal bar)
   kill('targetDrone');
   if ($('targetDroneChart') && state.latestTargetBreakdown && state.latestTargetBreakdown.drones) {
     var td = state.latestTargetBreakdown.drones;
-    var tdLabels = Object.keys(td);
-    var tdData = Object.values(td);
-    var tdColors = ['#63b3ff', '#46d7b0', '#ffd166', '#ff9f43', '#ff6b6b', '#b084ff', '#e056a0', '#8bc5a3'];
+    var tdEntries = Object.entries(td).sort(function(a, b) { return b[1] - a[1]; });
+    var barOpts2 = deepClone(BASE_OPTS);
+    barOpts2.indexAxis = 'y';
+    barOpts2.plugins.legend = { display: false };
+    barOpts2.scales = { x: { ticks: { color: '#9eb5d0', precision: 0 }, grid: { color: 'rgba(255,255,255,.05)' }, beginAtZero: true }, y: { ticks: { color: '#9eb5d0' }, grid: { display: false } } };
     charts.targetDrone = new Chart($('targetDroneChart'), {
-      type: 'doughnut',
+      type: 'bar',
       data: {
-        labels: tdLabels,
-        datasets: [{ data: tdData, backgroundColor: tdColors.slice(0, tdLabels.length), borderWidth: 0 }]
+        labels: tdEntries.map(function(e) { return e[0]; }),
+        datasets: [{ label: currentLang === 'fa' ? 'پهپاد' : 'Drones', data: tdEntries.map(function(e) { return e[1]; }), backgroundColor: 'rgba(255,159,67,.72)', borderRadius: 8, barThickness: 18 }]
       },
-      options: { responsive: true, maintainAspectRatio: false, plugins: { legend: { position: 'right', labels: { color: '#eef5fc', font: { size: 10 }, padding: 8 } } } }
+      options: barOpts2
     });
   }
 }
@@ -850,13 +862,13 @@ function renderAdditionalCharts() {
     });
   }
 
-  // Scenario Probability Trends (stacked area)
+  // Scenario Probability Trends (NOT stacked — individual lines)
   kill('scenarioTrend');
   if ($('scenarioTrendChart') && ac.scenarioHistory) {
     var sh = ac.scenarioHistory;
     var stackOpts = deepClone(BASE_OPTS);
-    stackOpts.scales.y.stacked = true;
-    stackOpts.scales.y.suggestedMax = 100;
+    stackOpts.scales.y.beginAtZero = true;
+    stackOpts.scales.y.suggestedMax = 35;
     stackOpts.scales.y.ticks = { color: '#7d8da1', font: { size: 10 }, callback: function(v) { return v + '%'; } };
 
     charts.scenarioTrend = new Chart($('scenarioTrendChart'), {
@@ -864,12 +876,12 @@ function renderAdditionalCharts() {
       data: {
         labels: sh.labels || [],
         datasets: [
-          { label: currentLang === 'fa' ? '\u0645\u0627\u0631\u067E\u06CC\u0686 \u062A\u0634\u062F\u06CC\u062F' : 'Escalation spiral', data: sh.escalationSpiral, borderColor: '#ff6b6b', backgroundColor: 'rgba(255,107,107,.15)', fill: true, borderWidth: 2, pointRadius: 4, tension: .3 },
-          { label: currentLang === 'fa' ? '\u0641\u0631\u0633\u0627\u06CC\u0634\u06CC' : 'Protracted attrition', data: sh.protractedAttrition, borderColor: '#ff9f43', backgroundColor: 'rgba(255,159,67,.15)', fill: true, borderWidth: 2, pointRadius: 4, tension: .3 },
-          { label: currentLang === 'fa' ? '\u0627\u0639\u0644\u0627\u0645 \u067E\u06CC\u0631\u0648\u0632\u06CC' : 'Declared victory', data: sh.declaredVictory, borderColor: '#63b3ff', backgroundColor: 'rgba(99,179,255,.15)', fill: true, borderWidth: 2, pointRadius: 4, tension: .3 },
-          { label: currentLang === 'fa' ? '\u0645\u0639\u0627\u0645\u0644\u0647' : 'Negotiated deal', data: sh.negotiatedDeal, borderColor: '#46d7b0', backgroundColor: 'rgba(70,215,176,.15)', fill: true, borderWidth: 2, pointRadius: 4, tension: .3 },
-          { label: currentLang === 'fa' ? '\u0645\u062F\u0627\u062E\u0644\u0647 \u0628\u06CC\u0646\u200C\u0627\u0644\u0645\u0644\u0644\u06CC' : 'Int\'l intervention', data: sh.internationalIntervention, borderColor: '#ffd166', backgroundColor: 'rgba(255,209,102,.15)', fill: true, borderWidth: 2, pointRadius: 4, tension: .3 },
-          { label: currentLang === 'fa' ? '\u0641\u0631\u0648\u067E\u0627\u0634\u06CC \u0631\u0698\u06CC\u0645' : 'Regime fracture', data: sh.regimeFracture, borderColor: '#b084ff', backgroundColor: 'rgba(176,132,255,.15)', fill: true, borderWidth: 2, pointRadius: 4, tension: .3 }
+          { label: currentLang === 'fa' ? '\u0645\u0627\u0631\u067E\u06CC\u0686 \u062A\u0634\u062F\u06CC\u062F' : 'Escalation spiral', data: sh.escalationSpiral, borderColor: '#ff6b6b', borderWidth: 2, pointRadius: 4, tension: .3 },
+          { label: currentLang === 'fa' ? '\u0641\u0631\u0633\u0627\u06CC\u0634\u06CC' : 'Protracted attrition', data: sh.protractedAttrition, borderColor: '#ff9f43', borderWidth: 2, pointRadius: 4, tension: .3 },
+          { label: currentLang === 'fa' ? '\u0627\u0639\u0644\u0627\u0645 \u067E\u06CC\u0631\u0648\u0632\u06CC' : 'Declared victory', data: sh.declaredVictory, borderColor: '#63b3ff', borderWidth: 2, pointRadius: 4, tension: .3 },
+          { label: currentLang === 'fa' ? '\u0645\u0639\u0627\u0645\u0644\u0647' : 'Negotiated deal', data: sh.negotiatedDeal, borderColor: '#46d7b0', borderWidth: 2, pointRadius: 4, tension: .3 },
+          { label: currentLang === 'fa' ? '\u0645\u062F\u0627\u062E\u0644\u0647 \u0628\u06CC\u0646\u200C\u0627\u0644\u0645\u0644\u0644\u06CC' : 'Int\'l intervention', data: sh.internationalIntervention, borderColor: '#ffd166', borderWidth: 2, pointRadius: 4, tension: .3 },
+          { label: currentLang === 'fa' ? '\u0641\u0631\u0648\u067E\u0627\u0634\u06CC \u0631\u0698\u06CC\u0645' : 'Regime fracture', data: sh.regimeFracture, borderColor: '#b084ff', borderWidth: 2, pointRadius: 4, tension: .3 }
         ]
       },
       options: stackOpts

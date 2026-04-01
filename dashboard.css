@@ -100,6 +100,12 @@ th{position:sticky;top:0;background:rgba(255,255,255,.03);color:var(--muted)}
 .biz-section h4{margin:0 0 8px;font-size:13px;color:var(--gold);letter-spacing:.4px;text-transform:uppercase}
 code{background:rgba(255,255,255,.06);padding:2px 6px;border-radius:6px}
 
+/* --- Casualty rows --- */
+.casualty-row{border:1px solid var(--border);border-radius:14px;padding:12px;margin-bottom:8px;background:rgba(255,255,255,.02)}
+.cas-group{font-weight:700;font-size:13px;margin-bottom:2px}
+.cas-figure{font-size:18px;font-weight:800;margin:4px 0}
+.cas-detail{font-size:12px;color:var(--soft);line-height:1.45}
+
 /* --- Loading --- */
 .loading-msg{text-align:center;padding:60px 20px;color:var(--muted);font-size:14px}
 
