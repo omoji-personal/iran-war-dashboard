@@ -1,9 +1,9 @@
 {
   "meta": {
-    "lastUpdated": "2026-04-02T23:30:00-04:00",
+    "lastUpdated": "2026-04-03T00:15:00-04:00",
     "notes": [
-      "Day 34 (Apr 02) update. Sources: CNN, AJ, NPR, CNBC, Bloomberg, AP, Al Arabiya, Axios, CBS, Gulf News, Investing.com, Times of Israel, NCRI, BBC, Al-Monitor, CGTN, FX Leaders, Polymarket, Alma Center, Reuters.",
-      "TRUMP PRIMETIME + OIL SURGE + KHARAZI STRUCK: Trump addressed nation — 2-3 more weeks, vowed extremely hard strikes on power plants. Brent surged $105.53 (+4.3%). Kharazi (ex-FM) gravely wounded, wife killed in Tehran strike. 14 wounded Tel Aviv incl 11yo. Hengam Island 7 injured. Iraq Anbar 7 killed. April 6 = 4 days. Asian markets crashed. Iran denies ceasefire."
+      "Day 34 (Apr 02) late update. Sources: CNN, AJ, NPR, CNBC, Bloomberg, AP, Al Arabiya, Axios, CBS, Gulf News, Investing.com, Times of Israel, NCRI, BBC, Al-Monitor, CGTN, FX Leaders, Polymarket, Alma Center, Reuters, Newsweek, The Intercept, Iranian Red Crescent.",
+      "TRUMP PRIMETIME + OIL SURGE + KHARAZI STRUCK: Trump addressed nation — 2-3 more weeks, vowed extremely hard strikes on power plants. Brent surged $105.53 (+4.3%). Kharazi (ex-FM) gravely wounded, wife killed in Tehran strike. 14 wounded Tel Aviv incl 11yo. Hengam Island 7 injured. Iraq Anbar 7 killed. April 6 = 4 days. Asian markets crashed. Iran denies ceasefire. US wounded revised UP to 520+ (Newsweek). 316 healthcare centers damaged (Red Crescent). Pentagon accused of hiding casualty figures (Intercept)."
     ]
   },
   "theoryBox": "<strong>Day 34 — TRUMP PRIMETIME ADDRESS + OIL SURGE $105 + KHARAZI STRUCK:</strong> Trump addressed nation — war \"nearing completion,\" 2-3 more weeks, vowed to hit power plants \"extremely hard.\" Brent SURGED to $105.53 (+4.3% — reversed D33 crash). Kharazi (ex-FM, back-channel to Pakistan) gravely wounded, wife killed in Tehran strike — diplomacy channel targeted. 14 wounded near Tel Aviv incl 11-year-old. Hengam Island (Hormuz) struck, 7 injured. Iraq Anbar base 7 killed. Asian markets crashed (Nikkei -2.1%, Kospi -3.9%). Iran denies ceasefire. April 6 = 4 days. Internet 768+ hrs.",
@@ -42,7 +42,7 @@
     {
       "label": "Israel dead",
       "value": "24+",
-      "desc": "D34: 14 wounded Tel Aviv (11yo). 18+ Israeli civilians + 15 US KIA. 6,022+ Israeli wounded."
+      "desc": "D34: 14 wounded Tel Aviv (11yo). 18+ Israeli civilians + 15 US KIA + 520+ US wounded. 6,239+ Israeli wounded."
     },
     {
       "label": "Nuclear risk",
@@ -84,7 +84,7 @@
     {
       "label": "اسرائیل",
       "value": "۲۴+",
-      "desc": "۱۴ زخمی تل‌آویو. ۱۵ آمریکا KIA."
+      "desc": "۱۴ زخمی تل‌آویو. ۱۵ KIA + ۵۲۰+ زخمی آمریکا."
     },
     {
       "label": "هسته‌ای",
@@ -102,6 +102,8 @@
     "IRAN DENIES CEASEFIRE: Trump claimed Iran\"s new president asked for ceasefire. Iran flatly denied. FM: will fight back as long as strikes continue.",
     "EXTENSIVE STRIKES: Past 24 hours — Tehran, Shiraz, Kermanshah, Sirjan, Ahvaz, Kurdistan. Multi-province bombardment continues unabated.",
     "APRIL 6 = 4 DAYS: Power grid deadline approaching. Trump speech ESCALATED rhetoric. Kharazi strike = targeting mediators. Convergence toward worst case.",
+    "US CASUALTIES REVISED UP: Newsweek reports 520+ US personnel wounded (Pentagon had disclosed ~300). Intercept reports Pentagon actively hiding casualty figures. 15 US KIA confirmed. Israeli wounded revised to 6,239+.",
+    "HEALTHCARE CRISIS: Iranian Red Crescent reports 316 healthcare/emergency centers damaged since D1. Medical infrastructure degrading across Iran.",
     "INTERNET 768+ HRS: 34 days. Longest in history. 90M isolated."
   ],
   "sitrep_fa": [
@@ -114,6 +116,8 @@
     "ایران آتش‌بس رد: ترامپ ادعای تقاضا. ایران تکذیب. ادامه جنگ.",
     "حملات گسترده: تهران، شیراز، کرمانشاه، سیرجان، اهواز، کردستان.",
     "۶ آوریل = ۴ روز. تشدید لفظی + خرازی = بدترین سناریو.",
+    "آمار تلفات آمریکا بازنگری: نیوزویک ۵۲۰+ زخمی (پنتاگون ~۳۰۰ اعلام کرده بود). ۱۵ KIA.",
+    "بحران بهداشت: ۳۱۶ مرکز آسیب (هلال‌احمر).",
     "اینترنت ۷۶۸+. ۳۴ روز."
   ],
   "dailySeries": {
@@ -1197,7 +1201,7 @@
       "group": "Israel",
       "figure": "24+ killed",
       "statusColor": "red",
-      "detail": "D34: 14 wounded Tel Aviv (11yo girl). 18+ Israeli civilians. 15 US KIA. ~300+ US wounded. 6,022+ Israeli wounded."
+      "detail": "D34: 14 wounded Tel Aviv (11yo girl). 18+ Israeli civilians. 15 US KIA. 520+ US wounded (Newsweek revised). 6,239+ Israeli wounded."
     },
     {
       "group": "Iraq",
@@ -1235,7 +1239,7 @@
       "group": "اسرائیل",
       "figure": "۲۴+",
       "statusColor": "red",
-      "detail": "۱۴ زخمی تل‌آویو. ۱۵ آمریکا KIA."
+      "detail": "۱۴ زخمی تل‌آویو. ۱۵ KIA + ۵۲۰+ زخمی آمریکا."
     },
     {
       "group": "عراق",
@@ -1259,17 +1263,17 @@
   "humanitarian": [
     "<strong>Internet:</strong> 768+ hours. 34 days. Longest ever. $1.3B+ loss. 90M isolated.",
     "<strong>Displacement:</strong> 330,000+ across ME. Lebanon ~1M. 2,000+ vessels stranded.",
-    "<strong>Infrastructure:</strong> 82,000+ structures. Power grid intact but April 6 = 4 days. Trump explicitly threatened.",
+    "<strong>Infrastructure:</strong> 82,000+ structures. 316 healthcare/emergency centers damaged (Red Crescent). Power grid intact but April 6 = 4 days. Trump explicitly threatened.",
     "<strong>Nuclear:</strong> IAEA locked out. 5 facilities struck. 440kg unaccounted. Kharazi (diplomatic channel) targeted.",
-    "<strong>Medical:</strong> 18,600+ injured. D34: 14 wounded Tel Aviv, 7 Hengam, 13 Iraq.",
+    "<strong>Medical:</strong> 19,400+ injured across all theaters. 520+ US wounded (Newsweek revised UP from Pentagon figures). Pentagon accused of hiding casualty data (Intercept). 14 wounded Tel Aviv, 7 Hengam, 13 Iraq.",
     "<strong>Economic:</strong> Oil $105.53 (+4.3%). Asian markets crashed. Qatar LNG -17%. Insurance 5-12%+."
   ],
   "humanitarian_fa": [
     "<strong>اینترنت:</strong> ۷۶۸+. ۳۴ روز. $۱.۳B+.",
     "<strong>آوارگی:</strong> ۳۳۰,۰۰۰+. لبنان ~۱M.",
-    "<strong>زیرساخت:</strong> ۸۲,۰۰۰+. برق سالم اما ۶ آوریل = ۴ روز. ترامپ تهدید.",
+    "<strong>زیرساخت:</strong> ۸۲,۰۰۰+. ۳۱۶ مرکز بهداشتی آسیب (هلال‌احمر). برق سالم اما ۶ آوریل = ۴ روز.",
     "<strong>هسته‌ای:</strong> IAEA قفل. ۵ تأسیسات. خرازی هدف.",
-    "<strong>پزشکی:</strong> ۱۴ زخمی تل‌آویو. ۷ هنگام. ۱۳ عراق.",
+    "<strong>پزشکی:</strong> ۱۹,۴۰۰+ زخمی. ۵۲۰+ آمریکایی (نیوزویک). پنتاگون متهم به پنهان‌کاری آمار.",
     "<strong>اقتصادی:</strong> نفت $۱۰۵. بازارهای آسیا سقوط."
   ],
   "diplomacy": [
@@ -1293,6 +1297,7 @@
     "<strong>Trump speech:</strong> Address to nation = attempt to reassure. But markets crashed = not convincing. \"2-3 more weeks\" sounds like indefinite.",
     "<strong>Gas:</strong> $4.08+ nationally. Oil $105 surging. No relief in sight. April 6 power grid = gas could hit $5+.",
     "<strong>Congressional:</strong> Passover attack rallied hawks. Trump speech may rally base but broader public unconvinced. AUMF still absent.",
+    "<strong>Casualties:</strong> Pentagon accused of hiding US casualty figures (Intercept). Newsweek reports 520+ wounded vs Pentagon's ~300. Casualty transparency scandal could erode support further.",
     "<strong>International:</strong> Asian market crash = global economic pain. Kharazi strike seen as targeting peace. International isolation risk growing."
   ],
   "publicOpinion_fa": [
@@ -1300,6 +1305,7 @@
     "<strong>سخنرانی:</strong> بازارها سقوط = قانع‌کننده نبود.",
     "<strong>بنزین:</strong> $۴.۰۸+. نفت $۱۰۵ جهش. ۶ آوریل = $۵+.",
     "<strong>کنگره:</strong> AUMF ندارد. افکار عمومی قانع نشده.",
+    "<strong>تلفات:</strong> پنتاگون متهم به پنهان‌کاری (اینترسپت). ۵۲۰+ زخمی در مقابل ~۳۰۰ پنتاگون. رسوایی شفافیت.",
     "<strong>بین‌المللی:</strong> بازارهای آسیا سقوط. خرازی = هدف صلح."
   ],
   "hormuz": [
@@ -1321,7 +1327,7 @@
     "<strong>باب‌المندب:</strong> حوثی فعال. نبسته."
   ],
   "keyActors": [
-    "<strong>US:</strong> Trump primetime = 2-3 more weeks + power grid threats. NO exit strategy. 15 KIA. Oil surging. Markets crashing. Kharazi strike under US/Israel ops.",
+    "<strong>US:</strong> Trump primetime = 2-3 more weeks + power grid threats. NO exit strategy. 15 KIA + 520+ wounded (Newsweek revised UP — Pentagon hiding figures per Intercept). Oil surging. Markets crashing. Kharazi strike under US/Israel ops.",
     "<strong>Israel:</strong> Kharazi strike (diplomatic target). Tel Aviv wave absorbed (14 wounded). Multi-province Iran bombardment continues. Hezbollah ops continue.",
     "<strong>Iran:</strong> 55 missiles D34 = sustained post-Passover. Denied ceasefire. FM: fight as long as strikes continue. Hengam + tanker + Israel = multi-theater. Channel damaged but fighting.",
     "<strong>China:</strong> 5-point plan. Asian markets crashed = China's own economic pain. Leverage remains as top trade partner.",
@@ -1331,7 +1337,7 @@
     "<strong>IAEA:</strong> Locked out. 440kg. 5 facilities. Kharazi not nuclear but diplomatic vacuum worsens oversight."
   ],
   "keyActors_fa": [
-    "<strong>آمریکا:</strong> سخنرانی = ۲-۳ هفته + نیروگاه. بدون خروج. ۱۵ KIA. نفت جهش.",
+    "<strong>آمریکا:</strong> سخنرانی = ۲-۳ هفته + نیروگاه. بدون خروج. ۱۵ KIA + ۵۲۰+ زخمی (پنتاگون پنهان‌کاری). نفت جهش.",
     "<strong>اسرائیل:</strong> خرازی هدف. تل‌آویو ۱۴ زخمی. بمباران مستمر.",
     "<strong>ایران:</strong> ۵۵ موشک = مستمر. رد آتش‌بس. چندجبهه. کانال آسیب.",
     "<strong>چین:</strong> طرح. بازارها سقوط = درد خودش.",
@@ -1739,8 +1745,8 @@
       "economicPain_fa": "برنت جهش $۱۰۵. سخنرانی ترامپ. بازارهای آسیا سقوط. ۹.",
       "diplomaticMomentum": "WORSENED: Kharazi (Pakistan back-channel lead) gravely wounded, wife killed. Iran denies ceasefire. Trump rhetoric escalatory. Diplomatic channel physically targeted. Score DOWN 6->5.5.",
       "diplomaticMomentum_fa": "بدتر: خرازی زخمی، همسرش کشته. ایران رد. ترامپ تشدیدی. ۵.۵.",
-      "usPoliticalSustainability": "Trump speech revealed no exit. Pew 59% wrong. 15 US KIA. Gas >$4. Markets crashed. \"2-3 more weeks\" = indefinite. Score HOLDS 1.5.",
-      "usPoliticalSustainability_fa": "سخنرانی بدون خروج. پیو ۵۹٪. ۱۵ KIA. بنزین >$۴. ۱.۵.",
+      "usPoliticalSustainability": "Trump speech revealed no exit. Pew 59% wrong. 15 US KIA + 520+ wounded (Newsweek revised UP — Pentagon accused of hiding figures per Intercept). Gas >$4. Markets crashed. \"2-3 more weeks\" = indefinite. Casualty transparency scandal = further political erosion. Score HOLDS 1.5.",
+      "usPoliticalSustainability_fa": "سخنرانی بدون خروج. پیو ۵۹٪. ۱۵ KIA + ۵۲۰+ زخمی (پنتاگون پنهان‌کاری). بنزین >$۴. ۱.۵.",
       "escalationCeilingDistance": "CRITICAL: April 6 = 4 days. Trump explicitly threatened power grid. Kharazi strike = targeting mediators. Oil surging = pressure building. Score DOWN 1->0.5. NEAREST to ceiling since war began.",
       "escalationCeilingDistance_fa": "بحرانی: ۶ آوریل = ۴ روز. ترامپ تهدید نیروگاه. خرازی = هدف میانجی. ۰.۵."
     },
@@ -1752,7 +1758,7 @@
       "convergenceScore": 6.4,
       "convergenceInterpretation": "6.4/10 = HIGH and RISING (from 6.2). Economic pain surged. Escalation ceiling nearest ever at 0.5. Diplomatic momentum declining as channels targeted. Resolution pressure building but channeling toward escalation NOT peace. April 6 = inflection.",
       "convergenceInterpretation_fa": "۶.۴/۱۰ = بالا و افزایش از ۶.۲. درد اقتصادی جهش. سقف نزدیک‌ترین تاریخ ۰.۵. فشار تشدید نه صلح.",
-      "lastUpdated": "2026-04-02T23:30:00-04:00"
+      "lastUpdated": "2026-04-03T00:15:00-04:00"
     }
   },
   "additionalCharts": {
@@ -1982,7 +1988,8 @@
         "D20",
         "D25",
         "D29",
-        "D33"
+        "D33",
+        "D34"
       ],
       "escalationSpiral": [
         15,
@@ -1992,7 +1999,8 @@
         25,
         26,
         28,
-        28
+        28,
+        30
       ],
       "protractedAttrition": [
         30,
@@ -2002,7 +2010,8 @@
         26,
         25,
         25,
-        25
+        25,
+        26
       ],
       "declaredVictory": [
         25,
@@ -2012,7 +2021,8 @@
         20,
         20,
         20,
-        20
+        20,
+        18
       ],
       "negotiatedDeal": [
         15,
@@ -2022,7 +2032,8 @@
         10,
         8,
         8,
-        12
+        12,
+        11
       ],
       "internationalIntervention": [
         10,
@@ -2032,6 +2043,7 @@
         12,
         12,
         12,
+        10,
         10
       ],
       "regimeFracture": [
@@ -2042,6 +2054,7 @@
         7,
         9,
         7,
+        5,
         5
       ]
     }
@@ -2223,7 +2236,7 @@
     },
     "publishingDeepDive": [
       "<strong>PAPER/INK SUPPLY:</strong> Iran imports 70%+ of printing paper. Hormuz closure + sanctions = supply chain severed. Domestic paper mills operating at estimated 20-30% capacity due to power disruptions. Quality declining.",
-      "<strong>PRINTING CAPACITY:</strong> Tehran's major printing houses (Offset, Sepehr, etc.) operating intermittently due to power outages. 650+ hour internet blackout prevents digital prepress. Estimated 80-90% capacity reduction.",
+      "<strong>PRINTING CAPACITY:</strong> Tehran's major printing houses (Offset, Sepehr, etc.) operating intermittently due to power outages. 768+ hour internet blackout prevents digital prepress. Estimated 80-90% capacity reduction.",
       "<strong>DISTRIBUTION NETWORKS:</strong> Domestic book distribution (Shahre Ketab, Book City, etc.) severely disrupted. 82,000+ structures damaged. Physical bookstores in strike zones closed. Online ordering impossible without internet.",
       "<strong>CENSORSHIP APPARATUS:</strong> Ministry of Culture and Islamic Guidance (Ershad) presumably still operating but capacity unknown. Book permits may be delayed or suspended. Paradoxically, war may reduce censorship bandwidth.",
       "<strong>PUBLISHER SOLVENCY:</strong> Small and medium publishers facing existential crisis. No sales, no distribution, no printing capacity. University presses better positioned (institutional backing) but still severely impacted. Expect consolidation/closures post-war.",
@@ -2231,7 +2244,7 @@
     ],
     "publishingDeepDive_fa": [
       "<strong>کاغذ و مرکب:</strong> ایران ۷۰٪+ کاغذ چاپ وارد می‌کند. هرمز + تحریم = زنجیره قطع. کارخانه‌ها ۲۰-۳۰٪ ظرفیت.",
-      "<strong>ظرفیت چاپ:</strong> چاپخانه‌های تهران متناوب. قطع اینترنت ۶۵۰+ ساعت = پیش‌چاپ دیجیتال ناممکن. ۸۰-۹۰٪ کاهش.",
+      "<strong>ظرفیت چاپ:</strong> چاپخانه‌های تهران متناوب. قطع اینترنت ۷۶۸+ ساعت = پیش‌چاپ دیجیتال ناممکن. ۸۰-۹۰٪ کاهش.",
       "<strong>توزیع:</strong> شبکه (شهر کتاب و غیره) مختل. ۸۲,۰۰۰+ ساختمان آسیب. فروشگاه‌ها بسته. سفارش آنلاین ناممکن.",
       "<strong>سانسور:</strong> ارشاد احتمالاً فعال اما ظرفیت نامشخص. مجوز کتاب ممکن تعلیق.",
       "<strong>بقای ناشران:</strong> ناشران کوچک/متوسط بحران وجودی. انتشارات دانشگاهی بهتر. انتظار ادغام/تعطیلی پس از جنگ.",
@@ -2389,7 +2402,8 @@
         "D14",
         "D21",
         "D29",
-        "D33"
+        "D33",
+        "D34"
       ],
       "warRiskPremium_pct": [
         0.02,
@@ -2397,7 +2411,8 @@
         1.2,
         2.5,
         3.8,
-        4.2
+        4.2,
+        4.5
       ],
       "hullInsurance_pct": [
         0.15,
@@ -2405,9 +2420,10 @@
         5,
         8,
         10,
-        12
+        12,
+        12.5
       ],
-      "note": "D32 tanker in Dubai port + D33 tanker in Qatar waters. Gulf-wide port anchorage unsafe. Hull 12% = uninsurable. Qatar tanker = premium surge imminent."
+      "note": "D34: Hengam Island (Hormuz entrance) struck + tanker off Qatar D34 + Aqua 1 D33 + Dubai D32 = 3 maritime incidents in 3 days. Hull 12.5% = effectively uninsurable. Gulf-wide port anchorage unsafe."
     }
   },
   "cumulativeByCountry": {
