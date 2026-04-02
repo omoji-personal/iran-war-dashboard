@@ -71,6 +71,23 @@
       <div class="vector-grid" id="vectorCards"></div>
     </section>
 
+    <!-- 3b. Ceasefire Deadline Countdown -->
+    <section class="panel" style="margin-top:16px">
+      <div class="kicker" style="color:var(--red)">April 6 deadline</div>
+      <div id="deadlineCountdown" style="font-size:32px;font-weight:900;margin:8px 0"></div>
+      <div id="deadlineContext" class="sub"></div>
+      <div class="grid cols-2" style="margin-top:12px">
+        <div>
+          <h4 style="color:var(--cyan);margin:0 0 8px">If deal materializes</h4>
+          <div class="timeline-vertical" id="branchDeal"></div>
+        </div>
+        <div>
+          <h4 style="color:var(--red);margin:0 0 8px">If deadline passes with no deal</h4>
+          <div class="timeline-vertical" id="branchNoDeal"></div>
+        </div>
+      </div>
+    </section>
+
     <!-- 4. Situation Report -->
     <section class="panel" style="margin-top:16px">
       <h2 data-i18n="hSitrep">Situation Report</h2>
@@ -125,6 +142,21 @@
     <section class="grid cols-2" style="margin-top:16px">
       <div class="panel"><h3 data-i18n="hDiplomacy">Diplomacy & negotiations</h3><div class="sub" data-i18n="subDiplomacy">Peace proposals, intermediaries, and positions.</div><ul class="list" id="diplomacyBox"></ul></div>
       <div class="panel"><h3 data-i18n="hKeyActors">Key actors & alliances</h3><div class="sub" data-i18n="subKeyActors">Who's involved and their roles.</div><ul class="list" id="keyActorsBox"></ul></div>
+    </section>
+
+    <!-- 8b. Coalition Fracture Index -->
+    <section class="panel" style="margin-top:16px">
+      <h3>Coalition fracture index</h3>
+      <div class="sub">Is the US-led coalition holding or crumbling? Cohesion score 0-10 over time.</div>
+      <div class="chart-box" style="height:280px"><canvas id="coalitionChart"></canvas></div>
+      <div id="coalitionEvents" style="margin-top:12px"></div>
+    </section>
+
+    <!-- 8c. Command Decapitation Tracker -->
+    <section class="panel" style="margin-top:16px">
+      <h3>Iran command decapitation tracker</h3>
+      <div class="sub">Senior leaders killed or wounded — is Iran's command structure degrading or regenerating?</div>
+      <div id="decapitationList"></div>
     </section>
 
     <!-- 9. Hormuz & Public Opinion -->

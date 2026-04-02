@@ -933,6 +933,106 @@ function renderHormuzTransit() {
 }
 
 /* ============================================================
+   NEW RENDER FUNCTIONS — Deadline, Coalition, Decapitation
+   ============================================================ */
+
+function renderDeadline() {
+  var cd = state.ceasefireDeadline;
+  if (!cd || !$('deadlineCountdown')) return;
+
+  var deadline = new Date(cd.deadline);
+  var now = new Date();
+  var diff = deadline - now;
+  var days = Math.floor(diff / 864e5);
+  var hours = Math.floor((diff % 864e5) / 36e5);
+  var mins = Math.floor((diff % 36e5) / 6e4);
+
+  if (diff <= 0) {
+    $('deadlineCountdown').innerHTML = '<span style="color:var(--red)">DEADLINE PASSED</span>';
+  } else {
+    $('deadlineCountdown').innerHTML = '<span style="color:var(--red)">' + days + 'd ' + hours + 'h ' + mins + 'm</span> <span style="font-size:14px;color:var(--muted)">until ' + cd.label + '</span>';
+  }
+
+  var ctx = currentLang === 'fa' ? (cd.context_fa || cd.context) : cd.context;
+  if ($('deadlineContext')) $('deadlineContext').textContent = ctx || '';
+
+  // Branch: deal
+  if ($('branchDeal') && cd.branchIfDeal) {
+    $('branchDeal').innerHTML = cd.branchIfDeal.map(function(s) {
+      return '<div class="tl-item partial"><div class="tl-milestone">' + s.step + '</div><div class="tl-estimate">' + s.timeline + '</div><div class="tl-detail">' + s.detail + '</div></div>';
+    }).join('');
+  }
+
+  // Branch: no deal
+  if ($('branchNoDeal') && cd.branchIfNoDeal) {
+    $('branchNoDeal').innerHTML = cd.branchIfNoDeal.map(function(s) {
+      return '<div class="tl-item blocked"><div class="tl-milestone">' + s.step + '</div><div class="tl-estimate">' + s.timeline + '</div><div class="tl-detail">' + s.detail + '</div></div>';
+    }).join('');
+  }
+}
+
+function renderCoalition() {
+  var cf = state.coalitionFracture;
+  if (!cf) return;
+
+  // Chart
+  kill('coalition');
+  if ($('coalitionChart') && cf.labels) {
+    var cfOpts = deepClone(BASE_OPTS);
+    cfOpts.scales.y.beginAtZero = true;
+    cfOpts.scales.y.suggestedMax = 10;
+    cfOpts.scales.y.ticks = { color: '#7d8da1', font: { size: 10 }, callback: function(v) {
+      return v === 10 ? 'Unified' : v === 5 ? 'Strained' : v === 0 ? 'Collapsed' : '';
+    }};
+
+    charts.coalition = new Chart($('coalitionChart'), {
+      type: 'line',
+      data: {
+        labels: cf.labels,
+        datasets: [{
+          label: currentLang === 'fa' ? 'انسجام ائتلاف' : 'Coalition cohesion',
+          data: cf.cohesionScore,
+          borderColor: '#ff9f43',
+          backgroundColor: 'rgba(255,159,67,.12)',
+          fill: true,
+          borderWidth: 3,
+          pointRadius: 5,
+          tension: .3
+        }]
+      },
+      options: cfOpts
+    });
+  }
+
+  // Events list
+  if ($('coalitionEvents') && cf.events) {
+    $('coalitionEvents').innerHTML = cf.events.map(function(e) {
+      var color = e.type === 'fracture' ? 'var(--red)' : e.type === 'support' ? 'var(--cyan)' : 'var(--gold)';
+      var icon = e.type === 'fracture' ? '\u25BC' : e.type === 'support' ? '\u25B2' : '\u25CF';
+      return '<div style="display:flex;gap:10px;align-items:flex-start;padding:8px 0;border-bottom:1px solid var(--border)">' +
+        '<span style="color:' + color + ';font-weight:800;min-width:20px">' + icon + '</span>' +
+        '<div><strong style="font-size:12px">' + e.date + ' \u2014 ' + e.actor + '</strong><div style="font-size:12px;color:var(--soft);margin-top:2px">' + e.detail + '</div></div></div>';
+    }).join('');
+  }
+}
+
+function renderDecapitation() {
+  var dt = state.decapitationTracker;
+  if (!dt || !$('decapitationList')) return;
+
+  $('decapitationList').innerHTML = dt.map(function(d) {
+    var statusCls = d.statusColor === 'red' ? 'bad' : 'warn';
+    var name = currentLang === 'fa' ? (d.name_fa || d.name) : d.name;
+    return '<div class="route-card">' +
+      '<div class="route-header"><div class="route-name">' + name + '</div><span class="route-status ' + d.statusColor + '">' + d.status + '</span></div>' +
+      '<div style="font-size:12px;color:var(--muted);margin-bottom:4px">' + d.role + ' \u2014 ' + d.date + '</div>' +
+      '<div class="route-detail">' + d.significance + '</div>' +
+      '<div style="font-size:11px;color:var(--soft);margin-top:4px"><strong>Replacement:</strong> ' + d.replacement + '</div>' +
+    '</div>';
+  }).join('');
+}
+
+/* ============================================================
    NEW RENDER FUNCTIONS — Expanded Iranfarhang
    ============================================================ */
 
@@ -1125,6 +1225,9 @@ function render() {
   renderAdditionalCharts();
   renderOilBands();
   renderHormuzTransit();
+  renderDeadline();
+  renderCoalition();
+  renderDecapitation();
   renderExpandedIranfarhang();
   renderExpandedKIP();
 }

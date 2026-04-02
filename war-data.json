@@ -2628,5 +2628,234 @@
     "preWarAverage": 62,
     "note": "Pre-war: ~62 vessels/day through Hormuz (21% of global oil). Dropped to 0 within 72 hours. Iran's yuan-based toll system began D15. Pakistan Aframax first non-Iranian transit D26. Currently ~10/day via safe passage framework. Full recovery requires mine clearance (months post-ceasefire).",
     "note_fa": "قبل جنگ: ~۶۲ کشتی/روز (۲۱٪ نفت جهان). ظرف ۷۲ ساعت صفر شد. عوارض یوآنی D15. پاکستان اولین عبور D26. فعلاً ~۱۰/روز. بازیابی کامل = ماه‌ها مین‌روبی."
-  }
+  },
+  "ceasefireDeadline": {
+    "deadline": "2026-04-06T20:00:00-04:00",
+    "label": "April 6, 8PM ET",
+    "label_fa": "۶ آوریل، ۸ شب ET",
+    "context": "Trump paused power plant strikes until this deadline. If no deal: power grid destruction = 90M Iranians without electricity.",
+    "context_fa": "ترامپ حمله نیروگاه‌ها تا این مهلت متوقف. اگر بدون معامله: شبکه برق = ۹۰ میلیون بدون برق.",
+    "branchIfDeal": [
+      {
+        "step": "Partial ceasefire announced",
+        "timeline": "Day 0",
+        "detail": "Likely phased: Hormuz reopening first, strikes pause, humanitarian corridors."
+      },
+      {
+        "step": "Hormuz mine clearance begins",
+        "timeline": "+1-2 weeks",
+        "detail": "MCM vessels deploy. Safe passage expands to 30+ vessels/day."
+      },
+      {
+        "step": "Oil drops to $85-90",
+        "timeline": "+2-4 weeks",
+        "detail": "Markets price in de-escalation. Gulf exports resume partially."
+      },
+      {
+        "step": "Full commercial traffic",
+        "timeline": "+6-12 months",
+        "detail": "Insurance normalizes. Mines cleared. Bab al-Mandab safe."
+      }
+    ],
+    "branchIfNoDeal": [
+      {
+        "step": "Power grid strikes begin",
+        "timeline": "Day 0",
+        "detail": "90M without electricity. Hospitals, water treatment, communications collapse."
+      },
+      {
+        "step": "Humanitarian catastrophe",
+        "timeline": "+1-3 days",
+        "detail": "Mass civilian casualties. International condemnation. UN emergency session."
+      },
+      {
+        "step": "Oil spikes $130-150+",
+        "timeline": "+1 week",
+        "detail": "Houthi likely closes Bab al-Mandab. Both chokepoints blocked. Global recession."
+      },
+      {
+        "step": "International intervention forced",
+        "timeline": "+2-4 weeks",
+        "detail": "Coalition fractures. China/Russia escalate diplomacy. Ground ops on Kharg Island."
+      }
+    ]
+  },
+  "coalitionFracture": {
+    "labels": [
+      "D1",
+      "D5",
+      "D10",
+      "D15",
+      "D20",
+      "D25",
+      "D29",
+      "D34"
+    ],
+    "cohesionScore": [
+      9,
+      8,
+      7.5,
+      7,
+      6,
+      5.5,
+      5,
+      4
+    ],
+    "events": [
+      {
+        "date": "D1 (Feb 28)",
+        "actor": "Full coalition",
+        "type": "support",
+        "detail": "US + Israel + GCC unified. UAE, Saudi, Qatar hosting US forces. Hormuz blocked by Iran."
+      },
+      {
+        "date": "D4 (Mar 3)",
+        "actor": "US Senate",
+        "type": "support",
+        "detail": "Rejected war powers resolution. Gave Trump political cover."
+      },
+      {
+        "date": "D12 (Mar 11)",
+        "actor": "France",
+        "type": "fracture",
+        "detail": "First non-US allied death (CWO Frion). France: 'never' Hormuz during war."
+      },
+      {
+        "date": "D17 (Mar 17)",
+        "actor": "Joe Kent (NCTC)",
+        "type": "fracture",
+        "detail": "Resigned: 'Iran not a threat.' First senior US official to break."
+      },
+      {
+        "date": "D18 (Mar 18)",
+        "actor": "Saudi Arabia",
+        "type": "fracture",
+        "detail": "Saudi: 'right to military action' — warning to US. 12 FM joint statement."
+      },
+      {
+        "date": "D22 (Mar 22)",
+        "actor": "Saudi Arabia",
+        "type": "fracture",
+        "detail": "Expelled US military attache. 22-country Hormuz coalition forming WITHOUT US."
+      },
+      {
+        "date": "D24 (Mar 24)",
+        "actor": "Lebanon",
+        "type": "fracture",
+        "detail": "Expelled Iranian ambassador. Proxy network fracturing."
+      },
+      {
+        "date": "D25 (Mar 25)",
+        "actor": "Australia/Japan/Germany",
+        "type": "fracture",
+        "detail": "All declined to join Hormuz coalition. US increasingly isolated."
+      },
+      {
+        "date": "D27 (Mar 27)",
+        "actor": "GCC (6 countries)",
+        "type": "fracture",
+        "detail": "Joint condemnation of strikes. Ghalibaf threatened attacks if islands occupied."
+      },
+      {
+        "date": "D29 (Mar 29)",
+        "actor": "G7",
+        "type": "mixed",
+        "detail": "Called for 'immediate cessation' — multilateral language but no enforcement."
+      },
+      {
+        "date": "D32 (Mar 31)",
+        "actor": "China + Pakistan",
+        "type": "fracture",
+        "detail": "5-point peace plan. Great-power alternative framework bypassing US."
+      },
+      {
+        "date": "D34 (Apr 2)",
+        "actor": "Asian markets",
+        "type": "fracture",
+        "detail": "Nikkei -2.1%, Kospi -3.9%. Economic allies signaling war is unsustainable."
+      }
+    ]
+  },
+  "decapitationTracker": [
+    {
+      "name": "Ayatollah Khamenei",
+      "name_fa": "آیت‌الله خامنه‌ای",
+      "role": "Supreme Leader",
+      "status": "Killed",
+      "statusColor": "red",
+      "date": "D1 (Feb 28)",
+      "replacement": "Mojtaba Khamenei (son) designated by Assembly of Experts D9. Absent since D8 — status unknown.",
+      "significance": "Highest-value target. Decapitation triggered succession crisis. Mojtaba's absence raises questions."
+    },
+    {
+      "name": "Ali Larijani",
+      "name_fa": "علی لاریجانی",
+      "role": "Senior advisor / negotiator",
+      "status": "Killed",
+      "statusColor": "red",
+      "date": "D17 (Mar 17)",
+      "replacement": "No direct replacement. Diplomatic channel lost.",
+      "significance": "Key back-channel figure. Death narrowed diplomatic options."
+    },
+    {
+      "name": "Soleimani (nephew)",
+      "name_fa": "سلیمانی (برادرزاده)",
+      "role": "IRGC commander",
+      "status": "Killed",
+      "statusColor": "red",
+      "date": "D17 (Mar 17)",
+      "replacement": "IRGC field command restructured.",
+      "significance": "Symbolic — Soleimani name carries weight in IRGC."
+    },
+    {
+      "name": "Basij Commander + Khatib",
+      "name_fa": "فرمانده بسیج + خطیب",
+      "role": "Basij / IRGC senior",
+      "status": "Killed",
+      "statusColor": "red",
+      "date": "D18 (Mar 18)",
+      "replacement": "Unknown. 5th senior kill.",
+      "significance": "Basij paramilitary leadership eliminated."
+    },
+    {
+      "name": "Adm. Tangsiri",
+      "name_fa": "دریادار تانگسیری",
+      "role": "IRGC Navy Commander / Hormuz architect",
+      "status": "Killed",
+      "statusColor": "red",
+      "date": "D27 (Mar 26)",
+      "replacement": "No confirmed successor. Safe passage expanding despite death = institutional not personal.",
+      "significance": "Most significant naval decapitation. Designed the Hormuz blockade strategy."
+    },
+    {
+      "name": "~40 senior officials",
+      "name_fa": "~۴۰ مقام ارشد",
+      "role": "Various IRGC / military",
+      "status": "Killed",
+      "statusColor": "red",
+      "date": "D1-D22",
+      "replacement": "IRGC promoting from within. Command continuity maintained at institutional level.",
+      "significance": "Cumulative loss. CENTCOM: 2/3 arms manufacturing destroyed."
+    },
+    {
+      "name": "Kamal Kharazi",
+      "name_fa": "کمال خرازی",
+      "role": "Ex-FM / Pakistan back-channel lead",
+      "status": "Gravely wounded",
+      "statusColor": "yellow",
+      "date": "D34 (Apr 2)",
+      "replacement": "Wife killed. Back-channel to Pakistan disrupted. Diplomatic momentum damaged.",
+      "significance": "Was overseeing the China-Pakistan peace plan channel. His wounding may derail the most promising diplomatic track."
+    },
+    {
+      "name": "Mojtaba Khamenei",
+      "name_fa": "مجتبی خامنه‌ای",
+      "role": "Designated Supreme Leader",
+      "status": "Missing since D8",
+      "statusColor": "yellow",
+      "date": "D9 designated, absent since D8",
+      "replacement": "N/A — he IS the replacement. Zolghadr named SNSC secretary D24 = institutional continuity without visible leader.",
+      "significance": "26 days absent. Written statement only (D13). No video. Speculation: injured, hiding, or dead. Regime functioning without visible head of state."
+    }
+  ]
 }
