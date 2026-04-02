@@ -248,8 +248,13 @@ function computeFreshness() {
 
 function parseLogDate(d) {
   if (!d) return 0;
-  var m = d.match(/D(\d+)/);
-  return m ? parseInt(m[1], 10) : 0;
+  var months = {Jan:0,Feb:1,Mar:2,Apr:3,May:4,Jun:5,Jul:6,Aug:7,Sep:8,Oct:9,Nov:10,Dec:11};
+  var parts = String(d).trim().split(/\s+/);
+  if (parts.length >= 2 && months[parts[0]] !== undefined) {
+    return new Date(2026, months[parts[0]], parseInt(parts[1], 10) || 1).getTime();
+  }
+  if (/^\d{4}-\d{2}-\d{2}/.test(d)) return new Date(d).getTime();
+  return 0;
 }
 
 function kill(key) {
