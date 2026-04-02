@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Iran War Dashboard</title>
+  <meta property="og:title" content="Iran War Dashboard — Predictive Conflict Monitor" />
+  <meta property="og:description" content="Predictive analysis of the 2026 Iran conflict: capability models, convergence vectors, oil shock, scenario probabilities, and daily situation reports." />
+  <meta property="og:type" content="website" />
+  <meta name="twitter:card" content="summary" />
+  <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.1/dist/chart.umd.min.js"></script>
+  <link rel="stylesheet" href="dashboard.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Vazirmatn:wght@400;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="topbar">
+    <div class="topbar-inner">
+      <div class="title">
+        <h1 data-i18n="title">Iran War Dashboard</h1>
+        <p data-i18n-html="subtitle">Predictive conflict analysis: capability models, convergence vectors, oil shock, and scenario probabilities.</p>
+      </div>
+      <div class="chips">
+        <div class="chip"><span data-i18n="chipUpdate">Last data update:</span> <strong id="lastUpdated">&mdash;</strong></div>
+        <div class="chip"><span data-i18n="chipFresh">Freshness:</span> <strong id="freshnessStatus">&mdash;</strong></div>
+        <div class="chip"><span data-i18n="chipWindow">Data window:</span> <strong id="seriesThrough">&mdash;</strong></div>
+        <button class="lang-btn" id="langToggle" onclick="toggleLang()">فارسی</button>
+      </div>
+    </div>
+  </div>
+
+  <main class="shell" id="mainShell">
+    <div class="loading-msg" id="loadingMsg">Loading dashboard data&hellip;</div>
+  </main>
+
+  <template id="dashboardTemplate">
+    <!-- 1. Prediction Hero -->
+    <section class="prediction-hero">
+      <div class="kicker" data-i18n="kickerPrediction">War outcome forecast</div>
+      <div class="outcome-forecast" id="outcomeForecast"></div>
+      <div class="convergence-badge" id="convergenceBadge">
+        <span data-i18n="convergence">Resolution pressure:</span> <span class="score" id="convergenceScore"></span><span>/10</span>
+      </div>
+      <div id="convergenceInterpretation" class="sub"></div>
+      <div class="metric-grid" id="metrics"></div>
+    </section>
+
+    <!-- 2. Capability Thesis -->
+    <section class="panel" style="margin-top:16px">
+      <div class="kicker" data-i18n="kickerThesis">Capability thesis</div>
+      <h2 data-i18n="hThesis">Depleted or Rationing?</h2>
+      <div class="sub" data-i18n="subThesis">Two models of Iran's launch tempo — each implies a different war outcome. Dashed lines = 14-day forecast.</div>
+      <div class="chart-box tall"><canvas id="thesisChart"></canvas></div>
+      <div class="model-cards" id="modelCards"></div>
+    </section>
+
+    <!-- 3. Resolution Pressure -->
+    <section class="panel" style="margin-top:16px">
+      <div class="kicker" data-i18n="kickerVectors">Resolution pressure</div>
+      <h2 data-i18n="hVectors">War-Ending Pressure Index</h2>
+      <div class="sub" data-i18n="subVectors">All vectors normalized: higher = more pressure to end the war. Resolution likely when 3+ vectors exceed 7.</div>
+      <div class="chart-box tall"><canvas id="vectorChart"></canvas></div>
+      <div class="vector-grid" id="vectorCards"></div>
+    </section>
+
+    <!-- 4. Situation Report -->
+    <section class="panel" style="margin-top:16px">
+      <h2 data-i18n="hSitrep">Situation Report</h2>
+      <div class="theory" id="theoryBox"></div>
+      <ul class="list" id="sitrep" style="margin-top:12px"></ul>
+      <div class="footnote" id="sourceNotes"></div>
+    </section>
+
+    <!-- 5. Scenario Probabilities + Trend Chart -->
+    <section class="grid cols-2" style="margin-top:16px">
+      <div class="panel">
+        <h3 data-i18n="hScenario">Scenario probabilities</h3>
+        <div id="scenarioProbs"></div>
+      </div>
+      <div class="panel">
+        <h3 data-i18n="hScenarioTrend">Scenario probability trends</h3>
+        <div class="sub" data-i18n="subScenarioTrend">How outcome probabilities have shifted since Day 1.</div>
+        <div class="chart-box tall"><canvas id="scenarioTrendChart"></canvas></div>
+      </div>
+    </section>
+
+    <!-- 6. Launch Tempo Charts -->
+    <section class="grid cols-2" style="margin-top:16px">
+      <div class="panel"><h3 data-i18n="hMissile">Daily ballistic missile launches</h3><div class="sub" data-i18n="subMissile">Daily counts, not cumulative. Trend line included.</div><div class="chart-box"><canvas id="missileChart"></canvas></div><div class="footnote" id="missileFoot"></div></div>
+      <div class="panel"><h3 data-i18n="hDrone">Daily drone launches</h3><div class="sub" data-i18n="subDrone">Daily counts, not cumulative.</div><div class="chart-box"><canvas id="droneChart"></canvas></div><div class="footnote" id="droneFoot"></div></div>
+    </section>
+    <section class="grid cols-2" style="margin-top:16px">
+      <div class="panel"><h3 data-i18n="hCombo">Combined launch tempo</h3><div class="sub" data-i18n="subCombo">Missiles and drones together — converging or diverging?</div><div class="chart-box tall"><canvas id="comboChart"></canvas></div></div>
+      <div class="panel"><h3 data-i18n="hCumul">Cumulative strikes</h3><div class="sub" data-i18n="subCumul">Running total of all projectiles launched since Day 1.</div><div class="chart-box tall"><canvas id="cumulChart"></canvas></div></div>
+    </section>
+
+    <!-- 7. Oil + Target Breakdown -->
+    <section class="grid cols-2" style="margin-top:16px">
+      <div class="panel"><h3 data-i18n="hOilOverlay">Oil price vs conflict intensity</h3><div class="sub" data-i18n="subOilOverlay">Dual axis: are markets responding to military tempo or diplomatic signals?</div><div class="chart-box tall"><canvas id="oilOverlayChart"></canvas></div><div class="footnote" id="oilFoot"></div></div>
+      <div class="panel"><h3 data-i18n="hOil">Oil shock monitor</h3><div class="sub" data-i18n="subOil">Brent and WTI benchmark pressure.</div><div class="chart-box tall"><canvas id="oilChart"></canvas></div></div>
+    </section>
+    <section class="grid cols-2" style="margin-top:16px">
+      <div class="panel"><h3 data-i18n="hTargetM">Latest daily missile strikes by target</h3><div class="sub" data-i18n="subTarget">Latest daily slice — who's being hit?</div><div class="chart-box short"><canvas id="targetMissileChart"></canvas></div><div class="footnote" id="targetMissileFoot"></div></div>
+      <div class="panel"><h3 data-i18n="hTargetD">Latest daily drone strikes by target</h3><div class="sub" data-i18n="subTargetD">Theater narrowing or spreading?</div><div class="chart-box short"><canvas id="targetDroneChart"></canvas></div><div class="footnote" id="targetDroneFoot"></div></div>
+    </section>
+    <section class="panel" style="margin-top:16px">
+      <h3>Cumulative strikes by country</h3>
+      <div class="sub">Estimated total missiles + drones received per target country since Day 1.</div>
+      <div class="chart-box" style="height:320px"><canvas id="cumulByCountryChart"></canvas></div>
+    </section>
+
+    <!-- 8. Diplomacy & Key Actors -->
+    <section class="grid cols-2" style="margin-top:16px">
+      <div class="panel"><h3 data-i18n="hDiplomacy">Diplomacy & negotiations</h3><div class="sub" data-i18n="subDiplomacy">Peace proposals, intermediaries, and positions.</div><ul class="list" id="diplomacyBox"></ul></div>
+      <div class="panel"><h3 data-i18n="hKeyActors">Key actors & alliances</h3><div class="sub" data-i18n="subKeyActors">Who's involved and their roles.</div><ul class="list" id="keyActorsBox"></ul></div>
+    </section>
+
+    <!-- 9. Hormuz & Public Opinion -->
+    <section class="grid cols-2" style="margin-top:16px">
+      <div class="panel"><h3 data-i18n="hHormuz">Hormuz Strait & safe passage</h3><div class="sub" data-i18n="subHormuz">Blockade status, mine fields, and transit frameworks.</div><ul class="list" id="hormuzBox"></ul><div style="margin-top:14px" id="shippingRoutesStandalone"></div></div>
+      <div class="panel"><h3 data-i18n="hPublicOpinion">Public opinion</h3><div class="sub" data-i18n="subPublicOpinion">US polling and international reaction.</div><ul class="list" id="publicOpinionBox"></ul></div>
+    </section>
+
+    <!-- 10. Projected Timeline + Theory Evaluation -->
+    <section class="grid cols-2" style="margin-top:16px">
+      <div class="panel"><h3 data-i18n="hTimeline">Projected timeline</h3><ul class="list" id="timeline"></ul></div>
+      <div class="panel"><h3 data-i18n="hTheoryEval">Working theory evaluation</h3><ul class="list" id="theoryEval"></ul></div>
+    </section>
+
+    <!-- 11. Event Log (bottom, reference) -->
+    <section class="panel" style="margin-top:16px">
+      <h3 data-i18n="hLog">Event log</h3><div class="sub" data-i18n="subLog">Newest first.</div>
+      <div class="table-wrap"><table><thead><tr>
+        <th data-i18n="thDate">Date</th><th data-i18n="thMissiles">Missiles</th><th data-i18n="thDrones">Drones</th>
+        <th data-i18n="thPrimary">Primary targets</th><th data-i18n="thCap">Capability</th>
+        <th data-i18n="thCost">Cost / escalation</th><th data-i18n="thAssess">Assessment</th>
+      </tr></thead><tbody id="dailyRows"></tbody></table></div>
+    </section>
+  </template>
+
+  <script src="dashboard.js"></script>
+</body>
+</html>
