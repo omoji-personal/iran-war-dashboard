@@ -14,10 +14,13 @@
 body{
   margin:0; color:var(--text);
   font-family:Inter,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;
-  background:
+  background-color:var(--bg2);
+  background-image:
     radial-gradient(circle at top right, rgba(99,179,255,.16), transparent 24%),
     radial-gradient(circle at top left, rgba(255,209,102,.10), transparent 22%),
     linear-gradient(180deg,var(--bg) 0%,var(--bg2) 100%);
+  background-attachment: fixed;
+  min-height:100vh;
 }
 html[dir="rtl"] body{font-family:"Vazirmatn",Tahoma,"Segoe UI",system-ui,sans-serif}
 
@@ -367,9 +370,35 @@ html[dir="rtl"] .tl-item::before {
   .metric-grid { grid-template-columns: repeat(2,minmax(0,1fr)); }
   .model-cards { grid-template-columns: 1fr; }
   .vector-grid { grid-template-columns: repeat(3, 1fr); }
+  table { min-width: 900px; }
 }
 @media(max-width:700px) {
   .metric-grid { grid-template-columns: 1fr; }
-  .title h1 { font-size: 19px; }
-  .vector-grid { grid-template-columns: repeat(2, 1fr); }
+  .title h1 { font-size: 18px; }
+  .title p { font-size: 12px; }
+  .vector-grid { grid-template-columns: 1fr; }
+  .topbar-inner { flex-direction: column; align-items: flex-start; gap: 10px; }
+  .chips { width: 100%; flex-wrap: wrap; gap: 6px; }
+  .chip { font-size: 11px; padding: 7px 10px; }
+  .lang-btn { padding: 6px 12px; font-size: 12px; }
+  .panel { padding: 14px; border-radius: 16px; }
+  .prediction-hero { padding: 16px; }
+  .chart-box { height: 260px !important; }
+  .chart-box.tall { height: 300px !important; }
+  .chart-box.short { height: 220px !important; }
+  .outcome-forecast { font-size: 13px; padding: 14px; }
+  .convergence-badge { font-size: 12px; padding: 6px 14px; }
+  .convergence-badge .score { font-size: 18px; }
+  .model-card .confidence { font-size: 22px; }
+  .metric .value { font-size: 22px; }
+  .metric .desc { font-size: 11px; }
+  .scenario { flex-direction: column; gap: 6px; }
+  .scenario .prob { font-size: 18px; }
+  h2 { font-size: 20px; }
+  h3 { font-size: 16px; }
+  .hub-matrix { font-size: 10px; }
+  .hub-matrix th, .hub-matrix td { padding: 6px 4px; }
+  .route-card { padding: 10px; }
+  .risk-gauge { flex-direction: column; text-align: center; }
+  .risk-gauge .gauge-score { font-size: 28px; }
 }
