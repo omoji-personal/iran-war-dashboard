@@ -44,7 +44,7 @@ html[dir="rtl"] body{font-family:"Vazirmatn",Tahoma,"Segoe UI",system-ui,sans-se
 .cols-3{grid-template-columns:repeat(3,minmax(0,1fr))}
 
 /* --- Panel --- */
-.panel{border:1px solid var(--border);border-radius:22px;padding:18px;background:linear-gradient(180deg,rgba(15,28,49,.96),rgba(21,37,63,.94));box-shadow:0 20px 60px rgba(0,0,0,.24)}
+.panel{border:1px solid rgba(60,85,120,.5);border-radius:22px;padding:18px;background:linear-gradient(180deg,rgba(15,28,49,.98),rgba(21,37,63,.96));box-shadow:0 20px 60px rgba(0,0,0,.3)}
 .panel h2,.panel h3{margin:0 0 8px}
 .sub{color:var(--muted);font-size:13px;line-height:1.45;margin-bottom:12px}
 .kicker{color:var(--gold);font-weight:800;font-size:12px;text-transform:uppercase;letter-spacing:.85px;margin-bottom:8px}
