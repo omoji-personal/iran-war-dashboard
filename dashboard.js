@@ -853,6 +853,86 @@ function renderAdditionalCharts() {
 }
 
 /* ============================================================
+   NEW RENDER FUNCTIONS — Stockpile, Oil Bands, Hormuz Transit
+   ============================================================ */
+
+function renderStockpile() {
+  var sa = state.stockpileAnalysis;
+  if (!sa || !$('stockpileCards')) return;
+  var scenarios = sa.estimatedStockpiles || [];
+  var rate = sa.currentDailyRate || {};
+
+  $('stockpileCards').innerHTML = '<div class="model-cards" style="grid-template-columns:repeat(3,1fr)">' +
+    scenarios.map(function(s) {
+      var daysM = s.daysRemaining_missiles || 0;
+      var cls = daysM > 100 ? 'high' : daysM > 50 ? 'medium' : 'low';
+      var label = currentLang === 'fa' ? (s.scenario_fa || s.scenario) : s.scenario;
+      return '<div class="model-card">' +
+        '<h4>' + label + '</h4>' +
+        '<div class="confidence ' + cls + '">' + daysM + ' days</div>' +
+        '<div class="detail">Missiles remaining: <strong>' + (s.missiles || '?').toLocaleString() + '</strong> (exhaust ' + s.exhaustionDate_missiles + ')</div>' +
+        '<div class="detail">Drones remaining: <strong>' + (s.drones || '?').toLocaleString() + '</strong> (exhaust ' + s.exhaustionDate_drones + ')</div>' +
+        '<div class="detail" style="margin-top:6px;font-size:11px;color:var(--muted)">' + s.note + '</div>' +
+      '</div>';
+    }).join('') + '</div>';
+
+  var burned = sa.burnedToDate || {};
+  if ($('burnedToDate')) {
+    $('burnedToDate').innerHTML = '~' + ((burned.missiles || 0).toLocaleString()) + ' missiles + ~' + ((burned.drones || 0).toLocaleString()) + ' drones at ~' + (rate.missiles || '?') + ' missiles/day + ~' + (rate.drones || '?') + ' drones/day';
+  }
+}
+
+function renderOilBands() {
+  kill('oilBands');
+  var ob = state.oilScenarioBands;
+  if (!ob || !$('oilBandsChart')) return;
+
+  var bandOpts = deepClone(BASE_OPTS);
+  bandOpts.scales.y.ticks = { color: '#7d8da1', font: { size: 10 }, callback: function(v) { return '$' + v; } };
+  bandOpts.scales.y.suggestedMin = 60;
+
+  charts.oilBands = new Chart($('oilBandsChart'), {
+    type: 'line',
+    data: {
+      labels: ob.labels || [],
+      datasets: [
+        { label: currentLang === 'fa' ? 'آتش‌بس ۶ آوریل' : 'Ceasefire by Apr 6', data: ob.ceasefireApril6, borderColor: '#46d7b0', backgroundColor: 'rgba(70,215,176,.1)', fill: true, borderWidth: 2.5, pointRadius: 4, tension: .3, borderDash: [6, 3] },
+        { label: currentLang === 'fa' ? 'ادامه جنگ' : 'War continues', data: ob.warContinues, borderColor: '#ffd166', backgroundColor: 'rgba(255,209,102,.1)', fill: true, borderWidth: 2.5, pointRadius: 4, tension: .3, borderDash: [6, 3] },
+        { label: currentLang === 'fa' ? 'بستن باب‌المندب' : 'Bab al-Mandab closes', data: ob.babAlMandabCloses, borderColor: '#ff6b6b', backgroundColor: 'rgba(255,107,107,.1)', fill: true, borderWidth: 2.5, pointRadius: 4, tension: .3, borderDash: [6, 3] }
+      ]
+    },
+    options: bandOpts
+  });
+}
+
+function renderHormuzTransit() {
+  kill('hormuzTransit');
+  var ht = state.hormuzTransit;
+  if (!ht || !$('hormuzTransitChart')) return;
+
+  var htOpts = deepClone(BASE_OPTS);
+  htOpts.scales.y.beginAtZero = true;
+  htOpts.scales.y.suggestedMax = 70;
+
+  charts.hormuzTransit = new Chart($('hormuzTransitChart'), {
+    type: 'line',
+    data: {
+      labels: ht.labels || [],
+      datasets: [
+        { label: currentLang === 'fa' ? 'کشتی/روز' : 'Vessels/day', data: ht.vessels, borderColor: '#63b3ff', backgroundColor: 'rgba(99,179,255,.12)', fill: true, borderWidth: 2.5, pointRadius: 3, tension: .22 },
+        { label: currentLang === 'fa' ? 'میانگین قبل جنگ' : 'Pre-war average', data: ht.vessels.map(function() { return ht.preWarAverage; }), borderColor: '#ff6b6b', borderDash: [8, 4], borderWidth: 1.5, pointRadius: 0 }
+      ]
+    },
+    options: htOpts
+  });
+
+  if ($('hormuzTransitNote')) {
+    var note = currentLang === 'fa' ? (ht.note_fa || ht.note) : ht.note;
+    $('hormuzTransitNote').textContent = note || '';
+  }
+}
+
+/* ============================================================
    NEW RENDER FUNCTIONS — Expanded Iranfarhang
    ============================================================ */
 
@@ -1041,7 +1121,10 @@ function render() {
   setText();
   renderCharts();
   renderPredictiveSection();
+  renderStockpile();
   renderAdditionalCharts();
+  renderOilBands();
+  renderHormuzTransit();
   renderExpandedIranfarhang();
   renderExpandedKIP();
 }

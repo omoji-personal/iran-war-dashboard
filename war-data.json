@@ -2468,5 +2468,165 @@
       "drones": 82
     },
     "_note": "Estimated cumul ~3,185 missiles / ~5,062 drones through D34. D34: Trump primetime + Kharazi struck + oil surged. Hengam Island + tanker off Qatar + Tel Aviv 14 wounded."
+  },
+  "stockpileAnalysis": {
+    "currentDailyRate": {
+      "missiles": 30,
+      "drones": 55
+    },
+    "estimatedStockpiles": [
+      {
+        "scenario": "Western estimate (low)",
+        "scenario_fa": "تخمین غربی (پایین)",
+        "missiles": 1500,
+        "drones": 5000,
+        "daysRemaining_missiles": 50,
+        "daysRemaining_drones": 91,
+        "exhaustionDate_missiles": "May 22",
+        "exhaustionDate_drones": "Jul 2",
+        "note": "Based on IISS/CSIS pre-war estimates minus confirmed expenditure (~3,185 fired). Assumes no resupply."
+      },
+      {
+        "scenario": "IRGC claim (high)",
+        "scenario_fa": "ادعای سپاه (بالا)",
+        "missiles": 4000,
+        "drones": 15000,
+        "daysRemaining_missiles": 133,
+        "daysRemaining_drones": 273,
+        "exhaustionDate_missiles": "Aug 13",
+        "exhaustionDate_drones": "Dec 31+",
+        "note": "Based on IRGC D16 claim 'most weapons cache intact, using decade-old missiles.' If true, Iran has 4-9 months of sustained fire."
+      },
+      {
+        "scenario": "Mid-range estimate",
+        "scenario_fa": "تخمین میانه",
+        "missiles": 2500,
+        "drones": 9000,
+        "daysRemaining_missiles": 83,
+        "daysRemaining_drones": 164,
+        "exhaustionDate_missiles": "Jun 24",
+        "exhaustionDate_drones": "Sep 13",
+        "note": "Midpoint. Accounts for some resupply from North Korea/China pipeline + hidden stockpiles minus battle damage."
+      }
+    ],
+    "burnedToDate": {
+      "missiles": 3185,
+      "drones": 5062
+    }
+  },
+  "oilScenarioBands": {
+    "labels": [
+      "Now",
+      "+1w",
+      "+2w",
+      "+1m",
+      "+2m",
+      "+3m"
+    ],
+    "ceasefireApril6": [
+      105,
+      95,
+      88,
+      82,
+      78,
+      75
+    ],
+    "warContinues": [
+      105,
+      108,
+      112,
+      115,
+      118,
+      120
+    ],
+    "babAlMandabCloses": [
+      105,
+      125,
+      140,
+      155,
+      160,
+      165
+    ],
+    "note": "Projections based on Goldman Sachs ($110 avg), Citi ($120+ if sustained), IEA worst-case. Ceasefire scenario assumes phased Hormuz reopening. Bab al-Mandab closure = both chokepoints blocked.",
+    "note_fa": "پیش‌بینی‌ها بر اساس گلدمن ساکس ($110)، سیتی ($120+)، IEA بدترین حالت. آتش‌بس = بازگشایی مرحله‌ای هرمز. بستن باب‌المندب = هر دو تنگه."
+  },
+  "hormuzTransit": {
+    "labels": [
+      "Feb 27",
+      "Feb 28",
+      "Mar 01",
+      "Mar 02",
+      "Mar 03",
+      "Mar 04",
+      "Mar 05",
+      "Mar 06",
+      "Mar 07",
+      "Mar 08",
+      "Mar 09",
+      "Mar 10",
+      "Mar 11",
+      "Mar 12",
+      "Mar 13",
+      "Mar 14",
+      "Mar 15",
+      "Mar 16",
+      "Mar 17",
+      "Mar 18",
+      "Mar 19",
+      "Mar 20",
+      "Mar 21",
+      "Mar 22",
+      "Mar 23",
+      "Mar 24",
+      "Mar 25",
+      "Mar 26",
+      "Mar 27",
+      "Mar 28",
+      "Mar 29",
+      "Mar 30",
+      "Mar 31",
+      "Apr 01",
+      "Apr 02"
+    ],
+    "vessels": [
+      62,
+      5,
+      2,
+      1,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      1,
+      1,
+      1,
+      2,
+      2,
+      2,
+      3,
+      3,
+      3,
+      4,
+      5,
+      6,
+      6,
+      7,
+      7,
+      8,
+      8,
+      9,
+      10,
+      10
+    ],
+    "preWarAverage": 62,
+    "note": "Pre-war: ~62 vessels/day through Hormuz (21% of global oil). Dropped to 0 within 72 hours. Iran's yuan-based toll system began D15. Pakistan Aframax first non-Iranian transit D26. Currently ~10/day via safe passage framework. Full recovery requires mine clearance (months post-ceasefire).",
+    "note_fa": "قبل جنگ: ~۶۲ کشتی/روز (۲۱٪ نفت جهان). ظرف ۷۲ ساعت صفر شد. عوارض یوآنی D15. پاکستان اولین عبور D26. فعلاً ~۱۰/روز. بازیابی کامل = ماه‌ها مین‌روبی."
   }
 }

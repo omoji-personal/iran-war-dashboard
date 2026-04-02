@@ -54,6 +54,14 @@
       <div class="model-cards" id="modelCards"></div>
     </section>
 
+    <!-- 2b. Stockpile Burn Rate -->
+    <section class="panel" style="margin-top:16px">
+      <h3>Stockpile burn rate</h3>
+      <div class="sub">At current launch rate, how long can Iran sustain fire? Three stockpile assumptions.</div>
+      <div id="stockpileCards"></div>
+      <div class="footnote" style="margin-top:10px"><strong>Fired to date:</strong> <span id="burnedToDate"></span></div>
+    </section>
+
     <!-- 3. Resolution Pressure (formerly 5-Vector Convergence) -->
     <section class="panel" style="margin-top:16px">
       <div class="kicker" data-i18n="kickerVectors">Resolution pressure</div>
@@ -94,10 +102,14 @@
       <div class="panel"><h3 data-i18n="hCumul">Cumulative strikes</h3><div class="sub" data-i18n="subCumul">Running total of all projectiles launched since Day 1.</div><div class="chart-box tall"><canvas id="cumulChart"></canvas></div></div>
     </section>
 
-    <!-- 7. Oil + Target Breakdown -->
+    <!-- 7. Oil + Scenario Bands + Hormuz -->
     <section class="grid cols-2" style="margin-top:16px">
       <div class="panel"><h3 data-i18n="hOilOverlay">Oil price vs conflict intensity</h3><div class="sub" data-i18n="subOilOverlay">Dual axis: are markets responding to military tempo or diplomatic signals?</div><div class="chart-box tall"><canvas id="oilOverlayChart"></canvas></div><div class="footnote" id="oilFoot"></div></div>
+      <div class="panel"><h3>Oil price scenario bands</h3><div class="sub">Where oil goes depends on which scenario plays out.</div><div class="chart-box tall"><canvas id="oilBandsChart"></canvas></div></div>
+    </section>
+    <section class="grid cols-2" style="margin-top:16px">
       <div class="panel"><h3 data-i18n="hOil">Oil shock monitor</h3><div class="sub" data-i18n="subOil">Brent and WTI benchmark pressure.</div><div class="chart-box tall"><canvas id="oilChart"></canvas></div></div>
+      <div class="panel"><h3>Hormuz Strait transit rate</h3><div class="sub">Vessels per day through Hormuz — the single most consequential economic metric.</div><div class="chart-box tall"><canvas id="hormuzTransitChart"></canvas></div><div class="footnote" id="hormuzTransitNote"></div></div>
     </section>
     <section class="grid cols-2" style="margin-top:16px">
       <div class="panel"><h3 data-i18n="hTargetM">Latest daily missile strikes by target</h3><div class="sub" data-i18n="subTarget">Latest daily slice — who's being hit?</div><div class="chart-box short"><canvas id="targetMissileChart"></canvas></div><div class="footnote" id="targetMissileFoot"></div></div>
