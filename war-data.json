@@ -1,124 +1,124 @@
 {
   "meta": {
-    "lastUpdated": "2026-04-02T11:47:33-04:00",
+    "lastUpdated": "2026-04-03T10:00:00-04:00",
     "notes": [
-      "Day 34 (Apr 02) late update. Sources: CNN, AJ, NPR, CNBC, Bloomberg, AP, Al Arabiya, Axios, CBS, Gulf News, Investing.com, Times of Israel, NCRI, BBC, Al-Monitor, CGTN, FX Leaders, Polymarket, Alma Center, Reuters, Newsweek, The Intercept, Iranian Red Crescent.",
-      "TRUMP PRIMETIME + OIL SURGE + KHARAZI STRUCK: Trump addressed nation — 2-3 more weeks, vowed extremely hard strikes on power plants. Brent surged $105.53 (+4.3%). Kharazi (ex-FM) gravely wounded, wife killed in Tehran strike. 14 wounded Tel Aviv incl 11yo. Hengam Island 7 injured. Iraq Anbar 7 killed. April 6 = 4 days. Asian markets crashed. Iran denies ceasefire. US wounded revised UP to 520+ (Newsweek). 316 healthcare centers damaged (Red Crescent). Pentagon accused of hiding casualty figures (Intercept)."
+      "Day 35 (Apr 03) update. Sources: CNN, AJ, NPR, CNBC, Bloomberg, AP, CBS, Gulf News, Investing.com, Times of Israel, Alma Center, Reuters, Axios, Haaretz, NBC, Washington Post, Daily Beast, The War Zone, Fortune, Yahoo Finance, Rigzone, Polymarket, Euronews, CMA CGM, Novara Media, Turkiye Today.",
+      "F-15E SHOT DOWN + OIL SURGES $112 + GULF REFINERIES HIT + APRIL 6 = 3 DAYS: US F-15E shot down over southern Iran near Qeshm Island — 1 crew rescued by special forces, 2nd missing (Iran hunting, bounty offered). Brent SURGED to $112.42 (+6.5%). WTI $111.54. Kuwait Mina Al-Ahmadi refinery (466K bbl/day) on fire from drone attack. UAE Habshan gas facility fire + Emirates Global Aluminium shutdown. B1 Bridge Tehran-Karaj destroyed. Pasteur Institute struck. Red Crescent warehouse Bushehr hit. IDF 70+ strikes. AJ: 2,076+ killed Iran, 26,500+ wounded. 600+ schools hit. Lebanon 1,318+. Israel 19 civilians + 6,594 wounded. French CMA CGM Kribi = first Western vessel through Hormuz. Atimi (ballistic missile chief) killed D34. April 6 = 3 days. Internet 792+ hrs."
     ]
   },
-  "theoryBox": "<strong>Day 34 — TRUMP PRIMETIME ADDRESS + OIL SURGE $105 + KHARAZI STRUCK:</strong> Trump addressed nation — war \"nearing completion,\" 2-3 more weeks, vowed to hit power plants \"extremely hard.\" Brent SURGED to $105.53 (+4.3% — reversed D33 crash). Kharazi (ex-FM, back-channel to Pakistan) gravely wounded, wife killed in Tehran strike — diplomacy channel targeted. 14 wounded near Tel Aviv incl 11-year-old. Hengam Island (Hormuz) struck, 7 injured. Iraq Anbar base 7 killed. Asian markets crashed (Nikkei -2.1%, Kospi -3.9%). Iran denies ceasefire. April 6 = 4 days. Internet 768+ hrs.",
-  "theoryBox_fa": "<strong>روز ۳۴ — سخنرانی ترامپ + نفت $۱۰۵ + خرازی زخمی:</strong> ترامپ: ۲-۳ هفته دیگر، حمله سخت به نیروگاه‌ها. برنت $۱۰۵.۵۳. خرازی (وزیر خارجه سابق) زخمی سنگین، همسرش کشته. ۱۴ زخمی تل‌آویو. هنگام ۷ زخمی. عراق ۷ کشته. بازارهای آسیا سقوط. ایران آتش‌بس رد کرد. ۶ آوریل = ۴ روز.",
+  "theoryBox": "<strong>Day 35 — F-15E SHOT DOWN + OIL $112 + GULF REFINERIES HIT:</strong> US F-15E shot down over southern Iran (Qeshm Island) — 1 crew rescued, 2nd missing (Iran hunting with bounty). Brent SURGED to $112.42 (+6.5%). WTI $111.54 — WTI SURPASSED Brent for first time. Kuwait Mina Al-Ahmadi refinery (466K bbl/day) on fire from drones. UAE Habshan + Emirates Global Aluminium shutdown. B1 Bridge Tehran-Karaj destroyed. Pasteur Institute + Red Crescent warehouse Bushehr struck. IDF 70+ strikes. Atimi (ballistic missile chief) killed. AJ: 2,076+ killed Iran. French CMA CGM Kribi = first Western Hormuz transit. April 6 = 3 DAYS. Internet 792+ hrs.",
+  "theoryBox_fa": "<strong>روز ۳۵ — F-15E ساقط + نفت $۱۱۲ + پالایشگاه‌های خلیج هدف:</strong> F-15E آمریکایی بر فراز جنوب ایران (قشم) ساقط — ۱ خلبان نجات، دومی مفقود. برنت $۱۱۲.۴۲. WTI $۱۱۱.۵۴. پالایشگاه مینا الاحمدی کویت آتش گرفت. حبشان امارات + آلومینیوم گلوبال تعطیل. پل B1 تهران-کرج تخریب. انستیتو پاستور + انبار هلال‌احمر بوشهر. IDF ۷۰+ حمله. عتیمی (فرمانده موشکی) کشته. CMA CGM = اولین عبور غربی هرمز. ۶ آوریل = ۳ روز. اینترنت ۷۹۲+.",
   "metrics": [
     {
       "label": "Day",
-      "value": "34",
-      "desc": "TRUMP PRIMETIME + OIL SURGE. Kharazi struck. 14 wounded Tel Aviv. Hengam 7. Iraq Anbar 7 killed. April 6 = 4 days."
+      "value": "35",
+      "desc": "F-15E SHOT DOWN + OIL $112 + GULF REFINERIES HIT. Mina Al-Ahmadi fire. Habshan. EGA. B1 Bridge. Pasteur Institute. April 6 = 3 DAYS."
     },
     {
       "label": "Cumul. missiles",
-      "value": "~3,185",
-      "desc": "D34: ~55 missiles (Tel Aviv wave ~15, Gulf ~25, Houthi 2, Iraq/others ~13). Cumul ~3,185."
+      "value": "~3,235",
+      "desc": "D35: ~50 missiles (Israel ~12, Gulf ~25, Kuwait refinery ~5, Houthi ~2, others ~6). Cumul ~3,235."
     },
     {
       "label": "Cumul. drones",
-      "value": "~5,062",
-      "desc": "D34: ~70 drones (UAE + Saudi + Kuwait + Bahrain + Oman). Cumul ~5,062."
+      "value": "~5,127",
+      "desc": "D35: ~65 drones (Kuwait refinery, UAE Habshan/EGA, Saudi, Bahrain, Oman). Cumul ~5,127."
     },
     {
       "label": "Brent crude",
-      "value": "$105.53",
-      "desc": "SURGED +$4.37 (+4.3%) from $102 — reversed D33 crash. WTI ~$102. Trump speech = no exit strategy. Hormuz unresolved."
+      "value": "$112.42",
+      "desc": "SURGED +$6.89 (+6.5%). WTI $111.54 — SURPASSED Brent for first time (Rigzone). F-15E + Gulf refinery fires = panic. War premium entrenched."
     },
     {
       "label": "Iran dead",
-      "value": "~7,400+",
-      "desc": "Kharazi wife killed. Continued Tehran/Shiraz/Kermanshah/Ahvaz/Kurdistan strikes. 82,000+ structures."
+      "value": "~7,600+",
+      "desc": "AJ official: 2,076+ killed, 26,500+ wounded. Hengaw/Iran Intl higher. B1 Bridge collapse 8+ killed 95 wounded (D34). 600+ schools hit. 85,000+ structures."
     },
     {
       "label": "Lebanon",
-      "value": "1,268+ killed",
-      "desc": "AJ tracker: 1,268. Hezbollah cmdr D33. 7 killed Beirut renewed strikes. ~1M displaced."
+      "value": "1,318+ killed",
+      "desc": "AJ tracker: 1,318. 125+ children. IDF strikes Beirut + Tehran simultaneously D35. ~1M displaced."
     },
     {
       "label": "Israel dead",
-      "value": "24+",
-      "desc": "D34: 14 wounded Tel Aviv (11yo). 18+ Israeli civilians + 15 US KIA + 520+ US wounded. 6,239+ Israeli wounded."
+      "value": "25+",
+      "desc": "19 Israeli civilians + 15 US KIA (F-15E crew 2nd missing = potential 16th). 520+ US wounded. 6,594+ Israeli wounded."
     },
     {
       "label": "Nuclear risk",
       "value": "CRITICAL",
-      "desc": "All 5 facilities struck. 440kg unaccounted. IAEA locked out. Kharazi diplomacy channel hit. April 6 = 4 days."
+      "desc": "All 5 facilities struck. 440kg unaccounted. IAEA locked out. Pasteur Institute (research) struck. April 6 = 3 DAYS."
     }
   ],
   "metrics_fa": [
     {
       "label": "روز",
-      "value": "۳۴",
-      "desc": "سخنرانی ترامپ. نفت $۱۰۵. خرازی. ۱۴ زخمی تل‌آویو. ۶ آوریل = ۴ روز."
+      "value": "۳۵",
+      "desc": "F-15E ساقط. نفت $۱۱۲. پالایشگاه مینا الاحمدی. حبشان. پل B1. ۶ آوریل = ۳ روز."
     },
     {
       "label": "موشک",
-      "value": "~۳,۱۸۵",
-      "desc": "D34: ~۵۵ موشک. مجموع ~۳,۱۸۵."
+      "value": "~۳,۲۳۵",
+      "desc": "D35: ~۵۰ موشک. مجموع ~۳,۲۳۵."
     },
     {
       "label": "پهپاد",
-      "value": "~۵,۰۶۲",
-      "desc": "D34: ~۷۰ پهپاد. مجموع ~۵,۰۶۲."
+      "value": "~۵,۱۲۷",
+      "desc": "D35: ~۶۵ پهپاد. مجموع ~۵,۱۲۷."
     },
     {
       "label": "نفت",
-      "value": "$۱۰۵.۵۳",
-      "desc": "جهش +۴.۳٪. ترامپ: بدون استراتژی خروج."
+      "value": "$۱۱۲.۴۲",
+      "desc": "جهش +۶.۵٪. WTI از برنت فراتر رفت."
     },
     {
       "label": "کشته ایران",
-      "value": "~۷,۴۰۰+",
-      "desc": "همسر خرازی. حملات مستمر تهران/شیراز/کرمانشاه."
+      "value": "~۷,۶۰۰+",
+      "desc": "AJ: ۲,۰۷۶+. هنگاو بالاتر. پل B1 = ۸+ کشته. ۶۰۰+ مدرسه."
     },
     {
       "label": "لبنان",
-      "value": "۱,۲۶۸+",
-      "desc": "۷ کشته بیروت."
+      "value": "۱,۳۱۸+",
+      "desc": "AJ: ۱,۳۱۸. ۱۲۵+ کودک. بیروت + تهران همزمان."
     },
     {
       "label": "اسرائیل",
-      "value": "۲۴+",
-      "desc": "۱۴ زخمی تل‌آویو. ۱۵ KIA + ۵۲۰+ زخمی آمریکا."
+      "value": "۲۵+",
+      "desc": "۱۹ غیرنظامی + ۱۵ KIA آمریکا (خلبان دوم مفقود). ۶,۵۹۴+ زخمی."
     },
     {
       "label": "هسته‌ای",
       "value": "بحرانی",
-      "desc": "۵ تأسیسات. خرازی. ۶ آوریل."
+      "desc": "۵ تأسیسات. پاستور. ۶ آوریل = ۳ روز."
     }
   ],
   "sitrep": [
-    "TRUMP PRIMETIME ADDRESS: First address to nation on Iran war. Said war \"nearing completion\" — 2-3 more weeks. Vowed to hit power plants \"extremely hard\" and bring Iran \"back to the stone ages\" if no deal. Revealed NO clear exit strategy. No solution to Hormuz closure.",
-    "OIL SURGED $105.53: Brent +$4.37 (+4.3%) — REVERSED D33 crash. Trump speech = no exit, more escalation. WTI ~$102. Asian markets crashed: Nikkei -2.1%, Kospi -3.9%, Hang Seng -1%. War premium returns.",
-    "KHARAZI STRUCK: Former FM Kamal Kharazi (81) gravely wounded, wife killed in Tehran airstrike. Kharazi was overseeing Pakistan back-channel. Iran says diplomacy channel deliberately targeted. Complicates peace prospects.",
-    "TEL AVIV WAVE: 14 wounded near Tel Aviv including 11-year-old girl. Iran launched new missile wave after Trump said \"destroyed Iranian military.\" Demonstrates continued capability.",
-    "HENGAM ISLAND (HORMUZ): Strike on Hengam Island in Strait of Hormuz — 7 injured. Strategic location controlling strait entrance.",
-    "IRAQ ANBAR: Aerial attack on military base in western Anbar — 7 fighters killed, 13 wounded (Iraq MoD).",
-    "IRAN DENIES CEASEFIRE: Trump claimed Iran\"s new president asked for ceasefire. Iran flatly denied. FM: will fight back as long as strikes continue.",
-    "EXTENSIVE STRIKES: Past 24 hours — Tehran, Shiraz, Kermanshah, Sirjan, Ahvaz, Kurdistan. Multi-province bombardment continues unabated.",
-    "APRIL 6 = 4 DAYS: Power grid deadline approaching. Trump speech ESCALATED rhetoric. Kharazi strike = targeting mediators. Convergence toward worst case.",
-    "US CASUALTIES REVISED UP: Newsweek reports 520+ US personnel wounded (Pentagon had disclosed ~300). Intercept reports Pentagon actively hiding casualty figures. 15 US KIA confirmed. Israeli wounded revised to 6,239+.",
-    "HEALTHCARE CRISIS: Iranian Red Crescent reports 316 healthcare/emergency centers damaged since D1. Medical infrastructure degrading across Iran.",
-    "INTERNET 768+ HRS: 34 days. Longest in history. 90M isolated."
+    "F-15E SHOT DOWN: US F-15E Strike Eagle shot down over southern Iran near Qeshm Island (Strait of Hormuz). 1 crew member rescued by US special forces. 2nd crew member MISSING — Iran hunting with civilian bounty. Israel cancelled planned strikes to avoid hampering rescue. If 2nd pilot captured = first US POW since war began. 5th US aircraft lost.",
+    "OIL SURGES $112: Brent $112.42 (+$6.89/+6.5%). WTI $111.54 — SURPASSED Brent for first time (Rigzone). F-15 downing + Gulf refinery fires = panic buying. War premium fully entrenched. Highest sustained levels since war began.",
+    "KUWAIT MINA AL-AHMADI HIT: Iran drones struck Kuwait's largest refinery (466K bbl/day) — fires across several operational units. Contained, no injuries. Emergency protocols activated. SECOND time this refinery targeted.",
+    "UAE HABSHAN + EGA: Habshan gas facility fire from intercepted debris. Emirates Global Aluminium site (Abu Dhabi) forced shutdown from missile/drone strike — significant industrial damage.",
+    "B1 BRIDGE DESTROYED: Century-old Tehran-Karaj bridge destroyed overnight by US/Israeli airstrike. 8+ killed, 95 wounded (D34 strikes). Major infrastructure — connects capital to 2nd largest metro.",
+    "PASTEUR INSTITUTE + RED CRESCENT: Strikes hit Pasteur Institute (century-old medical research center, Tehran) and Red Crescent aid warehouse (Bushehr province). International condemnation expected. 600+ schools/education centers hit total.",
+    "IDF 70+ STRIKES: IDF carried out 70+ strikes in Iran in past 24 hours — weapons production sites including central Ministry of Defense complex in Tehran. Air defense systems, launch sites, ballistic missile storage. Beirut simultaneously struck.",
+    "ATIMI KILLED: IDF confirmed Makram Atimi, Iranian ballistic missile chief, killed in Kermanshah area D34 strike along with several battalion commanders from central ballistic missile unit. Significant decapitation of missile command.",
+    "FIRST WESTERN HORMUZ TRANSIT: French CMA CGM container ship Kribi (Malta-flagged) crossed Hormuz April 2 — first Western vessel since war began. 3 Omani tankers also transited hugging Omani coastline. Hormuz cracking open but only ~5-7 vessels/day.",
+    "CASUALTIES UPDATE: AJ official tracker: 2,076+ killed Iran, 26,500+ wounded. Lebanon 1,318+ (125+ children). Israel: 19 civilians killed, 6,594+ wounded. US: 15 KIA + 520+ wounded + 1 missing F-15E crew. Novara Media reports military hiding true extent of casualties.",
+    "APRIL 6 = 3 DAYS: Power grid deadline NOW 3 days away. Trump: 'assault on infrastructure hasn't even started.' Threatens power + desalination plants. Iran FM rejects US proposal as 'one-sided and unfair.' World leaders opt for diplomacy, not force for Hormuz (Norway FM). No deal imminent.",
+    "INTERNET 792+ HRS: 35 days. Longest in history. 90M isolated. 85,000+ structures damaged."
   ],
   "sitrep_fa": [
-    "سخنرانی ترامپ: ۲-۳ هفته دیگر. حمله سخت نیروگاه‌ها. بدون استراتژی خروج.",
-    "نفت جهش $۱۰۵.۵۳: +۴.۳٪. بازگشت ریسک جنگ. بازارهای آسیا سقوط.",
-    "خرازی زخمی: وزیر خارجه سابق زخمی سنگین، همسرش کشته. کانال دیپلماسی پاکستان هدف.",
-    "تل‌آویو: ۱۴ زخمی از جمله دختر ۱۱ ساله. موج جدید موشکی.",
-    "هنگام (هرمز): حمله. ۷ زخمی. موقعیت استراتژیک.",
-    "عراق الانبار: ۷ کشته، ۱۳ زخمی.",
-    "ایران آتش‌بس رد: ترامپ ادعای تقاضا. ایران تکذیب. ادامه جنگ.",
-    "حملات گسترده: تهران، شیراز، کرمانشاه، سیرجان، اهواز، کردستان.",
-    "۶ آوریل = ۴ روز. تشدید لفظی + خرازی = بدترین سناریو.",
-    "آمار تلفات آمریکا بازنگری: نیوزویک ۵۲۰+ زخمی (پنتاگون ~۳۰۰ اعلام کرده بود). ۱۵ KIA.",
-    "بحران بهداشت: ۳۱۶ مرکز آسیب (هلال‌احمر).",
-    "اینترنت ۷۶۸+. ۳۴ روز."
+    "F-15E ساقط: بر فراز جنوب ایران (قشم). ۱ خلبان نجات. دومی مفقود — ایران جستجو. اسرائیل حملات لغو برای امداد.",
+    "نفت جهش $۱۱۲: برنت $۱۱۲.۴۲ (+۶.۵٪). WTI $۱۱۱.۵۴ — از برنت فراتر رفت.",
+    "مینا الاحمدی کویت: پهپادهای ایران. آتش‌سوزی. ۴۶۶ هزار بشکه/روز.",
+    "حبشان امارات + EGA: آتش‌سوزی گاز + آلومینیوم تعطیل.",
+    "پل B1 تخریب: تهران-کرج. ۸+ کشته. ۹۵ زخمی.",
+    "پاستور + هلال‌احمر: انستیتو پاستور تهران + انبار هلال‌احمر بوشهر. ۶۰۰+ مدرسه.",
+    "IDF ۷۰+ حمله: سایت‌های تسلیحاتی تهران + وزارت دفاع + بیروت.",
+    "عتیمی کشته: فرمانده موشک بالستیک ایران در کرمانشاه.",
+    "اولین عبور غربی هرمز: CMA CGM Kribi (فرانسه). ۳ نفتکش عمانی.",
+    "تلفات: AJ ۲,۰۷۶+ کشته ایران. لبنان ۱,۳۱۸+. اسرائیل ۱۹ غیرنظامی. آمریکا ۱۵ KIA + ۱ مفقود.",
+    "۶ آوریل = ۳ روز. ترامپ: حمله به زیرساخت شروع نشده. ایران: پیشنهاد یک‌طرفه.",
+    "اینترنت ۷۹۲+. ۳۵ روز. ۸۵,۰۰۰+ ساختمان."
   ],
   "dailySeries": {
     "labels": [
@@ -155,7 +155,8 @@
       "Mar 30",
       "Mar 31",
       "Apr 01",
-      "Apr 02"
+      "Apr 02",
+      "Apr 03"
     ],
     "missiles": [
       480,
@@ -191,7 +192,8 @@
       30,
       28,
       65,
-      55
+      55,
+      50
     ],
     "drones": [
       720,
@@ -227,10 +229,11 @@
       60,
       55,
       80,
-      70
+      70,
+      65
     ],
-    "sourceLabel": "D1-D10: JPost. D11: UAE MoD. D12-D34: fragment est. D34: Post-Trump-speech wave at Tel Aviv (14 wounded). Hengam struck. Iraq Anbar 7 killed. Multi-province Iran bombing. ~55m+70d.",
-    "throughDate": "Apr 02 end of day — D34"
+    "sourceLabel": "D1-D10: JPost. D11: UAE MoD. D12-D35: fragment est. D35: F-15E shot down. Kuwait Mina Al-Ahmadi refinery fire. UAE Habshan + EGA. Haaretz: Iran retains half missile launchers + massive drone fleet. ~50m+65d.",
+    "throughDate": "Apr 03 end of day — D35"
   },
   "oil": {
     "labels": [
@@ -268,7 +271,8 @@
       "Mar 30",
       "Mar 31",
       "Apr 01",
-      "Apr 02"
+      "Apr 02",
+      "Apr 03"
     ],
     "brent": [
       65,
@@ -305,7 +309,8 @@
       111.1,
       110.69,
       102,
-      105.53
+      105.53,
+      112.42
     ],
     "wti": [
       62,
@@ -342,9 +347,10 @@
       102.85,
       103.87,
       99,
-      102
+      102,
+      111.54
     ],
-    "note": "D34: Brent SURGED $105.53 (+$4.37/+4.3%) — REVERSED D33 crash. Trump primetime = no exit + power grid threats. WTI ~$102. Asian crash. Apr 6 = binary: deal=$85 or strikes=$130+."
+    "note": "D35: Brent SURGED $112.42 (+$6.89/+6.5%). WTI $111.54 — SURPASSED Brent (Rigzone). F-15E downing + Kuwait refinery fires + UAE shutdowns = panic. Apr 6 = 3 days: deal=$85 or strikes=$140+."
   },
   "pressure": {
     "labels": [
@@ -381,7 +387,8 @@
       "Mar 30",
       "Mar 31",
       "Apr 01",
-      "Apr 02"
+      "Apr 02",
+      "Apr 03"
     ],
     "attrition": [
       2,
@@ -399,6 +406,7 @@
       9,
       9.5,
       9.5,
+      10,
       10,
       10,
       10,
@@ -453,32 +461,33 @@
       10,
       10,
       8.5,
-      9.5
+      9.5,
+      10
     ]
   },
   "latestTargetBreakdown": {
-    "note": "Apr 02 (D34). Tel Aviv wave (~15 missiles). Gulf multi-theater. Hengam Island. Iraq Anbar. ~55m+70d.",
+    "note": "Apr 03 (D35). F-15E downed. Kuwait refinery fire. UAE Habshan + EGA. Multi-theater. ~50m+65d.",
     "missiles": {
-      "Israel": 15,
-      "UAE": 10,
-      "Saudi": 8,
-      "Kuwait": 5,
+      "Israel": 12,
+      "UAE": 8,
+      "Saudi": 7,
+      "Kuwait": 8,
       "Qatar": 3,
       "Bahrain": 3,
       "Yemen/Houthi": 2,
-      "Iraq": 5,
+      "Iraq": 3,
       "Oman": 2,
       "Jordan": 2
     },
     "drones": {
-      "UAE": 18,
-      "Kuwait": 12,
+      "UAE": 15,
+      "Kuwait": 14,
       "Saudi": 10,
-      "Bahrain": 8,
+      "Bahrain": 7,
       "Israel": 5,
-      "Oman": 5,
-      "Iraq": 5,
-      "Qatar": 4,
+      "Oman": 4,
+      "Iraq": 4,
+      "Qatar": 3,
       "Jordan": 3
     }
   },
@@ -788,194 +797,203 @@
       "capability": "D34: 55+70. DOWN from D33 Passover surge (65+80) but still above 7-day average (~40). Tel Aviv wave = ongoing Israel targeting. Hengam Island = Hormuz strait. Multi-province Iran bombardment. Kharazi strike = targeting diplomatic channels.",
       "cost": "Brent SURGED $105.53 (+4.3%) reversing D33 crash. WTI ~$102. Asian markets: Nikkei -2.1%, Kospi -3.9%, Hang Seng -1%. No exit strategy. April 6 = 4 days. Internet 768+. Lebanon 1,268+.",
       "assessment": "D34 — TRUMP SPEECH BACKFIRES: Markets expected reassurance, got escalation rhetoric. Oil reversed. Kharazi strike undermines peace channel. April 6 approaching with LESS diplomatic space. Iran demonstrating sustained capability post-Passover. Dual posture confirmed: fight while denying negotiations."
+    },
+    {
+      "date": "Apr 03",
+      "missiles": 50,
+      "drones": 65,
+      "primary": "D35 — F-15E SHOT DOWN + GULF REFINERIES HIT: F-15E shot down near Qeshm Island — 1 rescued, 2nd missing (Iran bounty). Kuwait Mina Al-Ahmadi refinery fires (466K bbl/day). UAE Habshan gas fire + Emirates Global Aluminium shutdown. B1 Bridge Tehran-Karaj destroyed (8+ killed, 95 wounded). Pasteur Institute + Red Crescent warehouse Bushehr struck. IDF 70+ strikes incl MoD complex. Atimi (ballistic chief) killed D34.",
+      "capability": "D35: 50+65. DOWN from D34 (55+70) but still well above pre-Passover average (~30). Haaretz/CNN: Iran retains HALF of missile launchers + massive drone fleet = CENTCOM 90% claim contradicted. F-15E downing = Iran's air defense NOT degraded as claimed. Kuwait refinery + UAE industrial = energy war escalating.",
+      "cost": "Brent SURGED $112.42 (+6.5%). WTI $111.54 — SURPASSED Brent (first time). F-15E = 5th US aircraft lost. Kuwait refinery fire. CMA CGM Kribi = first Western Hormuz transit. April 6 = 3 DAYS. Iran rejected US proposal as 'one-sided.' AJ: 2,076+ killed, 26,500+ wounded. 600+ schools. 85,000+ structures.",
+      "assessment": "D35 — F-15E CHANGES CALCULUS: First fighter jet shot down since D12 KC-135. Iran proving air defense capability persists. Haaretz 'half of launchers + massive drones' = CENTCOM narrative crumbling. Kuwait refinery + UAE industrial = Iran expanding energy targeting. Oil $112 = market pricing in extended war. CMA CGM transit = Hormuz cracking BUT F-15E + refinery fires = conflicting signals. April 6 at 3 days with NO diplomatic progress. Missing pilot = potential POW crisis."
     }
   ],
   "timeline": [
     {
-      "title": "Week 5 (Mar 29-Apr 02)",
-      "body": "Passover barrage -> Trump primetime -> oil whipsaw. Kharazi (ex-FM) struck — back-channel targeted. Oil crashed $102 then surged $105.53. Tel Aviv waves continue. Asian markets crashed. April 6 = 4 days."
+      "title": "Week 5 (Mar 29-Apr 03)",
+      "body": "Passover barrage -> Trump primetime -> F-15E shot down -> Gulf refineries hit. Oil whipsaw $102->$105->$112. Kharazi struck. Atimi killed. CMA CGM first Western Hormuz transit. April 6 = 3 DAYS."
     },
     {
-      "title": "APRIL 6 (4 days)",
-      "body": "BINARY + WORSE: Trump vowed \"extremely hard\" power grid strikes. Kharazi strike = US/Israel targeting mediators. Oil surging. Convergence toward escalation."
+      "title": "APRIL 6 (3 days)",
+      "body": "CRITICAL: Trump said 'assault hasn't even started.' Iran rejected proposal. F-15E downing humiliates US but hardens resolve. Missing pilot = potential POW leverage. Oil $112 = maximum pressure on ALL parties."
     },
     {
       "title": "Month 2",
-      "body": "Trump said 2-3 more weeks. Iran FM says 6 months. Reality: somewhere between. April 6 forces decision. Passover + D34 = Iran sustained."
+      "body": "Trump said 2-3 more weeks. Iran FM says 6 months. Haaretz: Iran retains half launchers + massive drones. F-15E + refinery fires = war NOT winding down. April 6 forces binary outcome."
     },
     {
       "title": "Month 3+",
-      "body": "If framework: phased de-escalation. Mine clearance months. Insurance 6-12 months. Nuclear unresolved. Kharazi strike may have killed best peace channel."
+      "body": "If framework: phased de-escalation. Mine clearance months. Insurance 6-12 months. Nuclear unresolved. Missing pilot complicates any deal timeline."
     },
     {
       "title": "Wild cards",
-      "body": "April 6. Kharazi death (if dies). China-Pakistan plan fate. Houthis Bab al-Mandab. 82nd Kharg. Iran \"6 months\" = sustained capability."
+      "body": "April 6. Missing F-15E pilot (POW?). Iran bounty. Kharazi survival. Kuwait refinery damage extent. WTI > Brent inversion. Houthis Bab al-Mandab."
     }
   ],
   "timeline_fa": [
     {
       "title": "هفته ۵",
-      "body": "حمله پسح + سخنرانی ترامپ + نفت. خرازی زخمی. نفت $۱۰۵. ۶ آوریل = ۴ روز."
+      "body": "حمله پسح + سخنرانی ترامپ + F-15E ساقط + پالایشگاه خلیج. نفت $۱۰۲->$۱۰۵->$۱۱۲. خرازی. عتیمی. CMA CGM هرمز. ۶ آوریل = ۳ روز."
     },
     {
-      "title": "۶ آوریل",
-      "body": "دوگانه + بدتر. ترامپ: حمله سخت. خرازی = هدف میانجی."
+      "title": "۶ آوریل (۳ روز)",
+      "body": "بحرانی: ترامپ: حمله شروع نشده. ایران: رد پیشنهاد. F-15E = تحقیر اما عزم. خلبان مفقود = اهرم. نفت $۱۱۲."
     },
     {
       "title": "ماه ۲",
-      "body": "ترامپ ۲-۳ هفته. ایران ۶ ماه. ۶ آوریل تصمیم."
+      "body": "ترامپ ۲-۳ هفته. ایران ۶ ماه. هاآرتص: نیمی از پرتاب‌کننده‌ها + ناوگان عظیم پهپاد. ۶ آوریل دوگانه."
     },
     {
       "title": "ماه ۳+",
-      "body": "مرحله‌ای. مین‌روبی. بیمه. هسته‌ای. خرازی بهترین کانال صلح بود."
+      "body": "مرحله‌ای. مین‌روبی. بیمه. هسته‌ای. خلبان مفقود پیچیده."
     },
     {
       "title": "متغیرها",
-      "body": "۶ آوریل. خرازی. طرح. حوثی. خارگ."
+      "body": "۶ آوریل. خلبان F-15E. خرازی. پالایشگاه کویت. WTI > برنت. حوثی."
     }
   ],
   "scenarioProbabilities": [
     {
       "name": "Escalation spiral / total war",
-      "prob": "30%",
-      "body": "INCREASED 28->30%. Trump speech = \"extremely hard\" power grid threat. Kharazi strike = targeting back-channel. Oil surging. April 6 approaching with LESS diplomatic space."
+      "prob": "33%",
+      "body": "INCREASED 30->33%. F-15E downing HUMILIATES US = Trump likely retaliates harder. Oil $112. Iran rejected US proposal. April 6 = 3 DAYS. Missing pilot = POW complication. Kuwait refinery + UAE = energy war expanding."
     },
     {
       "name": "Protracted attrition",
-      "prob": "26%",
-      "body": "INCREASED 25->26%. D34 at 55 missiles = still above average post-Passover. Iran sustained. \"6 months\" FM claim gaining credibility each day."
+      "prob": "28%",
+      "body": "INCREASED 26->28%. Haaretz: Iran retains HALF of missile launchers + massive drone fleet. CENTCOM narrative crumbling. 50/day sustained. Refinery targeting = Iran has initiative in energy war."
     },
     {
       "name": "Declared victory + exit",
-      "prob": "18%",
-      "body": "DECREASED 20->18%. Trump said 2-3 more weeks but speech revealed NO exit strategy. Markets not convinced."
+      "prob": "16%",
+      "body": "DECREASED 18->16%. F-15E shot down = cannot claim victory while losing aircraft. Missing pilot = impossible to exit while crew unaccounted for."
     },
     {
       "name": "Negotiated deal",
-      "prob": "11%",
-      "body": "DECREASED 12->11%. Kharazi strike = back-channel to Pakistan TARGETED. Iran denies ceasefire. Diplomatic channel damaged."
+      "prob": "10%",
+      "body": "DECREASED 11->10%. Iran rejected US proposal as 'one-sided.' Missing pilot complicates negotiations. World leaders prefer diplomacy but have no leverage."
     },
     {
       "name": "International intervention",
-      "prob": "10%",
-      "body": "STABLE 10%. China-Pakistan plan still credible but Kharazi strike complicates. Asian market crash = economic pressure on all parties."
+      "prob": "9%",
+      "body": "DECREASED 10->9%. Norway FM: world leaders opt diplomacy not force. CMA CGM transit = partial Hormuz opening reduces urgency for military intervention."
     },
     {
       "name": "Regime fracture",
-      "prob": "5%",
-      "body": "STABLE 5%. Multi-theater ops continue = command intact. Kharazi was regime figure targeted but military ops unaffected."
+      "prob": "4%",
+      "body": "DECREASED 5->4%. F-15E downing = morale boost for IRGC. Multi-theater ops continue. Atimi killed but institutional command intact."
     }
   ],
   "scenarioProbabilities_fa": [
     {
       "name": "تشدید",
-      "prob": "۳۰٪",
-      "body": "افزایش ۲۸->۳۰. سخنرانی ترامپ + خرازی = تشدید."
+      "prob": "۳۳٪",
+      "body": "افزایش ۳۰->۳۳. F-15E = تحقیر ترامپ. نفت $۱۱۲. ایران رد. ۳ روز. خلبان مفقود."
     },
     {
       "name": "فرسایش",
-      "prob": "۲۶٪",
-      "body": "افزایش ۲۵->۲۶. ایران مستمر. ۶ ماه معتبرتر."
+      "prob": "۲۸٪",
+      "body": "افزایش ۲۶->۲۸. هاآرتص: نیمی از پرتاب‌کننده‌ها + ناوگان پهپاد = روایت CENTCOM فروپاشی."
     },
     {
       "name": "اعلام پیروزی",
-      "prob": "۱۸٪",
-      "body": "کاهش ۲۰->۱۸. بدون استراتژی خروج."
+      "prob": "۱۶٪",
+      "body": "کاهش ۱۸->۱۶. F-15E = نمی‌تواند پیروزی اعلام کند. خلبان مفقود."
     },
     {
       "name": "مذاکره",
-      "prob": "۱۱٪",
-      "body": "کاهش ۱۲->۱۱. خرازی = کانال آسیب."
+      "prob": "۱۰٪",
+      "body": "کاهش ۱۱->۱۰. ایران رد. خلبان = پیچیده."
     },
     {
       "name": "مداخله",
-      "prob": "۱۰٪",
-      "body": "ثابت. طرح معتبر اما خرازی پیچیده."
+      "prob": "۹٪",
+      "body": "کاهش ۱۰->۹. CMA CGM عبور = فوریت کمتر."
     },
     {
       "name": "فروپاشی",
-      "prob": "۵٪",
-      "body": "ثابت. عملیات چندجبهه = فرماندهی سالم."
+      "prob": "۴٪",
+      "body": "کاهش ۵->۴. F-15E = روحیه سپاه. عتیمی کشته اما نهادی سالم."
     }
   ],
   "theoryEvaluation": [
     {
-      "title": "TRUMP SPEECH — escalation disguised as reassurance",
-      "body": "Trump told nation war is \"nearing completion\" but revealed NO exit strategy, threatened to hit power plants \"extremely hard,\" and projected 2-3 more weeks minimum. Markets read correctly: oil surged, Asian stocks crashed. Speech INCREASED probability of April 6 power grid strikes."
+      "title": "F-15E SHOT DOWN — game-changing event",
+      "body": "5th US aircraft lost. First fighter jet since D12 KC-135. One pilot rescued, second MISSING. Iran hunting with bounty. If captured = first US POW since war began. Changes political calculus: Trump cannot claim air superiority while losing fighters. But F-15E downing may HARDEN US resolve — retaliatory escalation likely. Israel cancelled strikes to support rescue = coalition coordination under stress."
     },
     {
-      "title": "KHARAZI STRIKE — diplomacy channel targeted",
-      "body": "Ex-FM Kharazi was overseeing Pakistan back-channel — the most active mediation track. His wounding (wife killed) may be deliberate targeting of peace infrastructure. Iran will frame this as proof US/Israel prefer war to negotiation. Complicates China-Pakistan plan."
+      "title": "CENTCOM NARRATIVE CRUMBLING — Haaretz: half launchers intact",
+      "body": "Haaretz/CNN report Iran retains HALF of missile launchers + massive drone fleet. Directly contradicts CENTCOM's repeated '90% degraded' claims. D35 at 50 missiles = still well above decay model. NBC data graphics confirm sustained capability. The 'weeks not months' narrative is not supported by actual Iranian capabilities."
     },
     {
-      "title": "OIL REVERSAL — market corrects D33 mispricing",
-      "body": "Brent surged $105.53 (+4.3%) after D33 crash to $102. Exactly as predicted: Passover barrage + Trump speech = war premium returns. Market now pricing in longer war, power grid risk, no Hormuz resolution."
+      "title": "ENERGY WAR ESCALATION — Gulf refineries targeted",
+      "body": "Kuwait Mina Al-Ahmadi (466K bbl/day) = largest refinery targeted. UAE Habshan gas + Emirates Global Aluminium = industrial sector. Iran expanding from military to economic targets. Oil $112 = market sees extended supply disruption. WTI surpassing Brent = US-centric demand panic."
     },
     {
-      "title": "IRAN SUSTAINED POST-PASSOVER — 55/day proves reserves",
-      "body": "D34 at 55 missiles (down from 65 D33 but well above 25-30 pre-Passover average). Iran demonstrated surge capability D33 and maintained elevated tempo D34. Rationing model confirmed. \"6 months\" increasingly credible."
+      "title": "CMA CGM TRANSIT — Hormuz cracking open",
+      "body": "French CMA CGM Kribi = first Western vessel through Hormuz since D1. Positive signal but at ~5-7 vessels/day vs pre-war 62. Iran allowing selective transit while maintaining leverage. Safe passage framework expanding despite F-15E incident. But refinery fires contradict de-escalation."
     },
     {
-      "title": "APRIL 6 — 4 days + trajectory worsening",
-      "body": "Trump speech escalated rhetoric. Kharazi strike targeted mediator. Oil surging. Iran defiant. Each day narrows diplomatic space. April 6 power grid strikes now MOST LIKELY scenario."
+      "title": "APRIL 6 — 3 DAYS + NO PROGRESS",
+      "body": "Iran formally rejected US proposal as 'one-sided and unfair.' Trump: 'assault on infrastructure hasn't even started.' F-15E downing may accelerate retaliation timeline. Missing pilot prevents any pause. Oil $112 = maximum economic pressure. April 6 power grid strikes remain MOST LIKELY outcome."
     }
   ],
   "theoryEvaluation_fa": [
     {
-      "title": "سخنرانی ترامپ — تشدید در لباس اطمینان",
-      "body": "ترامپ: تقریباً تمام. اما بدون استراتژی خروج. نیروگاه‌ها. نفت جهش. بازارها سقوط."
+      "title": "F-15E ساقط — تغییر بازی",
+      "body": "۵مین هواپیما. ۱ خلبان نجات، دومی مفقود. اسیر = اولین POW. ترامپ نمی‌تواند پیروزی ادعا کند. تشدید محتمل."
     },
     {
-      "title": "خرازی — کانال دیپلماسی هدف",
-      "body": "خرازی کانال پاکستان. همسرش کشته. ایران: اثبات ترجیح جنگ. طرح پیچیده‌تر."
+      "title": "روایت CENTCOM فروپاشی — هاآرتص: نیمی سالم",
+      "body": "نیمی از پرتاب‌کننده‌ها + ناوگان عظیم پهپاد. ادعای ۹۰٪ تخریب رد. ۵۰ موشک/روز = مستمر."
     },
     {
-      "title": "بازگشت نفت — اصلاح D33",
-      "body": "برنت $۱۰۵. حمله پسح + سخنرانی = ریسک جنگ بازگشت. هرمز حل نشده."
+      "title": "تشدید جنگ انرژی — پالایشگاه‌ها هدف",
+      "body": "مینا الاحمدی ۴۶۶K bbl/day. حبشان + EGA. نفت $۱۱۲. WTI > برنت = وحشت."
     },
     {
-      "title": "ایران مستمر — ۵۵/روز = ذخیره",
-      "body": "D34 بالای میانگین. مدل جیره‌بندی تأیید. ۶ ماه معتبرتر."
+      "title": "CMA CGM — هرمز باز شدن",
+      "body": "اولین کشتی غربی. مثبت اما ۵-۷ از ۶۲. عبور انتخابی. پالایشگاه = تناقض."
     },
     {
-      "title": "۶ آوریل — ۴ روز + بدتر",
-      "body": "سخنرانی تشدید. خرازی هدف. نفت جهش. ایران مقاوم. فضای دیپلماسی تنگ‌تر."
+      "title": "۶ آوریل — ۳ روز + بدون پیشرفت",
+      "body": "ایران رد. ترامپ: حمله شروع نشده. F-15E = تسریع تلافی. خلبان مفقود. نفت $۱۱۲."
     }
   ],
   "endstate": [
     {
-      "title": "Most likely (30%)",
-      "body": "Escalation — INCREASED 28->30%. Trump speech + Kharazi strike + oil surge = all vectors toward April 6 power grid strikes."
+      "title": "Most likely (33%)",
+      "body": "Escalation — INCREASED 30->33%. F-15E downing + oil $112 + Iran rejected proposal + 3 days to April 6. Missing pilot = cannot pause. Trump retaliatory instinct after aircraft loss."
     },
     {
-      "title": "Second (26%)",
-      "body": "Attrition — INCREASED 25->26%. Iran sustained post-Passover. 2-3 more weeks per Trump. Could become months per Iran FM."
+      "title": "Second (28%)",
+      "body": "Attrition — INCREASED 26->28%. Haaretz: Iran retains half launchers + massive drones. CENTCOM narrative crumbling. Iran has 2-6 months of capability at current rates."
     },
     {
-      "title": "Third (18%)",
-      "body": "Declared victory — DECREASED 20->18%. No exit strategy visible despite \"nearing completion\" rhetoric."
+      "title": "Third (16%)",
+      "body": "Declared victory — DECREASED 18->16%. F-15E shot down = cannot claim victory. Missing pilot = impossible to exit. Refinery fires ongoing."
     },
     {
-      "title": "Fourth (11%/10%/5%)",
-      "body": "Deal (11% — Kharazi channel damaged), intervention (10%), fracture (5%)."
+      "title": "Fourth (10%/9%/4%)",
+      "body": "Deal (10% — Iran rejected), intervention (9% — CMA CGM reduces urgency), fracture (4% — F-15E boosts IRGC morale)."
     }
   ],
   "endstate_fa": [
     {
-      "title": "اول (۳۰٪)",
-      "body": "تشدید — افزایش. سخنرانی + خرازی + نفت = ۶ آوریل."
+      "title": "اول (۳۳٪)",
+      "body": "تشدید — افزایش. F-15E + نفت $۱۱۲ + ایران رد + ۳ روز. خلبان مفقود = توقف ناممکن."
     },
     {
-      "title": "دوم (۲۶٪)",
-      "body": "فرسایش — افزایش. ایران مستمر. ۶ ماه."
+      "title": "دوم (۲۸٪)",
+      "body": "فرسایش — افزایش. هاآرتص: نیمی سالم + ناوگان پهپاد. ۲-۶ ماه ظرفیت."
     },
     {
-      "title": "سوم (۱۸٪)",
-      "body": "اعلام پیروزی — کاهش. بدون خروج."
+      "title": "سوم (۱۶٪)",
+      "body": "اعلام پیروزی — کاهش. F-15E = نمی‌تواند. خلبان مفقود."
     },
     {
       "title": "چهارم",
-      "body": "مذاکره (۱۱٪ — خرازی). مداخله (۱۰٪). فروپاشی (۵٪)."
+      "body": "مذاکره (۱۰٪). مداخله (۹٪). فروپاشی (۴٪)."
     }
   ],
   "shippingRoutes": [
@@ -983,7 +1001,7 @@
       "route": "Tehran -> Dubai -> Atlanta",
       "status": "DEAD",
       "statusColor": "red",
-      "detail": "Dead. 3 tanker incidents in 3 days. Insurance catastrophe. US excluded.",
+      "detail": "Dead. Kuwait refinery fire + UAE industrial shutdown D35. Insurance 12.5%+. CMA CGM transit = symbolic only.",
       "viability": "0%",
       "eta": "N/A"
     },
@@ -991,7 +1009,7 @@
       "route": "Iran -> Turkey (land)",
       "status": "CLOSED",
       "statusColor": "red",
-      "detail": "NATO. Border shut. 4th missile intercept D31.",
+      "detail": "NATO. Border shut. B1 Bridge Tehran-Karaj destroyed = internal logistics degrading.",
       "viability": "~5%",
       "eta": "Post-war"
     },
@@ -999,7 +1017,7 @@
       "route": "Iran -> Armenia",
       "status": "MOST VIABLE",
       "statusColor": "yellow",
-      "detail": "Grid intact. Kharazi strike = diplomatic delay but route independent. April 6 critical.",
+      "detail": "Grid intact BUT April 6 = 3 days. B1 Bridge destruction = Tehran road network damaged. Route independent of Gulf.",
       "viability": "~10-15%",
       "eta": "If ceasefire: 4-6 weeks"
     },
@@ -1007,15 +1025,15 @@
       "route": "Pakistan / East",
       "status": "DAMAGED",
       "statusColor": "yellow",
-      "detail": "Kharazi = Pakistan back-channel struck. Plan still credible but intermediary injured. First transit done.",
+      "detail": "Kharazi injured. Iran rejected US proposal. Pakistan still intermediary but less effective. CMA CGM transit = Hormuz cracking.",
       "viability": "~8-10%",
-      "eta": "Months. Kharazi = setback."
+      "eta": "Months."
     },
     {
       "route": "Oman bypass",
       "status": "COMPROMISED",
       "statusColor": "red",
-      "detail": "Hengam Island (Hormuz entrance) struck D34. Ports hit. Gulf-wide risk.",
+      "detail": "3 Omani tankers transited hugging coastline D35. Positive but F-15E downing near Qeshm = strait combat zone.",
       "viability": "~5%",
       "eta": "Uncertain"
     }
@@ -1025,7 +1043,7 @@
       "route": "تهران-دبی-آتلانتا",
       "status": "مرده",
       "statusColor": "red",
-      "detail": "۳ نفتکش ۳ روز. بیمه بحران.",
+      "detail": "پالایشگاه کویت + صنعتی امارات D35. بیمه ۱۲.۵٪+.",
       "viability": "۰٪",
       "eta": "—"
     },
@@ -1033,7 +1051,7 @@
       "route": "ایران-ترکیه",
       "status": "بسته",
       "statusColor": "red",
-      "detail": "ناتو. مرز بسته.",
+      "detail": "ناتو. پل B1 تخریب = لجستیک داخلی آسیب.",
       "viability": "~۵٪",
       "eta": "بعد جنگ"
     },
@@ -1041,7 +1059,7 @@
       "route": "ایران-ارمنستان",
       "status": "بهترین",
       "statusColor": "yellow",
-      "detail": "برق سالم. خرازی مستقل مسیر. ۶ آوریل بحرانی.",
+      "detail": "برق سالم اما ۶ آوریل = ۳ روز. پل B1 = شبکه جاده‌ای تهران آسیب.",
       "viability": "~۱۰-۱۵٪",
       "eta": "آتش‌بس: ۴-۶ هفته"
     },
@@ -1049,34 +1067,34 @@
       "route": "پاکستان/شرق",
       "status": "آسیب‌دیده",
       "statusColor": "yellow",
-      "detail": "خرازی = کانال پاکستان آسیب. طرح معتبر. اولین عبور انجام.",
+      "detail": "خرازی زخمی. ایران رد پیشنهاد. CMA CGM = هرمز باز.",
       "viability": "~۸-۱۰٪",
-      "eta": "ماه‌ها. خرازی = عقبگرد."
+      "eta": "ماه‌ها."
     },
     {
       "route": "عمان",
       "status": "تهدید",
       "statusColor": "red",
-      "detail": "هنگام D34. بنادر هدف. ریسک.",
+      "detail": "۳ نفتکش عمانی عبور. مثبت اما F-15E قشم = منطقه جنگی.",
       "viability": "~۵٪",
       "eta": "نامشخص"
     }
   ],
   "publishingStatus": [
-    "<strong>Paper:</strong> HALTED. Hormuz closed. Pre-war stock only. 34 days.",
-    "<strong>Printing:</strong> Multi-province bombardment continues (Tehran, Shiraz, Kermanshah, Ahvaz). 768+ hrs internet. Zero digital prepress.",
-    "<strong>Internet:</strong> 768+ hours. 34 days. No digital anything.",
+    "<strong>Paper:</strong> HALTED. Hormuz closed. Pre-war stock only. 35 days.",
+    "<strong>Printing:</strong> B1 Bridge (Tehran-Karaj) destroyed = major transit artery cut. Pasteur Institute struck = research infrastructure targeted. 792+ hrs internet. Zero digital prepress.",
+    "<strong>Internet:</strong> 792+ hours. 35 days. No digital anything.",
     "<strong>New titles:</strong> HALTED since ~D5. Zero ISBNs. 3+ months post-ceasefire minimum.",
-    "<strong>Warehouse:</strong> Unknown condition. Isfahan steel zones struck D33. Tehran strikes continue.",
-    "<strong>Distribution:</strong> Collapsed. Trump 2-3 more weeks = minimum. Kharazi strike = diplomatic delay."
+    "<strong>Warehouse:</strong> Unknown condition. B1 Bridge collapse = Tehran logistics degraded. 85,000+ structures. 600+ schools.",
+    "<strong>Distribution:</strong> Collapsed. Iran rejected US proposal. April 6 = 3 days. F-15E = war extending."
   ],
   "publishingStatus_fa": [
-    "<strong>کاغذ:</strong> متوقف. فقط انبار. ۳۴ روز.",
-    "<strong>چاپ:</strong> بمباران مستمر چند استانی. ۷۶۸+.",
-    "<strong>اینترنت:</strong> ۷۶۸+ ساعت.",
+    "<strong>کاغذ:</strong> متوقف. فقط انبار. ۳۵ روز.",
+    "<strong>چاپ:</strong> پل B1 تخریب. پاستور هدف. ۷۹۲+.",
+    "<strong>اینترنت:</strong> ۷۹۲+ ساعت.",
     "<strong>تولید:</strong> متوقف. ۳+ ماه.",
-    "<strong>انبار:</strong> نامعلوم. تهران حملات ادامه.",
-    "<strong>توزیع:</strong> فروپاشیده. ترامپ ۲-۳ هفته. خرازی = تأخیر."
+    "<strong>انبار:</strong> نامعلوم. پل B1 = لجستیک آسیب. ۸۵,۰۰۰+ ساختمان. ۶۰۰+ مدرسه.",
+    "<strong>توزیع:</strong> فروپاشیده. ایران رد پیشنهاد. ۶ آوریل = ۳ روز."
   ],
   "impactIranfarhang": [
     "<strong>SUPPLY CHAIN: 100% SEVERED — DAY 34.</strong> Zero books since D1. Kharazi strike damages Pakistan back-channel = diplomatic delay. Trump: 2-3 more weeks minimum.",
@@ -1187,110 +1205,110 @@
   "casualties": [
     {
       "group": "Iran",
-      "figure": "~7,400+ killed",
+      "figure": "~7,600+ killed",
       "statusColor": "red",
-      "detail": "Kharazi wife killed. Continued strikes Tehran/Shiraz/Kermanshah/Sirjan/Ahvaz/Kurdistan. HRANA 3,500+. Iran Intl 4,800+. Hengaw ~7,400+. 82,000+ structures. 330,000+ displaced."
+      "detail": "AJ official: 2,076+ killed, 26,500+ wounded. HRANA/Iran Intl/Hengaw higher. B1 Bridge 8+ killed 95 wounded. 600+ schools. 85,000+ structures. 330,000+ displaced. Pasteur Institute + Red Crescent warehouse struck."
     },
     {
       "group": "Lebanon",
-      "figure": "1,268+ killed",
+      "figure": "1,318+ killed",
       "statusColor": "red",
-      "detail": "AJ tracker 1,268. Continued Beirut/Bekaa/south strikes. 3,500+ injured. ~1M displaced."
+      "detail": "AJ tracker 1,318. 125+ children. IDF striking Beirut + Tehran simultaneously. ~1M displaced."
     },
     {
       "group": "Israel",
-      "figure": "24+ killed",
+      "figure": "25+ killed",
       "statusColor": "red",
-      "detail": "D34: 14 wounded Tel Aviv (11yo girl). 18+ Israeli civilians. 15 US KIA. 520+ US wounded (Newsweek revised). 6,239+ Israeli wounded."
+      "detail": "19 Israeli civilians killed. 6,594+ Israeli wounded. 1 wounded northern Israel D35. US: 15 KIA + 1 MISSING F-15E crew + 520+ wounded."
     },
     {
       "group": "Iraq",
       "figure": "107+ killed",
       "statusColor": "red",
-      "detail": "7 killed + 13 wounded Anbar base D34. ~107+ total incl PMF."
+      "detail": "~107+ total incl PMF. Continued militia activity."
     },
     {
       "group": "Gulf States",
-      "figure": "30+ killed",
+      "figure": "32+ killed",
       "statusColor": "red",
-      "detail": "Hengam Island 7 injured. Tanker off Qatar. 200+ injured cumul."
+      "detail": "UAE 12 wounded D35 (AJ). Mina Al-Ahmadi no injuries. 210+ injured cumul. Kuwait desalination plant damaged."
     },
     {
       "group": "Source discrepancy",
       "figure": "SIGNIFICANT",
       "statusColor": "yellow",
-      "detail": "Internet 768+ hrs = verification impossible. HRANA vs Iran Intl vs Hengaw = wide variance."
+      "detail": "Internet 792+ hrs = verification impossible. AJ (2,076) vs HRANA (3,500+) vs Iran Intl (4,800+) vs Hengaw (7,600+) = wide variance. Novara Media: US military hiding casualties."
     }
   ],
   "casualties_fa": [
     {
       "group": "ایران",
-      "figure": "~۷,۴۰۰+",
+      "figure": "~۷,۶۰۰+",
       "statusColor": "red",
-      "detail": "همسر خرازی کشته. تهران/شیراز/کرمانشاه ادامه."
+      "detail": "AJ: ۲,۰۷۶+. هنگاو بالاتر. پل B1 = ۸+ کشته. ۶۰۰+ مدرسه. پاستور + هلال‌احمر."
     },
     {
       "group": "لبنان",
-      "figure": "۱,۲۶۸+",
+      "figure": "۱,۳۱۸+",
       "statusColor": "red",
-      "detail": "AJ ۱,۲۶۸. بیروت/بقاع ادامه."
+      "detail": "AJ ۱,۳۱۸. ۱۲۵+ کودک. بیروت + تهران همزمان."
     },
     {
       "group": "اسرائیل",
-      "figure": "۲۴+",
+      "figure": "۲۵+",
       "statusColor": "red",
-      "detail": "۱۴ زخمی تل‌آویو. ۱۵ KIA + ۵۲۰+ زخمی آمریکا."
+      "detail": "۱۹ غیرنظامی. ۶,۵۹۴+ زخمی. آمریکا: ۱۵ KIA + ۱ مفقود F-15E + ۵۲۰+ زخمی."
     },
     {
       "group": "عراق",
       "figure": "۱۰۷+",
       "statusColor": "red",
-      "detail": "۷ کشته الانبار D34."
+      "detail": "~۱۰۷+. فعالیت شبه‌نظامی ادامه."
     },
     {
       "group": "خلیج",
-      "figure": "۳۰+",
+      "figure": "۳۲+",
       "statusColor": "red",
-      "detail": "هنگام ۷ زخمی. نفتکش قطر."
+      "detail": "امارات ۱۲ زخمی D35. مینا الاحمدی بدون تلفات. ۲۱۰+ زخمی."
     },
     {
       "group": "اختلاف",
       "figure": "قابل توجه",
       "statusColor": "yellow",
-      "detail": "اینترنت ۷۶۸+. تأیید ناممکن."
+      "detail": "اینترنت ۷۹۲+. AJ (۲,۰۷۶) در مقابل هنگاو (۷,۶۰۰+). نوارا: آمریکا پنهان‌کاری."
     }
   ],
   "humanitarian": [
-    "<strong>Internet:</strong> 768+ hours. 34 days. Longest ever. $1.3B+ loss. 90M isolated.",
+    "<strong>Internet:</strong> 792+ hours. 35 days. Longest ever. $1.4B+ loss. 90M isolated.",
     "<strong>Displacement:</strong> 330,000+ across ME. Lebanon ~1M. 2,000+ vessels stranded.",
-    "<strong>Infrastructure:</strong> 82,000+ structures. 316 healthcare/emergency centers damaged (Red Crescent). Power grid intact but April 6 = 4 days. Trump explicitly threatened.",
-    "<strong>Nuclear:</strong> IAEA locked out. 5 facilities struck. 440kg unaccounted. Kharazi (diplomatic channel) targeted.",
-    "<strong>Medical:</strong> 19,400+ injured across all theaters. 520+ US wounded (Newsweek revised UP from Pentagon figures). Pentagon accused of hiding casualty data (Intercept). 14 wounded Tel Aviv, 7 Hengam, 13 Iraq.",
-    "<strong>Economic:</strong> Oil $105.53 (+4.3%). Asian markets crashed. Qatar LNG -17%. Insurance 5-12%+."
+    "<strong>Infrastructure:</strong> 85,000+ structures. 600+ schools/education centers (Iran MFA). B1 Bridge (century-old Tehran-Karaj) destroyed. Pasteur Institute (medical research) struck. Red Crescent warehouse Bushehr hit. Power grid intact but April 6 = 3 DAYS.",
+    "<strong>Nuclear:</strong> IAEA locked out. 5 facilities struck. 440kg unaccounted. Arak/Yazd/Natanz/Isfahan/Fordow all previously struck.",
+    "<strong>Medical:</strong> 26,500+ wounded Iran (AJ). 6,594+ Israeli wounded. 520+ US wounded. Pasteur Institute strike = targeting medical research infrastructure. Kuwait desalination plant damaged = water supply threatened.",
+    "<strong>Economic:</strong> Oil $112.42 (+6.5%). WTI $111.54 surpassed Brent. Kuwait refinery fire. UAE industrial shutdown. Insurance 12.5%+."
   ],
   "humanitarian_fa": [
-    "<strong>اینترنت:</strong> ۷۶۸+. ۳۴ روز. $۱.۳B+.",
+    "<strong>اینترنت:</strong> ۷۹۲+. ۳۵ روز. $۱.۴B+.",
     "<strong>آوارگی:</strong> ۳۳۰,۰۰۰+. لبنان ~۱M.",
-    "<strong>زیرساخت:</strong> ۸۲,۰۰۰+. ۳۱۶ مرکز بهداشتی آسیب (هلال‌احمر). برق سالم اما ۶ آوریل = ۴ روز.",
-    "<strong>هسته‌ای:</strong> IAEA قفل. ۵ تأسیسات. خرازی هدف.",
-    "<strong>پزشکی:</strong> ۱۹,۴۰۰+ زخمی. ۵۲۰+ آمریکایی (نیوزویک). پنتاگون متهم به پنهان‌کاری آمار.",
-    "<strong>اقتصادی:</strong> نفت $۱۰۵. بازارهای آسیا سقوط."
+    "<strong>زیرساخت:</strong> ۸۵,۰۰۰+. ۶۰۰+ مدرسه. پل B1 تخریب. پاستور هدف. انبار هلال‌احمر. برق = ۳ روز.",
+    "<strong>هسته‌ای:</strong> IAEA قفل. ۵ تأسیسات. ۴۴۰kg.",
+    "<strong>پزشکی:</strong> ۲۶,۵۰۰+ زخمی ایران. ۶,۵۹۴+ اسرائیل. ۵۲۰+ آمریکا. پاستور = تحقیقات پزشکی. آب‌شیرین‌کن کویت آسیب.",
+    "<strong>اقتصادی:</strong> نفت $۱۱۲. WTI > برنت. پالایشگاه کویت. صنعتی امارات. بیمه ۱۲.۵٪+."
   ],
   "diplomacy": [
-    "<strong>KHARAZI STRIKE — DIPLOMACY CHANNEL TARGETED:</strong> Kharazi was overseeing Pakistan back-channel. His wounding + wife's death may be deliberate. Iran: \"proof they prefer war.\" Pakistan mediation physically damaged.",
-    "<strong>TRUMP SPEECH — NO EXIT:</strong> Said war nearing completion but revealed no strategy. 2-3 more weeks. Threatened power plants \"extremely hard.\" Markets heard escalation not reassurance.",
-    "<strong>IRAN DENIES CEASEFIRE:</strong> Trump claimed Iran asked for ceasefire. Iran flatly denied. FM says will fight as long as strikes continue. Dual posture: deny talks while maintaining channels.",
-    "<strong>CHINA-PAKISTAN PLAN:</strong> 5-point plan still most credible framework but Kharazi strike complicates. Pakistan's intermediary physically targeted. China leverage via trade.",
-    "<strong>APRIL 6 (4 DAYS):</strong> Each day narrows window. Trump speech ESCALATED rhetoric. Kharazi strike removed mediator. Oil surging = economic pressure but channels toward escalation.",
-    "<strong>INTERNATIONAL:</strong> Asian markets crashed = global economic pain. G7 pressure. But no country offering concrete mediation alternative to Pakistan channel."
+    "<strong>IRAN REJECTS US PROPOSAL:</strong> Iran formally rejected US ceasefire proposal as 'one-sided and unfair.' Outlined own conditions: war reparations + recognition of Iranian control of Strait of Hormuz. Deadlock.",
+    "<strong>F-15E COMPLICATES EVERYTHING:</strong> Missing pilot = cannot negotiate pause. Iran bounty + civilian search = potential POW leverage. Israel cancelled strikes to support rescue = shows rescue priority over diplomacy.",
+    "<strong>TRUMP: 'HASN'T EVEN STARTED':</strong> Trump said 'assault on infrastructure hasn't even started' + threatened power and desalination plants. Signaling April 6 strikes will proceed. Oil $112 reflects this.",
+    "<strong>WORLD LEADERS OPT DIPLOMACY:</strong> Norway FM: world leaders ruled against military force to reopen Hormuz. Planning defensive capabilities post-war. Maritime meeting next week. IMO to help 20,000 stranded sailors.",
+    "<strong>CMA CGM TRANSIT — POSITIVE SIGNAL:</strong> French CMA CGM Kribi = first Western vessel through Hormuz since D1. Iran expanding safe passage framework (Philippines added D34). 3 Omani tankers also transited. But F-15E downing in same area = conflicting signals.",
+    "<strong>APRIL 6 (3 DAYS):</strong> NO diplomatic progress. Iran rejected proposal. Trump escalating rhetoric. F-15E = must retaliate, not negotiate. Missing pilot = cannot pause. Converging toward strikes."
   ],
   "diplomacy_fa": [
-    "<strong>خرازی — کانال دیپلماسی هدف:</strong> کانال پاکستان. همسر کشته. ایران: \"اثبات ترجیح جنگ.\"",
-    "<strong>ترامپ — بدون خروج:</strong> تقریباً تمام اما بدون استراتژی. ۲-۳ هفته. نیروگاه‌ها.",
-    "<strong>ایران آتش‌بس رد:</strong> ترامپ ادعا. ایران تکذیب. ادامه جنگ.",
-    "<strong>طرح چین-پاکستان:</strong> هنوز بهترین اما خرازی پیچیده.",
-    "<strong>۶ آوریل (۴ روز):</strong> پنجره تنگ‌تر. سخنرانی تشدید. خرازی حذف. نفت جهش.",
-    "<strong>بین‌المللی:</strong> بازارهای آسیا سقوط = درد جهانی."
+    "<strong>ایران رد پیشنهاد:</strong> یک‌طرفه و ناعادلانه. شروط خود: غرامت + کنترل هرمز.",
+    "<strong>F-15E پیچیده:</strong> خلبان مفقود = توقف مذاکره. ایران جایزه + جستجو. POW = اهرم.",
+    "<strong>ترامپ: شروع نشده:</strong> حمله زیرساخت شروع نشده. تهدید نیروگاه + آب‌شیرین‌کن. نفت $۱۱۲.",
+    "<strong>رهبران جهان:</strong> نروژ: دیپلماسی نه نظامی. نشست دریایی هفته آینده. IMO: ۲۰,۰۰۰ ملوان.",
+    "<strong>CMA CGM عبور:</strong> اولین کشتی غربی هرمز. فیلیپین D34 اضافه. اما F-15E = سیگنال متناقض.",
+    "<strong>۶ آوریل (۳ روز):</strong> بدون پیشرفت. ایران رد. ترامپ تشدید. F-15E = تلافی نه مذاکره."
   ],
   "publicOpinion": [
     "<strong>Pew (D27):</strong> 59% wrong. 61% disapprove. 88% Dems oppose. 71% GOP support.",
@@ -1555,7 +1573,8 @@
         "Mar 30",
         "Mar 31",
         "Apr 01",
-        "Apr 02"
+        "Apr 02",
+        "Apr 03"
       ],
       "militaryExhaustion": [
         1,
@@ -1591,7 +1610,8 @@
         8,
         8.5,
         7.5,
-        7.5
+        7.5,
+        7
       ],
       "economicPain": [
         1,
@@ -1627,7 +1647,8 @@
         10,
         10,
         8,
-        9
+        9,
+        9.5
       ],
       "diplomaticMomentum": [
         0,
@@ -1663,7 +1684,8 @@
         5.5,
         6.5,
         6,
-        5.5
+        5.5,
+        5
       ],
       "usPoliticalSustainability": [
         8,
@@ -1699,7 +1721,8 @@
         2,
         1.5,
         1.5,
-        1.5
+        1.5,
+        1
       ],
       "escalationCeilingDistance": [
         7,
@@ -1735,6 +1758,7 @@
         0.5,
         1,
         1,
+        0.5,
         0.5
       ]
     },
@@ -1751,12 +1775,12 @@
       "escalationCeilingDistance_fa": "بحرانی: ۶ آوریل = ۴ روز. ترامپ تهدید نیروگاه. خرازی = هدف میانجی. ۰.۵."
     },
     "warOutcome": {
-      "prediction": "REVISED: April 6 power grid strikes now MOST LIKELY outcome (30% escalation). Trump speech provided no off-ramp. Kharazi strike damaged Pakistan back-channel. Oil surging = economic pressure intensifying. Iran sustained at 55/day post-Passover. Most probable: power grid strikes Apr 6 -> humanitarian catastrophe -> forced international intervention within 2-3 weeks.",
+      "prediction": "REVISED: April 6 power grid strikes now MOST LIKELY outcome (30% escalation). F-15E shootdown + oil $112 + Kharazi strike = pressure channeling toward escalation NOT peace. Trump speech provided no off-ramp. 3 days to binary inflection.",
       "prediction_fa": "بازنگری: حمله نیروگاه ۶ آوریل محتمل‌ترین (۳۰٪). سخنرانی بدون خروج. خرازی = کانال آسیب. نفت جهش. بحران بشردوستانه -> مداخله بین‌المللی ۲-۳ هفته.",
       "derivation": "MilExh 7.5 (HOLDS — 55/day sustained) + EconPain 9 (UP — oil surged, markets crashed) + DiplMom 5.5 (DOWN — Kharazi struck) + USPol 1.5 (HOLDS — no exit) + EscCeil 0.5 (DOWN — 4 days to April 6, Trump explicit threat). Trajectory: ALL vectors converging toward escalation.",
       "derivation_fa": "فرسایش ۷.۵ + اقتصادی ۹ (افزایش) + دیپلماسی ۵.۵ (کاهش) + سیاسی ۱.۵ + سقف ۰.۵ (کاهش). همه بردارها به تشدید.",
-      "convergenceScore": 6.4,
-      "convergenceInterpretation": "6.4/10 = HIGH and RISING (from 6.2). Economic pain surged. Escalation ceiling nearest ever at 0.5. Diplomatic momentum declining as channels targeted. Resolution pressure building but channeling toward escalation NOT peace. April 6 = inflection.",
+      "convergenceScore": 7.0,
+      "convergenceInterpretation": "7.0/10 = HIGH pressure. Military exhaustion high but Iran still dangerous (F-15E). Economic pain extreme ($112 oil). Escalation ceiling at 0.5 = nearest since D1. April 6 = binary inflection: either deal or humanitarian catastrophe.",
       "convergenceInterpretation_fa": "۶.۴/۱۰ = بالا و افزایش از ۶.۲. درد اقتصادی جهش. سقف نزدیک‌ترین تاریخ ۰.۵. فشار تشدید نه صلح.",
       "lastUpdated": "2026-04-03T00:15:00-04:00"
     }
@@ -1833,7 +1857,8 @@
       "Mar 30",
       "Mar 31",
       "Apr 01",
-      "Apr 02"
+      "Apr 02",
+      "Apr 03"
     ],
     "countriesTargetedPerDay": [
       8,
@@ -1867,6 +1892,7 @@
       8,
       8,
       7,
+      8,
       8,
       8,
       8
@@ -1905,7 +1931,8 @@
       0.5,
       0.51,
       0.81,
-      0.79
+      0.79,
+      0.56
     ],
     "interceptRateLabels": [
       "Feb 28",
@@ -1941,7 +1968,8 @@
       "Mar 30",
       "Mar 31",
       "Apr 01",
-      "Apr 02"
+      "Apr 02",
+      "Apr 03"
     ],
     "interceptRate": [
       0.82,
@@ -1977,7 +2005,8 @@
       0.89,
       0.9,
       0.87,
-      0.88
+      0.88,
+      0.87
     ],
     "scenarioHistory": {
       "labels": [
