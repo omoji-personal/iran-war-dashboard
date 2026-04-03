@@ -1215,6 +1215,45 @@ function renderExpandedKIP() {
    render() and loadDashboardData()
    ============================================================ */
 
+function buildSectionNav() {
+  var nav = document.getElementById('sectionNav');
+  if (!nav) return;
+  var sections = document.querySelectorAll('section[id]');
+  if (sections.length === 0) {
+    // Auto-assign IDs based on headings
+    document.querySelectorAll('.prediction-hero, .panel, .grid').forEach(function(el, i) {
+      if (el.closest('section') || el.tagName === 'SECTION') return;
+    });
+    // Use all top-level sections in the shell
+    sections = document.querySelectorAll('#mainShell > section, #mainShell > .prediction-hero');
+  }
+  var items = [];
+  document.querySelectorAll('#mainShell section, #mainShell .prediction-hero').forEach(function(sec, i) {
+    var h = sec.querySelector('h2, h3, .kicker');
+    if (!h) return;
+    var label = h.textContent.trim();
+    if (label.length > 30) label = label.substring(0, 28) + '...';
+    var id = 'sec-' + i;
+    sec.id = id;
+    items.push('<a href="#' + id + '">' + label + '</a>');
+  });
+  nav.innerHTML = items.join('');
+
+  // Highlight active section on scroll
+  var links = nav.querySelectorAll('a');
+  var sectionEls = document.querySelectorAll('#mainShell section[id], #mainShell .prediction-hero[id]');
+  window.addEventListener('scroll', function() {
+    var scrollY = window.scrollY + 120;
+    var active = null;
+    sectionEls.forEach(function(sec, i) {
+      if (sec.offsetTop <= scrollY) active = i;
+    });
+    links.forEach(function(a, i) {
+      a.classList.toggle('active', i === active);
+    });
+  }, { passive: true });
+}
+
 function render() {
   mountDashboard();
   applyI18n();
@@ -1230,6 +1269,7 @@ function render() {
   renderDecapitation();
   renderExpandedIranfarhang();
   renderExpandedKIP();
+  buildSectionNav();
 }
 
 async function loadDashboardData() {

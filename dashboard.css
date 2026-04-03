@@ -364,6 +364,111 @@ html[dir="rtl"] .tl-item::before {
   line-height: 1.5;
 }
 
+/* --- Section Nav (sticky TOC) --- */
+.section-nav {
+  position: fixed;
+  top: 80px;
+  right: 12px;
+  z-index: 4;
+  background: rgba(14,26,46,.92);
+  backdrop-filter: blur(12px);
+  border: 1px solid var(--border);
+  border-radius: 14px;
+  padding: 10px 0;
+  max-height: calc(100vh - 100px);
+  overflow-y: auto;
+  width: 200px;
+  scrollbar-width: thin;
+  scrollbar-color: var(--border) transparent;
+}
+html[dir="rtl"] .section-nav {
+  right: auto;
+  left: 12px;
+}
+.section-nav a {
+  display: block;
+  padding: 5px 14px;
+  font-size: 11px;
+  color: var(--muted);
+  text-decoration: none;
+  line-height: 1.4;
+  border-left: 2px solid transparent;
+  transition: all .15s;
+}
+html[dir="rtl"] .section-nav a {
+  border-left: none;
+  border-right: 2px solid transparent;
+}
+.section-nav a:hover, .section-nav a.active {
+  color: var(--gold);
+  border-left-color: var(--gold);
+  background: rgba(255,209,102,.06);
+}
+html[dir="rtl"] .section-nav a:hover, html[dir="rtl"] .section-nav a.active {
+  border-left-color: transparent;
+  border-right-color: var(--gold);
+}
+.nav-toggle {
+  display: none;
+  position: fixed;
+  top: 80px;
+  right: 12px;
+  z-index: 4;
+  background: rgba(14,26,46,.92);
+  backdrop-filter: blur(12px);
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  padding: 8px 12px;
+  color: var(--gold);
+  font-size: 12px;
+  font-weight: 700;
+  cursor: pointer;
+}
+html[dir="rtl"] .nav-toggle {
+  right: auto;
+  left: 12px;
+}
+
+/* --- Event Log Table — truncated cells --- */
+.table-wrap td {
+  max-width: 220px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.table-wrap td:hover {
+  white-space: normal;
+  overflow: visible;
+  max-width: none;
+  background: rgba(15,28,49,.98);
+  position: relative;
+  z-index: 1;
+}
+.table-wrap td:first-child {
+  white-space: nowrap;
+  max-width: none;
+  font-weight: 700;
+}
+.table-wrap td:nth-child(2),
+.table-wrap td:nth-child(3) {
+  white-space: nowrap;
+  max-width: none;
+  text-align: center;
+}
+
+/* --- RTL fixes for new sections --- */
+html[dir="rtl"] .route-header { flex-direction: row-reverse; }
+html[dir="rtl"] .route-meta { flex-direction: row-reverse; }
+html[dir="rtl"] .risk-gauge { flex-direction: row-reverse; }
+html[dir="rtl"] .risk-gauge .gauge-trend { margin-left: 0; margin-right: 4px; }
+html[dir="rtl"] .sc-header { flex-direction: row-reverse; }
+html[dir="rtl"] .scenario { flex-direction: row-reverse; }
+html[dir="rtl"] .convergence-badge { flex-direction: row-reverse; }
+html[dir="rtl"] .model-cards { direction: rtl; }
+html[dir="rtl"] .vector-grid { direction: rtl; }
+html[dir="rtl"] .metric-grid { direction: rtl; }
+html[dir="rtl"] .chips { flex-direction: row-reverse; }
+
 /* --- Responsive Breakpoints --- */
 @media(max-width:1180px) {
   .hero,.cols-2,.cols-3 { grid-template-columns: 1fr; }
@@ -371,6 +476,9 @@ html[dir="rtl"] .tl-item::before {
   .model-cards { grid-template-columns: 1fr; }
   .vector-grid { grid-template-columns: repeat(3, 1fr); }
   table { min-width: 900px; }
+  .section-nav { display: none; }
+  .nav-toggle { display: block; }
+  .section-nav.open { display: block; width: 180px; top: 115px; }
 }
 @media(max-width:700px) {
   .metric-grid { grid-template-columns: 1fr; }
@@ -401,4 +509,9 @@ html[dir="rtl"] .tl-item::before {
   .route-card { padding: 10px; }
   .risk-gauge { flex-direction: column; text-align: center; }
   .risk-gauge .gauge-score { font-size: 28px; }
+  .section-nav { display: none !important; }
+  .nav-toggle { display: block; }
+  .section-nav.open { display: block !important; width: 160px; top: 110px; right: 8px; }
+  html[dir="rtl"] .section-nav.open { right: auto; left: 8px; }
+  .table-wrap td { max-width: 150px; font-size: 11px; }
 }
