@@ -24,13 +24,14 @@
         <div class="chip"><span data-i18n="chipUpdate">Last data update:</span> <strong id="lastUpdated">&mdash;</strong></div>
         <div class="chip"><span data-i18n="chipFresh">Freshness:</span> <strong id="freshnessStatus">&mdash;</strong></div>
         <div class="chip"><span data-i18n="chipWindow">Data window:</span> <strong id="seriesThrough">&mdash;</strong></div>
+        <div class="nav-wrap">
+          <button class="nav-toggle" onclick="document.getElementById('sectionNav').classList.toggle('open')">&#9660; Jump to</button>
+          <nav class="section-nav" id="sectionNav"></nav>
+        </div>
         <button class="lang-btn" id="langToggle" onclick="toggleLang()">فارسی</button>
       </div>
     </div>
   </div>
-
-  <button class="nav-toggle" id="navToggle" onclick="document.getElementById('sectionNav').classList.toggle('open')">&#9776; Sections</button>
-  <nav class="section-nav" id="sectionNav"></nav>
 
   <main class="shell" id="mainShell">
     <div class="loading-msg" id="loadingMsg">Loading dashboard data&hellip;</div>

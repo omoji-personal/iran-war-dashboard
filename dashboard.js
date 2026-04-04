@@ -1218,40 +1218,70 @@ function renderExpandedKIP() {
 function buildSectionNav() {
   var nav = document.getElementById('sectionNav');
   if (!nav) return;
-  var sections = document.querySelectorAll('section[id]');
-  if (sections.length === 0) {
-    // Auto-assign IDs based on headings
-    document.querySelectorAll('.prediction-hero, .panel, .grid').forEach(function(el, i) {
-      if (el.closest('section') || el.tagName === 'SECTION') return;
-    });
-    // Use all top-level sections in the shell
-    sections = document.querySelectorAll('#mainShell > section, #mainShell > .prediction-hero');
-  }
-  var items = [];
-  document.querySelectorAll('#mainShell section, #mainShell .prediction-hero').forEach(function(sec, i) {
-    var h = sec.querySelector('h2, h3, .kicker');
-    if (!h) return;
-    var label = h.textContent.trim();
-    if (label.length > 30) label = label.substring(0, 28) + '...';
-    var id = 'sec-' + i;
-    sec.id = id;
-    items.push('<a href="#' + id + '">' + label + '</a>');
-  });
-  nav.innerHTML = items.join('');
 
-  // Highlight active section on scroll
-  var links = nav.querySelectorAll('a');
-  var sectionEls = document.querySelectorAll('#mainShell section[id], #mainShell .prediction-hero[id]');
-  window.addEventListener('scroll', function() {
-    var scrollY = window.scrollY + 120;
-    var active = null;
-    sectionEls.forEach(function(sec, i) {
-      if (sec.offsetTop <= scrollY) active = i;
+  // Define clean grouped nav structure — map DOM element IDs/queries to labels
+  var groups = [
+    { group: 'Prediction', items: [
+      { q: '.prediction-hero', label: 'Forecast & Metrics' },
+      { q: '[data-i18n="kickerThesis"]', label: 'Capability Thesis', up: 1 },
+      { q: '#stockpileCards', label: 'Stockpile Burn Rate', up: 1 },
+      { q: '[data-i18n="kickerVectors"]', label: 'Pressure Index', up: 1 },
+      { q: '#deadlineCountdown', label: 'April 6 Deadline', up: 1 }
+    ]},
+    { group: 'Situation', items: [
+      { q: '#theoryBox', label: 'Situation Report', up: 1 },
+      { q: '#scenarioProbs', label: 'Scenarios', up: 1 }
+    ]},
+    { group: 'Military', items: [
+      { q: '#missileChart', label: 'Launch Tempo', up: 1 },
+      { q: '#comboChart', label: 'Combined & Cumulative', up: 1 },
+      { q: '#cumulByCountryChart', label: 'Strikes by Country', up: 1 }
+    ]},
+    { group: 'Economic', items: [
+      { q: '#oilOverlayChart', label: 'Oil & Conflict', up: 1 },
+      { q: '#oilBandsChart', label: 'Oil Scenarios', up: 1 },
+      { q: '#hormuzTransitChart', label: 'Hormuz Transit', up: 1 },
+      { q: '#targetMissileChart', label: 'Target Breakdown', up: 1 }
+    ]},
+    { group: 'Geopolitical', items: [
+      { q: '#diplomacyBox', label: 'Diplomacy', up: 1 },
+      { q: '#coalitionChart', label: 'Coalition Fracture', up: 1 },
+      { q: '#decapitationList', label: 'Decapitation Tracker', up: 1 },
+      { q: '#hormuzBox', label: 'Hormuz & Shipping', up: 1 }
+    ]},
+    { group: 'Business', items: [
+      { q: '#impactIranfarhang', label: 'Iranfarhang', up: 2 },
+      { q: '#impactKIP', label: 'KIP', up: 2 }
+    ]},
+    { group: 'Reference', items: [
+      { q: '#timeline', label: 'Timeline & Evaluation', up: 1 },
+      { q: '#dailyRows', label: 'Event Log', up: 2 }
+    ]}
+  ];
+
+  var html = '';
+  groups.forEach(function(g) {
+    html += '<div class="nav-group">' + g.group + '</div>';
+    g.items.forEach(function(item) {
+      var el = document.querySelector(item.q);
+      if (!el) return;
+      // Walk up to the section/panel parent
+      var target = el;
+      for (var i = 0; i < (item.up || 0); i++) {
+        if (target.parentElement) target = target.parentElement;
+      }
+      if (!target.id) target.id = 'nav-' + item.label.toLowerCase().replace(/[^a-z0-9]+/g, '-');
+      html += '<a href="#' + target.id + '" onclick="document.getElementById(\'sectionNav\').classList.remove(\'open\')">' + item.label + '</a>';
     });
-    links.forEach(function(a, i) {
-      a.classList.toggle('active', i === active);
-    });
-  }, { passive: true });
+  });
+  nav.innerHTML = html;
+
+  // Close nav when clicking outside
+  document.addEventListener('click', function(e) {
+    if (!e.target.closest('.nav-wrap')) {
+      nav.classList.remove('open');
+    }
+  });
 }
 
 function render() {
