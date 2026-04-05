@@ -3705,34 +3705,46 @@
     },
     "probabilityChangelog": [
       {
+        "day": "D31",
+        "prob": 15,
+        "delta": 0,
+        "reason": "B-52 bombing. Oil dropped. China-Pakistan plan."
+      },
+      {
+        "day": "D32",
+        "prob": 15,
+        "delta": 0,
+        "reason": "Al-Salmi tanker attacked. Oil crashed to $102."
+      },
+      {
         "day": "D33",
-        "prob": 22,
-        "delta": null,
-        "reason": "Initial engine calibration. China-Pakistan plan + oil drop."
+        "prob": 16,
+        "delta": 1,
+        "reason": "Passover surge (55 missiles). Oil $105."
       },
       {
         "day": "D34",
-        "prob": 18,
-        "delta": -4,
-        "reason": "Kharazi struck (back-channel damaged). Trump primetime speech = no off-ramp. Iran denied ceasefire."
+        "prob": 16,
+        "delta": 0,
+        "reason": "Kharazi struck. Trump primetime. Iran rejected ceasefire."
       },
       {
         "day": "D35",
-        "prob": 16,
-        "delta": -2,
-        "reason": "F-15E shot down. Oil surged $112. Haaretz: Iran has HALF launchers. CENTCOM narrative crumbling."
+        "prob": 15,
+        "delta": -1,
+        "reason": "F-15E shot down. Oil surged $112. Half launchers intact."
       },
       {
         "day": "D36",
         "prob": 15,
-        "delta": -1,
-        "reason": "Bushehr NPP hit 4th time. A-10 downed. Mahshahr struck. Iran formally rejected ceasefire."
+        "delta": 0,
+        "reason": "Bushehr NPP 4th hit. A-10 downed. Iran rejected ceasefire again."
       },
       {
         "day": "D37",
-        "prob": 17,
-        "delta": 2,
-        "reason": "WSO rescue attempt. CMA CGM first Western vessel through Hormuz. Slight uptick on safe passage expansion. But April 6 = tomorrow."
+        "prob": 15,
+        "delta": 0,
+        "reason": "WSO rescued. CMA CGM through Hormuz. Kuwait infrastructure hit."
       }
     ],
     "sensitivity": [
