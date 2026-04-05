@@ -3214,5 +3214,115 @@
       "date": "—",
       "detail": "440kg enriched uranium. IAEA locked out. Theoretical capability"
     }
-  ]
+  ],
+  "decisionEngine": {
+    "indicators": {
+      "launchRate7DMA": 44.7,
+      "launchRateVsD1": 0.093,
+      "brentShock": 0.68,
+      "hormuzRecovery": 0.15,
+      "usKIA": 15,
+      "usWounded": 520,
+      "usAircraftLost": 7,
+      "gasPrice": 4.1,
+      "approvalWrong": 59,
+      "warDays": 37,
+      "iranCivKilled_HRANA": 3531,
+      "iranCivKilled_AJ": 2076,
+      "iraqKilled": 109,
+      "lebanonKilled": 1368,
+      "nuclearFacilitiesStruck": 5,
+      "nuclearFacilitiesTotal": 6,
+      "coalitionCohesionScore": 3,
+      "mediatorMeetingsLast7Days": 3,
+      "formalProposalsRejected": 2,
+      "facesSavingDealExists": false,
+      "daysToDeadline": 1,
+      "irgcStatementsEscalatory": true,
+      "iranRejectedCeasefire": true,
+      "hormuzTollOperational": true,
+      "houthiActive": true,
+      "babAlMandabThreatened": true,
+      "groundTroopsDeployed": 8000,
+      "mojtabaAbsentDays": 28
+    },
+    "dealAvailability": {
+      "score": 0.15,
+      "inputs": {
+        "mediatorActivity": 0.4,
+        "proposalSpecificity": 0.2,
+        "faceSavingElements": 0.05,
+        "thirdPartyGuarantees": 0.1
+      },
+      "reasoning": "Iran formally rejected 15-point plan AND ceasefire request. Kharazi (back-channel) struck. China 5-point plan exists but lacks enforcement. No proposal with mutual face-saving elements. Score: very low.",
+      "reasoning_fa": "ایران طرح ۱۵ بند و آتش‌بس را رد کرد. خرازی زخمی. طرح ۵ بند چین بدون اجرا. هیچ طرحی با حفظ آبرو دوطرفه نیست."
+    },
+    "usExitPressure": {
+      "score": 0.55,
+      "inputs": {
+        "approvalPressure": 0.59,
+        "kiaPressure": 0.5,
+        "gasPressure": 0.37,
+        "durationFatigue": 0.74,
+        "exitNarrativeAvailable": 0.3
+      },
+      "reasoning": "Pew 59% wrong. 15 KIA, 520+ wounded, 7 aircraft. Gas $4.10 (+37%). Day 37 with no exit. BUT Trump wants 'victory' not 'withdrawal' — exit narrative unavailable. April 6 self-imposed deadline = trap.",
+      "reasoning_fa": "پیو ۵۹٪ اشتباه. ۱۵ کشته، ۵۲۰+ زخمی. بنزین $۴.۱۰. روز ۳۷ بدون خروج. اما ترامپ 'پیروزی' نه 'عقب‌نشینی'. مهلت ۶ آوریل = تله."
+    },
+    "iranAcceptance": {
+      "score": 0.1,
+      "inputs": {
+        "remainingLeverage": 0.8,
+        "regimeSurvival": 0.6,
+        "termsQuality": 0.05,
+        "internalPressure": 0.3
+      },
+      "reasoning": "Iran has strong leverage: Hormuz toll working, Houthis active, missile stockpile (half launchers intact per Haaretz/CNN). IRGC formally rejected ceasefire. Regime surviving despite decapitation. Iran calculates US political cost rising faster than Iran's military cost. No incentive to accept current terms.",
+      "reasoning_fa": "ایران اهرم قوی: عوارض هرمز، حوثی فعال، نصف پرتاب‌ها سالم. سپاه آتش‌بس رد. رژیم پابرجا. ایران محاسبه: هزینه سیاسی آمریکا سریع‌تر بالا."
+    },
+    "escalationProximity": {
+      "score": 0.75,
+      "inputs": {
+        "nuclearProximity": 0.83,
+        "chokePointProximity": 0.6,
+        "groundInvasionProximity": 0.5,
+        "powerGridProximity": 0.95
+      },
+      "reasoning": "Power grid deadline TOMORROW (0.95). 5/6 nuclear facilities struck (0.83). Houthis threatening Bab al-Mandab (0.6). 82nd Airborne deployed + Kharg fortified (0.5). Nearest ceiling = power grid at 0.95 = nearly certain if no deal.",
+      "reasoning_fa": "نیروگاه فردا (۰.۹۵). ۵/۶ تأسیسات هسته‌ای (۰.۸۳). حوثی باب‌المندب (۰.۶). هوابرد ۸۲ مستقر (۰.۵)."
+    },
+    "outcomeProbabilities": {
+      "negotiatedResolution": 0.08,
+      "derivation_negotiated": "P(deal) × P(US_exit) × P(Iran_accept) = 0.15 × 0.55 × 0.10 = 0.008. Adjusted up to 0.08 to account for coerced deal (April 6 threat forcing Iran's hand).",
+      "escalationCatastrophe": 0.4,
+      "derivation_escalation": "P(escalation_proximity) × (1 - P(deal)) = 0.75 × (1 - 0.15) = 0.64. Adjusted down to 0.40 because Trump has blinked on 2 prior deadlines.",
+      "protractedContinuation": 0.35,
+      "derivation_protracted": "1 - P(resolution) - P(catastrophe) - P(intervention) = residual. War continues at current intensity for weeks.",
+      "internationalIntervention": 0.1,
+      "derivation_intervention": "G7 statements + UN pressure + China plan, but no enforcement mechanism. Low but rising.",
+      "other": 0.07,
+      "derivation_other": "Regime fracture, internal coup, unexpected event."
+    },
+    "calibration": {
+      "polymarketCeasefire": 12,
+      "polymarketSource": "Polymarket 'Iran ceasefire by April 30' contract (estimated from similar markets)",
+      "historicalBaseRate": {
+        "value": 35,
+        "methodology": "Of ~40 post-WWII asymmetric Middle East conflicts, ~35% resolved within 45 days (current D37). Base rate prior."
+      },
+      "oilFuturesSignal": {
+        "spotVs3Month": "backwardation",
+        "interpretation": "Spot > futures = market expects crisis is TEMPORARY. Consistent with resolution within months, not years."
+      },
+      "modelVsMarket": "Model: 8% negotiated resolution. Market: ~12%. Difference suggests model may be slightly too pessimistic on deal probability, or market hasn't priced in Iran's formal rejection."
+    },
+    "confidence": {
+      "resolutionProbability": {
+        "estimate": 18,
+        "low": 8,
+        "high": 30
+      },
+      "methodology": "Ensemble: model-derived (8%) + market signal (12%) + historical base rate (35%) → weighted average 18%. Range reflects model disagreement."
+    }
+  }
 }

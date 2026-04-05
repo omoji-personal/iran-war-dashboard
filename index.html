@@ -56,11 +56,24 @@
         </div>
         <div class="prob-track"><div class="prob-bar" id="probBar"></div></div>
         <div class="prob-meta">
-          <span>Pressure index: <strong id="convergenceRaw"></strong></span>
+          <span id="convergenceRaw"></span>
         </div>
       </div>
-      <div id="convergenceInterpretation" class="sub"></div>
-      <div class="metric-grid" id="metrics"></div>
+
+      <div class="grid cols-2" style="margin-top:16px;gap:16px">
+        <div>
+          <div class="sub" style="margin-bottom:8px;font-weight:700;color:var(--text)">Why? Three conditions must align:</div>
+          <div id="decisionConditions"></div>
+        </div>
+        <div>
+          <div class="sub" style="margin-bottom:8px;font-weight:700;color:var(--text)">Most likely outcomes:</div>
+          <div id="outcomeBreakdown"></div>
+          <div class="sub" style="margin-top:12px;font-weight:700;color:var(--text)">Calibration anchors:</div>
+          <div id="calibrationAnchors"></div>
+        </div>
+      </div>
+
+      <div class="metric-grid" id="metrics" style="margin-top:16px"></div>
     </section>
 
     <!-- 1b. Scenario Simulator -->
