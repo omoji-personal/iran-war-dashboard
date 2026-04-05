@@ -1439,6 +1439,27 @@ function updateMetricsForDay(day) {
   var maxDay = ds.labels.length;
   var isLive = day === maxDay;
 
+  // If live day, restore the original rendered values and return
+  if (isLive) {
+    var outcome = (state.predictive || {}).warOutcome || {};
+    var score = outcome.convergenceScore || 0;
+    var prob = Math.round(100 / (1 + Math.exp(-1.2 * (score - 5))));
+    if ($('convergenceScore')) $('convergenceScore').textContent = prob + '%';
+    if ($('convergenceRaw')) $('convergenceRaw').textContent = score + '/10';
+    if ($('probBar')) {
+      $('probBar').style.width = prob + '%';
+      $('probBar').style.background = prob >= 70 ? 'var(--cyan)' : prob >= 40 ? 'var(--gold)' : 'var(--red)';
+    }
+    // Restore original metrics
+    var metricsArr = state.metrics || [];
+    if ($('metrics') && metricsArr.length) {
+      $('metrics').innerHTML = metricsArr.map(function(m) {
+        return '<div class="metric"><div class="label">' + m.label + '</div><div class="value">' + m.value + '</div><div class="desc">' + m.desc + '</div></div>';
+      }).join('');
+    }
+    return;
+  }
+
   // Update metric cards with historical values
   var metrics = state.metrics || [];
   if ($('metrics') && metrics.length >= 4) {
@@ -1489,16 +1510,18 @@ function updateMetricsForDay(day) {
    Source Confidence Shading
    ============================================================ */
 function applyConfidenceShading() {
-  // Add confidence info to missile/drone chart footnotes
   var conf = (state.dailySeries || {}).confidence;
   var note = (state.dailySeries || {}).confidenceNote;
   if (!conf || !note) return;
-  if ($('missileFoot')) {
-    var existing = $('missileFoot').textContent;
-    if (existing.indexOf('Confidence') === -1) {
-      $('missileFoot').innerHTML = existing + '<br><span style="color:var(--gold);font-size:11px">&#9888; ' + note + '</span>';
+  // Add confidence warning to both launch chart footnotes
+  var targets = ['missileFoot', 'droneFoot'];
+  targets.forEach(function(id) {
+    var el = $(id);
+    if (el && el.getAttribute('data-conf') !== 'done') {
+      el.innerHTML = el.innerHTML + '<br><span style="color:var(--gold);font-size:11px">&#9888; ' + note + '</span>';
+      el.setAttribute('data-conf', 'done');
     }
-  }
+  });
 }
 
 function render() {
