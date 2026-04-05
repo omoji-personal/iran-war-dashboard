@@ -312,8 +312,8 @@ const BASE_OPTS = {
     tooltip: { mode: 'index', intersect: false }
   },
   scales: {
-    x: { ticks: { color: '#7d8da1', font: { size: 10 } }, grid: { color: 'rgba(255,255,255,.04)' } },
-    y: { ticks: { color: '#7d8da1', font: { size: 10 } }, grid: { color: 'rgba(255,255,255,.06)' } }
+    x: { ticks: { color: '#9eb5d0', font: { size: 10 } }, grid: { color: 'rgba(255,255,255,.04)' } },
+    y: { ticks: { color: '#9eb5d0', font: { size: 10 } }, grid: { color: 'rgba(255,255,255,.06)' } }
   }
 };
 
@@ -496,7 +496,7 @@ function renderCharts() {
       data: {
         labels: labels,
         datasets: [
-          { label: currentLang === 'fa' ? 'پهپاد' : 'Drones', data: drones, backgroundColor: 'rgba(99,179,255,.5)', borderColor: '#63b3ff', borderWidth: 1, borderRadius: 4 },
+          { label: currentLang === 'fa' ? 'پهپاد' : 'Drones', data: drones, backgroundColor: 'rgba(255,159,67,.5)', borderColor: '#ff9f43', borderWidth: 1, borderRadius: 4 },
           { label: currentLang === 'fa' ? 'خط روند' : 'Trend', data: trendLineUpToLastReal(drones), type: 'line', borderColor: '#ffd166', borderWidth: 2, pointRadius: 0, tension: .3 }
         ]
       },
@@ -515,7 +515,7 @@ function renderCharts() {
         labels: labels,
         datasets: [
           { label: currentLang === 'fa' ? 'موشک' : 'Missiles', data: missiles, borderColor: '#ff6b6b', backgroundColor: 'rgba(255,107,107,.08)', fill: true, tension: .22, borderWidth: 2.5, pointRadius: 3 },
-          { label: currentLang === 'fa' ? 'پهپاد' : 'Drones', data: drones, borderColor: '#63b3ff', backgroundColor: 'rgba(99,179,255,.08)', fill: true, tension: .22, borderWidth: 2.5, pointRadius: 3 }
+          { label: currentLang === 'fa' ? 'پهپاد' : 'Drones', data: drones, borderColor: '#ff9f43', backgroundColor: 'rgba(99,179,255,.08)', fill: true, tension: .22, borderWidth: 2.5, pointRadius: 3 }
         ]
       },
       options: cOpts
@@ -536,7 +536,7 @@ function renderCharts() {
         labels: labels,
         datasets: [
           { label: currentLang === 'fa' ? 'موشک تجمعی' : 'Cumul. missiles', data: cumM, borderColor: '#ff6b6b', borderWidth: 2.5, tension: .22, pointRadius: 2 },
-          { label: currentLang === 'fa' ? 'پهپاد تجمعی' : 'Cumul. drones', data: cumD, borderColor: '#63b3ff', borderWidth: 2.5, tension: .22, pointRadius: 2 }
+          { label: currentLang === 'fa' ? 'پهپاد تجمعی' : 'Cumul. drones', data: cumD, borderColor: '#ff9f43', borderWidth: 2.5, tension: .22, pointRadius: 2 }
         ]
       },
       options: cuOpts
@@ -547,7 +547,7 @@ function renderCharts() {
   kill('oil');
   if ($('oilChart') && state.oil.labels) {
     var oOpts = deepClone(BASE_OPTS);
-    oOpts.scales.y.ticks = { color: '#7d8da1', font: { size: 10 }, callback: function(v) { return '$' + v; } };
+    oOpts.scales.y.ticks = { color: '#9eb5d0', font: { size: 10 }, callback: function(v) { return '$' + v; } };
     charts.oil = new Chart($('oilChart'), {
       type: 'line',
       data: {
@@ -905,7 +905,7 @@ function renderVectorChart(vectors) {
   var vecOpts = deepClone(BASE_OPTS);
   vecOpts.scales.y.beginAtZero = true;
   vecOpts.scales.y.suggestedMax = 10;
-  vecOpts.scales.y.ticks = { color: '#7d8da1', font: { size: 10 }, callback: function(v) {
+  vecOpts.scales.y.ticks = { color: '#9eb5d0', font: { size: 10 }, callback: function(v) {
     var sem = {0:'Low',5:'Med',10:'High'};
     return sem[v] !== undefined ? sem[v] : '';
   }};
@@ -986,7 +986,7 @@ function renderAdditionalCharts() {
     var stackOpts = deepClone(BASE_OPTS);
     stackOpts.scales.y.beginAtZero = true;
     stackOpts.scales.y.suggestedMax = 35;
-    stackOpts.scales.y.ticks = { color: '#7d8da1', font: { size: 10 }, callback: function(v) { return v + '%'; } };
+    stackOpts.scales.y.ticks = { color: '#9eb5d0', font: { size: 10 }, callback: function(v) { return v + '%'; } };
 
     charts.scenarioTrend = new Chart($('scenarioTrendChart'), {
       type: 'line',
@@ -1024,7 +1024,7 @@ function renderAdditionalCharts() {
         labels: countries,
         datasets: [
           { label: currentLang === 'fa' ? 'موشک' : 'Missiles', data: countries.map(function(c) { return cbc[c].missiles || 0; }), backgroundColor: 'rgba(255,107,107,.7)', borderRadius: 4 },
-          { label: currentLang === 'fa' ? 'پهپاد' : 'Drones', data: countries.map(function(c) { return cbc[c].drones || 0; }), backgroundColor: 'rgba(99,179,255,.7)', borderRadius: 4 }
+          { label: currentLang === 'fa' ? 'پهپاد' : 'Drones', data: countries.map(function(c) { return cbc[c].drones || 0; }), backgroundColor: 'rgba(255,159,67,.7)', borderRadius: 4 }
         ]
       },
       options: cbcOpts
@@ -1068,7 +1068,7 @@ function renderOilBands() {
   if (!ob || !$('oilBandsChart')) return;
 
   var bandOpts = deepClone(BASE_OPTS);
-  bandOpts.scales.y.ticks = { color: '#7d8da1', font: { size: 10 }, callback: function(v) { return '$' + v; } };
+  bandOpts.scales.y.ticks = { color: '#9eb5d0', font: { size: 10 }, callback: function(v) { return '$' + v; } };
   bandOpts.scales.y.suggestedMin = 60;
 
   charts.oilBands = new Chart($('oilBandsChart'), {
@@ -1173,7 +1173,7 @@ function renderCoalition() {
     var cfOpts = deepClone(BASE_OPTS);
     cfOpts.scales.y.beginAtZero = true;
     cfOpts.scales.y.suggestedMax = 10;
-    cfOpts.scales.y.ticks = { color: '#7d8da1', font: { size: 10 }, callback: function(v) {
+    cfOpts.scales.y.ticks = { color: '#9eb5d0', font: { size: 10 }, callback: function(v) {
       return v === 10 ? 'Unified' : v === 5 ? 'Strained' : v === 0 ? 'Collapsed' : '';
     }};
 
@@ -1385,7 +1385,7 @@ function renderExpandedKIP() {
   var ins = kip.insuranceCostIndex || {};
   if ($('insuranceChart') && ins.labels) {
     var insOpts = deepClone(BASE_OPTS);
-    insOpts.scales.y.ticks = { color: '#7d8da1', font: { size: 10 }, callback: function(v) { return v + '%'; } };
+    insOpts.scales.y.ticks = { color: '#9eb5d0', font: { size: 10 }, callback: function(v) { return v + '%'; } };
     insOpts.scales.y.beginAtZero = true;
     insOpts.plugins.legend = { labels: { color: '#eef5fc', font: { size: 11 } } };
 
@@ -1503,9 +1503,15 @@ function renderLeadingIndicators() {
   var li = (state.decisionEngine || {}).leadingIndicators;
   if (!li || !$('leadingIndicators')) return;
   var arrows = { accelerating: '&#11014;&#11014;', rising: '&#11014;', steady: '&#10145;', falling: '&#11015;', decelerating: '&#11015;&#11015;' };
-  var colors = { accelerating: 'var(--red)', rising: 'var(--gold)', steady: 'var(--muted)', falling: 'var(--cyan)', decelerating: 'var(--cyan)' };
+  // Context-aware: green=good for resolution, red=bad for resolution
+  var goodIfRising = ['Hormuz', 'Diplomatic'];
   $('leadingIndicators').innerHTML = li.map(function(ind) {
-    var c = colors[ind.direction] || 'var(--muted)';
+    var up = ind.direction === 'rising' || ind.direction === 'accelerating';
+    var down = ind.direction === 'falling' || ind.direction === 'decelerating';
+    var risingIsGood = goodIfRising.some(function(g) { return ind.metric.indexOf(g) > -1; });
+    var c = 'var(--muted)';
+    if (up) c = risingIsGood ? 'var(--cyan)' : 'var(--red)';
+    if (down) c = risingIsGood ? 'var(--red)' : 'var(--cyan)';
     return '<div style="display:flex;justify-content:space-between;align-items:center;padding:6px 0;border-bottom:1px solid rgba(255,255,255,.04)">' +
       '<span style="font-size:12px;color:var(--text)">' + ind.metric + '</span>' +
       '<span style="font-size:14px;font-weight:900;color:' + c + '">' + ind.value + ' ' + (arrows[ind.direction]||'') + '</span></div>';
