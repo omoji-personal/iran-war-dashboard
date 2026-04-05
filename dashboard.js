@@ -1487,28 +1487,28 @@ var activeSimScenario = null;
 
 function renderSensitivity() {
   var sens = (state.decisionEngine || {}).sensitivity;
-  if (!sens || !$('sensitivityTable')) return;
-  $('sensitivityTable').innerHTML = '<table class="hub-matrix"><thead><tr><th>Input</th><th>Current</th><th>If +20pp</th><th>Impact</th><th>Interpretation</th></tr></thead><tbody>' +
-    sens.map(function(s) {
-      var impactColor = s.impact >= 10 ? 'score-high' : s.impact >= 3 ? 'score-mid' : 'score-low';
-      return '<tr><td><strong>' + s.input + '</strong></td>' +
-        '<td class="score-cell">' + Math.round(s.baseValue*100) + '%</td>' +
-        '<td class="score-cell">' + Math.round(s.perturbedValue*100) + '%</td>' +
-        '<td class="score-cell ' + impactColor + '">+' + s.impact + 'pp</td>' +
-        '<td style="font-size:11px;color:var(--soft)">' + s.interpretation + '</td></tr>';
-    }).join('') + '</tbody></table>';
+  if (!sens || !$('sensitivityBars')) return;
+  // Sort by impact descending
+  var sorted = sens.slice().sort(function(a,b) { return b.impact - a.impact; });
+  $('sensitivityBars').innerHTML = sorted.map(function(s) {
+    var barWidth = Math.min(s.impact * 5, 100);
+    var color = s.impact >= 10 ? 'var(--cyan)' : s.impact >= 3 ? 'var(--gold)' : 'var(--muted)';
+    return '<div style="margin-bottom:8px">' +
+      '<div style="display:flex;justify-content:space-between;font-size:12px;margin-bottom:2px"><span>' + s.input + '</span><strong style="color:' + color + '">+' + s.impact + 'pp</strong></div>' +
+      '<div class="prob-track" style="margin:0"><div class="prob-bar" style="width:' + barWidth + '%;background:' + color + '"></div></div></div>';
+  }).join('');
 }
 
 function renderLeadingIndicators() {
   var li = (state.decisionEngine || {}).leadingIndicators;
   if (!li || !$('leadingIndicators')) return;
-  var arrows = { accelerating: '&#9650;&#9650;', rising: '&#9650;', steady: '&#9654;', falling: '&#9660;', decelerating: '&#9660;&#9660;' };
+  var arrows = { accelerating: '&#11014;&#11014;', rising: '&#11014;', steady: '&#10145;', falling: '&#11015;', decelerating: '&#11015;&#11015;' };
   var colors = { accelerating: 'var(--red)', rising: 'var(--gold)', steady: 'var(--muted)', falling: 'var(--cyan)', decelerating: 'var(--cyan)' };
   $('leadingIndicators').innerHTML = li.map(function(ind) {
-    return '<div style="display:flex;justify-content:space-between;align-items:center;padding:8px 0;border-bottom:1px solid rgba(255,255,255,.04)">' +
-      '<div><strong style="font-size:13px">' + ind.metric + '</strong><div style="font-size:11px;color:var(--soft);margin-top:2px">' + ind.signal + '</div></div>' +
-      '<div style="text-align:right"><span style="font-size:18px;font-weight:900">' + ind.value + '</span>' +
-      '<div style="color:' + (colors[ind.direction]||'var(--muted)') + ';font-size:12px;font-weight:700">' + (arrows[ind.direction]||'') + ' ' + ind.direction + '</div></div></div>';
+    var c = colors[ind.direction] || 'var(--muted)';
+    return '<div style="display:flex;justify-content:space-between;align-items:center;padding:6px 0;border-bottom:1px solid rgba(255,255,255,.04)">' +
+      '<span style="font-size:12px;color:var(--text)">' + ind.metric + '</span>' +
+      '<span style="font-size:14px;font-weight:900;color:' + c + '">' + ind.value + ' ' + (arrows[ind.direction]||'') + '</span></div>';
   }).join('');
 }
 
@@ -1516,12 +1516,11 @@ function renderChangelog() {
   var cl = (state.decisionEngine || {}).probabilityChangelog;
   if (!cl || !$('probChangelog')) return;
   $('probChangelog').innerHTML = cl.slice().reverse().map(function(entry) {
-    var deltaStr = entry.delta !== null ? (entry.delta > 0 ? '<span style="color:var(--cyan)">+' + entry.delta + '%</span>' : '<span style="color:var(--red)">' + entry.delta + '%</span>') : '';
-    return '<div style="display:flex;gap:12px;padding:6px 0;border-bottom:1px solid rgba(255,255,255,.04)">' +
-      '<strong style="min-width:36px;color:var(--gold)">' + entry.day + '</strong>' +
-      '<span style="min-width:40px;font-weight:800">' + entry.prob + '%</span>' +
-      '<span style="min-width:40px">' + deltaStr + '</span>' +
-      '<span style="font-size:12px;color:var(--soft)">' + entry.reason + '</span></div>';
+    var deltaStr = entry.delta !== null ? (entry.delta > 0 ? '<span style="color:var(--cyan)">+' + entry.delta + '</span>' : '<span style="color:var(--red)">' + entry.delta + '</span>') : '';
+    return '<div style="padding:5px 0;border-bottom:1px solid rgba(255,255,255,.04);font-size:12px">' +
+      '<span style="color:var(--gold);font-weight:700;margin-right:6px">' + entry.day + '</span>' +
+      '<strong>' + entry.prob + '%</strong> ' + deltaStr +
+      ' <span style="color:var(--soft)">— ' + entry.reason.substring(0, 80) + (entry.reason.length > 80 ? '...' : '') + '</span></div>';
   }).join('');
 }
 
