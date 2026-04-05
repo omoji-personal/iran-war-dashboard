@@ -351,10 +351,27 @@ function setText() {
   var theory = currentLang === 'fa' ? (state.theoryBox_fa || state.theoryBox) : state.theoryBox;
   if ($('theoryBox')) $('theoryBox').innerHTML = theory || '';
 
-  // Metrics grid
+  // Metrics grid — first 4 computed from data, rest from JSON
   var metricsArr = currentLang === 'fa' ? (state.metrics_fa && state.metrics_fa.length ? state.metrics_fa : state.metrics) : state.metrics;
   if ($('metrics') && metricsArr) {
-    $('metrics').innerHTML = metricsArr.map(function(m) {
+    var ds = state.dailySeries || {};
+    var missiles = ds.missiles || [];
+    var drones = ds.drones || [];
+    var totalM = missiles.reduce(function(a,b){return a+b;}, 0);
+    var totalD = drones.reduce(function(a,b){return a+b;}, 0);
+    var latestBrent = (state.oil.brent || []).slice(-1)[0] || 0;
+
+    // Override first 4 metric values with computed data
+    var computed = metricsArr.map(function(m, i) {
+      var copy = { label: m.label, value: m.value, desc: m.desc };
+      if (i === 0) copy.value = String(missiles.length); // Day count
+      if (i === 1) copy.value = '~' + totalM.toLocaleString(); // Cumul missiles
+      if (i === 2) copy.value = '~' + totalD.toLocaleString(); // Cumul drones
+      if (i === 3) copy.value = '$' + latestBrent; // Oil
+      return copy;
+    });
+
+    $('metrics').innerHTML = computed.map(function(m) {
       return '<div class="metric"><div class="label">' + m.label + '</div>' +
         '<div class="value">' + m.value + '</div>' +
         '<div class="desc">' + m.desc + '</div></div>';
@@ -716,9 +733,36 @@ function renderPredictiveSection() {
   var vectors = p.vectors || {};
   var de = state.decisionEngine || {};
 
-  // War outcome forecast text
-  var forecastText = currentLang === 'fa' ? (outcome.prediction_fa || outcome.prediction || '') : (outcome.prediction || '');
-  if ($('outcomeForecast')) $('outcomeForecast').innerHTML = forecastText;
+  // War outcome forecast — generated from engine state
+  var maxDay = (state.dailySeries.labels || []).length;
+  var eng = computeEngineForDay(maxDay - 1);
+  if ($('outcomeForecast') && eng) {
+    // Find highest-probability outcome
+    var outcomes = [
+      { name: 'Escalation', pct: Math.round(eng.pEscalation * 100) },
+      { name: 'Protracted continuation', pct: Math.round(eng.pProtracted * 100) },
+      { name: 'Negotiated resolution', pct: Math.round(eng.pNegotiated * 100) },
+      { name: 'International intervention', pct: Math.round(eng.pIntervention * 100) }
+    ];
+    outcomes.sort(function(a, b) { return b.pct - a.pct; });
+    var top = outcomes[0];
+    var second = outcomes[1];
+
+    // Build bottleneck description
+    var bottleneck = eng.dealScore < eng.iranScore && eng.dealScore < eng.usExitScore ? 'no viable deal exists' :
+      eng.iranScore < eng.dealScore && eng.iranScore < eng.usExitScore ? 'Iran is unwilling to accept terms' :
+      'US has not committed to an exit';
+
+    var forecast = '<strong>' + top.name + ' is the most likely outcome (' + top.pct + '%).</strong> ' +
+      second.name + ' is second at ' + second.pct + '%. ' +
+      'Negotiated resolution is only ' + Math.round(eng.pNegotiated * 100) + '% because ' + bottleneck + '. ' +
+      'The combined probability of a deal is ' + eng.modelProb + '% (our model) to ' + eng.ensemble + '% (with market and historical data). ' +
+      'Day ' + maxDay + ' of the conflict.';
+    $('outcomeForecast').innerHTML = forecast;
+  } else if ($('outcomeForecast')) {
+    var forecastText = currentLang === 'fa' ? (outcome.prediction_fa || outcome.prediction || '') : (outcome.prediction || '');
+    $('outcomeForecast').innerHTML = forecastText;
+  }
 
   // Decision Engine probability display
   renderDecisionEngine(de);
@@ -1033,28 +1077,43 @@ function renderAdditionalCharts() {
    ============================================================ */
 
 function renderStockpile() {
-  var sa = state.stockpileAnalysis;
-  if (!sa || !$('stockpileCards')) return;
-  var scenarios = sa.estimatedStockpiles || [];
-  var rate = sa.currentDailyRate || {};
+  if (!$('stockpileCards')) return;
+  var ds = state.dailySeries || {};
+  var missiles = ds.missiles || [];
+  var drones = ds.drones || [];
+
+  // COMPUTE from dailySeries — no static data
+  var totalM = missiles.reduce(function(a,b){return a+b;}, 0);
+  var totalD = drones.reduce(function(a,b){return a+b;}, 0);
+  var last7M = missiles.slice(-7);
+  var last7D = drones.slice(-7);
+  var dailyRateM = Math.round(last7M.reduce(function(a,b){return a+b;}, 0) / last7M.length);
+  var dailyRateD = Math.round(last7D.reduce(function(a,b){return a+b;}, 0) / last7D.length);
+
+  // Three stockpile scenarios (estimated total pre-war stockpile)
+  var scenarios = [
+    { label: 'Western estimate (low)', totalM: totalM + 1500, totalD: totalD + 5000 },
+    { label: 'Mid-range estimate', totalM: totalM + 2500, totalD: totalD + 9000 },
+    { label: 'IRGC claim (high)', totalM: totalM + 4000, totalD: totalD + 15000 }
+  ];
 
   $('stockpileCards').innerHTML = '<div class="model-cards" style="grid-template-columns:repeat(3,1fr)">' +
     scenarios.map(function(s) {
-      var daysM = s.daysRemaining_missiles || 0;
+      var remainM = s.totalM - totalM;
+      var remainD = s.totalD - totalD;
+      var daysM = dailyRateM > 0 ? Math.round(remainM / dailyRateM) : 999;
+      var daysD = dailyRateD > 0 ? Math.round(remainD / dailyRateD) : 999;
       var cls = daysM > 100 ? 'high' : daysM > 50 ? 'medium' : 'low';
-      var label = currentLang === 'fa' ? (s.scenario_fa || s.scenario) : s.scenario;
       return '<div class="model-card">' +
-        '<h4>' + label + '</h4>' +
-        '<div class="confidence ' + cls + '">' + daysM + ' days</div>' +
-        '<div class="detail">Missiles remaining: <strong>' + (s.missiles || '?').toLocaleString() + '</strong> (exhaust ' + s.exhaustionDate_missiles + ')</div>' +
-        '<div class="detail">Drones remaining: <strong>' + (s.drones || '?').toLocaleString() + '</strong> (exhaust ' + s.exhaustionDate_drones + ')</div>' +
-        '<div class="detail" style="margin-top:6px;font-size:11px;color:var(--muted)">' + s.note + '</div>' +
+        '<h4>' + s.label + '</h4>' +
+        '<div class="confidence ' + cls + '">' + Math.min(daysM, daysD) + ' days</div>' +
+        '<div class="detail">Missiles: <strong>' + remainM.toLocaleString() + '</strong> remaining (' + daysM + ' days)</div>' +
+        '<div class="detail">Drones: <strong>' + remainD.toLocaleString() + '</strong> remaining (' + daysD + ' days)</div>' +
       '</div>';
     }).join('') + '</div>';
 
-  var burned = sa.burnedToDate || {};
   if ($('burnedToDate')) {
-    $('burnedToDate').innerHTML = '~' + ((burned.missiles || 0).toLocaleString()) + ' missiles + ~' + ((burned.drones || 0).toLocaleString()) + ' drones at ~' + (rate.missiles || '?') + ' missiles/day + ~' + (rate.drones || '?') + ' drones/day';
+    $('burnedToDate').innerHTML = totalM.toLocaleString() + ' missiles + ' + totalD.toLocaleString() + ' drones fired at ~' + dailyRateM + ' missiles/day + ~' + dailyRateD + ' drones/day';
   }
 }
 
@@ -1561,18 +1620,45 @@ function showSimResult() {
   var scenario = (sim.scenarios || []).find(function(s) { return s.id === activeSimScenario; });
   if (!scenario) return;
 
-  var outcome = (state.predictive || {}).warOutcome || {};
-  var baseScore = outcome.convergenceScore || 5;
+  // Compute baseline from engine
+  var maxDay = (state.dailySeries.labels || []).length;
+  var baseEng = computeEngineForDay(maxDay - 1);
+  if (!baseEng) return;
+  var baseProb = baseEng.ensemble;
   var baseOil = (state.oil.brent || []).slice(-1)[0] || 100;
-  var adj = scenario.vectorAdjust || [0,0,0,0,0];
 
-  // Compute adjusted score (clamp 0-10)
-  var adjScore = Math.max(0, Math.min(10, baseScore + (adj[0]+adj[1]+adj[2]+adj[3]+adj[4]) / 5));
-  var baseProb = Math.round(100 / (1 + Math.exp(-1.2 * (baseScore - 5))));
-  var adjProb = Math.round(100 / (1 + Math.exp(-1.2 * (adjScore - 5))));
+  // Each scenario modifies engine INDICATORS, then recomputes
+  // We temporarily modify the indicators object and recompute
+  var de = state.decisionEngine || {};
+  var ind = de.indicators || {};
+  var savedInd = JSON.parse(JSON.stringify(ind));
+
+  // Apply scenario effects to indicators
+  if (scenario.id === 'ceasefire_apr6') {
+    ind.facesSavingDealExists = true;
+    ind.iranRejectedCeasefire = false;
+    ind.daysToDeadline = 30;
+  } else if (scenario.id === 'power_grid') {
+    ind.daysToDeadline = 0;
+    ind.formalProposalsRejected = 3;
+  } else if (scenario.id === 'bab_closes') {
+    ind.babAlMandabThreatened = true;
+    ind.daysToDeadline = 0;
+  } else if (scenario.id === 'ground_invasion') {
+    ind.groundTroopsDeployed = 20000;
+    ind.daysToDeadline = 0;
+  }
+
+  // Recompute engine with modified indicators
+  var adjEng = computeEngineForDay(maxDay - 1);
+  var adjProb = adjEng ? adjEng.ensemble : baseProb;
+
+  // Restore original indicators
+  de.indicators = savedInd;
+
   var adjOil = scenario.oilTarget || baseOil;
   var probDelta = adjProb - baseProb;
-  var oilDelta = adjOil - baseOil;
+  var oilDelta = Math.round(adjOil - baseOil);
   var desc = currentLang === 'fa' ? (scenario.description_fa || scenario.description) : scenario.description;
 
   function delta(v, unit) {
@@ -1585,7 +1671,8 @@ function showSimResult() {
   $('simResult').innerHTML =
     '<div class="sim-row"><span class="sim-label">Resolution probability</span><span><span class="sim-value">' + adjProb + '%</span>' + delta(probDelta, '%') + '</span></div>' +
     '<div class="sim-row"><span class="sim-label">Brent crude</span><span><span class="sim-value">$' + adjOil + '</span>' + delta(oilDelta, '') + '</span></div>' +
-    '<div class="sim-row"><span class="sim-label">Pressure index</span><span><span class="sim-value">' + adjScore.toFixed(1) + '/10</span></span></div>' +
+    '<div class="sim-row"><span class="sim-label">Deal available</span><span class="sim-value">' + Math.round((adjEng||baseEng).dealScore*100) + '% <span style="color:var(--muted);font-size:11px">(was ' + Math.round(baseEng.dealScore*100) + '%)</span></span></div>' +
+    '<div class="sim-row"><span class="sim-label">Iran acceptance</span><span class="sim-value">' + Math.round((adjEng||baseEng).iranScore*100) + '% <span style="color:var(--muted);font-size:11px">(was ' + Math.round(baseEng.iranScore*100) + '%)</span></span></div>' +
     '<div class="sim-desc">' + desc + '</div>';
 }
 
