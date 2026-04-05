@@ -1,6 +1,6 @@
 {
   "meta": {
-    "lastUpdated": "2026-04-05T12:00:00-04:00",
+    "lastUpdated": "2026-04-05T10:00:00-04:00",
     "notes": [
       "Day 37 (Apr 05) update. Sources: CNN, AJ, NPR, NBC, NYT, Axios, Fox News, The Aviationist, TWZ, AP, Reuters, Gulf News, The National, JPost, CNBC, oilpriceapi.com, Bloomberg, AAA.",
       "WSO RESCUED + TRUMP 48-HR REISSUED + KUWAIT INFRA + BAHRAIN OIL + HOUTHI BEN GURION: US special forces rescued F-15E WSO inside Iran. 2 C-130s + 2 Little Birds destroyed. Trump 48-hr: all Hell Monday 8PM ET. Kuwait 2 power/water plants (2 units shut) + Shuwaikh oil fire + Ministries. Bahrain BAPCO fire + Gulf Petrochemical. UAE 9+1+50 (cumul 507/24/2,191). Borouge fire. Houthis cluster Ben Gurion. Russia 200 more Bushehr (363+). China 5-point. Brent ~$109 (DOWN from $115). Internet 864+."
@@ -1838,7 +1838,7 @@
       "convergenceScore": 6.6,
       "convergenceInterpretation": "6.6/10 = EXTREME pressure (slightly down from 6.7). April 6 = TOMORROW. Binary. 24 hours.",
       "convergenceInterpretation_fa": "6.6/10. TOMORROW. 24 hours.",
-      "lastUpdated": "2026-04-05T12:00:00-04:00"
+      "lastUpdated": "2026-04-05T10:00:00-04:00"
     }
   },
   "additionalCharts": {
@@ -1918,7 +1918,8 @@
       "Apr 01",
       "Apr 02",
       "Apr 03",
-      "Apr 04"
+      "Apr 04",
+      "Apr 05"
     ],
     "countriesTargetedPerDay": [
       8,
