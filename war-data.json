@@ -1,124 +1,124 @@
 {
   "meta": {
-    "lastUpdated": "2026-04-04T21:00:00-04:00",
+    "lastUpdated": "2026-04-05T12:00:00-04:00",
     "notes": [
-      "Day 36 (Apr 04) update — late evening refresh. Sources: CNN, AJ, NPR, CNBC, Bloomberg, AP, CBS, Gulf News, Investing.com, Times of Israel, Alma Center, Reuters, Axios, Haaretz, NBC, Washington Post, IAEA, Khaleeji Times, France 24, India TV, Arab News, The National, Sunday Guardian, Voice of Emirates, CGTN, PM News Nigeria, KABC, Military.com, Washington Times, The Source, Fox News, ABC News, Fortune.",
-      "BUSHEHR NUCLEAR PLANT HIT (4TH TIME) + MAHSHAHR PETROCHEMICAL STRUCK + MSC ISHYKA ATTACKED + APRIL 6 = 2 DAYS: Projectile hit Bushehr NPP auxiliary building — 1 killed (security officer), 5 injured, 163 personnel evacuated to Russia. IAEA Grossi: 'deep concern.' Mahshahr Special Petrochemical Zone (Khuzestan) struck — 5 wounded. IRGC drone attacked MSC Ishyka (Israel-linked) in Hormuz — set on fire. A-10 Warthog ALSO downed near Hormuz D35 (2nd plane). NPR: 7 manned aircraft total. WSO still missing — Iran civilians searching with bounty. IRGC denies capture but governor offers commendation. Houthis claimed Israel attack. UAE intercepted 23 ballistic + 56 drones (cumul: 498/23/2,141). Cluster bomb warhead central Israel — 1 wounded. IDF struck Quds Force Beirut + Tehran IRGC targets. Iran REJECTED ceasefire — 'continuation of attacks' = their answer. UK hosting 40-nation Hormuz talks. Brent ~$115. April 6 = 2 DAYS. Internet 840+ hrs."
+      "Day 37 (Apr 05) update. Sources: CNN, AJ, NPR, NBC, NYT, Axios, Fox News, The Aviationist, TWZ, AP, Reuters, Gulf News, The National, JPost, CNBC, oilpriceapi.com, Bloomberg, AAA.",
+      "WSO RESCUED + TRUMP 48-HR REISSUED + KUWAIT INFRA + BAHRAIN OIL + HOUTHI BEN GURION: US special forces rescued F-15E WSO inside Iran. 2 C-130s + 2 Little Birds destroyed. Trump 48-hr: all Hell Monday 8PM ET. Kuwait 2 power/water plants (2 units shut) + Shuwaikh oil fire + Ministries. Bahrain BAPCO fire + Gulf Petrochemical. UAE 9+1+50 (cumul 507/24/2,191). Borouge fire. Houthis cluster Ben Gurion. Russia 200 more Bushehr (363+). China 5-point. Brent ~$109 (DOWN from $115). Internet 864+."
     ]
   },
-  "theoryBox": "<strong>Day 36 — BUSHEHR NPP HIT (4TH) + MAHSHAHR PETROCHEMICAL + MSC ISHYKA + APRIL 6 = 2 DAYS:</strong> Bushehr Nuclear Power Plant auxiliary building struck — 1 killed, 5 injured, 163 evacuated to Russia. IAEA Grossi: 'deep concern.' Mahshahr Special Petrochemical Zone (Khuzestan) hit — 5 wounded. IRGC drone attacked MSC Ishyka (Israel-linked) in Hormuz — on fire. A-10 Warthog ALSO downed D35 (7th US aircraft per NPR). WSO still missing. UAE: 23 ballistic + 56 drones intercepted (cumul 498/23/2,141). Cluster bomb central Israel. IDF struck Quds Force Beirut. Iran REJECTED ceasefire = 'continuation of attacks.' Brent ~$115. HRANA: 3,531+ killed. April 6 = 2 DAYS. Internet 840+ hrs.",
-  "theoryBox_fa": "<strong>روز ۳۶ — بوشهر (۴مین بار) + پتروشیمی ماهشهر + MSC ایشیکا + ۶ آوریل = ۲ روز:</strong> ساختمان فرعی نیروگاه اتمی بوشهر هدف — ۱ کشته، ۵ زخمی، ۱۶۳ به روسیه تخلیه. IAEA: نگرانی شدید. منطقه ویژه پتروشیمی ماهشهر (خوزستان) — ۵ زخمی. پهپاد سپاه MSC ایشیکا (مرتبط اسرائیل) در هرمز آتش. A-10 نیز ساقط (۶مین هواپیما). WSO مفقود. امارات: ۲۳ بالستیک + ۵۶ پهپاد رهگیری. ایران آتش‌بس رد = ادامه حملات. برنت ~$۱۱۵. ۶ آوریل = ۲ روز. اینترنت ۸۱۶+.",
+  "theoryBox": "<strong>Day 37 - WSO RESCUED + TRUMP 48-HR REISSUED + KUWAIT INFRA + APRIL 6 = TOMORROW:</strong> US special forces rescued F-15E WSO inside Iran - 2 C-130s + 2 Little Birds destroyed. Trump 48-hr: all Hell if Hormuz closed Monday 8PM ET. Kuwait 2 power/water plants (2 units shut) + Shuwaikh oil fire + Ministries. Bahrain BAPCO fire. UAE 9+1+50 (cumul 507/24/2,191). Borouge fire. Houthis cluster Ben Gurion. Russia 200 more Bushehr (363+). Brent ~$109 (DOWN). HRANA: 3,531+. April 6 = TOMORROW. Internet 864+.",
+  "theoryBox_fa": "<strong>Day 37 - WSO + 48h + Kuwait + April 6 = TOMORROW:</strong> WSO rescued. 2 C-130 + 2 heli destroyed. Trump: Hell. Kuwait 2 power/water + Shuwaikh + Ministries. Bahrain BAPCO. UAE 9+1+50. Houthi Ben Gurion. Russia 200 more (363+). $109. 864+.",
   "metrics": [
     {
       "label": "Day",
-      "value": "36",
-      "desc": "BUSHEHR NPP HIT (4TH) + MAHSHAHR PETROCHEMICAL + MSC ISHYKA + APRIL 6 = 2 DAYS. 163 Bushehr staff evacuated to Russia. Iran rejects ceasefire. NPR: 7 manned aircraft lost."
+      "value": "37",
+      "desc": "WSO RESCUED + TRUMP 48-HR + KUWAIT INFRA + APRIL 6 = TOMORROW."
     },
     {
       "label": "Cumul. missiles",
-      "value": "~3,280",
-      "desc": "D36: ~45 missiles (Israel ~10 incl cluster bomb, UAE ~23 per MoD, Gulf ~8, Houthi ~2, others ~2). Cumul ~3,280."
+      "value": "~3,320",
+      "desc": "D37: ~40 (UAE 9+1, Kuwait ~8, Bahrain ~3, Houthi ~5). Cumul ~3,320."
     },
     {
       "label": "Cumul. drones",
-      "value": "~5,187",
-      "desc": "D36: ~60 drones (UAE 56 per MoD, MSC Ishyka Hormuz, MQ-1 shot down Isfahan). Cumul ~5,187."
+      "value": "~5,257",
+      "desc": "D37: ~70 (UAE 50, Kuwait ~15, Bahrain ~5). Cumul ~5,257."
     },
     {
       "label": "Brent crude",
-      "value": "~$115",
-      "desc": "Estimated ~$115 (+$2.58/+2.3%). Dated Brent physical $141.37 (Bloomberg). Bushehr strike + petrochemical + MSC ship attack + April 6 = 2 days = continued upward pressure."
+      "value": "~$109",
+      "desc": "DOWN from $115. WSO rescue signal. April 6 binary."
     },
     {
       "label": "Iran dead",
       "value": "~7,800+",
-      "desc": "HRANA: 3,531+ killed (1,607 civilians, 244 children). AJ: 2,076+. Hengaw/Iran Intl higher. Bushehr 1 killed, 5 injured D36. Mahshahr 5 wounded. 600+ schools. 85,000+ structures."
+      "desc": "HRANA: 3,531+. AJ: 2,076+. Iran: 5 killed rescue op. 85,000+ structures."
     },
     {
       "label": "Lebanon",
       "value": "1,368+ killed",
-      "desc": "Lebanese authorities: 1,368+ (124+ children). IDF struck Quds Force command centers Beirut D36. ~1M displaced."
+      "desc": "1,368+ (124+ children). ~1M displaced."
     },
     {
       "label": "Israel dead",
       "value": "25+",
-      "desc": "19+ Israeli civilians + 15 US KIA (WSO still missing = potential 16th). 520+ US wounded. 6,594+ Israeli wounded. 7 manned aircraft lost (NPR). 1 wounded cluster bomb D36."
+      "desc": "24+ civilians. WSO RESCUED. 15 US KIA + 520+ wounded. 7+2+2. Houthi Ben Gurion."
     },
     {
       "label": "Nuclear risk",
       "value": "CRITICAL+",
-      "desc": "Bushehr NPP hit 4TH TIME — 1 killed, 163 evacuated to Russia. IAEA Grossi: 'deep concern, sites must never be attacked.' 440kg unaccounted. April 6 = 2 DAYS."
+      "desc": "Russia 200 MORE Bushehr (363+). Araghchi: contamination. 440kg. April 6 = TOMORROW."
     }
   ],
   "metrics_fa": [
     {
-      "label": "روز",
-      "value": "۳۶",
-      "desc": "بوشهر (۴مین بار) + ماهشهر + MSC ایشیکا + ۶ آوریل = ۲ روز. ۱۶۳ تخلیه به روسیه."
+      "label": "Day",
+      "value": "37",
+      "desc": "WSO + 48h + Kuwait + April 6 = TOMORROW."
     },
     {
-      "label": "موشک",
-      "value": "~۳,۲۸۰",
-      "desc": "D36: ~۴۵ موشک. مجموع ~۳,۲۸۰."
+      "label": "Missiles",
+      "value": "~3,320",
+      "desc": "D37: ~40."
     },
     {
-      "label": "پهپاد",
-      "value": "~۵,۱۸۷",
-      "desc": "D36: ~۶۰ پهپاد. مجموع ~۵,۱۸۷."
+      "label": "Drones",
+      "value": "~5,257",
+      "desc": "D37: ~70."
     },
     {
-      "label": "نفت",
-      "value": "~$۱۱۵",
-      "desc": "~$۱۱۵ (+۲.۳٪). فیزیکی $۱۴۱. بوشهر + پتروشیمی + MSC = فشار ادامه."
+      "label": "Oil",
+      "value": "~$109",
+      "desc": "DOWN. Binary."
     },
     {
-      "label": "کشته ایران",
-      "value": "~۷,۸۰۰+",
-      "desc": "HRANA: ۳,۵۳۱+. AJ: ۲,۰۷۶+. بوشهر ۱ کشته. ماهشهر ۵ زخمی. ۶۰۰+ مدرسه."
+      "label": "Iran",
+      "value": "~7,800+",
+      "desc": "HRANA 3,531+. 5 killed rescue."
     },
     {
-      "label": "لبنان",
-      "value": "۱,۳۶۸+",
-      "desc": "مقامات لبنانی: ۱,۳۶۸+. ۱۲۴+ کودک. نیروی قدس بیروت هدف D36."
+      "label": "Lebanon",
+      "value": "1,368+",
+      "desc": "1,368+."
     },
     {
-      "label": "اسرائیل",
-      "value": "۲۵+",
-      "desc": "۱۹+ غیرنظامی + ۱۵ KIA آمریکا (WSO مفقود). ۶,۵۹۴+ زخمی. ۱ زخمی بمب خوشه‌ای."
+      "label": "Israel",
+      "value": "25+",
+      "desc": "WSO rescued. 15 KIA. 7+2+2."
     },
     {
-      "label": "هسته‌ای",
-      "value": "بحرانی+",
-      "desc": "بوشهر ۴مین بار — ۱ کشته، ۱۶۳ تخلیه. IAEA: نگرانی شدید. ۶ آوریل = ۲ روز."
+      "label": "Nuclear",
+      "value": "CRITICAL+",
+      "desc": "363+ Bushehr. April 6."
     }
   ],
   "sitrep": [
-    "BUSHEHR NPP HIT 4TH TIME: Projectile struck auxiliary building of Bushehr Nuclear Power Plant. 1 security officer killed, 5 injured. 163 personnel (including Russian technicians) evacuated to Russia via emergency airlift. IAEA Director Grossi: 'deep concern — nuclear sites must never be attacked.' Reactor core intact, no radiation increase. 4th attack since D1.",
-    "MAHSHAHR PETROCHEMICAL ZONE STRUCK: US-Israeli strikes hit multiple locations in Mahshahr Special Petrochemical Zone (Khuzestan) — Iran's major petrochemical hub. 5 wounded. Smoke visible for miles. Combined with Bushehr = systematic targeting of Iran's energy/nuclear infrastructure 2 days before April 6 deadline.",
-    "MSC ISHYKA ATTACKED: IRGC naval forces attacked MSC Ishyka (Israel-linked vessel) in Strait of Hormuz with drone — set on fire. Iran continuing Hormuz harassment of Israel-affiliated shipping while allowing safe passage for non-hostile vessels. Contradictory signals: safe passage framework expanding while IRGC attacks specific ships.",
-    "A-10 WARTHOG ALSO DOWNED D35: NEWLY CONFIRMED — A-10 Warthog (single-seat) also shot down near Strait of Hormuz during F-15E rescue operations. Pilot rescued. 2 Black Hawks hit by small arms fire. NPR: 'at least seven manned aircraft' lost since D1. US claims of 'total air dominance' contradicted.",
-    "WSO STILL MISSING: F-15E weapons systems officer still unaccounted for — Iran civilians searching with ~$60K bounty. Iranian state TV broadcasting calls for help. IRGC denies capture/detention (state media). Governor of Kohgiluyeh province: whoever captures crew 'will be specially commended.' WSO initially made radio contact after ejection. If captured = first US POW.",
-    "UAE: 23 BALLISTIC + 56 DRONES: UAE MoD confirmed D36 intercepts: 23 ballistic missiles + 56 drones. Cumulative: 498 ballistic + 23 cruise + 2,141 drones since D1. UAE bore brunt of Iran's retaliatory Gulf attacks D36. All intercepted before reaching targets.",
-    "CLUSTER BOMB WARHEAD ISRAEL: Iranian ballistic missile carrying cluster bomb warhead hit central Israel — submunitions spread over wide area. 1 man (52yo) lightly wounded. Cluster warheads = escalation in munition type. Houthis also claimed separate Israel attack.",
-    "IDF STRIKES QUDS FORCE + TEHRAN: IDF struck Iranian Quds Force command centers in Beirut + IRGC air defense positions, ballistic missile storage, weapons R&D in Tehran. Continued 'wide-scale' campaign. IRGC claimed shooting down MQ-1 drone over Isfahan.",
-    "IRAN REJECTS CEASEFIRE — FORMALLY: Iran's rejection communicated through 'continuation of attacks in battlefield' rather than diplomacy (Reuters). Iranian source: 'Iran demands guaranteed ceasefire to end war permanently.' F-15E shootdowns = IRGC views military success as validation of refusal. Last active diplomatic track COLLAPSED before April 6.",
-    "CASUALTIES UPDATE: HRANA: 3,531+ killed (1,607 civilians, 244 children). AJ: 2,076+. Lebanese authorities: 1,368+ (124+ children). Iraq: 109+. Israel: 24+ civilians, 6,594+ wounded. US: 15 KIA + 1 missing WSO + 520+ wounded. 7 aircraft lost.",
-    "APRIL 6 = 2 DAYS: Power grid deadline NOW 2 days away. Iran's formal ceasefire rejection = last diplomatic track collapsed. Bushehr NPP strike = coalition already hitting nuclear infrastructure. Mahshahr petrochemical = energy targeting accelerating. Missing WSO = cannot pause. April 6 strikes near-CERTAIN.",
-    "INTERNET 840+ HRS: 36 days. $1.5B+ loss. 90M isolated. 85,000+ structures. 600+ schools."
+    "WSO RESCUED: US special forces rescued F-15E WSO after 36+ hrs evasion. 2 MC-130Js + 2 MH-6/AH-6 Little Birds destroyed (self-destruction). CIA deception campaign. WSO in Kuwait. Trump: most daring rescue. Iran claims 5 killed.",
+    "TRUMP 48-HR REISSUED: All Hell if Hormuz not opened Monday 8PM ET. 3rd ultimatum (D22, Mar 23, Apr 5). April 6 = TOMORROW.",
+    "KUWAIT INFRASTRUCTURE: 2 power/water desalination plants - 2 units shut. Shuwaikh Oil Complex fire (evacuated). Ministries Complex. No casualties. Most significant Kuwait targeting since D1.",
+    "BAHRAIN OIL: BAPCO oil tank fire + Gulf Petrochemical units attacked. Fires across units.",
+    "UAE: 9 BALLISTIC + 1 CRUISE + 50 DRONES: Cumul 507/24/2,191. Borouge Petrochemicals fire.",
+    "HOUTHIS CLUSTER MISSILE BEN GURION: 3rd front active since D29.",
+    "C-130s + LITTLE BIRDS DESTROYED: Iranian footage. US self-destruction confirmed. Total: 7 manned + 2 C-130s + 2 helicopters.",
+    "RUSSIA 200 MORE BUSHEHR: 363+ total. Araghchi: contamination risk.",
+    "CHINA DIPLOMACY: 5-point with Pakistan. Iran FM: trust zero.",
+    "CASUALTIES: HRANA 3,531+. AJ 2,076+. Iran 5 killed rescue. Lebanese 1,368+. US 15 KIA (WSO rescued) + 520+. 7+2+2.",
+    "APRIL 6 = TOMORROW: 48-hr Monday 8PM ET. WSO rescue removes POW but Trump committed. Kuwait = Iran escalating. Power grid MOST LIKELY.",
+    "INTERNET 864+ HRS: 37 days. $1.6B+. 90M."
   ],
   "sitrep_fa": [
-    "بوشهر ۴مین بار: ساختمان فرعی هدف. ۱ کشته (نگهبان)، ۵ زخمی. ۱۶۳ نفر به روسیه تخلیه. IAEA: نگرانی شدید. راکتور سالم.",
-    "پتروشیمی ماهشهر: حملات آمریکایی-اسرائیلی. ۵ زخمی. خوزستان = قلب انرژی. ۲ روز تا ۶ آوریل.",
-    "MSC ایشیکا: پهپاد سپاه در هرمز — آتش. کشتی مرتبط اسرائیل. عبور امن ادامه اما حمله اهداف خاص.",
-    "A-10 نیز ساقط D35: تأیید جدید. ۷ هواپیمای آمریکایی. ادعای تسلط هوایی رد شد.",
-    "WSO مفقود: جستجو ادامه. ~$۶۰K جایزه. رسانه‌های ایران درخواست کمک. اگر اسیر = اولین POW.",
-    "امارات: ۲۳ بالستیک + ۵۶ پهپاد: مجموع: ۴۹۸/۲۳/۲,۱۴۱. بیشترین حمله D36.",
-    "بمب خوشه‌ای اسرائیل: بالستیک با کلاهک خوشه‌ای. ۱ زخمی. حوثی نیز حمله.",
-    "IDF نیروی قدس + تهران: فرماندهی قدس بیروت + IRGC تهران. MQ-1 ساقط اصفهان.",
-    "ایران آتش‌بس رد — رسمی: ادامه حملات = پاسخ. مسیر دیپلماتیک آخر فروپاشید.",
-    "تلفات: HRANA ۳,۵۳۱+. AJ ۲,۰۷۶+. لبنان ۱,۳۶۸+. عراق ۱۰۹+. آمریکا ۱۵ KIA + ۱ مفقود.",
-    "۶ آوریل = ۲ روز: رد آتش‌بس = مسیر آخر. بوشهر + ماهشهر = تشدید. WSO مفقود. حمله تقریباً قطعی.",
-    "اینترنت ۸۱۶+. ۳۶ روز. $۱.۵B+. ۹۰M. ۸۵,۰۰۰+ ساختمان."
+    "WSO rescued. 2 C-130 + 2 heli destroyed. Iran: 5 killed.",
+    "48-hr = TOMORROW. 3rd.",
+    "Kuwait 2 power/water + Shuwaikh + Ministries.",
+    "Bahrain BAPCO + Gulf Petrochemical.",
+    "UAE 9+1+50. Cumul 507/24/2,191. Borouge.",
+    "Houthi Ben Gurion.",
+    "C-130 + heli: 7+2+2.",
+    "Russia 200 more (363+). Contamination.",
+    "China 5-point. Iran: trust zero.",
+    "HRANA 3,531+. 15 KIA. WSO rescued.",
+    "April 6 = TOMORROW. Power grid MOST LIKELY.",
+    "Internet 864+. 37 days."
   ],
   "dailySeries": {
     "labels": [
@@ -157,7 +157,8 @@
       "Apr 01",
       "Apr 02",
       "Apr 03",
-      "Apr 04"
+      "Apr 04",
+      "Apr 05"
     ],
     "missiles": [
       480,
@@ -195,7 +196,8 @@
       65,
       55,
       50,
-      45
+      45,
+      40
     ],
     "drones": [
       720,
@@ -233,10 +235,11 @@
       80,
       70,
       65,
-      60
+      60,
+      70
     ],
-    "sourceLabel": "D1-D10: JPost. D11: UAE MoD. D12-D36: fragment est. D36: Bushehr NPP (4th), Mahshahr petrochemical, MSC Ishyka drone attack, cluster bomb Israel, UAE 23+56, A-10 also downed D35. ~45m+60d.",
-    "throughDate": "Apr 04 end of day — D36"
+    "sourceLabel": "D1-D10: JPost. D11: UAE MoD. D12-D37: fragment est. D37: WSO rescued, Kuwait infra, Bahrain BAPCO, UAE 9+1+50, Houthi Ben Gurion. ~40m+70d.",
+    "throughDate": "Apr 05 end of day - D37"
   },
   "oil": {
     "labels": [
@@ -276,7 +279,8 @@
       "Apr 01",
       "Apr 02",
       "Apr 03",
-      "Apr 04"
+      "Apr 04",
+      "Apr 05"
     ],
     "brent": [
       65,
@@ -315,7 +319,8 @@
       102,
       105.53,
       112.42,
-      115
+      115,
+      109
     ],
     "wti": [
       62,
@@ -354,9 +359,10 @@
       99,
       102,
       111.54,
-      113
+      113,
+      107
     ],
-    "note": "D36: Brent ~$115 (+$2.58/+2.3%). WTI ~$113. Dated Brent physical $141.37 (Bloomberg). Bushehr NPP + Mahshahr petrochemical + MSC Ishyka = energy infrastructure targeting. Apr 6 = 2 days: deal=$85 or strikes=$140+."
+    "note": "D37: Brent ~$109 (DOWN from $115). WSO rescue signal. April 6 = binary. Deal=$85 or strikes=$130+."
   },
   "pressure": {
     "labels": [
@@ -395,7 +401,8 @@
       "Apr 01",
       "Apr 02",
       "Apr 03",
-      "Apr 04"
+      "Apr 04",
+      "Apr 05"
     ],
     "attrition": [
       2,
@@ -413,6 +420,7 @@
       9,
       9.5,
       9.5,
+      10,
       10,
       10,
       10,
@@ -471,29 +479,30 @@
       8.5,
       9.5,
       10,
-      10
+      10,
+      9
     ]
   },
   "latestTargetBreakdown": {
-    "note": "Apr 04 (D36). Bushehr NPP (4th). Mahshahr petrochemical. MSC Ishyka Hormuz. Cluster bomb Israel. UAE 23 ballistic + 56 drones (MoD). ~45m+60d.",
+    "note": "Apr 05 (D37). WSO rescued. Kuwait 2 power + Shuwaikh + Ministries. Bahrain BAPCO. UAE 9+1+50. Houthi Ben Gurion. ~40m+70d.",
     "missiles": {
-      "Israel": 10,
-      "UAE": 23,
+      "Israel": 5,
+      "UAE": 10,
       "Saudi": 3,
-      "Kuwait": 2,
+      "Kuwait": 8,
       "Qatar": 2,
-      "Bahrain": 2,
-      "Yemen/Houthi": 2,
-      "Iraq": 1,
-      "Oman": 0,
-      "Jordan": 0
+      "Bahrain": 3,
+      "Yemen/Houthi": 5,
+      "Iraq": 2,
+      "Oman": 1,
+      "Jordan": 1
     },
     "drones": {
-      "UAE": 56,
-      "Israel": 1,
-      "Saudi": 1,
-      "Bahrain": 1,
-      "Kuwait": 1,
+      "UAE": 50,
+      "Kuwait": 15,
+      "Bahrain": 5,
+      "Israel": 0,
+      "Saudi": 0,
       "Iraq": 0,
       "Oman": 0,
       "Qatar": 0,
@@ -824,194 +833,203 @@
       "capability": "D36: 45+60. DOWN from D35 (50+65) but UAE alone = 23 ballistic + 56 drones (MoD). Cumul: 498/23/2,141. Iran concentrating fire on UAE as primary Gulf target. Cluster warhead = advanced munition. IRGC attacking ships in Hormuz while safe passage framework expands = dual posture. 7 US aircraft lost = air defense NOT degraded.",
       "cost": "Brent ~$115 (+2.3%). Dated Brent physical $141.37 (Bloomberg). Bushehr = 4th nuclear strike (IAEA concern). 163 evacuated to Russia = international incident. Mahshahr petrochemical = energy infrastructure. MSC Ishyka = Hormuz shipping risk. Iran formally rejected ceasefire. April 6 = 2 DAYS. Internet 840+. HRANA: 3,531+ killed.",
       "assessment": "D36 — 48-HOUR COUNTDOWN: Iran REJECTED ceasefire formally through 'continuation of attacks.' Bushehr NPP 4th hit + Mahshahr petrochemical = coalition pre-positioning for April 6 by degrading energy/nuclear infrastructure NOW. MSC Ishyka attack = Iran retaliating against Israel-linked shipping. 163 evacuated to Russia = Rosatom involvement creates Russia dimension. Cluster warhead Israel = munition escalation. ALL indicators point to April 6 power grid strikes proceeding. No diplomatic track remains. Missing WSO blocks any pause."
+    },
+    {
+      "date": "Apr 05",
+      "missiles": 40,
+      "drones": 70,
+      "primary": "D37 - WSO RESCUED + TRUMP 48-HR + KUWAIT INFRA: 2 C-130s + 2 Little Birds destroyed. Kuwait 2 power/water (2 units shut) + Shuwaikh + Ministries. Bahrain BAPCO. UAE 9+1+50 (cumul 507/24/2,191). Houthis Ben Gurion. Russia 200 more Bushehr.",
+      "capability": "D37: 40+70. Kuwait infra = MOST significant since D1. Iran EXPANDING to civilian. UAE cumul 507+24+2,191. US lost 2 C-130s + 2 helicopters (self-destroyed).",
+      "cost": "Brent ~$109 (DOWN $6). WSO rescue = de-escalation signal. But Trump 48-hr reissued. Kuwait devastated. Gas ~$4.05. Internet 864+. HRANA: 3,531+.",
+      "assessment": "D37 - WSO rescue removes POW crisis but Trump REISSUED 48-hr (3rd time = backing down devastating). Kuwait infra = Iran escalating. C-130s = material losses. April 6 = TOMORROW. Power grid MOST LIKELY unless surprise deal."
     }
   ],
   "timeline": [
     {
-      "title": "Week 6 begins (Apr 04)",
-      "body": "Bushehr NPP 4th hit (1 killed, 163 evacuated to Russia). Mahshahr petrochemical struck. MSC Ishyka attacked in Hormuz. A-10 also downed (6th aircraft). Iran formally rejected ceasefire. Oil ~$115. April 6 = 2 DAYS."
+      "title": "Day 37 (Apr 05)",
+      "body": "WSO RESCUED. 2 C-130s + 2 Little Birds destroyed. Trump 48-hr reissued. Kuwait infra devastated. Bahrain BAPCO. UAE 9+1+50. Houthi Ben Gurion. Russia 200 more Bushehr. Oil $109 DOWN. April 6 = TOMORROW."
     },
     {
-      "title": "APRIL 6 (2 DAYS)",
-      "body": "IMMINENT: Iran formally rejected ceasefire = last diplomatic track collapsed. Bushehr + Mahshahr = coalition already targeting energy/nuclear. 163 evacuated to Russia = international incident. WSO missing = cannot pause. Power grid strikes near-CERTAIN."
+      "title": "APRIL 6 (TOMORROW)",
+      "body": "48-hr expires Monday 8PM ET. 3rd ultimatum. WSO rescue removes POW but committed. Kuwait = Iran testing. Power grid MOST LIKELY."
     },
     {
       "title": "Month 2",
-      "body": "Trump said 2-3 more weeks. Iran says 6 months. 7 US aircraft lost = air dominance challenged. Cluster warheads = Iran escalating munitions. April 6 = binary inflection point for rest of war."
+      "body": "Trump 2-3 weeks. Iran 6 months. 7+2+2 = material losses. April 6 = binary."
     },
     {
       "title": "Month 3+",
-      "body": "If post-April 6 strikes: humanitarian catastrophe -> forced intervention. If surprise deal: phased de-escalation. Mine clearance months. Nuclear unresolved. WSO status critical."
+      "body": "If strikes: humanitarian catastrophe -> intervention. If deal: phased de-escalation."
     },
     {
       "title": "Wild cards",
-      "body": "April 6 strikes. WSO capture (POW?). Bushehr radiation incident. Russia response to personnel evacuation. Houthi Bab al-Mandab closure. Physical Brent $141 = recession trigger."
+      "body": "April 6 power grid. C-130 wreckage exploitation. Houthi Bab al-Mandab. China mediation. Bushehr radiation."
     }
   ],
   "timeline_fa": [
     {
-      "title": "هفته ۶ (آوریل ۴)",
-      "body": "بوشهر ۴مین بار (۱ کشته، ۱۶۳ تخلیه به روسیه). ماهشهر. MSC ایشیکا. A-10 ساقط (۶مین). ایران رد آتش‌بس. ~$۱۱۵. ۲ روز."
+      "title": "Day 37",
+      "body": "WSO rescued. 2+2 destroyed. 48-hr. Kuwait. $109. TOMORROW."
     },
     {
-      "title": "۶ آوریل (۲ روز)",
-      "body": "قریب‌الوقوع: ایران رد رسمی = مسیر آخر فروپاشید. بوشهر + ماهشهر = از قبل هدف. ۱۶۳ تخلیه = بحران بین‌المللی. WSO مفقود. حمله تقریباً قطعی."
+      "title": "April 6",
+      "body": "3rd. WSO but committed. Power grid MOST LIKELY."
     },
     {
-      "title": "ماه ۲",
-      "body": "ترامپ ۲-۳ هفته. ایران ۶ ماه. ۷ هواپیما ساقط. کلاهک خوشه‌ای. ۶ آوریل = نقطه عطف."
+      "title": "Month 2",
+      "body": "Trump 2-3 weeks. Iran 6 months."
     },
     {
-      "title": "ماه ۳+",
-      "body": "اگر حمله: فاجعه انسانی -> مداخله اجباری. اگر معامله: مرحله‌ای. هسته‌ای حل‌نشده."
+      "title": "Month 3+",
+      "body": "Strikes: catastrophe. Deal: de-escalation."
     },
     {
-      "title": "متغیرها",
-      "body": "۶ آوریل. WSO اسیر؟ تشعشع بوشهر. واکنش روسیه. حوثی باب‌المندب. برنت فیزیکی $۱۴۱."
+      "title": "Wild cards",
+      "body": "Power grid. C-130. Houthi. China. Bushehr."
     }
   ],
   "scenarioProbabilities": [
     {
       "name": "Escalation spiral / total war",
-      "prob": "38%",
-      "body": "INCREASED 33->38%. Iran formally REJECTED ceasefire = last diplomatic track collapsed. Bushehr NPP hit 4th time (163 evacuated to Russia = Russia dimension). Mahshahr petrochemical struck. April 6 = 2 DAYS. Coalition pre-positioning for power grid strikes. Missing WSO. Oil ~$115. Near-CERTAIN April 6 escalation."
+      "prob": "40%",
+      "body": "INCREASED 38->40%. Trump 48-hr 3rd time. April 6 = TOMORROW. Kuwait infra. 3rd backdown very costly. Power grid MOST LIKELY."
     },
     {
       "name": "Protracted attrition",
-      "prob": "27%",
-      "body": "DECREASED 28->27%. April 6 approaching = binary outcome likely displaces attrition scenario. BUT if April 6 delayed again (Trump has blinked before), attrition remains baseline. UAE 23+56 D36 = Iran sustaining multi-theater."
+      "prob": "24%",
+      "body": "DECREASED 27->24%. April 6 binary. Kuwait = not de-escalating. If blinks 3rd: attrition."
     },
     {
       "name": "Declared victory + exit",
-      "prob": "14%",
-      "body": "DECREASED 16->14%. 7 US aircraft lost = air dominance narrative dead. WSO missing. Bushehr evacuees to Russia = international complications. Cannot exit while nuclear sites being struck."
+      "prob": "15%",
+      "body": "INCREASED 14->15%. WSO RESCUED = biggest obstacle removed. But 7+2+2 + ultimatum."
     },
     {
       "name": "Negotiated deal",
-      "prob": "8%",
-      "body": "DECREASED 10->8%. Iran formally REJECTED ceasefire through 'continuation of attacks.' No active diplomatic track. China-Pakistan plan stalled. Kharazi wounded. 2 days = insufficient for new negotiations."
+      "prob": "10%",
+      "body": "INCREASED 8->10%. WSO + oil + China. But trust zero. 24 hrs."
     },
     {
       "name": "International intervention",
-      "prob": "9%",
-      "body": "HOLDS 9%. Bushehr 163 to Russia = Russia now directly involved. IAEA Grossi 'deep concern.' If April 6 power grid strikes -> humanitarian catastrophe -> intervention probability SPIKES to 20-30% post-strikes."
+      "prob": "7%",
+      "body": "DECREASED 9->7%. WSO reduced crisis. Post-Apr 6: 25%+."
     },
     {
       "name": "Regime fracture",
       "prob": "4%",
-      "body": "HOLDS 4%. Iran rejecting ceasefire + shooting down planes = IRGC confidence high. Cluster warheads = advanced capabilities. Institutional command intact despite Atimi loss."
+      "body": "HOLDS 4%. Kuwait infra = IRGC confident."
     }
   ],
   "scenarioProbabilities_fa": [
     {
-      "name": "تشدید",
-      "prob": "۳۸٪",
-      "body": "افزایش ۳۳->۳۸. ایران رد رسمی آتش‌بس. بوشهر ۴مین بار (۱۶۳ به روسیه). ماهشهر. ۲ روز. تقریباً قطعی."
+      "name": "Escalation",
+      "prob": "40%",
+      "body": "38->40. TOMORROW. Kuwait. 3rd backdown costly."
     },
     {
-      "name": "فرسایش",
-      "prob": "۲۷٪",
-      "body": "کاهش ۲۸->۲۷. ۶ آوریل = دوگانه. اما اگر تأخیر: فرسایش پایه. امارات ۲۳+۵۶ = چندجبهه."
+      "name": "Attrition",
+      "prob": "24%",
+      "body": "27->24. Binary."
     },
     {
-      "name": "اعلام پیروزی",
-      "prob": "۱۴٪",
-      "body": "کاهش ۱۶->۱۴. ۷ هواپیما ساقط. WSO مفقود. بوشهر به روسیه. نمی‌تواند خروج."
+      "name": "Victory",
+      "prob": "15%",
+      "body": "14->15. WSO rescued."
     },
     {
-      "name": "مذاکره",
-      "prob": "۸٪",
-      "body": "کاهش ۱۰->۸. ایران رد رسمی = ادامه حملات. مسیر فعال ندارد. ۲ روز ناکافی."
+      "name": "Deal",
+      "prob": "10%",
+      "body": "8->10. WSO + China."
     },
     {
-      "name": "مداخله",
-      "prob": "۹٪",
-      "body": "ثابت ۹٪. بوشهر ۱۶۳ به روسیه = روسیه درگیر. IAEA. اگر ۶ آوریل: ۲۰-۳۰٪."
+      "name": "Intervention",
+      "prob": "7%",
+      "body": "9->7. Post-Apr 6: 25%+."
     },
     {
-      "name": "فروپاشی",
-      "prob": "۴٪",
-      "body": "ثابت ۴٪. رد آتش‌بس + ساقط کردن = اعتماد سپاه بالا. کلاهک خوشه‌ای."
+      "name": "Fracture",
+      "prob": "4%",
+      "body": "Holds."
     }
   ],
   "theoryEvaluation": [
     {
-      "title": "BUSHEHR NPP 4TH HIT — nuclear red line crossed repeatedly",
-      "body": "4th attack on Iran's only operating nuclear power plant. 1 killed, 5 injured, 163 personnel evacuated to RUSSIA. IAEA Grossi: 'deep concern — nuclear sites must never be attacked.' Russia now directly involved (evacuating its technicians). No radiation increase but each strike increases risk. International condemnation growing. This is the clearest nuclear-adjacent escalation yet."
+      "title": "WSO RESCUED - removes POW but not trajectory",
+      "body": "Most dramatic event since D1. 2 C-130s + 2 Little Birds = $200M+. Iran parading wreckage. Trump committed to April 6. Rescue != off-ramp."
     },
     {
-      "title": "IRAN FORMALLY REJECTS CEASEFIRE — last track collapsed",
-      "body": "Iran communicated rejection through 'continuation of attacks in battlefield' not diplomacy (Reuters). Iranian source: 'demands guaranteed permanent ceasefire.' IRGC views F-15E/A-10 shootdowns as validation of military approach. This collapses the last active diplomatic track before April 6. No mediator, no framework, no channel active. The deadline is now a military trigger, not a diplomatic lever."
+      "title": "TRUMP 3RD ULTIMATUM - credibility at stake",
+      "body": "3 times: D22, Mar 23, Apr 5. 3rd backdown = politically devastating. Kuwait = Iran testing."
     },
     {
-      "title": "7 US AIRCRAFT LOST — air dominance narrative dead",
-      "body": "NPR confirms 'at least seven manned aircraft' lost since D1. Known: 3 F-15Es (D3 friendly fire), 1 KC-135 (D12), 1 F-16 (IRGC claim D22), 1 F-15E (D35 shot down, WSO missing), 1 A-10 (D35 Hormuz), plus 2 Black Hawks damaged. IRGC denies WSO capture but governor offers commendation. Iran's air defenses clearly NOT degraded as claimed. This fundamentally undermines the 'mission accomplished' narrative."
+      "title": "KUWAIT INFRASTRUCTURE - civilian targeting",
+      "body": "Power/water/oil/government on EVE of April 6. Pre-emptive retaliation."
     },
     {
-      "title": "MAHSHAHR PETROCHEMICAL — pre-April 6 energy targeting",
-      "body": "Coalition striking Iran's petrochemical infrastructure 2 days before the power grid deadline. Mahshahr = major energy hub in Khuzestan. Combined with Bushehr = systematic targeting of energy/nuclear BEFORE April 6. This suggests coalition is pre-positioning, not waiting for the deadline. April 6 may be the power grid finale, not the beginning."
+      "title": "C-130 WRECKAGE - propaganda vs reality",
+      "body": "Iran broadcasting. Evidence = self-destruction. But intel value + propaganda + 160th SOAR exposed. 7+2+2."
     },
     {
-      "title": "APRIL 6 — 2 DAYS — NO DIPLOMATIC PATH REMAINING",
-      "body": "Ceasefire formally rejected. No mediator active. WSO missing = US cannot pause. Bushehr + Mahshahr = strikes already hitting energy infrastructure. Physical oil $141 = unprecedented. Russia evacuating Bushehr = new international dimension. EVERY indicator points to April 6 power grid strikes proceeding. The question is no longer IF but HOW COMPREHENSIVE."
+      "title": "OIL $109 - markets pricing hope",
+      "body": "3rd time markets rallied (D24, D33, D37). Both reversed. April 6 binary: $85 or $130+."
     }
   ],
   "theoryEvaluation_fa": [
     {
-      "title": "بوشهر ۴مین بار — خط قرمز هسته‌ای بارها عبور",
-      "body": "۱ کشته، ۵ زخمی، ۱۶۳ تخلیه به روسیه. IAEA: نگرانی شدید. روسیه مستقیماً درگیر. هر حمله ریسک بالاتر."
+      "title": "WSO rescued",
+      "body": "$200M+ cost. Iran wreckage. Trump committed."
     },
     {
-      "title": "ایران رد رسمی آتش‌بس — مسیر آخر فروپاشید",
-      "body": "رد از طریق ادامه حملات نه دیپلماسی. F-15E/A-10 = تأیید رویکرد نظامی. مسیر فعال ندارد. مهلت = ماشه نظامی."
+      "title": "3rd ultimatum",
+      "body": "3 times. Devastating to back down. Kuwait testing."
     },
     {
-      "title": "۷ هواپیمای آمریکایی ساقط — تسلط هوایی مرده",
-      "body": "NPR: حداقل ۷ هواپیما. سپاه بازداشت WSO رد اما استاندار تشویق. ارتباط رادیویی اولیه. پدافند سالم."
+      "title": "Kuwait infra",
+      "body": "Civilian. Eve of April 6. Pre-emptive."
     },
     {
-      "title": "ماهشهر — هدف‌گیری انرژی قبل ۶ آوریل",
-      "body": "پتروشیمی + بوشهر = سیستماتیک قبل مهلت. پیش‌موقعیت‌دهی. ۶ آوریل = پایانه نه آغاز."
+      "title": "C-130 wreckage",
+      "body": "Self-destruction but propaganda value."
     },
     {
-      "title": "۶ آوریل — ۲ روز — مسیر دیپلماتیک نمانده",
-      "body": "رد رسمی. میانجی فعال نیست. WSO مفقود. بوشهر + ماهشهر = حمله شروع شده. نفت فیزیکی $۱۴۱. سوال = چقدر جامع."
+      "title": "Oil $109",
+      "body": "3rd hope rally. Binary."
     }
   ],
   "endstate": [
     {
-      "title": "Most likely (38%)",
-      "body": "Escalation — INCREASED 33->38%. Iran formally REJECTED ceasefire. Bushehr NPP 4th hit (163 to Russia). Mahshahr petrochemical struck. April 6 = 2 DAYS. Coalition pre-positioning. WSO missing. Oil ~$115. NEAR-CERTAIN April 6 power grid strikes."
+      "title": "Most likely (40%)",
+      "body": "Escalation. 38->40%. 48-hr TOMORROW. Kuwait devastated. 3rd backdown costly. Power grid MOST LIKELY."
     },
     {
-      "title": "Second (27%)",
-      "body": "Attrition — DECREASED 28->27%. April 6 binary outcome may displace attrition. But if Trump blinks again, attrition is baseline. UAE 23+56 = Iran sustaining operations. 2-6 months capability."
+      "title": "Second (24%)",
+      "body": "Attrition. 27->24%. Binary. If blinks: attrition."
     },
     {
-      "title": "Third (14%)",
-      "body": "Declared victory — DECREASED 16->14%. 7 aircraft lost = cannot claim air dominance. WSO missing. Bushehr to Russia = international complications. Cannot exit during nuclear strikes."
+      "title": "Third (15%)",
+      "body": "Victory. 14->15%. WSO rescued. But 7+2+2."
     },
     {
-      "title": "Fourth (8%/9%/4%)",
-      "body": "Deal (8% — Iran rejected, no channel), intervention (9% — spikes post-Apr 6 to 20-30%), fracture (4% — IRGC confidence high)."
+      "title": "Fourth (10%/7%/4%)",
+      "body": "Deal 10%. Intervention 7% (post-Apr6: 25%+). Fracture 4%."
     }
   ],
   "endstate_fa": [
     {
-      "title": "اول (۳۸٪)",
-      "body": "تشدید — افزایش ۳۳->۳۸. ایران رد رسمی. بوشهر (۱۶۳ به روسیه). ماهشهر. ۲ روز. تقریباً قطعی."
+      "title": "1st (40%)",
+      "body": "Escalation. TOMORROW."
     },
     {
-      "title": "دوم (۲۷٪)",
-      "body": "فرسایش — کاهش ۲۸->۲۷. ۶ آوریل دوگانه. اما اگر تأخیر: فرسایش. امارات ۲۳+۵۶."
+      "title": "2nd (24%)",
+      "body": "Attrition."
     },
     {
-      "title": "سوم (۱۴٪)",
-      "body": "اعلام پیروزی — کاهش. ۷ هواپیما. WSO مفقود. بوشهر به روسیه."
+      "title": "3rd (15%)",
+      "body": "Victory. WSO."
     },
     {
-      "title": "چهارم",
-      "body": "مذاکره (۸٪ — رد). مداخله (۹٪ — بعد ۶ آوریل ۲۰-۳۰٪). فروپاشی (۴٪)."
+      "title": "4th",
+      "body": "Deal 10%. Intervention 7%. Fracture 4%."
     }
   ],
   "shippingRoutes": [
@@ -1019,7 +1037,7 @@
       "route": "Tehran -> Dubai -> Atlanta",
       "status": "DEAD",
       "statusColor": "red",
-      "detail": "Dead. Kuwait refinery fire + UAE industrial shutdown D35. Insurance 12.5%+. CMA CGM transit = symbolic only.",
+      "detail": "Dead. Kuwait infra devastated. Gulf warfare.",
       "viability": "0%",
       "eta": "N/A"
     },
@@ -1027,7 +1045,7 @@
       "route": "Iran -> Turkey (land)",
       "status": "CLOSED",
       "statusColor": "red",
-      "detail": "NATO. Border shut. B1 Bridge Tehran-Karaj destroyed = internal logistics degrading.",
+      "detail": "NATO. April 6 power grid = all at risk.",
       "viability": "~5%",
       "eta": "Post-war"
     },
@@ -1035,15 +1053,15 @@
       "route": "Iran -> Armenia",
       "status": "MOST VIABLE",
       "statusColor": "yellow",
-      "detail": "Grid intact BUT April 6 = 2 days. B1 Bridge destruction = Tehran road network damaged. Route independent of Gulf.",
+      "detail": "Grid intact BUT April 6 = TOMORROW. If struck: route DIES.",
       "viability": "~10-15%",
       "eta": "If ceasefire: 4-6 weeks"
     },
     {
       "route": "Pakistan / East",
-      "status": "DAMAGED",
+      "status": "IMPROVING MARGINALLY",
       "statusColor": "yellow",
-      "detail": "Kharazi injured. Iran rejected US proposal. Pakistan still intermediary but less effective. CMA CGM transit = Hormuz cracking.",
+      "detail": "Pakistan/China active. WSO signal. Iraq transit.",
       "viability": "~8-10%",
       "eta": "Months."
     },
@@ -1051,336 +1069,332 @@
       "route": "Oman bypass",
       "status": "COMPROMISED",
       "statusColor": "red",
-      "detail": "3 Omani tankers transited hugging coastline D35. Positive but F-15E downing near Qeshm = strait combat zone.",
+      "detail": "Iraq tanker D37. Oman continuing. Strait calmer.",
       "viability": "~5%",
       "eta": "Uncertain"
     }
   ],
   "shippingRoutes_fa": [
     {
-      "route": "تهران-دبی-آتلانتا",
-      "status": "مرده",
+      "route": "Tehran-Dubai-Atlanta",
+      "status": "Dead",
       "statusColor": "red",
-      "detail": "پالایشگاه کویت + صنعتی امارات D35. بیمه ۱۲.۵٪+.",
-      "viability": "۰٪",
-      "eta": "—"
+      "detail": "Kuwait devastated.",
+      "viability": "0%",
+      "eta": "-"
     },
     {
-      "route": "ایران-ترکیه",
-      "status": "بسته",
+      "route": "Iran-Turkey",
+      "status": "Closed",
       "statusColor": "red",
-      "detail": "ناتو. پل B1 تخریب = لجستیک داخلی آسیب.",
-      "viability": "~۵٪",
-      "eta": "بعد جنگ"
+      "detail": "NATO. April 6.",
+      "viability": "~5%",
+      "eta": "Post-war"
     },
     {
-      "route": "ایران-ارمنستان",
-      "status": "بهترین",
+      "route": "Iran-Armenia",
+      "status": "Best",
       "statusColor": "yellow",
-      "detail": "برق سالم اما ۶ آوریل = ۲ روز. پل B1 = شبکه جاده‌ای تهران آسیب.",
-      "viability": "~۱۰-۱۵٪",
-      "eta": "آتش‌بس: ۴-۶ هفته"
+      "detail": "If power grid: dies.",
+      "viability": "~10-15%",
+      "eta": "4-6 weeks"
     },
     {
-      "route": "پاکستان/شرق",
-      "status": "آسیب‌دیده",
+      "route": "Pakistan/East",
+      "status": "Improving",
       "statusColor": "yellow",
-      "detail": "خرازی زخمی. ایران رد پیشنهاد. CMA CGM = هرمز باز.",
-      "viability": "~۸-۱۰٪",
-      "eta": "ماه‌ها."
+      "detail": "China/Pakistan. Iraq transit.",
+      "viability": "~8-10%",
+      "eta": "Months"
     },
     {
-      "route": "عمان",
-      "status": "تهدید",
+      "route": "Oman",
+      "status": "Compromised",
       "statusColor": "red",
-      "detail": "۳ نفتکش عمانی عبور. مثبت اما F-15E قشم = منطقه جنگی.",
-      "viability": "~۵٪",
-      "eta": "نامشخص"
+      "detail": "Iraq D37. Calmer.",
+      "viability": "~5%",
+      "eta": "Uncertain"
     }
   ],
   "publishingStatus": [
-    "<strong>Paper:</strong> HALTED. Hormuz closed. Pre-war stock only. 36 days.",
-    "<strong>Printing:</strong> B1 Bridge (Tehran-Karaj) destroyed = major transit artery cut. Pasteur Institute struck = research infrastructure targeted. 840+ hrs internet. Zero digital prepress.",
-    "<strong>Internet:</strong> 840+ hours. 36 days. No digital anything.",
-    "<strong>New titles:</strong> HALTED since ~D5. Zero ISBNs. 3+ months post-ceasefire minimum.",
-    "<strong>Warehouse:</strong> Unknown condition. B1 Bridge collapse = Tehran logistics degraded. 85,000+ structures. 600+ schools. Mahshahr petrochemical struck = Khuzestan energy infrastructure degrading.",
-    "<strong>Distribution:</strong> Collapsed. Iran formally rejected ceasefire. April 6 = 2 days. 7 aircraft lost + WSO missing = war extending."
+    "<strong>Paper:</strong> HALTED. 37 days. April 6 power grid = ALL production dead YEARS.",
+    "<strong>Printing:</strong> B1 Bridge destroyed. April 6 = power grid. 864+ hrs internet.",
+    "<strong>Internet:</strong> 864+ hours. If power grid: PERMANENT.",
+    "<strong>New titles:</strong> HALTED. Zero ISBNs. 3+ months post-ceasefire.",
+    "<strong>Warehouse:</strong> Unknown. 85,000+ structures. April 6 = EXISTENTIAL.",
+    "<strong>Distribution:</strong> Collapsed. Kuwait devastated."
   ],
   "publishingStatus_fa": [
-    "<strong>کاغذ:</strong> متوقف. فقط انبار. ۳۶ روز.",
-    "<strong>چاپ:</strong> پل B1 تخریب. پاستور هدف. ۸۴۰+.",
-    "<strong>اینترنت:</strong> ۸۴۰+ ساعت.",
-    "<strong>تولید:</strong> متوقف. ۳+ ماه.",
-    "<strong>انبار:</strong> نامعلوم. پل B1 = لجستیک آسیب. ۸۵,۰۰۰+ ساختمان. ۶۰۰+ مدرسه.",
-    "<strong>توزیع:</strong> فروپاشیده. ایران رد پیشنهاد. ۶ آوریل = ۲ روز."
+    "<strong>Paper:</strong> 37 days. April 6 = years.",
+    "<strong>Printing:</strong> B1. 864+.",
+    "<strong>Internet:</strong> 864+. Permanent.",
+    "<strong>New titles:</strong> Halted. 3+ months.",
+    "<strong>Warehouse:</strong> Unknown. Existential.",
+    "<strong>Distribution:</strong> Collapsed."
   ],
   "impactIranfarhang": [
-    "<strong>SUPPLY CHAIN: 100% SEVERED — DAY 36.</strong> Zero books since D1. B1 Bridge (Tehran-Karaj) DESTROYED = internal Tehran logistics degraded. Bushehr NPP hit 4th time + Mahshahr petrochemical struck = energy/nuclear infrastructure targeting escalating.",
-    "<strong>Revenue:</strong> Atlanta only. ~3 months remaining. Oil ~$115 + 7 aircraft lost + Iran rejected ceasefire = war EXTENDING. FY27 ordering at serious risk.",
-    "<strong>Routes:</strong> Armenia ~10-15% (B1 Bridge loss = Tehran road network damaged). Pakistan ~8-10%. Dubai DEAD. CMA CGM transit = symbolic only for books.",
+    "<strong>SUPPLY CHAIN: 100% SEVERED - DAY 37.</strong> April 6 = TOMORROW. Power grid = ALL printing/warehousing dead YEARS.",
+    "<strong>Revenue:</strong> Atlanta only. ~2.5-3 months. Oil $109. FY27 at risk.",
+    "<strong>Routes:</strong> Armenia ~10-15% (IF grid survives). Pakistan ~8-10%. Dubai DEAD.",
     "<strong>OFAC:</strong> Statutory (Berman). Intact.",
-    "<strong>INFRASTRUCTURE:</strong> B1 Bridge = century-old Tehran-Karaj link destroyed. 85,000+ structures. 600+ schools. Pasteur Institute (medical research). Red Crescent warehouse. Tehran logistics network degrading.",
-    "<strong>Family:</strong> Internet 840+. Multi-province strikes continue. 26,500+ wounded (AJ). April 6 = 2 DAYS."
+    "<strong>APRIL 6 = EXISTENTIAL:</strong> Power grid = warehouses no power, printing dead, transport paralyzed. Recovery YEARS.",
+    "<strong>Family:</strong> Internet 864+. WSO = slight signal but April 6 TOMORROW."
   ],
   "impactIranfarhang_fa": [
-    "<strong>زنجیره: ۱۰۰٪ قطع — روز ۳۶.</strong> بوشهر ۴مین بار + ماهشهر پتروشیمی = زیرساخت انرژی/هسته‌ای تشدید.",
-    "<strong>درآمد:</strong> آتلانتا. ~۳ ماه. F-15E + نفت $۱۱۲ = جنگ طولانی‌تر. FY27 ریسک.",
-    "<strong>مسیر:</strong> ارمنستان ~۱۰-۱۵٪ (پل B1 = شبکه جاده آسیب). پاکستان ~۸-۱۰٪.",
-    "<strong>OFAC:</strong> قانونی. سالم.",
-    "<strong>زیرساخت:</strong> پل B1 + ۸۵,۰۰۰+ + ۶۰۰+ مدرسه + پاستور + هلال‌احمر.",
-    "<strong>خانواده:</strong> اینترنت ۸۴۰+. ۲۶,۵۰۰+ زخمی. ۶ آوریل = ۲ روز."
+    "<strong>100% cut - Day 37.</strong> April 6 = years.",
+    "<strong>Revenue:</strong> Atlanta. ~2.5-3 months.",
+    "<strong>Routes:</strong> Armenia ~10-15%. Pakistan ~8-10%.",
+    "<strong>OFAC:</strong> Intact.",
+    "<strong>April 6 = existential.</strong>",
+    "<strong>Family:</strong> 864+."
   ],
   "prepIranfarhang": [
-    "<strong>IMMEDIATE — Inventory:</strong> Count Atlanta stock. ~3 months remaining. Oil ~$115 + Iran rejected ceasefire + 7 aircraft lost = war extending beyond April.",
-    "<strong>IMMEDIATE — Clients:</strong> Email libraries: Iran formally rejected ceasefire, 7 aircraft lost, April 6 deadline = 2 days. Extended disruption now CERTAIN.",
-    "<strong>THIS WEEK — Armenia:</strong> Armenia route planning INDEPENDENT of Gulf. B1 Bridge destruction = monitor Tehran road network but Armenia border unaffected.",
-    "<strong>APRIL 6 — 2 DAYS:</strong> CRITICAL. Trump: 'assault hasn't started.' F-15E = must retaliate. Power grid strikes MOST LIKELY. If struck: recovery years. Plan for worst case.",
-    "<strong>FY27 RISK:</strong> SEVERE. No ceasefire signals. F-15E + missing pilot = war dynamics hardening. First shipment August AT BEST. FY27 MUST use alternative sources.",
-    "<strong>CONTINGENCY:</strong> Accelerate diaspora publisher contacts (Turkey, Germany, UK). Bridge supply CRITICAL. Begin alternate catalog planning."
+    "<strong>APRIL 6 contingency:</strong> Assume power grid TOMORROW. 6-12 month disruption. Armenia = ONLY.",
+    "<strong>Clients:</strong> April 6 TOMORROW. FY27 alternate.",
+    "<strong>Armenia:</strong> Independent. Contact Yerevan.",
+    "<strong>FY27:</strong> SEVERE. Sep-Oct AT BEST.",
+    "<strong>CONTINGENCY:</strong> Diaspora publishers.",
+    "<strong>POSITIVE:</strong> WSO = ~10% deal. Plan for worst."
   ],
   "prepIranfarhang_fa": [
-    "<strong>فوری — موجودی:</strong> شمارش. ~۳ ماه. F-15E + نفت = جنگ طولانی‌تر.",
-    "<strong>فوری — مشتری:</strong> F-15E + رد پیشنهاد = اختلال قطعی.",
-    "<strong>ارمنستان:</strong> مستقل. پل B1 = نظارت شبکه جاده تهران.",
-    "<strong>۶ آوریل = ۲ روز:</strong> ترامپ: شروع نشده. F-15E = تلافی. بدترین حالت.",
-    "<strong>FY27:</strong> شدید. ارسال اوت حداقل. منابع جایگزین ضروری.",
-    "<strong>جایگزین:</strong> ناشران دیاسپورا فوری. کاتالوگ جایگزین."
+    "<strong>April 6:</strong> 6-12 months. Armenia.",
+    "<strong>Clients:</strong> TOMORROW. FY27.",
+    "<strong>Armenia:</strong> Independent.",
+    "<strong>FY27:</strong> Severe. Sep-Oct.",
+    "<strong>Contingency:</strong> Diaspora.",
+    "<strong>Positive:</strong> ~10%."
   ],
   "signalsIranfarhang": [
-    "<strong>GATE 1 — APRIL 6 (3 DAYS):</strong> MOST CRITICAL. Trump: 'hasn't started.' F-15E = retaliatory pressure. Power grid strikes = catastrophe for supply chain.",
-    "<strong>GATE 2 — F-15E PILOT:</strong> If captured = US POW crisis. Complicates all diplomacy. If rescued = slightly reduces pressure. Watch hourly.",
-    "<strong>GATE 3 — INTERNET:</strong> 840+ hrs. Cannot act without comms.",
-    "<strong>GATE 4 — OIL:</strong> Brent ~$115 SURGING. Physical $141. War premium entrenched = longer war CONFIRMED.",
-    "<strong>Armenia border:</strong> Open per US Embassy Yerevan. B1 Bridge destruction = monitor Tehran-Tabriz road network.",
-    "<strong>Tehran infrastructure:</strong> B1 Bridge destroyed. Pasteur Institute struck. 85,000+ structures. Tehran logistics degrading daily.",
-    "<strong>OFAC SDN:</strong> Low probability, high impact."
+    "<strong>GATE 1 - APRIL 6 (TOMORROW):</strong> Power grid MOST LIKELY. Supply chain dead YEARS.",
+    "<strong>GATE 2 - POST-RESCUE:</strong> WSO = window. China. ~10%.",
+    "<strong>GATE 3 - INTERNET:</strong> 864+. If grid: PERMANENT.",
+    "<strong>GATE 4 - OIL:</strong> $109 DOWN. Binary: $85 or $130+.",
+    "<strong>Armenia:</strong> Open. If grid: ONLY option.",
+    "<strong>OFAC:</strong> Monitor."
   ],
   "signalsIranfarhang_fa": [
-    "<strong>۶ آوریل (۳ روز):</strong> ترامپ: شروع نشده. F-15E = فشار تلافی. نیروگاه = فاجعه.",
-    "<strong>خلبان F-15E:</strong> اگر اسیر = بحران. اگر نجات = فشار کمتر.",
-    "<strong>اینترنت:</strong> ۸۴۰+.",
-    "<strong>نفت:</strong> $۱۱۲ جهش. WTI > برنت = جنگ طولانی قطعی.",
-    "<strong>ارمنستان:</strong> باز. پل B1 = نظارت مسیر تبریز.",
-    "<strong>زیرساخت تهران:</strong> پل B1 + پاستور + ۸۵,۰۰۰+.",
-    "<strong>OFAC:</strong> نظارت."
+    "<strong>April 6 (TOMORROW):</strong> Power grid. Years.",
+    "<strong>Post-rescue:</strong> ~10%.",
+    "<strong>Internet:</strong> 864+. Permanent.",
+    "<strong>Oil:</strong> $109. Binary.",
+    "<strong>Armenia:</strong> Only option.",
+    "<strong>OFAC:</strong> Monitor."
   ],
   "impactKIP": [
-    "<strong>GULF ENERGY INFRASTRUCTURE HIT:</strong> Kuwait Mina Al-Ahmadi refinery fire (466K bbl/day). UAE Habshan gas facility fire. Emirates Global Aluminium shutdown. F-15E shot down near Qeshm (Hormuz entrance). Energy war ESCALATING.",
-    "<strong>Banking: EXTREME.</strong> Score 10/10. Oil ~$115. Iran rejected ceasefire + MSC Ishyka attack + refinery fires + industrial shutdowns = Gulf banking system under maximum stress.",
-    "<strong>Hormuz: COMBAT ZONE.</strong> F-15E shot down near Qeshm Island = strait is active battlefield. CMA CGM Kribi transited = positive but rescue operations restricting traffic. ~5-7 vessels/day.",
-    "<strong>POSITIVE SIGNAL:</strong> CMA CGM = first Western vessel through Hormuz. 3 Omani tankers. Philippines added to safe passage. Framework EXPANDING despite F-15E incident. But fundamental blockade remains.",
-    "<strong>Personnel:</strong> F-15E rescue operations near Qeshm. UAE 12 wounded D35. Gulf-wide combat zone. Relocate ALL Gulf positions.",
-    "<strong>Revenue: ZERO.</strong> Internet 840+. All Gulf hubs compromised. Oil ~$115 = costs MAXIMUM.",
-    "<strong>Insurance:</strong> Hull 12.5%+. F-15E downing + refinery fires = premiums at wartime maximum. Lloyd's monitoring for uninsurable declaration."
+    "<strong>GULF INFRASTRUCTURE WARFARE:</strong> Kuwait 2 power/water + Shuwaikh + Ministries. Bahrain BAPCO. UAE Borouge. Iran civilian infra targeting.",
+    "<strong>Banking: 9.5/10.</strong> Oil $109 slight relief. But Kuwait + April 6 binary.",
+    "<strong>Hormuz: MIXED.</strong> Iraq tanker. Safe passage expanding. WSO calmer. 2,000 ships. April 6 binary.",
+    "<strong>POSITIVE:</strong> WSO rescued. Oil -$6. Iraq transit. China. ~10% deal.",
+    "<strong>Personnel:</strong> Gulf infra warfare. ALL high-risk.",
+    "<strong>Revenue: ZERO.</strong> 864+. $109.",
+    "<strong>Insurance:</strong> 13%+. April 6 = uninsurable likely."
   ],
   "impactKIP_fa": [
-    "<strong>زیرساخت انرژی خلیج هدف:</strong> پالایشگاه مینا الاحمدی + حبشان + EGA. F-15E قشم. جنگ انرژی تشدید.",
-    "<strong>بانک: حداکثر.</strong> ۱۰/۱۰. نفت $۱۱۲. F-15E + پالایشگاه + صنعتی = فشار حداکثری.",
-    "<strong>هرمز: منطقه جنگی.</strong> F-15E قشم = میدان جنگ. CMA CGM عبور اما عملیات نجات ترافیک محدود.",
-    "<strong>مثبت:</strong> CMA CGM = اولین غربی. عمان ۳ نفتکش. فیلیپین اضافه. چارچوب در حال رشد.",
-    "<strong>پرسنل:</strong> عملیات نجات F-15E. امارات ۱۲ زخمی. خلیج = منطقه جنگی.",
-    "<strong>درآمد: صفر.</strong> ۸۴۰+. نفت $۱۱۲ = هزینه حداکثر.",
-    "<strong>بیمه:</strong> ۱۲.۵٪+. F-15E + پالایشگاه = حداکثر جنگی. لویدز نظارت."
+    "<strong>Gulf infra:</strong> Kuwait + Bahrain + UAE.",
+    "<strong>Banking: 9.5/10.</strong>",
+    "<strong>Hormuz: mixed.</strong> Iraq. WSO. Binary.",
+    "<strong>Positive:</strong> WSO. Oil. ~10%.",
+    "<strong>Personnel:</strong> High-risk.",
+    "<strong>Revenue: zero.</strong>",
+    "<strong>Insurance:</strong> 13%+. Uninsurable."
   ],
   "prepKIP": [
-    "<strong>IMMEDIATE — Banking:</strong> Withdraw ALL UAE/Qatar funds. Oil $112 + refinery fires + F-15E = banking system at breaking point.",
-    "<strong>IMMEDIATE — Personnel:</strong> Relocate from ALL Gulf. F-15E rescue ops near Qeshm = strait is combat zone. UAE 12 wounded D35.",
-    "<strong>INSURANCE:</strong> File all pending claims. Hull 12.5%+. F-15E + refinery fires = Gulf approaching uninsurable threshold.",
-    "<strong>Inventory:</strong> Catalog stranded cargo. Storage fees $150/container/day. 35 days = $5,250+ per container already.",
-    "<strong>APRIL 6 — 2 DAYS:</strong> Trump: 'assault hasn't started.' F-15E = must retaliate harder. Power grid strikes MOST LIKELY. Gulf recovery 2027+.",
-    "<strong>Diversification:</strong> Kuala Lumpur/Tbilisi URGENT. Gulf hub model PERMANENTLY compromised. CMA CGM transit = commercial reopening signal but years from normalization.",
-    "<strong>Revenue contingency:</strong> Zero revenue. Preserve cash. Cut ALL non-essential costs. Cash runway critical."
+    "<strong>Banking:</strong> Maintain withdrawal. $109 slight room. April 6.",
+    "<strong>Personnel:</strong> Evacuation. Kuwait power shut.",
+    "<strong>Insurance:</strong> File BEFORE April 6.",
+    "<strong>Inventory:</strong> $5,550+ per container.",
+    "<strong>APRIL 6:</strong> Power grid. Gulf recovery 2027+.",
+    "<strong>POSITIVE:</strong> WSO + China = ~10%. DUAL scenarios.",
+    "<strong>Diversification:</strong> KL/Tbilisi. Iraq transit."
   ],
   "prepKIP_fa": [
-    "<strong>بانک:</strong> برداشت فوری. نفت $۱۱۲ + پالایشگاه + F-15E = بانک در آستانه.",
-    "<strong>پرسنل:</strong> جابجایی. F-15E قشم = منطقه جنگی. امارات ۱۲ زخمی.",
-    "<strong>بیمه:</strong> ادعا فوری. ۱۲.۵٪+. آستانه بیمه‌ناپذیری.",
-    "<strong>موجودی:</strong> $۱۵۰/روز. ۳۵ روز = $۵,۲۵۰+ هر کانتینر.",
-    "<strong>۶ آوریل = ۲ روز:</strong> ترامپ: شروع نشده. F-15E = تلافی. ۲۰۲۷+.",
-    "<strong>تنوع:</strong> کوالالامپور/تفلیس فوری. مدل خلیج دائماً آسیب.",
-    "<strong>درآمد:</strong> صفر. نقدینگی. هزینه غیرضروری قطع."
+    "<strong>Banking:</strong> Maintain. $109.",
+    "<strong>Personnel:</strong> Evacuate.",
+    "<strong>Insurance:</strong> Before April 6.",
+    "<strong>Inventory:</strong> $5,550+.",
+    "<strong>April 6:</strong> 2027+.",
+    "<strong>Positive:</strong> ~10%. Dual.",
+    "<strong>Diversification:</strong> KL/Tbilisi."
   ],
   "signalsKIP": [
-    "<strong>GATE 1 — APRIL 6:</strong> 3 DAYS. Trump: 'hasn't started.' F-15E = retaliatory strikes. Power grid MOST LIKELY.",
-    "<strong>GATE 2 — F-15E PILOT:</strong> If captured = POW crisis = diplomacy frozen. If rescued = slight de-escalation signal. Watch hourly.",
-    "<strong>GATE 3 — REFINERY DAMAGE:</strong> Kuwait Mina Al-Ahmadi + UAE Habshan + EGA. If more refineries hit: Gulf energy infrastructure crisis deepens.",
-    "<strong>OIL:</strong> Brent $112.42. WTI $111.54 surpassed Brent. War premium entrenched. $120+ if April 6 strikes proceed.",
-    "<strong>Insurance:</strong> Hull 12.5%+. F-15E + refineries = approaching uninsurable. Watch Lloyd's.",
-    "<strong>CMA CGM:</strong> First Western Hormuz transit = positive. If more Western vessels follow = gradual commercial reopening. But F-15E in same area = conflicting.",
-    "<strong>Houthi:</strong> Active. Bab al-Mandab option. If closed: both chokepoints = oil $150+.",
-    "<strong>Banking:</strong> Gulf banking at MAXIMUM stress. Move ALL funds NOW."
+    "<strong>GATE 1 - APRIL 6:</strong> 3rd ultimatum. Kuwait = testing. Power grid. Uninsurable.",
+    "<strong>GATE 2 - POST-RESCUE:</strong> WSO + oil = window. ~10% deal.",
+    "<strong>GATE 3 - HORMUZ:</strong> Iraq tanker. Expanding. Binary.",
+    "<strong>OIL:</strong> $109. Deal=$85 or strikes=$130+.",
+    "<strong>Insurance:</strong> 13%+. File NOW.",
+    "<strong>Houthi:</strong> Ben Gurion. If April 6: Bab al-Mandab = $150+.",
+    "<strong>Banking:</strong> Eased. April 6 = stress returns."
   ],
   "signalsKIP_fa": [
-    "<strong>۶ آوریل:</strong> ۳ روز. ترامپ: شروع نشده. F-15E = تلافی.",
-    "<strong>خلبان F-15E:</strong> اسیر = بحران. نجات = کمی آرامش.",
-    "<strong>پالایشگاه:</strong> مینا الاحمدی + حبشان + EGA. اگر بیشتر: بحران عمیق‌تر.",
-    "<strong>نفت:</strong> $۱۱۲. WTI > برنت. $۱۲۰+ اگر ۶ آوریل.",
-    "<strong>بیمه:</strong> ۱۲.۵٪+. آستانه بیمه‌ناپذیری. لویدز.",
-    "<strong>CMA CGM:</strong> مثبت. اما F-15E = تناقض.",
-    "<strong>حوثی:</strong> فعال. باب‌المندب = $۱۵۰+.",
-    "<strong>بانک:</strong> فشار حداکثری. انتقال فوری."
+    "<strong>April 6:</strong> 3rd. Uninsurable.",
+    "<strong>Post-rescue:</strong> ~10%.",
+    "<strong>Hormuz:</strong> Iraq. Binary.",
+    "<strong>Oil:</strong> $109. Binary.",
+    "<strong>Insurance:</strong> File NOW.",
+    "<strong>Houthi:</strong> $150+.",
+    "<strong>Banking:</strong> Eased. Stress returns."
   ],
   "casualties": [
     {
       "group": "Iran",
       "figure": "~7,800+ killed",
       "statusColor": "red",
-      "detail": "HRANA: 3,531+ killed (1,607 civilians, 244 children). AJ official: 2,076+. Hengaw/Iran Intl higher. Bushehr 1 killed D36. Mahshahr 5 wounded. 600+ schools. 85,000+ structures. 330,000+ displaced."
+      "detail": "HRANA: 3,531+. AJ: 2,076+. Iran: 5 killed rescue op. 85,000+ structures."
     },
     {
       "group": "Lebanon",
       "figure": "1,368+ killed",
       "statusColor": "red",
-      "detail": "Lebanese authorities: 1,368+ (124+ children). IDF struck Quds Force command centers Beirut D36. ~1M displaced."
+      "detail": "1,368+ (124+ children). ~1M displaced."
     },
     {
       "group": "Israel",
       "figure": "25+ killed",
       "statusColor": "red",
-      "detail": "24+ Israeli civilians killed. 6,594+ Israeli wounded. 1 wounded cluster bomb D36. US: 15 KIA + 1 MISSING WSO + 520+ wounded. 7 aircraft lost."
+      "detail": "24+ civilians. WSO RESCUED. 15 US KIA + 520+. 7+2+2. Houthi Ben Gurion."
     },
     {
       "group": "Iraq",
       "figure": "109+ killed",
       "statusColor": "red",
-      "detail": "~109+ total incl PMF (Iraqi health authorities). Continued militia activity."
+      "detail": "~109+. Militia activity."
     },
     {
       "group": "Gulf States",
       "figure": "32+ killed",
       "statusColor": "red",
-      "detail": "UAE 12 wounded D35 (AJ). Mina Al-Ahmadi no injuries. 210+ injured cumul. Kuwait desalination plant damaged."
+      "detail": "Kuwait 2 power shut. Bahrain BAPCO. No D37 casualties. 210+ injured cumul."
     },
     {
       "group": "Source discrepancy",
       "figure": "SIGNIFICANT",
       "statusColor": "yellow",
-      "detail": "Internet 840+ hrs = verification impossible. AJ (2,076) vs HRANA (3,531+) vs Iran Intl (4,800+) vs Hengaw (7,800+) = wide variance. The Intercept: US military 'casualty cover-up.'"
+      "detail": "Internet 864+. AJ vs HRANA vs Hengaw. Intercept: cover-up."
     }
   ],
   "casualties_fa": [
     {
-      "group": "ایران",
-      "figure": "~۷,۸۰۰+",
+      "group": "Iran",
+      "figure": "~7,800+",
       "statusColor": "red",
-      "detail": "HRANA: ۳,۵۳۱+. AJ: ۲,۰۷۶+. بوشهر ۱ کشته D36. ماهشهر ۵ زخمی. ۶۰۰+ مدرسه."
+      "detail": "HRANA 3,531+. 5 killed rescue."
     },
     {
-      "group": "لبنان",
-      "figure": "۱,۳۶۸+",
+      "group": "Lebanon",
+      "figure": "1,368+",
       "statusColor": "red",
-      "detail": "مقامات لبنانی: ۱,۳۶۸+. ۱۲۴+ کودک. نیروی قدس بیروت D36."
+      "detail": "1,368+. ~1M."
     },
     {
-      "group": "اسرائیل",
-      "figure": "۲۵+",
+      "group": "Israel",
+      "figure": "25+",
       "statusColor": "red",
-      "detail": "۲۴+ غیرنظامی. ۶,۵۹۴+ زخمی. ۱ زخمی خوشه‌ای D36. آمریکا: ۱۵ KIA + ۱ WSO مفقود + ۵۲۰+ زخمی. ۷ هواپیما."
+      "detail": "WSO rescued. 15 KIA. 7+2+2."
     },
     {
-      "group": "عراق",
-      "figure": "۱۰۷+",
+      "group": "Iraq",
+      "figure": "109+",
       "statusColor": "red",
-      "detail": "~۱۰۹+ (مقامات عراقی). فعالیت شبه‌نظامی ادامه."
+      "detail": "109+."
     },
     {
-      "group": "خلیج",
-      "figure": "۳۲+",
+      "group": "Gulf",
+      "figure": "32+",
       "statusColor": "red",
-      "detail": "امارات ۱۲ زخمی D35. مینا الاحمدی بدون تلفات. ۲۱۰+ زخمی."
+      "detail": "Kuwait 2 power shut. 210+ injured."
     },
     {
-      "group": "اختلاف",
-      "figure": "قابل توجه",
+      "group": "Discrepancy",
+      "figure": "Significant",
       "statusColor": "yellow",
-      "detail": "اینترنت ۸۱۶+. AJ (۲,۰۷۶) در مقابل HRANA (۳,۵۳۱) در مقابل هنگاو (۷,۸۰۰+). اینترسپت: پنهان‌کاری آمریکا."
+      "detail": "864+. Cover-up."
     }
   ],
   "humanitarian": [
-    "<strong>Internet:</strong> 840+ hours. 36 days. Longest ever. $1.5B+ loss. 90M isolated.",
-    "<strong>Displacement:</strong> 330,000+ across ME. Lebanon ~1M. 2,000+ vessels stranded. 163 Bushehr NPP personnel evacuated to Russia.",
-    "<strong>Infrastructure:</strong> 85,000+ structures. 600+ schools. Bushehr NPP hit 4th time (1 killed, 5 injured). Mahshahr petrochemical struck. B1 Bridge destroyed. Pasteur Institute struck. Power grid intact but April 6 = 2 DAYS.",
-    "<strong>Nuclear:</strong> IAEA Grossi: 'deep concern.' Bushehr 4th hit. 163 evacuated to Russia. 440kg unaccounted. All major facilities struck. Nuclear accident risk rising with each Bushehr attack.",
-    "<strong>Medical:</strong> 26,500+ wounded Iran (AJ). 6,594+ Israeli wounded. 520+ US wounded. HRANA: 1,607 civilians + 244 children killed. Mahshahr 5 wounded. Bushehr 1 killed, 5 injured.",
-    "<strong>Economic:</strong> Oil ~$115 (+2.3%). Dated Brent physical $141.37 (Bloomberg). Mahshahr petrochemical struck. MSC Ishyka attacked in Hormuz. Insurance 13%+. Gas $4.10/gal confirmed (NPR, +37% since D1)."
+    "<strong>Internet:</strong> 864+ hours. 37 days. $1.6B+. 90M. April 6 power grid = PERMANENT.",
+    "<strong>Displacement:</strong> 330,000+. Lebanon ~1M. 363+ Bushehr to Russia.",
+    "<strong>Infrastructure:</strong> 85,000+. 600+ schools. Kuwait 2 power shut. April 6 = EXISTENTIAL.",
+    "<strong>Nuclear:</strong> Russia 200 MORE (363+). Araghchi: contamination. 440kg.",
+    "<strong>Medical:</strong> 26,500+ wounded Iran. 6,594+ Israel. 520+ US.",
+    "<strong>Economic:</strong> Oil $109 DOWN. Gas ~$4.05. Kuwait power/water = civilian services."
   ],
   "humanitarian_fa": [
-    "<strong>اینترنت:</strong> ۸۱۶+. ۳۶ روز. $۱.۵B+.",
-    "<strong>آوارگی:</strong> ۳۳۰,۰۰۰+. لبنان ~۱M. ۱۶۳ بوشهر به روسیه.",
-    "<strong>زیرساخت:</strong> ۸۵,۰۰۰+. ۶۰۰+ مدرسه. بوشهر ۴مین بار (۱ کشته). ماهشهر. پل B1. برق = ۲ روز.",
-    "<strong>هسته‌ای:</strong> IAEA گروسی: نگرانی شدید. بوشهر ۴مین بار. ۱۶۳ تخلیه. ۴۴۰kg. ریسک حادثه افزایش.",
-    "<strong>پزشکی:</strong> ۲۶,۵۰۰+ زخمی ایران. ۶,۵۹۴+ اسرائیل. ۵۲۰+ آمریکا. HRANA: ۱,۶۰۷ غیرنظامی + ۲۴۴ کودک.",
-    "<strong>اقتصادی:</strong> نفت ~$۱۱۵. فیزیکی $۱۴۱. ماهشهر. MSC ایشیکا. بیمه ۱۳٪+. بنزین $۴.۳۰+."
+    "<strong>Internet:</strong> 864+. 37 days. $1.6B+. April 6 = permanent.",
+    "<strong>Displacement:</strong> 330,000+. 363+ Bushehr.",
+    "<strong>Infrastructure:</strong> 85,000+. Kuwait 2 power shut. Existential.",
+    "<strong>Nuclear:</strong> 363+. Contamination. 440kg.",
+    "<strong>Medical:</strong> 26,500+ Iran. 6,594+ Israel. 520+ US.",
+    "<strong>Economic:</strong> $109. $4.05. Kuwait."
   ],
   "diplomacy": [
-    "<strong>IRAN FORMALLY REJECTS CEASEFIRE:</strong> Iran communicated rejection through 'continuation of attacks in battlefield' — not through diplomacy (Reuters). Iranian source: 'demands guaranteed permanent ceasefire.' This collapses the LAST active diplomatic track before April 6. No mediator, no channel, no framework active.",
-    "<strong>CEASEFIRE REJECTION = MILITARY VALIDATION:</strong> F-15E/A-10 shootdowns came hours before formal rejection. IRGC views military success (7 US aircraft, ships attacked) as validation of refusal to negotiate. Iran sees battlefield strength, not diplomatic concession, as path forward.",
-    "<strong>BUSHEHR 163 TO RUSSIA = NEW DIMENSION:</strong> 163 Bushehr NPP personnel evacuated to Russia via emergency airlift. Russia now directly involved in conflict consequences. Creates new diplomatic complication and potential Russian leverage/reaction.",
-    "<strong>CHINA-PAKISTAN PLAN STALLED:</strong> 5-point peace plan remains on paper. Kharazi (back-channel lead) gravely wounded. Iran's formal rejection undermines framework. The Diplomat: 'All words, no commitment.' No active great-power mediation.",
-    "<strong>IAEA GROSSI — NUCLEAR RED LINE:</strong> 'Deep concern — nuclear sites must never be attacked.' 4th Bushehr strike. But IAEA has no enforcement power. International condemnation ≠ action. UN framework paralyzed.",
-    "<strong>APRIL 6 (2 DAYS) — NO PATH TO DEAL:</strong> Zero diplomatic tracks active. Iran rejected. WSO missing. Coalition pre-positioning (Bushehr + Mahshahr). Power grid strikes converging toward certainty. The deadline is now a military countdown, not a diplomatic deadline."
+    "<strong>WSO RESCUE = WINDOW:</strong> POW removed. Oil -$6. ~10% deal. But Trump 48-hr committed.",
+    "<strong>TRUMP 48-HR (3RD):</strong> All Hell Monday. 3rd deadline. Backing down = devastating.",
+    "<strong>CHINA 5-POINT:</strong> With Pakistan. Most active. But Iran: trust zero.",
+    "<strong>PAKISTAN - INDIRECT:</strong> No framework. Only channel.",
+    "<strong>IRAN UNCHANGED:</strong> Contacts not negotiations. Trust zero. Battlefield = validation.",
+    "<strong>APRIL 6 = TOMORROW - BINARY:</strong> Deal = $85-95 OR power grid = $130+, Houthi, catastrophe. 24 hours."
   ],
   "diplomacy_fa": [
-    "<strong>ایران رد رسمی آتش‌بس:</strong> از طریق ادامه حملات نه دیپلماسی. مسیر آخر فروپاشید. ۲ روز.",
-    "<strong>رد = تأیید نظامی:</strong> F-15E/A-10 ساقط = سپاه نتیجه نظامی را تأیید. مذاکره نه، میدان جنگ بله.",
-    "<strong>بوشهر ۱۶۳ به روسیه = بُعد جدید:</strong> تخلیه اضطراری. روسیه مستقیماً درگیر. اهرم/واکنش روسیه.",
-    "<strong>طرح چین-پاکستان متوقف:</strong> خرازی زخمی. ایران رد رسمی. دیپلمات: فقط حرف.",
-    "<strong>IAEA گروسی — خط قرمز هسته‌ای:</strong> نگرانی شدید. ۴مین بوشهر. اما قدرت اجرایی ندارد.",
-    "<strong>۶ آوریل (۲ روز) — مسیر معامله ندارد:</strong> صفر مسیر فعال. ایران رد. WSO مفقود. پیش‌موقعیت‌دهی. شمارش معکوس نظامی."
+    "<strong>WSO = window:</strong> ~10%. But committed.",
+    "<strong>48-hr (3rd):</strong> Devastating to back down.",
+    "<strong>China 5-point:</strong> Active. Trust zero.",
+    "<strong>Pakistan:</strong> Indirect.",
+    "<strong>Iran:</strong> Not negotiating.",
+    "<strong>April 6 = binary:</strong> $85 or $130+. 24h."
   ],
   "publicOpinion": [
-    "<strong>Pew (D27):</strong> 59% wrong. 61% disapprove. 88% Dems oppose. 71% GOP support. 7 aircraft lost + missing WSO = 'enough is enough' pressure intensifying. But Bushehr nuclear = rally-around-flag for some.",
-    "<strong>6 AIRCRAFT + WSO:</strong> A-10 also downed = NPR headline 'total air dominance contradicted.' WSO missing = daily hostage-crisis news cycle. Washington Times: Iran 'calls on public to find enemy pilot.' Visceral. Political pressure on Trump from BOTH directions.",
-    "<strong>Gas:</strong> $4.10/gal confirmed (NPR, +37% since D1). Oil ~$115. Physical Brent $141 = recession signal. April 6 power grid strikes = gas $5+ CERTAIN. Consumer pain approaching political breaking point.",
-    "<strong>Congressional:</strong> AUMF still absent. 7 aircraft lost = congressional demand for briefings intensifying. Casualty transparency still contested (The Intercept investigation).",
-    "<strong>Casualties:</strong> 15 US KIA + 1 MISSING WSO + 520+ wounded. 7 aircraft lost. The Intercept: 'casualty cover-up.' Missing pilot = daily political pressure. Bushehr evacuation = international complications.",
-    "<strong>International:</strong> IAEA Grossi condemns Bushehr strike. Russia evacuating personnel = new dimension. Dated Brent $141 = global recession fears. April 6 = world bracing for humanitarian catastrophe."
+    "<strong>Pew:</strong> 59% wrong. WSO rescue = positive BUT C-130s = at what cost?",
+    "<strong>WSO:</strong> Trump: most daring. But $200M+ destroyed. Media split.",
+    "<strong>Gas:</strong> ~$4.05. If April 6: $5+.",
+    "<strong>Congress:</strong> AUMF absent. C-130 = briefing demands.",
+    "<strong>Casualties:</strong> 15 KIA (WSO rescued). 520+. 7+2+2 = mounting.",
+    "<strong>International:</strong> China 5-point. Russia 363+. Kuwait = allies questioning."
   ],
   "publicOpinion_fa": [
-    "<strong>پیو:</strong> ۵۹٪ اشتباه. ۷ هواپیما + WSO = فشار کافیست.",
-    "<strong>۷ هواپیما + WSO:</strong> NPR: تسلط هوایی رد. WSO مفقود = اخبار گروگان‌گیری روزانه. فشار دوطرفه بر ترامپ.",
-    "<strong>بنزین:</strong> $۴.۳۰+. نفت ~$۱۱۵. فیزیکی $۱۴۱ = رکود. ۶ آوریل = $۵+ قطعی.",
-    "<strong>کنگره:</strong> AUMF ندارد. ۷ هواپیما = درخواست توجیه شدیدتر.",
-    "<strong>تلفات:</strong> ۱۵ KIA + ۱ WSO مفقود + ۵۲۰+ زخمی. اینترسپت: پنهان‌کاری. بوشهر تخلیه = بین‌المللی.",
-    "<strong>بین‌المللی:</strong> IAEA محکوم. روسیه تخلیه = بُعد جدید. برنت $۱۴۱ = رکود جهانی. ۶ آوریل = فاجعه."
+    "<strong>Pew:</strong> 59%. WSO + but C-130.",
+    "<strong>WSO:</strong> Daring but $200M+.",
+    "<strong>Gas:</strong> $4.05. If Apr 6: $5+.",
+    "<strong>Congress:</strong> No AUMF. C-130 briefing.",
+    "<strong>Casualties:</strong> 15 KIA. 7+2+2.",
+    "<strong>Intl:</strong> China. Russia 363+. Kuwait."
   ],
   "hormuz": [
-    "<strong>DUAL POSTURE — SAFE PASSAGE + TARGETED ATTACKS:</strong> ~8 vessels/day D36 (up from 7). Safe passage framework expanding BUT IRGC drone attacked MSC Ishyka (Israel-linked) — set on fire. Iran allowing non-hostile transit while attacking Israel-affiliated shipping. Selective enforcement.",
-    "<strong>MSC ISHYKA ATTACK:</strong> IRGC naval forces struck Israel-linked vessel MSC Ishyka in Hormuz with drone. Ship on fire. Demonstrates Iran's ability to selectively target specific vessels while allowing others through. This is managed escalation, not blockade relaxation.",
-    "<strong>Safe passage growing:</strong> Pakistan, India, China, Thailand, Philippines, France (CMA CGM). ~8-10 vessels/day. Iran yuan/crypto toll. US/Israel still excluded. UK hosting 40-nation talks on Hormuz reopening. Framework institutional not personal (surviving Tangsiri death).",
-    "<strong>WSO search area:</strong> F-15E WSO still missing in southern Iran. Rescue ops no longer restricting strait traffic but WSO = ongoing crisis.",
-    "<strong>Kharg:</strong> Fortified. 82nd deployed. April 6 = 2 days may redirect forces from Kharg to power grid targeting.",
-    "<strong>Insurance:</strong> 13%+ hull. MSC Ishyka attack D36 = ship-specific targeting continues. Approaching uninsurable threshold. Lloyd's monitoring.",
-    "<strong>Bab al-Mandab:</strong> Houthis claimed Israel attack D36. Active since D29. If April 6 strikes proceed = Houthi likely closes Bab al-Mandab = both chokepoints = oil $150+."
+    "<strong>MIXED - WSO + IRAQ + APRIL 6:</strong> ~9-10 vessels/day. Iraq tanker transited. WSO = calmer. April 6 binary.",
+    "<strong>Iraq transit:</strong> Suezmax Ocean Thunder. Iraq special exemption. Safe passage EXPANDING.",
+    "<strong>Safe passage:</strong> 7+ countries. ~9-10/day. Institutional.",
+    "<strong>WSO impact:</strong> Rescue ops COMPLETE. Strait calmer. April 6 = potential re-escalation.",
+    "<strong>Kharg:</strong> Fortified. 82nd deployed.",
+    "<strong>Insurance:</strong> 13%+. Kuwait = wartime max. April 6 = uninsurable.",
+    "<strong>Bab al-Mandab:</strong> Houthis Ben Gurion. If April 6: closes = $150+."
   ],
   "hormuz_fa": [
-    "<strong>دوگانه — عبور امن + حملات هدفمند:</strong> ~۸ کشتی/روز. MSC ایشیکا (اسرائیلی) حمله = هدف‌گیری انتخابی. عبور غیردشمن اما اسرائیلی هدف.",
-    "<strong>حمله MSC ایشیکا:</strong> پهپاد سپاه در هرمز. آتش. هدف‌گیری انتخابی. تشدید مدیریت‌شده.",
-    "<strong>عبور رشد:</strong> پاکستان + هند + چین + تایلند + فیلیپین + فرانسه. ~۸-۱۰/روز. نهادی نه شخصی.",
-    "<strong>WSO:</strong> مفقود در جنوب ایران. عملیات جستجو ادامه.",
-    "<strong>خارگ:</strong> تقویت. ۶ آوریل = تغییر جهت به نیروگاه.",
-    "<strong>بیمه:</strong> ۱۳٪+. MSC ایشیکا = ادامه هدف‌گیری. آستانه بیمه‌ناپذیری.",
-    "<strong>باب‌المندب:</strong> حوثی حمله D36. اگر ۶ آوریل = بسته = $۱۵۰+."
+    "<strong>Mixed:</strong> ~9-10. Iraq. WSO calmer. Binary.",
+    "<strong>Iraq:</strong> Transit. Expanding.",
+    "<strong>Safe passage:</strong> 7+ countries. Institutional.",
+    "<strong>WSO:</strong> Complete. Calmer.",
+    "<strong>Kharg:</strong> Fortified.",
+    "<strong>Insurance:</strong> 13%+. Uninsurable.",
+    "<strong>Bab al-Mandab:</strong> If April 6: $150+."
   ],
   "keyActors": [
-    "<strong>US:</strong> 7 manned aircraft lost (NPR confirms). WSO still missing — IRGC denies capture, governor offers commendation. 15 KIA + 520+ wounded. NPR: 'total air dominance' claims contradicted. Bushehr + Mahshahr strikes = pre-positioning for April 6. UK hosting 40-nation Hormuz talks. Oil ~$115. 2 days to deadline.",
-    "<strong>Israel:</strong> IDF struck Quds Force command centers in Beirut + IRGC targets in Tehran (air defense, ballistic storage, weapons R&D). Continued wide-scale campaign. 163 Bushehr personnel evacuated reflects sustained nuclear/energy targeting.",
-    "<strong>Iran:</strong> Formally REJECTED ceasefire through 'continuation of attacks.' IRGC drone attacked MSC Ishyka in Hormuz. Shot down MQ-1 drone over Isfahan. UAE 23 ballistic + 56 drones = HEAVIEST UAE-targeted day. Cluster warhead Israel. IRGC views shootdowns as validation. Multi-theater at full capability.",
-    "<strong>Russia:</strong> NEW: 163 Bushehr NPP personnel evacuated to Russia via emergency airlift. Russia now directly affected by conflict. Creates diplomatic leverage and potential reaction. Rosatom involvement = nuclear dimension.",
-    "<strong>China:</strong> 5-point plan stalled. Safe passage framework growing = China-friendly. But Iran's ceasefire rejection undermines China's mediation credibility. Oil ~$115 = pain for Chinese economy.",
-    "<strong>Pakistan:</strong> Mediation framework stalling. Kharazi (back-channel lead) gravely wounded. Iran rejected ceasefire = Pakistan's intermediary role diminished.",
-    "<strong>Houthis:</strong> Claimed attack on Israel D36. Active since D29. If April 6 power grid strikes = Houthi likely escalates to Bab al-Mandab closure = both chokepoints.",
-    "<strong>IAEA:</strong> Grossi: 'deep concern — nuclear sites must never be attacked.' Bushehr 4th hit. 1 killed. 163 evacuated. 440kg unaccounted. IAEA has no enforcement power."
+    "<strong>US:</strong> WSO RESCUED. 2 C-130s + 2 Little Birds destroyed. Trump 48-hr reissued. 15 KIA + 520+. 7+2+2. April 6 TOMORROW.",
+    "<strong>Israel:</strong> IDF continues. Houthi Ben Gurion = multi-axis.",
+    "<strong>Iran:</strong> Kuwait infra devastated. Bahrain BAPCO. UAE 9+1+50. Claims 5 killed + C-130s. FM: trust zero. Wreckage propaganda. Testing resolve.",
+    "<strong>Russia:</strong> 200 MORE Bushehr (363+). Araghchi: contamination. Deepening.",
+    "<strong>China:</strong> 5-point. Most active mediator. ~10%.",
+    "<strong>Pakistan:</strong> Indirect only. Only channel.",
+    "<strong>Houthis:</strong> Ben Gurion D37. If April 6: Bab al-Mandab = both chokepoints.",
+    "<strong>IAEA:</strong> 363+ Bushehr. No enforcement."
   ],
   "keyActors_fa": [
-    "<strong>آمریکا:</strong> ۷ هواپیما ساقط. WSO مفقود. NPR: تسلط هوایی رد. بوشهر + ماهشهر = پیش‌موقعیت‌دهی. ~$۱۱۵.",
-    "<strong>اسرائیل:</strong> IDF نیروی قدس بیروت + IRGC تهران. ادامه عملیات گسترده. ۱۶۳ تخلیه بوشهر.",
-    "<strong>ایران:</strong> رد رسمی آتش‌بس = ادامه حملات. MSC ایشیکا. MQ-1 ساقط. امارات ۲۳+۵۶. کلاهک خوشه‌ای. ساقط کردن = تأیید.",
-    "<strong>روسیه:</strong> جدید: ۱۶۳ نفر بوشهر تخلیه به روسیه. مستقیماً درگیر. اهرم دیپلماتیک.",
-    "<strong>چین:</strong> طرح متوقف. عبور امن = چین‌پسند. اما رد ایران = اعتبار چین کاهش.",
-    "<strong>پاکستان:</strong> میانجی‌گری متوقف. خرازی زخمی. ایران رد = نقش کاهش.",
-    "<strong>حوثی:</strong> حمله اسرائیل D36. اگر ۶ آوریل = باب‌المندب.",
-    "<strong>IAEA:</strong> گروسی: نگرانی شدید. بوشهر ۴مین بار. ۱ کشته. ۱۶۳ تخلیه. قدرت اجرایی ندارد."
+    "<strong>US:</strong> WSO. 2+2 destroyed. 48-hr. 15 KIA.",
+    "<strong>Israel:</strong> Continues. Houthi.",
+    "<strong>Iran:</strong> Kuwait. Bahrain. UAE. Trust zero. Testing.",
+    "<strong>Russia:</strong> 363+ Bushehr. Contamination.",
+    "<strong>China:</strong> 5-point. ~10%.",
+    "<strong>Pakistan:</strong> Indirect.",
+    "<strong>Houthi:</strong> Ben Gurion. Bab al-Mandab.",
+    "<strong>IAEA:</strong> No enforcement."
   ],
   "predictive": {
     "models": {
@@ -1393,20 +1407,20 @@
         "projectedZeroDay": "Apr 15",
         "projectedOutcome": "Iran ceases offensive operations by mid-April. War ends via military exhaustion + negotiated exit. Coalition declares victory.",
         "projectedOutcome_fa": "ایران عملیات تهاجمی را تا اواسط آوریل متوقف می‌کند. جنگ با فرسایش نظامی + خروج مذاکره‌ای پایان می‌یابد.",
-        "confidence": 0.15,
-        "falsifiedBy": "D35 at 50/day = sustained well above exponential decay prediction. Haaretz: Iran retains half launchers + massive drones. F-15E shot down = air defense NOT degraded. Model dead since D18. Definitive falsification."
+        "confidence": 0.12,
+        "falsifiedBy": "D37 at 40/day. Definitively falsified since D18."
       },
       "plateauRationing": {
         "label": "Rationing Model",
         "label_fa": "مدل جیره‌بندی",
         "description": "Assumes plateau at ~30/day = strategic rationing from deeper stockpiles (IRGC D16 claim)",
         "description_fa": "فرض بر جیره‌بندی استراتژیک از ذخایر عمیق‌تر (ادعای سپاه D16)",
-        "plateauRate": 38,
-        "projectedDuration_weeks": 8,
+        "plateauRate": 45,
+        "projectedDuration_weeks": 7,
         "projectedOutcome": "Iran maintains harassment for 2+ months. War ends via negotiation under mutual exhaustion, or escalation spiral if ceiling breached. Haaretz confirms half launchers intact.",
         "projectedOutcome_fa": "ایران آزار ۲+ ماه. هاآرتص: نیمی پرتاب‌کننده‌ها سالم. جنگ با مذاکره یا تشدید.",
-        "confidence": 0.85,
-        "falsifiedBy": "Launches <15/day for 5 consecutive days. D33 surged to 65, D34=55, D35=50. Haaretz: half launchers + massive drones. Plateau CONFIRMED with surge capability. Revised plateau ~38/day (7-day avg)."
+        "confidence": 0.82,
+        "falsifiedBy": "D33-D37 avg ~49/day. Revised plateau ~45. Kuwait infra = expanding."
       },
       "projectionLabels": [
         "Feb 28",
@@ -1455,7 +1469,11 @@
         "Apr 12",
         "Apr 13",
         "Apr 14",
-        "Apr 15"
+        "Apr 15",
+        "Apr 16",
+        "Apr 17",
+        "Apr 18",
+        "Apr 19"
       ],
       "decayProjection": [
         480,
@@ -1494,13 +1512,17 @@
         55,
         50,
         45,
-        8,
+        40,
         6,
         4,
         3,
         2,
         1,
         1,
+        0,
+        0,
+        0,
+        0,
         0,
         0,
         0,
@@ -1543,7 +1565,7 @@
         55,
         50,
         45,
-        32,
+        40,
         30,
         28,
         28,
@@ -1553,7 +1575,11 @@
         26,
         25,
         25,
-        24
+        24,
+        23,
+        23,
+        22,
+        22
       ]
     },
     "vectors": {
@@ -1593,7 +1619,8 @@
         "Apr 01",
         "Apr 02",
         "Apr 03",
-        "Apr 04"
+        "Apr 04",
+        "Apr 05"
       ],
       "militaryExhaustion": [
         1,
@@ -1630,6 +1657,7 @@
         8.5,
         7.5,
         7.5,
+        7,
         7,
         7
       ],
@@ -1669,7 +1697,8 @@
         8,
         9,
         10,
-        10
+        10,
+        9.5
       ],
       "diplomaticMomentum": [
         0,
@@ -1707,7 +1736,8 @@
         6,
         5.5,
         4.5,
-        3.5
+        3.5,
+        4.5
       ],
       "usPoliticalSustainability": [
         8,
@@ -1745,7 +1775,8 @@
         1.5,
         1.5,
         1,
-        1
+        1,
+        2
       ],
       "escalationCeilingDistance": [
         7,
@@ -1783,30 +1814,31 @@
         1,
         0.5,
         0.5,
+        0.5,
         0.5
       ]
     },
     "vectorNotes": {
-      "militaryExhaustion": "D36: 45 missiles + 60 drones = sustained. DOWN from D35 (50+65) but UAE alone absorbed 23 ballistic + 56 drones. Cluster warhead Israel = advanced munitions. 7 US aircraft lost = air defense intact. IRGC attacking ships in Hormuz (MSC Ishyka). MQ-1 shot down Isfahan. Score HOLDS 7 — Iran demonstrating multi-capability.",
-      "militaryExhaustion_fa": "D36: ۴۵ موشک + ۶۰ پهپاد. امارات ۲۳+۵۶. کلاهک خوشه‌ای. ۷ هواپیما. MSC ایشیکا. MQ-1 ساقط. ۷.",
-      "economicPain": "Brent ~$115 (+2.3%). Dated Brent PHYSICAL $141.37 (Bloomberg) — unprecedented since 2008. Bushehr NPP + Mahshahr petrochemical = energy infrastructure targeting BOTH sides. Oil entrenched above $110. Apr 6 = 2 days: if strikes proceed, $130-150+. Score HOLDS 10. MAXIMUM.",
-      "economicPain_fa": "برنت ~$۱۱۵. فیزیکی $۱۴۱ (بلومبرگ) = بی‌سابقه از ۲۰۰۸. بوشهر + ماهشهر = انرژی هر دو طرف. ۱۰ = حداکثر.",
-      "diplomaticMomentum": "COLLAPSED: Iran formally REJECTED ceasefire through 'continuation of attacks' not diplomacy. No mediator active. China-Pakistan plan stalled. Kharazi wounded. 2 days insufficient for new track. Bushehr 163 to Russia = complicates further. Score DOWN 4.5->3.5 — last track destroyed.",
-      "diplomaticMomentum_fa": "فروپاشی: ایران رد رسمی از طریق حملات نه دیپلماسی. میانجی فعال ندارد. ۲ روز ناکافی. ۱۶۳ به روسیه. ۳.۵.",
-      "usPoliticalSustainability": "7 US AIRCRAFT LOST (NPR confirms): WSO still missing — IRGC denies capture but governor offers commendation = daily news cycle. Gas $4.10/gal confirmed (NPR, +37%). Oil ~$115. 15 KIA + 1 missing. Bushehr evacuation to Russia = international incident. Score HOLDS 1 — already near floor.",
-      "usPoliticalSustainability_fa": "۷ هواپیما ساقط (NPR تأیید). WSO مفقود — سپاه رد بازداشت. بنزین $۴.۳۰+. نفت ~$۱۱۵. بوشهر به روسیه. ۱.",
-      "escalationCeilingDistance": "AT THE CEILING: April 6 = 2 DAYS. Iran formally rejected ceasefire. Bushehr NPP hit 4th time (163 to Russia = Russia dimension). Mahshahr petrochemical struck = coalition already hitting energy. WSO missing = cannot pause. NO diplomatic track. Coalition pre-positioning for power grid. Score HOLDS 0.5 — cannot go lower without actual strikes beginning.",
-      "escalationCeilingDistance_fa": "در سقف: ۶ آوریل = ۲ روز. ایران رد رسمی. بوشهر ۴مین بار (۱۶۳ به روسیه). ماهشهر = از قبل هدف. WSO مفقود. مسیر ندارد. ۰.۵."
+      "militaryExhaustion": "D37: 7/10. Iran 40+70. Kuwait infra = expanding. US 2+2 lost.",
+      "militaryExhaustion_fa": "7/10. Kuwait. 2+2.",
+      "economicPain": "D37: 9.5/10. Oil $109 DOWN. Gas $4.05. Kuwait power/water shut. April 6 binary.",
+      "economicPain_fa": "9.5/10. $109. Kuwait.",
+      "diplomaticMomentum": "D37: 4.5/10. UP. WSO +1.5, China +0.5, Iraq transit +0.5. But ultimatum -0.5, trust zero -0.5.",
+      "diplomaticMomentum_fa": "4.5/10. WSO + China. But ultimatum.",
+      "usPoliticalSustainability": "D37: 2/10. UP. WSO = positive. But 2+2 = $200M+. Gas $4.05. If Apr 6: drops to 1.",
+      "usPoliticalSustainability_fa": "2/10. WSO positive. But cost.",
+      "escalationCeilingDistance": "D37: 0.5/10. Power grid TOMORROW. 3rd ultimatum. Kuwait = testing. All ceilings 24-48 hrs.",
+      "escalationCeilingDistance_fa": "0.5/10. TOMORROW. All ceilings."
     },
     "warOutcome": {
-      "prediction": "REVISED: April 6 power grid strikes NEAR-CERTAIN (38% escalation). Iran formally REJECTED ceasefire = no diplomatic path. Bushehr NPP 4th hit + Mahshahr petrochemical = coalition already degrading energy infrastructure PRE-deadline. 163 evacuated to Russia = new international dimension. WSO missing = US cannot pause. Oil ~$115 (physical $141). ALL indicators point to April 6 power grid strikes. Most probable: power grid struck Mon Apr 6 -> 90M without electricity -> humanitarian catastrophe -> forced international intervention 2-3 weeks.",
-      "prediction_fa": "بازنگری: حمله نیروگاه ۶ آوریل تقریباً قطعی (۳۸٪). ایران رد رسمی = مسیر دیپلماتیک نمانده. بوشهر ۴مین بار + ماهشهر = از قبل تخریب. ۱۶۳ به روسیه. WSO مفقود. نفت ~$۱۱۵ (فیزیکی $۱۴۱). دوشنبه ۶ آوریل: نیروگاه -> ۹۰M بدون برق -> فاجعه -> مداخله ۲-۳ هفته.",
-      "derivation": "MilExh 7 (HOLDS — 45+60, cluster warheads, 7 aircraft lost, MSC Ishyka) + EconPain 10 (HOLDS MAXIMUM — $115, physical $141, Bushehr + Mahshahr) + DiplMom 3.5 (DOWN — formal ceasefire rejection, no track) + USPol 1 (HOLDS — 7 aircraft, WSO missing, gas $4.10) + EscCeil 0.5 (HOLDS — 2 days, no diplomatic path, pre-positioning). Diplomatic collapse = escalation becomes default. No off-ramp visible.",
-      "derivation_fa": "فرسایش ۷ + اقتصادی ۱۰ (حداکثر) + دیپلماسی ۳.۵ (فروپاشی) + سیاسی ۱ + سقف ۰.۵. فروپاشی دیپلماسی = تشدید پیش‌فرض.",
-      "convergenceScore": 6.7,
-      "convergenceInterpretation": "6.7/10 = HIGH and RISING (from 6.6). Weighted: MilExh(7*0.25) + EconPain(10*0.20) + DiplMom(3.5*0.20) + USPol(1*0.20) + EscCeil(0.5*0.15) = 1.75+2.0+0.7+0.2+0.075 = 4.725 raw -> normalized 6.7. Diplomatic COLLAPSE (3.5, down from 4.5) is driving score higher. Economic pain at MAXIMUM. Escalation ceiling at 0.5. April 6 = 2 days with ZERO diplomatic path. Convergence toward escalation is now near-total.",
-      "convergenceInterpretation_fa": "۶.۷/۱۰ = بالا و افزایش از ۶.۶. فروپاشی دیپلماسی (۳.۵ از ۴.۵) = محرک اصلی. اقتصادی حداکثر. سقف ۰.۵. ۲ روز بدون مسیر. همگرایی تقریباً کامل.",
-      "lastUpdated": "2026-04-04T21:00:00-04:00"
+      "prediction": "April 6 power grid strikes MOST LIKELY (40%). WSO rescue creates narrow window (~10% deal) but Trump committed 3rd time. If strikes: $130+, Houthi Bab al-Mandab. If deal: $85-95.",
+      "prediction_fa": "April 6 MOST LIKELY (40%). WSO = window. If strikes: $130+. If deal: $85-95.",
+      "derivation": "Military(7) stable. Economic(9.5) slight relief. Diplomatic(4.5) UP. Political(2) UP. Escalation(0.5) CRITICAL. KEY: Trump credibility after 2 backdowns.",
+      "derivation_fa": "Military(7). Economic(9.5). Diplomatic(4.5) UP. Political(2) UP. Escalation(0.5) CRITICAL.",
+      "convergenceScore": 6.6,
+      "convergenceInterpretation": "6.6/10 = EXTREME pressure (slightly down from 6.7). April 6 = TOMORROW. Binary. 24 hours.",
+      "convergenceInterpretation_fa": "6.6/10. TOMORROW. 24 hours.",
+      "lastUpdated": "2026-04-05T12:00:00-04:00"
     }
   },
   "additionalCharts": {
@@ -1847,7 +1879,8 @@
       145,
       125,
       115,
-      105
+      105,
+      110
     ],
     "geoSpreadLabels": [
       "Feb 28",
@@ -1923,7 +1956,8 @@
       8,
       8,
       8,
-      7
+      7,
+      6
     ],
     "missileDroneRatio": [
       0.67,
@@ -1961,7 +1995,8 @@
       0.81,
       0.79,
       0.77,
-      0.75
+      0.75,
+      0.57
     ],
     "interceptRateLabels": [
       "Feb 28",
@@ -1999,7 +2034,8 @@
       "Apr 01",
       "Apr 02",
       "Apr 03",
-      "Apr 04"
+      "Apr 04",
+      "Apr 05"
     ],
     "interceptRate": [
       0.82,
@@ -2037,6 +2073,7 @@
       0.87,
       0.88,
       0.87,
+      0.89,
       0.89
     ],
     "scenarioHistory": {
@@ -2051,7 +2088,8 @@
         "D33",
         "D34",
         "D35",
-        "D36"
+        "D36",
+        "D37"
       ],
       "escalationSpiral": [
         15,
@@ -2064,7 +2102,8 @@
         28,
         30,
         33,
-        38
+        38,
+        40
       ],
       "protractedAttrition": [
         30,
@@ -2077,7 +2116,8 @@
         25,
         26,
         28,
-        27
+        27,
+        24
       ],
       "declaredVictory": [
         25,
@@ -2090,7 +2130,8 @@
         20,
         18,
         16,
-        14
+        14,
+        15
       ],
       "negotiatedDeal": [
         15,
@@ -2103,7 +2144,8 @@
         12,
         11,
         10,
-        8
+        8,
+        10
       ],
       "internationalIntervention": [
         10,
@@ -2116,7 +2158,8 @@
         10,
         10,
         9,
-        9
+        9,
+        7
       ],
       "regimeFracture": [
         5,
@@ -2128,6 +2171,7 @@
         7,
         5,
         5,
+        4,
         4,
         4
       ]
@@ -2298,12 +2342,13 @@
       "statusColor": "red",
       "internetDownHours": 840,
       "lastConfirmedContact": "Feb 28 (D1)",
-      "detail": "840+ hours (36 days). Bushehr NPP 4th hit. Mahshahr petrochemical struck. IDF striking Tehran + Beirut. April 6 = 2 days. Cannot verify warehouse/staff/inventory.",
-      "detail_fa": "۸۴۰+ ساعت. بوشهر ۴مین بار. ماهشهر. IDF تهران + بیروت. ۶ آوریل = ۲ روز. تأیید ناممکن."
+      "detail": "37 days. $1.6B+. If power grid: permanent.",
+      "detail_fa": "۸۴۰+ ساعت. بوشهر ۴مین بار. ماهشهر. IDF تهران + بیروت. ۶ آوریل = ۲ روز. تأیید ناممکن.",
+      "blackoutHours": "864+"
     },
     "inventoryRunway": {
       "months_remaining": 3,
-      "detail": "~3 months remaining. Oil ~$115 + Iran formally rejected ceasefire + 7 aircraft lost = ceasefire mid-April IMPOSSIBLE. Runs out July-August. FY27 at SEVERE risk.",
+      "detail": "~2.5-3 months. April 6 binary. Alternate sourcing NOW.",
       "detail_fa": "~۳ ماه. نفت ~$۱۱۵ + ایران رد رسمی آتش‌بس + ۷ هواپیما = آتش‌بس ناممکن. FY27 ریسک شدید.",
       "burnRate": "~$15K-20K/month in fulfilled orders",
       "criticalDate": "Late July 2026. Iran rejected ceasefire + 7 aircraft lost + WSO missing + April 6 = 2 days = ceasefire further delayed. Must activate alternatives NOW."
@@ -2327,9 +2372,9 @@
   },
   "kipExpanded": {
     "dubaiBankingRisk": {
-      "score": 10,
+      "score": 9.5,
       "trend": "maximum",
-      "detail": "D36: Bushehr NPP 4th hit (163 to Russia). Mahshahr petrochemical struck. MSC Ishyka attacked in Hormuz. Oil ~$115 (physical $141). Iran rejected ceasefire. April 6 = 2 DAYS. Score HOLDS 10 = MAXIMUM.",
+      "detail": "D37: 9.5/10. Oil $109 = slight relief. But Kuwait infra + April 6.",
       "detail_fa": "D36: بوشهر ۴مین (۱۶۳ به روسیه). ماهشهر. MSC ایشیکا. نفت ~$۱۱۵ (فیزیکی $۱۴۱). ایران رد. ۲ روز. ۱۰ = حداکثر.",
       "action": "CRITICAL: Withdraw ALL Gulf funds (UAE + Qatar). Move to Tbilisi/KL IMMEDIATELY. Banking system at maximum stress."
     },
@@ -2414,7 +2459,7 @@
         "milestone": "Safe passage >30 vessels/day",
         "estimate": "Ceasefire + 1-2 weeks",
         "status": "partial",
-        "detail": "Currently ~5-10 vessels/day via Iran's yuan-based toll. Pakistan Aframax transited. Needs: formal multilateral framework + navy escort."
+        "detail": "EXPANDING: 7+ countries + Iraq D37. WSO = calmer. April 6 binary."
       },
       {
         "milestone": "Mine clearance (est. 200+ mines)",
@@ -2467,7 +2512,8 @@
       "location": "Jebel Ali Free Zone + Hamriyah Free Zone",
       "insured": true,
       "detail": "Most cargo insured under pre-war marine policies. Claims processing delayed — Lloyd's overwhelmed. Perishables (~15% by value) written off. Non-perishable goods safe in bonded storage but incurring daily storage fees (~$150/container/day).",
-      "detail_fa": "اکثر بار بیمه. پردازش خسارت تأخیر. فاسدشدنی (~۱۵٪) از دست رفته. غیرفاسدشدنی در انبار اما هزینه روزانه (~$۱۵۰/کانتینر/روز)."
+      "detail_fa": "اکثر بار بیمه. پردازش خسارت تأخیر. فاسدشدنی (~۱۵٪) از دست رفته. غیرفاسدشدنی در انبار اما هزینه روزانه (~$۱۵۰/کانتینر/روز).",
+      "storageFees": "$5,550+ (37 days x $150/day)"
     },
     "insuranceCostIndex": {
       "labels": [
@@ -2508,11 +2554,11 @@
   },
   "cumulativeByCountry": {
     "UAE": {
-      "missiles": 1279,
-      "drones": 2574
+      "missiles": 1289,
+      "drones": 2624
     },
     "Israel": {
-      "missiles": 714,
+      "missiles": 719,
       "drones": 314
     },
     "Saudi Arabia": {
@@ -2520,12 +2566,12 @@
       "drones": 928
     },
     "Kuwait": {
-      "missiles": 230,
-      "drones": 502
+      "missiles": 238,
+      "drones": 517
     },
     "Bahrain": {
-      "missiles": 140,
-      "drones": 324
+      "missiles": 143,
+      "drones": 329
     },
     "Qatar": {
       "missiles": 156,
@@ -2547,12 +2593,16 @@
       "missiles": 36,
       "drones": 82
     },
-    "_note": "Estimated cumul ~3,280 missiles / ~5,187 drones through D36. D36: Bushehr NPP (4th), Mahshahr petrochemical, MSC Ishyka, cluster bomb Israel. UAE MoD cumul: 498/23/2,141."
+    "_note": "Estimated cumul ~3,280 missiles / ~5,187 drones through D36. D36: Bushehr NPP (4th), Mahshahr petrochemical, MSC Ishyka, cluster bomb Israel. UAE MoD cumul: 498/23/2,141.",
+    "total": {
+      "missiles": 3320,
+      "drones": 5257
+    }
   },
   "stockpileAnalysis": {
     "currentDailyRate": {
-      "missiles": 30,
-      "drones": 55
+      "missiles": 40,
+      "drones": 70
     },
     "estimatedStockpiles": [
       {
@@ -2590,8 +2640,8 @@
       }
     ],
     "burnedToDate": {
-      "missiles": 3280,
-      "drones": 5187
+      "missiles": 3320,
+      "drones": 5257
     }
   },
   "oilScenarioBands": {
@@ -2668,7 +2718,8 @@
       "Apr 01",
       "Apr 02",
       "Apr 03",
-      "Apr 04"
+      "Apr 04",
+      "Apr 05"
     ],
     "vessels": [
       62,
@@ -2707,18 +2758,19 @@
       10,
       10,
       7,
-      8
+      8,
+      9
     ],
     "preWarAverage": 62,
-    "note": "Pre-war: ~62 vessels/day. D36: ~8 vessels (up from 7 D35). MSC Ishyka (Israel-linked) attacked by IRGC drone = selective targeting continues. Safe passage expanding for non-hostile but Israel-linked vessels attacked. IRGC dual posture. F-15E rescue ops concluded near Qeshm but WSO still missing.",
-    "note_fa": "D36: ~۸ کشتی (از ۷). MSC ایشیکا (مرتبط اسرائیل) حمله پهپادی = هدف‌گیری انتخابی. عبور امن رشد اما کشتی‌های اسرائیلی هدف. WSO مفقود."
+    "note": "D37: ~9 vessels. Iraq tanker transited. WSO = calmer. April 6 = binary.",
+    "note_fa": "D37: ~9. Iraq. WSO. April 6."
   },
   "ceasefireDeadline": {
     "deadline": "2026-04-06T20:00:00-04:00",
     "label": "April 6, 8PM ET",
     "label_fa": "۶ آوریل، ۸ شب ET",
-    "context": "Trump paused power plant strikes until this deadline. 2 DAYS AWAY. Iran FORMALLY rejected ceasefire. Bushehr NPP hit 4th time (163 to Russia). Mahshahr petrochemical struck. WSO still missing. NO diplomatic track active. Coalition pre-positioning by targeting energy/nuclear NOW. Power grid strikes NEAR-CERTAIN. 90M without electricity = humanitarian catastrophe.",
-    "context_fa": "ترامپ مهلت. ۲ روز مانده. ایران رد رسمی آتش‌بس. بوشهر ۴مین بار (۱۶۳ به روسیه). ماهشهر. WSO مفقود. مسیر دیپلماتیک ندارد. پیش‌موقعیت‌دهی. حمله تقریباً قطعی. ۹۰M بدون برق.",
+    "context": "April 6 8PM ET. 3rd ultimatum. WSO rescue removes POW but committed. Kuwait = testing. 24 hours.",
+    "context_fa": "April 6. 3rd. WSO but committed. 24h.",
     "branchIfDeal": [
       {
         "step": "Partial ceasefire announced",
@@ -2873,6 +2925,11 @@
         "actor": "IAEA + Russia + Iran ceasefire rejection",
         "type": "fracture",
         "detail": "IAEA Grossi condemns Bushehr strike. 163 personnel evacuated to Russia = Russia directly affected. Iran formally rejects ceasefire. NPR: 7 US aircraft lost contradicts 'air dominance.' Coalition narrative crumbling while April 6 approaches."
+      },
+      {
+        "day": "D37",
+        "event": "Kuwait 2 power/water shut + Shuwaikh + Ministries. Bahrain BAPCO. Iran civilian infra targeting.",
+        "event_fa": "Kuwait 2 power + Bahrain. Civilian infra."
       }
     ]
   },
