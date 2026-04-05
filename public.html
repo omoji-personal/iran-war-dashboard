@@ -48,7 +48,7 @@
 
     <!-- Scrubber -->
     <div class="scrubber-wrap" id="scrubberWrap" style="display:none">
-      <label class="scrubber-label">Rewind to day: <strong id="scrubberDay"></strong></label>
+      <label class="scrubber-label">Timeline: <strong id="scrubberDay"></strong></label>
       <input type="range" id="scrubberSlider" class="scrubber-slider" min="1" max="37" value="37">
       <button id="scrubberReset" class="scrubber-reset" onclick="resetScrubber()">Live</button>
     </div>
@@ -67,13 +67,13 @@
       </div>
       <div class="grid cols-2" style="margin-top:16px;gap:16px">
         <div>
-          <div class="sub" style="margin-bottom:8px;font-weight:700;color:var(--text)">Why? Three conditions must align:</div>
+          <div class="sub" style="margin-bottom:8px;font-weight:700;color:var(--text)">For the war to end, all three must be true:</div>
           <div id="decisionConditions"></div>
         </div>
         <div>
-          <div class="sub" style="margin-bottom:8px;font-weight:700;color:var(--text)">Most likely outcomes:</div>
+          <div class="sub" style="margin-bottom:8px;font-weight:700;color:var(--text)">What happens next? Most likely outcomes:</div>
           <div id="outcomeBreakdown"></div>
-          <div class="sub" style="margin-top:12px;font-weight:700;color:var(--text)">Calibration anchors:</div>
+          <div class="sub" style="margin-top:12px;font-weight:700;color:var(--text)">How we arrive at this estimate:</div>
           <div id="calibrationAnchors"></div>
         </div>
       </div>
@@ -92,15 +92,18 @@
     <!-- 3. Engine Analytics -->
     <section class="grid cols-3" style="margin-top:16px">
       <div class="panel">
-        <h3>Leading indicators</h3>
+        <h3>Key trends</h3>
+        <div class="sub">Where each metric is heading (7-day direction)</div>
         <div id="leadingIndicators"></div>
       </div>
       <div class="panel">
-        <h3>Probability log</h3>
+        <h3>How our estimate changed</h3>
+        <div class="sub">Daily probability shifts and why</div>
         <div id="probChangelog"></div>
       </div>
       <div class="panel">
-        <h3>What moves the needle?</h3>
+        <h3>What would change things?</h3>
+        <div class="sub">Which factor has the most impact on the outcome</div>
         <div id="sensitivityBars"></div>
       </div>
     </section>
@@ -123,8 +126,8 @@
         <div class="footnote" style="margin-top:10px"><strong>Fired to date:</strong> <span id="burnedToDate"></span></div>
       </div>
       <div class="panel">
-        <h3>Engine input trends</h3>
-        <div class="sub">Raw data feeding the decision model — 5 vectors normalized to 0-10.</div>
+        <h3>Pressure factors over time</h3>
+        <div class="sub">Five key pressures driving the war toward resolution, each scored 0-10. Higher = more pressure.</div>
         <div class="chart-box tall"><canvas id="vectorChart"></canvas></div>
       </div>
     </section>
@@ -177,8 +180,8 @@
       <div class="panel"><h3>Oil price scenario bands</h3><div class="sub">Where oil goes depends on which outcome.</div><div class="chart-box tall"><canvas id="oilBandsChart"></canvas></div></div>
     </section>
     <section class="grid cols-2" style="margin-top:16px">
-      <div class="panel"><h3 data-i18n="hOil">Oil shock monitor</h3><div class="sub" data-i18n="subOil">Brent and WTI.</div><div class="chart-box tall"><canvas id="oilChart"></canvas></div></div>
-      <div class="panel"><h3>Hormuz Strait transit rate</h3><div class="sub">Vessels per day — the most consequential economic metric.</div><div class="chart-box tall"><canvas id="hormuzTransitChart"></canvas></div><div class="footnote" id="hormuzTransitNote"></div></div>
+      <div class="panel"><h3>Hormuz Strait transit rate</h3><div class="sub">Vessels per day through Hormuz — the most consequential economic metric of the war.</div><div class="chart-box tall"><canvas id="hormuzTransitChart"></canvas></div><div class="footnote" id="hormuzTransitNote"></div></div>
+      <div class="panel"><h3 data-i18n="hOil">Oil: Brent vs WTI</h3><div class="sub">Both benchmarks tracking together. Spread = Hormuz premium.</div><div class="chart-box tall"><canvas id="oilChart"></canvas></div></div>
     </section>
 
     <!-- 10. Target Breakdown + Cumulative by Country -->

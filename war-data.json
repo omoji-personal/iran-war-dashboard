@@ -3784,21 +3784,21 @@
     ],
     "leadingIndicators": [
       {
-        "metric": "Launch rate (7DMA)",
+        "metric": "Launch rate (7-day avg)",
         "value": 44.7,
         "slope": 16.9,
         "direction": "accelerating",
         "signal": "Steady at ~40/day. Rationing model holds. No collapse, no surge."
       },
       {
-        "metric": "Brent crude (7DMA)",
+        "metric": "Brent crude (7-day avg)",
         "value": 109.4,
         "slope": 4.8,
         "direction": "rising",
         "signal": "Rising trend. Markets pricing in escalation, not deal."
       },
       {
-        "metric": "Hormuz transit (7DMA)",
+        "metric": "Hormuz transit (7-day avg)",
         "value": 8.7,
         "slope": 2.6,
         "direction": "rising",

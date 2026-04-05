@@ -769,16 +769,12 @@ function renderDecisionEngine(de) {
         '</div>';
     }
 
-    var tp = (de || {}).trumpPattern || {};
     $('decisionConditions').innerHTML =
-      condBar(currentLang === 'fa' ? 'وجود معامله قابل قبول' : 'Viable deal exists', eng.dealScore) +
-      condBar(currentLang === 'fa' ? 'فشار خروج آمریکا' : 'US exit pressure', eng.usExitScore) +
-      condBar(currentLang === 'fa' ? 'پذیرش ایران' : 'Iran acceptance', eng.iranScore) +
-      condBar(currentLang === 'fa' ? 'نزدیکی تشدید' : 'Escalation proximity', eng.escScore) +
-      condBar(currentLang === 'fa' ? 'ترامپ عمل می‌کند' : 'Trump follows through (' + (tp.blinkCount || 0) + ' prior blinks)', eng.trumpFollows) +
-      '<div class="cond-formula">' +
-        'P(resolution) = Deal × US × Iran = ' +
-        Math.round(eng.dealScore*100) + '% × ' + Math.round(eng.usExitScore*100) + '% × ' + Math.round(eng.iranScore*100) + '% = ' + modelProb + '%' +
+      condBar('A deal both sides can accept', eng.dealScore) +
+      condBar('US decides to take the deal', eng.usExitScore) +
+      condBar('Iran agrees to the terms', eng.iranScore) +
+      '<div class="cond-formula" style="margin-top:8px">' +
+        'Combined: ' + Math.round(eng.dealScore*100) + '% × ' + Math.round(eng.usExitScore*100) + '% × ' + Math.round(eng.iranScore*100) + '% = <strong>' + modelProb + '% chance of negotiated end</strong>' +
       '</div>';
   }
 
@@ -801,10 +797,10 @@ function renderDecisionEngine(de) {
   // Calibration anchors
   if ($('calibrationAnchors')) {
     $('calibrationAnchors').innerHTML =
-      '<div class="cal-row"><span class="cal-label">' + (currentLang === 'fa' ? 'مدل (سه شرط)' : 'Model (3-condition)') + '</span><strong>' + modelProb + '%</strong></div>' +
-      '<div class="cal-row"><span class="cal-label">' + (currentLang === 'fa' ? 'بازار پیش‌بینی' : 'Prediction market') + '</span><strong>' + marketProb + '%</strong></div>' +
-      '<div class="cal-row"><span class="cal-label">' + (currentLang === 'fa' ? 'نرخ پایه تاریخی' : 'Historical base rate') + '</span><strong>' + baseRate + '%</strong></div>' +
-      '<div class="cal-row cal-ensemble"><span class="cal-label">' + (currentLang === 'fa' ? 'میانگین وزنی' : 'Ensemble (weighted avg)') + '</span><strong style="color:var(--gold)">' + ensembleProb + '%</strong></div>';
+      '<div class="cal-row"><span class="cal-label">Our model says</span><strong>' + modelProb + '%</strong></div>' +
+      '<div class="cal-row"><span class="cal-label">Betting markets say</span><strong>' + marketProb + '%</strong></div>' +
+      '<div class="cal-row"><span class="cal-label">Similar wars in history</span><strong>' + baseRate + '%</strong></div>' +
+      '<div class="cal-row cal-ensemble"><span class="cal-label">Combined estimate</span><strong style="color:var(--gold)">' + ensembleProb + '%</strong></div>';
   }
 }
 
@@ -1494,7 +1490,7 @@ function renderSensitivity() {
     var barWidth = Math.min(s.impact * 5, 100);
     var color = s.impact >= 10 ? 'var(--cyan)' : s.impact >= 3 ? 'var(--gold)' : 'var(--muted)';
     return '<div style="margin-bottom:8px">' +
-      '<div style="display:flex;justify-content:space-between;font-size:12px;margin-bottom:2px"><span>' + s.input + '</span><strong style="color:' + color + '">+' + s.impact + 'pp</strong></div>' +
+      '<div style="display:flex;justify-content:space-between;font-size:12px;margin-bottom:2px"><span>' + s.input + '</span><strong style="color:' + color + '">+' + s.impact + '% impact</strong></div>' +
       '<div class="prob-track" style="margin:0"><div class="prob-bar" style="width:' + barWidth + '%;background:' + color + '"></div></div></div>';
   }).join('');
 }
