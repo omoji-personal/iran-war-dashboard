@@ -239,7 +239,47 @@
       70
     ],
     "sourceLabel": "D1-D10: JPost. D11: UAE MoD. D12-D37: fragment est. D37: WSO rescued, Kuwait infra, Bahrain BAPCO, UAE 9+1+50, Houthi Ben Gurion. ~40m+70d.",
-    "throughDate": "Apr 05 end of day - D37"
+    "throughDate": "Apr 05 end of day - D37",
+    "confidence": [
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      0.8,
+      0.6,
+      0.6,
+      0.6,
+      0.6,
+      0.6,
+      0.6,
+      0.6,
+      0.6,
+      0.6,
+      0.6,
+      0.6,
+      0.6,
+      0.6,
+      0.6,
+      0.6,
+      0.6,
+      0.6,
+      0.6,
+      0.5,
+      0.5,
+      0.5,
+      0.5,
+      0.5,
+      0.5,
+      0.5,
+      0.5
+    ],
+    "confidenceNote": "1.0 = JPost verified day-by-day (D1-D10). 0.8 = UAE MoD official scaled (D11). 0.6 = fragment estimates from Gulf reports (D12-D29). 0.5 = latest data, less verified (D30+)."
   },
   "oil": {
     "labels": [
@@ -3013,6 +3053,166 @@
       "date": "D9 designated, absent since D8",
       "replacement": "N/A — he IS the replacement. Zolghadr named SNSC secretary D24 = institutional continuity without visible leader.",
       "significance": "27 days absent. Written statement only (D13). No video. Speculation: injured, hiding, or dead. Regime functioning without visible head of state."
+    }
+  ],
+  "scenarioSimulator": {
+    "scenarios": [
+      {
+        "id": "baseline",
+        "label": "Current trajectory",
+        "label_fa": "مسیر فعلی",
+        "vectorAdjust": [
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "oilTarget": null,
+        "description": "No change — war continues at current intensity."
+      },
+      {
+        "id": "ceasefire_apr6",
+        "label": "Ceasefire by Apr 6",
+        "label_fa": "آتش‌بس تا ۶ آوریل",
+        "vectorAdjust": [
+          0,
+          -3,
+          4,
+          2,
+          3
+        ],
+        "oilTarget": 85,
+        "description": "Deal reached before deadline. Hormuz reopening begins. Oil drops. Political pressure eases."
+      },
+      {
+        "id": "power_grid",
+        "label": "Power grid struck",
+        "label_fa": "حمله به شبکه برق",
+        "vectorAdjust": [
+          1,
+          2,
+          -3,
+          -2,
+          -3
+        ],
+        "oilTarget": 135,
+        "description": "April 6 passes with no deal. 90M without electricity. Humanitarian catastrophe. Oil spikes."
+      },
+      {
+        "id": "bab_closes",
+        "label": "Bab al-Mandab closes",
+        "label_fa": "بستن باب‌المندب",
+        "vectorAdjust": [
+          0,
+          3,
+          -2,
+          -3,
+          -4
+        ],
+        "oilTarget": 160,
+        "description": "Houthis close second chokepoint. 1/5 global oil + 1/8 global trade blocked. Global recession."
+      },
+      {
+        "id": "ground_invasion",
+        "label": "Kharg Island invasion",
+        "label_fa": "حمله به خارگ",
+        "vectorAdjust": [
+          2,
+          2,
+          -4,
+          -4,
+          -5
+        ],
+        "oilTarget": 150,
+        "description": "82nd Airborne seizes Kharg. Iran's 90% oil export terminal. Massive escalation."
+      }
+    ]
+  },
+  "escalationLadder": [
+    {
+      "rung": "Conventional strikes begin",
+      "status": "crossed",
+      "date": "D1",
+      "detail": "480 missiles + 720 drones on Day 1"
+    },
+    {
+      "rung": "US military casualties",
+      "status": "crossed",
+      "date": "D3",
+      "detail": "6 KIA Shuaiba Port. Now 15+ KIA, 520+ wounded"
+    },
+    {
+      "rung": "Nuclear facilities struck",
+      "status": "crossed",
+      "date": "D3",
+      "detail": "Natanz, Isfahan, Fordow, Bushehr (4x), Arak, Yazd"
+    },
+    {
+      "rung": "Hormuz Strait blocked",
+      "status": "crossed",
+      "date": "D1",
+      "detail": "62 vessels/day → 0. Now ~9/day via toll system"
+    },
+    {
+      "rung": "Hezbollah/proxy front opened",
+      "status": "crossed",
+      "date": "D4",
+      "detail": "Lebanon 1,368+ killed. IDF ground ops"
+    },
+    {
+      "rung": "Oil above $100",
+      "status": "crossed",
+      "date": "D12",
+      "detail": "Brent hit $100.46. Now ~$109"
+    },
+    {
+      "rung": "Houthis enter war",
+      "status": "crossed",
+      "date": "D29",
+      "detail": "First missile at Israel from Yemen. Bab al-Mandab threat"
+    },
+    {
+      "rung": "US aircraft shot down",
+      "status": "crossed",
+      "date": "D35",
+      "detail": "F-15E + A-10 downed. 7 aircraft lost total"
+    },
+    {
+      "rung": "Strategic bombing (B-52s)",
+      "status": "crossed",
+      "date": "D31",
+      "detail": "B-52 strikes on Iran. Isfahan ammo depot destroyed"
+    },
+    {
+      "rung": "Energy infrastructure targeted",
+      "status": "crossed",
+      "date": "D36",
+      "detail": "Kuwait refinery, UAE gas, Mahshahr petrochemical"
+    },
+    {
+      "rung": "Power grid destruction",
+      "status": "imminent",
+      "date": "Apr 6",
+      "detail": "Trump deadline tomorrow. 90M without electricity if struck"
+    },
+    {
+      "rung": "Bab al-Mandab closure",
+      "status": "threatened",
+      "date": "—",
+      "detail": "Houthis considering. Would block 1/5 global oil + 1/8 trade"
+    },
+    {
+      "rung": "Ground invasion (Kharg Island)",
+      "status": "preparing",
+      "date": "—",
+      "detail": "82nd Airborne deployed. Iran fortifying with mines/traps"
+    },
+    {
+      "rung": "Nuclear weapon breakout",
+      "status": "not_crossed",
+      "date": "—",
+      "detail": "440kg enriched uranium. IAEA locked out. Theoretical capability"
     }
   ]
 }

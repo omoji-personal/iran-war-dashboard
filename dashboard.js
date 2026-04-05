@@ -1249,10 +1249,12 @@ function buildSectionNav() {
   var groups = [
     { group: 'Prediction', items: [
       { q: '.prediction-hero', label: 'Forecast & Metrics' },
+      { q: '#simButtons', label: 'Scenario Simulator', up: 1 },
       { q: '[data-i18n="kickerThesis"]', label: 'Capability Thesis', up: 1 },
       { q: '#stockpileCards', label: 'Stockpile Burn Rate', up: 1 },
       { q: '[data-i18n="kickerVectors"]', label: 'Pressure Index', up: 1 },
-      { q: '#deadlineCountdown', label: 'April 6 Deadline', up: 1 }
+      { q: '#deadlineCountdown', label: 'April 6 Deadline', up: 1 },
+      { q: '#escalationLadder', label: 'Escalation Ladder', up: 1 }
     ]},
     { group: 'Situation', items: [
       { q: '#theoryBox', label: 'Situation Report', up: 1 },
@@ -1310,21 +1312,214 @@ function buildSectionNav() {
   });
 }
 
+/* ============================================================
+   Scenario Simulator
+   ============================================================ */
+var activeSimScenario = null;
+
+function renderSimulator() {
+  var sim = state.scenarioSimulator;
+  if (!sim || !$('simButtons')) return;
+  var scenarios = sim.scenarios || [];
+
+  $('simButtons').innerHTML = scenarios.map(function(s) {
+    return '<button class="sim-btn' + (activeSimScenario === s.id ? ' active' : '') + '" data-sim="' + s.id + '">' +
+      (currentLang === 'fa' ? (s.label_fa || s.label) : s.label) + '</button>';
+  }).join('');
+
+  // Attach click handlers
+  $('simButtons').querySelectorAll('.sim-btn').forEach(function(btn) {
+    btn.addEventListener('click', function() {
+      var id = this.getAttribute('data-sim');
+      activeSimScenario = activeSimScenario === id ? null : id;
+      renderSimulator();
+      showSimResult();
+    });
+  });
+
+  if (!activeSimScenario) {
+    if ($('simResult')) $('simResult').style.display = 'none';
+  }
+}
+
+function showSimResult() {
+  var sim = state.scenarioSimulator;
+  if (!sim || !$('simResult') || !activeSimScenario) return;
+  var scenario = (sim.scenarios || []).find(function(s) { return s.id === activeSimScenario; });
+  if (!scenario) return;
+
+  var outcome = (state.predictive || {}).warOutcome || {};
+  var baseScore = outcome.convergenceScore || 5;
+  var baseOil = (state.oil.brent || []).slice(-1)[0] || 100;
+  var adj = scenario.vectorAdjust || [0,0,0,0,0];
+
+  // Compute adjusted score (clamp 0-10)
+  var adjScore = Math.max(0, Math.min(10, baseScore + (adj[0]+adj[1]+adj[2]+adj[3]+adj[4]) / 5));
+  var baseProb = Math.round(100 / (1 + Math.exp(-1.2 * (baseScore - 5))));
+  var adjProb = Math.round(100 / (1 + Math.exp(-1.2 * (adjScore - 5))));
+  var adjOil = scenario.oilTarget || baseOil;
+  var probDelta = adjProb - baseProb;
+  var oilDelta = adjOil - baseOil;
+  var desc = currentLang === 'fa' ? (scenario.description_fa || scenario.description) : scenario.description;
+
+  function delta(v, unit) {
+    if (v === 0) return '';
+    var cls = v > 0 ? 'up' : 'down';
+    return '<span class="sim-delta ' + cls + '">' + (v > 0 ? '+' : '') + v + unit + '</span>';
+  }
+
+  $('simResult').style.display = 'block';
+  $('simResult').innerHTML =
+    '<div class="sim-row"><span class="sim-label">Resolution probability</span><span><span class="sim-value">' + adjProb + '%</span>' + delta(probDelta, '%') + '</span></div>' +
+    '<div class="sim-row"><span class="sim-label">Brent crude</span><span><span class="sim-value">$' + adjOil + '</span>' + delta(oilDelta, '') + '</span></div>' +
+    '<div class="sim-row"><span class="sim-label">Pressure index</span><span><span class="sim-value">' + adjScore.toFixed(1) + '/10</span></span></div>' +
+    '<div class="sim-desc">' + desc + '</div>';
+}
+
+/* ============================================================
+   Escalation Ladder
+   ============================================================ */
+function renderEscalationLadder() {
+  var ladder = state.escalationLadder;
+  if (!ladder || !$('escalationLadder')) return;
+
+  var statusLabels = { crossed: 'Crossed', imminent: 'Imminent', threatened: 'Threatened', preparing: 'Preparing', not_crossed: 'Not crossed' };
+
+  $('escalationLadder').innerHTML = '<div class="esc-ladder">' +
+    ladder.map(function(r, i) {
+      var isLast = i === ladder.length - 1;
+      return '<div class="esc-rung ' + r.status + '">' +
+        '<div class="esc-line"><div class="esc-dot"></div>' + (isLast ? '' : '<div class="esc-connector"></div>') + '</div>' +
+        '<div class="esc-content">' +
+          '<div class="esc-title">' + r.rung + '<span class="esc-status-tag">' + (statusLabels[r.status] || r.status) + '</span></div>' +
+          '<div class="esc-meta"><span class="esc-date">' + r.date + '</span>' + r.detail + '</div>' +
+        '</div></div>';
+    }).join('') +
+  '</div>';
+}
+
+/* ============================================================
+   Timeline Scrubber
+   ============================================================ */
+function initScrubber() {
+  var wrap = $('scrubberWrap');
+  var slider = $('scrubberSlider');
+  if (!wrap || !slider || !state.dailySeries || !state.dailySeries.labels) return;
+
+  var maxDay = state.dailySeries.labels.length;
+  slider.max = maxDay;
+  slider.value = maxDay;
+  wrap.style.display = 'flex';
+  if ($('scrubberDay')) $('scrubberDay').textContent = 'D' + maxDay + ' (' + state.dailySeries.labels[maxDay - 1] + ') — Live';
+
+  slider.addEventListener('input', function() {
+    var day = parseInt(this.value);
+    var label = state.dailySeries.labels[day - 1] || '';
+    var isLive = day === maxDay;
+    if ($('scrubberDay')) $('scrubberDay').textContent = 'D' + day + ' (' + label + ')' + (isLive ? ' — Live' : '');
+
+    // Update key metric displays with historical data
+    updateMetricsForDay(day);
+  });
+}
+
+function resetScrubber() {
+  var slider = $('scrubberSlider');
+  if (!slider) return;
+  var maxDay = (state.dailySeries.labels || []).length;
+  slider.value = maxDay;
+  slider.dispatchEvent(new Event('input'));
+}
+window.resetScrubber = resetScrubber;
+
+function updateMetricsForDay(day) {
+  var ds = state.dailySeries;
+  var oil = state.oil;
+  var idx = day - 1;
+  var maxDay = ds.labels.length;
+  var isLive = day === maxDay;
+
+  // Update metric cards with historical values
+  var metrics = state.metrics || [];
+  if ($('metrics') && metrics.length >= 4) {
+    var cards = $('metrics').querySelectorAll('.metric');
+    // Day card
+    if (cards[0]) cards[0].querySelector('.value').textContent = day;
+    // Missiles cumul
+    if (cards[1]) {
+      var cumM = 0; for (var i = 0; i <= idx; i++) cumM += (ds.missiles[i] || 0);
+      cards[1].querySelector('.value').textContent = '~' + cumM.toLocaleString();
+    }
+    // Drones cumul
+    if (cards[2]) {
+      var cumD = 0; for (var j = 0; j <= idx; j++) cumD += (ds.drones[j] || 0);
+      cards[2].querySelector('.value').textContent = '~' + cumD.toLocaleString();
+    }
+    // Oil
+    if (cards[3] && oil.brent) {
+      var oilIdx = Math.min(idx + 1, oil.brent.length - 1); // oil has 1 extra pre-war day
+      cards[3].querySelector('.value').textContent = '$' + (oil.brent[oilIdx] || '—');
+    }
+  }
+
+  // Update convergence/probability if vector data available for this day
+  var v = (state.predictive || {}).vectors || {};
+  if (v.militaryExhaustion && idx < v.militaryExhaustion.length) {
+    var weights = [0.25, 0.20, 0.20, 0.20, 0.15];
+    var vals = [
+      v.militaryExhaustion[idx],
+      v.economicPain[idx],
+      v.diplomaticMomentum[idx],
+      10 - v.usPoliticalSustainability[idx],
+      10 - v.escalationCeilingDistance[idx]
+    ];
+    var score = 0;
+    for (var k = 0; k < 5; k++) score += vals[k] * weights[k];
+    var prob = Math.round(100 / (1 + Math.exp(-1.2 * (score - 5))));
+    if ($('convergenceScore')) $('convergenceScore').textContent = prob + '%';
+    if ($('convergenceRaw')) $('convergenceRaw').textContent = score.toFixed(1) + '/10';
+    if ($('probBar')) {
+      $('probBar').style.width = prob + '%';
+      $('probBar').style.background = prob >= 70 ? 'var(--cyan)' : prob >= 40 ? 'var(--gold)' : 'var(--red)';
+    }
+  }
+}
+
+/* ============================================================
+   Source Confidence Shading
+   ============================================================ */
+function applyConfidenceShading() {
+  // Add confidence info to missile/drone chart footnotes
+  var conf = (state.dailySeries || {}).confidence;
+  var note = (state.dailySeries || {}).confidenceNote;
+  if (!conf || !note) return;
+  if ($('missileFoot')) {
+    var existing = $('missileFoot').textContent;
+    if (existing.indexOf('Confidence') === -1) {
+      $('missileFoot').innerHTML = existing + '<br><span style="color:var(--gold);font-size:11px">&#9888; ' + note + '</span>';
+    }
+  }
+}
+
 function render() {
   mountDashboard();
   applyI18n();
   setText();
   renderCharts();
   renderPredictiveSection();
+  renderSimulator();
   renderStockpile();
   renderAdditionalCharts();
   renderOilBands();
   renderHormuzTransit();
   renderDeadline();
+  renderEscalationLadder();
   renderCoalition();
   renderDecapitation();
   renderExpandedIranfarhang();
   renderExpandedKIP();
+  applyConfidenceShading();
+  initScrubber();
   buildSectionNav();
   markChangedSections();
 }

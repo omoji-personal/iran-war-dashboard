@@ -38,6 +38,13 @@
   </main>
 
   <template id="dashboardTemplate">
+    <!-- 0. Timeline Scrubber -->
+    <div class="scrubber-wrap" id="scrubberWrap" style="display:none">
+      <label class="scrubber-label">Rewind to day: <strong id="scrubberDay"></strong></label>
+      <input type="range" id="scrubberSlider" class="scrubber-slider" min="1" max="37" value="37">
+      <button id="scrubberReset" class="scrubber-reset" onclick="resetScrubber()">Live</button>
+    </div>
+
     <!-- 1. Prediction Hero -->
     <section class="prediction-hero">
       <div class="kicker" data-i18n="kickerPrediction">War outcome forecast</div>
@@ -54,6 +61,15 @@
       </div>
       <div id="convergenceInterpretation" class="sub"></div>
       <div class="metric-grid" id="metrics"></div>
+    </section>
+
+    <!-- 1b. Scenario Simulator -->
+    <section class="panel" style="margin-top:16px">
+      <div class="kicker">What-if scenarios</div>
+      <h3>Scenario simulator</h3>
+      <div class="sub">Toggle a scenario to see how it changes the resolution probability and oil price.</div>
+      <div id="simButtons" class="sim-buttons"></div>
+      <div id="simResult" class="sim-result" style="display:none"></div>
     </section>
 
     <!-- 2. Capability Thesis -->
@@ -97,6 +113,14 @@
           <div class="timeline-vertical" id="branchNoDeal"></div>
         </div>
       </div>
+    </section>
+
+    <!-- 3c. Escalation Ladder -->
+    <section class="panel" style="margin-top:16px">
+      <div class="kicker" style="color:var(--red)">Escalation status</div>
+      <h3>Escalation ladder</h3>
+      <div class="sub">Rungs already crossed vs remaining — how close to catastrophe?</div>
+      <div id="escalationLadder"></div>
     </section>
 
     <!-- 4. Situation Report -->
