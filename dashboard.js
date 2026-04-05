@@ -1508,9 +1508,12 @@ function renderLeadingIndicators() {
     var c = 'var(--muted)';
     if (up) c = risingIsGood ? 'var(--cyan)' : 'var(--red)';
     if (down) c = risingIsGood ? 'var(--red)' : 'var(--cyan)';
-    return '<div style="display:flex;justify-content:space-between;align-items:center;padding:6px 0;border-bottom:1px solid rgba(255,255,255,.04)">' +
-      '<span style="font-size:12px;color:var(--text)">' + ind.metric + '</span>' +
-      '<span style="font-size:14px;font-weight:900;color:' + c + '">' + ind.value + ' ' + (arrows[ind.direction]||'') + '</span></div>';
+    var goodBad = (up && risingIsGood) || (down && !risingIsGood) ? 'good for resolution' : (up && !risingIsGood) || (down && risingIsGood) ? 'bad for resolution' : '';
+    var tagColor = goodBad === 'good for resolution' ? 'good' : goodBad === 'bad for resolution' ? 'bad' : 'warn';
+    return '<div style="display:flex;justify-content:space-between;align-items:center;padding:8px 0;border-bottom:1px solid rgba(255,255,255,.04)">' +
+      '<div><span style="font-size:12px;color:var(--text)">' + ind.metric + '</span>' +
+      (goodBad ? '<br><span class="tag ' + tagColor + '" style="font-size:9px;margin-top:2px">' + goodBad + '</span>' : '') + '</div>' +
+      '<span style="font-size:16px;font-weight:900;color:' + c + '">' + ind.value + ' ' + (arrows[ind.direction]||'') + '</span></div>';
   }).join('');
 }
 
@@ -1518,11 +1521,12 @@ function renderChangelog() {
   var cl = (state.decisionEngine || {}).probabilityChangelog;
   if (!cl || !$('probChangelog')) return;
   $('probChangelog').innerHTML = cl.slice().reverse().map(function(entry) {
-    var deltaStr = entry.delta !== null ? (entry.delta > 0 ? '<span style="color:var(--cyan)">+' + entry.delta + '</span>' : '<span style="color:var(--red)">' + entry.delta + '</span>') : '';
-    return '<div style="padding:5px 0;border-bottom:1px solid rgba(255,255,255,.04);font-size:12px">' +
-      '<span style="color:var(--gold);font-weight:700;margin-right:6px">' + entry.day + '</span>' +
-      '<strong>' + entry.prob + '%</strong> ' + deltaStr +
-      ' <span style="color:var(--soft)">— ' + entry.reason.substring(0, 80) + (entry.reason.length > 80 ? '...' : '') + '</span></div>';
+    var dotColor = entry.delta > 0 ? 'var(--cyan)' : entry.delta < 0 ? 'var(--red)' : 'var(--muted)';
+    var deltaStr = entry.delta !== null ? (entry.delta > 0 ? '+' + entry.delta + '%' : entry.delta + '%') : 'start';
+    return '<div style="display:flex;gap:8px;align-items:flex-start;padding:6px 0;border-bottom:1px solid rgba(255,255,255,.04)">' +
+      '<div style="min-width:8px;margin-top:5px"><div style="width:8px;height:8px;border-radius:50%;background:' + dotColor + '"></div></div>' +
+      '<div style="font-size:12px"><strong>' + entry.prob + '%</strong> <span style="color:' + dotColor + '">' + deltaStr + '</span> <span style="color:var(--muted)">(' + entry.day + ')</span>' +
+      '<div style="color:var(--soft);font-size:11px;margin-top:1px">' + entry.reason.substring(0, 70) + (entry.reason.length > 70 ? '...' : '') + '</div></div></div>';
   }).join('');
 }
 

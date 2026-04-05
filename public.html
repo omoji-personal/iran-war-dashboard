@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Iran War Dashboard</title>
   <meta property="og:title" content="Iran War Dashboard — Predictive Conflict Monitor" />
-  <meta property="og:description" content="Predictive analysis of the 2026 Iran conflict: capability models, convergence vectors, oil shock, scenario probabilities, and daily situation reports." />
+  <meta property="og:description" content="Predictive analysis: capability models, convergence vectors, oil shock, of the 2026 Iran conflict: capability models, convergence vectors, oil shock, scenario probabilities, and daily situation reports." />
   <meta property="og:type" content="website" />
   <meta name="twitter:card" content="summary" />
   <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.1/dist/chart.umd.min.js"></script>
@@ -90,21 +90,20 @@
     </section>
 
     <!-- 3. Engine Analytics -->
-    <section class="grid cols-3" style="margin-top:16px">
-      <div class="panel">
-        <h3>Key trends</h3>
-        <div class="sub">Where each metric is heading (7-day direction)</div>
-        <div id="leadingIndicators"></div>
-      </div>
-      <div class="panel">
-        <h3>How our estimate changed</h3>
-        <div class="sub">Daily probability shifts and why</div>
-        <div id="probChangelog"></div>
-      </div>
-      <div class="panel">
-        <h3>What would change things?</h3>
-        <div class="sub">Which factor has the most impact on the outcome</div>
-        <div id="sensitivityBars"></div>
+    <section class="panel" style="margin-top:16px">
+      <div class="grid cols-3" style="gap:24px">
+        <div>
+          <h3 style="margin-bottom:12px">Key trends</h3>
+          <div id="leadingIndicators"></div>
+        </div>
+        <div>
+          <h3 style="margin-bottom:12px">Estimate history</h3>
+          <div id="probChangelog"></div>
+        </div>
+        <div>
+          <h3 style="margin-bottom:12px">What would change things?</h3>
+          <div id="sensitivityBars"></div>
+        </div>
       </div>
     </section>
 
@@ -224,13 +223,7 @@
 
 
 
-    <!-- 16. Timeline + Theory Eval -->
-    <section class="grid cols-2" style="margin-top:16px">
-      <div class="panel"><h3 data-i18n="hTimeline">Projected timeline</h3><ul class="list" id="timeline"></ul></div>
-      <div class="panel"><h3 data-i18n="hTheoryEval">Working theory evaluation</h3><ul class="list" id="theoryEval"></ul></div>
-    </section>
-
-    <!-- 17. Event Log -->
+    <!-- 16. Event Log -->
     <section class="panel" style="margin-top:16px">
       <h3 data-i18n="hLog">Event log</h3><div class="sub" data-i18n="subLog">Newest first.</div>
       <div class="table-wrap"><table><thead><tr>

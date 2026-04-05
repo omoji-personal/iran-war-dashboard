@@ -3737,7 +3737,7 @@
     ],
     "sensitivity": [
       {
-        "input": "Deal availability",
+        "input": "If a credible deal proposal emerges",
         "baseValue": 0.15,
         "perturbedValue": 0.35,
         "baseProb": 8,
@@ -3746,7 +3746,7 @@
         "interpretation": "A credible counter-proposal from Iran would have the largest single impact on resolution probability."
       },
       {
-        "input": "Iran acceptance",
+        "input": "If Iran signals willingness to negotiate",
         "baseValue": 0.1,
         "perturbedValue": 0.3,
         "baseProb": 8,
@@ -3755,7 +3755,7 @@
         "interpretation": "If Iran signals willingness to negotiate (e.g., Hormuz opening offer), probability triples. This is the binding constraint."
       },
       {
-        "input": "US exit pressure",
+        "input": "If US domestic pressure increases",
         "baseValue": 0.55,
         "perturbedValue": 0.75,
         "baseProb": 8,
@@ -3764,7 +3764,7 @@
         "interpretation": "US already wants out. More pressure doesn't help much because the bottleneck is deal + Iran acceptance, not US willingness."
       },
       {
-        "input": "Escalation proximity",
+        "input": "If escalation risk increases",
         "baseValue": 0.75,
         "perturbedValue": 0.95,
         "baseProb": 8,
@@ -3773,7 +3773,7 @@
         "interpretation": "Escalation doesn't increase resolution — it changes the TYPE of resolution (forced vs negotiated). Impact on probability is indirect."
       },
       {
-        "input": "Trump follows through",
+        "input": "If Trump follows through on threat",
         "baseValue": 0.3,
         "perturbedValue": 0.7,
         "baseProb": 8,
