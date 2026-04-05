@@ -601,6 +601,111 @@ function renderCharts() {
 }
 
 /* ============================================================
+   DECISION ENGINE — Algorithmic computation from raw indicators
+   ============================================================ */
+
+// Compute all 3 decision conditions from raw indicators for a given day index
+function computeEngineForDay(dayIdx) {
+  var de = state.decisionEngine || {};
+  var di = de.dailyIndicators || {};
+  var ds = state.dailySeries || {};
+  if (!di.labels || dayIdx < 0 || dayIdx >= di.labels.length) return null;
+
+  var d1Missiles = ds.missiles[0] || 480;
+  var preWarOil = 65;
+  var preWarHormuz = 62;
+
+  // Raw inputs for this day
+  var launchRate = di.launchRate[dayIdx] || 0;
+  var brent = di.oilBrent[dayIdx] || 65;
+  var hormuz = di.hormuzVessels[dayIdx] || 0;
+  var kia = di.usKIA[dayIdx] || 0;
+  var gas = di.gasPrice[dayIdx] || 3;
+  var approval = di.approvalWrong[dayIdx] || 35;
+  var mediators = di.mediatorMeetings[dayIdx] || 0;
+  var coalition = di.coalitionScore[dayIdx] || 9;
+  var day = dayIdx + 1;
+
+  // === DEAL AVAILABILITY (0-1) ===
+  // Mediator activity (0-1): 0 meetings=0, 5+=1
+  var mediatorScore = Math.min(mediators / 5, 1);
+  // Proposal exists and not rejected? Use static flag for now, improve with coded events later
+  var proposalScore = (de.indicators || {}).formalProposalsRejected > 0 ? 0.1 : 0.4;
+  var faceSaving = (de.indicators || {}).facesSavingDealExists ? 0.8 : 0.05;
+  var dealScore = mediatorScore * 0.3 + proposalScore * 0.3 + faceSaving * 0.4;
+  dealScore = Math.max(0.02, Math.min(dealScore, 0.95));
+
+  // === US EXIT PRESSURE (0-1) ===
+  var approvalPressure = Math.min((approval - 30) / 40, 1); // 30%=0, 70%=1
+  var kiaPressure = Math.min(kia / 30, 1); // 30 KIA = max
+  var gasPressure = Math.min((gas - 3) / 3, 1); // $3=0, $6=1
+  var durationFatigue = Math.min(day / 60, 1); // 60 days = max
+  var exitNarrative = (de.indicators || {}).facesSavingDealExists ? 0.6 : 0.2;
+  var usExitScore = approvalPressure * 0.25 + kiaPressure * 0.2 + gasPressure * 0.2 + durationFatigue * 0.15 + exitNarrative * 0.1 + (1 - coalition/10) * 0.1;
+  usExitScore = Math.max(0.05, Math.min(usExitScore, 0.95));
+
+  // === IRAN ACCEPTANCE (0-1) ===
+  var rateDrop = 1 - (launchRate / d1Missiles); // Higher = more depleted = more pressure to accept
+  var hormuzLeverage = 1 - (hormuz / preWarHormuz); // Higher = more leverage = LESS reason to accept
+  var regimePressure = Math.min((di.usKIA[dayIdx] > 0 ? 0.3 : 0) + rateDrop * 0.3, 0.6);
+  var rejectedCeasefire = (de.indicators || {}).iranRejectedCeasefire ? 0.05 : 0.3;
+  var iranScore = rejectedCeasefire * 0.4 + regimePressure * 0.3 + (1 - hormuzLeverage) * 0.2 + dealScore * 0.1;
+  iranScore = Math.max(0.02, Math.min(iranScore, 0.95));
+
+  // === ESCALATION PROXIMITY (0-1) ===
+  var deadlineDays = (de.indicators || {}).daysToDeadline;
+  if (deadlineDays === undefined || deadlineDays === null) deadlineDays = 30;
+  var powerGridProx = Math.max(0, 1 - deadlineDays / 7);
+  var nuclearProx = ((de.indicators || {}).nuclearFacilitiesStruck || 0) / ((de.indicators || {}).nuclearFacilitiesTotal || 6);
+  var groundProx = Math.min(((de.indicators || {}).groundTroopsDeployed || 0) / 15000, 1);
+  var chokeProx = (de.indicators || {}).babAlMandabThreatened ? 0.6 : 0;
+  var escScore = Math.max(powerGridProx, nuclearProx, groundProx, chokeProx);
+
+  // === TRUMP FOLLOW-THROUGH ===
+  var tp = de.trumpPattern || {};
+  var trumpFollows = tp.posteriorFollowThrough || 0.30;
+
+  // === OUTCOME PROBABILITIES ===
+  var pNegotiated = dealScore * usExitScore * iranScore;
+  // Escalation = P(deadline passes) × P(trump follows through) × P(no deal)
+  var pEscalation = escScore * trumpFollows * (1 - pNegotiated);
+  var pProtracted = Math.max(0, 1 - pNegotiated - pEscalation - 0.17);
+  var pIntervention = 0.10;
+  var pOther = Math.max(0, 1 - pNegotiated - pEscalation - pProtracted - pIntervention);
+
+  // Normalize to 100%
+  var total = pNegotiated + pEscalation + pProtracted + pIntervention + pOther;
+  if (total > 0) {
+    pNegotiated /= total; pEscalation /= total; pProtracted /= total; pIntervention /= total; pOther /= total;
+  }
+
+  // === ENSEMBLE ===
+  var modelProb = Math.round(pNegotiated * 100);
+  var cal = de.calibration || {};
+  var marketProb = cal.polymarketCeasefire || modelProb;
+  var baseRate = (cal.historicalBaseRate || {}).value || 35;
+  var ensemble = Math.round(modelProb * 0.4 + marketProb * 0.3 + baseRate * 0.3);
+
+  return {
+    dealScore: dealScore,
+    usExitScore: usExitScore,
+    iranScore: iranScore,
+    escScore: escScore,
+    trumpFollows: trumpFollows,
+    pNegotiated: pNegotiated,
+    pEscalation: pEscalation,
+    pProtracted: pProtracted,
+    pIntervention: pIntervention,
+    pOther: pOther,
+    modelProb: modelProb,
+    marketProb: marketProb,
+    baseRate: baseRate,
+    ensemble: ensemble,
+    day: day
+  };
+}
+
+/* ============================================================
    NEW RENDER FUNCTIONS — Predictive Section
    ============================================================ */
 
@@ -632,26 +737,16 @@ function renderPredictiveSection() {
 }
 
 function renderDecisionEngine(de) {
-  if (!de || !de.outcomeProbabilities) {
-    // Fallback to old convergence display
-    var outcome = (state.predictive || {}).warOutcome || {};
-    var score = outcome.convergenceScore || 0;
-    var prob = Math.round(100 / (1 + Math.exp(-1.2 * (score - 5))));
-    if ($('convergenceScore')) $('convergenceScore').textContent = prob + '%';
-    if ($('convergenceRaw')) $('convergenceRaw').textContent = score + '/10';
-    if ($('probBar')) { $('probBar').style.width = prob + '%'; $('probBar').style.background = prob >= 70 ? 'var(--cyan)' : prob >= 40 ? 'var(--gold)' : 'var(--red)'; }
-    return;
-  }
+  // Compute from algorithmic engine
+  var maxDay = (state.dailySeries.labels || []).length;
+  var eng = computeEngineForDay(maxDay - 1);
+  if (!eng) return;
 
-  var op = de.outcomeProbabilities;
-  var conf = de.confidence || {};
-  var cal = de.calibration || {};
-
-  // Ensemble probability (weighted: model 40%, market 30%, base rate 30%)
-  var modelProb = Math.round((op.negotiatedResolution || 0) * 100);
-  var marketProb = cal.polymarketCeasefire || modelProb;
-  var baseRate = (cal.historicalBaseRate || {}).value || modelProb;
-  var ensembleProb = Math.round(modelProb * 0.4 + marketProb * 0.3 + baseRate * 0.3);
+  var ensembleProb = eng.ensemble;
+  var modelProb = eng.modelProb;
+  var marketProb = eng.marketProb;
+  var baseRate = eng.baseRate;
+  var conf = (de || {}).confidence || {};
   var low = (conf.resolutionProbability || {}).low || Math.max(ensembleProb - 12, 2);
   var high = (conf.resolutionProbability || {}).high || Math.min(ensembleProb + 12, 95);
 
@@ -663,42 +758,38 @@ function renderDecisionEngine(de) {
   }
   if ($('convergenceRaw')) $('convergenceRaw').textContent = low + '% – ' + high + '% range';
 
-  // Decision conditions breakdown
+  // Decision conditions breakdown (from computed engine)
   if ($('decisionConditions')) {
-    var deal = de.dealAvailability || {};
-    var us = de.usExitPressure || {};
-    var iran = de.iranAcceptance || {};
-    var esc = de.escalationProximity || {};
-
-    function condBar(label, score, reasoning) {
+    function condBar(label, score) {
       var pct = Math.round((score || 0) * 100);
       var color = pct >= 60 ? 'var(--cyan)' : pct >= 30 ? 'var(--gold)' : 'var(--red)';
-      var reasonText = currentLang === 'fa' ? (reasoning + '_fa' in (deal) ? deal[reasoning + '_fa'] : '') : '';
       return '<div class="cond-row">' +
         '<div class="cond-header"><span class="cond-label">' + label + '</span><span class="cond-pct" style="color:' + color + '">' + pct + '%</span></div>' +
         '<div class="prob-track" style="margin:4px 0"><div class="prob-bar" style="width:' + pct + '%;background:' + color + '"></div></div>' +
         '</div>';
     }
 
+    var tp = (de || {}).trumpPattern || {};
     $('decisionConditions').innerHTML =
-      condBar(currentLang === 'fa' ? 'وجود معامله قابل قبول' : 'Viable deal exists', deal.score, 'reasoning') +
-      condBar(currentLang === 'fa' ? 'فشار خروج آمریکا' : 'US exit pressure', us.score, 'reasoning') +
-      condBar(currentLang === 'fa' ? 'پذیرش ایران' : 'Iran acceptance', iran.score, 'reasoning') +
-      condBar(currentLang === 'fa' ? 'نزدیکی تشدید' : 'Escalation proximity', esc.score, 'reasoning') +
+      condBar(currentLang === 'fa' ? 'وجود معامله قابل قبول' : 'Viable deal exists', eng.dealScore) +
+      condBar(currentLang === 'fa' ? 'فشار خروج آمریکا' : 'US exit pressure', eng.usExitScore) +
+      condBar(currentLang === 'fa' ? 'پذیرش ایران' : 'Iran acceptance', eng.iranScore) +
+      condBar(currentLang === 'fa' ? 'نزدیکی تشدید' : 'Escalation proximity', eng.escScore) +
+      condBar(currentLang === 'fa' ? 'ترامپ عمل می‌کند' : 'Trump follows through (' + (tp.blinkCount || 0) + ' prior blinks)', eng.trumpFollows) +
       '<div class="cond-formula">' +
-        (currentLang === 'fa' ? 'احتمال حل = معامله × خروج × پذیرش = ' : 'P(resolution) = Deal × US exit × Iran accept = ') +
-        Math.round((deal.score||0)*100) + '% × ' + Math.round((us.score||0)*100) + '% × ' + Math.round((iran.score||0)*100) + '% = ' + modelProb + '%' +
+        'P(resolution) = Deal × US × Iran = ' +
+        Math.round(eng.dealScore*100) + '% × ' + Math.round(eng.usExitScore*100) + '% × ' + Math.round(eng.iranScore*100) + '% = ' + modelProb + '%' +
       '</div>';
   }
 
-  // Outcome breakdown bars
+  // Outcome breakdown bars (from computed engine)
   if ($('outcomeBreakdown')) {
     var outcomes = [
-      { label: currentLang === 'fa' ? 'تشدید (نیروگاه ۶ آوریل)' : 'Escalation (Apr 6 power grid)', pct: Math.round((op.escalationCatastrophe||0)*100), color: 'var(--red)' },
-      { label: currentLang === 'fa' ? 'ادامه فرسایشی' : 'Protracted continuation', pct: Math.round((op.protractedContinuation||0)*100), color: 'var(--orange)' },
-      { label: currentLang === 'fa' ? 'حل‌وفصل مذاکره‌ای' : 'Negotiated resolution', pct: Math.round((op.negotiatedResolution||0)*100), color: 'var(--cyan)' },
-      { label: currentLang === 'fa' ? 'مداخله بین‌المللی' : 'International intervention', pct: Math.round((op.internationalIntervention||0)*100), color: 'var(--blue)' },
-      { label: currentLang === 'fa' ? 'سایر' : 'Other', pct: Math.round((op.other||0)*100), color: 'var(--muted)' }
+      { label: currentLang === 'fa' ? 'تشدید (نیروگاه ۶ آوریل)' : 'Escalation (Apr 6 power grid)', pct: Math.round(eng.pEscalation*100), color: 'var(--red)' },
+      { label: currentLang === 'fa' ? 'ادامه فرسایشی' : 'Protracted continuation', pct: Math.round(eng.pProtracted*100), color: 'var(--orange)' },
+      { label: currentLang === 'fa' ? 'حل‌وفصل مذاکره‌ای' : 'Negotiated resolution', pct: Math.round(eng.pNegotiated*100), color: 'var(--cyan)' },
+      { label: currentLang === 'fa' ? 'مداخله بین‌المللی' : 'International intervention', pct: Math.round(eng.pIntervention*100), color: 'var(--blue)' },
+      { label: currentLang === 'fa' ? 'سایر' : 'Other', pct: Math.round(eng.pOther*100), color: 'var(--muted)' }
     ];
     outcomes.sort(function(a, b) { return b.pct - a.pct; });
     $('outcomeBreakdown').innerHTML = outcomes.map(function(o) {
@@ -1325,6 +1416,8 @@ function buildSectionNav() {
     { group: 'Prediction', items: [
       { q: '.prediction-hero', label: 'Forecast & Decision Engine' },
       { q: '#simButtons', label: 'Scenario Simulator', up: 1 },
+      { q: '#leadingIndicators', label: 'Leading Indicators', up: 1 },
+      { q: '#sensitivityTable', label: 'Sensitivity Analysis', up: 1 },
       { q: '[data-i18n="kickerThesis"]', label: 'Capability Thesis', up: 1 },
       { q: '#stockpileCards', label: 'Stockpile Burn Rate', up: 1 },
       { q: '[data-i18n="kickerVectors"]', label: 'Pressure Index', up: 1 },
@@ -1391,6 +1484,46 @@ function buildSectionNav() {
    Scenario Simulator
    ============================================================ */
 var activeSimScenario = null;
+
+function renderSensitivity() {
+  var sens = (state.decisionEngine || {}).sensitivity;
+  if (!sens || !$('sensitivityTable')) return;
+  $('sensitivityTable').innerHTML = '<table class="hub-matrix"><thead><tr><th>Input</th><th>Current</th><th>If +20pp</th><th>Impact</th><th>Interpretation</th></tr></thead><tbody>' +
+    sens.map(function(s) {
+      var impactColor = s.impact >= 10 ? 'score-high' : s.impact >= 3 ? 'score-mid' : 'score-low';
+      return '<tr><td><strong>' + s.input + '</strong></td>' +
+        '<td class="score-cell">' + Math.round(s.baseValue*100) + '%</td>' +
+        '<td class="score-cell">' + Math.round(s.perturbedValue*100) + '%</td>' +
+        '<td class="score-cell ' + impactColor + '">+' + s.impact + 'pp</td>' +
+        '<td style="font-size:11px;color:var(--soft)">' + s.interpretation + '</td></tr>';
+    }).join('') + '</tbody></table>';
+}
+
+function renderLeadingIndicators() {
+  var li = (state.decisionEngine || {}).leadingIndicators;
+  if (!li || !$('leadingIndicators')) return;
+  var arrows = { accelerating: '&#9650;&#9650;', rising: '&#9650;', steady: '&#9654;', falling: '&#9660;', decelerating: '&#9660;&#9660;' };
+  var colors = { accelerating: 'var(--red)', rising: 'var(--gold)', steady: 'var(--muted)', falling: 'var(--cyan)', decelerating: 'var(--cyan)' };
+  $('leadingIndicators').innerHTML = li.map(function(ind) {
+    return '<div style="display:flex;justify-content:space-between;align-items:center;padding:8px 0;border-bottom:1px solid rgba(255,255,255,.04)">' +
+      '<div><strong style="font-size:13px">' + ind.metric + '</strong><div style="font-size:11px;color:var(--soft);margin-top:2px">' + ind.signal + '</div></div>' +
+      '<div style="text-align:right"><span style="font-size:18px;font-weight:900">' + ind.value + '</span>' +
+      '<div style="color:' + (colors[ind.direction]||'var(--muted)') + ';font-size:12px;font-weight:700">' + (arrows[ind.direction]||'') + ' ' + ind.direction + '</div></div></div>';
+  }).join('');
+}
+
+function renderChangelog() {
+  var cl = (state.decisionEngine || {}).probabilityChangelog;
+  if (!cl || !$('probChangelog')) return;
+  $('probChangelog').innerHTML = cl.slice().reverse().map(function(entry) {
+    var deltaStr = entry.delta !== null ? (entry.delta > 0 ? '<span style="color:var(--cyan)">+' + entry.delta + '%</span>' : '<span style="color:var(--red)">' + entry.delta + '%</span>') : '';
+    return '<div style="display:flex;gap:12px;padding:6px 0;border-bottom:1px solid rgba(255,255,255,.04)">' +
+      '<strong style="min-width:36px;color:var(--gold)">' + entry.day + '</strong>' +
+      '<span style="min-width:40px;font-weight:800">' + entry.prob + '%</span>' +
+      '<span style="min-width:40px">' + deltaStr + '</span>' +
+      '<span style="font-size:12px;color:var(--soft)">' + entry.reason + '</span></div>';
+  }).join('');
+}
 
 function renderSimulator() {
   var sim = state.scenarioSimulator;
@@ -1514,7 +1647,7 @@ function updateMetricsForDay(day) {
   var maxDay = ds.labels.length;
   var isLive = day === maxDay;
 
-  // If live day, restore the original rendered values and return
+  // If live day, restore full render
   if (isLive) {
     renderDecisionEngine(state.decisionEngine || {});
     var metricsArr = state.metrics || [];
@@ -1524,6 +1657,17 @@ function updateMetricsForDay(day) {
       }).join('');
     }
     return;
+  }
+
+  // Historical day: recompute engine
+  var histEng = computeEngineForDay(idx);
+  if (histEng && $('convergenceScore')) {
+    $('convergenceScore').textContent = histEng.ensemble + '%';
+    if ($('convergenceRaw')) $('convergenceRaw').textContent = histEng.modelProb + '% model';
+    if ($('probBar')) {
+      $('probBar').style.width = histEng.ensemble + '%';
+      $('probBar').style.background = histEng.ensemble >= 50 ? 'var(--cyan)' : histEng.ensemble >= 25 ? 'var(--gold)' : 'var(--red)';
+    }
   }
 
   // Update metric cards with historical values
@@ -1597,6 +1741,9 @@ function render() {
   renderCharts();
   renderPredictiveSection();
   renderSimulator();
+  renderSensitivity();
+  renderLeadingIndicators();
+  renderChangelog();
   renderStockpile();
   renderAdditionalCharts();
   renderOilBands();

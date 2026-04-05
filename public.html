@@ -38,6 +38,14 @@
   </main>
 
   <template id="dashboardTemplate">
+    <!-- About -->
+    <section class="panel" style="margin-bottom:16px;border-color:var(--gold);background:linear-gradient(135deg,rgba(255,209,102,.04),rgba(99,179,255,.04))">
+      <h3 style="color:var(--gold);margin-bottom:8px">How this dashboard works</h3>
+      <div style="font-size:13px;line-height:1.65;color:var(--soft)">
+        This dashboard predicts how the 2026 Iran war is most likely to end by analyzing <strong style="color:var(--text)">military data</strong> (daily missile/drone launches, stockpile estimates, aircraft losses), <strong style="color:var(--text)">economic signals</strong> (oil prices, Hormuz shipping traffic, gas prices), <strong style="color:var(--text)">political indicators</strong> (US approval ratings, casualty counts, coalition support), and <strong style="color:var(--text)">diplomatic activity</strong> (mediator meetings, proposals, ceasefire rejections). The core engine models war ending as three conditions that must align simultaneously: a viable deal must exist, the US must decide to take it, and Iran must accept it. The resolution probability is calibrated against prediction markets and historical conflict base rates. Data is sourced from CENTCOM, UAE MoD, IDF, IRGC statements, wire services (Reuters, AP), major outlets (CNN, AJ, BBC), CNBC/Bloomberg for oil, and open-source intelligence. Updated twice daily.
+      </div>
+    </section>
+
     <!-- 0. Timeline Scrubber -->
     <div class="scrubber-wrap" id="scrubberWrap" style="display:none">
       <label class="scrubber-label">Rewind to day: <strong id="scrubberDay"></strong></label>
@@ -83,6 +91,25 @@
       <div class="sub">Toggle a scenario to see how it changes the resolution probability and oil price.</div>
       <div id="simButtons" class="sim-buttons"></div>
       <div id="simResult" class="sim-result" style="display:none"></div>
+    </section>
+
+    <!-- 1c. Sensitivity Analysis + Leading Indicators + Changelog -->
+    <section class="grid cols-2" style="margin-top:16px">
+      <div class="panel">
+        <h3>Leading indicators</h3>
+        <div class="sub">7-day trend direction for key metrics — where is momentum headed?</div>
+        <div id="leadingIndicators"></div>
+      </div>
+      <div class="panel">
+        <h3>Probability changelog</h3>
+        <div class="sub">How the resolution probability has changed each day and why.</div>
+        <div id="probChangelog"></div>
+      </div>
+    </section>
+    <section class="panel" style="margin-top:16px">
+      <h3>Sensitivity analysis</h3>
+      <div class="sub">Which input has the most leverage on the outcome? Each perturbed by +20 percentage points.</div>
+      <div class="table-wrap" id="sensitivityTable"></div>
     </section>
 
     <!-- 2. Capability Thesis -->
