@@ -427,20 +427,13 @@ html[dir="rtl"] .section-nav { right: auto; left: 0; }
 }
 .section-nav .nav-group:first-child { margin-top: 0; }
 
-/* --- Event Log Table — truncated cells --- */
+/* --- Event Log Table — truncated cells with tooltip on hover --- */
 .table-wrap td {
   max-width: 220px;
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
-}
-.table-wrap td:hover {
-  white-space: normal;
-  overflow: visible;
-  max-width: none;
-  background: rgba(15,28,49,.98);
-  position: relative;
-  z-index: 1;
+  cursor: default;
 }
 .table-wrap td:first-child {
   white-space: nowrap;

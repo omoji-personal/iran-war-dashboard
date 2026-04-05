@@ -425,8 +425,12 @@ function setText() {
   if ($('dailyRows') && state.dailyRows) {
     var rows = state.dailyRows.slice().sort(function(a, b) { return parseLogDate(b.date) - parseLogDate(a.date); });
     $('dailyRows').innerHTML = rows.map(function(r) {
+      var p = r.primary || '\u2014', c = r.capability || '\u2014', co = r.cost || '\u2014', a = r.assessment || '\u2014';
       return '<tr><td>' + r.date + '</td><td><span class="pill missile">' + (r.missiles != null ? r.missiles : '\u2014') + '</span></td><td><span class="pill drone">' + (r.drones != null ? r.drones : '\u2014') + '</span></td>' +
-        '<td>' + (r.primary || '\u2014') + '</td><td>' + (r.capability || '\u2014') + '</td><td>' + (r.cost || '\u2014') + '</td><td>' + (r.assessment || '\u2014') + '</td></tr>';
+        '<td title="' + p.replace(/"/g, '&quot;') + '">' + p + '</td>' +
+        '<td title="' + c.replace(/"/g, '&quot;') + '">' + c + '</td>' +
+        '<td title="' + co.replace(/"/g, '&quot;') + '">' + co + '</td>' +
+        '<td title="' + a.replace(/"/g, '&quot;') + '">' + a + '</td></tr>';
     }).join('');
   }
 

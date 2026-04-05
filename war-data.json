@@ -2928,9 +2928,10 @@
         "detail": "IAEA Grossi condemns Bushehr strike. 163 personnel evacuated to Russia = Russia directly affected. Iran formally rejects ceasefire. NPR: 7 US aircraft lost contradicts 'air dominance.' Coalition narrative crumbling while April 6 approaches."
       },
       {
-        "day": "D37",
-        "event": "Kuwait 2 power/water shut + Shuwaikh + Ministries. Bahrain BAPCO. Iran civilian infra targeting.",
-        "event_fa": "Kuwait 2 power + Bahrain. Civilian infra."
+        "date": "D37",
+        "actor": "Kuwait/Bahrain",
+        "type": "fracture",
+        "detail": "Kuwait 2 power/water shut + Shuwaikh + Ministries. Bahrain BAPCO. Iran civilian infra targeting."
       }
     ]
   },
