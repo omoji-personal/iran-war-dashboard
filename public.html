@@ -42,8 +42,15 @@
     <section class="prediction-hero">
       <div class="kicker" data-i18n="kickerPrediction">War outcome forecast</div>
       <div class="outcome-forecast" id="outcomeForecast"></div>
-      <div class="convergence-badge" id="convergenceBadge">
-        <span data-i18n="convergence">Resolution pressure:</span> <span class="score" id="convergenceScore"></span><span>/10</span>
+      <div class="prob-display">
+        <div class="prob-header">
+          <span class="prob-label">Probability of resolution within 3 weeks</span>
+          <span class="prob-pct" id="convergenceScore"></span>
+        </div>
+        <div class="prob-track"><div class="prob-bar" id="probBar"></div></div>
+        <div class="prob-meta">
+          <span>Pressure index: <strong id="convergenceRaw"></strong></span>
+        </div>
       </div>
       <div id="convergenceInterpretation" class="sub"></div>
       <div class="metric-grid" id="metrics"></div>
@@ -150,8 +157,8 @@
 
     <!-- 8b. Coalition Fracture Index -->
     <section class="panel" style="margin-top:16px">
-      <h3>Coalition fracture index</h3>
-      <div class="sub">Is the US-led coalition holding or crumbling? Cohesion score 0-10 over time.</div>
+      <h3>War support index</h3>
+      <div class="sub">US-led coalition cohesion — tracking ally defections, diplomatic breaks, and support erosion.</div>
       <div class="chart-box" style="height:280px"><canvas id="coalitionChart"></canvas></div>
       <div id="coalitionEvents" style="margin-top:12px"></div>
     </section>

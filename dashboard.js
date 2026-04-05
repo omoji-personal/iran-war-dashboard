@@ -614,8 +614,18 @@ function renderPredictiveSection() {
   var forecastText = currentLang === 'fa' ? (outcome.prediction_fa || outcome.prediction || '') : (outcome.prediction || '');
   if ($('outcomeForecast')) $('outcomeForecast').innerHTML = forecastText;
 
-  // Convergence score
-  if ($('convergenceScore')) $('convergenceScore').textContent = outcome.convergenceScore || '\u2014';
+  // Resolution probability (sigmoid of convergence score)
+  var score = outcome.convergenceScore || 0;
+  var prob = Math.round(100 / (1 + Math.exp(-1.2 * (score - 5))));
+  if ($('convergenceScore')) $('convergenceScore').textContent = prob + '%';
+  if ($('convergenceRaw')) $('convergenceRaw').textContent = score + '/10';
+  if ($('probBar')) $('probBar').style.width = prob + '%';
+
+  // Color the bar based on probability
+  if ($('probBar')) {
+    $('probBar').style.background = prob >= 70 ? 'var(--cyan)' : prob >= 40 ? 'var(--gold)' : 'var(--red)';
+  }
+
   var interpText = currentLang === 'fa' ? (outcome.convergenceInterpretation_fa || '') : (outcome.convergenceInterpretation || '');
   if ($('convergenceInterpretation')) $('convergenceInterpretation').textContent = interpText;
 
@@ -1261,7 +1271,7 @@ function buildSectionNav() {
     ]},
     { group: 'Geopolitical', items: [
       { q: '#diplomacyBox', label: 'Diplomacy', up: 1 },
-      { q: '#coalitionChart', label: 'Coalition Fracture', up: 1 },
+      { q: '#coalitionChart', label: 'War Support Index', up: 1 },
       { q: '#decapitationList', label: 'Decapitation Tracker', up: 1 },
       { q: '#hormuzBox', label: 'Hormuz & Shipping', up: 1 }
     ]},
