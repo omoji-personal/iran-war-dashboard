@@ -467,6 +467,34 @@ html[dir="rtl"] .vector-grid { direction: rtl; }
 html[dir="rtl"] .metric-grid { direction: rtl; }
 html[dir="rtl"] .chips { flex-direction: row-reverse; }
 
+/* --- Change Banner --- */
+.change-banner {
+  background: rgba(255,209,102,.08);
+  border: 1px solid var(--gold);
+  border-radius: 12px;
+  padding: 10px 16px;
+  margin-bottom: 16px;
+  font-size: 13px;
+  color: var(--text);
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 4px;
+}
+.change-dot {
+  display: inline-block;
+  width: 8px;
+  height: 8px;
+  background: var(--gold);
+  border-radius: 50%;
+  margin-right: 8px;
+  animation: pulse-dot 1.5s ease-in-out infinite;
+}
+@keyframes pulse-dot {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.3; }
+}
+
 /* --- Responsive Breakpoints --- */
 @media(max-width:1180px) {
   .hero,.cols-2,.cols-3 { grid-template-columns: 1fr; }

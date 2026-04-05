@@ -936,22 +936,34 @@ function renderHormuzTransit() {
    NEW RENDER FUNCTIONS — Deadline, Coalition, Decapitation
    ============================================================ */
 
+function tickDeadline() {
+  var cd = state.ceasefireDeadline;
+  if (!cd || !$('deadlineCountdown')) return;
+  var deadline = new Date(cd.deadline);
+  var now = new Date();
+  var diff = deadline - now;
+  if (diff <= 0) {
+    $('deadlineCountdown').innerHTML = '<span style="color:var(--red)">DEADLINE PASSED</span>';
+    return;
+  }
+  var days = Math.floor(diff / 864e5);
+  var hours = Math.floor((diff % 864e5) / 36e5);
+  var mins = Math.floor((diff % 36e5) / 6e4);
+  var secs = Math.floor((diff % 6e4) / 1e3);
+  var label = currentLang === 'fa' ? (cd.label_fa || cd.label) : cd.label;
+  $('deadlineCountdown').innerHTML = '<span style="color:var(--red)">' + days + 'd ' + hours + 'h ' + mins + 'm ' + secs + 's</span> <span style="font-size:14px;color:var(--muted)">' + (currentLang === 'fa' ? 'تا ' : 'until ') + label + '</span>';
+}
+
+var deadlineInterval = null;
+
 function renderDeadline() {
   var cd = state.ceasefireDeadline;
   if (!cd || !$('deadlineCountdown')) return;
 
-  var deadline = new Date(cd.deadline);
-  var now = new Date();
-  var diff = deadline - now;
-  var days = Math.floor(diff / 864e5);
-  var hours = Math.floor((diff % 864e5) / 36e5);
-  var mins = Math.floor((diff % 36e5) / 6e4);
-
-  if (diff <= 0) {
-    $('deadlineCountdown').innerHTML = '<span style="color:var(--red)">DEADLINE PASSED</span>';
-  } else {
-    $('deadlineCountdown').innerHTML = '<span style="color:var(--red)">' + days + 'd ' + hours + 'h ' + mins + 'm</span> <span style="font-size:14px;color:var(--muted)">until ' + cd.label + '</span>';
-  }
+  // Tick immediately then every second
+  tickDeadline();
+  if (deadlineInterval) clearInterval(deadlineInterval);
+  deadlineInterval = setInterval(tickDeadline, 1000);
 
   var ctx = currentLang === 'fa' ? (cd.context_fa || cd.context) : cd.context;
   if ($('deadlineContext')) $('deadlineContext').textContent = ctx || '';
@@ -1300,6 +1312,7 @@ function render() {
   renderExpandedIranfarhang();
   renderExpandedKIP();
   buildSectionNav();
+  markChangedSections();
 }
 
 async function loadDashboardData() {
@@ -1317,3 +1330,62 @@ async function loadDashboardData() {
 }
 
 loadDashboardData();
+
+/* ============================================================
+   "What Changed" badges — highlight updated sections
+   ============================================================ */
+function markChangedSections() {
+  try {
+    var lastVisit = localStorage.getItem('iwd_lastData');
+    if (!lastVisit) {
+      // First visit — save current state, no badges
+      localStorage.setItem('iwd_lastData', JSON.stringify(getDataFingerprint()));
+      return;
+    }
+    var prev = JSON.parse(lastVisit);
+    var curr = getDataFingerprint();
+
+    // Compare each section and add badge if changed
+    var changes = [];
+    if (prev.day !== curr.day) changes.push({ label: 'Day ' + curr.day, sections: ['sec-0'] });
+    if (prev.missiles !== curr.missiles) changes.push({ label: 'Launch data', q: '#missileChart' });
+    if (prev.brent !== curr.brent) changes.push({ label: 'Oil', q: '#oilOverlayChart' });
+    if (prev.convergence !== curr.convergence) changes.push({ label: 'Vectors', q: '#vectorChart' });
+    if (prev.escalation !== curr.escalation) changes.push({ label: 'Scenarios', q: '#scenarioProbs' });
+    if (prev.sitrep !== curr.sitrep) changes.push({ label: 'SITREP', q: '#theoryBox' });
+    if (prev.hormuz !== curr.hormuz) changes.push({ label: 'Hormuz', q: '#hormuzTransitChart' });
+
+    if (changes.length > 0) {
+      // Show a banner
+      var banner = document.createElement('div');
+      banner.className = 'change-banner';
+      banner.innerHTML = '<span class="change-dot"></span> Updated since your last visit: ' +
+        changes.map(function(c) { return '<strong>' + c.label + '</strong>'; }).join(', ') +
+        ' <button onclick="this.parentElement.remove();localStorage.setItem(\'iwd_lastData\',JSON.stringify(getDataFingerprint()))" style="margin-left:8px;background:none;border:1px solid var(--gold);color:var(--gold);border-radius:8px;padding:3px 10px;cursor:pointer;font-size:11px">Dismiss</button>';
+      var shell = document.getElementById('mainShell');
+      if (shell) shell.insertBefore(banner, shell.firstChild);
+    }
+
+    // Save current state
+    localStorage.setItem('iwd_lastData', JSON.stringify(curr));
+  } catch(e) { /* localStorage unavailable */ }
+}
+
+function getDataFingerprint() {
+  var ds = state.dailySeries || {};
+  var oil = state.oil || {};
+  var wo = (state.predictive || {}).warOutcome || {};
+  var sp = state.scenarioProbabilities || [];
+  return {
+    day: (ds.labels || []).length,
+    missiles: (ds.missiles || []).slice(-1)[0] || 0,
+    brent: (oil.brent || []).slice(-1)[0] || 0,
+    convergence: wo.convergenceScore || 0,
+    escalation: sp.length > 0 ? sp[0].prob : '',
+    sitrep: ((state.sitrep || [])[0] || '').substring(0, 50),
+    hormuz: ((state.hormuzTransit || {}).vessels || []).slice(-1)[0] || 0,
+    updated: (state.meta || {}).lastUpdated || ''
+  };
+}
+// Make accessible for dismiss button
+window.getDataFingerprint = getDataFingerprint;
