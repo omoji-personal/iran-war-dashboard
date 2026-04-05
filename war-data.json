@@ -16,12 +16,12 @@
     },
     {
       "label": "Cumul. missiles",
-      "value": "~3,320",
+      "value": "~3,247",
       "desc": "D37: ~40 (UAE 9+1, Kuwait ~8, Bahrain ~3, Houthi ~5). Cumul ~3,320."
     },
     {
       "label": "Cumul. drones",
-      "value": "~5,257",
+      "value": "~5,213",
       "desc": "D37: ~70 (UAE 50, Kuwait ~15, Bahrain ~5). Cumul ~5,257."
     },
     {
@@ -2555,49 +2555,49 @@
   },
   "cumulativeByCountry": {
     "UAE": {
-      "missiles": 1289,
-      "drones": 2624
+      "missiles": 635,
+      "drones": 1286
     },
     "Israel": {
-      "missiles": 719,
-      "drones": 314
+      "missiles": 354,
+      "drones": 154
     },
     "Saudi Arabia": {
-      "missiles": 423,
-      "drones": 928
+      "missiles": 209,
+      "drones": 455
     },
     "Kuwait": {
-      "missiles": 238,
-      "drones": 517
+      "missiles": 117,
+      "drones": 253
     },
     "Bahrain": {
-      "missiles": 143,
-      "drones": 329
+      "missiles": 71,
+      "drones": 161
     },
     "Qatar": {
-      "missiles": 156,
-      "drones": 201
+      "missiles": 77,
+      "drones": 99
     },
     "Iraq": {
-      "missiles": 125,
-      "drones": 182
+      "missiles": 62,
+      "drones": 89
     },
     "Oman": {
-      "missiles": 50,
-      "drones": 96
+      "missiles": 25,
+      "drones": 47
     },
     "Jordan": {
-      "missiles": 87,
-      "drones": 104
+      "missiles": 43,
+      "drones": 51
     },
     "Yemen": {
-      "missiles": 36,
-      "drones": 82
+      "missiles": 18,
+      "drones": 40
     },
     "_note": "Estimated cumul ~3,280 missiles / ~5,187 drones through D36. D36: Bushehr NPP (4th), Mahshahr petrochemical, MSC Ishyka, cluster bomb Israel. UAE MoD cumul: 498/23/2,141.",
     "total": {
-      "missiles": 3320,
-      "drones": 5257
+      "missiles": 1637,
+      "drones": 2577
     }
   },
   "stockpileAnalysis": {
@@ -2641,8 +2641,8 @@
       }
     ],
     "burnedToDate": {
-      "missiles": 3320,
-      "drones": 5257
+      "missiles": 3247,
+      "drones": 5213
     }
   },
   "oilScenarioBands": {
