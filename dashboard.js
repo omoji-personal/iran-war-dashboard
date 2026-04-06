@@ -288,9 +288,12 @@ function lastRealIndex(arr) {
 function trendLineUpToLastReal(data) {
   var last = lastRealIndex(data);
   if (last < 1) return data.map(function() { return null; });
+  // Use only last 14 days for regression to show CURRENT trend, not war-long trend
+  var windowSize = 14;
+  var start = Math.max(0, last - windowSize + 1);
   var out = [];
   var sum = 0, sumX = 0, sumXY = 0, sumX2 = 0, n = 0;
-  for (var i = 0; i <= last; i++) {
+  for (var i = start; i <= last; i++) {
     if (data[i] !== null && data[i] !== undefined) {
       sum += data[i]; sumX += i; sumXY += i * data[i]; sumX2 += i * i; n++;
     }
@@ -298,8 +301,9 @@ function trendLineUpToLastReal(data) {
   if (n < 2) return data.map(function() { return null; });
   var slope = (n * sumXY - sumX * sum) / (n * sumX2 - sumX * sumX);
   var intercept = (sum - slope * sumX) / n;
+  // Only draw trend line for the window period
   for (var j = 0; j < data.length; j++) {
-    out.push(j <= last ? Math.max(0, Math.round((slope * j + intercept) * 10) / 10) : null);
+    out.push(j >= start && j <= last ? Math.max(0, Math.round((slope * j + intercept) * 10) / 10) : null);
   }
   return out;
 }
@@ -1577,15 +1581,40 @@ function renderLeadingIndicators() {
 }
 
 function renderChangelog() {
-  var cl = (state.decisionEngine || {}).probabilityChangelog;
-  if (!cl || !$('probChangelog')) return;
-  $('probChangelog').innerHTML = cl.slice().reverse().map(function(entry) {
-    var dotColor = entry.delta > 0 ? 'var(--cyan)' : entry.delta < 0 ? 'var(--red)' : 'var(--muted)';
-    var deltaStr = entry.delta !== null ? (entry.delta > 0 ? '+' + entry.delta + '%' : entry.delta + '%') : 'start';
-    return '<div style="display:flex;gap:8px;align-items:flex-start;padding:6px 0;border-bottom:1px solid rgba(255,255,255,.04)">' +
-      '<div style="min-width:8px;margin-top:5px"><div style="width:8px;height:8px;border-radius:50%;background:' + dotColor + '"></div></div>' +
-      '<div style="font-size:12px"><strong>' + entry.prob + '%</strong> <span style="color:' + dotColor + '">' + deltaStr + '</span> <span style="color:var(--muted)">(' + entry.day + ')</span>' +
-      '<div style="color:var(--soft);font-size:11px;margin-top:1px">' + entry.reason.substring(0, 70) + (entry.reason.length > 70 ? '...' : '') + '</div></div></div>';
+  if (!$('probChangelog')) return;
+
+  // Compute from engine for last 10 days — show deal/US/Iran scores + ensemble
+  var ds = state.dailySeries || {};
+  var maxDay = (ds.labels || []).length;
+  var startDay = Math.max(0, maxDay - 8);
+  var entries = [];
+
+  for (var i = startDay; i < maxDay; i++) {
+    var eng = computeEngineForDay(i);
+    if (!eng) continue;
+    var prev = i > 0 ? computeEngineForDay(i - 1) : null;
+    var delta = prev ? eng.ensemble - prev.ensemble : null;
+    entries.push({
+      day: 'D' + (i + 1),
+      label: ds.labels[i],
+      ensemble: eng.ensemble,
+      deal: Math.round(eng.dealScore * 100),
+      iran: Math.round(eng.iranScore * 100),
+      us: Math.round(eng.usExitScore * 100),
+      delta: delta
+    });
+  }
+
+  $('probChangelog').innerHTML = entries.reverse().map(function(e) {
+    var dotColor = e.delta > 0 ? 'var(--cyan)' : e.delta < 0 ? 'var(--red)' : 'var(--muted)';
+    var deltaStr = e.delta !== null ? (e.delta > 0 ? '+' + e.delta : String(e.delta)) : '—';
+    return '<div style="display:flex;gap:8px;align-items:center;padding:5px 0;border-bottom:1px solid rgba(255,255,255,.04);font-size:12px">' +
+      '<div style="width:8px;height:8px;border-radius:50%;background:' + dotColor + ';flex-shrink:0"></div>' +
+      '<strong style="min-width:28px">' + e.ensemble + '%</strong>' +
+      '<span style="color:' + dotColor + ';min-width:24px">' + deltaStr + '</span>' +
+      '<span style="color:var(--muted)">' + e.day + '</span>' +
+      '<span style="color:var(--soft);margin-left:auto;font-size:10px">Deal ' + e.deal + '% · Iran ' + e.iran + '% · US ' + e.us + '%</span>' +
+    '</div>';
   }).join('');
 }
 
