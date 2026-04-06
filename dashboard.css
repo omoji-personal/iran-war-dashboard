@@ -740,34 +740,89 @@ html[dir="rtl"] .chips { flex-direction: row-reverse; }
   table { min-width: 900px; }
 }
 @media(max-width:700px) {
+  /* Layout */
   .metric-grid { grid-template-columns: 1fr; }
+  .vector-grid { grid-template-columns: 1fr; }
+  .model-cards { grid-template-columns: 1fr !important; }
+
+  /* Topbar */
+  .topbar-inner { flex-direction: column; align-items: flex-start; gap: 10px; }
   .title h1 { font-size: 18px; }
   .title p { font-size: 12px; }
-  .vector-grid { grid-template-columns: 1fr; }
-  .topbar-inner { flex-direction: column; align-items: flex-start; gap: 10px; }
   .chips { width: 100%; flex-wrap: wrap; gap: 6px; }
   .chip { font-size: 11px; padding: 7px 10px; }
   .lang-btn { padding: 6px 12px; font-size: 12px; }
+
+  /* Panels */
   .panel { padding: 14px; border-radius: 16px; }
-  .prediction-hero { padding: 16px; }
-  .chart-box { height: 260px !important; }
-  .chart-box.tall { height: 300px !important; }
-  .chart-box.short { height: 220px !important; }
-  .outcome-forecast { font-size: 13px; padding: 14px; }
-  .convergence-badge { font-size: 12px; padding: 6px 14px; }
-  .convergence-badge .score { font-size: 18px; }
-  .model-card .confidence { font-size: 22px; }
-  .metric .value { font-size: 22px; }
-  .metric .desc { font-size: 11px; }
-  .scenario { flex-direction: column; gap: 6px; }
-  .scenario .prob { font-size: 18px; }
+  .prediction-hero { padding: 14px; border-radius: 16px; }
   h2 { font-size: 20px; }
   h3 { font-size: 16px; }
+
+  /* Charts */
+  .chart-box { height: 240px !important; }
+  .chart-box.tall { height: 280px !important; }
+  .chart-box.short { height: 200px !important; }
+
+  /* Probability display */
+  .prob-pct { font-size: 28px; }
+  .prob-label { font-size: 11px; }
+  .prob-header { flex-wrap: wrap; gap: 4px; }
+  .outcome-forecast { font-size: 13px; padding: 12px; }
+
+  /* Decision conditions */
+  .cond-pct { font-size: 14px; }
+  .cond-label { font-size: 12px; }
+  .cond-formula { font-size: 10px; padding: 6px 8px; }
+
+  /* Metrics */
+  .metric .value { font-size: 20px; }
+  .metric .desc { font-size: 11px; }
+  .metric .label { font-size: 11px; }
+
+  /* Scenario simulator */
+  .sim-buttons { gap: 4px; }
+  .sim-btn { padding: 6px 10px; font-size: 11px; }
+  .sim-result { padding: 12px; }
+  .sim-value { font-size: 14px; }
+
+  /* Scrubber */
+  .scrubber-wrap { flex-wrap: wrap; padding: 8px 12px; gap: 8px; }
+  .scrubber-label { font-size: 11px; }
+  .scrubber-label strong { font-size: 12px; }
+
+  /* Escalation ladder */
+  .esc-title { font-size: 12px; }
+  .esc-meta { font-size: 10px; }
+  .esc-status-tag { font-size: 8px; padding: 1px 4px; }
+  .esc-dot { width: 10px; height: 10px; }
+
+  /* Deadline */
+  #deadlineCountdown { font-size: 22px !important; }
+
+  /* Tables */
   .hub-matrix { font-size: 10px; }
   .hub-matrix th, .hub-matrix td { padding: 6px 4px; }
+  .table-wrap td { max-width: 120px; font-size: 11px; }
+
+  /* Cards */
   .route-card { padding: 10px; }
   .risk-gauge { flex-direction: column; text-align: center; }
   .risk-gauge .gauge-score { font-size: 28px; }
-  .section-nav { width: 200px; }
-  .table-wrap td { max-width: 150px; font-size: 11px; }
+
+  /* Tags */
+  .tag { font-size: 10px; padding: 3px 7px; }
+
+  /* Section nav */
+  .section-nav { width: 180px; }
+
+  /* Calibration */
+  .cal-row { font-size: 11px; }
+
+  /* Sensitivity */
+  .scenario { flex-direction: column; gap: 6px; }
+  .scenario .prob { font-size: 18px; }
+
+  /* About section */
+  .prediction-hero + .panel { padding: 12px; }
 }

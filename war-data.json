@@ -1466,7 +1466,7 @@
         "projectedZeroDay": "Apr 15",
         "projectedOutcome": "Iran ceases offensive operations by mid-April. War ends via military exhaustion + negotiated exit. Coalition declares victory.",
         "projectedOutcome_fa": "ایران عملیات تهاجمی را تا اواسط آوریل متوقف می‌کند. جنگ با فرسایش نظامی + خروج مذاکره‌ای پایان می‌یابد.",
-        "confidence": 0.12,
+        "confidence": 0.13,
         "falsifiedBy": "D38 at 41/day. Definitively falsified since D18."
       },
       "plateauRationing": {
@@ -1478,7 +1478,7 @@
         "projectedDuration_weeks": 7,
         "projectedOutcome": "Iran maintains harassment for 2+ months. War ends via negotiation under mutual exhaustion, or escalation spiral if ceiling breached. Haaretz confirms half launchers intact.",
         "projectedOutcome_fa": "ایران آزار ۲+ ماه. هاآرتص: نیمی پرتاب‌کننده‌ها سالم. جنگ با مذاکره یا تشدید.",
-        "confidence": 0.82,
+        "confidence": 0.87,
         "falsifiedBy": "D33-D38 avg ~49/day. Revised plateau ~43. Coordinated barrage = still capable."
       },
       "projectionLabels": [
