@@ -648,33 +648,34 @@ function computeEngineForDay(dayIdx) {
   var day = dayIdx + 1;
 
   // === DEAL AVAILABILITY (0-1) ===
-  // Mediator activity (0-1): 0 meetings=0, 5+=1
   var mediatorScore = Math.min(mediators / 5, 1);
-  // Proposal exists and not rejected? Use static flag for now, improve with coded events later
-  var proposalScore = (de.indicators || {}).formalProposalsRejected > 0 ? 0.1 : 0.4;
-  var faceSaving = (de.indicators || {}).facesSavingDealExists ? 0.8 : 0.05;
-  var dealScore = mediatorScore * 0.3 + proposalScore * 0.3 + faceSaving * 0.4;
+  // Use per-day indicators if available, fallback to static
+  var proposalsRejected = di.proposalsRejected ? di.proposalsRejected[dayIdx] : ((de.indicators || {}).formalProposalsRejected || 0);
+  var proposalScore = proposalsRejected > 1 ? 0.05 : proposalsRejected > 0 ? 0.15 : 0.4;
+  var faceSaving = mediators >= 4 ? 0.3 : mediators >= 2 ? 0.15 : 0.05; // More mediators = more likely face-saving deal emerges
+  var dealScore = mediatorScore * 0.35 + proposalScore * 0.3 + faceSaving * 0.35;
   dealScore = Math.max(0.02, Math.min(dealScore, 0.95));
 
   // === US EXIT PRESSURE (0-1) ===
-  var approvalPressure = Math.min((approval - 30) / 40, 1); // 30%=0, 70%=1
-  var kiaPressure = Math.min(kia / 30, 1); // 30 KIA = max
-  var gasPressure = Math.min((gas - 3) / 3, 1); // $3=0, $6=1
-  var durationFatigue = Math.min(day / 60, 1); // 60 days = max
-  var exitNarrative = (de.indicators || {}).facesSavingDealExists ? 0.6 : 0.2;
+  var approvalPressure = Math.min((approval - 30) / 40, 1);
+  var kiaPressure = Math.min(kia / 30, 1);
+  var gasPressure = Math.min((gas - 3) / 3, 1);
+  var durationFatigue = Math.min(day / 60, 1);
+  var exitNarrative = mediators >= 3 ? 0.4 : 0.2; // Active mediation = exit narrative more available
   var usExitScore = approvalPressure * 0.25 + kiaPressure * 0.2 + gasPressure * 0.2 + durationFatigue * 0.15 + exitNarrative * 0.1 + (1 - coalition/10) * 0.1;
   usExitScore = Math.max(0.05, Math.min(usExitScore, 0.95));
 
   // === IRAN ACCEPTANCE (0-1) ===
-  var rateDrop = 1 - (launchRate / d1Missiles); // Higher = more depleted = more pressure to accept
-  var hormuzLeverage = 1 - (hormuz / preWarHormuz); // Higher = more leverage = LESS reason to accept
-  var regimePressure = Math.min((di.usKIA[dayIdx] > 0 ? 0.3 : 0) + rateDrop * 0.3, 0.6);
-  var rejectedCeasefire = (de.indicators || {}).iranRejectedCeasefire ? 0.05 : 0.3;
-  var iranScore = rejectedCeasefire * 0.4 + regimePressure * 0.3 + (1 - hormuzLeverage) * 0.2 + dealScore * 0.1;
+  var rateDrop = 1 - (launchRate / d1Missiles);
+  var hormuzLeverage = 1 - (hormuz / preWarHormuz);
+  var regimePressure = Math.min((kia > 0 ? 0.3 : 0) + rateDrop * 0.3, 0.6);
+  var iranRejected = di.iranRejectedCeasefire ? di.iranRejectedCeasefire[dayIdx] : ((de.indicators || {}).iranRejectedCeasefire ? 1 : 0);
+  var rejectedFactor = iranRejected ? 0.05 : 0.3;
+  var iranScore = rejectedFactor * 0.4 + regimePressure * 0.3 + (1 - hormuzLeverage) * 0.2 + dealScore * 0.1;
   iranScore = Math.max(0.02, Math.min(iranScore, 0.95));
 
   // === ESCALATION PROXIMITY (0-1) ===
-  var deadlineDays = (de.indicators || {}).daysToDeadline;
+  var deadlineDays = di.deadlineDays ? di.deadlineDays[dayIdx] : ((de.indicators || {}).daysToDeadline);
   if (deadlineDays === undefined || deadlineDays === null) deadlineDays = 30;
   var powerGridProx = Math.max(0, 1 - deadlineDays / 7);
   var nuclearProx = ((de.indicators || {}).nuclearFacilitiesStruck || 0) / ((de.indicators || {}).nuclearFacilitiesTotal || 6);
