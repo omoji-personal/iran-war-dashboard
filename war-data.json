@@ -1,124 +1,124 @@
 {
   "meta": {
-    "lastUpdated": "2026-04-05T10:00:00-04:00",
+    "lastUpdated": "2026-04-06T08:00:00-04:00",
     "notes": [
-      "Day 37 (Apr 05) update. Sources: CNN, AJ, NPR, NBC, NYT, Axios, Fox News, The Aviationist, TWZ, AP, Reuters, Gulf News, The National, JPost, CNBC, oilpriceapi.com, Bloomberg, AAA.",
-      "WSO RESCUED + TRUMP 48-HR REISSUED + KUWAIT INFRA + BAHRAIN OIL + HOUTHI BEN GURION: US special forces rescued F-15E WSO inside Iran. 2 C-130s + 2 Little Birds destroyed. Trump 48-hr: all Hell Monday 8PM ET. Kuwait 2 power/water plants (2 units shut) + Shuwaikh oil fire + Ministries. Bahrain BAPCO fire + Gulf Petrochemical. UAE 9+1+50 (cumul 507/24/2,191). Borouge fire. Houthis cluster Ben Gurion. Russia 200 more Bushehr (363+). China 5-point. Brent ~$109 (DOWN from $115). Internet 864+."
+      "Day 38 (Apr 06) update. Sources: CNN, AJ, NPR, NBC, NYT, Axios, Fox News, TWZ, AP, Reuters, Gulf News, The National, JPost, CNBC, oilpriceapi.com, Bloomberg, AAA.",
+      "KHADEMI KILLED + TRUMP DEADLINE EXTENDED + 45-DAY CEASEFIRE PROPOSAL: Israel killed IRGC Intel Chief Maj Gen Khademi + Quds Force Cmdr Bagheri. Trump extended deadline 20hrs to Tue 8PM ET. Egypt/Pakistan/Turkey 45-day ceasefire proposal sent. Iran formulating response but no direct talks. UAE 12+2+19 (cumul 519/26/2,210). Tehran Sharif U area + Baharestan 6 children killed. Houthi+Hezbollah coordinated barrage Tel Aviv + Dimona + Haifa. IRGC Navy 'new order' Persian Gulf. Brent ~$110. Internet 888+."
     ]
   },
-  "theoryBox": "<strong>Day 37 - WSO RESCUED + TRUMP 48-HR REISSUED + KUWAIT INFRA + APRIL 6 = TOMORROW:</strong> US special forces rescued F-15E WSO inside Iran - 2 C-130s + 2 Little Birds destroyed. Trump 48-hr: all Hell if Hormuz closed Monday 8PM ET. Kuwait 2 power/water plants (2 units shut) + Shuwaikh oil fire + Ministries. Bahrain BAPCO fire. UAE 9+1+50 (cumul 507/24/2,191). Borouge fire. Houthis cluster Ben Gurion. Russia 200 more Bushehr (363+). Brent ~$109 (DOWN). HRANA: 3,531+. April 6 = TOMORROW. Internet 864+.",
-  "theoryBox_fa": "<strong>Day 37 - WSO + 48h + Kuwait + April 6 = TOMORROW:</strong> WSO rescued. 2 C-130 + 2 heli destroyed. Trump: Hell. Kuwait 2 power/water + Shuwaikh + Ministries. Bahrain BAPCO. UAE 9+1+50. Houthi Ben Gurion. Russia 200 more (363+). $109. 864+.",
+  "theoryBox": "<strong>Day 38 - KHADEMI KILLED + DEADLINE EXTENDED TUE + 45-DAY CEASEFIRE PROPOSAL:</strong> Israel killed IRGC Intel Chief Khademi (effectively No.2) + Quds Force Cmdr Bagheri. Trump extended 20hrs to Tue 8PM ET. Egypt/Pakistan/Turkey 45-day ceasefire proposal. UAE 12+2+19 (cumul 519/26/2,210). Baharestan 6 children killed. Houthi+Hezbollah coordinated barrage Israel. IRGC Navy 'new order.' Brent ~$110. 888+ hrs internet.",
+  "theoryBox_fa": "<strong>Day 38 - Khademi + Deadline Tue + 45-day:</strong> Khademi killed. Trump Tue 8PM. 45-day proposal. UAE 12+2+19. 6 children. Houthi+Hezb barrage. 'New order.' $110. 888+.",
   "metrics": [
     {
       "label": "Day",
-      "value": "37",
-      "desc": "WSO RESCUED + TRUMP 48-HR + KUWAIT INFRA + APRIL 6 = TOMORROW."
+      "value": "38",
+      "desc": "KHADEMI KILLED + DEADLINE EXTENDED TUE + 45-DAY CEASEFIRE PROPOSAL."
     },
     {
       "label": "Cumul. missiles",
-      "value": "~3,247",
-      "desc": "D37: ~40 (UAE 9+1, Kuwait ~8, Bahrain ~3, Houthi ~5). Cumul ~3,320."
+      "value": "~3,361",
+      "desc": "D38: ~41 (UAE 12+2, Israel ~8, Kuwait ~5, Bahrain ~4, Houthi ~5). Cumul ~3,361."
     },
     {
       "label": "Cumul. drones",
-      "value": "~5,213",
-      "desc": "D37: ~70 (UAE 50, Kuwait ~15, Bahrain ~5). Cumul ~5,257."
+      "value": "~5,298",
+      "desc": "D38: ~41 (UAE 19, Kuwait ~10, Bahrain ~5, Saudi ~3, others). Cumul ~5,298."
     },
     {
       "label": "Brent crude",
-      "value": "~$109",
-      "desc": "DOWN from $115. WSO rescue signal. April 6 binary."
+      "value": "~$110",
+      "desc": "Opened above $110. WTI ~$111. Deadline extension = slight relief."
     },
     {
       "label": "Iran dead",
-      "value": "~7,800+",
-      "desc": "HRANA: 3,531+. AJ: 2,076+. Iran: 5 killed rescue op. 85,000+ structures."
+      "value": "~8,000+",
+      "desc": "34+ D38 (6 children Baharestan). 85,000+ structures. Khademi = No.2."
     },
     {
       "label": "Lebanon",
-      "value": "1,368+ killed",
-      "desc": "1,368+ (124+ children). ~1M displaced."
+      "value": "1,345+ killed",
+      "desc": "1,345+ (AJ updated). ~1M displaced."
     },
     {
       "label": "Israel dead",
       "value": "25+",
-      "desc": "24+ civilians. WSO RESCUED. 15 US KIA + 520+ wounded. 7+2+2. Houthi Ben Gurion."
+      "desc": "Coordinated barrage Tel Aviv + Dimona + Haifa. 15 US KIA + 520+. 7+2+2."
     },
     {
       "label": "Nuclear risk",
       "value": "CRITICAL+",
-      "desc": "Russia 200 MORE Bushehr (363+). Araghchi: contamination. 440kg. April 6 = TOMORROW."
+      "desc": "363+ Bushehr. Khademi = intel chief gone. 440kg. Deadline = TUE."
     }
   ],
   "metrics_fa": [
     {
       "label": "Day",
-      "value": "37",
-      "desc": "WSO + 48h + Kuwait + April 6 = TOMORROW."
+      "value": "38",
+      "desc": "Khademi + Tue deadline + 45-day."
     },
     {
       "label": "Missiles",
-      "value": "~3,320",
-      "desc": "D37: ~40."
+      "value": "~3,361",
+      "desc": "D38: ~41."
     },
     {
       "label": "Drones",
-      "value": "~5,257",
-      "desc": "D37: ~70."
+      "value": "~5,298",
+      "desc": "D38: ~41."
     },
     {
       "label": "Oil",
-      "value": "~$109",
-      "desc": "DOWN. Binary."
+      "value": "~$110",
+      "desc": "WTI ~$111."
     },
     {
       "label": "Iran",
-      "value": "~7,800+",
-      "desc": "HRANA 3,531+. 5 killed rescue."
+      "value": "~8,000+",
+      "desc": "34+ D38. 6 children."
     },
     {
       "label": "Lebanon",
-      "value": "1,368+",
-      "desc": "1,368+."
+      "value": "1,345+",
+      "desc": "1,345+."
     },
     {
       "label": "Israel",
       "value": "25+",
-      "desc": "WSO rescued. 15 KIA. 7+2+2."
+      "desc": "Coordinated barrage. 15 KIA."
     },
     {
       "label": "Nuclear",
       "value": "CRITICAL+",
-      "desc": "363+ Bushehr. April 6."
+      "desc": "363+. Khademi dead. Tue."
     }
   ],
   "sitrep": [
-    "WSO RESCUED: US special forces rescued F-15E WSO after 36+ hrs evasion. 2 MC-130Js + 2 MH-6/AH-6 Little Birds destroyed (self-destruction). CIA deception campaign. WSO in Kuwait. Trump: most daring rescue. Iran claims 5 killed.",
-    "TRUMP 48-HR REISSUED: All Hell if Hormuz not opened Monday 8PM ET. 3rd ultimatum (D22, Mar 23, Apr 5). April 6 = TOMORROW.",
-    "KUWAIT INFRASTRUCTURE: 2 power/water desalination plants - 2 units shut. Shuwaikh Oil Complex fire (evacuated). Ministries Complex. No casualties. Most significant Kuwait targeting since D1.",
-    "BAHRAIN OIL: BAPCO oil tank fire + Gulf Petrochemical units attacked. Fires across units.",
-    "UAE: 9 BALLISTIC + 1 CRUISE + 50 DRONES: Cumul 507/24/2,191. Borouge Petrochemicals fire.",
-    "HOUTHIS CLUSTER MISSILE BEN GURION: 3rd front active since D29.",
-    "C-130s + LITTLE BIRDS DESTROYED: Iranian footage. US self-destruction confirmed. Total: 7 manned + 2 C-130s + 2 helicopters.",
-    "RUSSIA 200 MORE BUSHEHR: 363+ total. Araghchi: contamination risk.",
-    "CHINA DIPLOMACY: 5-point with Pakistan. Iran FM: trust zero.",
-    "CASUALTIES: HRANA 3,531+. AJ 2,076+. Iran 5 killed rescue. Lebanese 1,368+. US 15 KIA (WSO rescued) + 520+. 7+2+2.",
-    "APRIL 6 = TOMORROW: 48-hr Monday 8PM ET. WSO rescue removes POW but Trump committed. Kuwait = Iran escalating. Power grid MOST LIKELY.",
-    "INTERNET 864+ HRS: 37 days. $1.6B+. 90M."
+    "KHADEMI KILLED: Israel confirmed killing Maj Gen Majid Khademi (IRGC intelligence chief, effectively No.2 in IRGC) + Quds Force commander Asghar Bagheri in precision strike.",
+    "TRUMP DEADLINE EXTENDED 20 HRS: Original Apr 6 Monday 8PM ET extended to Tuesday 8PM ET. Power grid strikes remain most likely if no deal.",
+    "45-DAY CEASEFIRE PROPOSAL: Egyptian, Pakistani, Turkish mediators sent 2-phase ceasefire to both sides. Phase 1 = 45-day ceasefire. Phase 2 = permanent deal incl Hormuz + HEU. Iran formulating response but no direct talks. Chances slim.",
+    "UAE D38: 12 ballistic + 2 cruise + 19 drones intercepted. 4 wounded. Cumul: 519/26/2,210.",
+    "TEHRAN STRIKES: Sharif University area hit — fuel station damaged. Baharestan: 4 girls + 2 boys under 10 killed. At least 34 killed D38.",
+    "COORDINATED BARRAGE: Iran + Houthis + Hezbollah coordinated ballistic missile barrage on Israel — Tel Aviv + Dimona targeted. Haifa 10+ sites hit.",
+    "IRGC NAVY 'NEW ORDER': Strait will NOT return to previous state. Finalizing 'new order' plans for Persian Gulf.",
+    "HORMUZ: Still 90%+ down. 53 transits last week (up from 36). Iraq exempt. ~10 vessels/day.",
+    "CROWNE PLAZA BAHRAIN: Hit by drone, fire. USN Fifth Fleet service center Bahrain hit by missile.",
+    "CASUALTIES: 34+ killed D38 (6 children). Iran total ~8,000+. Lebanon 1,345+ (AJ updated). US 15 KIA.",
+    "OIL: Brent ~$109.32 (opened above $110). WTI ~$111.03. Deadline extension = slight relief.",
+    "INTERNET 888+ HRS: 38 days. Longest nationwide shutdown EVER recorded."
   ],
   "sitrep_fa": [
-    "WSO rescued. 2 C-130 + 2 heli destroyed. Iran: 5 killed.",
-    "48-hr = TOMORROW. 3rd.",
-    "Kuwait 2 power/water + Shuwaikh + Ministries.",
-    "Bahrain BAPCO + Gulf Petrochemical.",
-    "UAE 9+1+50. Cumul 507/24/2,191. Borouge.",
-    "Houthi Ben Gurion.",
-    "C-130 + heli: 7+2+2.",
-    "Russia 200 more (363+). Contamination.",
-    "China 5-point. Iran: trust zero.",
-    "HRANA 3,531+. 15 KIA. WSO rescued.",
-    "April 6 = TOMORROW. Power grid MOST LIKELY.",
-    "Internet 864+. 37 days."
+    "Khademi killed. No.2. + Bagheri Quds Force.",
+    "Deadline Tue 8PM ET. 20hrs extension.",
+    "45-day ceasefire. Egypt/Pakistan/Turkey. Iran: no direct talks.",
+    "UAE 12+2+19. Cumul 519/26/2,210.",
+    "Sharif U + Baharestan 6 children. 34+ D38.",
+    "Houthi+Hezb+Iran coordinated barrage Israel.",
+    "IRGC Navy 'new order.' Gulf.",
+    "Hormuz 90%+ down. ~10/day. 53/week.",
+    "Bahrain: Crowne Plaza + Fifth Fleet.",
+    "34+ killed. ~8,000+. 1,345+. 15 KIA.",
+    "Brent ~$110. WTI ~$111.",
+    "Internet 888+. 38 days. Record."
   ],
   "dailySeries": {
     "labels": [
@@ -158,7 +158,8 @@
       "Apr 02",
       "Apr 03",
       "Apr 04",
-      "Apr 05"
+      "Apr 05",
+      "Apr 06"
     ],
     "missiles": [
       480,
@@ -197,7 +198,8 @@
       55,
       50,
       45,
-      40
+      40,
+      41
     ],
     "drones": [
       720,
@@ -236,21 +238,22 @@
       70,
       65,
       60,
-      70
+      70,
+      41
     ],
-    "sourceLabel": "D1-D10: JPost. D11: UAE MoD. D12-D37: fragment est. D37: WSO rescued, Kuwait infra, Bahrain BAPCO, UAE 9+1+50, Houthi Ben Gurion. ~40m+70d.",
-    "throughDate": "Apr 05 end of day - D37",
+    "sourceLabel": "D1-D10: JPost. D11: UAE MoD. D12-D38: fragment est. D38: Khademi killed, UAE 12+2+19, coordinated barrage, 45-day proposal. ~41m+41d.",
+    "throughDate": "Apr 06 end of day - D38",
     "confidence": [
-      1.0,
-      1.0,
-      1.0,
-      1.0,
-      1.0,
-      1.0,
-      1.0,
-      1.0,
-      1.0,
-      1.0,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
       0.8,
       0.6,
       0.6,
@@ -270,6 +273,7 @@
       0.6,
       0.6,
       0.6,
+      0.5,
       0.5,
       0.5,
       0.5,
@@ -320,7 +324,8 @@
       "Apr 02",
       "Apr 03",
       "Apr 04",
-      "Apr 05"
+      "Apr 05",
+      "Apr 06"
     ],
     "brent": [
       65,
@@ -360,7 +365,8 @@
       105.53,
       112.42,
       115,
-      109
+      109,
+      110
     ],
     "wti": [
       62,
@@ -400,9 +406,10 @@
       102,
       111.54,
       113,
-      107
+      107,
+      111
     ],
-    "note": "D37: Brent ~$109 (DOWN from $115). WSO rescue signal. April 6 = binary. Deal=$85 or strikes=$130+."
+    "note": "D38: Brent ~$109.32 (opened above $110). WTI ~$111.03. Deadline extended 20hrs = slight relief. Deal=$85 or strikes=$130+."
   },
   "pressure": {
     "labels": [
@@ -442,7 +449,8 @@
       "Apr 02",
       "Apr 03",
       "Apr 04",
-      "Apr 05"
+      "Apr 05",
+      "Apr 06"
     ],
     "attrition": [
       2,
@@ -460,6 +468,7 @@
       9,
       9.5,
       9.5,
+      10,
       10,
       10,
       10,
@@ -520,32 +529,33 @@
       9.5,
       10,
       10,
-      9
+      9,
+      9.5
     ]
   },
   "latestTargetBreakdown": {
-    "note": "Apr 05 (D37). WSO rescued. Kuwait 2 power + Shuwaikh + Ministries. Bahrain BAPCO. UAE 9+1+50. Houthi Ben Gurion. ~40m+70d.",
+    "note": "Apr 06 (D38). Khademi killed. UAE 12+2+19. Coordinated barrage Israel. Bahrain Crowne Plaza + Fifth Fleet. ~41m+41d.",
     "missiles": {
-      "Israel": 5,
-      "UAE": 10,
-      "Saudi": 3,
-      "Kuwait": 8,
-      "Qatar": 2,
-      "Bahrain": 3,
+      "Israel": 8,
+      "UAE": 14,
+      "Saudi": 2,
+      "Kuwait": 5,
+      "Qatar": 1,
+      "Bahrain": 4,
       "Yemen/Houthi": 5,
       "Iraq": 2,
       "Oman": 1,
       "Jordan": 1
     },
     "drones": {
-      "UAE": 50,
-      "Kuwait": 15,
+      "UAE": 19,
+      "Kuwait": 10,
       "Bahrain": 5,
       "Israel": 0,
-      "Saudi": 0,
-      "Iraq": 0,
+      "Saudi": 3,
+      "Iraq": 2,
       "Oman": 0,
-      "Qatar": 0,
+      "Qatar": 2,
       "Jordan": 0
     }
   },
@@ -882,20 +892,29 @@
       "capability": "D37: 40+70. Kuwait infra = MOST significant since D1. Iran EXPANDING to civilian. UAE cumul 507+24+2,191. US lost 2 C-130s + 2 helicopters (self-destroyed).",
       "cost": "Brent ~$109 (DOWN $6). WSO rescue = de-escalation signal. But Trump 48-hr reissued. Kuwait devastated. Gas ~$4.05. Internet 864+. HRANA: 3,531+.",
       "assessment": "D37 - WSO rescue removes POW crisis but Trump REISSUED 48-hr (3rd time = backing down devastating). Kuwait infra = Iran escalating. C-130s = material losses. April 6 = TOMORROW. Power grid MOST LIKELY unless surprise deal."
+    },
+    {
+      "date": "Apr 06",
+      "missiles": 41,
+      "drones": 41,
+      "primary": "D38 - KHADEMI KILLED + DEADLINE EXTENDED TUE + 45-DAY CEASEFIRE: Khademi (IRGC Intel Chief, No.2) + Bagheri (Quds) killed. Trump extended 20hrs to Tue 8PM ET. Egypt/Pakistan/Turkey 45-day ceasefire proposal. UAE 12+2+19. Baharestan 6 children. Houthi+Hezb+Iran coordinated barrage Israel. IRGC Navy 'new order.' Bahrain Crowne Plaza + Fifth Fleet.",
+      "capability": "D38: 41+41. COORDINATED BARRAGE = Iran + Houthis + Hezbollah simultaneous strike Israel (Tel Aviv + Dimona + Haifa). Shows multi-axis coordination despite Khademi kill. IRGC Navy 'new order' = redefining Persian Gulf status quo. UAE cumul 519/26/2,210.",
+      "cost": "Brent ~$110. WTI ~$111. 34+ killed D38 (6 children Baharestan). Khademi = most senior IRGC kill since Khamenei. Crowne Plaza Bahrain + USN Fifth Fleet hit. Internet 888+. Deadline extended = slight relief but Tue looming.",
+      "assessment": "D38 - DUAL TRACK: Khademi kill = massive intel decapitation BUT coordinated barrage = Iran demonstrating multi-axis capability despite losses. 45-day ceasefire proposal = most specific framework yet but Iran won't do direct talks. Deadline extension = 4th delay. If Tue passes: credibility exhausted. IRGC 'new order' = Iran planning permanent Gulf posture change."
     }
   ],
   "timeline": [
     {
-      "title": "Day 37 (Apr 05)",
-      "body": "WSO RESCUED. 2 C-130s + 2 Little Birds destroyed. Trump 48-hr reissued. Kuwait infra devastated. Bahrain BAPCO. UAE 9+1+50. Houthi Ben Gurion. Russia 200 more Bushehr. Oil $109 DOWN. April 6 = TOMORROW."
+      "title": "Day 38 (Apr 06)",
+      "body": "KHADEMI KILLED (No.2). Deadline EXTENDED to Tue 8PM ET. 45-day ceasefire proposal. UAE 12+2+19. Baharestan 6 children. Coordinated barrage Israel. IRGC 'new order.' $110."
     },
     {
-      "title": "APRIL 6 (TOMORROW)",
-      "body": "48-hr expires Monday 8PM ET. 3rd ultimatum. WSO rescue removes POW but committed. Kuwait = Iran testing. Power grid MOST LIKELY."
+      "title": "TUE APR 7 8PM ET",
+      "body": "Extended deadline. 4th iteration. Power grid MOST LIKELY if no deal. Credibility exhausted after 3 delays."
     },
     {
       "title": "Month 2",
-      "body": "Trump 2-3 weeks. Iran 6 months. 7+2+2 = material losses. April 6 = binary."
+      "body": "Trump 2-3 weeks. Iran 6 months. 7+2+2 = material losses. 45-day proposal = new variable."
     },
     {
       "title": "Month 3+",
@@ -903,21 +922,21 @@
     },
     {
       "title": "Wild cards",
-      "body": "April 6 power grid. C-130 wreckage exploitation. Houthi Bab al-Mandab. China mediation. Bushehr radiation."
+      "body": "Power grid Tue. 45-day ceasefire acceptance. Houthi Bab al-Mandab. China mediation. Bushehr radiation. Khademi fallout."
     }
   ],
   "timeline_fa": [
     {
-      "title": "Day 37",
-      "body": "WSO rescued. 2+2 destroyed. 48-hr. Kuwait. $109. TOMORROW."
+      "title": "Day 38",
+      "body": "Khademi. Deadline Tue. 45-day. $110."
     },
     {
-      "title": "April 6",
-      "body": "3rd. WSO but committed. Power grid MOST LIKELY."
+      "title": "Tue Apr 7",
+      "body": "4th. Power grid MOST LIKELY."
     },
     {
       "title": "Month 2",
-      "body": "Trump 2-3 weeks. Iran 6 months."
+      "body": "Trump 2-3 weeks. Iran 6 months. 45-day."
     },
     {
       "title": "Month 3+",
@@ -925,151 +944,151 @@
     },
     {
       "title": "Wild cards",
-      "body": "Power grid. C-130. Houthi. China. Bushehr."
+      "body": "Power grid. 45-day. Houthi. China. Bushehr. Khademi."
     }
   ],
   "scenarioProbabilities": [
     {
       "name": "Escalation spiral / total war",
-      "prob": "40%",
-      "body": "INCREASED 38->40%. Trump 48-hr 3rd time. April 6 = TOMORROW. Kuwait infra. 3rd backdown very costly. Power grid MOST LIKELY."
+      "prob": "38%",
+      "body": "DECREASED 40->38%. Deadline extended 20hrs. 45-day proposal. But 4th delay = credibility issue. Power grid still MOST LIKELY."
     },
     {
       "name": "Protracted attrition",
-      "prob": "24%",
-      "body": "DECREASED 27->24%. April 6 binary. Kuwait = not de-escalating. If blinks 3rd: attrition."
+      "prob": "26%",
+      "body": "INCREASED 24->26%. Deadline extension = more likely war continues without escalation. Khademi kill + coordinated barrage = both sides capable."
     },
     {
       "name": "Declared victory + exit",
-      "prob": "15%",
-      "body": "INCREASED 14->15%. WSO RESCUED = biggest obstacle removed. But 7+2+2 + ultimatum."
+      "prob": "14%",
+      "body": "DECREASED 15->14%. Khademi kill = major achievement but coordinated barrage contradicts 'mission accomplished.'"
     },
     {
       "name": "Negotiated deal",
-      "prob": "10%",
-      "body": "INCREASED 8->10%. WSO + oil + China. But trust zero. 24 hrs."
+      "prob": "12%",
+      "body": "INCREASED 10->12%. 45-day ceasefire proposal = most specific framework. Egypt/Pakistan/Turkey active. But Iran won't direct talk."
     },
     {
       "name": "International intervention",
       "prob": "7%",
-      "body": "DECREASED 9->7%. WSO reduced crisis. Post-Apr 6: 25%+."
+      "body": "HOLDS 7%. Post-Tue: could spike to 25%+."
     },
     {
       "name": "Regime fracture",
-      "prob": "4%",
-      "body": "HOLDS 4%. Kuwait infra = IRGC confident."
+      "prob": "3%",
+      "body": "DECREASED 4->3%. Coordinated barrage = IRGC demonstrating cohesion despite Khademi kill."
     }
   ],
   "scenarioProbabilities_fa": [
     {
       "name": "Escalation",
-      "prob": "40%",
-      "body": "38->40. TOMORROW. Kuwait. 3rd backdown costly."
+      "prob": "38%",
+      "body": "40->38. Extended. 45-day. But credibility."
     },
     {
       "name": "Attrition",
-      "prob": "24%",
-      "body": "27->24. Binary."
+      "prob": "26%",
+      "body": "24->26. Extension = continues."
     },
     {
       "name": "Victory",
-      "prob": "15%",
-      "body": "14->15. WSO rescued."
+      "prob": "14%",
+      "body": "15->14. Khademi but barrage."
     },
     {
       "name": "Deal",
-      "prob": "10%",
-      "body": "8->10. WSO + China."
+      "prob": "12%",
+      "body": "10->12. 45-day. Active."
     },
     {
       "name": "Intervention",
       "prob": "7%",
-      "body": "9->7. Post-Apr 6: 25%+."
+      "body": "Holds. Post-Tue: 25%+."
     },
     {
       "name": "Fracture",
-      "prob": "4%",
-      "body": "Holds."
+      "prob": "3%",
+      "body": "4->3. Cohesion despite kill."
     }
   ],
   "theoryEvaluation": [
     {
-      "title": "WSO RESCUED - removes POW but not trajectory",
-      "body": "Most dramatic event since D1. 2 C-130s + 2 Little Birds = $200M+. Iran parading wreckage. Trump committed to April 6. Rescue != off-ramp."
+      "title": "KHADEMI KILLED - No.2 IRGC eliminated",
+      "body": "Effectively No.2 in IRGC. Intel chief = operational intelligence gutted. BUT coordinated barrage HOURS later = institutional capability intact. Decapitation != defeat."
     },
     {
-      "title": "TRUMP 3RD ULTIMATUM - credibility at stake",
-      "body": "3 times: D22, Mar 23, Apr 5. 3rd backdown = politically devastating. Kuwait = Iran testing."
+      "title": "TRUMP 4TH DELAY - credibility exhausted",
+      "body": "D22, Mar 23, Apr 5, now Apr 7. 4th time = nobody believes threat. Iran testing systematically. If Tue passes: threat worthless."
     },
     {
-      "title": "KUWAIT INFRASTRUCTURE - civilian targeting",
-      "body": "Power/water/oil/government on EVE of April 6. Pre-emptive retaliation."
+      "title": "45-DAY CEASEFIRE - most specific yet",
+      "body": "2-phase: ceasefire + permanent deal incl Hormuz + HEU. Egypt/Pakistan/Turkey mediators. Iran formulating but won't direct. Slim but real."
     },
     {
-      "title": "C-130 WRECKAGE - propaganda vs reality",
-      "body": "Iran broadcasting. Evidence = self-destruction. But intel value + propaganda + 160th SOAR exposed. 7+2+2."
+      "title": "COORDINATED BARRAGE - multi-axis capability",
+      "body": "Iran + Houthis + Hezbollah simultaneous = operational coordination despite Khademi death. Dimona + Tel Aviv + Haifa = strategic targeting."
     },
     {
-      "title": "OIL $109 - markets pricing hope",
-      "body": "3rd time markets rallied (D24, D33, D37). Both reversed. April 6 binary: $85 or $130+."
+      "title": "IRGC NAVY 'NEW ORDER' - permanent Gulf change",
+      "body": "Strait will NOT return. Planning permanent posture. Even ceasefire won't restore pre-war Hormuz."
     }
   ],
   "theoryEvaluation_fa": [
     {
-      "title": "WSO rescued",
-      "body": "$200M+ cost. Iran wreckage. Trump committed."
+      "title": "Khademi killed",
+      "body": "No.2. Intel gutted. But barrage = institutional intact."
     },
     {
-      "title": "3rd ultimatum",
-      "body": "3 times. Devastating to back down. Kuwait testing."
+      "title": "4th delay",
+      "body": "D22, Mar 23, Apr 5, Apr 7. Credibility exhausted."
     },
     {
-      "title": "Kuwait infra",
-      "body": "Civilian. Eve of April 6. Pre-emptive."
+      "title": "45-day ceasefire",
+      "body": "2-phase. Slim but real."
     },
     {
-      "title": "C-130 wreckage",
-      "body": "Self-destruction but propaganda value."
+      "title": "Coordinated barrage",
+      "body": "Iran+Houthi+Hezb. Multi-axis."
     },
     {
-      "title": "Oil $109",
-      "body": "3rd hope rally. Binary."
+      "title": "'New order'",
+      "body": "Gulf permanent change. No return."
     }
   ],
   "endstate": [
     {
-      "title": "Most likely (40%)",
-      "body": "Escalation. 38->40%. 48-hr TOMORROW. Kuwait devastated. 3rd backdown costly. Power grid MOST LIKELY."
+      "title": "Most likely (38%)",
+      "body": "Escalation. 40->38%. Deadline extended Tue. 45-day proposal. But credibility exhausted. Power grid still MOST LIKELY."
     },
     {
-      "title": "Second (24%)",
-      "body": "Attrition. 27->24%. Binary. If blinks: attrition."
+      "title": "Second (26%)",
+      "body": "Attrition. 24->26%. Extension = war continues. Khademi kill + barrage = both sides capable."
     },
     {
-      "title": "Third (15%)",
-      "body": "Victory. 14->15%. WSO rescued. But 7+2+2."
+      "title": "Third (14%)",
+      "body": "Victory. 15->14%. Khademi major but barrage contradicts."
     },
     {
-      "title": "Fourth (10%/7%/4%)",
-      "body": "Deal 10%. Intervention 7% (post-Apr6: 25%+). Fracture 4%."
+      "title": "Fourth (12%/7%/3%)",
+      "body": "Deal 12% (UP - 45-day). Intervention 7%. Fracture 3% (DOWN)."
     }
   ],
   "endstate_fa": [
     {
-      "title": "1st (40%)",
-      "body": "Escalation. TOMORROW."
+      "title": "1st (38%)",
+      "body": "Escalation. Extended Tue."
     },
     {
-      "title": "2nd (24%)",
+      "title": "2nd (26%)",
       "body": "Attrition."
     },
     {
-      "title": "3rd (15%)",
-      "body": "Victory. WSO."
+      "title": "3rd (14%)",
+      "body": "Victory. Khademi."
     },
     {
       "title": "4th",
-      "body": "Deal 10%. Intervention 7%. Fracture 4%."
+      "body": "Deal 12%. Intervention 7%. Fracture 3%."
     }
   ],
   "shippingRoutes": [
@@ -1077,7 +1096,7 @@
       "route": "Tehran -> Dubai -> Atlanta",
       "status": "DEAD",
       "statusColor": "red",
-      "detail": "Dead. Kuwait infra devastated. Gulf warfare.",
+      "detail": "Dead. Gulf warfare. Khademi kill = escalation.",
       "viability": "0%",
       "eta": "N/A"
     },
@@ -1085,7 +1104,7 @@
       "route": "Iran -> Turkey (land)",
       "status": "CLOSED",
       "statusColor": "red",
-      "detail": "NATO. April 6 power grid = all at risk.",
+      "detail": "NATO. Turkey mediating 45-day. Still closed.",
       "viability": "~5%",
       "eta": "Post-war"
     },
@@ -1093,7 +1112,7 @@
       "route": "Iran -> Armenia",
       "status": "MOST VIABLE",
       "statusColor": "yellow",
-      "detail": "Grid intact BUT April 6 = TOMORROW. If struck: route DIES.",
+      "detail": "Grid intact. If Tue strikes: route DIES.",
       "viability": "~10-15%",
       "eta": "If ceasefire: 4-6 weeks"
     },
@@ -1101,7 +1120,7 @@
       "route": "Pakistan / East",
       "status": "IMPROVING MARGINALLY",
       "statusColor": "yellow",
-      "detail": "Pakistan/China active. WSO signal. Iraq transit.",
+      "detail": "Pakistan 45-day lead mediator. Iraq transit.",
       "viability": "~8-10%",
       "eta": "Months."
     },
@@ -1109,7 +1128,7 @@
       "route": "Oman bypass",
       "status": "COMPROMISED",
       "statusColor": "red",
-      "detail": "Iraq tanker D37. Oman continuing. Strait calmer.",
+      "detail": "IRGC 'new order.' Strait unchanged.",
       "viability": "~5%",
       "eta": "Uncertain"
     }
@@ -1119,7 +1138,7 @@
       "route": "Tehran-Dubai-Atlanta",
       "status": "Dead",
       "statusColor": "red",
-      "detail": "Kuwait devastated.",
+      "detail": "Khademi. Escalation.",
       "viability": "0%",
       "eta": "-"
     },
@@ -1127,7 +1146,7 @@
       "route": "Iran-Turkey",
       "status": "Closed",
       "statusColor": "red",
-      "detail": "NATO. April 6.",
+      "detail": "NATO. 45-day.",
       "viability": "~5%",
       "eta": "Post-war"
     },
@@ -1135,7 +1154,7 @@
       "route": "Iran-Armenia",
       "status": "Best",
       "statusColor": "yellow",
-      "detail": "If power grid: dies.",
+      "detail": "If Tue: dies.",
       "viability": "~10-15%",
       "eta": "4-6 weeks"
     },
@@ -1143,7 +1162,7 @@
       "route": "Pakistan/East",
       "status": "Improving",
       "statusColor": "yellow",
-      "detail": "China/Pakistan. Iraq transit.",
+      "detail": "45-day lead. Iraq.",
       "viability": "~8-10%",
       "eta": "Months"
     },
@@ -1151,147 +1170,147 @@
       "route": "Oman",
       "status": "Compromised",
       "statusColor": "red",
-      "detail": "Iraq D37. Calmer.",
+      "detail": "'New order.' Unchanged.",
       "viability": "~5%",
       "eta": "Uncertain"
     }
   ],
   "publishingStatus": [
-    "<strong>Paper:</strong> HALTED. 37 days. April 6 power grid = ALL production dead YEARS.",
-    "<strong>Printing:</strong> B1 Bridge destroyed. April 6 = power grid. 864+ hrs internet.",
-    "<strong>Internet:</strong> 864+ hours. If power grid: PERMANENT.",
+    "<strong>Paper:</strong> HALTED. 38 days. Tue power grid = ALL production dead YEARS.",
+    "<strong>Printing:</strong> B1 Bridge destroyed. Tue = power grid. 888+ hrs internet.",
+    "<strong>Internet:</strong> 888+ hours. Record. If power grid: PERMANENT.",
     "<strong>New titles:</strong> HALTED. Zero ISBNs. 3+ months post-ceasefire.",
-    "<strong>Warehouse:</strong> Unknown. 85,000+ structures. April 6 = EXISTENTIAL.",
-    "<strong>Distribution:</strong> Collapsed. Kuwait devastated."
+    "<strong>Warehouse:</strong> Unknown. 85,000+ structures. Sharif U area hit. Tue = EXISTENTIAL.",
+    "<strong>Distribution:</strong> Collapsed. Khademi kill = more strikes."
   ],
   "publishingStatus_fa": [
-    "<strong>Paper:</strong> 37 days. April 6 = years.",
-    "<strong>Printing:</strong> B1. 864+.",
-    "<strong>Internet:</strong> 864+. Permanent.",
+    "<strong>Paper:</strong> 38 days. Tue = years.",
+    "<strong>Printing:</strong> B1. 888+.",
+    "<strong>Internet:</strong> 888+. Record. Permanent.",
     "<strong>New titles:</strong> Halted. 3+ months.",
-    "<strong>Warehouse:</strong> Unknown. Existential.",
+    "<strong>Warehouse:</strong> Unknown. Sharif U. Existential.",
     "<strong>Distribution:</strong> Collapsed."
   ],
   "impactIranfarhang": [
-    "<strong>SUPPLY CHAIN: 100% SEVERED - DAY 37.</strong> April 6 = TOMORROW. Power grid = ALL printing/warehousing dead YEARS.",
-    "<strong>Revenue:</strong> Atlanta only. ~2.5-3 months. Oil $109. FY27 at risk.",
-    "<strong>Routes:</strong> Armenia ~10-15% (IF grid survives). Pakistan ~8-10%. Dubai DEAD.",
+    "<strong>SUPPLY CHAIN: 100% SEVERED - DAY 38.</strong> Tue deadline = power grid. ALL printing/warehousing dead YEARS.",
+    "<strong>Revenue:</strong> Atlanta only. ~2.5-3 months. Oil $110. FY27 at risk.",
+    "<strong>Routes:</strong> Armenia ~10-15% (IF grid survives). Pakistan ~8-10% (mediating). Dubai DEAD.",
     "<strong>OFAC:</strong> Statutory (Berman). Intact.",
-    "<strong>APRIL 6 = EXISTENTIAL:</strong> Power grid = warehouses no power, printing dead, transport paralyzed. Recovery YEARS.",
-    "<strong>Family:</strong> Internet 864+. WSO = slight signal but April 6 TOMORROW."
+    "<strong>TUE = EXISTENTIAL:</strong> Power grid = warehouses no power, printing dead, transport paralyzed. Recovery YEARS.",
+    "<strong>Family:</strong> Internet 888+. 45-day proposal = slight hope."
   ],
   "impactIranfarhang_fa": [
-    "<strong>100% cut - Day 37.</strong> April 6 = years.",
+    "<strong>100% cut - Day 38.</strong> Tue = years.",
     "<strong>Revenue:</strong> Atlanta. ~2.5-3 months.",
     "<strong>Routes:</strong> Armenia ~10-15%. Pakistan ~8-10%.",
     "<strong>OFAC:</strong> Intact.",
-    "<strong>April 6 = existential.</strong>",
-    "<strong>Family:</strong> 864+."
+    "<strong>Tue = existential.</strong>",
+    "<strong>Family:</strong> 888+. 45-day slight hope."
   ],
   "prepIranfarhang": [
-    "<strong>APRIL 6 contingency:</strong> Assume power grid TOMORROW. 6-12 month disruption. Armenia = ONLY.",
-    "<strong>Clients:</strong> April 6 TOMORROW. FY27 alternate.",
+    "<strong>TUE contingency:</strong> Assume power grid Tue. 6-12 month disruption. Armenia = ONLY.",
+    "<strong>Clients:</strong> Tue deadline. FY27 alternate.",
     "<strong>Armenia:</strong> Independent. Contact Yerevan.",
     "<strong>FY27:</strong> SEVERE. Sep-Oct AT BEST.",
     "<strong>CONTINGENCY:</strong> Diaspora publishers.",
-    "<strong>POSITIVE:</strong> WSO = ~10% deal. Plan for worst."
+    "<strong>POSITIVE:</strong> 45-day proposal = ~12% deal. Khademi = achievement. Plan for worst."
   ],
   "prepIranfarhang_fa": [
-    "<strong>April 6:</strong> 6-12 months. Armenia.",
-    "<strong>Clients:</strong> TOMORROW. FY27.",
+    "<strong>Tue:</strong> 6-12 months. Armenia.",
+    "<strong>Clients:</strong> Tue. FY27.",
     "<strong>Armenia:</strong> Independent.",
     "<strong>FY27:</strong> Severe. Sep-Oct.",
     "<strong>Contingency:</strong> Diaspora.",
-    "<strong>Positive:</strong> ~10%."
+    "<strong>Positive:</strong> ~12%. Khademi."
   ],
   "signalsIranfarhang": [
-    "<strong>GATE 1 - APRIL 6 (TOMORROW):</strong> Power grid MOST LIKELY. Supply chain dead YEARS.",
-    "<strong>GATE 2 - POST-RESCUE:</strong> WSO = window. China. ~10%.",
-    "<strong>GATE 3 - INTERNET:</strong> 864+. If grid: PERMANENT.",
-    "<strong>GATE 4 - OIL:</strong> $109 DOWN. Binary: $85 or $130+.",
+    "<strong>GATE 1 - TUE APR 7:</strong> Power grid MOST LIKELY if no deal. Supply chain dead YEARS.",
+    "<strong>GATE 2 - 45-DAY PROPOSAL:</strong> Most specific yet. ~12%. Egypt/Pakistan/Turkey.",
+    "<strong>GATE 3 - INTERNET:</strong> 888+. Record. If grid: PERMANENT.",
+    "<strong>GATE 4 - OIL:</strong> $110. Deal=$85 or strikes=$130+.",
     "<strong>Armenia:</strong> Open. If grid: ONLY option.",
     "<strong>OFAC:</strong> Monitor."
   ],
   "signalsIranfarhang_fa": [
-    "<strong>April 6 (TOMORROW):</strong> Power grid. Years.",
-    "<strong>Post-rescue:</strong> ~10%.",
-    "<strong>Internet:</strong> 864+. Permanent.",
-    "<strong>Oil:</strong> $109. Binary.",
+    "<strong>Tue (Apr 7):</strong> Power grid. Years.",
+    "<strong>45-day:</strong> ~12%. Active.",
+    "<strong>Internet:</strong> 888+. Permanent.",
+    "<strong>Oil:</strong> $110. Binary.",
     "<strong>Armenia:</strong> Only option.",
     "<strong>OFAC:</strong> Monitor."
   ],
   "impactKIP": [
-    "<strong>GULF INFRASTRUCTURE WARFARE:</strong> Kuwait 2 power/water + Shuwaikh + Ministries. Bahrain BAPCO. UAE Borouge. Iran civilian infra targeting.",
-    "<strong>Banking: 9.5/10.</strong> Oil $109 slight relief. But Kuwait + April 6 binary.",
-    "<strong>Hormuz: MIXED.</strong> Iraq tanker. Safe passage expanding. WSO calmer. 2,000 ships. April 6 binary.",
-    "<strong>POSITIVE:</strong> WSO rescued. Oil -$6. Iraq transit. China. ~10% deal.",
-    "<strong>Personnel:</strong> Gulf infra warfare. ALL high-risk.",
-    "<strong>Revenue: ZERO.</strong> 864+. $109.",
-    "<strong>Insurance:</strong> 13%+. April 6 = uninsurable likely."
+    "<strong>KHADEMI KILL + COORDINATED BARRAGE:</strong> Most senior IRGC kill since Khamenei. But Houthi+Hezb+Iran barrage = retaliation. Gulf 'new order' = permanent.",
+    "<strong>Banking: 9.5/10.</strong> Oil $110. Bahrain Fifth Fleet hit. Crowne Plaza = civilian.",
+    "<strong>Hormuz: MIXED.</strong> 53 transits/week (up from 36). Iraq exempt. IRGC 'new order' = won't return. April 7 binary.",
+    "<strong>POSITIVE:</strong> 45-day proposal. Deadline extended. Oil slight dip. ~12% deal.",
+    "<strong>Personnel:</strong> Bahrain civilian targets (Crowne Plaza). ALL high-risk.",
+    "<strong>Revenue: ZERO.</strong> 888+. $110.",
+    "<strong>Insurance:</strong> 13%+. Tue = uninsurable likely."
   ],
   "impactKIP_fa": [
-    "<strong>Gulf infra:</strong> Kuwait + Bahrain + UAE.",
+    "<strong>Khademi + barrage:</strong> No.2 killed. Retaliation.",
     "<strong>Banking: 9.5/10.</strong>",
-    "<strong>Hormuz: mixed.</strong> Iraq. WSO. Binary.",
-    "<strong>Positive:</strong> WSO. Oil. ~10%.",
-    "<strong>Personnel:</strong> High-risk.",
+    "<strong>Hormuz: mixed.</strong> 53/week. 'New order.' Binary.",
+    "<strong>Positive:</strong> 45-day. Extended. ~12%.",
+    "<strong>Personnel:</strong> Bahrain civilian. High-risk.",
     "<strong>Revenue: zero.</strong>",
     "<strong>Insurance:</strong> 13%+. Uninsurable."
   ],
   "prepKIP": [
-    "<strong>Banking:</strong> Maintain withdrawal. $109 slight room. April 6.",
-    "<strong>Personnel:</strong> Evacuation. Kuwait power shut.",
-    "<strong>Insurance:</strong> File BEFORE April 6.",
-    "<strong>Inventory:</strong> $5,550+ per container.",
-    "<strong>APRIL 6:</strong> Power grid. Gulf recovery 2027+.",
-    "<strong>POSITIVE:</strong> WSO + China = ~10%. DUAL scenarios.",
+    "<strong>Banking:</strong> Maintain withdrawal. $110. Bahrain Fifth Fleet = stress.",
+    "<strong>Personnel:</strong> Evacuation. Bahrain civilian targets now.",
+    "<strong>Insurance:</strong> File BEFORE Tue.",
+    "<strong>Inventory:</strong> $5,700+ per container.",
+    "<strong>TUE APR 7:</strong> Power grid. Gulf recovery 2027+.",
+    "<strong>POSITIVE:</strong> 45-day + extended = ~12%. DUAL scenarios.",
     "<strong>Diversification:</strong> KL/Tbilisi. Iraq transit."
   ],
   "prepKIP_fa": [
-    "<strong>Banking:</strong> Maintain. $109.",
-    "<strong>Personnel:</strong> Evacuate.",
-    "<strong>Insurance:</strong> Before April 6.",
-    "<strong>Inventory:</strong> $5,550+.",
-    "<strong>April 6:</strong> 2027+.",
-    "<strong>Positive:</strong> ~10%. Dual.",
+    "<strong>Banking:</strong> Maintain. $110.",
+    "<strong>Personnel:</strong> Evacuate. Bahrain.",
+    "<strong>Insurance:</strong> Before Tue.",
+    "<strong>Inventory:</strong> $5,700+.",
+    "<strong>Tue:</strong> 2027+.",
+    "<strong>Positive:</strong> ~12%. Dual.",
     "<strong>Diversification:</strong> KL/Tbilisi."
   ],
   "signalsKIP": [
-    "<strong>GATE 1 - APRIL 6:</strong> 3rd ultimatum. Kuwait = testing. Power grid. Uninsurable.",
-    "<strong>GATE 2 - POST-RESCUE:</strong> WSO + oil = window. ~10% deal.",
-    "<strong>GATE 3 - HORMUZ:</strong> Iraq tanker. Expanding. Binary.",
-    "<strong>OIL:</strong> $109. Deal=$85 or strikes=$130+.",
+    "<strong>GATE 1 - TUE APR 7:</strong> Extended deadline. 4th iteration. Credibility exhausted. Power grid.",
+    "<strong>GATE 2 - 45-DAY PROPOSAL:</strong> Most specific. ~12% deal.",
+    "<strong>GATE 3 - HORMUZ:</strong> 53/week. 'New order' = permanent change. Binary.",
+    "<strong>OIL:</strong> $110. Deal=$85 or strikes=$130+.",
     "<strong>Insurance:</strong> 13%+. File NOW.",
-    "<strong>Houthi:</strong> Ben Gurion. If April 6: Bab al-Mandab = $150+.",
-    "<strong>Banking:</strong> Eased. April 6 = stress returns."
+    "<strong>Houthi:</strong> Coordinated barrage. If Tue: Bab al-Mandab = $150+.",
+    "<strong>Banking:</strong> Bahrain Fifth Fleet hit. Stress."
   ],
   "signalsKIP_fa": [
-    "<strong>April 6:</strong> 3rd. Uninsurable.",
-    "<strong>Post-rescue:</strong> ~10%.",
-    "<strong>Hormuz:</strong> Iraq. Binary.",
-    "<strong>Oil:</strong> $109. Binary.",
+    "<strong>Tue:</strong> 4th. Credibility exhausted.",
+    "<strong>45-day:</strong> ~12%.",
+    "<strong>Hormuz:</strong> 53/week. 'New order.' Binary.",
+    "<strong>Oil:</strong> $110. Binary.",
     "<strong>Insurance:</strong> File NOW.",
-    "<strong>Houthi:</strong> $150+.",
-    "<strong>Banking:</strong> Eased. Stress returns."
+    "<strong>Houthi:</strong> Barrage. $150+.",
+    "<strong>Banking:</strong> Fifth Fleet. Stress."
   ],
   "casualties": [
     {
       "group": "Iran",
-      "figure": "~7,800+ killed",
+      "figure": "~8,000+ killed",
       "statusColor": "red",
-      "detail": "HRANA: 3,531+. AJ: 2,076+. Iran: 5 killed rescue op. 85,000+ structures."
+      "detail": "34+ D38 (6 children Baharestan). Khademi + Bagheri killed. 85,000+ structures."
     },
     {
       "group": "Lebanon",
-      "figure": "1,368+ killed",
+      "figure": "1,345+ killed",
       "statusColor": "red",
-      "detail": "1,368+ (124+ children). ~1M displaced."
+      "detail": "1,345+ (AJ updated). ~1M displaced."
     },
     {
       "group": "Israel",
       "figure": "25+ killed",
       "statusColor": "red",
-      "detail": "24+ civilians. WSO RESCUED. 15 US KIA + 520+. 7+2+2. Houthi Ben Gurion."
+      "detail": "Coordinated barrage Tel Aviv + Dimona + Haifa 10+ sites. 15 US KIA + 520+. 7+2+2."
     },
     {
       "group": "Iraq",
@@ -1301,35 +1320,35 @@
     },
     {
       "group": "Gulf States",
-      "figure": "32+ killed",
+      "figure": "36+ killed",
       "statusColor": "red",
-      "detail": "Kuwait 2 power shut. Bahrain BAPCO. No D37 casualties. 210+ injured cumul."
+      "detail": "UAE 4 wounded D38. Bahrain Crowne Plaza + Fifth Fleet. Kuwait continued aftermath."
     },
     {
       "group": "Source discrepancy",
       "figure": "SIGNIFICANT",
       "statusColor": "yellow",
-      "detail": "Internet 864+. AJ vs HRANA vs Hengaw. Intercept: cover-up."
+      "detail": "Internet 888+. Record. Cover-up."
     }
   ],
   "casualties_fa": [
     {
       "group": "Iran",
-      "figure": "~7,800+",
+      "figure": "~8,000+",
       "statusColor": "red",
-      "detail": "HRANA 3,531+. 5 killed rescue."
+      "detail": "34+ D38. 6 children. Khademi."
     },
     {
       "group": "Lebanon",
-      "figure": "1,368+",
+      "figure": "1,345+",
       "statusColor": "red",
-      "detail": "1,368+. ~1M."
+      "detail": "1,345+. ~1M."
     },
     {
       "group": "Israel",
       "figure": "25+",
       "statusColor": "red",
-      "detail": "WSO rescued. 15 KIA. 7+2+2."
+      "detail": "Barrage. 15 KIA. 7+2+2."
     },
     {
       "group": "Iraq",
@@ -1339,101 +1358,101 @@
     },
     {
       "group": "Gulf",
-      "figure": "32+",
+      "figure": "36+",
       "statusColor": "red",
-      "detail": "Kuwait 2 power shut. 210+ injured."
+      "detail": "Bahrain civilian. Fifth Fleet."
     },
     {
       "group": "Discrepancy",
       "figure": "Significant",
       "statusColor": "yellow",
-      "detail": "864+. Cover-up."
+      "detail": "888+. Record. Cover-up."
     }
   ],
   "humanitarian": [
-    "<strong>Internet:</strong> 864+ hours. 37 days. $1.6B+. 90M. April 6 power grid = PERMANENT.",
+    "<strong>Internet:</strong> 888+ hours. 38 days. $1.7B+. 90M. LONGEST EVER. If power grid: PERMANENT.",
     "<strong>Displacement:</strong> 330,000+. Lebanon ~1M. 363+ Bushehr to Russia.",
-    "<strong>Infrastructure:</strong> 85,000+. 600+ schools. Kuwait 2 power shut. April 6 = EXISTENTIAL.",
-    "<strong>Nuclear:</strong> Russia 200 MORE (363+). Araghchi: contamination. 440kg.",
+    "<strong>Infrastructure:</strong> 85,000+. 600+ schools. Sharif U area hit. Tue = EXISTENTIAL.",
+    "<strong>Nuclear:</strong> 363+ Bushehr. 440kg. Khademi = intel chief eliminated.",
     "<strong>Medical:</strong> 26,500+ wounded Iran. 6,594+ Israel. 520+ US.",
-    "<strong>Economic:</strong> Oil $109 DOWN. Gas ~$4.05. Kuwait power/water = civilian services."
+    "<strong>Economic:</strong> Oil $110. WTI $111. Gas ~$4.10. Bahrain Crowne Plaza = civilian."
   ],
   "humanitarian_fa": [
-    "<strong>Internet:</strong> 864+. 37 days. $1.6B+. April 6 = permanent.",
+    "<strong>Internet:</strong> 888+. 38 days. $1.7B+. Record. Permanent.",
     "<strong>Displacement:</strong> 330,000+. 363+ Bushehr.",
-    "<strong>Infrastructure:</strong> 85,000+. Kuwait 2 power shut. Existential.",
-    "<strong>Nuclear:</strong> 363+. Contamination. 440kg.",
+    "<strong>Infrastructure:</strong> 85,000+. Sharif U. Existential.",
+    "<strong>Nuclear:</strong> 363+. 440kg. Khademi dead.",
     "<strong>Medical:</strong> 26,500+ Iran. 6,594+ Israel. 520+ US.",
-    "<strong>Economic:</strong> $109. $4.05. Kuwait."
+    "<strong>Economic:</strong> $110. $4.10. Bahrain civilian."
   ],
   "diplomacy": [
-    "<strong>WSO RESCUE = WINDOW:</strong> POW removed. Oil -$6. ~10% deal. But Trump 48-hr committed.",
-    "<strong>TRUMP 48-HR (3RD):</strong> All Hell Monday. 3rd deadline. Backing down = devastating.",
-    "<strong>CHINA 5-POINT:</strong> With Pakistan. Most active. But Iran: trust zero.",
-    "<strong>PAKISTAN - INDIRECT:</strong> No framework. Only channel.",
-    "<strong>IRAN UNCHANGED:</strong> Contacts not negotiations. Trust zero. Battlefield = validation.",
-    "<strong>APRIL 6 = TOMORROW - BINARY:</strong> Deal = $85-95 OR power grid = $130+, Houthi, catastrophe. 24 hours."
+    "<strong>45-DAY CEASEFIRE PROPOSAL:</strong> Egypt/Pakistan/Turkey. Phase 1 = 45-day ceasefire. Phase 2 = permanent deal incl Hormuz + HEU. Most specific yet.",
+    "<strong>IRAN RESPONSE:</strong> Formulating response but won't do direct talks. Iran says won't open Hormuz under temporary ceasefire. Chances slim.",
+    "<strong>TRUMP EXTENDED 20HRS:</strong> To Tue 8PM ET. 4th deadline. Credibility exhausted after 3 delays.",
+    "<strong>KHADEMI KILL = LEVERAGE:</strong> US/Israel can claim major achievement. But may reduce Iran's willingness to negotiate.",
+    "<strong>PAKISTAN - 2-PHASE PLAN:</strong> Lead mediator. Phase 2 includes Hormuz + HEU resolution. Most comprehensive framework.",
+    "<strong>TUE APR 7 = BINARY:</strong> Deal = $85-95 OR power grid = $130+, Houthi, catastrophe. ~36 hours."
   ],
   "diplomacy_fa": [
-    "<strong>WSO = window:</strong> ~10%. But committed.",
-    "<strong>48-hr (3rd):</strong> Devastating to back down.",
-    "<strong>China 5-point:</strong> Active. Trust zero.",
-    "<strong>Pakistan:</strong> Indirect.",
-    "<strong>Iran:</strong> Not negotiating.",
-    "<strong>April 6 = binary:</strong> $85 or $130+. 24h."
+    "<strong>45-day:</strong> Egypt/Pakistan/Turkey. 2-phase.",
+    "<strong>Iran:</strong> Formulating. No direct talks. Won't open Hormuz temporarily.",
+    "<strong>Extended Tue:</strong> 4th. Credibility exhausted.",
+    "<strong>Khademi:</strong> Leverage but reduces willingness.",
+    "<strong>Pakistan:</strong> 2-phase. Hormuz + HEU.",
+    "<strong>Tue = binary:</strong> $85 or $130+. ~36h."
   ],
   "publicOpinion": [
-    "<strong>Pew:</strong> 59% wrong. WSO rescue = positive BUT C-130s = at what cost?",
-    "<strong>WSO:</strong> Trump: most daring. But $200M+ destroyed. Media split.",
-    "<strong>Gas:</strong> ~$4.05. If April 6: $5+.",
-    "<strong>Congress:</strong> AUMF absent. C-130 = briefing demands.",
-    "<strong>Casualties:</strong> 15 KIA (WSO rescued). 520+. 7+2+2 = mounting.",
-    "<strong>International:</strong> China 5-point. Russia 363+. Kuwait = allies questioning."
+    "<strong>Pew:</strong> 59% wrong. Khademi kill = positive BUT barrage = still dangerous.",
+    "<strong>Khademi:</strong> Major achievement for narrative. But 4th deadline extension = fatigue.",
+    "<strong>Gas:</strong> ~$4.10. If Tue strikes: $5+.",
+    "<strong>Congress:</strong> AUMF absent. Khademi = briefing demands on intel ops.",
+    "<strong>Casualties:</strong> 15 KIA. 520+. 7+2+2 = mounting. 6 children Baharestan.",
+    "<strong>International:</strong> 45-day proposal. 3 mediator countries. IRGC 'new order.'"
   ],
   "publicOpinion_fa": [
-    "<strong>Pew:</strong> 59%. WSO + but C-130.",
-    "<strong>WSO:</strong> Daring but $200M+.",
-    "<strong>Gas:</strong> $4.05. If Apr 6: $5+.",
-    "<strong>Congress:</strong> No AUMF. C-130 briefing.",
-    "<strong>Casualties:</strong> 15 KIA. 7+2+2.",
-    "<strong>Intl:</strong> China. Russia 363+. Kuwait."
+    "<strong>Pew:</strong> 59%. Khademi + but barrage.",
+    "<strong>Khademi:</strong> Achievement but 4th delay.",
+    "<strong>Gas:</strong> $4.10. If Tue: $5+.",
+    "<strong>Congress:</strong> No AUMF.",
+    "<strong>Casualties:</strong> 15 KIA. 7+2+2. 6 children.",
+    "<strong>Intl:</strong> 45-day. 3 mediators. 'New order.'"
   ],
   "hormuz": [
-    "<strong>MIXED - WSO + IRAQ + APRIL 6:</strong> ~9-10 vessels/day. Iraq tanker transited. WSO = calmer. April 6 binary.",
-    "<strong>Iraq transit:</strong> Suezmax Ocean Thunder. Iraq special exemption. Safe passage EXPANDING.",
-    "<strong>Safe passage:</strong> 7+ countries. ~9-10/day. Institutional.",
-    "<strong>WSO impact:</strong> Rescue ops COMPLETE. Strait calmer. April 6 = potential re-escalation.",
+    "<strong>IRGC 'NEW ORDER' — PERMANENT CHANGE:</strong> Strait will NOT return to previous state. ~10 vessels/day. 53 transits last week (up from 36).",
+    "<strong>Iraq exempt:</strong> Continuing. Safe passage expanding.",
+    "<strong>Safe passage:</strong> 7+ countries. ~10/day. Institutional.",
+    "<strong>Insurance:</strong> 13%+. Tue = uninsurable.",
     "<strong>Kharg:</strong> Fortified. 82nd deployed.",
-    "<strong>Insurance:</strong> 13%+. Kuwait = wartime max. April 6 = uninsurable.",
-    "<strong>Bab al-Mandab:</strong> Houthis Ben Gurion. If April 6: closes = $150+."
+    "<strong>45-day proposal:</strong> Phase 2 includes Hormuz resolution. Iran says won't open under temporary ceasefire.",
+    "<strong>Bab al-Mandab:</strong> Houthis coordinated barrage. If Tue: closes = $150+."
   ],
   "hormuz_fa": [
-    "<strong>Mixed:</strong> ~9-10. Iraq. WSO calmer. Binary.",
-    "<strong>Iraq:</strong> Transit. Expanding.",
-    "<strong>Safe passage:</strong> 7+ countries. Institutional.",
-    "<strong>WSO:</strong> Complete. Calmer.",
-    "<strong>Kharg:</strong> Fortified.",
+    "<strong>'New order':</strong> Permanent. ~10/day. 53/week.",
+    "<strong>Iraq:</strong> Exempt. Expanding.",
+    "<strong>Safe passage:</strong> 7+ countries.",
     "<strong>Insurance:</strong> 13%+. Uninsurable.",
-    "<strong>Bab al-Mandab:</strong> If April 6: $150+."
+    "<strong>Kharg:</strong> Fortified.",
+    "<strong>45-day:</strong> Hormuz in Phase 2.",
+    "<strong>Bab al-Mandab:</strong> Barrage. $150+."
   ],
   "keyActors": [
-    "<strong>US:</strong> WSO RESCUED. 2 C-130s + 2 Little Birds destroyed. Trump 48-hr reissued. 15 KIA + 520+. 7+2+2. April 6 TOMORROW.",
-    "<strong>Israel:</strong> IDF continues. Houthi Ben Gurion = multi-axis.",
-    "<strong>Iran:</strong> Kuwait infra devastated. Bahrain BAPCO. UAE 9+1+50. Claims 5 killed + C-130s. FM: trust zero. Wreckage propaganda. Testing resolve.",
-    "<strong>Russia:</strong> 200 MORE Bushehr (363+). Araghchi: contamination. Deepening.",
-    "<strong>China:</strong> 5-point. Most active mediator. ~10%.",
-    "<strong>Pakistan:</strong> Indirect only. Only channel.",
-    "<strong>Houthis:</strong> Ben Gurion D37. If April 6: Bab al-Mandab = both chokepoints.",
-    "<strong>IAEA:</strong> 363+ Bushehr. No enforcement."
+    "<strong>US:</strong> Khademi kill = major. Deadline extended Tue. 15 KIA + 520+. 7+2+2. 4th delay = credibility.",
+    "<strong>Israel:</strong> Killed Khademi + Bagheri. Coordinated barrage retaliation. Haifa 10+ sites.",
+    "<strong>Iran:</strong> Khademi + Bagheri killed. BUT coordinated barrage = multi-axis. 'New order' Gulf. 45-day: formulating. No direct talks.",
+    "<strong>Russia:</strong> 363+ Bushehr. Unchanged.",
+    "<strong>China:</strong> Supporting 45-day via Pakistan. Mediator track.",
+    "<strong>Egypt/Pakistan/Turkey:</strong> 45-day ceasefire proposal. Most active mediator trio. Pakistan lead.",
+    "<strong>Houthis:</strong> COORDINATED barrage with Iran + Hezbollah. Dimona + Tel Aviv. Multi-axis.",
+    "<strong>IAEA:</strong> No enforcement."
   ],
   "keyActors_fa": [
-    "<strong>US:</strong> WSO. 2+2 destroyed. 48-hr. 15 KIA.",
-    "<strong>Israel:</strong> Continues. Houthi.",
-    "<strong>Iran:</strong> Kuwait. Bahrain. UAE. Trust zero. Testing.",
-    "<strong>Russia:</strong> 363+ Bushehr. Contamination.",
-    "<strong>China:</strong> 5-point. ~10%.",
-    "<strong>Pakistan:</strong> Indirect.",
-    "<strong>Houthi:</strong> Ben Gurion. Bab al-Mandab.",
+    "<strong>US:</strong> Khademi. Extended Tue. 15 KIA. 4th delay.",
+    "<strong>Israel:</strong> Killed Khademi + Bagheri. Barrage retaliation.",
+    "<strong>Iran:</strong> Khademi killed but barrage. 'New order.' 45-day: formulating.",
+    "<strong>Russia:</strong> 363+.",
+    "<strong>China:</strong> 45-day support.",
+    "<strong>Egypt/Pakistan/Turkey:</strong> 45-day. Lead mediators.",
+    "<strong>Houthi:</strong> Coordinated barrage. Multi-axis.",
     "<strong>IAEA:</strong> No enforcement."
   ],
   "predictive": {
@@ -1448,19 +1467,19 @@
         "projectedOutcome": "Iran ceases offensive operations by mid-April. War ends via military exhaustion + negotiated exit. Coalition declares victory.",
         "projectedOutcome_fa": "ایران عملیات تهاجمی را تا اواسط آوریل متوقف می‌کند. جنگ با فرسایش نظامی + خروج مذاکره‌ای پایان می‌یابد.",
         "confidence": 0.12,
-        "falsifiedBy": "D37 at 40/day. Definitively falsified since D18."
+        "falsifiedBy": "D38 at 41/day. Definitively falsified since D18."
       },
       "plateauRationing": {
         "label": "Rationing Model",
         "label_fa": "مدل جیره‌بندی",
         "description": "Assumes plateau at ~30/day = strategic rationing from deeper stockpiles (IRGC D16 claim)",
         "description_fa": "فرض بر جیره‌بندی استراتژیک از ذخایر عمیق‌تر (ادعای سپاه D16)",
-        "plateauRate": 45,
+        "plateauRate": 43,
         "projectedDuration_weeks": 7,
         "projectedOutcome": "Iran maintains harassment for 2+ months. War ends via negotiation under mutual exhaustion, or escalation spiral if ceiling breached. Haaretz confirms half launchers intact.",
         "projectedOutcome_fa": "ایران آزار ۲+ ماه. هاآرتص: نیمی پرتاب‌کننده‌ها سالم. جنگ با مذاکره یا تشدید.",
         "confidence": 0.82,
-        "falsifiedBy": "D33-D37 avg ~49/day. Revised plateau ~45. Kuwait infra = expanding."
+        "falsifiedBy": "D33-D38 avg ~49/day. Revised plateau ~43. Coordinated barrage = still capable."
       },
       "projectionLabels": [
         "Feb 28",
@@ -1513,7 +1532,8 @@
         "Apr 16",
         "Apr 17",
         "Apr 18",
-        "Apr 19"
+        "Apr 19",
+        "Apr 20"
       ],
       "decayProjection": [
         480,
@@ -1553,12 +1573,13 @@
         50,
         45,
         40,
-        6,
+        41,
         4,
         3,
         2,
         1,
         1,
+        0,
         0,
         0,
         0,
@@ -1606,7 +1627,7 @@
         50,
         45,
         40,
-        30,
+        41,
         28,
         28,
         27,
@@ -1619,7 +1640,8 @@
         23,
         23,
         22,
-        22
+        22,
+        21
       ]
     },
     "vectors": {
@@ -1660,7 +1682,8 @@
         "Apr 02",
         "Apr 03",
         "Apr 04",
-        "Apr 05"
+        "Apr 05",
+        "Apr 06"
       ],
       "militaryExhaustion": [
         1,
@@ -1699,7 +1722,8 @@
         7.5,
         7,
         7,
-        7
+        7,
+        7.5
       ],
       "economicPain": [
         1,
@@ -1738,6 +1762,7 @@
         9,
         10,
         10,
+        9.5,
         9.5
       ],
       "diplomaticMomentum": [
@@ -1777,7 +1802,8 @@
         5.5,
         4.5,
         3.5,
-        4.5
+        4.5,
+        5.5
       ],
       "usPoliticalSustainability": [
         8,
@@ -1816,6 +1842,7 @@
         1.5,
         1,
         1,
+        2,
         2
       ],
       "escalationCeilingDistance": [
@@ -1855,30 +1882,31 @@
         0.5,
         0.5,
         0.5,
+        0.5,
         0.5
       ]
     },
     "vectorNotes": {
-      "militaryExhaustion": "D37: 7/10. Iran 40+70. Kuwait infra = expanding. US 2+2 lost.",
-      "militaryExhaustion_fa": "7/10. Kuwait. 2+2.",
-      "economicPain": "D37: 9.5/10. Oil $109 DOWN. Gas $4.05. Kuwait power/water shut. April 6 binary.",
-      "economicPain_fa": "9.5/10. $109. Kuwait.",
-      "diplomaticMomentum": "D37: 4.5/10. UP. WSO +1.5, China +0.5, Iraq transit +0.5. But ultimatum -0.5, trust zero -0.5.",
-      "diplomaticMomentum_fa": "4.5/10. WSO + China. But ultimatum.",
-      "usPoliticalSustainability": "D37: 2/10. UP. WSO = positive. But 2+2 = $200M+. Gas $4.05. If Apr 6: drops to 1.",
-      "usPoliticalSustainability_fa": "2/10. WSO positive. But cost.",
-      "escalationCeilingDistance": "D37: 0.5/10. Power grid TOMORROW. 3rd ultimatum. Kuwait = testing. All ceilings 24-48 hrs.",
-      "escalationCeilingDistance_fa": "0.5/10. TOMORROW. All ceilings."
+      "militaryExhaustion": "D38: 7.5/10. UP from 7. Khademi kill BUT coordinated barrage = multi-axis capability intact.",
+      "militaryExhaustion_fa": "7.5/10. Khademi but barrage.",
+      "economicPain": "D38: 9.5/10. Oil $110. WTI $111. Bahrain Fifth Fleet + Crowne Plaza. Gas $4.10.",
+      "economicPain_fa": "9.5/10. $110. Fifth Fleet.",
+      "diplomaticMomentum": "D38: 5.5/10. UP from 4.5. 45-day proposal +1.5, 3 mediators +0.5. But Iran no direct -0.5, Khademi reduces willingness -0.5.",
+      "diplomaticMomentum_fa": "5.5/10. 45-day +1.5. But no direct.",
+      "usPoliticalSustainability": "D38: 2/10. UNCHANGED. Khademi = positive. But 4th delay = fatigue. Gas $4.10. 6 children.",
+      "usPoliticalSustainability_fa": "2/10. Khademi + but 4th delay.",
+      "escalationCeilingDistance": "D38: 0.5/10. Power grid TUE. 4th deadline. All ceilings ~36 hrs.",
+      "escalationCeilingDistance_fa": "0.5/10. TUE. All ceilings."
     },
     "warOutcome": {
-      "prediction": "April 6 power grid strikes MOST LIKELY (40%). WSO rescue creates narrow window (~10% deal) but Trump committed 3rd time. If strikes: $130+, Houthi Bab al-Mandab. If deal: $85-95.",
-      "prediction_fa": "April 6 MOST LIKELY (40%). WSO = window. If strikes: $130+. If deal: $85-95.",
-      "derivation": "Military(7) stable. Economic(9.5) slight relief. Diplomatic(4.5) UP. Political(2) UP. Escalation(0.5) CRITICAL. KEY: Trump credibility after 2 backdowns.",
-      "derivation_fa": "Military(7). Economic(9.5). Diplomatic(4.5) UP. Political(2) UP. Escalation(0.5) CRITICAL.",
-      "convergenceScore": 6.6,
-      "convergenceInterpretation": "6.6/10 = EXTREME pressure (slightly down from 6.7). April 6 = TOMORROW. Binary. 24 hours.",
-      "convergenceInterpretation_fa": "6.6/10. TOMORROW. 24 hours.",
-      "lastUpdated": "2026-04-05T10:00:00-04:00"
+      "prediction": "Tue Apr 7 power grid strikes MOST LIKELY (38%). 45-day ceasefire proposal creates narrow window (~12% deal) but Iran won't do direct talks. If strikes: $130+, Houthi Bab al-Mandab. If deal: $85-95.",
+      "prediction_fa": "Tue MOST LIKELY (38%). 45-day = ~12%. If strikes: $130+. If deal: $85-95.",
+      "derivation": "Military(7.5) UP - Khademi but barrage. Economic(9.5) steady. Diplomatic(5.5) UP - 45-day proposal. Political(2) steady. Escalation(0.5) CRITICAL. KEY: 4th deadline = credibility test.",
+      "derivation_fa": "Military(7.5) UP. Economic(9.5). Diplomatic(5.5) UP. Political(2). Escalation(0.5) CRITICAL.",
+      "convergenceScore": 6.5,
+      "convergenceInterpretation": "6.5/10 = EXTREME pressure (down from 6.6). 45-day proposal = slight diplomatic relief. Tue = ~36 hours.",
+      "convergenceInterpretation_fa": "6.5/10. 45-day slight relief. Tue = ~36h.",
+      "lastUpdated": "2026-04-06T08:00:00-04:00"
     }
   },
   "additionalCharts": {
@@ -1920,7 +1948,8 @@
       125,
       115,
       105,
-      110
+      110,
+      82
     ],
     "geoSpreadLabels": [
       "Feb 28",
@@ -1959,7 +1988,8 @@
       "Apr 02",
       "Apr 03",
       "Apr 04",
-      "Apr 05"
+      "Apr 05",
+      "Apr 06"
     ],
     "countriesTargetedPerDay": [
       8,
@@ -1998,7 +2028,8 @@
       8,
       8,
       7,
-      6
+      6,
+      9
     ],
     "missileDroneRatio": [
       0.67,
@@ -2037,7 +2068,8 @@
       0.79,
       0.77,
       0.75,
-      0.57
+      0.57,
+      1
     ],
     "interceptRateLabels": [
       "Feb 28",
@@ -2076,7 +2108,8 @@
       "Apr 02",
       "Apr 03",
       "Apr 04",
-      "Apr 05"
+      "Apr 05",
+      "Apr 06"
     ],
     "interceptRate": [
       0.82,
@@ -2115,7 +2148,8 @@
       0.88,
       0.87,
       0.89,
-      0.89
+      0.89,
+      0.88
     ],
     "scenarioHistory": {
       "labels": [
@@ -2130,7 +2164,8 @@
         "D34",
         "D35",
         "D36",
-        "D37"
+        "D37",
+        "D38"
       ],
       "escalationSpiral": [
         15,
@@ -2144,7 +2179,8 @@
         30,
         33,
         38,
-        40
+        40,
+        38
       ],
       "protractedAttrition": [
         30,
@@ -2158,7 +2194,8 @@
         26,
         28,
         27,
-        24
+        24,
+        26
       ],
       "declaredVictory": [
         25,
@@ -2172,7 +2209,8 @@
         18,
         16,
         14,
-        15
+        15,
+        14
       ],
       "negotiatedDeal": [
         15,
@@ -2186,7 +2224,8 @@
         11,
         10,
         8,
-        10
+        10,
+        12
       ],
       "internationalIntervention": [
         10,
@@ -2200,6 +2239,7 @@
         10,
         9,
         9,
+        7,
         7
       ],
       "regimeFracture": [
@@ -2214,7 +2254,8 @@
         5,
         4,
         4,
-        4
+        4,
+        3
       ]
     }
   },
@@ -2381,18 +2422,18 @@
     "tehranCommsStatus": {
       "status": "BLACKOUT",
       "statusColor": "red",
-      "internetDownHours": 840,
+      "internetDownHours": 888,
       "lastConfirmedContact": "Feb 28 (D1)",
-      "detail": "37 days. $1.6B+. If power grid: permanent.",
-      "detail_fa": "۸۴۰+ ساعت. بوشهر ۴مین بار. ماهشهر. IDF تهران + بیروت. ۶ آوریل = ۲ روز. تأیید ناممکن.",
-      "blackoutHours": "864+"
+      "detail": "38 days. $1.7B+. LONGEST EVER. If power grid: permanent.",
+      "detail_fa": "۸۸۸+ ساعت. ۳۸ روز. رکورد. اگر شبکه برق: دائمی.",
+      "blackoutHours": "888+"
     },
     "inventoryRunway": {
       "months_remaining": 3,
-      "detail": "~2.5-3 months. April 6 binary. Alternate sourcing NOW.",
-      "detail_fa": "~۳ ماه. نفت ~$۱۱۵ + ایران رد رسمی آتش‌بس + ۷ هواپیما = آتش‌بس ناممکن. FY27 ریسک شدید.",
+      "detail": "~2.5-3 months. Tue binary. Alternate sourcing NOW.",
+      "detail_fa": "~۳ ماه. سه‌شنبه باینری. منابع جایگزین فوری.",
       "burnRate": "~$15K-20K/month in fulfilled orders",
-      "criticalDate": "Late July 2026. Iran rejected ceasefire + 7 aircraft lost + WSO missing + April 6 = 2 days = ceasefire further delayed. Must activate alternatives NOW."
+      "criticalDate": "Late July 2026. 45-day proposal but Iran won't direct. Khademi = escalation signal. Must activate alternatives NOW."
     },
     "publishingDeepDive": [
       "<strong>PAPER/INK SUPPLY:</strong> Iran imports 70%+ of printing paper. Hormuz closure + sanctions = supply chain severed. Domestic paper mills operating at estimated 20-30% capacity due to power disruptions. Quality declining.",
@@ -2415,7 +2456,7 @@
     "dubaiBankingRisk": {
       "score": 9.5,
       "trend": "maximum",
-      "detail": "D37: 9.5/10. Oil $109 = slight relief. But Kuwait infra + April 6.",
+      "detail": "D38: 9.5/10. Oil $110. Bahrain Fifth Fleet + Crowne Plaza. Tue deadline.",
       "detail_fa": "D36: بوشهر ۴مین (۱۶۳ به روسیه). ماهشهر. MSC ایشیکا. نفت ~$۱۱۵ (فیزیکی $۱۴۱). ایران رد. ۲ روز. ۱۰ = حداکثر.",
       "action": "CRITICAL: Withdraw ALL Gulf funds (UAE + Qatar). Move to Tbilisi/KL IMMEDIATELY. Banking system at maximum stress."
     },
@@ -2554,7 +2595,7 @@
       "insured": true,
       "detail": "Most cargo insured under pre-war marine policies. Claims processing delayed — Lloyd's overwhelmed. Perishables (~15% by value) written off. Non-perishable goods safe in bonded storage but incurring daily storage fees (~$150/container/day).",
       "detail_fa": "اکثر بار بیمه. پردازش خسارت تأخیر. فاسدشدنی (~۱۵٪) از دست رفته. غیرفاسدشدنی در انبار اما هزینه روزانه (~$۱۵۰/کانتینر/روز).",
-      "storageFees": "$5,550+ (37 days x $150/day)"
+      "storageFees": "$5,700+ (38 days x $150/day)"
     },
     "insuranceCostIndex": {
       "labels": [
@@ -2566,7 +2607,8 @@
         "D33",
         "D34",
         "D35",
-        "D36"
+        "D36",
+        "D38"
       ],
       "warRiskPremium_pct": [
         0.02,
@@ -2576,8 +2618,9 @@
         3.8,
         4.2,
         4.5,
-        5.0,
-        5.2
+        5,
+        5.2,
+        5.3
       ],
       "hullInsurance_pct": [
         0.15,
@@ -2588,62 +2631,63 @@
         12,
         12.5,
         13,
+        13.5,
         13.5
       ],
-      "note": "D36: MSC Ishyka (Israel-linked) attacked by IRGC drone in Hormuz — on fire. Bushehr NPP 4th hit. Mahshahr petrochemical struck. Hull 13.5% = UNINSURABLE. War risk 5.2% = highest since 1980s tanker war. IRGC selectively targeting = ship-specific risk assessment required."
+      "note": "D38: Crowne Plaza Bahrain drone + USN Fifth Fleet missile. IRGC 'new order' = permanent Gulf posture. Hull 13.5% = UNINSURABLE. War risk 5.3%."
     }
   },
   "cumulativeByCountry": {
     "UAE": {
-      "missiles": 635,
-      "drones": 1286
+      "missiles": 649,
+      "drones": 1305
     },
     "Israel": {
-      "missiles": 354,
+      "missiles": 362,
       "drones": 154
     },
     "Saudi Arabia": {
-      "missiles": 209,
-      "drones": 455
+      "missiles": 211,
+      "drones": 458
     },
     "Kuwait": {
-      "missiles": 117,
-      "drones": 253
+      "missiles": 122,
+      "drones": 263
     },
     "Bahrain": {
-      "missiles": 71,
-      "drones": 161
+      "missiles": 75,
+      "drones": 166
     },
     "Qatar": {
-      "missiles": 77,
-      "drones": 99
+      "missiles": 78,
+      "drones": 101
     },
     "Iraq": {
-      "missiles": 62,
-      "drones": 89
+      "missiles": 64,
+      "drones": 91
     },
     "Oman": {
-      "missiles": 25,
+      "missiles": 26,
       "drones": 47
     },
     "Jordan": {
-      "missiles": 43,
+      "missiles": 44,
       "drones": 51
     },
     "Yemen": {
-      "missiles": 18,
+      "missiles": 23,
       "drones": 40
     },
-    "_note": "Estimated cumul ~3,280 missiles / ~5,187 drones through D36. D36: Bushehr NPP (4th), Mahshahr petrochemical, MSC Ishyka, cluster bomb Israel. UAE MoD cumul: 498/23/2,141.",
+    "_note": "Estimated cumul ~3,361 missiles / ~5,298 drones through D38. D38: Khademi killed, coordinated barrage, UAE MoD cumul: 519/26/2,210.",
     "total": {
-      "missiles": 1637,
-      "drones": 2577
+      "missiles": 1654,
+      "drones": 2676
     }
   },
   "stockpileAnalysis": {
     "currentDailyRate": {
-      "missiles": 40,
-      "drones": 70
+      "missiles": 41,
+      "drones": 41
     },
     "estimatedStockpiles": [
       {
@@ -2681,8 +2725,8 @@
       }
     ],
     "burnedToDate": {
-      "missiles": 3247,
-      "drones": 5213
+      "missiles": 3361,
+      "drones": 5298
     }
   },
   "oilScenarioBands": {
@@ -2695,7 +2739,7 @@
       "+3m"
     ],
     "ceasefireApril6": [
-      112,
+      110,
       100,
       92,
       85,
@@ -2703,7 +2747,7 @@
       75
     ],
     "warContinues": [
-      112,
+      110,
       115,
       118,
       122,
@@ -2711,7 +2755,7 @@
       128
     ],
     "babAlMandabCloses": [
-      112,
+      110,
       130,
       145,
       160,
@@ -2760,7 +2804,8 @@
       "Apr 02",
       "Apr 03",
       "Apr 04",
-      "Apr 05"
+      "Apr 05",
+      "Apr 06"
     ],
     "vessels": [
       62,
@@ -2800,18 +2845,19 @@
       10,
       7,
       8,
-      9
+      9,
+      10
     ],
     "preWarAverage": 62,
-    "note": "D37: ~9 vessels. Iraq tanker transited. WSO = calmer. April 6 = binary.",
-    "note_fa": "D37: ~9. Iraq. WSO. April 6."
+    "note": "D38: ~10 vessels. 53/week (up from 36). IRGC 'new order' = permanent. Iraq exempt. Tue binary.",
+    "note_fa": "D38: ~10. 53/week. 'New order.' Tue."
   },
   "ceasefireDeadline": {
-    "deadline": "2026-04-06T20:00:00-04:00",
-    "label": "April 6, 8PM ET",
-    "label_fa": "۶ آوریل، ۸ شب ET",
-    "context": "April 6 8PM ET. 3rd ultimatum. WSO rescue removes POW but committed. Kuwait = testing. 24 hours.",
-    "context_fa": "April 6. 3rd. WSO but committed. 24h.",
+    "deadline": "2026-04-07T20:00:00-04:00",
+    "label": "April 7, 8PM ET (Tuesday)",
+    "label_fa": "۷ آوریل، ۸ شب ET (سه‌شنبه)",
+    "context": "April 7 Tue 8PM ET. Extended 20hrs. 4th deadline. 45-day ceasefire proposal. Power grid MOST LIKELY.",
+    "context_fa": "April 7 Tue. 4th. 45-day. Power grid.",
     "branchIfDeal": [
       {
         "step": "Partial ceasefire announced",
@@ -2868,7 +2914,8 @@
       "D29",
       "D34",
       "D35",
-      "D36"
+      "D36",
+      "D38"
     ],
     "cohesionScore": [
       9,
@@ -2880,7 +2927,8 @@
       5,
       4,
       3.5,
-      3
+      3,
+      2.5
     ],
     "events": [
       {
@@ -2960,6 +3008,12 @@
         "actor": "Kuwait/Bahrain",
         "type": "fracture",
         "detail": "Kuwait 2 power/water shut + Shuwaikh + Ministries. Bahrain BAPCO. Iran civilian infra targeting."
+      },
+      {
+        "date": "D38 (Apr 6)",
+        "actor": "Mediator trio",
+        "type": "mixed",
+        "detail": "Egypt/Pakistan/Turkey 45-day ceasefire proposal. Bahrain Crowne Plaza + Fifth Fleet hit = civilian targets. IRGC 'new order' = permanent Gulf change."
       }
     ]
   },
@@ -3053,6 +3107,26 @@
       "date": "D9 designated, absent since D8",
       "replacement": "N/A — he IS the replacement. Zolghadr named SNSC secretary D24 = institutional continuity without visible leader.",
       "significance": "27 days absent. Written statement only (D13). No video. Speculation: injured, hiding, or dead. Regime functioning without visible head of state."
+    },
+    {
+      "name": "Maj Gen Majid Khademi",
+      "name_fa": "سرلشکر مجید خادمی",
+      "role": "IRGC Intelligence Chief (effectively No.2 in IRGC)",
+      "status": "Killed",
+      "statusColor": "red",
+      "date": "D38 (Apr 6)",
+      "replacement": "No confirmed successor. IRGC intel apparatus decapitated. Coordinated barrage hours later = institutional continuity.",
+      "significance": "Most senior IRGC kill since Khamenei. Intel chief = operational intelligence, counterintel, and covert ops leadership eliminated. Effectively No.2."
+    },
+    {
+      "name": "Asghar Bagheri",
+      "name_fa": "اصغر باقری",
+      "role": "Quds Force Commander",
+      "status": "Killed",
+      "statusColor": "red",
+      "date": "D38 (Apr 6)",
+      "replacement": "Killed alongside Khademi in precision strike. Quds Force external ops leadership eliminated.",
+      "significance": "Quds Force = Iran's external operations arm. Combined with Khademi = dual decapitation of intel + external ops."
     }
   ],
   "scenarioSimulator": {
@@ -3193,8 +3267,8 @@
     {
       "rung": "Power grid destruction",
       "status": "imminent",
-      "date": "Apr 6",
-      "detail": "Trump deadline tomorrow. 90M without electricity if struck"
+      "date": "Apr 7 Tue",
+      "detail": "Trump deadline extended to Tue 8PM ET. 4th iteration. 90M without electricity if struck."
     },
     {
       "rung": "Bab al-Mandab closure",
@@ -3217,7 +3291,7 @@
   ],
   "decisionEngine": {
     "indicators": {
-      "launchRate7DMA": 44.7,
+      "launchRate7DMA": 43.3,
       "launchRateVsD1": 0.093,
       "brentShock": 0.68,
       "hormuzRecovery": 0.15,
@@ -3226,15 +3300,15 @@
       "usAircraftLost": 7,
       "gasPrice": 4.1,
       "approvalWrong": 59,
-      "warDays": 37,
+      "warDays": 38,
       "iranCivKilled_HRANA": 3531,
       "iranCivKilled_AJ": 2076,
       "iraqKilled": 109,
-      "lebanonKilled": 1368,
+      "lebanonKilled": 1345,
       "nuclearFacilitiesStruck": 5,
       "nuclearFacilitiesTotal": 6,
-      "coalitionCohesionScore": 3,
-      "mediatorMeetingsLast7Days": 3,
+      "coalitionCohesionScore": 2.5,
+      "mediatorMeetingsLast7Days": 4,
       "formalProposalsRejected": 2,
       "facesSavingDealExists": false,
       "daysToDeadline": 1,
@@ -3244,18 +3318,18 @@
       "houthiActive": true,
       "babAlMandabThreatened": true,
       "groundTroopsDeployed": 8000,
-      "mojtabaAbsentDays": 28
+      "mojtabaAbsentDays": 29
     },
     "dealAvailability": {
-      "score": 0.15,
+      "score": 0.18,
       "inputs": {
-        "mediatorActivity": 0.4,
-        "proposalSpecificity": 0.2,
+        "mediatorActivity": 0.5,
+        "proposalSpecificity": 0.35,
         "faceSavingElements": 0.05,
         "thirdPartyGuarantees": 0.1
       },
-      "reasoning": "Iran formally rejected 15-point plan AND ceasefire request. Kharazi (back-channel) struck. China 5-point plan exists but lacks enforcement. No proposal with mutual face-saving elements. Score: very low.",
-      "reasoning_fa": "ایران طرح ۱۵ بند و آتش‌بس را رد کرد. خرازی زخمی. طرح ۵ بند چین بدون اجرا. هیچ طرحی با حفظ آبرو دوطرفه نیست."
+      "reasoning": "45-day ceasefire proposal = most specific yet. Egypt/Pakistan/Turkey active. Phase 2 includes Hormuz + HEU. BUT Iran won't do direct talks. Won't open Hormuz temporarily. Slim but real.",
+      "reasoning_fa": "45-day = خاص‌ترین. مصر/پاکستان/ترکیه فعال. اما ایران مذاکره مستقیم نمی‌کند."
     },
     "usExitPressure": {
       "score": 0.55,
@@ -3281,21 +3355,21 @@
       "reasoning_fa": "ایران اهرم قوی: عوارض هرمز، حوثی فعال، نصف پرتاب‌ها سالم. سپاه آتش‌بس رد. رژیم پابرجا. ایران محاسبه: هزینه سیاسی آمریکا سریع‌تر بالا."
     },
     "escalationProximity": {
-      "score": 0.75,
+      "score": 0.72,
       "inputs": {
         "nuclearProximity": 0.83,
         "chokePointProximity": 0.6,
         "groundInvasionProximity": 0.5,
-        "powerGridProximity": 0.95
+        "powerGridProximity": 0.9
       },
-      "reasoning": "Power grid deadline TOMORROW (0.95). 5/6 nuclear facilities struck (0.83). Houthis threatening Bab al-Mandab (0.6). 82nd Airborne deployed + Kharg fortified (0.5). Nearest ceiling = power grid at 0.95 = nearly certain if no deal.",
-      "reasoning_fa": "نیروگاه فردا (۰.۹۵). ۵/۶ تأسیسات هسته‌ای (۰.۸۳). حوثی باب‌المندب (۰.۶). هوابرد ۸۲ مستقر (۰.۵)."
+      "reasoning": "Power grid deadline Tue (0.90 — down from 0.95 due to extension). 5/6 nuclear (0.83). Houthis coordinated barrage (0.65 — up). 82nd (0.5). Nearest ceiling = power grid at 0.90.",
+      "reasoning_fa": "نیروگاه سه‌شنبه (۰.۹۰). حوثی بارش (۰.۶۵). هوابرد ۸۲ (۰.۵)."
     },
     "outcomeProbabilities": {
-      "negotiatedResolution": 0.08,
-      "derivation_negotiated": "P(deal) × P(US_exit) × P(Iran_accept) = 0.15 × 0.55 × 0.10 = 0.008. Adjusted up to 0.08 to account for coerced deal (April 6 threat forcing Iran's hand).",
-      "escalationCatastrophe": 0.4,
-      "derivation_escalation": "P(escalation_proximity) × (1 - P(deal)) = 0.75 × (1 - 0.15) = 0.64. Adjusted down to 0.40 because Trump has blinked on 2 prior deadlines.",
+      "negotiatedResolution": 0.1,
+      "derivation_negotiated": "P(deal) × P(US_exit) × P(Iran_accept) = 0.18 × 0.55 × 0.12 = 0.012. Adjusted up to 0.10 for 45-day proposal.",
+      "escalationCatastrophe": 0.38,
+      "derivation_escalation": "P(escalation_proximity) × (1 - P(deal)) = 0.72 × (1 - 0.18) = 0.59. Adjusted down to 0.38 — 3 prior blinks + 45-day proposal.",
       "protractedContinuation": 0.35,
       "derivation_protracted": "1 - P(resolution) - P(catastrophe) - P(intervention) = residual. War continues at current intensity for weeks.",
       "internationalIntervention": 0.1,
@@ -3304,7 +3378,7 @@
       "derivation_other": "Regime fracture, internal coup, unexpected event."
     },
     "calibration": {
-      "polymarketCeasefire": 12,
+      "polymarketCeasefire": 14,
       "polymarketSource": "Polymarket 'Iran ceasefire by April 30' contract (estimated from similar markets)",
       "historicalBaseRate": {
         "value": 35,
@@ -3314,15 +3388,15 @@
         "spotVs3Month": "backwardation",
         "interpretation": "Spot > futures = market expects crisis is TEMPORARY. Consistent with resolution within months, not years."
       },
-      "modelVsMarket": "Model: 8% negotiated resolution. Market: ~12%. Difference suggests model may be slightly too pessimistic on deal probability, or market hasn't priced in Iran's formal rejection."
+      "modelVsMarket": "Model: 10% negotiated resolution. Market: ~14%. 45-day proposal = slight convergence."
     },
     "confidence": {
       "resolutionProbability": {
-        "estimate": 18,
-        "low": 8,
-        "high": 30
+        "estimate": 19,
+        "low": 10,
+        "high": 32
       },
-      "methodology": "Ensemble: model-derived (8%) + market signal (12%) + historical base rate (35%) → weighted average 18%. Range reflects model disagreement."
+      "methodology": "Ensemble: model-derived (10%) + market signal (14%) + historical base rate (35%) → weighted average 19%. 45-day proposal = slight UP."
     },
     "dailyIndicators": {
       "labels": [
@@ -3362,7 +3436,8 @@
         "Apr 02",
         "Apr 03",
         "Apr 04",
-        "Apr 05"
+        "Apr 05",
+        "Apr 06"
       ],
       "launchRate": [
         480,
@@ -3401,7 +3476,8 @@
         55,
         50,
         45,
-        40
+        40,
+        41
       ],
       "oilBrent": [
         72,
@@ -3440,7 +3516,8 @@
         105.53,
         112.42,
         115,
-        109
+        109,
+        110
       ],
       "hormuzVessels": [
         5,
@@ -3479,7 +3556,8 @@
         10,
         7,
         8,
-        9
+        9,
+        10
       ],
       "usKIA": [
         0,
@@ -3518,11 +3596,12 @@
         15,
         15,
         15,
+        15,
         15
       ],
       "gasPrice": [
-        3.0,
-        3.0,
+        3,
+        3,
         3.05,
         3.1,
         3.15,
@@ -3548,10 +3627,11 @@
         3.95,
         3.98,
         3.98,
-        4.0,
-        4.0,
+        4,
+        4,
         4.05,
         4.05,
+        4.1,
         4.1,
         4.1,
         4.1,
@@ -3582,6 +3662,7 @@
         58,
         58,
         58,
+        59,
         59,
         59,
         59,
@@ -3635,7 +3716,8 @@
         4,
         3,
         3,
-        3
+        3,
+        4
       ],
       "coalitionScore": [
         9,
@@ -3674,7 +3756,8 @@
         3,
         3,
         3,
-        3
+        3,
+        2.5
       ]
     },
     "trumpPattern": {
@@ -3694,14 +3777,20 @@
         {
           "date": "D37 (Apr 5)",
           "threat": "April 6 8PM ET power grid strikes",
+          "outcome": "Extended 20hrs to Tue Apr 7 8PM ET.",
+          "followed_through": false
+        },
+        {
+          "date": "D38 (Apr 6)",
+          "threat": "April 7 Tue 8PM ET power grid strikes",
           "outcome": "PENDING — tomorrow",
           "followed_through": null
         }
       ],
-      "blinkCount": 2,
+      "blinkCount": 3,
       "priorFollowThrough": 0.7,
-      "posteriorFollowThrough": 0.3,
-      "methodology": "Bayesian: prior P(follow-through) = 0.70 (typical for presidential threats). 2 observed blinks → likelihood ratio 0.3^2 = 0.09. Posterior = 0.70 * 0.09 / (0.70*0.09 + 0.30*0.7) = ~0.23. Rounded to 0.30 accounting for escalation momentum."
+      "posteriorFollowThrough": 0.2,
+      "methodology": "Bayesian: prior P(follow-through) = 0.70 (typical for presidential threats). 3 observed blinks → likelihood ratio 0.3^3 = 0.027. Posterior = 0.70 * 0.027 / (0.70*0.027 + 0.30*0.7^3) = ~0.16. Rounded to 0.20 accounting for escalation momentum + credibility pressure."
     },
     "probabilityChangelog": [
       {
@@ -3745,6 +3834,12 @@
         "prob": 15,
         "delta": 0,
         "reason": "WSO rescued. CMA CGM through Hormuz. Kuwait infrastructure hit."
+      },
+      {
+        "day": "D38",
+        "prob": 16,
+        "delta": 1,
+        "reason": "Khademi killed. 45-day proposal. Deadline extended Tue. Coordinated barrage."
       }
     ],
     "sensitivity": [
@@ -3797,38 +3892,38 @@
     "leadingIndicators": [
       {
         "metric": "Launch rate (7-day avg)",
-        "value": 44.7,
+        "value": 43.3,
         "slope": 16.9,
         "direction": "accelerating",
-        "signal": "Steady at ~40/day. Rationing model holds. No collapse, no surge."
+        "signal": "Steady at ~41/day. Rationing model holds. Coordinated barrage = multi-axis."
       },
       {
         "metric": "Brent crude (7-day avg)",
-        "value": 109.4,
+        "value": 110,
         "slope": 4.8,
         "direction": "rising",
-        "signal": "Rising trend. Markets pricing in escalation, not deal."
+        "signal": "Opened above $110. Markets pricing in extended conflict, not deal."
       },
       {
         "metric": "Hormuz transit (7-day avg)",
-        "value": 8.7,
+        "value": 9,
         "slope": 2.6,
         "direction": "rising",
-        "signal": "Slowly recovering. Safe passage framework expanding. Positive for de-escalation."
+        "signal": "53/week (up from 36). IRGC 'new order' = permanent change. Improving but capped."
       },
       {
         "metric": "Diplomatic event density",
-        "value": "3/week",
+        "value": "4/week",
         "slope": 0,
-        "direction": "steady",
-        "signal": "Mediator activity flat. No acceleration toward deal. China plan stalled."
+        "direction": "rising",
+        "signal": "45-day proposal = acceleration. Egypt/Pakistan/Turkey active. Most since D1."
       },
       {
         "metric": "Coalition cohesion",
-        "value": 3,
-        "slope": -2.0,
+        "value": 2.5,
+        "slope": -2,
         "direction": "falling",
-        "signal": "Declining. US increasingly isolated. Allies refusing to participate."
+        "signal": "Declining further. Bahrain civilian targets. IRGC 'new order' = allies questioning."
       }
     ]
   }
