@@ -1,6 +1,6 @@
 {
   "meta": {
-    "lastUpdated": "2026-04-07T09:15:00-04:00",
+    "lastUpdated": "2026-04-07T13:00:00-04:00",
     "preWarBaselines": {
       "d1Missiles": 480,
       "preWarOil": 65,
@@ -8,6 +8,7 @@
       "preWarGas": 3
     },
     "notes": [
+      "D39 13:00 ET update: US CENTCOM struck >90 military targets on Kharg Island early Apr 7 (naval mine storage, missile bunkers; oil infra deliberately spared per WSJ/CNN). Iran IRGC: 'restraint on Gulf oil infra is over.' Trump 8PM ET deadline ~7 hrs out. Brent ~$110.05.",
       "D39 MORNING UPDATE (Apr 07 09:15 ET) - ~11 HRS to 8PM ET deadline. Trump POSTPONED power-plant strikes 5 days mid-deadline (says 'negotiating'). Israel hit Yahya Abad railway bridge (Kashan) 2 killed. Turkish Ocean Thunder + Iraqi crude transited Hormuz case-by-case. IRGC: 'whole civilisation' rebuttal - threatens to deprive US allies of oil/gas 'for many years.' Polymarket conflict-ends-Dec31 ticked 84->85%, US-Iran ceasefire-Jun30 54%. Sources: CNN live, AJ live, NPR, NBC, CBS, Bloomberg, UPI, Pravda EN, Polymarket, AAA, OilPriceAPI, EIA.",
       "Day 39 PRE-DAWN (Apr 07) update - DEADLINE DAY. Sources: CNN, AJ, NPR, NBC, NYT, AP, Reuters, CBS, Bloomberg, CNBC, Haaretz, ToI, Euronews, Critical Threats, Alma Research, Wikipedia 2026 Iran war, AAA, WorldOil, EnergyConnects, Polymarket.",
       "D39 DEADLINE DAY - TRUMP 8PM ET ULTIMATUM (~22 HRS): Iran rejected 15-pt Islamabad Accord; counteroffered 10-pt maximalist (permanent end, sanctions lift, reconstruction, NPT enrichment, Hormuz toll). Trump: 'significant but not good enough' - REFUSES to extend. 'Power Plant Day and Bridge Day wrapped up in one.' IRGC: 'helpless, nervous, stupid.' Khademi (IRGC Intel No.2) + Bagheri (Quds) killed in joint US-Israel strike. South Pars petrochem struck. F-15E WSO rescued by Delta/SEAL/CIA after 24hrs. Hormuz: 13 vessels/week transit (trickle, northern channel, Iran toll). Brent $109-111. WTI ~$108. AAA $4.119 (+$0.80/mo). HRANA 3,540+ killed (1,616 civilians, 244+ children). Internet 960+ hrs. Polymarket: ceasefire by Dec 31 = 76%; conflict-ends by Dec 31 = 85%. P(Trump follow-through) = 0.22 (up from 0.18). Scenarios: escalation 37% / attrition 28% / victory 13% / deal 12% / intervention 7% / fracture 3%."
@@ -100,7 +101,7 @@
     }
   ],
   "sitrep": [
-    "D39 MORNING (Apr 07 09:15 ET, ~11 HRS to 8PM): TRUMP HALF-BLINK - Trump POSTPONED strikes on Iranian power plants by 5 days mid-deadline-day, said 'we're negotiating with Iran to end this war.' Hormuz reopen ultimatum still nominally 8PM tonight. Truth Social: 'A whole civilisation will die tonight' if no compliance. Press conf: 'I don't know if we're winding down or escalating.' Mixed-signal posture = classic Trump pre-blink choreography but power-plant carveout is the most concrete de-escalation gesture in 39 days.",
+    "D39 AFTERNOON (Apr 07 13:00 ET, ~7 HRS to 8PM): KHARG STRUCK. US CENTCOM hit >90 military targets on Kharg Island pre-dawn Apr 7 — naval mine bunkers, missile storage, IRGC sites. WSJ/CNN: oil infrastructure deliberately spared. IRGC response: 'restraint on Gulf oil infrastructure no longer applies.' Trump Truth Social: 'A whole civilisation will die tonight.' Iran 10-pt maximalist counter still on table; rejected 45-day ceasefire. IDF advisory to Iranian civilians: avoid trains/rail lines.",
     "ISRAEL ESCALATES UNILATERALLY: IDF struck Yahya Abad railway bridge in Kashan (central Iran), killed 2, IDF Arabic spox warned all Iranians 'your presence on trains and near railway lines endangers your life.' Israel signals it will keep hitting infrastructure even if Trump pauses. Reported Israeli source: 'US-Iran talks likely to fail, Israel preparing extensive attack.' Decoupling risk between WH and IDF growing.",
     "HORMUZ - CRACKS IN BLOCKADE: Turkish Ocean Thunder carrying Iraqi crude transited Persian Gulf via strait Apr 6. Iran extending case-by-case clearances (China, Russia, India, Iraq, Pakistan, Malaysia, Thailand, Philippines, Oman, France, Japan). ~13 vessels/week (~21% of pre-war 62/day), highest since D1. Western insurers still pricing war-risk premia at multi-decade highs. Iran's 10-pt 'Hormuz toll recognition' demand remains the price.",
     "IRAN 10-PT COUNTEROFFER STANDS (Islamabad Accord, mediated by Pakistan): Permanent end to war + end of all regional conflicts incl Lebanon + Hormuz safe passage with Iran toll rights + full sanctions lifting + reconstruction/reparations + NPT enrichment rights + rejection of missile/nuclear curbs as 'excessive.' Trump: 'significant step but not good enough.' Iran rebuffed US 45-day pause counter. Unbridgeable in <11 hrs.",
@@ -110,7 +111,7 @@
     "DECAPITATION TRACKER: 9+ Iranian senior leaders confirmed killed/wounded (Khademi Apr 5, Bagheri Apr 4, Salami earlier). Mojtaba Khamenei whereabouts unknown 29 days. Khamenei himself last public appearance D34."
   ],
   "sitrep_fa": [
-    "D39 روز ضرب‌الاجل. ترامپ رد تمدید. 'روز نیروگاه و پل.' P=0.22.",
+    "روز ۳۹ بعدازظهر (۷ آوریل ۱۳:۰۰ به وقت شرق، ~۷ ساعت تا ۸ شب): جزیره خارک هدف قرار گرفت. سنتکام آمریکا پیش از سپیده‌دم بیش از ۹۰ هدف نظامی در خارک را زد — انبار مین دریایی، انبارهای موشک، مراکز سپاه. زیرساخت نفتی عمداً معاف. سپاه: «خویشتنداری بر زیرساخت نفتی خلیج پایان یافت.» ترامپ: «یک تمدن کامل امشب خواهد مرد.» ایران ۴۵ روز آتش‌بس را رد و پیشنهاد ۱۰ ماده‌ای ماکسیمالیست را نگه داشت.",
     "ایران ۱۰ ماده ماکسیمالیست. غیرقابل حل در <۲۲ ساعت.",
     "سپاه: 'درمانده، عصبی، احمقانه.' بدون سیگنال انطباق.",
     "خادمی + باقری کشته. بارش هماهنگ = تداوم نهادی.",
@@ -936,6 +937,10 @@
       "body": "Islamabad Accord 2-phase framework exists but Iran demands permanent deal. War Powers 60-day clock expires Apr 28-29. Attrition if Tue passes."
     },
     {
+      "title": "D39 Apr 7 — Kharg struck",
+      "body": "US CENTCOM precision strike on >90 military targets on Kharg Island pre-dawn Apr 7. Naval mine storage, missile bunkers, IRGC sites destroyed. Oil terminal infrastructure deliberately untouched (controlled escalation signal). IRGC response: end of restraint on Gulf oil targets."
+    },
+    {
       "title": "Month 3+",
       "body": "If strikes: humanitarian catastrophe -> intervention. If deal: phased de-escalation. War Powers forces Congressional vote."
     },
@@ -956,6 +961,10 @@
     {
       "title": "ماه ۲",
       "body": "Islamabad Accord اما ایران دائم. War Powers Apr 28-29."
+    },
+    {
+      "title": "روز ۳۹ ۷ آوریل — خارک هدف قرار گرفت",
+      "body": "ضربه دقیق سنتکام به ۹۰+ هدف نظامی در جزیره خارک پیش از سپیده‌دم. انبار مین دریایی، انبارهای موشک، مراکز سپاه نابود شد. تأسیسات نفتی عمداً دست‌نخورده. پاسخ سپاه: پایان خویشتنداری بر اهداف نفتی خلیج."
     },
     {
       "title": "ماه ۳+",
@@ -1739,7 +1748,7 @@
         7,
         7,
         7.5,
-        7.5
+        7
       ],
       "economicPain": [
         1,
@@ -1821,7 +1830,7 @@
         3.5,
         4.5,
         5.5,
-        5
+        3.5
       ],
       "usPoliticalSustainability": [
         8,
@@ -1903,7 +1912,7 @@
         0.5,
         0.5,
         0.5,
-        0.5
+        0.2
       ]
     },
     "vectorNotes": {
@@ -1919,12 +1928,12 @@
       "escalationCeilingDistance_fa": "0.5/10. ثابت اما P UP. سه‌شنبه <20 ساعت. ترامپ رد تمدید = P=0.22. بدون خروج. خطرناک‌ترین لحظه."
     },
     "warOutcome": {
-      "prediction": "D39 deadline day. Trump 8PM ET ultimatum ~22 hrs out with explicit no-extend language. Iran 10-pt maximalist counteroffer unbridgeable in hours. MOST LIKELY: escalation spiral (37%) narrowly ahead of protracted attrition (28%). If strikes: Brent $130+, 90M Iranians without power, likely Houthi Bab al-Mandab closure. If 4th blink: attrition becomes dominant (~40%) but US credibility premium DESTROYED. Polymarket trader consensus: conflict ends by Dec 31 = 85%.",
-      "prediction_fa": "Tue 22% posterior (UP — ترامپ رد تمدید). ایران ۱۰ ماده ماکسیمالیست = غیرقابل پل. تشدید (37%) vs فرسایش (28%). اگر حمله: $130+. اگر بلینک: فرسایش ~40% اما اعتبار = صفر.",
-      "derivation": "Military exhaustion vector 7.5 (plateau rationing sustained, Khademi/Bagheri kills = institutional continuity via coordinated multi-axis barrage). Economic pain 9.5 (Brent $110, gas $4.12, Hormuz 5% of pre-war volume). Diplomatic momentum 5 (Islamabad framework exists but gap widened by 10-pt maximalist). US political sustainability 2 (60% wrong-direction, 15 KIA, gas >$4). Escalation ceiling 0.5 (power grid strikes imminent, Bab al-Mandab next). Convergence pressure high but direction is toward escalation.",
+      "prediction": "D39 deadline day, ~7 hrs to 8PM ET. KHARG STRIKE EXECUTED — US hit 90+ military targets on Kharg pre-dawn (oil infra spared, signaling escalation ladder). IRGC declared end of restraint on Gulf oil infrastructure. MOST LIKELY: escalation spiral now 44% (UP from 37%) — Trump has crossed kinetic threshold without yet hitting energy infra, Iran red-line tripwire armed. Protracted attrition 24%. Last-hour deal 14%. If Iran strikes Saudi/UAE oil terminals tonight: Brent $135-150 by Apr 8 open.",
+      "prediction_fa": "روز ۳۹، ~۷ ساعت تا ۸ شب. ضربه به خارک اجرا شد — ۹۰+ هدف نظامی، نفت معاف. سپاه پایان خویشتنداری بر زیرساخت نفتی خلیج. تشدید ۴۴٪ (افزایش از ۳۷٪)، فرسایش ۲۴٪، توافق دقیقه‌۹۰ ۱۴٪.",
+      "derivation": "Military exhaustion 7 (Iran retains 15-30 missiles + 50-100 drones/day per Western officials; Kharg strike degrades launch sites but plateau persists). Economic pain 9.5 (Brent $110, Hormuz closed, Gulf exports -70%). Diplomatic momentum dropped 5→3.5 (Iran rejected 45-day truce, kinetic action by US). US political 2 (gas $4.50+, Khademi/Bagheri precedent). Escalation distance 0.2 (kinetic ladder breached, only oil infra + Bab al-Mandab + nuclear remain). Weighted convergence = 4.78.",
       "derivation_fa": "Military(7.5). Economic(9.5). Diplomatic(5.5) DOWN — ۱۰ ماده ماکسیمالیست. Political(2). Escalation(0.5). P=0.22 UP. ماکسیمالیسم متقابل + <20 ساعت = باینری.",
-      "convergenceScore": 6.4,
-      "convergenceInterpretation": "6.4/10 = EXTREME pressure (DOWN slightly from 6.5). Iran 10-pt maximalist = diplomatic momentum reversed despite most detailed response ever. Trump refuses to extend = escalation proximity UP. Convergence score = paradox: extreme pressure but resolution mechanism ABSENT. <20 hrs to binary outcome.",
+      "convergenceScore": 4.78,
+      "convergenceInterpretation": "Convergence 4.78/10 — pressure for resolution remains high but the EXIT ramp has narrowed. Kharg kinetic action without oil-infra escalation is a controlled rung up the ladder; Iran's restraint-removal is the matched move. Next 24 hrs decide between deal-or-energy-war.",
       "convergenceInterpretation_fa": "6.4/10. DOWN from 6.5. ایران ۱۰ ماده = عقبگرد دیپلماتیک. ترامپ رد تمدید = تشدید UP. فشار شدید اما مکانیزم حل = صفر. <20 ساعت.",
       "lastUpdated": "2026-04-06T23:45:00-04:00"
     }
