@@ -27,7 +27,8 @@ html[dir="rtl"] body{font-family:"Vazirmatn",Tahoma,"Segoe UI",system-ui,sans-se
 /* --- Topbar --- */
 .topbar{position:sticky;top:0;z-index:5;backdrop-filter:blur(16px);background:rgba(7,17,31,.84);border-bottom:1px solid var(--border);margin-bottom:18px}
 .topbar-inner,.shell{max-width:1520px;margin:0 auto;padding-left:18px;padding-right:18px}
-.topbar-inner{padding-top:14px;padding-bottom:14px;display:flex;gap:16px;justify-content:space-between;align-items:center;flex-wrap:wrap}
+.topbar-inner{padding-top:14px;padding-bottom:14px;display:flex;gap:16px;justify-content:space-between;align-items:center;flex-wrap:wrap;min-width:0}
+.topbar-inner .chips{flex-wrap:wrap;min-width:0}
 .title h1{margin:0;font-size:22px;letter-spacing:.2px}
 .title p{margin:6px 0 0;color:var(--muted);font-size:13px;line-height:1.45;max-width:960px}
 .chips{display:flex;gap:10px;flex-wrap:wrap;align-items:center}
@@ -825,4 +826,16 @@ html[dir="rtl"] .chips { flex-direction: row-reverse; }
 
   /* About section */
   .prediction-hero + .panel { padding: 12px; }
+}
+@media(max-width:500px) {
+  /* Keep metric grid 2-column on very small screens (override 700px 1fr rule) */
+  .metric-grid { grid-template-columns: repeat(2,minmax(0,1fr)); }
+}
+@media(max-width:360px) {
+  /* Prevent topbar overflow on ultra-narrow screens */
+  .topbar-inner { gap: 6px; }
+  .title h1 { font-size: 15px; }
+  .title p { font-size: 10px; }
+  .chip { font-size: 10px; padding: 5px 7px; }
+  .lang-btn { font-size: 11px; padding: 5px 9px; }
 }

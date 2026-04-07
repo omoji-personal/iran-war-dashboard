@@ -204,7 +204,6 @@ const DEFAULT_DATA = {
   impactKIP: [], impactKIP_fa: [],
   prepKIP: [], prepKIP_fa: [],
   signalsKIP: [], signalsKIP_fa: [],
-  casualties: [], casualties_fa: [],
   humanitarian: [], humanitarian_fa: [],
   diplomacy: [], diplomacy_fa: [],
   publicOpinion: [], publicOpinion_fa: [],
@@ -401,17 +400,6 @@ function setText() {
   // Target breakdown footnotes
   if ($('targetMissileFoot')) $('targetMissileFoot').textContent = (state.latestTargetBreakdown && state.latestTargetBreakdown.note) || '';
   if ($('targetDroneFoot')) $('targetDroneFoot').textContent = (state.latestTargetBreakdown && state.latestTargetBreakdown.note) || '';
-
-  // Casualties
-  var cas = L('casualties');
-  if ($('casualtyBox') && cas.length) {
-    $('casualtyBox').innerHTML = cas.map(function(c) {
-      var color = c.statusColor === 'red' ? 'var(--red)' : c.statusColor === 'yellow' ? 'var(--gold)' : 'var(--cyan)';
-      return '<div class="casualty-row"><div class="cas-group">' + c.group + '</div>' +
-        '<div class="cas-figure" style="color:' + color + '">' + c.figure + '</div>' +
-        '<div class="cas-detail">' + c.detail + '</div></div>';
-    }).join('');
-  }
 
   // Humanitarian, diplomacy, public opinion, hormuz, key actors
   renderList('humanitarianBox', L('humanitarian'));
@@ -632,16 +620,18 @@ function computeEngineForDay(dayIdx) {
   var ds = state.dailySeries || {};
   if (!di.labels || dayIdx < 0 || dayIdx >= di.labels.length) return null;
 
-  var d1Missiles = ds.missiles[0] || 480;
-  var preWarOil = 65;
-  var preWarHormuz = 62;
+  var baselines = ((state.meta || {}).preWarBaselines) || {};
+  var d1Missiles = ds.missiles[0] || baselines.d1Missiles || 480;
+  var preWarOil = baselines.preWarOil || 65;
+  var preWarHormuz = baselines.preWarHormuz || 62;
+  var preWarGas = baselines.preWarGas || 3;
 
   // Raw inputs for this day
   var launchRate = di.launchRate[dayIdx] || 0;
   var brent = di.oilBrent[dayIdx] || 65;
   var hormuz = di.hormuzVessels[dayIdx] || 0;
   var kia = di.usKIA[dayIdx] || 0;
-  var gas = di.gasPrice[dayIdx] || 3;
+  var gas = di.gasPrice[dayIdx] || preWarGas;
   var approval = di.approvalWrong[dayIdx] || 35;
   var mediators = di.mediatorMeetings[dayIdx] || 0;
   var coalition = di.coalitionScore[dayIdx] || 9;
@@ -656,36 +646,74 @@ function computeEngineForDay(dayIdx) {
   var dealScore = mediatorScore * 0.35 + proposalScore * 0.3 + faceSaving * 0.35;
   dealScore = Math.max(0.02, Math.min(dealScore, 0.95));
 
+  // === TRUMP FOLLOW-THROUGH (needed by exitNarrative) ===
+  var tp = de.trumpPattern || {};
+  var trumpFollows = tp.posteriorFollowThrough || 0.30;
+
   // === US EXIT PRESSURE (0-1) ===
   var approvalPressure = Math.min((approval - 30) / 40, 1);
   var kiaPressure = Math.min(kia / 30, 1);
-  var gasPressure = Math.min((gas - 3) / 3, 1);
+  var gasPressure = Math.min((gas - preWarGas) / 3, 1);
   var durationFatigue = Math.min(day / 60, 1);
-  var exitNarrative = mediators >= 3 ? 0.4 : 0.2; // Active mediation = exit narrative more available
-  var usExitScore = approvalPressure * 0.25 + kiaPressure * 0.2 + gasPressure * 0.2 + durationFatigue * 0.15 + exitNarrative * 0.1 + (1 - coalition/10) * 0.1;
+  // Exit narrative: mediators active + Trump signaling a deal pathway
+  var exitNarrative = mediators >= 3 ? 0.4 : 0.2;
+  if (trumpFollows > 0.3) exitNarrative += 0.05;
+  exitNarrative = Math.min(exitNarrative, 0.5);
+  // Coalition contribution: (coalition-7)/3 * 0.1, so 9->0.067, 3->-0.133
+  var coalitionPressure = ((coalition - 7) / 3) * 0.1;
+  var usExitScore = approvalPressure * 0.25 + kiaPressure * 0.2 + gasPressure * 0.2 + durationFatigue * 0.15 + exitNarrative * 0.1 - coalitionPressure;
   usExitScore = Math.max(0.05, Math.min(usExitScore, 0.95));
 
   // === IRAN ACCEPTANCE (0-1) ===
   var rateDrop = 1 - (launchRate / d1Missiles);
   var hormuzLeverage = 1 - (hormuz / preWarHormuz);
   var regimePressure = Math.min((kia > 0 ? 0.3 : 0) + rateDrop * 0.3, 0.6);
-  var iranRejected = di.iranRejectedCeasefire ? di.iranRejectedCeasefire[dayIdx] : ((de.indicators || {}).iranRejectedCeasefire ? 1 : 0);
-  var rejectedFactor = iranRejected ? 0.05 : 0.3;
+  // Per-day rejection with recovery: rejected today = 0.05; rejected in last 5 days = stay low;
+  // no rejection in last 5 days = recover toward 0.2; never rejected = 0.3
+  var iranRejectedArr = di.iranRejectedCeasefire;
+  var iranRejected = 0;
+  var recentRejection = false;
+  if (iranRejectedArr && iranRejectedArr.length) {
+    iranRejected = iranRejectedArr[dayIdx] ? 1 : 0;
+    for (var rk = Math.max(0, dayIdx - 5); rk <= dayIdx; rk++) {
+      if (iranRejectedArr[rk]) { recentRejection = true; break; }
+    }
+  } else {
+    iranRejected = ((de.indicators || {}).iranRejectedCeasefire) ? 1 : 0;
+    recentRejection = !!iranRejected;
+  }
+  var rejectedFactor;
+  if (iranRejected) rejectedFactor = 0.05;
+  else if (recentRejection) rejectedFactor = 0.1; // still cooling off
+  else rejectedFactor = 0.3;
+  // Recovery path: if no rejection in last 5 days, recover toward 0.2
+  if (!iranRejected && !recentRejection) rejectedFactor = 0.2;
   var iranScore = rejectedFactor * 0.4 + regimePressure * 0.3 + (1 - hormuzLeverage) * 0.2 + dealScore * 0.1;
   iranScore = Math.max(0.02, Math.min(iranScore, 0.95));
 
   // === ESCALATION PROXIMITY (0-1) ===
   var deadlineDays = di.deadlineDays ? di.deadlineDays[dayIdx] : ((de.indicators || {}).daysToDeadline);
-  if (deadlineDays === undefined || deadlineDays === null) deadlineDays = 30;
-  var powerGridProx = Math.max(0, 1 - deadlineDays / 7);
+  if (deadlineDays === undefined || deadlineDays === null) {
+    // Try computing from actual deadline timestamp in meta
+    var deadlineIso = (state.meta || {}).deadlineIso || (de.indicators || {}).deadlineIso;
+    if (deadlineIso) {
+      var delta = (new Date(deadlineIso).getTime() - Date.now()) / 86400000;
+      deadlineDays = delta < 0 ? 0 : delta;
+    } else {
+      deadlineDays = 30;
+    }
+  }
+  // If deadline is in the past, max pressure (powerGridProx = 0.9)
+  var powerGridProx;
+  if (deadlineDays <= 0) {
+    powerGridProx = 0.9;
+  } else {
+    powerGridProx = Math.max(0, 1 - deadlineDays / 7);
+  }
   var nuclearProx = ((de.indicators || {}).nuclearFacilitiesStruck || 0) / ((de.indicators || {}).nuclearFacilitiesTotal || 6);
   var groundProx = Math.min(((de.indicators || {}).groundTroopsDeployed || 0) / 15000, 1);
   var chokeProx = (de.indicators || {}).babAlMandabThreatened ? 0.6 : 0;
   var escScore = Math.max(powerGridProx, nuclearProx, groundProx, chokeProx);
-
-  // === TRUMP FOLLOW-THROUGH ===
-  var tp = de.trumpPattern || {};
-  var trumpFollows = tp.posteriorFollowThrough || 0.30;
 
   // === OUTCOME PROBABILITIES ===
   var pNegotiated = dealScore * usExitScore * iranScore;
@@ -1443,7 +1471,20 @@ function renderExpandedKIP() {
   // Insurance cost index chart
   kill('insurance');
   var ins = kip.insuranceCostIndex || {};
-  if ($('insuranceChart') && ins.labels) {
+  var insCanvas = $('insuranceChart');
+  if (insCanvas && !ins.labels) {
+    // Data pending placeholder
+    var insParent = insCanvas.parentElement;
+    if (insParent && !insParent.querySelector('.data-pending')) {
+      var ph = document.createElement('div');
+      ph.className = 'data-pending';
+      ph.style.cssText = 'display:flex;align-items:center;justify-content:center;height:100%;color:var(--muted);font-size:12px;font-style:italic';
+      ph.textContent = currentLang === 'fa' ? 'داده در انتظار' : 'Data pending';
+      insCanvas.style.display = 'none';
+      insParent.appendChild(ph);
+    }
+  }
+  if (insCanvas && ins.labels) {
     var insOpts = deepClone(BASE_OPTS);
     insOpts.scales.y.ticks = { color: '#9eb5d0', font: { size: 10 }, callback: function(v) { return v + '%'; } };
     insOpts.scales.y.beginAtZero = true;
@@ -1662,29 +1703,33 @@ function showSimResult() {
   var de = state.decisionEngine || {};
   var ind = de.indicators || {};
   var savedInd = JSON.parse(JSON.stringify(ind));
+  var adjEng = null;
+  var adjProb = baseProb;
 
-  // Apply scenario effects to indicators
-  if (scenario.id === 'ceasefire_apr6') {
-    ind.facesSavingDealExists = true;
-    ind.iranRejectedCeasefire = false;
-    ind.daysToDeadline = 30;
-  } else if (scenario.id === 'power_grid') {
-    ind.daysToDeadline = 0;
-    ind.formalProposalsRejected = 3;
-  } else if (scenario.id === 'bab_closes') {
-    ind.babAlMandabThreatened = true;
-    ind.daysToDeadline = 0;
-  } else if (scenario.id === 'ground_invasion') {
-    ind.groundTroopsDeployed = 20000;
-    ind.daysToDeadline = 0;
+  try {
+    // Apply scenario effects to indicators
+    if (scenario.id === 'ceasefire_apr6') {
+      ind.facesSavingDealExists = true;
+      ind.iranRejectedCeasefire = false;
+      ind.daysToDeadline = 30;
+    } else if (scenario.id === 'power_grid') {
+      ind.daysToDeadline = 0;
+      ind.formalProposalsRejected = 3;
+    } else if (scenario.id === 'bab_closes') {
+      ind.babAlMandabThreatened = true;
+      ind.daysToDeadline = 0;
+    } else if (scenario.id === 'ground_invasion') {
+      ind.groundTroopsDeployed = 20000;
+      ind.daysToDeadline = 0;
+    }
+
+    // Recompute engine with modified indicators
+    adjEng = computeEngineForDay(maxDay - 1);
+    adjProb = adjEng ? adjEng.ensemble : baseProb;
+  } finally {
+    // Always restore original indicators, even if computation threw
+    de.indicators = savedInd;
   }
-
-  // Recompute engine with modified indicators
-  var adjEng = computeEngineForDay(maxDay - 1);
-  var adjProb = adjEng ? adjEng.ensemble : baseProb;
-
-  // Restore original indicators
-  de.indicators = savedInd;
 
   var adjOil = scenario.oilTarget || baseOil;
   var probDelta = adjProb - baseProb;
@@ -1742,14 +1787,17 @@ function initScrubber() {
   wrap.style.display = 'flex';
   if ($('scrubberDay')) $('scrubberDay').textContent = 'D' + maxDay + ' (' + state.dailySeries.labels[maxDay - 1] + ') — Live';
 
+  var scrubTimer = null;
   slider.addEventListener('input', function() {
-    var day = parseInt(this.value);
-    var label = state.dailySeries.labels[day - 1] || '';
-    var isLive = day === maxDay;
-    if ($('scrubberDay')) $('scrubberDay').textContent = 'D' + day + ' (' + label + ')' + (isLive ? ' — Live' : '');
-
-    // Update key metric displays with historical data
-    updateMetricsForDay(day);
+    var self = this;
+    if (scrubTimer) clearTimeout(scrubTimer);
+    scrubTimer = setTimeout(function() {
+      var day = parseInt(self.value);
+      var label = (state.dailySeries.labels[day - 1]) || ('D' + day);
+      var isLive = day === maxDay;
+      if ($('scrubberDay')) $('scrubberDay').textContent = 'D' + day + ' (' + label + ')' + (isLive ? ' — Live' : '');
+      updateMetricsForDay(day);
+    }, 50);
   });
 }
 
@@ -1809,8 +1857,8 @@ function updateMetricsForDay(day) {
       cards[2].querySelector('.value').textContent = '~' + cumD.toLocaleString();
     }
     // Oil
-    if (cards[3] && oil.brent) {
-      var oilIdx = Math.min(idx + 1, oil.brent.length - 1); // oil has 1 extra pre-war day
+    if (cards[3] && oil.brent && oil.brent.length) {
+      var oilIdx = Math.min(idx, oil.brent.length - 1);
       cards[3].querySelector('.value').textContent = '$' + (oil.brent[oilIdx] || '—');
     }
   }
