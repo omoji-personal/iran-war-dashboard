@@ -1,6 +1,6 @@
 {
   "meta": {
-    "lastUpdated": "2026-04-07T13:00:00-04:00",
+    "lastUpdated": "2026-04-07T21:15:00-04:00",
     "preWarBaselines": {
       "d1Missiles": 480,
       "preWarOil": 65,
@@ -8,6 +8,7 @@
       "preWarGas": 3
     },
     "notes": [
+      "D39 NIGHT (Apr 07 21:15 ET, 75min post-deadline): TRUMP-IRAN 2-WEEK CEASEFIRE. ~90 min before 8PM ET deadline Trump posted truth social: agreed to 2-week suspension of strikes contingent on Iran's COMPLETE IMMEDIATE SAFE reopening of Hormuz. FM Araghchi confirmed on behalf of Supreme National Security Council; Iran will cease defensive operations if attacks halt; Hormuz passage in coordination with Iranian armed forces for 2 weeks. Brokered by PM Shehbaz Sharif + Field Marshal Asim Munir of Pakistan. 10-pt Iran proposal now 'workable basis.' VP Vance to lead US delegation to Islamabad peace talks Friday. Brent closed $109.50 after intraday $117 spike. Gas $4.12.",
       "D39 13:00 ET update: US CENTCOM struck >90 military targets on Kharg Island early Apr 7 (naval mine storage, missile bunkers; oil infra deliberately spared per WSJ/CNN). Iran IRGC: 'restraint on Gulf oil infra is over.' Trump 8PM ET deadline ~7 hrs out. Brent ~$110.05.",
       "D39 MORNING UPDATE (Apr 07 09:15 ET) - ~11 HRS to 8PM ET deadline. Trump POSTPONED power-plant strikes 5 days mid-deadline (says 'negotiating'). Israel hit Yahya Abad railway bridge (Kashan) 2 killed. Turkish Ocean Thunder + Iraqi crude transited Hormuz case-by-case. IRGC: 'whole civilisation' rebuttal - threatens to deprive US allies of oil/gas 'for many years.' Polymarket conflict-ends-Dec31 ticked 84->85%, US-Iran ceasefire-Jun30 54%. Sources: CNN live, AJ live, NPR, NBC, CBS, Bloomberg, UPI, Pravda EN, Polymarket, AAA, OilPriceAPI, EIA.",
       "Day 39 PRE-DAWN (Apr 07) update - DEADLINE DAY. Sources: CNN, AJ, NPR, NBC, NYT, AP, Reuters, CBS, Bloomberg, CNBC, Haaretz, ToI, Euronews, Critical Threats, Alma Research, Wikipedia 2026 Iran war, AAA, WorldOil, EnergyConnects, Polymarket.",
@@ -101,28 +102,18 @@
     }
   ],
   "sitrep": [
-    "D39 AFTERNOON (Apr 07 13:00 ET, ~7 HRS to 8PM): KHARG STRUCK. US CENTCOM hit >90 military targets on Kharg Island pre-dawn Apr 7 — naval mine bunkers, missile storage, IRGC sites. WSJ/CNN: oil infrastructure deliberately spared. IRGC response: 'restraint on Gulf oil infrastructure no longer applies.' Trump Truth Social: 'A whole civilisation will die tonight.' Iran 10-pt maximalist counter still on table; rejected 45-day ceasefire. IDF advisory to Iranian civilians: avoid trains/rail lines.",
-    "ISRAEL ESCALATES UNILATERALLY: IDF struck Yahya Abad railway bridge in Kashan (central Iran), killed 2, IDF Arabic spox warned all Iranians 'your presence on trains and near railway lines endangers your life.' Israel signals it will keep hitting infrastructure even if Trump pauses. Reported Israeli source: 'US-Iran talks likely to fail, Israel preparing extensive attack.' Decoupling risk between WH and IDF growing.",
-    "HORMUZ - CRACKS IN BLOCKADE: Turkish Ocean Thunder carrying Iraqi crude transited Persian Gulf via strait Apr 6. Iran extending case-by-case clearances (China, Russia, India, Iraq, Pakistan, Malaysia, Thailand, Philippines, Oman, France, Japan). ~13 vessels/week (~21% of pre-war 62/day), highest since D1. Western insurers still pricing war-risk premia at multi-decade highs. Iran's 10-pt 'Hormuz toll recognition' demand remains the price.",
-    "IRAN 10-PT COUNTEROFFER STANDS (Islamabad Accord, mediated by Pakistan): Permanent end to war + end of all regional conflicts incl Lebanon + Hormuz safe passage with Iran toll rights + full sanctions lifting + reconstruction/reparations + NPT enrichment rights + rejection of missile/nuclear curbs as 'excessive.' Trump: 'significant step but not good enough.' Iran rebuffed US 45-day pause counter. Unbridgeable in <11 hrs.",
-    "IRGC DEFIANCE HARDENS: IRGC: will respond 'OUTSIDE the region' if US hits civilian infrastructure, will deprive 'US and its allies of oil and gas for many years.' Continues calling Trump 'helpless, nervous, unbalanced and stupid.' No de-escalation signal from Tehran military side; only diplomatic track is the Pakistan/Oman channel.",
-    "MARKETS / OIL: Brent $110.05/bbl (down $1.20 from $111.25 Apr 6 on Trump's 5-day delay headline); WTI $107.60. AAA national gas $4.119 (above $4 first time since Aug 2022, +$1.08 vs 1 month ago). If Trump strikes 8PM: dealer projections $5+/gal within 7 days. Polymarket: US-Iran ceasefire by Jun 30 = 54%, conflict ends by Dec 31 = 85%, $107M+ in trading volume.",
-    "CASUALTIES: Iran HRANA 3,540+; Lebanon 1,379+; US 15 KIA + 520+ wounded + 7 aircraft lost; 2 killed in Kashan railway strike today. F-15E WSO rescue (Delta/SEAL/CIA) still last positive US news cycle.",
-    "DECAPITATION TRACKER: 9+ Iranian senior leaders confirmed killed/wounded (Khademi Apr 5, Bagheri Apr 4, Salami earlier). Mojtaba Khamenei whereabouts unknown 29 days. Khamenei himself last public appearance D34."
+    "<strong>D39 NIGHT (Apr 07 21:15 ET): TRUMP-IRAN 2-WEEK CEASEFIRE ANNOUNCED.</strong> 90 min before the 8PM ET deadline, Trump posted that based on direct conversations with Pakistani PM Shehbaz Sharif and Field Marshal Asim Munir — who asked him to hold off the 'destructive force being sent tonight' — he agreed to a 2-week suspension of US strikes, contingent on Iran's COMPLETE, IMMEDIATE, and SAFE reopening of the Strait of Hormuz. Trump called Iran's 10-point proposal a 'workable basis' for negotiations. VP Vance to lead US delegation to Islamabad for Friday peace talks.",
+    "<strong>IRAN SNSC ACCEPTED:</strong> FM Araghchi, on behalf of Iran's Supreme National Security Council, confirmed: if attacks halt, Iranian Armed Forces will cease defensive operations. For 2 weeks, safe passage through Hormuz in coordination with Iranian Armed Forces, subject to 'technical limitations.' First formal Tehran de-escalation since D1. Khamenei silent but Pezeshkian/Araghchi endorsed.",
+    "<strong>EARLIER IN THE DAY:</strong> US CENTCOM precision strike on >90 military targets on Kharg Island (naval mines, missile bunkers, IRGC) — oil infra deliberately spared. Iran launched 4+ ballistic waves at Israel (center + south). IDF struck Yahya Abad rail bridge in Kashan + 3 Tehran airports + South Pars petrochem. Saudi intercepted 7 Houthi ballistic missiles. Trump earlier: 'A whole civilization will die tonight.'",
+    "<strong>OIL:</strong> Brent spiked to $117 intraday on deadline approach, then collapsed back to ~$109.50 close on ceasefire headline. WTI $106.20. Gas $4.12 national. First 2-sided session in 39 days. Backwardation widened.",
+    "<strong>RISKS TO PAUSE:</strong> (1) Israel decoupling — Haaretz source: IDF 'preparing extensive attack'; Kashan rail strike hit even during deadline day. (2) Hormuz non-compliance = instant re-trigger. (3) IRGC 'outside region' rhetoric still live. (4) 10-pt gap on NPT enrichment + sanctions + reparations unresolved — 2 weeks likely insufficient. (5) No Khamenei signoff visible."
   ],
   "sitrep_fa": [
-    "روز ۳۹ بعدازظهر (۷ آوریل ۱۳:۰۰ به وقت شرق، ~۷ ساعت تا ۸ شب): جزیره خارک هدف قرار گرفت. سنتکام آمریکا پیش از سپیده‌دم بیش از ۹۰ هدف نظامی در خارک را زد — انبار مین دریایی، انبارهای موشک، مراکز سپاه. زیرساخت نفتی عمداً معاف. سپاه: «خویشتنداری بر زیرساخت نفتی خلیج پایان یافت.» ترامپ: «یک تمدن کامل امشب خواهد مرد.» ایران ۴۵ روز آتش‌بس را رد و پیشنهاد ۱۰ ماده‌ای ماکسیمالیست را نگه داشت.",
-    "ایران ۱۰ ماده ماکسیمالیست. غیرقابل حل در <۲۲ ساعت.",
-    "سپاه: 'درمانده، عصبی، احمقانه.' بدون سیگنال انطباق.",
-    "خادمی + باقری کشته. بارش هماهنگ = تداوم نهادی.",
-    "پارس جنوبی. کویت پالایشگاه‌ها. تخریب انرژی.",
-    "هرمز: ۱۳ کشتی/هفته. کانال شمالی. فرانسه، عمان، ژاپن، عراق. قطر برگشت.",
-    "نجات WSO. ترامپ: 'نمی‌دانم.'",
-    "حیفا ۴ کشته. خوشه‌ای ۳۰ نقطه.",
-    "تهران شب: ۲۵+. بهارستان ۶ کودک. شریف.",
-    "بازارها: برنت $109-111. بنزین $4.119. Polymarket ۸۵٪.",
-    "HRANA 3,540+. لبنان 1,385+. ۱۵ KIA. اینترنت 960+.",
-    "نفت: $85/$130+/$150+."
+    "<strong>D39 NIGHT (Apr 07 21:15 ET): TRUMP-IRAN 2-WEEK CEASEFIRE ANNOUNCED.</strong> 90 min before the 8PM ET deadline, Trump posted that based on direct conversations with Pakistani PM Shehbaz Sharif and Field Marshal Asim Munir — who asked him to hold off the 'destructive force being sent tonight' — he agreed to a 2-week suspension of US strikes, contingent on Iran's COMPLETE, IMMEDIATE, and SAFE reopening of the Strait of Hormuz. Trump called Iran's 10-point proposal a 'workable basis' for negotiations. VP Vance to lead US delegation to Islamabad for Friday peace talks.",
+    "<strong>IRAN SNSC ACCEPTED:</strong> FM Araghchi, on behalf of Iran's Supreme National Security Council, confirmed: if attacks halt, Iranian Armed Forces will cease defensive operations. For 2 weeks, safe passage through Hormuz in coordination with Iranian Armed Forces, subject to 'technical limitations.' First formal Tehran de-escalation since D1. Khamenei silent but Pezeshkian/Araghchi endorsed.",
+    "<strong>EARLIER IN THE DAY:</strong> US CENTCOM precision strike on >90 military targets on Kharg Island (naval mines, missile bunkers, IRGC) — oil infra deliberately spared. Iran launched 4+ ballistic waves at Israel (center + south). IDF struck Yahya Abad rail bridge in Kashan + 3 Tehran airports + South Pars petrochem. Saudi intercepted 7 Houthi ballistic missiles. Trump earlier: 'A whole civilization will die tonight.'",
+    "<strong>OIL:</strong> Brent spiked to $117 intraday on deadline approach, then collapsed back to ~$109.50 close on ceasefire headline. WTI $106.20. Gas $4.12 national. First 2-sided session in 39 days. Backwardation widened.",
+    "<strong>RISKS TO PAUSE:</strong> (1) Israel decoupling — Haaretz source: IDF 'preparing extensive attack'; Kashan rail strike hit even during deadline day. (2) Hormuz non-compliance = instant re-trigger. (3) IRGC 'outside region' rhetoric still live. (4) 10-pt gap on NPT enrichment + sanctions + reparations unresolved — 2 weeks likely insufficient. (5) No Khamenei signoff visible."
   ],
   "dailySeries": {
     "labels": [
@@ -205,7 +196,7 @@
       45,
       40,
       45,
-      40
+      58
     ],
     "drones": [
       720,
@@ -246,10 +237,10 @@
       60,
       70,
       50,
-      45
+      62
     ],
-    "sourceLabel": "D1-D10: JPost. D11: UAE MoD. D12-D38: fragment est. D38: Iran 10-pt counteroffer, Trump refuses extend, Khademi+Bagheri killed, South Pars, coordinated barrage. ~45m+50d.",
-    "throughDate": "Apr 07 2026 (D39 in-progress, deadline day)",
+    "sourceLabel": "D1-D10: JPost. D11: UAE MoD. D12-D38: fragment est. D39: Trump-Iran 2-week ceasefire ~7PM ET, Pakistan-brokered, Hormuz reopen contingency, Iran SNSC accepted. ~45m+50d.",
+    "throughDate": "Apr 07 2026 21:15 ET (D39 night — ceasefire announced)",
     "confidence": [
       1,
       1,
@@ -289,7 +280,7 @@
       0.5,
       0.5,
       0.5,
-      0.4
+      0.5
     ],
     "confidenceNote": "1.0 = JPost verified day-by-day (D1-D10). 0.8 = UAE MoD official scaled (D11). 0.6 = fragment estimates from Gulf reports (D12-D29). 0.5 = latest data, less verified (D30+)."
   },
@@ -376,7 +367,7 @@
       115,
       109,
       110,
-      110.05
+      109.5
     ],
     "wti": [
       62,
@@ -418,7 +409,7 @@
       113,
       107,
       108,
-      107.6
+      106.2
     ],
     "note": "D38 LATE: Brent settled $109.53 (range $109-111). WTI ~$108. Wall Street surged on ceasefire hope (S&P +0.4%). Iran 10-pt counteroffer = maximalist. Trump refuses to extend. Tue 8PM <20 hrs = binary. Deal=$85 or strikes=$130+."
   },
@@ -503,7 +494,7 @@
       10,
       10,
       10,
-      10
+      10.2
     ],
     "cost": [
       1.5,
@@ -544,7 +535,7 @@
       10,
       9,
       9.5,
-      9.5
+      9.8
     ]
   },
   "latestTargetBreakdown": {
@@ -947,32 +938,40 @@
     {
       "title": "Wild cards (D39)",
       "body": "Trump's 5-day power-plant delay = 4th blink incoming? IRGC 'outside region' attack. Israel extensive attack despite WH pause. Bushehr/Bab al-Mandab. Mojtaba status (absent 29 days). Khamenei health."
+    },
+    {
+      "title": "D39 Apr 7 night — 2-WEEK CEASEFIRE",
+      "body": "90 min before 8PM ET deadline, Trump announced 2-week suspension of strikes contingent on Iran reopening Hormuz. Pakistan PM Sharif + FM Munir brokered. Iran SNSC/Araghchi accepted. VP Vance to lead Islamabad peace talks Friday. Iran 10-pt = 'workable basis.' Oil collapsed from $117 intraday to $109.50. Primary collapse risk: Israel unilateral strike (Haaretz source)."
     }
   ],
   "timeline_fa": [
     {
-      "title": "Day 38 اواخر شب (Apr 06)",
-      "body": "ایران ۱۰ ماده ماکسیمالیست. ترامپ رد تمدید. بازار صعود. $109.53. HRANA 3,540+. 936+."
+      "title": "Day 38 LATE (Apr 06) — IRAN 10-POINT COUNTEROFFER",
+      "body": "Iran submitted 10-point maximalist counteroffer: permanent end, sanctions lifted, reconstruction, NPT enrichment, Hormuz toll. Trump: 'significant but not good enough.' REFUSES to extend. Iran military: 'helpless, stupid.' Markets surged. Brent $109.53. HRANA 3,540+ (1,616 civilians, 244 children). Internet 936+."
     },
     {
-      "title": "سه‌شنبه ۸ شب <۲۰ ساعت",
-      "body": "4th. P=0.22 (UP). $130+ یا اعتبار تمام."
+      "title": "APRIL 7 TUE 8PM ET — <20 HRS",
+      "body": "4th deadline. 3 prior blinks. P(follow-through) UP to 0.22 (Trump explicitly refuses to extend). Iran 10-pt = maximalist gap unbridgeable in hours. If strikes: $130+, 90M without power, Houthi Bab al-Mandab. If blinks: credibility DESTROYED."
     },
     {
-      "title": "ماه ۲",
-      "body": "Islamabad Accord اما ایران دائم. War Powers Apr 28-29."
+      "title": "Month 2",
+      "body": "Islamabad Accord 2-phase framework exists but Iran demands permanent deal. War Powers 60-day clock expires Apr 28-29. Attrition if Tue passes."
     },
     {
-      "title": "روز ۳۹ ۷ آوریل — خارک هدف قرار گرفت",
-      "body": "ضربه دقیق سنتکام به ۹۰+ هدف نظامی در جزیره خارک پیش از سپیده‌دم. انبار مین دریایی، انبارهای موشک، مراکز سپاه نابود شد. تأسیسات نفتی عمداً دست‌نخورده. پاسخ سپاه: پایان خویشتنداری بر اهداف نفتی خلیج."
+      "title": "D39 Apr 7 — Kharg struck",
+      "body": "US CENTCOM precision strike on >90 military targets on Kharg Island pre-dawn Apr 7. Naval mine storage, missile bunkers, IRGC sites destroyed. Oil terminal infrastructure deliberately untouched (controlled escalation signal). IRGC response: end of restraint on Gulf oil targets."
     },
     {
-      "title": "ماه ۳+",
-      "body": "حمله: فاجعه. توافق: کاهش تنش."
+      "title": "Month 3+",
+      "body": "If strikes: humanitarian catastrophe -> intervention. If deal: phased de-escalation. War Powers forces Congressional vote."
     },
     {
-      "title": "Wild cards",
-      "body": "شبکه برق. باب‌المندب. Islamabad قبول. بوشهر. خارگ."
+      "title": "Wild cards (D39)",
+      "body": "Trump's 5-day power-plant delay = 4th blink incoming? IRGC 'outside region' attack. Israel extensive attack despite WH pause. Bushehr/Bab al-Mandab. Mojtaba status (absent 29 days). Khamenei health."
+    },
+    {
+      "title": "D39 Apr 7 night — 2-WEEK CEASEFIRE",
+      "body": "90 min before 8PM ET deadline, Trump announced 2-week suspension of strikes contingent on Iran reopening Hormuz. Pakistan PM Sharif + FM Munir brokered. Iran SNSC/Araghchi accepted. VP Vance to lead Islamabad peace talks Friday. Iran 10-pt = 'workable basis.' Oil collapsed from $117 intraday to $109.50. Primary collapse risk: Israel unilateral strike (Haaretz source)."
     }
   ],
   "scenarioProbabilities": [
@@ -1414,66 +1413,60 @@
     "<strong>Economic:</strong> $109.53. $4.10. بازار vs واقعیت. South Pars."
   ],
   "diplomacy": [
-    "<strong>TRUMP HALF-BLINK (Apr 07 morning):</strong> Postponed strikes on Iranian power plants by 5 days mid-deadline-day, says 'negotiating with Iran.' 8PM ET Hormuz ultimatum still nominally live but power-plant carveout is biggest concrete de-escalation gesture in 39 days. P(follow-through) revised down 0.22 -> 0.18.",
-    "<strong>ISLAMABAD ACCORD (Iran 10-pt) STANDS:</strong> Permanent end + Hormuz toll rights + full sanctions lift + reparations + NPT enrichment rights. Via Pakistan. Trump: 'significant but not good enough.' Iran rejected US 45-day pause counter as insufficient.",
-    "<strong>ISRAEL DECOUPLING:</strong> IDF struck Kashan railway bridge today, threatening trains. Reported Israeli source says US-Iran talks 'likely to fail, Israel preparing extensive attack.' WH/IDF gap widening.",
-    "<strong>MEDIATORS ACTIVE:</strong> Pakistan (lead), Oman (Hormuz transit talks Apr 5), Turkey (Ocean Thunder transit), Qatar (LNG concerns). Six visible mediator engagements in 24 hrs.",
-    "<strong>IRGC RED LINES:</strong> Will respond 'outside region' if US hits civilian infra; threatens to deny US allies oil/gas 'for many years.' No Tehran military de-escalation signal."
+    "<strong>TRUMP-IRAN 2-WEEK CEASEFIRE (Apr 07 ~7PM ET):</strong> Trump announced suspension of strikes for 2 weeks contingent on Hormuz reopening. Iran SNSC via FM Araghchi formally accepted. Brokered by Pakistan PM Sharif + FM Munir. Trump calls Iran 10-pt a 'workable basis.'",
+    "<strong>ISLAMABAD PEACE TALKS FRIDAY:</strong> VP JD Vance to lead US delegation. Pakistan mediating. First direct US-Iran session in 39 days. Iran 10-pt = negotiating framework.",
+    "<strong>HORMUZ REOPENING:</strong> Araghchi confirmed 2-week safe passage in coordination with Iran Armed Forces, 'subject to technical limitations.' Not full lift; de facto case-by-case under ceasefire umbrella.",
+    "<strong>ISRAEL DECOUPLING WARNING:</strong> Haaretz source: 'US-Iran talks likely to fail, Israel preparing extensive attack.' IDF struck Kashan railway bridge today. Netanyahu has not publicly endorsed Trump pause. WH/IDF gap is now the #1 collapse risk.",
+    "<strong>MEDIATORS:</strong> Pakistan (lead broker + peace talks host), Oman (Hormuz transit protocol Apr 5), Turkey (Ocean Thunder transit), Qatar (LNG). 9 visible engagements in 24 hrs."
   ],
   "diplomacy_fa": [
-    "<strong>ایران ۱۰ ماده:</strong> پایان دائم، رفع تحریم، بازسازی، NPT، هرمز.",
-    "<strong>ترامپ رد تمدید:</strong> D39 سه‌شنبه ۸ شب. P=0.22.",
-    "<strong>سپاه:</strong> 'درمانده، عصبی، احمقانه.' دروازه‌های جهنم. وزارت خارجه: اولتیماتوم = جنایت جنگی.",
-    "<strong>شکاف ماکسیمالیست:</strong> ایران دائم + NPT. ترامپ هرمز فوری یا تخریب. <20 ساعت.",
-    "<strong>اسیم منیر:</strong> تنها کانال. تحویل + دریافت ۱۰ ماده. ایران تعهد رسمی نداده.",
-    "<strong>مصر/ترکیه/قطر/عمان:</strong> حداکثر دیپلماسی علیرغم مواضع حداکثری."
+    "<strong>TRUMP-IRAN 2-WEEK CEASEFIRE (Apr 07 ~7PM ET):</strong> Trump announced suspension of strikes for 2 weeks contingent on Hormuz reopening. Iran SNSC via FM Araghchi formally accepted. Brokered by Pakistan PM Sharif + FM Munir. Trump calls Iran 10-pt a 'workable basis.'",
+    "<strong>ISLAMABAD PEACE TALKS FRIDAY:</strong> VP JD Vance to lead US delegation. Pakistan mediating. First direct US-Iran session in 39 days. Iran 10-pt = negotiating framework.",
+    "<strong>HORMUZ REOPENING:</strong> Araghchi confirmed 2-week safe passage in coordination with Iran Armed Forces, 'subject to technical limitations.' Not full lift; de facto case-by-case under ceasefire umbrella.",
+    "<strong>ISRAEL DECOUPLING WARNING:</strong> Haaretz source: 'US-Iran talks likely to fail, Israel preparing extensive attack.' IDF struck Kashan railway bridge today. Netanyahu has not publicly endorsed Trump pause. WH/IDF gap is now the #1 collapse risk.",
+    "<strong>MEDIATORS:</strong> Pakistan (lead broker + peace talks host), Oman (Hormuz transit protocol Apr 5), Turkey (Ocean Thunder transit), Qatar (LNG). 9 visible engagements in 24 hrs."
   ],
   "publicOpinion": [
-    "<strong>Pew:</strong> 60% wrong-direction. Trump's 5-day power-plant delay may bleed off some pressure but gas $4.119 + 15 KIA + 2 more dead in Kashan keeps political pain sustained.",
-    "<strong>Gas:</strong> $4.119 national avg (AAA). Above $4 for first time since Aug 2022. +$1.08 vs 1 month ago. If Trump strikes tonight: $5+/gal projected within 7 days.",
-    "<strong>Polymarket:</strong> US-Iran ceasefire by Jun 30 = 54%; by Dec 31 = 74%. Iran x Israel/US conflict ends by Dec 31 = 85%. $107M+ traded volume.",
-    "<strong>Congress:</strong> AUMF absent. War Powers 60-day clock running. Bipartisan unease growing as casualties mount."
+    "<strong>Pew:</strong> 60% wrong-direction pre-announcement. Expect rapid reversal on 2-week ceasefire headline + oil rollback + 'Pakistan asked' exit narrative.",
+    "<strong>Gas:</strong> $4.12 national AAA. Above $4 first time since Aug 2022. Futures down on ceasefire; retail gas lags 5-7 days.",
+    "<strong>Polymarket (live):</strong> US-Iran ceasefire by Apr 15 = 15%, by Apr 30 = 29%, by Jun 30 = 59%, by Dec 31 = 76%. Short-dated markets repricing after Trump announcement.",
+    "<strong>Congress:</strong> AUMF still absent. War Powers 60-day clock paused in effect by ceasefire. Bipartisan relief expected."
   ],
   "publicOpinion_fa": [
-    "<strong>Pew:</strong> ۵۹-۶۰٪. بنزین $4.119.",
-    "<strong>Gas:</strong> $4.10. >$4 first time. اگر سه‌شنبه: $5+.",
-    "<strong>Congress:</strong> بدون AUMF. War Powers Apr 28-29. ۱۰ ماده = ماه‌ها مذاکره. ترامپ: 'نمی‌دانم.'",
-    "<strong>Casualties:</strong> 15 KIA. 3,540+ (244+ کودک). بهارستان + آزادی.",
-    "<strong>Media:</strong> ایران ۱۰ ماده = 'مشارکت' vs 'مانع.' ترامپ رد تمدید = 'قدرت' vs 'بی‌پروا.'",
-    "<strong>Intl:</strong> ایران ۱۰ ماده = بین‌المللی‌سازی. IAEA 'deeply concerned.' پاکستان تنها کانال."
+    "<strong>Pew:</strong> 60% wrong-direction pre-announcement. Expect rapid reversal on 2-week ceasefire headline + oil rollback + 'Pakistan asked' exit narrative.",
+    "<strong>Gas:</strong> $4.12 national AAA. Above $4 first time since Aug 2022. Futures down on ceasefire; retail gas lags 5-7 days.",
+    "<strong>Polymarket (live):</strong> US-Iran ceasefire by Apr 15 = 15%, by Apr 30 = 29%, by Jun 30 = 59%, by Dec 31 = 76%. Short-dated markets repricing after Trump announcement.",
+    "<strong>Congress:</strong> AUMF still absent. War Powers 60-day clock paused in effect by ceasefire. Bipartisan relief expected."
   ],
   "hormuz": [
-    "<strong>CRACKS IN BLOCKADE:</strong> Turkish Ocean Thunder carrying Iraqi crude transited Apr 6. ~13 vessels/week (highest since D1, ~21% of pre-war 62/day). Northern narrow channel only. Iran handling on case-by-case basis: China, Russia, India, Iraq, Pakistan, Malaysia, Thailand, Philippines, Oman, France, Japan all approved.",
-    "<strong>IRAN 10-PT: HORMUZ TOLL RECOGNITION:</strong> Iran demands formal recognition of toll/passage system. Iran 10-pt = permanent change codified.",
-    "<strong>WAR-RISK INSURANCE:</strong> Multi-decade-high premia. Western tankers still mostly avoiding. Qatar LNG turned back several times.",
-    "<strong>OMAN MEDIATING:</strong> Apr 5 Iran-Oman talks on smooth transit; Pakistan-mediated Islamabad Accord includes Hormuz clauses."
+    "<strong>REOPENING COMMITTED (not yet verified):</strong> Iran FM Araghchi confirmed via Pakistan that for 2 weeks, safe passage through Hormuz will be possible in coordination with Iran Armed Forces, subject to 'technical limitations.' Trump called this a 'COMPLETE, IMMEDIATE, and SAFE opening.' Gap between statements = watch tomorrow's transit count.",
+    "<strong>CURRENT STATE:</strong> ~14 vessels/day Apr 7 (up marginally from 13), all case-by-case. Turkish Ocean Thunder carrying Iraqi crude transited Apr 6. China/Russia/India/Iraq/Pakistan/Oman/Qatar cleared. Western tankers still mostly avoiding pending insurance repricing.",
+    "<strong>IRAN 10-PT TOLL RECOGNITION:</strong> Long-term demand for formal Hormuz passage/toll system stays in Islamabad Accord — to be negotiated Friday.",
+    "<strong>WAR-RISK INSURANCE:</strong> Multi-decade-high premia; Lloyd's expected to reprice if 2-week pause holds 72 hrs."
   ],
   "hormuz_fa": [
-    "<strong>ایران ۱۰ ماده: عوارض هرمز:</strong> ۱۳ کشتی/هفته. کانال شمالی.",
-    "<strong>Expanding:</strong> ~10/day. ۱۰ ماده = تغییر دائم رسمی.",
-    "<strong>Iraq:</strong> معاف. 7+ کشور عبور امن.",
-    "<strong>سه‌شنبه <20:</strong> ترامپ رد تمدید. اگر حمله: باب‌المندب $150+.",
-    "<strong>Mines:</strong> 200+. 2-6 ماه.",
-    "<strong>Insurance:</strong> 13.5%+. غیرقابل بیمه.",
-    "<strong>عمان+بریتانیا:</strong> ۱۰ ماده + ۴۰ کشور = چارچوب‌های موازی."
+    "<strong>REOPENING COMMITTED (not yet verified):</strong> Iran FM Araghchi confirmed via Pakistan that for 2 weeks, safe passage through Hormuz will be possible in coordination with Iran Armed Forces, subject to 'technical limitations.' Trump called this a 'COMPLETE, IMMEDIATE, and SAFE opening.' Gap between statements = watch tomorrow's transit count.",
+    "<strong>CURRENT STATE:</strong> ~14 vessels/day Apr 7 (up marginally from 13), all case-by-case. Turkish Ocean Thunder carrying Iraqi crude transited Apr 6. China/Russia/India/Iraq/Pakistan/Oman/Qatar cleared. Western tankers still mostly avoiding pending insurance repricing.",
+    "<strong>IRAN 10-PT TOLL RECOGNITION:</strong> Long-term demand for formal Hormuz passage/toll system stays in Islamabad Accord — to be negotiated Friday.",
+    "<strong>WAR-RISK INSURANCE:</strong> Multi-decade-high premia; Lloyd's expected to reprice if 2-week pause holds 72 hrs."
   ],
   "keyActors": [
-    "<strong>US/Trump:</strong> HALF-BLINK Apr 07 - postponed power-plant strikes 5 days mid-deadline. Hormuz 8PM ET ultimatum nominally still live. 'Whole civilisation will die tonight' Truth Social. Press conf: 'I don't know if winding down or escalating.' Classic pre-blink choreography.",
-    "<strong>Israel/Netanyahu/Katz:</strong> Struck Kashan railway bridge today. IDF Arabic warning to civilians. 'Hunt down leaders.' Decoupling from WH softening - reported source says talks likely fail, Israel preparing extensive attack.",
-    "<strong>Iran/Pezeshkian/Khamenei:</strong> 10-pt counteroffer stands via Pakistan. Khamenei silent 5 days. Mojtaba whereabouts unknown 29 days. Pezeshkian backing IRGC line.",
-    "<strong>IRGC:</strong> Will retaliate 'outside region' if civilian infra hit. Threatens cutoff of oil/gas to US allies 'for many years.' Calls Trump 'helpless, nervous, unbalanced and stupid.'",
-    "<strong>Mediators:</strong> Pakistan (Islamabad Accord lead), Oman (Hormuz talks Apr 5), Turkey (Ocean Thunder transit), Qatar (LNG). Six engagements in 24 hrs.",
-    "<strong>Hezbollah/Houthis:</strong> Coordinated barrage continues. Houthis threatening Bab al-Mandab. Hezbollah firing despite Beirut strikes."
+    "<strong>US/Trump:</strong> 4TH BLINK — announced 2-week ceasefire 90 min before 8PM deadline. Frames as 'Pakistan asked me.' Iran 10-pt = 'workable basis.' VP Vance to lead Islamabad talks Friday. Classic TACO pattern: max threat -> last-minute de-escalation.",
+    "<strong>Iran/Pezeshkian/Araghchi/SNSC:</strong> Supreme National Security Council formally accepted 2-week ceasefire. Araghchi thanked Pakistan leadership. Khamenei silent 5+ days — no public endorsement. IRGC has not publicly disavowed but 'outside region' rhetoric intact.",
+    "<strong>Pakistan/Sharif/Munir:</strong> OPERATIONAL BROKER. PM Shehbaz Sharif + Field Marshal Asim Munir direct phone calls to Trump; credited by Trump personally for the pause. Hosting Friday peace talks.",
+    "<strong>Israel/Netanyahu/Katz:</strong> NOT a signatory. Continued strikes Apr 7: Kashan rail bridge, 3 Tehran airports, South Pars petrochem, Shiraz petrochem, Tehran synagogue (collateral). Haaretz source: IDF 'preparing extensive attack.' Decoupling from WH is the primary collapse risk.",
+    "<strong>IRGC:</strong> No public acceptance; 'outside region' retaliation threat still live. Coordinated barrage (Iran + Houthis + Hezbollah) continued into afternoon Apr 7 before ceasefire.",
+    "<strong>Mediators:</strong> Pakistan (lead), Oman (Hormuz protocol), Turkey, Qatar. 9 engagements in 24 hrs.",
+    "<strong>Hezbollah/Houthis:</strong> Saudi intercepted 7 Houthi BMs Apr 7. No word on whether non-state proxies will honor pause."
   ],
   "keyActors_fa": [
-    "<strong>US:</strong> ترامپ رد تمدید. نجات WSO. 'نمی‌دانم.'",
-    "<strong>Israel:</strong> Khademi+Bagheri. South Pars. تناقض با دیپلماسی.",
-    "<strong>Iran:</strong> ۱۰ ماده: دائم، تحریم، NPT، هرمز عوارض، بازسازی. سپاه: 'درمانده، احمقانه.' سخت‌تر.",
-    "<strong>Pakistan:</strong> تنها کانال. تحویل + دریافت ۱۰ ماده. ایران تعهد نداده.",
-    "<strong>Russia:</strong> 363+. IAEA 'deeply concerned.'",
-    "<strong>Egypt/Turkey:</strong> همکاران. ۴۵ روزه مصر.",
-    "<strong>Houthi:</strong> هماهنگ. باب‌المندب = $150+.",
-    "<strong>IAEA:</strong> 'deeply concerned.' بدون اجرا."
+    "<strong>US/Trump:</strong> 4TH BLINK — announced 2-week ceasefire 90 min before 8PM deadline. Frames as 'Pakistan asked me.' Iran 10-pt = 'workable basis.' VP Vance to lead Islamabad talks Friday. Classic TACO pattern: max threat -> last-minute de-escalation.",
+    "<strong>Iran/Pezeshkian/Araghchi/SNSC:</strong> Supreme National Security Council formally accepted 2-week ceasefire. Araghchi thanked Pakistan leadership. Khamenei silent 5+ days — no public endorsement. IRGC has not publicly disavowed but 'outside region' rhetoric intact.",
+    "<strong>Pakistan/Sharif/Munir:</strong> OPERATIONAL BROKER. PM Shehbaz Sharif + Field Marshal Asim Munir direct phone calls to Trump; credited by Trump personally for the pause. Hosting Friday peace talks.",
+    "<strong>Israel/Netanyahu/Katz:</strong> NOT a signatory. Continued strikes Apr 7: Kashan rail bridge, 3 Tehran airports, South Pars petrochem, Shiraz petrochem, Tehran synagogue (collateral). Haaretz source: IDF 'preparing extensive attack.' Decoupling from WH is the primary collapse risk.",
+    "<strong>IRGC:</strong> No public acceptance; 'outside region' retaliation threat still live. Coordinated barrage (Iran + Houthis + Hezbollah) continued into afternoon Apr 7 before ceasefire.",
+    "<strong>Mediators:</strong> Pakistan (lead), Oman (Hormuz protocol), Turkey, Qatar. 9 engagements in 24 hrs.",
+    "<strong>Hezbollah/Houthis:</strong> Saudi intercepted 7 Houthi BMs Apr 7. No word on whether non-state proxies will honor pause."
   ],
   "predictive": {
     "models": {
@@ -2890,17 +2883,17 @@
       8,
       9,
       10,
-      13
+      14
     ],
     "preWarAverage": 62,
     "note": "D38 LATE: ~10 vessels. Iraq exempt. Iran 10-pt demands Hormuz toll protocol = permanent. Trump refuses to extend Tue deadline. <20 hrs to binary outcome.",
     "note_fa": "D38 اواخر شب: ~10. عراق معاف. ایران عوارض هرمز = دائم. ترامپ رد تمدید. <20 ساعت."
   },
   "ceasefireDeadline": {
-    "deadline": "2026-04-07T20:00:00-04:00",
-    "label": "April 7, 8PM ET (Tuesday)",
-    "label_fa": "۷ آوریل، ۸ شب ET (سه‌شنبه)",
-    "context": "April 7 Tue 8PM ET (<20 hrs). Iran submitted 10-point maximalist counteroffer. Trump REFUSES to extend — 'ALL HELL.' P(follow-through)=0.22 (UP). P(extends)=78%. IRGC: 'gates of hell open for YOU.' Mutual maximalism + <20 hrs = binary.",
+    "deadline": "2026-04-21T20:00:00-04:00",
+    "label": "April 21, 8PM ET — 2-week ceasefire expiry",
+    "label_fa": "۲۱ آوریل، ۸ شب ET — پایان آتش‌بس دوهفته‌ای",
+    "context": "Trump-Iran 2-week ceasefire announced Apr 7 ~7PM ET (Pakistan-brokered by PM Sharif + FM Munir). Iran SNSC via FM Araghchi formally accepted. Contingent on Hormuz reopening in coordination with Iran Armed Forces. VP Vance leads US delegation to Islamabad peace talks Friday. Clock resets Apr 21 unless converted to settlement. Primary collapse risks: Israel unilateral strike, Hormuz non-compliance, 10-pt maximalism at talks.",
     "context_fa": "April 7 Tue (<20 ساعت). ایران ۱۰ ماده ماکسیمالیست. ترامپ رد تمدید — 'جهنم.' P=0.22 (UP). سپاه: 'دروازه‌های جهنم.' ماکسیمالیسم متقابل = باینری.",
     "branchIfDeal": [
       {
@@ -3365,65 +3358,65 @@
       "mojtabaAbsentDays": 29
     },
     "dealAvailability": {
-      "score": 0.18,
+      "score": 0.42,
       "inputs": {
-        "mediatorActivity": 0.75,
-        "proposalSpecificity": 0.6,
-        "faceSavingElements": 0.05,
-        "thirdPartyGuarantees": 0.15
+        "mediatorActivity": 0.92,
+        "proposalSpecificity": 0.75,
+        "faceSavingElements": 0.45,
+        "thirdPartyGuarantees": 0.55
       },
-      "reasoning": "Iran 10-point counteroffer = MOST DETAILED diplomatic response ever (proposal specificity UP). BUT demands are MAXIMALIST: permanent end + NPT enrichment + sanctions lifting + reconstruction = months not hours. Called US 15-pt 'excessively demanding.' Trump refuses to extend = no negotiating time. Gap WIDENED. Deal availability DOWN from 0.22 to 0.18 despite increased specificity — positions hardened.",
+      "reasoning": "TRUMP + IRAN ACCEPTED 2-WEEK CEASEFIRE (Apr 7 ~7PM ET, Pakistan-brokered). Trump calls Iran 10-pt 'workable basis.' FM Araghchi confirmed via Pakistan PM Sharif + FM Munir. VP Vance to lead Islamabad talks Fri. Mediator activity SURGE (Pakistan operational broker). Face-saving elements materialize (Pakistani guarantee, Hormuz coordination). Deal availability JUMP 0.18 -> 0.42. Still short of 0.6 — 2-week pause, not settlement; gap on NPT+sanctions; Israel decoupling risk.",
       "reasoning_fa": "ایران ۱۰ ماده = مفصل‌ترین پاسخ (specificity UP). اما ماکسیمالیست: NPT + تحریم + بازسازی = ماه‌ها. ترامپ رد تمدید. شکاف عمیق‌تر. DOWN 0.22->0.18."
     },
     "usExitPressure": {
-      "score": 0.57,
+      "score": 0.64,
       "inputs": {
         "approvalPressure": 0.59,
         "kiaPressure": 0.5,
         "gasPressure": 0.37,
         "durationFatigue": 0.78,
-        "exitNarrativeAvailable": 0.35
+        "exitNarrativeAvailable": 0.72
       },
-      "reasoning": "Pew 59% wrong. 15 KIA, 520+ wounded, 7 aircraft. Gas $4.10. Day 38 late night. F-15 rescue = PR win + exit narrative element. Wall Street surged = political cover. BUT Trump 'I don't know' re winding down = no strategy visible. Mirror: 'TACO Trump' (changed deadline 4x). Duration fatigue UP. Iran 10-pt = months of negotiation = exit further away.",
+      "reasoning": "Exit narrative crystallized: Trump can frame 2-week pause as 'Pakistan asked,' 'Hormuz reopening,' 'Iran 10-pt workable basis' — all face-saving exits. Pew 60% wrong still binds. Gas $4.12. 15 KIA. Duration fatigue D39. Wall St likely rally tomorrow. US exit pressure UP 0.57 -> 0.64.",
       "reasoning_fa": "پیو ۵۹٪. ۱۵ کشته. $۴.۱۰. نجات F-15 = PR. بازار صعود. اما ترامپ 'نمی‌دانم.' TACO (4 بار). ۱۰ ماده = ماه‌ها."
     },
     "iranAcceptance": {
-      "score": 0.08,
+      "score": 0.3,
       "inputs": {
-        "remainingLeverage": 0.82,
-        "regimeSurvival": 0.6,
-        "termsQuality": 0.05,
-        "internalPressure": 0.28
+        "remainingLeverage": 0.78,
+        "regimeSurvival": 0.62,
+        "termsQuality": 0.35,
+        "internalPressure": 0.32
       },
-      "reasoning": "Iran's 10-point counteroffer = MAXIMALIST position. Demands NPT enrichment rights, full sanctions lifting, reconstruction, permanent end, Hormuz toll recognition. Called US 15-pt 'excessively demanding.' Rejected nuclear/missile curbs as 'excessive.' IRGC military rhetoric = 'helpless, stupid.' This is negotiation opening position, not acceptance. Iran acceptance DOWN from 0.10 to 0.08 — positions HARDENED since Islamabad Accord delivery.",
+      "reasoning": "Iran SNSC accepted 2-week ceasefire and agreed to Hormuz reopening coordination via Pakistan mediation — FIRST formal de-escalation step from Tehran in 39 days. Araghchi confirmed on behalf of Supreme National Security Council. Acceptance JUMP 0.08 -> 0.30. Still capped — 10-pt maximalism intact (NPT, sanctions, reparations unresolved), 2-week window = conditional pause not terms acceptance, IRGC 'outside region' rhetoric still live.",
       "reasoning_fa": "ایران ۱۰ ماده ماکسیمالیست = موضع افتتاحیه مذاکره. NPT + تحریم + بازسازی. طرح آمریکا 'بیش از حد.' سپاه 'درمانده.' DOWN 0.10->0.08. سخت‌تر."
     },
     "escalationProximity": {
-      "score": 0.72,
+      "score": 0.42,
       "inputs": {
-        "nuclearProximity": 0.85,
-        "chokePointProximity": 0.67,
-        "groundInvasionProximity": 0.5,
-        "powerGridProximity": 0.88
+        "nuclearProximity": 0.8,
+        "chokePointProximity": 0.35,
+        "groundInvasionProximity": 0.4,
+        "powerGridProximity": 0.25
       },
-      "reasoning": "Power grid deadline Tue <20 hrs. P UP to 0.22 — Trump explicitly refuses to extend (0.88 UP from 0.82). Iran 10-pt maximalist = NO off-ramp. IRGC defiance = no compliance signal. IAEA 'deeply concerned' + Iran NPT demand (0.85). Houthis coordinated (0.67). 82nd (0.5). Nearest ceiling = power grid. Escalation proximity UP from 0.68 to 0.72.",
+      "reasoning": "Deadline averted. Power grid strikes SUSPENDED 14 days (0.88 -> 0.25). Hormuz reopening promised (0.67 -> 0.35). Kharg already hit but oil infra spared. Israel decoupling risk = residual (Haaretz source: IDF 'preparing extensive attack'). Escalation proximity DOWN 0.72 -> 0.42. NOT zero — Iran could freeze, Israel could strike unilaterally, Hormuz non-compliance = instant re-trigger.",
       "reasoning_fa": "نیروگاه سه‌شنبه <20 ساعت. P=0.22 UP. ترامپ رد تمدید (0.88). ایران ۱۰ ماده = بدون خروج. IAEA 'deeply concerned' (0.85). تشدید UP 0.68->0.72."
     },
     "outcomeProbabilities": {
-      "negotiatedResolution": 0.12,
-      "derivation_negotiated": "P(deal) x P(US_exit) x P(Iran_accept) = 0.18 x 0.57 x 0.08 = 0.008. Adjusted up to 0.12 for Islamabad Accord framework + Iran 10-pt = first detailed counterposition. DOWN from 0.13.",
-      "escalationCatastrophe": 0.37,
-      "derivation_escalation": "P(escalation_proximity) x (1 - P(deal)) = 0.72 x (1 - 0.18) = 0.59. Adjusted down to 0.37 — 3 blinks history, but Trump explicitly refuses to extend = UP from 0.35.",
-      "protractedContinuation": 0.34,
-      "derivation_protracted": "1 - P(resolution) - P(catastrophe) - P(intervention) = residual. If Tue passes with 4th blink: jumps to ~40%. Iran 10-pt establishes long negotiation.",
-      "internationalIntervention": 0.1,
-      "derivation_intervention": "If power grid strikes: humanitarian catastrophe -> forced intervention. Iran 10-pt demands end to ALL regional conflicts = internationalizes. UP from 0.09.",
+      "negotiatedResolution": 0.3,
+      "derivation_negotiated": "P(deal)xP(US_exit)xP(Iran_accept) = 0.42 x 0.64 x 0.30 = 0.081. Adjusted up to 0.30 for 2-week ceasefire + Pakistan broker + Vance Islamabad Fri + Iran SNSC formal accept. UP from 0.12.",
+      "escalationCatastrophe": 0.18,
+      "derivation_escalation": "Strikes suspended 14 days. Residual risk: Israel unilateral, Iran Hormuz non-compliance, IRGC rogue action. DOWN from 0.37.",
+      "protractedContinuation": 0.36,
+      "derivation_protracted": "Most likely: 2-week pause doesn't convert to settlement, war resumes in frozen posture. 10-pt gap on NPT+sanctions unresolved. UP from 0.34.",
+      "internationalIntervention": 0.09,
+      "derivation_intervention": "If pause collapses + Israel strikes = intervention forced. Minor DOWN from 0.10.",
       "other": 0.07,
-      "derivation_other": "Regime fracture, internal coup, unexpected event."
+      "derivation_other": "Regime fracture, coup, rogue action, black swan."
     },
     "calibration": {
-      "polymarketCeasefire": 16,
-      "polymarketSource": "Polymarket: US-Iran ceasefire by Jun 30 = 54%, by Dec 31 = 74%; Iran x Israel/US conflict ends by Dec 31 = 85% (Apr 7 morning, $107M+ traded).",
+      "polymarketCeasefire": 29,
+      "polymarketSource": "Polymarket: US-Iran ceasefire by Apr 15 = 15%, by Apr 30 = 29%, by Jun 30 = 59%, by Dec 31 = 76% (Apr 7 night, post-announcement $140M+ traded). Short-dated markets repricing live.",
       "historicalBaseRate": {
         "value": 35,
         "methodology": "Of ~40 post-WWII asymmetric Middle East conflicts, ~35% resolved within 45 days (current D37). Base rate prior."
@@ -3432,15 +3425,15 @@
         "spotVs3Month": "backwardation",
         "interpretation": "Spot > futures = market expects crisis is TEMPORARY. Consistent with resolution within months, not years."
       },
-      "modelVsMarket": "Model: 12% negotiated resolution. Market near-term: ~16% (ticked up after Trump's 5-day strike postponement on power plants). Iran 10-pt maximalist still unbridgeable; model weights gap + IRGC defiance over headline thaw."
+      "modelVsMarket": "Model: 30% negotiated resolution. Market near-term: 29% (by Apr 30) jumped post-Trump announcement. Model = market convergence for first time in 39 days. Model conservative vs Apr 30 because 10-pt maximalism + Israel decoupling risk makes 2-week window more likely to collapse than settle."
     },
     "confidence": {
       "resolutionProbability": {
-        "estimate": 20,
-        "low": 12,
-        "high": 35
+        "estimate": 32,
+        "low": 20,
+        "high": 48
       },
-      "methodology": "Ensemble: model-derived (12%) + market signal (14%) + historical base rate (35%) -> weighted average 20%. Iran 10-pt = maximalist = DOWN. Trump refuses extend = binary. Wall St surge = market optimistic. Net -1 from EVE."
+      "methodology": "Ensemble: model-derived (30%) + market signal (29% by Apr 30) + historical base rate (35%) -> weighted 32%. HUGE jump from morning 20% — Trump-Iran 2-week ceasefire pact, Pakistan brokered, Iran SNSC formally accepted, VP Vance to Islamabad Fri. Still capped <50% because 10-pt unresolved and Israel decoupling risk."
     },
     "dailyIndicators": {
       "labels": [
@@ -3523,7 +3516,7 @@
         45,
         40,
         45,
-        40
+        58
       ],
       "oilBrent": [
         72,
@@ -3564,7 +3557,7 @@
         115,
         109,
         110,
-        110.05
+        109.5
       ],
       "hormuzVessels": [
         5,
@@ -3605,7 +3598,7 @@
         8,
         9,
         10,
-        13
+        14
       ],
       "usKIA": [
         0,
@@ -3769,7 +3762,7 @@
         3,
         3,
         5,
-        6
+        9
       ],
       "coalitionScore": [
         9,
@@ -3810,7 +3803,7 @@
         3,
         3,
         2.5,
-        2.5
+        2.6
       ],
       "iranRejectedCeasefire": [
         0,
@@ -3851,7 +3844,7 @@
         1,
         1,
         1,
-        1
+        0
       ],
       "proposalsRejected": [
         0,
@@ -3933,7 +3926,7 @@
         1,
         1,
         1,
-        0
+        14
       ]
     },
     "trumpPattern": {
@@ -3959,8 +3952,8 @@
         {
           "date": "D38 (Apr 6)",
           "threat": "April 7 Tue 8PM ET power grid strikes — EXPLICITLY REFUSES to extend",
-          "outcome": "PENDING — <20 hours. Trump: 'ALL HELL is gonna break out.' Iran: 'gates of hell open for YOU.'",
-          "followed_through": null
+          "outcome": "BLINKED 4th time. 90 min before 8PM ET Trump announced 2-week ceasefire on conversation with PM Sharif/FM Munir, contingent on Iran reopening Hormuz. Iran SNSC accepted. Peace talks Islamabad Fri (Vance lead).",
+          "followed_through": false
         }
       ],
       "blinkCount": 3,
