@@ -1,6 +1,6 @@
 {
   "meta": {
-    "lastUpdated": "2026-04-07T21:15:00-04:00",
+    "lastUpdated": "2026-04-08T09:05:00-04:00",
     "preWarBaselines": {
       "d1Missiles": 480,
       "preWarOil": 65,
@@ -8,7 +8,8 @@
       "preWarGas": 3
     },
     "notes": [
-      "D39 NIGHT (Apr 07 21:15 ET, 75min post-deadline): TRUMP-IRAN 2-WEEK CEASEFIRE. ~90 min before 8PM ET deadline Trump posted truth social: agreed to 2-week suspension of strikes contingent on Iran's COMPLETE IMMEDIATE SAFE reopening of Hormuz. FM Araghchi confirmed on behalf of Supreme National Security Council; Iran will cease defensive operations if attacks halt; Hormuz passage in coordination with Iranian armed forces for 2 weeks. Brokered by PM Shehbaz Sharif + Field Marshal Asim Munir of Pakistan. 10-pt Iran proposal now 'workable basis.' VP Vance to lead US delegation to Islamabad peace talks Friday. Brent closed $109.50 after intraday $117 spike. Gas $4.12.",
+      "D40 MORNING (Apr 08 09:05 ET): CEASEFIRE HOLDING. 2-week US-Iran truce in effect from overnight. Iran reopening Strait of Hormuz under armed-forces coordination; first tankers transiting. Brent -$13 to ~$95.80 (war premium unwinding). Islamabad talks Friday Apr 10 — VP Vance leading US, Pakistan PM Sharif + FM Munir mediating. Residual Gulf attacks (UAE/Bahrain/Kuwait) in early hours before stand-down. Israel still active in Lebanon (explicitly excluded from ceasefire). Trump: 'no enrichment' — will 'dig out nuclear dust.'",
+      "Source hierarchy: CNN/NBC/NPR/CBS/Axios/Bloomberg/Al Jazeera/Times of Israel/Reuters live blogs Apr 07-08 2026. Brent via oilpriceapi/Fortune Apr 08.",
       "D39 13:00 ET update: US CENTCOM struck >90 military targets on Kharg Island early Apr 7 (naval mine storage, missile bunkers; oil infra deliberately spared per WSJ/CNN). Iran IRGC: 'restraint on Gulf oil infra is over.' Trump 8PM ET deadline ~7 hrs out. Brent ~$110.05.",
       "D39 MORNING UPDATE (Apr 07 09:15 ET) - ~11 HRS to 8PM ET deadline. Trump POSTPONED power-plant strikes 5 days mid-deadline (says 'negotiating'). Israel hit Yahya Abad railway bridge (Kashan) 2 killed. Turkish Ocean Thunder + Iraqi crude transited Hormuz case-by-case. IRGC: 'whole civilisation' rebuttal - threatens to deprive US allies of oil/gas 'for many years.' Polymarket conflict-ends-Dec31 ticked 84->85%, US-Iran ceasefire-Jun30 54%. Sources: CNN live, AJ live, NPR, NBC, CBS, Bloomberg, UPI, Pravda EN, Polymarket, AAA, OilPriceAPI, EIA.",
       "Day 39 PRE-DAWN (Apr 07) update - DEADLINE DAY. Sources: CNN, AJ, NPR, NBC, NYT, AP, Reuters, CBS, Bloomberg, CNBC, Haaretz, ToI, Euronews, Critical Threats, Alma Research, Wikipedia 2026 Iran war, AAA, WorldOil, EnergyConnects, Polymarket.",
@@ -20,100 +21,110 @@
   "metrics": [
     {
       "label": "Day",
-      "value": "39 DEADLINE",
-      "desc": "DEADLINE DAY. Trump 8PM ET ~22 HRS. Refuses to extend."
+      "value": "40 CEASEFIRE",
+      "desc": "D40 Apr 08. 2-week US-Iran truce in effect. Islamabad talks Fri Apr 10."
     },
     {
       "label": "Cumul. missiles",
-      "value": "~3,401",
-      "desc": "D39 early: ~40 overnight salvo continuing."
+      "value": "~3,413",
+      "desc": "D40 morning: ~12 residual Gulf attacks before stand-down."
     },
     {
       "label": "Cumul. drones",
-      "value": "~5,343",
-      "desc": "D39 early: ~45 (Houthi+Iran+Gulf)."
+      "value": "~5,361",
+      "desc": "D40: ~18 residual before ceasefire fully took hold."
     },
     {
       "label": "Brent crude",
-      "value": "~$110.50",
-      "desc": "Edged up on deadline risk. $85 deal / $130+ strikes / $150+ Bab al-Mandab."
+      "value": "~$95.80",
+      "desc": "−$13 from $109 as war premium unwinds. WTI ~$91.50."
     },
     {
       "label": "Iran dead",
-      "value": "~8,180+",
-      "desc": "HRANA 3,540+ (1,616 civ, 244+ children). Tehran overnight: 25+ killed."
+      "value": "~8,200+",
+      "desc": "HRANA 3,560+. Street celebrations in Tehran/Baghdad."
     },
     {
       "label": "Lebanon",
-      "value": "1,385+ killed",
-      "desc": "IDF continues S Lebanon village destruction. ~1M displaced."
+      "value": "1,530+ killed",
+      "desc": "Al Jazeera: since Mar 2. Ceasefire excludes Lebanon — IDF ops continue."
     },
     {
       "label": "Israel dead",
       "value": "27+",
-      "desc": "Haifa bldg 2 killed. Cluster 30 sites central Israel. 15 US KIA + 520+ wounded."
+      "desc": "No overnight civilian casualties reported inside Israel since ceasefire."
     },
     {
-      "label": "Nuclear risk",
-      "value": "CRITICAL+",
-      "desc": "IAEA 'deeply concerned'. Iran 10-pt demands NPT enrichment rights."
+      "label": "Hormuz",
+      "value": "REOPENING",
+      "desc": "Safe passage via Iranian armed-forces coordination. First tankers overnight."
+    },
+    {
+      "label": "Ceasefire",
+      "value": "Apr 21 expiry",
+      "desc": "2-week window. Islamabad Fri Apr 10. VP Vance / Sharif / Munir."
     }
   ],
   "metrics_fa": [
     {
-      "label": "Day",
-      "value": "39 ضرب‌الاجل",
-      "desc": "روز ضرب‌الاجل. ۸ شب ET."
+      "label": "روز",
+      "value": "۴۰ آتش‌بس",
+      "desc": "روز ۴۰ — ۸ آوریل. آتش‌بس دوهفته‌ای برقرار. مذاکرات اسلام‌آباد جمعه."
     },
     {
-      "label": "Missiles",
-      "value": "~3,401",
-      "desc": "D39: ~40."
+      "label": "مجموع موشک",
+      "value": "~۳٬۴۱۳",
+      "desc": "روز ۴۰ صبح: ~۱۲ حمله باقی‌مانده."
     },
     {
-      "label": "Drones",
-      "value": "~5,343",
-      "desc": "D39: ~45."
+      "label": "مجموع پهپاد",
+      "value": "~۵٬۳۶۱",
+      "desc": "روز ۴۰: ~۱۸ باقی‌مانده."
     },
     {
-      "label": "Oil",
-      "value": "~$110.50",
-      "desc": "افزایش بر ریسک."
+      "label": "نفت برنت",
+      "value": "~$۹۵.۸۰",
+      "desc": "−۱۳ دلار از ۱۰۹."
     },
     {
-      "label": "Iran",
-      "value": "~8,180+",
-      "desc": "HRANA 3,540+."
+      "label": "کشته ایران",
+      "value": "~۸٬۲۰۰+",
+      "desc": "هرانا ۳٬۵۶۰+."
     },
     {
-      "label": "Lebanon",
-      "value": "1,385+",
-      "desc": "تخریب روستاها."
+      "label": "لبنان",
+      "value": "۱٬۵۳۰+ کشته",
+      "desc": "الجزیره: از ۲ مارس. آتش‌بس شامل لبنان نیست."
     },
     {
-      "label": "Israel",
-      "value": "27+",
-      "desc": "حیفا ۲. ۱۵ US KIA."
+      "label": "کشته اسرائیل",
+      "value": "۲۷+",
+      "desc": "بدون تلفات جدید غیرنظامی."
     },
     {
-      "label": "Nuclear",
-      "value": "CRITICAL+",
-      "desc": "NPT. پارس جنوبی."
+      "label": "هرمز",
+      "value": "بازگشایی",
+      "desc": "عبور امن اولین نفتکش‌ها."
+    },
+    {
+      "label": "آتش‌بس",
+      "value": "انقضا ۲۱ آوریل",
+      "desc": "دوهفته. اسلام‌آباد جمعه."
     }
   ],
   "sitrep": [
-    "<strong>D39 NIGHT (Apr 07 21:15 ET): TRUMP-IRAN 2-WEEK CEASEFIRE ANNOUNCED.</strong> 90 min before the 8PM ET deadline, Trump posted that based on direct conversations with Pakistani PM Shehbaz Sharif and Field Marshal Asim Munir — who asked him to hold off the 'destructive force being sent tonight' — he agreed to a 2-week suspension of US strikes, contingent on Iran's COMPLETE, IMMEDIATE, and SAFE reopening of the Strait of Hormuz. Trump called Iran's 10-point proposal a 'workable basis' for negotiations. VP Vance to lead US delegation to Islamabad for Friday peace talks.",
-    "<strong>IRAN SNSC ACCEPTED:</strong> FM Araghchi, on behalf of Iran's Supreme National Security Council, confirmed: if attacks halt, Iranian Armed Forces will cease defensive operations. For 2 weeks, safe passage through Hormuz in coordination with Iranian Armed Forces, subject to 'technical limitations.' First formal Tehran de-escalation since D1. Khamenei silent but Pezeshkian/Araghchi endorsed.",
-    "<strong>EARLIER IN THE DAY:</strong> US CENTCOM precision strike on >90 military targets on Kharg Island (naval mines, missile bunkers, IRGC) — oil infra deliberately spared. Iran launched 4+ ballistic waves at Israel (center + south). IDF struck Yahya Abad rail bridge in Kashan + 3 Tehran airports + South Pars petrochem. Saudi intercepted 7 Houthi ballistic missiles. Trump earlier: 'A whole civilization will die tonight.'",
-    "<strong>OIL:</strong> Brent spiked to $117 intraday on deadline approach, then collapsed back to ~$109.50 close on ceasefire headline. WTI $106.20. Gas $4.12 national. First 2-sided session in 39 days. Backwardation widened.",
-    "<strong>RISKS TO PAUSE:</strong> (1) Israel decoupling — Haaretz source: IDF 'preparing extensive attack'; Kashan rail strike hit even during deadline day. (2) Hormuz non-compliance = instant re-trigger. (3) IRGC 'outside region' rhetoric still live. (4) 10-pt gap on NPT enrichment + sanctions + reparations unresolved — 2 weeks likely insufficient. (5) No Khamenei signoff visible."
+    "<strong>D40 MORNING (Apr 08 09:05 ET): CEASEFIRE HOLDING.</strong> The 2-week US-Iran ceasefire announced 90 minutes before the 8PM ET Apr 7 deadline is in effect. Iran's SNSC confirmed acceptance; Strait of Hormuz reopening underway with safe passage coordinated through Iranian armed forces. First commercial tankers transiting overnight.",
+    "<strong>OIL CRASH:</strong> Brent plunged -$13 from $109 to ~$95.80 as the geopolitical war premium unwinds. WTI ~$91.50. Fortune/oilpriceapi confirm the drop. Gulf states Bahrain/UAE/Kuwait reported residual Iranian attacks in early morning hours before full stand-down took hold.",
+    "<strong>ISLAMABAD TRACK:</strong> Pakistan PM Shehbaz Sharif and Field Marshal Asim Munir are mediating. VP Vance leading US delegation; formal talks begin Friday Apr 10 in Islamabad. Trump publicly reiterated 'no enrichment' as non-negotiable — said US will 'dig out nuclear dust.' Iran's 10-point proposal now the 'working basis.'",
+    "<strong>LEBANON CARVE-OUT:</strong> Netanyahu office confirmed support for the Iran ceasefire but stressed it does NOT extend to Lebanon. IDF continues air and ground operations; ~1,530+ killed in Lebanon since Mar 2 per Al Jazeera. This contradicts Pakistan's mediator framing and is a potential fracture point.",
+    "<strong>SIGNAL READING:</strong> The ceasefire resolves the near-term escalation spiral but validates the PLATEAU/RATIONING model — Iran still had launch capability at D39 (58 missiles, 62 drones) and stood down by political decision, not exhaustion. Street celebrations in Tehran/Baghdad; Iranian skeptics warn US/Israel may use pause to regroup. Next inflection: Apr 10 Islamabad + Apr 21 ceasefire expiry."
   ],
   "sitrep_fa": [
-    "<strong>D39 NIGHT (Apr 07 21:15 ET): TRUMP-IRAN 2-WEEK CEASEFIRE ANNOUNCED.</strong> 90 min before the 8PM ET deadline, Trump posted that based on direct conversations with Pakistani PM Shehbaz Sharif and Field Marshal Asim Munir — who asked him to hold off the 'destructive force being sent tonight' — he agreed to a 2-week suspension of US strikes, contingent on Iran's COMPLETE, IMMEDIATE, and SAFE reopening of the Strait of Hormuz. Trump called Iran's 10-point proposal a 'workable basis' for negotiations. VP Vance to lead US delegation to Islamabad for Friday peace talks.",
-    "<strong>IRAN SNSC ACCEPTED:</strong> FM Araghchi, on behalf of Iran's Supreme National Security Council, confirmed: if attacks halt, Iranian Armed Forces will cease defensive operations. For 2 weeks, safe passage through Hormuz in coordination with Iranian Armed Forces, subject to 'technical limitations.' First formal Tehran de-escalation since D1. Khamenei silent but Pezeshkian/Araghchi endorsed.",
-    "<strong>EARLIER IN THE DAY:</strong> US CENTCOM precision strike on >90 military targets on Kharg Island (naval mines, missile bunkers, IRGC) — oil infra deliberately spared. Iran launched 4+ ballistic waves at Israel (center + south). IDF struck Yahya Abad rail bridge in Kashan + 3 Tehran airports + South Pars petrochem. Saudi intercepted 7 Houthi ballistic missiles. Trump earlier: 'A whole civilization will die tonight.'",
-    "<strong>OIL:</strong> Brent spiked to $117 intraday on deadline approach, then collapsed back to ~$109.50 close on ceasefire headline. WTI $106.20. Gas $4.12 national. First 2-sided session in 39 days. Backwardation widened.",
-    "<strong>RISKS TO PAUSE:</strong> (1) Israel decoupling — Haaretz source: IDF 'preparing extensive attack'; Kashan rail strike hit even during deadline day. (2) Hormuz non-compliance = instant re-trigger. (3) IRGC 'outside region' rhetoric still live. (4) 10-pt gap on NPT enrichment + sanctions + reparations unresolved — 2 weeks likely insufficient. (5) No Khamenei signoff visible."
+    "<strong>روز ۴۰ صبح (۸ آوریل، ۰۹:۰۵ ET): آتش‌بس برقرار.</strong> آتش‌بس دوهفته‌ای آمریکا-ایران که ۹۰ دقیقه پیش از ضرب‌الاجل ۸ شب ET اعلام شد، اجرا شده است. شورای عالی امنیت ملی پذیرش را تأیید کرد؛ بازگشایی تنگه هرمز با هماهنگی نیروهای مسلح ایران در جریان است. اولین نفتکش‌های تجاری شبانه عبور کردند.",
+    "<strong>سقوط نفت:</strong> برنت ۱۳ دلار سقوط کرد از ۱۰۹ به ~۹۵.۸۰ با باز شدن پرمیوم ژئوپولیتیک. WTI ~۹۱.۵۰. حملات باقی‌مانده صبحگاهی در امارات/بحرین/کویت پیش از توقف کامل.",
+    "<strong>مسیر اسلام‌آباد:</strong> نخست‌وزیر پاکستان شهباز شریف و فیلد مارشال عاصم منیر میانجی. معاون رئیس‌جمهور ونس سرپرست هیئت آمریکا؛ مذاکرات جمعه ۱۰ آوریل. ترامپ: 'غنی‌سازی ممنوع' غیرقابل مذاکره.",
+    "<strong>استثنای لبنان:</strong> دفتر نتانیاهو تأیید کرد آتش‌بس شامل لبنان نمی‌شود. ارتش اسرائیل عملیات هوایی و زمینی را ادامه می‌دهد. این تناقض با روایت پاکستان نقطه شکست بالقوه است.",
+    "<strong>خوانش سیگنال:</strong> آتش‌بس مارپیچ تشدید را حل می‌کند اما مدل جیره‌بندی را اعتبار می‌بخشد — ایران در روز ۳۹ هنوز توان پرتاب داشت و با تصمیم سیاسی متوقف شد، نه با اتمام ذخایر. نقطه عطف بعدی: ۱۰ آوریل اسلام‌آباد + ۲۱ آوریل انقضای آتش‌بس."
   ],
   "dailySeries": {
     "labels": [
@@ -155,7 +166,8 @@
       "Apr 04",
       "Apr 05",
       "Apr 06",
-      "Apr 07"
+      "Apr 07",
+      "Apr 08"
     ],
     "missiles": [
       480,
@@ -196,7 +208,8 @@
       45,
       40,
       45,
-      58
+      58,
+      12
     ],
     "drones": [
       720,
@@ -237,10 +250,11 @@
       60,
       70,
       50,
-      62
+      62,
+      18
     ],
     "sourceLabel": "D1-D10: JPost. D11: UAE MoD. D12-D38: fragment est. D39: Trump-Iran 2-week ceasefire ~7PM ET, Pakistan-brokered, Hormuz reopen contingency, Iran SNSC accepted. ~45m+50d.",
-    "throughDate": "Apr 07 2026 21:15 ET (D39 night — ceasefire announced)",
+    "throughDate": "2026-04-08",
     "confidence": [
       1,
       1,
@@ -325,7 +339,8 @@
       "Apr 04",
       "Apr 05",
       "Apr 06",
-      "Apr 07"
+      "Apr 07",
+      "Apr 08"
     ],
     "brent": [
       65,
@@ -367,7 +382,8 @@
       115,
       109,
       110,
-      109.5
+      109.5,
+      95.8
     ],
     "wti": [
       62,
@@ -409,7 +425,8 @@
       113,
       107,
       108,
-      106.2
+      106.2,
+      91.5
     ],
     "note": "D38 LATE: Brent settled $109.53 (range $109-111). WTI ~$108. Wall Street surged on ceasefire hope (S&P +0.4%). Iran 10-pt counteroffer = maximalist. Trump refuses to extend. Tue 8PM <20 hrs = binary. Deal=$85 or strikes=$130+."
   },
@@ -453,7 +470,8 @@
       "Apr 04",
       "Apr 05",
       "Apr 06",
-      "Apr 07"
+      "Apr 07",
+      "Apr 08"
     ],
     "attrition": [
       2,
@@ -494,7 +512,8 @@
       10,
       10,
       10,
-      10.2
+      10.2,
+      10.5
     ],
     "cost": [
       1.5,
@@ -535,7 +554,8 @@
       10,
       9,
       9.5,
-      9.8
+      9.8,
+      1.8000000000000007
     ]
   },
   "latestTargetBreakdown": {
@@ -912,6 +932,12 @@
       "missiles": 40,
       "drones": 45,
       "primary": "D39 DEADLINE DAY - TRUMP 8PM ET ~22 HRS: Trump refuses to extend after Iran 10-pt maximalist counteroffer. 'Power Plant Day + Bridge Day.' IRGC defiant: 'gates of hell for YOU.' Khademi (IRGC Intel No.2) + Bagheri (Quds) killed prior day in joint strike. Coordinated multi-axis barrage continued = institutional continuity. South Pars petrochem struck (70% Iran gasoline). F-15E WSO rescued by Delta/SEAL/CIA. Hormuz: 13 ships/wk trickle via northern channel under Iran toll. Brent $110.50. AAA gas $4.119. HRANA 3,540+. P(follow-through) 0.22."
+    },
+    {
+      "date": "Apr 08",
+      "missiles": 12,
+      "drones": 18,
+      "primary": "D40 CEASEFIRE HOLDING (Apr 08): 2-week US-Iran ceasefire took effect overnight. Residual Gulf-state attacks reported by UAE/Bahrain/Kuwait in early hours before full stand-down. Iran SNSC confirmed safe passage through Hormuz; first commercial tankers transited under Iranian armed forces coordination. Brent crashed -$13 to ~$95.80 as war premium unwinds. Trump: 'no enrichment' non-negotiable — will 'dig out nuclear dust.' Israel continues Lebanon operations (ceasefire explicitly excludes Lebanon). Islamabad talks set for Friday Apr 10; VP Vance leading US delegation; Pakistan PM Sharif + Field Marshal Munir mediating. Iranian street celebrations in Tehran/Baghdad; skeptics warn of 'regrouping' window. HRANA 3,560+."
     }
   ],
   "timeline": [
@@ -1479,20 +1505,20 @@
         "projectedZeroDay": "Apr 15",
         "projectedOutcome": "Iran ceases offensive operations by mid-April. War ends via military exhaustion + negotiated exit. Coalition declares victory.",
         "projectedOutcome_fa": "ایران عملیات تهاجمی را تا اواسط آوریل متوقف می‌کند. جنگ با فرسایش نظامی + خروج مذاکره‌ای پایان می‌یابد.",
-        "confidence": 0.12,
-        "falsifiedBy": "D38 at 41/day. Definitively falsified since D18."
+        "confidence": 0.1,
+        "falsifiedBy": "D38-D39 at 41-58/day. Ceasefire D40 = political stand-down, not exhaustion. Definitively falsified."
       },
       "plateauRationing": {
         "label": "Rationing Model",
         "label_fa": "مدل جیره‌بندی",
         "description": "Assumes plateau at ~30/day = strategic rationing from deeper stockpiles (IRGC D16 claim)",
         "description_fa": "فرض بر جیره‌بندی استراتژیک از ذخایر عمیق‌تر (ادعای سپاه D16)",
-        "plateauRate": 48.6,
+        "plateauRate": 46.0,
         "projectedDuration_weeks": 7,
-        "projectedOutcome": "Iran maintains harassment for 2+ months. War ends via negotiation under mutual exhaustion, or escalation spiral if ceiling breached. Haaretz confirms half launchers intact.",
+        "projectedOutcome": "Iran maintained ~45-58/day through D39, then stood down by political decision in ceasefire. Validates strategic rationing thesis — capability preserved for diplomatic leverage.",
         "projectedOutcome_fa": "ایران آزار ۲+ ماه. هاآرتص: نیمی پرتاب‌کننده‌ها سالم. جنگ با مذاکره یا تشدید.",
-        "confidence": 0.88,
-        "falsifiedBy": "D33-D38 avg ~49/day. Revised plateau ~43. Coordinated barrage = still capable."
+        "confidence": 0.9,
+        "falsifiedBy": "None. D40 ceasefire = political pause, stockpile thesis intact."
       },
       "projectionLabels": [
         "Feb 28",
@@ -1700,7 +1726,8 @@
         "Apr 04",
         "Apr 05",
         "Apr 06",
-        "Apr 07"
+        "Apr 07",
+        "Apr 08"
       ],
       "militaryExhaustion": [
         1,
@@ -1741,7 +1768,8 @@
         7,
         7,
         7.5,
-        7
+        7,
+        6.5
       ],
       "economicPain": [
         1,
@@ -1782,7 +1810,8 @@
         10,
         9.5,
         9.5,
-        9.5
+        9.5,
+        7.5
       ],
       "diplomaticMomentum": [
         0,
@@ -1823,7 +1852,8 @@
         3.5,
         4.5,
         5.5,
-        3.5
+        3.5,
+        7.5
       ],
       "usPoliticalSustainability": [
         8,
@@ -1864,7 +1894,8 @@
         1,
         2,
         2,
-        2
+        2,
+        4.0
       ],
       "escalationCeilingDistance": [
         7,
@@ -1905,29 +1936,30 @@
         0.5,
         0.5,
         0.5,
-        0.2
+        0.2,
+        3.5
       ]
     },
     "vectorNotes": {
-      "militaryExhaustion": "D38 LATE: 7.5/10. HOLDS. Khademi+Bagheri killed but coordinated barrage + cluster munitions = institutional continuity. Iran military defiance = 'gates of hell.' Still launching 45m+50d. IRGC operating autonomously despite decapitation.",
-      "militaryExhaustion_fa": "7.5/10. ثابت. Khademi+Bagheri اما بارش+خوشه‌ای = نهادی. سپاه: دروازه‌های جهنم.",
-      "economicPain": "D38 LATE: 9.5/10. HOLDS. Oil $109.53 settled. Wall Street surged (S&P +0.4%) = markets pricing hope. Gas $4.10. South Pars 70% gasoline. Iran demands reconstruction in 10-pt = economic pain acknowledged.",
-      "economicPain_fa": "9.5/10. ثابت. $109.53. بازار صعود (+0.4%). $4.10. South Pars 70%. ایران بازسازی = درد اقتصادی.",
-      "diplomaticMomentum": "D38 LATE: 5.5/10. DOWN from 6.0. Iran 10-pt counteroffer = most detailed response ever +0.5. BUT MAXIMALIST demands = unbridgeable gap -0.5. Trump refuses to extend -0.5. Iran military defiance -0.5. Net -0.5 from EVE.",
-      "diplomaticMomentum_fa": "5.5/10. DOWN from 6.0. ایران ۱۰ ماده = مفصل +0.5. اما ماکسیمالیست -0.5. ترامپ رد تمدید -0.5. سپاه سخت -0.5.",
-      "usPoliticalSustainability": "D38 LATE: 2/10. HOLDS. Gas >$4. F-15 rescue = PR win but 'I don't know' re winding down = no strategy. Markets surged = political cover. Mirror: 'TACO Trump' (changed 4x) = credibility erosion.",
-      "usPoliticalSustainability_fa": "2/10. ثابت. $4.10. نجات F-15 = PR اما 'نمی‌دانم.' بازار = پوشش سیاسی. اعتبار فرسایش.",
-      "escalationCeilingDistance": "D38 LATE: 0.5/10. HOLDS but P UP. Power grid TUE <20 hrs. Trump EXPLICITLY refuses to extend = P UP from 0.18 to 0.22. Iran 10-pt maximalist = no off-ramp. All ceilings in <20 hrs. MOST DANGEROUS MOMENT.",
-      "escalationCeilingDistance_fa": "0.5/10. ثابت اما P UP. سه‌شنبه <20 ساعت. ترامپ رد تمدید = P=0.22. بدون خروج. خطرناک‌ترین لحظه."
+      "militaryExhaustion": "D40 6.5 (↓ from 7). D39's 58-missile coordinated barrage proved Iran retains launch capacity. Ceasefire = political stand-down, not exhaustion. Plateau/rationing model confirmed at 90% confidence.",
+      "militaryExhaustion_fa": "روز ۴۰: ۶.۵ (↓ از ۷). رگبار ۵۸ موشکی روز ۳۹ ثابت کرد ایران توان پرتاب دارد. آتش‌بس = توقف سیاسی، نه اتمام.",
+      "economicPain": "D40 7.5 (↓ from 9.5). Brent crashed -$13 to $95.80 on ceasefire news. Hormuz reopening; first tankers transiting under Iranian coordination. Gas prices should ease over coming days. Still elevated vs pre-war $65.",
+      "economicPain_fa": "روز ۴۰: ۷.۵ (↓ از ۹.۵). برنت ۱۳ دلار سقوط به ۹۵.۸۰. هرمز بازگشایی.",
+      "diplomaticMomentum": "D40 7.5 (↑ from 3.5). Biggest single-day swing of the war. Ceasefire announced, Hormuz reopening, Islamabad talks Friday with VP Vance, Pakistani PM + Field Marshal mediating, Iran 10-pt proposal now 'working basis.' Lebanon carve-out is the asterisk.",
+      "diplomaticMomentum_fa": "روز ۴۰: ۷.۵ (↑ از ۳.۵). بزرگترین جهش روزانه. آتش‌بس، هرمز، اسلام‌آباد جمعه با ونس، میانجیگری پاکستان.",
+      "usPoliticalSustainability": "D40 4.0 (↑ from 2). Trump's off-ramp reduces political exposure — gas prices falling, no new US KIA, deadline crisis defused. Still constrained by 'no enrichment' red line and Lebanon optics.",
+      "usPoliticalSustainability_fa": "روز ۴۰: ۴.۰ (↑ از ۲). خروجی ترامپ فشار سیاسی را کاهش داد.",
+      "escalationCeilingDistance": "D40 3.5 (↑ from 0.2). Stepped back from the Apr 07 deadline brink. But three ceilings remain near: (1) Lebanon ops continue and could pull Hezbollah back in; (2) 'no enrichment' is an absolute demand Iran has never accepted; (3) 14-day clock creates another cliff on Apr 21.",
+      "escalationCeilingDistance_fa": "روز ۴۰: ۳.۵ (↑ از ۰.۲). از لبه ۷ آوریل عقب‌نشینی. سه سقف نزدیک: لبنان، غنی‌سازی، انقضای ۲۱ آوریل."
     },
     "warOutcome": {
-      "prediction": "D39 deadline day, ~7 hrs to 8PM ET. KHARG STRIKE EXECUTED — US hit 90+ military targets on Kharg pre-dawn (oil infra spared, signaling escalation ladder). IRGC declared end of restraint on Gulf oil infrastructure. MOST LIKELY: escalation spiral now 44% (UP from 37%) — Trump has crossed kinetic threshold without yet hitting energy infra, Iran red-line tripwire armed. Protracted attrition 24%. Last-hour deal 14%. If Iran strikes Saudi/UAE oil terminals tonight: Brent $135-150 by Apr 8 open.",
-      "prediction_fa": "روز ۳۹، ~۷ ساعت تا ۸ شب. ضربه به خارک اجرا شد — ۹۰+ هدف نظامی، نفت معاف. سپاه پایان خویشتنداری بر زیرساخت نفتی خلیج. تشدید ۴۴٪ (افزایش از ۳۷٪)، فرسایش ۲۴٪، توافق دقیقه‌۹۰ ۱۴٪.",
-      "derivation": "Military exhaustion 7 (Iran retains 15-30 missiles + 50-100 drones/day per Western officials; Kharg strike degrades launch sites but plateau persists). Economic pain 9.5 (Brent $110, Hormuz closed, Gulf exports -70%). Diplomatic momentum dropped 5→3.5 (Iran rejected 45-day truce, kinetic action by US). US political 2 (gas $4.50+, Khademi/Bagheri precedent). Escalation distance 0.2 (kinetic ladder breached, only oil infra + Bab al-Mandab + nuclear remain). Weighted convergence = 4.78.",
+      "prediction": "D40 ceasefire holding. 2-week US-Iran truce in effect from overnight Apr 07-08. Hormuz reopening, Brent crashed -$13 to $95.80. MOST LIKELY NOW: Negotiated pause extension / phased deal 42% (Islamabad Fri Apr 10, VP Vance leading, Pakistani mediation). Ceasefire collapse + re-escalation 28% (Lebanon carve-out + 'no enrichment' redline are fracture points). Protracted low-intensity 18%. Full deal by Apr 21 expiry 12%. Key test: does Iran actually safe-pass tankers for full 14 days and does Israel's Lebanon ops stay bounded.",
+      "prediction_fa": "روز ۴۰: آتش‌بس برقرار. آتش‌بس دوهفته‌ای آمریکا-ایران از شب ۷-۸ آوریل. هرمز بازگشایی، برنت ۱۳ دلار سقوط به ۹۵.۸۰. محتمل‌ترین: تمدید/توافق مرحله‌ای ۴۲٪. فروپاشی و تشدید دوباره ۲۸٪. درگیری کم‌شدت طولانی ۱۸٪. توافق کامل تا ۲۱ آوریل ۱۲٪.",
+      "derivation": "Military exhaustion 6.5 (DOWN from 7 — D39 58-missile salvo proved capability preserved, plateau model validated). Economic pain 7.5 (DOWN from 9.5 — Brent crash, Hormuz reopening, but still elevated). Diplomatic momentum 7.5 (UP from 3.5 — biggest swing: ceasefire + Islamabad + Pakistani mediation + VP-level talks). US political sustainability 4.0 (UP from 2 — Trump off-ramp reduces gas-price + casualty political cost). Escalation ceiling distance 3.5 (UP from 0.2 — stepped back from brink, but Lebanon operations + 'no enrichment' redline keep ceiling near). Convergence score rises sharply due to diplomatic momentum spike.",
       "derivation_fa": "Military(7.5). Economic(9.5). Diplomatic(5.5) DOWN — ۱۰ ماده ماکسیمالیست. Political(2). Escalation(0.5). P=0.22 UP. ماکسیمالیسم متقابل + <20 ساعت = باینری.",
-      "convergenceScore": 4.78,
-      "convergenceInterpretation": "Convergence 4.78/10 — pressure for resolution remains high but the EXIT ramp has narrowed. Kharg kinetic action without oil-infra escalation is a controlled rung up the ladder; Iran's restraint-removal is the matched move. Next 24 hrs decide between deal-or-energy-war.",
-      "convergenceInterpretation_fa": "6.4/10. DOWN from 6.5. ایران ۱۰ ماده = عقبگرد دیپلماتیک. ترامپ رد تمدید = تشدید UP. فشار شدید اما مکانیزم حل = صفر. <20 ساعت.",
+      "convergenceScore": 5.95,
+      "convergenceInterpretation": "Convergence 5.95/10 — highest of the war so far. Diplomatic momentum is doing the heavy lifting; military/economic/political pressure vectors all softened. The 2-week window is a genuine off-ramp but fragile: Lebanon exclusion and enrichment redline are the two most likely triggers for collapse back to escalation.",
+      "convergenceInterpretation_fa": "همگرایی ۵.۹۵ از ۱۰ — بالاترین در طول جنگ. موج دیپلماتیک نیروی محرکه است. پنجره دوهفته‌ای یک خروجی واقعی است اما شکننده: استثنای لبنان و خط قرمز غنی‌سازی دو ماشه احتمالی فروپاشی هستند.",
       "lastUpdated": "2026-04-06T23:45:00-04:00"
     }
   },
@@ -1972,7 +2004,8 @@
       105,
       110,
       95,
-      85
+      85,
+      30
     ],
     "geoSpreadLabels": [
       "Feb 28",
@@ -2013,7 +2046,8 @@
       "Apr 04",
       "Apr 05",
       "Apr 06",
-      "Apr 07"
+      "Apr 07",
+      "Apr 08"
     ],
     "countriesTargetedPerDay": [
       8,
@@ -2054,7 +2088,8 @@
       7,
       6,
       9,
-      8
+      8,
+      4
     ],
     "missileDroneRatio": [
       0.67,
@@ -2095,7 +2130,8 @@
       0.75,
       0.57,
       0.9,
-      0.89
+      0.89,
+      0.67
     ],
     "interceptRateLabels": [
       "Feb 28",
@@ -2136,7 +2172,8 @@
       "Apr 04",
       "Apr 05",
       "Apr 06",
-      "Apr 07"
+      "Apr 07",
+      "Apr 08"
     ],
     "interceptRate": [
       0.82,
@@ -2176,6 +2213,7 @@
       0.87,
       0.89,
       0.89,
+      0.88,
       0.88,
       0.88
     ],
