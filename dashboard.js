@@ -999,37 +999,57 @@ function renderCeasefireHero(dayOverride) {
 
 var cfDeadlineInterval = null;
 
-function renderCeasefireCountdown() {
+// dayOverride: 0-indexed. If provided, show static historical snapshot. If omitted, live ticker.
+function renderCeasefireCountdown(dayOverride) {
   var cd = state.ceasefireDeadline || {};
   if (!cd.deadline) return;
-
-  function tickCf() {
-    var deadline = new Date(cd.deadline);
-    var now = new Date();
-    var diff = deadline - now;
-    var el = $('cfCountdown');
-    if (!el) return;
-    if (diff <= 0) {
-      el.innerHTML = '<span style="color:var(--red)">CEASEFIRE EXPIRED</span>';
-      return;
-    }
-    var days = Math.floor(diff / 864e5);
-    var hours = Math.floor((diff % 864e5) / 36e5);
-    var mins = Math.floor((diff % 36e5) / 6e4);
-    var secs = Math.floor((diff % 6e4) / 1e3);
-    el.textContent = days + 'd ' + hours + 'h ' + mins + 'm ' + secs + 's';
-  }
-
-  if (cfDeadlineInterval) clearInterval(cfDeadlineInterval);
-  tickCf();
-  cfDeadlineInterval = setInterval(tickCf, 1000);
-
-  // Day counter + progress
   var startIdx = (state.ceasefireStartIdx || CEASEFIRE_START_IDX) - 1;
   var labels = (state.dailySeries || {}).labels || [];
-  var cfDay = labels.length - 1 - startIdx + 1;
+  var isHistorical = typeof dayOverride === 'number';
+  var refIdx = isHistorical ? dayOverride : labels.length - 1;
+  var cfDay = refIdx - startIdx + 1;
+
+  // Countdown display
+  var deadline = new Date(cd.deadline);
+  if (isHistorical) {
+    // Historical: show static remaining time from that day
+    if (cfDeadlineInterval) { clearInterval(cfDeadlineInterval); cfDeadlineInterval = null; }
+    var dayDate = new Date(parseDayDate(refIdx));
+    var diff = deadline - dayDate;
+    var el = $('cfCountdown');
+    if (el) {
+      if (diff <= 0) {
+        el.innerHTML = '<span style="color:var(--red)">CEASEFIRE EXPIRED</span>';
+      } else {
+        var d = Math.floor(diff / 864e5);
+        el.textContent = d + 'd remaining (historical)';
+      }
+    }
+  } else {
+    // Live: ticking countdown
+    function tickCf() {
+      var now = new Date();
+      var diff = deadline - now;
+      var el = $('cfCountdown');
+      if (!el) return;
+      if (diff <= 0) {
+        el.innerHTML = '<span style="color:var(--red)">CEASEFIRE EXPIRED</span>';
+        return;
+      }
+      var days = Math.floor(diff / 864e5);
+      var hours = Math.floor((diff % 864e5) / 36e5);
+      var mins = Math.floor((diff % 36e5) / 6e4);
+      var secs = Math.floor((diff % 6e4) / 1e3);
+      el.textContent = days + 'd ' + hours + 'h ' + mins + 'm ' + secs + 's';
+    }
+    if (cfDeadlineInterval) clearInterval(cfDeadlineInterval);
+    tickCf();
+    cfDeadlineInterval = setInterval(tickCf, 1000);
+  }
+
+  // Day counter + progress
   if ($('cfDayNum')) $('cfDayNum').textContent = cfDay;
-  if ($('cfProgressBar')) $('cfProgressBar').style.width = Math.round(cfDay / 14 * 100) + '%';
+  if ($('cfProgressBar')) $('cfProgressBar').style.width = Math.round(Math.min(cfDay, 14) / 14 * 100) + '%';
 
   // Context
   if ($('cfCountdownContext')) {
@@ -2221,18 +2241,27 @@ function showSimResult() {
   if (scenario.id === 'ceasefire_apr6') {
     ov.iranRejectedCeasefire = false;
     ov.deadlineDays = 30;
-    ov.mediatorMeetings = 6;
+    ov.mediatorMeetings = 8;
+    ov.proposalsRejected = 0;
+    ov.coalitionScore = 9;
   } else if (scenario.id === 'power_grid') {
     ov.deadlineDays = 0;
-    ov.proposalsRejected = 3;
+    ov.proposalsRejected = 5;
+    ov.iranRejectedCeasefire = true;
+    ov.mediatorMeetings = 0;
+    ov.coalitionScore = 4;
   } else if (scenario.id === 'bab_closes') {
     ov.deadlineDays = 0;
     ov.hormuzVessels = 0;
-    ov.gasPrice = 5.5;
+    ov.gasPrice = 6.5;
+    ov.approvalWrong = 72;
+    ov.coalitionScore = 3;
   } else if (scenario.id === 'ground_invasion') {
     ov.deadlineDays = 0;
-    ov.coalitionScore = 4;
-    ov.approvalWrong = 70;
+    ov.coalitionScore = 2;
+    ov.approvalWrong = 78;
+    ov.usKIA = 50;
+    ov.mediatorMeetings = 0;
   }
 
   // Recompute engine with overrides — no state mutation
@@ -2244,19 +2273,34 @@ function showSimResult() {
   var oilDelta = Math.round(adjOil - baseOil);
   var desc = currentLang === 'fa' ? (scenario.description_fa || scenario.description) : scenario.description;
 
+  // Use 1-decimal precision to surface small but real engine moves
+  var ae = adjEng || baseEng;
+  var adjProbF = (ae.pNegotiated * 100).toFixed(1);
+  var baseProbF = (baseEng.pNegotiated * 100).toFixed(1);
+  var adjEscF = (ae.pEscalation * 100).toFixed(1);
+  var baseEscF = (baseEng.pEscalation * 100).toFixed(1);
+  var adjProtF = (ae.pProtracted * 100).toFixed(1);
+  var baseProtF = (baseEng.pProtracted * 100).toFixed(1);
+
   function delta(v, unit) {
-    if (v === 0) return '';
+    if (Math.abs(v) < 0.05) return '';
     var cls = v > 0 ? 'up' : 'down';
-    return '<span class="sim-delta ' + cls + '">' + (v > 0 ? '+' : '') + v + unit + '</span>';
+    return '<span class="sim-delta ' + cls + '">' + (v > 0 ? '+' : '') + v.toFixed(1) + unit + '</span>';
+  }
+
+  function row(label, adjVal, baseVal, unit) {
+    var d = parseFloat(adjVal) - parseFloat(baseVal);
+    return '<div class="sim-row"><span class="sim-label">' + label + '</span><span><span class="sim-value">' + adjVal + unit + '</span> ' + delta(d, unit) + ' <span style="color:var(--muted);font-size:11px">(was ' + baseVal + unit + ')</span></span></div>';
   }
 
   $('simResult').style.display = 'block';
   $('simResult').innerHTML =
-    '<div class="sim-row"><span class="sim-label">Resolution probability</span><span><span class="sim-value">' + adjProb + '%</span>' + delta(probDelta, '%') + '</span></div>' +
-    '<div class="sim-row"><span class="sim-label">Brent crude</span><span><span class="sim-value">$' + adjOil + '</span>' + delta(oilDelta, '') + '</span></div>' +
-    '<div class="sim-row"><span class="sim-label">Deal available</span><span class="sim-value">' + Math.round((adjEng||baseEng).dealScore*100) + '% <span style="color:var(--muted);font-size:11px">(was ' + Math.round(baseEng.dealScore*100) + '%)</span></span></div>' +
-    '<div class="sim-row"><span class="sim-label">Iran acceptance</span><span class="sim-value">' + Math.round((adjEng||baseEng).iranScore*100) + '% <span style="color:var(--muted);font-size:11px">(was ' + Math.round(baseEng.iranScore*100) + '%)</span></span></div>' +
-    '<div class="sim-desc">' + desc + '</div>';
+    row('Negotiated resolution', adjProbF, baseProbF, '%') +
+    row('Escalation', adjEscF, baseEscF, '%') +
+    row('Protracted', adjProtF, baseProtF, '%') +
+    row('Ensemble (combined)', String(adjProb), String(baseProb), '%') +
+    '<div class="sim-row"><span class="sim-label">Brent crude</span><span><span class="sim-value">$' + adjOil + '</span> ' + delta(adjOil - baseOil, '') + '</span></div>' +
+    '<div class="sim-desc">' + sanitizeHTML(desc) + '</div>';
 }
 
 /* ============================================================
@@ -2356,6 +2400,7 @@ function updateMetricsForDay(day) {
   // Ceasefire mode: update ceasefire hero + countdown for scrubbed day
   if (currentMode === 'ceasefire') {
     renderCeasefireHero(idx);
+    renderCeasefireCountdown(isLive ? undefined : idx);
   }
 
   // If live day, recompute from dailySeries (not stale JSON strings)
@@ -2378,7 +2423,7 @@ function updateMetricsForDay(day) {
     ];
     if ($('metrics')) {
       $('metrics').innerHTML = liveMetrics.map(function(m) {
-        return '<div class="metric-card"><div class="metric-value">' + esc(m.value) + '</div><div class="metric-label">' + esc(m.label) + '</div><div class="metric-desc">' + esc(m.desc) + '</div></div>';
+        return '<div class="metric"><div class="label">' + esc(m.label) + '</div><div class="value">' + esc(m.value) + '</div><div class="desc">' + esc(m.desc) + '</div></div>';
       }).join('');
     }
     return;
