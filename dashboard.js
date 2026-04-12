@@ -255,7 +255,7 @@ function applyI18n() {
   });
   document.querySelectorAll('[data-i18n-html]').forEach(function(el) {
     var key = el.getAttribute('data-i18n-html');
-    if (s[key] !== undefined) el.innerHTML = s[key];
+    if (s[key] !== undefined) el.innerHTML = sanitizeHTML(s[key]);
   });
 }
 
@@ -283,6 +283,21 @@ function kill(key) {
   if (charts[key]) { charts[key].destroy(); charts[key] = null; }
 }
 
+// Safe text escaping — prevent XSS from data-driven content
+function esc(str) {
+  if (str == null) return '';
+  return String(str).replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;');
+}
+
+// Sanitize HTML: allowlist of safe tags for formatted data-driven content
+function sanitizeHTML(str) {
+  if (str == null) return '';
+  // Allow only: <strong>, <br>, <span style="...">, <em>
+  return String(str)
+    .replace(/<(?!\/?(?:strong|br|em|span)\b)[^>]*>/gi, '')
+    .replace(/on\w+\s*=/gi, '');
+}
+
 function L(key) {
   var faKey = key + '_fa';
   if (currentLang === 'fa' && state[faKey] && state[faKey].length) return state[faKey];
@@ -295,7 +310,7 @@ function renderList(id, items) {
   var el = $(id);
   if (!el) return;
   if (!items || !items.length) { el.innerHTML = ''; return; }
-  el.innerHTML = items.map(function(t) { return '<li>' + t + '</li>'; }).join('');
+  el.innerHTML = items.map(function(t) { return '<li>' + sanitizeHTML(t) + '</li>'; }).join('');
 }
 
 function deepClone(obj) { return JSON.parse(JSON.stringify(obj)); }
@@ -375,7 +390,7 @@ function setText() {
 
   // Theory box
   var theory = currentLang === 'fa' ? (state.theoryBox_fa || state.theoryBox) : state.theoryBox;
-  if ($('theoryBox')) $('theoryBox').innerHTML = theory || '';
+  if ($('theoryBox')) $('theoryBox').innerHTML = sanitizeHTML(theory || '');
 
   // Metrics grid — first 4 computed from data, rest from JSON
   var metricsArr = currentLang === 'fa' ? (state.metrics_fa && state.metrics_fa.length ? state.metrics_fa : state.metrics) : state.metrics;
@@ -412,7 +427,7 @@ function setText() {
     var firstNote = state.meta.notes[0];
     // Truncate to first sentence or 200 chars
     var short = firstNote.length > 200 ? firstNote.substring(0, 200) + '...' : firstNote;
-    $('sourceNotes').innerHTML = '<div>' + short + '</div>';
+    $('sourceNotes').innerHTML = '<div>' + esc(short) + '</div>';
   }
 
   // Footnotes
@@ -435,12 +450,12 @@ function setText() {
   var routes = L('shippingRoutes');
   if ($('shippingRoutesStandalone') && routes.length) {
     $('shippingRoutesStandalone').innerHTML = routes.map(function(r) {
-      if (typeof r === 'string') return '<div class="route-card"><div class="route-detail">' + r + '</div></div>';
-      return '<div class="route-card"><div class="route-header"><div class="route-name">' + (r.route || '') + '</div>' +
-        '<span class="route-status ' + (r.statusColor || 'yellow') + '">' + (r.status || '') + '</span></div>' +
-        '<div class="route-detail">' + (r.detail || '') + '</div>' +
-        '<div class="route-meta"><span>' + (currentLang === 'fa' ? 'قابلیت: ' : 'Viability: ') + '<strong>' + (r.viability || '') + '</strong></span>' +
-        '<span>' + (currentLang === 'fa' ? 'زمان: ' : 'ETA: ') + '<strong>' + (r.eta || '') + '</strong></span></div></div>';
+      if (typeof r === 'string') return '<div class="route-card"><div class="route-detail">' + esc(r) + '</div></div>';
+      return '<div class="route-card"><div class="route-header"><div class="route-name">' + esc(r.route || '') + '</div>' +
+        '<span class="route-status ' + esc(r.statusColor || 'yellow') + '">' + esc(r.status || '') + '</span></div>' +
+        '<div class="route-detail">' + esc(r.detail || '') + '</div>' +
+        '<div class="route-meta"><span>' + (currentLang === 'fa' ? 'قابلیت: ' : 'Viability: ') + '<strong>' + esc(r.viability || '') + '</strong></span>' +
+        '<span>' + (currentLang === 'fa' ? 'زمان: ' : 'ETA: ') + '<strong>' + esc(r.eta || '') + '</strong></span></div></div>';
     }).join('');
   }
 
@@ -458,11 +473,11 @@ function setText() {
     var rows = state.dailyRows.slice().sort(function(a, b) { return parseLogDate(b.date) - parseLogDate(a.date); });
     $('dailyRows').innerHTML = rows.map(function(r) {
       var p = r.primary || '\u2014', c = r.capability || '\u2014', co = r.cost || '\u2014', a = r.assessment || '\u2014';
-      return '<tr><td>' + r.date + '</td><td><span class="pill missile">' + (r.missiles != null ? r.missiles : '\u2014') + '</span></td><td><span class="pill drone">' + (r.drones != null ? r.drones : '\u2014') + '</span></td>' +
-        '<td title="' + p.replace(/"/g, '&quot;') + '">' + p + '</td>' +
-        '<td title="' + c.replace(/"/g, '&quot;') + '">' + c + '</td>' +
-        '<td title="' + co.replace(/"/g, '&quot;') + '">' + co + '</td>' +
-        '<td title="' + a.replace(/"/g, '&quot;') + '">' + a + '</td></tr>';
+      return '<tr><td>' + esc(r.date) + '</td><td><span class="pill missile">' + (r.missiles != null ? esc(r.missiles) : '\u2014') + '</span></td><td><span class="pill drone">' + (r.drones != null ? esc(r.drones) : '\u2014') + '</span></td>' +
+        '<td title="' + esc(p) + '">' + sanitizeHTML(p) + '</td>' +
+        '<td title="' + esc(c) + '">' + sanitizeHTML(c) + '</td>' +
+        '<td title="' + esc(co) + '">' + sanitizeHTML(co) + '</td>' +
+        '<td title="' + esc(a) + '">' + sanitizeHTML(a) + '</td></tr>';
     }).join('');
   }
 
@@ -470,8 +485,8 @@ function setText() {
   var tl = L('timeline');
   if ($('timeline') && tl.length) {
     $('timeline').innerHTML = tl.map(function(t) {
-      if (typeof t === 'string') return '<li>' + t + '</li>';
-      return '<li><strong>' + (t.title || '') + ':</strong> ' + (t.body || '') + '</li>';
+      if (typeof t === 'string') return '<li>' + sanitizeHTML(t) + '</li>';
+      return '<li><strong>' + esc(t.title || '') + ':</strong> ' + sanitizeHTML(t.body || '') + '</li>';
     }).join('');
   }
 
@@ -479,7 +494,7 @@ function setText() {
   var sp = L('scenarioProbabilities');
   if ($('scenarioProbs') && sp.length) {
     $('scenarioProbs').innerHTML = sp.map(function(s) {
-      return '<div class="scenario"><div><strong>' + s.name + '</strong><div style="font-size:12px;color:var(--soft);margin-top:4px;line-height:1.45">' + s.body + '</div></div><div class="prob">' + s.prob + '</div></div>';
+      return '<div class="scenario"><div><strong>' + esc(s.name) + '</strong><div style="font-size:12px;color:var(--soft);margin-top:4px;line-height:1.45">' + sanitizeHTML(s.body) + '</div></div><div class="prob">' + esc(s.prob) + '</div></div>';
     }).join('');
   }
 
@@ -487,8 +502,8 @@ function setText() {
   var te = L('theoryEvaluation');
   if ($('theoryEval') && te.length) {
     $('theoryEval').innerHTML = te.map(function(t) {
-      if (typeof t === 'string') return '<li>' + t + '</li>';
-      return '<li><strong>' + (t.title || '') + ':</strong> ' + (t.body || '') + '</li>';
+      if (typeof t === 'string') return '<li>' + sanitizeHTML(t) + '</li>';
+      return '<li><strong>' + esc(t.title || '') + ':</strong> ' + sanitizeHTML(t.body || '') + '</li>';
     }).join('');
   }
 }
@@ -637,11 +652,13 @@ function renderCharts() {
    ============================================================ */
 
 // Compute all 3 decision conditions from raw indicators for a given day index
-function computeEngineForDay(dayIdx) {
+// overrides: optional object to override per-day indicator values for scenario simulation
+function computeEngineForDay(dayIdx, overrides) {
   var de = state.decisionEngine || {};
   var di = de.dailyIndicators || {};
   var ds = state.dailySeries || {};
   if (!di.labels || dayIdx < 0 || dayIdx >= di.labels.length) return null;
+  var ov = overrides || {};
 
   var baselines = ((state.meta || {}).preWarBaselines) || {};
   var d1Missiles = ds.missiles[0] || baselines.d1Missiles || 480;
@@ -649,21 +666,21 @@ function computeEngineForDay(dayIdx) {
   var preWarHormuz = baselines.preWarHormuz || 62;
   var preWarGas = baselines.preWarGas || 3;
 
-  // Raw inputs for this day
-  var launchRate = di.launchRate[dayIdx] || 0;
-  var brent = di.oilBrent[dayIdx] || 65;
-  var hormuz = di.hormuzVessels[dayIdx] || 0;
-  var kia = di.usKIA[dayIdx] || 0;
-  var gas = di.gasPrice[dayIdx] || preWarGas;
-  var approval = di.approvalWrong[dayIdx] || 35;
-  var mediators = di.mediatorMeetings[dayIdx] || 0;
-  var coalition = di.coalitionScore[dayIdx] || 9;
+  // Raw inputs for this day (overrides take precedence)
+  var launchRate = ov.launchRate !== undefined ? ov.launchRate : (di.launchRate[dayIdx] || 0);
+  var brent = ov.oilBrent !== undefined ? ov.oilBrent : (di.oilBrent[dayIdx] || 65);
+  var hormuz = ov.hormuzVessels !== undefined ? ov.hormuzVessels : (di.hormuzVessels[dayIdx] || 0);
+  var kia = ov.usKIA !== undefined ? ov.usKIA : (di.usKIA[dayIdx] || 0);
+  var gas = ov.gasPrice !== undefined ? ov.gasPrice : (di.gasPrice[dayIdx] || preWarGas);
+  var approval = ov.approvalWrong !== undefined ? ov.approvalWrong : (di.approvalWrong[dayIdx] || 35);
+  var mediators = ov.mediatorMeetings !== undefined ? ov.mediatorMeetings : (di.mediatorMeetings[dayIdx] || 0);
+  var coalition = ov.coalitionScore !== undefined ? ov.coalitionScore : (di.coalitionScore[dayIdx] || 9);
   var day = dayIdx + 1;
 
   // === DEAL AVAILABILITY (0-1) ===
   var mediatorScore = Math.min(mediators / 5, 1);
   // Use per-day indicators if available, fallback to static
-  var proposalsRejected = di.proposalsRejected ? di.proposalsRejected[dayIdx] : ((de.indicators || {}).formalProposalsRejected || 0);
+  var proposalsRejected = ov.proposalsRejected !== undefined ? ov.proposalsRejected : (di.proposalsRejected ? di.proposalsRejected[dayIdx] : ((de.indicators || {}).formalProposalsRejected || 0));
   var proposalScore = proposalsRejected > 1 ? 0.05 : proposalsRejected > 0 ? 0.15 : 0.4;
   var faceSaving = mediators >= 4 ? 0.3 : mediators >= 2 ? 0.15 : 0.05; // More mediators = more likely face-saving deal emerges
   var dealScore = mediatorScore * 0.35 + proposalScore * 0.3 + faceSaving * 0.35;
@@ -696,7 +713,10 @@ function computeEngineForDay(dayIdx) {
   var iranRejectedArr = di.iranRejectedCeasefire;
   var iranRejected = 0;
   var recentRejection = false;
-  if (iranRejectedArr && iranRejectedArr.length) {
+  if (ov.iranRejectedCeasefire !== undefined) {
+    iranRejected = ov.iranRejectedCeasefire ? 1 : 0;
+    recentRejection = !!iranRejected;
+  } else if (iranRejectedArr && iranRejectedArr.length) {
     iranRejected = iranRejectedArr[dayIdx] ? 1 : 0;
     for (var rk = Math.max(0, dayIdx - 5); rk <= dayIdx; rk++) {
       if (iranRejectedArr[rk]) { recentRejection = true; break; }
@@ -715,7 +735,7 @@ function computeEngineForDay(dayIdx) {
   iranScore = Math.max(0.02, Math.min(iranScore, 0.95));
 
   // === ESCALATION PROXIMITY (0-1) ===
-  var deadlineDays = di.deadlineDays ? di.deadlineDays[dayIdx] : ((de.indicators || {}).daysToDeadline);
+  var deadlineDays = ov.deadlineDays !== undefined ? ov.deadlineDays : (di.deadlineDays ? di.deadlineDays[dayIdx] : ((de.indicators || {}).daysToDeadline));
   if (deadlineDays === undefined || deadlineDays === null) {
     // Try computing from actual deadline timestamp in meta
     var deadlineIso = (state.meta || {}).deadlineIso || (de.indicators || {}).deadlineIso;
@@ -790,7 +810,7 @@ function parseDayDate(dayIdx) {
 
 function getCeasefireDay(dayIdx) {
   var startIdx = (state.ceasefireStartIdx || CEASEFIRE_START_IDX) - 1; // 0-indexed
-  return dayIdx - startIdx;
+  return dayIdx - startIdx + 1; // Apr 7 (idx 38) = CF Day 1
 }
 
 function computeCeasefireForDay(dayIdx) {
@@ -800,7 +820,7 @@ function computeCeasefireForDay(dayIdx) {
   var startIdx = (state.ceasefireStartIdx || CEASEFIRE_START_IDX) - 1;
   if (dayIdx < startIdx) return null;
 
-  var cfDay = dayIdx - startIdx;
+  var cfDay = dayIdx - startIdx + 1; // Apr 7 = CF Day 1
 
   // Raw inputs
   var violations = (di.cfViolations || [])[dayIdx] || 0;
@@ -1007,7 +1027,7 @@ function renderCeasefireCountdown() {
   // Day counter + progress
   var startIdx = (state.ceasefireStartIdx || CEASEFIRE_START_IDX) - 1;
   var labels = (state.dailySeries || {}).labels || [];
-  var cfDay = labels.length - 1 - startIdx;
+  var cfDay = labels.length - 1 - startIdx + 1;
   if ($('cfDayNum')) $('cfDayNum').textContent = cfDay;
   if ($('cfProgressBar')) $('cfProgressBar').style.width = Math.round(cfDay / 14 * 100) + '%';
 
@@ -1015,7 +1035,7 @@ function renderCeasefireCountdown() {
   if ($('cfCountdownContext')) {
     var ctx = cd.context || '';
     if (currentLang === 'fa' && cd.context_fa) ctx = cd.context_fa;
-    $('cfCountdownContext').innerHTML = ctx;
+    $('cfCountdownContext').innerHTML = sanitizeHTML(ctx);
   }
 }
 
@@ -1058,7 +1078,7 @@ function renderViolationTracker() {
     var colors = [];
     for (var i = startIdx; i < cfViolations.length; i++) {
       if (cfViolations[i] === null) continue;
-      labels.push('CF Day ' + (i - startIdx));
+      labels.push('CF Day ' + (i - startIdx + 1));
       counts.push(cfViolations[i] || 0);
       var sev = cfSeverity[i] || 0;
       colors.push(sev >= 7 ? '#ff6b6b' : sev >= 4 ? '#ff9f43' : sev > 0 ? '#ffd166' : '#46d7b0');
@@ -1100,9 +1120,9 @@ function renderViolationTracker() {
           '<div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:6px">' +
           '<strong>' + day.day + ' (CF Day ' + day.cfDay + ')</strong>' +
           '<span class="violation-severity" style="background:' + sevColor + ';color:#fff">' + sevLabel + '</span></div>' +
-          '<div style="font-size:13px"><strong>' + inc.actor + '</strong> → ' + inc.target +
-          (inc.withinScope ? ' <span style="color:var(--muted);font-size:11px">[' + inc.withinScope + ']</span>' : '') +
-          '</div><div style="font-size:12px;color:var(--muted);margin-top:4px">' + desc + '</div></div>';
+          '<div style="font-size:13px"><strong>' + esc(inc.actor) + '</strong> → ' + esc(inc.target) +
+          (inc.withinScope ? ' <span style="color:var(--muted);font-size:11px">[' + esc(inc.withinScope) + ']</span>' : '') +
+          '</div><div style="font-size:12px;color:var(--muted);margin-top:4px">' + esc(desc) + '</div></div>';
       });
     });
     if (!html) html = '<div style="color:var(--muted);font-style:italic">No violations recorded yet.</div>';
@@ -1123,9 +1143,9 @@ function renderNegotiationTracker() {
       '<div class="nego-dot ' + dotClass + '"></div>' +
       '<div style="flex:1">' +
       '<div style="display:flex;justify-content:space-between;align-items:baseline">' +
-      '<strong style="font-size:13px">' + evt.date + ' (CF Day ' + evt.cfDay + ')</strong>' +
-      '<span style="font-size:11px;color:var(--muted)">' + (evt.participants || []).join(', ') + '</span></div>' +
-      '<div style="font-size:13px;margin-top:4px">' + eventText + '</div>' +
+      '<strong style="font-size:13px">' + esc(evt.date) + ' (CF Day ' + esc(evt.cfDay) + ')</strong>' +
+      '<span style="font-size:11px;color:var(--muted)">' + esc((evt.participants || []).join(', ')) + '</span></div>' +
+      '<div style="font-size:13px;margin-top:4px">' + esc(eventText) + '</div>' +
       '</div></div>';
   });
   if (!html) html = '<div style="color:var(--muted);font-style:italic">No events recorded yet.</div>';
@@ -1245,7 +1265,7 @@ function renderPredictiveSection() {
     $('outcomeForecast').innerHTML = forecast;
   } else if ($('outcomeForecast')) {
     var forecastText = currentLang === 'fa' ? (outcome.prediction_fa || outcome.prediction || '') : (outcome.prediction || '');
-    $('outcomeForecast').innerHTML = forecastText;
+    $('outcomeForecast').innerHTML = sanitizeHTML(forecastText);
   }
 
   // Decision Engine probability display
@@ -2196,38 +2216,28 @@ function showSimResult() {
   var baseProb = baseEng.ensemble;
   var baseOil = (state.oil.brent || []).slice(-1)[0] || 100;
 
-  // Each scenario modifies engine INDICATORS, then recomputes
-  // We temporarily modify the indicators object and recompute
-  var de = state.decisionEngine || {};
-  var ind = de.indicators || {};
-  var savedInd = JSON.parse(JSON.stringify(ind));
-  var adjEng = null;
-  var adjProb = baseProb;
-
-  try {
-    // Apply scenario effects to indicators
-    if (scenario.id === 'ceasefire_apr6') {
-      ind.facesSavingDealExists = true;
-      ind.iranRejectedCeasefire = false;
-      ind.daysToDeadline = 30;
-    } else if (scenario.id === 'power_grid') {
-      ind.daysToDeadline = 0;
-      ind.formalProposalsRejected = 3;
-    } else if (scenario.id === 'bab_closes') {
-      ind.babAlMandabThreatened = true;
-      ind.daysToDeadline = 0;
-    } else if (scenario.id === 'ground_invasion') {
-      ind.groundTroopsDeployed = 20000;
-      ind.daysToDeadline = 0;
-    }
-
-    // Recompute engine with modified indicators
-    adjEng = computeEngineForDay(maxDay - 1);
-    adjProb = adjEng ? adjEng.ensemble : baseProb;
-  } finally {
-    // Always restore original indicators, even if computation threw
-    de.indicators = savedInd;
+  // Build overrides for the scenario — no state mutation needed
+  var ov = {};
+  if (scenario.id === 'ceasefire_apr6') {
+    ov.iranRejectedCeasefire = false;
+    ov.deadlineDays = 30;
+    ov.mediatorMeetings = 6;
+  } else if (scenario.id === 'power_grid') {
+    ov.deadlineDays = 0;
+    ov.proposalsRejected = 3;
+  } else if (scenario.id === 'bab_closes') {
+    ov.deadlineDays = 0;
+    ov.hormuzVessels = 0;
+    ov.gasPrice = 5.5;
+  } else if (scenario.id === 'ground_invasion') {
+    ov.deadlineDays = 0;
+    ov.coalitionScore = 4;
+    ov.approvalWrong = 70;
   }
+
+  // Recompute engine with overrides — no state mutation
+  var adjEng = computeEngineForDay(maxDay - 1, ov);
+  var adjProb = adjEng ? adjEng.ensemble : baseProb;
 
   var adjOil = scenario.oilTarget || baseOil;
   var probDelta = adjProb - baseProb;
@@ -2343,18 +2353,32 @@ function updateMetricsForDay(day) {
   var isLive = day === maxDay;
   var cfStartDay = state.ceasefireStartIdx || CEASEFIRE_START_IDX;
 
-  // Ceasefire mode: update ceasefire hero for scrubbed day
+  // Ceasefire mode: update ceasefire hero + countdown for scrubbed day
   if (currentMode === 'ceasefire') {
     renderCeasefireHero(idx);
   }
 
-  // If live day, restore full render
+  // If live day, recompute from dailySeries (not stale JSON strings)
   if (isLive) {
-    renderDecisionEngine(state.decisionEngine || {});
-    var metricsArr = state.metrics || [];
-    if ($('metrics') && metricsArr.length) {
-      $('metrics').innerHTML = metricsArr.map(function(m) {
-        return '<div class="metric"><div class="label">' + m.label + '</div><div class="value">' + m.value + '</div><div class="desc">' + m.desc + '</div></div>';
+    // Recompute war-mode engine for live
+    var liveEng = computeEngineForDay(idx);
+    if (liveEng) {
+      renderDecisionEngine(state.decisionEngine || {});
+    }
+    // Recompute metric cards from dailySeries
+    var cumMissiles = 0; for (var li = 0; li <= idx; li++) cumMissiles += (ds.missiles[li] || 0);
+    var cumDrones = 0; for (var lj = 0; lj <= idx; lj++) cumDrones += (ds.drones[lj] || 0);
+    var liveOilIdx = Math.min(idx, (oil.brent || []).length - 1);
+    var liveOil = (oil.brent || [])[liveOilIdx] || 0;
+    var liveMetrics = [
+      { label: 'Day of war', value: String(day), desc: ds.labels[idx] || '' },
+      { label: 'Total missiles', value: '~' + cumMissiles.toLocaleString(), desc: 'Cumulative' },
+      { label: 'Total drones', value: '~' + cumDrones.toLocaleString(), desc: 'Cumulative' },
+      { label: 'Brent crude', value: '$' + liveOil.toFixed(2), desc: 'Latest' }
+    ];
+    if ($('metrics')) {
+      $('metrics').innerHTML = liveMetrics.map(function(m) {
+        return '<div class="metric-card"><div class="metric-value">' + esc(m.value) + '</div><div class="metric-label">' + esc(m.label) + '</div><div class="metric-desc">' + esc(m.desc) + '</div></div>';
       }).join('');
     }
     return;
