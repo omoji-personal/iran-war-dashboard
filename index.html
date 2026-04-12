@@ -28,6 +28,10 @@
           <button class="nav-toggle" onclick="document.getElementById('sectionNav').classList.toggle('open')">&#9660; Jump to</button>
           <nav class="section-nav" id="sectionNav"></nav>
         </div>
+        <div class="mode-toggle" id="modeToggle">
+          <button class="mode-btn active" data-mode="ceasefire" onclick="setMode('ceasefire')">Ceasefire</button>
+          <button class="mode-btn" data-mode="war" onclick="setMode('war')">War Mode</button>
+        </div>
         <button class="lang-btn" id="langToggle" onclick="toggleLang()">فارسی</button>
       </div>
     </div>
@@ -53,8 +57,87 @@
       <button id="scrubberReset" class="scrubber-reset" onclick="resetScrubber()">Live</button>
     </div>
 
+    <!-- CF. Ceasefire Status Hero -->
+    <section class="ceasefire-hero" data-mode="ceasefire">
+      <div class="kicker" style="color:var(--cyan)">Ceasefire status</div>
+      <div class="cf-status-display" id="cfStatusDisplay"></div>
+      <div class="prob-display">
+        <div class="prob-header">
+          <span class="prob-label">Probability ceasefire holds through Apr 21</span>
+          <span class="prob-pct" id="cfStabilityScore"></span>
+        </div>
+        <div class="prob-track"><div class="prob-bar" id="cfProbBar"></div></div>
+        <div class="prob-meta"><span id="cfStabilityRaw"></span></div>
+      </div>
+      <div class="grid cols-2" style="margin-top:16px;gap:16px">
+        <div>
+          <div class="sub" style="margin-bottom:8px;font-weight:700;color:var(--text)">Stability factors:</div>
+          <div id="cfStabilityFactors"></div>
+        </div>
+        <div>
+          <div class="sub" style="margin-bottom:8px;font-weight:700;color:var(--text)">What happens after Apr 21?</div>
+          <div id="cfOutcomeBreakdown"></div>
+        </div>
+      </div>
+      <div class="metric-grid" id="cfMetrics" style="margin-top:16px"></div>
+    </section>
+
+    <!-- CF. Ceasefire Countdown + Scenario Tree -->
+    <section class="grid cols-2" style="margin-top:16px" data-mode="ceasefire">
+      <div class="panel">
+        <div class="kicker" style="color:var(--cyan)">Ceasefire countdown</div>
+        <div id="cfCountdown" style="font-size:42px;font-weight:900;margin:8px 0;color:var(--cyan)"></div>
+        <div class="sub">Ceasefire Day <strong id="cfDayNum"></strong> of 14</div>
+        <div class="prob-track" style="margin:12px 0"><div class="prob-bar" id="cfProgressBar" style="background:var(--cyan)"></div></div>
+        <div id="cfCountdownContext" class="sub"></div>
+      </div>
+      <div class="panel">
+        <div class="kicker" style="color:var(--gold)">Post-ceasefire scenarios</div>
+        <h3>What happens after Apr 21?</h3>
+        <div class="grid cols-2" style="margin-top:12px;gap:12px">
+          <div>
+            <h4 style="color:var(--cyan);margin:0 0 8px">Extend / Deal</h4>
+            <div class="timeline-vertical" id="cfBranchExtend"></div>
+          </div>
+          <div>
+            <h4 style="color:var(--red);margin:0 0 8px">Collapse / Stall</h4>
+            <div class="timeline-vertical" id="cfBranchCollapse"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CF. Violation Tracker -->
+    <section class="panel" style="margin-top:16px" data-mode="ceasefire">
+      <h3>Ceasefire violation tracker</h3>
+      <div class="sub">Incidents, severity, and attribution since Apr 7.</div>
+      <div class="chart-box" style="height:280px"><canvas id="cfViolationChart"></canvas></div>
+      <div id="cfViolationList" style="margin-top:12px"></div>
+    </section>
+
+    <!-- CF. Negotiation Progress -->
+    <section class="panel" style="margin-top:16px" data-mode="ceasefire">
+      <h3>Islamabad peace talks tracker</h3>
+      <div class="sub">VP Vance delegation progress and next steps.</div>
+      <div id="cfNegotiationTimeline"></div>
+    </section>
+
+    <!-- CF. Economic Recovery -->
+    <section class="grid cols-2" style="margin-top:16px" data-mode="ceasefire">
+      <div class="panel">
+        <h3>Hormuz reopening progress</h3>
+        <div class="sub">Vessels per day recovering toward 135 pre-war baseline.</div>
+        <div class="chart-box"><canvas id="cfHormuzRecoveryChart"></canvas></div>
+      </div>
+      <div class="panel">
+        <h3>Oil normalization</h3>
+        <div class="sub">War premium unwinding. Pre-war baseline: $65 Brent.</div>
+        <div class="chart-box"><canvas id="cfOilRecoveryChart"></canvas></div>
+      </div>
+    </section>
+
     <!-- 1. Decision Engine Hero -->
-    <section class="prediction-hero">
+    <section class="prediction-hero" data-mode="war">
       <div class="kicker" data-i18n="kickerPrediction">War outcome forecast</div>
       <div class="outcome-forecast" id="outcomeForecast"></div>
       <div class="prob-display">
@@ -108,7 +191,7 @@
     </section>
 
     <!-- 4. Capability Thesis -->
-    <section class="panel" style="margin-top:16px">
+    <section class="panel" style="margin-top:16px" data-mode="war">
       <div class="kicker" data-i18n="kickerThesis">Capability thesis</div>
       <h2 data-i18n="hThesis">Depleted or Rationing?</h2>
       <div class="sub" data-i18n="subThesis">Two models of Iran's launch tempo — each implies a different war outcome. Dashed lines = 14-day forecast.</div>
@@ -132,7 +215,7 @@
     </section>
 
     <!-- 6. Deadline + Escalation Ladder -->
-    <section class="grid cols-2" style="margin-top:16px">
+    <section class="grid cols-2" style="margin-top:16px" data-mode="war">
       <div class="panel">
         <div class="kicker" style="color:var(--red)">April 7 deadline</div>
         <div id="deadlineCountdown" style="font-size:32px;font-weight:900;margin:8px 0"></div>

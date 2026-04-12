@@ -178,9 +178,22 @@ const UI = {
 
 /* ---------- State Management & Utilities ---------- */
 let currentLang = 'en';
+let currentMode = 'ceasefire';
+const CEASEFIRE_START_IDX = 39; // 1-indexed war day where ceasefire begins (Apr 7)
 let dashboardMounted = false;
 let state = {};
 const charts = {};
+
+function setMode(mode) {
+  currentMode = mode;
+  document.querySelectorAll('.mode-btn').forEach(function(b) {
+    b.classList.toggle('active', b.getAttribute('data-mode') === mode);
+  });
+  document.body.classList.toggle('ceasefire-mode', mode === 'ceasefire');
+  document.body.classList.toggle('war-mode', mode === 'war');
+  render();
+}
+window.setMode = setMode;
 
 const DEFAULT_DATA = {
   meta: { lastUpdated: '', notes: [] },
@@ -212,7 +225,13 @@ const DEFAULT_DATA = {
   predictive: {},
   additionalCharts: {},
   iranfarhangExpanded: {},
-  kipExpanded: {}
+  kipExpanded: {},
+  ceasefireStartIdx: 39,
+  ceasefireMode: { enabled: false },
+  ceasefireViolations: [],
+  ceasefireNegotiations: [],
+  ceasefireEconomicRecovery: { labels: [], hormuzDaily: [], hormuzPreWar: 135, brentPreCeasefire: 109, brentDaily: [] },
+  ceasefirePostConflictTree: { branchExtend: [], branchDeal: [], branchCollapse: [], branchStalled: [] }
 };
 
 function toggleLang() {
@@ -753,6 +772,428 @@ function computeEngineForDay(dayIdx) {
     ensemble: ensemble,
     day: day
   };
+}
+
+/* ============================================================
+   Ceasefire Engine — computeCeasefireForDay(dayIdx)
+   ============================================================ */
+function parseDayDate(dayIdx) {
+  var labels = (state.dailySeries || {}).labels || [];
+  var label = labels[dayIdx] || '';
+  if (!label) return Date.now();
+  return new Date(label + ' 2026').getTime();
+}
+
+function getCeasefireDay(dayIdx) {
+  var startIdx = (state.ceasefireStartIdx || CEASEFIRE_START_IDX) - 1; // 0-indexed
+  return dayIdx - startIdx;
+}
+
+function computeCeasefireForDay(dayIdx) {
+  var de = state.decisionEngine || {};
+  var di = de.dailyIndicators || {};
+  var cd = state.ceasefireDeadline || {};
+  var startIdx = (state.ceasefireStartIdx || CEASEFIRE_START_IDX) - 1;
+  if (dayIdx < startIdx) return null;
+
+  var cfDay = dayIdx - startIdx;
+
+  // Raw inputs
+  var violations = (di.cfViolations || [])[dayIdx] || 0;
+  var severity = (di.cfViolationSeverity || [])[dayIdx] || 0;
+  var mediator = (di.cfMediatorScore || [])[dayIdx] || 0;
+  var hormuzPct = (di.cfHormuzPct || [])[dayIdx] || 0;
+  var oilDelta = (di.cfOilDelta || [])[dayIdx] || 0;
+  var diplomatic = (di.cfDiplomaticScore || [])[dayIdx] || 0;
+  var usPolitical = (di.cfUsPoliticalScore || [])[dayIdx] || 0;
+  var iranPolitical = (di.cfIranPoliticalScore || [])[dayIdx] || 0;
+  var proxyEsc = (di.cfProxyEscalation || [])[dayIdx] || 0;
+
+  // Days remaining to expiry
+  var deadlineMs = new Date(cd.deadline || '2026-04-21T20:00:00-04:00').getTime();
+  var dayDate = parseDayDate(dayIdx);
+  var daysRemaining = Math.max(0, (deadlineMs - dayDate) / 86400000);
+
+  // === STABILITY SCORE — P(ceasefire holds through expiry) ===
+  var violationPenalty = Math.min(violations * 0.08 + severity * 0.05, 0.6);
+  var mediatorBoost = mediator / 10 * 0.25;
+  var hormuzSignal = hormuzPct / 100 * 0.2;
+  var oilSignal = oilDelta < -10 ? 0.15 : oilDelta < 0 ? 0.08 : 0;
+  var diplomaticBoost = diplomatic / 10 * 0.2;
+  var proxyPenalty = proxyEsc / 10 * 0.15;
+  var timeDecay = daysRemaining < 3 ? 0.1 : 0;
+
+  var stabilityBase = 0.5 + mediatorBoost + hormuzSignal + oilSignal + diplomaticBoost
+                      - violationPenalty - proxyPenalty - timeDecay;
+  var pHolds = Math.max(0.05, Math.min(0.95, stabilityBase));
+
+  // === P(EXTENDED) — conditional on holding ===
+  var extensionSignals = (mediator >= 7 ? 0.2 : 0) + (diplomatic >= 6 ? 0.15 : 0)
+                        + (hormuzPct >= 30 ? 0.1 : 0) + (usPolitical >= 6 ? 0.1 : 0);
+  var pExtended = pHolds * Math.min(0.7, extensionSignals + 0.15);
+
+  // === P(PERMANENT DEAL) — conditional on holding ===
+  var dealSignals = (diplomatic >= 8 ? 0.15 : 0) + (mediator >= 8 ? 0.1 : 0)
+                   + (iranPolitical >= 6 ? 0.15 : 0) + (usPolitical >= 7 ? 0.1 : 0)
+                   + (hormuzPct >= 50 ? 0.1 : 0);
+  var pDeal = pHolds * Math.min(0.5, dealSignals + 0.05);
+
+  // === P(COLLAPSE) ===
+  var pCollapse = 1 - pHolds;
+
+  // Normalize: collapse + holdsNoProgress + extended + deal = 1
+  var pHoldsNoProgress = Math.max(0, pHolds - pExtended - pDeal);
+  var total = pCollapse + pHoldsNoProgress + pExtended + pDeal;
+  if (total > 0) {
+    pCollapse /= total; pHoldsNoProgress /= total; pExtended /= total; pDeal /= total;
+  }
+
+  // Ensemble with market data
+  var cal = de.ceasefireCalibration || {};
+  var modelStability = Math.round(pHolds * 100);
+  var marketStability = cal.polymarketCeasefireHolds || modelStability;
+  var baseRateCf = cal.historicalCeasefireBaseRate || 50;
+  var ensemble = Math.round(modelStability * 0.5 + marketStability * 0.3 + baseRateCf * 0.2);
+
+  return {
+    cfDay: cfDay,
+    daysRemaining: daysRemaining,
+    pHolds: pHolds,
+    pExtended: pExtended,
+    pDeal: pDeal,
+    pCollapse: pCollapse,
+    pHoldsNoProgress: pHoldsNoProgress,
+    stabilityScore: ensemble,
+    modelStability: modelStability,
+    marketStability: marketStability,
+    violationPenalty: violationPenalty,
+    mediatorBoost: mediatorBoost,
+    hormuzSignal: hormuzSignal,
+    oilSignal: oilSignal,
+    diplomaticBoost: diplomaticBoost,
+    proxyPenalty: proxyPenalty
+  };
+}
+
+/* ============================================================
+   CEASEFIRE RENDER FUNCTIONS
+   ============================================================ */
+
+function renderCeasefireHero() {
+  var labels = (state.dailySeries || {}).labels || [];
+  var maxDay = labels.length;
+  var eng = computeCeasefireForDay(maxDay - 1);
+  if (!eng) return;
+
+  // Status display
+  var statusEl = $('cfStatusDisplay');
+  if (statusEl) {
+    var statusText = eng.pHolds >= 0.6 ? 'Ceasefire holding' : eng.pHolds >= 0.4 ? 'Ceasefire fragile' : 'Ceasefire at risk';
+    var statusColor = eng.pHolds >= 0.6 ? 'var(--cyan)' : eng.pHolds >= 0.4 ? 'var(--gold)' : 'var(--red)';
+    statusEl.innerHTML = '<div style="font-size:24px;font-weight:900;color:' + statusColor + '">' + statusText + '</div>';
+  }
+
+  // Ensemble probability
+  if ($('cfStabilityScore')) $('cfStabilityScore').textContent = eng.stabilityScore + '%';
+  if ($('cfStabilityRaw')) {
+    $('cfStabilityRaw').textContent = 'Model: ' + eng.modelStability + '% | Market: ' + eng.marketStability + '% | Historical: 50%';
+  }
+  if ($('cfProbBar')) {
+    $('cfProbBar').style.width = eng.stabilityScore + '%';
+    $('cfProbBar').style.background = eng.stabilityScore >= 60 ? 'var(--cyan)' : eng.stabilityScore >= 40 ? 'var(--gold)' : 'var(--red)';
+  }
+
+  // Stability factors
+  var factorsEl = $('cfStabilityFactors');
+  if (factorsEl) {
+    var factors = [
+      { label: 'Mediator engagement', val: eng.mediatorBoost, max: 0.25, color: 'var(--cyan)', positive: true },
+      { label: 'Diplomatic signals', val: eng.diplomaticBoost, max: 0.2, color: 'var(--blue)', positive: true },
+      { label: 'Hormuz reopening', val: eng.hormuzSignal, max: 0.2, color: 'var(--gold)', positive: true },
+      { label: 'Violation penalty', val: eng.violationPenalty, max: 0.6, color: 'var(--red)', positive: false },
+      { label: 'Proxy escalation', val: eng.proxyPenalty, max: 0.15, color: 'var(--orange)', positive: false }
+    ];
+    var html = '';
+    factors.forEach(function(f) {
+      var pct = Math.round(f.val / f.max * 100);
+      var sign = f.positive ? '+' : '-';
+      html += '<div class="cond-row" style="margin-bottom:8px">' +
+        '<div style="display:flex;justify-content:space-between;font-size:12px;margin-bottom:3px">' +
+        '<span>' + f.label + '</span><span style="color:' + f.color + '">' + sign + Math.round(f.val * 100) + '%</span></div>' +
+        '<div class="prob-track" style="height:6px"><div class="prob-bar" style="width:' + pct + '%;background:' + f.color + ';height:6px;border-radius:3px"></div></div></div>';
+    });
+    factorsEl.innerHTML = html;
+  }
+
+  // Outcome breakdown
+  var outcomeEl = $('cfOutcomeBreakdown');
+  if (outcomeEl) {
+    var outcomes = [
+      { label: 'Ceasefire extended', pct: Math.round(eng.pExtended * 100), color: 'var(--cyan)' },
+      { label: 'Permanent deal', pct: Math.round(eng.pDeal * 100), color: 'var(--blue)' },
+      { label: 'Holds but stalled', pct: Math.round(eng.pHoldsNoProgress * 100), color: 'var(--gold)' },
+      { label: 'Collapse to war', pct: Math.round(eng.pCollapse * 100), color: 'var(--red)' }
+    ];
+    var html2 = '';
+    outcomes.forEach(function(o) {
+      html2 += '<div style="display:flex;align-items:center;gap:8px;margin-bottom:6px;font-size:13px">' +
+        '<div style="width:36px;text-align:right;font-weight:700;color:' + o.color + '">' + o.pct + '%</div>' +
+        '<div class="prob-track" style="flex:1;height:6px"><div class="prob-bar" style="width:' + o.pct + '%;background:' + o.color + ';height:6px;border-radius:3px"></div></div>' +
+        '<span>' + o.label + '</span></div>';
+    });
+    outcomeEl.innerHTML = html2;
+  }
+
+  // Metrics
+  var metricsEl = $('cfMetrics');
+  if (metricsEl) {
+    var cfDay = eng.cfDay;
+    var di = (state.decisionEngine || {}).dailyIndicators || {};
+    var violations = (di.cfViolations || [])[maxDay - 1] || 0;
+    var hormuzPct = (di.cfHormuzPct || [])[maxDay - 1] || 0;
+    var oilVal = (state.oil || {}).brent || [];
+    var latestOil = oilVal[oilVal.length - 1] || 0;
+    var items = [
+      { label: 'Ceasefire day', value: cfDay + ' / 14', desc: 'Day ' + cfDay + ' of 14-day ceasefire' },
+      { label: 'Violations today', value: violations, desc: 'Ceasefire violations reported' },
+      { label: 'Hormuz traffic', value: hormuzPct + '%', desc: 'Of pre-war 135 vessels/day' },
+      { label: 'Brent crude', value: '$' + latestOil.toFixed(2), desc: 'Pre-ceasefire: $109' }
+    ];
+    var html3 = '';
+    items.forEach(function(m) {
+      html3 += '<div class="metric-card"><div class="metric-value">' + m.value + '</div><div class="metric-label">' + m.label + '</div><div class="metric-desc">' + m.desc + '</div></div>';
+    });
+    metricsEl.innerHTML = html3;
+  }
+}
+
+var cfDeadlineInterval = null;
+
+function renderCeasefireCountdown() {
+  var cd = state.ceasefireDeadline || {};
+  if (!cd.deadline) return;
+
+  function tickCf() {
+    var deadline = new Date(cd.deadline);
+    var now = new Date();
+    var diff = deadline - now;
+    var el = $('cfCountdown');
+    if (!el) return;
+    if (diff <= 0) {
+      el.innerHTML = '<span style="color:var(--red)">CEASEFIRE EXPIRED</span>';
+      return;
+    }
+    var days = Math.floor(diff / 864e5);
+    var hours = Math.floor((diff % 864e5) / 36e5);
+    var mins = Math.floor((diff % 36e5) / 6e4);
+    var secs = Math.floor((diff % 6e4) / 1e3);
+    el.textContent = days + 'd ' + hours + 'h ' + mins + 'm ' + secs + 's';
+  }
+
+  if (cfDeadlineInterval) clearInterval(cfDeadlineInterval);
+  tickCf();
+  cfDeadlineInterval = setInterval(tickCf, 1000);
+
+  // Day counter + progress
+  var startIdx = (state.ceasefireStartIdx || CEASEFIRE_START_IDX) - 1;
+  var labels = (state.dailySeries || {}).labels || [];
+  var cfDay = labels.length - 1 - startIdx;
+  if ($('cfDayNum')) $('cfDayNum').textContent = cfDay;
+  if ($('cfProgressBar')) $('cfProgressBar').style.width = Math.round(cfDay / 14 * 100) + '%';
+
+  // Context
+  if ($('cfCountdownContext')) {
+    var ctx = cd.context || '';
+    if (currentLang === 'fa' && cd.context_fa) ctx = cd.context_fa;
+    $('cfCountdownContext').innerHTML = ctx;
+  }
+}
+
+function renderPostConflictTree() {
+  var tree = state.ceasefirePostConflictTree || {};
+
+  function renderBranch(items, elId) {
+    var el = $(elId);
+    if (!el || !items || !items.length) return;
+    var html = '';
+    items.forEach(function(item) {
+      var probTag = item.probability ? ' <span style="color:var(--gold);font-weight:700">(' + item.probability + '%)</span>' : '';
+      html += '<div class="tl-item partial"><strong>' + item.step + '</strong>' + probTag +
+        '<br><span style="color:var(--muted);font-size:12px">' + item.timeline + '</span>' +
+        '<br><span style="font-size:12px">' + item.detail + '</span></div>';
+    });
+    el.innerHTML = html;
+  }
+
+  // Combine extend + deal on left, collapse + stalled on right
+  var extendDeal = (tree.branchExtend || []).concat(tree.branchDeal || []);
+  var collapseStall = (tree.branchCollapse || []).concat(tree.branchStalled || []);
+  renderBranch(extendDeal, 'cfBranchExtend');
+  renderBranch(collapseStall, 'cfBranchCollapse');
+}
+
+function renderViolationTracker() {
+  var violations = state.ceasefireViolations || [];
+  var di = (state.decisionEngine || {}).dailyIndicators || {};
+  var cfViolations = di.cfViolations || [];
+  var cfSeverity = di.cfViolationSeverity || [];
+  var startIdx = (state.ceasefireStartIdx || CEASEFIRE_START_IDX) - 1;
+
+  // Chart
+  kill('cfViolation');
+  var canvas = $('cfViolationChart');
+  if (canvas) {
+    var labels = [];
+    var counts = [];
+    var colors = [];
+    for (var i = startIdx; i < cfViolations.length; i++) {
+      if (cfViolations[i] === null) continue;
+      labels.push('CF Day ' + (i - startIdx));
+      counts.push(cfViolations[i] || 0);
+      var sev = cfSeverity[i] || 0;
+      colors.push(sev >= 7 ? '#ff6b6b' : sev >= 4 ? '#ff9f43' : sev > 0 ? '#ffd166' : '#46d7b0');
+    }
+    charts.cfViolation = new Chart(canvas, {
+      type: 'bar',
+      data: {
+        labels: labels,
+        datasets: [{
+          label: 'Violations',
+          data: counts,
+          backgroundColor: colors,
+          borderRadius: 4
+        }]
+      },
+      options: {
+        responsive: true, maintainAspectRatio: false,
+        scales: { y: { beginAtZero: true, ticks: { color: '#9eb5d0' }, grid: { color: 'rgba(41,65,95,.3)' } }, x: { ticks: { color: '#9eb5d0' }, grid: { display: false } } },
+        plugins: { legend: { display: false } }
+      }
+    });
+  }
+
+  // List
+  var listEl = $('cfViolationList');
+  if (listEl) {
+    var html = '';
+    violations.forEach(function(day) {
+      if (!day.incidents || !day.incidents.length) {
+        html += '<div class="violation-card"><strong>' + day.day + ' (CF Day ' + day.cfDay + ')</strong> — No violations reported</div>';
+        return;
+      }
+      day.incidents.forEach(function(inc) {
+        var sevClass = inc.severity >= 7 ? 'severe' : inc.severity >= 4 ? 'moderate' : 'minor';
+        var sevLabel = inc.severity >= 7 ? 'SEVERE' : inc.severity >= 4 ? 'MODERATE' : 'MINOR';
+        var sevColor = inc.severity >= 7 ? 'var(--red)' : inc.severity >= 4 ? 'var(--orange)' : 'var(--gold)';
+        var desc = currentLang === 'fa' && inc.description_fa ? inc.description_fa : inc.description;
+        html += '<div class="violation-card ' + sevClass + '">' +
+          '<div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:6px">' +
+          '<strong>' + day.day + ' (CF Day ' + day.cfDay + ')</strong>' +
+          '<span class="violation-severity" style="background:' + sevColor + ';color:#fff">' + sevLabel + '</span></div>' +
+          '<div style="font-size:13px"><strong>' + inc.actor + '</strong> → ' + inc.target +
+          (inc.withinScope ? ' <span style="color:var(--muted);font-size:11px">[' + inc.withinScope + ']</span>' : '') +
+          '</div><div style="font-size:12px;color:var(--muted);margin-top:4px">' + desc + '</div></div>';
+      });
+    });
+    if (!html) html = '<div style="color:var(--muted);font-style:italic">No violations recorded yet.</div>';
+    listEl.innerHTML = html;
+  }
+}
+
+function renderNegotiationTracker() {
+  var negotiations = state.ceasefireNegotiations || [];
+  var el = $('cfNegotiationTimeline');
+  if (!el) return;
+
+  var html = '';
+  negotiations.forEach(function(evt) {
+    var dotClass = evt.outcome || 'scheduled';
+    var eventText = currentLang === 'fa' && evt.event_fa ? evt.event_fa : evt.event;
+    html += '<div class="nego-event">' +
+      '<div class="nego-dot ' + dotClass + '"></div>' +
+      '<div style="flex:1">' +
+      '<div style="display:flex;justify-content:space-between;align-items:baseline">' +
+      '<strong style="font-size:13px">' + evt.date + ' (CF Day ' + evt.cfDay + ')</strong>' +
+      '<span style="font-size:11px;color:var(--muted)">' + (evt.participants || []).join(', ') + '</span></div>' +
+      '<div style="font-size:13px;margin-top:4px">' + eventText + '</div>' +
+      '</div></div>';
+  });
+  if (!html) html = '<div style="color:var(--muted);font-style:italic">No events recorded yet.</div>';
+  el.innerHTML = html;
+}
+
+function renderCeasefireRecovery() {
+  var rec = state.ceasefireEconomicRecovery || {};
+  var labels = rec.labels || [];
+  if (!labels.length) return;
+
+  // Hormuz recovery chart
+  kill('cfHormuzRecovery');
+  var hCanvas = $('cfHormuzRecoveryChart');
+  if (hCanvas) {
+    charts.cfHormuzRecovery = new Chart(hCanvas, {
+      type: 'line',
+      data: {
+        labels: labels,
+        datasets: [
+          {
+            label: 'Vessels/day',
+            data: rec.hormuzDaily || [],
+            borderColor: '#46d7b0', backgroundColor: 'rgba(70,215,176,.1)',
+            fill: true, tension: 0.3, pointRadius: 4
+          },
+          {
+            label: 'Pre-war baseline (135)',
+            data: labels.map(function() { return rec.hormuzPreWar || 135; }),
+            borderColor: 'rgba(158,181,208,.4)', borderDash: [6, 4],
+            pointRadius: 0, fill: false
+          }
+        ]
+      },
+      options: {
+        responsive: true, maintainAspectRatio: false,
+        scales: { y: { beginAtZero: true, max: 150, ticks: { color: '#9eb5d0' }, grid: { color: 'rgba(41,65,95,.3)' } }, x: { ticks: { color: '#9eb5d0' }, grid: { display: false } } },
+        plugins: { legend: { labels: { color: '#9eb5d0', font: { size: 11 } } } }
+      }
+    });
+  }
+
+  // Oil recovery chart
+  kill('cfOilRecovery');
+  var oCanvas = $('cfOilRecoveryChart');
+  if (oCanvas) {
+    charts.cfOilRecovery = new Chart(oCanvas, {
+      type: 'line',
+      data: {
+        labels: labels,
+        datasets: [
+          {
+            label: 'Brent ($/bbl)',
+            data: rec.brentDaily || [],
+            borderColor: '#63b3ff', backgroundColor: 'rgba(99,179,255,.1)',
+            fill: true, tension: 0.3, pointRadius: 4
+          },
+          {
+            label: 'Pre-ceasefire ($109)',
+            data: labels.map(function() { return rec.brentPreCeasefire || 109; }),
+            borderColor: 'rgba(255,107,107,.4)', borderDash: [6, 4],
+            pointRadius: 0, fill: false
+          },
+          {
+            label: 'Pre-war ($65)',
+            data: labels.map(function() { return 65; }),
+            borderColor: 'rgba(158,181,208,.3)', borderDash: [3, 3],
+            pointRadius: 0, fill: false
+          }
+        ]
+      },
+      options: {
+        responsive: true, maintainAspectRatio: false,
+        scales: { y: { ticks: { color: '#9eb5d0' }, grid: { color: 'rgba(41,65,95,.3)' } }, x: { ticks: { color: '#9eb5d0' }, grid: { display: false } } },
+        plugins: { legend: { labels: { color: '#9eb5d0', font: { size: 11 } } } }
+      }
+    });
+  }
 }
 
 /* ============================================================
@@ -1663,7 +2104,7 @@ function renderChangelog() {
 function renderSimulator() {
   var sim = state.scenarioSimulator;
   if (!sim || !$('simButtons')) return;
-  var scenarios = sim.scenarios || [];
+  var scenarios = currentMode === 'ceasefire' ? (sim.ceasefireScenarios || []) : (sim.scenarios || []);
 
   $('simButtons').innerHTML = scenarios.map(function(s) {
     return '<button class="sim-btn' + (activeSimScenario === s.id ? ' active' : '') + '" data-sim="' + s.id + '">' +
@@ -1688,10 +2129,38 @@ function renderSimulator() {
 function showSimResult() {
   var sim = state.scenarioSimulator;
   if (!sim || !$('simResult') || !activeSimScenario) return;
-  var scenario = (sim.scenarios || []).find(function(s) { return s.id === activeSimScenario; });
+  var scenarioList = currentMode === 'ceasefire' ? (sim.ceasefireScenarios || []) : (sim.scenarios || []);
+  var scenario = scenarioList.find(function(s) { return s.id === activeSimScenario; });
   if (!scenario) return;
 
-  // Compute baseline from engine
+  // Ceasefire mode — simpler delta display from pre-computed deltas
+  if (currentMode === 'ceasefire') {
+    var maxDay = (state.dailySeries.labels || []).length;
+    var baseCf = computeCeasefireForDay(maxDay - 1);
+    if (!baseCf) return;
+    var baseStab = baseCf.stabilityScore;
+    var baseOilCf = (state.oil.brent || []).slice(-1)[0] || 100;
+    var adjStab = Math.max(0, Math.min(100, baseStab + Math.round((scenario.pDeltaHolds || 0) * 100)));
+    var adjOilCf = baseOilCf + (scenario.oilDelta || 0);
+    var probDeltaCf = adjStab - baseStab;
+    var oilDeltaCf = Math.round(adjOilCf - baseOilCf);
+    var descCf = scenario.desc || scenario.description || '';
+
+    function deltaCf(v, unit) {
+      if (v === 0) return '';
+      var cls = v > 0 ? 'up' : 'down';
+      return '<span class="sim-delta ' + cls + '">' + (v > 0 ? '+' : '') + v + unit + '</span>';
+    }
+
+    $('simResult').style.display = 'block';
+    $('simResult').innerHTML = '<div style="font-size:13px;margin-bottom:8px">' + descCf + '</div>' +
+      '<div style="display:flex;gap:24px;flex-wrap:wrap">' +
+      '<div>Ceasefire stability: <strong>' + adjStab + '%</strong> ' + deltaCf(probDeltaCf, 'pp') + '</div>' +
+      '<div>Oil: <strong>$' + adjOilCf.toFixed(0) + '</strong> ' + deltaCf(oilDeltaCf, '') + '</div></div>';
+    return;
+  }
+
+  // Compute baseline from engine (war mode)
   var maxDay = (state.dailySeries.labels || []).length;
   var baseEng = computeEngineForDay(maxDay - 1);
   if (!baseEng) return;
@@ -1776,6 +2245,18 @@ function renderEscalationLadder() {
 /* ============================================================
    Timeline Scrubber
    ============================================================ */
+function scrubberLabel(day, maxDay) {
+  var labels = (state.dailySeries || {}).labels || [];
+  var label = labels[day - 1] || ('D' + day);
+  var isLive = day === maxDay;
+  var cfStartDay = state.ceasefireStartIdx || CEASEFIRE_START_IDX;
+  if (day >= cfStartDay) {
+    var cfDay = day - cfStartDay + 1;
+    return 'D' + day + ' / CF Day ' + cfDay + ' (' + label + ')' + (isLive ? ' — Live' : '');
+  }
+  return 'D' + day + ' (' + label + ')' + (isLive ? ' — Live' : '');
+}
+
 function initScrubber() {
   var wrap = $('scrubberWrap');
   var slider = $('scrubberSlider');
@@ -1785,7 +2266,23 @@ function initScrubber() {
   slider.max = maxDay;
   slider.value = maxDay;
   wrap.style.display = 'flex';
-  if ($('scrubberDay')) $('scrubberDay').textContent = 'D' + maxDay + ' (' + state.dailySeries.labels[maxDay - 1] + ') — Live';
+  if ($('scrubberDay')) $('scrubberDay').textContent = scrubberLabel(maxDay, maxDay);
+
+  // Add ceasefire marker on scrubber track
+  var cfStartDay = state.ceasefireStartIdx || CEASEFIRE_START_IDX;
+  var existingMarker = wrap.querySelector('.scrubber-cf-marker');
+  if (!existingMarker && cfStartDay <= maxDay) {
+    var pct = ((cfStartDay - 1) / (maxDay - 1)) * 100;
+    var marker = document.createElement('div');
+    marker.className = 'scrubber-cf-marker';
+    marker.style.left = pct + '%';
+    var lbl = document.createElement('div');
+    lbl.className = 'scrubber-cf-label';
+    lbl.style.left = pct + '%';
+    lbl.textContent = 'Ceasefire';
+    wrap.appendChild(marker);
+    wrap.appendChild(lbl);
+  }
 
   var scrubTimer = null;
   slider.addEventListener('input', function() {
@@ -1793,9 +2290,7 @@ function initScrubber() {
     if (scrubTimer) clearTimeout(scrubTimer);
     scrubTimer = setTimeout(function() {
       var day = parseInt(self.value);
-      var label = (state.dailySeries.labels[day - 1]) || ('D' + day);
-      var isLive = day === maxDay;
-      if ($('scrubberDay')) $('scrubberDay').textContent = 'D' + day + ' (' + label + ')' + (isLive ? ' — Live' : '');
+      if ($('scrubberDay')) $('scrubberDay').textContent = scrubberLabel(day, maxDay);
       updateMetricsForDay(day);
     }, 50);
   });
@@ -1909,6 +2404,18 @@ function render() {
   applyI18n();
   setText();
   renderCharts();
+
+  // Ceasefire mode renders
+  if (currentMode === 'ceasefire') {
+    renderCeasefireHero();
+    renderCeasefireCountdown();
+    renderPostConflictTree();
+    renderViolationTracker();
+    renderNegotiationTracker();
+    renderCeasefireRecovery();
+  }
+
+  // War mode renders (always call — CSS hides them in ceasefire mode)
   renderPredictiveSection();
   renderSimulator();
   renderSensitivity();
@@ -1928,6 +2435,11 @@ function render() {
   initScrubber();
   buildSectionNav();
   markChangedSections();
+
+  // Update mode toggle button state
+  document.querySelectorAll('.mode-btn').forEach(function(b) {
+    b.classList.toggle('active', b.getAttribute('data-mode') === currentMode);
+  });
 }
 
 async function loadDashboardData() {
@@ -1938,6 +2450,14 @@ async function loadDashboardData() {
     if (!json.meta || !json.dailySeries || !json.oil) throw new Error('Malformed');
     state = { ...structuredClone(DEFAULT_DATA), ...json };
     state.meta = { ...DEFAULT_DATA.meta, ...(json.meta || {}) };
+    // Auto-detect ceasefire mode
+    if (state.ceasefireMode && state.ceasefireMode.enabled) {
+      currentMode = 'ceasefire';
+    } else {
+      currentMode = 'war';
+    }
+    document.body.classList.toggle('ceasefire-mode', currentMode === 'ceasefire');
+    document.body.classList.toggle('war-mode', currentMode === 'war');
   } catch(e) {
     console.error('Dashboard load failed:', e);
     state = structuredClone(DEFAULT_DATA);

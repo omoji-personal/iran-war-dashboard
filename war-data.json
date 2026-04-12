@@ -1539,7 +1539,7 @@
         "label_fa": "مدل جیره‌بندی",
         "description": "Assumes plateau at ~30/day = strategic rationing from deeper stockpiles (IRGC D16 claim)",
         "description_fa": "فرض بر جیره‌بندی استراتژیک از ذخایر عمیق‌تر (ادعای سپاه D16)",
-        "plateauRate": 46.0,
+        "plateauRate": 46,
         "projectedDuration_weeks": 7,
         "projectedOutcome": "Iran maintained ~45-58/day through D39, then stood down by political decision in ceasefire. Validates strategic rationing thesis — capability preserved for diplomatic leverage.",
         "projectedOutcome_fa": "ایران آزار ۲+ ماه. هاآرتص: نیمی پرتاب‌کننده‌ها سالم. جنگ با مذاکره یا تشدید.",
@@ -1883,7 +1883,7 @@
         5.5,
         3.5,
         7.5,
-        7.0
+        7
       ],
       "usPoliticalSustainability": [
         8,
@@ -1925,7 +1925,7 @@
         2,
         2,
         2,
-        4.0,
+        4,
         4.5
       ],
       "escalationCeilingDistance": [
@@ -1969,7 +1969,7 @@
         0.5,
         0.2,
         3.5,
-        3.0
+        3
       ]
     },
     "vectorNotes": {
@@ -2971,8 +2971,8 @@
   },
   "ceasefireDeadline": {
     "deadline": "2026-04-21T20:00:00-04:00",
-    "label": "April 21, 8PM ET — 2-week ceasefire expiry",
-    "label_fa": "۲۱ آوریل، ۸ شب ET — پایان آتش‌بس دوهفته‌ای",
+    "label": "April 21 ceasefire expiry",
+    "label_fa": "پایان آتش‌بس ۲۱ آوریل",
     "context": "Trump-Iran 2-week ceasefire announced Apr 7 ~7PM ET (Pakistan-brokered by PM Sharif + FM Munir). Iran SNSC via FM Araghchi formally accepted. Contingent on Hormuz reopening in coordination with Iran Armed Forces. VP Vance leads US delegation to Islamabad peace talks Friday. Clock resets Apr 21 unless converted to settlement. Primary collapse risks: Israel unilateral strike, Hormuz non-compliance, 10-pt maximalism at talks.",
     "context_fa": "April 7 Tue (<20 ساعت). ایران ۱۰ ماده ماکسیمالیست. ترامپ رد تمدید — 'جهنم.' P=0.22 (UP). سپاه: 'دروازه‌های جهنم.' ماکسیمالیسم متقابل = باینری.",
     "branchIfDeal": [
@@ -3318,6 +3318,71 @@
         "oilTarget": 150,
         "description": "82nd Airborne seizes Kharg. Iran's 90% oil export terminal. Massive escalation."
       }
+    ],
+    "ceasefireScenarios": [
+      {
+        "name": "Major violation surge",
+        "toggle": false,
+        "desc": "Multiple verified military violations by either side",
+        "pDeltaHolds": -0.25,
+        "oilDelta": 15,
+        "modifiers": {
+          "cfViolations": 5,
+          "cfViolationSeverity": 8
+        },
+        "id": "violation_surge",
+        "label": "Major violation surge"
+      },
+      {
+        "name": "Islamabad talks collapse",
+        "toggle": false,
+        "desc": "VP Vance delegation walks out or Iran refuses to attend",
+        "pDeltaHolds": -0.2,
+        "oilDelta": 12,
+        "modifiers": {
+          "cfDiplomaticScore": 1,
+          "cfMediatorScore": 2
+        },
+        "id": "talks_collapse",
+        "label": "Islamabad talks collapse"
+      },
+      {
+        "name": "Houthi Bab al-Mandab attack",
+        "toggle": false,
+        "desc": "Houthis strike commercial shipping during ceasefire",
+        "pDeltaHolds": -0.15,
+        "oilDelta": 18,
+        "modifiers": {
+          "cfProxyEscalation": 9
+        },
+        "id": "houthi_attack",
+        "label": "Houthi Bab al-Mandab attack"
+      },
+      {
+        "name": "Hormuz breakthrough",
+        "toggle": false,
+        "desc": "Iran opens Hormuz to 50%+ traffic, mine clearance accelerates",
+        "pDeltaHolds": 0.15,
+        "oilDelta": -12,
+        "modifiers": {
+          "cfHormuzPct": 50
+        },
+        "id": "hormuz_breakthrough",
+        "label": "Hormuz breakthrough"
+      },
+      {
+        "name": "Framework deal announced",
+        "toggle": false,
+        "desc": "Islamabad produces preliminary sanctions-for-security framework",
+        "pDeltaHolds": 0.25,
+        "oilDelta": -20,
+        "modifiers": {
+          "cfDiplomaticScore": 9,
+          "cfMediatorScore": 9
+        },
+        "id": "framework_deal",
+        "label": "Framework deal announced"
+      }
     ]
   },
   "escalationLadder": [
@@ -3555,7 +3620,9 @@
         "Apr 04",
         "Apr 05",
         "Apr 06",
-        "Apr 07"
+        "Apr 07",
+        "Apr 08",
+        "Apr 09"
       ],
       "launchRate": [
         480,
@@ -3596,7 +3663,9 @@
         45,
         40,
         45,
-        58
+        58,
+        12,
+        0
       ],
       "oilBrent": [
         72,
@@ -3637,7 +3706,9 @@
         115,
         109,
         110,
-        109.5
+        109.5,
+        95.8,
+        97.39
       ],
       "hormuzVessels": [
         5,
@@ -3678,7 +3749,9 @@
         8,
         9,
         10,
-        14
+        14,
+        8,
+        10
       ],
       "usKIA": [
         0,
@@ -3719,11 +3792,13 @@
         15,
         15,
         15,
+        15,
+        15,
         15
       ],
       "gasPrice": [
-        3.0,
-        3.0,
+        3,
+        3,
         3.05,
         3.1,
         3.15,
@@ -3749,8 +3824,8 @@
         3.95,
         3.98,
         3.98,
-        4.0,
-        4.0,
+        4,
+        4,
         4.02,
         4.05,
         4.1,
@@ -3760,7 +3835,9 @@
         4.1,
         4.1,
         4.1,
-        4.12
+        4.12,
+        4.05,
+        3.98
       ],
       "approvalWrong": [
         35,
@@ -3801,7 +3878,9 @@
         59,
         59,
         59,
-        60
+        60,
+        58,
+        57
       ],
       "mediatorMeetings": [
         0,
@@ -3842,7 +3921,9 @@
         3,
         3,
         5,
-        9
+        9,
+        8,
+        7
       ],
       "coalitionScore": [
         9,
@@ -3883,7 +3964,9 @@
         3,
         3,
         2.5,
-        2.6
+        2.6,
+        8,
+        8
       ],
       "iranRejectedCeasefire": [
         0,
@@ -3924,6 +4007,8 @@
         1,
         1,
         1,
+        0,
+        0,
         0
       ],
       "proposalsRejected": [
@@ -3965,7 +4050,9 @@
         2,
         2,
         2,
-        2
+        2,
+        5,
+        5
       ],
       "deadlineDays": [
         99,
@@ -4006,7 +4093,396 @@
         1,
         1,
         1,
-        14
+        14,
+        14,
+        13
+      ],
+      "cfViolations": [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        0,
+        1
+      ],
+      "cfViolationSeverity": [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        0,
+        3
+      ],
+      "cfMediatorScore": [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        8,
+        7
+      ],
+      "cfHormuzPct": [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        4,
+        6
+      ],
+      "cfOilDelta": [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        -13.2,
+        -11.6
+      ],
+      "cfDiplomaticScore": [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        7,
+        5
+      ],
+      "cfUsPoliticalScore": [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        6,
+        6
+      ],
+      "cfIranPoliticalScore": [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        5,
+        4
+      ],
+      "cfProxyEscalation": [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        3,
+        7
       ]
     },
     "trumpPattern": {
@@ -4179,6 +4655,178 @@
         "slope": -2,
         "direction": "falling",
         "signal": "Declining further. Trump 'I don't know' = allies questioning strategy. Mirror: 'TACO Trump.' IAEA 'deeply concerned.'"
+      }
+    ],
+    "ceasefireCalibration": {
+      "polymarketCeasefireHolds": 45,
+      "historicalCeasefireBaseRate": 50,
+      "source": "Polymarket implied ~45% ceasefire holds through Apr 21. Historical Middle East ceasefire survival rate ~50% (naive prior)."
+    }
+  },
+  "ceasefireStartIdx": 39,
+  "ceasefireMode": {
+    "enabled": true
+  },
+  "ceasefireViolations": [
+    {
+      "day": "Apr 08",
+      "cfDay": 1,
+      "incidents": [
+        {
+          "type": "accusation",
+          "severity": 3,
+          "actor": "Israel",
+          "target": "Lebanon",
+          "description": "Israel struck 100+ sites in Lebanon. Iran accused US of ceasefire violation via proxy.",
+          "description_fa": "اسرائیل بیش از ۱۰۰ هدف در لبنان را بمباران کرد. ایران آمریکا را به نقض آتش‌بس از طریق نماینده متهم کرد.",
+          "withinScope": "disputed"
+        }
+      ],
+      "totalCount": 1,
+      "maxSeverity": 3
+    },
+    {
+      "day": "Apr 09",
+      "cfDay": 2,
+      "incidents": [],
+      "totalCount": 0,
+      "maxSeverity": 0
+    }
+  ],
+  "ceasefireNegotiations": [
+    {
+      "date": "Apr 07",
+      "cfDay": 0,
+      "event": "Trump announces 2-week ceasefire brokered by Pakistan PM Sharif + FM Munir. Iran SNSC accepts via Araghchi.",
+      "event_fa": "ترامپ آتش‌بس دو هفته‌ای را اعلام کرد. شورای عالی امنیت ملی ایران از طریق عراقچی پذیرفت.",
+      "participants": [
+        "Trump",
+        "Pakistan PM Sharif",
+        "FM Munir",
+        "Araghchi"
+      ],
+      "outcome": "breakthrough",
+      "significance": 10
+    },
+    {
+      "date": "Apr 08",
+      "cfDay": 1,
+      "event": "Islamabad peace talks announced for Friday Apr 11. VP Vance to lead US delegation.",
+      "event_fa": "مذاکرات صلح اسلام‌آباد برای جمعه ۱۱ آوریل اعلام شد. وایس پنس وانس هیئت آمریکا را رهبری خواهد کرد.",
+      "participants": [
+        "VP Vance",
+        "Witkoff",
+        "Kushner",
+        "Pakistan PM Sharif"
+      ],
+      "outcome": "scheduled",
+      "significance": 7
+    },
+    {
+      "date": "Apr 09",
+      "cfDay": 2,
+      "event": "Talks reportedly delayed to Saturday Apr 12. Iran delegation composition unclear.",
+      "event_fa": "مذاکرات ظاهراً به شنبه ۱۲ آوریل موکول شد. ترکیب هیئت ایران نامشخص است.",
+      "participants": [
+        "VP Vance",
+        "Witkoff"
+      ],
+      "outcome": "delayed",
+      "significance": 5
+    }
+  ],
+  "ceasefireEconomicRecovery": {
+    "labels": [
+      "Apr 08",
+      "Apr 09"
+    ],
+    "hormuzDaily": [
+      8,
+      10
+    ],
+    "hormuzPreWar": 135,
+    "brentPreCeasefire": 109,
+    "brentDaily": [
+      95.8,
+      97.39
+    ],
+    "shipsStranded": [
+      800,
+      790
+    ],
+    "note": "Hormuz partially reopening. Mine clearance underway. Insurance premiums dropping."
+  },
+  "ceasefirePostConflictTree": {
+    "branchExtend": [
+      {
+        "step": "2-week extension announced",
+        "timeline": "Apr 21",
+        "probability": 35,
+        "detail": "Most likely if framework but no final agreement. Pakistan mediates."
+      },
+      {
+        "step": "Hormuz partial reopening",
+        "timeline": "+1 week",
+        "detail": "30+ vessels/day target. Mine clearance ongoing."
+      },
+      {
+        "step": "Oil stabilizes -90",
+        "timeline": "+2 weeks",
+        "detail": "War premium unwinds further."
+      }
+    ],
+    "branchDeal": [
+      {
+        "step": "Framework agreement signed",
+        "timeline": "Apr 12-21",
+        "probability": 20,
+        "detail": "Requires NPT/sanctions breakthrough at Islamabad."
+      },
+      {
+        "step": "Full Hormuz reopening",
+        "timeline": "+1 month",
+        "detail": "Mine clearance, insurance normalization, escorts resume."
+      },
+      {
+        "step": "Sanctions relief begins",
+        "timeline": "+3 months",
+        "detail": "Phased, tied to IAEA verification."
+      }
+    ],
+    "branchCollapse": [
+      {
+        "step": "Iran or US resumes strikes",
+        "timeline": "Apr 21+",
+        "probability": 30,
+        "detail": "Immediate return to pre-ceasefire dynamics. Worse — broken trust amplifies."
+      },
+      {
+        "step": "Power grid strikes resume",
+        "timeline": "+1-2 days",
+        "detail": "Trump deadline reactivates. \"ALL HELL\" scenario."
+      },
+      {
+        "step": "Oil spikes to -140",
+        "timeline": "+1 week",
+        "detail": "Worse than before — broken ceasefire = higher risk premium."
+      }
+    ],
+    "branchStalled": [
+      {
+        "step": "Ceasefire holds but no progress",
+        "timeline": "Apr 14-21",
+        "probability": 15,
+        "detail": "Talks stall, Hormuz slow, both sides posturing."
+      },
+      {
+        "step": "Low-level violations mount",
+        "timeline": "ongoing",
+        "detail": "Israel-Lebanon, Houthi, border incidents."
+      },
+      {
+        "step": "Deadline approaches with no deal",
+        "timeline": "Apr 18-21",
+        "detail": "Tension builds. Markets re-price war risk."
       }
     ]
   }
