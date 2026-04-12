@@ -3109,6 +3109,7 @@
     "label_fa": "پایان آتش‌بس ۲۱ آوریل",
     "context": "Trump-Iran 2-week ceasefire announced Apr 7 (Pakistan-brokered). Islamabad talks Apr 11-12 COLLAPSED after 21-hour marathon — Iran refused nuclear weapons commitment. Vance walked out. No new talks scheduled. Ceasefire technically holding but diplomatically dead. 9 days to expiry. Primary collapse risks: automatic expiry, Israel Lebanon escalation, Hormuz naval confrontation, no diplomatic pathway.",
     "context_fa": "آتش‌بس ۲ هفته‌ای ۷ آوریل. مذاکرات اسلام‌آباد ۱۱-۱۲ آوریل شکست — ایران رد تعهد هسته‌ای. ونس خارج شد. مذاکرات جدید نیست. ۹ روز تا پایان.",
+    "extensions": 0,
     "branchIfDeal": [
       {
         "step": "Partial ceasefire announced",

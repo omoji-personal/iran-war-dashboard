@@ -73,12 +73,17 @@
           <span class="prob-pct" id="cfStabilityScore"></span>
         </div>
         <div class="prob-track"><div class="prob-bar" id="cfProbBar"></div></div>
+        <div class="prob-meta"><span id="cfConfidenceRange" style="font-size:11px;color:var(--muted)"></span></div>
         <div class="prob-meta"><span id="cfStabilityRaw"></span></div>
       </div>
       <div class="grid cols-2" style="margin-top:16px;gap:16px">
         <div>
           <div class="sub" style="margin-bottom:8px;font-weight:700;color:var(--text)">Stability factors:</div>
           <div id="cfStabilityFactors"></div>
+          <div style="margin-top:12px">
+            <div class="sub" style="margin-bottom:8px;font-weight:700;color:var(--text)">Ceasefire holds when:</div>
+            <div id="cfConditions"></div>
+          </div>
         </div>
         <div>
           <div class="sub" style="margin-bottom:8px;font-weight:700;color:var(--text)">What happens after Apr 21?</div>
@@ -93,7 +98,7 @@
       <div class="panel">
         <div class="kicker" style="color:var(--cyan)">Ceasefire countdown</div>
         <div id="cfCountdown" style="font-size:42px;font-weight:900;margin:8px 0;color:var(--cyan)"></div>
-        <div class="sub">Ceasefire Day <strong id="cfDayNum"></strong> of 14</div>
+        <div class="sub">Ceasefire Day <strong id="cfDayNum"></strong> of <span id="cfTotalDays">14</span><span id="cfExtensionNote"></span></div>
         <div class="prob-track" style="margin:12px 0"><div class="prob-bar" id="cfProgressBar" style="background:var(--cyan)"></div></div>
         <div id="cfCountdownContext" class="sub"></div>
       </div>
@@ -117,6 +122,7 @@
     <section class="panel" style="margin-top:16px" data-mode="ceasefire">
       <h3>Ceasefire violation tracker</h3>
       <div class="sub">Incidents, severity, and attribution since Apr 7.</div>
+      <div id="cfViolationSummary" style="margin-bottom:12px"></div>
       <div class="chart-box" style="height:280px"><canvas id="cfViolationChart"></canvas></div>
       <div id="cfViolationList" style="margin-top:12px"></div>
     </section>
@@ -129,6 +135,7 @@
     </section>
 
     <!-- CF. Economic Recovery -->
+    <div id="cfRecoverySummary" data-mode="ceasefire"></div>
     <section class="grid cols-2" style="margin-top:16px" data-mode="ceasefire">
       <div class="panel">
         <h3>Hormuz reopening progress</h3>

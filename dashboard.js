@@ -813,6 +813,11 @@ function getCeasefireDay(dayIdx) {
   return dayIdx - startIdx + 1; // Apr 7 (idx 38) = CF Day 1
 }
 
+// Smooth sigmoid for continuous thresholds (replaces binary cliff effects)
+function cfSigmoid(x, midpoint, steepness) {
+  return 1 / (1 + Math.exp(-steepness * (x - midpoint)));
+}
+
 function computeCeasefireForDay(dayIdx) {
   var de = state.decisionEngine || {};
   var di = de.dailyIndicators || {};
@@ -845,21 +850,26 @@ function computeCeasefireForDay(dayIdx) {
   var oilSignal = oilDelta < -10 ? 0.15 : oilDelta < 0 ? 0.08 : 0;
   var diplomaticBoost = diplomatic / 10 * 0.2;
   var proxyPenalty = proxyEsc / 10 * 0.15;
-  var timeDecay = daysRemaining < 3 ? 0.1 : 0;
+  // Smooth time pressure: ramps from 0 at 7+ days to 0.15 at 0 days
+  var timeDecay = Math.max(0, 0.15 * cfSigmoid(7 - daysRemaining, 3, 1.0));
 
   var stabilityBase = 0.5 + mediatorBoost + hormuzSignal + oilSignal + diplomaticBoost
                       - violationPenalty - proxyPenalty - timeDecay;
   var pHolds = Math.max(0.05, Math.min(0.95, stabilityBase));
 
-  // === P(EXTENDED) — conditional on holding ===
-  var extensionSignals = (mediator >= 7 ? 0.2 : 0) + (diplomatic >= 6 ? 0.15 : 0)
-                        + (hormuzPct >= 30 ? 0.1 : 0) + (usPolitical >= 6 ? 0.1 : 0);
+  // === P(EXTENDED) — smooth sigmoid thresholds ===
+  var extensionSignals = cfSigmoid(mediator, 7, 1.5) * 0.2
+                       + cfSigmoid(diplomatic, 6, 1.5) * 0.15
+                       + cfSigmoid(hormuzPct, 30, 0.1) * 0.1
+                       + cfSigmoid(usPolitical, 6, 1.5) * 0.1;
   var pExtended = pHolds * Math.min(0.7, extensionSignals + 0.15);
 
-  // === P(PERMANENT DEAL) — conditional on holding ===
-  var dealSignals = (diplomatic >= 8 ? 0.15 : 0) + (mediator >= 8 ? 0.1 : 0)
-                   + (iranPolitical >= 6 ? 0.15 : 0) + (usPolitical >= 7 ? 0.1 : 0)
-                   + (hormuzPct >= 50 ? 0.1 : 0);
+  // === P(PERMANENT DEAL) — smooth sigmoid thresholds ===
+  var dealSignals = cfSigmoid(diplomatic, 8, 1.5) * 0.15
+                  + cfSigmoid(mediator, 8, 1.5) * 0.1
+                  + cfSigmoid(iranPolitical, 6, 1.5) * 0.15
+                  + cfSigmoid(usPolitical, 7, 1.5) * 0.1
+                  + cfSigmoid(hormuzPct, 50, 0.08) * 0.1;
   var pDeal = pHolds * Math.min(0.5, dealSignals + 0.05);
 
   // === P(COLLAPSE) ===
@@ -879,6 +889,39 @@ function computeCeasefireForDay(dayIdx) {
   var baseRateCf = cal.historicalCeasefireBaseRate || 50;
   var ensemble = Math.round(modelStability * 0.5 + marketStability * 0.3 + baseRateCf * 0.2);
 
+  // === BOTTLENECK: single factor most responsible for stability ===
+  var factorImpacts = [
+    { name: 'violations', impact: -violationPenalty, label: 'ceasefire violations' },
+    { name: 'proxy', impact: -proxyPenalty, label: 'proxy escalation (Israel-Lebanon)' },
+    { name: 'timeDecay', impact: -timeDecay, label: 'expiry deadline pressure' },
+    { name: 'mediator', impact: mediatorBoost, label: 'mediator engagement' },
+    { name: 'diplomatic', impact: diplomaticBoost, label: 'diplomatic signals' },
+    { name: 'hormuz', impact: hormuzSignal, label: 'Hormuz reopening progress' },
+    { name: 'oil', impact: oilSignal, label: 'oil price normalization' }
+  ];
+  factorImpacts.sort(function(a, b) { return Math.abs(b.impact) - Math.abs(a.impact); });
+  var bnf = factorImpacts[0];
+  var bottleneck = bnf.impact < 0
+    ? bnf.label + ' is the biggest drag on stability'
+    : bnf.label + ' is the primary pillar holding the ceasefire';
+
+  // === NARRATIVE: 1-sentence explanation ===
+  var stabPctStr = Math.round(pHolds * 100) + '%';
+  var narrative;
+  if (pHolds >= 0.6) {
+    narrative = 'Ceasefire is holding at ' + stabPctStr + ' stability. ' + bnf.label.charAt(0).toUpperCase() + bnf.label.slice(1) + ' is the key stabilizing factor.';
+  } else if (pHolds >= 0.4) {
+    narrative = 'Ceasefire is fragile at ' + stabPctStr + ' — ' + bottleneck + '. Collapse risk rising.';
+  } else {
+    narrative = 'Ceasefire at risk (' + stabPctStr + ') — ' + bottleneck + '. Collapse is the most likely outcome.';
+  }
+
+  // === CONFIDENCE BOUNDS: widen when model-market diverge ===
+  var modelMarketGap = Math.abs(modelStability - marketStability);
+  var halfWidth = Math.max(8, Math.round(modelMarketGap * 0.6 + 6));
+  var confidenceLow = Math.max(2, ensemble - halfWidth);
+  var confidenceHigh = Math.min(98, ensemble + halfWidth);
+
   return {
     cfDay: cfDay,
     daysRemaining: daysRemaining,
@@ -895,7 +938,18 @@ function computeCeasefireForDay(dayIdx) {
     hormuzSignal: hormuzSignal,
     oilSignal: oilSignal,
     diplomaticBoost: diplomaticBoost,
-    proxyPenalty: proxyPenalty
+    proxyPenalty: proxyPenalty,
+    timeDecay: timeDecay,
+    bottleneck: bottleneck,
+    bottleneckFactor: bnf.name,
+    narrative: narrative,
+    confidenceLow: confidenceLow,
+    confidenceHigh: confidenceHigh,
+    rawViolations: violations,
+    rawSeverity: severity,
+    rawMediator: mediator,
+    rawDiplomatic: diplomatic,
+    rawHormuzPct: hormuzPct
   };
 }
 
@@ -921,12 +975,20 @@ function renderCeasefireHero(dayOverride) {
     var statusText = eng.pHolds >= 0.6 ? 'Ceasefire holding' : eng.pHolds >= 0.4 ? 'Ceasefire fragile' : 'Ceasefire at risk';
     var statusColor = eng.pHolds >= 0.6 ? 'var(--cyan)' : eng.pHolds >= 0.4 ? 'var(--gold)' : 'var(--red)';
     statusEl.innerHTML = '<div style="font-size:24px;font-weight:900;color:' + statusColor + '">' + statusText + '</div>';
+    statusEl.innerHTML += '<div style="font-size:14px;color:var(--muted);margin-top:8px;line-height:1.5">' + esc(eng.narrative) + '</div>';
   }
 
   // Ensemble probability
   if ($('cfStabilityScore')) $('cfStabilityScore').textContent = eng.stabilityScore + '%';
   if ($('cfStabilityRaw')) {
-    $('cfStabilityRaw').textContent = 'Model: ' + eng.modelStability + '% | Market: ' + eng.marketStability + '% | Historical: 50%';
+    var modelColor = eng.modelStability >= 50 ? 'var(--cyan)' : 'var(--red)';
+    var marketColor = eng.marketStability >= 50 ? 'var(--cyan)' : 'var(--red)';
+    var gap = Math.abs(eng.modelStability - eng.marketStability);
+    var convText = gap <= 5 ? ' <span style="color:var(--cyan)">(converging)</span>' : gap >= 15 ? ' <span style="color:var(--red)">(DIVERGING)</span>' : '';
+    $('cfStabilityRaw').innerHTML = 'Model: <span style="color:' + modelColor + ';font-weight:700">' + eng.modelStability + '%</span> | Market: <span style="color:' + marketColor + ';font-weight:700">' + eng.marketStability + '%</span> | Historical: 50%' + convText;
+  }
+  if ($('cfConfidenceRange')) {
+    $('cfConfidenceRange').textContent = eng.confidenceLow + '% \u2013 ' + eng.confidenceHigh + '% range';
   }
   if ($('cfProbBar')) {
     $('cfProbBar').style.width = eng.stabilityScore + '%';
@@ -953,6 +1015,23 @@ function renderCeasefireHero(dayOverride) {
         '<div class="prob-track" style="height:6px"><div class="prob-bar" style="width:' + pct + '%;background:' + f.color + ';height:6px;border-radius:3px"></div></div></div>';
     });
     factorsEl.innerHTML = html;
+  }
+
+  // 3-condition breakdown
+  var condEl = $('cfConditions');
+  if (condEl) {
+    var conds = [
+      { label: 'Violations stay low', met: eng.violationPenalty < 0.15, detail: esc(eng.rawViolations) + ' violations, severity ' + esc(eng.rawSeverity) + '/10' },
+      { label: 'Mediators stay engaged', met: eng.mediatorBoost > 0.12, detail: 'Score ' + esc(eng.rawMediator) + '/10' },
+      { label: 'Economic recovery continues', met: eng.hormuzSignal > 0.05, detail: 'Hormuz at ' + esc(eng.rawHormuzPct) + '% of pre-war' }
+    ];
+    var condHtml = '';
+    conds.forEach(function(c) {
+      var icon = c.met ? '<span style="color:var(--cyan)">&#x2714;</span>' : '<span style="color:var(--red)">&#x2718;</span>';
+      condHtml += '<div style="display:flex;align-items:flex-start;gap:8px;margin-bottom:8px;font-size:13px">' +
+        icon + '<div><strong>' + esc(c.label) + '</strong><div style="font-size:11px;color:var(--muted)">' + c.detail + '</div></div></div>';
+    });
+    condEl.innerHTML = condHtml;
   }
 
   // Outcome breakdown
@@ -1047,9 +1126,20 @@ function renderCeasefireCountdown(dayOverride) {
     cfDeadlineInterval = setInterval(tickCf, 1000);
   }
 
+  // Compute total ceasefire days dynamically
+  var cfStartDate = new Date(parseDayDate(startIdx));
+  var totalCfDays = Math.round((deadline - cfStartDate) / 864e5);
+  var extensions = cd.extensions || 0;
+  if (extensions > 0) totalCfDays += extensions;
+  if (totalCfDays < 1) totalCfDays = 14; // fallback
+
   // Day counter + progress
   if ($('cfDayNum')) $('cfDayNum').textContent = cfDay;
-  if ($('cfProgressBar')) $('cfProgressBar').style.width = Math.round(Math.min(cfDay, 14) / 14 * 100) + '%';
+  if ($('cfTotalDays')) $('cfTotalDays').textContent = totalCfDays;
+  if ($('cfExtensionNote')) {
+    $('cfExtensionNote').innerHTML = extensions > 0 ? ' <span style="color:var(--cyan);font-size:11px">(+' + extensions + ' extension)</span>' : '';
+  }
+  if ($('cfProgressBar')) $('cfProgressBar').style.width = Math.round(Math.min(cfDay, totalCfDays) / totalCfDays * 100) + '%';
 
   // Context
   if ($('cfCountdownContext')) {
@@ -1059,27 +1149,152 @@ function renderCeasefireCountdown(dayOverride) {
   }
 }
 
-function renderPostConflictTree() {
+function renderPostConflictTree(dayOverride) {
   var tree = state.ceasefirePostConflictTree || {};
+  var labels = (state.dailySeries || {}).labels || [];
+  var maxDay = labels.length;
+  var dayIdx = (typeof dayOverride === 'number') ? dayOverride : maxDay - 1;
 
-  function renderBranch(items, elId) {
+  var eng = computeCeasefireForDay(dayIdx);
+  var prevEng = dayIdx > 0 ? computeCeasefireForDay(dayIdx - 1) : null;
+
+  // Branch-to-engine probability map (first item in each branch gets overridden)
+  var branchProbs = {
+    branchExtend: eng ? Math.round(eng.pExtended * 100) : null,
+    branchDeal: eng ? Math.round(eng.pDeal * 100) : null,
+    branchCollapse: eng ? Math.round(eng.pCollapse * 100) : null,
+    branchStalled: eng ? Math.round(eng.pHoldsNoProgress * 100) : null
+  };
+  var prevBranchProbs = {
+    branchExtend: prevEng ? Math.round(prevEng.pExtended * 100) : null,
+    branchDeal: prevEng ? Math.round(prevEng.pDeal * 100) : null,
+    branchCollapse: prevEng ? Math.round(prevEng.pCollapse * 100) : null,
+    branchStalled: prevEng ? Math.round(prevEng.pHoldsNoProgress * 100) : null
+  };
+
+  // Find highest probability branch for gold highlight
+  var maxProb = 0;
+  var maxBranch = '';
+  Object.keys(branchProbs).forEach(function(k) {
+    if (branchProbs[k] !== null && branchProbs[k] > maxProb) { maxProb = branchProbs[k]; maxBranch = k; }
+  });
+
+  function renderBranch(items, elId, branchKey) {
     var el = $(elId);
     if (!el || !items || !items.length) return;
+    var isHighest = branchKey === maxBranch || (items.length > 0 && branchKey.indexOf(maxBranch) >= 0);
     var html = '';
-    items.forEach(function(item) {
-      var probTag = item.probability ? ' <span style="color:var(--gold);font-weight:700">(' + item.probability + '%)</span>' : '';
-      html += '<div class="tl-item partial"><strong>' + item.step + '</strong>' + probTag +
-        '<br><span style="color:var(--muted);font-size:12px">' + item.timeline + '</span>' +
-        '<br><span style="font-size:12px">' + item.detail + '</span></div>';
+    items.forEach(function(item, idx) {
+      var prob = item.probability;
+      var deltaStr = '';
+      // Override first item probability with engine value
+      if (idx === 0 && branchProbs[branchKey] !== null) {
+        var prevProb = prevBranchProbs[branchKey];
+        prob = branchProbs[branchKey];
+        if (prevProb !== null) {
+          var delta = prob - prevProb;
+          if (delta > 0) deltaStr = ' <span style="color:var(--cyan);font-size:11px">\u2191' + delta + 'pp</span>';
+          else if (delta < 0) deltaStr = ' <span style="color:var(--red);font-size:11px">\u2193' + Math.abs(delta) + 'pp</span>';
+        }
+      }
+      var probTag = prob != null ? ' <span style="color:var(--gold);font-weight:700">(' + esc(prob) + '%)</span>' + deltaStr : '';
+      var borderStyle = (idx === 0 && isHighest) ? 'border-left:3px solid var(--gold);' : '';
+      html += '<div class="tl-item partial" style="' + borderStyle + '"><strong>' + esc(item.step) + '</strong>' + probTag +
+        '<br><span style="color:var(--muted);font-size:12px">' + esc(item.timeline) + '</span>' +
+        '<br><span style="font-size:12px">' + esc(item.detail) + '</span></div>';
     });
     el.innerHTML = html;
   }
 
   // Combine extend + deal on left, collapse + stalled on right
-  var extendDeal = (tree.branchExtend || []).concat(tree.branchDeal || []);
-  var collapseStall = (tree.branchCollapse || []).concat(tree.branchStalled || []);
-  renderBranch(extendDeal, 'cfBranchExtend');
-  renderBranch(collapseStall, 'cfBranchCollapse');
+  // Render each sub-branch with its own key so probabilities map correctly
+  var extendItems = tree.branchExtend || [];
+  var dealItems = tree.branchDeal || [];
+  var collapseItems = tree.branchCollapse || [];
+  var stalledItems = tree.branchStalled || [];
+
+  // For combined branches, render the first sub-branch with its key, then append
+  var extendEl = $('cfBranchExtend');
+  if (extendEl) {
+    var html = '';
+    // Extend items
+    extendItems.forEach(function(item, idx) {
+      var prob = item.probability;
+      var deltaStr = '';
+      if (idx === 0 && branchProbs.branchExtend !== null) {
+        prob = branchProbs.branchExtend;
+        if (prevBranchProbs.branchExtend !== null) {
+          var d = prob - prevBranchProbs.branchExtend;
+          if (d > 0) deltaStr = ' <span style="color:var(--cyan);font-size:11px">\u2191' + d + 'pp</span>';
+          else if (d < 0) deltaStr = ' <span style="color:var(--red);font-size:11px">\u2193' + Math.abs(d) + 'pp</span>';
+        }
+      }
+      var probTag = prob != null ? ' <span style="color:var(--gold);font-weight:700">(' + esc(prob) + '%)</span>' + deltaStr : '';
+      var borderStyle = (idx === 0 && maxBranch === 'branchExtend') ? 'border-left:3px solid var(--gold);' : '';
+      html += '<div class="tl-item partial" style="' + borderStyle + '"><strong>' + esc(item.step) + '</strong>' + probTag +
+        '<br><span style="color:var(--muted);font-size:12px">' + esc(item.timeline) + '</span>' +
+        '<br><span style="font-size:12px">' + esc(item.detail) + '</span></div>';
+    });
+    // Deal items
+    dealItems.forEach(function(item, idx) {
+      var prob = item.probability;
+      var deltaStr = '';
+      if (idx === 0 && branchProbs.branchDeal !== null) {
+        prob = branchProbs.branchDeal;
+        if (prevBranchProbs.branchDeal !== null) {
+          var d = prob - prevBranchProbs.branchDeal;
+          if (d > 0) deltaStr = ' <span style="color:var(--cyan);font-size:11px">\u2191' + d + 'pp</span>';
+          else if (d < 0) deltaStr = ' <span style="color:var(--red);font-size:11px">\u2193' + Math.abs(d) + 'pp</span>';
+        }
+      }
+      var probTag = prob != null ? ' <span style="color:var(--gold);font-weight:700">(' + esc(prob) + '%)</span>' + deltaStr : '';
+      var borderStyle = (idx === 0 && maxBranch === 'branchDeal') ? 'border-left:3px solid var(--gold);' : '';
+      html += '<div class="tl-item partial" style="' + borderStyle + '"><strong>' + esc(item.step) + '</strong>' + probTag +
+        '<br><span style="color:var(--muted);font-size:12px">' + esc(item.timeline) + '</span>' +
+        '<br><span style="font-size:12px">' + esc(item.detail) + '</span></div>';
+    });
+    extendEl.innerHTML = html;
+  }
+
+  var collapseEl = $('cfBranchCollapse');
+  if (collapseEl) {
+    var html2 = '';
+    collapseItems.forEach(function(item, idx) {
+      var prob = item.probability;
+      var deltaStr = '';
+      if (idx === 0 && branchProbs.branchCollapse !== null) {
+        prob = branchProbs.branchCollapse;
+        if (prevBranchProbs.branchCollapse !== null) {
+          var d = prob - prevBranchProbs.branchCollapse;
+          if (d > 0) deltaStr = ' <span style="color:var(--cyan);font-size:11px">\u2191' + d + 'pp</span>';
+          else if (d < 0) deltaStr = ' <span style="color:var(--red);font-size:11px">\u2193' + Math.abs(d) + 'pp</span>';
+        }
+      }
+      var probTag = prob != null ? ' <span style="color:var(--gold);font-weight:700">(' + esc(prob) + '%)</span>' + deltaStr : '';
+      var borderStyle = (idx === 0 && maxBranch === 'branchCollapse') ? 'border-left:3px solid var(--gold);' : '';
+      html2 += '<div class="tl-item partial" style="' + borderStyle + '"><strong>' + esc(item.step) + '</strong>' + probTag +
+        '<br><span style="color:var(--muted);font-size:12px">' + esc(item.timeline) + '</span>' +
+        '<br><span style="font-size:12px">' + esc(item.detail) + '</span></div>';
+    });
+    stalledItems.forEach(function(item, idx) {
+      var prob = item.probability;
+      var deltaStr = '';
+      if (idx === 0 && branchProbs.branchStalled !== null) {
+        prob = branchProbs.branchStalled;
+        if (prevBranchProbs.branchStalled !== null) {
+          var d = prob - prevBranchProbs.branchStalled;
+          if (d > 0) deltaStr = ' <span style="color:var(--cyan);font-size:11px">\u2191' + d + 'pp</span>';
+          else if (d < 0) deltaStr = ' <span style="color:var(--red);font-size:11px">\u2193' + Math.abs(d) + 'pp</span>';
+        }
+      }
+      var probTag = prob != null ? ' <span style="color:var(--gold);font-weight:700">(' + esc(prob) + '%)</span>' + deltaStr : '';
+      var borderStyle = (idx === 0 && maxBranch === 'branchStalled') ? 'border-left:3px solid var(--gold);' : '';
+      html2 += '<div class="tl-item partial" style="' + borderStyle + '"><strong>' + esc(item.step) + '</strong>' + probTag +
+        '<br><span style="color:var(--muted);font-size:12px">' + esc(item.timeline) + '</span>' +
+        '<br><span style="font-size:12px">' + esc(item.detail) + '</span></div>';
+    });
+    collapseEl.innerHTML = html2;
+  }
 }
 
 function renderViolationTracker() {
@@ -1089,6 +1304,38 @@ function renderViolationTracker() {
   var cfSeverity = di.cfViolationSeverity || [];
   var startIdx = (state.ceasefireStartIdx || CEASEFIRE_START_IDX) - 1;
 
+  // Scope summary
+  var summaryEl = $('cfViolationSummary');
+  if (summaryEl) {
+    var scopeCounts = { yes: 0, disputed: 0, other: 0 };
+    violations.forEach(function(day) {
+      (day.incidents || []).forEach(function(inc) {
+        var s = (inc.withinScope || 'other').toLowerCase();
+        if (s === 'yes') scopeCounts.yes++;
+        else if (s === 'disputed') scopeCounts.disputed++;
+        else scopeCounts.other++;
+      });
+    });
+    // Trend: compare last 2-3 days of violation counts
+    var recentCounts = [];
+    for (var t = Math.max(startIdx, cfViolations.length - 3); t < cfViolations.length; t++) {
+      if (cfViolations[t] != null) recentCounts.push(cfViolations[t]);
+    }
+    var trendStr = '';
+    if (recentCounts.length >= 2) {
+      var last = recentCounts[recentCounts.length - 1];
+      var prev = recentCounts[recentCounts.length - 2];
+      if (last > prev) trendStr = ' <span style="color:var(--red)">\u2191 Rising</span>';
+      else if (last < prev) trendStr = ' <span style="color:var(--cyan)">\u2193 Declining</span>';
+      else trendStr = ' <span style="color:var(--gold)">\u2192 Stable</span>';
+    }
+    summaryEl.innerHTML = '<div style="display:flex;gap:16px;flex-wrap:wrap;font-size:12px;color:var(--muted)">' +
+      '<span>Within scope: <strong style="color:var(--cyan)">' + scopeCounts.yes + '</strong></span>' +
+      '<span>Disputed: <strong style="color:var(--gold)">' + scopeCounts.disputed + '</strong></span>' +
+      '<span>Other: <strong style="color:var(--red)">' + scopeCounts.other + '</strong></span>' +
+      '<span>Trend:' + trendStr + '</span></div>';
+  }
+
   // Chart
   kill('cfViolation');
   var canvas = $('cfViolationChart');
@@ -1096,28 +1343,50 @@ function renderViolationTracker() {
     var labels = [];
     var counts = [];
     var colors = [];
+    var cumSeverity = [];
+    var runningSum = 0;
     for (var i = startIdx; i < cfViolations.length; i++) {
       if (cfViolations[i] === null) continue;
       labels.push('CF Day ' + (i - startIdx + 1));
       counts.push(cfViolations[i] || 0);
       var sev = cfSeverity[i] || 0;
+      runningSum += sev;
+      cumSeverity.push(runningSum);
       colors.push(sev >= 7 ? '#ff6b6b' : sev >= 4 ? '#ff9f43' : sev > 0 ? '#ffd166' : '#46d7b0');
     }
     charts.cfViolation = new Chart(canvas, {
       type: 'bar',
       data: {
         labels: labels,
-        datasets: [{
-          label: 'Violations',
-          data: counts,
-          backgroundColor: colors,
-          borderRadius: 4
-        }]
+        datasets: [
+          {
+            label: 'Violations',
+            data: counts,
+            backgroundColor: colors,
+            borderRadius: 4,
+            yAxisID: 'y'
+          },
+          {
+            label: 'Cumulative severity',
+            data: cumSeverity,
+            type: 'line',
+            borderColor: '#b084ff',
+            backgroundColor: 'rgba(176,132,255,.1)',
+            fill: false,
+            tension: 0.3,
+            pointRadius: 3,
+            yAxisID: 'y1'
+          }
+        ]
       },
       options: {
         responsive: true, maintainAspectRatio: false,
-        scales: { y: { beginAtZero: true, ticks: { color: '#9eb5d0' }, grid: { color: 'rgba(41,65,95,.3)' } }, x: { ticks: { color: '#9eb5d0' }, grid: { display: false } } },
-        plugins: { legend: { display: false } }
+        scales: {
+          y: { beginAtZero: true, position: 'left', ticks: { color: '#9eb5d0' }, grid: { color: 'rgba(41,65,95,.3)' }, title: { display: true, text: 'Violations', color: '#9eb5d0' } },
+          y1: { beginAtZero: true, position: 'right', ticks: { color: '#b084ff' }, grid: { display: false }, title: { display: true, text: 'Cumul. severity', color: '#b084ff' } },
+          x: { ticks: { color: '#9eb5d0' }, grid: { display: false } }
+        },
+        plugins: { legend: { labels: { color: '#9eb5d0', font: { size: 11 } } } }
       }
     });
   }
@@ -1155,20 +1424,55 @@ function renderNegotiationTracker() {
   var el = $('cfNegotiationTimeline');
   if (!el) return;
 
-  var html = '';
+  var roleMap = {
+    'Trump': 'US President',
+    'VP Vance': 'US VP/Lead',
+    'Witkoff': 'US Envoy',
+    'Kushner': 'US Advisor',
+    'Ghalibaf': 'Iran Speaker',
+    'Araghchi': 'Iran FM',
+    'Pakistan PM Sharif': 'Mediator',
+    'FM Munir': 'Mediator'
+  };
+
+  // Summary card: show latest event status
+  var summaryHtml = '';
+  if (negotiations.length) {
+    var latest = negotiations[negotiations.length - 1];
+    var statusBadge = (latest.outcome || 'scheduled').toUpperCase().replace(/_/g, ' ');
+    var badgeColor = 'var(--gold)';
+    var oc = (latest.outcome || '').toLowerCase();
+    if (oc === 'collapsed' || oc === 'negative') badgeColor = 'var(--red)';
+    else if (oc === 'breakthrough') badgeColor = 'var(--cyan)';
+    else if (oc === 'in_progress') badgeColor = 'var(--blue)';
+    var keyGap = latest.keyGap || '';
+    summaryHtml = '<div style="border:1px solid var(--border);border-radius:14px;padding:14px;margin-bottom:14px;background:rgba(255,255,255,.02)">' +
+      '<div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:6px">' +
+      '<span style="font-weight:700;font-size:14px">Latest: ' + esc(latest.date) + '</span>' +
+      '<span style="background:' + badgeColor + ';color:#fff;padding:3px 10px;border-radius:999px;font-size:11px;font-weight:800">' + esc(statusBadge) + '</span></div>' +
+      (keyGap ? '<div style="font-size:12px;color:var(--muted)">Key gap: ' + esc(keyGap) + '</div>' : '') +
+      '</div>';
+  }
+
+  var html = summaryHtml;
   negotiations.forEach(function(evt) {
     var dotClass = evt.outcome || 'scheduled';
     var eventText = currentLang === 'fa' && evt.event_fa ? evt.event_fa : evt.event;
+    // Map participants to roles
+    var partDisplay = (evt.participants || []).map(function(p) {
+      var role = roleMap[p];
+      return role ? esc(p) + ' <span style="color:var(--soft);font-size:10px">(' + esc(role) + ')</span>' : esc(p);
+    }).join(', ');
     html += '<div class="nego-event">' +
-      '<div class="nego-dot ' + dotClass + '"></div>' +
+      '<div class="nego-dot ' + esc(dotClass) + '"></div>' +
       '<div style="flex:1">' +
       '<div style="display:flex;justify-content:space-between;align-items:baseline">' +
       '<strong style="font-size:13px">' + esc(evt.date) + ' (CF Day ' + esc(evt.cfDay) + ')</strong>' +
-      '<span style="font-size:11px;color:var(--muted)">' + esc((evt.participants || []).join(', ')) + '</span></div>' +
+      '<span style="font-size:11px;color:var(--muted)">' + partDisplay + '</span></div>' +
       '<div style="font-size:13px;margin-top:4px">' + esc(eventText) + '</div>' +
       '</div></div>';
   });
-  if (!html) html = '<div style="color:var(--muted);font-style:italic">No events recorded yet.</div>';
+  if (!negotiations.length) html += '<div style="color:var(--muted);font-style:italic">No events recorded yet.</div>';
   el.innerHTML = html;
 }
 
@@ -1176,6 +1480,34 @@ function renderCeasefireRecovery() {
   var rec = state.ceasefireEconomicRecovery || {};
   var labels = rec.labels || [];
   if (!labels.length) return;
+
+  // Recovery metrics summary
+  var sumEl = $('cfRecoverySummary');
+  if (sumEl) {
+    var hormuzData = rec.hormuzDaily || [];
+    var preWar = rec.hormuzPreWar || 135;
+    var latestVessels = hormuzData.length ? hormuzData[hormuzData.length - 1] : 0;
+    var prevVessels = hormuzData.length >= 2 ? hormuzData[hormuzData.length - 2] : latestVessels;
+    var recoveryRate = latestVessels - prevVessels;
+    var rateStr = (recoveryRate >= 0 ? '+' : '') + recoveryRate.toFixed(1);
+    var daysToNormal = recoveryRate > 0 ? Math.ceil((preWar - latestVessels) / recoveryRate) : 0;
+    var daysToNormalStr = daysToNormal > 0 && daysToNormal < 999 ? esc(daysToNormal) + ' days' : 'N/A';
+    var stranded = rec.shipsStranded || 0;
+    sumEl.innerHTML = '<div style="display:grid;grid-template-columns:repeat(4,1fr);gap:12px;margin-top:16px">' +
+      '<div style="border:1px solid var(--border);border-radius:14px;padding:12px;background:rgba(255,255,255,.02);text-align:center">' +
+        '<div style="font-size:22px;font-weight:800;color:var(--cyan)">' + esc(latestVessels) + '</div>' +
+        '<div style="font-size:11px;color:var(--muted)">Vessels/day</div></div>' +
+      '<div style="border:1px solid var(--border);border-radius:14px;padding:12px;background:rgba(255,255,255,.02);text-align:center">' +
+        '<div style="font-size:22px;font-weight:800;color:' + (recoveryRate >= 0 ? 'var(--cyan)' : 'var(--red)') + '">' + esc(rateStr) + '</div>' +
+        '<div style="font-size:11px;color:var(--muted)">Recovery rate/day</div></div>' +
+      '<div style="border:1px solid var(--border);border-radius:14px;padding:12px;background:rgba(255,255,255,.02);text-align:center">' +
+        '<div style="font-size:22px;font-weight:800;color:var(--gold)">' + daysToNormalStr + '</div>' +
+        '<div style="font-size:11px;color:var(--muted)">To normalization</div></div>' +
+      '<div style="border:1px solid var(--border);border-radius:14px;padding:12px;background:rgba(255,255,255,.02);text-align:center">' +
+        '<div style="font-size:22px;font-weight:800;color:var(--orange)">' + esc(stranded) + '</div>' +
+        '<div style="font-size:11px;color:var(--muted)">Ships stranded</div></div>' +
+      '</div>';
+  }
 
   // Hormuz recovery chart
   kill('cfHormuzRecovery');
@@ -2401,6 +2733,7 @@ function updateMetricsForDay(day) {
   if (currentMode === 'ceasefire') {
     renderCeasefireHero(idx);
     renderCeasefireCountdown(isLive ? undefined : idx);
+    renderPostConflictTree(idx);
   }
 
   // If live day, recompute from dailySeries (not stale JSON strings)

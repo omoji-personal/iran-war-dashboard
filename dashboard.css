@@ -912,6 +912,8 @@ body.ceasefire-mode [data-mode="war"] { display: none !important; }
 .nego-dot.scheduled { background: var(--gold); }
 .nego-dot.delayed { background: var(--orange); }
 .nego-dot.negative { background: var(--red); }
+.nego-dot.collapsed { background: var(--red); }
+.nego-dot.in_progress { background: var(--blue); }
 
 /* Scrubber ceasefire marker */
 .scrubber-wrap { position: relative; }
