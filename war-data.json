@@ -1,6 +1,6 @@
 {
   "meta": {
-    "lastUpdated": "2026-04-09T12:00:00-04:00",
+    "lastUpdated": "2026-04-12T22:00:00-04:00",
     "preWarBaselines": {
       "d1Missiles": 480,
       "preWarOil": 65,
@@ -8,6 +8,7 @@
       "preWarGas": 3
     },
     "notes": [
+      "D44 EVENING (Apr 12 22:00 ET): TALKS COLLAPSED. Iran refused to commit to forgoing nuclear weapons. Vance left Islamabad with no deal. Ghalibaf blamed US. Polymarket ceasefire markets in dispute. Oil rising on collapse — Brent ~$98.50. Hormuz effectively re-closed by Iran — $1M+ tolls, ~5 vessels/day. Internet 1056+ hrs. Lebanon strikes continued (Israel rejected ceasefire with Hezbollah). US warships attempted Hormuz transit Apr 11, Iran issued 'last warning.' Ceasefire technically holding in Gulf but diplomatically dead.",
       "D41 MIDDAY (Apr 09 12:00 ET): CEASEFIRE FRAGILE — LEBANON FRACTURE POINT. Iran accuses US of ceasefire violation over Israel's 100+ site Lebanon strikes (254+ killed Apr 9 per AJ). IRGC threatens to re-block Hormuz. Parliament speaker warns 'STRONG responses.' Iran considering pulling out of deal. BUT zero Iranian attacks D41 — ceasefire holding on Iran side. Oil rebounding: Brent ~$97.39 (up from $95.80). WTI ~$93.50. Hormuz still mostly blocked: 'negligible' traffic per Bloomberg, 800+ ships stranded, ~5-10/day vs 135 normal. Talks MOVED to Saturday Apr 12 Islamabad — VP Vance + Witkoff + Kushner delegation. Houthis attacked Maersk Yorktown (US-flagged) + Hope Island + MSC Grace F + MSC Gina + 2 US frigates. HRANA: 3,636 deaths. Hengaw: 6,620 military. Lebanon: 1,784+ killed, 5,977 wounded. Internet 984+ hrs.",
       "D40 MORNING (Apr 08 09:05 ET): CEASEFIRE HOLDING. 2-week US-Iran truce in effect from overnight. Iran reopening Strait of Hormuz under armed-forces coordination; first tankers transiting. Brent -$13 to ~$95.80 (war premium unwinding). Islamabad talks Friday Apr 10 — VP Vance leading US, Pakistan PM Sharif + FM Munir mediating. Residual Gulf attacks (UAE/Bahrain/Kuwait) in early hours before stand-down. Israel still active in Lebanon (explicitly excluded from ceasefire). Trump: 'no enrichment' — will 'dig out nuclear dust.'",
       "Source hierarchy: CNN/NBC/NPR/CBS/Axios/Bloomberg/Al Jazeera/Times of Israel/Reuters live blogs Apr 07-08 2026. Brent via oilpriceapi/Fortune Apr 08.",
@@ -17,13 +18,13 @@
       "D39 DEADLINE DAY - TRUMP 8PM ET ULTIMATUM (~22 HRS): Iran rejected 15-pt Islamabad Accord; counteroffered 10-pt maximalist (permanent end, sanctions lift, reconstruction, NPT enrichment, Hormuz toll). Trump: 'significant but not good enough' - REFUSES to extend. 'Power Plant Day and Bridge Day wrapped up in one.' IRGC: 'helpless, nervous, stupid.' Khademi (IRGC Intel No.2) + Bagheri (Quds) killed in joint US-Israel strike. South Pars petrochem struck. F-15E WSO rescued by Delta/SEAL/CIA after 24hrs. Hormuz: 13 vessels/week transit (trickle, northern channel, Iran toll). Brent $109-111. WTI ~$108. AAA $4.119 (+$0.80/mo). HRANA 3,540+ killed (1,616 civilians, 244+ children). Internet 960+ hrs. Polymarket: ceasefire by Dec 31 = 76%; conflict-ends by Dec 31 = 85%. P(Trump follow-through) = 0.22 (up from 0.18). Scenarios: escalation 37% / attrition 28% / victory 13% / deal 12% / intervention 7% / fracture 3%."
     ]
   },
-  "theoryBox": "<strong>Day 41 (Apr 09) — CEASEFIRE FRAGILE, LEBANON FRACTURE:</strong> Ceasefire Day 3 holding on Iran side (0 attacks) but FRACTURING over Israel's massive Lebanon strikes (100+ sites, 254+ killed). Iran accuses US of ceasefire violation. IRGC threatens Hormuz re-block. Parliament: 'STRONG responses.' Hormuz still mostly blocked (~5-10/day vs 135 normal, 800+ stranded). Brent rebounding ~$97.39. Talks moved to Saturday Apr 12 (Vance+Witkoff+Kushner). HRANA 3,636. Lebanon 1,784+ killed. Internet 984+ hrs. Houthis active (Maersk Yorktown targeted). Scenarios: deal 42% / ceasefire collapse 28% / attrition 15% / victory 8% / intervention 5% / fracture 2%.",
-  "theoryBox_fa": "<strong>Day 41 (۹ آوریل) — آتش‌بس شکننده، شکاف لبنان:</strong> آتش‌بس روز ۳ از طرف ایران برقرار (۰ حمله) اما لبنان نقطه شکست. اسرائیل ۱۰۰+ سایت، ۲۵۴+ کشته. ایران اتهام نقض. سپاه تهدید هرمز. مجلس: 'پاسخ محکم.' هرمز ~۵-۱۰/روز. برنت $۹۷.۳۹. مذاکرات شنبه ۱۲ آوریل. HRANA ۳٬۶۳۶. لبنان ۱٬۷۸۴+. اینترنت ۹۸۴+ ساعت.",
+  "theoryBox": "<strong>Day 44 (Apr 12) — ISLAMABAD TALKS COLLAPSED:</strong> 21-hour marathon ended with no deal. Iran refused to forgo nuclear weapons. Vance walked out. Ghalibaf blamed US 'maximalism.' Ceasefire technically holding but diplomatically dead. Hormuz re-closed ($1M+ tolls, ~5/day). Brent $98.50 rising. Lebanon strikes continued. Internet 1056+ hrs. Scenarios: ceasefire collapse 38% / protracted stall 25% / deal 18% / attrition 10% / intervention 6% / fracture 3%.",
+  "theoryBox_fa": "<strong>Day 44 (۱۲ آوریل) — مذاکرات اسلام‌آباد شکست خورد:</strong> ماراتن ۲۱ ساعته بدون نتیجه. ایران رد تعهد هسته‌ای. ونس خارج شد. قالیباف آمریکا را مقصر دانست. آتش‌بس فنی برقرار اما دیپلماتیک مرده. هرمز بسته ($۱M+ عوارض). برنت $۹۸.۵۰. لبنان ادامه. اینترنت ۱۰۵۶+.",
   "metrics": [
     {
       "label": "Day",
-      "value": "41 CEASEFIRE FRAGILE",
-      "desc": "D41 Apr 09. Ceasefire Day 3 — holding on Iran side but Lebanon fracture point. Talks moved to Sat Apr 12."
+      "value": "44 TALKS COLLAPSED",
+      "desc": "D44 Apr 12. Ceasefire Day 6 — technically holding but Islamabad talks failed. 9 days to expiry."
     },
     {
       "label": "Cumul. missiles",
@@ -37,8 +38,8 @@
     },
     {
       "label": "Brent crude",
-      "value": "~$97.39",
-      "desc": "UP from $95.80 D40. Rebounding on ceasefire uncertainty + Lebanon. WTI ~$93.50."
+      "value": "~$98.50",
+      "desc": "UP from $97.00 D43. Rising on talk collapse. WTI ~$95.50. If ceasefire collapses Apr 21: $110+ rapid reversion."
     },
     {
       "label": "Iran dead",
@@ -57,20 +58,20 @@
     },
     {
       "label": "Hormuz",
-      "value": "STILL BLOCKED",
-      "desc": "Bloomberg: 'negligible' traffic. ~5-10/day vs 135 normal. 800+ ships stranded. IRGC threatens re-block."
+      "value": "RE-CLOSED",
+      "desc": "Iran re-halted opening. $1M+ tolls. ~5 vessels/day. US warships confrontation Apr 11 — 'last warning.'"
     },
     {
       "label": "Ceasefire",
-      "value": "FRAGILE — Apr 21",
-      "desc": "Lebanon = #1 collapse risk. Iran/Pakistan say Lebanon IN deal. US/Israel say NOT. Talks Sat Apr 12."
+      "value": "TALKS FAILED — Apr 21",
+      "desc": "Islamabad 21-hr marathon collapsed. Nuclear weapons = deal-breaker. 9 days to expiry. No new talks scheduled."
     }
   ],
   "metrics_fa": [
     {
       "label": "روز",
-      "value": "۴۱ آتش‌بس شکننده",
-      "desc": "روز ۴۱ — ۹ آوریل. آتش‌بس روز ۳ از طرف ایران برقرار اما لبنان نقطه شکست. مذاکرات شنبه ۱۲ آوریل."
+      "value": "۴۴ مذاکرات شکست",
+      "desc": "روز ۴۴ — ۱۲ آوریل. مذاکرات اسلام‌آباد شکست. ۹ روز تا پایان آتش‌بس."
     },
     {
       "label": "مجموع موشک",
@@ -84,8 +85,8 @@
     },
     {
       "label": "نفت برنت",
-      "value": "~$۹۷.۳۹",
-      "desc": "افزایش از ۹۵.۸۰. عدم قطعیت آتش‌بس + لبنان. WTI ~$۹۳.۵۰."
+      "value": "~$۹۸.۵۰",
+      "desc": "صعود از $۹۷. WTI ~$۹۵.۵۰. اگر فروپاشی: $۱۱۰+."
     },
     {
       "label": "کشته ایران",
@@ -104,28 +105,28 @@
     },
     {
       "label": "هرمز",
-      "value": "هنوز مسدود",
-      "desc": "بلومبرگ: 'ناچیز.' ~۵-۱۰/روز. ۸۰۰+ کشتی معطل. سپاه تهدید انسداد مجدد."
+      "value": "مجدداً بسته",
+      "desc": "ایران بازگشایی متوقف. $۱M+ عوارض. ~۵/روز. درگیری ناوهای آمریکا ۱۱ آوریل."
     },
     {
       "label": "آتش‌بس",
-      "value": "شکننده — ۲۱ آوریل",
-      "desc": "لبنان = ریسک ۱ فروپاشی. مذاکرات شنبه ۱۲ آوریل."
+      "value": "مذاکرات شکست — ۲۱ آوریل",
+      "desc": "ماراتن ۲۱ ساعته شکست. هسته‌ای = مانع. ۹ روز تا پایان."
     }
   ],
   "sitrep": [
-    "<strong>D41 MIDDAY (Apr 09 12:00 ET): CEASEFIRE FRAGILE — LEBANON IS THE FRACTURE POINT.</strong> Iran accuses US of ceasefire violation over Israel's massive Lebanon strikes: 100+ sites hit in 10 minutes — largest coordinated attack since war began. 254+ killed Apr 9 per Al Jazeera. Total Lebanon: 1,784+ killed, 5,977 wounded. Iran parliament speaker warns 'STRONG responses.' IRGC threatens to re-block Hormuz. Iran considering pulling out of deal. BUT zero Iranian attacks D41 — ceasefire holding on their side.",
-    "<strong>HORMUZ STILL MOSTLY BLOCKED:</strong> Bloomberg reports vessel traffic 'negligible.' 800+ ships stranded. Only a few tankers moving (~5-10/day vs 135 normal). IRGC threatening to suspend transit due to Lebanon strikes. Safe passage promise not materializing at scale.",
-    "<strong>OIL REBOUNDING:</strong> Brent ~$97.39 (up from $95.80 D40). WTI ~$93.50. Markets pricing ceasefire uncertainty — Lebanon fracture + Hormuz threats pushing oil higher per CNBC. If ceasefire collapses: rapid reversion to $110+.",
-    "<strong>TALKS MOVED TO SATURDAY:</strong> Islamabad talks shifted from Friday Apr 10 to Saturday Apr 12 morning local time. VP Vance + Witkoff + Kushner heading delegation. Iran views Vance as more sympathetic. Pakistan/Iran say Lebanon IS part of ceasefire. US/Israel say it is NOT. This is the #1 collapse risk.",
-    "<strong>HOUTHI ATTACKS CONTINUE:</strong> Maersk Yorktown (US-flagged) targeted by anti-ship missile Apr 9. Houthis also attacked Hope Island, MSC Grace F, MSC Gina, 2 US frigates in Red Sea/Indian Ocean. Houthis NOT bound by US-Iran ceasefire. HRANA: 3,636 deaths (1,701 civilians, 1,221 military). Internet 984+ hrs."
+    "<strong>D44 EVENING (Apr 12 22:00 ET): ISLAMABAD TALKS COLLAPSED — NO DEAL.</strong> 21-hour marathon between US delegation (~300, led by VP Vance, Witkoff, Kushner) and Iran (~70, led by Ghalibaf, Araghchi) ended with no agreement. BREAKING POINT: Iran refused to commit to forgoing nuclear weapons. Vance left saying 'not enough.' Ghalibaf blamed US 'maximalist demands.' Pakistan PM Sharif expressed 'deep disappointment.'",
+    "<strong>HORMUZ RE-CLOSED:</strong> Iran re-halted Strait opening citing Israeli Lebanon strikes as ceasefire violations. $1M+ tolls on any transit. ~5 vessels/day (down from ~10 D41). US warships attempted transit Apr 11 — IRGC issued 'last warning.' 800+ ships still stranded.",
+    "<strong>OIL RISING ON COLLAPSE:</strong> Brent ~$98.50 (up from $97 D43, $95.80 D40). WTI ~$95.50. Markets pricing talk failure + Hormuz re-closure. If ceasefire expires Apr 21 with no new talks: rapid reversion to $110+.",
+    "<strong>LEBANON CONTINUES:</strong> Israel rejected ceasefire with Hezbollah. Strikes continued D42-D44. Lebanon toll rising. Iran using Lebanon as justification for Hormuz re-closure and talk hardline.",
+    "<strong>CEASEFIRE STATUS:</strong> Technically holding in the Gulf — zero direct US-Iran attacks since Apr 8. But diplomatically dead. No new talks scheduled. 9 days to Apr 21 expiry. Polymarket ceasefire-holds markets in dispute/crashing."
   ],
   "sitrep_fa": [
-    "<strong>روز ۴۱ ظهر (۹ آوریل، ۱۲:۰۰ ET): آتش‌بس شکننده — لبنان نقطه شکست.</strong> ایران اتهام نقض آتش‌بس به آمریکا بابت حملات اسرائیل به لبنان: ۱۰۰+ سایت در ۱۰ دقیقه. ۲۵۴+ کشته ۹ آوریل. مجلس: 'پاسخ محکم.' سپاه تهدید انسداد مجدد هرمز. اما صفر حمله ایرانی روز ۴۱.",
-    "<strong>هرمز هنوز مسدود:</strong> بلومبرگ: ترافیک 'ناچیز.' ۸۰۰+ کشتی معطل. ~۵-۱۰/روز. سپاه تهدید تعلیق عبور بابت لبنان.",
-    "<strong>نفت صعودی:</strong> برنت ~$۹۷.۳۹ (از ۹۵.۸۰). WTI ~$۹۳.۵۰. عدم قطعیت آتش‌بس + لبنان = صعود.",
-    "<strong>مذاکرات شنبه:</strong> اسلام‌آباد از جمعه به شنبه ۱۲ آوریل منتقل شد. ونس + ویتکاف + کوشنر. ایران/پاکستان: لبنان شامل. آمریکا/اسرائیل: نه. ریسک ۱ فروپاشی.",
-    "<strong>حوثی‌ها ادامه:</strong> مائرسک یورک‌تاون (پرچم آمریکا) هدف موشک ضد کشتی. حملات به Hope Island، MSC Grace F، MSC Gina، ۲ ناوشکن. هرانا: ۳٬۶۳۶. اینترنت ۹۸۴+ ساعت."
+    "<strong>روز ۴۴ شب (۱۲ آوریل): مذاکرات اسلام‌آباد شکست — بدون توافق.</strong> ماراتن ۲۱ ساعته بین هیئت آمریکا (~۳۰۰، ونس، ویتکاف، کوشنر) و ایران (~۷۰، قالیباف، عراقچی) بدون نتیجه. نقطه شکست: ایران رد تعهد هسته‌ای. ونس: 'کافی نیست.' قالیباف: 'ماکسیمالیسم آمریکا.'",
+    "<strong>هرمز مجدداً بسته:</strong> ایران بازگشایی متوقف. $۱M+ عوارض. ~۵/روز. ناوهای آمریکا ۱۱ آوریل — 'آخرین هشدار.' ۸۰۰+ معطل.",
+    "<strong>نفت صعودی:</strong> برنت ~$۹۸.۵۰. WTI ~$۹۵.۵۰. شکست مذاکرات + هرمز. اگر ۲۱ آوریل: $۱۱۰+.",
+    "<strong>لبنان ادامه:</strong> اسرائیل رد آتش‌بس حزب‌الله. حملات ادامه.",
+    "<strong>آتش‌بس:</strong> فنی برقرار — صفر حمله مستقیم. اما دیپلماتیک مرده. ۹ روز تا پایان."
   ],
   "dailySeries": {
     "labels": [
@@ -169,7 +170,10 @@
       "Apr 06",
       "Apr 07",
       "Apr 08",
-      "Apr 09"
+      "Apr 09",
+      "Apr 10",
+      "Apr 11",
+      "Apr 12"
     ],
     "missiles": [
       480,
@@ -212,6 +216,9 @@
       45,
       58,
       12,
+      0,
+      0,
+      0,
       0
     ],
     "drones": [
@@ -255,10 +262,13 @@
       50,
       62,
       18,
+      0,
+      0,
+      0,
       0
     ],
-    "sourceLabel": "D1-D10: JPost. D11: UAE MoD. D12-D38: fragment est. D39: ceasefire. D40: residual. D41: 0+0 ceasefire holding on Iran side. Houthis active separately.",
-    "throughDate": "2026-04-09",
+    "sourceLabel": "D1-D10: JPost. D11: UAE MoD. D12-D38: fragment est. D39: ceasefire. D40-D44: 0+0 ceasefire holding on Iran side. Houthis active separately. Islamabad talks collapsed D44.",
+    "throughDate": "2026-04-12",
     "confidence": [
       1,
       1,
@@ -289,6 +299,9 @@
       0.6,
       0.6,
       0.6,
+      0.5,
+      0.5,
+      0.5,
       0.5,
       0.5,
       0.5,
@@ -347,7 +360,10 @@
       "Apr 06",
       "Apr 07",
       "Apr 08",
-      "Apr 09"
+      "Apr 09",
+      "Apr 10",
+      "Apr 11",
+      "Apr 12"
     ],
     "brent": [
       65,
@@ -391,7 +407,10 @@
       110,
       109.5,
       95.8,
-      97.39
+      97.39,
+      96.5,
+      97,
+      98.5
     ],
     "wti": [
       62,
@@ -435,9 +454,12 @@
       108,
       106.2,
       91.5,
-      93.5
+      93.5,
+      93.5,
+      94,
+      95.5
     ],
-    "note": "D41: Brent rebounding ~$97.39 (from $95.80 D40). WTI ~$93.50. Oil rising on ceasefire uncertainty — Lebanon fracture + IRGC Hormuz re-block threats. CNBC: markets pricing collapse risk. If ceasefire holds: $85-90 in weeks. If collapses: $110+ rapid reversion."
+    "note": "D44: Brent $98.50 rising on Islamabad talk collapse. WTI $95.50. Hormuz re-closed. If ceasefire expires Apr 21: rapid reversion $110+. If somehow renewed: $90-95."
   },
   "pressure": {
     "labels": [
@@ -481,7 +503,10 @@
       "Apr 06",
       "Apr 07",
       "Apr 08",
-      "Apr 09"
+      "Apr 09",
+      "Apr 10",
+      "Apr 11",
+      "Apr 12"
     ],
     "attrition": [
       2,
@@ -523,6 +548,9 @@
       10,
       10,
       10.2,
+      10.5,
+      10.5,
+      10.5,
       10.5,
       10.5
     ],
@@ -567,7 +595,10 @@
       9.5,
       9.8,
       1.8000000000000007,
-      2.2
+      2.2,
+      2.5,
+      2.8,
+      3.5
     ]
   },
   "latestTargetBreakdown": {
@@ -956,6 +987,33 @@
       "missiles": 0,
       "drones": 0,
       "primary": "D41 CEASEFIRE FRAGILE — LEBANON FRACTURE (Apr 09): Zero Iranian attacks — ceasefire holding on Iran side. BUT Israel hit 100+ sites in Lebanon in 10 minutes — largest coordinated strike since war began. 254+ killed Apr 9 per AJ. Total Lebanon 1,784+ killed, 5,977 wounded. Iran accuses US of ceasefire violation. IRGC threatens to re-block Hormuz. Parliament speaker warns 'STRONG responses.' Iran considering pulling out. Brent rebounding ~$97.39 (from $95.80). Hormuz still mostly blocked: 'negligible' per Bloomberg, 800+ ships stranded, ~5-10/day. Talks moved to Saturday Apr 12 — VP Vance + Witkoff + Kushner. Houthis attacked Maersk Yorktown (US-flagged) + 5 other targets. HRANA: 3,636. Internet 984+ hrs. Lebanon dispute = #1 collapse risk: Pakistan/Iran say Lebanon IN ceasefire; US/Israel say NOT."
+    },
+    {
+      "date": "Apr 10",
+      "missiles": 0,
+      "drones": 0,
+      "primary": "Ceasefire Day 3 (US-Iran). Lebanon strikes continued. Talks delayed from Fri to Sat. Hormuz still effectively closed — Iran charging $1M+ tolls.",
+      "capability": "0+0. Ceasefire holding on Iran side. IRGC preserving stockpiles.",
+      "cost": "Brent ~$96.50. Gas $4.12. Hormuz ~8/day (down from 10).",
+      "assessment": "Ceasefire holding but Hormuz re-closing. Talks delayed = loss of momentum."
+    },
+    {
+      "date": "Apr 11",
+      "missiles": 0,
+      "drones": 0,
+      "primary": "ISLAMABAD TALKS BEGIN: 21-hour marathon. US ~300 (Vance, Witkoff, Kushner) vs Iran ~70 (Ghalibaf, Araghchi). US warships attempted Hormuz transit — Iran 'last warning.'",
+      "capability": "0+0. Ceasefire holding. Diplomatic focus.",
+      "cost": "Brent ~$97. US warship confrontation at Hormuz. Israel rejected ceasefire with Hezbollah.",
+      "assessment": "Highest diplomatic stakes since war began. Hormuz naval confrontation adds pressure."
+    },
+    {
+      "date": "Apr 12",
+      "missiles": 0,
+      "drones": 0,
+      "primary": "TALKS COLLAPSED. Iran refused nuclear weapons commitment. Vance left. Ghalibaf blamed US. No new talks scheduled. 9 days to ceasefire expiry.",
+      "capability": "0+0. Ceasefire technically holding. Iran's military capability preserved through 6-day pause.",
+      "cost": "Brent ~$98.50 rising. Hormuz ~5/day (re-closing). Polymarket ceasefire markets crashing/disputed.",
+      "assessment": "Diplomatic failure. Nuclear issue = unbridgeable gap. Ceasefire likely expires Apr 21 without renewal."
     }
   ],
   "timeline": [
@@ -1465,18 +1523,18 @@
     "<strong>Economic:</strong> $۹۷.۳۹. بنزین ~$۴.۰۵. آتش‌بس مثبت اما لبنان + هرمز محدود."
   ],
   "diplomacy": [
-    "<strong>TALKS MOVED TO SATURDAY APR 12:</strong> Islamabad talks shifted from Friday to Saturday morning local time. VP Vance + Witkoff + Kushner heading US delegation — most senior team yet. Iran views Vance as more sympathetic to ending conflict. Pakistan PM Sharif + FM Munir mediating.",
-    "<strong>LEBANON DISPUTE = #1 COLLAPSE RISK:</strong> Pakistan/Iran explicitly say Lebanon IS part of ceasefire. US/Israel say it is NOT. This interpretive gap is the single biggest threat. Israel's 100+ site strike (254+ killed Apr 9) triggered Iran ceasefire violation accusations. IRGC threatening Hormuz re-block.",
-    "<strong>IRAN POSITION HARDENING:</strong> Parliament speaker warns 'STRONG responses.' Iran considering pulling out of deal. Zero Iranian attacks D41 = still honoring ceasefire but under extreme domestic pressure to respond to Lebanon slaughter.",
-    "<strong>HORMUZ NON-COMPLIANCE:</strong> Despite ceasefire promise, Hormuz transit remains 'negligible.' Iran using Hormuz as leverage — will not genuinely reopen until Lebanon issue resolved. 800+ ships stranded.",
-    "<strong>HOUTHI INDEPENDENCE:</strong> Houthis attacked 6 targets Apr 9 — NOT bound by US-Iran ceasefire. Maersk Yorktown (US-flagged), Hope Island, MSC Grace F, MSC Gina, 2 US frigates. Red Sea remains disrupted."
+    "<strong>ISLAMABAD TALKS COLLAPSED (Apr 12):</strong> 21-hour marathon between US (~300, VP Vance + Witkoff + Kushner) and Iran (~70, Ghalibaf + Araghchi). Pakistan PM Sharif mediated. BREAKING POINT: Iran refused to commit to forgoing nuclear weapons. Vance left saying 'not enough.' Ghalibaf blamed US 'maximalist demands.' Pakistan 'deeply disappointed.' No new talks scheduled.",
+    "<strong>NUCLEAR WEAPONS = DEAL-BREAKER:</strong> Iran's refusal to forgo nuclear capability was the unbridgeable gap. US demanded verifiable commitment. Iran offered IAEA cooperation but NOT weapons renunciation. This was predicted — 10-pt maximalism from Apr 7 included NPT enrichment rights.",
+    "<strong>HORMUZ CONFRONTATION Apr 11:</strong> US warships attempted Hormuz transit during talks. IRGC issued 'last warning.' Seen as US pressure tactic that backfired — hardened Iran position during negotiations.",
+    "<strong>LEBANON UNRESOLVED:</strong> Israel explicitly rejected ceasefire with Hezbollah. Strikes continued D42-D44. Iran using Lebanon devastation as justification for Hormuz re-closure and hardline stance.",
+    "<strong>NO DIPLOMATIC PATHWAY:</strong> No follow-up talks scheduled. Pakistan mediation exhausted. 9 days to ceasefire expiry. Without new initiative, ceasefire expires Apr 21 and war resumes."
   ],
   "diplomacy_fa": [
-    "<strong>مذاکرات شنبه ۱۲ آوریل:</strong> از جمعه به شنبه. ونس + ویتکاف + کوشنر. ارشدترین تیم. ایران ونس را همدل‌تر می‌بیند. میانجیگری شریف + منیر.",
-    "<strong>لبنان = ریسک ۱ فروپاشی:</strong> پاکستان/ایران: لبنان شامل. آمریکا/اسرائیل: نه. ۱۰۰+ سایت (۲۵۴+ کشته) = ایران اتهام نقض. سپاه تهدید هرمز.",
-    "<strong>ایران سخت‌تر:</strong> مجلس: 'پاسخ محکم.' بررسی خروج از توافق. صفر حمله D41 اما فشار داخلی شدید.",
-    "<strong>هرمز عدم تطابق:</strong> علیرغم وعده، ترافیک 'ناچیز.' ایران هرمز = اهرم تا حل لبنان. ۸۰۰+ معطل.",
-    "<strong>حوثی مستقل:</strong> ۶ هدف ۹ آوریل. ملزم به آتش‌بس نیست. دریای سرخ مختل."
+    "<strong>مذاکرات اسلام‌آباد شکست (۱۲ آوریل):</strong> ماراتن ۲۱ ساعته. هیئت آمریکا ~۳۰۰ مقابل ایران ~۷۰. نقطه شکست: ایران رد تعهد هسته‌ای. ونس: 'کافی نیست.' قالیباف: 'ماکسیمالیسم.'",
+    "<strong>سلاح هسته‌ای = مانع:</strong> شکاف غیرقابل پر. آمریکا: تعهد قابل تأیید. ایران: همکاری آژانس اما نه ترک سلاح.",
+    "<strong>درگیری هرمز ۱۱ آوریل:</strong> ناوهای آمریکا تلاش عبور. سپاه 'آخرین هشدار.' فشار آمریکا نتیجه معکوس.",
+    "<strong>لبنان حل نشده:</strong> اسرائیل رد آتش‌بس حزب‌الله. حملات ادامه. ایران: لبنان = دلیل هرمز.",
+    "<strong>مسیر دیپلماتیک نیست:</strong> مذاکرات جدید نیست. پاکستان خسته. ۹ روز تا پایان."
   ],
   "publicOpinion": [
     "<strong>Pew:</strong> 60% wrong-direction softening. Ceasefire headline + 'Pakistan asked' narrative. Gas easing. But Lebanon strikes creating Democratic opposition pressure.",
@@ -1754,7 +1812,10 @@
         "Apr 06",
         "Apr 07",
         "Apr 08",
-        "Apr 09"
+        "Apr 09",
+        "Apr 10",
+        "Apr 11",
+        "Apr 12"
       ],
       "militaryExhaustion": [
         1,
@@ -1796,6 +1857,9 @@
         7,
         7.5,
         7,
+        6.5,
+        6.5,
+        6.5,
         6.5,
         6.5
       ],
@@ -1840,7 +1904,10 @@
         9.5,
         9.5,
         7.5,
-        7.8
+        7.8,
+        8,
+        8.2,
+        8.5
       ],
       "diplomaticMomentum": [
         0,
@@ -1883,7 +1950,10 @@
         5.5,
         3.5,
         7.5,
-        7
+        7,
+        6.5,
+        8,
+        2
       ],
       "usPoliticalSustainability": [
         8,
@@ -1926,7 +1996,10 @@
         2,
         2,
         4,
-        4.5
+        4.5,
+        4.5,
+        4,
+        3.5
       ],
       "escalationCeilingDistance": [
         7,
@@ -1969,30 +2042,33 @@
         0.5,
         0.2,
         3.5,
-        3
+        3,
+        3,
+        2.5,
+        2
       ]
     },
     "vectorNotes": {
-      "militaryExhaustion": "D41 6.5 (unchanged). Ceasefire pause preserves Iran's remaining capability. Zero launches = stockpiles intact. Rationing model validated at 90%. If ceasefire collapses: Iran can resume at ~40-50/day.",
+      "militaryExhaustion": "D44 6.5 (unchanged). Ceasefire pause = 6 days of stockpile preservation. Iran capability intact. If war resumes: ~40-50/day.",
       "militaryExhaustion_fa": "روز ۴۱: ۶.۵ (ثابت). آتش‌بس توان حفظ. صفر پرتاب = ذخایر سالم. مدل جیره‌بندی تأیید ۹۰٪.",
-      "economicPain": "D41 7.8 (↑ from 7.5). Brent rebounding $97.39 (from $95.80). Hormuz still mostly blocked — 'negligible' per Bloomberg. IRGC threatening re-block. Oil rising on ceasefire uncertainty. Still elevated vs pre-war $65.",
+      "economicPain": "D44 8.5 (UP from 7.8). Brent $98.50 rising on talk collapse. Hormuz re-closing (~5/day). Oil heading back toward $100. Gas $4.18.",
       "economicPain_fa": "روز ۴۱: ۷.۸ (↑ از ۷.۵). برنت $۹۷.۳۹ صعود. هرمز هنوز مسدود. سپاه تهدید انسداد.",
-      "diplomaticMomentum": "D41 7.0 (↓ from 7.5). Lebanon dispute threatens deal. Iran accusing US of ceasefire violation. IRGC threatening Hormuz re-block. BUT talks moved to Saturday with Vance+Witkoff+Kushner = still meaningful. Down because Lebanon fracture eroding Day 1 momentum.",
+      "diplomaticMomentum": "D44 2.0 (CRASHED from 7.0). Islamabad collapse destroyed momentum. No new talks. Nuclear gap unbridgeable. 9 days to expiry with no pathway.",
       "diplomaticMomentum_fa": "روز ۴۱: ۷.۰ (↓ از ۷.۵). اختلاف لبنان تهدید توافق. اتهام نقض. اما مذاکرات شنبه با ونس = هنوز معنادار.",
-      "usPoliticalSustainability": "D41 4.5 (↑ from 4.0). Ceasefire Day 3, no new US casualties, gas easing. Trump narrative: 'Pakistan asked, we listened.' But Lebanon 254+ killed creating new Democratic pressure. Net positive.",
+      "usPoliticalSustainability": "D44 3.5 (DOWN from 4.5). Talk failure = no exit narrative. Gas rising. Ceasefire = temporary reprieve but eroding. Trump needs new strategy.",
       "usPoliticalSustainability_fa": "روز ۴۱: ۴.۵ (↑ از ۴.۰). آتش‌بس روز ۳، بدون تلفات جدید، بنزین کاهش. اما لبنان ۲۵۴+ فشار.",
-      "escalationCeilingDistance": "D41 3.0 (↓ from 3.5). Lebanon strikes pulling closer to ceiling. Israel's 100+ site attack = largest of war. Iran accusing US of violation. IRGC threatening Hormuz re-block. If Iran pulls out: instant return to 0.2-0.5 range. Saturday talks = pressure valve.",
+      "escalationCeilingDistance": "D44 2.0 (DOWN from 3.0). Hormuz naval confrontation + no diplomatic buffer = ceiling approaching. If Apr 21 passes: immediate return to pre-ceasefire dynamics or worse.",
       "escalationCeilingDistance_fa": "روز ۴۱: ۳.۰ (↓ از ۳.۵). حملات لبنان به سقف نزدیک‌تر. ۱۰۰+ سایت = بزرگترین. ایران اتهام نقض. اگر خروج: بازگشت فوری."
     },
     "warOutcome": {
-      "prediction": "D41 ceasefire fragile but holding on Iran side (0 attacks). Lebanon fracture is the #1 collapse risk — Israel's 100+ site strike (254+ killed) triggered Iran ceasefire violation accusations. MOST LIKELY: Negotiated deal 42% (Saturday Apr 12 talks, Vance+Witkoff+Kushner, Pakistan mediating). Ceasefire collapse 28% (Lebanon dispute + IRGC Hormuz re-block threats). Protracted attrition 15%. Declared victory 8%. International intervention 5%. Regime fracture 2%. Key test: does Saturday produce a Lebanon protocol.",
-      "prediction_fa": "روز ۴۱: آتش‌بس شکننده اما از طرف ایران برقرار (۰ حمله). لبنان = ریسک ۱ فروپاشی. محتمل‌ترین: توافق ۴۲٪ (مذاکرات شنبه ونس+ویتکاف+کوشنر). فروپاشی ۲۸٪. فرسایش ۱۵٪. پیروزی ۸٪. مداخله ۵٪. فروپاشی رژیم ۲٪.",
-      "derivation": "Military exhaustion 6.5 (unchanged — ceasefire pause preserves capability, stockpiles intact). Economic pain 7.8 (UP from 7.5 — oil rebounding $97.39, Hormuz still blocked, IRGC threatening re-block). Diplomatic momentum 7.0 (DOWN from 7.5 — Lebanon dispute eroding momentum, but Saturday talks with senior delegation = still strong). US political sustainability 4.5 (UP from 4.0 — ceasefire Day 3, no new casualties, gas easing). Escalation ceiling distance 3.0 (DOWN from 3.5 — Lebanon's 100+ site strike pulling closer to ceiling, IRGC re-block threats). Convergence score eases slightly due to Lebanon fracture.",
-      "derivation_fa": "Military(6.5 ثابت). Economic(7.8 ↑). Diplomatic(7.0 ↓ لبنان). Political(4.5 ↑). Escalation(3.0 ↓). لبنان شکاف = فشار نزولی. مذاکرات شنبه = فشار صعودی.",
-      "convergenceScore": 5.76,
-      "convergenceInterpretation": "Convergence 5.76/10 — slightly down from 5.95 D40. Lebanon fracture is eroding the diplomatic momentum that drove convergence upward. The ceasefire is intact but under stress from two directions: (1) Israel's massive Lebanon strikes creating Iranian domestic pressure to withdraw, and (2) Hormuz non-compliance undermining the economic bargain. Saturday talks are the critical pressure valve.",
-      "convergenceInterpretation_fa": "همگرایی ۵.۷۶ از ۱۰ — اندکی کاهش از ۵.۹۵ روز ۴۰. شکاف لبنان موج دیپلماتیک را تضعیف. آتش‌بس سالم اما تحت فشار از دو جهت: حملات لبنان + عدم تطابق هرمز. مذاکرات شنبه = شیر فشار.",
-      "lastUpdated": "2026-04-09T12:00:00-04:00"
+      "prediction": "D44 Islamabad talks COLLAPSED — Iran refused nuclear weapons commitment. Ceasefire technically holding but diplomatically dead. 9 days to expiry. MOST LIKELY: Ceasefire collapse 38% (no diplomatic pathway, Hormuz re-closing, Lebanon escalation). Protracted stall 25% (ceasefire limps to expiry in frozen state). Negotiated deal 18% (DOWN from 42% — talks failed, nuclear gap unbridgeable). Attrition 10%. Intervention 6%. Fracture 3%. Key: is there a new diplomatic initiative before Apr 21?",
+      "prediction_fa": "روز ۴۴: مذاکرات اسلام‌آباد شکست. آتش‌بس فنی برقرار اما دیپلماتیک مرده. فروپاشی ۳۸٪. رکود ۲۵٪. توافق ۱۸٪ (↓ از ۴۲٪). فرسایش ۱۰٪. مداخله ۶٪. شکست رژیم ۳٪.",
+      "derivation": "Military exhaustion 6.5 (unchanged — ceasefire preserves capability). Economic pain 8.5 (UP from 7.8 — Hormuz re-closing, oil rising $98.50, talk failure). Diplomatic momentum 2.0 (CRASHED from 7.0 — talks collapsed, no new pathway). US political sustainability 3.5 (DOWN from 4.5 — talk failure, gas rising, no exit narrative). Escalation ceiling distance 2.0 (DOWN from 3.0 — Hormuz naval confrontation, no diplomatic buffer). Convergence score crashes on diplomatic collapse.",
+      "derivation_fa": "Military(6.5 ثابت). Economic(8.5 ↑). Diplomatic(2.0 سقوط از 7.0). Political(3.5 ↓). Escalation(2.0 ↓). شکست مذاکرات = فروپاشی دیپلماتیک.",
+      "convergenceScore": 4.5,
+      "convergenceInterpretation": "Convergence 4.5/10 — CRASHED from 5.76 D41. Islamabad talk collapse destroyed the diplomatic momentum that was the only force driving convergence upward. Without a new diplomatic initiative, the ceasefire is a countdown timer to war resumption. Economic pain rising (Hormuz re-closing), US political position eroding (no exit narrative after talk failure), and escalation ceiling shrinking (naval confrontation). The 9-day window to Apr 21 is closing with no pathway to fill it.",
+      "convergenceInterpretation_fa": "همگرایی ۴.۵ از ۱۰ — سقوط از ۵.۷۶. شکست مذاکرات = تنها نیروی صعودی از بین رفت. بدون ابتکار جدید: شمارش معکوس. درد اقتصادی ↑، سیاست آمریکا ↓، سقف تشدید ↓.",
+      "lastUpdated": "2026-04-12T22:00:00-04:00"
     }
   },
   "additionalCharts": {
@@ -2038,6 +2114,9 @@
       95,
       85,
       30,
+      0,
+      0,
+      0,
       0
     ],
     "geoSpreadLabels": [
@@ -2081,7 +2160,10 @@
       "Apr 06",
       "Apr 07",
       "Apr 08",
-      "Apr 09"
+      "Apr 09",
+      "Apr 10",
+      "Apr 11",
+      "Apr 12"
     ],
     "countriesTargetedPerDay": [
       8,
@@ -2124,6 +2206,9 @@
       9,
       8,
       4,
+      0,
+      0,
+      0,
       0
     ],
     "missileDroneRatio": [
@@ -2167,6 +2252,9 @@
       0.9,
       0.89,
       0.67,
+      0,
+      0,
+      0,
       0
     ],
     "interceptRateLabels": [
@@ -2210,7 +2298,10 @@
       "Apr 06",
       "Apr 07",
       "Apr 08",
-      "Apr 09"
+      "Apr 09",
+      "Apr 10",
+      "Apr 11",
+      "Apr 12"
     ],
     "interceptRate": [
       0.82,
@@ -2253,6 +2344,9 @@
       0.88,
       0.88,
       0.88,
+      0.88,
+      0.88,
+      0.88,
       0.88
     ],
     "scenarioHistory": {
@@ -2271,7 +2365,11 @@
         "D37",
         "D38",
         "D39",
-        "D40"
+        "D40",
+        "D41",
+        "D42",
+        "D43",
+        "D44"
       ],
       "escalationSpiral": [
         15,
@@ -2288,7 +2386,11 @@
         40,
         37,
         37,
-        28
+        28,
+        28,
+        28,
+        25,
+        38
       ],
       "protractedAttrition": [
         30,
@@ -2305,7 +2407,11 @@
         24,
         28,
         28,
-        15
+        15,
+        15,
+        15,
+        15,
+        25
       ],
       "declaredVictory": [
         25,
@@ -2322,7 +2428,11 @@
         15,
         13,
         13,
-        8
+        8,
+        8,
+        8,
+        8,
+        6
       ],
       "negotiatedDeal": [
         15,
@@ -2338,7 +2448,12 @@
         8,
         10,
         12,
-        12
+        12,
+        42,
+        42,
+        42,
+        45,
+        18
       ],
       "internationalIntervention": [
         10,
@@ -2354,7 +2469,12 @@
         9,
         7,
         7,
-        7
+        7,
+        5,
+        5,
+        5,
+        5,
+        6
       ],
       "regimeFracture": [
         5,
@@ -2370,6 +2490,11 @@
         4,
         4,
         3,
+        3,
+        2,
+        2,
+        2,
+        2,
         3
       ]
     }
@@ -2921,7 +3046,12 @@
       "Apr 04",
       "Apr 05",
       "Apr 06",
-      "Apr 07"
+      "Apr 07",
+      "Apr 08",
+      "Apr 09",
+      "Apr 10",
+      "Apr 11",
+      "Apr 12"
     ],
     "vessels": [
       62,
@@ -2963,18 +3093,23 @@
       8,
       9,
       10,
-      14
+      14,
+      8,
+      10,
+      8,
+      6,
+      5
     ],
     "preWarAverage": 62,
-    "note": "D38 LATE: ~10 vessels. Iraq exempt. Iran 10-pt demands Hormuz toll protocol = permanent. Trump refuses to extend Tue deadline. <20 hrs to binary outcome.",
+    "note": "D44: ~5 vessels/day. Iran re-closed Hormuz after Israel Lebanon strikes. $1M+ tolls. US warship confrontation D43. Talks collapsed = no reopening path.",
     "note_fa": "D38 اواخر شب: ~10. عراق معاف. ایران عوارض هرمز = دائم. ترامپ رد تمدید. <20 ساعت."
   },
   "ceasefireDeadline": {
     "deadline": "2026-04-21T20:00:00-04:00",
     "label": "April 21 ceasefire expiry",
     "label_fa": "پایان آتش‌بس ۲۱ آوریل",
-    "context": "Trump-Iran 2-week ceasefire announced Apr 7 ~7PM ET (Pakistan-brokered by PM Sharif + FM Munir). Iran SNSC via FM Araghchi formally accepted. Contingent on Hormuz reopening in coordination with Iran Armed Forces. VP Vance leads US delegation to Islamabad peace talks Friday. Clock resets Apr 21 unless converted to settlement. Primary collapse risks: Israel unilateral strike, Hormuz non-compliance, 10-pt maximalism at talks.",
-    "context_fa": "April 7 Tue (<20 ساعت). ایران ۱۰ ماده ماکسیمالیست. ترامپ رد تمدید — 'جهنم.' P=0.22 (UP). سپاه: 'دروازه‌های جهنم.' ماکسیمالیسم متقابل = باینری.",
+    "context": "Trump-Iran 2-week ceasefire announced Apr 7 (Pakistan-brokered). Islamabad talks Apr 11-12 COLLAPSED after 21-hour marathon — Iran refused nuclear weapons commitment. Vance walked out. No new talks scheduled. Ceasefire technically holding but diplomatically dead. 9 days to expiry. Primary collapse risks: automatic expiry, Israel Lebanon escalation, Hormuz naval confrontation, no diplomatic pathway.",
+    "context_fa": "آتش‌بس ۲ هفته‌ای ۷ آوریل. مذاکرات اسلام‌آباد ۱۱-۱۲ آوریل شکست — ایران رد تعهد هسته‌ای. ونس خارج شد. مذاکرات جدید نیست. ۹ روز تا پایان.",
     "branchIfDeal": [
       {
         "step": "Partial ceasefire announced",
@@ -3548,15 +3683,15 @@
       "reasoning_fa": "نیروگاه سه‌شنبه <20 ساعت. P=0.22 UP. ترامپ رد تمدید (0.88). ایران ۱۰ ماده = بدون خروج. IAEA 'deeply concerned' (0.85). تشدید UP 0.68->0.72."
     },
     "outcomeProbabilities": {
-      "negotiatedResolution": 0.3,
-      "derivation_negotiated": "P(deal)xP(US_exit)xP(Iran_accept) = 0.42 x 0.64 x 0.30 = 0.081. Adjusted up to 0.30 for 2-week ceasefire + Pakistan broker + Vance Islamabad Fri + Iran SNSC formal accept. UP from 0.12.",
-      "escalationCatastrophe": 0.18,
-      "derivation_escalation": "Strikes suspended 14 days. Residual risk: Israel unilateral, Iran Hormuz non-compliance, IRGC rogue action. DOWN from 0.37.",
-      "protractedContinuation": 0.36,
-      "derivation_protracted": "Most likely: 2-week pause doesn't convert to settlement, war resumes in frozen posture. 10-pt gap on NPT+sanctions unresolved. UP from 0.34.",
-      "internationalIntervention": 0.09,
-      "derivation_intervention": "If pause collapses + Israel strikes = intervention forced. Minor DOWN from 0.10.",
-      "other": 0.07,
+      "negotiatedResolution": 0.18,
+      "derivation_negotiated": "CRASHED from 0.30. Islamabad talks collapsed. Nuclear weapons = unbridgeable gap. No new talks scheduled. P(deal) x P(US_exit) x P(Iran_accept) all degraded.",
+      "escalationCatastrophe": 0.28,
+      "derivation_escalation": "UP from 0.18. No diplomatic buffer. Hormuz naval confrontation. 9 days to expiry. If ceasefire expires: immediate return to strikes.",
+      "protractedContinuation": 0.38,
+      "derivation_protracted": "UP from 0.36. Most likely: ceasefire limps to Apr 21, expires, war resumes in attritional posture.",
+      "internationalIntervention": 0.1,
+      "derivation_intervention": "UP from 0.09. Talk failure increases pressure for external intervention.",
+      "other": 0.06,
       "derivation_other": "Regime fracture, coup, rogue action, black swan."
     },
     "calibration": {
@@ -3574,11 +3709,11 @@
     },
     "confidence": {
       "resolutionProbability": {
-        "estimate": 32,
-        "low": 20,
-        "high": 48
+        "estimate": 22,
+        "low": 12,
+        "high": 35
       },
-      "methodology": "Ensemble: model-derived (30%) + market signal (29% by Apr 30) + historical base rate (35%) -> weighted 32%. HUGE jump from morning 20% — Trump-Iran 2-week ceasefire pact, Pakistan brokered, Iran SNSC formally accepted, VP Vance to Islamabad Fri. Still capped <50% because 10-pt unresolved and Israel decoupling risk."
+      "methodology": "Ensemble: model-derived (18%) + market signal (~28% Polymarket, crashing) + historical base rate (35%) -> weighted 22%. DOWN from 32%. Islamabad collapse destroyed primary pathway. Nuclear weapons = unbridgeable. No new talks."
     },
     "dailyIndicators": {
       "labels": [
@@ -3622,7 +3757,10 @@
         "Apr 06",
         "Apr 07",
         "Apr 08",
-        "Apr 09"
+        "Apr 09",
+        "Apr 10",
+        "Apr 11",
+        "Apr 12"
       ],
       "launchRate": [
         480,
@@ -3665,6 +3803,9 @@
         45,
         58,
         12,
+        0,
+        0,
+        0,
         0
       ],
       "oilBrent": [
@@ -3708,7 +3849,10 @@
         110,
         109.5,
         95.8,
-        97.39
+        97.39,
+        96.5,
+        97,
+        98.5
       ],
       "hormuzVessels": [
         5,
@@ -3751,7 +3895,10 @@
         10,
         14,
         8,
-        10
+        10,
+        8,
+        6,
+        5
       ],
       "usKIA": [
         0,
@@ -3786,6 +3933,9 @@
         13,
         13,
         13,
+        15,
+        15,
+        15,
         15,
         15,
         15,
@@ -3837,7 +3987,10 @@
         4.1,
         4.12,
         4.05,
-        3.98
+        3.98,
+        4.12,
+        4.15,
+        4.18
       ],
       "approvalWrong": [
         35,
@@ -3880,7 +4033,10 @@
         59,
         60,
         58,
-        57
+        57,
+        56,
+        55,
+        54
       ],
       "mediatorMeetings": [
         0,
@@ -3923,7 +4079,10 @@
         5,
         9,
         8,
-        7
+        7,
+        6,
+        8,
+        2
       ],
       "coalitionScore": [
         9,
@@ -3966,7 +4125,10 @@
         2.5,
         2.6,
         8,
-        8
+        8,
+        7,
+        7,
+        6
       ],
       "iranRejectedCeasefire": [
         0,
@@ -4007,6 +4169,9 @@
         1,
         1,
         1,
+        0,
+        0,
+        0,
         0,
         0,
         0
@@ -4052,7 +4217,10 @@
         2,
         2,
         5,
-        5
+        5,
+        5,
+        5,
+        6
       ],
       "deadlineDays": [
         99,
@@ -4095,7 +4263,10 @@
         1,
         14,
         14,
-        13
+        13,
+        11,
+        10,
+        9
       ],
       "cfViolations": [
         null,
@@ -4138,7 +4309,10 @@
         null,
         null,
         0,
-        1
+        1,
+        0,
+        1,
+        2
       ],
       "cfViolationSeverity": [
         null,
@@ -4181,7 +4355,10 @@
         null,
         null,
         0,
-        3
+        3,
+        0,
+        4,
+        6
       ],
       "cfMediatorScore": [
         null,
@@ -4224,7 +4401,10 @@
         null,
         null,
         8,
-        7
+        7,
+        6,
+        8,
+        3
       ],
       "cfHormuzPct": [
         null,
@@ -4267,7 +4447,10 @@
         null,
         null,
         4,
-        6
+        6,
+        5,
+        4,
+        3
       ],
       "cfOilDelta": [
         null,
@@ -4310,7 +4493,10 @@
         null,
         null,
         -13.2,
-        -11.6
+        -11.6,
+        -12.5,
+        -12,
+        -10.5
       ],
       "cfDiplomaticScore": [
         null,
@@ -4353,7 +4539,10 @@
         null,
         null,
         7,
-        5
+        5,
+        5,
+        7,
+        2
       ],
       "cfUsPoliticalScore": [
         null,
@@ -4396,7 +4585,10 @@
         null,
         null,
         6,
-        6
+        6,
+        6,
+        6,
+        5
       ],
       "cfIranPoliticalScore": [
         null,
@@ -4439,7 +4631,10 @@
         null,
         null,
         5,
-        4
+        4,
+        4,
+        4,
+        3
       ],
       "cfProxyEscalation": [
         null,
@@ -4482,7 +4677,10 @@
         null,
         null,
         3,
-        7
+        7,
+        7,
+        7,
+        8
       ]
     },
     "trumpPattern": {
@@ -4571,6 +4769,36 @@
         "prob": 22,
         "delta": 7,
         "reason": "Deadline day. Trump explicit no-extend language. Iran 10-pt maximalist stands. IRGC hardening. P(follow-through) 0.22."
+      },
+      {
+        "day": "D40",
+        "prob": 32,
+        "delta": 10,
+        "reason": "Ceasefire Day 1. 2-week pact. Islamabad talks announced."
+      },
+      {
+        "day": "D41",
+        "prob": 32,
+        "delta": 0,
+        "reason": "Ceasefire holding. Lebanon fracture. Talks moved to Sat."
+      },
+      {
+        "day": "D42",
+        "prob": 30,
+        "delta": -2,
+        "reason": "Talks delayed. Hormuz re-closing. Lebanon continued."
+      },
+      {
+        "day": "D43",
+        "prob": 35,
+        "delta": 5,
+        "reason": "Islamabad talks began — 21-hr marathon. Highest hopes."
+      },
+      {
+        "day": "D44",
+        "prob": 22,
+        "delta": -13,
+        "reason": "TALKS COLLAPSED. Iran refused nuclear commitment. No new talks. -13 largest single-day drop."
       }
     ],
     "sensitivity": [
@@ -4658,9 +4886,9 @@
       }
     ],
     "ceasefireCalibration": {
-      "polymarketCeasefireHolds": 45,
+      "polymarketCeasefireHolds": 28,
       "historicalCeasefireBaseRate": 50,
-      "source": "Polymarket implied ~45% ceasefire holds through Apr 21. Historical Middle East ceasefire survival rate ~50% (naive prior)."
+      "source": "Polymarket implied ~28% ceasefire holds through Apr 21 (crashing post-Islamabad collapse). Historical base rate ~50%."
     }
   },
   "ceasefireStartIdx": 39,
@@ -4691,6 +4919,57 @@
       "incidents": [],
       "totalCount": 0,
       "maxSeverity": 0
+    },
+    {
+      "day": "Apr 10",
+      "cfDay": 3,
+      "incidents": [
+        {
+          "type": "accusation",
+          "severity": 3,
+          "actor": "Israel",
+          "target": "Lebanon",
+          "description": "Lebanon strikes continued. Iran demands Lebanon inclusion in ceasefire.",
+          "description_fa": "حملات لبنان ادامه. ایران خواستار شمول لبنان.",
+          "withinScope": "disputed"
+        }
+      ],
+      "totalCount": 1,
+      "maxSeverity": 3
+    },
+    {
+      "day": "Apr 11",
+      "cfDay": 4,
+      "incidents": [
+        {
+          "type": "confrontation",
+          "severity": 5,
+          "actor": "US Navy",
+          "target": "Hormuz",
+          "description": "US warships attempted Hormuz transit. IRGC issued 'last warning.' Israel rejected Hezbollah ceasefire.",
+          "description_fa": "ناوهای آمریکا تلاش عبور هرمز. سپاه 'آخرین هشدار.' اسرائیل رد آتش‌بس حزب‌الله.",
+          "withinScope": "yes"
+        }
+      ],
+      "totalCount": 1,
+      "maxSeverity": 5
+    },
+    {
+      "day": "Apr 12",
+      "cfDay": 5,
+      "incidents": [
+        {
+          "type": "diplomatic_failure",
+          "severity": 7,
+          "actor": "US/Iran",
+          "target": "Islamabad talks",
+          "description": "21-hour talks collapsed. Iran refused nuclear commitment. Vance walked out. No new talks scheduled.",
+          "description_fa": "مذاکرات ۲۱ ساعته شکست. ایران رد تعهد هسته‌ای. ونس خارج شد. مذاکرات جدید برنامه‌ریزی نشده.",
+          "withinScope": "diplomatic"
+        }
+      ],
+      "totalCount": 1,
+      "maxSeverity": 7
     }
   ],
   "ceasefireNegotiations": [
@@ -4733,35 +5012,89 @@
       ],
       "outcome": "delayed",
       "significance": 5
+    },
+    {
+      "date": "Apr 10",
+      "cfDay": 3,
+      "event": "Talks delayed from Friday to Saturday. Lebanon strikes escalated. Iran re-halted Hormuz opening.",
+      "event_fa": "مذاکرات از جمعه به شنبه موکول شد. حملات لبنان تشدید. ایران بازگشایی هرمز متوقف.",
+      "participants": [
+        "Pakistan FM Munir",
+        "Araghchi"
+      ],
+      "outcome": "delayed",
+      "significance": 4
+    },
+    {
+      "date": "Apr 11",
+      "cfDay": 4,
+      "event": "Islamabad talks began — 21-hour marathon. US delegation ~300 (Vance, Witkoff, Kushner) vs Iran ~70 (Ghalibaf, Araghchi). Largest diplomatic meeting of the war.",
+      "event_fa": "مذاکرات اسلام‌آباد شروع — ماراتن ۲۱ ساعته. هیئت آمریکا ~۳۰۰ (ونس، ویتکاف، کوشنر) مقابل ایران ~۷۰ (قالیباف، عراقچی).",
+      "participants": [
+        "VP Vance",
+        "Witkoff",
+        "Kushner",
+        "Ghalibaf",
+        "Araghchi",
+        "Pakistan PM Sharif"
+      ],
+      "outcome": "in_progress",
+      "significance": 9
+    },
+    {
+      "date": "Apr 12",
+      "cfDay": 5,
+      "event": "TALKS COLLAPSED. Iran refused to commit to forgoing nuclear weapons. Vance left saying 'not enough.' Ghalibaf blamed US 'maximalism.' No new talks scheduled. Ceasefire expires Apr 21.",
+      "event_fa": "مذاکرات شکست. ایران رد تعهد هسته‌ای. ونس: 'کافی نیست.' قالیباف: 'ماکسیمالیسم آمریکا.' مذاکرات جدید نیست. آتش‌بس ۲۱ آوریل.",
+      "participants": [
+        "VP Vance",
+        "Ghalibaf",
+        "Araghchi",
+        "Pakistan PM Sharif"
+      ],
+      "outcome": "collapsed",
+      "significance": 10
     }
   ],
   "ceasefireEconomicRecovery": {
     "labels": [
       "Apr 08",
-      "Apr 09"
+      "Apr 09",
+      "Apr 10",
+      "Apr 11",
+      "Apr 12"
     ],
     "hormuzDaily": [
       8,
-      10
+      10,
+      8,
+      6,
+      5
     ],
     "hormuzPreWar": 135,
     "brentPreCeasefire": 109,
     "brentDaily": [
       95.8,
-      97.39
+      97.39,
+      96.5,
+      97,
+      98.5
     ],
     "shipsStranded": [
       800,
-      790
+      790,
+      785,
+      790,
+      800
     ],
-    "note": "Hormuz partially reopening. Mine clearance underway. Insurance premiums dropping."
+    "note": "Hormuz REVERSING — Iran re-closed after Lebanon strikes. Ships stranded rising again. Oil climbing on talk collapse."
   },
   "ceasefirePostConflictTree": {
     "branchExtend": [
       {
         "step": "2-week extension announced",
         "timeline": "Apr 21",
-        "probability": 35,
+        "probability": 28,
         "detail": "Most likely if framework but no final agreement. Pakistan mediates."
       },
       {
@@ -4779,7 +5112,7 @@
       {
         "step": "Framework agreement signed",
         "timeline": "Apr 12-21",
-        "probability": 20,
+        "probability": 10,
         "detail": "Requires NPT/sanctions breakthrough at Islamabad."
       },
       {
@@ -4797,7 +5130,7 @@
       {
         "step": "Iran or US resumes strikes",
         "timeline": "Apr 21+",
-        "probability": 30,
+        "probability": 40,
         "detail": "Immediate return to pre-ceasefire dynamics. Worse — broken trust amplifies."
       },
       {
@@ -4815,7 +5148,7 @@
       {
         "step": "Ceasefire holds but no progress",
         "timeline": "Apr 14-21",
-        "probability": 15,
+        "probability": 22,
         "detail": "Talks stall, Hormuz slow, both sides posturing."
       },
       {

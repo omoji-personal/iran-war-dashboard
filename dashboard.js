@@ -191,6 +191,10 @@ function setMode(mode) {
   });
   document.body.classList.toggle('ceasefire-mode', mode === 'ceasefire');
   document.body.classList.toggle('war-mode', mode === 'war');
+  // Destroy ceasefire charts when leaving ceasefire mode to prevent memory leak
+  if (mode === 'war') {
+    kill('cfViolation'); kill('cfHormuzRecovery'); kill('cfOilRecovery');
+  }
   render();
 }
 window.setMode = setMode;
@@ -879,11 +883,17 @@ function computeCeasefireForDay(dayIdx) {
    CEASEFIRE RENDER FUNCTIONS
    ============================================================ */
 
-function renderCeasefireHero() {
+function renderCeasefireHero(dayOverride) {
   var labels = (state.dailySeries || {}).labels || [];
   var maxDay = labels.length;
-  var eng = computeCeasefireForDay(maxDay - 1);
-  if (!eng) return;
+  var dayIdx = (typeof dayOverride === 'number') ? dayOverride : maxDay - 1;
+  var eng = computeCeasefireForDay(dayIdx);
+  if (!eng) {
+    // Pre-ceasefire day — show placeholder
+    var heroEl = $('cfStatusDisplay');
+    if (heroEl) heroEl.innerHTML = '<div style="font-size:18px;color:var(--muted)">Pre-ceasefire period — switch to War Mode or scrub forward</div>';
+    return;
+  }
 
   // Status display
   var statusEl = $('cfStatusDisplay');
@@ -1552,6 +1562,14 @@ function renderAdditionalCharts() {
 
 function renderStockpile() {
   if (!$('stockpileCards')) return;
+  // Mode-aware header
+  var stockHeader = $('stockpileCards') && $('stockpileCards').closest('.panel');
+  if (stockHeader) {
+    var h3 = stockHeader.querySelector('h3');
+    var sub = stockHeader.querySelector('.sub');
+    if (h3) h3.textContent = currentMode === 'ceasefire' ? 'Remaining arsenal' : 'Stockpile burn rate';
+    if (sub) sub.textContent = currentMode === 'ceasefire' ? 'What Iran has left after 39 days of war.' : 'How long can Iran sustain fire?';
+  }
   var ds = state.dailySeries || {};
   var missiles = ds.missiles || [];
   var drones = ds.drones || [];
@@ -1954,7 +1972,18 @@ function buildSectionNav() {
   if (!nav) return;
 
   // Define clean grouped nav structure — map DOM element IDs/queries to labels
-  var groups = [
+  // Ceasefire-specific nav items
+  var cfItems = currentMode === 'ceasefire' ? [
+    { group: 'Ceasefire', items: [
+      { q: '.ceasefire-hero', label: 'Ceasefire Status' },
+      { q: '#cfCountdown', label: 'Ceasefire Countdown', up: 1 },
+      { q: '#cfViolationChart', label: 'Violation Tracker', up: 1 },
+      { q: '#cfNegotiationTimeline', label: 'Peace Talks', up: 1 },
+      { q: '#cfHormuzRecoveryChart', label: 'Hormuz Recovery', up: 1 }
+    ]}
+  ] : [];
+
+  var groups = cfItems.concat([
     { group: 'Prediction', items: [
       { q: '.prediction-hero', label: 'Forecast & Decision Engine' },
       { q: '#simButtons', label: 'Scenario Simulator', up: 1 },
@@ -1963,7 +1992,7 @@ function buildSectionNav() {
       { q: '[data-i18n="kickerThesis"]', label: 'Capability Thesis', up: 1 },
       { q: '#stockpileCards', label: 'Stockpile Burn Rate', up: 1 },
       { q: '[data-i18n="kickerVectors"]', label: 'Pressure Index', up: 1 },
-      { q: '#deadlineCountdown', label: 'April 6 Deadline', up: 1 },
+      { q: '#deadlineCountdown', label: 'April 7 Deadline', up: 1 },
       { q: '#escalationLadder', label: 'Escalation Ladder', up: 1 }
     ]},
     { group: 'Situation', items: [
@@ -1995,7 +2024,7 @@ function buildSectionNav() {
       { q: '#timeline', label: 'Timeline & Evaluation', up: 1 },
       { q: '#dailyRows', label: 'Event Log', up: 2 }
     ]}
-  ];
+  ]);
 
   var html = '';
   groups.forEach(function(g) {
@@ -2227,7 +2256,7 @@ function renderEscalationLadder() {
   var ladder = state.escalationLadder;
   if (!ladder || !$('escalationLadder')) return;
 
-  var statusLabels = { crossed: 'Crossed', imminent: 'Imminent', threatened: 'Threatened', preparing: 'Preparing', not_crossed: 'Not crossed' };
+  var statusLabels = { crossed: 'Crossed', imminent: 'Imminent', threatened: 'Threatened', preparing: 'Preparing', not_crossed: 'Not crossed', de_escalating: 'De-escalating', suspended: 'Suspended', reversed: 'Reversed' };
 
   $('escalationLadder').innerHTML = '<div class="esc-ladder">' +
     ladder.map(function(r, i) {
@@ -2306,11 +2335,18 @@ function resetScrubber() {
 window.resetScrubber = resetScrubber;
 
 function updateMetricsForDay(day) {
-  var ds = state.dailySeries;
-  var oil = state.oil;
+  var ds = state.dailySeries || {};
+  var oil = state.oil || {};
   var idx = day - 1;
+  if (!ds.labels || !ds.labels.length) return;
   var maxDay = ds.labels.length;
   var isLive = day === maxDay;
+  var cfStartDay = state.ceasefireStartIdx || CEASEFIRE_START_IDX;
+
+  // Ceasefire mode: update ceasefire hero for scrubbed day
+  if (currentMode === 'ceasefire') {
+    renderCeasefireHero(idx);
+  }
 
   // If live day, restore full render
   if (isLive) {

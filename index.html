@@ -43,10 +43,16 @@
 
   <template id="dashboardTemplate">
     <!-- About -->
-    <section class="panel" style="margin-bottom:16px;border-color:var(--gold);background:linear-gradient(135deg,rgba(255,209,102,.04),rgba(99,179,255,.04))">
+    <section class="panel" style="margin-bottom:16px;border-color:var(--gold);background:linear-gradient(135deg,rgba(255,209,102,.04),rgba(99,179,255,.04))" data-mode="war">
       <h3 style="color:var(--gold);margin-bottom:8px">How this dashboard works</h3>
       <div style="font-size:13px;line-height:1.65;color:var(--soft)">
         This dashboard predicts how the 2026 Iran war is most likely to end by analyzing <strong style="color:var(--text)">military data</strong> (daily missile/drone launches, stockpile estimates, aircraft losses), <strong style="color:var(--text)">economic signals</strong> (oil prices, Hormuz shipping traffic, gas prices), <strong style="color:var(--text)">political indicators</strong> (US approval ratings, casualty counts, coalition support), and <strong style="color:var(--text)">diplomatic activity</strong> (mediator meetings, proposals, ceasefire rejections). The core engine models war ending as three conditions that must align simultaneously: a viable deal must exist, the US must decide to take it, and Iran must accept it. The resolution probability is calibrated against prediction markets and historical conflict base rates. Updated twice daily.
+      </div>
+    </section>
+    <section class="panel" style="margin-bottom:16px;border-color:var(--cyan);background:linear-gradient(135deg,rgba(70,215,176,.04),rgba(99,179,255,.04))" data-mode="ceasefire">
+      <h3 style="color:var(--cyan);margin-bottom:8px">How this dashboard works</h3>
+      <div style="font-size:13px;line-height:1.65;color:var(--soft)">
+        This dashboard tracks the <strong style="color:var(--text)">2-week ceasefire</strong> (Apr 7-21) and predicts whether it holds, extends, leads to a permanent deal, or collapses back to war. It analyzes <strong style="color:var(--text)">violation reports</strong>, <strong style="color:var(--text)">negotiation progress</strong> (Islamabad peace talks), <strong style="color:var(--text)">economic recovery</strong> (Hormuz reopening, oil normalization), and <strong style="color:var(--text)">political signals</strong> from both sides. The ceasefire engine models stability as a function of mediator engagement, diplomatic signals, Hormuz progress, proxy escalation, and violation severity. Calibrated against prediction markets and historical ceasefire survival rates. Switch to War Mode to see the full conflict analysis.
       </div>
     </section>
 
