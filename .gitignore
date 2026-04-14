@@ -1,0 +1,17 @@
+# macOS
+.DS_Store
+
+# Local Claude Code config (keep the dir but not machine-specific settings)
+.claude/settings.local.json
+.claude/launch.json
+
+# Backups
+*.bak
+war-data.json.bak
+
+# Vercel
+.vercel
+
+# Editor
+.vscode/
+.idea/
