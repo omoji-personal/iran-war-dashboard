@@ -1,6 +1,6 @@
 {
   "meta": {
-    "lastUpdated": "2026-04-14T22:00:00-04:00",
+    "lastUpdated": "2026-04-15T07:00:00-04:00",
     "preWarBaselines": {
       "d1Missiles": 480,
       "preWarOil": 65,
@@ -8,6 +8,7 @@
       "preWarGas": 3
     },
     "notes": [
+      "D47 (Apr 15 07:00 ET): BLOCKADE DAY 2 — TRUMP SIGNALS TALKS 'NEXT 2 DAYS'. Blockade Day 2 passes without confrontation. MAJOR: Trump told NY Post 'something could be happening over the next two days' in Islamabad — strongest deal signal yet. WH official confirmed: 'future talks under discussion but nothing scheduled.' Islamabad AND Geneva being considered. Iran Embassy Islamabad: 'later this week or early next week.' Oil FELL on talks signal: WTI ~-8% to ~$91.50, Brent ~$95.50. Zero attacks D40-D47 (9 straight days). Ceasefire Day 9 — 6 days to Apr 21. Turkey 45-60 day extension offer still active. Israel-Lebanon talks (D46) continuing. Internet 1,128+ hrs.",
       "D46 (Apr 14 22:00 ET): BLOCKADE DAY 1 ENDS — DIPLOMACY STIRS. US Navy blockade active since 10AM ET. BBC Verify: at least 4 Iran-related ships crossed Hormuz. China-linked tanker tested blockade. Trump: 'ceasefire holding well' but 'I don't care' about new talks. Brent fell further to ~$96.48 (-3% from Sunday). Turkey FM Fidan: ceasefire could be EXTENDED 45-60 DAYS. Israel-Lebanon direct talks at State Dept 11AM ET — FIRST since 1993 (Rubio + ambassadors Leiter + Hamadeh). Hezbollah's Qassem urged Lebanon to cancel. Egypt FM to DC for Rubio meeting. Pakistan PM: ceasefire 'holding.' Regional source (CNN): another negotiation round possible. US destroyed 4 Houthi drones in Yemen. 20,000 vessels stranded. Zero attacks D46. Ceasefire Day 8. 7 days to Apr 21. Internet ~1,104+ hrs.",
       "D45 (Apr 13 14:00 ET): TRUMP DECLARES NAVAL BLOCKADE — US Navy to blockade all Iranian port traffic in Hormuz starting 10AM ET Monday (Apr 14). CENTCOM confirmed. Iran calls it 'piracy.' Brent surged ~$102 (+8%). UK/France/Spain/Turkey refuse to join blockade. China condemns. Ceasefire Day 7 of 14. Zero Iranian attacks D40-D45. But blockade = ceasefire effectively dead at sea. Lebanon 2,055+ killed. HRANA still 3,636. Internet 1,080+ hrs (45 days). Polymarket ceasefire-holds crashing. 8 days to Apr 21 expiry.",
       "D44 MIDDAY (Apr 12 12:00 ET): TALKS FAILED — 21-HOUR ISLAMABAD MARATHON ENDS WITH NO DEAL. Vance left Pakistan: 'Iran chose not to accept our terms.' Key gaps: nuclear weapons commitment, Hormuz control, enriched uranium, sanctions. Ghalibaf blames US for 'trust' failure. Trump hints NAVAL BLOCKADE (shares article). US destroyers USS Peterson + USS Murphy attempted Hormuz mine-clearing D43 — IRGC threatened, launched UAV, disputed if transit succeeded. Brent $95.20. Ceasefire technically holds through Apr 21 but talks collapse = escalation risk surging. Lebanon: 2,020+ killed, 6,436 wounded. HRANA still 3,636. Internet 1,056+ hrs.",
@@ -21,38 +22,38 @@
       "D39 DEADLINE DAY - TRUMP 8PM ET ULTIMATUM (~22 HRS): Iran rejected 15-pt Islamabad Accord; counteroffered 10-pt maximalist (permanent end, sanctions lift, reconstruction, NPT enrichment, Hormuz toll). Trump: 'significant but not good enough' - REFUSES to extend. 'Power Plant Day and Bridge Day wrapped up in one.' IRGC: 'helpless, nervous, stupid.' Khademi (IRGC Intel No.2) + Bagheri (Quds) killed in joint US-Israel strike. South Pars petrochem struck. F-15E WSO rescued by Delta/SEAL/CIA after 24hrs. Hormuz: 13 vessels/week transit (trickle, northern channel, Iran toll). Brent $109-111. WTI ~$108. AAA $4.119 (+$0.80/mo). HRANA 3,540+ killed (1,616 civilians, 244+ children). Internet 960+ hrs. Polymarket: ceasefire by Dec 31 = 76%; conflict-ends by Dec 31 = 85%. P(Trump follow-through) = 0.22 (up from 0.18). Scenarios: escalation 37% / attrition 28% / victory 13% / deal 12% / intervention 7% / fracture 3%."
     ]
   },
-  "theoryBox": "<strong>Day 46 (Apr 14) — BLOCKADE DAY 1 + DIPLOMACY STIRS:</strong> Blockade active since 10AM ET. 4+ Iran ships crossed Hormuz (BBC Verify). Brent fell to ~$96.48 (-3%). SIGNIFICANT: Turkey FM Fidan offers 45-60 day ceasefire EXTENSION. Israel-Lebanon direct talks at State Dept — FIRST since 1993. Hezbollah opposes. Egypt FM to DC. CNN: new negotiation round possible. Zero attacks D40-D46. Ceasefire Day 8 — 7 days to Apr 21. Scenarios: collapse 40% / stalled 23% / deal 19% / victory 10% / intervention 5% / fracture 3%.",
-  "theoryBox_fa": "<strong>Day 46 (۱۴ آوریل) — محاصره روز ۱ + دیپلماسی:</strong> محاصره فعال. ۴+ کشتی ایرانی از هرمز (BBC). برنت ~$۹۶.۴۸ (-۳٪). مهم: ترکیه تمدید ۴۵-۶۰ روزه آتش‌بس پیشنهاد. مذاکرات مستقیم اسرائیل-لبنان — اولین از ۱۹۹۳. حزب‌الله مخالف. صفر حمله. آتش‌بس روز ۸ — ۷ روز. فروپاشی ۴۰٪ / بن‌بست ۲۳٪ / توافق ۱۹٪.",
+  "theoryBox": "<strong>Day 47 (Apr 15) — BLOCKADE DAY 2: TRUMP SIGNALS TALKS 'NEXT 2 DAYS':</strong> Blockade Day 2 no confrontation. BIGGEST SIGNAL YET: Trump told NY Post 'something could be happening over next two days' in Islamabad — second round talks imminent. WH: 'under discussion but not scheduled.' Oil FELL on signal: Brent ~$95.50, WTI ~$91.50 (-8%). Zero attacks D40-D47 (9 straight). Ceasefire Day 9 — 6 days to Apr 21. Turkey 45-60 day extension still active. Scenarios: collapse 37% / deal 22% / stalled 24% / victory 10% / intervention 5% / fracture 2%.",
+  "theoryBox_fa": "<strong>Day 47 (۱۵ آوریل) — محاصره روز ۲: ترامپ '۲ روز دیگر' مذاکره:</strong> محاصره روز ۲ بدون رویارویی. مهم‌ترین سیگنال: ترامپ NY Post: 'ممکن است ۲ روز دیگر چیزی اتفاق بیفتد.' کاخ سفید: 'در بحث.' نفت سقوط: برنت ~$۹۵.۵، WTI ~$۹۱.۵ (-۸٪). صفر حمله روز ۴۷. آتش‌بس روز ۹ — ۶ روز. فروپاشی ۳۷٪ / توافق ۲۲٪ / بن‌بست ۲۴٪.",
   "metrics": [
     {
       "label": "Day",
-      "value": "46 BLOCKADE",
-      "desc": "D46 Apr 14. Ceasefire Day 8 of 14. Blockade active. Turkey: 45-60 day extension possible. Israel-Lebanon talks (first since 1993). 7 days to Apr 21."
+      "value": "47 BLOCKADE D2",
+      "desc": "D47 Apr 15. Ceasefire Day 9 of 14. Blockade Day 2. TRUMP: '2 days' signal for new talks. 6 days to Apr 21 expiry."
     },
     {
       "label": "Cumul. missiles",
       "value": "~3,413",
-      "desc": "D46: 0 new. Zero launches D40-D46 (7 straight days). Ceasefire holding on strikes."
+      "desc": "D47: 0 new. Zero launches D40-D47 (9 straight days). Ceasefire holding."
     },
     {
       "label": "Cumul. drones",
       "value": "~5,361",
-      "desc": "D46: 0 new. Ceasefire holding despite active blockade."
+      "desc": "D47: 0 new. Ceasefire + blockade Day 2 — no Iranian attacks."
     },
     {
       "label": "Brent crude",
-      "value": "~$96.48",
-      "desc": "DOWN from $102 (-3% Mon). Profit-taking + deal rhetoric. WTI ~$93. Turkey offers 45-60 day extension. If blockade holds + no deal: rebound to $105-110+."
+      "value": "~$95.50",
+      "desc": "DOWN from $96.48 (-1%). WTI ~$91.50 (-8%). OIL FELL on WH talks signal. Trump 'next 2 days' rhetoric = market relief. If deal: $85-90. If collapse: $115-125+."
     },
     {
       "label": "Iran dead",
       "value": "~8,300+",
-      "desc": "HRANA 3,636 (still Apr 7 figure). Hengaw: 6,620 military. No new deaths under ceasefire."
+      "desc": "HRANA 3,636 (still Apr 7 figure). Hengaw: 6,620 military. No new deaths under ceasefire D40-D47."
     },
     {
       "label": "Lebanon",
       "value": "2,055+ killed",
-      "desc": "6,500+ wounded. Rubio hosting Israel+Lebanon ambassadors Tuesday. Potential ceasefire talks."
+      "desc": "6,500+ wounded. Israel-Lebanon direct talks D46 (first since 1993). Hezbollah opposing. Rubio leading."
     },
     {
       "label": "Israel dead",
@@ -61,45 +62,45 @@
     },
     {
       "label": "Hormuz",
-      "value": "BLOCKADE ACTIVE",
-      "desc": "31 vessels through Hormuz in 24hrs. ~3 to Iranian ports. China-linked tanker tested blockade. 20,000 vessels stranded (UN). 200+ mines remain."
+      "value": "BLOCKADE DAY 2",
+      "desc": "Day 2 no confrontation. 4+ Iran ships D46, more D47. 20,000 vessels stranded (UN). 200+ mines. Trump signals talks = market relief."
     },
     {
       "label": "Ceasefire",
-      "value": "DAY 8 — 7 DAYS",
-      "desc": "Turkey FM: 45-60 day extension possible. Israel-Lebanon talks underway. But blockade = maritime war. 7 days to expiry. Collapse 40%."
+      "value": "DAY 9 — 6 DAYS",
+      "desc": "TRUMP: talks 'next 2 days.' Turkey 45-60 day extension still active. WH 'under discussion.' 6 days to expiry. Collapse 37%, Deal 22% (UP)."
     }
   ],
   "metrics_fa": [
     {
       "label": "روز",
-      "value": "۴۶ محاصره",
-      "desc": "روز ۴۶ — ۱۴ آوریل. آتش‌بس روز ۸. محاصره بنادر ایران فعال. ۷ روز تا پایان."
+      "value": "۴۷ محاصره روز ۲",
+      "desc": "روز ۴۷ — ۱۵ آوریل. آتش‌بس روز ۹. محاصره روز ۲. ترامپ: '۲ روز دیگر.' ۶ روز تا پایان."
     },
     {
       "label": "مجموع موشک",
       "value": "~۳٬۴۱۳",
-      "desc": "روز ۴۶: ۰ جدید. صفر پرتاب D40-D46."
+      "desc": "روز ۴۷: ۰ جدید. صفر پرتاب D40-D47 (۹ روز متوالی)."
     },
     {
       "label": "مجموع پهپاد",
       "value": "~۵٬۳۶۱",
-      "desc": "روز ۴۶: ۰ جدید."
+      "desc": "روز ۴۷: ۰ جدید. آتش‌بس + محاصره روز ۲."
     },
     {
       "label": "نفت برنت",
-      "value": "~$۹۶.۴۸",
-      "desc": "کاهش از $۱۰۲ (-۳٪). سودگیری. ترکیه تمدید ۴۵-۶۰ روزه پیشنهاد."
+      "value": "~$۹۵.۵",
+      "desc": "کاهش. WTI ~$۹۱.۵ (-۸٪). نفت سقوط با سیگنال مذاکره ترامپ. اگر توافق: $۸۵-۹۰."
     },
     {
       "label": "کشته ایران",
       "value": "~۸٬۳۰۰+",
-      "desc": "هرانا ۳٬۶۳۶. هنگاو ۶٬۶۲۰. بدون کشته جدید."
+      "desc": "هرانا ۳٬۶۳۶. هنگاو ۶٬۶۲۰. بدون کشته جدید D40-D47."
     },
     {
       "label": "لبنان",
       "value": "۲٬۰۵۵+ کشته",
-      "desc": "۶٬۵۰۰+ زخمی. روبیو میزبان مذاکرات اسرائیل-لبنان سه‌شنبه."
+      "desc": "۶٬۵۰۰+ زخمی. مذاکرات مستقیم اسرائیل-لبنان روز ۴۶ ادامه دارد. حزب‌الله مخالف."
     },
     {
       "label": "کشته اسرائیل",
@@ -108,28 +109,28 @@
     },
     {
       "label": "هرمز",
-      "value": "محاصره فعال",
-      "desc": "۳۱ کشتی در ۲۴ ساعت. ~۳ به بنادر ایران. ۲۰٬۰۰۰ متوقف."
+      "value": "محاصره روز ۲",
+      "desc": "روز ۲ بدون رویارویی. ۲۰٬۰۰۰ متوقف. ۲۰۰+ مین. ترامپ مذاکره = تسکین بازار."
     },
     {
       "label": "آتش‌بس",
-      "value": "روز ۸ — ۷ روز",
-      "desc": "ترکیه: تمدید ۴۵-۶۰ روزه ممکن. مذاکرات اسرائیل-لبنان. محاصره = جنگ دریایی. فروپاشی ۴۰٪."
+      "value": "روز ۹ — ۶ روز",
+      "desc": "ترامپ: '۲ روز دیگر.' کاخ سفید: 'در بحث.' ترکیه تمدید. فروپاشی ۳۷٪. توافق ۲۲٪ (↑)."
     }
   ],
   "sitrep": [
-    "<strong>D46 EVE (Apr 14 22:00 ET): BLOCKADE DAY 1 ENDS — DIPLOMACY STIRS.</strong> Blockade active since 10AM ET. BBC Verify: at least 4 Iran-related ships crossed Hormuz. China-linked tanker tested blockade. Trump: 'ceasefire holding well' but 'I don't care' about new talks. Pakistan PM Sharif: ceasefire 'holding.' US destroyed 4 Houthi drones in Yemen.",
-    "<strong>OIL CONTINUES FALLING:</strong> Brent slipped to ~$96.48 (-3% from $102 Sun). Profit-taking + Turkey 45-60 day extension offer + Trump mixed signals. Market pricing in extended ceasefire possibility. But if blockade holds + no deal: rebound $105-110+.",
-    "<strong>MAJOR: TURKEY OFFERS 45-60 DAY CEASEFIRE EXTENSION.</strong> Turkish FM Fidan: 'If parties make good progress, additional ceasefire 45-60 days.' Regional source (CNN): another negotiation round possible. This is the MOST significant diplomatic signal since talks collapsed Apr 12. Pakistan offers 2nd Islamabad round. Egypt FM heading to DC.",
-    "<strong>ISRAEL-LEBANON DIRECT TALKS — FIRST SINCE 1993:</strong> Rubio hosted Israeli Ambassador Leiter + Lebanese Ambassador Hamadeh at State Dept 11AM ET. First direct Israel-Lebanon talks since 1993. Hezbollah's Qassem urged Lebanon to cancel. Focus: ceasefire, Hezbollah disarmament, broader peace. 2,055+ killed in Lebanon.",
-    "<strong>CEASEFIRE DAY 8 OF 14:</strong> Zero Iranian attacks D40-D46 (7 straight days). Ceasefire technically holds on strikes. Blockade = maritime war dimension. But Turkey extension offer + Israel-Lebanon talks = diplomatic momentum rising. 7 days to Apr 21 expiry."
+    "<strong>D47 (Apr 15 07:00 ET): BLOCKADE DAY 2 — TRUMP SIGNALS TALKS 'NEXT 2 DAYS'.</strong> Blockade Day 2 passes without confrontation — no shots fired, no Iran resistance. BIGGEST DIPLOMATIC SIGNAL YET: Trump told NY Post 'something could be happening over the next two days' in Islamabad. White House: 'future talks under discussion but nothing scheduled.' Iran Embassy Islamabad: 'later this week or early next week.' Pakistan + Geneva being discussed as host cities.",
+    "<strong>OIL DIVES ON TALKS SIGNAL:</strong> WTI crashed ~8% to ~$91.50. Brent ~$95.50 (from $96.48 D46). Oil falling specifically because WH signaled possible second round of talks. Market pricing in deal pathway more aggressively than Day 1. If deal materializes: $85-90. If collapse: $115-125+.",
+    "<strong>CEASEFIRE DAY 9 OF 14:</strong> Zero Iranian attacks D40-D47 (9 straight days). Blockade Day 2 no confrontation = Iran still calculating diplomatically. Turkey FM Fidan 45-60 day extension still on table. Israel-Lebanon talks (D46) continuing. 6 days to Apr 21 expiry. Scenarios: collapse 37% (↓) / deal 22% (↑) / stalled 24% (↑).",
+    "<strong>CONVERGENCE RISING — NOW 4.8:</strong> For second day running, convergence improving. Trump talks signal + blockade Day 2 no confrontation + oil falling = market relief. Multiple diplomatic channels active: Turkey, Pakistan, Egypt, Israel-Lebanon. Still risks: 200+ mines, Houthis, Hezbollah opposing Lebanon talks, 6 days to expiry.",
+    "<strong>INTERNET: 1,128+ HOURS (47 DAYS):</strong> Longest in Iran history. No motivation to restore under blockade. Turkey extension would help. Key watch: if talks schedule announced → internet restoration becomes bargaining chip."
   ],
   "sitrep_fa": [
-    "<strong>روز ۴۶ عصر (۱۴ آوریل): محاصره روز ۱ + دیپلماسی.</strong> محاصره فعال. BBC: ۴+ کشتی ایرانی از هرمز. ترامپ: 'آتش‌بس برقرار' اما 'برایم مهم نیست.' پاکستان: آتش‌بس 'برقرار.' آمریکا ۴ پهپاد حوثی نابود کرد.",
-    "<strong>نفت ادامه کاهش:</strong> برنت ~$۹۶.۴۸ (-۳٪ از $۱۰۲). سودگیری + پیشنهاد ترکیه تمدید ۴۵-۶۰ روزه.",
-    "<strong>مهم: ترکیه تمدید ۴۵-۶۰ روزه آتش‌بس پیشنهاد.</strong> وزیر خارجه فیدان: 'اگر پیشرفت خوب، آتش‌بس اضافی ۴۵-۶۰ روز.' منبع CNN: دور جدید مذاکره ممکن. پاکستان دور ۲. مصر وزیر خارجه به DC.",
-    "<strong>مذاکرات مستقیم اسرائیل-لبنان — اولین از ۱۹۹۳:</strong> روبیو میزبان سفرای اسرائیل و لبنان. حزب‌الله مخالف. ۲٬۰۵۵+ کشته لبنان.",
-    "<strong>آتش‌بس روز ۸ از ۱۴:</strong> صفر حمله D40-D46. ترکیه تمدید + مذاکرات لبنان = حرکت دیپلماتیک. ۷ روز تا پایان."
+    "<strong>روز ۴۷ (۱۵ آوریل): محاصره روز ۲ — ترامپ: '۲ روز دیگر'.</strong> محاصره روز ۲ بدون رویارویی. ترامپ NY Post: 'ممکن است ۲ روز دیگر چیزی اتفاق بیفتد.' کاخ سفید: 'در بحث.' سفارت ایران اسلام‌آباد: 'آخر هفته یا اوایل هفته آینده.'",
+    "<strong>نفت سقوط با سیگنال مذاکره:</strong> WTI ~-۸٪ به ~$۹۱.۵. برنت ~$۹۵.۵. نفت به خاطر سیگنال کاخ سفید سقوط کرد. اگر توافق: $۸۵-۹۰.",
+    "<strong>آتش‌بس روز ۹ از ۱۴:</strong> صفر حمله D40-D47 (۹ روز متوالی). محاصره روز ۲ بدون رویارویی. ترکیه تمدید ۴۵-۶۰ روز. ۶ روز تا ۲۱ آوریل. فروپاشی ۳۷٪ (↓). توافق ۲۲٪ (↑).",
+    "<strong>همگرایی ۴.۸ — دومین روز متوالی بهبود:</strong> سیگنال مذاکره + روز ۲ بدون رویارویی + نفت کاهش. چند کانال: ترکیه، پاکستان، مصر، لبنان. ریسک: ۲۰۰+ مین، ۶ روز.",
+    "<strong>اینترنت: ۱٬۱۲۸+ ساعت (۴۷ روز):</strong> طولانی‌ترین در تاریخ ایران. اگر مذاکره: اینترنت = چانه‌زنی."
   ],
   "dailySeries": {
     "labels": [
@@ -178,7 +179,8 @@
       "Apr 11",
       "Apr 12",
       "Apr 13",
-      "Apr 14"
+      "Apr 14",
+      "Apr 15"
     ],
     "missiles": [
       480,
@@ -221,6 +223,7 @@
       45,
       58,
       12,
+      0,
       0,
       0,
       0,
@@ -274,10 +277,11 @@
       0,
       0,
       0,
+      0,
       0
     ],
-    "sourceLabel": "D1-D10: JPost. D11: UAE MoD. D12-D38: fragment est. D39: ceasefire. D40-D46: 0+0 ceasefire holding. D46: Blockade active, 0 attacks.",
-    "throughDate": "2026-04-14",
+    "sourceLabel": "D1-D10: JPost. D11: UAE MoD. D12-D38: fragment est. D39: ceasefire. D40-D47: 0+0 ceasefire holding. D47: Blockade Day 2, 0 attacks. Trump signals talks.",
+    "throughDate": "2026-04-15",
     "confidence": [
       1,
       1,
@@ -320,6 +324,7 @@
       0.5,
       0.5,
       0.5,
+      1,
       1,
       1,
       1,
@@ -376,7 +381,8 @@
       "Apr 11",
       "Apr 12",
       "Apr 13",
-      "Apr 14"
+      "Apr 14",
+      "Apr 15"
     ],
     "brent": [
       65,
@@ -425,7 +431,8 @@
       96.0,
       95.2,
       102.0,
-      96.48
+      96.48,
+      95.5
     ],
     "wti": [
       62,
@@ -474,9 +481,10 @@
       93.0,
       96.57,
       98.0,
-      93.0
+      93.0,
+      91.5
     ],
-    "note": "D46 EVE: Brent ~$96.48 (DOWN -3% from $102 Sun). WTI ~$93. Profit-taking + Turkey 45-60 day extension offer. If blockade holds without deal: rebound $105-110+. Goldman still $130 worst case."
+    "note": "D47 (Apr 15): Brent ~$95.50 (fell). WTI ~$91.50 (DOWN ~8%). OIL CRASHED on WH talks signal — Trump 'next 2 days.' Market pricing in deal pathway. If deal: $85-90. If collapse: $115-125+. Goldman $130 worst case."
   },
   "pressure": {
     "labels": [
@@ -525,7 +533,8 @@
       "Apr 11",
       "Apr 12",
       "Apr 13",
-      "Apr 14"
+      "Apr 14",
+      "Apr 15"
     ],
     "attrition": [
       2,
@@ -567,6 +576,7 @@
       10,
       10,
       10.2,
+      10.5,
       10.5,
       10.5,
       10.5,
@@ -621,7 +631,8 @@
       2.8,
       3.5,
       5.5,
-      6.0
+      6.0,
+      5.8
     ]
   },
   "latestTargetBreakdown": {
@@ -1040,6 +1051,15 @@
       "missiles": 0,
       "drones": 0,
       "primary": "D46 BLOCKADE DAY 1 + DIPLOMACY (Apr 14): Blockade active since 10AM ET. BBC Verify: 4+ Iran ships crossed Hormuz. Trump: 'holding well' but 'I don't care' about new talks. Brent ~$96.48 (-3%). TURKEY FM FIDAN: ceasefire could be EXTENDED 45-60 DAYS. Israel-Lebanon DIRECT TALKS at State Dept — first since 1993 (Rubio + Leiter + Hamadeh). Hezbollah's Qassem: cancel talks. Egypt FM to DC. CNN: new round possible. US destroyed 4 Houthi drones. 20,000 vessels stranded. Zero attacks D46. Ceasefire Day 8. 7 days to Apr 21."
+    },
+    {
+      "date": "Apr 15",
+      "missiles": 0,
+      "drones": 0,
+      "primary": "D47 BLOCKADE DAY 2 — TRUMP SIGNALS TALKS 'NEXT 2 DAYS' (Apr 15): Blockade Day 2 passes without confrontation — no shots fired, no Iran resistance. MAJOR DIPLOMATIC SIGNAL: Trump told NY Post 'something could be happening over the next two days' in Islamabad. WH official: 'future talks under discussion but nothing scheduled.' Iran Embassy Islamabad: 'later this week or early next week.' Islamabad AND Geneva being considered. Zero attacks D47. Ceasefire Day 9. 6 days to Apr 21.",
+      "capability": "D47: 0+0. Ceasefire + blockade Day 2. Iran still not resisting blockade = diplomatic calculation. Stockpile intact. 9 straight days zero attacks. Turkey 45-60 day extension still active. Trump talks signal = most concrete deal pathway yet.",
+      "cost": "Brent ~$95.50, WTI ~$91.50 (-8% — OIL CRASHED ON TALKS SIGNAL). Markets pricing in second round of negotiations. If deal: $85-90. If collapse: $115-125+. Internet 1,128+ hrs (47 days).",
+      "assessment": "D47 — TALKS SIGNAL CHANGES CALCULUS. Trump's NY Post 'next 2 days' comment is most concrete diplomatic signal since blockade began. Oil's 8% drop = market believing deal is possible. Key question: will Iran agree to second round before Apr 21 expiry? If yes: ceasefire likely extended. If no: collapse risk surges. Convergence 4.8 (UP from 4.6). Deal probability 22% (UP from 19%)."
     }
   ],
   "timeline": [
@@ -1094,6 +1114,10 @@
     {
       "title": "D46 Apr 14 — BLOCKADE DAY 1 + DIPLOMACY STIRS",
       "body": "Blockade active since 10AM ET. NO confrontation — Iran did not resist. 4+ ships crossed (BBC Verify). Turkey FM Fidan: 45-60 DAY CEASEFIRE EXTENSION possible. Israel-Lebanon DIRECT TALKS at State Dept (first since 1993). Hezbollah opposes. Egypt FM to DC. Brent fell to $96.48. Multiple diplomatic channels opening for first time since collapse Apr 12. Convergence improving 4.6 (from 4.2)."
+    },
+    {
+      "title": "D47 Apr 15 — TRUMP: TALKS 'NEXT 2 DAYS' — OIL DIVES 8%",
+      "body": "Blockade Day 2 passes without confrontation. BIGGEST SIGNAL: Trump told NY Post talks 'could be happening over next two days' in Islamabad. WH: 'under discussion, nothing scheduled.' Iran Embassy: 'later this week or next.' Oil CRASHED: WTI -8% to ~$91.50, Brent ~$95.50. Market pricing in second round. Ceasefire Day 9 — 6 days to Apr 21. Convergence 4.8 (UP from 4.6). Deal 22% (UP from 19%). Collapse 37% (DOWN from 40%)."
     }
   ],
   "timeline_fa": [
@@ -1148,28 +1172,32 @@
     {
       "title": "D46 ۱۴ آوریل — محاصره روز ۱ + دیپلماسی",
       "body": "محاصره فعال. بدون رویارویی — ایران مقاومت نکرد. ۴+ کشتی عبور (BBC). ترکیه: تمدید ۴۵-۶۰ روزه ممکن. مذاکرات مستقیم اسرائیل-لبنان (اولین از ۱۹۹۳). حزب‌الله مخالف. مصر DC. برنت $۹۶.۴۸. همگرایی ۴.۶ (↑)."
+    },
+    {
+      "title": "D47 ۱۵ آوریل — ترامپ: '۲ روز دیگر' — نفت -۸٪",
+      "body": "محاصره روز ۲ بدون رویارویی. ترامپ NY Post: '۲ روز دیگر.' کاخ سفید: 'در بحث.' نفت سقوط: WTI -۸٪ به ~$۹۱.۵، برنت ~$۹۵.۵. آتش‌بس روز ۹ — ۶ روز. همگرایی ۴.۸ (↑). توافق ۲۲٪ (↑). فروپاشی ۳۷٪ (↓)."
     }
   ],
   "scenarioProbabilities": [
     {
       "label": "Ceasefire collapses / Escalation",
-      "pct": 40,
-      "detail": "DOWN from 44%. Turkey 45-60 day extension offer + Israel-Lebanon talks reduce collapse risk. But blockade active + 7 days to expiry + Hezbollah opposing talks = still highest risk."
+      "pct": 37,
+      "detail": "DOWN from 40%. Trump 'next 2 days' signal is most concrete deal signal yet. Blockade Day 2 no confrontation. Oil crashed 8% on talks. But 200+ mines + Hezbollah + 6 days to expiry = still highest risk."
     },
     {
       "label": "Stalled / Protracted standoff",
-      "pct": 23,
-      "detail": "UP from 22%. Blockade continues, ceasefire technically holds on strikes, Turkey pushes extension. Slow economic strangulation but diplomatic channels open."
+      "pct": 24,
+      "detail": "UP from 23%. Blockade + ceasefire coexisting. If no deal but ceasefire extended (Turkey 45-60 days): this becomes dominant scenario."
     },
     {
       "label": "Negotiated deal",
-      "pct": 19,
-      "detail": "UP from 16%. Turkey FM: 45-60 day extension. Israel-Lebanon first talks since 1993. Pakistan 2nd round. Egypt FM to DC. Multiple channels now active. Gaps remain massive but momentum improving."
+      "pct": 22,
+      "detail": "UP from 19%. Trump 'next 2 days.' WH 'under discussion.' Iran Embassy 'later this week.' Oil crashed 8% = market believes deal. Turkey extension + multiple channels. Key gap: nuclear + Hormuz control still unbridged."
     },
     {
       "label": "Declared victory / Withdrawal",
       "pct": 10,
-      "detail": "Trump could declare 'mission accomplished' with blockade as leverage. Face-saving if oil drops enough."
+      "detail": "Trump could declare 'mission accomplished' with blockade as leverage. Oil at $91 = domestic political cover possible."
     },
     {
       "label": "International intervention",
@@ -1178,30 +1206,30 @@
     },
     {
       "label": "Regime fracture",
-      "pct": 3,
-      "detail": "Internal pressure from blockade + war damage. Mojtaba absent since Mar 8. IRGC autonomous. Low probability without ground ops."
+      "pct": 2,
+      "detail": "Iran calculating not fracturing. Diplomatic engagement = regime discipline. Blockade Day 2 no resistance = controlled response. Low probability."
     }
   ],
   "scenarioProbabilities_fa": [
     {
       "label": "فروپاشی آتش‌بس / تشدید",
-      "pct": 40,
-      "detail": "کاهش از ۴۴٪. ترکیه تمدید + مذاکرات لبنان ریسک کاهش. اما محاصره + ۷ روز."
+      "pct": 37,
+      "detail": "کاهش از ۴۰٪. ترامپ '۲ روز دیگر.' محاصره روز ۲ بدون رویارویی. نفت -۸٪. اما ۲۰۰+ مین + ۶ روز."
     },
     {
       "label": "بن‌بست / تقابل طولانی",
-      "pct": 23,
-      "detail": "افزایش از ۲۲٪. محاصره ادامه، آتش‌بس فنی، ترکیه تمدید."
+      "pct": 24,
+      "detail": "افزایش از ۲۳٪. محاصره + آتش‌بس همزیستی. اگر تمدید ترکیه: سناریوی غالب."
     },
     {
       "label": "توافق مذاکره‌ای",
-      "pct": 19,
-      "detail": "افزایش از ۱۶٪. ترکیه ۴۵-۶۰ روز. مذاکرات لبنان اولین از ۱۹۹۳. پاکستان دور ۲. مصر DC."
+      "pct": 22,
+      "detail": "افزایش از ۱۹٪. ترامپ '۲ روز دیگر.' نفت -۸٪. چند کانال. شکاف هسته‌ای + هرمز هنوز."
     },
     {
       "label": "اعلام پیروزی / خروج",
       "pct": 10,
-      "detail": "ترامپ 'مأموریت تمام' با محاصره به عنوان اهرم."
+      "detail": "نفت $۹۱ = پوشش سیاسی داخلی ممکن."
     },
     {
       "label": "مداخله بین‌المللی",
@@ -1210,88 +1238,88 @@
     },
     {
       "label": "شکاف رژیم",
-      "pct": 3,
-      "detail": "فشار داخلی. مجتبی غایب. احتمال کم."
+      "pct": 2,
+      "detail": "ایران محاسبه نه شکاف. محاصره روز ۲ بدون مقاومت = پاسخ کنترل‌شده."
     }
   ],
   "theoryEvaluation": [
     {
-      "title": "BLOCKADE DAY 1: NO CONFRONTATION — IRAN DID NOT RESIST",
-      "body": "The feared flashpoint did not materialize. Blockade went live 10AM ET; BBC Verify confirms 4+ Iran-related ships crossed Hormuz. No shots fired. Iran denounced 'piracy' but did not physically resist. This is significant: Iran is calculating, not escalating. Suggests regime prioritizing diplomacy over confrontation. IRGC threats were signaling, not action."
+      "title": "BLOCKADE DAY 2: NO CONFRONTATION — IRAN STILL NOT RESISTING",
+      "body": "Second consecutive day without blockade confrontation. Iran continues to calculate diplomatically rather than escalate militarily. No shots fired. Blockade technically active but Iran not physically resisting. This pattern — Iran talking tough publicly while not acting — is the classic dual-track posture. Consistent with diplomatic engagement behind scenes."
     },
     {
-      "title": "TURKEY 45-60 DAY EXTENSION = GAME CHANGER",
-      "body": "Turkish FM Fidan's offer to extend ceasefire 45-60 days is the most significant diplomatic signal since talks collapsed Apr 12. Turkey is positioned as bridge between NATO and Iran. If accepted: transforms 7-day countdown into 2-month negotiating window. Dramatically reduces collapse probability. Watch for Iran's response to this offer."
+      "title": "TRUMP 'NEXT 2 DAYS' = MOST CONCRETE DEAL SIGNAL YET",
+      "body": "Trump told NY Post 'something could be happening over the next two days' in Islamabad — the most direct presidential signal of impending talks since blockade began. Combined with WH official 'under discussion' and Iran Embassy 'later this week,' a second round appears imminent. This is why oil crashed 8%: market pricing in deal likelihood rising sharply. Watch for formal announcement."
     },
     {
-      "title": "ISRAEL-LEBANON TALKS = SECOND FRONT PROGRESS",
-      "body": "First direct Israel-Lebanon talks since 1993 at State Dept. Rubio hosting Ambassadors Leiter + Hamadeh. If Lebanon front resolves: removes Iran's primary justification for ceasefire withdrawal (Israel attacking Lebanon). Hezbollah's Qassem opposing = spoiler risk. Egypt FM also to DC. Multiple diplomatic tracks now active simultaneously."
+      "title": "OIL DIVES 8% — MARKET SEES DEAL PATH",
+      "body": "WTI fell ~8% to ~$91.50. Brent ~$95.50. This is the largest single-day oil drop since ceasefire was announced. Market is pricing in second round of talks + possible deal before Apr 21. If deal materializes: Brent could fall to $85-90. If collapse: $115-125+. Oil's 8% signal is MORE informative than political statements — futures markets are aggregating information from many sources."
     },
     {
-      "title": "OIL FALLING = MARKETS PRICING IN EXTENDED CEASEFIRE",
-      "body": "Brent $96.48 — falling DESPITE active blockade. Markets pricing in Turkey extension possibility + no confrontation Day 1. This reverses the $102 surge from blockade announcement. If extension materializes: Brent could drop to $90-95 range. Market is ahead of political reality."
+      "title": "CONVERGENCE 4.8 — SECOND DAY OF IMPROVEMENT",
+      "body": "Convergence score rising to 4.8 (from 4.6 D46, 4.2 D45). Two consecutive days of improvement is the first positive streak since talks collapsed Apr 12. Drivers: Trump talks signal, blockade Day 2 no confrontation, oil falling, Turkey extension still active. Risks: 6 days to expiry, 200+ mines, Hezbollah opposing Lebanon talks, nuclear gap still unbridged."
     },
     {
-      "title": "CONVERGENCE IMPROVING — FIRST TIME SINCE APR 12",
-      "body": "For the first time since Islamabad talks collapsed, convergence score is rising (4.6 from 4.2). Drivers: Turkey extension offer, Israel-Lebanon talks, no blockade confrontation, oil falling. But still in danger zone: Hezbollah opposing talks, IRGC hardliners empowered, 200+ mines, 7 days to expiry. Trajectory matters more than level."
+      "title": "DEAL PROBABILITY RISING TO 22%",
+      "body": "Deal scenario up to 22% (from 19% D46, 16% D45). The combination of Trump's explicit 'next 2 days' signal + oil's 8% crash + blockade Day 2 no confrontation + Turkey extension + multiple diplomatic channels is the strongest pro-deal constellation since the original ceasefire was announced Apr 7. Key remaining questions: nuclear enrichment gap, Hormuz control framework. If these can be papered over: deal possible before Apr 21."
     }
   ],
   "theoryEvaluation_fa": [
     {
-      "title": "محاصره روز ۱: بدون رویارویی — ایران مقاومت نکرد",
-      "body": "نقطه اشتعال محقق نشد. ۴+ کشتی ایرانی عبور. بدون شلیک. ایران محاسبه نه تشدید. رژیم دیپلماسی اولویت."
+      "title": "محاصره روز ۲: بدون رویارویی — ایران هنوز مقاومت نکرد",
+      "body": "دومین روز متوالی بدون رویارویی. ایران محاسبه دیپلماتیک نه تشدید نظامی. بدون شلیک. الگو: تهدید علنی + تعامل پشت‌پرده."
     },
     {
-      "title": "ترکیه تمدید ۴۵-۶۰ روز = تغییر بازی",
-      "body": "وزیر خارجه فیدان. مهم‌ترین سیگنال از شکست ۱۲ آوریل. اگر قبول: ۷ روز به ۲ ماه. کاهش فروپاشی."
+      "title": "ترامپ '۲ روز دیگر' = مهم‌ترین سیگنال توافق",
+      "body": "ترامپ NY Post: '۲ روز دیگر.' WH: 'در بحث.' سفارت ایران: 'آخر هفته.' نفت -۸٪. بازار احتمال توافق بالا رفت."
     },
     {
       "title": "مذاکرات اسرائیل-لبنان = پیشرفت جبهه دوم",
       "body": "اولین از ۱۹۹۳. روبیو میزبان. حزب‌الله مخالف. مصر DC. چند مسیر دیپلماتیک فعال."
     },
     {
-      "title": "نفت کاهش = بازار تمدید قیمت‌گذاری",
-      "body": "برنت $۹۶.۴۸ — کاهش با وجود محاصره. بازار ترکیه + بدون رویارویی قیمت‌گذاری."
+      "title": "نفت -۸٪ = بازار توافق قیمت‌گذاری",
+      "body": "WTI ~$۹۱.۵ (-۸٪). برنت ~$۹۵.۵. بزرگترین افت نفت از اعلام آتش‌بس. اگر توافق: $۸۵-۹۰. اگر فروپاشی: $۱۱۵-۱۲۵+."
     },
     {
-      "title": "همگرایی بهبود — اولین بار از ۱۲ آوریل",
-      "body": "۴.۶ از ۴.۲. ترکیه + لبنان + بدون رویارویی + نفت کاهش. هنوز خطر: حزب‌الله، مین، ۷ روز."
+      "title": "همگرایی ۴.۸ — دومین روز متوالی بهبود",
+      "body": "۴.۸ از ۴.۶. سیگنال ترامپ + روز ۲ بدون رویارویی + نفت کاهش. توافق ۲۲٪ (↑). ریسک: ۶ روز + ۲۰۰+ مین."
     }
   ],
   "endstate": [
     {
-      "title": "Most likely (40%)",
-      "body": "Ceasefire collapse. DOWN from 44%. Blockade Day 1 no confrontation. Turkey 45-60 day extension offer. But still highest risk: 7 days to expiry, Hezbollah opposing, 200+ mines."
+      "title": "Most likely (37%)",
+      "body": "Ceasefire collapse. DOWN from 40%. Trump talks signal + oil 8% crash + blockade Day 2 no confrontation all reduce collapse risk. But still highest: 6 days to expiry, nuclear gap unbridged, Hezbollah opposing Lebanon talks, 200+ mines."
     },
     {
-      "title": "Second (23%)",
-      "body": "Stalled/frozen conflict. UP from 22%. Blockade + ceasefire coexist. Turkey extension could formalize this state. Slow economic pressure."
+      "title": "Second (24%)",
+      "body": "Stalled/frozen conflict. UP from 23%. Blockade + ceasefire coexisting for 2+ days. Turkey 45-60 day extension could formalize this. If talks happen but don't produce deal: ceasefire extends, blockade remains, slow strangulation."
     },
     {
-      "title": "Third (19%)",
-      "body": "Negotiated deal. UP from 16%. Turkey 45-60 day offer, Israel-Lebanon first talks since 1993, Egypt FM to DC, Pakistan 2nd round. Multiple channels opening. Gaps remain but momentum improving."
+      "title": "Third (22%)",
+      "body": "Negotiated deal. UP from 19%. Trump 'next 2 days' + WH 'under discussion' + Iran Embassy 'later this week' = deal track opening. Oil 8% crash = market endorsement. Key gaps: nuclear enrichment suspension (US wants 20 yr, Iran offered 3-5 yr), Hormuz control framework. If bridged: deal before Apr 21."
     },
     {
-      "title": "Fourth (10%/5%/3%)",
-      "body": "Victory 10% (blockade = maximum pressure). Intervention 5% (allies still refusing). Fracture 3% (blockade pressure but regime calculating not fracturing)."
+      "title": "Fourth (10%/5%/2%)",
+      "body": "Victory 10% (oil at $91 = domestic cover for 'mission accomplished'). Intervention 5% (allies still refusing). Fracture 2% (Iran engaging diplomatically = controlled, not fracturing)."
     }
   ],
   "endstate_fa": [
     {
-      "title": "1st (40%)",
-      "body": "فروپاشی. کاهش از ۴۴٪. روز ۱ بدون رویارویی. ترکیه تمدید. اما ۷ روز و حزب‌الله مخالف."
+      "title": "1st (37%)",
+      "body": "فروپاشی. کاهش از ۴۰٪. سیگنال ترامپ + نفت -۸٪ + روز ۲ بدون رویارویی. اما ۶ روز + شکاف هسته‌ای."
     },
     {
-      "title": "2nd (23%)",
-      "body": "بن‌بست. محاصره + آتش‌بس همزیستی. ترکیه تمدید رسمی ممکن."
+      "title": "2nd (24%)",
+      "body": "بن‌بست. محاصره + آتش‌بس همزیستی. ترکیه تمدید ۴۵-۶۰ روز ممکن. اگر مذاکره بدون توافق: این سناریو."
     },
     {
-      "title": "3rd (19%)",
-      "body": "توافق. ترکیه ۴۵-۶۰ روز. لبنان اولین از ۱۹۹۳. مصر DC. پاکستان دور ۲. حرکت."
+      "title": "3rd (22%)",
+      "body": "توافق. ترامپ '۲ روز دیگر.' نفت -۸٪. WH 'در بحث.' شکاف: هسته‌ای ۲۰ سال vs ۳-۵ سال. اگر پر شود: توافق قبل ۲۱ آوریل."
     },
     {
       "title": "4th",
-      "body": "پیروزی ۱۰٪. مداخله ۵٪. فروپاشی رژیم ۳٪."
+      "body": "پیروزی ۱۰٪. مداخله ۵٪. فروپاشی رژیم ۲٪."
     }
   ],
   "shippingRoutes": [
@@ -1379,122 +1407,122 @@
     }
   ],
   "publishingStatus": [
-    "<strong>Paper:</strong> HALTED. 46 days. Blockade active but Turkey 45-60 day extension could provide recovery window.",
-    "<strong>Printing:</strong> B1 Bridge destroyed. 1,104+ hrs internet. Power intermittent. No active bombing (ceasefire).",
-    "<strong>Internet:</strong> 1,104+ hours (46 days). LONGEST EVER. Turkey extension ≠ internet restoration but extended ceasefire = better prospects.",
-    "<strong>New titles:</strong> HALTED. Zero ISBNs. Extended ceasefire could enable gradual resumption.",
-    "<strong>Warehouse:</strong> Unknown. 85,000+ structures. Ceasefire = no new damage. 8 days no strikes.",
-    "<strong>Distribution:</strong> Blockade = maritime routes closed. Land routes only (Armenia BEST). Turkey extension could eventually normalize sea routes."
+    "<strong>Paper:</strong> HALTED. 47 days. Trump '2 days' signal raises prospects of deal — but supply chain gap is months, not weeks.",
+    "<strong>Printing:</strong> B1 Bridge destroyed. 1,128+ hrs internet. Power intermittent. No active bombing (ceasefire Day 9).",
+    "<strong>Internet:</strong> 1,128+ hours (47 days). LONGEST EVER. Trump talks signal ≠ immediate internet restoration but deal = political motivation to restore.",
+    "<strong>New titles:</strong> HALTED. Zero ISBNs. Deal before Apr 21 could enable gradual resumption within weeks.",
+    "<strong>Warehouse:</strong> Unknown. 85,000+ structures. Ceasefire = no new damage. 9 days no strikes. If deal: warehouse accessible within 1-2 weeks.",
+    "<strong>Distribution:</strong> Blockade = maritime routes closed. Land routes only (Armenia BEST). Deal = maritime normalization within months. Oil $91 = deal pathway now plausible."
   ],
   "publishingStatus_fa": [
-    "<strong>Paper:</strong> ۴۵ روز. محاصره = انزوای بیشتر.",
-    "<strong>Printing:</strong> B1. ۱٬۰۸۰+ اینترنت. محاصره بازگشت سخت‌تر.",
-    "<strong>Internet:</strong> ۱٬۰۸۰+ ساعت. محاصره = بدون انگیزه.",
-    "<strong>New titles:</strong> متوقف.",
-    "<strong>Warehouse:</strong> نامشخص. آتش‌بس سالم.",
-    "<strong>Distribution:</strong> مرده. محاصره = فقط زمینی."
+    "<strong>Paper:</strong> ۴۷ روز. ترامپ '۲ روز دیگر' — اما شکاف زنجیره تأمین ماه‌ها.",
+    "<strong>Printing:</strong> B1. ۱٬۱۲۸+ اینترنت. بدون بمباران (آتش‌بس روز ۹).",
+    "<strong>Internet:</strong> ۱٬۱۲۸+ ساعت. توافق = انگیزه بازگشت.",
+    "<strong>New titles:</strong> متوقف. توافق قبل ۲۱ آوریل = از سرگیری تدریجی.",
+    "<strong>Warehouse:</strong> نامشخص. آتش‌بس سالم. اگر توافق: ۱-۲ هفته.",
+    "<strong>Distribution:</strong> مرده. مسیرهای زمینی (ارمنستان بهترین). نفت $۹۱ = توافق ممکن."
   ],
   "impactIranfarhang": [
-    "<strong>SUPPLY CHAIN: 100% SEVERED - DAY 45. BLOCKADE MAKES IT WORSE.</strong> Naval blockade Monday = complete maritime isolation. Even if ceasefire survives land dimension, sea routes permanently blocked. Internet 1,080+ hrs.",
-    "<strong>Revenue:</strong> Atlanta only. ~2.1 months runway. Oil $102 surging. Blockade = FY27 at extreme risk.",
-    "<strong>Routes:</strong> Armenia ~15-22% (BEST — land route unaffected by blockade). Pakistan ~10-15%. Turkey ~6-10%. Dubai DEAD. Sea routes DEAD.",
-    "<strong>OFAC:</strong> Statutory (Berman). Intact. Blockade does not change OFAC status.",
-    "<strong>BLOCKADE = NEW WORST SCENARIO:</strong> Maritime isolation on top of strikes pause. Even if war ends, Hormuz remains sealed by mines + blockade. Recovery timeline extended further.",
-    "<strong>Family:</strong> Internet 1,080+. Ceasefire means no new bombing. But blockade = economic squeeze on civilians. Family status still unknown."
+    "<strong>SUPPLY CHAIN: 100% SEVERED - DAY 47. DEAL SIGNAL IMPROVES OUTLOOK MARGINALLY.</strong> Trump 'next 2 days' talks signal raises first real hope for Hormuz normalization timeline. But maritime routes remain dead — sea routes require deal + mine clearance (2-6 months). Internet 1,128+ hrs.",
+    "<strong>Revenue:</strong> Atlanta only. ~2.1 months runway (burn ~$15-20K/month). Oil $91.50 falling = deal pathway. Blockade = FY27 at extreme risk BUT deal before Apr 21 would change picture.",
+    "<strong>Routes:</strong> Armenia ~15-22% (BEST — land route unaffected by blockade or deal status). Pakistan ~10-15%. Turkey ~6-10% (now MEDIATING = border policy may ease with deal). Dubai DEAD until mine clearance + insurance normalization (6-12 months post-deal).",
+    "<strong>OFAC:</strong> Statutory (Berman). Intact. Deal negotiations DO NOT change exemption status. Monitor KEMCO for payment delays.",
+    "<strong>DEAL SIGNAL = FIRST POSITIVE:</strong> Trump '2 days' + WH 'under discussion' + oil 8% crash = first genuine prospect of settlement since Apr 12 talks collapsed. If deal: Tehran warehouse accessible in 1-2 weeks. Books flowing 6-10 weeks. Normal operations 4-8 months.",
+    "<strong>Family:</strong> Internet 1,128+. Ceasefire = no new bombing (9 days). Deal prospect = potential internet restoration. Status still unknown but improved outlook."
   ],
   "impactIranfarhang_fa": [
-    "<strong>100% قطع - Day 45. محاصره بدتر.</strong> محاصره = انزوای دریایی. اینترنت ۱٬۰۸۰+.",
-    "<strong>Revenue:</strong> آتلانتا. ~۲.۱ ماه. $۱۰۲ جهش.",
-    "<strong>Routes:</strong> Armenia ~۱۵-۲۲٪ (بهترین — زمینی تأثیر ندارد). Pakistan ~۱۰-۱۵٪.",
-    "<strong>OFAC:</strong> Intact.",
-    "<strong>محاصره = بدترین سناریو جدید.</strong> انزوای دریایی + مین + محاصره.",
-    "<strong>Family:</strong> ۱٬۰۸۰+. بدون بمباران. اما محاصره = فشار اقتصادی."
+    "<strong>100% قطع - روز ۴۷. سیگنال توافق چشم‌انداز بهبود.</strong> ترامپ '۲ روز.' مسیرهای دریایی تا توافق + مین‌روبی مرده. اینترنت ۱٬۱۲۸+.",
+    "<strong>Revenue:</strong> آتلانتا. ~۲.۱ ماه. نفت $۹۱.۵ (↓) = مسیر توافق. اگر توافق: FY27 بهبود.",
+    "<strong>Routes:</strong> Armenia ~۱۵-۲۲٪ (بهترین). Pakistan ~۱۰-۱۵٪. ترکیه بهتر با توافق. دبی مرده ۶-۱۲ ماه پس از توافق.",
+    "<strong>OFAC:</strong> Intact. مذاکرات توافق تأثیر ندارد. KEMCO نظارت.",
+    "<strong>سیگنال توافق = اولین مثبت.</strong> اگر توافق: انبار ۱-۲ هفته. کتاب‌ها ۶-۱۰ هفته. عادی ۴-۸ ماه.",
+    "<strong>Family:</strong> ۱٬۱۲۸+. آتش‌بس = بدون بمباران (۹ روز). توافق = احتمال بازگشت اینترنت."
   ],
   "prepIranfarhang": [
-    "<strong>TALKS FAILED:</strong> 21-hour marathon = no deal. No recovery timeline. Ceasefire through Apr 21 but collapse risk 38%. Naval blockade = new threat dimension.",
-    "<strong>Clients:</strong> Update: talks failed, ceasefire technically holds but future uncertain. FY27 at serious risk. Timeline: UNKNOWN. Maintain diaspora alternatives.",
-    "<strong>Armenia:</strong> BEST route. Ceasefire preserves grid/roads. Contact Yerevan NOW while ceasefire window remains. Internet blocks coordination but route physically intact.",
-    "<strong>FY27:</strong> AT RISK. No deal = no timeline. If ceasefire collapses: back to indefinite. If naval blockade: further delay. Maintain all contingencies.",
-    "<strong>CONTINGENCY:</strong> Diaspora publishers CRITICAL now. Talks failure = no path through Iran for foreseeable future. Activate all alternatives.",
-    "<strong>NEGATIVE:</strong> Talks failed. 21 hours of negotiation = nothing. Key gaps unbridgeable. Trump escalating rhetoric. 9 days to ceasefire expiry. Worst diplomatic outcome since ceasefire began."
+    "<strong>DEAL SIGNAL — ACT THIS WEEK:</strong> Trump 'next 2 days' signal. If second round happens + deal: Tehran warehouse accessible in 1-2 weeks. Contact Armenia route NOW to pre-position logistics. Time the supply chain restart with deal announcement.",
+    "<strong>Clients:</strong> Update: deal track opening. Second round possible before Apr 21. FY27 risk declining but not eliminated. Timeline: if deal this week → first shipments possible by late May/early June. Maintain diaspora alternatives as backup.",
+    "<strong>Armenia:</strong> BEST route. Contact Yerevan border agents NOW — before deal announced to avoid post-deal rush. Route physically intact. 700km Tabriz-Agarak. 14-21 days transit. 3x normal cost.",
+    "<strong>FY27:</strong> Conditional improvement. Deal before Apr 21 = FY27 partially salvageable. No deal = indefinite. ~2.1 months runway. Activate alternatives regardless.",
+    "<strong>CONTINGENCY:</strong> Keep diaspora publisher pipeline active. Deal doesn't instantly restore Tehran publishing — paper imports, printing capacity, distribution all need months. Diaspora books bridge the gap.",
+    "<strong>MONITOR THIS WEEK:</strong> Is second round of talks announced? Does Iran accept Turkey 45-60 day extension? Does blockade encounter confrontation? Any internet restoration signal? These determine FY27 viability."
   ],
   "prepIranfarhang_fa": [
-    "<strong>شکست مذاکرات:</strong> ۲۱ ساعت بی‌نتیجه. بدون جدول. آتش‌بس تا ۲۱ آوریل اما ۳۸٪ فروپاشی. محاصره = تهدید جدید.",
-    "<strong>Clients:</strong> شکست. آتش‌بس فنی اما آینده نامشخص. FY27 ریسک جدی. جایگزین‌ها حفظ.",
-    "<strong>Armenia:</strong> بهترین. شبکه سالم. تماس ایروان فوری.",
-    "<strong>FY27:</strong> ریسک. بدون توافق = بدون جدول. اگر فروپاشی: نامحدود.",
-    "<strong>Contingency:</strong> ناشران مهاجر حیاتی. شکست = بدون مسیر ایران.",
-    "<strong>Negative:</strong> شکست. ۲۱ ساعت = هیچ. ترامپ تشدید. ۹ روز تا انقضا."
+    "<strong>سیگنال توافق — این هفته عمل کنید:</strong> ترامپ '۲ روز.' اگر مذاکره + توافق: انبار ۱-۲ هفته. ارمنستان از قبل تنظیم.",
+    "<strong>Clients:</strong> مسیر توافق باز. دور دوم قبل ۲۱ آوریل ممکن. FY27 ریسک کاهش اما کامل نه. اگر توافق: محموله اواخر مه.",
+    "<strong>Armenia:</strong> تماس ایروان فوری — قبل از اعلام توافق. ۷۰۰ کیلومتر. ۱۴-۲۱ روز. ۳ برابر هزینه.",
+    "<strong>FY27:</strong> بهبود مشروط. توافق قبل ۲۱ آوریل = FY27 جزئی قابل نجات. ~۲.۱ ماه باقی.",
+    "<strong>Contingency:</strong> ناشران مهاجر ادامه. توافق ≠ فوری نشر تهران — کاغذ + چاپ + توزیع ماه‌ها.",
+    "<strong>این هفته نظارت:</strong> دور دوم اعلام؟ ترکیه تمدید قبول؟ اینترنت سیگنال؟"
   ],
   "signalsIranfarhang": [
-    "<strong>GATE 1 - TURKEY 45-60 DAY EXTENSION:</strong> MOST IMPORTANT new signal. If accepted: transforms 7-day countdown into 2-month window. Watch for Iran response. Could enable route restoration planning.",
-    "<strong>GATE 2 - CEASEFIRE EXPIRY APR 21:</strong> 7 days. BUT Turkey extension offer changes calculus. If extended: significant relief for planning horizon.",
-    "<strong>GATE 3 - INTERNET:</strong> 1,104+ hrs (46 days). Still out. Turkey extension ≠ internet restoration. Watch for restoration as signal of normalization.",
-    "<strong>GATE 4 - OIL:</strong> $96.48 (FALLING). Market pricing in extension. If extension materializes: $90-95. If collapses: $110-120+.",
-    "<strong>Armenia:</strong> BEST route — LAND route unaffected by naval blockade. Contact Yerevan while window improves with Turkey extension.",
-    "<strong>OFAC:</strong> Monitor KEMCO. Blockade does not change sanctions. Israel-Lebanon talks = potential for broader normalization."
+    "<strong>GATE 1 — SECOND ROUND TALKS:</strong> Trump 'next 2 days' = most critical signal. If announced: deal possible before Apr 21. WATCH: formal talk announcement (could come Wed-Thu). This is THE gate for FY27.",
+    "<strong>GATE 2 — CEASEFIRE EXPIRY APR 21:</strong> 6 days. Turkey 45-60 day extension still on table. If second round happens: extension likely. If no round: collapse risk surges Apr 20-21.",
+    "<strong>GATE 3 — INTERNET:</strong> 1,128+ hrs (47 days). Deal talks = political motivation to restore. Watch for partial restoration as goodwill signal. If restored: direct Tehran coordination possible.",
+    "<strong>GATE 4 — OIL:</strong> $95.50 (FALLING to $95.50 from $96.48). WTI $91.50. If deal: $85-90. Brent below $90 = normalization underway. Armenia route viable regardless.",
+    "<strong>Armenia:</strong> BEST route now — Contact Yerevan agents this week. Pre-position before deal announcement to avoid post-deal congestion.",
+    "<strong>Deal timeline for books:</strong> Deal announced → Tehran warehouse accessible ~2 weeks → First Armenia-routed shipment ~6 weeks → Normal operations ~4-8 months."
   ],
   "signalsIranfarhang_fa": [
-    "<strong>محاصره دوشنبه:</strong> اگر مقاومت: جنگ. اگر قبول: انزوا. مسیرهای دریایی مرده.",
-    "<strong>انقضای آتش‌بس ۲۱ آوریل:</strong> ۸ روز. محاصره = تمدید کمتر احتمال.",
-    "<strong>Internet:</strong> ۱٬۰۸۰+. محاصره = بدون انگیزه.",
-    "<strong>Oil:</strong> $۱۰۲. اگر محاصره: $۱۱۰-۱۲۰+.",
-    "<strong>Armenia:</strong> بهترین — زمینی. تماس ایروان فوری.",
-    "<strong>OFAC:</strong> نظارت."
+    "<strong>دروازه ۱ — دور دوم مذاکرات:</strong> ترامپ '۲ روز.' اگر اعلام: توافق قبل ۲۱ آوریل ممکن. نظارت: اعلام رسمی سه‌شنبه-چهارشنبه.",
+    "<strong>انقضای آتش‌بس ۲۱ آوریل:</strong> ۶ روز. ترکیه تمدید + دور دوم = تمدید محتمل.",
+    "<strong>Internet:</strong> ۱٬۱۲۸+. توافق = انگیزه بازگشت. نظارت: بازگشت جزئی = نشانه.",
+    "<strong>Oil:</strong> $۹۵.۵ (↓). WTI $۹۱.۵. اگر توافق: $۸۵-۹۰. ارمنستان بدون نفت.",
+    "<strong>Armenia:</strong> بهترین — این هفته تماس ایروان. قبل از اعلام توافق.",
+    "<strong>جدول زمانی کتاب:</strong> توافق → انبار ۲ هفته → ارمنستان ۶ هفته → عادی ۴-۸ ماه."
   ],
   "impactKIP": [
-    "<strong>HORMUZ MINE-CLEARING CONFRONTATION:</strong> USS Peterson + USS Murphy attempted mine-clearing D43. IRGC threatened + launched UAV. Disputed if succeeded. This = direct US-Iran naval confrontation during ceasefire. If escalates: Hormuz becomes active theater.",
-    "<strong>Banking: 8.5/10.</strong> Stable from D41 but talks failure = uncertainty premium returning. Gulf banks cautious. If naval blockade: spike to 9.5+. Maintain Tbilisi/KL reserves.",
-    "<strong>Hormuz: MINE-CLEARING DISPUTED.</strong> Trump claims 'clearing begun.' IRGC: 'deal severely with unauthorized ships.' 200+ mines persist. Physical clearance = weeks/months. Insurance won't normalize.",
-    "<strong>TALKS FAILED = NO FRAMEWORK:</strong> 21-hour marathon produced nothing. Key gaps unbridgeable. Naval blockade hinted. Ceasefire through Apr 21 but no mechanism to extend. 9 days remain.",
-    "<strong>Personnel:</strong> Elevated risk — IRGC launching UAV at US ships. Hormuz confrontation = personnel risk rising. Keep evacuation plans active.",
-    "<strong>Revenue: NEAR-ZERO.</strong> 1,056+ hrs internet. Hormuz disputed. Talks failed. No path to recovery without deal.",
-    "<strong>Insurance:</strong> 13%+ and likely rising post-talks failure. Lloyd's monitoring ceasefire status. If naval blockade: uninsurable. Houthi attacks keep Red Sea elevated."
+    "<strong>BLOCKADE DAY 2 — NO CONFRONTATION:</strong> Second consecutive day without incident. Iran not physically resisting US blockade. 4+ Iran ships crossed Hormuz each day. De facto coexistence of blockade + ceasefire. This is the best-case blockade scenario for KIP transit planning.",
+    "<strong>Banking: 8.0/10.</strong> DOWN from 8.5. Trump talks signal + oil 8% drop = Gulf banks slightly less cautious. Deal track emerging. If second round announced: score drops to 7.5. If collapse: spikes to 9.5+. Maintain Tbilisi/KL reserves.",
+    "<strong>Hormuz: BLOCKADE DAY 2, 4+ SHIPS.</strong> 200+ mines still present. But daily ship transits slowly increasing. Insurance still war-risk but improving slightly. Deals = mine-clearing begins + 2-6 months to normalize.",
+    "<strong>DEAL TRACK OPENING:</strong> Trump 'next 2 days.' WH 'under discussion.' If second round before Apr 21: ceasefire likely extended. If deal: Hormuz framework within weeks. Oil $91.50 = market believes. KIP revenue path through Dubai/Jebel Ali visible on 6-8 month horizon.",
+    "<strong>Personnel:</strong> Moderate risk. No confrontation D46-D47. Iran calculating not escalating. Maintain evacuation plans but no immediate action needed.",
+    "<strong>Revenue: NEAR-ZERO BUT OUTLOOK IMPROVING.</strong> 1,128+ hrs internet. Blockade ongoing. BUT deal track = first visible recovery path. If deal: Hormuz framework → Dubai banking → KIP revenue within 3-4 months.",
+    "<strong>Insurance:</strong> 13%+ but STABILIZING on talks signal. Lloyd's monitoring. If second round announced: gradual easing. If deal: war-risk premium drops toward 5% within 90 days. Houthi independent risk."
   ],
   "impactKIP_fa": [
-    "<strong>رویارویی مین‌روبی هرمز:</strong> USS Peterson + USS Murphy. سپاه تهدید + UAV. اگر تشدید: هرمز تئاتر فعال.",
-    "<strong>Banking: 8.5/10.</strong> ثابت اما شکست = حق‌بیمه عدم قطعیت. اگر محاصره: ۹.۵+. Tbilisi/KL حفظ.",
-    "<strong>Hormuz:</strong> ترامپ: 'پاکسازی شروع.' سپاه: 'برخورد شدید.' ۲۰۰+ مین. بیمه عادی نمی‌شود.",
-    "<strong>شکست = بدون چارچوب:</strong> ماراتن ۲۱ ساعته بی‌نتیجه. محاصره. ۹ روز تا ۲۱ آوریل.",
-    "<strong>Personnel:</strong> ریسک بالا — سپاه UAV به ناوشکن‌ها. تخلیه فعال.",
-    "<strong>Revenue: تقریباً صفر.</strong> ۱٬۰۵۶+ اینترنت. هرمز مورد اختلاف. شکست.",
-    "<strong>Insurance:</strong> ۱۳٪+ و احتمالاً افزایش. اگر محاصره: غیرقابل بیمه."
+    "<strong>محاصره روز ۲ — بدون رویارویی:</strong> دومین روز متوالی بدون حادثه. ۴+ کشتی ایرانی هر روز عبور. همزیستی محاصره + آتش‌بس = بهترین سناریو برای KIP.",
+    "<strong>Banking: 8.0/10.</strong> کاهش از ۸.۵. سیگنال ترامپ + نفت -۸٪ = بانک‌های خلیج کمتر محتاط. اگر دور دوم: ۷.۵. اگر فروپاشی: ۹.۵+. Tbilisi/KL حفظ.",
+    "<strong>Hormuz: محاصره روز ۲، ۴+ کشتی.</strong> ۲۰۰+ مین. اما عبور روزانه افزایش. توافق = مین‌روبی ۲-۶ ماه.",
+    "<strong>مسیر توافق باز:</strong> ترامپ '۲ روز.' اگر دور دوم قبل ۲۱: تمدید محتمل. نفت $۹۱.۵ = بازار باور. KIP از طریق دبی/جبل علی در افق ۶-۸ ماهه.",
+    "<strong>Personnel:</strong> ریسک متوسط. بدون رویارویی D46-D47. ایران محاسبه. تخلیه آماده.",
+    "<strong>Revenue: تقریباً صفر اما چشم‌انداز بهبود.</strong> ۱٬۱۲۸+. اگر توافق: هرمز → دبی → KIP در ۳-۴ ماه.",
+    "<strong>Insurance:</strong> ۱۳٪+ اما ثبات با سیگنال. اگر دور دوم: تدریجی کاهش. اگر توافق: ۵٪ در ۹۰ روز."
   ],
   "prepKIP": [
-    "<strong>Banking:</strong> MAINTAIN caution. Score 8.5 stable but talks failure = Gulf banking uncertainty. If naval blockade: withdraw ALL Gulf funds. Tbilisi/KL reserves active.",
-    "<strong>Personnel:</strong> ELEVATED risk. IRGC launching UAV at US ships in Hormuz. Keep evacuation plans active. Monitor daily.",
-    "<strong>Insurance:</strong> File ALL claims. Hull 13%+ and rising. If naval blockade: uninsurable. Monitor Lloyd's. Houthis keep Red Sea elevated.",
-    "<strong>Inventory:</strong> $6,600+ per container storage (44 days x $150/day).",
-    "<strong>TALKS FAILED:</strong> No deal framework. Ceasefire through Apr 21 but no extension mechanism. 9 days remain. If collapses: instant Hormuz re-block, insurance spikes, banking freezes.",
-    "<strong>NEGATIVE:</strong> Talks failure = worst diplomatic outcome. Naval blockade hinted. Hormuz confrontation ongoing. No recovery timeline.",
-    "<strong>Diversification:</strong> KL/Tbilisi remain CRITICAL. Iraq transit operational. Pakistan role uncertain after talks failure. Don't deactivate any contingency."
+    "<strong>Banking:</strong> EASE CAUTION MARGINALLY. Score 8.0 (from 8.5). Trump talks signal = Gulf banks slightly less uncertain. If second round announced: score drops further. Still maintain Tbilisi/KL reserves — don't move back to Dubai yet.",
+    "<strong>Personnel:</strong> MODERATE risk. No confrontation D46-D47. Iran calculating. Keep evacuation plans active but step-down from ELEVATED to MODERATE.",
+    "<strong>Insurance:</strong> File ALL claims. Hull 13%+ but STABILIZING on talks signal. If second round announced: start monitoring Lloyd's for rate improvement. Don't expect normalization until deal + mine clearance.",
+    "<strong>Inventory:</strong> $7,050+ per container storage (47 days x $150/day). If deal announced this week: begin logistics planning for cargo retrieval.",
+    "<strong>DEAL TRACK:</strong> Trump '2 days' + WH 'under discussion' + oil 8% crash. First real deal prospect since Apr 12. If deal before Apr 21: Jebel Ali operational within weeks. Dubai banking gradually normalizing.",
+    "<strong>POSITIVE SHIFT:</strong> Outlook improving for first time since blockade announced. Blockade Day 2 no confrontation + talks signal = risk profile declining. Maintain positions but update exit timelines.",
+    "<strong>Diversification:</strong> KL/Tbilisi remain CRITICAL. Iraq transit operational. Pakistan now key mediator role = better relationship. Istanbul improving (Turkey mediating). Don't deactivate any contingency."
   ],
   "prepKIP_fa": [
-    "<strong>Banking:</strong> احتیاط. ۸.۵ ثابت اما شکست = عدم قطعیت. اگر محاصره: برداشت فوری. Tbilisi/KL فعال.",
-    "<strong>Personnel:</strong> ریسک بالا. سپاه UAV. تخلیه فعال.",
-    "<strong>Insurance:</strong> ثبت همه. ۱۳٪+ و افزایش. اگر محاصره: غیرقابل بیمه.",
-    "<strong>Inventory:</strong> $۶,۶۰۰+.",
-    "<strong>شکست:</strong> بدون چارچوب. آتش‌بس ۲۱ آوریل. ۹ روز. اگر فروپاشی: هرمز فوری مسدود.",
-    "<strong>Negative:</strong> بدترین نتیجه دیپلماتیک. محاصره. رویارویی هرمز. بدون جدول.",
-    "<strong>Diversification:</strong> KL/Tbilisi حیاتی. Iraq. پاکستان نامشخص پس شکست."
+    "<strong>Banking:</strong> کمی کاهش احتیاط. ۸.۰ (از ۸.۵). سیگنال ترامپ. اگر دور دوم: ۷.۵. Tbilisi/KL حفظ — هنوز به دبی برنگردید.",
+    "<strong>Personnel:</strong> ریسک متوسط. بدون رویارویی D46-D47. از 'بالا' به 'متوسط'.",
+    "<strong>Insurance:</strong> ثبت همه. ۱۳٪+ اما ثبات. اگر دور دوم: نظارت Lloyd's. عادی‌سازی تا توافق + مین‌روبی.",
+    "<strong>Inventory:</strong> $۷,۰۵۰+ (۴۷ روز × $۱۵۰). اگر توافق این هفته: برنامه‌ریزی بازیابی بار.",
+    "<strong>مسیر توافق:</strong> ترامپ '۲ روز.' نفت -۸٪. اگر توافق قبل ۲۱: جبل علی هفته‌ها. دبی تدریجی.",
+    "<strong>تغییر مثبت:</strong> اولین بار از محاصره چشم‌انداز بهبود. روز ۲ بدون رویارویی + سیگنال = پروفایل ریسک کاهش.",
+    "<strong>Diversification:</strong> KL/Tbilisi حیاتی. Iraq فعال. پاکستان میانجی = رابطه بهتر. استانبول بهبود."
   ],
   "signalsKIP": [
-    "<strong>GATE 1 - TURKEY 45-60 DAY EXTENSION:</strong> GAME CHANGER for KIP. If accepted: 2-month window for Hormuz normalization. Banking stabilization. Insurance gradual improvement. Watch for Iran's response.",
-    "<strong>GATE 2 - CEASEFIRE EXPIRY APR 21:</strong> 7 days. BUT Turkey extension offer = potential lifeline. If no extension: Hormuz re-blocked, insurance spikes, banking freezes.",
-    "<strong>GATE 3 - BLOCKADE ENFORCEMENT:</strong> Day 1 passed WITHOUT confrontation. Iran did not resist. De facto coexistence of blockade + ceasefire. If this persists: gradual normalization possible.",
-    "<strong>OIL:</strong> $96.48 (FALLING — market relief). Turkey extension + no confrontation. If extension: $90-95. If collapses: $130+.",
-    "<strong>Insurance:</strong> 13%+ but stabilizing. Blockade Day 1 no incident = slight relief. If Turkey extension: gradual improvement. Watch Lloyd's.",
-    "<strong>Houthi:</strong> US destroyed 4 drones in Yemen. Independent risk. Red Sea separate from Hormuz.",
-    "<strong>Banking:</strong> 8.5 → monitor for improvement if Turkey extension materializes. Multiple diplomatic channels = better outlook."
+    "<strong>GATE 1 — SECOND ROUND TALKS THIS WEEK:</strong> Trump '2 days' = most concrete signal yet. If announced: deal before Apr 21 possible. KIP: Jebel Ali operational within weeks post-deal. Watch for formal announcement Wed-Thu.",
+    "<strong>GATE 2 — CEASEFIRE EXPIRY APR 21:</strong> 6 days. If second round happens: extension very likely. Turkey 45-60 day offer = backup. If neither: collapse risk surges Apr 20.",
+    "<strong>GATE 3 — BLOCKADE DAY 2 + 3:</strong> Two days no confrontation. Iran calculating, not escalating. If Day 3 also passes: de facto coexistence established. Watch: does Iran resist any ship interdiction? Any IRGC incident at sea?",
+    "<strong>OIL:</strong> $95.50 (FALLING). WTI $91.50 (-8% on talks). If deal: $85-90. If collapse: $115-130+. Oil's 8% move = market believes deal.",
+    "<strong>Insurance:</strong> 13%+ but stabilizing. Day 2 no incident = continued relief. If second round announced: Lloyd's rate discussions begin. Watch weekly Lloyd's bulletins.",
+    "<strong>Houthi:</strong> No major attacks D47. US destroyed drones D46. Independent risk. Red Sea separate.",
+    "<strong>Banking:</strong> 8.0 (↓ from 8.5). Improving on talks signal. If deal announced: 6.5-7.0. Monitor UAE banks for gradual Iran-linked transaction processing."
   ],
   "signalsKIP_fa": [
-    "<strong>انقضای آتش‌بس ۲۱ آوریل:</strong> ۹ روز. اگر بدون تمدید: هرمز مسدود، بیمه جهش، بانک منجمد.",
-    "<strong>محاصره دریایی:</strong> ترامپ Truth Social. اگر رسمی: هرمز = تئاتر فعال.",
-    "<strong>رویارویی هرمز:</strong> سپاه UAV به ناوشکن‌ها. نگاه به حوادث بیشتر.",
-    "<strong>Oil:</strong> $۹۵.۲۰ ثبات. آرامش کاذب؟ اگر فروپاشی + محاصره: $۱۳۰+.",
-    "<strong>Insurance:</strong> ۱۳٪+. اگر بقا ۲۱ آوریل: ثبات. اگر فروپاشی: ۱۵٪+.",
-    "<strong>Houthi:</strong> مستقل. اگر محاصره: تشدید. دریای سرخ جداگانه.",
-    "<strong>Banking:</strong> ۸.۵ ثابت اما شکننده. اگر ۲۱ آوریل بدون تمدید: ریسک انجماد."
+    "<strong>دور دوم مذاکرات این هفته:</strong> ترامپ '۲ روز.' اگر اعلام: KIP جبل علی هفته‌ها پس از توافق. نظارت: سه‌شنبه-چهارشنبه.",
+    "<strong>انقضای آتش‌بس ۲۱ آوریل:</strong> ۶ روز. اگر دور دوم: تمدید محتمل. ترکیه پشتیبان. اگر نه: ریسک جهش.",
+    "<strong>محاصره روز ۳+:</strong> بدون رویارویی D46-D47. اگر روز ۳ هم: همزیستی ثابت. نظارت: هرگونه حادثه دریایی.",
+    "<strong>Oil:</strong> $۹۵.۵ (↓). WTI $۹۱.۵ (-۸٪). اگر توافق: $۸۵-۹۰. اگر فروپاشی: $۱۱۵-۱۳۰+.",
+    "<strong>Insurance:</strong> ۱۳٪+ اما ثبات. روز ۲ بدون حادثه. اگر دور دوم: Lloyd's.",
+    "<strong>Houthi:</strong> بدون حمله D47. مستقل. دریای سرخ جداگانه.",
+    "<strong>Banking:</strong> ۸.۰ (↓ از ۸.۵). بهبود با سیگنال. اگر توافق: ۶.۵-۷.۰. نظارت UAE بانک‌ها."
   ],
   "casualties": [
     {
@@ -1573,12 +1601,12 @@
     }
   ],
   "humanitarian": [
-    "<strong>Internet:</strong> 1,104+ hours (46 days). $2.4B+ economic loss. 90M affected. Blockade = no motivation to restore. Longest shutdown in history.",
-    "<strong>Displacement:</strong> 330,000+ Iran. Lebanon ~1M. 363+ Bushehr to Russia. Ceasefire = no new Iran displacement. Lebanon worsening.",
-    "<strong>Infrastructure:</strong> 85,000+ structures damaged. No new damage D40-D45. Ceasefire = preservation. But no reconstruction framework.",
-    "<strong>Nuclear:</strong> 363+ Bushehr evacuees. IAEA monitoring. Nuclear was key sticking point — unbridgeable gap. 440kg enriched uranium.",
-    "<strong>Medical:</strong> HRANA: 3,636 killed (frozen Apr 7). 26,500+ wounded. Lebanon: 2,055+ killed, 6,500+ wounded.",
-    "<strong>Economic:</strong> Oil $96.48 (falling). Gas ~$4.22. Blockade Day 1 without confrontation. Turkey 45-60 day extension = market relief. 20,000 vessels stranded."
+    "<strong>Internet:</strong> 1,128+ hours (47 days). $2.5B+ economic loss. 90M affected. Deal track opening = first real motivation to restore. Longest shutdown in Iran history.",
+    "<strong>Displacement:</strong> 330,000+ Iran. Lebanon ~1M. 363+ Bushehr to Russia. Ceasefire = no new Iran displacement (9 days). Lebanon front ongoing.",
+    "<strong>Infrastructure:</strong> 85,000+ structures damaged. No new damage D40-D47 (9 days). Ceasefire = preservation. Deal track = reconstruction framework possible.",
+    "<strong>Nuclear:</strong> 363+ Bushehr evacuees. IAEA monitoring. Nuclear still key gap: US wants 20-yr enrichment suspension; Iran offered 3-5 yr. This is THE issue to bridge.",
+    "<strong>Medical:</strong> HRANA: 3,636 killed (frozen Apr 7 — internet blackout). 26,500+ wounded. Lebanon: 2,055+ killed, 6,500+ wounded.",
+    "<strong>Economic:</strong> Oil $95.50 (falling). WTI $91.50 (-8%). Gas ~$4.10. Deal signal = market relief. Trump 'next 2 days' = biggest economic positive since ceasefire. 20,000 vessels stranded."
   ],
   "humanitarian_fa": [
     "<strong>Internet:</strong> ۱٬۰۸۰+ (۴۵ روز). $۲.۳B+. محاصره = بدون انگیزه بازگشت.",
@@ -1589,24 +1617,24 @@
     "<strong>Economic:</strong> $۱۰۲ (جهش). محاصره = شوک اقتصادی دوشنبه."
   ],
   "diplomacy": [
-    "<strong>TURKEY: 45-60 DAY CEASEFIRE EXTENSION POSSIBLE.</strong> Turkish FM Fidan: 'If parties make good progress, additional ceasefire 45-60 days.' Most significant diplomatic signal since talks collapsed Apr 12. Regional source (CNN): another negotiation round possible. Turkey bridging US-Iran gaps.",
-    "<strong>ISRAEL-LEBANON DIRECT TALKS — FIRST SINCE 1993:</strong> Rubio hosted Israeli Ambassador Leiter + Lebanese Ambassador Hamadeh at State Dept 11AM ET. Focus: ceasefire, Hezbollah disarmament, broader peace. Hezbollah's Qassem urged Lebanon to cancel. Egypt FM Abdelatty heading to DC for Rubio meeting on 'regional developments.'",
-    "<strong>BLOCKADE DAY 1 — NO CONFRONTATION:</strong> Blockade active since 10AM ET. BBC Verify: 4+ Iran-related ships crossed Hormuz. China-linked tanker tested blockade. NO shots fired. Iran did NOT resist. Significant: de facto acceptance by Iran (at least Day 1).",
-    "<strong>TRUMP MIXED SIGNALS:</strong> 'Ceasefire holding well.' But also 'I don't care' about new talks. Pakistan PM Sharif: ceasefire 'holding.' Multiple diplomatic channels open: Turkey, Pakistan, Egypt, Israel-Lebanon. Momentum improving.",
-    "<strong>GLOBAL:</strong> UK/France/Spain/Turkey still refuse blockade participation. China 'strongly condemns.' 20,000 vessels stranded. US destroyed 4 Houthi drones in Yemen. Oil falling — $96.48 (market relief)."
+    "<strong>TRUMP 'NEXT 2 DAYS' — MOST CONCRETE DEAL SIGNAL YET.</strong> Trump told NY Post talks 'could be happening over next two days' in Islamabad. WH official: 'future talks under discussion but nothing scheduled.' Iran Embassy Islamabad: 'later this week or early next week.' Islamabad AND Geneva being considered as host cities. This is the strongest direct presidential signal of imminent talks.",
+    "<strong>SECOND ROUND LOGISTICS FORMING:</strong> WH: 'nothing scheduled but under discussion.' Vance expected to lead US delegation again. Iran Embassy confirming diplomatic track. Location TBD. Potential: Wed-Thu Apr 16-17 in Islamabad.",
+    "<strong>BLOCKADE DAY 2 — NO CONFRONTATION:</strong> Second day without incident. Iran not physically resisting. 4+ Iran ships transiting daily. De facto coexistence of blockade + ceasefire = sustainable in short term. US enforcing but not confronting.",
+    "<strong>OIL DIVES 8% ON TALKS SIGNAL:</strong> WTI -8% to $91.50. Brent $95.50. Market pricing in deal much more aggressively than political statements suggest. Futures = most accurate information aggregator on deal probability.",
+    "<strong>TURKEY/PAKISTAN/EGYPT CHANNELS ACTIVE:</strong> Turkey FM 45-60 day extension still on table. Pakistan hosting second round. Egypt FM in DC. Israel-Lebanon talks (D46) continuing. Multiple tracks simultaneously = diplomatic ecosystem."
   ],
   "diplomacy_fa": [
-    "<strong>ترکیه: تمدید ۴۵-۶۰ روزه آتش‌بس ممکن.</strong> وزیر خارجه فیدان: 'اگر پیشرفت، آتش‌بس ۴۵-۶۰ روز اضافی.' مهم‌ترین سیگنال دیپلماتیک از شکست ۱۲ آوریل. CNN: دور جدید ممکن.",
-    "<strong>مذاکرات مستقیم اسرائیل-لبنان — اولین از ۱۹۹۳:</strong> روبیو میزبان سفرای اسرائیل (لایتر) و لبنان (حمادة). حزب‌الله: لغو. مصر وزیر خارجه به DC.",
-    "<strong>محاصره روز ۱ — بدون رویارویی:</strong> BBC: ۴+ کشتی ایرانی. نفتکش چینی آزمایش. بدون شلیک. ایران مقاومت نکرد.",
-    "<strong>ترامپ سیگنال مختلط:</strong> 'آتش‌بس برقرار.' اما 'برایم مهم نیست.' پاکستان: آتش‌بس 'برقرار.' چند کانال: ترکیه، پاکستان، مصر، لبنان.",
-    "<strong>جهان:</strong> بریتانیا/فرانسه/اسپانیا/ترکیه رد محاصره. چین محکوم. ۲۰٬۰۰۰ متوقف. آمریکا ۴ پهپاد حوثی نابود. نفت ~$۹۶.۴۸."
+    "<strong>ترامپ '۲ روز دیگر' — مهم‌ترین سیگنال توافق.</strong> NY Post: '۲ روز.' WH: 'در بحث.' سفارت ایران: 'آخر هفته یا اوایل هفته آینده.' اسلام‌آباد + ژنو. مستقیم‌ترین سیگنال ریاست‌جمهوری.",
+    "<strong>دور دوم لجستیک شکل می‌گیرد:</strong> WH: 'چیزی برنامه‌ریزی نشده.' ونس مجدداً احتمالاً سرپرست. موضع: سه‌شنبه-چهارشنبه ۱۶-۱۷ آوریل احتمالی.",
+    "<strong>محاصره روز ۲ — بدون رویارویی:</strong> دومین روز بدون حادثه. ایران مقاومت نکرد. ۴+ کشتی روزانه. همزیستی محاصره + آتش‌بس.",
+    "<strong>نفت -۸٪ با سیگنال مذاکره:</strong> WTI $۹۱.۵ (-۸٪). برنت $۹۵.۵. بازار توافق بیشتر از بیانیه‌های سیاسی قیمت‌گذاری.",
+    "<strong>کانال‌های ترکیه/پاکستان/مصر فعال:</strong> ترکیه ۴۵-۶۰ روز. پاکستان میزبان دور ۲. مصر DC. لبنان ادامه."
   ],
   "publicOpinion": [
-    "<strong>US:</strong> 56% say war was wrong (Pew). Blockade Day 1 no confrontation = temporary relief. Israel-Lebanon talks = Rubio diplomatic win. But war fatigue mounting.",
-    "<strong>Iran:</strong> Did NOT resist blockade physically. Regime calculating: diplomatic channels via Turkey, Pakistan active. Tehran rallies continue. 'Piracy' narrative useful domestically.",
-    "<strong>Global:</strong> Turkey offering 45-60 day extension = most constructive international signal. 20,000 vessels stranded. Supply chain strain. US destroyed 4 Houthi drones.",
-    "<strong>Markets:</strong> Brent $96.48 — falling despite active blockade. Markets pricing in Turkey extension + no confrontation. Oil traders more optimistic than political analysts. Prediction markets adjusting."
+    "<strong>US:</strong> 56% say war was wrong (Pew). But Trump 'next 2 days' = deal signal = approval uptick possible. Oil at $91 = first real domestic relief since war started. Israel-Lebanon talks = Rubio diplomatic win. War fatigue mounting but deal track provides political cover.",
+    "<strong>Iran:</strong> Did NOT resist blockade Day 1 or Day 2. Regime calculating: engaging diplomatically while maintaining 'piracy' narrative publicly. Iran Embassy confirming talks track. Tehran street relief at deal prospect.",
+    "<strong>Global:</strong> Oil 8% crash = global markets relief. Supply chain strain (20,000 vessels stranded) motivating international pressure for deal. Turkey/Pakistan/Egypt all pushing for second round.",
+    "<strong>Markets:</strong> WTI $91.50 (-8%) — biggest single-day drop since ceasefire. Brent $95.50. Oil market is pricing in 30-40% probability of deal before Apr 21. Prediction markets: ceasefire-holds probability rising."
   ],
   "publicOpinion_fa": [
     "<strong>آمریکا:</strong> ۵۶٪ جنگ اشتباه (Pew). محاصره محبوب پایگاه اما تقسیم میانه‌روها.",
@@ -1615,11 +1643,11 @@
     "<strong>بازارها:</strong> برنت -۴.۵٪. پولیمارکت آتش‌بس ~۱۸٪."
   ],
   "hormuz": [
-    "<strong>BLOCKADE DAY 1 — NO CONFRONTATION:</strong> Blockade active since 10AM ET Apr 14. BBC Verify: 4+ Iran-related ships crossed Hormuz. NO shots fired. Iran did NOT physically resist — denounced 'piracy' but calculated rather than escalated.",
-    "<strong>TRAFFIC:</strong> At least 4 Iran-related ships crossed (BBC Verify). Global shipowners still warning too risky. Dual blockade: US blocking Iran ports + Iran's own restrictions on strait.",
-    "<strong>MINES:</strong> 200+ Iranian mines remain. CENTCOM mine-clearing ops ongoing. Iran fortified Kharg Island. Mine threat persists regardless of blockade status.",
-    "<strong>STRANDED:</strong> 20,000 vessels stranded globally (UN). Supply chains strained — fertilizer, energy. Insurance at war premiums. US destroyed 4 Houthi drones in Yemen.",
-    "<strong>ENFORCEMENT:</strong> Day 1 passed without incident. Coalition nations still refusing participation. Turkey: ceasefire extension 45-60 days could normalize transit."
+    "<strong>BLOCKADE DAY 2 — NO CONFRONTATION:</strong> Second consecutive day without incident. Iran not physically resisting. 4+ Iran ships crossing daily. US enforcing but not forcing confrontation. De facto coexistence pattern establishing.",
+    "<strong>TRAFFIC:</strong> 4+ Iran ships crossed Day 1, similar Day 2. Global commercial shipowners still warning too risky. Dual blockade: US blocking Iran ports + Iran's own mine/toll regime. Only Iran-flagged + authorized vessels transiting.",
+    "<strong>MINES:</strong> 200+ mines remain. CENTCOM mine-clearing ops ongoing but slow. Deal = formal mine-clearing begins. Without deal: mines = barrier to insurance normalization for 6-12 months.",
+    "<strong>STRANDED:</strong> 20,000 vessels stranded (UN). Deal this week = clearance process begins. Trump 'next 2 days' = first signal that might move stranded shipping market.",
+    "<strong>DEAL SCENARIO:</strong> If deal announced Apr 16-17: Hormuz framework established within days. Mine-clearing begins. Insurance improves within weeks. Full commercial traffic restored in 6-12 months. Oil drops to $85-90."
   ],
   "hormuz_fa": [
     "<strong>محاصره روز ۱ — بدون رویارویی:</strong> محاصره فعال. BBC: ۴+ کشتی ایرانی عبور. بدون شلیک. ایران مقاومت نکرد.",
@@ -1629,22 +1657,22 @@
     "<strong>اجرا:</strong> روز ۱ بدون حادثه. متحدان هنوز رد. ترکیه: تمدید ۴۵-۶۰ روز ممکن."
   ],
   "keyActors": [
-    "<strong>Trump:</strong> 'Ceasefire holding well.' But 'I don't care' about new talks. Mixed signals: blockade as pressure + deal rhetoric. Day 1 no confrontation = tolerable outcome.",
-    "<strong>Iran:</strong> Did NOT physically resist blockade Day 1. 4+ ships crossed. Diplomatic calculation > military escalation. Channels open via Turkey, Pakistan.",
-    "<strong>Turkey:</strong> FM Fidan: 45-60 day ceasefire extension possible. MOST significant diplomatic signal since collapse. Turkey emerging as key bridge between US and Iran.",
-    "<strong>Israel-Lebanon:</strong> FIRST direct talks since 1993 at State Dept. Rubio hosted Leiter + Hamadeh. Hezbollah's Qassem urged cancellation. Second front diplomacy.",
-    "<strong>Pakistan:</strong> PM Sharif: ceasefire 'holding.' 2nd Islamabad round offered. Key mediator.",
-    "<strong>Egypt:</strong> FM Abdelatty heading to DC for Rubio meeting on 'regional developments.' New diplomatic channel.",
-    "<strong>China:</strong> 'Strongly condemns' blockade. China-linked tanker tested enforcement Day 1. Strategic interest in Iranian oil and Hormuz access."
+    "<strong>Trump:</strong> 'Something could be happening over next two days' (NY Post). SHIFTED from 'I don't care' (D46) to active deal signaling (D47). Blockade Day 2 no confrontation = tolerable. Oil $91 = domestic cover for deal.",
+    "<strong>Iran:</strong> Did NOT physically resist blockade Day 1 or Day 2. 4+ ships crossed both days. Iran Embassy Islamabad confirming talks on track 'later this week.' Dual posture: denounce 'piracy' publicly + engage diplomatically.",
+    "<strong>Turkey:</strong> FM Fidan 45-60 day extension still on table. Trump talks signal = Turkey's offer gaining traction. Positioned as key bridge.",
+    "<strong>Israel-Lebanon:</strong> Talks continuing from D46 (first since 1993). Rubio hosting. Hezbollah opposing. Progress uncertain but channel open.",
+    "<strong>Pakistan:</strong> Ready to host second round in Islamabad. Active mediator. Iran Embassy in Islamabad confirming diplomatic track.",
+    "<strong>Vance:</strong> Expected to lead second round. Still in region (or returning). 'Next 2 days' = Vance likely heading to Pakistan.",
+    "<strong>China:</strong> 'Strongly condemns' but quiet on D47. Oil 8% crash good for Beijing (major Iran oil buyer). Watching talks carefully."
   ],
   "keyActors_fa": [
-    "<strong>ترامپ:</strong> 'آتش‌بس برقرار.' اما 'برایم مهم نیست.' سیگنال مختلط. روز ۱ بدون رویارویی.",
-    "<strong>ایران:</strong> مقاومت فیزیکی نکرد. ۴+ کشتی عبور. محاسبه نه تشدید. کانال ترکیه و پاکستان.",
-    "<strong>ترکیه:</strong> فیدان: تمدید ۴۵-۶۰ روزه ممکن. مهم‌ترین سیگنال. پل بین آمریکا و ایران.",
-    "<strong>اسرائیل-لبنان:</strong> اولین مذاکرات مستقیم از ۱۹۹۳. روبیو میزبان. حزب‌الله مخالف.",
-    "<strong>پاکستان:</strong> شریف: آتش‌بس 'برقرار.' دور ۲ پیشنهاد.",
-    "<strong>مصر:</strong> وزیر خارجه به DC برای ملاقات روبیو. کانال جدید.",
-    "<strong>چین:</strong> 'شدیداً محکوم.' نفتکش چینی آزمایش روز ۱."
+    "<strong>ترامپ:</strong> 'ممکن است ۲ روز دیگر چیزی اتفاق بیفتد' (NY Post). از 'برایم مهم نیست' (D46) به سیگنال فعال (D47). نفت $۹۱ = پوشش داخلی.",
+    "<strong>ایران:</strong> مقاومت فیزیکی نکرد روز ۱ و ۲. ۴+ کشتی هر روز. سفارت اسلام‌آباد: 'آخر هفته.' دوگانه: انتقاد علنی + تعامل.",
+    "<strong>ترکیه:</strong> تمدید ۴۵-۶۰ روز فعال. سیگنال ترامپ = پیشنهاد ترکیه کشش بیشتر.",
+    "<strong>اسرائیل-لبنان:</strong> مذاکرات از D46 ادامه. حزب‌الله مخالف. کانال باز.",
+    "<strong>پاکستان:</strong> آماده میزبانی دور ۲. سفارت ایران تأیید.",
+    "<strong>ونس:</strong> احتمالاً سرپرست دور ۲. '۲ روز' = ونس به پاکستان می‌رود.",
+    "<strong>چین:</strong> محکوم اما آرام D47. نفت $۹۱ = خوب برای پکن (خریدار نفت ایران)."
   ],
   "predictive": {
     "models": {
@@ -1654,7 +1682,7 @@
         "description": "Assumes stockpiles structurally depleted — exponential decay continues to zero",
         "description_fa": "فرض بر اتمام ساختاری ذخایر — کاهش نمایی تا صفر ادامه دارد",
         "halfLife_days": 2.8,
-        "projectedZeroDay": "Apr 15",
+        "projectedZeroDay": "Apr 16",
         "projectedOutcome": "Iran ceases offensive operations by mid-April. War ends via military exhaustion + negotiated exit. Coalition declares victory.",
         "projectedOutcome_fa": "ایران عملیات تهاجمی را تا اواسط آوریل متوقف می‌کند. جنگ با فرسایش نظامی + خروج مذاکره‌ای پایان می‌یابد.",
         "confidence": 0.1,
@@ -1724,7 +1752,8 @@
         "Apr 17",
         "Apr 18",
         "Apr 19",
-        "Apr 20"
+        "Apr 20",
+        "Apr 21"
       ],
       "decayProjection": [
         480,
@@ -1768,6 +1797,7 @@
         4,
         0,
         2,
+        0,
         0,
         0,
         0,
@@ -1827,12 +1857,13 @@
         0,
         25,
         25,
-        24,
+        0,
         23,
         23,
         22,
         22,
-        21
+        21,
+        20
       ]
     },
     "vectors": {
@@ -1882,7 +1913,8 @@
         "Apr 11",
         "Apr 12",
         "Apr 13",
-        "Apr 14"
+        "Apr 14",
+        "Apr 15"
       ],
       "militaryExhaustion": [
         1,
@@ -1924,6 +1956,7 @@
         7,
         7.5,
         7,
+        6.5,
         6.5,
         6.5,
         6.5,
@@ -1978,7 +2011,8 @@
         7.5,
         7.8,
         8.5,
-        8.0
+        8.0,
+        7.8
       ],
       "diplomaticMomentum": [
         0,
@@ -2026,7 +2060,8 @@
         7.5,
         4.0,
         3.0,
-        4.0
+        4.0,
+        4.5
       ],
       "usPoliticalSustainability": [
         8,
@@ -2073,6 +2108,7 @@
         4.5,
         4.5,
         4.0,
+        3.5,
         3.5,
         3.5
       ],
@@ -2122,30 +2158,31 @@
         2.5,
         2.0,
         1.5,
-        2.0
+        2.0,
+        2.5
       ]
     },
     "vectorNotes": {
-      "militaryExhaustion": "D46 6.5 (unchanged D41-D46). Ceasefire pause preserves Iran remaining capability. Zero launches = stockpiles intact. Blockade does not affect air/missile capability. 7 straight days zero attacks.",
-      "militaryExhaustion_fa": "روز ۴۶: ۶.۵ (ثابت D41-D46). آتش‌بس توان حفظ. ۷ روز صفر حمله.",
-      "economicPain": "D46 8.0 (DOWN from 8.5). Brent falling ~$96.48 (-3% from $102). Turkey 45-60 day extension offer = market relief. Oil NOT surging as feared — blockade priced in. But still elevated vs pre-war $65.",
-      "economicPain_fa": "روز ۴۶: ۸.۰ (↓ از ۸.۵). برنت ~$۹۶.۴۸ (-۳٪). ترکیه تمدید = تسکین بازار.",
-      "diplomaticMomentum": "D46 4.0 (UP from 3.0). SIGNIFICANT diplomatic momentum: Turkey FM offers 45-60 day extension. Israel-Lebanon direct talks at State Dept (first since 1993). Egypt FM to DC. Pakistan 2nd round. CNN: new negotiation round possible. Multiple channels opening. Hezbollah opposing = counterweight.",
-      "diplomaticMomentum_fa": "روز ۴۶: ۴.۰ (↑ از ۳.۰). حرکت دیپلماتیک مهم: ترکیه تمدید ۴۵-۶۰ روز. مذاکرات اسرائیل-لبنان. مصر DC. پاکستان دور ۲.",
-      "usPoliticalSustainability": "D46 3.5 (stable). Blockade still unpopular with allies. But blockade Day 1 passed without confrontation = slight relief. Israel-Lebanon talks = Rubio diplomatic win. Trump 'holding well' rhetoric.",
-      "usPoliticalSustainability_fa": "روز ۴۶: ۳.۵ (ثابت). محاصره غیرمحبوب. اما روز ۱ بدون رویارویی. مذاکرات لبنان = موفقیت روبیو.",
-      "escalationCeilingDistance": "D46 2.0 (UP from 1.5). Blockade Day 1 passed WITHOUT confrontation — Iran did not resist. No shots fired. 4+ Iran ships crossed but no incident. Turkey 45-60 day offer = deescalation signal. Ceiling moves slightly further. But 200+ mines + Houthis + 7 days to expiry = still close.",
-      "escalationCeilingDistance_fa": "روز ۴۶: ۲.۰ (↑ از ۱.۵). محاصره روز ۱ بدون رویارویی. ترکیه تمدید = سیگنال کاهش تنش. اما ۲۰۰+ مین + ۷ روز."
+      "militaryExhaustion": "D47 6.5 (unchanged D41-D47). Ceasefire pause preserves Iran remaining capability. Zero launches = stockpiles intact. Blockade does not affect air/missile capability. 9 straight days zero attacks.",
+      "militaryExhaustion_fa": "روز ۴۷: ۶.۵ (ثابت D41-D47). آتش‌بس توان حفظ. ۹ روز صفر حمله.",
+      "economicPain": "D47 7.8 (DOWN from 8.0). WTI crashed 8% to ~$91.50. Brent ~$95.50. Trump 'next 2 days' talks signal = oil market relief. Still elevated vs pre-war $65 but FALLING on deal prospects.",
+      "economicPain_fa": "روز ۴۷: ۷.۸ (↓ از ۸.۰). WTI -۸٪ به $۹۱.۵. برنت $۹۵.۵. سیگنال ترامپ = تسکین بازار.",
+      "diplomaticMomentum": "D47 4.5 (UP from 4.0). STRONGEST SIGNAL YET: Trump 'next 2 days' in NY Post. WH 'under discussion.' Iran Embassy 'later this week.' Islamabad + Geneva. Second round talks imminent. Turkey 45-60 day extension. Israel-Lebanon talks continuing. Oil 8% crash = market endorsement.",
+      "diplomaticMomentum_fa": "روز ۴۷: ۴.۵ (↑ از ۴.۰). قوی‌ترین سیگنال: ترامپ '۲ روز دیگر.' WH 'در بحث.' سفارت ایران 'آخر هفته.' نفت -۸٪.",
+      "usPoliticalSustainability": "D47 3.5 (stable). Trump signaling deal = domestic political cover improving. Oil at $91 = first real gas price relief possible. Blockade Day 2 no confrontation = no US casualties. But war fatigue at 56% wrong in polls.",
+      "usPoliticalSustainability_fa": "روز ۴۷: ۳.۵ (ثابت). ترامپ سیگنال توافق = پوشش سیاسی. نفت $۹۱ = اولین تسکین قیمت گاز.",
+      "escalationCeilingDistance": "D47 2.5 (UP from 2.0). Second consecutive blockade day without confrontation — pattern establishing. Trump talks signal = both sides moving away from escalation ceiling. Turkey extension + multiple diplomatic channels = de-escalation trajectory. Still risks: 200+ mines, Hezbollah, 6 days to expiry.",
+      "escalationCeilingDistance_fa": "روز ۴۷: ۲.۵ (↑ از ۲.۰). دومین روز بدون رویارویی. ترامپ سیگنال = هر دو طرف از سقف دور می‌شوند. ترکیه + چند کانال. اما ۲۰۰+ مین + ۶ روز."
     },
     "warOutcome": {
-      "prediction": "D46 EVE: BLOCKADE DAY 1 PASSES WITHOUT CONFRONTATION + DIPLOMACY STIRS. Turkey FM offers 45-60 day ceasefire extension — most significant diplomatic signal since collapse Apr 12. Israel-Lebanon direct talks (first since 1993). MOST LIKELY: Collapse 40% (DOWN — no confrontation, Turkey extension). Stalled 23% (UP — blockade + ceasefire coexist). Deal 19% (UP — multiple diplomatic channels opening). Victory 10%. Intervention 5%. Fracture 3%.",
-      "prediction_fa": "روز ۴۶ عصر: محاصره روز ۱ بدون رویارویی + دیپلماسی. ترکیه تمدید ۴۵-۶۰ روز. مذاکرات اسرائیل-لبنان. فروپاشی ۴۰٪. بن‌بست ۲۳٪. توافق ۱۹٪. پیروزی ۱۰٪. مداخله ۵٪. فروپاشی رژیم ۳٪.",
-      "derivation": "Military exhaustion 6.5 (unchanged — ceasefire). Economic pain 8.0 (DOWN from 8.5 — Brent falling $96.48, market relief). Diplomatic momentum 4.0 (UP from 3.0 — Turkey 45-60 day offer, Israel-Lebanon talks, Egypt FM to DC, multiple channels). US political sustainability 3.5 (stable — blockade Day 1 no confrontation). Escalation ceiling distance 2.0 (UP from 1.5 — no confrontation Day 1, Turkey deescalation signal). Convergence improving on diplomatic momentum.",
-      "derivation_fa": "Military(6.5 ثابت). Economic(8.0 ↓ — برنت $96.48). Diplomatic(4.0 ↑ — ترکیه تمدید + لبنان). Political(3.5 ثابت). Escalation(2.0 ↑ — بدون رویارویی).",
-      "convergenceScore": 4.6,
-      "convergenceInterpretation": "Convergence 4.6/10 — UP from 4.2 D45. Blockade Day 1 passed without naval confrontation — Iran did NOT resist. Turkey FM offers 45-60 day extension. Israel-Lebanon first direct talks since 1993. Oil falling (market relief). Multiple diplomatic channels opening simultaneously. Still in danger zone: 200+ mines, Houthis active, 7 days to expiry, Hezbollah opposing talks. But trajectory improving for first time since talks collapsed Apr 12.",
-      "convergenceInterpretation_fa": "همگرایی ۴.۶ از ۱۰ — بهبود از ۴.۲. محاصره روز ۱ بدون رویارویی. ترکیه تمدید ۴۵-۶۰ روز. مذاکرات لبنان. نفت کاهش. چند کانال دیپلماتیک. هنوز خطر: ۲۰۰+ مین، حوثی، ۷ روز. اما مسیر بهبود.",
-      "lastUpdated": "2026-04-14T22:00:00-04:00"
+      "prediction": "D47 (Apr 15): BLOCKADE DAY 2 NO CONFRONTATION + TRUMP 'NEXT 2 DAYS' TALKS SIGNAL. Oil crashed 8% on deal signal. Second round imminent in Islamabad or Geneva before Apr 21. MOST LIKELY: Collapse 37% (DOWN). Deal 22% (UP — Trump explicit, WH confirms, Iran Embassy confirms). Stalled 24% (UP). Victory 10%. Intervention 5%. Fracture 2%.",
+      "prediction_fa": "روز ۴۷: محاصره روز ۲ بدون رویارویی + ترامپ '۲ روز دیگر.' نفت -۸٪. دور دوم در راه. فروپاشی ۳۷٪ (↓). توافق ۲۲٪ (↑). بن‌بست ۲۴٪ (↑). پیروزی ۱۰٪. مداخله ۵٪. فروپاشی رژیم ۲٪.",
+      "derivation": "Military exhaustion 6.5 (unchanged — ceasefire preserves capability, 9 straight days zero attacks). Economic pain 7.8 (DOWN from 8.0 — WTI -8% to $91.50 on talks signal, Brent $95.50). Diplomatic momentum 4.5 (UP from 4.0 — Trump 'next 2 days,' WH 'under discussion,' Iran Embassy 'this week,' Islamabad+Geneva). US political sustainability 3.5 (stable — Trump deal signal improves but still 56% say war wrong). Escalation ceiling distance 2.5 (UP from 2.0 — two consecutive blockade days without confrontation, talks signal de-escalation).",
+      "derivation_fa": "Military(6.5 ثابت). Economic(7.8 ↓ — WTI -۸٪ به $۹۱.۵). Diplomatic(4.5 ↑ — ترامپ '۲ روز' + WH + سفارت). Political(3.5 ثابت). Escalation(2.5 ↑ — روز ۲ بدون رویارویی).",
+      "convergenceScore": 4.8,
+      "convergenceInterpretation": "Convergence 4.8/10 — UP from 4.6 D46, 4.2 D45. Second consecutive day of improvement. Trump 'next 2 days' is the most concrete deal signal since ceasefire was announced. Oil 8% crash = market endorsing deal probability. Blockade Day 2 no confrontation = pattern establishing. Multiple diplomatic channels active: Turkey (45-60 day extension), Pakistan (hosting 2nd round), Egypt (FM in DC), Israel-Lebanon (direct talks). Still risks: 6 days to expiry, nuclear enrichment gap (20 yr vs 3-5 yr), 200+ mines, Hezbollah opposing Lebanon talks. Deal probability 22%, higher than any time since blockade began.",
+      "convergenceInterpretation_fa": "همگرایی ۴.۸ از ۱۰ — دومین روز متوالی بهبود. ترامپ '۲ روز دیگر' مستقیم‌ترین سیگنال. نفت -۸٪ = تأیید بازار. روز ۲ بدون رویارویی. چند کانال: ترکیه، پاکستان، مصر، لبنان. ریسک: ۶ روز، شکاف هسته‌ای، ۲۰۰+ مین. توافق ۲۲٪ — بیشترین از شروع محاصره.",
+      "lastUpdated": "2026-04-15T07:00:00-04:00"
     }
   },
   "additionalCharts": {
@@ -2191,6 +2228,7 @@
       95,
       85,
       30,
+      0,
       0,
       0,
       0,
@@ -2244,7 +2282,8 @@
       "Apr 11",
       "Apr 12",
       "Apr 13",
-      "Apr 14"
+      "Apr 14",
+      "Apr 15"
     ],
     "countriesTargetedPerDay": [
       8,
@@ -2287,6 +2326,7 @@
       9,
       8,
       4,
+      0,
       0,
       0,
       0,
@@ -2340,6 +2380,7 @@
       0,
       0,
       0,
+      0,
       0
     ],
     "interceptRateLabels": [
@@ -2388,7 +2429,8 @@
       "Apr 11",
       "Apr 12",
       "Apr 13",
-      "Apr 14"
+      "Apr 14",
+      "Apr 15"
     ],
     "interceptRate": [
       0.82,
@@ -2436,6 +2478,7 @@
       0.88,
       0.88,
       0.88,
+      0.88,
       0.88
     ],
     "scenarioHistory": {
@@ -2458,7 +2501,8 @@
         "D41",
         "D44",
         "D45",
-        "D46"
+        "D46",
+        "D47"
       ],
       "escalationSpiral": [
         15,
@@ -2479,7 +2523,8 @@
         28,
         38,
         42,
-        44
+        44,
+        37
       ],
       "protractedAttrition": [
         30,
@@ -2500,7 +2545,8 @@
         15,
         18,
         22,
-        22
+        22,
+        24
       ],
       "declaredVictory": [
         25,
@@ -2519,6 +2565,7 @@
         13,
         8,
         8,
+        10,
         10,
         10,
         10
@@ -2542,7 +2589,8 @@
         42,
         25,
         18,
-        16
+        16,
+        22
       ],
       "internationalIntervention": [
         10,
@@ -2562,6 +2610,7 @@
         5,
         5,
         6,
+        5,
         5,
         5
       ],
@@ -2584,7 +2633,8 @@
         2,
         3,
         3,
-        3
+        3,
+        2
       ]
     }
   },
@@ -2751,18 +2801,18 @@
     "tehranCommsStatus": {
       "status": "BLACKOUT",
       "statusColor": "red",
-      "internetDownHours": 1056,
+      "internetDownHours": 1128,
       "lastConfirmedContact": "Feb 28 (D1)",
-      "detail": "44 days. 1,056+ hrs. $2.2B+. LONGEST EVER. Talks failed — no political motivation to restore. If naval blockade: may worsen. If ceasefire collapses: further degradation.",
-      "detail_fa": "۱٬۰۵۶+ ساعت. ۴۴ روز. $2.2B+. شکست مذاکرات = بدون انگیزه بازگشت. اگر محاصره: بدتر.",
-      "blackoutHours": "1056+"
+      "detail": "47 days. 1,128+ hrs. $2.3B+. LONGEST EVER. TRUMP SIGNALS TALKS — if deal, internet restoration possible within days. Blockade Day 2 no new disruptions. Ceasefire Day 9, expiry Apr 21.",
+      "detail_fa": "۱٬۱۲۸+ ساعت. ۴۷ روز. $2.3B+. ترامپ سیگنال مذاکره — اگر توافق، بازگشت اینترنت طی روزها. روز ۹ آتش‌بس.",
+      "blackoutHours": "1128+"
     },
     "inventoryRunway": {
-      "months_remaining": 2.2,
-      "detail": "~2.2 months remaining. Talks failed = no recovery timeline. Activate alternatives NOW. Naval blockade = further delay. Ceasefire may collapse Apr 21.",
-      "detail_fa": "~۲.۲ ماه باقی. مذاکرات شکست = بدون جدول بازیابی. جایگزین فوری. محاصره = تأخیر بیشتر.",
+      "months_remaining": 2.1,
+      "detail": "~2.1 months remaining. TRUMP TALKS SIGNAL = first real hope. If deal by Apr 21, Tehran warehouse may reopen mid-May. If collapse, critical by mid-June. Act THIS WEEK on alternatives.",
+      "detail_fa": "~۲.۱ ماه باقی. سیگنال مذاکره ترامپ = اولین امید واقعی. اگر توافق تا ۲۱ آوریل، انبار تهران اواسط مه. اگر شکست، بحران اواسط ژوئن.",
       "burnRate": "~$15K-20K/month in fulfilled orders",
-      "criticalDate": "Late June 2026. Talks failure = resolution timeline unknown. Maintain all alternatives regardless."
+      "criticalDate": "Mid-June 2026. Deal by Apr 21 → extends to Aug+. Collapse → accelerates to mid-June."
     },
     "publishingDeepDive": [
       "<strong>PAPER/INK SUPPLY:</strong> Iran imports 70%+ of printing paper. Hormuz closure + sanctions = supply chain severed. Domestic paper mills operating at estimated 20-30% capacity due to power disruptions. Quality declining.",
@@ -2783,11 +2833,11 @@
   },
   "kipExpanded": {
     "dubaiBankingRisk": {
-      "score": 8.5,
-      "trend": "rising_post_failure",
-      "detail": "D44: 8.5/10. DOWN from 9.5 during active war (ceasefire effect) but rising post-talks failure. Oil $95.20. Gulf banks cautious — talks failure = uncertainty premium returning. If naval blockade: spike to 9.5+.",
-      "detail_fa": "D44: ۸.۵/۱۰. کاهش از ۹.۵ (آتش‌بس) اما افزایش پس شکست. $۹۵.۲۰. اگر محاصره: ۹.۵+.",
-      "action": "MAINTAIN Tbilisi/KL reserves. Talks failure = Gulf banking uncertainty persists. If naval blockade: withdraw ALL Gulf funds immediately. Monitor ceasefire status daily."
+      "score": 8.0,
+      "trend": "cautiously_improving",
+      "detail": "D47: 8.0/10. DOWN from 8.5. OIL CRASHED 8% on Trump talks signal = Gulf banks slightly less panicked. Blockade Day 2 no confrontation = slight relief. If talks succeed by Apr 21: score drops to 5-6. If ceasefire collapses: spikes to 9.5+.",
+      "detail_fa": "D47: ۸.۰/۱۰. کاهش از ۸.۵. نفت ۸٪ سقوط = بانک‌های خلیج کمی آرام‌تر. سیگنال مذاکره ترامپ. اگر توافق: ۵-۶. اگر شکست: ۹.۵+.",
+      "action": "TALKS SIGNAL CHANGES ACTION: This week, identify specific UAE bank contact to test freeze status. If talks confirmed Apr 16-17, hold on repositioning pending outcome. If no talks by Apr 18, execute Tbilisi transfer immediately."
     },
     "alternativeHubs": [
       {
@@ -2924,7 +2974,7 @@
       "insured": true,
       "detail": "Most cargo insured under pre-war marine policies. Claims processing delayed — Lloyd's overwhelmed. Perishables (~15% by value) written off. Non-perishable goods safe in bonded storage but incurring daily storage fees (~$150/container/day).",
       "detail_fa": "اکثر بار بیمه. پردازش خسارت تأخیر. فاسدشدنی (~۱۵٪) از دست رفته. غیرفاسدشدنی در انبار اما هزینه روزانه (~$۱۵۰/کانتینر/روز).",
-      "storageFees": "$6,600+ (44 days x $150/day)"
+      "storageFees": "$7,050+ (47 days x $150/day)"
     },
     "insuranceCostIndex": {
       "labels": [
@@ -3068,28 +3118,28 @@
       "+3m"
     ],
     "ceasefireApril6": [
-      110,
-      100,
-      92,
+      95.5,
+      90,
       85,
       80,
-      75
+      76,
+      73
     ],
     "warContinues": [
-      110,
-      115,
+      95.5,
+      100,
+      105,
+      112,
       118,
-      122,
-      125,
-      128
+      122
     ],
     "babAlMandabCloses": [
-      110,
+      95.5,
+      115,
       130,
-      145,
-      160,
-      165,
-      170
+      148,
+      155,
+      162
     ],
     "note": "Projections based on Goldman Sachs ($110 avg), Citi ($120+ if sustained), IEA worst-case. Ceasefire scenario assumes phased Hormuz reopening. Bab al-Mandab closure = both chokepoints blocked.",
     "note_fa": "پیش‌بینی‌ها بر اساس گلدمن ساکس ($110)، سیتی ($120+)، IEA بدترین حالت. آتش‌بس = بازگشایی مرحله‌ای هرمز. بستن باب‌المندب = هر دو تنگه."
@@ -3142,7 +3192,8 @@
       "Apr 11",
       "Apr 12",
       "Apr 13",
-      "Apr 14"
+      "Apr 14",
+      "Apr 15"
     ],
     "vessels": [
       62,
@@ -3191,18 +3242,19 @@
       6,
       5,
       3,
-      3
+      3,
+      4
     ],
     "preWarAverage": 62,
-    "note": "D45: ~3 vessels/day. DOWN from 5. Blockade announcement caused most shipping to halt. 3 tankers attempted exit after announcement (Bloomberg). CENTCOM blockade starts Monday 10AM ET. Iran: piracy. 200+ mines.",
-    "note_fa": "روز ۴۵: ~۳. کاهش از ۵. اعلام محاصره = توقف حمل‌ونقل. ۳ نفتکش تلاش خروج. سنتکام دوشنبه."
+    "note": "D47: ~4 vessels/day. BLOCKADE DAY 2 — cautious resumption. Small tankers testing CENTCOM inspection regime. WH signals talks 'next 2 days.' Iran: piracy claim. 200+ mines still deployed.",
+    "note_fa": "روز ۴۷: ~۴ کشتی/روز. روز ۲ محاصره — از سرگیری محتاطانه. کشتی‌های کوچک رژیم بازرسی سنتکام را آزمایش می‌کنند. کاخ سفید سیگنال مذاکره ارسال کرد."
   },
   "ceasefireDeadline": {
     "deadline": "2026-04-21T20:00:00-04:00",
     "label": "April 21 ceasefire expiry",
     "label_fa": "پایان آتش‌بس ۲۱ آوریل",
-    "context": "Trump-Iran 2-week ceasefire announced Apr 7 (Pakistan-brokered). Islamabad talks COLLAPSED Apr 12. BLOCKADE ACTIVE since Apr 14 10AM ET. Ceasefire Day 8 — 7 days to expiry. Pakistan offers 2nd round. Rubio hosting Israel-Lebanon talks Tue. No Iran-US diplomatic pathway yet.",
-    "context_fa": "آتش‌بس ۲ هفته‌ای. مذاکرات اسلام‌آباد شکست. محاصره فعال از ۱۴ آوریل. آتش‌بس روز ۸ — ۷ روز. پاکستان دور دوم. روبیو مذاکرات اسرائیل-لبنان.",
+    "context": "Trump-Iran 2-week ceasefire announced Apr 7 (Pakistan-brokered). Islamabad talks COLLAPSED Apr 12. BLOCKADE ACTIVE since Apr 14 10AM ET. Ceasefire Day 9 — 6 days to expiry. TRUMP SIGNALS TALKS 'NEXT 2 DAYS' (NY Post). WH: 'Islamabad AND Geneva under discussion.' Oil CRASHED 8% on signal.",
+    "context_fa": "آتش‌بس ۲ هفته‌ای. مذاکرات اسلام‌آباد شکست. محاصره فعال از ۱۴ آوریل. آتش‌بس روز ۹ — ۶ روز. ترامپ: مذاکره طی ۲ روز آینده. نفت ۸٪ سقوط کرد.",
     "extensions": 0,
     "branchIfDeal": [
       {
