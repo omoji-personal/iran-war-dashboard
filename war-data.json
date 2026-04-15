@@ -5318,13 +5318,19 @@
       "significance": 9
     },
     {
-      "day": "Apr 14",
+      "date": "Apr 14",
       "cfDay": 7,
       "event": "Pakistan offers 2nd Islamabad round; Rubio hosts Israel-Lebanon ambassadors Tue",
       "event_fa": "پاکستان دور دوم اسلام‌آباد پیشنهاد؛ روبیو میزبان سفرای اسرائیل-لبنان سه‌شنبه",
-      "participants": "Pakistan PM Sharif, Sec. Rubio, Israel amb., Lebanon amb.",
-      "outcome": "Pending — Pakistan offering to host, Rubio talks scheduled for Tuesday",
-      "significance": "First potential Lebanon ceasefire track. Pakistan keeping channel open despite Islamabad collapse."
+      "participants": [
+        "Pakistan PM Sharif",
+        "Sec. Rubio",
+        "Israel amb.",
+        "Lebanon amb."
+      ],
+      "outcome": "scheduled",
+      "significance": 6,
+      "keyGap": "First potential Lebanon ceasefire track. Pakistan keeping channel open despite Islamabad collapse."
     }
   ],
   "ceasefireEconomicRecovery": {

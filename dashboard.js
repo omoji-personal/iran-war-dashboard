@@ -1458,16 +1458,22 @@ function renderNegotiationTracker() {
   negotiations.forEach(function(evt) {
     var dotClass = evt.outcome || 'scheduled';
     var eventText = currentLang === 'fa' && evt.event_fa ? evt.event_fa : evt.event;
-    // Map participants to roles
-    var partDisplay = (evt.participants || []).map(function(p) {
+    // Coerce participants: accept array, comma-separated string, or missing
+    var partsArr = Array.isArray(evt.participants)
+      ? evt.participants
+      : (typeof evt.participants === 'string'
+          ? evt.participants.split(/,\s*/).filter(Boolean)
+          : []);
+    var partDisplay = partsArr.map(function(p) {
       var role = roleMap[p];
       return role ? esc(p) + ' <span style="color:var(--soft);font-size:10px">(' + esc(role) + ')</span>' : esc(p);
     }).join(', ');
+    var dateLabel = evt.date || evt.day || '';
     html += '<div class="nego-event">' +
       '<div class="nego-dot ' + esc(dotClass) + '"></div>' +
       '<div style="flex:1">' +
       '<div style="display:flex;justify-content:space-between;align-items:baseline">' +
-      '<strong style="font-size:13px">' + esc(evt.date) + ' (CF Day ' + esc(evt.cfDay) + ')</strong>' +
+      '<strong style="font-size:13px">' + esc(dateLabel) + ' (CF Day ' + esc(evt.cfDay) + ')</strong>' +
       '<span style="font-size:11px;color:var(--muted)">' + partDisplay + '</span></div>' +
       '<div style="font-size:13px;margin-top:4px">' + esc(eventText) + '</div>' +
       '</div></div>';
@@ -2838,41 +2844,48 @@ function applyConfidenceShading() {
 }
 
 function render() {
-  mountDashboard();
-  applyI18n();
-  setText();
-  renderCharts();
+  // Wrap each renderer so one failure doesn't cascade and blank out every
+  // section that comes after it. Log to console for debugging.
+  var safe = function(fn, name) {
+    try { fn(); }
+    catch (e) { console.error('[render] ' + name + ' failed:', e); }
+  };
+
+  safe(mountDashboard, 'mountDashboard');
+  safe(applyI18n, 'applyI18n');
+  safe(setText, 'setText');
+  safe(renderCharts, 'renderCharts');
 
   // Ceasefire mode renders
   if (currentMode === 'ceasefire') {
-    renderCeasefireHero();
-    renderCeasefireCountdown();
-    renderPostConflictTree();
-    renderViolationTracker();
-    renderNegotiationTracker();
-    renderCeasefireRecovery();
+    safe(renderCeasefireHero, 'renderCeasefireHero');
+    safe(renderCeasefireCountdown, 'renderCeasefireCountdown');
+    safe(renderPostConflictTree, 'renderPostConflictTree');
+    safe(renderViolationTracker, 'renderViolationTracker');
+    safe(renderNegotiationTracker, 'renderNegotiationTracker');
+    safe(renderCeasefireRecovery, 'renderCeasefireRecovery');
   }
 
   // War mode renders (always call — CSS hides them in ceasefire mode)
-  renderPredictiveSection();
-  renderSimulator();
-  renderSensitivity();
-  renderLeadingIndicators();
-  renderChangelog();
-  renderStockpile();
-  renderAdditionalCharts();
-  renderOilBands();
-  renderHormuzTransit();
-  renderDeadline();
-  renderEscalationLadder();
-  renderCoalition();
-  renderDecapitation();
-  renderExpandedIranfarhang();
-  renderExpandedKIP();
-  applyConfidenceShading();
-  initScrubber();
-  buildSectionNav();
-  markChangedSections();
+  safe(renderPredictiveSection, 'renderPredictiveSection');
+  safe(renderSimulator, 'renderSimulator');
+  safe(renderSensitivity, 'renderSensitivity');
+  safe(renderLeadingIndicators, 'renderLeadingIndicators');
+  safe(renderChangelog, 'renderChangelog');
+  safe(renderStockpile, 'renderStockpile');
+  safe(renderAdditionalCharts, 'renderAdditionalCharts');
+  safe(renderOilBands, 'renderOilBands');
+  safe(renderHormuzTransit, 'renderHormuzTransit');
+  safe(renderDeadline, 'renderDeadline');
+  safe(renderEscalationLadder, 'renderEscalationLadder');
+  safe(renderCoalition, 'renderCoalition');
+  safe(renderDecapitation, 'renderDecapitation');
+  safe(renderExpandedIranfarhang, 'renderExpandedIranfarhang');
+  safe(renderExpandedKIP, 'renderExpandedKIP');
+  safe(applyConfidenceShading, 'applyConfidenceShading');
+  safe(initScrubber, 'initScrubber');
+  safe(buildSectionNav, 'buildSectionNav');
+  safe(markChangedSections, 'markChangedSections');
 
   // Update mode toggle button state
   document.querySelectorAll('.mode-btn').forEach(function(b) {
