@@ -7,8 +7,10 @@
 
 ## Repo
 - `origin` → `git@github.com:omoji-personal/iran-war-dashboard.git` (SSH, push works)
-- Two dashboards: `index.html` (full, with business sections) and `public.html` (stripped)
-- Deploy public version: `./deploy-public.sh`
+- Two dashboards, both auto-deploy on `git push origin main`:
+  - `iran-war-dashboard-murex.vercel.app` — full (index.html, with business sections)
+  - `iran-war-public.vercel.app` — stripped (build command: `python3 scripts/build-public.py`, output: `public-dist/`)
+- Manual public deploy (fallback): `./deploy-public.sh`
 
 ## Session Context
 <!-- Claude Code: update this section at end of each session -->

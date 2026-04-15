@@ -12,6 +12,9 @@ war-data.json.bak
 # Vercel
 .vercel
 
+# Build output for iran-war-public
+public-dist/
+
 # Editor
 .vscode/
 .idea/
