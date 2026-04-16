@@ -1,6 +1,6 @@
 {
   "meta": {
-    "lastUpdated": "2026-04-16T07:00:00-04:00",
+    "lastUpdated": "2026-04-16T16:00:00-04:00",
     "preWarBaselines": {
       "d1Missiles": 480,
       "preWarOil": 65,
@@ -8,6 +8,7 @@
       "preWarGas": 3
     },
     "notes": [
+      "D48 EVE UPDATE (Apr 16 16:00 ET): ISRAEL-LEBANON CEASEFIRE 5PM ET + BLOCKADE WIDENED WORLDWIDE + POLYMARKET 78% EXTENSION. (1) TRUMP ANNOUNCED 10-DAY ISRAEL-LEBANON CEASEFIRE effective 5PM ET — Hezbollah accepts if Israeli strikes stop; Israel retains self-defense; extendable by mutual consent. Iran Speaker Ghalibaf: 'as important as' Iran ceasefire. (2) BLOCKADE WIDENED WORLDWIDE — Gen. Dan Caine (Joint Chiefs): US forces will stop any Iran-linked vessel ANYWHERE globally (weapons, oil, metals, electronics), including Pacific operations. 14 ships turned away cumulative; zero boardings. (3) WHITE HOUSE: Leavitt 'productive and ongoing'; Trump talks 'probably, maybe over the weekend'; Hegseth 'ready to restart combat' if no deal. (4) IRAN: armed forces threatened Persian Gulf + Sea of Oman + Red Sea blockade in retaliation; rial -8% since war (-60% since 2025); inflation 47%, food 105%; internet $1.8B cost. (5) POLYMARKET DRAMATIC SHIFT: ceasefire-extended-by-Apr-21 = 78%, holds-Apr-30 = 68%, holds-May-31 = 79%, holds-Dec-31 = 98%, conflict-ends-Dec-31 = 97%, Trump-announces-end-by-Jun-30 = 85%. Brent $94.89 (-0.04%), WTI intraday volatility $90.72-$94.62 on US crude inventory draw. Hormuz ~6 vessels. 10-day Iran zero-attack streak. Lebanon dead 2,100+. Ceasefire Day 10. 5 days to Apr 21 expiry. ALSO: backfilled Apr 15 + Apr 16 entries into ceasefireViolations / Negotiations / EconomicRecovery (morning commit only updated standard per-day arrays).",
       "D48 (Apr 16 07:00 ET): BLOCKADE DAY 3 — MUNIR IN TEHRAN + 'IN PRINCIPLE' EXTENSION + NUCLEAR BREAKTHROUGH HOPES. (1) PAKISTAN ARMY CHIEF MUNIR IN TEHRAN: Asim Munir arrived in Tehran with fresh US proposal to advance Round 2 talks. First Pakistani Army Chief visit to Iran since war began. Bringing US message on nuclear compromise. (2) 'IN PRINCIPLE' CEASEFIRE EXTENSION (AP): Regional officials told AP that US and Iran have an 'in principle agreement' to extend the ceasefire beyond Apr 21 to allow more diplomacy. Senior US official to CNBC: 'has not formally agreed' — extension not formal yet. (3) TRUMP 'AMAZING TWO DAYS AHEAD' + 'BEATEN THEM MILITARILY': Trump Times of Israel: 'I think you're going to be watching an amazing two days ahead.' Fox Business: 'We've beaten them militarily, totally.' Said not thinking about extending ceasefire — implies deal, not extension, is the goal. (4) NUCLEAR BREAKTHROUGH HOPES: Pakistani mediators optimistic about 'major breakthrough' on nuclear front per Al Jazeera/ANI. Key gap now clearer: 5-yr vs 20-yr enrichment freeze. Iran's ~440kg HEU stockpile on table. (5) WHITE HOUSE 'FEELS GOOD': Press secretary: 'We feel good about the prospects of a deal.' Discussions 'productive and ongoing.' Iran spokesperson: 'several messages exchanged through Pakistan.' (6) IRAN PETROCHEMICALS SUSPENDED: Iran National Petrochemical Company halted all exports 'until further notice' (Apr 13 order) — $13B/yr industry, ~$54M/day, to prioritize domestic supply after South Pars strikes. (7) BLOCKADE DAY 3 NO CONFRONTATION: 10+ ships turned back since Monday. Iran threatened to block Persian Gulf + Sea of Oman + Red Sea if blockade continues — counter-threat but no action. Brent $94.89 (-0.87%). WTI ~$90.72. Zero attacks D40-D48 (10 straight). Ceasefire Day 10 — 5 days to Apr 21. Convergence 5.7 (↑ from 5.0).",
       "D47 UPDATED (Apr 15 12:30 ET): BLOCKADE DAY 2 — TRUMP 'CLOSE TO OVER' + IRAN $270B DEMAND + INTERNET PARTIAL. (1) TRUMP 'CLOSE TO OVER': Told Fox Business 'I think it's close to over, yeah. Very close to over.' — strongest presidential statement yet, upgrades NY Post '2 days' signal. (2) IRAN $270B WAR COMPENSATION DEMAND: Spokeswoman Mohajerani: Iran suffered ~$270B in direct+indirect damages since Feb 28. Demand will be raised in all future talks. Iran's 5-point counter: end attacks, security guarantees, $270B reparations, sovereignty over Hormuz, international recognition. (3) INTERNET PARTIAL RESTORATION: Iran started offering 'pro internet' package for BUSINESSES (April 14 — Bloomberg, ASL19). Citizens still cut off — but first crack in 47-day blackout. $30-40M/day direct cost to Iranian economy driving partial reversal. (4) ISRAEL-LEBANON TALKS OUTCOME: Lebanon amb Hamadeh: 'constructive.' Israel amb Leiter: 'wonderful exchange.' Both sides agreed next round in 'a few weeks' in Washington. Key ask: remove Hezbollah + ceasefire. Hezbollah still opposing. Rubio: 'working against decades of history.' (5) BLOCKADE 'FULLY IMPLEMENTED' (CENTCOM): All seaborne trade to/from Iran halted. Brent $95.72 (+2.13% from Apr 14 open, down from $96.48 close). WTI $91.50 (-8% day). Zero attacks D47. Ceasefire Day 9 — 6 days to Apr 21.",
       "D46 (Apr 14 22:00 ET): BLOCKADE DAY 1 ENDS — DIPLOMACY STIRS. US Navy blockade active since 10AM ET. BBC Verify: at least 4 Iran-related ships crossed Hormuz. China-linked tanker tested blockade. Trump: 'ceasefire holding well' but 'I don't care' about new talks. Brent fell further to ~$96.48 (-3% from Sunday). Turkey FM Fidan: ceasefire could be EXTENDED 45-60 DAYS. Israel-Lebanon direct talks at State Dept 11AM ET — FIRST since 1993 (Rubio + ambassadors Leiter + Hamadeh). Hezbollah's Qassem urged Lebanon to cancel. Egypt FM to DC for Rubio meeting. Pakistan PM: ceasefire 'holding.' Regional source (CNN): another negotiation round possible. US destroyed 4 Houthi drones in Yemen. 20,000 vessels stranded. Zero attacks D46. Ceasefire Day 8. 7 days to Apr 21. Internet ~1,104+ hrs.",
@@ -1078,10 +1079,10 @@
       "date": "Apr 16",
       "missiles": 0,
       "drones": 0,
-      "primary": "D48 MUNIR IN TEHRAN + 'IN PRINCIPLE' EXTENSION + NUCLEAR BREAKTHROUGH (Apr 16): Pakistan Army Chief Asim Munir arrived in Tehran with fresh US proposal for Round 2 talks. Pakistani mediators: 'optimistic about major breakthrough' on nuclear programme (Al Jazeera). AP (regional officials): US and Iran have 'in principle agreement' to extend ceasefire beyond Apr 21. Senior US official to CNBC: 'has not formally agreed.' Trump to Times of Israel: 'not thinking about extending' + 'amazing two days ahead.' Fox Business: 'We've beaten them militarily, totally.' White House: 'feels good about prospects of a deal.' Iran: 'several messages exchanged through Pakistan.' Iran petrochemicals suspended (National Petrochemical Company order Apr 13 — $13B/yr). Blockade Day 3 — 10+ ships turned back. Iran threatened to block Gulf/Sea of Oman/Red Sea if blockade continues. Business internet partial Day 3. Zero attacks D48. Ceasefire Day 10. 5 days to Apr 21.",
+      "primary": "D48 MUNIR IN TEHRAN + 'IN PRINCIPLE' EXTENSION + NUCLEAR BREAKTHROUGH (Apr 16): Pakistan Army Chief Asim Munir arrived in Tehran with fresh US proposal for Round 2 talks. Pakistani mediators: 'optimistic about major breakthrough' on nuclear programme (Al Jazeera). AP (regional officials): US and Iran have 'in principle agreement' to extend ceasefire beyond Apr 21. Senior US official to CNBC: 'has not formally agreed.' Trump to Times of Israel: 'not thinking about extending' + 'amazing two days ahead.' Fox Business: 'We've beaten them militarily, totally.' White House: 'feels good about prospects of a deal.' Iran: 'several messages exchanged through Pakistan.' Iran petrochemicals suspended (National Petrochemical Company order Apr 13 — $13B/yr). Blockade Day 3 — 10+ ships turned back. Iran threatened to block Gulf/Sea of Oman/Red Sea if blockade continues. Business internet partial Day 3. Zero attacks D48. Ceasefire Day 10. 5 days to Apr 21.  ||  D48 EVE UPDATE (Apr 16 16:00 ET): TRUMP ANNOUNCED 10-DAY ISRAEL-LEBANON CEASEFIRE EFFECTIVE 5PM ET. Hezbollah said it would abide if Israeli attacks stop; Israel retains self-defense right; can be extended by mutual consent. Iran Speaker Ghalibaf: Lebanon ceasefire 'as important as' Iran's. Gen. Dan Caine (Joint Chiefs) WIDENED blockade scope WORLDWIDE — US forces will stop any vessel 'tied to Tehran or carrying supplies' (weapons, oil, metals, electronics) anywhere globally, including Pacific operations against ships that left before blockade began. 14 ships turned away cumulative (was 10+); zero boardings. Hegseth: US 'ready to restart combat' if no deal. Iran armed forces threatened to block Persian Gulf + Sea of Oman + Red Sea. POLYMARKET DRAMATIC SHIFT: ceasefire-extended-by-Apr-21 = 78% (vs 18% pre-blockade); holds-Apr-30 = 68%; holds-May-31 = 79%; conflict-ends-Dec-31 = 97%. Lebanon dead 2,100+. Internet 1,120+ hrs ($1.8B cost).",
       "capability": "D48: 0+0. Ceasefire + blockade Day 3. 10 straight days zero attacks. Iran calculated non-resistance to blockade continues. Petrochemical export halt = internal adjustment to war damage, not new military capability. Nuclear gap: 5-yr vs 20-yr enrichment freeze. 440kg HEU stockpile = Iran's negotiating chip and strategic ambiguity tool.",
-      "cost": "Brent $94.89, WTI $90.72. Continued decline. Iran petrochemicals: $54M/day offline. Blockade: $435M/day eliminated. Iran counter-threat on Gulf/Red Sea/Oman shipping = escalation card in hand. Business internet partial Day 3. Israel-Lebanon talks track continuing.",
-      "assessment": "D48 — MUNIR IN TEHRAN + 'IN PRINCIPLE' EXTENSION = MOST SIGNIFICANT DIPLOMATIC DEVELOPMENT SINCE CEASEFIRE. Two signals in one day: (1) Pakistan's top military chief physically in Tehran = highest-level direct mediation since war began; (2) 'In principle' extension (AP) = both sides have implicitly agreed not to let ceasefire expire with no plan. Nuclear gap now has a number: 5-yr vs 20-yr. Iran's 440kg HEU = wild card. Trump 'amazing two days' = deal announcement, not extension, is the goal. Convergence 5.7 (from 5.0). Deal 31% = Collapse 31% for first time."
+      "cost": "Brent $94.89, WTI $90.72. Continued decline. Iran petrochemicals: $54M/day offline. Blockade: $435M/day eliminated. Iran counter-threat on Gulf/Red Sea/Oman shipping = escalation card in hand. Business internet partial Day 3. Israel-Lebanon talks track continuing.  ||  EVE: WTI rebounded intraday on US crude inventory draw (-9.13M bbl vs +154K expected). Iran rial -8% since war (-60% since 2025), inflation 47%/food 105%, payroll concerns. Blockade widened worldwide = max-pressure economic isolation; 14 ships now.",
+      "assessment": "D48 — MUNIR IN TEHRAN + 'IN PRINCIPLE' EXTENSION = MOST SIGNIFICANT DIPLOMATIC DEVELOPMENT SINCE CEASEFIRE. Two signals in one day: (1) Pakistan's top military chief physically in Tehran = highest-level direct mediation since war began; (2) 'In principle' extension (AP) = both sides have implicitly agreed not to let ceasefire expire with no plan. Nuclear gap now has a number: 5-yr vs 20-yr. Iran's 440kg HEU = wild card. Trump 'amazing two days' = deal announcement, not extension, is the goal. Convergence 5.7 (from 5.0). Deal 31% = Collapse 31% for first time.  ||  EVE REASSESSMENT: Israel-Lebanon ceasefire 5PM ET = THIRD positive on top of Munir-Tehran + 'in principle' extension. Removes the second-front pressure that was breaking original Iran ceasefire. Polymarket extension odds 78% confirms market pricing in deal. Counter-pressure: Caine worldwide blockade + Hegseth combat threat = calibrated stick paired with carrots. The bet: squeeze Iran to terms in next 5 days before Apr 21 expiry, OR formalize the AP-reported 'in principle' extension. Convergence ~6.5 (from 5.7). Deal probability now plausibly leading collapse for first time."
     }
   ],
   "timeline": [
@@ -2037,7 +2038,7 @@
         8.5,
         8.0,
         7.8,
-        7.7
+        8.0
       ],
       "diplomaticMomentum": [
         0,
@@ -2087,7 +2088,7 @@
         3.0,
         4.0,
         5.0,
-        6.5
+        7.5
       ],
       "usPoliticalSustainability": [
         8,
@@ -2137,7 +2138,7 @@
         3.5,
         3.5,
         3.5,
-        3.5
+        4.0
       ],
       "escalationCeilingDistance": [
         7,
@@ -2187,7 +2188,7 @@
         1.5,
         2.0,
         2.5,
-        3.5
+        4.0
       ]
     },
     "vectorNotes": {
@@ -3234,7 +3235,8 @@
       "Apr 12",
       "Apr 13",
       "Apr 14",
-      "Apr 15"
+      "Apr 15",
+      "Apr 16"
     ],
     "vessels": [
       62,
@@ -3284,7 +3286,8 @@
       5,
       3,
       3,
-      4
+      4,
+      6
     ],
     "preWarAverage": 62,
     "note": "D47: ~4 vessels/day. BLOCKADE DAY 2 — cautious resumption. Small tankers testing CENTCOM inspection regime. WH signals talks 'next 2 days.' Iran: piracy claim. 200+ mines still deployed.",
@@ -5266,6 +5269,67 @@
       ],
       "totalCount": 3,
       "maxSeverity": 9
+    },
+    {
+      "day": "Apr 15",
+      "cfDay": 8,
+      "incidents": [
+        {
+          "type": "blockade",
+          "severity": 8,
+          "actor": "US Navy",
+          "target": "Iranian ports",
+          "description": "Blockade Day 2 fully implemented (CENTCOM). 13 ships turned away cumulative. No boardings. Iran FM: 'piracy.' Trump Fox Business: 'close to over, very close to over.'",
+          "description_fa": "محاصره روز دوم به طور کامل اجرا شد (سنتکام). ۱۳ کشتی بازگردانده شد. ترامپ: «بسیار نزدیک به پایان است.»",
+          "withinScope": "yes"
+        },
+        {
+          "type": "accusation",
+          "severity": 4,
+          "actor": "Iran",
+          "target": "US",
+          "description": "Iran spokeswoman Mohajerani: $270B war compensation demand. 5-pt counter: end attacks + security guarantees + $270B reparations + Hormuz sovereignty + intl recognition.",
+          "description_fa": "سخنگوی ایران مهاجرانی: مطالبه ۲۷۰ میلیارد دلار غرامت جنگ. شرایط ۵ ماده‌ای ایران.",
+          "withinScope": "no"
+        },
+        {
+          "type": "accusation",
+          "severity": 4,
+          "actor": "Israel",
+          "target": "Lebanon",
+          "description": "Israel-Hezbollah strikes continue. Lebanon dead 2,100+. UN experts condemn 'unprecedented' Israeli bombing.",
+          "description_fa": "حملات اسرائیل-حزب‌الله ادامه دارد. لبنان بیش از ۲۱۰۰ کشته. کارشناسان سازمان ملل بمباران را «بی‌سابقه» محکوم کردند.",
+          "withinScope": "disputed"
+        }
+      ],
+      "totalCount": 3,
+      "maxSeverity": 8
+    },
+    {
+      "day": "Apr 16",
+      "cfDay": 9,
+      "incidents": [
+        {
+          "type": "blockade",
+          "severity": 9,
+          "actor": "US Joint Chiefs (Caine)",
+          "target": "All Iran-linked shipping worldwide",
+          "description": "Gen. Caine WIDENED blockade scope WORLDWIDE — US forces will stop any vessel 'tied to Tehran or carrying supplies' (weapons, oil, metals, electronics) anywhere globally, including Pacific. 14 ships turned away cumulative. Hegseth: 'ready to restart combat' if no deal.",
+          "description_fa": "ژنرال کین دامنه محاصره را در سراسر جهان گسترش داد — هر کشتی متصل به تهران در هر نقطه از جهان متوقف می‌شود. هگست: آماده از سرگیری جنگ.",
+          "withinScope": "yes"
+        },
+        {
+          "type": "threat",
+          "severity": 5,
+          "actor": "Iran armed forces",
+          "target": "Persian Gulf + Sea of Oman + Red Sea",
+          "description": "Iran armed forces threatened to block Persian Gulf, Sea of Oman, AND Red Sea shipping in retaliation for worldwide blockade. Rhetorical — 10-day zero-attack streak intact.",
+          "description_fa": "نیروهای مسلح ایران تهدید به مسدود کردن خلیج فارس، دریای عمان و دریای سرخ کردند. ۱۰ روز بدون حمله.",
+          "withinScope": "no"
+        }
+      ],
+      "totalCount": 2,
+      "maxSeverity": 9
     }
   ],
   "ceasefireNegotiations": [
@@ -5378,6 +5442,40 @@
       "outcome": "scheduled",
       "significance": 6,
       "keyGap": "First potential Lebanon ceasefire track. Pakistan keeping channel open despite Islamabad collapse."
+    },
+    {
+      "date": "Apr 15",
+      "cfDay": 8,
+      "event": "Trump 'close to over' (Fox Business) + Iran $270B reparations counter + business internet partial",
+      "event_fa": "ترامپ «بسیار نزدیک به پایان» + ضدپیشنهاد ۲۷۰ میلیارد دلار ایران + اینترنت تجاری جزئی",
+      "participants": [
+        "Trump",
+        "Iran spokeswoman Mohajerani",
+        "Iran science ministry"
+      ],
+      "outcome": "signaling",
+      "significance": 7,
+      "keyGap": "$270B reparations + Hormuz sovereignty are biggest gaps; nuclear 5-yr vs 20-yr enrichment freeze still unresolved."
+    },
+    {
+      "date": "Apr 16",
+      "cfDay": 9,
+      "event": "Munir (Pakistan army chief) in Tehran with US proposal; Trump announces 10-day Israel-Lebanon ceasefire 5PM ET; AP: 'in principle' agreement to extend Iran ceasefire beyond Apr 21",
+      "event_fa": "منیر (رئیس ارتش پاکستان) در تهران با پیشنهاد آمریکا؛ ترامپ آتش‌بس ۱۰ روزه اسرائیل-لبنان از ۵ بعدازظهر؛ توافق «در اصول» برای تمدید آتش‌بس ایران",
+      "participants": [
+        "Trump",
+        "Pakistan army chief Munir",
+        "Iranian officials Tehran",
+        "Hezbollah",
+        "Israel",
+        "Lebanon",
+        "Sec. Rubio",
+        "Sec. Hegseth",
+        "Press Sec Leavitt"
+      ],
+      "outcome": "breakthrough",
+      "significance": 9,
+      "keyGap": "'In principle' extension not formally agreed (US official to CNBC). Nuclear gap: 5-yr vs 20-yr enrichment freeze, ~440kg HEU stockpile. Hegseth 'restart combat' threat is paired stick. 5 days to Apr 21 expiry."
     }
   ],
   "ceasefireEconomicRecovery": {
@@ -5388,7 +5486,9 @@
       "Apr 11",
       "Apr 12",
       "Apr 13",
-      "Apr 14"
+      "Apr 14",
+      "Apr 15",
+      "Apr 16"
     ],
     "hormuzDaily": [
       8,
@@ -5397,7 +5497,9 @@
       6,
       5,
       3,
-      3
+      3,
+      4,
+      6
     ],
     "hormuzPreWar": 135,
     "brentPreCeasefire": 109,
@@ -5408,7 +5510,9 @@
       97,
       98.5,
       102.0,
-      97.45
+      97.45,
+      95.72,
+      94.89
     ],
     "shipsStranded": [
       800,
@@ -5417,9 +5521,11 @@
       790,
       800,
       820,
-      820
+      820,
+      825,
+      830
     ],
-    "note": "Blockade announcement: economic recovery REVERSED. Hormuz transit crashed to ~3. Brent surged to $102. Ships stranded rising. If blockade enforced: complete economic isolation of Iran."
+    "note": "Blockade WIDENED worldwide D48 (Gen. Caine — any Iran-linked vessel anywhere). Hormuz still ~6 vessels (90% below pre-war 135). Brent fell to $94.89 on Lebanon ceasefire + Munir Tehran + 'in principle' extension hopes, offsetting blockade escalation. Israel-Lebanon 10-day truce 5PM ET D48 = removes proxy-front pressure. Polymarket ceasefire-extension odds 78% (from 18%) = markets pricing in deal."
   },
   "ceasefirePostConflictTree": {
     "branchExtend": [
