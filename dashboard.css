@@ -881,6 +881,69 @@ body.ceasefire-mode [data-mode="war"] { display: none !important; }
   padding: 24px;
 }
 
+/* Post-ceasefire scenarios — 2×2 grid of distinct branches */
+.cf-scenarios-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 12px;
+  margin-top: 12px;
+}
+.cf-scenario {
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  padding: 12px;
+  background: rgba(255,255,255,.02);
+  transition: border-color .2s;
+}
+.cf-scenario[data-branch="extend"]   { border-top: 3px solid var(--cyan); }
+.cf-scenario[data-branch="deal"]     { border-top: 3px solid var(--cyan); }
+.cf-scenario[data-branch="stalled"]  { border-top: 3px solid var(--gold); }
+.cf-scenario[data-branch="collapse"] { border-top: 3px solid var(--red); }
+.cf-scenario.leading { box-shadow: 0 0 0 1px var(--gold) inset; }
+.cf-scenario-head {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  margin-bottom: 10px;
+  gap: 8px;
+}
+.cf-scenario-title {
+  font-weight: 700;
+  font-size: 14px;
+}
+.cf-scenario-prob {
+  font-size: 20px;
+  font-weight: 900;
+  color: var(--gold);
+}
+.cf-scenario.leading .cf-scenario-prob { color: var(--gold); }
+.cf-scenario[data-branch="extend"] .cf-scenario-prob,
+.cf-scenario[data-branch="deal"]   .cf-scenario-prob { color: var(--cyan); }
+.cf-scenario[data-branch="stalled"] .cf-scenario-prob { color: var(--gold); }
+.cf-scenario[data-branch="collapse"] .cf-scenario-prob { color: var(--red); }
+.cf-scenario-delta { font-size: 11px; font-weight: 700; }
+.cf-scenario-delta.up   { color: var(--cyan); }
+.cf-scenario-delta.down { color: var(--red); }
+.cf-scenario .timeline-vertical { margin: 0; padding-left: 18px; }
+.cf-scenario .tl-item { padding: 8px 10px; font-size: 12px; margin-bottom: 8px; }
+html[dir="rtl"] .cf-scenario .timeline-vertical { padding-left: 0; padding-right: 18px; }
+@media(max-width:700px) {
+  .cf-scenarios-grid { grid-template-columns: 1fr; }
+}
+
+/* De-facto collapse banner inside ceasefire hero */
+.cf-collapse-banner {
+  background: rgba(255,107,107,.12);
+  border: 1px solid var(--red);
+  border-radius: 10px;
+  padding: 10px 14px;
+  margin-bottom: 12px;
+  font-size: 13px;
+  font-weight: 700;
+  color: var(--red);
+  line-height: 1.4;
+}
+
 /* Violation cards */
 .violation-card {
   border: 1px solid var(--border);

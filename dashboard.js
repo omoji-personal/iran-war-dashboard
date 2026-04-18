@@ -273,7 +273,10 @@ function parseLogDate(d) {
   var months = {Jan:0,Feb:1,Mar:2,Apr:3,May:4,Jun:5,Jul:6,Aug:7,Sep:8,Oct:9,Nov:10,Dec:11};
   var parts = String(d).trim().split(/\s+/);
   if (parts.length >= 2 && months[parts[0]] !== undefined) {
-    return new Date(2026, months[parts[0]], parseInt(parts[1], 10) || 1).getTime();
+    // Prefer the year encoded in meta.lastUpdated; fall back to current year.
+    var stamp = (state.meta && state.meta.lastUpdated) ? new Date(state.meta.lastUpdated) : new Date();
+    var year = isNaN(stamp.getTime()) ? new Date().getFullYear() : stamp.getFullYear();
+    return new Date(year, months[parts[0]], parseInt(parts[1], 10) || 1).getTime();
   }
   if (/^\d{4}-\d{2}-\d{2}/.test(d)) return new Date(d).getTime();
   return 0;
@@ -387,6 +390,22 @@ function setText() {
     $('freshnessStatus').innerHTML = '<span class="tag ' + fr.cls + '">' + fr.label + '</span>';
   }
   if ($('seriesThrough')) $('seriesThrough').textContent = state.dailySeries.throughDate || '—';
+
+  // About-panel ceasefire date range — derived from data, not hardcoded
+  var rangeEl = $('cfAboutRange');
+  if (rangeEl) {
+    var cfLabels = (state.dailySeries || {}).labels || [];
+    var startLabel = cfLabels[(state.ceasefireStartIdx || CEASEFIRE_START_IDX) - 1];
+    var endIso = (state.ceasefireDeadline || {}).deadline;
+    var endLabel = '';
+    if (endIso) {
+      var ed = new Date(endIso);
+      if (!isNaN(ed.getTime())) {
+        endLabel = ed.toLocaleString('en-US', { month: 'short', day: 'numeric' });
+      }
+    }
+    if (startLabel && endLabel) rangeEl.textContent = startLabel + '–' + endLabel;
+  }
 
   // Theory box
   var theory = currentLang === 'fa' ? (state.theoryBox_fa || state.theoryBox) : state.theoryBox;
@@ -813,6 +832,15 @@ function getCeasefireDay(dayIdx) {
   return dayIdx - startIdx + 1; // Apr 7 (idx 38) = CF Day 1
 }
 
+/* Single source of truth: derive cfDay from a "Mon DD" label string,
+   ignoring any stored cfDay field on the JSON entry (they drift). */
+function cfDayFromLabel(label) {
+  var labels = (state.dailySeries || {}).labels || [];
+  var idx = labels.indexOf(label);
+  if (idx < 0) return null;
+  return getCeasefireDay(idx);
+}
+
 // Smooth sigmoid for continuous thresholds (replaces binary cliff effects)
 function cfSigmoid(x, midpoint, steepness) {
   return 1 / (1 + Math.exp(-steepness * (x - midpoint)));
@@ -969,13 +997,37 @@ function renderCeasefireHero(dayOverride) {
     return;
   }
 
-  // Status display
+  // Status display — with collapse detection
   var statusEl = $('cfStatusDisplay');
   if (statusEl) {
-    var statusText = eng.pHolds >= 0.6 ? 'Ceasefire holding' : eng.pHolds >= 0.4 ? 'Ceasefire fragile' : 'Ceasefire at risk';
-    var statusColor = eng.pHolds >= 0.6 ? 'var(--cyan)' : eng.pHolds >= 0.4 ? 'var(--gold)' : 'var(--red)';
-    statusEl.innerHTML = '<div style="font-size:24px;font-weight:900;color:' + statusColor + '">' + statusText + '</div>';
-    statusEl.innerHTML += '<div style="font-size:14px;color:var(--muted);margin-top:8px;line-height:1.5">' + esc(eng.narrative) + '</div>';
+    // Detect de-facto collapse: ANY non-zero attack OR severity-9 violation
+    // in the post-ceasefire-start window that isn't already marked as such.
+    var ds = state.dailySeries || {};
+    var startIdx = (state.ceasefireStartIdx || CEASEFIRE_START_IDX) - 1;
+    var postCfAttacks = 0;
+    for (var ai = startIdx; ai <= dayIdx; ai++) {
+      postCfAttacks += ((ds.missiles || [])[ai] || 0) + ((ds.drones || [])[ai] || 0);
+    }
+    var severeViolations = (state.ceasefireViolations || []).filter(function(d) {
+      return d && d.maxSeverity >= 9;
+    }).length;
+    var deFactoCollapsed = postCfAttacks > 0 || severeViolations > 0;
+
+    var statusText, statusColor;
+    if (deFactoCollapsed) {
+      statusText = 'Ceasefire broken';
+      statusColor = 'var(--red)';
+    } else if (eng.pHolds >= 0.6) { statusText = 'Ceasefire holding'; statusColor = 'var(--cyan)'; }
+    else if (eng.pHolds >= 0.4) { statusText = 'Ceasefire fragile'; statusColor = 'var(--gold)'; }
+    else { statusText = 'Ceasefire at risk'; statusColor = 'var(--red)'; }
+
+    var collapseBadge = deFactoCollapsed
+      ? '<div class="cf-collapse-banner">⚠ De-facto collapse — ' + postCfAttacks + ' post-ceasefire attacks logged; severity-9 violations: ' + severeViolations + '</div>'
+      : '';
+
+    statusEl.innerHTML = collapseBadge +
+      '<div style="font-size:24px;font-weight:900;color:' + statusColor + '">' + statusText + '</div>' +
+      '<div style="font-size:14px;color:var(--muted);margin-top:8px;line-height:1.5">' + esc(eng.narrative) + '</div>';
   }
 
   // Ensemble probability
@@ -1158,143 +1210,54 @@ function renderPostConflictTree(dayOverride) {
   var eng = computeCeasefireForDay(dayIdx);
   var prevEng = dayIdx > 0 ? computeCeasefireForDay(dayIdx - 1) : null;
 
-  // Branch-to-engine probability map (first item in each branch gets overridden)
-  var branchProbs = {
-    branchExtend: eng ? Math.round(eng.pExtended * 100) : null,
-    branchDeal: eng ? Math.round(eng.pDeal * 100) : null,
-    branchCollapse: eng ? Math.round(eng.pCollapse * 100) : null,
-    branchStalled: eng ? Math.round(eng.pHoldsNoProgress * 100) : null
-  };
-  var prevBranchProbs = {
-    branchExtend: prevEng ? Math.round(prevEng.pExtended * 100) : null,
-    branchDeal: prevEng ? Math.round(prevEng.pDeal * 100) : null,
-    branchCollapse: prevEng ? Math.round(prevEng.pCollapse * 100) : null,
-    branchStalled: prevEng ? Math.round(prevEng.pHoldsNoProgress * 100) : null
-  };
+  // Branch config: key, element id, engine-prob getter, prob-header id
+  var branches = [
+    { key: 'branchExtend',   elId: 'cfBranchExtend',   probId: 'cfProbExtend',   getP: function(e){ return e.pExtended; } },
+    { key: 'branchDeal',     elId: 'cfBranchDeal',     probId: 'cfProbDeal',     getP: function(e){ return e.pDeal; } },
+    { key: 'branchStalled',  elId: 'cfBranchStalled',  probId: 'cfProbStalled',  getP: function(e){ return e.pHoldsNoProgress; } },
+    { key: 'branchCollapse', elId: 'cfBranchCollapse', probId: 'cfProbCollapse', getP: function(e){ return e.pCollapse; } }
+  ];
 
-  // Find highest probability branch for gold highlight
-  var maxProb = 0;
-  var maxBranch = '';
-  Object.keys(branchProbs).forEach(function(k) {
-    if (branchProbs[k] !== null && branchProbs[k] > maxProb) { maxProb = branchProbs[k]; maxBranch = k; }
+  // Compute current + previous probabilities + identify max
+  var maxProb = -1, maxKey = '';
+  branches.forEach(function(b) {
+    b.prob = eng ? Math.round(b.getP(eng) * 100) : null;
+    b.prev = prevEng ? Math.round(b.getP(prevEng) * 100) : null;
+    if (b.prob != null && b.prob > maxProb) { maxProb = b.prob; maxKey = b.key; }
   });
 
-  function renderBranch(items, elId, branchKey) {
-    var el = $(elId);
-    if (!el || !items || !items.length) return;
-    var isHighest = branchKey === maxBranch || (items.length > 0 && branchKey.indexOf(maxBranch) >= 0);
-    var html = '';
-    items.forEach(function(item, idx) {
-      var prob = item.probability;
-      var deltaStr = '';
-      // Override first item probability with engine value
-      if (idx === 0 && branchProbs[branchKey] !== null) {
-        var prevProb = prevBranchProbs[branchKey];
-        prob = branchProbs[branchKey];
-        if (prevProb !== null) {
-          var delta = prob - prevProb;
-          if (delta > 0) deltaStr = ' <span style="color:var(--cyan);font-size:11px">\u2191' + delta + 'pp</span>';
-          else if (delta < 0) deltaStr = ' <span style="color:var(--red);font-size:11px">\u2193' + Math.abs(delta) + 'pp</span>';
-        }
+  // Render header prob + delta + leading-branch highlight
+  branches.forEach(function(b) {
+    var headEl = document.getElementById(b.probId);
+    if (headEl) {
+      var probStr = b.prob != null ? b.prob + '%' : '—';
+      var deltaHtml = '';
+      if (b.prob != null && b.prev != null) {
+        var d = b.prob - b.prev;
+        if (d > 0) deltaHtml = ' <span class="cf-scenario-delta up">\u2191' + d + 'pp</span>';
+        else if (d < 0) deltaHtml = ' <span class="cf-scenario-delta down">\u2193' + Math.abs(d) + 'pp</span>';
       }
-      var probTag = prob != null ? ' <span style="color:var(--gold);font-weight:700">(' + esc(prob) + '%)</span>' + deltaStr : '';
-      var borderStyle = (idx === 0 && isHighest) ? 'border-left:3px solid var(--gold);' : '';
-      html += '<div class="tl-item partial" style="' + borderStyle + '"><strong>' + esc(item.step) + '</strong>' + probTag +
-        '<br><span style="color:var(--muted);font-size:12px">' + esc(item.timeline) + '</span>' +
-        '<br><span style="font-size:12px">' + esc(item.detail) + '</span></div>';
-    });
-    el.innerHTML = html;
-  }
+      headEl.innerHTML = esc(probStr) + deltaHtml;
+    }
+    var scenarioEl = document.querySelector('.cf-scenario[data-branch="' + b.key.replace('branch','').toLowerCase() + '"]');
+    if (scenarioEl) {
+      scenarioEl.classList.toggle('leading', b.key === maxKey);
+    }
 
-  // Combine extend + deal on left, collapse + stalled on right
-  // Render each sub-branch with its own key so probabilities map correctly
-  var extendItems = tree.branchExtend || [];
-  var dealItems = tree.branchDeal || [];
-  var collapseItems = tree.branchCollapse || [];
-  var stalledItems = tree.branchStalled || [];
-
-  // For combined branches, render the first sub-branch with its key, then append
-  var extendEl = $('cfBranchExtend');
-  if (extendEl) {
-    var html = '';
-    // Extend items
-    extendItems.forEach(function(item, idx) {
-      var prob = item.probability;
-      var deltaStr = '';
-      if (idx === 0 && branchProbs.branchExtend !== null) {
-        prob = branchProbs.branchExtend;
-        if (prevBranchProbs.branchExtend !== null) {
-          var d = prob - prevBranchProbs.branchExtend;
-          if (d > 0) deltaStr = ' <span style="color:var(--cyan);font-size:11px">\u2191' + d + 'pp</span>';
-          else if (d < 0) deltaStr = ' <span style="color:var(--red);font-size:11px">\u2193' + Math.abs(d) + 'pp</span>';
-        }
-      }
-      var probTag = prob != null ? ' <span style="color:var(--gold);font-weight:700">(' + esc(prob) + '%)</span>' + deltaStr : '';
-      var borderStyle = (idx === 0 && maxBranch === 'branchExtend') ? 'border-left:3px solid var(--gold);' : '';
-      html += '<div class="tl-item partial" style="' + borderStyle + '"><strong>' + esc(item.step) + '</strong>' + probTag +
+    // Render body items
+    var bodyEl = document.getElementById(b.elId);
+    if (!bodyEl) return;
+    var items = tree[b.key] || [];
+    if (!items.length) {
+      bodyEl.innerHTML = '<div class="tl-item partial" style="color:var(--muted);font-style:italic">No scenario path defined yet.</div>';
+      return;
+    }
+    bodyEl.innerHTML = items.map(function(item) {
+      return '<div class="tl-item partial"><strong>' + esc(item.step) + '</strong>' +
         '<br><span style="color:var(--muted);font-size:12px">' + esc(item.timeline) + '</span>' +
         '<br><span style="font-size:12px">' + esc(item.detail) + '</span></div>';
-    });
-    // Deal items
-    dealItems.forEach(function(item, idx) {
-      var prob = item.probability;
-      var deltaStr = '';
-      if (idx === 0 && branchProbs.branchDeal !== null) {
-        prob = branchProbs.branchDeal;
-        if (prevBranchProbs.branchDeal !== null) {
-          var d = prob - prevBranchProbs.branchDeal;
-          if (d > 0) deltaStr = ' <span style="color:var(--cyan);font-size:11px">\u2191' + d + 'pp</span>';
-          else if (d < 0) deltaStr = ' <span style="color:var(--red);font-size:11px">\u2193' + Math.abs(d) + 'pp</span>';
-        }
-      }
-      var probTag = prob != null ? ' <span style="color:var(--gold);font-weight:700">(' + esc(prob) + '%)</span>' + deltaStr : '';
-      var borderStyle = (idx === 0 && maxBranch === 'branchDeal') ? 'border-left:3px solid var(--gold);' : '';
-      html += '<div class="tl-item partial" style="' + borderStyle + '"><strong>' + esc(item.step) + '</strong>' + probTag +
-        '<br><span style="color:var(--muted);font-size:12px">' + esc(item.timeline) + '</span>' +
-        '<br><span style="font-size:12px">' + esc(item.detail) + '</span></div>';
-    });
-    extendEl.innerHTML = html;
-  }
-
-  var collapseEl = $('cfBranchCollapse');
-  if (collapseEl) {
-    var html2 = '';
-    collapseItems.forEach(function(item, idx) {
-      var prob = item.probability;
-      var deltaStr = '';
-      if (idx === 0 && branchProbs.branchCollapse !== null) {
-        prob = branchProbs.branchCollapse;
-        if (prevBranchProbs.branchCollapse !== null) {
-          var d = prob - prevBranchProbs.branchCollapse;
-          if (d > 0) deltaStr = ' <span style="color:var(--cyan);font-size:11px">\u2191' + d + 'pp</span>';
-          else if (d < 0) deltaStr = ' <span style="color:var(--red);font-size:11px">\u2193' + Math.abs(d) + 'pp</span>';
-        }
-      }
-      var probTag = prob != null ? ' <span style="color:var(--gold);font-weight:700">(' + esc(prob) + '%)</span>' + deltaStr : '';
-      var borderStyle = (idx === 0 && maxBranch === 'branchCollapse') ? 'border-left:3px solid var(--gold);' : '';
-      html2 += '<div class="tl-item partial" style="' + borderStyle + '"><strong>' + esc(item.step) + '</strong>' + probTag +
-        '<br><span style="color:var(--muted);font-size:12px">' + esc(item.timeline) + '</span>' +
-        '<br><span style="font-size:12px">' + esc(item.detail) + '</span></div>';
-    });
-    stalledItems.forEach(function(item, idx) {
-      var prob = item.probability;
-      var deltaStr = '';
-      if (idx === 0 && branchProbs.branchStalled !== null) {
-        prob = branchProbs.branchStalled;
-        if (prevBranchProbs.branchStalled !== null) {
-          var d = prob - prevBranchProbs.branchStalled;
-          if (d > 0) deltaStr = ' <span style="color:var(--cyan);font-size:11px">\u2191' + d + 'pp</span>';
-          else if (d < 0) deltaStr = ' <span style="color:var(--red);font-size:11px">\u2193' + Math.abs(d) + 'pp</span>';
-        }
-      }
-      var probTag = prob != null ? ' <span style="color:var(--gold);font-weight:700">(' + esc(prob) + '%)</span>' + deltaStr : '';
-      var borderStyle = (idx === 0 && maxBranch === 'branchStalled') ? 'border-left:3px solid var(--gold);' : '';
-      html2 += '<div class="tl-item partial" style="' + borderStyle + '"><strong>' + esc(item.step) + '</strong>' + probTag +
-        '<br><span style="color:var(--muted);font-size:12px">' + esc(item.timeline) + '</span>' +
-        '<br><span style="font-size:12px">' + esc(item.detail) + '</span></div>';
-    });
-    collapseEl.innerHTML = html2;
-  }
+    }).join('');
+  });
 }
 
 function renderViolationTracker() {
@@ -1397,9 +1360,11 @@ function renderViolationTracker() {
     var html = '';
     violations.forEach(function(day) {
       if (!day.incidents || !day.incidents.length) {
-        html += '<div class="violation-card"><strong>' + day.day + ' (CF Day ' + day.cfDay + ')</strong> — No violations reported</div>';
+        var cfD0 = cfDayFromLabel(day.day);
+        html += '<div class="violation-card"><strong>' + esc(day.day) + (cfD0 ? ' (CF Day ' + cfD0 + ')' : '') + '</strong> — No violations reported</div>';
         return;
       }
+      var cfD = cfDayFromLabel(day.day);
       day.incidents.forEach(function(inc) {
         var sevClass = inc.severity >= 7 ? 'severe' : inc.severity >= 4 ? 'moderate' : 'minor';
         var sevLabel = inc.severity >= 7 ? 'SEVERE' : inc.severity >= 4 ? 'MODERATE' : 'MINOR';
@@ -1407,7 +1372,7 @@ function renderViolationTracker() {
         var desc = currentLang === 'fa' && inc.description_fa ? inc.description_fa : inc.description;
         html += '<div class="violation-card ' + sevClass + '">' +
           '<div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:6px">' +
-          '<strong>' + day.day + ' (CF Day ' + day.cfDay + ')</strong>' +
+          '<strong>' + esc(day.day) + (cfD ? ' (CF Day ' + cfD + ')' : '') + '</strong>' +
           '<span class="violation-severity" style="background:' + sevColor + ';color:#fff">' + sevLabel + '</span></div>' +
           '<div style="font-size:13px"><strong>' + esc(inc.actor) + '</strong> → ' + esc(inc.target) +
           (inc.withinScope ? ' <span style="color:var(--muted);font-size:11px">[' + esc(inc.withinScope) + ']</span>' : '') +
@@ -1469,11 +1434,12 @@ function renderNegotiationTracker() {
       return role ? esc(p) + ' <span style="color:var(--soft);font-size:10px">(' + esc(role) + ')</span>' : esc(p);
     }).join(', ');
     var dateLabel = evt.date || evt.day || '';
+    var cfDn = cfDayFromLabel(dateLabel);
     html += '<div class="nego-event">' +
       '<div class="nego-dot ' + esc(dotClass) + '"></div>' +
       '<div style="flex:1">' +
       '<div style="display:flex;justify-content:space-between;align-items:baseline">' +
-      '<strong style="font-size:13px">' + esc(dateLabel) + ' (CF Day ' + esc(evt.cfDay) + ')</strong>' +
+      '<strong style="font-size:13px">' + esc(dateLabel) + (cfDn ? ' (CF Day ' + cfDn + ')' : '') + '</strong>' +
       '<span style="font-size:11px;color:var(--muted)">' + partDisplay + '</span></div>' +
       '<div style="font-size:13px;margin-top:4px">' + esc(eventText) + '</div>' +
       '</div></div>';
@@ -1940,25 +1906,43 @@ function renderAdditionalCharts() {
 
 function renderStockpile() {
   if (!$('stockpileCards')) return;
+  var ds = state.dailySeries || {};
+  var missiles = ds.missiles || [];
+  var drones = ds.drones || [];
+  var warDays = missiles.length;
+
   // Mode-aware header
   var stockHeader = $('stockpileCards') && $('stockpileCards').closest('.panel');
   if (stockHeader) {
     var h3 = stockHeader.querySelector('h3');
     var sub = stockHeader.querySelector('.sub');
     if (h3) h3.textContent = currentMode === 'ceasefire' ? 'Remaining arsenal' : 'Stockpile burn rate';
-    if (sub) sub.textContent = currentMode === 'ceasefire' ? 'What Iran has left after 39 days of war.' : 'How long can Iran sustain fire?';
+    if (sub) sub.textContent = currentMode === 'ceasefire'
+      ? 'What Iran has left after ' + warDays + ' days of war.'
+      : 'How long can Iran sustain fire?';
   }
-  var ds = state.dailySeries || {};
-  var missiles = ds.missiles || [];
-  var drones = ds.drones || [];
 
   // COMPUTE from dailySeries — no static data
   var totalM = missiles.reduce(function(a,b){return a+b;}, 0);
   var totalD = drones.reduce(function(a,b){return a+b;}, 0);
-  var last7M = missiles.slice(-7);
-  var last7D = drones.slice(-7);
-  var dailyRateM = Math.round(last7M.reduce(function(a,b){return a+b;}, 0) / last7M.length);
-  var dailyRateD = Math.round(last7D.reduce(function(a,b){return a+b;}, 0) / last7D.length);
+
+  // Rate: prefer last 7 days, but if Iran is in a zero-fire streak
+  // (ceasefire period), fall back to the most recent 7 ACTIVE days
+  // so "days remaining" reflects combat tempo, not peacetime.
+  function activeRate(arr) {
+    var recent = arr.slice(-7);
+    var sum = recent.reduce(function(a,b){return a+b;}, 0);
+    if (sum > 0) return Math.round(sum / recent.length);
+    // scan backwards for last 7 non-zero-sum days
+    var active = [];
+    for (var i = arr.length - 1; i >= 0 && active.length < 7; i--) {
+      if ((arr[i] || 0) > 0) active.unshift(arr[i]);
+    }
+    if (!active.length) return 0;
+    return Math.round(active.reduce(function(a,b){return a+b;}, 0) / active.length);
+  }
+  var dailyRateM = activeRate(missiles);
+  var dailyRateD = activeRate(drones);
 
   // Three stockpile scenarios (estimated total pre-war stockpile)
   var scenarios = [
