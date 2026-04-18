@@ -347,7 +347,7 @@ function trendLineUpToLastReal(data) {
 
 /* ---------- Chart.js global theming ---------- */
 if (typeof Chart !== 'undefined') {
-  Chart.defaults.font.family = '"JetBrains Mono", ui-monospace, SFMono-Regular, Menlo, monospace';
+  Chart.defaults.font.family = 'Inter, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif';
   Chart.defaults.font.size = 11;
   Chart.defaults.color = '#eef5fc';
   Chart.defaults.borderColor = 'rgba(255,255,255,.04)';
@@ -379,21 +379,21 @@ function phaseAnnotations(labels) {
     warStart: {
       type: 'line', xMin: startIdx, xMax: startIdx,
       borderColor: 'rgba(255,107,107,.45)', borderWidth: 1, borderDash: [3,4],
-      label: { display: true, content: 'D1', position: 'start', color: 'rgba(255,107,107,.8)', font: { size: 9, family: '"JetBrains Mono", monospace' }, backgroundColor: 'transparent' }
+      label: { display: true, content: 'D1', position: 'start', color: 'rgba(255,107,107,.8)', font: { size: 10, weight: '700' }, backgroundColor: 'transparent' }
     }
   };
   if (cfIdx > 0 && cfIdx < labels.length) {
     annotations.ceasefireStart = {
       type: 'line', xMin: cfIdx, xMax: cfIdx,
       borderColor: 'rgba(70,215,176,.55)', borderWidth: 1, borderDash: [3,4],
-      label: { display: true, content: 'CF', position: 'start', color: 'rgba(70,215,176,.9)', font: { size: 9, family: '"JetBrains Mono", monospace' }, backgroundColor: 'transparent' }
+      label: { display: true, content: 'CF', position: 'start', color: 'rgba(70,215,176,.9)', font: { size: 10, weight: '700' }, backgroundColor: 'transparent' }
     };
   }
   if (expiryIdx >= 0) {
     annotations.expiry = {
       type: 'line', xMin: expiryIdx, xMax: expiryIdx,
       borderColor: 'rgba(255,209,102,.55)', borderWidth: 1, borderDash: [3,4],
-      label: { display: true, content: 'Exp', position: 'start', color: 'rgba(255,209,102,.9)', font: { size: 9, family: '"JetBrains Mono", monospace' }, backgroundColor: 'transparent' }
+      label: { display: true, content: 'Exp', position: 'start', color: 'rgba(255,209,102,.9)', font: { size: 10, weight: '700' }, backgroundColor: 'transparent' }
     };
   }
   return annotations;
