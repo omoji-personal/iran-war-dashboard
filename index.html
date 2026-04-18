@@ -27,14 +27,14 @@
         <div class="chip"><span data-i18n="chipFresh">Freshness:</span> <strong id="freshnessStatus">&mdash;</strong></div>
         <div class="chip"><span data-i18n="chipWindow">Data window:</span> <strong id="seriesThrough">&mdash;</strong></div>
         <div class="nav-wrap">
-          <button class="nav-toggle" onclick="document.getElementById('sectionNav').classList.toggle('open')">&#9660; Jump to</button>
+          <button class="nav-toggle" id="navToggle">&#9660; Jump to</button>
           <nav class="section-nav" id="sectionNav"></nav>
         </div>
         <div class="mode-toggle" id="modeToggle">
-          <button class="mode-btn active" data-mode="ceasefire" onclick="setMode('ceasefire')">Ceasefire</button>
-          <button class="mode-btn" data-mode="war" onclick="setMode('war')">War Mode</button>
+          <button class="mode-btn active" data-mode="ceasefire">Ceasefire</button>
+          <button class="mode-btn" data-mode="war">War Mode</button>
         </div>
-        <button class="lang-btn" id="langToggle" onclick="toggleLang()">فارسی</button>
+        <button class="lang-btn" id="langToggle">فارسی</button>
       </div>
     </div>
   </div>
@@ -62,7 +62,7 @@
     <div class="scrubber-wrap" id="scrubberWrap" style="display:none">
       <label class="scrubber-label">Timeline: <strong id="scrubberDay"></strong></label>
       <input type="range" id="scrubberSlider" class="scrubber-slider" min="1" max="1" value="1">
-      <button id="scrubberReset" class="scrubber-reset" onclick="resetScrubber()">Live</button>
+      <button id="scrubberReset" class="scrubber-reset">Live</button>
     </div>
 
     <!-- CF. Ceasefire Status Hero -->

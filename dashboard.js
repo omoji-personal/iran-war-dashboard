@@ -490,7 +490,8 @@ function setText() {
   // Daily rows (event log table)
   if ($('dailyRows') && state.dailyRows) {
     var rows = state.dailyRows.slice().sort(function(a, b) { return parseLogDate(b.date) - parseLogDate(a.date); });
-    $('dailyRows').innerHTML = rows.map(function(r) {
+    var tbody = $('dailyRows');
+    tbody.innerHTML = rows.map(function(r) {
       var p = r.primary || '\u2014', c = r.capability || '\u2014', co = r.cost || '\u2014', a = r.assessment || '\u2014';
       return '<tr><td>' + esc(r.date) + '</td><td><span class="pill missile">' + (r.missiles != null ? esc(r.missiles) : '\u2014') + '</span></td><td><span class="pill drone">' + (r.drones != null ? esc(r.drones) : '\u2014') + '</span></td>' +
         '<td title="' + esc(p) + '">' + sanitizeHTML(p) + '</td>' +
@@ -498,6 +499,14 @@ function setText() {
         '<td title="' + esc(co) + '">' + sanitizeHTML(co) + '</td>' +
         '<td title="' + esc(a) + '">' + sanitizeHTML(a) + '</td></tr>';
     }).join('');
+    // Bind click-to-expand once (re-renders preserve the binding via dataset flag)
+    if (!tbody.dataset.expandBound) {
+      tbody.addEventListener('click', function(e) {
+        var tr = e.target && e.target.closest('tr');
+        if (tr && tbody.contains(tr)) tr.classList.toggle('expanded');
+      });
+      tbody.dataset.expandBound = '1';
+    }
   }
 
   // Timeline (array of {title, body} objects)
@@ -581,7 +590,7 @@ function renderCharts() {
         labels: labels,
         datasets: [
           { label: currentLang === 'fa' ? 'موشک' : 'Missiles', data: missiles, borderColor: '#ff6b6b', backgroundColor: 'rgba(255,107,107,.08)', fill: true, tension: .22, borderWidth: 2.5, pointRadius: 3 },
-          { label: currentLang === 'fa' ? 'پهپاد' : 'Drones', data: drones, borderColor: '#ff9f43', backgroundColor: 'rgba(99,179,255,.08)', fill: true, tension: .22, borderWidth: 2.5, pointRadius: 3 }
+          { label: currentLang === 'fa' ? 'پهپاد' : 'Drones', data: drones, borderColor: '#ff9f43', backgroundColor: 'rgba(255,159,67,.08)', fill: true, tension: .22, borderWidth: 2.5, pointRadius: 3 }
         ]
       },
       options: cOpts
@@ -1293,9 +1302,9 @@ function renderViolationTracker() {
       else trendStr = ' <span style="color:var(--gold)">\u2192 Stable</span>';
     }
     summaryEl.innerHTML = '<div style="display:flex;gap:16px;flex-wrap:wrap;font-size:12px;color:var(--muted)">' +
-      '<span>Within scope: <strong style="color:var(--cyan)">' + scopeCounts.yes + '</strong></span>' +
-      '<span>Disputed: <strong style="color:var(--gold)">' + scopeCounts.disputed + '</strong></span>' +
-      '<span>Other: <strong style="color:var(--red)">' + scopeCounts.other + '</strong></span>' +
+      '<span title="Incidents explicitly covered by the original ceasefire terms (direct fire, Hormuz interference, etc.)">Within scope: <strong style="color:var(--cyan)">' + scopeCounts.yes + '</strong></span>' +
+      '<span title="Incidents where parties disagree whether they fall under the ceasefire (e.g. Israel–Lebanon strikes while Iran is technically at truce)">Disputed: <strong style="color:var(--gold)">' + scopeCounts.disputed + '</strong></span>' +
+      '<span title="Incidents outside the ceasefire scope (civilian protests, rhetorical threats, 3rd-party actions)">Other: <strong style="color:var(--red)">' + scopeCounts.other + '</strong></span>' +
       '<span>Trend:' + trendStr + '</span></div>';
   }
 
@@ -1321,63 +1330,72 @@ function renderViolationTracker() {
       type: 'bar',
       data: {
         labels: labels,
-        datasets: [
-          {
-            label: 'Violations',
-            data: counts,
-            backgroundColor: colors,
-            borderRadius: 4,
-            yAxisID: 'y'
-          },
-          {
-            label: 'Cumulative severity',
-            data: cumSeverity,
-            type: 'line',
-            borderColor: '#b084ff',
-            backgroundColor: 'rgba(176,132,255,.1)',
-            fill: false,
-            tension: 0.3,
-            pointRadius: 3,
-            yAxisID: 'y1'
-          }
-        ]
+        datasets: [{
+          label: 'Violations (bar color = max severity)',
+          data: counts,
+          backgroundColor: colors,
+          borderRadius: 4,
+          borderSkipped: false
+        }]
       },
       options: {
         responsive: true, maintainAspectRatio: false,
         scales: {
-          y: { beginAtZero: true, position: 'left', ticks: { color: '#9eb5d0' }, grid: { color: 'rgba(41,65,95,.3)' }, title: { display: true, text: 'Violations', color: '#9eb5d0' } },
-          y1: { beginAtZero: true, position: 'right', ticks: { color: '#b084ff' }, grid: { display: false }, title: { display: true, text: 'Cumul. severity', color: '#b084ff' } },
+          y: { beginAtZero: true, ticks: { color: '#9eb5d0', precision: 0 }, grid: { color: 'rgba(41,65,95,.3)' }, title: { display: true, text: 'Incidents per day', color: '#9eb5d0', font: { size: 11 } } },
           x: { ticks: { color: '#9eb5d0' }, grid: { display: false } }
         },
-        plugins: { legend: { labels: { color: '#9eb5d0', font: { size: 11 } } } }
+        plugins: {
+          legend: { display: false },
+          tooltip: { callbacks: { label: function(ctx) {
+            var sev = cfSeverity[startIdx + ctx.dataIndex] || 0;
+            return ctx.parsed.y + ' incident' + (ctx.parsed.y === 1 ? '' : 's') + ' · max severity ' + sev;
+          }}}
+        }
       }
     });
   }
 
-  // List
+  // List — grouped by day (one header per day, incidents nested)
   var listEl = $('cfViolationList');
   if (listEl) {
     var html = '';
-    violations.forEach(function(day) {
+    // Newest first
+    var sortedDays = violations.slice().sort(function(a, b) {
+      return parseLogDate(b.day) - parseLogDate(a.day);
+    });
+    sortedDays.forEach(function(day) {
+      var cfD = cfDayFromLabel(day.day);
+      var headCfDay = cfD ? ' (CF Day ' + cfD + ')' : '';
       if (!day.incidents || !day.incidents.length) {
-        var cfD0 = cfDayFromLabel(day.day);
-        html += '<div class="violation-card"><strong>' + esc(day.day) + (cfD0 ? ' (CF Day ' + cfD0 + ')' : '') + '</strong> — No violations reported</div>';
+        html += '<div class="vday vday-quiet">' +
+          '<div class="vday-head"><span class="vday-date">' + esc(day.day) + headCfDay + '</span>' +
+          '<span class="vday-count">No violations</span></div></div>';
         return;
       }
-      var cfD = cfDayFromLabel(day.day);
-      day.incidents.forEach(function(inc) {
-        var sevClass = inc.severity >= 7 ? 'severe' : inc.severity >= 4 ? 'moderate' : 'minor';
-        var sevLabel = inc.severity >= 7 ? 'SEVERE' : inc.severity >= 4 ? 'MODERATE' : 'MINOR';
-        var sevColor = inc.severity >= 7 ? 'var(--red)' : inc.severity >= 4 ? 'var(--orange)' : 'var(--gold)';
-        var desc = currentLang === 'fa' && inc.description_fa ? inc.description_fa : inc.description;
-        html += '<div class="violation-card ' + sevClass + '">' +
-          '<div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:6px">' +
-          '<strong>' + esc(day.day) + (cfD ? ' (CF Day ' + cfD + ')' : '') + '</strong>' +
-          '<span class="violation-severity" style="background:' + sevColor + ';color:#fff">' + sevLabel + '</span></div>' +
-          '<div style="font-size:13px"><strong>' + esc(inc.actor) + '</strong> → ' + esc(inc.target) +
-          (inc.withinScope ? ' <span style="color:var(--muted);font-size:11px">[' + esc(inc.withinScope) + ']</span>' : '') +
-          '</div><div style="font-size:12px;color:var(--muted);margin-top:4px">' + esc(desc) + '</div></div>';
-      });
+      var incCount = day.incidents.length;
+      var maxSev = day.incidents.reduce(function(m, i) { return Math.max(m, i.severity || 0); }, 0);
+      var dayTone = maxSev >= 7 ? 'severe' : maxSev >= 4 ? 'moderate' : 'minor';
+      html += '<div class="vday ' + dayTone + '">' +
+        '<div class="vday-head">' +
+          '<span class="vday-date">' + esc(day.day) + headCfDay + '</span>' +
+          '<span class="vday-count">' + incCount + ' incident' + (incCount === 1 ? '' : 's') + ' · max sev ' + maxSev + '</span>' +
+        '</div>' +
+        '<div class="vday-body">' +
+          day.incidents.map(function(inc) {
+            var sevClass = inc.severity >= 7 ? 'severe' : inc.severity >= 4 ? 'moderate' : 'minor';
+            var sevLabel = inc.severity >= 7 ? 'SEVERE' : inc.severity >= 4 ? 'MOD' : 'MINOR';
+            var desc = currentLang === 'fa' && inc.description_fa ? inc.description_fa : inc.description;
+            return '<div class="vincident ' + sevClass + '">' +
+              '<div class="vincident-head">' +
+                '<span class="vincident-sev">' + sevLabel + '</span>' +
+                '<span class="vincident-target"><strong>' + esc(inc.actor) + '</strong> → ' + esc(inc.target) + '</span>' +
+                (inc.withinScope ? '<span class="vincident-scope" title="Whether this incident falls under the original ceasefire agreement\'s scope: yes / disputed / no">[' + esc(inc.withinScope) + ']</span>' : '') +
+              '</div>' +
+              '<div class="vincident-desc">' + esc(desc) + '</div>' +
+            '</div>';
+          }).join('') +
+        '</div>' +
+      '</div>';
     });
     if (!html) html = '<div style="color:var(--muted);font-style:italic">No violations recorded yet.</div>';
     listEl.innerHTML = html;
@@ -2673,21 +2691,35 @@ function initScrubber() {
   wrap.style.display = 'flex';
   if ($('scrubberDay')) $('scrubberDay').textContent = scrubberLabel(maxDay, maxDay);
 
-  // Add ceasefire marker on scrubber track
   var cfStartDay = state.ceasefireStartIdx || CEASEFIRE_START_IDX;
-  var existingMarker = wrap.querySelector('.scrubber-cf-marker');
-  if (!existingMarker && cfStartDay <= maxDay) {
-    var pct = ((cfStartDay - 1) / (maxDay - 1)) * 100;
-    var marker = document.createElement('div');
-    marker.className = 'scrubber-cf-marker';
-    marker.style.left = pct + '%';
-    var lbl = document.createElement('div');
-    lbl.className = 'scrubber-cf-label';
-    lbl.style.left = pct + '%';
-    lbl.textContent = 'Ceasefire';
-    wrap.appendChild(marker);
-    wrap.appendChild(lbl);
+  var labels = state.dailySeries.labels;
+
+  // Clear old ticks before rebuilding
+  wrap.querySelectorAll('.scrubber-tick,.scrubber-cf-marker,.scrubber-cf-label').forEach(function(n){ n.remove(); });
+
+  // Add phase ticks: D1 war start, Ceasefire start, Apr 21 expiry, Today
+  function addTick(dayIdx, klass, content) {
+    if (dayIdx < 0 || dayIdx >= maxDay) return;
+    var sliderRect = slider.getBoundingClientRect();
+    var wrapRect = wrap.getBoundingClientRect();
+    if (!sliderRect.width || !wrapRect.width) return;
+    var sliderLeftInWrap = sliderRect.left - wrapRect.left;
+    var rawFrac = maxDay > 1 ? (dayIdx / (maxDay - 1)) : 0;
+    var wrapPct = ((sliderLeftInWrap + rawFrac * sliderRect.width) / wrapRect.width) * 100;
+    var tick = document.createElement('div');
+    tick.className = 'scrubber-tick ' + klass;
+    tick.style.left = wrapPct + '%';
+    tick.textContent = content;
+    wrap.appendChild(tick);
   }
+
+  requestAnimationFrame(function() {
+    addTick(0, 'war-start', 'D1');
+    if (cfStartDay <= maxDay) addTick(cfStartDay - 1, 'ceasefire-start', 'Ceasefire');
+    var expiryIdx = labels.indexOf('Apr 21');
+    if (expiryIdx >= 0) addTick(expiryIdx, 'expiry', 'Expiry');
+    addTick(maxDay - 1, 'today', 'Today');
+  });
 
   var scrubTimer = null;
   slider.addEventListener('input', function() {
@@ -2900,6 +2932,34 @@ async function loadDashboardData() {
 }
 
 loadDashboardData();
+
+/* ---------- Topbar event wiring (replaces inline onclick=) ---------- */
+(function wireTopbar() {
+  document.querySelectorAll('.mode-btn[data-mode]').forEach(function(btn) {
+    btn.addEventListener('click', function() {
+      var m = btn.getAttribute('data-mode');
+      if (m) setMode(m);
+    });
+  });
+  var langBtn = document.getElementById('langToggle');
+  if (langBtn) langBtn.addEventListener('click', toggleLang);
+  var navToggle = document.getElementById('navToggle');
+  var sectionNav = document.getElementById('sectionNav');
+  if (navToggle && sectionNav) {
+    navToggle.addEventListener('click', function(e) {
+      e.stopPropagation();
+      sectionNav.classList.toggle('open');
+    });
+    // Close on outside click
+    document.addEventListener('click', function(e) {
+      if (!sectionNav.classList.contains('open')) return;
+      if (e.target === navToggle || sectionNav.contains(e.target)) return;
+      sectionNav.classList.remove('open');
+    });
+  }
+  var scrubReset = document.getElementById('scrubberReset');
+  if (scrubReset) scrubReset.addEventListener('click', resetScrubber);
+})();
 
 /* ============================================================
    "What Changed" badges — highlight updated sections

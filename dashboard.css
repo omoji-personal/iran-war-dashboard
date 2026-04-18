@@ -505,13 +505,23 @@ html[dir="rtl"] .section-nav { right: auto; left: 0; }
 }
 .section-nav .nav-group:first-child { margin-top: 0; }
 
-/* --- Event Log Table — truncated cells with tooltip on hover --- */
+/* --- Event Log Table — click a row to expand full narrative --- */
 .table-wrap td {
   max-width: 220px;
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
   cursor: default;
+  transition: background .15s ease;
+}
+.table-wrap tbody tr { cursor: pointer; }
+.table-wrap tbody tr:hover td { background: rgba(255,209,102,.03); }
+.table-wrap tbody tr.expanded td {
+  white-space: normal;
+  max-width: 620px;
+  line-height: 1.55;
+  padding: 14px 10px;
+  background: rgba(255,209,102,.04);
 }
 .table-wrap td:first-child {
   white-space: nowrap;
@@ -661,15 +671,43 @@ html[dir="rtl"] .chips { flex-direction: row-reverse; }
 
 /* --- Timeline Scrubber --- */
 .scrubber-wrap {
+  position: relative;
   display: flex;
   align-items: center;
   gap: 12px;
-  padding: 10px 16px;
+  padding: 10px 16px 24px;
   background: rgba(255,209,102,.06);
   border: 1px solid var(--gold);
   border-radius: 14px;
   margin-bottom: 16px;
 }
+.scrubber-tick {
+  position: absolute;
+  bottom: 4px;
+  pointer-events: none;
+  transform: translateX(-50%);
+  font-size: 9px;
+  font-weight: 700;
+  color: var(--muted);
+  letter-spacing: .4px;
+  text-transform: uppercase;
+  white-space: nowrap;
+}
+.scrubber-tick::before {
+  content: "";
+  position: absolute;
+  top: -12px;
+  left: 50%;
+  width: 2px;
+  height: 8px;
+  background: currentColor;
+  transform: translateX(-50%);
+  opacity: .6;
+}
+.scrubber-tick.war-start       { color: var(--red); }
+.scrubber-tick.ceasefire-start { color: var(--cyan); }
+.scrubber-tick.expiry          { color: var(--gold); }
+.scrubber-tick.today           { color: var(--text); font-weight: 800; }
 .scrubber-label {
   font-size: 12px;
   color: var(--muted);
@@ -788,7 +826,7 @@ html[dir="rtl"] .chips { flex-direction: row-reverse; }
   .sim-value { font-size: 14px; }
 
   /* Scrubber */
-  .scrubber-wrap { flex-wrap: wrap; padding: 8px 12px; gap: 8px; }
+  .scrubber-wrap { flex-wrap: wrap; padding: 8px 12px 24px; gap: 8px; }
   .scrubber-label { font-size: 11px; }
   .scrubber-label strong { font-size: 12px; }
 
@@ -844,9 +882,18 @@ html[dir="rtl"] .chips { flex-direction: row-reverse; }
    Ceasefire Mode
    ============================================ */
 
-/* Mode visibility */
+/* Mode visibility + cross-fade */
 body.war-mode [data-mode="ceasefire"] { display: none !important; }
 body.ceasefire-mode [data-mode="war"] { display: none !important; }
+@keyframes mode-fade { from { opacity: 0; } to { opacity: 1; } }
+body.war-mode [data-mode="war"],
+body.ceasefire-mode [data-mode="ceasefire"] {
+  animation: mode-fade .22s ease-out;
+}
+@media (prefers-reduced-motion: reduce) {
+  body.war-mode [data-mode="war"],
+  body.ceasefire-mode [data-mode="ceasefire"] { animation: none; }
+}
 
 /* Mode toggle */
 .mode-toggle {
@@ -944,24 +991,69 @@ html[dir="rtl"] .cf-scenario .timeline-vertical { padding-left: 0; padding-right
   line-height: 1.4;
 }
 
-/* Violation cards */
-.violation-card {
+/* Violation day groups — one card per day, incidents stack inside */
+.vday {
   border: 1px solid var(--border);
   border-radius: 14px;
-  padding: 12px;
-  margin-bottom: 8px;
+  margin-bottom: 10px;
   background: rgba(255,255,255,.02);
+  overflow: hidden;
 }
-.violation-card.severe { border-color: var(--red); }
-.violation-card.moderate { border-color: var(--orange); }
-.violation-card.minor { border-color: var(--gold); }
-.violation-severity {
+.vday.severe   { border-color: var(--red); }
+.vday.moderate { border-color: var(--orange); }
+.vday.minor    { border-color: var(--gold); }
+.vday.vday-quiet { border-color: var(--border); }
+.vday-head {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 8px;
+  padding: 10px 14px;
+  background: rgba(255,255,255,.03);
+  border-bottom: 1px solid var(--border);
+  font-size: 13px;
+  font-weight: 700;
+}
+.vday.vday-quiet .vday-head { border-bottom: none; }
+.vday-date { color: var(--text); }
+.vday-count { color: var(--muted); font-size: 11px; font-weight: 600; letter-spacing: .3px; }
+.vday-body { padding: 4px 0; }
+.vincident {
+  padding: 10px 14px;
+  border-bottom: 1px solid rgba(255,255,255,.04);
+}
+.vincident:last-child { border-bottom: none; }
+.vincident-head {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  flex-wrap: wrap;
+  margin-bottom: 4px;
+  font-size: 13px;
+}
+.vincident-sev {
   display: inline-block;
-  padding: 3px 8px;
+  padding: 2px 8px;
   border-radius: 999px;
-  font-size: 11px;
+  font-size: 10px;
   font-weight: 800;
+  letter-spacing: .4px;
+  color: #fff;
+  flex-shrink: 0;
 }
+.vincident.severe   .vincident-sev { background: var(--red); }
+.vincident.moderate .vincident-sev { background: var(--orange); }
+.vincident.minor    .vincident-sev { background: var(--gold); color: var(--bg); }
+.vincident-target { flex: 1; min-width: 0; }
+.vincident-scope {
+  font-size: 11px;
+  color: var(--muted);
+  cursor: help;
+  border-bottom: 1px dotted var(--muted);
+}
+.vincident-desc { font-size: 12px; color: var(--muted); line-height: 1.5; }
+html[dir="rtl"] .vincident-target strong + span,
+html[dir="rtl"] .vincident-target { direction: rtl; }
 
 /* Negotiation timeline */
 .nego-event {
@@ -977,26 +1069,6 @@ html[dir="rtl"] .cf-scenario .timeline-vertical { padding-left: 0; padding-right
 .nego-dot.negative { background: var(--red); }
 .nego-dot.collapsed { background: var(--red); }
 .nego-dot.in_progress { background: var(--blue); }
-
-/* Scrubber ceasefire marker */
-.scrubber-wrap { position: relative; }
-.scrubber-cf-marker {
-  position: absolute;
-  height: 16px;
-  width: 2px;
-  background: var(--cyan);
-  bottom: 8px;
-  pointer-events: none;
-}
-.scrubber-cf-label {
-  position: absolute;
-  font-size: 9px;
-  color: var(--cyan);
-  bottom: 26px;
-  white-space: nowrap;
-  font-weight: 700;
-  pointer-events: none;
-}
 
 /* De-escalation ladder additions */
 .esc-rung.de_escalating .esc-dot { background: var(--cyan); border-color: var(--cyan); }
