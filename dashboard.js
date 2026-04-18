@@ -345,70 +345,16 @@ function trendLineUpToLastReal(data) {
   return out;
 }
 
-/* ---------- Chart.js global theming ---------- */
-if (typeof Chart !== 'undefined') {
-  Chart.defaults.font.family = 'Inter, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif';
-  Chart.defaults.font.size = 11;
-  Chart.defaults.color = '#eef5fc';
-  Chart.defaults.borderColor = 'rgba(255,255,255,.04)';
-  // Register annotation plugin if loaded
-  if (window['chartjs-plugin-annotation']) {
-    try { Chart.register(window['chartjs-plugin-annotation']); } catch(e) { /* already registered */ }
-  }
-}
-
-/* Gradient fill helper — softens solid area fills */
-function gradientFill(canvas, rgbaTop, rgbaBot) {
-  if (!canvas || !canvas.getContext) return rgbaTop;
-  var ctx = canvas.getContext('2d');
-  var h = canvas.height || canvas.clientHeight || 340;
-  var g = ctx.createLinearGradient(0, 0, 0, h);
-  g.addColorStop(0, rgbaTop);
-  g.addColorStop(1, rgbaBot || 'rgba(0,0,0,0)');
-  return g;
-}
-
-/* Phase annotations: D1 war start, D39 ceasefire start, Apr 21 expiry */
-function phaseAnnotations(labels) {
-  if (!labels || !labels.length) return {};
-  var startIdx = 0;
-  var cfIdx = Math.min(labels.length - 1, (38));         // Apr 7 ≈ D39 (0-indexed 38)
-  var expiryLabel = 'Apr 21';
-  var expiryIdx = labels.indexOf(expiryLabel);
-  var annotations = {
-    warStart: {
-      type: 'line', xMin: startIdx, xMax: startIdx,
-      borderColor: 'rgba(255,107,107,.45)', borderWidth: 1, borderDash: [3,4],
-      label: { display: true, content: 'D1', position: 'start', color: 'rgba(255,107,107,.8)', font: { size: 10, weight: '700' }, backgroundColor: 'transparent' }
-    }
-  };
-  if (cfIdx > 0 && cfIdx < labels.length) {
-    annotations.ceasefireStart = {
-      type: 'line', xMin: cfIdx, xMax: cfIdx,
-      borderColor: 'rgba(70,215,176,.55)', borderWidth: 1, borderDash: [3,4],
-      label: { display: true, content: 'CF', position: 'start', color: 'rgba(70,215,176,.9)', font: { size: 10, weight: '700' }, backgroundColor: 'transparent' }
-    };
-  }
-  if (expiryIdx >= 0) {
-    annotations.expiry = {
-      type: 'line', xMin: expiryIdx, xMax: expiryIdx,
-      borderColor: 'rgba(255,209,102,.55)', borderWidth: 1, borderDash: [3,4],
-      label: { display: true, content: 'Exp', position: 'start', color: 'rgba(255,209,102,.9)', font: { size: 10, weight: '700' }, backgroundColor: 'transparent' }
-    };
-  }
-  return annotations;
-}
-
 const BASE_OPTS = {
   responsive: true,
   maintainAspectRatio: false,
   plugins: {
     legend: { labels: { color: '#eef5fc', font: { size: 11 } } },
-    tooltip: { mode: 'index', intersect: false, backgroundColor: 'rgba(7,17,31,.96)', borderColor: 'rgba(255,255,255,.08)', borderWidth: 1, titleFont: { size: 11, weight: '600' }, bodyFont: { size: 11 }, padding: 10, cornerRadius: 8 }
+    tooltip: { mode: 'index', intersect: false }
   },
   scales: {
-    x: { ticks: { color: '#7f97b1', font: { size: 10 } }, grid: { color: 'rgba(255,255,255,.03)', drawTicks: false } },
-    y: { ticks: { color: '#7f97b1', font: { size: 10 } }, grid: { color: 'rgba(255,255,255,.05)', drawTicks: false }, border: { display: false } }
+    x: { ticks: { color: '#9eb5d0', font: { size: 10 } }, grid: { color: 'rgba(255,255,255,.04)' } },
+    y: { ticks: { color: '#9eb5d0', font: { size: 10 } }, grid: { color: 'rgba(255,255,255,.06)' } }
   }
 };
 
@@ -610,16 +556,13 @@ function renderCharts() {
   if ($('comboChart')) {
     var cOpts = deepClone(BASE_OPTS);
     cOpts.scales.y.beginAtZero = true;
-    cOpts.plugins = cOpts.plugins || {};
-    cOpts.plugins.annotation = { annotations: phaseAnnotations(labels) };
-    var comboCanvas = $('comboChart');
-    charts.combo = new Chart(comboCanvas, {
+    charts.combo = new Chart($('comboChart'), {
       type: 'line',
       data: {
         labels: labels,
         datasets: [
-          { label: currentLang === 'fa' ? 'موشک' : 'Missiles', data: missiles, borderColor: '#ff6b6b', backgroundColor: gradientFill(comboCanvas, 'rgba(255,107,107,.22)', 'rgba(255,107,107,0)'), fill: true, tension: .22, borderWidth: 2.5, pointRadius: 3 },
-          { label: currentLang === 'fa' ? 'پهپاد' : 'Drones', data: drones, borderColor: '#ff9f43', backgroundColor: gradientFill(comboCanvas, 'rgba(255,159,67,.18)', 'rgba(255,159,67,0)'), fill: true, tension: .22, borderWidth: 2.5, pointRadius: 3 }
+          { label: currentLang === 'fa' ? 'موشک' : 'Missiles', data: missiles, borderColor: '#ff6b6b', backgroundColor: 'rgba(255,107,107,.08)', fill: true, tension: .22, borderWidth: 2.5, pointRadius: 3 },
+          { label: currentLang === 'fa' ? 'پهپاد' : 'Drones', data: drones, borderColor: '#ff9f43', backgroundColor: 'rgba(99,179,255,.08)', fill: true, tension: .22, borderWidth: 2.5, pointRadius: 3 }
         ]
       },
       options: cOpts
@@ -1781,8 +1724,6 @@ function renderThesisChart(models) {
 
   var thesisOpts = deepClone(BASE_OPTS);
   thesisOpts.scales.y.beginAtZero = true;
-  thesisOpts.plugins = thesisOpts.plugins || {};
-  thesisOpts.plugins.annotation = { annotations: phaseAnnotations(labels) };
 
   charts.thesis = new Chart($('thesisChart'), {
     type: 'line',
@@ -1793,7 +1734,7 @@ function renderThesisChart(models) {
           label: currentLang === 'fa' ? '\u0648\u0627\u0642\u0639\u06CC' : 'Actual launches',
           data: actual,
           borderColor: '#ff6b6b',
-          backgroundColor: gradientFill($('thesisChart'), 'rgba(255,107,107,.22)', 'rgba(255,107,107,0)'),
+          backgroundColor: 'rgba(255,107,107,.08)',
           fill: true,
           tension: .24,
           borderWidth: 3,
@@ -1866,12 +1807,10 @@ function renderVectorChart(vectors) {
   var vecOpts = deepClone(BASE_OPTS);
   vecOpts.scales.y.beginAtZero = true;
   vecOpts.scales.y.suggestedMax = 10;
-  vecOpts.scales.y.ticks = { color: '#7f97b1', font: { size: 10 }, callback: function(v) {
+  vecOpts.scales.y.ticks = { color: '#9eb5d0', font: { size: 10 }, callback: function(v) {
     var sem = {0:'Low',5:'Med',10:'High'};
     return sem[v] !== undefined ? sem[v] : '';
   }};
-  vecOpts.plugins = vecOpts.plugins || {};
-  vecOpts.plugins.annotation = { annotations: phaseAnnotations(vectors.labels) };
 
   var s = UI[currentLang];
 
@@ -2079,17 +2018,14 @@ function renderHormuzTransit() {
   var htOpts = deepClone(BASE_OPTS);
   htOpts.scales.y.beginAtZero = true;
   htOpts.scales.y.suggestedMax = 70;
-  htOpts.plugins = htOpts.plugins || {};
-  htOpts.plugins.annotation = { annotations: phaseAnnotations(ht.labels || []) };
 
-  var htCanvas = $('hormuzTransitChart');
-  charts.hormuzTransit = new Chart(htCanvas, {
+  charts.hormuzTransit = new Chart($('hormuzTransitChart'), {
     type: 'line',
     data: {
       labels: ht.labels || [],
       datasets: [
-        { label: currentLang === 'fa' ? 'کشتی/روز' : 'Vessels/day', data: ht.vessels, borderColor: '#63b3ff', backgroundColor: gradientFill(htCanvas, 'rgba(99,179,255,.28)', 'rgba(99,179,255,0)'), fill: true, borderWidth: 3, pointRadius: 3, tension: .22 },
-        { label: currentLang === 'fa' ? 'میانگین قبل جنگ' : 'Pre-war average', data: ht.vessels.map(function() { return ht.preWarAverage; }), borderColor: 'rgba(255,107,107,.7)', borderDash: [8, 4], borderWidth: 1.5, pointRadius: 0 }
+        { label: currentLang === 'fa' ? 'کشتی/روز' : 'Vessels/day', data: ht.vessels, borderColor: '#63b3ff', backgroundColor: 'rgba(99,179,255,.12)', fill: true, borderWidth: 2.5, pointRadius: 3, tension: .22 },
+        { label: currentLang === 'fa' ? 'میانگین قبل جنگ' : 'Pre-war average', data: ht.vessels.map(function() { return ht.preWarAverage; }), borderColor: '#ff6b6b', borderDash: [8, 4], borderWidth: 1.5, pointRadius: 0 }
       ]
     },
     options: htOpts
@@ -2753,48 +2689,21 @@ function initScrubber() {
   wrap.style.display = 'flex';
   if ($('scrubberDay')) $('scrubberDay').textContent = scrubberLabel(maxDay, maxDay);
 
-  // Wipe old tick children before rebuilding (render() may re-init)
-  wrap.querySelectorAll('.scrubber-tick,.scrubber-cf-marker,.scrubber-cf-label').forEach(function(n){ n.remove(); });
-
+  // Add ceasefire marker on scrubber track
   var cfStartDay = state.ceasefireStartIdx || CEASEFIRE_START_IDX;
-  var labels = state.dailySeries.labels;
-
-  // Phase-colored track split: set CSS var to position where war→ceasefire transitions
-  if (cfStartDay <= maxDay && maxDay > 1) {
-    var splitPct = ((cfStartDay - 1) / (maxDay - 1)) * 100;
-    slider.style.setProperty('--cf-split', splitPct + '%');
+  var existingMarker = wrap.querySelector('.scrubber-cf-marker');
+  if (!existingMarker && cfStartDay <= maxDay) {
+    var pct = ((cfStartDay - 1) / (maxDay - 1)) * 100;
+    var marker = document.createElement('div');
+    marker.className = 'scrubber-cf-marker';
+    marker.style.left = pct + '%';
+    var lbl = document.createElement('div');
+    lbl.className = 'scrubber-cf-label';
+    lbl.style.left = pct + '%';
+    lbl.textContent = 'Ceasefire';
+    wrap.appendChild(marker);
+    wrap.appendChild(lbl);
   }
-
-  // Compute slider thumb horizontal positioning relative to wrap
-  function trackPctToWrapPct(pct) {
-    // slider is flex:1 inside wrap; approximate by reading offsets
-    var sliderRect = slider.getBoundingClientRect();
-    var wrapRect = wrap.getBoundingClientRect();
-    var sliderLeft = sliderRect.left - wrapRect.left;
-    var sliderWidth = sliderRect.width || 1;
-    var wrapWidth = wrapRect.width || 1;
-    return ((sliderLeft + (pct / 100) * sliderWidth) / wrapWidth) * 100;
-  }
-
-  function addTick(dayIdx, klass, content) {
-    if (dayIdx < 0 || dayIdx >= maxDay) return;
-    var rawPct = maxDay > 1 ? (dayIdx / (maxDay - 1)) * 100 : 0;
-    var wrapPct = trackPctToWrapPct(rawPct);
-    var tick = document.createElement('div');
-    tick.className = 'scrubber-tick ' + klass;
-    tick.style.left = wrapPct + '%';
-    tick.textContent = content;
-    wrap.appendChild(tick);
-  }
-
-  // Draw phase ticks after layout settles
-  requestAnimationFrame(function() {
-    addTick(0, 'war-start', 'D1');
-    if (cfStartDay <= maxDay) addTick(cfStartDay - 1, 'ceasefire-start', 'Ceasefire');
-    var expiryIdx = labels.indexOf('Apr 21');
-    if (expiryIdx >= 0) addTick(expiryIdx, 'expiry', 'Expiry');
-    addTick(maxDay - 1, 'today', 'Today');
-  });
 
   var scrubTimer = null;
   slider.addEventListener('input', function() {
@@ -2992,6 +2901,7 @@ async function loadDashboardData() {
     if (!json.meta || !json.dailySeries || !json.oil) throw new Error('Malformed');
     state = { ...structuredClone(DEFAULT_DATA), ...json };
     state.meta = { ...DEFAULT_DATA.meta, ...(json.meta || {}) };
+    // Auto-detect ceasefire mode
     if (state.ceasefireMode && state.ceasefireMode.enabled) {
       currentMode = 'ceasefire';
     } else {
@@ -3002,22 +2912,7 @@ async function loadDashboardData() {
   } catch(e) {
     console.error('Dashboard load failed:', e);
     state = structuredClone(DEFAULT_DATA);
-  } finally {
-    render();
-    // Trigger staggered reveal after the DOM is populated
-    requestAnimationFrame(function() {
-      document.body.classList.add('loaded');
-    });
-    // Event-log row click → toggle .expanded (full narrative)
-    var tbody = document.getElementById('dailyRows');
-    if (tbody && !tbody.dataset.expandBound) {
-      tbody.addEventListener('click', function(e) {
-        var row = e.target && e.target.closest('tr');
-        if (row && tbody.contains(row)) row.classList.toggle('expanded');
-      });
-      tbody.dataset.expandBound = '1';
-    }
-  }
+  } finally { render(); }
 }
 
 loadDashboardData();
