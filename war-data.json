@@ -1,6 +1,6 @@
 {
   "meta": {
-    "lastUpdated": "2026-04-18T20:00:00-04:00",
+    "lastUpdated": "2026-04-19T20:00:00-04:00",
     "preWarBaselines": {
       "d1Missiles": 480,
       "preWarOil": 65,
@@ -8,6 +8,7 @@
       "preWarGas": 3
     },
     "notes": [
+      "D51 (Apr 19): GHALIBAF CLAIMS 'PROGRESS' — HORMUZ STILL CLOSED, 2 DAYS TO EXPIRY. (1) GHALIBAF 'PROGRESS': Iran parliament speaker and chief negotiator said there is 'progress' in US-Iran talks — most positive statement from Tehran since Islamabad collapse Apr 13. (2) HORMUZ CLOSED: 0 vessels transited; Iran maintaining closure after Saturday's IRGC gunfire on Indian ships; Trump refused to lift blockade. (3) ROUND 2 MONDAY: Islamabad talks expected Apr 21 = same day as ceasefire expiry; both sides have not simultaneously confirmed. (4) TRUMP THREAT: No extension if no deal by Apr 21 expiry. Three sticking points: nuclear enrichment, US blockade/Hormuz, war-damage compensation. (5) OIL: Brent $97.8, WTI $93.2 — holding near highs on Hormuz supply uncertainty. (6) POLYMARKET: ceasefire extended by Apr 21 = 74%; regime falls by Apr 30 = 2%; regime falls 2026 = 20%; conflict ends Dec-31 = 98%. (7) PAKISTAN army chief Munir + Egypt + Turkey pushing for Round 2. Lebanon ceasefire Day 3 holding. 15 straight days zero Iran-US-Israel attacks. Internet Day 6 business partial ($1.8B+). 2 days to Apr 21.",
       "D50 (Apr 18): IRAN FIRES ON INDIAN SHIPS IN HORMUZ — STRAIT RE-CLOSED. (1) HORMUZ RE-CLOSED + SHOTS FIRED: Iranian Navy gunboats fired on two Indian-flagged vessels (VLCC Sanmar Herald + 1 other) after US refused to lift blockade. First kinetic force on civilian shipping since ceasefire began. India summoned Iranian ambassador. (2) OIL REBOUNDED: Brent $96.10 (+6.3%), WTI $91.80 (+9.5%) — partial recovery from D49 crash. (3) 23 VESSELS INTERCEPTED by US blockade total. (4) ROUND 2 MONDAY: Iranian sources say next Islamabad talks Apr 21 = same day as ceasefire expiry. (5) POLYMARKET: ceasefire-extended-by-Apr-21 = 74%; conflict-ends-Dec-31 = 97%. (6) TRUMP: 'pretty good news' about Iran (unspecified). Iran studying fresh US proposals. D49 (Apr 17): IRAN OPENS HORMUZ — OIL CRASHES 11%. Iran FM Araghchi: Hormuz 'completely open' during Lebanon ceasefire. Trump: US blockade stays. Brent $90.38 (-9%), WTI $83.85 (-11.4%) — second largest drop since war. 8 vessels transited. CNN: Round 2 Pakistan Monday per Iranian sources. Lebanon ceasefire Day 2 holding. 14 straight days zero Iran-US-Israel attacks through D50.",
       "D48 EVE UPDATE (Apr 16 16:00 ET): ISRAEL-LEBANON CEASEFIRE 5PM ET + BLOCKADE WIDENED WORLDWIDE + POLYMARKET 78% EXTENSION. (1) TRUMP ANNOUNCED 10-DAY ISRAEL-LEBANON CEASEFIRE effective 5PM ET — Hezbollah accepts if Israeli strikes stop; Israel retains self-defense; extendable by mutual consent. Iran Speaker Ghalibaf: 'as important as' Iran ceasefire. (2) BLOCKADE WIDENED WORLDWIDE — Gen. Dan Caine (Joint Chiefs): US forces will stop any Iran-linked vessel ANYWHERE globally (weapons, oil, metals, electronics), including Pacific operations. 14 ships turned away cumulative; zero boardings. (3) WHITE HOUSE: Leavitt 'productive and ongoing'; Trump talks 'probably, maybe over the weekend'; Hegseth 'ready to restart combat' if no deal. (4) IRAN: armed forces threatened Persian Gulf + Sea of Oman + Red Sea blockade in retaliation; rial -8% since war (-60% since 2025); inflation 47%, food 105%; internet $1.8B cost. (5) POLYMARKET DRAMATIC SHIFT: ceasefire-extended-by-Apr-21 = 78%, holds-Apr-30 = 68%, holds-May-31 = 79%, holds-Dec-31 = 98%, conflict-ends-Dec-31 = 97%, Trump-announces-end-by-Jun-30 = 85%. Brent $94.89 (-0.04%), WTI intraday volatility $90.72-$94.62 on US crude inventory draw. Hormuz ~6 vessels. 10-day Iran zero-attack streak. Lebanon dead 2,100+. Ceasefire Day 10. 5 days to Apr 21 expiry. ALSO: backfilled Apr 15 + Apr 16 entries into ceasefireViolations / Negotiations / EconomicRecovery (morning commit only updated standard per-day arrays).",
       "D48 (Apr 16 07:00 ET): BLOCKADE DAY 3 — MUNIR IN TEHRAN + 'IN PRINCIPLE' EXTENSION + NUCLEAR BREAKTHROUGH HOPES. (1) PAKISTAN ARMY CHIEF MUNIR IN TEHRAN: Asim Munir arrived in Tehran with fresh US proposal to advance Round 2 talks. First Pakistani Army Chief visit to Iran since war began. Bringing US message on nuclear compromise. (2) 'IN PRINCIPLE' CEASEFIRE EXTENSION (AP): Regional officials told AP that US and Iran have an 'in principle agreement' to extend the ceasefire beyond Apr 21 to allow more diplomacy. Senior US official to CNBC: 'has not formally agreed' — extension not formal yet. (3) TRUMP 'AMAZING TWO DAYS AHEAD' + 'BEATEN THEM MILITARILY': Trump Times of Israel: 'I think you're going to be watching an amazing two days ahead.' Fox Business: 'We've beaten them militarily, totally.' Said not thinking about extending ceasefire — implies deal, not extension, is the goal. (4) NUCLEAR BREAKTHROUGH HOPES: Pakistani mediators optimistic about 'major breakthrough' on nuclear front per Al Jazeera/ANI. Key gap now clearer: 5-yr vs 20-yr enrichment freeze. Iran's ~440kg HEU stockpile on table. (5) WHITE HOUSE 'FEELS GOOD': Press secretary: 'We feel good about the prospects of a deal.' Discussions 'productive and ongoing.' Iran spokesperson: 'several messages exchanged through Pakistan.' (6) IRAN PETROCHEMICALS SUSPENDED: Iran National Petrochemical Company halted all exports 'until further notice' (Apr 13 order) — $13B/yr industry, ~$54M/day, to prioritize domestic supply after South Pars strikes. (7) BLOCKADE DAY 3 NO CONFRONTATION: 10+ ships turned back since Monday. Iran threatened to block Persian Gulf + Sea of Oman + Red Sea if blockade continues — counter-threat but no action. Brent $94.89 (-0.87%). WTI ~$90.72. Zero attacks D40-D48 (10 straight). Ceasefire Day 10 — 5 days to Apr 21. Convergence 5.7 (↑ from 5.0).",
@@ -188,7 +189,8 @@
       "Apr 15",
       "Apr 16",
       "Apr 17",
-      "Apr 18"
+      "Apr 18",
+      "Apr 19"
     ],
     "missiles": [
       480,
@@ -231,6 +233,7 @@
       45,
       58,
       12,
+      0,
       0,
       0,
       0,
@@ -292,6 +295,7 @@
       0,
       0,
       0,
+      0,
       0
     ],
     "sourceLabel": "D1-D10: JPost. D11: UAE MoD. D12-D38: fragment est. D39: ceasefire. D40-D48: 0+0 ceasefire holding. D48: Blockade Day 3, 0 attacks. Munir in Tehran. 'In principle' extension. Nuclear breakthrough hopes.",
@@ -338,6 +342,7 @@
       0.5,
       0.5,
       0.5,
+      1,
       1,
       1,
       1,
@@ -402,7 +407,8 @@
       "Apr 15",
       "Apr 16",
       "Apr 17",
-      "Apr 18"
+      "Apr 18",
+      "Apr 19"
     ],
     "brent": [
       65,
@@ -455,7 +461,8 @@
       95.72,
       94.89,
       90.38,
-      96.1
+      96.1,
+      97.8
     ],
     "wti": [
       62,
@@ -508,7 +515,8 @@
       91.5,
       90.72,
       83.85,
-      91.8
+      91.8,
+      93.2
     ],
     "note": "D48 (Apr 16): Brent $94.89 (↓ from D47 $95.72). WTI $90.72 (↓ from $91.50). CONTINUED DECLINE on deal signals — Munir in Tehran, 'in principle' extension (AP), Trump 'amazing two days.' Iran petrochemicals suspended ($54M/day offline). Market pricing ~40% deal before Apr 21. If deal: $85-90. If collapse: $115-125+."
   },
@@ -563,7 +571,8 @@
       "Apr 15",
       "Apr 16",
       "Apr 17",
-      "Apr 18"
+      "Apr 18",
+      "Apr 19"
     ],
     "attrition": [
       2,
@@ -605,6 +614,7 @@
       10,
       10,
       10.2,
+      10.5,
       10.5,
       10.5,
       10.5,
@@ -667,6 +677,7 @@
       5.8,
       5.6,
       5.2,
+      6.5,
       6.5
     ]
   },
@@ -1122,6 +1133,15 @@
       "capability": "D50: 0+0 (Iran-US-Israel ceasefire technically holds). BUT Iran Navy fired live rounds at Indian civilian ships in Hormuz — first kinetic use of force against civilian shipping since ceasefire began. 14 straight days zero Iran-US-Israel attacks. Iran demonstrated ability to escalate below ceasefire threshold. Blockade counter-leverage strategy now active with real force.",
       "cost": "Brent $96.10 (+6.3% from D49 crash), WTI $91.80 (+9.5%). Partial rebound from D49 crash — Hormuz shots + re-closure reignited supply-fear premium. Iran blockade tally: 23 ships, $500M+/day economic isolation. VLCC Sanmar Herald fired on = 2M barrels Iraqi crude delayed. India energy strain deepening (Russian oil waiver expired Apr 11). Internet $1.8B+ total.",
       "assessment": "D50 — SHOTS FIRED IN HORMUZ: CEASEFIRE HOLDS BUT ESCALATION LADDER CLIMBED. Iran firing on Indian ships is a critical signal: (1) NOT a ceasefire violation vs US/Israel; (2) IS kinetic force on civilian shipping; (3) India as target = Iran applying costs to third-party nations that benefit from US blockade. The 24-hour Hormuz cycle — open Friday, closed + shots fired Saturday — shows informal signals are too fragile. Monday talks in Pakistan (Apr 21 = same day as expiry) are now the fulcrum: deal, extension, or collapse. Polymarket extension 74% = market still bets on extension. Convergence ~5.5 (↓ from 6.0 — shots fired spike uncertainty). Deal 28%, Collapse 33%, Extension 39%. 3 days to Apr 21."
+    },
+    {
+      "date": "Apr 19",
+      "missiles": 0,
+      "drones": 0,
+      "primary": "D51 GHALIBAF CLAIMS 'PROGRESS' — HORMUZ STILL CLOSED, 2 DAYS TO EXPIRY (Apr 19): Iran parliament speaker and chief negotiator Mohammad Bagher Ghalibaf said there is 'progress' in US-Iran negotiations — the most positive statement from Tehran since Islamabad talks collapsed Apr 13. But the Strait of Hormuz remained closed (0 vessels; shots-deterrence from Saturday's IRGC gunfire on Indian ships) and Trump threatened no ceasefire extension if no deal reached by Apr 21 expiry. Round 2 Islamabad talks still expected Monday Apr 21 = same day as expiry. Three sticking points remain unresolved: Iran nuclear enrichment rights, US naval blockade, war-damage compensation. Brent $97.8, WTI $93.2 (holding near highs on Hormuz supply-fear). Pakistan army chief Munir + Egypt + Turkey pushing for Round 2. Lebanon ceasefire Day 3 holding. Internet business partial Day 6 ($1.8B+ cumulative). 15 straight days zero Iran-US-Israel attacks. Ceasefire Day 12. 2 days to Apr 21.",
+      "capability": "D51: 0+0. Ceasefire Day 12. 15 straight days zero Iran-US-Israel attacks. Ghalibaf 'progress' = first positive diplomatic signal from Tehran since Islamabad talks collapsed; Iran preserving IRGC Navy leverage via Hormuz closure as final negotiating chip going into Monday expiry.",
+      "cost": "Brent $97.8 (+1.8% from D50), WTI $93.2 (+1.5%). Oil holding near war-era highs on Hormuz closure. 0 vessels transited Hormuz. US blockade: 23+ ships intercepted total. Internet Day 6 business partial ($1.8B+ cumulative cost). Lebanon dead 2,167+. Iran rial -60% since 2025; inflation 47%, food 105%.",
+      "assessment": "D51 — DIPLOMATIC SIGNAL AMID HORMUZ STANDOFF: 2 DAYS TO EXPIRY. Ghalibaf's 'progress' claim is the most positive diplomatic signal from Tehran since Islamabad talks broke down. The convergence of Monday talks and Apr 21 expiry creates maximum pressure for a deal. Trump threatening no extension is classic brinkmanship — but also a real risk. Three structural gaps (nuclear, blockade, compensation) remain. 0 ships through Hormuz = Iran maintaining peak leverage until the final hour. Polymarket extension 74% = markets still price extension as most likely outcome. Convergence ~5.8 (↑ slight from 5.5 on Ghalibaf signal; structural gaps unchanged). 2 days to Apr 21."
     }
   ],
   "timeline": [
@@ -1979,7 +1999,8 @@
         "Apr 15",
         "Apr 16",
         "Apr 17",
-        "Apr 18"
+        "Apr 18",
+        "Apr 19"
       ],
       "militaryExhaustion": [
         1,
@@ -2021,6 +2042,7 @@
         7,
         7.5,
         7,
+        6.5,
         6.5,
         6.5,
         6.5,
@@ -2083,7 +2105,8 @@
         7.8,
         8.0,
         7.0,
-        7.8
+        7.8,
+        8.0
       ],
       "diplomaticMomentum": [
         0,
@@ -2135,7 +2158,8 @@
         5.0,
         7.5,
         7.5,
-        7.0
+        7.0,
+        6.5
       ],
       "usPoliticalSustainability": [
         8,
@@ -2187,7 +2211,8 @@
         3.5,
         4.0,
         4.2,
-        3.8
+        3.8,
+        4.0
       ],
       "escalationCeilingDistance": [
         7,
@@ -2239,7 +2264,8 @@
         2.5,
         4.0,
         5.5,
-        3.0
+        3.0,
+        3.5
       ]
     },
     "vectorNotes": {
@@ -2317,7 +2343,8 @@
       0,
       0,
       0,
-      3
+      3,
+      1
     ],
     "geoSpreadLabels": [
       "Feb 28",
@@ -2369,7 +2396,8 @@
       "Apr 15",
       "Apr 16",
       "Apr 17",
-      "Apr 18"
+      "Apr 18",
+      "Apr 19"
     ],
     "countriesTargetedPerDay": [
       8,
@@ -2412,6 +2440,7 @@
       9,
       8,
       4,
+      0,
       0,
       0,
       0,
@@ -2473,6 +2502,7 @@
       0,
       0,
       0,
+      0,
       0
     ],
     "interceptRateLabels": [
@@ -2525,7 +2555,8 @@
       "Apr 15",
       "Apr 16",
       "Apr 17",
-      "Apr 18"
+      "Apr 18",
+      "Apr 19"
     ],
     "interceptRate": [
       0.82,
@@ -2565,6 +2596,7 @@
       0.87,
       0.89,
       0.89,
+      0.88,
       0.88,
       0.88,
       0.88,
@@ -3301,7 +3333,8 @@
       "Apr 15",
       "Apr 16",
       "Apr 17",
-      "Apr 18"
+      "Apr 18",
+      "Apr 19"
     ],
     "vessels": [
       62,
@@ -3354,7 +3387,8 @@
       4,
       6,
       8,
-      2
+      2,
+      0
     ],
     "preWarAverage": 62,
     "note": "D47: ~4 vessels/day. BLOCKADE DAY 2 — cautious resumption. Small tankers testing CENTCOM inspection regime. WH signals talks 'next 2 days.' Iran: piracy claim. 200+ mines still deployed.",
@@ -5449,6 +5483,23 @@
       ],
       "totalCount": 2,
       "maxSeverity": 9
+    },
+    {
+      "day": "Apr 19",
+      "cfDay": 12,
+      "incidents": [
+        {
+          "type": "blockade",
+          "severity": 7,
+          "actor": "US Navy",
+          "target": "Iranian ports and vessels worldwide",
+          "description": "US naval blockade of Iranian ports continued Day 12; 23+ vessels intercepted total. Hormuz remained closed by Iran (0 vessels; shots-deterrence from Saturday's IRGC gunfire). No new kinetic incidents today. Trump threatened no ceasefire extension if no deal by Apr 21 expiry.",
+          "description_fa": "محاصره دریایی آمریکا در روز دوازدهم ادامه یافت؛ بیش از ۲۳ کشتی متوقف شده. هرمز توسط ایران بسته ماند (۰ کشتی؛ بازدارندگی ناشی از تیراندازی جمعه). هیچ رویداد کینتیک جدیدی گزارش نشد. ترامپ تهدید کرد اگر تا ۲۱ آوریل توافقی نشود تمدید نمی‌دهد.",
+          "withinScope": "yes"
+        }
+      ],
+      "totalCount": 1,
+      "maxSeverity": 7
     }
   ],
   "ceasefireNegotiations": [
@@ -5625,6 +5676,22 @@
       "outcome": "escalation",
       "significance": 8,
       "keyGap": "Hormuz shots = Iran leveraging third-party (India) pressure on US blockade stance. Round 2 Monday = final window before Apr 21 expiry. US has NOT confirmed Monday talks. 3 days to ceasefire expiry."
+    },
+    {
+      "date": "Apr 19",
+      "cfDay": 12,
+      "event": "Iran parliament speaker Ghalibaf claims 'progress' in US-Iran talks; Trump threatens no extension without deal by Apr 21; Round 2 Islamabad talks expected Monday (expiry day); sticking points: nuclear enrichment, US blockade/Hormuz, war-damage compensation",
+      "event_fa": "سخنگوی مجلس ایران قالیباف از 'پیشرفت' در مذاکرات با آمریکا خبر داد؛ ترامپ تهدید کرد اگر تا ۲۱ آوریل توافقی نشود تمدید نمی‌شود؛ دور دوم اسلام‌آباد برای دوشنبه (روز انقضا) پیش‌بینی می‌شود؛ نقاط اختلاف: غنی‌سازی، محاصره، غرامت جنگ",
+      "participants": [
+        "Iran (Ghalibaf)",
+        "Trump",
+        "Pakistan army chief Munir",
+        "Egypt",
+        "Turkey"
+      ],
+      "outcome": "cautious-progress",
+      "significance": 7,
+      "keyGap": "Three unresolved sticking points: Iran nuclear enrichment rights, US naval blockade lift/Hormuz, war-damage compensation. Hormuz closure = Iran's peak leverage going into Monday talks. Deal or extension must happen Apr 21 = both sides' hard deadline."
     }
   ],
   "ceasefireEconomicRecovery": {
@@ -5639,7 +5706,8 @@
       "Apr 15",
       "Apr 16",
       "Apr 17",
-      "Apr 18"
+      "Apr 18",
+      "Apr 19"
     ],
     "hormuzDaily": [
       8,
@@ -5652,7 +5720,8 @@
       4,
       6,
       8,
-      2
+      2,
+      0
     ],
     "hormuzPreWar": 135,
     "brentPreCeasefire": 109,
@@ -5667,7 +5736,8 @@
       95.72,
       94.89,
       90.38,
-      96.1
+      96.1,
+      97.8
     ],
     "shipsStranded": [
       800,
@@ -5680,9 +5750,10 @@
       825,
       830,
       820,
-      840
+      840,
+      845
     ],
-    "note": "D49-D50 HORMUZ 24-HOUR CYCLE: Iran opened Hormuz Apr 17 (8 vessels, oil -11%), then re-closed + fired on Indian ships Apr 18 (2 vessels, oil +6%). Blockade: 23 ships intercepted total. Iran leveraging third-party costs (India) on US stance. Round 2 talks expected Islamabad Monday Apr 21 = same day as ceasefire expiry. Polymarket extension 74%."
+    "note": "D50-D51 HORMUZ CLOSED + SHOTS: Iran fired on Indian ships Apr 18 → 0 vessels Apr 19 (shots-deterrence). Oil holding $97-98 on Hormuz closure. US blockade 23+ ships intercepted total. Ghalibaf 'progress' signal Apr 19 = positive but structural gaps remain. Internet business partial Day 6 ($1.8B+ cumulative). 2 days to Apr 21 expiry."
   },
   "ceasefirePostConflictTree": {
     "branchExtend": [
