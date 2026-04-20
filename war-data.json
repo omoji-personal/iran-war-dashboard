@@ -1,6 +1,6 @@
 {
   "meta": {
-    "lastUpdated": "2026-04-19T20:00:00-04:00",
+    "lastUpdated": "2026-04-20T14:00:00-04:00",
     "preWarBaselines": {
       "d1Missiles": 480,
       "preWarOil": 65,
@@ -8,6 +8,7 @@
       "preWarGas": 3
     },
     "notes": [
+      "D52 (Apr 20): US SEIZES M/V TOUSKA — IRAN THREATENS RETALIATION, SKIPS TALKS, 1 DAY TO EXPIRY. (1) SHIP SEIZED: US Navy fired on and seized Iranian cargo vessel M/V Touska running blockade — first US kinetic action against Iranian-flagged ship since ceasefire Apr 8. Iran military vowed 'proportional retaliation.' (2) IRAN SKIPS TALKS: Foreign Ministry declared 'no plans for new talks'; state media: Tehran will boycott Islamabad Round 2. (3) TRUMP DELEGATION: Vance/Witkoff/Kushner traveling to Islamabad regardless — Washington bets Iran will ultimately attend. (4) OIL: Brent $95.42 (+5.6% from Fri close $90.38), WTI $89.00 (+6.1%); Monday open sharply higher but off Sat/Sun spike highs. (5) HORMUZ: 0 vessels Day 3; Iran closure continues. US blockade 24+ ships intercepted total. (6) POLYMARKET: ceasefire extended by Apr 21 = 53% (↓ from 74%); conflict-ends-Dec-31 = 96%. (7) LEBANON ceasefire Day 4 holding; 'Yellow Line' dispute. 16 straight days zero Iran-US-Israel attacks. Internet 1,100+ hours blackout; limited business partial. Rial ~1,543,000/USD. Casualties est. ~7,800+. ⚠ CEASEFIRE EXPIRES TOMORROW APR 21 8PM ET — MODE SWITCH ASSESSMENT NEEDED.",
       "D51 (Apr 19): GHALIBAF CLAIMS 'PROGRESS' — HORMUZ STILL CLOSED, 2 DAYS TO EXPIRY. (1) GHALIBAF 'PROGRESS': Iran parliament speaker and chief negotiator said there is 'progress' in US-Iran talks — most positive statement from Tehran since Islamabad collapse Apr 13. (2) HORMUZ CLOSED: 0 vessels transited; Iran maintaining closure after Saturday's IRGC gunfire on Indian ships; Trump refused to lift blockade. (3) ROUND 2 MONDAY: Islamabad talks expected Apr 21 = same day as ceasefire expiry; both sides have not simultaneously confirmed. (4) TRUMP THREAT: No extension if no deal by Apr 21 expiry. Three sticking points: nuclear enrichment, US blockade/Hormuz, war-damage compensation. (5) OIL: Brent $97.8, WTI $93.2 — holding near highs on Hormuz supply uncertainty. (6) POLYMARKET: ceasefire extended by Apr 21 = 74%; regime falls by Apr 30 = 2%; regime falls 2026 = 20%; conflict ends Dec-31 = 98%. (7) PAKISTAN army chief Munir + Egypt + Turkey pushing for Round 2. Lebanon ceasefire Day 3 holding. 15 straight days zero Iran-US-Israel attacks. Internet Day 6 business partial ($1.8B+). 2 days to Apr 21.",
       "D50 (Apr 18): IRAN FIRES ON INDIAN SHIPS IN HORMUZ — STRAIT RE-CLOSED. (1) HORMUZ RE-CLOSED + SHOTS FIRED: Iranian Navy gunboats fired on two Indian-flagged vessels (VLCC Sanmar Herald + 1 other) after US refused to lift blockade. First kinetic force on civilian shipping since ceasefire began. India summoned Iranian ambassador. (2) OIL REBOUNDED: Brent $96.10 (+6.3%), WTI $91.80 (+9.5%) — partial recovery from D49 crash. (3) 23 VESSELS INTERCEPTED by US blockade total. (4) ROUND 2 MONDAY: Iranian sources say next Islamabad talks Apr 21 = same day as ceasefire expiry. (5) POLYMARKET: ceasefire-extended-by-Apr-21 = 74%; conflict-ends-Dec-31 = 97%. (6) TRUMP: 'pretty good news' about Iran (unspecified). Iran studying fresh US proposals. D49 (Apr 17): IRAN OPENS HORMUZ — OIL CRASHES 11%. Iran FM Araghchi: Hormuz 'completely open' during Lebanon ceasefire. Trump: US blockade stays. Brent $90.38 (-9%), WTI $83.85 (-11.4%) — second largest drop since war. 8 vessels transited. CNN: Round 2 Pakistan Monday per Iranian sources. Lebanon ceasefire Day 2 holding. 14 straight days zero Iran-US-Israel attacks through D50.",
       "D48 EVE UPDATE (Apr 16 16:00 ET): ISRAEL-LEBANON CEASEFIRE 5PM ET + BLOCKADE WIDENED WORLDWIDE + POLYMARKET 78% EXTENSION. (1) TRUMP ANNOUNCED 10-DAY ISRAEL-LEBANON CEASEFIRE effective 5PM ET — Hezbollah accepts if Israeli strikes stop; Israel retains self-defense; extendable by mutual consent. Iran Speaker Ghalibaf: 'as important as' Iran ceasefire. (2) BLOCKADE WIDENED WORLDWIDE — Gen. Dan Caine (Joint Chiefs): US forces will stop any Iran-linked vessel ANYWHERE globally (weapons, oil, metals, electronics), including Pacific operations. 14 ships turned away cumulative; zero boardings. (3) WHITE HOUSE: Leavitt 'productive and ongoing'; Trump talks 'probably, maybe over the weekend'; Hegseth 'ready to restart combat' if no deal. (4) IRAN: armed forces threatened Persian Gulf + Sea of Oman + Red Sea blockade in retaliation; rial -8% since war (-60% since 2025); inflation 47%, food 105%; internet $1.8B cost. (5) POLYMARKET DRAMATIC SHIFT: ceasefire-extended-by-Apr-21 = 78%, holds-Apr-30 = 68%, holds-May-31 = 79%, holds-Dec-31 = 98%, conflict-ends-Dec-31 = 97%, Trump-announces-end-by-Jun-30 = 85%. Brent $94.89 (-0.04%), WTI intraday volatility $90.72-$94.62 on US crude inventory draw. Hormuz ~6 vessels. 10-day Iran zero-attack streak. Lebanon dead 2,100+. Ceasefire Day 10. 5 days to Apr 21 expiry. ALSO: backfilled Apr 15 + Apr 16 entries into ceasefireViolations / Negotiations / EconomicRecovery (morning commit only updated standard per-day arrays).",
@@ -190,7 +191,8 @@
       "Apr 16",
       "Apr 17",
       "Apr 18",
-      "Apr 19"
+      "Apr 19",
+      "Apr 20"
     ],
     "missiles": [
       480,
@@ -233,6 +235,7 @@
       45,
       58,
       12,
+      0,
       0,
       0,
       0,
@@ -296,6 +299,7 @@
       0,
       0,
       0,
+      0,
       0
     ],
     "sourceLabel": "D1-D10: JPost. D11: UAE MoD. D12-D38: fragment est. D39: ceasefire. D40-D48: 0+0 ceasefire holding. D48: Blockade Day 3, 0 attacks. Munir in Tehran. 'In principle' extension. Nuclear breakthrough hopes.",
@@ -342,6 +346,7 @@
       0.5,
       0.5,
       0.5,
+      1,
       1,
       1,
       1,
@@ -408,7 +413,8 @@
       "Apr 16",
       "Apr 17",
       "Apr 18",
-      "Apr 19"
+      "Apr 19",
+      "Apr 20"
     ],
     "brent": [
       65,
@@ -462,7 +468,8 @@
       94.89,
       90.38,
       96.1,
-      97.8
+      97.8,
+      95.42
     ],
     "wti": [
       62,
@@ -516,7 +523,8 @@
       90.72,
       83.85,
       91.8,
-      93.2
+      93.2,
+      89.0
     ],
     "note": "D48 (Apr 16): Brent $94.89 (↓ from D47 $95.72). WTI $90.72 (↓ from $91.50). CONTINUED DECLINE on deal signals — Munir in Tehran, 'in principle' extension (AP), Trump 'amazing two days.' Iran petrochemicals suspended ($54M/day offline). Market pricing ~40% deal before Apr 21. If deal: $85-90. If collapse: $115-125+."
   },
@@ -572,7 +580,8 @@
       "Apr 16",
       "Apr 17",
       "Apr 18",
-      "Apr 19"
+      "Apr 19",
+      "Apr 20"
     ],
     "attrition": [
       2,
@@ -614,6 +623,7 @@
       10,
       10,
       10.2,
+      10.5,
       10.5,
       10.5,
       10.5,
@@ -678,7 +688,8 @@
       5.6,
       5.2,
       6.5,
-      6.5
+      6.5,
+      7.0
     ]
   },
   "latestTargetBreakdown": {
@@ -1142,6 +1153,15 @@
       "capability": "D51: 0+0. Ceasefire Day 12. 15 straight days zero Iran-US-Israel attacks. Ghalibaf 'progress' = first positive diplomatic signal from Tehran since Islamabad talks collapsed; Iran preserving IRGC Navy leverage via Hormuz closure as final negotiating chip going into Monday expiry.",
       "cost": "Brent $97.8 (+1.8% from D50), WTI $93.2 (+1.5%). Oil holding near war-era highs on Hormuz closure. 0 vessels transited Hormuz. US blockade: 23+ ships intercepted total. Internet Day 6 business partial ($1.8B+ cumulative cost). Lebanon dead 2,167+. Iran rial -60% since 2025; inflation 47%, food 105%.",
       "assessment": "D51 — DIPLOMATIC SIGNAL AMID HORMUZ STANDOFF: 2 DAYS TO EXPIRY. Ghalibaf's 'progress' claim is the most positive diplomatic signal from Tehran since Islamabad talks broke down. The convergence of Monday talks and Apr 21 expiry creates maximum pressure for a deal. Trump threatening no extension is classic brinkmanship — but also a real risk. Three structural gaps (nuclear, blockade, compensation) remain. 0 ships through Hormuz = Iran maintaining peak leverage until the final hour. Polymarket extension 74% = markets still price extension as most likely outcome. Convergence ~5.8 (↑ slight from 5.5 on Ghalibaf signal; structural gaps unchanged). 2 days to Apr 21."
+    },
+    {
+      "date": "Apr 20",
+      "missiles": 0,
+      "drones": 0,
+      "primary": "D52 US SEIZES IRANIAN SHIP — TEHRAN VOWS RETALIATION, SKIPS TALKS, 1 DAY TO EXPIRY (Apr 20): The US Navy fired on and seized the Iranian-flagged cargo vessel M/V Touska after it attempted to run the US naval blockade of Iranian ports — the first direct US kinetic action against an Iranian-flagged ship since ceasefire began Apr 8. Iran's Foreign Ministry declared 'no plans for new talks,' with state media reporting Tehran will skip Islamabad Round 2 scheduled for Apr 21 (same day as ceasefire expiry at 8PM ET). Iran's military vowed 'proportional retaliation.' Meanwhile, Trump announced his delegation (VP Vance, Witkoff, Kushner) will travel to Islamabad regardless, offering to meet if Iran attends. Oil: Brent $95.42 (+5.6% from Friday close $90.38), WTI $89.00 (+6.1% from Friday $83.85) — Monday open sharply higher on weekend escalation but pulled back from Sat/Sun spike highs as diplomacy remained open. Hormuz: 0 vessels transited (Iran closure Day 3). US blockade 24+ ships intercepted total. Polymarket: ceasefire extended by Apr 21 = 53% (↓ from 74% yesterday); conflict-ends-Dec-31 = 96%. Lebanon ceasefire Day 4 holding — 'Yellow Line' dispute continues. 16 straight days zero Iran-US-Israel attacks. Internet 1,100+ hours blackout; limited business-tier partial restoration. Ceasefire Day 13. 1 day to Apr 21 expiry.",
+      "capability": "D52: 0+0. Ceasefire Day 13. 16 straight days zero Iran-US-Israel attacks. US seized M/V Touska = first US kinetic action against Iranian-flagged vessel since ceasefire — demonstrates blockade enforcement is live and escalating. Iran threatening retaliation but no attack launched. Tehran refusing talks = maximum leverage play or genuine collapse signal. Hormuz 0 vessels Day 3. Ceasefire expiry T-minus ~32 hours.",
+      "cost": "Brent $95.42 (+5.6% from Friday close), WTI $89.00 (+6.1%). Monday open sharply up from Fri close on weekend ship-shooting/Hormuz news; pulled back from Saturday peak $96.10/$91.80 as diplomacy thread still open. US blockade: 24+ ships intercepted total. Hormuz: 0 vessels Day 3. Iran rial: ~1,543,000/USD. Internet 1,100+ hours blackout; $1.8B+ total economic cost. Lebanon dead 2,167+. Casualties est. ~7,800+ total (last confirmed: 7,650 at D40).",
+      "assessment": "D52 — SHIP SEIZED, TALKS IN DOUBT, EXPIRY TOMORROW: CEASEFIRE ON THE EDGE. The M/V Touska seizure is a critical escalation: (1) First US kinetic action on an Iranian-flagged ship since ceasefire — Iran had to respond loudly or lose face; (2) Iran's 'no talks' statement may be posturing — ultimatum before sitting down; (3) Trump sending delegation anyway = Washington believes Tehran will ultimately show. The next 32 hours are the decisive window. Polymarket drop from 74% → 53% extension odds shows market pricing genuine collapse risk. Three scenarios: (A) Iran attends Islamabad under cover of face-saving framing — extension likely; (B) Iran boycotts but back-channel deal emerges through Pakistan — extension narrow; (C) Full collapse — ceasefire ends Apr 21 8PM, fighting resumes. Escalation ceiling distance now 2.5 (↓ from 3.5) — one more incident could breach ceasefire. ⚠ MODE SWITCH ASSESSMENT NEEDED after Apr 21 8PM ET."
     }
   ],
   "timeline": [
@@ -2000,7 +2020,8 @@
         "Apr 16",
         "Apr 17",
         "Apr 18",
-        "Apr 19"
+        "Apr 19",
+        "Apr 20"
       ],
       "militaryExhaustion": [
         1,
@@ -2042,6 +2063,7 @@
         7,
         7.5,
         7,
+        6.5,
         6.5,
         6.5,
         6.5,
@@ -2106,7 +2128,8 @@
         8.0,
         7.0,
         7.8,
-        8.0
+        8.0,
+        8.3
       ],
       "diplomaticMomentum": [
         0,
@@ -2159,7 +2182,8 @@
         7.5,
         7.5,
         7.0,
-        6.5
+        6.5,
+        5.5
       ],
       "usPoliticalSustainability": [
         8,
@@ -2212,7 +2236,8 @@
         4.0,
         4.2,
         3.8,
-        4.0
+        4.0,
+        3.8
       ],
       "escalationCeilingDistance": [
         7,
@@ -2265,7 +2290,8 @@
         4.0,
         5.5,
         3.0,
-        3.5
+        3.5,
+        2.5
       ]
     },
     "vectorNotes": {
@@ -2344,7 +2370,8 @@
       0,
       0,
       3,
-      1
+      1,
+      4
     ],
     "geoSpreadLabels": [
       "Feb 28",
@@ -2397,7 +2424,8 @@
       "Apr 16",
       "Apr 17",
       "Apr 18",
-      "Apr 19"
+      "Apr 19",
+      "Apr 20"
     ],
     "countriesTargetedPerDay": [
       8,
@@ -2440,6 +2468,7 @@
       9,
       8,
       4,
+      0,
       0,
       0,
       0,
@@ -2503,6 +2532,7 @@
       0,
       0,
       0,
+      0,
       0
     ],
     "interceptRateLabels": [
@@ -2556,7 +2586,8 @@
       "Apr 16",
       "Apr 17",
       "Apr 18",
-      "Apr 19"
+      "Apr 19",
+      "Apr 20"
     ],
     "interceptRate": [
       0.82,
@@ -2596,6 +2627,7 @@
       0.87,
       0.89,
       0.89,
+      0.88,
       0.88,
       0.88,
       0.88,
@@ -3334,7 +3366,8 @@
       "Apr 16",
       "Apr 17",
       "Apr 18",
-      "Apr 19"
+      "Apr 19",
+      "Apr 20"
     ],
     "vessels": [
       62,
@@ -3388,6 +3421,7 @@
       6,
       8,
       2,
+      0,
       0
     ],
     "preWarAverage": 62,
@@ -5500,6 +5534,32 @@
       ],
       "totalCount": 1,
       "maxSeverity": 7
+    },
+    {
+      "day": "Apr 20",
+      "cfDay": 13,
+      "incidents": [
+        {
+          "type": "kinetic",
+          "severity": 9,
+          "actor": "US Navy",
+          "target": "Iranian cargo vessel M/V Touska",
+          "description": "US Navy fired on and seized Iranian-flagged cargo ship M/V Touska after it attempted to run the US naval blockade of Iranian ports in the Strait of Hormuz. First direct US kinetic action against an Iranian-flagged vessel since ceasefire began Apr 8. Pentagon confirmed seizure; Trump announced it publicly. Iran military vowed 'proportional retaliation.'",
+          "description_fa": "نیروی دریایی آمریکا به کشتی باری پرچم ایران «توسکا» شلیک کرد و آن را توقیف نمود پس از تلاش برای شکستن محاصره. اولین اقدام کینتیک مستقیم آمریکا علیه کشتی ایرانی از آغاز آتش‌بس. ایران تهدید به تلافی «متناسب» کرد.",
+          "withinScope": "yes"
+        },
+        {
+          "type": "diplomatic",
+          "severity": 7,
+          "actor": "Iran Foreign Ministry",
+          "target": "Islamabad Round 2 talks",
+          "description": "Iran's Foreign Ministry declared 'no plans for new talks' after M/V Touska seizure, with state media reporting Tehran will skip Islamabad Round 2 scheduled for Apr 21 (expiry day). Iran called the seizure 'piracy.' Trump delegation (Vance/Witkoff/Kushner) announced travel to Islamabad regardless.",
+          "description_fa": "وزارت خارجه ایران اعلام کرد «برنامه‌ای برای مذاکرات جدید وجود ندارد» پس از توقیف توسکا. رسانه‌های دولتی: تهران دور دوم اسلام‌آباد را تحریم می‌کند. ایران توقیف را «دزدی دریایی» خواند.",
+          "withinScope": "yes"
+        }
+      ],
+      "totalCount": 2,
+      "maxSeverity": 9
     }
   ],
   "ceasefireNegotiations": [
@@ -5692,6 +5752,24 @@
       "outcome": "cautious-progress",
       "significance": 7,
       "keyGap": "Three unresolved sticking points: Iran nuclear enrichment rights, US naval blockade lift/Hormuz, war-damage compensation. Hormuz closure = Iran's peak leverage going into Monday talks. Deal or extension must happen Apr 21 = both sides' hard deadline."
+    },
+    {
+      "date": "Apr 20",
+      "cfDay": 13,
+      "event": "US seizes M/V Touska; Iran says 'no talks' and threatens retaliation; Trump sends Vance/Witkoff/Kushner to Islamabad regardless; ceasefire expires tomorrow Apr 21 8PM ET; Polymarket extension drops 74%→53%; Lebanon ceasefire Day 4 holding",
+      "event_fa": "آمریکا کشتی توسکا را توقیف کرد؛ ایران گفت «مذاکره نه» و تهدید به تلافی کرد؛ ترامپ هیئت خود را به اسلام‌آباد فرستاد؛ آتش‌بس فردا ۲۱ آوریل ۸ عصر منقضی می‌شود؛ احتمال تمدید پلی‌مارکت از ۷۴٪ به ۵۳٪ کاهش یافت",
+      "participants": [
+        "US Navy",
+        "Iran Foreign Ministry",
+        "Trump",
+        "Vance",
+        "Witkoff",
+        "Kushner",
+        "Pakistan mediators"
+      ],
+      "outcome": "crisis",
+      "significance": 10,
+      "keyGap": "M/V Touska seizure = Iran had to respond loudly or lose face. 'No talks' may be posturing — Tehran's final ultimatum before deciding to sit down. Trump delegation traveling anyway = Washington bets Iran will attend. Three scenarios: (A) Iran attends Islamabad = extension likely; (B) Back-channel deal through Pakistan = narrow extension; (C) Full collapse = ceasefire ends Apr 21 8PM ET, fighting resumes. T-minus ~32 hours."
     }
   ],
   "ceasefireEconomicRecovery": {
@@ -5707,7 +5785,8 @@
       "Apr 16",
       "Apr 17",
       "Apr 18",
-      "Apr 19"
+      "Apr 19",
+      "Apr 20"
     ],
     "hormuzDaily": [
       8,
@@ -5721,6 +5800,7 @@
       6,
       8,
       2,
+      0,
       0
     ],
     "hormuzPreWar": 135,
@@ -5737,7 +5817,8 @@
       94.89,
       90.38,
       96.1,
-      97.8
+      97.8,
+      95.42
     ],
     "shipsStranded": [
       800,
@@ -5751,9 +5832,10 @@
       830,
       820,
       840,
-      845
+      845,
+      850
     ],
-    "note": "D50-D51 HORMUZ CLOSED + SHOTS: Iran fired on Indian ships Apr 18 → 0 vessels Apr 19 (shots-deterrence). Oil holding $97-98 on Hormuz closure. US blockade 23+ ships intercepted total. Ghalibaf 'progress' signal Apr 19 = positive but structural gaps remain. Internet business partial Day 6 ($1.8B+ cumulative). 2 days to Apr 21 expiry."
+    "note": "D52 CRISIS: US seized M/V Touska Apr 20 → Iran 'no talks' + retaliation threat. Hormuz 0 vessels Day 3. Oil Monday open $95.42 (+5.6% from Fri close) but down from Sat/Sun spike on diplomacy thread. Ceasefire expires Apr 21 8PM ET. ⚠ MODE SWITCH MAY BE NEEDED after Apr 21 8PM."
   },
   "ceasefirePostConflictTree": {
     "branchExtend": [
