@@ -2788,7 +2788,10 @@
         "D46",
         "D47",
         "D48",
-        "D52"
+        "D52",
+        "D53",
+        "D54",
+        "D55"
       ],
       "escalationSpiral": [
         15,
@@ -2812,7 +2815,10 @@
         44,
         37,
         31,
-        52
+        52,
+        46,
+        42,
+        40
       ],
       "protractedAttrition": [
         30,
@@ -2836,7 +2842,10 @@
         22,
         24,
         22,
-        15
+        15,
+        22,
+        27,
+        28
       ],
       "declaredVictory": [
         25,
@@ -2855,6 +2864,9 @@
         13,
         8,
         8,
+        10,
+        10,
+        10,
         10,
         10,
         10,
@@ -2884,7 +2896,10 @@
         16,
         22,
         31,
-        18
+        18,
+        16,
+        14,
+        14
       ],
       "internationalIntervention": [
         10,
@@ -2908,7 +2923,10 @@
         5,
         5,
         5,
-        4
+        4,
+        4,
+        5,
+        6
       ],
       "regimeFracture": [
         5,
@@ -2932,7 +2950,10 @@
         3,
         2,
         1,
-        1
+        1,
+        2,
+        2,
+        2
       ]
     }
   },
@@ -3099,18 +3120,18 @@
     "tehranCommsStatus": {
       "status": "BLACKOUT",
       "statusColor": "red",
-      "internetDownHours": 1248,
-      "lastConfirmedContact": "Feb 28 (D1) — business internet partial since Apr 14",
-      "detail": "52 days. 1,248+ hrs. $2.6B+. LONGEST EVER — NEW RECORD. Business internet partial Day 7 (since Apr 14). Citizens still fully cut off. D52 WARNING: Ceasefire expires TOMORROW — if D53 strikes resume, business internet will almost certainly be revoked. Use business internet window TODAY to contact Tehran. If deal: civilian internet could restore within 48-72 hrs. If escalation: full blackout continues indefinitely.",
-      "detail_fa": "۱٬۲۴۸+ ساعت. ۵۲ روز. $۲.۶B+. رکورد جدید. اینترنت کسب‌وکار جزئی روز ۷. هشدار: آتش‌بس فردا منقضی — اگر D53: قطع کامل. از پنجره امروز استفاده کنید.",
-      "blackoutHours": "1248+"
+      "internetDownHours": 1320,
+      "lastConfirmedContact": "Feb 28 (D1) — business internet partial since Apr 14 (Day 9)",
+      "detail": "55 days. 1,320+ hrs. $2.75B+. LONGEST EVER — NEW RECORD. Business internet partial Day 9 (since Apr 14). Citizens still fully cut off. CRITICAL D55 WARNING: IRGC threatened to cut 7 Gulf undersea cables (FALCON, AAE-1, TGN-Gulf, SEA-ME-WE) — if executed, business internet collapses. Contact Tehran NOW via business internet before cable threat materializes. If deal: civilian internet within 48-72 hrs. If cables cut: complete digital isolation.",
+      "detail_fa": "۱٬۳۲۰+ ساعت. ۵۵ روز. $۲.۷۵B+. رکورد جدید. اینترنت کسب‌وکار جزئی روز ۹. هشدار بحرانی: سپاه تهدید قطع ۷ کابل زیردریایی — اگر اجرا شود: اینترنت کسب‌وکار هم قطع. همین الان تماس بگیرید.",
+      "blackoutHours": "1320+"
     },
     "inventoryRunway": {
-      "months_remaining": 1.9,
-      "detail": "~1.9 months remaining. Deal probability DOWN to 18% (from 31% D48). Ceasefire expires TOMORROW. If D53 escalation: critical by mid-June, possibly June 1. Act THIS WEEK: confirm Armenia overland logistics regardless of ceasefire outcome — this is the only supply path that survives escalation. Begin FY27 bridge financing conversations.",
-      "detail_fa": "~۱.۹ ماه باقی. توافق ۱۸٪ (از ۳۱٪ D48). آتش‌بس فردا منقضی. اگر D53: بحران اواخر مه-اواسط ژوئن. این هفته: ارمنستان تأیید کنید. مذاکرات تأمین مالی پل FY27.",
+      "months_remaining": 1.7,
+      "detail": "~1.7 months remaining. Deal DOWN to 14% (from 18% D52, 31% D48). Maritime war fully active — IRGC seized 2 ships, fired on a third, threatened cable cuts. No Iran nuclear proposal, no Round 2 date. Critical window: Jul 1-10, 2026. Act THIS WEEK: Armenia logistics contract, cable-resilient backup comms (Starlink or sat-phone), FY27 bridge financing. IRGC cable threat is the new existential risk — cables cut = business internet cut = zero Iran coordination.",
+      "detail_fa": "~۱.۷ ماه باقی. توافق ۱۴٪ (از ۱۸٪ D52). جنگ دریایی کامل. سپاه ۲ کشتی توقیف، تهدید کابل. هیچ پیشنهاد هسته‌ای ایران. این هفته: ارمنستان، استارلینک، مذاکره پل مالی FY27.",
       "burnRate": "~$15K-20K/month in fulfilled orders",
-      "criticalDate": "June 1-15, 2026. Deal → extends to Aug+. D53 escalation → accelerates to Jun 1."
+      "criticalDate": "Jul 1-10, 2026. Deal → extends to Sep+. Cable cuts → immediate isolation. Maritime escalation → accelerates to Jun 15."
     },
     "publishingDeepDive": [
       "<strong>PAPER/INK SUPPLY:</strong> Iran imports 70%+ of printing paper. Hormuz closure + sanctions = supply chain severed. Domestic paper mills operating at estimated 20-30% capacity due to power disruptions. Quality declining.",
@@ -3131,11 +3152,11 @@
   },
   "kipExpanded": {
     "dubaiBankingRisk": {
-      "score": 8.5,
+      "score": 9.0,
       "trend": "worsening",
-      "detail": "D52: 8.5/10. UP from 7.5. UAE authorities detained Sarraf network individuals (Apr 19) — formal law enforcement action against Iran-linked informal banking in Dubai. This is unprecedented for UAE in this conflict. Gulf banks no longer cautiously monitoring Iran-linked transactions — they are actively restricting. Brent $95.42 (+5.58%) = market panic. Ceasefire expires tomorrow. If D53 strikes resume: score spikes to 9.5+.",
-      "detail_fa": "D52: ۸.۵/۱۰. افزایش از ۷.۵. امارات صراف‌های ایران‌محور را بازداشت (۱۹ آوریل) — اقدام مستقیم قانونی. بانک‌های خلیج دیگر فقط نظارت نمی‌کنند — فعالانه محدود می‌کنند. اگر D53: ۹.۵+.",
-      "action": "D52 EMERGENCY ACTION: Do NOT attempt ANY Iran-linked Dubai banking transactions. UAE Sarraf crackdown means informal channels are under active law enforcement — using them risks detention of KIP principals. Execute ALL transactions through Tbilisi or KL until further notice."
+      "detail": "D55: 9.0/10. UP from 8.5 (D52). IRGC seized MSC Francesca + Epaminondas in Hormuz — active maritime war. IRGC cable threat (FALCON, AAE-1, TGN-Gulf, SEA-ME-WE) = if executed, UAE financial cloud disruption possible. UAE Sarraf crackdown (Apr 19) ongoing. Trump fired Navy Sec Phelan — US escalation risk = UAE banking freeze risk. Brent $103.38 — above $100 first time since D49. Gulf banks treating all Iran-linked transactions as high-risk.",
+      "detail_fa": "D55: ۹.۰/۱۰. افزایش از ۸.۵. سپاه ۲ کشتی توقیف + تهدید کابل + Brent $103. بانک‌های دبی هر معامله ایران‌محور را پرریسک تلقی می‌کنند. صراف‌ها تحت بازرسی قانونی.",
+      "action": "D55 EMERGENCY ACTION: Do NOT attempt ANY Iran-linked Dubai banking transactions. If IRGC cuts cables: UAE financial cloud disruption could freeze digital banking 48-72 hrs. Maintain $50K+ liquid reserves outside UAE banking. Execute ALL transactions through Tbilisi or KL until maritime war resolves."
     },
     "alternativeHubs": [
       {
@@ -3218,7 +3239,7 @@
         "milestone": "Safe passage >30 vessels/day",
         "estimate": "Deal + 1-2 weeks",
         "status": "blocked",
-        "detail": "REVERSED: Hormuz re-closed D50 after 24-hr opening D49. IRGC fired on Sanmar Herald. M/V Touska seized. 25+ ships turned back. Pre-deal safe passage is now impossible — requires de-escalation first."
+        "detail": "D55: IRGC seized MSC Francesca + Epaminondas, fired on Euphoria. 31 total vessels seized/blocked since D1. 0 commercial ships transiting without IRGC permission. Pre-deal safe passage is impossible — requires full maritime ceasefire, not just missile ceasefire."
       },
       {
         "milestone": "Mine clearance (est. 200+ mines)",
@@ -3270,9 +3291,9 @@
       "value_usd": "~$2.1M",
       "location": "Jebel Ali Free Zone + Hamriyah Free Zone",
       "insured": true,
-      "detail": "Most cargo insured under pre-war marine policies. Claims processing delayed — Lloyd's overwhelmed. Perishables (~15% by value) written off. Non-perishable goods safe in bonded storage but incurring daily storage fees (~$150/container/day).",
-      "detail_fa": "اکثر بار بیمه. پردازش خسارت تأخیر. فاسدشدنی (~۱۵٪) از دست رفته. غیرفاسدشدنی در انبار اما هزینه روزانه (~$۱۵۰/کانتینر/روز).",
-      "storageFees": "$7,800+ (52 days x $150/day)"
+      "detail": "Most cargo insured under pre-war marine policies. Claims processing delayed — Lloyd's overwhelmed. Perishables (~15% by value) written off. Non-perishable goods safe in bonded storage but incurring daily storage fees (~$150/container/day). Cable threat adds new risk: if FALCON/AAE-1 cut, Lloyd's electronic claims processing could be disrupted.",
+      "detail_fa": "اکثر بار بیمه. پردازش خسارت تأخیر. فاسدشدنی (~۱۵٪) از دست رفته. غیرفاسدشدنی در انبار اما هزینه روزانه (~$۱۵۰/کانتینر/روز). تهدید کابل: پردازش خسارت لویدز ممکن مختل شود.",
+      "storageFees": "$8,250+ (55 days x $150/day)"
     },
     "insuranceCostIndex": {
       "labels": [
@@ -3285,7 +3306,8 @@
         "D34",
         "D35",
         "D36",
-        "D38"
+        "D38",
+        "D55"
       ],
       "warRiskPremium_pct": [
         0.02,
@@ -3297,7 +3319,8 @@
         4.5,
         5,
         5.2,
-        5.3
+        5.3,
+        5.5
       ],
       "hullInsurance_pct": [
         0.15,
@@ -3309,9 +3332,10 @@
         12.5,
         13,
         13.5,
-        13.5
+        13.5,
+        14.0
       ],
-      "note": "D38: Crowne Plaza Bahrain drone + USN Fifth Fleet missile. IRGC 'new order' = permanent Gulf posture. Hull 13.5% = UNINSURABLE. War risk 5.3%."
+      "note": "D38: Crowne Plaza Bahrain drone + USN Fifth Fleet missile. IRGC 'new order' = permanent Gulf posture. Hull 13.5% = UNINSURABLE. D55: MSC Francesca + Epaminondas seized, Brent $103.38, cable threat premium added, hull 14.0%, war risk 5.5%."
     }
   },
   "cumulativeByCountry": {
