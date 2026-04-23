@@ -1,6 +1,6 @@
 {
   "meta": {
-    "lastUpdated": "2026-04-22T18:00:00-04:00",
+    "lastUpdated": "2026-04-23T10:30:00-04:00",
     "preWarBaselines": {
       "d1Missiles": 480,
       "preWarOil": 65,
@@ -8,6 +8,7 @@
       "preWarGas": 3
     },
     "notes": [
+      "D55 (Apr 23): IRGC confirms seizure of 2 Hormuz ships + fires on 3rd (Apr 22 overhang). Israel kills 5 in Lebanon incl. journalist Amal Khalil. Trump 'no timeframe' on Iran war. IRGC tightens grip, FM Araghchi sidelined. US blockade: 31 ships turned away. Brent $101.14, WTI $94.06. Hormuz: 3 vessels/day. Internet Day 55. Lebanon: 2,305+ killed. 16-day zero-attack streak. Ceasefire Day 16 — stalemate deepens.",
       "D54 (Apr 22): Trump extends ceasefire indefinitely at Pakistan request, citing 'fractured' Iran govt. No end date. Iran silent — no delegation, no proposal, Vance Islamabad trip cancelled. Blockade continues. M/T Tifani boarded overnight (3rd US maritime action). Brent +5.1% to $98.60. WTI $89.33. Hormuz: 3 ships/day. Internet Day 54 tiered access. Lebanon 2,300+ killed. 15-day zero-attack streak.",
       "D53 (Apr 21 12:00 ET): CEASEFIRE EXPIRY DAY — VANCE IN ISLAMABAD, IRAN ABSENT. (1) Vance + Witkoff + Kushner in Islamabad; Iran sends zero delegation. (2) Trump: extension 'highly unlikely.' IRGC pre-positioned. (3) Second US vessel seizure Arabian Sea (Iran-linked). (4) Brent ~$93.80 est (-1.7%) on peace-talk optimism. (5) Hormuz ~3 vessels/day; Iran closed Apr 18. (6) Ceasefire expires 8PM ET. War likely resumes D54. ⚠ MODE SWITCH NEEDED after 8PM ET if ceasefire lapses (flip ceasefireMode.enabled false).",
       "D52 (Apr 20 07:00 ET): CEASEFIRE EXPIRES TOMORROW — M/V TOUSKA SEIZED + HORMUZ RE-CLOSED + IRAN REFUSES TALKS. (1) CEASEFIRE EXPIRY TOMORROW APR 21: 14-day truce on final day. Iran VP Aref: US demands 'childish' and inconsistent. Iran says no plans for Round 2 in Islamabad. Trump: 'Maybe I won't extend it — so you have a blockade, and unfortunately we have to start dropping bombs again.' US officials heading to Pakistan; Iran says won't participate. (2) M/V TOUSKA SEIZED D51 (Apr 19): USS Spruance (Arleigh Burke destroyer) fired 5-inch Mk 45 gun into engine room after 6-hour standoff in Gulf of Oman. US Marines from 31st MEU boarded and took custody. 25 total vessels turned back since blockade began D45. Iran vowed retaliation 'once safety of crew ensured.' Trump announced first on social media; CENTCOM confirmed. (3) HORMUZ RE-CLOSED D50 (Apr 18): Iran reversed D49 opening within hours. IRGC gunboats fired on VLCC Sanmar Herald (Indian-flagged) forcing return; CMA CGM Everglade hit by rocket off Oman. Iran: will not reopen until US lifts blockade of Iranian ports. (4) D49 (Apr 17): Iran FM Araghchi declared Hormuz 'completely open to all shipping.' Oil crashed 11-12% (Brent $84, WTI $80). Trump: US blockade of Iranian PORTS stays regardless. Hormuz re-closed same day. (5) UAE CRACKDOWN + FINANCIAL BACKSTOP: UAE detained dozens of Tehran-linked money changers (Sarraf networks), shuttered exchange houses. UAE Central Bank Governor Balama in talks with Fed/Treasury about currency swap line (Bloomberg/WSJ Apr 19). $27B UAE-Iran annual trade corridor under maximum pressure. (6) CASUALTIES: Lebanon 2,294+ killed (up from 2,055), 7,061+ wounded. Internet blackout Day 52 = 1,248+ hours — record for any country globally. Business internet partial Day 7. (7) Brent $95.42 (+5.58% from D51), WTI ~$91. Convergence 4.9 (DOWN from 5.7 D48 peak via 6.0 D49 → now 4.9). Scenarios: Escalation 52% / Deal 18% / Stalled 15% / Victory 10% / Intervention 4% / Fracture 1%.",
@@ -194,7 +195,8 @@
       "Apr 19",
       "Apr 20",
       "Apr 21",
-      "Apr 22"
+      "Apr 22",
+      "Apr 23"
     ],
     "missiles": [
       480,
@@ -237,6 +239,7 @@
       45,
       58,
       12,
+      0,
       0,
       0,
       0,
@@ -293,6 +296,7 @@
       50,
       62,
       18,
+      0,
       0,
       0,
       0,
@@ -364,7 +368,8 @@
       1,
       1,
       0.7,
-      92
+      92,
+      80
     ],
     "confidenceNote": "1.0 = JPost verified day-by-day (D1-D10). 0.8 = UAE MoD official scaled (D11). 0.6 = fragment estimates from Gulf reports (D12-D29). 0.5 = latest data, less verified (D30+). 1.0 = ceasefire/blockade confirmed 0 launches (D40-D52)."
   },
@@ -424,7 +429,8 @@
       "Apr 19",
       "Apr 20",
       "Apr 21",
-      "Apr 22"
+      "Apr 22",
+      "Apr 23"
     ],
     "brent": [
       65,
@@ -481,7 +487,8 @@
       90.38,
       95.42,
       93.8,
-      98.6
+      98.6,
+      101.14
     ],
     "wti": [
       62,
@@ -538,7 +545,8 @@
       85.5,
       91.0,
       87.3,
-      89.33
+      89.33,
+      94.06
     ],
     "note": "D52 (Apr 20): Brent $95.42 (↑5.58%). D49: crashed ~11% to $84 (Hormuz opening). D50: rebounded $90 (Hormuz re-closed). D51: $90.38. D52: $95.42 (Touska seizure + ceasefire expiry fears). Ceasefire expires tomorrow Apr 21. Escalation 52%. If collapse: $115-125+. If deal: $85-90."
   },
@@ -597,7 +605,8 @@
       "Apr 19",
       "Apr 20",
       "Apr 21",
-      "Apr 22"
+      "Apr 22",
+      "Apr 23"
     ],
     "attrition": [
       2,
@@ -639,6 +648,7 @@
       10,
       10,
       10.2,
+      10.5,
       10.5,
       10.5,
       10.5,
@@ -709,7 +719,8 @@
       7.0,
       7.5,
       7.5,
-      8.0
+      8.0,
+      8.3
     ]
   },
   "latestTargetBreakdown": {
@@ -1200,6 +1211,15 @@
       "capability": "0+0 missile/drone. Day 15 zero-attack streak — record. IRGC remains pre-positioned but ceasefire extension suspends immediate threat window. Iran's 'unified proposal' demand is internally contested — Khamenei office, SNSC, and Araghchi FM have not coordinated public position.",
       "cost": "Brent $98.60 (↑5.1% — peace-hope collapse). WTI $89.33. Iran internet Day 54 — tiered 'Internet Pro' paid-access scheme expanding but most Iranians still cut off. $1.8B+ economic shutdown cost. M/T Tifani boarded (3rd US maritime action). 27+ vessels intercepted/diverted cumulative. Rial ~1.35M/USD (est). Lebanon 2,300+ killed. Israel-Lebanon ceasefire Day 7 (of 10).",
       "assessment": "D54 — INDEFINITE CEASEFIRE EXTENSION. Trump's open-ended hold is a de-escalation that buys time but resolves nothing: Iran has not agreed to submit a proposal, and the blockade — which Tehran calls an act of war — continues. Key read: Iran's silence is not compliance; it reflects internal fracture (Khamenei hardliners vs. pragmatists). Markets read extension as unstable: oil +5.1%. Scenarios: (A) Iran submits proposal in ≤7 days = 15%. (B) Stalemate drags 2–3 weeks, extension frays = 55%. (C) Iran splinter faction fires, war resumes = 30%."
+    },
+    {
+      "date": "Apr 23",
+      "missiles": 0,
+      "drones": 0,
+      "primary": "D55 CEASEFIRE DAY 16 — IRGC HORMUZ SEIZURES CONFIRMED, ISRAEL KILLS JOURNALIST IN LEBANON, TRUMP 'NO TIMEFRAME': Iran-US direct ceasefire holds at 16-day zero-attack mark, but proxy escalation mounts. Iran IRGC confirmed: seized 2 commercial vessels and fired on a third in Strait of Hormuz on Apr 22 (D54/D55 boundary), citing 'maritime regulation violations' — Iran counter-blockade hardens. Israel kills 5 in Lebanon incl. journalist Amal Khalil on Apr 23 — Day 8 of 10-day Israel-Lebanon ceasefire; 2,305+ Lebanese dead. Trump tells reporters there is 'no time frame' on Iran war. IRGC consolidating power: civilian FM Araghchi sidelined, Euronews reports guards tighten grip as Ghalibaf pragmatist faction loses ground. US blockade at 31 ships turned away cumulative. Brent $101.14 (+2.6% est).",
+      "capability": "0+0 missile/drone. 16-day zero-attack streak continues — new record. IRGC counter-blockade in Hormuz: 2 ships seized, 1 attacked Apr 22. Iran proxy strategy hardens while direct strikes avoided. Internal fracture confirmed: IRGC hardliner faction dominant over FM pragmatist track; Ghalibaf sidelined.",
+      "cost": "Brent $101.14 (est, +2.6% intraday). WTI $94.06 (est). Hormuz: ~3 vessels/day (97% below pre-war 135). Internet Day 55 — 'Internet Pro' tiered paid access expanding; direct cost $30–40M/day; cumulative $1.85B+ est. US blockade: 31 ships turned away cumulative. Lebanon: 2,305+ killed. Rial ~1.35M/USD (est). Iran economy: IMF projects −6.1% GDP, 68.9% inflation.",
+      "assessment": "D55 — ESCALATORY STALEMATE DEEPENS. Ceasefire technically intact on Iran-US missile front, but dual proxy escalation (IRGC Hormuz seizures + Israel Lebanon kills) signals the truce is hollow and eroding. Trump’s 'no timeframe' statement removes urgency on Tehran to engage, paradoxically reducing incentive for Iran to submit proposal. IRGC ascendancy confirmed — civilian FM track sidelined. Oil crossing $101 reflects market re-pricing of extended conflict. Scenarios: (A) Iran submits fragmented proposal within 7 days = 20%. (B) Extension drags, proxy escalation grows, ceasefire erodes = 50%. (C) Lebanon flare or Hormuz incident reopens Iran-US hot war = 30%."
     }
   ],
   "timeline": [
@@ -2089,7 +2109,8 @@
         "Apr 19",
         "Apr 20",
         "Apr 21",
-        "Apr 22"
+        "Apr 22",
+        "Apr 23"
       ],
       "militaryExhaustion": [
         1,
@@ -2131,6 +2152,7 @@
         7,
         7.5,
         7,
+        6.5,
         6.5,
         6.5,
         6.5,
@@ -2201,7 +2223,8 @@
         7.5,
         8.5,
         8.5,
-        8.7
+        8.7,
+        8.9
       ],
       "diplomaticMomentum": [
         0,
@@ -2257,7 +2280,8 @@
         1.5,
         2.5,
         2.0,
-        3.0
+        3.0,
+        1.5
       ],
       "usPoliticalSustainability": [
         8,
@@ -2313,7 +2337,8 @@
         3.5,
         4.0,
         4.0,
-        4.3
+        4.3,
+        4.2
       ],
       "escalationCeilingDistance": [
         7,
@@ -2369,7 +2394,8 @@
         2.0,
         2.0,
         1.5,
-        2.5
+        2.5,
+        1.5
       ]
     },
     "vectorNotes": {
@@ -2451,7 +2477,8 @@
       0,
       0,
       0,
-      0
+      0,
+      2
     ],
     "geoSpreadLabels": [
       "Feb 28",
@@ -2507,7 +2534,8 @@
       "Apr 19",
       "Apr 20",
       "Apr 21",
-      "Apr 22"
+      "Apr 22",
+      "Apr 23"
     ],
     "countriesTargetedPerDay": [
       8,
@@ -2550,6 +2578,7 @@
       9,
       8,
       4,
+      0,
       0,
       0,
       0,
@@ -2619,6 +2648,7 @@
       0,
       0,
       0,
+      0,
       0
     ],
     "interceptRateLabels": [
@@ -2675,7 +2705,8 @@
       "Apr 19",
       "Apr 20",
       "Apr 21",
-      "Apr 22"
+      "Apr 22",
+      "Apr 23"
     ],
     "interceptRate": [
       0.82,
@@ -2715,6 +2746,7 @@
       0.87,
       0.89,
       0.89,
+      0.88,
       0.88,
       0.88,
       0.88,
@@ -3466,7 +3498,8 @@
       "Apr 19",
       "Apr 20",
       "Apr 21",
-      "Apr 22"
+      "Apr 22",
+      "Apr 23"
     ],
     "vessels": [
       62,
@@ -3522,6 +3555,7 @@
       3,
       2,
       2,
+      3,
       3,
       3
     ],
@@ -5686,6 +5720,32 @@
       ],
       "totalCount": 2,
       "maxSeverity": 6
+    },
+    {
+      "day": "Apr 23",
+      "cfDay": 16,
+      "incidents": [
+        {
+          "type": "maritime_seizure",
+          "severity": 7,
+          "actor": "Iran IRGC",
+          "target": "2 commercial vessels — Strait of Hormuz",
+          "description": "Iran IRGC confirms seizure of 2 commercial ships and firing on a third in the Strait of Hormuz on Apr 22–23, citing 'violations of maritime regulations.' Seizures represent Iran's counter-blockade response to Trump's indefinite ceasefire extension that maintained the US naval blockade. Iran calls US blockade an 'act of war' and frames IRGC actions as defensive.",
+          "description_fa": "سپاه پاسداران انقلاب توقیف دو کشتی تجاری و آتش به کشتی سوم را در تنگه هرمز تأیید کرد.",
+          "withinScope": "yes"
+        },
+        {
+          "type": "strike",
+          "severity": 4,
+          "actor": "Israel",
+          "target": "Lebanon — journalist Amal Khalil among 5 killed",
+          "description": "Israeli strikes on Lebanon kill at least 5 people on Apr 23, including Lebanese journalist Amal Khalil. Lebanese government condemns killing as a 'heinous crime.' Strikes threaten Day 8 of Israel-Lebanon 10-day ceasefire. Iran warns of 'strong responses' to Israel's Lebanon actions.",
+          "description_fa": "حملات اسرائیل به لبنان در روز ۲۳ آوریل حداقل ۵ نفر از جمله خبرنگار عمال خلیل را کشت.",
+          "withinScope": "no"
+        }
+      ],
+      "totalCount": 2,
+      "maxSeverity": 7
     }
   ],
   "ceasefireNegotiations": [
@@ -5922,6 +5982,21 @@
       "outcome": "extended_indefinite",
       "significance": 8,
       "keyGap": "Iran refuses to submit 'unified proposal' while blockade continues. Trump: extension holds until proposal submitted and 'discussions concluded one way or the other.' Iran FM: 'No negotiations under shadow of threats.' Internal Iran fracture: Khamenei hardliners vs. Araghchi pragmatists. Nuclear enrichment gap remains fundamental — US zero enrichment vs. Iran 20-yr right. Oil +5.1% reflects market skepticism."
+    },
+    {
+      "date": "Apr 23",
+      "cfDay": 16,
+      "event": "Trump 'no time frame' on Iran war; IRGC tightens grip; civilian FM track sidelined; second Islamabad round indefinitely stalled",
+      "event_fa": "ترامپ: 'هیچ جدول زمانی' برای جنگ ایران. سپاه پاسداران قدرت را سفت کردند؛ وزارت خارجه غیرفعال شد.",
+      "participants": [
+        "Trump",
+        "Rubio (Lebanon track)",
+        "Iran IRGC (internal)",
+        "Araghchi FM (sidelined)"
+      ],
+      "outcome": "stalled",
+      "significance": 7,
+      "keyGap": "Trump's 'no timeframe' removes urgency; IRGC dominance over civilian FM track means no unified Iranian proposal is likely soon. Iran: Araghchi's pragmatist position undercut by IRGC hardliners who seized Hormuz ships hours after ceasefire extension. US blockade remains central grievance. Nuclear enrichment gap unresolved. Second Islamabad round has no date. Lebanon strikes further complicate Iran's political calculus."
     }
   ],
   "ceasefireEconomicRecovery": {
@@ -5940,7 +6015,8 @@
       "Apr 19",
       "Apr 20",
       "Apr 21",
-      "Apr 22"
+      "Apr 22",
+      "Apr 23"
     ],
     "hormuzDaily": [
       8,
@@ -5953,6 +6029,7 @@
       4,
       6,
       9,
+      3,
       3,
       3,
       3,
@@ -5976,7 +6053,8 @@
       96.0,
       95.42,
       93.8,
-      98.6
+      98.6,
+      101.14
     ],
     "shipsStranded": [
       800,
@@ -5993,9 +6071,10 @@
       862,
       870,
       870,
-      876
+      876,
+      882
     ],
-    "note": "Hormuz re-closed Apr 18 after brief Apr 17 'opening' confusion. Touska seized Apr 19, Tifani boarded Apr 22 — 3rd US maritime action. Trump extends ceasefire indefinitely Apr 21 at Pakistan request — Brent spikes $98.60 (+5.1%) as peace-talk hope fades. Iran internet Day 54 — selective 'Internet Pro' paid scheme expanding; $1.8B+ total shutdown cost. Rial ~1.35M/USD (est). Brent range D46–D54: $89.50–$102.00. Hormuz: 3 vessels/day (96% below pre-war 135). ⚠ ceasefireMode.enabled=true — ceasefire extended indefinitely; user should update expiresAt field."
+    "note": "Hormuz effectively closed since Apr 18 re-closure. IRGC seized 2 ships + fired on 1 more Apr 22 — Iran counter-blockade response to indefinite ceasefire extension. Brent crosses $101 Apr 23 (+2.6%) on renewed escalation. US blockade: 31 ships turned away cumulative. Iran internet Day 55 — 'Internet Pro' tiered paid access expanding; $30-40M/day direct cost, cumulative $1.85B+ est. Rial ~1.35M/USD (est). Lebanon: 2,305+ killed. IMF: Iran GDP −6.1%, inflation 68.9%. IRGC tightening political grip — civilian FM track sidelined. Brent range D46–D55: $89.50–$102.00. ⚠ ceasefireMode.enabled=true — ceasefire extended indefinitely; user should update expiresAt field."
   },
   "ceasefirePostConflictTree": {
     "branchExtend": [
