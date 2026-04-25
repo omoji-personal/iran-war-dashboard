@@ -1,6 +1,6 @@
 {
   "meta": {
-    "lastUpdated": "2026-04-24T18:00:00-04:00",
+    "lastUpdated": "2026-04-25T18:00:00-04:00",
     "preWarBaselines": {
       "d1Missiles": 480,
       "preWarOil": 65,
@@ -8,6 +8,7 @@
       "preWarGas": 3
     },
     "notes": [
+      "D57 (Apr 25): ROUND 2 DIPLOMACY — Witkoff + Kushner fly to Islamabad; Araghchi in Pakistan for Round 2 talks. Iran FM spokesperson publicly denies direct US-Iran meeting; sources say Monday (Apr 27) meeting possible. Ghalibaf absent — Vance not traveling. Brent $105.33 (-0.3%), WTI $94.40 (-1.7%). 18-day zero-attack streak (record). Israel kills 6+ in Lebanon since Apr 23 ceasefire extension; Hezbollah calls it 'meaningless.' Lebanon: 2,491 killed total. Hormuz: ~3 vessels/day. Internet Day 58. Ships stranded ~894. Ceasefire Day 18.",
       "D56 (Apr 24): Lebanon ceasefire extended 3 weeks at White House. Brent $105.63 (+4.4%), WTI $96.07. Trump 'clock ticking for Tehran.' Rubio: Iran World Cup not barred. Hormuz ~3 vessels/day. Internet Day 57. 17-day zero-attack streak (record). Iran-US Round 2 Islamabad still no date. Naval confrontation risk elevated (US ordered to destroy Iranian mine-laying boats Apr 23). Ceasefire Day 17.",
       "D55 (Apr 23): IRGC confirms seizure of 2 Hormuz ships + fires on 3rd (Apr 22 overhang). Israel kills 5 in Lebanon incl. journalist Amal Khalil. Trump 'no timeframe' on Iran war. IRGC tightens grip, FM Araghchi sidelined. US blockade: 31 ships turned away. Brent $101.14, WTI $94.06. Hormuz: 3 vessels/day. Internet Day 55. Lebanon: 2,305+ killed. 16-day zero-attack streak. Ceasefire Day 16 — stalemate deepens.",
       "D54 (Apr 22): Trump extends ceasefire indefinitely at Pakistan request, citing 'fractured' Iran govt. No end date. Iran silent — no delegation, no proposal, Vance Islamabad trip cancelled. Blockade continues. M/T Tifani boarded overnight (3rd US maritime action). Brent +5.1% to $98.60. WTI $89.33. Hormuz: 3 ships/day. Internet Day 54 tiered access. Lebanon 2,300+ killed. 15-day zero-attack streak.",
@@ -198,7 +199,8 @@
       "Apr 21",
       "Apr 22",
       "Apr 23",
-      "Apr 24"
+      "Apr 24",
+      "Apr 25"
     ],
     "missiles": [
       480,
@@ -241,6 +243,7 @@
       45,
       58,
       12,
+      0,
       0,
       0,
       0,
@@ -299,6 +302,7 @@
       50,
       62,
       18,
+      0,
       0,
       0,
       0,
@@ -374,7 +378,8 @@
       0.7,
       92,
       80,
-      75
+      75,
+      70
     ],
     "confidenceNote": "1.0 = JPost verified day-by-day (D1-D10). 0.8 = UAE MoD official scaled (D11). 0.6 = fragment estimates from Gulf reports (D12-D29). 0.5 = latest data, less verified (D30+). 1.0 = ceasefire/blockade confirmed 0 launches (D40-D52)."
   },
@@ -436,7 +441,8 @@
       "Apr 21",
       "Apr 22",
       "Apr 23",
-      "Apr 24"
+      "Apr 24",
+      "Apr 25"
     ],
     "brent": [
       65,
@@ -495,7 +501,8 @@
       93.8,
       98.6,
       101.14,
-      105.63
+      105.63,
+      105.33
     ],
     "wti": [
       62,
@@ -554,7 +561,8 @@
       87.3,
       89.33,
       94.06,
-      96.07
+      96.07,
+      94.4
     ],
     "note": "D52 (Apr 20): Brent $95.42 (↑5.58%). D49: crashed ~11% to $84 (Hormuz opening). D50: rebounded $90 (Hormuz re-closed). D51: $90.38. D52: $95.42 (Touska seizure + ceasefire expiry fears). Ceasefire expires tomorrow Apr 21. Escalation 52%. If collapse: $115-125+. If deal: $85-90."
   },
@@ -615,7 +623,8 @@
       "Apr 21",
       "Apr 22",
       "Apr 23",
-      "Apr 24"
+      "Apr 24",
+      "Apr 25"
     ],
     "attrition": [
       2,
@@ -657,6 +666,7 @@
       10,
       10,
       10.2,
+      10.5,
       10.5,
       10.5,
       10.5,
@@ -731,7 +741,8 @@
       7.5,
       8.0,
       8.3,
-      8.7
+      8.7,
+      8.8
     ]
   },
   "latestTargetBreakdown": {
@@ -1240,6 +1251,15 @@
       "capability": "0+0 missile/drone. 17-day zero-attack streak — longest of the conflict. IRGC maintains Hormuz counter-blockade posture after Apr 22–23 seizures; US Navy ordered to destroy Iranian mine-laying vessels (Apr 23 executive order) — naval confrontation risk elevated. Iran internally fractured: no unified proposal; civilian FM Araghchi remains sidelined by IRGC hardliners.",
       "cost": "Brent $105.63 (+4.4%). WTI $96.07. Hormuz: ~3 vessels/day (97% below pre-war 135). Internet Day 57 — tiered ‘Internet Pro’ paid access; direct cost $30–40M/day; cumulative ~$1.93B est. US blockade: 31+ ships turned away cumulative. Lebanon: 2,305+ killed (est). Rial ~1.35M/USD (est). Lebanon-Israel ceasefire extended 3 more weeks (to mid-May).",
       "assessment": "D56 — CEASEFIRE HOLDS BUT FRAGILITY DEEPENS. Lebanon track diplomatic win — Rubio brokered 3-week extension. But Iran-US is structurally deadlocked: no unified proposal, IRGC ascendant over civilian track, blockade intact as Tehran’s central grievance. Brent at $105 signals market fear of re-escalation. Trump’s ‘clock ticking’ is calibrated pressure but without a back-channel, Tehran has no mechanism to respond even if willing. Naval confrontation risk in Hormuz elevated with US mine-sweeping orders. Scenarios: (A) Iran submits partial proposal within 7 days = 18%. (B) Extended stalemate, proxy escalation grows = 50%. (C) Naval confrontation in Hormuz triggers hot-war resumption = 32%."
+    },
+    {
+      "date": "Apr 25",
+      "missiles": 0,
+      "drones": 0,
+      "primary": "D57 CEASEFIRE DAY 18 — WITKOFF & KUSHNER FLY TO ISLAMABAD, ARAGHCHI IN PAKISTAN FOR ROUND 2; BRENT $105.33; 18-DAY ZERO-ATTACK RECORD: Most significant diplomatic day since Round 1. Iran FM Araghchi arrives in Islamabad for talks with Pakistani mediators; White House confirms Witkoff and Kushner en route to Pakistan for 'direct talks' — but Iran FM spokesperson Baghaei publicly denies any US-Iran direct meeting is planned, saying Araghchi is there for Pakistani officials only. Sources say a Witkoff-Araghchi meeting could happen Monday (Apr 27). Vance not traveling because Ghalibaf (IRGC speaker) is absent from Iran delegation — civilian FM track now leads. Lebanon: Israeli strikes kill 6+ since ceasefire extension; Hezbollah calls 3-week extension 'meaningless'; Lebanon MoH: 2,491 killed total. Brent $105.33 (-0.3%), WTI $94.40 (-1.7%). Hormuz ~3 vessels/day. Internet Day 58.",
+      "capability": "0+0 missile/drone. 18-day zero-attack streak — new conflict record. IRGC Hormuz counter-blockade maintained (2 ships seized Apr 22 still held; dual blockade ongoing). US blockade: 31+ ships turned away. Civilian FM track (Araghchi) now leading Iran delegation in Islamabad — IRGC speaker Ghalibaf absent. Signals possible IRGC tactical step-back or internal fracture on negotiating track.",
+      "cost": "Brent $105.33 (-0.3%). WTI $94.40 (-1.7%). Hormuz: ~3 vessels/day (97% below pre-war 135). Internet Day 58 — 'Internet Pro' tiered paid access only; cumulative economic cost ~$1.97B est ($30–40M/day). US blockade: 31+ ships turned away cumulative; ~894 seafarers' ships stranded (est). Lebanon: 2,491 killed total (Lebanese MoH). Rial ~1.317M/USD (est). Iran economy: IMF projects −6.1% GDP, 68.9% inflation.",
+      "assessment": "D57 — DIPLOMATIC PIVOT OR FALSE DAWN? The Araghchi-in-Islamabad / Witkoff-Kushner-en-route development is the most consequential since the failed Round 1 (Apr 11–12). Ghalibaf's absence — and Vance's corresponding non-travel — is the key signal: either IRGC is allowing civilian FM track to lead (positive), or hardliners blocked Ghalibaf to sabotage talks (negative). Iran's public denial of a direct US meeting while sending Araghchi to Islamabad is classic Iranian diplomatic hedging — leaves room to meet while managing domestic optics. If talks occur Monday, the key gap remains the same: US blockade vs. Iran's demand for full ceasefire terms before engaging on nuclear/regional issues. Scenarios: (A) Araghchi-Witkoff talks Monday → framework agreed = 22%. (B) Talks fizzle, Iran submits partial proposal = 38%. (C) Talks collapse, US resumes strikes within 10 days = 28%. (D) Pakistan brokers surprise deal = 12%."
     }
   ],
   "timeline": [
@@ -2131,7 +2151,8 @@
         "Apr 21",
         "Apr 22",
         "Apr 23",
-        "Apr 24"
+        "Apr 24",
+        "Apr 25"
       ],
       "militaryExhaustion": [
         1,
@@ -2173,6 +2194,7 @@
         7,
         7.5,
         7,
+        6.5,
         6.5,
         6.5,
         6.5,
@@ -2247,7 +2269,8 @@
         8.5,
         8.7,
         8.9,
-        9.1
+        9.1,
+        9.2
       ],
       "diplomaticMomentum": [
         0,
@@ -2305,7 +2328,8 @@
         2.0,
         3.0,
         1.5,
-        1.8
+        1.8,
+        3.5
       ],
       "usPoliticalSustainability": [
         8,
@@ -2363,7 +2387,8 @@
         4.0,
         4.3,
         4.2,
-        4.0
+        4.0,
+        3.9
       ],
       "escalationCeilingDistance": [
         7,
@@ -2421,7 +2446,8 @@
         1.5,
         2.5,
         1.5,
-        1.2
+        1.2,
+        1.5
       ]
     },
     "vectorNotes": {
@@ -2505,6 +2531,7 @@
       0,
       0,
       2,
+      2,
       2
     ],
     "geoSpreadLabels": [
@@ -2563,7 +2590,8 @@
       "Apr 21",
       "Apr 22",
       "Apr 23",
-      "Apr 24"
+      "Apr 24",
+      "Apr 25"
     ],
     "countriesTargetedPerDay": [
       8,
@@ -2606,6 +2634,7 @@
       9,
       8,
       4,
+      0,
       0,
       0,
       0,
@@ -2679,6 +2708,7 @@
       0,
       0,
       0,
+      0,
       0
     ],
     "interceptRateLabels": [
@@ -2737,7 +2767,8 @@
       "Apr 21",
       "Apr 22",
       "Apr 23",
-      "Apr 24"
+      "Apr 24",
+      "Apr 25"
     ],
     "interceptRate": [
       0.82,
@@ -2777,6 +2808,7 @@
       0.87,
       0.89,
       0.89,
+      0.88,
       0.88,
       0.88,
       0.88,
@@ -3556,7 +3588,8 @@
       "Apr 21",
       "Apr 22",
       "Apr 23",
-      "Apr 24"
+      "Apr 24",
+      "Apr 25"
     ],
     "vessels": [
       62,
@@ -3612,6 +3645,7 @@
       3,
       2,
       2,
+      3,
       3,
       3,
       3,
@@ -5821,6 +5855,32 @@
       ],
       "totalCount": 1,
       "maxSeverity": 3
+    },
+    {
+      "day": "Apr 25",
+      "cfDay": 18,
+      "incidents": [
+        {
+          "type": "strike",
+          "severity": 4,
+          "actor": "Israel",
+          "target": "Lebanon — 6+ killed since ceasefire extension (Apr 23–25)",
+          "description": "Israeli strikes across southern Lebanon kill at least 6 people and wound 2 more (Lebanese MoH) since the 3-week ceasefire extension announced Apr 23. Hezbollah lawmaker Ali Fayyad declares the extension 'meaningless' in light of continued Israeli attacks. Lebanon's Health Ministry total: 2,491 killed, 7,719 wounded since Mar 2.",
+          "description_fa": "حملات اسرائیل به جنوب لبنان از ۲۳ آوریل حداقل ۶ نفر را کشته است. نماینده حزب‌الله فیاض تمدید آتش‌بس را 'بی‌معنی' خواند. کل کشته‌های لبنان: ۲٬۴۹۱ نفر.",
+          "withinScope": "no"
+        },
+        {
+          "type": "blockade",
+          "severity": 3,
+          "actor": "US Navy / Iran IRGC",
+          "target": "Strait of Hormuz / Iranian ports",
+          "description": "US naval blockade continues — 31+ ships turned away cumulative; 2 IRGC-seized vessels (MSC Francesca, Epaminondas) still held. Dual blockade persists: US blocks Iranian ports, Iran enforces Hormuz counter-blockade. ~3 vessels/day transiting (97% below pre-war 135). Thousands of seafarers stranded. No new seizures reported Apr 25.",
+          "description_fa": "محاصره دریایی آمریکا ادامه دارد — بیش از ۳۱ کشتی بازگردانده شده. دو کشتی توقیف‌شده توسط سپاه همچنان نگه داشته می‌شوند. محاصره دوگانه ادامه دارد.",
+          "withinScope": "yes"
+        }
+      ],
+      "totalCount": 2,
+      "maxSeverity": 4
     }
   ],
   "ceasefireNegotiations": [
@@ -6088,6 +6148,22 @@
       "outcome": "partial — Lebanon track advanced; Iran-US track stalled",
       "significance": 6,
       "keyGap": "Iran-US: No unified proposal submitted despite indefinite ceasefire. Blockade continues as Tehran’s central grievance. IRGC dominance over civilian FM track means no credible Iranian negotiating voice. Lebanon: 3-week extension buys time but Hezbollah-Israel tensions remain structural. Trump’s ‘clock is ticking’ creates rhetorical pressure but without back-channel, Iran cannot respond even if willing. Second Islamabad round has no confirmed date."
+    },
+    {
+      "date": "Apr 25",
+      "cfDay": 18,
+      "event": "Araghchi arrives in Islamabad; Witkoff + Kushner en route to Pakistan for Round 2 — Iran denies direct US meeting; Ghalibaf absent, Vance not traveling; possible Monday meeting",
+      "event_fa": "عراقچی وارد اسلام‌آباد شد؛ ویتکوف و کوشنر در راه پاکستان برای دور دوم مذاکرات — ایران دیدار مستقیم را انکار می‌کند؛ قالیباف غایب؛ احتمال دیدار روز دوشنبه",
+      "participants": [
+        "Araghchi (Iran FM)",
+        "Witkoff (US special envoy)",
+        "Kushner",
+        "Pakistan PM Sharif",
+        "Pakistan FM Munir (mediators)"
+      ],
+      "outcome": "uncertain — format disputed; direct US-Iran meeting possible Monday Apr 27",
+      "significance": 8,
+      "keyGap": "Iran's public denial of direct US-Iran meeting vs. White House confirmation of 'direct talks' creates pre-negotiation uncertainty. Ghalibaf absent (IRGC speaker) is key signal — positive if IRGC allowing civilian track to lead, negative if hardliners are blocking. Blockade remains Iran's red line: no lifting without ceasefire terms guaranteeing nuclear sovereignty and end to hostilities. No unified Iranian proposal submitted. If Witkoff-Araghchi meeting proceeds Monday, key test: can civilian FM Araghchi deliver commitments that IRGC will honor?"
     }
   ],
   "ceasefireEconomicRecovery": {
@@ -6108,7 +6184,8 @@
       "Apr 21",
       "Apr 22",
       "Apr 23",
-      "Apr 24"
+      "Apr 24",
+      "Apr 25"
     ],
     "hormuzDaily": [
       8,
@@ -6121,6 +6198,7 @@
       4,
       6,
       9,
+      3,
       3,
       3,
       3,
@@ -6148,7 +6226,8 @@
       93.8,
       98.6,
       101.14,
-      105.63
+      105.63,
+      105.33
     ],
     "shipsStranded": [
       800,
@@ -6167,7 +6246,8 @@
       870,
       876,
       882,
-      888
+      888,
+      894
     ],
     "note": "Hormuz effectively closed since Apr 18 re-closure. IRGC seized 2 ships + fired on 1 more Apr 22 — Iran counter-blockade response to indefinite ceasefire extension. Brent crosses $101 Apr 23 (+2.6%) on renewed escalation. US blockade: 31 ships turned away cumulative. Iran internet Day 55 — 'Internet Pro' tiered paid access expanding; $30-40M/day direct cost, cumulative $1.85B+ est. Rial ~1.35M/USD (est). Lebanon: 2,305+ killed. IMF: Iran GDP −6.1%, inflation 68.9%. IRGC tightening political grip — civilian FM track sidelined. Brent range D46–D55: $89.50–$102.00. ⚠ ceasefireMode.enabled=true — ceasefire extended indefinitely; user should update expiresAt field."
   },
