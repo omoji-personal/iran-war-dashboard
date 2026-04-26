@@ -1,6 +1,6 @@
 {
   "meta": {
-    "lastUpdated": "2026-04-25T18:00:00-04:00",
+    "lastUpdated": "2026-04-26T18:00:00-04:00",
     "preWarBaselines": {
       "d1Missiles": 480,
       "preWarOil": 65,
@@ -8,6 +8,7 @@
       "preWarGas": 3
     },
     "notes": [
+      "D58 (Apr 26, cfDay19): Round 2 diplomacy collapses — Trump cancels Witkoff/Kushner Pakistan trip after Araghchi departs Islamabad. Araghchi in Oman activating back-channel. Iran: 'no talks under siege.' 19-day military zero-attack record. Dual blockade: ~3 vessels/day Hormuz. Brent $105.33 (est). Internet Day 59. Lebanon: 2,491 killed.",
       "D57 (Apr 25): ROUND 2 DIPLOMACY — Witkoff + Kushner fly to Islamabad; Araghchi in Pakistan for Round 2 talks. Iran FM spokesperson publicly denies direct US-Iran meeting; sources say Monday (Apr 27) meeting possible. Ghalibaf absent — Vance not traveling. Brent $105.33 (-0.3%), WTI $94.40 (-1.7%). 18-day zero-attack streak (record). Israel kills 6+ in Lebanon since Apr 23 ceasefire extension; Hezbollah calls it 'meaningless.' Lebanon: 2,491 killed total. Hormuz: ~3 vessels/day. Internet Day 58. Ships stranded ~894. Ceasefire Day 18.",
       "D56 (Apr 24): Lebanon ceasefire extended 3 weeks at White House. Brent $105.63 (+4.4%), WTI $96.07. Trump 'clock ticking for Tehran.' Rubio: Iran World Cup not barred. Hormuz ~3 vessels/day. Internet Day 57. 17-day zero-attack streak (record). Iran-US Round 2 Islamabad still no date. Naval confrontation risk elevated (US ordered to destroy Iranian mine-laying boats Apr 23). Ceasefire Day 17.",
       "D55 (Apr 23): IRGC confirms seizure of 2 Hormuz ships + fires on 3rd (Apr 22 overhang). Israel kills 5 in Lebanon incl. journalist Amal Khalil. Trump 'no timeframe' on Iran war. IRGC tightens grip, FM Araghchi sidelined. US blockade: 31 ships turned away. Brent $101.14, WTI $94.06. Hormuz: 3 vessels/day. Internet Day 55. Lebanon: 2,305+ killed. 16-day zero-attack streak. Ceasefire Day 16 — stalemate deepens.",
@@ -200,7 +201,8 @@
       "Apr 22",
       "Apr 23",
       "Apr 24",
-      "Apr 25"
+      "Apr 25",
+      "Apr 26"
     ],
     "missiles": [
       480,
@@ -243,6 +245,7 @@
       45,
       58,
       12,
+      0,
       0,
       0,
       0,
@@ -302,6 +305,7 @@
       50,
       62,
       18,
+      0,
       0,
       0,
       0,
@@ -379,7 +383,8 @@
       92,
       80,
       75,
-      70
+      70,
+      65
     ],
     "confidenceNote": "1.0 = JPost verified day-by-day (D1-D10). 0.8 = UAE MoD official scaled (D11). 0.6 = fragment estimates from Gulf reports (D12-D29). 0.5 = latest data, less verified (D30+). 1.0 = ceasefire/blockade confirmed 0 launches (D40-D52)."
   },
@@ -442,7 +447,8 @@
       "Apr 22",
       "Apr 23",
       "Apr 24",
-      "Apr 25"
+      "Apr 25",
+      "Apr 26"
     ],
     "brent": [
       65,
@@ -502,6 +508,7 @@
       98.6,
       101.14,
       105.63,
+      105.33,
       105.33
     ],
     "wti": [
@@ -562,6 +569,7 @@
       89.33,
       94.06,
       96.07,
+      94.4,
       94.4
     ],
     "note": "D52 (Apr 20): Brent $95.42 (↑5.58%). D49: crashed ~11% to $84 (Hormuz opening). D50: rebounded $90 (Hormuz re-closed). D51: $90.38. D52: $95.42 (Touska seizure + ceasefire expiry fears). Ceasefire expires tomorrow Apr 21. Escalation 52%. If collapse: $115-125+. If deal: $85-90."
@@ -624,7 +632,8 @@
       "Apr 22",
       "Apr 23",
       "Apr 24",
-      "Apr 25"
+      "Apr 25",
+      "Apr 26"
     ],
     "attrition": [
       2,
@@ -666,6 +675,7 @@
       10,
       10,
       10.2,
+      10.5,
       10.5,
       10.5,
       10.5,
@@ -742,7 +752,8 @@
       8.0,
       8.3,
       8.7,
-      8.8
+      8.8,
+      9.0
     ]
   },
   "latestTargetBreakdown": {
@@ -1260,6 +1271,15 @@
       "capability": "0+0 missile/drone. 18-day zero-attack streak — new conflict record. IRGC Hormuz counter-blockade maintained (2 ships seized Apr 22 still held; dual blockade ongoing). US blockade: 31+ ships turned away. Civilian FM track (Araghchi) now leading Iran delegation in Islamabad — IRGC speaker Ghalibaf absent. Signals possible IRGC tactical step-back or internal fracture on negotiating track.",
       "cost": "Brent $105.33 (-0.3%). WTI $94.40 (-1.7%). Hormuz: ~3 vessels/day (97% below pre-war 135). Internet Day 58 — 'Internet Pro' tiered paid access only; cumulative economic cost ~$1.97B est ($30–40M/day). US blockade: 31+ ships turned away cumulative; ~894 seafarers' ships stranded (est). Lebanon: 2,491 killed total (Lebanese MoH). Rial ~1.317M/USD (est). Iran economy: IMF projects −6.1% GDP, 68.9% inflation.",
       "assessment": "D57 — DIPLOMATIC PIVOT OR FALSE DAWN? The Araghchi-in-Islamabad / Witkoff-Kushner-en-route development is the most consequential since the failed Round 1 (Apr 11–12). Ghalibaf's absence — and Vance's corresponding non-travel — is the key signal: either IRGC is allowing civilian FM track to lead (positive), or hardliners blocked Ghalibaf to sabotage talks (negative). Iran's public denial of a direct US meeting while sending Araghchi to Islamabad is classic Iranian diplomatic hedging — leaves room to meet while managing domestic optics. If talks occur Monday, the key gap remains the same: US blockade vs. Iran's demand for full ceasefire terms before engaging on nuclear/regional issues. Scenarios: (A) Araghchi-Witkoff talks Monday → framework agreed = 22%. (B) Talks fizzle, Iran submits partial proposal = 38%. (C) Talks collapse, US resumes strikes within 10 days = 28%. (D) Pakistan brokers surprise deal = 12%."
+    },
+    {
+      "date": "Apr 26",
+      "missiles": 0,
+      "drones": 0,
+      "primary": "D58 CEASEFIRE DAY 19 — ROUND 2 COLLAPSES: TRUMP CANCELS ENVOY TRIP, ARAGHCHI IN OMAN; IRAN: ‘NO TALKS UNDER SIEGE’; 19-DAY ZERO-ATTACK RECORD: Round 2 fell apart before it began. After Iran FM Araghchi departed Islamabad Saturday without committing to meet US envoys, Trump cancelled Witkoff and Kushner’s planned Pakistan trip on Apr 25. Trump Truth Social: ‘Too much time wasted on traveling, too much work! Besides which, there is tremendous infighting and confusion within their leadership.’ Trump also: ‘We have all the cards — if they want to talk, all they have to do is call.’ Iran’s official position: ‘no talks under siege’ — demanding blockade be lifted before negotiations resume. Araghchi arrived in Muscat, Oman on Apr 26 to meet Omani leadership — activating Oman’s traditional US-Iran back-channel mediation role. Araghchi plans to return to Pakistan before departing for Russia. Bloomberg (Apr 26): ‘Hormuz Double Blockade Halts Ship Traffic, Dims Hope for Economy.’ Brent $105.33 (est, weekend carry). WTI $94.40 (est). Internet Day 59.",
+      "capability": "0+0 missile/drone. 19-day zero-attack streak — new conflict record extended. Dual Hormuz blockade intact: US blocks Iranian ports (31+ ships turned away cumulative), Iran IRGC counter-blockade maintains ~3 vessels/day through Strait. 2 IRGC-seized vessels (MSC Francesca, Epaminondas) still held. Civilian FM Araghchi now leading diplomatic track via Oman back-channel — IRGC speaker Ghalibaf remains absent.",
+      "cost": "Brent $105.33 (est, weekend carry). WTI $94.40 (est). Hormuz: ~3 vessels/day (97% below pre-war 135). Internet Day 59 — cumulative economic cost ~$2.5B+ est ($40M/day). US blockade: 31+ ships turned away cumulative; ~894 seafarers’ ships stranded (est). Lebanon: 2,491 killed (Lebanese MoH); 4 additional killed by Israeli strikes Apr 25. Rial ~1.32M/USD (est). Iran economy: IMF projects −6.1% GDP, 68.9% inflation; food inflation 105%.",
+      "assessment": "D58 — DIPLOMATIC VACUUM. The Round 2 collapse is significant but not catastrophic — the Oman back-channel activation suggests both sides are probing de-escalation through a trusted intermediary rather than walking away. Oman has historically brokered US-Iran communications (2013 secret talks, JCPOA preliminary channel). Araghchi’s Oman visit while planning to return to Pakistan suggests Iran is re-engineering the format: indirect talks via Oman rather than the high-profile Pakistan summit that hardliners can publicly reject. Trump’s ‘we have all the cards’ language signals the cancellation is a power move — forcing Iran to call first rather than being seen to chase them. The 19-day military zero-attack streak remains the ceasefire’s core achievement; neither side seeks direct military re-engagement now. Risk: if Oman yields nothing within 3–5 days, Trump may issue new ultimatum or resume strikes. Scenarios: (A) Oman brokers indirect framework → Round 3 within 5 days = 28%. (B) Stalemate extends, both sides signal patience = 42%. (C) Trump issues ultimatum after silence, strikes resume = 22%. (D) IRGC escalates at Hormuz, triggers naval exchange = 8%."
     }
   ],
   "timeline": [
@@ -2152,7 +2172,8 @@
         "Apr 22",
         "Apr 23",
         "Apr 24",
-        "Apr 25"
+        "Apr 25",
+        "Apr 26"
       ],
       "militaryExhaustion": [
         1,
@@ -2194,6 +2215,7 @@
         7,
         7.5,
         7,
+        6.5,
         6.5,
         6.5,
         6.5,
@@ -2270,7 +2292,8 @@
         8.7,
         8.9,
         9.1,
-        9.2
+        9.2,
+        9.3
       ],
       "diplomaticMomentum": [
         0,
@@ -2329,7 +2352,8 @@
         3.0,
         1.5,
         1.8,
-        3.5
+        3.5,
+        1.2
       ],
       "usPoliticalSustainability": [
         8,
@@ -2388,7 +2412,8 @@
         4.3,
         4.2,
         4.0,
-        3.9
+        3.9,
+        3.8
       ],
       "escalationCeilingDistance": [
         7,
@@ -2447,7 +2472,8 @@
         2.5,
         1.5,
         1.2,
-        1.5
+        1.5,
+        1.3
       ]
     },
     "vectorNotes": {
@@ -2532,6 +2558,7 @@
       0,
       2,
       2,
+      2,
       2
     ],
     "geoSpreadLabels": [
@@ -2591,7 +2618,8 @@
       "Apr 22",
       "Apr 23",
       "Apr 24",
-      "Apr 25"
+      "Apr 25",
+      "Apr 26"
     ],
     "countriesTargetedPerDay": [
       8,
@@ -2634,6 +2662,7 @@
       9,
       8,
       4,
+      0,
       0,
       0,
       0,
@@ -2709,6 +2738,7 @@
       0,
       0,
       0,
+      0,
       0
     ],
     "interceptRateLabels": [
@@ -2768,7 +2798,8 @@
       "Apr 22",
       "Apr 23",
       "Apr 24",
-      "Apr 25"
+      "Apr 25",
+      "Apr 26"
     ],
     "interceptRate": [
       0.82,
@@ -2808,6 +2839,7 @@
       0.87,
       0.89,
       0.89,
+      0.88,
       0.88,
       0.88,
       0.88,
@@ -3589,7 +3621,8 @@
       "Apr 22",
       "Apr 23",
       "Apr 24",
-      "Apr 25"
+      "Apr 25",
+      "Apr 26"
     ],
     "vessels": [
       62,
@@ -3645,6 +3678,7 @@
       3,
       2,
       2,
+      3,
       3,
       3,
       3,
@@ -5881,6 +5915,32 @@
       ],
       "totalCount": 2,
       "maxSeverity": 4
+    },
+    {
+      "day": "Apr 26",
+      "cfDay": 19,
+      "incidents": [
+        {
+          "type": "blockade",
+          "severity": 3,
+          "actor": "US Navy / Iran IRGC",
+          "target": "Strait of Hormuz / Iranian ports",
+          "description": "Dual blockade continues unabated. Bloomberg (Apr 26): 'Hormuz Double Blockade Halts Ship Traffic, Dims Hope for Economy.' ~3 vessels/day transiting (97% below pre-war 135). US: 31+ ships turned away cumulative. Iran: 2 seized ships still held. No new seizures reported Apr 26.",
+          "description_fa": "محاصره دوگانه ادامه دارد. بلومبرگ (۲۶ آوریل): 'محاصره دوگانه هرمز ترافیک کشتی‌ها را متوقف می‌کند، امید به بهبود اقتصاد کمرنگ می‌شود.' حدود ۳ کشتی در روز (97صددرصد کمتر از میزان پیش از جنگ).",
+          "withinScope": "yes"
+        },
+        {
+          "type": "diplomatic_failure",
+          "severity": 3,
+          "actor": "US / Iran",
+          "target": "Round 2 talks format",
+          "description": "Trump cancels Witkoff and Kushner's Pakistan trip after Araghchi departs Islamabad without committing to meet US envoys. Trump Truth Social: 'Too much time wasted on traveling, too much work! Besides which, there is tremendous infighting and confusion within their leadership.' Iran's position: 'no talks under siege' — blockade must end first. Round 2 effectively collapses. Araghchi arrives in Oman to activate back-channel.",
+          "description_fa": "ترامپ سفر ویتکاف و کوشنر به پاکستان را لغو کرد. عراقچی بدون تعهد به دیدار از اسلام‌آباد رفت. موضع ایران: 'مذاکره زیر محاصره امکان‌پذیر نیست.'",
+          "withinScope": "borderline"
+        }
+      ],
+      "totalCount": 2,
+      "maxSeverity": 3
     }
   ],
   "ceasefireNegotiations": [
@@ -6164,6 +6224,22 @@
       "outcome": "uncertain — format disputed; direct US-Iran meeting possible Monday Apr 27",
       "significance": 8,
       "keyGap": "Iran's public denial of direct US-Iran meeting vs. White House confirmation of 'direct talks' creates pre-negotiation uncertainty. Ghalibaf absent (IRGC speaker) is key signal — positive if IRGC allowing civilian track to lead, negative if hardliners are blocking. Blockade remains Iran's red line: no lifting without ceasefire terms guaranteeing nuclear sovereignty and end to hostilities. No unified Iranian proposal submitted. If Witkoff-Araghchi meeting proceeds Monday, key test: can civilian FM Araghchi deliver commitments that IRGC will honor?"
+    },
+    {
+      "date": "Apr 26",
+      "cfDay": 19,
+      "event": "Round 2 collapses before it starts: Trump cancels Witkoff/Kushner Pakistan trip after Araghchi departs Islamabad; Araghchi arrives in Oman to activate back-channel; Iran: 'no talks under siege'; no Round 3 date set",
+      "event_fa": "دور دوم قبل از شروع شکست خورد: ترامپ سفر ویتکاف/کوشنر به پاکستان را لغو کرد؛ عراقچی به عمان رفت؛ ایران: 'مذاکره زیر محاصره نه'",
+      "participants": [
+        "Trump (cancelled envoys)",
+        "Araghchi (Iran FM, in Oman)",
+        "Pakistan PM Sharif",
+        "Pakistan FM Munir (mediators)",
+        "Oman FM (back-channel)"
+      ],
+      "outcome": "breakdown — Round 2 collapsed before meeting; Oman back-channel activated",
+      "significance": 7,
+      "keyGap": "Iran insists blockade must be lifted before talks can proceed ('no talks under siege'). Trump cancelled trip to signal strength: 'we have all the cards — if they want to talk, all they have to do is call.' Accuses Iranian leadership of 'infighting and confusion' (referencing IRGC vs. civilian FM divisions). Araghchi in Oman activates traditional US-Iran back-channel (Oman brokered 2013 secret US-Iran talks and JCPOA preliminary channel). Key test: can Oman re-engineer the format as indirect talks, giving Iran domestic cover while satisfying Trump’s demand to be 'called'? No Round 3 date. Araghchi plans to return to Pakistan after Oman before Russia visit."
     }
   ],
   "ceasefireEconomicRecovery": {
@@ -6185,7 +6261,8 @@
       "Apr 22",
       "Apr 23",
       "Apr 24",
-      "Apr 25"
+      "Apr 25",
+      "Apr 26"
     ],
     "hormuzDaily": [
       8,
@@ -6198,6 +6275,7 @@
       4,
       6,
       9,
+      3,
       3,
       3,
       3,
@@ -6227,6 +6305,7 @@
       98.6,
       101.14,
       105.63,
+      105.33,
       105.33
     ],
     "shipsStranded": [
@@ -6247,9 +6326,10 @@
       876,
       882,
       888,
+      894,
       894
     ],
-    "note": "Hormuz effectively closed since Apr 18 re-closure. IRGC seized 2 ships + fired on 1 more Apr 22 — Iran counter-blockade response to indefinite ceasefire extension. Brent crosses $101 Apr 23 (+2.6%) on renewed escalation. US blockade: 31 ships turned away cumulative. Iran internet Day 55 — 'Internet Pro' tiered paid access expanding; $30-40M/day direct cost, cumulative $1.85B+ est. Rial ~1.35M/USD (est). Lebanon: 2,305+ killed. IMF: Iran GDP −6.1%, inflation 68.9%. IRGC tightening political grip — civilian FM track sidelined. Brent range D46–D55: $89.50–$102.00. ⚠ ceasefireMode.enabled=true — ceasefire extended indefinitely; user should update expiresAt field."
+    "note": "Hormuz double blockade persists as of D58 (Apr 26). ~3 vessels/day. US: 31+ ships turned away cumulative. Iran IRGC: 2 seized vessels still held. Bloomberg (Apr 26): 'Double blockade halts ship traffic, dims hope for economy.' Brent $105.33 (weekend carry, est). WTI $94.40 (est). Internet Day 59 — 'Internet Pro' paid-access only; $40M/day direct cost; cumulative ~$2.5B+ est. Rial ~1.32M/USD (est). Lebanon: 2,491 killed. IMF: Iran GDP −6.1%, inflation 68.9%; food inflation 105%. Round 2 talks collapsed Apr 25-26 — Trump cancelled Witkoff/Kushner Pakistan trip; Araghchi in Oman for back-channel. Iran: 'no talks under siege.' ⚠ ceasefireMode.enabled=true — ceasefire extended indefinitely; user should update expiresAt field."
   },
   "ceasefirePostConflictTree": {
     "branchExtend": [
