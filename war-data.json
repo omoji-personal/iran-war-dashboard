@@ -1,6 +1,6 @@
 {
   "meta": {
-    "lastUpdated": "2026-04-27T18:00:00-04:00",
+    "lastUpdated": "2026-04-28T18:00:00-04:00",
     "preWarBaselines": {
       "d1Missiles": 480,
       "preWarOil": 65,
@@ -8,6 +8,7 @@
       "preWarGas": 3
     },
     "notes": [
+      "D60 (Apr 28, cfDay21): Iran submits formal Hormuz-first peace proposal via Pakistan/Oman mediators — reopen Hormuz + end war, postpone nuclear talks. Trump NSC reviews but skeptical ('unlikely to accept'). Rubio reaffirms nuclear red lines. Qatar PM warns sea lanes not 'bargaining chip'; UN calls for immediate Hormuz reopening; Saudi Arabia briefed. Brent $111.16 (+4.7%), WTI $99.80 (+4.9%) — oil surges on proposal/rejection uncertainty. Hormuz: 7 vessels/day (up from 3 — first uptick). 21-day zero-attack streak (record). Internet Day 61 — partial whitelist. Lebanon: Israel strikes Bekaa Valley (first since Apr 16 ceasefire), south Lebanon towns; Hezbollah head Qassem rejects direct Lebanon-Israel talks. Rial ~1.35M/USD (est). Polymarket: end ops by June 30 = 53%, May 31 = 31%. ⚠ MODE SWITCH NEEDED: ceasefireMode.enabled is still true; ceasefire extended indefinitely by Trump Apr 21 — user should update expiresAt/status fields as appropriate.",
       "D59 (Apr 27, cfDay20): Araghchi meets Putin in Moscow/St. Petersburg — Iran shifts diplomatic axis eastward after Round 2 collapse. Trump: 'Tehran can call us' — no envoys. 20-day zero-attack streak (record). Lebanon: suspected Hezbollah drone triggers Western Galilee sirens; Netanyahu security consultations. Israeli strikes kill 14 in Lebanon Apr 26. Dual blockade: ~3 vessels/day. Brent $106.20 (+0.8%), WTI $95.10. Internet Day 60. Ships stranded ~900 est. Oman back-channel warming.",
       "D58 (Apr 26, cfDay19): Round 2 diplomacy collapses — Trump cancels Witkoff/Kushner Pakistan trip after Araghchi departs Islamabad. Araghchi in Oman activating back-channel. Iran: 'no talks under siege.' 19-day military zero-attack record. Dual blockade: ~3 vessels/day Hormuz. Brent $105.33 (est). Internet Day 59. Lebanon: 2,491 killed.",
       "D57 (Apr 25): ROUND 2 DIPLOMACY — Witkoff + Kushner fly to Islamabad; Araghchi in Pakistan for Round 2 talks. Iran FM spokesperson publicly denies direct US-Iran meeting; sources say Monday (Apr 27) meeting possible. Ghalibaf absent — Vance not traveling. Brent $105.33 (-0.3%), WTI $94.40 (-1.7%). 18-day zero-attack streak (record). Israel kills 6+ in Lebanon since Apr 23 ceasefire extension; Hezbollah calls it 'meaningless.' Lebanon: 2,491 killed total. Hormuz: ~3 vessels/day. Internet Day 58. Ships stranded ~894. Ceasefire Day 18.",
@@ -204,7 +205,8 @@
       "Apr 24",
       "Apr 25",
       "Apr 26",
-      "Apr 27"
+      "Apr 27",
+      "Apr 28"
     ],
     "missiles": [
       480,
@@ -247,6 +249,7 @@
       45,
       58,
       12,
+      0,
       0,
       0,
       0,
@@ -308,6 +311,7 @@
       50,
       62,
       18,
+      0,
       0,
       0,
       0,
@@ -389,7 +393,8 @@
       75,
       70,
       65,
-      62
+      62,
+      60
     ],
     "confidenceNote": "1.0 = JPost verified day-by-day (D1-D10). 0.8 = UAE MoD official scaled (D11). 0.6 = fragment estimates from Gulf reports (D12-D29). 0.5 = latest data, less verified (D30+). 1.0 = ceasefire/blockade confirmed 0 launches (D40-D52)."
   },
@@ -454,7 +459,8 @@
       "Apr 24",
       "Apr 25",
       "Apr 26",
-      "Apr 27"
+      "Apr 27",
+      "Apr 28"
     ],
     "brent": [
       65,
@@ -516,7 +522,8 @@
       105.63,
       105.33,
       105.33,
-      106.2
+      106.2,
+      111.16
     ],
     "wti": [
       62,
@@ -578,7 +585,8 @@
       96.07,
       94.4,
       94.4,
-      95.1
+      95.1,
+      99.8
     ],
     "note": "D52 (Apr 20): Brent $95.42 (↑5.58%). D49: crashed ~11% to $84 (Hormuz opening). D50: rebounded $90 (Hormuz re-closed). D51: $90.38. D52: $95.42 (Touska seizure + ceasefire expiry fears). Ceasefire expires tomorrow Apr 21. Escalation 52%. If collapse: $115-125+. If deal: $85-90."
   },
@@ -642,7 +650,8 @@
       "Apr 24",
       "Apr 25",
       "Apr 26",
-      "Apr 27"
+      "Apr 27",
+      "Apr 28"
     ],
     "attrition": [
       2,
@@ -684,6 +693,7 @@
       10,
       10,
       10.2,
+      10.5,
       10.5,
       10.5,
       10.5,
@@ -764,7 +774,8 @@
       8.7,
       8.8,
       9.0,
-      9.1
+      9.1,
+      9.3
     ]
   },
   "latestTargetBreakdown": {
@@ -1300,6 +1311,15 @@
       "capability": "0+0 missile/drone. 20-day zero-attack streak — conflict record extended. Dual Hormuz blockade intact: US naval blockade of Iranian ports (31+ ships turned away cumulative), Iran IRGC counter-blockade at Strait (~3 vessels/day). IRGC-seized vessels (MSC Francesca, Epaminondas) still held. Iran FM Araghchi in Moscow for Putin talks — signals Iran leveraging Russia alliance as diplomatic pressure on US.",
       "cost": "Brent $106.20 (+0.8%). WTI $95.10 (+0.7%). Hormuz: ~3 vessels/day (97% below pre-war 135). Internet Day 60 — cumulative economic cost ~$2.58B+ est ($40M/day). US blockade: 31+ ships turned away cumulative; ~900 seafarers' ships stranded (est). Lebanon: 2,491+ killed. Rial ~1.32M/USD (est). Iran IMF: −6.1% GDP, 68.9% inflation.",
       "assessment": "D59 — ARAGHCHI PIVOTS TO MOSCOW. The Russia visit is Iran's clearest diplomatic signal since Round 2 collapse: by meeting Putin, Tehran signals it has strategic backing and is not isolated. Russia-Iran 20-year partnership (Jan 2025) gives Moscow a role as diplomatic cover and potential pressure lever. Trump's 'just call us' framing converts the Round 2 failure into a deliberate power posture — refusing to chase Iran while preserving the ceasefire. The open question is whether the Oman back-channel can bridge this formality gap: Iran initiating contact would satisfy Trump's need to appear dominant; Oman can engineer the call format to avoid Iran's domestic 'negotiations under siege' problem. 20-day zero-attack streak preserves the ceasefire's core value. Lebanon track deteriorating: Netanyahu security consultations signal possible Israeli response to Hezbollah drone violations. Scenarios: (A) Oman/Russia channel produces call/framework → Round 3 within 5–7 days = 25%. (B) Diplomatic repositioning extends stalemate another week = 45%. (C) Lebanon violations spiral into broader escalation = 18%. (D) Trump issues new ultimatum as Russia visit angers him = 12%."
+    },
+    {
+      "date": "Apr 28",
+      "missiles": 0,
+      "drones": 0,
+      "primary": "D60 CEASEFIRE DAY 21 — IRAN SUBMITS FORMAL PEACE PROPOSAL: REOPEN HORMUZ + END WAR, POSTPONE NUCLEAR TALKS; TRUMP NSC REVIEWS BUT SKEPTICAL; 21-DAY ZERO-ATTACK RECORD: Iran FM Araghchi, returning from Moscow, conveyed a formal new proposal to the US via Pakistan and Oman mediators: Iran will reopen the Strait of Hormuz and agree to a permanent ceasefire/end of war in exchange for the US lifting its naval blockade of Iranian ports — with nuclear negotiations explicitly deferred to a later, separate track. The proposal was also briefed to Egyptian, Turkish, Qatari, and Omani mediators. Qatar PM Sheikh Mohammed bin Abdulrahman Al Thani warned sea lanes must not become 'a bargaining chip or pressure tactic.' Saudi FM Faisal bin Farhan was briefed. UN Security Council called for Hormuz to reopen immediately. Trump convened national security aides to review the plan but sources told CNN he is 'unlikely to accept' terms that exclude nuclear disarmament. White House: 'red lines' on preventing nuclear weapon capability remain firm. Rubio: any deal must include Iran's enrichment cap. Oil market reacts sharply: Brent $111.16 (+4.7%), WTI $99.80 (+4.9%) — markets price in both the proposal's promise and Trump's skepticism. Hormuz: 7 vessels/day (up from 3 — logistics cautiously resuming on rumor of deal). Internet Day 61 — partial whitelist restoration continues. Lebanon: Israel strikes Bekaa Valley (first since Apr 16 ceasefire), also Tibnin, Yater, Bint Jbeil in south. Hezbollah head Naim Qassem rejects direct Lebanon-Israel talks as 'humiliating and unnecessary concession.'",
+      "capability": "0+0 missile/drone. 21-day zero-attack streak — conflict record extended. Dual Hormuz blockade: US naval blockade of Iranian ports (31+ ships turned away cumulative), Iran IRGC counter-blockade at Strait (7 vessels/day — up from 3, first uptick in weeks; Euronews reports ~20,000 seafarers stranded on hundreds of vessels). Two IRGC-seized vessels (MSC Francesca, Epaminondas) still held. Iran FM Araghchi back from Moscow, now directing formal proposal via Pakistan/Oman/Qatar multi-mediator track.",
+      "cost": "Brent $111.16 (+4.7%). WTI $99.80 (+4.9%). Hormuz: 7 vessels/day (95% below pre-war 140). Internet Day 61 — partial whitelist access; cumulative economic cost ~$2.62B+ est ($40M/day). US blockade: 31+ ships turned away cumulative; ~20,000 seafarers stranded (hundreds of vessels). Lebanon: 2,491+ killed; Bekaa Valley struck (first since Apr 16 ceasefire). Rial ~1.35M/USD (est). Iran IMF: −6.1% GDP, 68.9% inflation.",
+      "assessment": "D60 — IRAN'S FORMAL PROPOSAL SHIFTS THE DIPLOMATIC GEOMETRY. The Hormuz-first offer is Iran's most structured diplomatic move since the ceasefire began: it separates the maritime crisis (tractable) from the nuclear standoff (intractable), offering Trump an economic win (oil prices, Hormuz reopening) without conceding on enrichment. The logic: if Trump gets Hormuz opened and oil prices fall, the domestic political pressure eases — Iran bets Trump will value that more than nuclear leverage. Trump's likely problem: accepting a deal without nuclear terms would be attacked domestically as a surrender, and Israel would strongly object. The WH 'red lines' language and CNN sourcing ('unlikely to accept') suggest Trump will counter-propose rather than flat reject — creating space for Oman/Pakistan to engineer a hybrid formula. The Hormuz vessel count ticking up to 7/day may reflect logistics companies testing waters ahead of a possible deal, or Iranian IRGC easing enforcement selectively. Oil at $111 reinforces urgency on both sides. Scenarios: (A) Trump counter-proposes interim Hormuz framework with nuclear 'intent' language → deal within 7 days = 22%. (B) Proposal rejected, stalemate deepens, oil stays $110+ = 38%. (C) Oman/Pakistan engineer hybrid indirect framework bridging nuclear gap → Round 3 within 10 days = 28%. (D) Israel strikes Iran to torpedo deal = 12%."
     }
   ],
   "timeline": [
@@ -2194,7 +2214,8 @@
         "Apr 24",
         "Apr 25",
         "Apr 26",
-        "Apr 27"
+        "Apr 27",
+        "Apr 28"
       ],
       "militaryExhaustion": [
         1,
@@ -2236,6 +2257,7 @@
         7,
         7.5,
         7,
+        6.5,
         6.5,
         6.5,
         6.5,
@@ -2316,7 +2338,8 @@
         9.1,
         9.2,
         9.3,
-        9.4
+        9.4,
+        9.5
       ],
       "diplomaticMomentum": [
         0,
@@ -2377,7 +2400,8 @@
         1.8,
         3.5,
         1.2,
-        1.5
+        1.5,
+        2.5
       ],
       "usPoliticalSustainability": [
         8,
@@ -2438,7 +2462,8 @@
         4.0,
         3.9,
         3.8,
-        3.7
+        3.7,
+        3.6
       ],
       "escalationCeilingDistance": [
         7,
@@ -2499,7 +2524,8 @@
         1.2,
         1.5,
         1.3,
-        1.4
+        1.4,
+        1.5
       ]
     },
     "vectorNotes": {
@@ -2586,6 +2612,7 @@
       2,
       2,
       2,
+      2,
       2
     ],
     "geoSpreadLabels": [
@@ -2647,7 +2674,8 @@
       "Apr 24",
       "Apr 25",
       "Apr 26",
-      "Apr 27"
+      "Apr 27",
+      "Apr 28"
     ],
     "countriesTargetedPerDay": [
       8,
@@ -2690,6 +2718,7 @@
       9,
       8,
       4,
+      0,
       0,
       0,
       0,
@@ -2769,6 +2798,7 @@
       0,
       0,
       0,
+      0,
       0
     ],
     "interceptRateLabels": [
@@ -2830,7 +2860,8 @@
       "Apr 24",
       "Apr 25",
       "Apr 26",
-      "Apr 27"
+      "Apr 27",
+      "Apr 28"
     ],
     "interceptRate": [
       0.82,
@@ -2870,6 +2901,7 @@
       0.87,
       0.89,
       0.89,
+      0.88,
       0.88,
       0.88,
       0.88,
@@ -3655,7 +3687,8 @@
       "Apr 24",
       "Apr 25",
       "Apr 26",
-      "Apr 27"
+      "Apr 27",
+      "Apr 28"
     ],
     "vessels": [
       62,
@@ -3717,7 +3750,8 @@
       3,
       3,
       3,
-      3
+      3,
+      7
     ],
     "preWarAverage": 62,
     "note": "D52 (Apr 20): Hormuz CLOSED — ~2 vessels/day (IRGC escort/interception). D49 (Apr 17): brief opening, ~15 vessels, then D50 (Apr 18) IRGC fired on Sanmar Herald, Hormuz re-closed. D51 (Apr 19): USS Spruance seized M/V Touska. 25+ total vessels turned back. Iran vowed retaliation. Cape of Good Hope routing: +$3-5M/ship. Pre-war average 62/day.",
@@ -6001,6 +6035,41 @@
       ],
       "totalCount": 2,
       "maxSeverity": 4
+    },
+    {
+      "day": "Apr 28",
+      "cfDay": 21,
+      "incidents": [
+        {
+          "type": "blockade",
+          "severity": 3,
+          "actor": "US Navy / Iran IRGC",
+          "target": "Strait of Hormuz / Iranian ports",
+          "description": "Dual blockade continues. Hormuz vessel count ticks up to 7/day (from ~3) — first uptick in weeks, possibly reflecting logistics operators testing waters ahead of Iran's new proposal. Euronews: ~20,000 seafarers stranded on hundreds of vessels. US: 31+ ships turned away cumulative. Iran: 2 seized vessels (MSC Francesca, Epaminondas) still held. No new seizures reported Apr 28. UN Security Council calls for Hormuz to reopen immediately.",
+          "description_fa": "محاصره دوگانه ادامه دارد. تعداد کشتی‌های عبوری از هرمز به ۷ در روز افزایش یافت (از ~۳) — اولین افزایش در هفته‌ها، احتمالاً بازتاب آزمایش شرکت‌های لجستیک قبل از پیشنهاد جدید ایران. شورای امنیت سازمان ملل خواستار بازگشایی فوری تنگه هرمز شد.",
+          "withinScope": "yes"
+        },
+        {
+          "type": "strike",
+          "severity": 4,
+          "actor": "Israel",
+          "target": "Lebanon (Bekaa Valley, south Lebanon)",
+          "description": "Israel strikes Lebanon's Bekaa Valley for first time since Apr 16 ceasefire, also striking Tibnin, Yater and Bint Jbeil in south Lebanon. IDF says strikes targeted Hezbollah infrastructure. Hezbollah head Naim Qassem rejects direct Lebanon-Israel talks as 'humiliating and unnecessary concession.' Lebanon 3-week ceasefire extension (Apr 23) strained by ongoing strikes.",
+          "description_fa": "اسرائیل برای اولین بار از آتش‌بس ۱۶ آوریل به دره بقاء در لبنان حمله کرد؛ همچنین تبنین، یاتر و بنت جبیل در جنوب را زد. سید نعیم قاسم مذاکرات مستقیم لبنان-اسرائیل را 'امتیاز تحقیرآمیز و غیرضروری' خواند.",
+          "withinScope": "no"
+        },
+        {
+          "type": "diplomatic_failure",
+          "severity": 2,
+          "actor": "US",
+          "target": "Iran nuclear red lines",
+          "description": "White House and Rubio reaffirm 'red lines' on nuclear weapon capability — effectively pre-rejecting Iran's Hormuz proposal which defers nuclear talks. CNN sources: Trump 'unlikely to accept' terms that exclude nuclear disarmament. Proposal still under NSC review.",
+          "description_fa": "کاخ سفید و روبیو 'خطوط قرمز' هسته‌ای را تأیید کردند — در واقع پیشنهاد هرمز ایران را که مذاکرات هسته‌ای را به تعویق می‌اندازد رد کردند. منابع سی‌ان‌ان: ترامپ احتمالاً نمی‌پذیرد.",
+          "withinScope": "borderline"
+        }
+      ],
+      "totalCount": 3,
+      "maxSeverity": 4
     }
   ],
   "ceasefireNegotiations": [
@@ -6315,6 +6384,25 @@
       "outcome": "Iran pivoting to Moscow axis — no direct US-Iran contact; Oman back-channel format under negotiation",
       "significance": 7,
       "keyGap": "Iran's Moscow visit signals two things simultaneously: (1) Tehran is not desperate and has Russian strategic backing; (2) Iran is seeking a back-channel format that avoids the 'negotiations under siege' domestic political trap. Trump's 'just call us' formulation preserves US dominance optics while leaving the door open. The Oman channel — which historically brokered 2013 secret US-Iran talks and JCPOA groundwork — may be able to engineer a phone/indirect format. Key unresolved: blockade vs. Iran sovereignty over Hormuz; Iran still insists blockade must end before formal talks resume. Russia's role: diplomatic backstop but not a mediator — Moscow will not pressure Tehran to accept US terms."
+    },
+    {
+      "date": "Apr 28",
+      "cfDay": 21,
+      "event": "Iran submits formal peace proposal via Pakistan/Oman mediators: reopen Hormuz + permanent ceasefire/end war, postpone nuclear talks to separate later track; Trump NSC reviews but 'unlikely to accept'; Qatar PM warns sea lanes must not be 'bargaining chip'; UN calls for Hormuz to reopen; Saudi Arabia briefed",
+      "event_fa": "ایران پیشنهاد رسمی صلح از طریق میانجیان پاکستان/عمان ارائه داد: بازگشایی هرمز + آتش‌بس دائمی، تعویق مذاکرات هسته‌ای؛ شورای امنیت سازمان ملل خواستار بازگشایی شد؛ نخست‌وزیر قطر هشدار داد آبراه‌ها 'ابزار فشار' نشوند",
+      "participants": [
+        "Araghchi (Iran FM — back from Moscow, directing proposal)",
+        "Trump NSC (reviewing — skeptical)",
+        "Pakistan PM Sharif / FM Munir (mediators — conveyed proposal)",
+        "Oman FM (back-channel, expert-level Hormuz consultations)",
+        "Qatar PM Sheikh Mohammed bin Abdulrahman Al Thani (warned on sea lanes)",
+        "Saudi FM Faisal bin Farhan (briefed)",
+        "Rubio (reaffirmed nuclear red lines)",
+        "UN Security Council (called for immediate Hormuz reopening)"
+      ],
+      "outcome": "proposal submitted — under US review; Trump skeptical; no acceptance or counter-proposal yet",
+      "significance": 8,
+      "keyGap": "Iran's Hormuz-first proposal is its most structured diplomatic move of the conflict: separate Hormuz reopening (tractable) from nuclear talks (intractable), letting Trump claim an economic win without conceding on enrichment. Iran's bet: Trump values falling oil prices and Hormuz reopening more than nuclear leverage in 2026. Trump's problem: accepting without nuclear terms looks like surrender domestically and angers Israel. WH 'red lines' pre-signal a counter-proposal rather than flat rejection. Rubio's enrichment demand is the specific sticking point — Iran has rejected uranium forfeiture as a red line. Key question: can Oman or Pakistan engineer a 'nuclear intent declaration' or enrichment cap formula that lets Iran avoid the sovereignty optics while satisfying Trump's minimum threshold? Polymarket: Trump announces end of military ops by June 30 = 53%, by May 31 = 31%. Oil at $111 creates mutual pressure to resolve — both US domestic (gas prices) and Iranian (economic collapse)."
     }
   ],
   "ceasefireEconomicRecovery": {
@@ -6338,7 +6426,8 @@
       "Apr 24",
       "Apr 25",
       "Apr 26",
-      "Apr 27"
+      "Apr 27",
+      "Apr 28"
     ],
     "hormuzDaily": [
       8,
@@ -6360,7 +6449,8 @@
       3,
       3,
       3,
-      3
+      3,
+      7
     ],
     "hormuzPreWar": 135,
     "brentPreCeasefire": 109,
@@ -6384,7 +6474,8 @@
       105.63,
       105.33,
       105.33,
-      106.2
+      106.2,
+      111.16
     ],
     "shipsStranded": [
       800,
@@ -6406,9 +6497,10 @@
       888,
       894,
       894,
-      900
+      900,
+      905
     ],
-    "note": "Hormuz double blockade persists as of D59 (Apr 27). ~3 vessels/day. US: 31+ ships turned away cumulative. Iran IRGC: 2 seized vessels still held. Brent $106.20 (+0.8%), WTI $95.10 (+0.7%) — oil uptick as Araghchi-Putin meeting signals no imminent deal. Internet Day 60 — 'Internet Pro' paid-access only; $40M/day direct cost; cumulative ~$2.58B+ est. Rial ~1.32M/USD (est). Lebanon: 2,491+ killed. IMF: Iran GDP −6.1%, inflation 68.9%; food inflation 105%. Iran FM in Moscow for Putin talks — Round 3 date unknown; Oman back-channel warming. ⚠ ceasefireMode.enabled=true — ceasefire extended indefinitely; user should update expiresAt field."
+    "note": "Hormuz double blockade persists as of D60 (Apr 28). 7 vessels/day (up from 3 — first uptick; possibly logistics operators testing ahead of Iran's new proposal). US: 31+ ships turned away cumulative. ~20,000 seafarers stranded on hundreds of vessels. Brent $111.16 (+4.7%), WTI $99.80 (+4.9%) — oil surges as Iran submits Hormuz proposal but Trump skeptical. Internet Day 61 — partial whitelist access for 'favored groups.' Rial ~1.35M/USD (est). Lebanon: Bekaa Valley struck (first since Apr 16 ceasefire). UN calls for Hormuz reopening. Polymarket: Trump announces end of ops by June 30 = 53%. ⚠ ceasefireMode.enabled=true — ceasefire extended indefinitely; user should update expiresAt field."
   },
   "ceasefirePostConflictTree": {
     "branchExtend": [
