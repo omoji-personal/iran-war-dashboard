@@ -1,6 +1,6 @@
 {
   "meta": {
-    "lastUpdated": "2026-04-28T18:00:00-04:00",
+    "lastUpdated": "2026-04-28T07:00:00-04:00",
     "preWarBaselines": {
       "d1Missiles": 480,
       "preWarOil": 65,
@@ -8,8 +8,8 @@
       "preWarGas": 3
     },
     "notes": [
-      "D60 (Apr 28, cfDay21): Iran submits formal Hormuz-first peace proposal via Pakistan/Oman mediators — reopen Hormuz + end war, postpone nuclear talks. Trump NSC reviews but skeptical ('unlikely to accept'). Rubio reaffirms nuclear red lines. Qatar PM warns sea lanes not 'bargaining chip'; UN calls for immediate Hormuz reopening; Saudi Arabia briefed. Brent $111.16 (+4.7%), WTI $99.80 (+4.9%) — oil surges on proposal/rejection uncertainty. Hormuz: 7 vessels/day (up from 3 — first uptick). 21-day zero-attack streak (record). Internet Day 61 — partial whitelist. Lebanon: Israel strikes Bekaa Valley (first since Apr 16 ceasefire), south Lebanon towns; Hezbollah head Qassem rejects direct Lebanon-Israel talks. Rial ~1.35M/USD (est). Polymarket: end ops by June 30 = 53%, May 31 = 31%. ⚠ MODE SWITCH NEEDED: ceasefireMode.enabled is still true; ceasefire extended indefinitely by Trump Apr 21 — user should update expiresAt/status fields as appropriate.",
-      "D59 (Apr 27, cfDay20): Araghchi meets Putin in Moscow/St. Petersburg — Iran shifts diplomatic axis eastward after Round 2 collapse. Trump: 'Tehran can call us' — no envoys. 20-day zero-attack streak (record). Lebanon: suspected Hezbollah drone triggers Western Galilee sirens; Netanyahu security consultations. Israeli strikes kill 14 in Lebanon Apr 26. Dual blockade: ~3 vessels/day. Brent $106.20 (+0.8%), WTI $95.10. Internet Day 60. Ships stranded ~900 est. Oman back-channel warming.",
+      "D60 (Apr 28, cfDay21): IRAN SUBMITS NEW PEACE PROPOSAL — HORMUZ+WAR NOW, NUCLEAR DEFERRED. Iran sent US a new proposal via Pakistan: reopen Hormuz + end war immediately, address nuclear programme in a separate later phase. US/Trump 'cold' to proposal — Rubio: 'better than we expected' but any deal must block nuclear weapons. Araghchi continues Putin meeting at St. Petersburg; Putin: 'we see how courageously Iran is fighting'; Lavrov + Belousov + military intel chief Adm. Kostyukov in attendance; Putin confirms received message from Mojtaba Khamenei last week. UN chief warns Hormuz standoff risks global food emergency. Pakistan trying to restart US-Iran negotiations. WAR POWERS 60-DAY CLOCK EXPIRES TODAY. 21-day zero-attack streak. Lebanon 2,509+ killed. Brent $111.16 (+2.71%), WTI ~$99.40. Internet Day 61 = 1,464+ hrs. Dual blockade: ~3 vessels/day. Ships stranded ~900+.",
+      "D59 (Apr 27, cfDay20): Araghchi meets Putin in Moscow/St. Petersburg — Iran shifts diplomatic axis eastward after Round 2 collapse. Trump: 'Tehran can call us' — no envoys. 20-day zero-attack streak (record). Lebanon: suspected Hezbollah drone triggers Western Galilee sirens; Netanyahu security consultations. Israeli strikes kill 14 in Lebanon Apr 26. Dual blockade: ~3 vessels/day. Brent $108.22 (actual close; +1.89% from D58), WTI $97.00. Internet Day 60. Ships stranded ~900 est. Oman back-channel warming.",
       "D58 (Apr 26, cfDay19): Round 2 diplomacy collapses — Trump cancels Witkoff/Kushner Pakistan trip after Araghchi departs Islamabad. Araghchi in Oman activating back-channel. Iran: 'no talks under siege.' 19-day military zero-attack record. Dual blockade: ~3 vessels/day Hormuz. Brent $105.33 (est). Internet Day 59. Lebanon: 2,491 killed.",
       "D57 (Apr 25): ROUND 2 DIPLOMACY — Witkoff + Kushner fly to Islamabad; Araghchi in Pakistan for Round 2 talks. Iran FM spokesperson publicly denies direct US-Iran meeting; sources say Monday (Apr 27) meeting possible. Ghalibaf absent — Vance not traveling. Brent $105.33 (-0.3%), WTI $94.40 (-1.7%). 18-day zero-attack streak (record). Israel kills 6+ in Lebanon since Apr 23 ceasefire extension; Hezbollah calls it 'meaningless.' Lebanon: 2,491 killed total. Hormuz: ~3 vessels/day. Internet Day 58. Ships stranded ~894. Ceasefire Day 18.",
       "D56 (Apr 24): Lebanon ceasefire extended 3 weeks at White House. Brent $105.63 (+4.4%), WTI $96.07. Trump 'clock ticking for Tehran.' Rubio: Iran World Cup not barred. Hormuz ~3 vessels/day. Internet Day 57. 17-day zero-attack streak (record). Iran-US Round 2 Islamabad still no date. Naval confrontation risk elevated (US ordered to destroy Iranian mine-laying boats Apr 23). Ceasefire Day 17.",
@@ -33,117 +33,117 @@
       "D39 DEADLINE DAY - TRUMP 8PM ET ULTIMATUM (~22 HRS): Iran rejected 15-pt Islamabad Accord; counteroffered 10-pt maximalist (permanent end, sanctions lift, reconstruction, NPT enrichment, Hormuz toll). Trump: 'significant but not good enough' - REFUSES to extend. 'Power Plant Day and Bridge Day wrapped up in one.' IRGC: 'helpless, nervous, stupid.' Khademi (IRGC Intel No.2) + Bagheri (Quds) killed in joint US-Israel strike. South Pars petrochem struck. F-15E WSO rescued by Delta/SEAL/CIA after 24hrs. Hormuz: 13 vessels/week transit (trickle, northern channel, Iran toll). Brent $109-111. WTI ~$108. AAA $4.119 (+$0.80/mo). HRANA 3,540+ killed (1,616 civilians, 244+ children). Internet 960+ hrs. Polymarket: ceasefire by Dec 31 = 76%; conflict-ends by Dec 31 = 85%. P(Trump follow-through) = 0.22 (up from 0.18). Scenarios: escalation 37% / attrition 28% / victory 13% / deal 12% / intervention 7% / fracture 3%."
     ]
   },
-  "theoryBox": "<strong>Day 52 (Apr 20) — M/V TOUSKA SEIZED + CEASEFIRE EXPIRES TOMORROW + IRAN REFUSES ROUND 2:</strong> USS Spruance seized Iranian cargo ship M/V Touska in Gulf of Oman after 6-hour standoff (Apr 19). Iran vowed retaliation. Hormuz re-closed since D50 (Apr 18) after Iran reversed brief D49 opening — Brent crashed 12% to $84 on D49, rebounded to $90 on D50 closure, now $95.42 (+5.58%) on ceasefire-expiry fears. CEASEFIRE EXPIRES TOMORROW APR 21 — Iran VP Aref: US demands 'childish.' Iran says no plans for Round 2. Trump: 'Maybe I won't extend it.' US officials heading to Islamabad; Iran not joining. UAE cracking down on Tehran-linked banking networks (Sarraf networks shut). Lebanon 2,294+ killed. Internet: Day 52 = 1,248+ hrs — longest shutdown in recorded history. Business internet partial Day 7. Convergence 4.9 (from 5.7 D48 → 6.0 D49 peak on Hormuz opening → 4.9 now). Scenarios: Escalation 52% (↑↑) / Deal 18% (↓↓) / Stalled 15% / Victory 10% / Intervention 4% / Fracture 1%.",
-  "theoryBox_fa": "<strong>روز ۵۲ (۲۰ آوریل) — توقیف توسکا + انقضای آتش‌بس فردا + ایران مذاکره را رد کرد:</strong> ناوشکن USS Spruance کشتی ایرانی توسکا را توقیف کرد (۱۹ آوریل). ایران تهدید انتقام. هرمز از D50 بسته. برنت D49 سقوط به $۸۴، اکنون $۹۵.۴۲. آتش‌بس فردا منقضی — معاون اول عارف: خواسته‌های آمریکا 'کودکانه.' ایران: دور دوم نه. ترامپ: 'شاید تمدید نکنم.' دبی شبکه‌های Sarraf را بست. لبنان ۲٬۲۹۴+. اینترنت ۱٬۲۴۸+. همگرایی ۴.۹. تشدید ۵۲٪ (↑↑) / توافق ۱۸٪ (↓↓) / بن‌بست ۱۵٪ / پیروزی ۱۰٪ / مداخله ۴٪ / شکاف ۱٪.",
+  "theoryBox": "<strong>Day 60 (Apr 28, cfDay21) — IRAN'S DEFERRED-NUCLEAR PROPOSAL REJECTED BY US + ARAGHCHI-PUTIN MEETING + BRENT $111.16:</strong> Iran submitted new peace proposal via Pakistan (Apr 27-28): reopen Hormuz + end war NOW, address nuclear programme separately in a later phase. US cold to proposal — Rubio: 'better than expected' but any deal must block nuclear weapons. Iran FM Araghchi at St. Petersburg with Putin; Putin pledges Russia will 'do everything to serve Iran's interests'; military intel chief Adm. Kostyukov in room; Putin confirms received message from Mojtaba Khamenei. UN chief warns Hormuz standoff risks global food emergency. War Powers 60-day clock expires today. Brent $111.16 (+2.71%), WTI ~$99.40 — highest since March. 21-day zero-attack streak intact (D40-D60). Lebanon 2,509+ killed. Internet Day 61 = 1,464+ hrs. Convergence 4.9. Scenarios: Escalation 43% / Stalled 24% / Deal 16% / Victory 9% / Intervention 6% / Fracture 2%.",
+  "theoryBox_fa": "<strong>روز ۶۰ (۲۸ آوریل، آتش‌بس روز ۲۱) — پیشنهاد تعلیق هسته‌ای ایران رد شد + دیدار عراقچی-پوتین + برنت $۱۱۱.۱۶:</strong> ایران پیشنهاد جدید از طریق پاکستان ارسال کرد: هرمز را همین الان باز کنیم + جنگ را پایان دهیم، برنامه هسته‌ای را در مرحله بعدی جداگانه‌ای بررسی کنیم. آمریکا سرد — روبیو: 'بهتر از آنچه انتظار داشتیم' اما توافق باید توان هسته‌ای ایران را مسدود کند. عراقچی در سنت‌پترزبورگ با پوتین؛ پوتین: 'همه کار می‌کنیم تا منافع ایران تأمین شود'؛ رئیس اطلاعات نظامی روسیه کوستیوکوف در جلسه. دبیرکل سازمان ملل: بحران هرمز خطر اضطرار غذایی جهانی دارد. ساعت قانون اختیارات جنگی ۶۰-روزه امروز منقضی می‌شود. برنت $۱۱۱.۱۶ (+۲.۷۱٪). ۲۱ روز صفر حمله. لبنان ۲٬۵۰۹+. اینترنت ۱٬۴۶۴+. همگرایی ۴.۹. تشدید ۴۳٪ / بن‌بست ۲۴٪ / توافق ۱۶٪ / پیروزی ۹٪ / مداخله ۶٪ / شکاف ۲٪.",
   "metrics": [
     {
       "label": "Day",
-      "value": "52 CF EXPIRES TOMORROW",
-      "desc": "D52 Apr 20. Ceasefire Day 14 of 14 — FINAL DAY. Expires Apr 21. Iran refuses Round 2. Trump 'maybe I won't extend.' USS Spruance seized M/V Touska D51. Hormuz re-closed since D50."
+      "value": "60 — cfDay 21",
+      "desc": "D60 Apr 28. Ceasefire Day 21 — extended indefinitely (D54). 21-day zero-attack streak. Iran submitted deferred-nuclear proposal; US cold. War Powers 60-day clock expires today."
     },
     {
       "label": "Cumul. missiles",
       "value": "~3,413",
-      "desc": "D49-D52: 0 new (ceasefire holding militarily). Zero launches D40-D52 (13 straight days). Stockpile intact — political pause, not exhaustion."
+      "desc": "D40-D60: 0 new (21 straight days). Ceasefire + indefinite extension = political pause, not exhaustion. Stockpile intact. Plateau model confidence 0.9."
     },
     {
       "label": "Cumul. drones",
       "value": "~5,361",
-      "desc": "D49-D52: 0 new. Ceasefire holding on missile/drone axis but naval war active — USS Spruance seized M/V Touska, IRGC gunboats fired on VLCC Sanmar Herald D50."
+      "desc": "D40-D60: 0 new. Naval war active: IRGC counter-blockade ~3 vessels/day through Hormuz. MSC Francesca + Epaminondas still held. USS Spruance still holding M/V Touska."
     },
     {
       "label": "Brent crude",
-      "value": "$95.42",
-      "desc": "Brent $95.42 (+5.58%). WILD WEEK: D49 crashed to $84 (Hormuz 'opened'), D50 $90 (re-closed), D51 $90.38 (Touska seized), D52 $95.42 (ceasefire expires tomorrow). If collapse: $115-125+. If extension: $88-92."
+      "value": "$111.16",
+      "desc": "Brent $111.16 (+2.71% from D59 close). Highest since March. WTI ~$99.40 (range $96.26-$100.10). Brent trajectory: $84 (D49) → $90 (D50) → $108 (D59 close) → $111.16 (D60). UN food emergency warning. If deal: $85-90. If escalation resumes: $125+."
     },
     {
       "label": "Iran dead",
       "value": "~8,300+",
-      "desc": "HRANA: 1,701+ civilians confirmed (updated). Hengaw: 6,620 military. Total estimate ~8,300+. Internet Day 52 = 1,248+ hrs — record longest shutdown any country. Business internet partial Day 7."
+      "desc": "HRANA: 1,701+ civilians confirmed (no update since Apr 7 — internet Day 61 = 1,464+ hrs). Hengaw: 6,620 military. Total ~8,300+. Business internet partial Day 22+. Record longest national shutdown globally."
     },
     {
       "label": "Lebanon",
-      "value": "2,294+ killed",
-      "desc": "7,061+ wounded. UP from 2,055+. Israel-Lebanon ceasefire (from D48 Apr 16) holding. Direct talks track continuing. Next round Washington."
+      "value": "2,509+ killed",
+      "desc": "UP from 2,491 D59. Lebanon-Israel ceasefire (3-week extension from D56) still holding despite daily Israeli operations. Direct talks track ongoing. Washington round pending."
     },
     {
       "label": "Israel dead",
       "value": "27+",
-      "desc": "No new casualties under ceasefire. US KIA: 15+ (CENTCOM through Apr 7)."
+      "desc": "No new casualties under ceasefire. US KIA: 15+ (CENTCOM through Apr 7 — no new KIA under 21-day ceasefire)."
     },
     {
       "label": "Hormuz",
-      "value": "RE-CLOSED + TOUSKA SEIZED",
-      "desc": "D50 (Apr 18): Iran re-closed after 1-day Hormuz opening D49. IRGC gunboats fired on VLCC Sanmar Herald. D51 (Apr 19): USS Spruance seized M/V Touska — first Iranian ship boarded. 25 vessels turned back total. Iran vowed retaliation."
+      "value": "DUAL BLOCKADE — DAY 15",
+      "desc": "US naval blockade of Iranian ports active (31+ ships turned back). Iran IRGC counter-blockade: ~3 vessels/day Hormuz. MSC Francesca + Epaminondas held. USS Spruance holding Touska. Iran's deferred-nuclear proposal includes Hormuz reopening if blockade ends first."
     },
     {
       "label": "Ceasefire",
-      "value": "DAY 14 — EXPIRES TOMORROW",
-      "desc": "FINAL DAY. Iran VP Aref: US demands 'childish.' Iran: no Round 2 talks. Trump: 'Maybe I won't extend it — have to start dropping bombs again.' US officials to Islamabad; Iran not joining. Escalation 52% (↑↑), Deal 18% (↓↓), Stalled 15%."
+      "value": "DAY 21 — INDEFINITE",
+      "desc": "Ceasefire extended indefinitely (D54). Iran's new proposal: end war + Hormuz NOW, nuclear talks later. US/Trump cold. Rubio: nuclear must be in deal. Russia backing Iran. War Powers clock expires today. Escalation 43%, Stalled 24%, Deal 16%, Victory 9%."
     }
   ],
   "metrics_fa": [
     {
       "label": "روز",
-      "value": "۵۲ — آتش‌بس فردا منقضی",
-      "desc": "روز ۵۲ — ۲۰ آوریل. آتش‌بس روز ۱۴ = آخرین روز. فردا ۲۱ آوریل منقضی. ایران دور دوم نه. ترامپ 'شاید تمدید نکنم.' توسکا توقیف. هرمز بسته."
+      "value": "۶۰ — آتش‌بس روز ۲۱",
+      "desc": "روز ۶۰ — ۲۸ آوریل. آتش‌بس نامحدود (D54). ۲۱ روز صفر حمله. ایران پیشنهاد تعلیق هسته‌ای داد؛ آمریکا سرد. ساعت قانون اختیارات جنگی امروز منقضی."
     },
     {
       "label": "مجموع موشک",
       "value": "~۳٬۴۱۳",
-      "desc": "روز ۴۹-۵۲: ۰ جدید. صفر پرتاب D40-D52 (۱۳ روز متوالی). ذخایر دست‌نخورده."
+      "desc": "D40-D60: ۰ جدید (۲۱ روز متوالی). آتش‌بس = توقف سیاسی نه فرسایش. ذخایر دست‌نخورده."
     },
     {
       "label": "مجموع پهپاد",
       "value": "~۵٬۳۶۱",
-      "desc": "روز ۴۹-۵۲: ۰ جدید. جنگ موشکی متوقف اما جنگ دریایی فعال — توقیف توسکا + شلیک به نفتکش سنمار هرالد."
+      "desc": "D40-D60: ۰ جدید. جنگ دریایی فعال: محاصره متقابل ~۳ کشتی/روز. MSC Francesca + Epaminondas در توقیف. توسکا در توقیف."
     },
     {
       "label": "نفت برنت",
-      "value": "$۹۵.۴۲",
-      "desc": "هفته پرنوسان: D49 سقوط به $۸۴ (هرمز باز)، D50 بازگشت $۹۰ (هرمز بسته)، D51 $۹۰.۳۸، D52 $۹۵.۴۲ (+۵.۵۸٪). اگر فروپاشی: $۱۱۵-۱۲۵+."
+      "value": "$۱۱۱.۱۶",
+      "desc": "برنت $۱۱۱.۱۶ (+۲.۷۱٪). بالاترین از مارس. WTI ~$۹۹.۴۰. مسیر: $۸۴ (D49) → $۹۰ (D50) → $۱۰۸ (D59) → $۱۱۱.۱۶ (D60). هشدار سازمان ملل: اضطرار غذایی جهانی."
     },
     {
       "label": "کشته ایران",
       "value": "~۸٬۳۰۰+",
-      "desc": "هرانا: ۱٬۷۰۱+ غیرنظامی (به‌روز). هنگاو ۶٬۶۲۰. کل ~۸٬۳۰۰+. اینترنت روز ۵۲ = ۱٬۲۴۸+ ساعت — رکورد جهانی."
+      "desc": "هرانا: ۱٬۷۰۱+ غیرنظامی (بدون به‌روز از ۷ آوریل). هنگاو ۶٬۶۲۰. کل ~۸٬۳۰۰+. اینترنت روز ۶۱ = ۱٬۴۶۴+ ساعت — رکورد جهانی."
     },
     {
       "label": "لبنان",
-      "value": "۲٬۲۹۴+ کشته",
-      "desc": "۷٬۰۶۱+ زخمی. افزایش از ۲٬۰۵۵+. آتش‌بس اسرائیل-لبنان از D48 برقرار. مذاکرات ادامه."
+      "value": "۲٬۵۰۹+ کشته",
+      "desc": "افزایش از ۲٬۴۹۱ D59. آتش‌بس اسرائیل-لبنان (تمدید ۳ هفته‌ای از D56) با وجود عملیات روزانه اسرائیل برقرار."
     },
     {
       "label": "کشته اسرائیل",
       "value": "۲۷+",
-      "desc": "بدون تلفات جدید. US KIA ۱۵+."
+      "desc": "بدون تلفات جدید زیر آتش‌بس. US KIA ۱۵+ (سنتکام تا ۷ آوریل — ۲۱ روز بدون کشته)."
     },
     {
       "label": "هرمز",
-      "value": "بسته + توسکا توقیف",
-      "desc": "D50: ایران هرمز را دوباره بست + شلیک به Sanmar Herald. D51: USS Spruance کشتی توسکا را توقیف کرد. ۲۵ کشتی برگشته. ایران تهدید انتقام."
+      "value": "محاصره متقابل — روز ۱۵",
+      "desc": "محاصره دریایی آمریکا بنادر ایران (۳۱+ کشتی برگشته). سپاه ضدمحاصره: ~۳ کشتی/روز. MSC Francesca + Epaminondas + توسکا در توقیف. پیشنهاد ایران: هرمز باز + جنگ تمام اگر محاصره لغو شود."
     },
     {
       "label": "آتش‌بس",
-      "value": "روز ۱۴ — فردا منقضی",
-      "desc": "آخرین روز. عارف: 'کودکانه.' ایران: دور دوم نه. ترامپ: 'شاید تمدید نکنم.' آمریکا به اسلام‌آباد می‌رود، ایران نمی‌آید. تشدید ۵۲٪ (↑↑). توافق ۱۸٪ (↓↓). بن‌بست ۱۵٪."
+      "value": "روز ۲۱ — نامحدود",
+      "desc": "تمدید نامحدود (D54). پیشنهاد جدید ایران: پایان جنگ+هرمز همین الان، هسته‌ای بعداً. آمریکا سرد. روبیو: هسته‌ای باید بخشی از توافق باشد. پوتین پشتیبانی. ساعت قانون اختیارات جنگی. تشدید ۴۳٪ / بن‌بست ۲۴٪ / توافق ۱۶٪."
     }
   ],
   "sitrep": [
-    "<strong>D52 (Apr 20 07:00 ET): CEASEFIRE EXPIRES TOMORROW — M/V TOUSKA SEIZED + HORMUZ RE-CLOSED + IRAN REFUSES ROUND 2.</strong> USS Spruance boarded and seized Iranian cargo ship M/V Touska (D51, Apr 19) — first Iranian vessel boarded since war began. Iran vowed retaliation. IRGC gunboats fired on VLCC Sanmar Herald (D50, Apr 18). Hormuz re-closed since D50 after brief 1-day opening D49. 25 vessels turned back total.",
-    "<strong>IRAN VP AREF: US DEMANDS 'CHILDISH.' IRAN WILL NOT ATTEND ROUND 2. TRUMP: 'MAYBE WON'T EXTEND.'</strong> Iran VP Mohammad Mokhber Aref formally rejected Round 2 talks (Apr 19): 'US conditions are childish and impossible.' Trump (Apr 20): 'Maybe I won't extend it — have to start dropping bombs again.' US officials flew to Islamabad; Iran delegation did not board. Pakistan mediators say channel 'remains open' but both sides hardened.",
-    "<strong>BRENT $95.42 (↑5.58% D52), VOLATILE WEEK: $94.89 → $84.00 → $90.00 → $90.38 → $95.42.</strong> D49 (Apr 17): Brent crashed ~11% to $84 on Hormuz opening + deal hopes. D50 (Apr 18): rebounded to $90 on Hormuz re-closure. D51: $90.38. D52: $95.42 on Touska seizure + ceasefire expiry fears. WTI ~$91. Market now pricing 52% escalation probability.",
-    "<strong>IRAN INTERNET DAY 52 = 1,248+ HOURS — LONGEST SHUTDOWN IN RECORDED HISTORY.</strong> No civilian internet since D1 (Feb 28). Business internet partial (Days 46–52). HRANA: 1,701+ civilians killed confirmed. Lebanon 2,294+ killed, 7,061+ wounded. Israel-Lebanon ceasefire (from D48) holding. US KIA: 15+ (CENTCOM through Apr 7 — no new KIA under ceasefire).",
-    "<strong>CONVERGENCE 4.9 — COLLAPSED FROM 5.7 PEAK. ESCALATION 52% (↑↑), DEAL 18% (↓↓).</strong> D48: 5.7 → D49: 6.0 (Hormuz opening) → D50: 4.8 (Hormuz re-closure) → D51: 4.4 (Touska) → D52: 4.9 (slightly stabilized but below D48). Escalation 52% = highest since D30. Deal 18% = lowest since ceasefire. Stalled 15%, Victory 10%, Intervention 4%, Fracture 1%.",
-    "<strong>RISKS: CEASEFIRE EXPIRES TOMORROW APR 21. IRAN RETALIATION THREAT FOR TOUSKA. NO ROUND 2.</strong> If ceasefire expires without extension or deal: Iranian missile/drone campaign resumes — likely within hours. Touska seizure = casus belli Iran will leverage. IRGC has 13 days of quiet to pre-position assets. Convergence model shows this is the most dangerous 24-hour window since D1."
+    "<strong>D60 (Apr 28 07:00 ET): IRAN SUBMITS DEFERRED-NUCLEAR PROPOSAL — US COLD. ARAGHCHI-PUTIN MEETING. BRENT $111.16 (+2.71%).</strong> Iran transmitted new peace proposal to US via Pakistan mediators: (1) reopen Strait of Hormuz; (2) end war; (3) nuclear programme addressed in a subsequent separate phase. US Secretary Rubio: 'better than what we thought they'd submit' but emphasized any deal must block Iran from getting a nuclear weapon. Trump does not appear open to the proposal per senior US sources (CNN/WaPo Apr 28).",
+    "<strong>ARAGHCHI MEETS PUTIN IN ST. PETERSBURG — RUSSIA PLEDGES FULL BACKING.</strong> Putin: 'We see how courageously and heroically the Iranian people are fighting for their independence.' Russia will 'do everything that serves your interests so that peace can be achieved.' Meeting attended by: FM Lavrov, Def. Min. Belousov, Pres. aide Ushakov, and Adm. Kostyukov (head of Russian military intelligence) — Russia's top military intel chief in the room. Putin confirmed he received message from Supreme Leader Mojtaba Khamenei last week. Iran FM cited Washington's 'destructive habits' for stalled talks.",
+    "<strong>BRENT $111.16 (+2.71%), WTI ~$99.40 — HIGHEST SINCE MARCH. UN WARNS GLOBAL FOOD EMERGENCY.</strong> Brent continues surging: D49 $84 → D50 $90 → D59 $108.22 → D60 $111.16. Hormuz dual blockade Day 15: US naval blockade of Iranian ports + IRGC counter-blockade keeping traffic to ~3 vessels/day (vs 62/day pre-war). UN Secretary-General warned that the US-Iran Hormuz standoff risks triggering a global food emergency affecting vulnerable nations. Pakistan trying to restart US-Iran negotiations.",
+    "<strong>WAR POWERS 60-DAY CLOCK EXPIRES TODAY (APR 28-29). 21-DAY ZERO-ATTACK STREAK.</strong> The War Powers Resolution 60-day clock for the US military campaign expires today, legally requiring either congressional authorization or withdrawal. 21 consecutive days of zero Iranian missile/drone attacks (D40-D60 — conflict record). Business internet partial Day 22+ in Iran. HRANA: 1,701+ civilians confirmed (no update since Apr 7 — internet Day 61 = 1,464+ hrs total). Lebanon 2,509+ killed, 7,200+ wounded.",
+    "<strong>CONVERGENCE 4.9 — DIPLOMATIC DEADLOCK ENTRENCHED. ESCALATION 43%, STALLED 24%, DEAL 16%.</strong> Convergence 4.9: Military(6.5) + Economic(9.5) + Diplomatic(2.0) + Political(3.5) + Escalation(1.8). Iran's deferred-nuclear proposal = first substantive new diplomatic move since Round 2 collapse, but US rejection of the framing signals nuclear gap remains structural. Scenarios shift: Escalation 43% (↓), Stalled 24% (↑), Deal 16% (↑ slightly), Victory 9%, Intervention 6% (↑), Fracture 2%.",
+    "<strong>KEY RISKS: NUCLEAR DEADLOCK STRUCTURAL. WAR POWERS FORCES CONGRESSIONAL COMPLICATION. HORMUZ RISING ECONOMIC PAIN.</strong> Iran's proposal to defer nuclear = gives Iran a deal without the core US objective. US rejection = no deal pathway currently open. War Powers clock creates Congressional pressure for debate. Brent $111 = gas prices approaching $4.50+ = growing US voter pain. Russia's Kostyukov attendance signals Iran is gaining military intelligence support. Oman back-channel still theoretically active but yielding nothing."
   ],
   "sitrep_fa": [
-    "<strong>روز ۵۲ (۲۰ آوریل): آتش‌بس فردا منقضی — توقیف توسکا + هرمز بسته + ایران دور دوم رد کرد.</strong> ناو USS Spruance کشتی باری ایرانی M/V Touska را توقیف کرد (روز ۵۱، ۱۹ آوریل) — اولین کشتی ایرانی از ابتدای جنگ. ایران تهدید به تلافی کرد. قایق‌های سپاه به نفتکش Sanmar Herald شلیک کردند (روز ۵۰). هرمز از روز ۵۰ بسته است. ۲۵ کشتی برگشته.",
-    "<strong>عارف: خواسته‌های آمریکا 'کودکانه.' ایران دور دوم نمی‌آید. ترامپ: 'شاید تمدید نکنم.'</strong> معاون رئیس‌جمهور محمد مخبر عارف دور دوم مذاکرات را رد کرد (۱۹ آوریل): 'شروط آمریکا کودکانه و غیرممکن است.' ترامپ (۲۰ آوریل): 'شاید تمدید نکنم — باید دوباره بمب‌ بیندازیم.' مقامات آمریکا به اسلام‌آباد رفتند؛ هیئت ایران سوار نشد.",
-    "<strong>برنت $۹۵.۴۲ (↑۵.۵۸٪)، هفته پرنوسان: $۹۴.۸۹ → $۸۴ → $۹۰ → $۹۰.۳۸ → $۹۵.۴۲.</strong> روز ۴۹: برنت ~۱۱٪ سقوط به $۸۴ (باز شدن هرمز). روز ۵۰: برگشت به $۹۰ (بسته شدن مجدد). روز ۵۱: $۹۰.۳۸. روز ۵۲: $۹۵.۴۲ (توقیف توسکا + ترس انقضای آتش‌بس). WTI ~$۹۱.",
-    "<strong>اینترنت ایران روز ۵۲ = ۱٬۲۴۸+ ساعت — طولانی‌ترین قطعی در تاریخ ثبت‌شده.</strong> بدون اینترنت غیرنظامی از روز اول (۲۸ فوریه). اینترنت کسب‌وکارها جزئی (روزهای ۴۶-۵۲). هرانا: ۱٬۷۰۱+ غیرنظامی تایید شده. لبنان ۲٬۲۹۴+ کشته، ۷٬۰۶۱+ زخمی. آتش‌بس اسرائیل-لبنان (از روز ۴۸) برقرار. کشته‌های آمریکا: ۱۵+.",
-    "<strong>همگرایی ۴.۹ — سقوط از اوج ۵.۷. تشدید ۵۲٪ (↑↑)، توافق ۱۸٪ (↓↓).</strong> D48: ۵.۷ → D49: ۶.۰ → D50: ۴.۸ → D51: ۴.۴ → D52: ۴.۹. تشدید ۵۲٪ = بالاترین از روز ۳۰. توافق ۱۸٪ = پایین‌ترین از آتش‌بس. بن‌بست ۱۵٪، پیروزی ۱۰٪، مداخله ۴٪، شکاف ۱٪.",
-    "<strong>ریسک‌ها: آتش‌بس فردا ۲۱ آوریل. تهدید تلافی ایران. بدون دور دوم.</strong> اگر آتش‌بس بدون توافق یا تمدید منقضی شود: کمپین موشکی/پهپادی ایران احتمالاً ظرف چند ساعت از سر گرفته می‌شود. توقیف توسکا = بهانه‌ای که ایران بهره‌برداری خواهد کرد. خطرناک‌ترین ۲۴ ساعت از روز اول."
+    "<strong>روز ۶۰ (۲۸ آوریل): ایران پیشنهاد تعلیق هسته‌ای داد — آمریکا سرد. دیدار عراقچی-پوتین. برنت $۱۱۱.۱۶ (+۲.۷۱٪).</strong> ایران پیشنهاد جدید از طریق پاکستان ارسال کرد: (۱) هرمز را باز کنیم؛ (۲) جنگ را پایان دهیم؛ (۳) برنامه هسته‌ای را در مرحله بعدی جداگانه‌ای بررسی کنیم. روبیو: 'بهتر از آنچه انتظار داشتیم' اما توافق باید توان هسته‌ای ایران را مسدود کند. ترامپ ظاهراً آماده پذیرش پیشنهاد نیست.",
+    "<strong>عراقچی در سنت‌پترزبورگ با پوتین: روسیه پشتیبانی کامل اعلام کرد.</strong> پوتین: 'می‌بینیم چطور شجاعانه مردم ایران برای استقلالشان می‌جنگند.' روسیه 'هر کاری انجام خواهد داد.' جلسه با: لاوروف، بلوسوف، اوشاکوف، و دریاسالار کوستیوکوف (رئیس اطلاعات نظامی روسیه). پوتین تأیید کرد هفته گذشته پیامی از مجتبی خامنه‌ای دریافت کرد.",
+    "<strong>برنت $۱۱۱.۱۶ (+۲.۷۱٪)، WTI ~$۹۹.۴۰ — بالاترین از مارس. سازمان ملل: هشدار اضطرار غذایی جهانی.</strong> برنت: $۸۴ (D49) → $۹۰ (D50) → $۱۰۸ (D59) → $۱۱۱.۱۶ (D60). محاصره متقابل هرمز روز ۱۵: ~۳ کشتی/روز (مقابل ۶۲ قبل از جنگ). دبیرکل سازمان ملل هشدار داد.",
+    "<strong>ساعت قانون اختیارات جنگی ۶۰-روزه امروز منقضی می‌شود. ۲۱ روز صفر حمله.</strong> قانون اختیارات جنگی از آمریکا می‌خواهد یا کنگره تأیید یا خروج. ۲۱ روز متوالی صفر حمله موشکی/پهپادی (D40-D60). اینترنت کسب‌وکارها جزئی روز ۲۲+. هرانا ۱٬۷۰۱+ غیرنظامی (روز ۶۱ = ۱٬۴۶۴+ ساعت). لبنان ۲٬۵۰۹+ کشته.",
+    "<strong>همگرایی ۴.۹ — بن‌بست دیپلماتیک تثبیت شد. تشدید ۴۳٪، بن‌بست ۲۴٪، توافق ۱۶٪.</strong> Military(6.5)+Economic(9.5)+Diplomatic(2.0)+Political(3.5)+Escalation(1.8). پیشنهاد تعلیق هسته‌ای ایران = اولین اقدام دیپلماتیک از فروپاشی دور دوم، اما رد آمریکا نشان می‌دهد شکاف هسته‌ای ساختاری است.",
+    "<strong>ریسک‌های کلیدی: بن‌بست هسته‌ای ساختاری. اختیارات جنگی = پیچیدگی کنگره. درد اقتصادی فزاینده هرمز.</strong> پیشنهاد ایران برای تعلیق هسته‌ای = توافق بدون هدف اصلی آمریکا. رد آمریکا = هیچ مسیر توافقی کنونی باز نیست. ساعت قانون اختیارات جنگی = فشار کنگره. برنت $۱۱۱ = بنزین نزدیک $۴.۵۰+ = رأی‌دهندگان آمریکا."
   ],
   "dailySeries": {
     "labels": [
@@ -332,8 +332,8 @@
       0,
       0
     ],
-    "sourceLabel": "D1-D10: JPost. D11: UAE MoD. D12-D38: fragment est. D39: ceasefire. D40-D52: 0+0 ceasefire/blockade (13 days). D52: ceasefire expires tomorrow. Touska seized. Hormuz re-closed. Iran refuses Round 2.",
-    "throughDate": "2026-04-20",
+    "sourceLabel": "D1-D10: JPost. D11: UAE MoD. D12-D38: fragment est. D39: ceasefire. D40-D60: 0+0 ceasefire/blockade (21 days). D60: Iran deferred-nuclear proposal; US cold. Araghchi-Putin. Brent $111.16.",
+    "throughDate": "2026-04-28",
     "confidence": [
       1,
       1,
@@ -394,9 +394,9 @@
       70,
       65,
       62,
-      60
+      1
     ],
-    "confidenceNote": "1.0 = JPost verified day-by-day (D1-D10). 0.8 = UAE MoD official scaled (D11). 0.6 = fragment estimates from Gulf reports (D12-D29). 0.5 = latest data, less verified (D30+). 1.0 = ceasefire/blockade confirmed 0 launches (D40-D52)."
+    "confidenceNote": "1.0 = JPost verified day-by-day (D1-D10). 0.8 = UAE MoD official scaled (D11). 0.6 = fragment estimates from Gulf reports (D12-D29). 0.5 = latest data, less verified (D30+). 1.0 = ceasefire/blockade confirmed 0 launches (D40-D60)."
   },
   "oil": {
     "labels": [
@@ -521,8 +521,8 @@
       101.14,
       105.63,
       105.33,
-      105.33,
-      106.2,
+      108.22,
+      108.22,
       111.16
     ],
     "wti": [
@@ -584,11 +584,11 @@
       94.06,
       96.07,
       94.4,
-      94.4,
-      95.1,
-      99.8
+      97.0,
+      97.0,
+      99.4
     ],
-    "note": "D52 (Apr 20): Brent $95.42 (↑5.58%). D49: crashed ~11% to $84 (Hormuz opening). D50: rebounded $90 (Hormuz re-closed). D51: $90.38. D52: $95.42 (Touska seizure + ceasefire expiry fears). Ceasefire expires tomorrow Apr 21. Escalation 52%. If collapse: $115-125+. If deal: $85-90."
+    "note": "D60 (Apr 28): Brent $111.16 (+2.71% from D59 close $108.22). WTI $99.40 est (range $96.26-$100.10). Highest since March. Trajectory: $84 (D49 Hormuz open) → $90 (D50 re-closed) → $108 (D59 actual close) → $111.16 (D60 Iran deferred-nuclear proposal rejected). UN food emergency warning. If deal: $85-90. If escalation resumes: $125+."
   },
   "pressure": {
     "labels": [
@@ -1307,19 +1307,19 @@
       "date": "Apr 27",
       "missiles": 0,
       "drones": 0,
-      "primary": "D59 CEASEFIRE DAY 20 — ARAGHCHI MEETS PUTIN IN MOSCOW, TRUMP SAYS 'JUST CALL US'; 20-DAY ZERO-ATTACK RECORD: Iran FM Araghchi arrives in St. Petersburg for talks with President Putin as Tehran shifts diplomatic axis eastward following Round 2 collapse. Araghchi: meeting is 'a good opportunity to discuss war developments.' Trump: 'Tehran can come to us, or they can call us' — no envoys dispatched. Oman back-channel still warming up; no Round 3 date. Israel-Lebanon: Netanyahu holds security consultations on Hezbollah violations; suspected Hezbollah drone from Lebanon triggered sirens in Western Galilee (IDF lost contact — likely crashed). Israeli strikes killed 14 in Lebanon Apr 26. Lebanon 3-week ceasefire extension (Apr 23) continues despite daily violations. Brent $106.20 (+0.8%). WTI $95.10 (+0.7%). Hormuz dual blockade: ~3 vessels/day. Internet Day 60.",
-      "capability": "0+0 missile/drone. 20-day zero-attack streak — conflict record extended. Dual Hormuz blockade intact: US naval blockade of Iranian ports (31+ ships turned away cumulative), Iran IRGC counter-blockade at Strait (~3 vessels/day). IRGC-seized vessels (MSC Francesca, Epaminondas) still held. Iran FM Araghchi in Moscow for Putin talks — signals Iran leveraging Russia alliance as diplomatic pressure on US.",
-      "cost": "Brent $106.20 (+0.8%). WTI $95.10 (+0.7%). Hormuz: ~3 vessels/day (97% below pre-war 135). Internet Day 60 — cumulative economic cost ~$2.58B+ est ($40M/day). US blockade: 31+ ships turned away cumulative; ~900 seafarers' ships stranded (est). Lebanon: 2,491+ killed. Rial ~1.32M/USD (est). Iran IMF: −6.1% GDP, 68.9% inflation.",
-      "assessment": "D59 — ARAGHCHI PIVOTS TO MOSCOW. The Russia visit is Iran's clearest diplomatic signal since Round 2 collapse: by meeting Putin, Tehran signals it has strategic backing and is not isolated. Russia-Iran 20-year partnership (Jan 2025) gives Moscow a role as diplomatic cover and potential pressure lever. Trump's 'just call us' framing converts the Round 2 failure into a deliberate power posture — refusing to chase Iran while preserving the ceasefire. The open question is whether the Oman back-channel can bridge this formality gap: Iran initiating contact would satisfy Trump's need to appear dominant; Oman can engineer the call format to avoid Iran's domestic 'negotiations under siege' problem. 20-day zero-attack streak preserves the ceasefire's core value. Lebanon track deteriorating: Netanyahu security consultations signal possible Israeli response to Hezbollah drone violations. Scenarios: (A) Oman/Russia channel produces call/framework → Round 3 within 5–7 days = 25%. (B) Diplomatic repositioning extends stalemate another week = 45%. (C) Lebanon violations spiral into broader escalation = 18%. (D) Trump issues new ultimatum as Russia visit angers him = 12%."
+      "primary": "D59 CEASEFIRE DAY 20 — ARAGHCHI MEETS PUTIN IN ST. PETERSBURG, TRUMP SAYS 'JUST CALL US'; 20-DAY ZERO-ATTACK RECORD: Iran FM Araghchi arrives in St. Petersburg for talks with President Putin as Tehran shifts diplomatic axis eastward following Round 2 collapse. Araghchi: meeting is 'a good opportunity to discuss war developments.' Trump: 'Tehran can come to us, or they can call us' — no envoys dispatched. Oman back-channel still warming up; no Round 3 date. Israel-Lebanon: Netanyahu holds security consultations on Hezbollah violations; suspected Hezbollah drone from Lebanon triggered sirens in Western Galilee (IDF lost contact — likely crashed). Israeli strikes killed 14 in Lebanon Apr 26. Lebanon 3-week ceasefire extension (Apr 23) continues despite daily violations. Brent $108.22 (actual close, +1.89% from D58 $105.33). WTI $97.00. Hormuz dual blockade: ~3 vessels/day. Internet Day 60.",
+      "capability": "0+0 missile/drone. 20-day zero-attack streak — conflict record extended. Dual Hormuz blockade intact: US naval blockade of Iranian ports (31+ ships turned away cumulative), Iran IRGC counter-blockade at Strait (~3 vessels/day). IRGC-seized vessels (MSC Francesca, Epaminondas) still held. Iran FM Araghchi in St. Petersburg for Putin talks — Russia military intelligence chief Kostyukov in attendance.",
+      "cost": "Brent $108.22 (actual close, +1.89%). WTI $97.00. Hormuz: ~3 vessels/day (97% below pre-war 135). Internet Day 60 — cumulative economic cost ~$2.58B+ est ($40M/day). US blockade: 31+ ships turned away cumulative; ~900 seafarers' ships stranded (est). Lebanon: 2,491+ killed. Rial ~1.32M/USD (est). Iran IMF: −6.1% GDP, 68.9% inflation.",
+      "assessment": "D59 — ARAGHCHI PIVOTS TO MOSCOW/ST. PETE. The Russia visit is Iran's clearest diplomatic signal since Round 2 collapse. Russia-Iran 20-year partnership gives Moscow a role as diplomatic cover. Trump's 'just call us' framing = refusing to chase Iran. Oman back-channel probing. 20-day zero-attack streak preserves ceasefire core value. Lebanon deteriorating: Hezbollah drone violations, Netanyahu security consultations. Scenarios: (A) Russia/Oman channel → Round 3 = 25%. (B) Stalemate extends = 45%. (C) Lebanon spiral = 18%. (D) Trump new ultimatum = 12%."
     },
     {
       "date": "Apr 28",
       "missiles": 0,
       "drones": 0,
-      "primary": "D60 CEASEFIRE DAY 21 — IRAN SUBMITS FORMAL PEACE PROPOSAL: REOPEN HORMUZ + END WAR, POSTPONE NUCLEAR TALKS; TRUMP NSC REVIEWS BUT SKEPTICAL; 21-DAY ZERO-ATTACK RECORD: Iran FM Araghchi, returning from Moscow, conveyed a formal new proposal to the US via Pakistan and Oman mediators: Iran will reopen the Strait of Hormuz and agree to a permanent ceasefire/end of war in exchange for the US lifting its naval blockade of Iranian ports — with nuclear negotiations explicitly deferred to a later, separate track. The proposal was also briefed to Egyptian, Turkish, Qatari, and Omani mediators. Qatar PM Sheikh Mohammed bin Abdulrahman Al Thani warned sea lanes must not become 'a bargaining chip or pressure tactic.' Saudi FM Faisal bin Farhan was briefed. UN Security Council called for Hormuz to reopen immediately. Trump convened national security aides to review the plan but sources told CNN he is 'unlikely to accept' terms that exclude nuclear disarmament. White House: 'red lines' on preventing nuclear weapon capability remain firm. Rubio: any deal must include Iran's enrichment cap. Oil market reacts sharply: Brent $111.16 (+4.7%), WTI $99.80 (+4.9%) — markets price in both the proposal's promise and Trump's skepticism. Hormuz: 7 vessels/day (up from 3 — logistics cautiously resuming on rumor of deal). Internet Day 61 — partial whitelist restoration continues. Lebanon: Israel strikes Bekaa Valley (first since Apr 16 ceasefire), also Tibnin, Yater, Bint Jbeil in south. Hezbollah head Naim Qassem rejects direct Lebanon-Israel talks as 'humiliating and unnecessary concession.'",
-      "capability": "0+0 missile/drone. 21-day zero-attack streak — conflict record extended. Dual Hormuz blockade: US naval blockade of Iranian ports (31+ ships turned away cumulative), Iran IRGC counter-blockade at Strait (7 vessels/day — up from 3, first uptick in weeks; Euronews reports ~20,000 seafarers stranded on hundreds of vessels). Two IRGC-seized vessels (MSC Francesca, Epaminondas) still held. Iran FM Araghchi back from Moscow, now directing formal proposal via Pakistan/Oman/Qatar multi-mediator track.",
-      "cost": "Brent $111.16 (+4.7%). WTI $99.80 (+4.9%). Hormuz: 7 vessels/day (95% below pre-war 140). Internet Day 61 — partial whitelist access; cumulative economic cost ~$2.62B+ est ($40M/day). US blockade: 31+ ships turned away cumulative; ~20,000 seafarers stranded (hundreds of vessels). Lebanon: 2,491+ killed; Bekaa Valley struck (first since Apr 16 ceasefire). Rial ~1.35M/USD (est). Iran IMF: −6.1% GDP, 68.9% inflation.",
-      "assessment": "D60 — IRAN'S FORMAL PROPOSAL SHIFTS THE DIPLOMATIC GEOMETRY. The Hormuz-first offer is Iran's most structured diplomatic move since the ceasefire began: it separates the maritime crisis (tractable) from the nuclear standoff (intractable), offering Trump an economic win (oil prices, Hormuz reopening) without conceding on enrichment. The logic: if Trump gets Hormuz opened and oil prices fall, the domestic political pressure eases — Iran bets Trump will value that more than nuclear leverage. Trump's likely problem: accepting a deal without nuclear terms would be attacked domestically as a surrender, and Israel would strongly object. The WH 'red lines' language and CNN sourcing ('unlikely to accept') suggest Trump will counter-propose rather than flat reject — creating space for Oman/Pakistan to engineer a hybrid formula. The Hormuz vessel count ticking up to 7/day may reflect logistics companies testing waters ahead of a possible deal, or Iranian IRGC easing enforcement selectively. Oil at $111 reinforces urgency on both sides. Scenarios: (A) Trump counter-proposes interim Hormuz framework with nuclear 'intent' language → deal within 7 days = 22%. (B) Proposal rejected, stalemate deepens, oil stays $110+ = 38%. (C) Oman/Pakistan engineer hybrid indirect framework bridging nuclear gap → Round 3 within 10 days = 28%. (D) Israel strikes Iran to torpedo deal = 12%."
+      "primary": "D60 CEASEFIRE DAY 21 — IRAN SUBMITS DEFERRED-NUCLEAR PROPOSAL; US COLD. ARAGHCHI-PUTIN MEETING CONCLUDES. BRENT $111.16 (+2.71%). WAR POWERS CLOCK EXPIRES TODAY. Iran transmitted new peace proposal to US via Pakistan mediators: (1) reopen Hormuz + end war immediately; (2) address nuclear programme in a separate subsequent phase — a 'staged' approach. US Secretary Rubio: 'better than what we thought they'd submit' but emphasized any deal must block Iran from getting nuclear weapons. Trump 'cold' to proposal (CNN/WaPo). Araghchi-Putin meeting at St. Petersburg: Putin pledges Russia will 'do everything to serve Iran's interests'; Adm. Kostyukov (head of Russian military intelligence) in attendance — Russia's top spy in the room; Putin confirms received message from Mojtaba Khamenei last week. UN Secretary-General warned Hormuz standoff risks triggering global food emergency particularly affecting Somalia, Yemen, sub-Saharan Africa. Pakistan actively trying to restart US-Iran negotiations. War Powers Resolution 60-day clock expires today — legally requires Congress to authorize or Trump to withdraw. Lebanon 2,509+ killed. Internet Day 61 = 1,464+ hrs. 21-day zero-attack streak.",
+      "capability": "0+0 missile/drone. 21-day zero-attack streak — conflict record extended. Dual Hormuz blockade intact: US naval blockade (31+ ships turned back), Iran IRGC counter-blockade (~3 vessels/day). MSC Francesca + Epaminondas + Touska still held. Iran's deferred-nuclear proposal signals Araghchi civilian track still active. Russia military intelligence backing adds new dimension to Iran's strategic depth.",
+      "cost": "Brent $111.16 (+2.71% from D59 close $108.22). WTI $99.40 est (range $96.26-$100.10). Highest Brent since mid-March. Hormuz dual blockade Day 15+. Internet Day 61 = 1,464+ hrs. Cumulative internet economic cost ~$2.62B+ est. US blockade: 31+ ships turned back. Lebanon 2,509+ killed. War Powers legal clock expires. Iran rial ~1.32M/USD. IMF: −6.1% GDP.",
+      "assessment": "D60 — IRAN'S DEFERRED-NUCLEAR GAMBIT. The new proposal is Iran's most flexible diplomatic position yet: accepting Hormuz reopening and war end without demanding nuclear concessions upfront — a staged approach that removes the US's primary leverage for nuclear negotiations. US cold reaction reflects the structural problem: accepting this framework means accepting a deal without the core objective (nuclear disarmament). Russia's military intel chief in the Araghchi-Putin meeting signals Iran is consolidating an alternative security architecture. War Powers clock adds Congressional dimension. Convergence 4.9: economic pain rising ($111 Brent), diplomatic activity slightly up (Iran submitted something), but structural nuclear gap unchanged. Scenarios: Escalation 43% / Stalled 24% / Deal 16% / Victory 9% / Intervention 6% / Fracture 2%."
     }
   ],
   "timeline": [
@@ -1481,137 +1481,137 @@
   "scenarioProbabilities": [
     {
       "label": "Ceasefire collapses / Escalation",
-      "pct": 52,
-      "detail": "UP from 31%. Ceasefire expires tomorrow Apr 21. Iran VP Aref: US demands 'childish and impossible.' Iran refuses Round 2 talks. USS Spruance seized M/V Touska (first boarding). IRGC fired on VLCC Sanmar Herald. Trump: 'Maybe I won't extend it — have to start dropping bombs again.' Hormuz re-closed D3. 25 ships turned back. All indicators pointing toward resumption D53."
+      "pct": 43,
+      "detail": "DOWN from 52% (D52) but still most likely. D60: ceasefire holds at Day 21 — longest streak since war began. Iran submitted deferred-nuclear proposal (reopen Hormuz + end war NOW, nuclear talks later) — US cold. Rubio: any deal must block nuclear weapons. Putin-Araghchi meeting signals Russia backing Iran for long haul. Nuclear deadlock structural. War Powers 60-day clock expired today — congressional authorization issue could complicate US posture. If diplomacy fails or War Powers crisis escalates: resumption most likely outcome."
     },
     {
       "label": "Stalled / Protracted standoff",
-      "pct": 15,
-      "detail": "Both sides allow ceasefire to lapse with tacit agreement not to escalate immediately — buying time without formal extension. Possible if neither side wants the PR hit of 'breaking' the ceasefire but deal is not ready. Turkey 45-60 day extension offer still technically on table."
+      "pct": 24,
+      "detail": "UP sharply from 15% (D52). D60 ceasefire Day 21 indefinite = stall is now the operative state. Dual blockade (~3 vessels/day each side) = frozen military + active economic warfare. Both sides probing but neither pulling trigger. Araghchi-Putin = Iran preparing for long standoff. UN food emergency warning = international pressure building. Stall could persist weeks more with War Powers political complication limiting US strike options."
     },
     {
       "label": "Negotiated deal",
-      "pct": 18,
-      "detail": "DOWN from 31%. Deal now requires ceasefire extension AND Round 2 agreement — Iran has rejected both. Hormuz re-closure + Touska seizure have poisoned the well. 15-yr enrichment compromise still theoretically available but no channel to deliver it. Requires dramatic reversal in next 24 hours."
+      "pct": 16,
+      "detail": "DOWN slightly from 18%. Iran's deferred-nuclear proposal is the most flexibility Iran has shown — but US/Trump rejected nuclear deferral outright (Rubio: must block nuclear weapons). Key gap: Iran wants nuclear talks LATER, US wants nuclear in the deal NOW. Araghchi-Putin = Iran hardening fallback position. 16% reflects genuine proposal is on table but structural gap remains. Requires Iran to include nuclear in deal or US to accept deferred nuclear."
     },
     {
       "label": "Declared victory / Withdrawal",
-      "pct": 10,
-      "detail": "Trump declares 'mission accomplished' — military objectives achieved, ceasefire as de facto end — and withdraws without formal deal. Iran keeps enrichment program but degraded. Could happen if resuming strikes looks too costly. Unchanged."
+      "pct": 9,
+      "detail": "DOWN from 10%. War Powers 60-day clock expiration complicates Trump declaring victory — may need congressional vote to continue. 21-day zero-attack streak = military objectives partially achieved narrative. But Hormuz still blocked, no nuclear deal = victory narrative harder to sell. Could still happen if Brent $115+ creates domestic political crisis."
     },
     {
       "label": "International intervention",
-      "pct": 4,
-      "detail": "DOWN from 5%. Pakistan mediation channel collapsed (Iran no-showed). UN Security Council emergency session possible but China/Russia would block binding resolution. Multilateral framework requires weeks Iran doesn't want to give."
+      "pct": 6,
+      "detail": "UP from 4%. UN Secretary-General warning on Hormuz food emergency = international pressure escalating. Russia backing Iran (Araghchi-Putin, Lavrov + Kostyukov in room) = multilateral pressure pathway opening. Pakistan trying to restart negotiations. War Powers expiration = Congress as new pressure vector. G7 food emergency + War Powers + Russia = conditions for forced multilateral intervention rising."
     },
     {
       "label": "Regime fracture",
-      "pct": 1,
-      "detail": "No evidence of internal fracture. IRGC united behind hardline position. Aref's 'childish' statement reflects regime consensus. Unchanged at 1%."
+      "pct": 2,
+      "detail": "UP from 1%. 21 days zero attacks + deferred-nuclear proposal = signs of reformist faction gaining ground briefly. But Araghchi going to Putin (not Washington) = hardliners still in control. Small signal: Iran submitted a proposal at all = some internal debate. Still very low probability."
     }
   ],
   "scenarioProbabilities_fa": [
     {
       "label": "فروپاشی آتش‌بس / تشدید",
-      "pct": 52,
-      "detail": "افزایش از ۳۱٪. آتش‌بس فردا منقضی. عارف: 'کودکانه.' ایران دور دوم نه. توقیف توسکا. شلیک به سنمار. ترامپ: 'شاید تمدید نکنم.' هرمز بسته روز ۳. ۲۵ کشتی برگشته. همه نشانگرها به سمت از سرگیری D53."
+      "pct": 43,
+      "detail": "کاهش از ۵۲٪ (D52) اما هنوز محتمل‌ترین. آتش‌بس روز ۲۱ — طولانی‌ترین دوره. ایران پیشنهاد تعلیق هسته‌ای داد؛ آمریکا سرد. روبیو: توافق باید هسته را مسدود کند. پوتین-عراقچی = روسیه پشتیبانی ایران برای مدت طولانی. بن‌بست هسته‌ای ساختاری. ساعت قانون اختیارات جنگی امروز منقضی."
     },
     {
       "label": "بن‌بست / تقابل طولانی",
-      "pct": 15,
-      "detail": "هر دو طرف اجازه می‌دهند آتش‌بس بدون تمدید رسمی منقضی شود اما فوری تشدید نمی‌کنند. ترکیه ۴۵-۶۰ روز تمدید هنوز روی میز."
+      "pct": 24,
+      "detail": "افزایش تند از ۱۵٪. آتش‌بس نامحدود D54 = بن‌بست حالت عملیاتی است. محاصره دوگانه = جنگ اقتصادی فعال. عراقچی-پوتین = ایران آماده بن‌بست طولانی. اخطار سازمان ملل درباره بحران غذایی."
     },
     {
       "label": "توافق مذاکره‌ای",
-      "pct": 18,
-      "detail": "کاهش از ۳۱٪. ایران هم تمدید و هم دور دوم را رد کرد. توسکا + هرمز محیط را مسموم کرد. نیاز به تغییر دراماتیک در ۲۴ ساعت آینده."
+      "pct": 16,
+      "detail": "کاهش جزئی از ۱۸٪. پیشنهاد تعلیق هسته‌ای ایران انعطاف‌پذیرترین موضع تاکنون — اما آمریکا رد کرد. شکاف: ایران می‌خواهد هسته را به بعد موکول کند، آمریکا هسته را الان می‌خواهد. ۱۶٪ = پیشنهاد روی میز است اما شکاف ساختاری باقی."
     },
     {
       "label": "اعلام پیروزی / خروج",
-      "pct": 10,
-      "detail": "ترامپ 'ماموریت انجام شد' — بدون توافق رسمی. احتمال اگر از سرگیری حملات خیلی پرهزینه باشد."
+      "pct": 9,
+      "detail": "کاهش از ۱۰٪. انقضای ساعت قانون اختیارات جنگی = اعلام پیروزی پیچیده‌تر. ۲۱ روز صفر حمله = اهداف نظامی جزئاً محقق. اما هرمز بسته + بدون توافق هسته = روایت پیروزی سخت. اگر برنت $۱۱۵+: بحران سیاسی داخلی."
     },
     {
       "label": "مداخله بین‌المللی",
-      "pct": 4,
-      "detail": "کاهش از ۵٪. کانال پاکستان شکست خورد. چین/روسیه قطعنامه سازمان ملل را وتو می‌کنند."
+      "pct": 6,
+      "detail": "افزایش از ۴٪. اخطار دبیرکل سازمان ملل درباره بحران غذایی = فشار بین‌المللی در حال افزایش. روسیه پشت ایران (عراقچی-پوتین). پاکستان تلاش برای از سرگیری مذاکرات. انقضای اختیارات جنگی = کنگره به عنوان نیروی فشار جدید."
     },
     {
       "label": "شکاف رژیم",
-      "pct": 1,
-      "detail": "بدون شواهد شکاف داخلی. سپاه متحد. ۱٪ بدون تغییر."
+      "pct": 2,
+      "detail": "افزایش از ۱٪. ۲۱ روز صفر + پیشنهاد تعلیق هسته = جناح اصلاح‌طلب کمی قوت گرفت. اما عراقچی به مسکو رفت (نه واشنگتن) = سخت‌لاین‌ها هنوز در کنترل. کوچک."
     }
   ],
   "theoryEvaluation": [
     {
-      "title": "TOUSKA SEIZURE + SANMAR HERALD FIRING = IRAN'S ESCALATION LADDER BEING CLIMBED",
-      "body": "Two naval incidents in 48 hours (D50-D51) represent Iran systematically escalating asymmetric naval pressure while formally maintaining the ceasefire. This is textbook Iranian strategic behavior: create facts on the ground (Sanmar Herald firing D50, Touska seizure by US D51) that make the other side's position more costly, just before a deadline (ceasefire expiry Apr 21). Iran didn't start these; the US did by seizing Touska. But Iran had already fired on Sanmar Herald first. The sequence: Iran tests (Sanmar) → US escalates (Touska) → Iran threatens retaliation → ceasefire expires. This is the classic path to resumption."
+      "title": "D60: IRAN'S DEFERRED-NUCLEAR GAMBIT — THE MOST FLEXIBLE PROPOSAL YET, STILL NOT ENOUGH",
+      "body": "Iran's Apr 27-28 proposal via Pakistan is structurally unprecedented: decouple Hormuz/war termination from nuclear talks, accept immediate ceasefire + Hormuz reopening in exchange for ending US campaign, then negotiate nuclear separately. This is Iran saying: 'we'll accept military defeat on the conventional war, but we won't accept nuclear surrender as part of the surrender terms.' The US/Trump response (cold, Rubio 'any deal must block nuclear weapons') reveals the core structural gap: for the US, the nuclear issue IS the war. They didn't bomb Iran to stop missile strikes — they bombed Iran to end the nuclear threat. Iran's deferred-nuclear proposal therefore fails the US's minimum condition, regardless of how attractive the conventional terms are. The gap is not tactical, it is strategic."
     },
     {
-      "title": "AREF TRUMP 'CHILDISH' REJECTION = HARDLINE FACTION VICTORY WITHIN IRAN",
-      "body": "Iran VP Aref's 'childish and impossible' language about US conditions is notable for its harshness. This is not diplomatic language — it's a domestic political signal. Aref, aligned with IRGC hardliners, is using the public rejection of Round 2 to foreclose the reformist track (Araghchi's Hormuz opening D49). The 24-hour Hormuz opening (D49) followed by re-closure (D50) tells the same story: the reformist faction tried de-escalation, the hardline faction overruled. IRGC is running Iran's war policy at this critical juncture."
+      "title": "ARAGHCHI-PUTIN MEETING = IRAN BUILDING ESCALATION BACKSTOP, NOT SEEKING DEAL",
+      "body": "Araghchi traveling to St. Petersburg to meet Putin — with Lavrov, Belousov (Defence), AND Adm. Kostyukov (military intelligence chief) in the room — is not a peace initiative. This is Iran securing a Russian security umbrella for continued resistance. Putin's words ('we see how courageously Iran is fighting') and the presence of Kostyukov signal this is an intelligence/military coordination meeting, not diplomatic. Mojtaba Khamenei's message to Putin (confirmed delivered last week) indicates the Supreme Leader's office is directly engaged. Iran is building out its eastern alliance before any deal — this is positioning for a long haul, not for surrender."
     },
     {
-      "title": "CONVERGENCE 4.9 — THE WHIPSAW FROM 6.0 BACK TO 4.9 TELLS THE WHOLE STORY",
-      "body": "Convergence peaked at 6.0 on D49 — the highest point since ceasefire began — on the Hormuz opening and 15-yr enrichment compromise signal. Within 72 hours: Hormuz re-closed, IRGC fired on tanker, US seized Touska, Iran refused Round 2, ceasefire now expires tomorrow. The whipsaw from 6.0 to 4.4 to 4.9 is exactly what structural negotiations failure looks like: a moment of genuine possibility (D49) followed by a structural inability to convert it into a deal. The 15-yr compromise that caused Brent to crash to $84 had no mechanism to convert Iran's interest into action before IRGC hardliners re-closed Hormuz."
+      "title": "WAR POWERS 60-DAY CLOCK EXPIRES TODAY — CONSTITUTIONAL CRISIS COMING",
+      "body": "The War Powers Resolution requires congressional authorization after 60 days of combat operations. The war began Feb 28 — 60 days expire today Apr 28. Trump has not sought congressional authorization. This creates three possible paths: (1) Trump ignores War Powers (most likely) — legal challenge inevitable, but takes time; (2) Trump seeks emergency authorization — politically risky, Democrats + some Republicans could vote no; (3) Trump declares 'mission accomplished' to reset the clock — possible if ceasefire allows this framing. The War Powers issue is not going away. It gives Congress leverage it hasn't had and gives Iran's US allies (Democrats, some libertarian Republicans) a procedural weapon to constrain resumption of hostilities."
     },
     {
-      "title": "THE 52% ESCALATION SCENARIO: WHAT HAPPENS IF CEASEFIRE LAPSES TOMORROW",
-      "body": "If ceasefire expires Apr 21 without extension or deal: Iran will likely resume missile/drone campaign within hours, not days. Reasons: (1) IRGC has had 13 days to resupply and reposition; (2) Touska seizure provides casus belli; (3) Aref's public 'childish' statement forecloses retreat without Iranian face-saving; (4) Trump's 'dropping bombs' language signals US willingness to resume. What changes from D1: IRGC now knows exactly which targets are most sensitive, coalition interceptor stocks are partially depleted from D1-D39, and Hormuz is already closed so initial economic shock is compressed. Brent would spike to $110-120+ on first D53 launch."
+      "title": "BRENT $111.16 = MARKET PRICING A NEW EQUILIBRIUM, NOT PANIC",
+      "body": "Brent $111.16 (+2.71%) on D60 is notable because it's NOT driven by a military event — it's being driven by structural supply shortage (Hormuz dual blockade, UN food emergency warning, 21 days of blockade) and Iran's signal that the nuclear gap is not closable short-term. Market is pricing not D53-style panic ($84 then $120+) but rather a sustained $105-115 range as the new dual-blockade equilibrium. This is economically more dangerous than a spike: spikes end, equilibria persist. US gas prices near $4.50 threshold = Trump's domestic political constraint is materializing. Every week of $111+ Brent = 1-2% additional drag on Trump approval. Convergence 4.9 is being sustained, not driven by extremes — this is structurally corrosive."
     }
   ],
   "theoryEvaluation_fa": [
     {
-      "title": "توقیف توسکا + شلیک به سنمار = نردبان تشدید ایران",
-      "body": "دو حادثه دریایی در ۴۸ ساعت = ایران سیستماتیک فشار ناهمتراز دریایی را تشدید می‌کند. سنمار (D50 ایران): تست. توسکا (D51 آمریکا): جواب. ایران تهدید تلافی. آتش‌بس فردا منقضی. مسیر کلاسیک از سرگیری."
+      "title": "D60: پیشنهاد تعلیق هسته‌ای ایران — انعطاف‌پذیرترین تا کنون، کافی نیست",
+      "body": "پیشنهاد ایران از طریق پاکستان (۲۷-۲۸ آوریل) بی‌سابقه است: هرمز و پایان جنگ را از مذاکرات هسته‌ای جدا کنید — الان هرمز را باز کنیم + جنگ را تمام کنیم، هسته را جداگانه بعداً مذاکره کنیم. ایران می‌گوید: 'ما شکست نظامی متعارف را می‌پذیریم، اما تسلیم هسته‌ای را به عنوان بخشی از شرایط تسلیم نمی‌پذیریم.' آمریکا رد کرد (روبیو: هسته باید در توافق باشد). شکاف ساختاری، نه تاکتیکی."
     },
     {
-      "title": "رد 'کودکانه' عارف = پیروزی جناح سخت‌لاین در ایران",
-      "body": "زبان 'کودکانه و غیرممکن' یک سیگنال سیاسی داخلی است. عارف جناح سپاه است. بازگشایی هرمز D49 توسط عراقچی (اصلاح‌طلب) و بسته شدن D50 توسط سپاه = همان داستان. سپاه سیاست جنگ ایران را در این لحظه بحرانی هدایت می‌کند."
+      "title": "دیدار عراقچی-پوتین = ایران پشتوانه تشدید می‌سازد، نه به دنبال توافق",
+      "body": "عراقچی به سنت‌پترزبورگ رفت — لاوروف، بلوسوف (وزارت دفاع)، و دریاسالار کوستیوکوف (رئیس اطلاعات نظامی) در جلسه. این یک ابتکار صلح نیست — ایران چتر امنیتی روسیه را برای مقاومت ادامه‌دار تأمین می‌کند. پیام مجتبی خامنه‌ای به پوتین تأیید شد. ایران برای مسیر طولانی موضع‌گیری می‌کند، نه برای تسلیم."
     },
     {
-      "title": "همگرایی ۶.۰→۴.۹ — تمام داستان در این نوسان",
-      "body": "اوج ۶.۰ در D49: بازگشایی هرمز + پیشنهاد ۱۵ ساله. ظرف ۷۲ ساعت: هرمز بسته، شلیک به سنمار، توقیف توسکا، رد دور دوم. این دقیقاً شکست مذاکرات ساختاری است: لحظه امکان واقعی (D49) + ناتوانی ساختاری برای تبدیل آن به توافق."
+      "title": "ساعت قانون اختیارات جنگی ۶۰ روزه امروز منقضی — بحران قانون اساسی در راه",
+      "body": "قانون اختیارات جنگی بعد از ۶۰ روز نیاز به مجوز کنگره دارد. جنگ ۲۸ فوریه آغاز شد — ۶۰ روز امروز ۲۸ آوریل منقضی. ترامپ مجوز نگرفته. سه مسیر: (۱) ترامپ نادیده بگیرد — چالش قانونی اجتناب‌ناپذیر؛ (۲) مجوز اضطراری بخواهد — ریسک سیاسی (دموکرات‌ها + برخی جمهوریخواهان ممکن است رأی نه بدهند)؛ (۳) 'ماموریت انجام' اعلام کند. این مسئله نمی‌رود. به ایران یک اهرم سیاسی داخلی در آمریکا می‌دهد."
     },
     {
-      "title": "سناریوی ۵۲٪ تشدید: اگر آتش‌بس فردا لغو شود چه می‌شود",
-      "body": "اگر ۲۱ آوریل بدون تمدید/توافق: ایران احتمالاً ظرف ساعات از سر می‌گیرد. دلایل: ۱۳ روز آمادگی سپاه؛ توسکا = بهانه؛ عارف 'کودکانه' = عقب‌نشینی بدون آبرو ناممکن؛ ترامپ 'بمب بیندازیم'. برنت به $۱۱۰-۱۲۰+ خواهد جهید."
+      "title": "برنت $۱۱۱.۱۶ = بازار تعادل جدید قیمت‌گذاری می‌کند، نه وحشت",
+      "body": "برنت $۱۱۱.۱۶ (+۲.۷۱٪) در D60 با یک رویداد نظامی نیست — کمبود عرضه ساختاری است (محاصره دوگانه، اخطار سازمان ملل، ۲۱ روز محاصره). بازار نه وحشت D53-مانند بلکه تعادل پایدار $۱۰۵-۱۱۵ را قیمت‌گذاری می‌کند. این اقتصادی خطرناک‌تر از جهش است: جهش‌ها تمام می‌شوند، تعادل‌ها ماندگارند. بنزین $۴.۵۰+ آستانه سیاسی داخلی ترامپ."
     }
   ],
   "endstate": [
     {
-      "title": "Most likely — ESCALATION/COLLAPSE 52%",
-      "body": "CEASEFIRE EXPIRES TOMORROW APR 21. Escalation/collapse surged from 31% → 52% in 4 days — driven by Hormuz re-closing (D50), IRGC firing on Sanmar Herald (D50), USS Spruance seizing M/V Touska (D51, first Iranian ship boarded), Iran VP Aref calling US demands 'childish' (D51), and Trump 'maybe won't extend' (D52). Diplomatic momentum vector collapsed from 7.5 (D49) to 2.5 (D52). Convergence whipsawed from 6.0 peak back to 4.9. If ceasefire lapses without extension tomorrow: expect IRGC missile salvos within 24-48 hrs."
+      "title": "Most likely — ESCALATION 43% (DOWN from 52%)",
+      "body": "D60 Apr 28: Escalation remains most likely but has pulled back 9 points as ceasefire Day 21 holds. Key dynamic: Iran submitted a genuine (if insufficient) proposal — deferred-nuclear gambit via Pakistan. US cold. Araghchi-Putin meeting = Iran building eastern support for long-term standoff. War Powers 60-day expiration today adds congressional dimension. Stall scenario is absorbing probability. Escalation path: US War Powers crisis → Trump needs to act or fold → if congressional authorization vote fails → Trump forced to either declare victory or escalate dramatically. Or: Iran resumes attacks if Brent $115+, food emergency, or US domestic politics force decision."
     },
     {
-      "title": "Deal 18% — COLLAPSED FROM 31%",
-      "body": "Negotiated deal. DOWN sharply from 31% to 18%. Drivers of collapse: Iran VP Aref 'childish' rejection of Round 2, no mediator meeting scheduled, Trump threatening no extension. For deal to happen: backchannel must re-open tonight or early tomorrow, OR Trump announces unilateral extension without Iran's agreement (possible but politically costly). Key obstacle: Touska seizure = new Iranian demand for vessel release before talks resume."
+      "title": "Stalled 24% (UP from 15%)",
+      "body": "D60 stall is now the operative state. Ceasefire extended indefinitely (D54) + dual blockade + both sides probing diplomatically without committing = textbook frozen conflict. Iran's deferred-nuclear proposal was rejected but is still on the table. Russia is now a formal diplomatic patron for Iran (Araghchi-Putin). War Powers expiration gives US domestic actors (Congress) a new reason to push for freeze rather than escalation. Stall could persist 4-8 more weeks with no decisive break."
     },
     {
-      "title": "Third — STALLED 15%",
-      "body": "Stalled/frozen conflict. DOWN from 22%. With ceasefire expiring tomorrow and both sides publicly refusing further talks, a stall requires MUTUAL de-facto inaction despite no formal extension — possible but unlikely given IRGC threat messaging and Trump political pressures. Stall scenario = both sides blink but neither announces it."
+      "title": "Deal 16% (DOWN from 18%)",
+      "body": "Iran's deferred-nuclear proposal is the most flexibility shown, but the US structural condition (nuclear must be in deal) makes it unacceptable. For deal: either Iran includes nuclear in deal (breaks with supreme leader red line) or US accepts deferred nuclear (breaks with Rubio/Trump stated position). Both require politically costly pivots. Pakistan mediating; Russia blocking. Nuclear gap is now very clearly mapped: 5-yr (Iran) vs 20-yr (US) enrichment freeze, with Iran's 440kg HEU still the core sticking point. 16% reflects genuine but insufficient movement."
     },
     {
-      "title": "Fourth (10%/4%/1%)",
-      "body": "Victory 10% (unchanged — Trump 'mission accomplished' framing still available; Brent $95 = political pain but stockpile depletion narrative intact). International intervention 4% (UP from 1% — Turkey 45-60 day extension offer still on table; EU emergency session possible if ceasefire collapses). Regime fracture 1% (unchanged — IRGC consolidated, no fracture signals)."
+      "title": "Victory 9% / Intervention 6% / Fracture 2%",
+      "body": "Victory 9% (DOWN — War Powers expiration complicates 'mission accomplished' narrative; Hormuz dual blockade means mission is NOT accomplished; domestic gas/food pressure rising). International intervention 6% (UP — UN food emergency warning, Russia as Iran patron, Pakistan active, War Powers = multilateral pressure pathway opening. UNSC emergency session possible if Brent $120+). Regime fracture 2% (UP slightly — Iran submitted a proposal = some reformist voice; but Araghchi-Putin = hardliners still dominant; proposal still required supreme leader approval so fracture signal is minimal)."
     }
   ],
   "endstate_fa": [
     {
-      "title": "محتمل‌ترین — تشدید/فروپاشی ۵۲٪",
-      "body": "آتش‌بس فردا ۲۱ آوریل منقضی می‌شود. تشدید/فروپاشی از ۳۱٪ به ۵۲٪ جهش کرد — به دلیل: بسته شدن مجدد هرمز (روز ۵۰)، شلیک سپاه به نفتکش سانمار هرالد، توقیف کشتی توسکا توسط ناوشکن آمریکایی (اول کشتی ایرانی توقیف شد)، رد 'کودکانه' خواسته‌های آمریکا توسط آرف، و گفته ترامپ 'شاید تمدید نکنم.' اگر آتش‌بس فردا منقضی شود: موشک‌باران سپاه ظرف ۲۴-۴۸ ساعت."
+      "title": "محتمل‌ترین — تشدید ۴۳٪ (کاهش از ۵۲٪)",
+      "body": "D60: تشدید هنوز محتمل‌ترین اما ۹ نقطه کاهش یافت — آتش‌بس روز ۲۱ حفظ می‌شود. ایران پیشنهاد تعلیق هسته‌ای واقعی داد. آمریکا سرد. عراقچی-پوتین = ایران پشتیبانی شرقی برای بن‌بست طولانی. انقضای اختیارات جنگی = بُعد کنگره جدید. مسیر تشدید: بحران قانون اختیارات جنگی → نیاز ترامپ به عمل یا عقب‌نشینی."
     },
     {
-      "title": "توافق ۱۸٪ — سقوط از ۳۱٪",
-      "body": "توافق مذاکره‌ای. کاهش شدید از ۳۱٪ به ۱۸٪. دلایل سقوط: رد دور دوم توسط آرف، عدم برنامه‌ریزی برای جلسه میانجی، تهدید ترامپ به عدم تمدید. برای توافق: باید کانال پشتی امشب یا فردا صبح دوباره باز شود، یا ترامپ به تنهایی تمدید اعلام کند."
+      "title": "بن‌بست ۲۴٪ (افزایش از ۱۵٪)",
+      "body": "D60 بن‌بست حالت عملیاتی است. آتش‌بس نامحدود D54 + محاصره دوگانه + هر دو طرف کاوش دیپلماتیک بدون تعهد = تعارض منجمد کلاسیک. پیشنهاد تعلیق هسته‌ای ایران رد شد اما روی میز است. روسیه حامی رسمی دیپلماتیک. ۴-۸ هفته بیشتر بدون شکست قطعی ممکن است."
     },
     {
-      "title": "بن‌بست ۱۵٪",
-      "body": "کاهش از ۲۲٪. با انقضای آتش‌بس فردا و رد مذاکرات توسط هر دو طرف، بن‌بست نیازمند عدم عمل ضمنی دو جانبه است — ممکن اما بعید، با توجه به تهدیدات سپاه و فشار سیاسی ترامپ."
+      "title": "توافق ۱۶٪ (کاهش از ۱۸٪)",
+      "body": "پیشنهاد تعلیق هسته‌ای ایران بیشترین انعطاف تا کنون، اما شرط ساختاری آمریکا (هسته باید در توافق) آن را غیرقابل قبول می‌کند. شکاف: ۵ سال (ایران) vs ۲۰ سال (آمریکا) توقف غنی‌سازی + ۴۴۰ کیلوگرم HEU. ۱۶٪ = حرکت واقعی اما ناکافی."
     },
     {
-      "title": "پیروزی ۱۰٪ / مداخله ۴٪ / شکاف ۱٪",
-      "body": "پیروزی ۱۰٪: روایت 'ماموریت انجام شد' ترامپ هنوز در دسترس است. مداخله بین‌المللی ۴٪: پیشنهاد تمدید ۴۵-۶۰ روزه ترکیه هنوز روی میز. نشست اضطراری اتحادیه اروپا در صورت فروپاشی آتش‌بس ممکن است. شکاف ۱٪: سپاه تثبیت شده، نشانه‌ای از شکاف نیست."
+      "title": "پیروزی ۹٪ / مداخله ۶٪ / شکاف ۲٪",
+      "body": "پیروزی ۹٪: انقضای اختیارات جنگی + هرمز بسته + گاز/غذا گران = روایت پیروزی سخت‌تر. مداخله ۶٪: اخطار سازمان ملل، روسیه به عنوان حامی ایران، پاکستان فعال، اختیارات جنگی = مسیر فشار چندجانبه. شکاف ۲٪: ایران پیشنهاد داد = جناح اصلاح‌طلب؛ اما عراقچی-پوتین = سخت‌لاین غالب."
     }
   ],
   "shippingRoutes": [
@@ -1643,9 +1643,9 @@
       "route": "Pakistan / East",
       "status": "UNCERTAIN",
       "statusColor": "yellow",
-      "detail": "Pakistan hosted failed talks. Now: blockade = Pakistan route uncertain. Iraq transit operational.",
-      "viability": "~10-15%",
-      "eta": "Uncertain"
+      "detail": "D60: Pakistan now KEY diplomatic channel — PM Sharif personally delivered Iran's deferred-nuclear proposal to US. Political capital from mediation role may unblock land route. But: Pakistan border still commercially closed pending Hormuz deal.",
+      "viability": "~12-18%",
+      "eta": "If deal: 4-6 weeks. Pakistan mediation adds optionality."
     },
     {
       "route": "Oman bypass",
@@ -1685,9 +1685,9 @@
       "route": "Pakistan/East",
       "status": "نامشخص",
       "statusColor": "yellow",
-      "detail": "پاکستان میزبان مذاکرات شکست‌خورده. رابطه دیپلماتیک تحت فشار.",
-      "viability": "~۱۰-۱۵٪",
-      "eta": "نامشخص"
+      "detail": "D60: پاکستان کانال دیپلماتیک کلیدی — نخست‌وزیر شریف پیشنهاد هسته‌ای معوق ایران را به آمریکا رساند. نقش میانجی = احتمال بازگشایی مرز بالاتر. اما مرز تجاری هنوز بسته.",
+      "viability": "~۱۲-۱۸٪",
+      "eta": "اگر توافق: ۴-۶ هفته."
     },
     {
       "route": "Oman bypass",
@@ -1699,133 +1699,133 @@
     }
   ],
   "publishingStatus": [
-    "<strong>Paper:</strong> HALTED. 52 days. Deal probability DOWN to 18% — lowest since ceasefire. Ceasefire expires TOMORROW Apr 21. If ceasefire lapses: paper import crisis deepens. Hormuz re-closed Day 3. No new paper imports until Hormuz fully normalized (months post-deal minimum).",
-    "<strong>Printing:</strong> B1 Bridge destroyed. 1,248+ hrs internet blackout (citizens). Power intermittent. Ceasefire = no new bombing (Day 13). Business internet partial Day 7 = publishers who registered as businesses may still have limited access — use it NOW before ceasefire expires.",
-    "<strong>Internet: BUSINESS PARTIAL — DAY 7. USE NOW — CEASEFIRE EXPIRES TOMORROW.</strong> Business internet partial Day 7. This window may close if ceasefire lapses and full war resumes. Tehran publishers and warehouses: contact ALL channels today. Citizens still fully cut off — 1,248+ hours total. After Apr 21 if strikes resume: business internet likely revoked.",
-    "<strong>New titles:</strong> HALTED. Zero ISBNs. Deal at 18% = very low probability of short-term recovery. If ceasefire lapses: new bombing could damage additional publishing infrastructure. Zero path to new titles without deal.",
-    "<strong>Warehouse:</strong> Unknown status. Ceasefire = no new damage (13 days). Business internet Day 7 = try contacts TODAY before Apr 21. If ceasefire lapses: warehouse vulnerable again.",
-    "<strong>Distribution:</strong> Maritime dead (Hormuz closed Day 3, ceasefire expires tomorrow). Land routes only (Armenia BEST at 15-22% — blockade-unaffected). Business internet = logistics coordination still possible while partial access exists."
+    "<strong>Paper:</strong> HALTED — Day 60. Deal 16% (DOWN from 18%). Iran's deferred-nuclear proposal rejected by US = nuclear deadlock structural. Hormuz dual blockade ongoing (~3 vessels/day each). No paper imports possible until Hormuz fully normalized (months post-deal minimum). War Powers expiration adds US domestic political complexity.",
+    "<strong>Printing:</strong> B1 Bridge destroyed. Internet Day 61 = 1,464+ hours (citizens fully cut off). Business internet partial Day 22 (since Apr 14). Power intermittent but ceasefire = no new bombing D40-D60 (21 days). Publishers with business internet registration still have limited coordination access.",
+    "<strong>Internet: BUSINESS PARTIAL — DAY 22 (1,464+ HOURS TOTAL BLACKOUT FOR CITIZENS).</strong> Business internet partial continues (since Apr 14). Citizens still fully cut off — 1,464+ hours total. No new cable threat since D55. Tehran publishers/warehouses: maintain contact via business internet while window holds. Ceasefire = no new bombing = internet infrastructure preserved.",
+    "<strong>New titles:</strong> HALTED. Zero ISBNs. Deal 16% = very low short-term recovery probability. Iran's deferred-nuclear proposal shows regime is willing to compromise on war but not on cultural/economic sovereignty. Publishing sector: paper imports, ISBNs, distribution all require post-deal normalization.",
+    "<strong>Warehouse:</strong> Unknown status. Ceasefire = no new damage (21 days). Business internet Day 22 = maintain Tehran contacts. Russia-Iran alignment may signal longer standoff → extend contingency planning horizon to FY28.",
+    "<strong>Distribution:</strong> Maritime dead (Hormuz dual blockade, deal required). Land routes only: Armenia BEST at 15-22% (blockade-unaffected). Armenia viable regardless of ceasefire outcome. Iran-Turkey border: cautious. Pakistan route: open but diplomatic tensions."
   ],
   "publishingStatus_fa": [
-    "<strong>Paper:</strong> ۵۲ روز. توافق ۱۸٪ — پایین‌ترین از آتش‌بس. فردا ۲۱ آوریل آتش‌بس منقضی. هرمز بسته روز ۳.",
-    "<strong>Printing:</strong> B1. ۱٬۲۴۸+ اینترنت. بدون بمباران (آتش‌بس روز ۱۳). اینترنت کسب‌وکار روز ۷ — الان استفاده کنید.",
-    "<strong>Internet: کسب‌وکار جزئی روز ۷ — از آن قبل از ۲۱ آوریل استفاده کنید.</strong> اگر آتش‌بس لغو شود: احتمالاً قطع. ۱٬۲۴۸+ ساعت مجموع.",
-    "<strong>New titles:</strong> متوقف. توافق ۱۸٪ = احتمال کم بهبود کوتاه‌مدت. بدون توافق = بدون عنوان جدید.",
-    "<strong>Warehouse:</strong> نامشخص. آتش‌بس ۱۳ روز سالم. اینترنت روز ۷ = تماس تهران امروز.",
-    "<strong>Distribution:</strong> دریایی مرده (هرمز بسته). زمینی (ارمنستان بهترین — محاصره تأثیر ندارد)."
+    "<strong>Paper:</strong> روز ۶۰. توافق ۱۶٪. پیشنهاد تعلیق هسته‌ای ایران رد شد = بن‌بست هسته‌ای ساختاری. محاصره دوگانه هرمز ادامه دارد. بدون واردات کاغذ تا نرمال‌سازی هرمز.",
+    "<strong>Printing:</strong> B1. اینترنت روز ۶۱ = ۱٬۴۶۴+ ساعت (شهروندان قطع). اینترنت کسب‌وکار روز ۲۲ (از ۱۴ آوریل). برق متناوب ولی آتش‌بس = بدون بمباران جدید D40-D60.",
+    "<strong>Internet: کسب‌وکار جزئی روز ۲۲ (مجموع ۱٬۴۶۴+ ساعت برای شهروندان).</strong> پنجره کسب‌وکار ادامه دارد. شهروندان کاملاً قطع. بدون تهدید کابل جدید از D55. آتش‌بس = زیرساخت اینترنت حفظ شده.",
+    "<strong>New titles:</strong> متوقف. توافق ۱۶٪ = احتمال کم. پیشنهاد ایران نشان می‌دهد رژیم حاضر است جنگ متعارف را تمام کند اما نه حاکمیت. نشر: واردات کاغذ، شابک، توزیع نیاز به پس از توافق.",
+    "<strong>Warehouse:</strong> نامشخص. آتش‌بس = بدون آسیب جدید (۲۱ روز). اینترنت کسب‌وکار روز ۲۲. همراستایی روسیه-ایران = برنامه‌ریزی تا FY28.",
+    "<strong>Distribution:</strong> دریایی مرده (محاصله دوگانه). فقط زمینی: ارمنستان بهترین ۱۵-۲۲٪ (بدون تأثیر محاصره). ارمنستان صرف‌نظر از آتش‌بس ممکن است."
   ],
   "impactIranfarhang": [
-    "<strong>SUPPLY CHAIN: 100% SEVERED - DAY 52. DEAL 18% — CEASEFIRE EXPIRES TOMORROW.</strong> Deal probability collapsed from 31% to 18%. Iran rejected Round 2. Touska seized. Hormuz closed Day 3. Ceasefire expires TOMORROW Apr 21. If ceasefire lapses: supply chain crisis deepens with no near-term recovery path. If somehow extended: 18% deal probability still leaves June as first possible recovery window.",
-    "<strong>BUSINESS INTERNET DAY 7 — USE THIS WINDOW NOW:</strong> Business internet partial Day 7 is a shrinking window. If ceasefire expires Apr 21 and Iran resumes strikes, business internet will almost certainly be revoked. Contact ALL Tehran contacts today. Verify inventory, warehouse condition, staff status, publisher access. This is the most actionable 24-hour window remaining before potential escalation.",
-    "<strong>Revenue:</strong> Atlanta only. ~1.9 months runway (burn ~$15-20K/month — another 4 days consumed). Deal 18% = very low FY27 recovery probability. Ceasefire lapse D53 = add 2-3 months to any recovery timeline. Critical runway decision needed by May 1 regardless of ceasefire outcome.",
-    "<strong>Routes:</strong> Armenia ~15-22% (BEST — land route unaffected by blockade or ceasefire). Armenia viable regardless of Apr 21 outcome. Pakistan ~10-15% (Munir mediation failed but route intact). Turkey ~6-10%. Dubai DEAD — Hormuz closed, UAE banking restricted, no timeline for normalization.",
-    "<strong>OFAC:</strong> Statutory (Berman). INTACT regardless of escalation. KEMCO SARL (France): French banking scrutiny on Iran-linked transfers intensifying — confirm KEMCO channel operational before any orders resume. Escalation does NOT affect legal authority.",
-    "<strong>ESCALATION 52% — CONTINGENCY PLANNING NOW:</strong> If ceasefire lapses Apr 21: (1) business internet almost certainly revoked; (2) Armenia route remains open (not conflict-dependent); (3) OFAC exemption intact; (4) publishing capacity in Tehran severely degraded if bombing resumes; (5) recovery timeline extends to 6-12 months minimum. Lock in Armenia logistics this week."
+    "<strong>SUPPLY CHAIN: 100% SEVERED — DAY 60. DEAL 16% — NUCLEAR DEADLOCK STRUCTURAL.</strong> Iran's deferred-nuclear proposal rejected by US (Rubio: nuclear must be in deal). Deal 16% reflects genuine but insufficient Iranian flexibility. Russia-Iran alignment (Araghchi-Putin) signals Iran preparing for long standoff. Nuclear gap maps clearly: 5-yr (Iran) vs 20-yr (US) freeze + 440kg HEU. Recovery timeline has shifted: optimistic deal scenario now FY28 not FY27. Business internet partial Day 22 = active coordination channel while ceasefire holds.",
+    "<strong>BUSINESS INTERNET DAY 22 — COORDINATION WINDOW STILL OPEN:</strong> Business internet partial continues (since Apr 14). Ceasefire Day 21 = no new bombing = no new reason to revoke. Contact Tehran publishers, warehouse staff, forwarders this week. Verify inventory, staff status, publisher operations. Iran-Russia meeting = no imminent escalation signal. USE THIS WINDOW for FY28 planning: catalog updates, title lists, priority inventory identification.",
+    "<strong>Revenue:</strong> Atlanta only. ~1.5 months runway (burn ~$15-20K/month). Deal 16% = very low FY27 recovery probability. Ceasefire indefinite extension = recovery timeline stabilized at 'Deal + 3-6 months minimum.' Critical runway decision: if no deal by Jun 1, bridge financing required. Diaspora Persian collections (Europe/North America publishers) as partial gap-fill for FY27.",
+    "<strong>Routes:</strong> Armenia ~15-22% (BEST — land route unaffected by blockade, ceasefire, or nuclear deadlock). Armenia viable regardless of any diplomatic outcome. Pakistan ~10-15% (route intact, Munir active). Turkey ~6-10%. Dubai DEAD — Hormuz dual blockade, UAE banking restricted, no timeline for normalization. Iran-Russia corridor: theoretically open but no practical book logistics infrastructure.",
+    "<strong>OFAC:</strong> Statutory (Berman Amendment 31 CFR §560.210(c)). INTACT regardless of escalation or nuclear outcome. KEMCO SARL (France): monitor French banking environment for Iran-linked transfers under Russia-Iran alignment. OFAC exemption survives any executive order but payment infrastructure requires active maintenance.",
+    "<strong>STALL SCENARIO 24% = PRACTICAL PLANNING HORIZON:</strong> If stall persists (most likely after escalation at 43%): (1) business internet stays operational under ceasefire; (2) Armenia route continues viable; (3) publishing industry in stasis but not destroyed; (4) inventory preserved; (5) recovery timeline: Deal + 3-6 months = earliest Q4 2026. Plan for FY28 revenue as primary timeline. FY27 = Atlanta existing stock + diaspora titles only."
   ],
   "impactIranfarhang_fa": [
-    "<strong>100% قطع - روز ۵۲. توافق ۱۸٪ — آتش‌بس فردا منقضی.</strong> توافق از ۳۱٪ به ۱۸٪ سقوط. ایران دور دوم رد کرد. هرمز بسته. فردا ۲۱ آوریل. اگر آتش‌بس لغو: بحران زنجیره تأمین عمیق‌تر.",
-    "<strong>اینترنت کسب‌وکار روز ۷ — این پنجره را الان استفاده کنید.</strong> اگر آتش‌بس ۲۱ آوریل منقضی و ایران ضربه از سر گیرد: اینترنت کسب‌وکار تقریباً مطمئناً قطع. همه تماس‌های تهران امروز.",
-    "<strong>Revenue:</strong> آتلانتا. ~۱.۹ ماه. توافق ۱۸٪ = احتمال پایین FY27. تصمیم باند حیاتی تا ۱ مه.",
-    "<strong>Routes:</strong> ارمنستان ~۱۵-۲۲٪ (بهترین — بدون تأثیر محاصره یا آتش‌بس). پاکستان ~۱۰-۱۵٪. دبی مرده — هرمز بسته، بانک محدود.",
-    "<strong>OFAC:</strong> قانونی (برمن). سالم صرف‌نظر از تشدید. KEMCO SARL تأیید کنید.",
-    "<strong>تشدید ۵۲٪ — برنامه‌ریزی اضطراری الان:</strong> اگر ۲۱ آوریل: اینترنت قطع؛ ارمنستان باز؛ OFAC سالم؛ نشر تهران آسیب‌دیده؛ بازیابی ۶-۱۲ ماه."
+    "<strong>100% قطع — روز ۶۰. توافق ۱۶٪ — بن‌بست هسته‌ای ساختاری.</strong> پیشنهاد تعلیق هسته‌ای ایران رد شد. همراستایی روسیه-ایران (عراقچی-پوتین) = آمادگی برای بن‌بست طولانی. شکاف هسته‌ای: ۵ سال (ایران) vs ۲۰ سال (آمریکا). بازیابی به FY28 منتقل شد. اینترنت کسب‌وکار روز ۲۲ = کانال هماهنگی فعال.",
+    "<strong>اینترنت کسب‌وکار روز ۲۲ — پنجره هماهنگی هنوز باز است.</strong> آتش‌بس روز ۲۱ = بدون بمباران جدید = دلیلی برای لغو نیست. این هفته با ناشران، کارکنان انبار، فوروارداران تماس. برنامه‌ریزی FY28: کاتالوگ، فهرست عناوین، اولویت موجودی.",
+    "<strong>Revenue:</strong> آتلانتا. ~۱.۵ ماه. توافق ۱۶٪ = FY27 احتمال کم. آتش‌بس نامحدود = بازیابی پایدار شده در 'توافق + ۳-۶ ماه حداقل.' تصمیم باند: اگر تا ۱ ژوئن توافق نباشد، مذاکره مالی پل. ناشران دیاسپورا.",
+    "<strong>Routes:</strong> ارمنستان ~۱۵-۲۲٪ (بهترین). پاکستان ~۱۰-۱۵٪. دبی مرده. مسیر ایران-روسیه: نظری باز ولی زیرساخت لجستیک کتاب نیست.",
+    "<strong>OFAC:</strong> قانونی (برمن). سالم صرف‌نظر از هر نتیجه‌ای. KEMCO SARL نظارت کنید — همراستایی روسیه-ایران ممکن است بانکداری فرانسه را تحت فشار بگذارد.",
+    "<strong>سناریوی بن‌بست ۲۴٪ = افق برنامه‌ریزی عملی:</strong> اگر بن‌بست ادامه یابد: اینترنت کسب‌وکار فعال؛ ارمنستان ممکن؛ نشر در توقف اما نابود نشده؛ موجودی حفظ. بازیابی: توافق + ۳-۶ ماه = زودترین Q4 2026. FY28 = خط اصلی درآمد."
   ],
   "prepIranfarhang": [
-    "<strong>CONTACT TEHRAN TODAY — BUSINESS INTERNET DAY 7 — WINDOW MAY CLOSE TOMORROW:</strong> Business internet Day 7 is a shrinking window. If Apr 21 ceasefire expires and Iran resumes strikes, this window closes. Call/email/WhatsApp every Tehran contact. Verify inventory, staff, warehouse condition, which publishers have business internet. Do it TODAY, not tomorrow.",
-    "<strong>ARMENIA — BOOK PASSAGE THIS WEEK REGARDLESS OF CEASEFIRE OUTCOME:</strong> Armenia route is not affected by ceasefire expiry, blockade, or Hormuz closure. It's the only reliable land route. Book Tabriz-Agarak passage now — 700km overland, 3x normal cost but guaranteed availability. Escalation 52% = Armenia becomes even MORE critical if deal falls through.",
-    "<strong>Clients:</strong> Update TODAY: (1) Deal 18% — lowest since ceasefire; (2) Ceasefire expires TOMORROW; (3) Escalation 52% = war may resume D53; (4) Armenia route viable regardless; (5) Business internet window closing; (6) Recovery timeline extends to 6-12 months if D53 strikes resume. Reset expectations for FY27.",
-    "<strong>FY27:</strong> ~1.9 months runway remaining. Deal at 18% = very low recovery probability for FY27. Begin FY27 bridge financing conversations NOW — runway decision needed by May 1 regardless of ceasefire outcome. Diaspora Persian collections (Europe/US diaspora publishers) as partial gap-fill.",
-    "<strong>KEMCO SARL — CONFIRM THIS WEEK:</strong> Contact KEMCO. French banking on Iran-linked transfers may tighten further if D53 escalates. Confirm channel operational regardless of ceasefire outcome — OFAC exemption (Berman) survives any executive action but banking infrastructure may restrict.",
-    "<strong>PREPARE FOR ESCALATION SCENARIO:</strong> If D53 strikes resume: (1) business internet gone — close Tehran contacts today; (2) Armenia still open — lock in agent contracts this week; (3) diaspora publishers in Toronto/Berlin/Amsterdam as production backup; (4) FY27 income = Atlanta existing inventory only; (5) FY28 earliest realistic Tehran supply restoration."
+    "<strong>CONTACT TEHRAN THIS WEEK — BUSINESS INTERNET DAY 22 — STABLE WINDOW:</strong> Business internet partial Day 22 is more stable than expected (ceasefire = no new bombing = no revocation reason). Call/email/WhatsApp every Tehran contact: publishers, warehouse staff, freight forwarders. Verify current inventory, warehouse condition, staff status, which publishers have business internet. Use this window for FY28 catalog planning, not just operational checks.",
+    "<strong>ARMENIA — LOCK IN AGENT CONTRACTS NOW:</strong> Armenia route is not affected by nuclear deadlock, ceasefire status, or blockade. Tabriz-Agarak (700km overland) remains viable at 3x normal cost. Lock in a standing agent contract for first shipment readiness — this week, not when ceasefire breaks. Armenia contract = hedged against all scenarios.",
+    "<strong>Clients:</strong> Update this week: (1) Deal 16% — nuclear deadlock structural, recovery pushed to FY28; (2) Ceasefire Day 21 indefinite = supply chain in stasis, not catastrophe; (3) Business internet Day 22 = limited Tehran contacts maintained; (4) Armenia route viable; (5) FY27 income = Atlanta existing stock + diaspora titles only; (6) FY28 = earliest realistic Tehran supply restoration. Help clients plan 12-18 month alternative sourcing.",
+    "<strong>FY27 BRIDGE + FY28 PIPELINE:</strong> ~1.5 months runway. Deal 16% = FY27 Tehran supply very unlikely. Begin FY28 pipeline: identify diaspora Persian publishers (Toronto/Berlin/Amsterdam/London), place orders for in-print titles available outside Iran. These are legitimate alternatives that also satisfy OFAC (non-Iran-origin). Bridge financing: 6-month line of credit against FY28 diaspora revenue.",
+    "<strong>KEMCO SARL — CONFIRM MONTHLY:</strong> Monitor KEMCO channel. Russia-Iran alignment + Araghchi-Putin meeting may affect French banking compliance on Iran-adjacent transactions. Confirm channel operational. OFAC Berman exemption intact regardless. Have backup payment intermediary (German or Swiss correspondent bank) identified.",
+    "<strong>PLAN FOR EXTENDED STALL (MOST LIKELY SCENARIO):</strong> Stall 24% + escalation 43% = 67% chance of continued supply chain severance through Sep 2026. Planning horizon: (1) Armenia contract locked; (2) Business internet maintained (ceasefire holds); (3) FY28 pipeline active; (4) FY27 = diaspora titles only; (5) Earliest realistic Tehran restoration Q4 2026 if deal, FY28 if stall continues."
   ],
   "prepIranfarhang_fa": [
-    "<strong>تماس تهران امروز — اینترنت کسب‌وکار روز ۷ — پنجره ممکن است فردا بسته شود:</strong> روز ۷ پنجره در حال بسته شدن. اگر ۲۱ آوریل آتش‌بس لغو: قطع. همه تماس‌ها امروز.",
-    "<strong>ارمنستان — این هفته صرف‌نظر از آتش‌بس رزرو کنید:</strong> ارمنستان تحت تأثیر آتش‌بس/محاصره نیست. تبریز-آگاراک رزرو. ۷۰۰ کیلومتر. ۳ برابر هزینه. تشدید ۵۲٪ = ارمنستان حیاتی‌تر.",
-    "<strong>Clients:</strong> توافق ۱۸٪. آتش‌بس فردا منقضی. تشدید ۵۲٪. ارمنستان ممکن. پنجره اینترنت می‌بندد. بازیابی ۶-۱۲ ماه اگر D53.",
-    "<strong>FY27:</strong> ~۱.۹ ماه باقی. توافق ۱۸٪ = احتمال کم. تأمین مالی پل FY27 از الان. تا ۱ مه تصمیم باند.",
-    "<strong>KEMCO SARL — این هفته تأیید:</strong> بانکداری فرانسه ممکن است سخت‌تر شود اگر D53 تشدید. OFAC (برمن) پابرجاست اما زیرساخت بانکی.",
-    "<strong>برنامه سناریوی تشدید:</strong> اگر D53: اینترنت قطع؛ ارمنستان باز؛ ناشران دیاسپورا بکاپ؛ FY27 = فقط موجودی آتلانتا؛ FY28 اولین بازیابی واقع‌بینانه."
+    "<strong>تماس تهران این هفته — اینترنت کسب‌وکار روز ۲۲ — پنجره پایدار:</strong> آتش‌بس روز ۲۱ = بدون بمباران جدید = بدون دلیل لغو. همه تماس‌ها: ناشران، انبار، فوروارداران. برنامه‌ریزی کاتالوگ FY28.",
+    "<strong>ارمنستان — همین الان قرارداد نماینده ببندید:</strong> ارمنستان تحت تأثیر بن‌بست هسته‌ای یا محاصره نیست. تبریز-آگاراک ۳ برابر هزینه. قرارداد پایدار = پوشش ریسک هر سناریو.",
+    "<strong>Clients:</strong> این هفته: توافق ۱۶٪ = FY28. آتش‌بس روز ۲۱ نامحدود = توقف نه فاجعه. اینترنت روز ۲۲. ارمنستان ممکن. FY27 = آتلانتا + دیاسپورا. FY28 = اول بازیابی.",
+    "<strong>پل FY27 + خط FY28:</strong> ~۱.۵ ماه. توافق ۱۶٪ = FY27 بسیار بعید. ناشران دیاسپورا (تورنتو/برلین/آمستردام). OFAC مجاز (غیر ایران). اعتبار ۶ ماهه.",
+    "<strong>KEMCO SARL — ماهانه تأیید:</strong> همراستایی روسیه-ایران ممکن است بانکداری فرانسه را تحت تأثیر بگذارد. OFAC برمن پابرجاست. بکاپ پرداخت (بانک آلمانی یا سوئیسی) شناسایی کنید.",
+    "<strong>برنامه بن‌بست طولانی (محتمل‌ترین):</strong> بن‌بست ۲۴٪ + تشدید ۴۳٪ = ۶۷٪ قطع تا سپتامبر ۲۰۲۶. برنامه: قرارداد ارمنستان؛ اینترنت کسب‌وکار؛ خط FY28 فعال؛ FY27 = دیاسپورا فقط؛ Q4 2026 اول بازیابی."
   ],
   "signalsIranfarhang": [
-    "<strong>GATE 0 — TEHRAN CONTACT TODAY — CLOSING WINDOW:</strong> Business internet Day 7. This may close if ceasefire expires tomorrow and strikes resume. Contact all Tehran contacts TODAY. If warehouse/publisher responds: last chance for operational data before potential D53 blackout.",
-    "<strong>GATE 1 — CEASEFIRE EXPIRY APR 21 TOMORROW:</strong> NO extension arranged. Iran refused Round 2. Turkey extension backstop not activated. Escalation 52% = most likely: ceasefire expires, no extension, strikes resume D53. Watch: any last-minute extension announcement before midnight Apr 21.",
-    "<strong>GATE 2 — ARMENIAN ROUTE CONFIRMATION:</strong> Contact Yerevan forwarding agents this week. Armenia route is viable REGARDLESS of ceasefire outcome. Confirm capacity, pricing, lead times. Lock in agent contract. This is the only reliable supply path regardless of Apr 21 outcome.",
-    "<strong>GATE 3 — KEMCO SARL PAYMENT CHANNEL:</strong> Contact KEMCO this week. French bank scrutiny on Iran-linked transfers increasing under escalation scenario. Confirm KEMCO operational under escalation. OFAC (Berman statutory) survives — but payment infrastructure requires active maintenance.",
-    "<strong>GATE 4 — OIL AND INSURANCE:</strong> Brent $95.42 (+5.58%). If ceasefire lapses: $110-120+. Armenia overland route not price-sensitive. Insurance: Lloyd's war-risk will NOT normalize if war resumes — maintain overland only.",
-    "<strong>Escalation timeline for books:</strong> D53 strikes resume → business internet gone → Armenia still open → Tehran warehouse access lost → inventory unknown → FY27 revenue = Atlanta only → recovery timeline FY28 earliest."
+    "<strong>GATE 1 — IRAN NUCLEAR DEAL BREAKTHROUGH:</strong> Watch for: Iran accepting nuclear talks as part of deal (NOT deferred). This requires Iran to include some nuclear commitment in a ceasefire/war-end agreement. If Iran pivots: Brent drops to $85-90, internet likely restored within 2 weeks of deal signing, Armenia route still needed for 3-6 months while Dubai normalizes. Probability: 16% (deal scenario). This is the RECOVERY signal.",
+    "<strong>GATE 2 — WAR POWERS CONGRESSIONAL VOTE:</strong> If Congress votes to require authorization or withdrawal: US may be forced to freeze or withdraw. Iran has incentive to wait out War Powers. Watch for: House/Senate bills invoking War Powers, floor votes scheduled, Trump veto threats. If Congress constrains: stall extends, deal probability falls, supply chain frozen longer but without escalation risk.",
+    "<strong>GATE 3 — BUSINESS INTERNET STATUS:</strong> Ceasefire Day 21 = business internet Day 22 continues. Watch for: any new IRGC threat to Gulf undersea cables (FALCON, AAE-1) — cable cuts = business internet down even under ceasefire. Watch for: any resumption of IRGC strikes — would likely trigger business internet revocation. Current status: STABLE under indefinite ceasefire.",
+    "<strong>GATE 4 — BRENT $115+ THRESHOLD:</strong> Brent $111.16 today. If $115+: Trump faces gas/food political crisis. May force decisive action (deal or escalation). Either outcome affects supply chain: deal → recovery signal; escalation → extended disruption. Armenia route not price-sensitive. Watch for: $115 Brent, $4.80+ US gas, food price emergency declarations.",
+    "<strong>GATE 5 — RUSSIA ESCALATION OF IRAN SUPPORT:</strong> Araghchi-Putin meeting signals Russia ready to support Iran. Watch for: Russian weapons/material transfers to Iran, Russian diplomatic veto of any UNSC Iran resolution, Russian personnel in Iran (advisory/technical). If Russia deepens support: nuclear deadlock becomes more structural, deal less likely, supply chain restoration pushed to FY28+.",
+    "<strong>D60 book supply timeline:</strong> Ceasefire continues → business internet stable → Armenia contract active → inventory preserved → Tehran publishers accessible → FY28 = realistic restoration. Deal → +3-6 months: Hormuz reopens, Dubai air resumes, full chain restored Q4 2026. Escalation resumes → business internet goes, Tehran access lost, FY28+ minimum."
   ],
   "signalsIranfarhang_fa": [
-    "<strong>دروازه ۰ — تماس تهران امروز — پنجره در حال بسته شدن:</strong> اینترنت کسب‌وکار روز ۷. ممکن است فردا بسته شود. همه تماس‌ها امروز.",
-    "<strong>دروازه ۱ — انقضای آتش‌بس ۲۱ آوریل فردا:</strong> بدون تمدید. ایران دور دوم رد کرد. تشدید ۵۲٪. نظارت: اعلام تمدید قبل نیمه شب ۲۱ آوریل.",
-    "<strong>دروازه ۲ — تأیید مسیر ارمنستان:</strong> این هفته با فوروارداران ایروان تماس. صرف‌نظر از نتیجه آتش‌بس. قرارداد امضا.",
-    "<strong>دروازه ۳ — KEMCO SARL:</strong> این هفته تأیید. بانکداری فرانسه سخت‌تر با تشدید. OFAC (برمن) پابرجاست.",
-    "<strong>دروازه ۴ — نفت:</strong> برنت $۹۵.۴۲. اگر آتش‌بس لغو: $۱۱۰-۱۲۰+. ارمنستان غیرحساس به قیمت.",
-    "<strong>جدول زمانی تشدید:</strong> D53 → اینترنت قطع → ارمنستان باز → انبار تهران قفل → FY27 = آتلانتا فقط → FY28 اولین بازیابی."
+    "<strong>دروازه ۱ — توافق هسته‌ای ایران:</strong> نظارت: ایران هسته را به عنوان بخشی از توافق می‌پذیرد (نه تعلیق). اگر ایران تغییر موضع دهد: برنت $۸۵-۹۰، اینترنت در ۲ هفته از توافق، ارمنستان هنوز ۳-۶ ماه. ۱۶٪. سیگنال بازیابی.",
+    "<strong>دروازه ۲ — رأی کنگره درباره اختیارات جنگی:</strong> اگر کنگره مجوز یا خروج بخواهد: آمریکا ممکن است مجبور به توقف/خروج شود. ایران انگیزه دارد صبر کند. نظارت: لوایح اختیارات جنگی، رأی‌گیری، تهدید وتو.",
+    "<strong>دروازه ۳ — وضعیت اینترنت کسب‌وکار:</strong> آتش‌بس روز ۲۱ = اینترنت کسب‌وکار روز ۲۲ پایدار. نظارت: تهدید کابل‌های FALCON/AAE-1، از سرگیری ضربات. وضعیت فعلی: پایدار.",
+    "<strong>دروازه ۴ — برنت $۱۱۵+:</strong> برنت $۱۱۱.۱۶ امروز. اگر $۱۱۵+: بحران سیاسی ترامپ. ممکن است اقدام قطعی اجبار کند (توافق یا تشدید).",
+    "<strong>دروازه ۵ — تشدید حمایت روسیه:</strong> عراقچی-پوتین = روسیه آماده. نظارت: انتقال سلاح، وتوی سازمان ملل، پرسنل روسی در ایران. اگر تعمیق: بن‌بست هسته‌ای ساختاری‌تر.",
+    "<strong>جدول زمانی D60 کتاب:</strong> آتش‌بس → اینترنت پایدار → ارمنستان فعال → موجودی محفوظ → FY28 = اول بازیابی. توافق → Q4 2026. تشدید → اینترنت قطع → FY28+ حداقل."
   ],
   "impactKIP": [
-    "<strong>UAE SARRAF NETWORK CRACKDOWN — DUBAI BANKING RISK NOW 8.5/10.</strong> UAE authorities (Apr 19) detained individuals linked to Iran-connected Sarraf financial networks. This is the biggest single blow to KIP's Dubai banking access since D1. Sarraf networks are the informal value transfer mechanism that bypasses formal banking. Their disruption means KIP's last informal Dubai payment pathway is now under direct law enforcement scrutiny.",
-    "<strong>HORMUZ RE-CLOSED DAY 3 + TOUSKA SEIZURE — NO NEAR-TERM JEBEL ALI SCENARIO.</strong> Hormuz effectively closed since D50. IRGC fired on VLCC Sanmar Herald. USS Spruance seized M/V Touska. Iran vowed retaliation. Deal probability 18% (down from 31%). Even if deal emerges: Hormuz normalization = 6-12 months minimum. KIP Jebel Ali path requires full Hormuz normalization + mine clearance + insurance + banking thaw. Timeline: FY28 earliest for normal operations.",
-    "<strong>CEASEFIRE EXPIRES TOMORROW APR 21 — ESCALATION 52%.</strong> If ceasefire lapses and D53 strikes resume: (1) Jebel Ali paralyzed — all Iran-linked cargo frozen; (2) UAE personnel risk HIGH — IRGC retaliation may target UAE as US ally; (3) insurance 13%+ → 20%+; (4) Dubai banking crackdown intensifies; (5) Brent $110-120+. Prepare evacuation contingency for UAE-based staff NOW.",
-    "<strong>STRANDED CARGO: $7,800+ STORAGE FEES.</strong> 52 days × $150/day = $7,800+ per container in storage fees at current rate. Insurance claims submitted (12 containers) — claims process stalled due to no incident classification during blockade. If D53 strikes resume: new hull war-risk incident = claims potentially processable.",
-    "<strong>Revenue: NEAR-ZERO. NO NEAR-TERM RECOVERY PATH.</strong> Deal 18% + ceasefire expiry tomorrow + Hormuz closed + UAE Sarraf crackdown = no realistic near-term path to Jebel Ali operations. Tbilisi/KL minimal operations continuing. Iraq land bridge (partial) ongoing. Revenue: 5-8% of pre-war levels. Prepare 6-12 month funding bridge.",
-    "<strong>ALTERNATIVE HUBS: OMAN AND MALAYSIA RISING IN IMPORTANCE.</strong> Oman: Gulf of Oman = IRGC activity zone (Touska seized there), but Muscat port not yet targeted. Malaysia: KL remains cleaner banking + storage. Iraq land bridge: still operational for Iran-adjacent commerce. Consider increasing KL hub operations if UAE restrictions deepen."
+    "<strong>DUBAI BANKING RISK 9.0/10 — DUAL BLOCKADE ONGOING — NO UAE PATH FOR IRAN TRANSACTIONS.</strong> UAE Sarraf crackdown (Apr 19) ongoing. Dual blockade = UAE fully aligned with US financial enforcement. Any Iran-linked transaction through Dubai corresponds banking remains under active law enforcement scrutiny. UAE Central Bank: informal guidance to clear Iran-adjacent accounts. KIP: all Iran-origin or Iran-destination payments must route through Tbilisi or KL only.",
+    "<strong>HORMUZ DUAL BLOCKADE DAY 15 — JEBEL ALI TIMELINE: FY28 EARLIEST.</strong> Hormuz dual blockade: US turns back 31+ ships, IRGC counter-blockade ~3 vessels/day seized. MSC Francesca + Epaminondas still held. Deal 16% — even if deal: Hormuz normalization = 6-12 months minimum. Mine clearance, insurance normalization, banking thaw all required. KIP Jebel Ali path: FY28 earliest under deal scenario; FY29 under stall scenario.",
+    "<strong>STALL 24% = FROZEN OPERATIONS EXTENDED — PREPARE TBILISI/KL AS PERMANENT HUB.</strong> Stall scenario (24%) = operations frozen indefinitely. This is now the second most likely scenario. Dubai operations cannot be planned against. Begin treating Tbilisi + KL as the permanent hub configuration, not temporary alternatives. UAE operations: mothballed pending full normalization.",
+    "<strong>STRANDED CARGO: $9,000+ STORAGE FEES (60 days × $150/day).</strong> 60 days × $150/day = $9,000+ per container. Insurance claims (12 containers) still stalled. Force majeure filing required for day 61+. Contact Lloyd's directly for bulk claims processing given unprecedented backlog. Ceasefire = no new incident classification; claims stalled until Hormuz normalizes or new incident triggers classification.",
+    "<strong>Revenue: NEAR-ZERO. TBILISI + KL + IRAQ = SURVIVAL MODE.</strong> Deal 16% + stall 24% = 40% chance of 3-12 more months of near-zero Dubai revenue. Tbilisi (financial), KL (logistics + banking), Iraq land bridge (partial volume) = current operations at ~5-8% of pre-war levels. 6-12 month bridge financing required if stall persists. Araghchi-Putin alignment = Iran preparing for long standoff = no near-term Hormuz resolution.",
+    "<strong>UN FOOD EMERGENCY WARNING — NEW LEVERAGE FOR HORMUZ RESOLUTION.</strong> UN SG food emergency warning Apr 28 = new international pressure for Hormuz resolution. 40+ nations depend on Persian Gulf food imports. If UNSC emergency session scheduled: possible ceasefire-for-Hormuz agreement before nuclear deal. Watch for: any US-Iran 'Hormuz only' partial deal that lifts economic siege without nuclear resolution."
   ],
   "impactKIP_fa": [
-    "<strong>بازداشت شبکه صراف امارات — ریسک بانکداری دوبی ۸.۵/۱۰.</strong> امارات (۱۹ آوریل) شبکه‌های صراف ایران‌محور را منحل کرد. بزرگ‌ترین ضربه به دسترسی بانکی KIP از D1. آخرین مسیر پرداخت غیررسمی دوبی زیر نظارت مستقیم قانونی.",
-    "<strong>هرمز بسته روز ۳ + توقیف توسکا — بدون سناریوی جبل علی در کوتاه‌مدت.</strong> توافق ۱۸٪. حتی اگر توافق باشد: عادی‌سازی هرمز ۶-۱۲ ماه. KIP جبل علی = FY28 زودترین.",
-    "<strong>آتش‌بس فردا منقضی — تشدید ۵۲٪.</strong> اگر D53: جبل علی منجمد؛ ریسک پرسنل بالا (امارات = متحد آمریکا)؛ بیمه ۱۳٪→۲۰٪+؛ بانک محدودتر؛ برنت $۱۱۰-۱۲۰+.",
-    "<strong>کالاهای معطل: $۷٬۸۰۰+ هزینه انبارداری.</strong> ۵۲ روز × $۱۵۰/روز = $۷٬۸۰۰+ هر کانتینر. بیمه: ادعاهای ثبت‌شده اما روند متوقف.",
-    "<strong>درآمد: تقریباً صفر. بدون مسیر بازیابی کوتاه‌مدت.</strong> توافق ۱۸٪ + آتش‌بس فردا + هرمز بسته + صراف منحل = مسیر واقع‌بینانه نه. Tbilisi/KL حداقل. عراق جزئی. ۵-۸٪ درآمد قبل از جنگ.",
-    "<strong>هاب‌های جایگزین: عمان و مالزی.</strong> مسقط: خلیج عمان فعال (توسکا همانجا) اما هدف قرار نگرفته. KL: بانکداری تمیزتر. عراق: زمینی فعال."
+    "<strong>ریسک بانکداری دوبی ۹.۰/۱۰ — محاصله دوگانه ادامه دارد — بدون مسیر امارات برای تراکنش‌های ایران.</strong> صراف (۱۹ آوریل) ادامه دارد. محاصله دوگانه = امارات کاملاً با اجرای مالی آمریکا همراستا. هر تراکنش ایران‌محور در دوبی زیر نظارت. KIP: همه پرداخت‌های ایران را از Tbilisi یا KL هدایت کنید.",
+    "<strong>محاصله دوگانه هرمز روز ۱۵ — جبل علی: FY28 زودترین.</strong> ۳۱+ کشتی برگشته. IRGC ~۳ کشتی/روز. Francesca + Epaminondas هنوز. توافق ۱۶٪ — حتی اگر توافق: هرمز ۶-۱۲ ماه. FY28 توافق؛ FY29 بن‌بست.",
+    "<strong>بن‌بست ۲۴٪ = عملیات منجمد طولانی — Tbilisi/KL را هاب دائمی بدانید.</strong> بن‌بست (۲۴٪) = عملیات نامحدود منجمد. دومین محتمل‌ترین. دوبی را نمی‌توان برنامه‌ریزی کرد. Tbilisi + KL = پیکربندی دائمی.",
+    "<strong>کالاهای معطل: $۹٬۰۰۰+ هزینه انبارداری (۶۰ روز × $۱۵۰).</strong> ۱۲ کانتینر. بیمه هنوز متوقف. force majeure از روز ۶۱. Lloyd's تماس مستقیم.",
+    "<strong>درآمد: تقریباً صفر. Tbilisi + KL + عراق = حالت بقا.</strong> توافق ۱۶٪ + بن‌بست ۲۴٪ = ۴۰٪ احتمال ۳-۱۲ ماه بیشتر. ~۵-۸٪ درآمد قبل از جنگ. عراقچی-پوتین = بدون راه‌حل هرمز کوتاه‌مدت.",
+    "<strong>اخطار غذایی سازمان ملل — اهرم جدید برای حل هرمز.</strong> اخطار ۲۸ آوریل = فشار بین‌المللی جدید. ۴۰+ کشور به واردات غذا از خلیج وابسته. نشست اضطراری UNSC ممکن. نظارت: توافق جزئی 'فقط هرمز' بدون حل هسته‌ای."
   ],
   "prepKIP": [
-    "<strong>DUBAI BANKING: RAISE TO 8.5 (from 7.5). STAY OUT OF DUBAI BANKING.</strong> UAE Sarraf crackdown = Dubai banking access for Iran-linked transactions now under active law enforcement. Do NOT conduct any Iran-linked transactions through Dubai correspondent banks until situation stabilizes. Maintain Tbilisi/KL as exclusive primary channels. Monitor UAE Central Bank guidance.",
-    "<strong>PERSONNEL: ESCALATE TO HIGH RISK — ACTIVATE EVACUATION PROTOCOLS.</strong> Ceasefire expires TOMORROW. Escalation 52%. UAE is a US allied host nation = IRGC retaliation target if D53 strikes resume. UAE-based KIP staff: review evacuation routes to third-country NOW. Prepare for 48-hour evacuation window starting tonight.",
-    "<strong>INSURANCE:</strong> File ALL outstanding claims before Apr 21. If D53 strikes resume: new incident classifications may allow stalled claims to process. Touska seizure + Sanmar Herald firing = incident precedent for hull war-risk claims. Hull 13%+; don't expect normalization for 6-12 months minimum. Red Sea: separate Houthi risk — file independently.",
-    "<strong>INVENTORY:</strong> $7,800+ per container (52 days × $150/day). No near-term retrieval path. Secure storage extension contracts this week. If D53: retrieval timeline extends to 6-12+ months. File force majeure notifications with insurers for storage cost overruns.",
-    "<strong>ESCALATION 52% — PREPARE BUSINESS CONTINUITY PLAN:</strong> If D53 strikes resume: (1) Jebel Ali operations frozen indefinitely; (2) UAE staff evacuated; (3) Dubai banking inaccessible; (4) All operations pivot to Tbilisi/KL/Iraq. Activate business continuity protocol now — don't wait for Apr 21.",
-    "<strong>IRGC NAVAL ACTIVITY — MONITOR GULF OF OMAN:</strong> IRGC fired on Sanmar Herald (Gulf of Oman). Touska seized in Gulf of Oman. Watch for IRGC naval movements near Muscat approaches — if Oman port targeted: KL becomes primary hub. Activate KL contingency today.",
-    "<strong>DIVERSIFICATION:</strong> KL/Tbilisi CRITICAL — increase capacity and volume immediately. Iraq land bridge: expand. DO NOT rely on any UAE channel. Pakistan: mediation failed but trade route still operational. Istanbul: Turkish extension offer sidelined but border open."
+    "<strong>DUBAI BANKING: HOLD AT 9.0 — ZERO IRAN-LINKED TRANSACTIONS IN UAE.</strong> UAE Sarraf crackdown ongoing + dual blockade + UAE aligned with US = Dubai banking for Iran transactions is essentially closed. Do NOT conduct any Iran-linked transactions through Dubai correspondent banks. Tbilisi and KL are the exclusive primary channels. Establish $50K+ liquid reserves outside UAE banking. Monitor UAE Central Bank for any formal Iran-transaction ban.",
+    "<strong>PERSONNEL: MAINTAIN ELEVATED CAUTION — CEASEFIRE HOLDS BUT DUAL BLOCKADE ACTIVE.</strong> Ceasefire Day 21 = no immediate IRGC retaliation threat against UAE targets. But dual blockade = USS/IRGC confrontation risk ongoing. UAE is a US allied host nation. Maintain staff awareness of evacuation routes. No immediate action required but stay at yellow alert. Review quarterly.",
+    "<strong>INSURANCE: FILE FORCE MAJEURE FOR DAY 61+ STORAGE — CONTACT LLOYD'S DIRECTLY.</strong> $9,000+ per container (60 days × $150). Storage fees now exceed reasonable insurance deductibles. File formal force majeure notifications for storage cost overruns with all 12 insured containers. Contact Lloyd's directly — bulk claims backlog is severe. Ceasefire = no new incident to trigger hull war-risk classification; however, 'continuous blockade' may qualify as prolonged force majeure event.",
+    "<strong>INVENTORY: EXTEND STORAGE CONTRACTS — PLAN FOR 6-9 MORE MONTHS.</strong> No near-term retrieval path under stall/escalation scenarios (67% combined). Secure Jebel Ali + Hamriyah storage extension contracts for 6-9 months. Negotiate bulk storage rates given prolonged blockade. Non-perishable goods safe. Any perishables written off (15% by value estimate). Catalog contents for insurance purposes.",
+    "<strong>TBILISI + KL AS PERMANENT HUB ARCHITECTURE:</strong> Stop treating Tbilisi/KL as 'temporary alternatives.' Design operations around them as the permanent hub for 12-24 months minimum. Tbilisi: financial operations, Iran-adjacent SME, cash preservation. KL: logistics hub, bonded warehousing, CIMB/Maybank for trade finance. Iraq: land bridge for Iran-adjacent volume. Istanbul: secondary logistics, EUR/TRY hedging.",
+    "<strong>WAR POWERS + STALL = EXTENDED PLANNING HORIZON:</strong> War Powers clock expired today — Trump may face congressional constraints on resuming strikes. Stall scenario 24% = second most likely. Plan for extended Tbilisi/KL operations: (1) hire permanent staff in Tbilisi; (2) increase KL bonded warehouse capacity; (3) build Iraq land bridge volume; (4) Jebel Ali: mothballed; (5) Dubai banking: closed until further notice.",
+    "<strong>UN FOOD EMERGENCY — POTENTIAL PARTIAL HORMUZ DEAL:</strong> UN SG food emergency warning = international pressure for Hormuz partial resolution. Watch for: 'Hormuz only' deal that allows food/medicine vessels through without nuclear deal. If partial Hormuz deal: insurance might normalize for specific cargo categories first (food, medicine). KIP: identify which cargo qualifies for early exemption."
   ],
   "prepKIP_fa": [
-    "<strong>بانکداری دوبی: ۸.۵ (از ۷.۵). از دوبی خارج شوید.</strong> انحلال صراف = تراکنش‌های ایران‌محور دوبی زیر نظارت مستقیم قانونی. Tbilisi/KL اصلی.",
-    "<strong>پرسنل: ریسک بالا — پروتکل‌های تخلیه را فعال کنید.</strong> آتش‌بس فردا منقضی. تشدید ۵۲٪. امارات = هدف احتمالی تلافی سپاه. برنامه تخلیه ۴۸ ساعته.",
-    "<strong>Insurance:</strong> همه ادعاها قبل ۲۱ آوریل. توقیف توسکا + شلیک سنمار = سابقه ادعای جنگی. ۱۳٪+ بدون نرمال‌سازی ۶-۱۲ ماه.",
-    "<strong>Inventory:</strong> $۷٬۸۰۰+ (۵۲ روز × $۱۵۰). قرارداد انبارداری تمدید. force majeure برای بیمه.",
-    "<strong>تشدید ۵۲٪ — برنامه تداوم کسب‌وکار:</strong> اگر D53: جبل علی منجمد؛ پرسنل تخلیه؛ دوبی غیرقابل دسترس؛ همه عملیات → Tbilisi/KL/عراق.",
-    "<strong>فعالیت دریایی سپاه — خلیج عمان نظارت:</strong> شلیک به سنمار + توقیف توسکا در خلیج عمان. اگر مسقط هدف: KL = هاب اصلی.",
-    "<strong>Diversification:</strong> KL/Tbilisi ظرفیت افزایش. عراق گسترش. پاکستان مسیر فعال. از هیچ کانال امارات وابسته نمانید."
+    "<strong>بانکداری دوبی: ۹.۰ — صفر تراکنش ایران‌محور در امارات.</strong> صراف + محاصله دوگانه + امارات با آمریکا = دوبی بسته. Tbilisi و KL اصلی. ذخیره $۵۰K+ نقد خارج از بانک امارات. نظارت بانک مرکزی امارات.",
+    "<strong>پرسنل: احتیاط بالا حفظ کنید — آتش‌بس ادامه دارد ولی محاصله دوگانه فعال.</strong> آتش‌بس روز ۲۱ = تهدید فوری سپاه علیه امارات نیست. اما محاصله دوگانه = ریسک تقابل. زرد بمانید. بررسی فصلی.",
+    "<strong>Insurance: force majeure روز ۶۱+ ثبت کنید — مستقیم با Lloyd's.</strong> $۹٬۰۰۰+ (۶۰ روز × $۱۵۰). هزینه‌ها از کسر بیمه فراتر. force majeure برای ۱۲ کانتینر. با Lloyd's تماس مستقیم — عقب‌افتادگی ادعاها زیاد است.",
+    "<strong>Inventory: قرارداد انبارداری ۶-۹ ماه تمدید کنید.</strong> بدون مسیر بازیابی در بن‌بست/تشدید (۶۷٪). انبارهای جبل علی + حمریه تمدید. غیرفاسدشدنی‌ها سالم. کاتالوگ برای بیمه.",
+    "<strong>Tbilisi + KL هاب دائمی:</strong> موقت نه — دائمی برای ۱۲-۲۴ ماه. Tbilisi: مالی. KL: لجستیک + انبار + CIMB/Maybank. عراق: زمینی.",
+    "<strong>اختیارات جنگی + بن‌بست = افق طولانی:</strong> ساعت امروز منقضی. بن‌بست ۲۴٪. برنامه: Tbilisi کارکنان دائمی؛ KL ظرفیت انبار؛ عراق حجم؛ جبل علی: متوقف.",
+    "<strong>اضطرار غذایی سازمان ملل — توافق جزئی احتمالی:</strong> نظارت: توافق 'فقط هرمز' برای کالاهای غذایی/دارویی. اگر تحقق یابد: بیمه ممکن است برای دسته‌بندی‌های خاص اول نرمال شود. شناسایی کالاهای واجد شرایط."
   ],
   "signalsKIP": [
-    "<strong>GATE 1 — CEASEFIRE EXPIRY TOMORROW APR 21:</strong> No extension arranged. Iran refused Round 2. Watch for any last-minute extension announcement before midnight Apr 21. If no extension: escalation scenario activates — move to HIGH ALERT for UAE staff, Dubai banking freeze protocol.",
-    "<strong>GATE 2 — IRGC RETALIATION FOR TOUSKA:</strong> Iran promised retaliation for M/V Touska seizure. Watch for: any IRGC strike on US/allied naval vessel, any IRGC naval activity in UAE waters, any Iranian announcement targeting UAE infrastructure. If acted: immediate UAE evacuation protocol.",
-    "<strong>GATE 3 — UAE BANKING ENFORCEMENT DEEPENS:</strong> UAE Sarraf crackdown (Apr 19) = first step. Watch for: UAE Central Bank formal guidance on Iran-linked transactions, US Embassy UAE advisory, correspondent bank notifications. If UAE formally restricts Iran-linked banking: KIP Dubai operations dead for 12+ months.",
-    "<strong>OIL:</strong> Brent $95.42 (+5.58%). If ceasefire lapses: $110-120+ within 24 hours of first D53 launch. If extension: $85-90. No deal on table = oil volatility extreme this week.",
-    "<strong>Insurance:</strong> 13%+ rising. Touska seizure + Sanmar Herald = two separate incidents in 48 hours. Lloyd's may classify Gulf of Oman as hostile zone — escalating hull war-risk rates regardless of ceasefire outcome.",
-    "<strong>Houthi:</strong> No major attacks D49-D52. Independent risk factor. If ceasefire lapses and Iran resumes: Houthi Bab al-Mandab activation = Red Sea disruption independent of Hormuz.",
-    "<strong>Banking:</strong> 8.5 (UP from 7.5). UAE Sarraf crackdown = unprecedented enforcement. Monitor UAE Central Bank. If formal Iran-linked transaction ban: 9.5+ emergency. Tbilisi: HOLD ALL TRANSACTIONS there currently."
+    "<strong>GATE 1 — HORMUZ PARTIAL DEAL (FOOD/MEDICINE EXEMPTION):</strong> UN SG food emergency warning = international pressure for partial Hormuz deal. Watch for: any US-Iran 'food/medicine vessels only' Hormuz agreement, UNSC emergency session, G7 food emergency declaration. If partial deal: insurance starts normalizing for qualifying cargo; KIP non-food cargo still blocked; monitor if electronics/industrials qualify for any exemption.",
+    "<strong>GATE 2 — NUCLEAR DEAL BREAKTHROUGH:</strong> Iran's D60 deferred-nuclear proposal was rejected. Watch for: any Iran pivot to include nuclear commitments in war-termination agreement. This would be the full recovery signal. Brent would drop to $85-90, Hormuz normalization in 6-12 months, Jebel Ali recovers FY28. Probability: 16%.",
+    "<strong>GATE 3 — UAE BANKING FORMAL BAN:</strong> UAE Sarraf crackdown (Apr 19) was enforcement of existing rules. Watch for: UAE Central Bank formal regulation banning Iran-linked transactions, US Treasury secondary sanctions on UAE banks processing Iran payments. If formal ban: Dubai banking dead for 24+ months, emergency Tbilisi/KL pivot required.",
+    "<strong>GATE 4 — BRENT $115+ AND US POLITICAL CRISIS:</strong> Brent $111.16 today. $115+ threshold = US consumer crisis (gas $4.80+). Forces Trump's hand. Either deal (Brent drops to $85) or escalation (Brent $125-150). Either outcome changes KIP operations timeline. Insurance: already at 14% hull — $115+ triggers further escalation in war risk premium. Watch Brent daily.",
+    "<strong>GATE 5 — WAR POWERS + CONGRESSIONAL CONSTRAINT:</strong> War Powers 60-day clock expired today. If Congress passes authorization constraint: US may not resume strikes without vote. Iran would then face extended stall (no escalation threat). KIP planning: stall = continue Tbilisi/KL operations 12-18 months; no escalation risk = personnel at yellow not red alert.",
+    "<strong>Oil:</strong> Brent $111.16 (+2.71%). Trajectory: $84 (D49 Hormuz opening) → $90 (re-closure) → $95 (D52) → $101 (D55) → $108 (D59) → $111 (D60). Structural uptrend on dual blockade. $115+ imminent if no diplomatic break. Cape routing premium: $3-5M/ship.",
+    "<strong>Banking:</strong> 9.0 (UP from 8.5 D52). UAE fully aligned with US enforcement. Zero Iran-linked transactions in UAE. Tbilisi: active but small banking sector — monitor Georgian Central Bank guidance. KL: CIMB + Maybank = viable for Iran-adjacent trade. Iraq: cash transactions only."
   ],
   "signalsKIP_fa": [
-    "<strong>دروازه ۱ — انقضای آتش‌بس فردا ۲۱ آوریل:</strong> بدون تمدید. ایران رد. نظارت: اعلام تمدید قبل نیمه شب. اگر نه: پروتکل هشدار بالا برای پرسنل امارات.",
-    "<strong>دروازه ۲ — تلافی سپاه برای توسکا:</strong> ایران وعده تلافی. نظارت: ضربه به ناوهای آمریکایی/متحد، فعالیت سپاه در آب‌های امارات، تهدید زیرساخت امارات. اگر اقدام: تخلیه فوری.",
-    "<strong>دروازه ۳ — تعمیق اجرای بانکی امارات:</strong> صراف ۱۹ آوریل = گام اول. نظارت: راهنمای رسمی بانک مرکزی امارات، اعلامیه بانک‌های کارگزار. اگر ممنوعیت رسمی: دوبی ۱۲+ ماه مرده.",
-    "<strong>Oil:</strong> برنت $۹۵.۴۲ (+۵.۵۸٪). اگر آتش‌بس لغو: $۱۱۰-۱۲۰+ ظرف ۲۴ ساعت. اگر تمدید: $۸۵-۹۰. نوسان شدید.",
-    "<strong>Insurance:</strong> ۱۳٪+ در حال افزایش. توسکا + سنمار = دو حادثه در ۴۸ ساعت. Lloyd's ممکن است خلیج عمان را منطقه خصمانه اعلام کند.",
-    "<strong>Houthi:</strong> بدون حمله D49-D52. ریسک مستقل. اگر D53: فعال‌سازی باب المندب = دریای سرخ مستقل از هرمز.",
-    "<strong>Banking:</strong> ۸.۵ (↑ از ۷.۵). انحلال صراف. نظارت بانک مرکزی امارات. اگر ممنوعیت رسمی: ۹.۵+ اضطراری. Tbilisi: همه تراکنش‌ها همانجا نگه دارید."
+    "<strong>دروازه ۱ — توافق جزئی هرمز (معافیت غذا/دارو):</strong> اخطار سازمان ملل = فشار برای توافق جزئی. نظارت: توافق 'فقط غذا/دارو'، نشست UNSC، اعلامیه G7. اگر تحقق: بیمه برای کالاهای مجاز نرمال می‌شود.",
+    "<strong>دروازه ۲ — توافق هسته‌ای:</strong> پیشنهاد D60 رد شد. نظارت: ایران تعهد هسته‌ای را در توافق پایان جنگ وارد کند. سیگنال بازیابی کامل. برنت $۸۵-۹۰. هرمز ۶-۱۲ ماه. ۱۶٪.",
+    "<strong>دروازه ۳ — ممنوعیت رسمی بانکی امارات:</strong> نظارت: مقررات رسمی بانک مرکزی امارات، تحریم‌های ثانویه خزانه‌داری. اگر ممنوعیت رسمی: دوبی ۲۴+ ماه، Tbilisi/KL اضطراری.",
+    "<strong>دروازه ۴ — برنت $۱۱۵+:</strong> برنت $۱۱۱.۱۶ امروز. $۱۱۵ = بحران مصرف‌کننده آمریکا. ترامپ را مجبور می‌کند: توافق ($۸۵) یا تشدید ($۱۲۵-۱۵۰). بیمه: ۱۴٪ — $۱۱۵+ حق‌بیمه بالاتر.",
+    "<strong>دروازه ۵ — اختیارات جنگی + کنگره:</strong> ساعت امروز منقضی. اگر کنگره محدود کند: آمریکا بدون رأی از سرگیری نمی‌تواند. بن‌بست طولانی‌تر. KIP: زرد نه قرمز.",
+    "<strong>Oil:</strong> برنت $۱۱۱.۱۶ (+۲.۷۱٪). مسیر: $۸۴ → $۹۰ → $۹۵ → $۱۰۱ → $۱۰۸ → $۱۱۱. محاصله دوگانه = صعود ساختاری.",
+    "<strong>Banking:</strong> ۹.۰. امارات = صفر. Tbilisi فعال. KL: CIMB + Maybank. عراق: فقط نقد."
   ],
   "casualties": [
     {
       "group": "Iran",
       "figure": "~8,300+ killed",
       "statusColor": "red",
-      "detail": "HRANA: 1,701+ civilians now confirmed (updated figure). Hengaw: 6,620 military. Total estimate ~8,300+. Internet Day 52 = 1,248+ hrs total — no real-time reporting possible. No new deaths under ceasefire D40-D52."
+      "detail": "HRANA: 1,701+ civilians confirmed (no updates since internet blackout). Hengaw: 6,620 military. Total ~8,300+. Internet Day 61 = 1,464+ hours — no real-time reporting possible. No new combat deaths under ceasefire D40-D60 (21 days)."
     },
     {
       "group": "Lebanon",
-      "figure": "2,294+ killed",
+      "figure": "2,509+ killed",
       "statusColor": "red",
-      "detail": "UP from 2,055+. 7,061+ wounded. Israel-Lebanon ceasefire effective Apr 16 (D48). Direct talks track continuing. Next round Washington."
+      "detail": "UP from 2,491 (D59). 7,500+ wounded. Israel-Lebanon 3-week ceasefire extension (D56) still holding. Israeli strikes continue inside extension (killed 14 Apr 26, journalist Amal Khalil Apr 23). Washington talks round pending."
     },
     {
       "group": "Israel",
@@ -1849,7 +1849,7 @@
       "group": "Source discrepancy",
       "figure": "SIGNIFICANT",
       "statusColor": "yellow",
-      "detail": "Internet 1,248+ hrs (Day 52). HRANA: 1,701+ civilians newly confirmed. Hengaw: 6,620 military. Total estimate ~8,300+. No real-time Iran civilian reporting possible without internet."
+      "detail": "Internet Day 61 = 1,464+ hours. HRANA: 1,701+ civilians confirmed (no new updates since blackout). Hengaw: 6,620 military. Total ~8,300+. No real-time Iran civilian reporting possible without internet restoration."
     }
   ],
   "casualties_fa": [
@@ -1857,13 +1857,13 @@
       "group": "Iran",
       "figure": "~۸٬۳۰۰+",
       "statusColor": "red",
-      "detail": "هرانا: ۱٬۷۰۱+ غیرنظامی تایید شده (عدد جدید). هنگاو ۶٬۶۲۰ نظامی. مجموع ~۸٬۳۰۰+. اینترنت ۱٬۲۴۸+ ساعت — گزارش‌دهی بدون اینترنت ممکن نیست. بدون کشته جدید D40-D52."
+      "detail": "هرانا: ۱٬۷۰۱+ غیرنظامی تأیید. هنگاو ۶٬۶۲۰ نظامی. ~۸٬۳۰۰+. اینترنت ۱٬۴۶۴+ ساعت — گزارش‌دهی ممکن نیست. بدون کشته جدید D40-D60 (۲۱ روز)."
     },
     {
       "group": "Lebanon",
-      "figure": "۲٬۲۹۴+",
+      "figure": "۲٬۵۰۹+",
       "statusColor": "red",
-      "detail": "افزایش از ۲٬۰۵۵+. ۷٬۰۶۱+ زخمی. آتش‌بس اسرائیل-لبنان از D48 (۱۶ آوریل) برقرار. مذاکرات مستقیم ادامه دارد."
+      "detail": "افزایش از ۲٬۴۹۱ (D59). ۷٬۵۰۰+ زخمی. تمدید ۳ هفته‌ای آتش‌بس لبنان-اسرائیل (D56) برقرار. اسرائیل عملیات ادامه می‌دهد (۱۴ کشته ۲۶ آوریل). واشنگتن دور بعدی مذاکرات."
     },
     {
       "group": "Israel",
@@ -1891,76 +1891,76 @@
     }
   ],
   "humanitarian": [
-    "<strong>Internet: BUSINESS PARTIAL — DAY 7. TOTAL BLACKOUT DAY 52 = 1,248+ HOURS — LONGEST EVER.</strong> Citizens still fully cut off. Business 'pro' internet partial continuing (since Apr 14). 1,248+ total hours = longest nationwide internet shutdown in recorded history globally. $30-40M/day direct + $80M/day digital economy = $110M+/day. Iran Chamber of Commerce: $80M/day digital losses ongoing.",
-    "<strong>Displacement:</strong> 330,000+ Iran. Lebanon ~1M. 363+ Bushehr to Russia. Ceasefire = no new Iran displacement since D40 (13 days). Lebanon front: Israel-Lebanon ceasefire from D48 holding. Washington talks pending.",
-    "<strong>Infrastructure:</strong> 85,000+ structures damaged. No new damage D40-D52 (13 days). Ceasefire = preservation window. Iran claims $270B total losses (direct + indirect). Reconstruction framework requires deal first.",
-    "<strong>Nuclear:</strong> 363+ Bushehr evacuees. IAEA monitoring. Nuclear gap (5-yr vs 20-yr freeze) unresolved. 440kg HEU still in Iran. Pakistan channel for nuclear negotiations effectively broken — Aref 'childish' statement.",
-    "<strong>Medical:</strong> HRANA: 1,701+ civilians newly confirmed. Hengaw: 6,620 military. Total ~8,300+. Lebanon: 2,294+ killed, 7,061+ wounded. No new verified deaths under ceasefire D40-D52.",
-    "<strong>Economic:</strong> Oil Brent $95.42 (+5.58%), WTI $91. Gas ~$4.15+. Iran petrochemicals still suspended ($54M/day). Blockade Day 7 of re-closure (Hormuz): Cape routing premium $3-5M/ship. 25+ vessels diverted. UAE banking restrictions on Iran networks tightening."
+    "<strong>Internet: BLACKOUT DAY 61 = 1,464+ HOURS — RECORD.</strong> Citizens still fully cut off. Business 'pro' internet partial since Apr 14 (Day 22+ of partial). $30-40M/day direct + $80M/day digital economy = $110M+/day in losses. Record longest nationwide internet shutdown globally continues. Ceasefire = no new deliberate infrastructure damage, but internet restoration requires formal deal + ISP reconnection order from authorities.",
+    "<strong>Displacement:</strong> 330,000+ Iran. Lebanon ~1M. 363+ Bushehr to Russia. Ceasefire = no new Iran displacement D40-D60 (21 days). Lebanon front: 3-week extension holding despite daily Israeli operations. Washington round pending.",
+    "<strong>Infrastructure:</strong> 85,000+ structures damaged. No new damage D40-D60 (21 days). Ceasefire = preservation window ongoing. Iran claims $270B total losses. Russia-Iran meeting may discuss reconstruction backstop. Reconstruction framework requires deal first.",
+    "<strong>Nuclear:</strong> 363+ Bushehr evacuees. IAEA monitoring. Iran's D60 proposal: DEFER nuclear talks to a separate later phase. US rejected. Nuclear gap (5-yr Iran vs 20-yr US freeze) + 440kg HEU = structural deadlock. Pakistan mediating nuclear channel.",
+    "<strong>Medical:</strong> Lebanon: 2,509+ killed (UP), 7,500+ wounded. HRANA: 1,701+ Iran civilians (no new updates — internet D61). Hengaw: 6,620 military Iran. No new combat deaths D40-D60. UN Secretary-General warned Apr 28: Hormuz dual blockade risks global food emergency.",
+    "<strong>Economic:</strong> Brent $111.16 (+2.71%), WTI ~$99.40. US gas approaching $4.50. Iran petrochemicals still suspended ($54M/day). Dual blockade (~3 vessels/day Hormuz): Cape routing premium $3-5M/ship. ~900+ ships stranded. UAE banking restrictions ongoing."
   ],
   "humanitarian_fa": [
-    "<strong>اینترنت: کسب‌وکارها روز ۷ جزئی. مجموع روز ۵۲ = ۱٬۲۴۸+ ساعت — طولانی‌ترین در تاریخ.</strong> شهروندان کاملاً قطع. $۱۱۰M+/روز خسارت.",
-    "<strong>Displacement:</strong> ۳۳۰٬۰۰۰+ ایران. لبنان ~۱M. آتش‌بس = بدون آواره جدید D40-D52. آتش‌بس اسرائیل-لبنان از D48.",
-    "<strong>Infrastructure:</strong> ۸۵٬۰۰۰+. بدون خسارت جدید D40-D52. ایران $۲۷۰B. بازسازی نیاز به توافق.",
-    "<strong>Nuclear:</strong> ۳۶۳+ بوشهر. شکاف هسته‌ای ۵ vs ۲۰ سال حل‌نشده. ۴۴۰ کیلوگرم HEU. کانال پاکستان شکست.",
-    "<strong>Medical:</strong> هرانا ۱٬۷۰۱+ غیرنظامی (عدد جدید). لبنان ۲٬۲۹۴+، ۷٬۰۶۱+ زخمی. بدون کشته D40-D52.",
-    "<strong>Economic:</strong> برنت $۹۵.۴۲ (+۵.۵۸٪)، WTI $۹۱. گاز ~$۴.۱۵+. پتروشیمی متوقف $۵۴M/روز. ۲۵+ کشتی برگشته. امارات محدودیت بانکی ایران."
+    "<strong>اینترنت: روز ۶۱ = ۱٬۴۶۴+ ساعت — رکورد.</strong> شهروندان کاملاً قطع. اینترنت کسب‌وکار از ۱۴ آوریل (روز ۲۲+ جزئی). $۱۱۰M+/روز خسارت. بازیابی اینترنت نیاز به توافق رسمی دارد.",
+    "<strong>Displacement:</strong> ۳۳۰٬۰۰۰+ ایران. لبنان ~۱M. آتش‌بس = بدون آواره جدید D40-D60 (۲۱ روز). لبنان: تمدید ۳ هفته‌ای D56 حفظ شده. واشنگتن دور بعدی.",
+    "<strong>Infrastructure:</strong> ۸۵٬۰۰۰+. بدون خسارت جدید D40-D60. ایران $۲۷۰B. دیدار روسیه-ایران ممکن است پشتیبانی بازسازی بررسی کند. بازسازی نیاز به توافق.",
+    "<strong>Nuclear:</strong> ۳۶۳+ بوشهر. پیشنهاد D60: هسته را به بعد موکول کنیم. آمریکا رد. شکاف ۵ vs ۲۰ سال + ۴۴۰ کیلوگرم HEU. پاکستان میانجی.",
+    "<strong>Medical:</strong> لبنان ۲٬۵۰۹+ کشته (↑). هرانا ۱٬۷۰۱+ (بدون به‌روزرسانی — اینترنت D61). هنگاو ۶٬۶۲۰. بدون کشته جنگی D40-D60. دبیرکل سازمان ملل: هرمز = خطر اضطرار غذایی جهانی.",
+    "<strong>Economic:</strong> برنت $۱۱۱.۱۶ (+۲.۷۱٪)، WTI ~$۹۹.۴۰. گاز آمریکا نزدیک $۴.۵۰. پتروشیمی متوقف $۵۴M/روز. محاصره دوگانه: ~۹۰۰+ کشتی معطل. پیمایش دماغه: +$۳-۵M/کشتی."
   ],
   "diplomacy": [
-    "<strong>IRAN VP AREF FORMALLY REJECTS ROUND 2 — 'CHILDISH AND IMPOSSIBLE.'</strong> Iran VP Mohammad Mokhber Aref (Apr 19): 'US conditions for Round 2 are childish and impossible.' Iran will not send delegation to Islamabad (Round 2 scheduled Apr 20-21). Pakistan mediator channel: Pakistan says channel 'remains open' but Iran has declined to use it. The D48 Munir-Tehran breakthrough attempt has formally failed.",
-    "<strong>USS SPRUANCE SEIZES M/V TOUSKA — FIRST IRANIAN SHIP BOARDED (D51).</strong> USS Spruance (DDG-111) boarded and seized Iranian cargo ship M/V Touska in Gulf of Oman (Apr 19 0340 local). Crew of 23 detained. Refined petroleum cargo. Iran MFA: 'Act of piracy on high seas — will not go unanswered.' Iran promised retaliation. Touska seizure = US blockade enforcement escalates from turning ships back to physical boarding.",
-    "<strong>HORMUZ RE-CLOSED AFTER 24-HOUR OPENING (D50 → ONGOING).</strong> D49 (Apr 17): Iran FM Araghchi reopened Hormuz — Brent crashed 11% to $84. D50 (Apr 18): Iran reversed within 24 hrs. IRGC gunboats fired warning shots at VLCC Sanmar Herald. CMA CGM Everglade turned back. Iran: opening was 'goodwill gesture not reciprocated.' Hormuz remains closed — Day 3 as of D52.",
-    "<strong>TRUMP: 'MAYBE I WON'T EXTEND IT — HAVE TO START DROPPING BOMBS AGAIN.'</strong> Trump (Apr 20 morning). US officials flew to Islamabad for Round 2; Iran absent. White House no longer using 'feels good about prospects' language. 'Amazing two days' optimism from D48 has evaporated entirely. Trump's last offer: 15-yr enrichment freeze. Iran VP: 'childish.' Gap = structural.",
-    "<strong>UAE CRACKS DOWN ON SARRAF NETWORKS — DUBAI BANKING TIGHTENS FOR IRAN.</strong> UAE authorities (Apr 19) detained multiple individuals linked to Sarraf financial networks — the Iran-linked informal value transfer networks that have been Iran's primary financial lifeline through Dubai. UAE coordinated with OFAC and CENTCOM intelligence. First major UAE banking enforcement action of the war."
+    "<strong>IRAN SUBMITS DEFERRED-NUCLEAR PROPOSAL VIA PAKISTAN (D60).</strong> Iran sent US a new proposal through Pakistan (Apr 27-28): reopen Hormuz + end war NOW; address nuclear programme in a separate later phase. US/Trump 'cold' to proposal — Rubio: 'better than we expected' but any deal must block nuclear weapons. This is Iran's most flexible diplomatic position of the war: decoupling conventional war termination from nuclear resolution. But the US minimum condition (nuclear in the deal) makes it unacceptable in its current form. Pakistan continuing to mediate.",
+    "<strong>ARAGHCHI MEETS PUTIN AT ST. PETERSBURG (D60).</strong> Iran FM Araghchi met Putin at St. Petersburg. In attendance: Lavrov (FM), Belousov (Defence Minister), Adm. Kostyukov (military intelligence chief GRU-equivalent). Putin: 'We see how courageously Iran is fighting — we will do everything to serve Iran's interests.' Putin confirmed he received a personal message from Mojtaba Khamenei last week. This is a full strategic alignment meeting: intelligence + military + political. Iran is securing Russian backing for long-term resistance.",
+    "<strong>WAR POWERS 60-DAY CLOCK EXPIRES TODAY (D60).</strong> The War Powers Resolution's 60-day authorization expires Apr 28. Trump has not sought congressional authorization. New diplomatic + political dimension: congressional authorization vote could become a leverage point for Iran's US allies (Democrats, libertarian Republicans). If Trump needs Congress to continue: ceasefire negotiated terms become a domestic political fight. Iran's diplomatic strategy now includes waiting for US domestic politics to constrain Trump.",
+    "<strong>UN SECRETARY-GENERAL FOOD EMERGENCY WARNING (D60).</strong> UN SG warned Apr 28 that the Hormuz dual blockade risks a global food emergency. Persian Gulf food imports for 40+ nations at risk. International pressure for Hormuz resolution now includes food security argument (not just oil). G7 emergency energy/food consultation reported. This is a new vector for international pressure on BOTH sides.",
+    "<strong>CEASEFIRE DAY 21 — INDEFINITE EXTENSION HOLDING.</strong> D54 (Apr 22) Trump extended ceasefire indefinitely at Pakistan request. D60: 21-day zero-attack streak intact. Iran's deferred-nuclear proposal is the first formal diplomatic initiative from Iran since D49 Hormuz opening gambit. 21 days of quiet = both sides prefer the freeze to escalation, even without deal. Dual blockade (~3 vessels/day each side) = economic war continues under military ceasefire."
   ],
   "diplomacy_fa": [
-    "<strong>عارف دور دوم را رد کرد — 'کودکانه و غیرممکن.'</strong> معاون رئیس‌جمهور عارف (۱۹ آوریل): شروط آمریکا 'کودکانه.' ایران به اسلام‌آباد نمی‌رود (دور دوم ۲۰-۲۱ آوریل). پیشرفت D48 منیر-تهران به طور رسمی شکست خورد.",
-    "<strong>USS اسپروانس توسکا را توقیف کرد — اولین کشتی ایرانی (D51).</strong> USS Spruance در خلیج عمان M/V Touska را توقیف کرد (۱۹ آوریل ۳:۴۰ بامداد). خدمه ۲۳ نفر بازداشت. ایران: 'دزدی دریایی — بدون پاسخ نخواهد ماند.' اولین توقیف فیزیکی = تشدید کیفی محاصره.",
-    "<strong>هرمز مجدداً بسته شد پس از بازگشایی ۲۴ ساعته (D50).</strong> D49 (۱۷ آوریل): ایران هرمز را باز کرد — برنت سقوط ۱۱٪ به $۸۴. D50 (۱۸ آوریل): ظرف ۲۴ ساعت معکوس. سپاه به سنمار هرالد شلیک کرد. ایران: 'حسن نیت بدون متقابل.' هرمز بسته — روز ۳ تا D52.",
-    "<strong>ترامپ: 'شاید تمدید نکنم — باید دوباره بمب بیندازیم.'</strong> ترامپ (۲۰ آوریل صبح). مقامات آمریکا به اسلام‌آباد پرواز کردند؛ ایران غایب. خوشبینی D48 'دو روز شگفت‌انگیز' کاملاً محو شد. شکاف هسته‌ای ساختاری.",
-    "<strong>امارات شبکه‌های صراف را منحل کرد — بانکداری دوبی برای ایران محدود شد.</strong> امارات (۱۹ آوریل) افراد مرتبط با شبکه‌های صراف ایران‌محور را بازداشت کرد. اولین اقدام بزرگ بانکی امارات در جنگ. هماهنگی با OFAC و CENTCOM."
+    "<strong>ایران پیشنهاد تعلیق هسته‌ای از طریق پاکستان ارسال کرد (D60).</strong> ایران به آمریکا پیشنهاد داد (۲۷-۲۸ آوریل): هرمز را الان باز کنیم + جنگ را تمام کنیم؛ برنامه هسته‌ای را در مرحله بعدی جداگانه بررسی کنیم. آمریکا سرد — روبیو: 'بهتر از آنچه انتظار داشتیم' اما باید هسته را مسدود کند. انعطاف‌پذیرترین موضع ایران تا کنون اما شرط حداقلی آمریکا آن را رد می‌کند.",
+    "<strong>عراقچی با پوتین در سنت‌پترزبورگ دیدار کرد (D60).</strong> در حضور: لاوروف، بلوسوف (وزارت دفاع)، دریاسالار کوستیوکوف (اطلاعات نظامی). پوتین: 'می‌بینیم چقدر شجاعانه ایران می‌جنگد — همه کار می‌کنیم تا منافع ایران تأمین شود.' پوتین تأیید کرد پیام شخصی از مجتبی خامنه‌ای دریافت کرد. همراستایی استراتژیک کامل: اطلاعات + نظامی + سیاسی.",
+    "<strong>ساعت قانون اختیارات جنگی ۶۰ روزه امروز منقضی (D60).</strong> اختیارات جنگی ۲۸ آوریل منقضی. ترامپ مجوز نگرفته. بُعد دیپلماتیک جدید: رأی‌گیری مجوز در کنگره = اهرم برای متحدان ایران در آمریکا. استراتژی دیپلماتیک ایران حالا شامل انتظار برای محدودیت سیاسی داخلی ترامپ.",
+    "<strong>اخطار دبیرکل سازمان ملل درباره بحران غذایی (D60).</strong> دبیرکل سازمان ملل هشدار داد که محاصره دوگانه هرمز خطر اضطرار غذایی جهانی دارد. واردات غذای ۴۰+ کشور از خلیج در خطر. فشار بین‌المللی برای حل هرمز حالا شامل استدلال امنیت غذایی. مشاوره اضطراری G7.",
+    "<strong>آتش‌بس روز ۲۱ — تمدید نامحدود حفظ شده.</strong> D54 (۲۲ آوریل) ترامپ آتش‌بس را نامحدود تمدید کرد. D60: ۲۱ روز صفر حمله. پیشنهاد تعلیق هسته‌ای اولین ابتکار رسمی ایران از D49. محاصره دوگانه (~۳ کشتی/روز هر طرف) = جنگ اقتصادی زیر آتش‌بس نظامی ادامه دارد."
   ],
   "publicOpinion": [
-    "<strong>US:</strong> Trump 'maybe I won't extend it — have to start dropping bombs again' (Apr 20). Domestic support for resuming campaign if Iran refuses deal. Gas $4.15+ = some voter pressure but 'bomb Iran' sentiment still strong in Trump base. War fatigue 56% wrong (Pew) but declining issue compared to immigration/economy. US KIA: 15+ under ceasefire — no new deaths in 13 days = KIA political pressure low.",
-    "<strong>Iran:</strong> Regime hardened. VP Aref's 'childish' statement = public face-saving move that closes negotiating space. Business internet partial Day 7 = some economic relief but citizens still cut off. Touska seizure = regime using 'piracy' narrative for public mobilization. Pro-war faction (IRGC) vs. reformist faction (Araghchi) — balance currently tilting hardline.",
-    "<strong>Global:</strong> Brent $95.42 (+5.58%). Market now pricing 52% escalation probability — highest since ceasefire began. UAE crackdown on Sarraf = regional banking confidence in Iran trade sharply down. China and India watching oil — both major Iran buyers. Pakistan mediation failure = regional frustration.",
-    "<strong>Markets:</strong> D49: Brent crashed to $84 on Hormuz opening (11% one-day). D50: rebounded to $90 on re-closure. D52: $95.42 on Touska + ceasefire expiry. Volatility regime now high. Options markets pricing 35% chance of $120+ Brent within 30 days if ceasefire lapses. Polymarket: ceasefire-holds-May-31 dropped from 79% (D48) to ~35%."
+    "<strong>US:</strong> War Powers 60-day clock expires today Apr 28 — potential domestic political crisis. Gas approaching $4.50 = Trump base starting to feel pain. US KIA: 15+ (no new under ceasefire D40-D60). Brent $111.16 = gas/food prices creating political headwinds. War fatigue: 56% wrong direction (Pew D52) — likely risen further. Congressional pushback on War Powers could fracture Republican unity. Trump's 'bomb Iran' base still supportive but economic pain narrative growing.",
+    "<strong>Iran:</strong> Iran's deferred-nuclear proposal = public signal of willingness to compromise on conventional war, not on sovereignty. Araghchi-Putin meeting = regime showing eastern solidarity for domestic consumption. Business internet partial Day 22 = some economic relief. Citizens still cut off (Day 61 = 1,464+ hours). IRGC maintaining dual blockade = regime showing strength. Internal: reformist Araghchi submitted proposal; Putin meeting means hardline faction also signed off — unusual consensus.",
+    "<strong>Global:</strong> Brent $111.16 (+2.71%). UN food emergency warning = global food/supply chain concern now mainstream. Russia openly backing Iran (Putin-Araghchi). China watching oil — major buyer. India watching oil. Pakistan mediating actively. Europe facing energy price pressure. G7 emergency consultations reported. Market pricing structural $105-115 range, not panic spike.",
+    "<strong>Markets:</strong> D49: Brent $84 (Hormuz opening). D50: $90 (re-closure). D52: $95.42 (Touska + expiry fears). D55: $101+ (Francesca+Epaminondas seizures). D59 close: $108.22. D60: $111.16. Trajectory: steady climb on dual blockade + UN food emergency. Options markets: 45% chance $120+ Brent within 30 days if ceasefire breaks. WTI $99.40 = approaching $100 psychologically significant."
   ],
   "publicOpinion_fa": [
-    "<strong>آمریکا:</strong> ترامپ 'شاید تمدید نکنم — باید بمب بیندازیم.' پایگاه رأی هنوز طرفدار. گاز $۴.۱۵+ = فشار. KIA ۱۵+ ولی ۱۳ روز بدون کشته جدید.",
-    "<strong>ایران:</strong> رژیم سخت‌تر. عارف 'کودکانه' = حفظ آبرو در داخل. توقیف توسکا = روایت 'دزدی دریایی.' تعادل سخت‌لاین/اصلاح‌طلب به نفع سپاه.",
-    "<strong>جهان:</strong> برنت $۹۵.۴۲ (+۵.۵۸٪). بازار ۵۲٪ تشدید. امارات صراف = اعتماد بانکی کاهش. چین و هند خریداران نفت ایران.",
-    "<strong>بازارها:</strong> D49: برنت $۸۴ (سقوط ۱۱٪). D50: $۹۰. D52: $۹۵.۴۲. نوسان بالا. پولیمارکت: آتش‌بس-تا-۳۱-مه از ۷۹٪ به ~۳۵٪."
+    "<strong>آمریکا:</strong> ساعت قانون اختیارات جنگی امروز منقضی — بحران سیاسی داخلی احتمالی. گاز نزدیک $۴.۵۰. KIA ۱۵+ (بدون جدید D40-D60). خستگی جنگ در حال افزایش. کنگره فشار می‌آورد.",
+    "<strong>ایران:</strong> پیشنهاد تعلیق هسته‌ای = نشانه عمومی انعطاف روی جنگ متعارف. عراقچی-پوتین = همبستگی شرقی برای مصرف داخلی. اینترنت کسب‌وکار روز ۲۲ جزئی. شهروندان ۱٬۴۶۴+ ساعت قطع. سپاه محاصره دوگانه را حفظ می‌کند = نمایش قدرت.",
+    "<strong>جهان:</strong> برنت $۱۱۱.۱۶. اخطار غذایی سازمان ملل. روسیه آشکارا از ایران حمایت. چین و هند نگران نفت. اروپا فشار انرژی. G7 مشاوره اضطراری. بازار $۱۰۵-۱۱۵ به عنوان تعادل ساختاری قیمت‌گذاری.",
+    "<strong>بازارها:</strong> D49: $۸۴. D50: $۹۰. D52: $۹۵.۴۲. D55: $۱۰۱+. D59 بسته: $۱۰۸.۲۲. D60: $۱۱۱.۱۶. مسیر صعودی پیوسته در محاصره دوگانه + اخطار غذایی. WTI $۹۹.۴۰ — نزدیک $۱۰۰ مرز روانی."
   ],
   "hormuz": [
-    "<strong>HORMUZ RE-CLOSED DAY 3 — IRGC FIRED ON VLCC SANMAR HERALD — M/V TOUSKA SEIZED.</strong> Hormuz has been effectively closed since D50 (Apr 18) after a 24-hour opening D49. IRGC gunboats fired warning shots at VLCC Sanmar Herald during D50 attempted transit. CMA CGM Everglade turned back under IRGC escort. 25+ vessels diverted total via Cape of Good Hope. Cape routing premium: $3-5M/ship added cost.",
-    "<strong>USS SPRUANCE SEIZED M/V TOUSKA — FIRST IRANIAN SHIP PHYSICALLY BOARDED (D51).</strong> USS Spruance (DDG-111) intercepted and boarded Iranian cargo vessel M/V Touska in Gulf of Oman (Apr 19, 0340 local). Crew of 23 Iranian nationals detained. Refined petroleum cargo. Iran MFA declared it 'piracy on the high seas' and vowed retaliation. First physical boarding since blockade began — qualitative escalation from turning ships away.",
-    "<strong>HORMUZ BRIEF OPENING D49 THEN RAPID REVERSAL = IRAN'S DIPLOMATIC PLAYBOOK.</strong> D49 Hormuz opening crashed Brent 11% to $84. D50 re-closure rebounded Brent to $90. Iran FM Araghchi called it a 'goodwill gesture that was not reciprocated' — Iran expected reciprocal US action (blockade pause? detainee release?). Reversal confirms Iran using Hormuz as precise diplomatic instrument.",
-    "<strong>CEASEFIRE EXPIRES TOMORROW APR 21 — IRGC PRE-POSITIONING LIKELY.</strong> 13 days of zero launches = IRGC maintenance, resupply, repositioning window. If ceasefire lapses D53 without extension or deal: Iranian missile/drone campaign likely resumes within hours. Brent would spike toward $110-120+ on first D53 launches.",
-    "<strong>MINES: 200+ REMAIN. BLOCKADE RE-CLOSURE RESETS TIMELINE.</strong> CENTCOM mine-clearing paused (no progress D50-D52). Deal required before formal mine-clearing begins. Without deal: mines = 6-12 months minimum before insurance normalization. Hormuz open-water transit insurance premium now at pre-war $12M/voyage levels."
+    "<strong>DUAL BLOCKADE — DAY 15 (D60). US: 31+ vessels turned back. IRGC: ~3 vessels/day seized/blocked.</strong> US naval blockade of Iranian ports active since Apr 14 (D46). IRGC counter-blockade: ~3 vessels/day through Hormuz. MSC Francesca + Epaminondas still held (seized D55-D56). USS Spruance still holding M/V Touska. Iran's D60 proposal: Hormuz reopens IF US ends war NOW + lifts blockade. US rejected nuclear deferral clause. 900+ ships stranded globally. Cape routing premium: $3-5M/ship. UN food emergency warning issued Apr 28.",
+    "<strong>IRAN'S DEFERRED-NUCLEAR PROPOSAL INCLUDES HORMUZ REOPENING (D60).</strong> Iran's new proposal via Pakistan explicitly includes Hormuz reopening as part of deal: end war + lift blockade → Hormuz opens immediately. Nuclear talks would follow separately. US/Trump rejected the proposal because nuclear talks cannot be deferred. This means: even if Iran offered full immediate Hormuz reopening, US won't accept without nuclear commitment. Hormuz is HOSTAGE TO NUCLEAR DEADLOCK.",
+    "<strong>MINES: 200+ REMAIN. CLEARANCE PAUSED 21+ DAYS.</strong> Mine clearance paused since D40 ceasefire. No progress D40-D60. Deal required before formal clearance. Without deal: mines = 6-12 months minimum before insurance normalization. Lloyd's JWC listed entire Persian Gulf. War risk premium 3.8% hull value. Hormuz open-water transit insurance: $12M+/voyage.",
+    "<strong>DUAL BLOCKADE ECONOMICS: $111 BRENT + UN FOOD EMERGENCY.</strong> Brent $111.16 (+2.71% D60) — structural supply shortage, not spike. Dual blockade has removed ~20% of seaborne oil from market. Cape routing adds 14 days to Asia deliveries. UN Secretary-General Apr 28: Hormuz standoff risks global food emergency (40+ nations depend on Persian Gulf food imports). Every week of dual blockade = $2-3B in global supply chain losses.",
+    "<strong>IRGC COUNTER-BLOCKADE TACTIC: ~3 VESSELS/DAY SEIZURE/BLOCKADE.</strong> IRGC systematic: seize 2-3 vessels per day in Hormuz-adjacent waters. Strategy: force US to choose between escalating enforcement or accepting de facto IRGC Hormuz control. MSC Francesca (D55, container ship), Epaminondas (D56, bulk carrier), M/V Touska (D51, cargo), Tifani (D54, tanker). IRGC using seized vessels as diplomatic leverage for Touska crew + M/V prisoner exchanges."
   ],
   "hormuz_fa": [
-    "<strong>هرمز بسته روز ۳ — سپاه به سنمار هرالد شلیک کرد — توسکا توقیف شد.</strong> بسته از D50 (۱۸ آوریل) پس از بازگشایی ۲۴ ساعته D49. ۲۵+ کشتی برگشته. پیمایش دماغه امید: +$۳-۵M/کشتی.",
-    "<strong>USS اسپروانس توسکا را توقیف کرد — اولین توقیف فیزیکی (D51).</strong> USS Spruance در خلیج عمان M/V Touska را توقیف کرد. خدمه ۲۳ نفر. ایران: 'دزدی دریایی.' تشدید کیفی محاصره.",
-    "<strong>بازگشایی D49 سپس معکوس D50 = سلاح دیپلماتیک.</strong> D49: برنت $۸۴ (-۱۱٪). D50: برنت $۹۰ (+۷.۱٪). ایران: 'حسن نیتی که متقابل نشد.' هرمز = ابزار دقیق دیپلماتیک.",
-    "<strong>آتش‌بس فردا منقضی — سپاه احتمالاً پیش‌موضع‌گیری.</strong> ۱۳ روز صفر پرتاب = پنجره نگهداری سپاه. اگر D53 بدون تمدید: از سرگیری احتمالاً ظرف ساعات. برنت به $۱۱۰-۱۲۰+ خواهد جهید.",
-    "<strong>مین: ۲۰۰+ باقی. پاکسازی متوقف D50-D52.</strong> بدون پیشرفت. نیاز به توافق. بدون توافق: ۶-۱۲ ماه نرمال‌سازی بیمه."
+    "<strong>محاصره دوگانه — روز ۱۵ (D60). آمریکا: ۳۱+ کشتی برگشته. سپاه: ~۳ کشتی/روز.</strong> محاصره دریایی آمریکا از ۱۴ آوریل. محاصره متقابل سپاه: ~۳ کشتی/روز. MSC Francesca + Epaminondas هنوز در توقیف. توسکا هنوز. پیشنهاد D60 ایران: هرمز را باز می‌کنیم اگر جنگ الان تمام شود. آمریکا رد. ~۹۰۰+ کشتی معطل. اخطار غذایی سازمان ملل ۲۸ آوریل.",
+    "<strong>پیشنهاد تعلیق هسته‌ای ایران شامل بازگشایی هرمز (D60).</strong> پیشنهاد ایران از طریق پاکستان به صراحت شامل بازگشایی هرمز است: جنگ + محاصره را تمام کنید → هرمز فوراً باز. مذاکرات هسته‌ای جداگانه بعداً. آمریکا رد کرد چون هسته را نمی‌توان به تعویق انداخت. معنا: حتی اگر ایران هرمز را فوری باز کند، آمریکا بدون تعهد هسته‌ای قبول نمی‌کند. هرمز گروگان بن‌بست هسته‌ای.",
+    "<strong>مین: ۲۰۰+ باقی. پاکسازی ۲۱+ روز متوقف.</strong> متوقف از D40. بدون پیشرفت D40-D60. نیاز به توافق. لویدز کل خلیج را لیست کرد. حق‌بیمه ۳.۸٪. بیمه هرمز: $۱۲M+/سفر.",
+    "<strong>اقتصاد محاصره دوگانه: برنت $۱۱۱ + اخطار غذایی سازمان ملل.</strong> برنت $۱۱۱.۱۶ — کمبود ساختاری نه جهش. محاصره دوگانه ~۲۰٪ نفت دریایی از بازار حذف. پیمایش دماغه ۱۴ روز اضافه. دبیرکل سازمان ملل ۲۸ آوریل: هرمز خطر اضطرار غذایی جهانی. هر هفته محاصره = $۲-۳B خسارت زنجیره تأمین.",
+    "<strong>تاکتیک محاصره متقابل سپاه: ~۳ کشتی/روز.</strong> سپاه سیستماتیک: ۲-۳ کشتی/روز در آب‌های مجاور هرمز. استراتژی: آمریکا را مجبور کن یا تشدید یا کنترل هرمز توسط سپاه را بپذیرد. MSC Francesca (D55)، Epaminondas (D56)، توسکا (D51)، Tifani (D54). سپاه کشتی‌های توقیف‌شده را به عنوان اهرم دیپلماتیک استفاده می‌کند."
   ],
   "keyActors": [
-    "<strong>Trump:</strong> 'Maybe I won't extend it — have to start dropping bombs again' (Apr 20 morning). Shifted from 'amazing two days' (D48) to implicit strike threat. D52 posture = hardening. US officials sent to Islamabad; Iran absent. Brent $95.42 = political pressure rising but Trump base still supports strikes. Options: (A) strike D53 if no deal; (B) unilateral ceasefire extension; (C) declare victory and withdraw.",
-    "<strong>Iran VP Aref:</strong> KEY ACTOR D51-D52. Formally rejected Round 2 talks — 'US conditions childish and impossible.' Aref represents hardline IRGC-aligned faction within Iran leadership. His statement foreclosed Pakistan back-channel. Iran's reformist track (Araghchi Hormuz opening D49) lost to hardline track (Aref Round 2 refusal D51).",
-    "<strong>USS Spruance (DDG-111):</strong> Key action actor D51. Commanded the first physical boarding and seizure of an Iranian vessel — M/V Touska. Crew of 23 detained. This will be the casus belli Iran uses if they resume strikes. CENTCOM has effectively forced Iran's hand.",
-    "<strong>UAE / Dubai:</strong> UAE banking crackdown on Sarraf networks (Apr 19) = UAE choosing US/Western financial alignment over Iran business. Unprecedented for UAE in this conflict. Dubai's traditional role as Iran's financial gateway increasingly constrained. Key signal for KIP business model.",
-    "<strong>Turkey:</strong> Extension offer still technically on table but sidelined by Iran's Round 2 refusal. If ceasefire lapses without extension Apr 21, Turkey's offer becomes irrelevant unless both sides want a D55-D60 resumption pause.",
-    "<strong>IRGC:</strong> 13 days of ceasefire = maintenance window used productively. Pre-positioned for D53 if order comes. Naval units (Sanmar Herald, Touska response) already in confrontation mode. The real decision-maker in Iran on whether to resume."
+    "<strong>Trump:</strong> D60 posture: War Powers clock expired today — potential constitutional issue. 'Cold' to Iran's deferred-nuclear proposal (via Rubio: 'must block nuclear weapons'). Ceasefire extended indefinitely at D54. Brent $111.16 = gas/food political headwinds. Options: (A) continue indefinite ceasefire while demanding nuclear; (B) resume strikes to force nuclear deal; (C) declare victory and withdraw. War Powers expiration may constrain option (B) politically.",
+    "<strong>Iran FM Araghchi:</strong> KEY ACTOR D57-D60. Traveled to Pakistan (D57-D58), Oman (D58), then St. Petersburg to meet Putin (D60). Araghchi is Iran's diplomatic lead — now carrying both the deferred-nuclear proposal AND the Putin-alignment message. This dual track (propose flexibility to US + secure Russian backing) is Araghchi's strategy: negotiate from strength.",
+    "<strong>Putin / Russia:</strong> NEW KEY ACTOR D60. Putin met Araghchi at St. Petersburg with Lavrov + Belousov (Defence) + Adm. Kostyukov (GRU-equivalent military intelligence). Putin: 'We see how courageously Iran is fighting — we will do everything to serve Iran's interests.' Putin confirmed receipt of personal message from Mojtaba Khamenei. Russia now acting as Iran's security patron — this changes the geopolitical calculus significantly.",
+    "<strong>Pakistan PM Sharif:</strong> Still active mediator. Requested the indefinite ceasefire extension (D54). Now relaying Iran's deferred-nuclear proposal to US. Pakistan walking a tightrope: US ally + Iran mediator. Pakistani army chief Munir-Tehran contacts ongoing. Pakistan's mediation is the last active diplomatic channel.",
+    "<strong>UN Secretary-General:</strong> NEW KEY ACTOR D60. Issued formal food emergency warning Apr 28 — Hormuz dual blockade threatens global food supply for 40+ nations. This internationalizes the Hormuz issue beyond oil/energy into food security. Creates new pressure on both sides for resolution.",
+    "<strong>IRGC:</strong> 21 days of ceasefire = extended maintenance + repositioning. Dual blockade continues (~3 vessels/day seized). MSC Francesca + Epaminondas + Touska still held as leverage. IRGC is the veto player on whether Iran accepts any deal — deferred-nuclear proposal could not have been submitted without at least IRGC acquiescence."
   ],
   "keyActors_fa": [
-    "<strong>ترامپ:</strong> 'شاید تمدید نکنم — باید دوباره بمب بیندازیم' (۲۰ آوریل). از 'دو روز شگفت‌انگیز' (D48) به تهدید ضمنی ضربه. گزینه‌ها: (A) ضربه D53؛ (B) تمدید یک‌طرفه؛ (C) اعلام پیروزی و خروج.",
-    "<strong>عارف (معاون رئیس‌جمهور ایران):</strong> بازیگر کلیدی D51-D52. دور دوم را رد کرد — 'کودکانه.' کانال پاکستان را بست. خط سخت‌لاین = سپاه.",
-    "<strong>USS اسپروانس:</strong> توسکا را توقیف کرد (D51). اولین توقیف فیزیکی. بهانه تلافی ایران اگر D53 از سر گرفته شود.",
-    "<strong>امارات/دوبی:</strong> بازداشت شبکه صراف (۱۹ آوریل) = انتخاب همراستایی مالی با آمریکا. بی‌سابقه در این جنگ. دروازه مالی ایران-دوبی محدود شد.",
-    "<strong>ترکیه:</strong> پیشنهاد تمدید هنوز روی میز اما کنار گذاشته شده. اگر آتش‌بس D53 بدون تمدید منقضی شود = پیشنهاد ترکیه نامربوط.",
-    "<strong>سپاه پاسداران:</strong> ۱۳ روز نگهداری = آمادگی. قایق‌های سپاه به سنمار هرالد شلیک کردند. از نظر عملیاتی آماده از سرگیری."
+    "<strong>ترامپ:</strong> D60: ساعت اختیارات جنگی امروز منقضی. سرد به پیشنهاد تعلیق هسته‌ای (روبیو: باید هسته مسدود شود). آتش‌بس نامحدود D54. برنت $۱۱۱.۱۶ = فشار سیاسی داخلی. گزینه‌ها: ادامه آتش‌بس با اصرار بر هسته؛ از سرگیری ضربات؛ اعلام پیروزی.",
+    "<strong>عراقچی (وزیر خارجه ایران):</strong> بازیگر کلیدی D57-D60. به پاکستان (D57-D58)، عمان (D58)، سپس سنت‌پترزبورگ برای دیدار پوتین (D60). هم پیشنهاد تعلیق هسته‌ای حمل می‌کند هم پیام همراستایی با پوتین. مذاکره از موضع قدرت.",
+    "<strong>پوتین / روسیه:</strong> بازیگر کلیدی جدید D60. پوتین با لاوروف + بلوسوف + دریاسالار کوستیوکوف (اطلاعات نظامی) با عراقچی دیدار کرد. پوتین: 'همه کار می‌کنیم تا منافع ایران تأمین شود.' پیام مجتبی خامنه‌ای به پوتین تأیید شد. روسیه حالا حامی امنیتی ایران است.",
+    "<strong>شریف نخست‌وزیر پاکستان:</strong> میانجی فعال. درخواست تمدید نامحدود D54. پیشنهاد تعلیق هسته‌ای ایران را به آمریکا می‌رساند. تعادل: متحد آمریکا + میانجی ایران. آخرین کانال دیپلماتیک فعال.",
+    "<strong>دبیرکل سازمان ملل:</strong> بازیگر کلیدی جدید D60. اخطار رسمی اضطرار غذایی ۲۸ آوریل — محاصره هرمز تهدید غذایی ۴۰+ کشور. مسئله هرمز را فراتر از نفت به امنیت غذایی بین‌المللی می‌کند.",
+    "<strong>سپاه پاسداران:</strong> ۲۱ روز نگهداری + موضع‌گیری. محاصره متقابل ادامه دارد (~۳ کشتی/روز). Francesca + Epaminondas + توسکا هنوز در توقیف. سپاه وتوکننده هر توافق — پیشنهاد تعلیق هسته‌ای بدون اجازه سپاه ممکن نبود."
   ],
   "predictive": {
     "models": {
@@ -2041,7 +2041,28 @@
         "Apr 18",
         "Apr 19",
         "Apr 20",
-        "Apr 21"
+        "Apr 21",
+        "Apr 22",
+        "Apr 23",
+        "Apr 24",
+        "Apr 25",
+        "Apr 26",
+        "Apr 27",
+        "Apr 28",
+        "Apr 29",
+        "Apr 30",
+        "May 01",
+        "May 02",
+        "May 03",
+        "May 04",
+        "May 05",
+        "May 06",
+        "May 07",
+        "May 08",
+        "May 09",
+        "May 10",
+        "May 11",
+        "May 12"
       ],
       "decayProjection": [
         480,
@@ -2085,6 +2106,27 @@
         4,
         0,
         2,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
         0,
         0,
         0,
@@ -2151,7 +2193,28 @@
         0,
         0,
         0,
-        20
+        20,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        46,
+        46,
+        46,
+        46,
+        46,
+        46,
+        46,
+        46,
+        46,
+        46,
+        46,
+        46,
+        46,
+        46
       ]
     },
     "vectors": {
@@ -2401,7 +2464,7 @@
         3.5,
         1.2,
         1.5,
-        2.5
+        2.0
       ],
       "usPoliticalSustainability": [
         8,
@@ -2463,7 +2526,7 @@
         3.9,
         3.8,
         3.7,
-        3.6
+        3.5
       ],
       "escalationCeilingDistance": [
         7,
@@ -2525,30 +2588,30 @@
         1.5,
         1.3,
         1.4,
-        1.5
+        1.8
       ]
     },
     "vectorNotes": {
-      "militaryExhaustion": "D52 6.5 (unchanged D41-D52). 13 straight days zero launches. Ceasefire pause = IRGC maintenance and repositioning window. Zero launches = stockpiles intact. Touska seizure and Sanmar Herald firing = naval asymmetric, not missile/drone. Iran capability preserved for post-ceasefire resumption if D53 no extension.",
-      "militaryExhaustion_fa": "روز ۵۲: ۶.۵ (ثابت D41-D52). ۱۳ روز صفر پرتاب. آتش‌بس = پنجره نگهداری سپاه. توقیف توسکا و شلیک به سنمار = دریایی، نه موشکی. توان حفظ شده برای از سرگیری احتمالی D53.",
-      "economicPain": "D52 8.5 (UP sharply). Brent $95.42 (+5.58%). WTI $91. D49: Brent crashed to $84 (Hormuz opening). D50: rebounded to $90 (Hormuz re-closure + Sanmar Herald). D52: $95.42 on Touska + ceasefire expiry fears. Iran petrochemicals still suspended ($54M/day). Hormuz closed D3. 25 vessels diverted. Cape rerouting adding $3-5M/ship. Market now pricing 52% escalation — oil trending toward $115-125 if ceasefire lapses.",
-      "economicPain_fa": "روز ۵۲: ۸.۵ (↑ تیز). برنت $۹۵.۴۲ (+۵.۵۸٪). هفته پرنوسان: $۸۴ → $۹۰ → $۹۵.۴۲. پتروشیمی هنوز متوقف. هرمز بسته روز ۳. ۲۵ کشتی برگشته. بازار ۵۲٪ تشدید = $۱۱۵-۱۲۵ اگر آتش‌بس منقضی.",
-      "diplomaticMomentum": "D52 2.5 (COLLAPSED from 7.5 D48 peak). D49: 7.5 on Hormuz opening + 15-yr proposal. D50: 2.5 — Hormuz re-closed, Iran walked back. D51: 1.5 — Touska seized, Iran refuses Round 2. D52: 2.5 — slight stabilization but channel effectively dead. Iran VP Aref: US conditions 'childish and impossible.' Iran absent from Islamabad. Pakistan channel broken. No active proposal on table. Lowest diplomatic score since D1-D5.",
-      "diplomaticMomentum_fa": "روز ۵۲: ۲.۵ (فروپاشی از اوج ۷.۵ D48). D49: ۷.۵ (هرمز باز). D50: ۲.۵ (هرمز بسته). D51: ۱.۵ (توسکا + رد دور دوم). D52: ۲.۵. عارف: 'کودکانه.' ایران در اسلام‌آباد غایب. پایین‌ترین از D1-D5.",
-      "usPoliticalSustainability": "D52 4.0 (UP from 3.5). Ceasefire expiry TOMORROW creates political forcing function. Trump 'dropping bombs again' = playing to base, not dovish. Gas prices rising ($91 WTI). No US KIA under ceasefire = still positive. War fatigue elevated but Trump 'mission accomplished' framing still available. Slight uptick: Trump's rhetoric matches base sentiment — if he resumes strikes, political cost lower than expected.",
-      "usPoliticalSustainability_fa": "روز ۵۲: ۴.۰ (↑ از ۳.۵). انقضای آتش‌بس فردا = نقطه اجبار سیاسی. ترامپ 'بمب بیندازیم' = پایگاه رأی. WTI $۹۱ = قیمت بنزین بالا. بدون کشته آمریکایی زیر آتش‌بس. خستگی جنگ ولی چارچوب 'ماموریت انجام' هنوز ممکن.",
-      "escalationCeilingDistance": "D52 2.0 (near ceiling). Ceasefire expires TOMORROW — closest to ceiling since D39. Touska seizure (first Iranian ship boarded) = Iran will respond. Hormuz closed D3. IRGC fired on Sanmar Herald. Iran counter-threat on Gulf/Red Sea/Oman = now closer to action. If ceasefire lapses D53: escalation ceiling hit within 24-48 hrs. Nearest ceiling: Iranian missile resume + potentially Bab al-Mandab Houthi reopening.",
-      "escalationCeilingDistance_fa": "روز ۵۲: ۲.۰ (نزدیک سقف). آتش‌بس فردا منقضی — نزدیک‌ترین به سقف از D39. توقیف توسکا = ایران تلافی می‌کند. هرمز بسته روز ۳. شلیک به سنمار. اگر آتش‌بس لغو D53: سقف ظرف ۲۴-۴۸ ساعت."
+      "militaryExhaustion": "D60 6.5 (unchanged D41-D60). 21 straight days zero missile/drone launches. Ceasefire = IRGC full maintenance, repositioning, strategic pause. Zero launches = stockpiles perfectly preserved. Naval asymmetric (Francesca, Epaminondas, Touska, Tifani seized) = demonstrating capability without missile expenditure. Iran's deferred-nuclear proposal = political decision, not military limitation. Score stays 6.5 — ceasefire is political, not exhaustion.",
+      "militaryExhaustion_fa": "روز ۶۰: ۶.۵ (ثابت D41-D60). ۲۱ روز صفر موشک/پهپاد. آتش‌بس = نگهداری کامل سپاه. صفر پرتاب = ذخایر حفظ شده. ناهمتراز دریایی (Francesca، Epaminondas، توسکا) = نمایش توان. پیشنهاد تعلیق هسته‌ای = تصمیم سیاسی نه فرسایش. ۶.۵ ثابت.",
+      "economicPain": "D60 9.5 (UP from 9.4 D59). Brent $111.16 (+2.71%). WTI ~$99.40 — approaching $100 psychologically. Trajectory: $84 (D49) → $90 (D50) → $95 (D52) → $101 (D55) → $108 (D59) → $111.16 (D60). Structural uptrend, not spike. UN food emergency warning Apr 28. Iran petrochemicals still suspended ($54M/day). Dual blockade removing ~20% seaborne oil. Cape routing $3-5M/ship premium. US gas approaching $4.50 threshold. Score 9.5 = $100-120 Brent + chokepoint + food emergency.",
+      "economicPain_fa": "روز ۶۰: ۹.۵ (↑ از ۹.۴). برنت $۱۱۱.۱۶ (+۲.۷۱٪). WTI ~$۹۹.۴۰. صعود ساختاری: $۸۴→$۹۰→$۹۵→$۱۰۱→$۱۰۸→$۱۱۱.۱۶. اخطار غذایی سازمان ملل. پتروشیمی متوقف. محاصله دوگانه ~۲۰٪ نفت دریایی حذف. گاز $۴.۵۰+.",
+      "diplomaticMomentum": "D60 2.0 (UP from 1.5 D59). Iran submitted deferred-nuclear proposal via Pakistan = +1 (first formal proposal in 7+ days). US cold/rejection = -0.5. Araghchi-Putin meeting = -0.5 (signals Iran hardening fallback, not softening). Net: 2.0 — slight uptick on Iran proposal but structural gap unchanged. Pakistan actively mediating. UN food emergency = +0.5 new international pressure vector. War Powers expiration = new diplomatic dimension.",
+      "diplomaticMomentum_fa": "روز ۶۰: ۲.۰ (↑ از ۱.۵). ایران پیشنهاد تعلیق هسته‌ای داد = +۱. آمریکا سرد = -۰.۵. عراقچی-پوتین = -۰.۵. خالص: ۲.۰. شکاف ساختاری تغییر نکرد. پاکستان میانجی. سازمان ملل +۰.۵. اختیارات جنگی بُعد جدید.",
+      "usPoliticalSustainability": "D60 3.5 (DOWN from 3.7 D59). War Powers 60-day clock expired today = new political constraint. Brent $111.16 = gas approaching $4.50 threshold. US KIA: 15+ (no new under ceasefire). War fatigue rising but no escalation pressures. War Powers issue: if Congress acts, political sustainability drops further (congressional authorization vote could split Republicans). Score 3.5 = 45-55% approval range, $4.50 gas, War Powers complication.",
+      "usPoliticalSustainability_fa": "روز ۶۰: ۳.۵ (↓ از ۳.۷). ساعت اختیارات جنگی امروز منقضی = محدودیت سیاسی جدید. برنت $۱۱۱.۱۶ = گاز نزدیک $۴.۵۰. KIA ۱۵+ (بدون جدید). خستگی جنگ افزایش. اگر کنگره عمل کند: بیشتر کاهش.",
+      "escalationCeilingDistance": "D60 1.8 (UP from 1.4 D59). Ceasefire Day 21 = slight improvement (21 days without incident = more distance from ceiling). Iran's deferred-nuclear proposal = diplomatic engagement = slight pullback from ceiling. But: War Powers expiration = new uncertainty vector; Russia backing Iran = Iran less likely to back down; Brent $111+ = economic ceiling approaching. Score 1.8 reflects modest improvement from ceasefire stability but persistent nearness to multiple ceilings (economic ceiling, nuclear deadlock ceiling, War Powers legal ceiling).",
+      "escalationCeilingDistance_fa": "روز ۶۰: ۱.۸ (↑ از ۱.۴). آتش‌بس روز ۲۱ = بهبود اندک (۲۱ روز بدون حادثه = کمی فاصله از سقف). پیشنهاد دیپلماتیک ایران = عقب‌نشینی اندک از سقف. اما: انقضای اختیارات جنگی + روسیه پشت ایران + برنت $۱۱۱ = سقف‌های متعدد هنوز نزدیک."
     },
     "warOutcome": {
-      "prediction": "D52 (Apr 20): CEASEFIRE EXPIRES TOMORROW — ESCALATION NOW MOST LIKELY OUTCOME. Iran VP Aref has formally rejected Round 2. USS Spruance seized M/V Touska — Iran will retaliate. IRGC fired on VLCC Sanmar Herald. Hormuz closed Day 3. Trump: 'Maybe I won't extend it — have to start dropping bombs again.' Convergence 4.9 (collapsed from 6.0 D49 peak). Most likely scenario: ceasefire lapses Apr 21, Iran resumes missile/drone campaign D53. Escalation 52%. Deal 18%. Stalled 15%. Victory 10%. Intervention 4%. Fracture 1%.",
-      "prediction_fa": "روز ۵۲ (۲۰ آوریل): آتش‌بس فردا منقضی — تشدید محتمل‌ترین پیامد. عارف: دور دوم رد. توقیف توسکا = ایران تلافی. شلیک به سنمار. هرمز بسته روز ۳. ترامپ: 'شاید تمدید نکنم.' همگرایی ۴.۹. تشدید ۵۲٪. توافق ۱۸٪. بن‌بست ۱۵٪. پیروزی ۱۰٪.",
-      "derivation": "Military exhaustion 6.5 (unchanged — 13 straight days zero attacks; ceasefire = IRGC repositioning window; stockpiles intact; naval action not missile/drone). Economic pain 8.5 (UP — Brent $95.42 +5.58%; weekly volatility $84→$90→$95.42; Hormuz closed D3; 25 ships diverted; Iran petrochemicals still suspended $54M/day; Cape rerouting $3-5M/ship premium; market now pricing 52% escalation). Diplomatic momentum 2.5 (COLLAPSED — D49 peak 7.5 on Hormuz opening; D50 crash to 2.5 on re-closure; D51 1.5 on Touska+Round2 refusal; D52 2.5 stabilization but no channel active; Pakistan broken; Iran VP Aref 'childish'). US political sustainability 4.0 (UP from 3.5 — Trump's 'dropping bombs' rhetoric matches base; ceasefire death is politically acceptable for Trump; gas rising but war fatigue managed). Escalation ceiling distance 2.0 (near breach — ceasefire expires tomorrow; Touska = casus belli; Hormuz closure + Sanmar firing; IRGC pre-positioning; nearest ceiling: D53 missile resumption).",
-      "derivation_fa": "Military(6.5 ثابت). Economic(8.5 ↑↑ — برنت $۹۵.۴۲؛ هرمز بسته؛ ۲۵ کشتی). Diplomatic(2.5 ↓↓ — فروپاشی از ۷.۵؛ توسکا؛ رد دور دوم؛ عارف 'کودکانه'). Political(4.0 ↑). Escalation(2.0 — نزدیک سقف؛ فردا منقضی).",
+      "prediction": "D60 (Apr 28): STALL + NUCLEAR DEADLOCK AS THE NEW EQUILIBRIUM. Ceasefire Day 21 holding indefinitely. Iran submitted deferred-nuclear proposal (reopen Hormuz + end war NOW, nuclear later) — US rejected (Rubio: nuclear must be in deal). Araghchi-Putin meeting signals Iran building eastern support for long haul. War Powers 60-day clock expired today. Most likely: extended stall (24%) + escalation threat (43%) = 67% chance conflict resolution delayed 3-12+ months. Deal requires Iran to include nuclear or US to defer nuclear — neither likely near-term. Brent $111.16 = structural equilibrium. Recovery: Deal scenario → Q4 2026. Stall → FY28.",
+      "prediction_fa": "روز ۶۰ (۲۸ آوریل): بن‌بست + بن‌بست هسته‌ای به عنوان تعادل جدید. آتش‌بس روز ۲۱ نامحدود. ایران پیشنهاد تعلیق هسته‌ای داد — آمریکا رد. عراقچی-پوتین = ایران برای مسیر طولانی. ساعت اختیارات جنگی امروز منقضی. محتمل‌ترین: بن‌بست (۲۴٪) + تشدید (۴۳٪) = ۶۷٪. توافق → Q4 2026. بن‌بست → FY28.",
+      "derivation": "Military exhaustion 6.5 (unchanged — 21 straight days zero attacks; IRGC full maintenance; stockpiles intact; naval seizures demonstrating capability without missile expenditure). Economic pain 9.5 (UP — Brent $111.16 +2.71%; structural uptrend $84→$111; UN food emergency warning; dual blockade removing ~20% seaborne oil; WTI $99.40; US gas $4.45+). Diplomatic momentum 2.0 (slight UP — Iran's deferred-nuclear proposal = genuine flexibility +1; US rejection -0.5; Araghchi-Putin = hardening fallback -0.5; Pakistan active; War Powers new dimension). US political sustainability 3.5 (DOWN — War Powers clock expired today; Brent $111 = gas $4.45+; no new KIA but constitutional crisis). Escalation ceiling distance 1.8 (UP from 1.4 — 21-day ceasefire buffer; Iran proposal = diplomatic engagement; but nuclear deadlock + War Powers + economic ceiling persist).",
+      "derivation_fa": "Military(6.5 ثابت — ۲۱ روز صفر). Economic(9.5 ↑ — برنت $۱۱۱.۱۶؛ سازمان ملل؛ WTI $۹۹.۴۰). Diplomatic(2.0 ↑ — پیشنهاد +۱؛ رد -۰.۵؛ پوتین -۰.۵). Political(3.5 ↓ — اختیارات جنگی منقضی؛ گاز $۴.۴۵+). Escalation(1.8 ↑ — ۲۱ روز؛ پیشنهاد؛ بن‌بست هسته‌ای ادامه).",
       "convergenceScore": 4.9,
-      "convergenceInterpretation": "Convergence 4.9/10 — DOWN from 6.0 D49 peak. D48: 5.7 → D49: 6.0 → D50: 4.8 → D51: 4.4 → D52: 4.9 (slight recovery but below D48). Weighted: Military(6.5×0.25=1.625) + Economic(8.5×0.20=1.70) + Diplomatic(2.5×0.20=0.50) + Political(4.0×0.20=0.80) + Escalation(2.0×0.15=0.30) = 4.925 → 4.9. Key driver of collapse: diplomatic momentum crashed from 7.5 (D49 Hormuz opening) to 2.5 (Touska + Round 2 refusal). If ceasefire lapses D53 and Iran resumes: convergence drops to 2.0-3.0. If last-minute extension: jumps to 6.0+. Everything pivots on next 24 hours before Apr 21 0001.",
-      "convergenceInterpretation_fa": "همگرایی ۴.۹ از ۱۰ — کاهش از اوج ۶.۰ D49. D48: ۵.۷ → D49: ۶.۰ → D50: ۴.۸ → D51: ۴.۴ → D52: ۴.۹ (کمی بهبود اما زیر D48). محاسبه: Military(1.625) + Economic(1.70) + Diplomatic(0.50) + Political(0.80) + Escalation(0.30) = ۴.۹۲۵. محرک فروپاشی: دیپلماسی از ۷.۵ به ۲.۵ (هرمز → توسکا → رد دور دوم). اگر از سرگیری D53: ۲.۰-۳.۰. اگر تمدید: ۶.۰+.",
-      "lastUpdated": "2026-04-20T07:00:00-04:00"
+      "convergenceInterpretation": "Convergence 4.9/10 — STABLE since D52. D52: 4.9 → D55: 4.9 → D57: 4.8 → D59: 4.85 → D60: 4.9. Weighted: Military(6.5×0.25=1.625) + Economic(9.5×0.20=1.90) + Diplomatic(2.0×0.20=0.40) + Political(3.5×0.20=0.70) + Escalation(1.8×0.15=0.27) = 4.895 → 4.9. Economic pain rising (9.5) offset by slight diplomatic improvement (Iran proposal 2.0) and slightly improved escalation ceiling (1.8). Political declining (3.5) on War Powers + Brent $111. Structural equilibrium: 4.9 = frozen conflict zone — enough pressure for talks but insufficient for breakthrough. If Iran accepts nuclear in deal: jumps to 7.0+. If war resumes: drops to 2.0-3.0.",
+      "convergenceInterpretation_fa": "همگرایی ۴.۹ از ۱۰ — پایدار از D52. محاسبه: Military(1.625) + Economic(1.90) + Diplomatic(0.40) + Political(0.70) + Escalation(0.27) = ۴.۸۹۵ → ۴.۹. درد اقتصادی ↑ (۹.۵)، دیپلماسی کمی ↑ (۲.۰)، سیاسی ↓ (۳.۵). تعادل ساختاری: ۴.۹ = منطقه تعارض منجمد.",
+      "lastUpdated": "2026-04-28T07:00:00-04:00"
     }
   },
   "additionalCharts": {
@@ -2951,7 +3014,8 @@
         "D52",
         "D53",
         "D54",
-        "D55"
+        "D55",
+        "D60"
       ],
       "escalationSpiral": [
         15,
@@ -2978,7 +3042,8 @@
         52,
         46,
         42,
-        40
+        40,
+        43
       ],
       "protractedAttrition": [
         30,
@@ -3005,7 +3070,8 @@
         15,
         22,
         27,
-        28
+        28,
+        24
       ],
       "declaredVictory": [
         25,
@@ -3032,7 +3098,8 @@
         10,
         10,
         10,
-        10
+        10,
+        9
       ],
       "negotiatedDeal": [
         15,
@@ -3059,7 +3126,8 @@
         18,
         16,
         14,
-        14
+        14,
+        16
       ],
       "internationalIntervention": [
         10,
@@ -3086,6 +3154,7 @@
         4,
         4,
         5,
+        6,
         6
       ],
       "regimeFracture": [
@@ -3111,6 +3180,7 @@
         2,
         1,
         1,
+        2,
         2,
         2,
         2
@@ -3280,18 +3350,18 @@
     "tehranCommsStatus": {
       "status": "BLACKOUT",
       "statusColor": "red",
-      "internetDownHours": 1320,
-      "lastConfirmedContact": "Feb 28 (D1) — business internet partial since Apr 14 (Day 9)",
-      "detail": "55 days. 1,320+ hrs. $2.75B+. LONGEST EVER — NEW RECORD. Business internet partial Day 9 (since Apr 14). Citizens still fully cut off. CRITICAL D55 WARNING: IRGC threatened to cut 7 Gulf undersea cables (FALCON, AAE-1, TGN-Gulf, SEA-ME-WE) — if executed, business internet collapses. Contact Tehran NOW via business internet before cable threat materializes. If deal: civilian internet within 48-72 hrs. If cables cut: complete digital isolation.",
-      "detail_fa": "۱٬۳۲۰+ ساعت. ۵۵ روز. $۲.۷۵B+. رکورد جدید. اینترنت کسب‌وکار جزئی روز ۹. هشدار بحرانی: سپاه تهدید قطع ۷ کابل زیردریایی — اگر اجرا شود: اینترنت کسب‌وکار هم قطع. همین الان تماس بگیرید.",
-      "blackoutHours": "1320+"
+      "internetDownHours": 1464,
+      "lastConfirmedContact": "Feb 28 (D1) — business internet partial since Apr 14 (Day 9 = ceasefire D1)",
+      "detail": "D60 update: 61 days. 1,464+ hrs. $3.05B+. Longest national internet blackout ever. Business internet partial Day 22 (stable since Apr 14 — no cable cuts executed). Citizens still fully cut off. IRGC cable threat (D55) did not materialize in ceasefire window. Use business internet NOW for Armenia logistics coordination and FY28 planning. If deferred-nuclear deal accepted: civilian internet within 48-72 hrs. If War Powers-driven escalation: cable cuts may resume.",
+      "detail_fa": "D60: ۱٬۴۶۴+ ساعت. ۶۱ روز. $۳.۰۵B+. رکورد جهانی. اینترنت کسب‌وکار جزئی روز ۲۲ (پایدار). کابل‌های زیردریایی قطع نشدند. همین الان هماهنگی ارمنستان. اگر توافق: ۴۸-۷۲ ساعت بازگشت.",
+      "blackoutHours": "1464+"
     },
     "inventoryRunway": {
-      "months_remaining": 1.7,
-      "detail": "~1.7 months remaining. Deal DOWN to 14% (from 18% D52, 31% D48). Maritime war fully active — IRGC seized 2 ships, fired on a third, threatened cable cuts. No Iran nuclear proposal, no Round 2 date. Critical window: Jul 1-10, 2026. Act THIS WEEK: Armenia logistics contract, cable-resilient backup comms (Starlink or sat-phone), FY27 bridge financing. IRGC cable threat is the new existential risk — cables cut = business internet cut = zero Iran coordination.",
-      "detail_fa": "~۱.۷ ماه باقی. توافق ۱۴٪ (از ۱۸٪ D52). جنگ دریایی کامل. سپاه ۲ کشتی توقیف، تهدید کابل. هیچ پیشنهاد هسته‌ای ایران. این هفته: ارمنستان، استارلینک، مذاکره پل مالی FY27.",
+      "months_remaining": 1.5,
+      "detail": "D60: ~1.5 months remaining. Iran submitted deferred-nuclear proposal via Pakistan (reopen Hormuz NOW + end war, nuclear separately later) — structural positive but US cold. Deal 16%. Critical window: Jun 15-30, 2026. Act THIS WEEK: (1) sign Armenia logistics contract — no longer optional; (2) coordinate Tehran via business internet Day 22 for warehouse status; (3) lock FY28 bridge financing — stall 24% means 60-day extension now base case. If US accepts proposal: inventory pressure relieves. If stall: runway hits zero Jun 15.",
+      "detail_fa": "D60: ~۱.۵ ماه باقی. ایران پیشنهاد هسته‌ای معوق داد (از طریق پاکستان) — هرمز باز + پایان جنگ الان، هسته‌ای بعداً. توافق ۱۶٪. پنجره بحرانی: ۱۵-۳۰ ژوئن. همین هفته: قرارداد ارمنستان + هماهنگی تهران + FY28.",
       "burnRate": "~$15K-20K/month in fulfilled orders",
-      "criticalDate": "Jul 1-10, 2026. Deal → extends to Sep+. Cable cuts → immediate isolation. Maritime escalation → accelerates to Jun 15."
+      "criticalDate": "Jun 15-30, 2026. If US accepts deferred-nuclear deal: extends to Sep+. If stall continues: zero inventory Jun 15. Armenia contract signed this week = 3-4 week buffer."
     },
     "publishingDeepDive": [
       "<strong>PAPER/INK SUPPLY:</strong> Iran imports 70%+ of printing paper. Hormuz closure + sanctions = supply chain severed. Domestic paper mills operating at estimated 20-30% capacity due to power disruptions. Quality declining.",
@@ -3314,9 +3384,9 @@
     "dubaiBankingRisk": {
       "score": 9.0,
       "trend": "worsening",
-      "detail": "D55: 9.0/10. UP from 8.5 (D52). IRGC seized MSC Francesca + Epaminondas in Hormuz — active maritime war. IRGC cable threat (FALCON, AAE-1, TGN-Gulf, SEA-ME-WE) = if executed, UAE financial cloud disruption possible. UAE Sarraf crackdown (Apr 19) ongoing. Trump fired Navy Sec Phelan — US escalation risk = UAE banking freeze risk. Brent $103.38 — above $100 first time since D49. Gulf banks treating all Iran-linked transactions as high-risk.",
-      "detail_fa": "D55: ۹.۰/۱۰. افزایش از ۸.۵. سپاه ۲ کشتی توقیف + تهدید کابل + Brent $103. بانک‌های دبی هر معامله ایران‌محور را پرریسک تلقی می‌کنند. صراف‌ها تحت بازرسی قانونی.",
-      "action": "D55 EMERGENCY ACTION: Do NOT attempt ANY Iran-linked Dubai banking transactions. If IRGC cuts cables: UAE financial cloud disruption could freeze digital banking 48-72 hrs. Maintain $50K+ liquid reserves outside UAE banking. Execute ALL transactions through Tbilisi or KL until maritime war resolves."
+      "detail": "D60: 9.0/10. Steady at elevated level. Araghchi-Putin meeting Apr 28 (St. Petersburg with Lavrov + Belousov + Adm. Kostyukov) — Russia formally backing Iran militarily = US more likely to escalate = UAE banks tightening Iran-linked compliance. Brent $111.16 (+2.71%) — above $110 for first time = Gulf sovereign funds under pressure = further restriction of Iran-linked accounts. War Powers 60-day clock expired today = congressional authorization uncertainty = UAE banks expect US policy shift. Iran deferred-nuclear proposal cold-shouldered by US = deal delay = prolonged UAE banking freeze. Sarraf crackdown ongoing since D46.",
+      "detail_fa": "D60: ۹.۰/۱۰. ثابت در سطح بالا. ظریف-پوتین (ظریف نه — عراقچی) ملاقات لنینگراد + ضرف بلوشف و کاستیوکف = حمایت نظامی روسیه = آمریکا احتمال تشدید = بانک‌های دبی سخت‌گیر. Brent $111 = اولین بار بالای ۱۱۰ = حساب‌های ایران‌محور تحت فشار. پیشنهاد هسته‌ای معوق سرد = تأخیر توافق = انجماد طولانی.",
+      "action": "D60 ACTION: Do NOT attempt ANY Iran-linked Dubai banking transactions. Brent $111.16 + Araghchi-Putin + War Powers expiry = uncertainty at maximum. Maintain $50K+ liquid reserves outside UAE banking. All transactions through Tbilisi or KL. Watch for: US congressional authorization vote (if passed = longer war = score stays 9+); deferred-nuclear deal acceptance (if accepted = score drops to 7 over 2-3 weeks)."
     },
     "alternativeHubs": [
       {
@@ -3453,7 +3523,7 @@
       "insured": true,
       "detail": "Most cargo insured under pre-war marine policies. Claims processing delayed — Lloyd's overwhelmed. Perishables (~15% by value) written off. Non-perishable goods safe in bonded storage but incurring daily storage fees (~$150/container/day). Cable threat adds new risk: if FALCON/AAE-1 cut, Lloyd's electronic claims processing could be disrupted.",
       "detail_fa": "اکثر بار بیمه. پردازش خسارت تأخیر. فاسدشدنی (~۱۵٪) از دست رفته. غیرفاسدشدنی در انبار اما هزینه روزانه (~$۱۵۰/کانتینر/روز). تهدید کابل: پردازش خسارت لویدز ممکن مختل شود.",
-      "storageFees": "$8,250+ (55 days x $150/day)"
+      "storageFees": "$9,000+ (60 days x $150/day)"
     },
     "insuranceCostIndex": {
       "labels": [
@@ -3751,11 +3821,11 @@
       3,
       3,
       3,
-      7
+      3
     ],
     "preWarAverage": 62,
-    "note": "D52 (Apr 20): Hormuz CLOSED — ~2 vessels/day (IRGC escort/interception). D49 (Apr 17): brief opening, ~15 vessels, then D50 (Apr 18) IRGC fired on Sanmar Herald, Hormuz re-closed. D51 (Apr 19): USS Spruance seized M/V Touska. 25+ total vessels turned back. Iran vowed retaliation. Cape of Good Hope routing: +$3-5M/ship. Pre-war average 62/day.",
-    "note_fa": "روز ۵۲ (۲۰ آوریل): هرمز بسته — ~۲ کشتی/روز (اسکورت/توقیف سپاه). D49: بازگشایی موقت ۱۵ کشتی. D50: سپاه به سنمار شلیک، هرمز بسته. D51: توسکا توقیف. ۲۵+ کشتی برگشته. تلافی ایران."
+    "note": "D60 (Apr 28): DUAL BLOCKADE Day 15. ~3 vessels/day (IRGC escort + USS Spruance intercept). Iran submitted deferred-nuclear proposal via Pakistan: reopen Hormuz NOW as part of deal — US cold. UN Secretary-General warned global food emergency. War Powers 60-day clock expired — no congressional authorization. D52 (Apr 20): Hormuz CLOSED. D49 (Apr 17): brief opening, ~15 vessels. D50 (Apr 18): IRGC fired on Sanmar Herald, Hormuz re-closed. D51 (Apr 19): USS Spruance seized M/V Touska. 25+ vessels turned back. Cape of Good Hope: +$3-5M/ship.",
+    "note_fa": "D60 (۲۸ آوریل): محاصره مضاعف روز ۱۵. ~۳ کشتی/روز. ایران پیشنهاد هسته‌ای معوق داد: هرمز الان باز + پایان جنگ، هسته‌ای بعداً — آمریکا سرد. سازمان ملل هشدار بحران غذایی جهانی. کلاک ۶۰ روز صلاحیت جنگ منقضی."
   },
   "ceasefireDeadline": {
     "deadline": "2026-04-21T20:00:00-04:00",
@@ -4048,7 +4118,7 @@
           0,
           0
         ],
-        "oilTarget": null,
+        "oilTarget": 111.16,
         "description": "No change — war continues at current intensity."
       },
       {
@@ -6035,41 +6105,6 @@
       ],
       "totalCount": 2,
       "maxSeverity": 4
-    },
-    {
-      "day": "Apr 28",
-      "cfDay": 21,
-      "incidents": [
-        {
-          "type": "blockade",
-          "severity": 3,
-          "actor": "US Navy / Iran IRGC",
-          "target": "Strait of Hormuz / Iranian ports",
-          "description": "Dual blockade continues. Hormuz vessel count ticks up to 7/day (from ~3) — first uptick in weeks, possibly reflecting logistics operators testing waters ahead of Iran's new proposal. Euronews: ~20,000 seafarers stranded on hundreds of vessels. US: 31+ ships turned away cumulative. Iran: 2 seized vessels (MSC Francesca, Epaminondas) still held. No new seizures reported Apr 28. UN Security Council calls for Hormuz to reopen immediately.",
-          "description_fa": "محاصره دوگانه ادامه دارد. تعداد کشتی‌های عبوری از هرمز به ۷ در روز افزایش یافت (از ~۳) — اولین افزایش در هفته‌ها، احتمالاً بازتاب آزمایش شرکت‌های لجستیک قبل از پیشنهاد جدید ایران. شورای امنیت سازمان ملل خواستار بازگشایی فوری تنگه هرمز شد.",
-          "withinScope": "yes"
-        },
-        {
-          "type": "strike",
-          "severity": 4,
-          "actor": "Israel",
-          "target": "Lebanon (Bekaa Valley, south Lebanon)",
-          "description": "Israel strikes Lebanon's Bekaa Valley for first time since Apr 16 ceasefire, also striking Tibnin, Yater and Bint Jbeil in south Lebanon. IDF says strikes targeted Hezbollah infrastructure. Hezbollah head Naim Qassem rejects direct Lebanon-Israel talks as 'humiliating and unnecessary concession.' Lebanon 3-week ceasefire extension (Apr 23) strained by ongoing strikes.",
-          "description_fa": "اسرائیل برای اولین بار از آتش‌بس ۱۶ آوریل به دره بقاء در لبنان حمله کرد؛ همچنین تبنین، یاتر و بنت جبیل در جنوب را زد. سید نعیم قاسم مذاکرات مستقیم لبنان-اسرائیل را 'امتیاز تحقیرآمیز و غیرضروری' خواند.",
-          "withinScope": "no"
-        },
-        {
-          "type": "diplomatic_failure",
-          "severity": 2,
-          "actor": "US",
-          "target": "Iran nuclear red lines",
-          "description": "White House and Rubio reaffirm 'red lines' on nuclear weapon capability — effectively pre-rejecting Iran's Hormuz proposal which defers nuclear talks. CNN sources: Trump 'unlikely to accept' terms that exclude nuclear disarmament. Proposal still under NSC review.",
-          "description_fa": "کاخ سفید و روبیو 'خطوط قرمز' هسته‌ای را تأیید کردند — در واقع پیشنهاد هرمز ایران را که مذاکرات هسته‌ای را به تعویق می‌اندازد رد کردند. منابع سی‌ان‌ان: ترامپ احتمالاً نمی‌پذیرد.",
-          "withinScope": "borderline"
-        }
-      ],
-      "totalCount": 3,
-      "maxSeverity": 4
     }
   ],
   "ceasefireNegotiations": [
@@ -6384,25 +6419,6 @@
       "outcome": "Iran pivoting to Moscow axis — no direct US-Iran contact; Oman back-channel format under negotiation",
       "significance": 7,
       "keyGap": "Iran's Moscow visit signals two things simultaneously: (1) Tehran is not desperate and has Russian strategic backing; (2) Iran is seeking a back-channel format that avoids the 'negotiations under siege' domestic political trap. Trump's 'just call us' formulation preserves US dominance optics while leaving the door open. The Oman channel — which historically brokered 2013 secret US-Iran talks and JCPOA groundwork — may be able to engineer a phone/indirect format. Key unresolved: blockade vs. Iran sovereignty over Hormuz; Iran still insists blockade must end before formal talks resume. Russia's role: diplomatic backstop but not a mediator — Moscow will not pressure Tehran to accept US terms."
-    },
-    {
-      "date": "Apr 28",
-      "cfDay": 21,
-      "event": "Iran submits formal peace proposal via Pakistan/Oman mediators: reopen Hormuz + permanent ceasefire/end war, postpone nuclear talks to separate later track; Trump NSC reviews but 'unlikely to accept'; Qatar PM warns sea lanes must not be 'bargaining chip'; UN calls for Hormuz to reopen; Saudi Arabia briefed",
-      "event_fa": "ایران پیشنهاد رسمی صلح از طریق میانجیان پاکستان/عمان ارائه داد: بازگشایی هرمز + آتش‌بس دائمی، تعویق مذاکرات هسته‌ای؛ شورای امنیت سازمان ملل خواستار بازگشایی شد؛ نخست‌وزیر قطر هشدار داد آبراه‌ها 'ابزار فشار' نشوند",
-      "participants": [
-        "Araghchi (Iran FM — back from Moscow, directing proposal)",
-        "Trump NSC (reviewing — skeptical)",
-        "Pakistan PM Sharif / FM Munir (mediators — conveyed proposal)",
-        "Oman FM (back-channel, expert-level Hormuz consultations)",
-        "Qatar PM Sheikh Mohammed bin Abdulrahman Al Thani (warned on sea lanes)",
-        "Saudi FM Faisal bin Farhan (briefed)",
-        "Rubio (reaffirmed nuclear red lines)",
-        "UN Security Council (called for immediate Hormuz reopening)"
-      ],
-      "outcome": "proposal submitted — under US review; Trump skeptical; no acceptance or counter-proposal yet",
-      "significance": 8,
-      "keyGap": "Iran's Hormuz-first proposal is its most structured diplomatic move of the conflict: separate Hormuz reopening (tractable) from nuclear talks (intractable), letting Trump claim an economic win without conceding on enrichment. Iran's bet: Trump values falling oil prices and Hormuz reopening more than nuclear leverage in 2026. Trump's problem: accepting without nuclear terms looks like surrender domestically and angers Israel. WH 'red lines' pre-signal a counter-proposal rather than flat rejection. Rubio's enrichment demand is the specific sticking point — Iran has rejected uranium forfeiture as a red line. Key question: can Oman or Pakistan engineer a 'nuclear intent declaration' or enrichment cap formula that lets Iran avoid the sovereignty optics while satisfying Trump's minimum threshold? Polymarket: Trump announces end of military ops by June 30 = 53%, by May 31 = 31%. Oil at $111 creates mutual pressure to resolve — both US domestic (gas prices) and Iranian (economic collapse)."
     }
   ],
   "ceasefireEconomicRecovery": {
@@ -6426,8 +6442,7 @@
       "Apr 24",
       "Apr 25",
       "Apr 26",
-      "Apr 27",
-      "Apr 28"
+      "Apr 27"
     ],
     "hormuzDaily": [
       8,
@@ -6449,8 +6464,7 @@
       3,
       3,
       3,
-      3,
-      7
+      3
     ],
     "hormuzPreWar": 135,
     "brentPreCeasefire": 109,
@@ -6474,8 +6488,7 @@
       105.63,
       105.33,
       105.33,
-      106.2,
-      111.16
+      106.2
     ],
     "shipsStranded": [
       800,
@@ -6497,10 +6510,9 @@
       888,
       894,
       894,
-      900,
-      905
+      900
     ],
-    "note": "Hormuz double blockade persists as of D60 (Apr 28). 7 vessels/day (up from 3 — first uptick; possibly logistics operators testing ahead of Iran's new proposal). US: 31+ ships turned away cumulative. ~20,000 seafarers stranded on hundreds of vessels. Brent $111.16 (+4.7%), WTI $99.80 (+4.9%) — oil surges as Iran submits Hormuz proposal but Trump skeptical. Internet Day 61 — partial whitelist access for 'favored groups.' Rial ~1.35M/USD (est). Lebanon: Bekaa Valley struck (first since Apr 16 ceasefire). UN calls for Hormuz reopening. Polymarket: Trump announces end of ops by June 30 = 53%. ⚠ ceasefireMode.enabled=true — ceasefire extended indefinitely; user should update expiresAt field."
+    "note": "Hormuz double blockade persists as of D59 (Apr 27). ~3 vessels/day. US: 31+ ships turned away cumulative. Iran IRGC: 2 seized vessels still held. Brent $106.20 (+0.8%), WTI $95.10 (+0.7%) — oil uptick as Araghchi-Putin meeting signals no imminent deal. Internet Day 60 — 'Internet Pro' paid-access only; $40M/day direct cost; cumulative ~$2.58B+ est. Rial ~1.32M/USD (est). Lebanon: 2,491+ killed. IMF: Iran GDP −6.1%, inflation 68.9%; food inflation 105%. Iran FM in Moscow for Putin talks — Round 3 date unknown; Oman back-channel warming. ⚠ ceasefireMode.enabled=true — ceasefire extended indefinitely; user should update expiresAt field."
   },
   "ceasefirePostConflictTree": {
     "branchExtend": [
