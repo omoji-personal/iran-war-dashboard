@@ -884,17 +884,32 @@ html[dir="rtl"] .chips { flex-direction: row-reverse; }
   --read-rule: rgba(236,223,208,.12);
   --read-accent: #d97757;        /* warm rust — not gold */
   --read-accent-soft: rgba(217,119,87,.14);
+  --read-text-col: 720px;        /* readable prose measure inside wide section */
 
   background: var(--read-bg);
   color: var(--read-ink);
   margin: 32px auto;
-  max-width: 720px;
-  padding: 56px 56px 48px;
+  max-width: 1480px;
+  padding: 56px 96px 56px;
   border-radius: 4px;
   position: relative;
   font-family: var(--read-serif);
   font-feature-settings: "kern", "liga", "onum";
 }
+/* Constrain prose to readable measure inside the wide section.
+   Charts, figures, tables, watchlist/tails/callouts/annex break the column. */
+.the-read .read-headline,
+.the-read .read-dek,
+.the-read .read-body,
+.the-read .read-pullquote {
+  max-width: var(--read-text-col);
+  margin-left: auto;
+  margin-right: auto;
+}
+.the-read .read-headline { text-align: left; }
+.the-read .read-dek { text-align: left; }
+.the-read .read-body { text-align: left; }
+.the-read .read-pullquote { text-align: left; }
 .the-read::before {
   content: '';
   position: absolute; left: 0; right: 0; top: 0;
@@ -1127,15 +1142,15 @@ html[dir="rtl"] .chips { flex-direction: row-reverse; }
 
 /* Figure / chart */
 .read-figure {
-  margin: 36px -16px;
+  margin: 44px 0;
   padding: 0;
 }
 .read-chart-wrap {
   position: relative;
-  height: 280px;
+  height: 360px;
   background: rgba(255,255,255,.025);
   border-radius: 4px;
-  padding: 18px 14px 8px;
+  padding: 20px 18px 10px;
 }
 .read-figure figcaption {
   margin-top: 12px;
@@ -1367,16 +1382,22 @@ html[dir="rtl"] .read-watchlist li::before { left: auto; right: 0; }
   --read-rule: rgba(236,223,208,.12);
   --read-accent: #d97757;
   --read-accent-soft: rgba(217,119,87,.14);
+  --read-text-col: 720px;
 
   background: var(--read-bg);
   color: var(--read-ink);
   margin: 0 auto 32px;
-  max-width: 720px;
-  padding: 56px 56px 48px;
+  max-width: 1480px;
+  padding: 56px 96px 56px;
   border-radius: 4px;
   position: relative;
   font-family: var(--read-serif);
   font-feature-settings: "kern", "liga", "onum";
+}
+/* Constrain prose to readable measure; let figures/tables breathe full width */
+.briefing-section .read-headline,
+.briefing-section .read-dek {
+  max-width: var(--read-text-col);
 }
 .briefing-section::before {
   content: '';
@@ -1445,10 +1466,35 @@ html[dir="rtl"] .read-watchlist li::before { left: auto; right: 0; }
 }
 .brief-fig-chart {
   position: relative;
-  height: 260px;
+  height: 320px;
   background: rgba(255,255,255,.025);
   border-radius: 4px;
-  padding: 16px 14px 8px;
+  padding: 18px 18px 10px;
+}
+/* Two-column figure: text on left, chart on right when there's room */
+@media (min-width: 980px) {
+  .brief-fig {
+    display: grid;
+    grid-template-columns: 280px 1fr;
+    gap: 32px;
+    align-items: start;
+  }
+  .brief-fig-title {
+    grid-column: 1;
+    grid-row: 1;
+    font-size: 22px;
+    line-height: 1.2;
+  }
+  .brief-fig-blurb {
+    grid-column: 1;
+    grid-row: 2;
+    font-size: 14px;
+  }
+  .brief-fig-chart {
+    grid-column: 2;
+    grid-row: 1 / span 2;
+    height: 280px;
+  }
 }
 
 /* Diplomacy timeline */
