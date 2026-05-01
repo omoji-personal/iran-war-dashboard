@@ -3604,7 +3604,8 @@ function render() {
   safe(renderExpandedIranfarhang, 'renderExpandedIranfarhang');
   safe(renderExpandedKIP, 'renderExpandedKIP');
   safe(applyConfidenceShading, 'applyConfidenceShading');
-  safe(initScrubber, 'initScrubber');
+  // Scrubber removed from briefing — kept in source for now but not rendered
+  // safe(initScrubber, 'initScrubber');
   safe(buildSectionNav, 'buildSectionNav');
   safe(markChangedSections, 'markChangedSections');
 
