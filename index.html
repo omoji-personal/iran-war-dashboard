@@ -149,6 +149,82 @@
       </footer>
     </section>
 
+
+    <!-- §07–10 — supporting briefing sections (editorial style, single column) -->
+    <section class="briefing-section" id="briefEvidence">
+      <div class="read-classification">
+        <span class="read-class-text">SUPPORTING EVIDENCE · DERIVED FROM PUBLIC SIGNALS</span>
+      </div>
+      <div class="read-section-num">§ 07 — Supporting Evidence</div>
+      <h2 class="read-headline">The four signals the model weighs most</h2>
+      <p class="read-dek">Each chart below is one of the inputs the model reads daily. They are presented as evidence for the bottom-line judgment above — not as a dashboard to query.</p>
+
+      <figure class="brief-fig">
+        <h3 class="brief-fig-title">Daily attack tempo · missiles + drones</h3>
+        <p class="brief-fig-blurb" id="briefTempoBlurb"></p>
+        <div class="brief-fig-chart"><canvas id="briefTempoChart"></canvas></div>
+      </figure>
+
+      <figure class="brief-fig">
+        <h3 class="brief-fig-title">Brent crude · the world’s read on the conflict</h3>
+        <p class="brief-fig-blurb" id="briefOilBlurb"></p>
+        <div class="brief-fig-chart"><canvas id="briefOilChart"></canvas></div>
+      </figure>
+
+      <figure class="brief-fig">
+        <h3 class="brief-fig-title">Strait of Hormuz · vessels per day</h3>
+        <p class="brief-fig-blurb" id="briefHormuzBlurb"></p>
+        <div class="brief-fig-chart"><canvas id="briefHormuzChart"></canvas></div>
+      </figure>
+
+      <figure class="brief-fig">
+        <h3 class="brief-fig-title">Pressure index · five forces</h3>
+        <p class="brief-fig-blurb" id="briefPressureBlurb"></p>
+        <div class="brief-fig-chart"><canvas id="briefPressureChart"></canvas></div>
+      </figure>
+    </section>
+
+    <section class="briefing-section" id="briefDiplomacySection">
+      <div class="read-section-num">§ 08 — Diplomatic Track</div>
+      <h2 class="read-headline">What the negotiators are doing</h2>
+      <p class="read-dek">The active mediator chain runs through Pakistan, Russia, and Oman. Below: the most recent positions from each side, in their own words where possible.</p>
+      <ul class="brief-diplomacy" id="briefDiplomacy"></ul>
+    </section>
+
+    <section class="briefing-section" id="briefLogSection">
+      <div class="read-section-num">§ 09 — Event Log</div>
+      <h2 class="read-headline">Day by day</h2>
+      <p class="read-dek">The raw daily record. Newest first. Click a row to expand the full assessment.</p>
+      <div class="brief-log-wrap">
+        <table class="brief-log">
+          <colgroup><col class="c-date"><col class="c-strikes"><col class="c-head"><col class="c-assess"></colgroup>
+          <thead>
+            <tr>
+              <th>Date</th>
+              <th>Strikes</th>
+              <th>Headline</th>
+              <th>Assessment</th>
+            </tr>
+          </thead>
+          <tbody id="briefEventLog"></tbody>
+        </table>
+      </div>
+    </section>
+
+    <section class="briefing-section" id="briefAnnexSection">
+      <div class="read-section-num">§ 10 — Business Impact (Annex)</div>
+      <h2 class="read-headline">Operating exposure</h2>
+      <p class="read-dek">Two operating businesses with material exposure to the conflict.</p>
+      <details class="read-deeper">
+        <summary>F. Iranfarhang — Persian-book supply chain (Tehran HQ → 40+ academic institutions worldwide)</summary>
+        <div id="briefIranfarhang"></div>
+      </details>
+      <details class="read-deeper">
+        <summary>G. KIP — import-export operations (Dubai logistics hub)</summary>
+        <div id="briefKIP"></div>
+      </details>
+    </section>
+
     <!-- About -->
     <section class="panel legacy-hidden" style="margin-bottom:16px;border-color:var(--gold);background:linear-gradient(135deg,rgba(255,209,102,.04),rgba(99,179,255,.04))" data-mode="war">
       <h3 style="color:var(--gold);margin-bottom:8px">How this dashboard works</h3>
@@ -201,7 +277,7 @@
     </section>
 
     <!-- CF. Ceasefire Countdown + Scenario Tree -->
-    <section class="grid cols-2" style="margin-top:16px" data-mode="ceasefire">
+    <section class="grid cols-2 legacy-hidden" style="margin-top:16px" data-mode="ceasefire">
       <div class="panel">
         <div class="kicker" style="color:var(--cyan)">Ceasefire countdown</div>
         <div id="cfCountdown" style="font-size:42px;font-weight:900;margin:8px 0;color:var(--cyan)"></div>
@@ -234,7 +310,7 @@
     </section>
 
     <!-- CF. Violation Tracker -->
-    <section class="panel" style="margin-top:16px" data-mode="ceasefire">
+    <section class="panel legacy-hidden" style="margin-top:16px" data-mode="ceasefire">
       <h3>Ceasefire violation tracker</h3>
       <div class="sub">Incidents, severity, and attribution since Apr 7.</div>
       <div id="cfViolationSummary" style="margin-bottom:12px"></div>
@@ -243,7 +319,7 @@
     </section>
 
     <!-- CF. Negotiation Progress -->
-    <section class="panel" style="margin-top:16px" data-mode="ceasefire">
+    <section class="panel legacy-hidden" style="margin-top:16px" data-mode="ceasefire">
       <h3>Islamabad peace talks tracker</h3>
       <div class="sub">VP Vance delegation progress and next steps.</div>
       <div id="cfNegotiationTimeline"></div>
@@ -251,7 +327,7 @@
 
     <!-- CF. Economic Recovery -->
     <div id="cfRecoverySummary" data-mode="ceasefire"></div>
-    <section class="grid cols-2" style="margin-top:16px" data-mode="ceasefire">
+    <section class="grid cols-2 legacy-hidden" style="margin-top:16px" data-mode="ceasefire">
       <div class="panel">
         <h3>Hormuz reopening progress</h3>
         <div class="sub">Vessels per day recovering toward 135 pre-war baseline.</div>
@@ -293,7 +369,7 @@
 
 
     <!-- 2. Scenario Simulator -->
-    <section class="panel" style="margin-top:16px">
+    <section class="panel legacy-hidden" style="margin-top:16px">
       <div class="kicker">What-if scenarios</div>
       <h3>Scenario simulator</h3>
       <div class="sub">Toggle a scenario to see how it changes the resolution probability and oil price.</div>
@@ -302,7 +378,7 @@
     </section>
 
     <!-- 3. Engine Analytics -->
-    <section class="panel" style="margin-top:16px">
+    <section class="panel legacy-hidden" style="margin-top:16px">
       <div class="grid cols-3" style="gap:24px">
         <div>
           <h3 style="margin-bottom:12px">Key trends</h3>
@@ -320,7 +396,7 @@
     </section>
 
     <!-- 4. Capability Thesis -->
-    <section class="panel" style="margin-top:16px" data-mode="war">
+    <section class="panel legacy-hidden" style="margin-top:16px" data-mode="war">
       <div class="kicker" data-i18n="kickerThesis">Capability thesis</div>
       <h2 data-i18n="hThesis">Depleted or Rationing?</h2>
       <div class="sub" data-i18n="subThesis">Two models of Iran's launch tempo — each implies a different war outcome. Dashed lines = 14-day forecast.</div>
@@ -329,7 +405,7 @@
     </section>
 
     <!-- 5. Stockpile + Engine Inputs (side by side) -->
-    <section class="grid cols-2" style="margin-top:16px">
+    <section class="grid cols-2 legacy-hidden" style="margin-top:16px">
       <div class="panel">
         <h3>Stockpile burn rate</h3>
         <div class="sub">How long can Iran sustain fire?</div>
@@ -344,7 +420,7 @@
     </section>
 
     <!-- 6. Deadline + Escalation Ladder -->
-    <section class="grid cols-2" style="margin-top:16px" data-mode="war">
+    <section class="grid cols-2 legacy-hidden" style="margin-top:16px" data-mode="war">
       <div class="panel">
         <div class="kicker" style="color:var(--red)">April 7 deadline</div>
         <div id="deadlineCountdown" style="font-size:32px;font-weight:900;margin:8px 0"></div>
@@ -368,7 +444,7 @@
     </section>
 
     <!-- 7. Situation Report -->
-    <section class="panel" style="margin-top:16px">
+    <section class="panel legacy-hidden" style="margin-top:16px">
       <h2 data-i18n="hSitrep">Situation Report</h2>
       <div class="theory" id="theoryBox"></div>
       <ul class="list" id="sitrep" style="margin-top:12px"></ul>
@@ -376,44 +452,44 @@
     </section>
 
     <!-- 8. Launch Tempo -->
-    <section class="grid cols-2" style="margin-top:16px">
+    <section class="grid cols-2 legacy-hidden" style="margin-top:16px">
       <div class="panel"><h3 data-i18n="hMissile">Daily ballistic missile launches</h3><div class="sub" data-i18n="subMissile">Daily counts, not cumulative. Trend line included.</div><div class="chart-box"><canvas id="missileChart"></canvas></div><div class="footnote" id="missileFoot"></div></div>
       <div class="panel"><h3 data-i18n="hDrone">Daily drone launches</h3><div class="sub" data-i18n="subDrone">Daily counts, not cumulative.</div><div class="chart-box"><canvas id="droneChart"></canvas></div><div class="footnote" id="droneFoot"></div></div>
     </section>
-    <section class="grid cols-2" style="margin-top:16px">
+    <section class="grid cols-2 legacy-hidden" style="margin-top:16px">
       <div class="panel"><h3 data-i18n="hCombo">Combined launch tempo</h3><div class="sub" data-i18n="subCombo">Missiles and drones together — converging or diverging?</div><div class="chart-box tall"><canvas id="comboChart"></canvas></div></div>
       <div class="panel"><h3 data-i18n="hCumul">Cumulative strikes</h3><div class="sub" data-i18n="subCumul">Running total since Day 1.</div><div class="chart-box tall"><canvas id="cumulChart"></canvas></div></div>
     </section>
 
     <!-- 9. Oil + Hormuz -->
-    <section class="grid cols-2" style="margin-top:16px">
+    <section class="grid cols-2 legacy-hidden" style="margin-top:16px">
       <div class="panel"><h3 data-i18n="hOilOverlay">Oil price vs conflict intensity</h3><div class="sub" data-i18n="subOilOverlay">Dual axis: markets responding to military tempo or diplomatic signals?</div><div class="chart-box tall"><canvas id="oilOverlayChart"></canvas></div><div class="footnote" id="oilFoot"></div></div>
       <div class="panel"><h3>Oil price scenario bands</h3><div class="sub">Where oil goes depends on which outcome.</div><div class="chart-box tall"><canvas id="oilBandsChart"></canvas></div></div>
     </section>
-    <section class="grid cols-2" style="margin-top:16px">
+    <section class="grid cols-2 legacy-hidden" style="margin-top:16px">
       <div class="panel"><h3>Hormuz Strait transit rate</h3><div class="sub">Vessels per day through Hormuz — the most consequential economic metric of the war.</div><div class="chart-box tall"><canvas id="hormuzTransitChart"></canvas></div><div class="footnote" id="hormuzTransitNote"></div></div>
       <div class="panel"><h3 data-i18n="hOil">Oil: Brent vs WTI</h3><div class="sub">Both benchmarks tracking together. Spread = Hormuz premium.</div><div class="chart-box tall"><canvas id="oilChart"></canvas></div></div>
     </section>
 
     <!-- 10. Target Breakdown + Cumulative by Country -->
-    <section class="grid cols-2" style="margin-top:16px">
+    <section class="grid cols-2 legacy-hidden" style="margin-top:16px">
       <div class="panel"><h3 data-i18n="hTargetM">Missile strikes by target</h3><div class="sub" data-i18n="subTarget">Latest daily slice.</div><div class="chart-box short"><canvas id="targetMissileChart"></canvas></div><div class="footnote" id="targetMissileFoot"></div></div>
       <div class="panel"><h3 data-i18n="hTargetD">Drone strikes by target</h3><div class="sub" data-i18n="subTargetD">Theater narrowing or spreading?</div><div class="chart-box short"><canvas id="targetDroneChart"></canvas></div><div class="footnote" id="targetDroneFoot"></div></div>
     </section>
-    <section class="panel" style="margin-top:16px">
+    <section class="panel legacy-hidden" style="margin-top:16px">
       <h3>Cumulative strikes by country</h3>
       <div class="sub">Total missiles + drones received per country since Day 1.</div>
       <div class="chart-box" style="height:320px"><canvas id="cumulByCountryChart"></canvas></div>
     </section>
 
     <!-- 11. Diplomacy + Key Actors -->
-    <section class="grid cols-2" style="margin-top:16px">
+    <section class="grid cols-2 legacy-hidden" style="margin-top:16px">
       <div class="panel"><h3 data-i18n="hDiplomacy">Diplomacy & negotiations</h3><div class="sub" data-i18n="subDiplomacy">Peace proposals, intermediaries, and positions.</div><ul class="list" id="diplomacyBox"></ul></div>
       <div class="panel"><h3 data-i18n="hKeyActors">Key actors & alliances</h3><div class="sub" data-i18n="subKeyActors">Who's involved and their roles.</div><ul class="list" id="keyActorsBox"></ul></div>
     </section>
 
     <!-- 12. War Support Index + Decapitation -->
-    <section class="grid cols-2" style="margin-top:16px">
+    <section class="grid cols-2 legacy-hidden" style="margin-top:16px">
       <div class="panel">
         <h3>War support index</h3>
         <div class="sub">US-led coalition cohesion — tracking ally defections and support erosion.</div>
@@ -428,13 +504,13 @@
     </section>
 
     <!-- 13. Hormuz & Public Opinion -->
-    <section class="grid cols-2" style="margin-top:16px">
+    <section class="grid cols-2 legacy-hidden" style="margin-top:16px">
       <div class="panel"><h3 data-i18n="hHormuz">Hormuz Strait & safe passage</h3><div class="sub" data-i18n="subHormuz">Blockade status, mine fields, and transit frameworks.</div><ul class="list" id="hormuzBox"></ul><div style="margin-top:14px" id="shippingRoutesStandalone"></div></div>
       <div class="panel"><h3 data-i18n="hPublicOpinion">Public opinion</h3><div class="sub" data-i18n="subPublicOpinion">US polling and international reaction.</div><ul class="list" id="publicOpinionBox"></ul></div>
     </section>
 
     <!-- 14. Business: Iranfarhang -->
-    <section class="panel" style="margin-top:16px">
+    <section class="panel legacy-hidden" style="margin-top:16px">
       <h2>Iranfarhang</h2>
       <div class="sub">Persian book supply chain — Tehran HQ to 40+ academic institutions worldwide</div>
       <div class="grid cols-2" style="margin-top:12px">
@@ -462,7 +538,7 @@
     </section>
 
     <!-- 15. Business: KIP -->
-    <section class="panel" style="margin-top:16px">
+    <section class="panel legacy-hidden" style="margin-top:16px">
       <h2>KIP</h2>
       <div class="sub">Import-export operations — Dubai logistics hub</div>
       <div class="risk-gauge" id="kipBankingGauge"></div>
@@ -487,7 +563,7 @@
     </section>
 
     <!-- 16. Event Log -->
-    <section class="panel" style="margin-top:16px">
+    <section class="panel legacy-hidden" style="margin-top:16px">
       <h3 data-i18n="hLog">Event log</h3><div class="sub" data-i18n="subLog">Newest first.</div>
       <div class="table-wrap"><table><thead><tr>
         <th data-i18n="thDate">Date</th><th data-i18n="thMissiles">Missiles</th><th data-i18n="thDrones">Drones</th>

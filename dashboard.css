@@ -1353,6 +1353,233 @@ html[dir="rtl"] .read-watchlist li::before { left: auto; right: 0; }
 /* The Read REPLACES the old hero panels & legacy 'how this works' panels */
 .legacy-hidden { display: none !important; }
 
+/* ============================================
+   BRIEFING SECTIONS — extend The Read aesthetic full-page
+   ============================================ */
+
+.briefing-section {
+  /* Inherits the the-read variables */
+  --read-serif: 'Iowan Old Style', 'Palatino Linotype', 'Book Antiqua', Palatino, Georgia, 'Times New Roman', serif;
+  --read-bg: #0b1322;
+  --read-ink: #ecdfd0;
+  --read-muted: #a09486;
+  --read-soft: #786d62;
+  --read-rule: rgba(236,223,208,.12);
+  --read-accent: #d97757;
+  --read-accent-soft: rgba(217,119,87,.14);
+
+  background: var(--read-bg);
+  color: var(--read-ink);
+  margin: 0 auto 32px;
+  max-width: 720px;
+  padding: 56px 56px 48px;
+  border-radius: 4px;
+  position: relative;
+  font-family: var(--read-serif);
+  font-feature-settings: "kern", "liga", "onum";
+}
+.briefing-section::before {
+  content: '';
+  position: absolute; left: 0; right: 0; top: 0;
+  height: 4px;
+  background: var(--read-accent);
+  border-radius: 4px 4px 0 0;
+}
+.briefing-section .read-classification {
+  margin: -56px -56px 28px;
+  padding: 9px 18px;
+  background: rgba(217,119,87,.08);
+  border-bottom: 1px solid var(--read-accent);
+  font-family: Inter, system-ui, sans-serif;
+}
+.briefing-section .read-class-text {
+  font-size: 10px; font-weight: 700; letter-spacing: 2.5px;
+  text-transform: uppercase;
+  color: var(--read-accent);
+}
+.briefing-section .read-section-num {
+  font-family: Inter, system-ui, sans-serif;
+  font-size: 10px; font-weight: 700; letter-spacing: 2.5px;
+  text-transform: uppercase;
+  color: var(--read-accent);
+  margin: 0 0 14px;
+  padding-bottom: 6px;
+  border-bottom: 1px solid var(--read-rule);
+}
+.briefing-section .read-headline {
+  font-size: 32px; line-height: 1.15; font-weight: 600;
+  letter-spacing: -0.4px; margin: 0 0 16px; color: var(--read-ink);
+  text-wrap: balance;
+}
+.briefing-section .read-dek {
+  font-size: 17px; line-height: 1.55; font-style: italic;
+  color: var(--read-muted); margin: 0 0 32px; font-weight: 400;
+}
+
+/* Inline figures */
+.brief-fig {
+  margin: 36px 0 44px;
+  padding: 0;
+}
+.brief-fig:last-child { margin-bottom: 0; }
+.brief-fig-title {
+  font-family: var(--read-serif);
+  font-size: 19px;
+  font-weight: 600;
+  color: var(--read-ink);
+  margin: 0 0 6px;
+  letter-spacing: -0.2px;
+}
+.brief-fig-blurb {
+  font-family: Inter, system-ui, sans-serif;
+  font-size: 13px; line-height: 1.6;
+  color: var(--read-muted);
+  margin: 0 0 14px;
+  font-style: italic;
+}
+.brief-fig-blurb .num {
+  font-feature-settings: "tnum", "lnum";
+  color: var(--read-accent);
+  font-style: normal;
+  font-weight: 600;
+}
+.brief-fig-chart {
+  position: relative;
+  height: 260px;
+  background: rgba(255,255,255,.025);
+  border-radius: 4px;
+  padding: 16px 14px 8px;
+}
+
+/* Diplomacy timeline */
+.brief-diplomacy {
+  margin: 0; padding: 0;
+  list-style: none;
+}
+.brief-diplomacy li {
+  padding: 18px 0;
+  border-bottom: 1px solid var(--read-rule);
+  font-size: 16px; line-height: 1.6;
+  color: var(--read-ink);
+  position: relative;
+}
+.brief-diplomacy li:last-child { border-bottom: none; }
+.brief-diplomacy .dp-actor {
+  display: block;
+  font-size: 11px; font-weight: 700; letter-spacing: 1.5px;
+  text-transform: uppercase;
+  color: var(--read-accent);
+  margin-bottom: 6px;
+  font-family: Inter, system-ui, sans-serif;
+}
+.brief-diplomacy .dp-text { color: var(--read-ink); }
+.brief-diplomacy .dp-text em { font-style: italic; color: var(--read-muted); }
+
+/* Event log table */
+.brief-log-wrap { overflow-x: auto; }
+.brief-log {
+  width: 100%;
+  border-collapse: collapse;
+  font-family: Inter, system-ui, sans-serif;
+  font-size: 13px;
+  table-layout: fixed;
+}
+.brief-log col.c-date     { width: 60px; }
+.brief-log col.c-strikes  { width: 50px; }
+.brief-log col.c-head     { width: 280px; }
+.brief-log col.c-assess   { width: auto; }
+.brief-log th {
+  text-align: left;
+  padding: 10px 8px;
+  border-bottom: 2px solid var(--read-accent);
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  color: var(--read-accent);
+  background: transparent;
+  position: sticky; top: 0;
+  font-family: Inter, system-ui, sans-serif;
+}
+.brief-log td {
+  padding: 12px 8px;
+  border-bottom: 1px solid var(--read-rule);
+  color: var(--read-ink);
+  vertical-align: top;
+  line-height: 1.55;
+}
+.brief-log tbody tr {
+  cursor: pointer;
+  transition: background .15s;
+}
+.brief-log tbody tr:hover {
+  background: rgba(217,119,87,.05);
+}
+.brief-log tbody tr.expanded td {
+  background: rgba(217,119,87,.04);
+  white-space: normal;
+}
+.brief-log td:first-child {
+  white-space: nowrap;
+  font-weight: 600;
+  font-feature-settings: "tnum";
+  color: var(--read-accent);
+}
+.brief-log td:nth-child(2) {
+  white-space: nowrap;
+  text-align: center;
+  font-feature-settings: "tnum";
+  color: var(--read-muted);
+}
+.brief-log td:nth-child(3) {
+  font-style: italic;
+  color: var(--read-muted);
+  max-width: 180px;
+}
+.brief-log td:nth-child(4) {
+  max-width: 320px;
+}
+.brief-log tbody tr:not(.expanded) td:nth-child(4) {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-width: 320px;
+}
+
+/* Business annex blurbs (inside read-deeper) */
+#briefIranfarhang p, #briefKIP p {
+  font-family: var(--read-serif);
+  font-size: 14px; line-height: 1.7;
+  color: var(--read-muted);
+  margin-bottom: 12px;
+}
+#briefIranfarhang ul, #briefKIP ul {
+  margin: 0 0 14px; padding: 0; list-style: none;
+}
+#briefIranfarhang li, #briefKIP li {
+  padding: 6px 0 6px 20px;
+  font-size: 13px; line-height: 1.55;
+  color: var(--read-ink);
+  position: relative;
+  font-family: Inter, system-ui, sans-serif;
+}
+#briefIranfarhang li::before, #briefKIP li::before {
+  content: '\2014';
+  position: absolute; left: 0;
+  color: var(--read-accent);
+  font-weight: 600;
+}
+
+@media (max-width: 800px) {
+  .briefing-section {
+    padding: 36px 24px 32px;
+    margin: 0 16px 24px;
+  }
+  .briefing-section .read-classification { margin: -36px -24px 24px; }
+  .briefing-section .read-headline { font-size: 24px; }
+  .brief-fig-chart { height: 220px; }
+}
+
 /* --- Responsive Breakpoints --- */
 @media(max-width:1180px) {
   .hero,.cols-2,.cols-3 { grid-template-columns: 1fr; }

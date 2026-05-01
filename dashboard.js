@@ -3269,6 +3269,249 @@ function _renderReadHorizonChart(mh) {
   });
 }
 
+/* ============================================
+   BRIEFING — Evidence + Diplomacy + Event Log + Business
+   ============================================ */
+
+function renderBriefing() {
+  if (!state || !state.dailySeries) return;
+  _renderBriefTempo();
+  _renderBriefOil();
+  _renderBriefHormuz();
+  _renderBriefPressure();
+  _renderBriefDiplomacy();
+  _renderBriefEventLog();
+  _renderBriefBusinesses();
+}
+
+function _briefChartOptions(yMax, suffix) {
+  suffix = suffix || '';
+  return {
+    responsive: true, maintainAspectRatio: false,
+    plugins: {
+      legend: { position: 'bottom', labels: { color: '#a09486', font: { size: 11, family: 'Inter, system-ui, sans-serif' }, boxWidth: 14, padding: 12 } },
+      tooltip: { backgroundColor: '#0b1322', titleColor: '#ecdfd0', bodyColor: '#ecdfd0', borderColor: 'rgba(236,223,208,.2)', borderWidth: 1, padding: 10 },
+    },
+    scales: {
+      y: { beginAtZero: true, max: yMax, ticks: { color: '#786d62', font: { size: 10, family: 'Inter' }, callback: function(v) { return v + suffix; } }, grid: { color: 'rgba(236,223,208,.06)', drawBorder: false } },
+      x: { ticks: { color: '#786d62', font: { size: 10, family: 'Inter' }, maxRotation: 0, autoSkip: true, maxTicksLimit: 10 }, grid: { display: false } },
+    },
+  };
+}
+
+function _renderBriefTempo() {
+  var canvas = document.getElementById('briefTempoChart');
+  if (!canvas || typeof Chart === 'undefined') return;
+  var ds = state.dailySeries || {};
+  var labels = ds.labels || [];
+  var miss = ds.missiles || [];
+  var dr = ds.drones || [];
+  if (charts.briefTempo) charts.briefTempo.destroy();
+  charts.briefTempo = new Chart(canvas.getContext('2d'), {
+    type: 'bar',
+    data: {
+      labels: labels,
+      datasets: [
+        { label: 'Missiles', data: miss, backgroundColor: 'rgba(217,119,87,.6)', borderColor: '#d97757', borderWidth: 1, stack: 's' },
+        { label: 'Drones',   data: dr,   backgroundColor: 'rgba(176,132,255,.45)', borderColor: '#b084ff', borderWidth: 1, stack: 's' },
+      ],
+    },
+    options: _briefChartOptions(undefined),
+  });
+  // Blurb
+  var streak = 0;
+  for (var i = (miss.length - 1); i >= 0; i--) { if ((miss[i] || 0) + (dr[i] || 0) === 0) streak++; else break; }
+  var totMissiles = miss.reduce(function(a, b) { return a + (b || 0); }, 0);
+  var totDrones = dr.reduce(function(a, b) { return a + (b || 0); }, 0);
+  var blurb = document.getElementById('briefTempoBlurb');
+  if (blurb) {
+    blurb.innerHTML = 'Stacked daily counts since Day 1. Cumulative: ' +
+      '<span class="num">' + totMissiles.toLocaleString() + '</span> missiles, ' +
+      '<span class="num">' + totDrones.toLocaleString() + '</span> drones. ' +
+      'Current zero-attack streak: <span class="num">' + streak + '</span> days.';
+  }
+}
+
+function _renderBriefOil() {
+  var canvas = document.getElementById('briefOilChart');
+  if (!canvas || typeof Chart === 'undefined') return;
+  var oil = state.oil || {};
+  var labels = oil.labels || [];
+  var brent = oil.brent || [];
+  var wti = oil.wti || [];
+  var preWar = (state.meta && state.meta.preWarBaselines && state.meta.preWarBaselines.preWarOil) || 65;
+  if (charts.briefOil) charts.briefOil.destroy();
+  charts.briefOil = new Chart(canvas.getContext('2d'), {
+    type: 'line',
+    data: {
+      labels: labels,
+      datasets: [
+        { label: 'Brent', data: brent, borderColor: '#d97757', backgroundColor: 'rgba(217,119,87,.06)', borderWidth: 2.5, fill: true, tension: .3, pointRadius: 2 },
+        { label: 'WTI', data: wti, borderColor: '#a09486', backgroundColor: 'transparent', borderWidth: 1.5, tension: .3, pointRadius: 2, borderDash: [3, 3] },
+        { label: 'Pre-war baseline', data: labels.map(function(){ return preWar; }), borderColor: 'rgba(236,223,208,.30)', borderWidth: 1, pointRadius: 0, borderDash: [2, 4] },
+      ],
+    },
+    options: _briefChartOptions(undefined, ''),
+  });
+  var lastBrent = brent[brent.length - 1] || 0;
+  var pct = preWar ? Math.round(((lastBrent - preWar) / preWar) * 100) : 0;
+  var blurb = document.getElementById('briefOilBlurb');
+  if (blurb) {
+    blurb.innerHTML = 'Brent at <span class="num">$' + lastBrent + '</span>, ' +
+      '<span class="num">+' + pct + '%</span> over the pre-war baseline of $' + preWar + '. ' +
+      'The spread between Brent and WTI is the Hormuz-premium tax on the world.';
+  }
+}
+
+function _renderBriefHormuz() {
+  var canvas = document.getElementById('briefHormuzChart');
+  if (!canvas || typeof Chart === 'undefined') return;
+  var ht = state.hormuzTransit || {};
+  var labels = ht.labels || [];
+  var v = ht.vessels || [];
+  var preWar = ht.preWarAverage || 135;
+  if (charts.briefHormuz) charts.briefHormuz.destroy();
+  charts.briefHormuz = new Chart(canvas.getContext('2d'), {
+    type: 'line',
+    data: {
+      labels: labels,
+      datasets: [
+        { label: 'Vessels per day', data: v, borderColor: '#46d7b0', backgroundColor: 'rgba(70,215,176,.10)', borderWidth: 2.5, fill: true, tension: .25, pointRadius: 2 },
+        { label: 'Pre-war ' + preWar + '/day', data: labels.map(function(){ return preWar; }), borderColor: 'rgba(236,223,208,.30)', borderWidth: 1, pointRadius: 0, borderDash: [2, 4] },
+      ],
+    },
+    options: _briefChartOptions(undefined, ''),
+  });
+  var last = v[v.length - 1] || 0;
+  var pct = preWar ? Math.round((last / preWar) * 100) : 0;
+  var blurb = document.getElementById('briefHormuzBlurb');
+  if (blurb) {
+    blurb.innerHTML = 'Currently <span class="num">' + last + '</span> vessels/day vs <span class="num">' + preWar + '</span> pre-war — operating at <span class="num">' + pct + '%</span> of normal. ' +
+      'The most consequential single number on the page; a Hormuz reopening collapses the war premium overnight.';
+  }
+}
+
+function _renderBriefPressure() {
+  var canvas = document.getElementById('briefPressureChart');
+  if (!canvas || typeof Chart === 'undefined') return;
+  var p = state.pressure || {};
+  var labels = p.labels || [];
+  var attrition = p.attrition || [];
+  var cost = p.cost || [];
+  if (charts.briefPressure) charts.briefPressure.destroy();
+  charts.briefPressure = new Chart(canvas.getContext('2d'), {
+    type: 'line',
+    data: {
+      labels: labels,
+      datasets: [
+        { label: 'Iran military attrition', data: attrition, borderColor: '#d97757', borderWidth: 2.5, tension: .3, pointRadius: 0 },
+        { label: 'Coalition political cost', data: cost, borderColor: '#46d7b0', borderWidth: 2.5, tension: .3, pointRadius: 0 },
+      ],
+    },
+    options: _briefChartOptions(10, ''),
+  });
+  var blurb = document.getElementById('briefPressureBlurb');
+  if (blurb) {
+    blurb.innerHTML = 'Two scored time-series (0–10): how much pressure each side has absorbed over the war. ' +
+      'When the lines converge, both sides are ready to deal; when they diverge, one is winning the cost-of-war.';
+  }
+}
+
+function _renderBriefDiplomacy() {
+  var box = document.getElementById('briefDiplomacy');
+  if (!box) return;
+  // Pull the most recent ceasefireNegotiations + general diplomacy items
+  var nego = (state.ceasefireNegotiations || []).slice(-6).reverse();
+  var dipl = (state.diplomacy || []).slice(0, 8);
+  var html = '';
+  nego.forEach(function(n) {
+    if (!n) return;
+    html += '<li>' +
+      '<span class="dp-actor">' + (n.date || '—') + ' · ' + (n.status || 'event').replace(/_/g, ' ') + '</span>' +
+      '<span class="dp-text">' + _esc(n.description || n.event || '') + '</span>' +
+      '</li>';
+  });
+  dipl.forEach(function(d) {
+    if (!d) return;
+    var text = (typeof d === 'string') ? d : (d.text || d.description || JSON.stringify(d));
+    html += '<li><span class="dp-text">' + _esc(text) + '</span></li>';
+  });
+  box.innerHTML = html || '<li><span class="dp-text">No active diplomatic events recorded.</span></li>';
+}
+
+function _renderBriefEventLog() {
+  var tbody = document.getElementById('briefEventLog');
+  if (!tbody) return;
+  var rows = (state.dailyRows || []).slice().reverse();
+  // Take just the first short clause: prefix before the first '.' or ' — '
+  var shortify = function(s) {
+    if (!s) return '';
+    var t = String(s).replace(/^D\d+\s*[—\-:]?\s*/, '');  // strip "D63 — " prefix
+    var cut = t.search(/[.;]\s/);
+    if (cut > 0 && cut < 140) t = t.slice(0, cut);
+    if (t.length > 140) t = t.slice(0, 140) + '…';
+    return t;
+  };
+  tbody.innerHTML = rows.map(function(r) {
+    var totalStrikes = (r.missiles || 0) + (r.drones || 0);
+    var headline = shortify(r.primary || r.primaryTargets || '');
+    var assessment = shortify(r.assessment || '');
+    var fullPrimary = r.primary || '';
+    var fullAssessment = r.assessment || '';
+    return '<tr data-full-primary="' + _esc(fullPrimary) + '" data-full-assessment="' + _esc(fullAssessment) + '">' +
+      '<td>' + _esc(r.date || '') + '</td>' +
+      '<td>' + totalStrikes + '</td>' +
+      '<td class="brief-log-short">' + _esc(headline) + '</td>' +
+      '<td class="brief-log-short">' + _esc(assessment) + '</td>' +
+      '</tr>';
+  }).join('');
+  // Click to expand row — swap short cells for full text
+  tbody.querySelectorAll('tr').forEach(function(tr) {
+    tr.addEventListener('click', function() {
+      var open = tr.classList.toggle('expanded');
+      var cells = tr.querySelectorAll('.brief-log-short');
+      if (cells.length >= 2) {
+        if (open) {
+          cells[0].textContent = tr.getAttribute('data-full-primary');
+          cells[1].textContent = tr.getAttribute('data-full-assessment');
+        } else {
+          var p = tr.getAttribute('data-full-primary');
+          var a = tr.getAttribute('data-full-assessment');
+          cells[0].textContent = (function(s){ var t=s.replace(/^D\d+\s*[—\-:]?\s*/,''); var c=t.search(/[.;]\s/); if (c>0&&c<140) t=t.slice(0,c); if (t.length>140) t=t.slice(0,140)+'…'; return t; })(p);
+          cells[1].textContent = (function(s){ var t=s.replace(/^D\d+\s*[—\-:]?\s*/,''); var c=t.search(/[.;]\s/); if (c>0&&c<140) t=t.slice(0,c); if (t.length>140) t=t.slice(0,140)+'…'; return t; })(a);
+        }
+      }
+    });
+  });
+}
+
+function _renderBriefBusinesses() {
+  var iran = document.getElementById('briefIranfarhang');
+  var kip = document.getElementById('briefKIP');
+  // These data strings contain trusted inline HTML (color spans, strong emphasis)
+  // generated upstream; render as innerHTML directly so they display correctly.
+  if (iran && state.impactIranfarhang) {
+    var bullets = (state.impactIranfarhang || []).map(function(i) {
+      var t = (typeof i === 'string') ? i : (i.text || i.description || '');
+      return '<li>' + t + '</li>';
+    }).join('');
+    iran.innerHTML = '<p>Persian-book supply chain. Tehran HQ, distribution to academic libraries worldwide. Direct conflict exposure: shipping disruption, banking sanctions tightening, supplier-side capacity loss.</p><ul>' + bullets + '</ul>';
+  }
+  if (kip && state.impactKIP) {
+    var b2 = (state.impactKIP || []).map(function(i) {
+      var t = (typeof i === 'string') ? i : (i.text || i.description || '');
+      return '<li>' + t + '</li>';
+    }).join('');
+    kip.innerHTML = '<p>Import-export operations through the Dubai logistics hub. Direct conflict exposure: Hormuz blockade, UAE banking pressure, alternative-hub cost differentials.</p><ul>' + b2 + '</ul>';
+  }
+}
+
+function _esc(s) {
+  return String(s == null ? '' : s)
+    .replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;');
+}
+
+
 function render() {
   // Wrap each renderer so one failure doesn't cascade and blank out every
   // section that comes after it. Log to console for debugging.
@@ -3294,6 +3537,7 @@ function render() {
 
   // THE READ — editorial intelligence brief (visible both modes)
   safe(renderTheRead, 'renderTheRead');
+  safe(renderBriefing, 'renderBriefing');
 
   // War mode renders (always call — CSS hides them in ceasefire mode)
   safe(renderPredictiveSection, 'renderPredictiveSection');
