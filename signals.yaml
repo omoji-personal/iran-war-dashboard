@@ -26,7 +26,7 @@ meta:
     Day 64 = 1,536+ hrs. ~2,000 ships stranded. 24-day zero-attack streak. Convergence
     4.6.'
 mode:
-  ceasefire_status: hollow
+  ceasefire_status: collapsed
 constants:
   pre_war_brent: 65.0
   pre_war_hormuz: 135.0

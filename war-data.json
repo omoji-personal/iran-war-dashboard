@@ -3946,7 +3946,7 @@
     "note_fa": "D63 (۱ مه): محاصره دوگانه روز ۱۷. ~۵ کشتی/۲۴ساعت. ~۲٬۰۰۰ کشتی معطل. طرح CENTCOM 'کوتاه و قوی' به ترامپ بریف شد. سوگند هسته‌ای خامنه‌ای (۳۰ آوریل). خروج امارات از اوپک امروز. کابل MFC صادر شد. بحران ذخیره نفت ایران ۱۲-۲۲ روز. برنت $۱۱۴ (D62 رکورد $۱۲۶)."
   },
   "ceasefireDeadline": {
-    "deadline": "2026-04-21T20:00:00-04:00",
+    "deadline": null,
     "label": "April 21 ceasefire expiry",
     "label_fa": "پایان آتش‌بس ۲۱ آوریل",
     "context": "Trump-Iran 2-week ceasefire announced Apr 7 (Pakistan-brokered). Islamabad Round 2 CANCELLED — Iran VP Aref: 'US conditions childish.' BLOCKADE ACTIVE since Apr 14. USS Spruance seized M/V Touska (Apr 19) — first boarding. IRGC fired on VLCC Sanmar Herald (Apr 18). Hormuz re-closed since Apr 18. Ceasefire Day 14 — EXPIRES TOMORROW APR 21. Trump: 'Maybe I won't extend it.' Iran: no Round 2. Escalation 52%. Brent $95.42 (+5.58%).",
@@ -4557,7 +4557,7 @@
         "low": 12,
         "high": 22
       },
-      "methodology": "D63 ensemble: model 8% × market signal × base rate. Ceasefire formally extended but blockade + IRGC seizures = hollow. Khamenei public vow against US demands = bottleneck on Iran acceptance."
+      "methodology": "D63 ensemble: model 8% × market signal × base rate. Ceasefire collapsed — back to active conflict. Khamenei public vow against US demands = bottleneck on Iran acceptance."
     },
     "dailyIndicators": {
       "labels": [
@@ -5786,7 +5786,7 @@
   },
   "ceasefireStartIdx": 39,
   "ceasefireMode": {
-    "enabled": true
+    "enabled": false
   },
   "ceasefireViolations": [
     {
@@ -6921,60 +6921,60 @@
     },
     "multiHorizonForecast": {
       "1d": {
-        "intervention": 0.182,
-        "protracted": 0.323,
         "deal": 0.237,
+        "escalation": 0.258,
+        "intervention": 0.182,
         "other": 0.0,
-        "escalation": 0.258
+        "protracted": 0.323
       },
       "7d": {
-        "intervention": 0.174,
-        "protracted": 0.31,
         "deal": 0.287,
+        "escalation": 0.229,
+        "intervention": 0.174,
         "other": 0.0,
-        "escalation": 0.229
+        "protracted": 0.31
       },
       "14d": {
-        "intervention": 0.166,
-        "protracted": 0.297,
         "deal": 0.337,
+        "escalation": 0.2,
+        "intervention": 0.166,
         "other": 0.0,
-        "escalation": 0.2
+        "protracted": 0.297
       },
       "30d": {
-        "intervention": 0.159,
-        "protracted": 0.284,
         "deal": 0.387,
+        "escalation": 0.171,
+        "intervention": 0.159,
         "other": 0.0,
-        "escalation": 0.171
+        "protracted": 0.284
       },
       "60d": {
-        "intervention": 0.151,
-        "protracted": 0.271,
         "deal": 0.437,
+        "escalation": 0.141,
+        "intervention": 0.151,
         "other": 0.0,
-        "escalation": 0.141
+        "protracted": 0.271
       },
       "90d": {
-        "intervention": 0.145,
-        "protracted": 0.263,
         "deal": 0.471,
+        "escalation": 0.122,
+        "intervention": 0.145,
         "other": 0.0,
-        "escalation": 0.122
+        "protracted": 0.263
       },
       "180d": {
-        "intervention": 0.14,
-        "protracted": 0.254,
         "deal": 0.504,
+        "escalation": 0.102,
+        "intervention": 0.14,
         "other": 0.0,
-        "escalation": 0.102
+        "protracted": 0.254
       },
       "365d": {
-        "intervention": 0.137,
-        "protracted": 0.25,
         "deal": 0.521,
+        "escalation": 0.092,
+        "intervention": 0.137,
         "other": 0.0,
-        "escalation": 0.092
+        "protracted": 0.25
       }
     },
     "historicalAnalogProjection": {

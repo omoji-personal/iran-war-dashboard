@@ -53,148 +53,6 @@
   </main>
 
   <template id="dashboardTemplate">
-    <!-- About -->
-    <section class="panel" style="margin-bottom:16px;border-color:var(--gold);background:linear-gradient(135deg,rgba(255,209,102,.04),rgba(99,179,255,.04))" data-mode="war">
-      <h3 style="color:var(--gold);margin-bottom:8px">How this dashboard works</h3>
-      <div style="font-size:13px;line-height:1.65;color:var(--soft)">
-        This dashboard predicts how the 2026 Iran war is most likely to end by analyzing <strong style="color:var(--text)">military data</strong> (daily missile/drone launches, stockpile estimates, aircraft losses), <strong style="color:var(--text)">economic signals</strong> (oil prices, Hormuz shipping traffic, gas prices), <strong style="color:var(--text)">political indicators</strong> (US approval ratings, casualty counts, coalition support), and <strong style="color:var(--text)">diplomatic activity</strong> (mediator meetings, proposals, ceasefire rejections). The core engine models war ending as three conditions that must align simultaneously: a viable deal must exist, the US must decide to take it, and Iran must accept it. The resolution probability is calibrated against prediction markets and historical conflict base rates. Updated daily at 7am ET.
-      </div>
-    </section>
-    <section class="panel" style="margin-bottom:16px;border-color:var(--cyan);background:linear-gradient(135deg,rgba(70,215,176,.04),rgba(99,179,255,.04))" data-mode="ceasefire">
-      <h3 style="color:var(--cyan);margin-bottom:8px">How this dashboard works</h3>
-      <div style="font-size:13px;line-height:1.65;color:var(--soft)">
-        This dashboard tracks the <strong style="color:var(--text)">2-week ceasefire</strong> (<span id="cfAboutRange">Apr 7–21</span>) and predicts whether it holds, extends, leads to a permanent deal, or collapses back to war. It analyzes <strong style="color:var(--text)">violation reports</strong>, <strong style="color:var(--text)">negotiation progress</strong> (Islamabad peace talks), <strong style="color:var(--text)">economic recovery</strong> (Hormuz reopening, oil normalization), and <strong style="color:var(--text)">political signals</strong> from both sides. The ceasefire engine models stability as a function of mediator engagement, diplomatic signals, Hormuz progress, proxy escalation, and violation severity. Calibrated against prediction markets and historical ceasefire survival rates. Switch to War Mode to see the full conflict analysis.
-      </div>
-    </section>
-
-    <!-- Scrubber -->
-    <div class="scrubber-wrap" id="scrubberWrap" style="display:none">
-      <label class="scrubber-label">Timeline: <strong id="scrubberDay"></strong></label>
-      <input type="range" id="scrubberSlider" class="scrubber-slider" min="1" max="1" value="1">
-      <button id="scrubberReset" class="scrubber-reset">Live</button>
-    </div>
-
-    <!-- CF. Ceasefire Status Hero -->
-    <section class="ceasefire-hero" data-mode="ceasefire">
-      <div class="kicker" style="color:var(--cyan)">Ceasefire status</div>
-      <div class="cf-status-display" id="cfStatusDisplay"></div>
-      <div class="prob-display">
-        <div class="prob-header">
-          <span class="prob-label">Probability ceasefire holds through Apr 21</span>
-          <span class="prob-pct" id="cfStabilityScore"></span>
-        </div>
-        <div class="prob-track"><div class="prob-bar" id="cfProbBar"></div></div>
-        <div class="prob-meta"><span id="cfConfidenceRange" style="font-size:11px;color:var(--muted)"></span></div>
-        <div class="prob-meta"><span id="cfStabilityRaw"></span></div>
-      </div>
-      <div class="grid cols-2" style="margin-top:16px;gap:16px">
-        <div>
-          <div class="sub" style="margin-bottom:8px;font-weight:700;color:var(--text)">Stability factors:</div>
-          <div id="cfStabilityFactors"></div>
-          <div style="margin-top:12px">
-            <div class="sub" style="margin-bottom:8px;font-weight:700;color:var(--text)">Ceasefire holds when:</div>
-            <div id="cfConditions"></div>
-          </div>
-        </div>
-        <div>
-          <div class="sub" style="margin-bottom:8px;font-weight:700;color:var(--text)">What happens after Apr 21?</div>
-          <div id="cfOutcomeBreakdown"></div>
-        </div>
-      </div>
-      <div class="metric-grid" id="cfMetrics" style="margin-top:16px"></div>
-    </section>
-
-    <!-- CF. Ceasefire Countdown + Scenario Tree -->
-    <section class="grid cols-2" style="margin-top:16px" data-mode="ceasefire">
-      <div class="panel">
-        <div class="kicker" style="color:var(--cyan)">Ceasefire countdown</div>
-        <div id="cfCountdown" style="font-size:42px;font-weight:900;margin:8px 0;color:var(--cyan)"></div>
-        <div class="sub">Ceasefire Day <strong id="cfDayNum"></strong> of <span id="cfTotalDays">14</span><span id="cfExtensionNote"></span></div>
-        <div class="prob-track" style="margin:12px 0"><div class="prob-bar" id="cfProgressBar" style="background:var(--cyan)"></div></div>
-        <div id="cfCountdownContext" class="sub"></div>
-      </div>
-      <div class="panel">
-        <div class="kicker" style="color:var(--gold)">Post-ceasefire scenarios</div>
-        <h3 id="cfScenariosHeading">What happens after Apr 21?</h3>
-        <div class="cf-scenarios-grid">
-          <div class="cf-scenario" data-branch="extend">
-            <div class="cf-scenario-head"><span class="cf-scenario-title">Extend</span><span class="cf-scenario-prob" id="cfProbExtend">—</span></div>
-            <div class="timeline-vertical" id="cfBranchExtend"></div>
-          </div>
-          <div class="cf-scenario" data-branch="deal">
-            <div class="cf-scenario-head"><span class="cf-scenario-title">Permanent deal</span><span class="cf-scenario-prob" id="cfProbDeal">—</span></div>
-            <div class="timeline-vertical" id="cfBranchDeal"></div>
-          </div>
-          <div class="cf-scenario" data-branch="stalled">
-            <div class="cf-scenario-head"><span class="cf-scenario-title">Hold without progress</span><span class="cf-scenario-prob" id="cfProbStalled">—</span></div>
-            <div class="timeline-vertical" id="cfBranchStalled"></div>
-          </div>
-          <div class="cf-scenario" data-branch="collapse">
-            <div class="cf-scenario-head"><span class="cf-scenario-title">Collapse back to war</span><span class="cf-scenario-prob" id="cfProbCollapse">—</span></div>
-            <div class="timeline-vertical" id="cfBranchCollapse"></div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- CF. Violation Tracker -->
-    <section class="panel" style="margin-top:16px" data-mode="ceasefire">
-      <h3>Ceasefire violation tracker</h3>
-      <div class="sub">Incidents, severity, and attribution since Apr 7.</div>
-      <div id="cfViolationSummary" style="margin-bottom:12px"></div>
-      <div class="chart-box" style="height:280px"><canvas id="cfViolationChart"></canvas></div>
-      <div id="cfViolationList" style="margin-top:12px"></div>
-    </section>
-
-    <!-- CF. Negotiation Progress -->
-    <section class="panel" style="margin-top:16px" data-mode="ceasefire">
-      <h3>Islamabad peace talks tracker</h3>
-      <div class="sub">VP Vance delegation progress and next steps.</div>
-      <div id="cfNegotiationTimeline"></div>
-    </section>
-
-    <!-- CF. Economic Recovery -->
-    <div id="cfRecoverySummary" data-mode="ceasefire"></div>
-    <section class="grid cols-2" style="margin-top:16px" data-mode="ceasefire">
-      <div class="panel">
-        <h3>Hormuz reopening progress</h3>
-        <div class="sub">Vessels per day recovering toward 135 pre-war baseline.</div>
-        <div class="chart-box"><canvas id="cfHormuzRecoveryChart"></canvas></div>
-      </div>
-      <div class="panel">
-        <h3>Oil normalization</h3>
-        <div class="sub">War premium unwinding. Pre-war baseline: $65 Brent.</div>
-        <div class="chart-box"><canvas id="cfOilRecoveryChart"></canvas></div>
-      </div>
-    </section>
-
-    <!-- 1. Decision Engine Hero -->
-    <section class="prediction-hero" data-mode="war">
-      <div class="kicker" data-i18n="kickerPrediction">War outcome forecast</div>
-      <div class="outcome-forecast" id="outcomeForecast"></div>
-      <div class="prob-display">
-        <div class="prob-header">
-          <span class="prob-label">Probability of resolution within 3 weeks</span>
-          <span class="prob-pct" id="convergenceScore"></span>
-        </div>
-        <div class="prob-track"><div class="prob-bar" id="probBar"></div></div>
-        <div class="prob-meta"><span id="convergenceRaw"></span></div>
-      </div>
-      <div class="grid cols-2" style="margin-top:16px;gap:16px">
-        <div>
-          <div class="sub" style="margin-bottom:8px;font-weight:700;color:var(--text)">For the war to end, all three must be true:</div>
-          <div id="decisionConditions"></div>
-        </div>
-        <div>
-          <div class="sub" style="margin-bottom:8px;font-weight:700;color:var(--text)">What happens next? Most likely outcomes:</div>
-          <div id="outcomeBreakdown"></div>
-          <div class="sub" style="margin-top:12px;font-weight:700;color:var(--text)">How we arrive at this estimate:</div>
-          <div id="calibrationAnchors"></div>
-        </div>
-      </div>
-      <div class="metric-grid" id="metrics" style="margin-top:16px"></div>
-    </section>
-
     <!-- THE READ — editorial intelligence brief (government-grade) -->
     <section class="the-read" id="theRead">
       <div class="read-classification">
@@ -290,6 +148,149 @@
         </p>
       </footer>
     </section>
+
+    <!-- About -->
+    <section class="panel legacy-hidden" style="margin-bottom:16px;border-color:var(--gold);background:linear-gradient(135deg,rgba(255,209,102,.04),rgba(99,179,255,.04))" data-mode="war">
+      <h3 style="color:var(--gold);margin-bottom:8px">How this dashboard works</h3>
+      <div style="font-size:13px;line-height:1.65;color:var(--soft)">
+        This dashboard predicts how the 2026 Iran war is most likely to end by analyzing <strong style="color:var(--text)">military data</strong> (daily missile/drone launches, stockpile estimates, aircraft losses), <strong style="color:var(--text)">economic signals</strong> (oil prices, Hormuz shipping traffic, gas prices), <strong style="color:var(--text)">political indicators</strong> (US approval ratings, casualty counts, coalition support), and <strong style="color:var(--text)">diplomatic activity</strong> (mediator meetings, proposals, ceasefire rejections). The core engine models war ending as three conditions that must align simultaneously: a viable deal must exist, the US must decide to take it, and Iran must accept it. The resolution probability is calibrated against prediction markets and historical conflict base rates. Updated daily at 7am ET.
+      </div>
+    </section>
+    <section class="panel legacy-hidden" style="margin-bottom:16px;border-color:var(--cyan);background:linear-gradient(135deg,rgba(70,215,176,.04),rgba(99,179,255,.04))" data-mode="ceasefire">
+      <h3 style="color:var(--cyan);margin-bottom:8px">How this dashboard works</h3>
+      <div style="font-size:13px;line-height:1.65;color:var(--soft)">
+        This dashboard tracks the <strong style="color:var(--text)">2-week ceasefire</strong> (<span id="cfAboutRange">Apr 7–21</span>) and predicts whether it holds, extends, leads to a permanent deal, or collapses back to war. It analyzes <strong style="color:var(--text)">violation reports</strong>, <strong style="color:var(--text)">negotiation progress</strong> (Islamabad peace talks), <strong style="color:var(--text)">economic recovery</strong> (Hormuz reopening, oil normalization), and <strong style="color:var(--text)">political signals</strong> from both sides. The ceasefire engine models stability as a function of mediator engagement, diplomatic signals, Hormuz progress, proxy escalation, and violation severity. Calibrated against prediction markets and historical ceasefire survival rates. Switch to War Mode to see the full conflict analysis.
+      </div>
+    </section>
+
+    <!-- Scrubber -->
+    <div class="scrubber-wrap" id="scrubberWrap" style="display:none">
+      <label class="scrubber-label">Timeline: <strong id="scrubberDay"></strong></label>
+      <input type="range" id="scrubberSlider" class="scrubber-slider" min="1" max="1" value="1">
+      <button id="scrubberReset" class="scrubber-reset">Live</button>
+    </div>
+
+    <!-- CF. Ceasefire Status Hero -->
+    <section class="ceasefire-hero legacy-hidden" data-mode="ceasefire">
+      <div class="kicker" style="color:var(--cyan)">Ceasefire status</div>
+      <div class="cf-status-display" id="cfStatusDisplay"></div>
+      <div class="prob-display">
+        <div class="prob-header">
+          <span class="prob-label">Probability ceasefire holds through Apr 21</span>
+          <span class="prob-pct" id="cfStabilityScore"></span>
+        </div>
+        <div class="prob-track"><div class="prob-bar" id="cfProbBar"></div></div>
+        <div class="prob-meta"><span id="cfConfidenceRange" style="font-size:11px;color:var(--muted)"></span></div>
+        <div class="prob-meta"><span id="cfStabilityRaw"></span></div>
+      </div>
+      <div class="grid cols-2" style="margin-top:16px;gap:16px">
+        <div>
+          <div class="sub" style="margin-bottom:8px;font-weight:700;color:var(--text)">Stability factors:</div>
+          <div id="cfStabilityFactors"></div>
+          <div style="margin-top:12px">
+            <div class="sub" style="margin-bottom:8px;font-weight:700;color:var(--text)">Ceasefire holds when:</div>
+            <div id="cfConditions"></div>
+          </div>
+        </div>
+        <div>
+          <div class="sub" style="margin-bottom:8px;font-weight:700;color:var(--text)">What happens after Apr 21?</div>
+          <div id="cfOutcomeBreakdown"></div>
+        </div>
+      </div>
+      <div class="metric-grid" id="cfMetrics" style="margin-top:16px"></div>
+    </section>
+
+    <!-- CF. Ceasefire Countdown + Scenario Tree -->
+    <section class="grid cols-2" style="margin-top:16px" data-mode="ceasefire">
+      <div class="panel">
+        <div class="kicker" style="color:var(--cyan)">Ceasefire countdown</div>
+        <div id="cfCountdown" style="font-size:42px;font-weight:900;margin:8px 0;color:var(--cyan)"></div>
+        <div class="sub">Ceasefire Day <strong id="cfDayNum"></strong> of <span id="cfTotalDays">14</span><span id="cfExtensionNote"></span></div>
+        <div class="prob-track" style="margin:12px 0"><div class="prob-bar" id="cfProgressBar" style="background:var(--cyan)"></div></div>
+        <div id="cfCountdownContext" class="sub"></div>
+      </div>
+      <div class="panel">
+        <div class="kicker" style="color:var(--gold)">Post-ceasefire scenarios</div>
+        <h3 id="cfScenariosHeading">What happens after Apr 21?</h3>
+        <div class="cf-scenarios-grid">
+          <div class="cf-scenario" data-branch="extend">
+            <div class="cf-scenario-head"><span class="cf-scenario-title">Extend</span><span class="cf-scenario-prob" id="cfProbExtend">—</span></div>
+            <div class="timeline-vertical" id="cfBranchExtend"></div>
+          </div>
+          <div class="cf-scenario" data-branch="deal">
+            <div class="cf-scenario-head"><span class="cf-scenario-title">Permanent deal</span><span class="cf-scenario-prob" id="cfProbDeal">—</span></div>
+            <div class="timeline-vertical" id="cfBranchDeal"></div>
+          </div>
+          <div class="cf-scenario" data-branch="stalled">
+            <div class="cf-scenario-head"><span class="cf-scenario-title">Hold without progress</span><span class="cf-scenario-prob" id="cfProbStalled">—</span></div>
+            <div class="timeline-vertical" id="cfBranchStalled"></div>
+          </div>
+          <div class="cf-scenario" data-branch="collapse">
+            <div class="cf-scenario-head"><span class="cf-scenario-title">Collapse back to war</span><span class="cf-scenario-prob" id="cfProbCollapse">—</span></div>
+            <div class="timeline-vertical" id="cfBranchCollapse"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CF. Violation Tracker -->
+    <section class="panel" style="margin-top:16px" data-mode="ceasefire">
+      <h3>Ceasefire violation tracker</h3>
+      <div class="sub">Incidents, severity, and attribution since Apr 7.</div>
+      <div id="cfViolationSummary" style="margin-bottom:12px"></div>
+      <div class="chart-box" style="height:280px"><canvas id="cfViolationChart"></canvas></div>
+      <div id="cfViolationList" style="margin-top:12px"></div>
+    </section>
+
+    <!-- CF. Negotiation Progress -->
+    <section class="panel" style="margin-top:16px" data-mode="ceasefire">
+      <h3>Islamabad peace talks tracker</h3>
+      <div class="sub">VP Vance delegation progress and next steps.</div>
+      <div id="cfNegotiationTimeline"></div>
+    </section>
+
+    <!-- CF. Economic Recovery -->
+    <div id="cfRecoverySummary" data-mode="ceasefire"></div>
+    <section class="grid cols-2" style="margin-top:16px" data-mode="ceasefire">
+      <div class="panel">
+        <h3>Hormuz reopening progress</h3>
+        <div class="sub">Vessels per day recovering toward 135 pre-war baseline.</div>
+        <div class="chart-box"><canvas id="cfHormuzRecoveryChart"></canvas></div>
+      </div>
+      <div class="panel">
+        <h3>Oil normalization</h3>
+        <div class="sub">War premium unwinding. Pre-war baseline: $65 Brent.</div>
+        <div class="chart-box"><canvas id="cfOilRecoveryChart"></canvas></div>
+      </div>
+    </section>
+
+    <!-- 1. Decision Engine Hero -->
+    <section class="prediction-hero legacy-hidden" data-mode="war">
+      <div class="kicker" data-i18n="kickerPrediction">War outcome forecast</div>
+      <div class="outcome-forecast" id="outcomeForecast"></div>
+      <div class="prob-display">
+        <div class="prob-header">
+          <span class="prob-label">Probability of resolution within 3 weeks</span>
+          <span class="prob-pct" id="convergenceScore"></span>
+        </div>
+        <div class="prob-track"><div class="prob-bar" id="probBar"></div></div>
+        <div class="prob-meta"><span id="convergenceRaw"></span></div>
+      </div>
+      <div class="grid cols-2" style="margin-top:16px;gap:16px">
+        <div>
+          <div class="sub" style="margin-bottom:8px;font-weight:700;color:var(--text)">For the war to end, all three must be true:</div>
+          <div id="decisionConditions"></div>
+        </div>
+        <div>
+          <div class="sub" style="margin-bottom:8px;font-weight:700;color:var(--text)">What happens next? Most likely outcomes:</div>
+          <div id="outcomeBreakdown"></div>
+          <div class="sub" style="margin-top:12px;font-weight:700;color:var(--text)">How we arrive at this estimate:</div>
+          <div id="calibrationAnchors"></div>
+        </div>
+      </div>
+      <div class="metric-grid" id="metrics" style="margin-top:16px"></div>
+    </section>
+
 
     <!-- 2. Scenario Simulator -->
     <section class="panel" style="margin-top:16px">

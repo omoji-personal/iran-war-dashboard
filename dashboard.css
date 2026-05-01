@@ -1350,6 +1350,9 @@ html[dir="rtl"] .read-watchlist li::before { left: auto; right: 0; }
   display: none;
 }
 
+/* The Read REPLACES the old hero panels & legacy 'how this works' panels */
+.legacy-hidden { display: none !important; }
+
 /* --- Responsive Breakpoints --- */
 @media(max-width:1180px) {
   .hero,.cols-2,.cols-3 { grid-template-columns: 1fr; }
