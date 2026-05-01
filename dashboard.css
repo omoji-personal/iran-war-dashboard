@@ -1406,6 +1406,19 @@ html[dir="rtl"] .chips { flex-direction: row-reverse; }
   max-width: 880px;
   font-size: 14px;
   line-height: 1.75;
+  margin-bottom: 1em;
+}
+.md-code {
+  font-family: ui-monospace, "SF Mono", Menlo, monospace;
+  font-size: .9em;
+  background: rgba(217,119,87,.12);
+  color: var(--read-accent);
+  padding: 1px 5px;
+  border-radius: 3px;
+}
+.read-deeper > div > p strong {
+  color: var(--read-ink);
+  font-weight: 700;
 }
 .read-deeper .deeper-row {
   display: flex; justify-content: space-between; align-items: baseline;

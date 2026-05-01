@@ -3185,8 +3185,17 @@ function renderTheRead() {
   iranHtml += '<div class="iran-headline">Regime fracture probability (60d) <strong>' + pct(fracture) + '%</strong> — derived from population × restiveness × brittleness × succession overhang.</div>';
   $('readIranSplit').innerHTML = iranHtml;
 
-  // Methodology
-  $('readMethodology').innerHTML = '<p>' + esc((dd.predictiveFrameworkDoc || '').replace(/\*\*/g, '').replace(/\n\n+/g, '</p><p>').replace(/\n/g, ' ')) + '</p>';
+  // Methodology — paragraphs + inline code styling for `backtick` refs
+  var rawMd = (dd.predictiveFrameworkDoc || '');
+  var paragraphs = rawMd.split(/\n\n+/).map(function(p) {
+    var clean = p.replace(/^##\s*/, '').replace(/\n/g, ' ');
+    var safe = esc(clean);
+    // After escaping, restore inline-code spans (between backticks) and bold
+    safe = safe.replace(/`([^`]+)`/g, '<code class="md-code">$1</code>');
+    safe = safe.replace(/\*\*([^*]+)\*\*/g, '<strong>$1</strong>');
+    return '<p>' + safe + '</p>';
+  }).join('');
+  $('readMethodology').innerHTML = paragraphs;
 }
 
 function _readScalar(text, re) {
@@ -3459,21 +3468,21 @@ function _renderBriefPressure() {
 function _renderBriefDiplomacy() {
   var box = document.getElementById('briefDiplomacy');
   if (!box) return;
-  // Pull the most recent ceasefireNegotiations + general diplomacy items
+  // These data fields contain trusted inline HTML (<strong>, <em>) — render as innerHTML
   var nego = (state.ceasefireNegotiations || []).slice(-6).reverse();
   var dipl = (state.diplomacy || []).slice(0, 8);
   var html = '';
   nego.forEach(function(n) {
     if (!n) return;
     html += '<li>' +
-      '<span class="dp-actor">' + (n.date || '—') + ' · ' + (n.status || 'event').replace(/_/g, ' ') + '</span>' +
-      '<span class="dp-text">' + _esc(n.description || n.event || '') + '</span>' +
+      '<span class="dp-actor">' + _esc(n.date || '—') + ' · ' + _esc((n.status || 'event').replace(/_/g, ' ')) + '</span>' +
+      '<span class="dp-text">' + (n.description || n.event || '') + '</span>' +
       '</li>';
   });
   dipl.forEach(function(d) {
     if (!d) return;
     var text = (typeof d === 'string') ? d : (d.text || d.description || JSON.stringify(d));
-    html += '<li><span class="dp-text">' + _esc(text) + '</span></li>';
+    html += '<li><span class="dp-text">' + text + '</span></li>';
   });
   box.innerHTML = html || '<li><span class="dp-text">No active diplomatic events recorded.</span></li>';
 }
