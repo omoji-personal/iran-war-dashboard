@@ -896,20 +896,25 @@ html[dir="rtl"] .chips { flex-direction: row-reverse; }
   font-family: var(--read-serif);
   font-feature-settings: "kern", "liga", "onum";
 }
-/* Constrain prose to readable measure inside the wide section.
-   Charts, figures, tables, watchlist/tails/callouts/annex break the column. */
+/* Headline + dek span full width (display typography fills space) */
 .the-read .read-headline,
-.the-read .read-dek,
-.the-read .read-body,
-.the-read .read-pullquote {
-  max-width: var(--read-text-col);
-  margin-left: auto;
-  margin-right: auto;
+.briefing-section .read-headline {
+  max-width: none;
+  font-size: 44px;
+  line-height: 1.1;
+  letter-spacing: -1px;
+  text-wrap: balance;
 }
-.the-read .read-headline { text-align: left; }
-.the-read .read-dek { text-align: left; }
-.the-read .read-body { text-align: left; }
-.the-read .read-pullquote { text-align: left; }
+.the-read .read-dek,
+.briefing-section .read-dek {
+  max-width: 1000px;
+  font-size: 19px;
+}
+.the-read .read-pullquote {
+  max-width: 880px;
+  font-size: 24px;
+  line-height: 1.4;
+}
 .the-read::before {
   content: '';
   position: absolute; left: 0; right: 0; top: 0;
@@ -1141,23 +1146,34 @@ html[dir="rtl"] .chips { flex-direction: row-reverse; }
   .read-stat-secondary { border-right: none; padding: 16px 12px; border-bottom: 1px solid var(--read-rule); }
 }
 
-/* Body prose */
-.read-body {
-  font-size: 18px;
-  line-height: 1.72;
+/* Body prose — 2-column newspaper layout, full container width */
+.the-read .read-body,
+.briefing-section .read-body {
+  font-size: 16.5px;
+  line-height: 1.7;
   color: var(--read-ink);
   margin: 0 0 28px;
+  max-width: none;
+  column-count: 2;
+  column-gap: 44px;
+  column-rule: 1px solid var(--read-rule);
 }
-.read-body p {
-  margin: 0 0 1em;
-}
+.read-body p { margin: 0 0 1em; break-inside: avoid; }
 .read-body p:first-child::first-letter {
-  font-size: 4em;
+  font-size: 3.4em;
   line-height: 0.85;
   float: left;
-  margin: 6px 10px 0 0;
+  margin: 4px 10px 0 0;
   font-weight: 600;
   color: var(--read-accent);
+  font-family: var(--read-serif);
+}
+@media (max-width: 980px) {
+  .the-read .read-body,
+  .briefing-section .read-body {
+    column-count: 1;
+    max-width: 720px;
+  }
 }
 .read-body strong {
   color: var(--read-ink);
@@ -1211,35 +1227,44 @@ html[dir="rtl"] .chips { flex-direction: row-reverse; }
   text-wrap: balance;
 }
 
-/* Inline callouts row */
+/* Inline callouts row — denser, more cells */
 .read-callouts {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(6, 1fr);
   gap: 0;
   margin: 32px 0;
   border-top: 1px solid var(--read-rule);
   border-bottom: 1px solid var(--read-rule);
   padding: 22px 0;
 }
+@media (max-width: 980px) {
+  .read-callouts { grid-template-columns: repeat(3, 1fr); }
+}
+@media (max-width: 600px) {
+  .read-callouts { grid-template-columns: repeat(2, 1fr); }
+}
 .read-callout {
-  text-align: center;
-  padding: 0 14px;
+  text-align: left;
+  padding: 4px 18px;
   border-right: 1px solid var(--read-rule);
 }
+.read-callout:nth-child(6n),
 .read-callout:last-child { border-right: none; }
 .read-callout-num {
-  font-size: 28px; font-weight: 600;
+  font-size: 26px; font-weight: 600;
   color: var(--read-accent);
   font-feature-settings: "tnum", "lnum";
-  letter-spacing: -1px;
+  letter-spacing: -0.8px;
   display: block;
+  line-height: 1.05;
+  font-family: var(--read-serif);
 }
 .read-callout-label {
   margin-top: 6px;
-  font-size: 11px;
+  font-size: 10px;
   color: var(--read-muted);
   text-transform: uppercase;
-  letter-spacing: 1.4px;
+  letter-spacing: 1.2px;
   font-family: Inter, system-ui, sans-serif;
   font-weight: 600;
   line-height: 1.3;
@@ -1376,6 +1401,12 @@ html[dir="rtl"] .chips { flex-direction: row-reverse; }
   line-height: 1.7;
   color: var(--read-muted);
 }
+/* Long prose inside annex stays at readable text-column width */
+.read-deeper > div > p {
+  max-width: 880px;
+  font-size: 14px;
+  line-height: 1.75;
+}
 .read-deeper .deeper-row {
   display: flex; justify-content: space-between; align-items: baseline;
   padding: 8px 0;
@@ -1506,6 +1537,51 @@ html[dir="rtl"] .chips { flex-direction: row-reverse; }
   font-feature-settings: "tnum";
 }
 
+/* Game theory + decision tree 2-col */
+.game-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 24px;
+}
+@media (min-width: 980px) {
+  .game-grid { grid-template-columns: 1fr 1fr; gap: 36px; }
+}
+.game-side {
+  border: 1px solid var(--read-rule);
+  border-radius: 4px;
+  padding: 16px 18px;
+  background: rgba(255,255,255,.02);
+}
+.game-h {
+  font-family: Inter, system-ui, sans-serif;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  color: var(--read-accent);
+  margin-bottom: 10px;
+}
+.game-side p {
+  font-family: var(--read-serif);
+  font-size: 14px;
+  line-height: 1.6;
+  color: var(--read-muted);
+  margin: 0 0 14px;
+}
+.game-side p strong {
+  color: var(--read-ink);
+  font-style: normal;
+}
+.game-side .deeper-row.rational {
+  background: rgba(217,119,87,.08);
+  border-radius: 4px;
+  padding: 8px 10px;
+  margin: 0 -10px;
+  border-bottom: none;
+}
+.game-side .deeper-row.rational div:first-child { color: var(--read-accent); font-weight: 700; }
+.game-side .deeper-row.rational .deeper-num { color: var(--read-accent); }
+
 @media (max-width: 800px) {
   .the-read {
     padding: 36px 24px 32px;
@@ -1565,11 +1641,7 @@ html[dir="rtl"] .read-watchlist li::before { left: auto; right: 0; }
   font-family: var(--read-serif);
   font-feature-settings: "kern", "liga", "onum";
 }
-/* Constrain prose to readable measure; let figures/tables breathe full width */
-.briefing-section .read-headline,
-.briefing-section .read-dek {
-  max-width: var(--read-text-col);
-}
+/* (briefing-section headline + dek widths are set in the consolidated rule above) */
 .briefing-section::before {
   content: '';
   position: absolute; left: 0; right: 0; top: 0;
@@ -1663,19 +1735,28 @@ html[dir="rtl"] .read-watchlist li::before { left: auto; right: 0; }
   }
 }
 
-/* Diplomacy timeline */
+/* Diplomacy timeline — 2-col grid of cards on wide viewports */
 .brief-diplomacy {
   margin: 0; padding: 0;
   list-style: none;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 14px;
+}
+@media (min-width: 980px) {
+  .brief-diplomacy { grid-template-columns: 1fr 1fr; }
 }
 .brief-diplomacy li {
-  padding: 18px 0;
-  border-bottom: 1px solid var(--read-rule);
-  font-size: 16px; line-height: 1.6;
+  padding: 16px 18px;
+  border: 1px solid var(--read-rule);
+  border-left: 3px solid var(--read-accent);
+  border-radius: 0 4px 4px 0;
+  background: rgba(255,255,255,.02);
+  font-size: 14px; line-height: 1.55;
   color: var(--read-ink);
   position: relative;
 }
-.brief-diplomacy li:last-child { border-bottom: none; }
+.brief-diplomacy li:last-child { border-bottom: 1px solid var(--read-rule); }
 .brief-diplomacy .dp-actor {
   display: block;
   font-size: 11px; font-weight: 700; letter-spacing: 1.5px;

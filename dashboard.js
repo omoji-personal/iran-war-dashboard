@@ -3115,20 +3115,29 @@ function renderTheRead() {
       '</div>';
   }).join('') : '<p>No active alpha signals — model and consensus aligned this turn.</p>';
 
-  // Game theory + Trump decision tree
+  // Game theory + Trump decision tree — 2-col layout
   var dt = dd.trumpDecisionTree || {};
-  var gameHtml = '<p style="color:var(--read-muted)">' +
-    'Pure-strategy Nash equilibrium found at: <strong>US ' + esc(gt.us_strategy || '?') + ', Iran ' + esc(gt.iran_strategy || '?') +
-    '</strong>. Joint welfare ' + (gt.joint_welfare || '?') + '/20. Trapped welfare loss: ' +
-    ((dd.gameTheoryEquilibrium && dd.gameTheoryEquilibrium.trapped_welfare_loss) || 0) + '.</p>' +
-    '<p style="margin-top:14px;color:var(--read-ink)"><strong>Trump\'s rational choice (highest expected value):</strong> ' +
-    esc(dt.rational_choice || '?') + ' (EV ' + (dt.rational_ev || '?') + ').</p>';
+  var gameHtml = '<div class="game-grid">' +
+    '<div class="game-side">' +
+      '<div class="game-h">Nash Equilibrium</div>' +
+      '<p>Pure-strategy Nash equilibrium: ' +
+        '<strong>US plays "' + esc(gt.us_strategy || '?') + '"</strong>, ' +
+        '<strong>Iran plays "' + esc(gt.iran_strategy || '?') + '"</strong>.</p>' +
+      '<div class="deeper-row"><div>Joint welfare</div><div class="deeper-num">' + (gt.joint_welfare || '?') + ' / 20</div></div>' +
+      '<div class="deeper-row"><div>Trapped welfare loss</div><div class="deeper-num">' + ((dd.gameTheoryEquilibrium && dd.gameTheoryEquilibrium.trapped_welfare_loss) || 0) + '</div></div>' +
+      '<div class="deeper-row"><div>US payoff</div><div class="deeper-num">' + (gt.us_payoff || '?') + '</div></div>' +
+      '<div class="deeper-row"><div>Iran payoff</div><div class="deeper-num">' + (gt.iran_payoff || '?') + '</div></div>' +
+    '</div>' +
+    '<div class="game-side">' +
+      '<div class="game-h">Trump Decision Tree (by EV)</div>' +
+      '<p>Backward induction over Iran\'s likely responses. Rational choice ★ — but watch for ego-driven deviations.</p>';
   (dt.branches || []).forEach(function(b, i) {
-    gameHtml += '<div class="deeper-row">' +
-      '<div>' + (i === 0 ? '<strong>' : '') + esc(b.us_move) + (i === 0 ? ' ★</strong>' : '') + '</div>' +
+    gameHtml += '<div class="deeper-row' + (i === 0 ? ' rational' : '') + '">' +
+      '<div>' + esc(b.us_move) + (i === 0 ? ' ★' : '') + '</div>' +
       '<div class="deeper-num">EV ' + b.expected_value + '</div>' +
       '</div>';
   });
+  gameHtml += '</div></div>';
   $('readGame').innerHTML = gameHtml;
 
   // Stakeholders — 4-col grid of cards
