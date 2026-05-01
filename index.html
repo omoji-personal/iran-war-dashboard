@@ -77,10 +77,24 @@
       <h2 class="read-headline" id="readHeadline"></h2>
       <p class="read-dek" id="readDek"></p>
 
-      <div class="read-stat">
-        <div class="read-stat-num" id="readStatNum"></div>
-        <div class="read-stat-label" id="readStatLabel"></div>
-        <div class="read-stat-delta" id="readStatDelta"></div>
+      <div class="read-statbar">
+        <div class="read-stat read-stat-primary">
+          <div class="read-stat-num" id="readStatNum"></div>
+          <div class="read-stat-label" id="readStatLabel"></div>
+          <div class="read-stat-delta" id="readStatDelta"></div>
+        </div>
+        <div class="read-stat-secondary">
+          <div class="read-stat-num" id="readStatFracture">—</div>
+          <div class="read-stat-label">Regime fracture · 60d</div>
+        </div>
+        <div class="read-stat-secondary">
+          <div class="read-stat-num" id="readStatHazard">—</div>
+          <div class="read-stat-label">Median regime survival</div>
+        </div>
+        <div class="read-stat-secondary">
+          <div class="read-stat-num read-stat-text" id="readStatAnalog">—</div>
+          <div class="read-stat-label">Top historical analog</div>
+        </div>
       </div>
 
       <div class="read-section-num">§ 02 — Analytic Judgment</div>
@@ -158,6 +172,7 @@
       <div class="read-section-num">§ 07 — Supporting Evidence</div>
       <h2 class="read-headline">The four signals the model weighs most</h2>
       <p class="read-dek">Each chart below is one of the inputs the model reads daily. They are presented as evidence for the bottom-line judgment above — not as a dashboard to query.</p>
+      <div class="brief-fig-grid">
 
       <figure class="brief-fig">
         <h3 class="brief-fig-title">Daily attack tempo · missiles + drones</h3>
@@ -182,6 +197,7 @@
         <p class="brief-fig-blurb" id="briefPressureBlurb"></p>
         <div class="brief-fig-chart"><canvas id="briefPressureChart"></canvas></div>
       </figure>
+      </div>
     </section>
 
     <section class="briefing-section" id="briefDiplomacySection">

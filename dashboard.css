@@ -1071,39 +1071,75 @@ html[dir="rtl"] .chips { flex-direction: row-reverse; }
   font-weight: 400;
 }
 
-/* Big stat block */
-.read-stat {
+/* Multi-stat bar (1 primary + 3 supporting) */
+.read-statbar {
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr 1fr;
+  gap: 0;
   border-top: 1px solid var(--read-rule);
   border-bottom: 1px solid var(--read-rule);
   padding: 26px 0 28px;
   margin: 0 0 36px;
-  text-align: center;
+  align-items: center;
+}
+.read-stat,
+.read-stat-secondary {
+  text-align: left;
+  padding: 0 24px;
+  border-right: 1px solid var(--read-rule);
+}
+.read-stat-secondary:last-child { border-right: none; }
+.read-stat-primary {
+  padding-left: 0;
 }
 .read-stat-num {
-  font-size: 84px;
+  font-size: 72px;
   line-height: 1;
   font-weight: 600;
-  letter-spacing: -3px;
+  letter-spacing: -2px;
   color: var(--read-accent);
   font-feature-settings: "tnum", "lnum";
+  display: block;
+}
+.read-stat-secondary .read-stat-num {
+  font-size: 36px;
+  letter-spacing: -1px;
+}
+.read-stat-secondary .read-stat-text {
+  font-size: 18px;
+  font-family: var(--read-serif);
+  font-weight: 600;
+  letter-spacing: 0;
+  line-height: 1.2;
+  color: var(--read-ink);
+  text-transform: capitalize;
 }
 .read-stat-label {
-  margin-top: 8px;
-  font-size: 12px;
+  margin-top: 10px;
+  font-size: 11px;
   color: var(--read-muted);
   text-transform: uppercase;
-  letter-spacing: 2px;
+  letter-spacing: 1.6px;
   font-family: Inter, system-ui, sans-serif;
   font-weight: 600;
+  line-height: 1.35;
 }
 .read-stat-delta {
-  margin-top: 10px;
+  margin-top: 8px;
   font-size: 13px;
   color: var(--read-muted);
   font-style: italic;
+  font-family: Inter, system-ui, sans-serif;
 }
 .read-stat-delta.up { color: #46d7b0; }
 .read-stat-delta.down { color: #ff6b6b; }
+@media (max-width: 980px) {
+  .read-statbar {
+    grid-template-columns: 1fr 1fr;
+  }
+  .read-stat,
+  .read-stat-secondary { border-right: none; padding: 16px 12px; border-bottom: 1px solid var(--read-rule); }
+}
 
 /* Body prose */
 .read-body {
@@ -1220,22 +1256,33 @@ html[dir="rtl"] .chips { flex-direction: row-reverse; }
   border-top: 1px solid var(--read-rule);
 }
 
-/* Watchlist (numbered) */
+/* Watchlist (numbered) — 2-column grid on wide viewports */
 .read-watchlist {
   margin: 0 0 28px;
   padding: 0;
   list-style: none;
   counter-reset: w;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 0 36px;
+}
+@media (min-width: 980px) {
+  .read-watchlist {
+    grid-template-columns: 1fr 1fr;
+  }
 }
 .read-watchlist li {
   counter-increment: w;
   position: relative;
   padding: 16px 0 16px 56px;
   border-bottom: 1px solid var(--read-rule);
-  font-size: 16px; line-height: 1.55;
+  font-size: 15px; line-height: 1.55;
   color: var(--read-ink);
 }
 .read-watchlist li:last-child { border-bottom: none; }
+@media (min-width: 980px) {
+  .read-watchlist li:nth-last-child(2):not(:nth-child(odd)) { border-bottom: none; }
+}
 .read-watchlist li::before {
   content: counter(w, decimal-leading-zero);
   position: absolute; left: 0; top: 16px;
@@ -1252,16 +1299,24 @@ html[dir="rtl"] .chips { flex-direction: row-reverse; }
   font-family: Inter, system-ui, sans-serif;
 }
 
-/* Tail risks */
+/* Tail risks — 2-column grid on wide viewports */
 .read-tails {
   margin: 0 0 28px;
   padding: 0;
   list-style: none;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 0 36px;
+}
+@media (min-width: 980px) {
+  .read-tails {
+    grid-template-columns: 1fr 1fr;
+  }
 }
 .read-tails li {
   padding: 14px 0;
   border-bottom: 1px solid var(--read-rule);
-  font-size: 15px; line-height: 1.55;
+  font-size: 14px; line-height: 1.55;
   color: var(--read-ink);
 }
 .read-tails li:last-child { border-bottom: none; }
@@ -1333,6 +1388,122 @@ html[dir="rtl"] .chips { flex-direction: row-reverse; }
   font-feature-settings: "tnum", "lnum";
   color: var(--read-accent);
   font-weight: 600;
+}
+
+/* Stakeholder grid (4-col on wide) */
+.stake-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 12px;
+}
+@media (min-width: 980px) {
+  .stake-grid { grid-template-columns: repeat(4, 1fr); }
+}
+.stake-card {
+  border: 1px solid var(--read-rule);
+  border-radius: 4px;
+  padding: 12px 14px;
+  background: rgba(255,255,255,.02);
+}
+.stake-name {
+  font-family: var(--read-serif);
+  font-size: 16px;
+  font-weight: 600;
+  color: var(--read-ink);
+  text-transform: capitalize;
+  margin-bottom: 2px;
+  line-height: 1.15;
+}
+.stake-style {
+  font-size: 10px;
+  color: var(--read-accent);
+  text-transform: uppercase;
+  letter-spacing: 1.4px;
+  margin-bottom: 10px;
+  font-family: Inter, system-ui, sans-serif;
+  font-weight: 700;
+}
+.stake-traits {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 4px 12px;
+  font-family: Inter, system-ui, sans-serif;
+  font-size: 11px;
+}
+.stake-traits > span {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+}
+.stake-k {
+  color: var(--read-soft);
+  text-transform: uppercase;
+  letter-spacing: 0.8px;
+  font-size: 9px;
+}
+.stake-v {
+  color: var(--read-ink);
+  font-weight: 700;
+  font-feature-settings: "tnum";
+}
+
+/* Iran regime/population side-by-side */
+.iran-split-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 14px;
+  margin-bottom: 14px;
+}
+@media (max-width: 700px) {
+  .iran-split-grid { grid-template-columns: 1fr; }
+}
+.iran-card {
+  border: 1px solid var(--read-rule);
+  border-radius: 4px;
+  padding: 16px 18px;
+  background: rgba(255,255,255,.02);
+  position: relative;
+}
+.iran-card.iran-regime { border-top: 2px solid #ff6b6b; }
+.iran-card.iran-pop    { border-top: 2px solid #46d7b0; }
+.iran-card-title {
+  font-family: Inter, system-ui, sans-serif;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 1.5px;
+  margin-bottom: 12px;
+  text-transform: uppercase;
+}
+.iran-card.iran-regime .iran-card-title { color: #ff6b6b; }
+.iran-card.iran-pop .iran-card-title    { color: #46d7b0; }
+.iran-card-row {
+  display: flex;
+  justify-content: space-between;
+  padding: 6px 0;
+  font-family: Inter, system-ui, sans-serif;
+  font-size: 12px;
+  color: var(--read-muted);
+}
+.iran-card-row strong {
+  color: var(--read-ink);
+  font-weight: 700;
+  font-feature-settings: "tnum";
+}
+.iran-headline {
+  font-family: var(--read-serif);
+  font-size: 14px;
+  font-style: italic;
+  color: var(--read-muted);
+  padding: 12px 16px;
+  border-left: 3px solid var(--read-accent);
+  background: var(--read-accent-soft);
+  border-radius: 0 4px 4px 0;
+}
+.iran-headline strong {
+  font-style: normal;
+  color: var(--read-accent);
+  font-weight: 700;
+  font-feature-settings: "tnum";
 }
 
 @media (max-width: 800px) {
@@ -1466,34 +1637,29 @@ html[dir="rtl"] .read-watchlist li::before { left: auto; right: 0; }
 }
 .brief-fig-chart {
   position: relative;
-  height: 320px;
+  height: 280px;
   background: rgba(255,255,255,.025);
   border-radius: 4px;
   padding: 18px 18px 10px;
 }
-/* Two-column figure: text on left, chart on right when there's room */
+/* 2×2 grid of figures on wide viewports — each is a self-contained card */
 @media (min-width: 980px) {
-  .brief-fig {
-    display: grid;
-    grid-template-columns: 280px 1fr;
-    gap: 32px;
-    align-items: start;
+  #briefEvidence > .brief-fig-grid,
+  #briefEvidence {
+    /* The four <figure> children are direct grid items */
   }
-  .brief-fig-title {
-    grid-column: 1;
-    grid-row: 1;
-    font-size: 22px;
-    line-height: 1.2;
+  #briefEvidence .brief-fig {
+    margin: 0;
   }
-  .brief-fig-blurb {
-    grid-column: 1;
-    grid-row: 2;
-    font-size: 14px;
-  }
-  .brief-fig-chart {
-    grid-column: 2;
-    grid-row: 1 / span 2;
-    height: 280px;
+}
+.brief-fig-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 32px 28px;
+}
+@media (min-width: 980px) {
+  .brief-fig-grid {
+    grid-template-columns: 1fr 1fr;
   }
 }
 

@@ -2963,9 +2963,22 @@ function renderTheRead() {
   $('readHeadline').textContent = lensPhrase.headline;
   $('readDek').innerHTML = lensPhrase.dek;
 
-  // ----- Big stat -----
+  // ----- Stat bar (4 stats) -----
   $('readStatNum').textContent = topPct + '%';
   $('readStatLabel').textContent = bucketLabels[topBucket] || 'TOP OUTCOME';
+  // Secondary stats
+  var fracEl = $('readStatFracture');
+  if (fracEl) fracEl.textContent = pct(fracture) + '%';
+  var hazEl = $('readStatHazard');
+  var hazD = (dd.regimeHazardCurve && dd.regimeHazardCurve.median_survival_days) || null;
+  if (hazEl) hazEl.textContent = hazD ? Math.round(hazD) + 'd' : '—';
+  var anaEl = $('readStatAnalog');
+  if (anaEl) {
+    var aname = (ha.top_analog || '').replace(/_/g, ' ').replace(/\b(\d{4})$/, '($1)');
+    // Capitalize each word for display
+    aname = aname.replace(/\b\w/g, function(c) { return c.toUpperCase(); });
+    anaEl.textContent = aname || '—';
+  }
   // Compute delta vs first historical snapshot if available
   var deltaHtml = '';
   var spine = state.calibrationSpine && state.calibrationSpine.outcomeBucketSeries;
@@ -3118,32 +3131,49 @@ function renderTheRead() {
   });
   $('readGame').innerHTML = gameHtml;
 
-  // Stakeholders
+  // Stakeholders — 4-col grid of cards
   var sh = dd.stakeholders || {};
-  var shHtml = '<p style="color:var(--read-muted);margin-bottom:10px">Each actor scored on 12 dimensions; aggregate weights into the four condition-score psych modifiers.</p>';
+  var shHtml = '<p style="color:var(--read-muted);margin-bottom:14px">Each actor scored on 12 dimensions; aggregate weights into the four condition-score psych modifiers.</p>';
+  shHtml += '<div class="stake-grid">';
   Object.keys(sh).forEach(function(name) {
     var p = sh[name];
-    shHtml += '<div class="deeper-row">' +
-      '<div><strong>' + esc(name.replace(/_/g, ' ')) + '</strong> · <em>' + esc(p.decision_style) + '</em></div>' +
-      '<div style="font-size:11px;color:var(--read-muted)">' +
-        'risk ' + Math.round(p.risk_tolerance * 100) + ' · ego ' + Math.round(p.ego_size * 100) +
-        ' · zeal ' + Math.round(p.religious_zeal * 100) + ' · flex ' + Math.round(p.flexibility * 100) +
+    shHtml += '<div class="stake-card">' +
+      '<div class="stake-name">' + esc(name.replace(/_/g, ' ')) + '</div>' +
+      '<div class="stake-style">' + esc(p.decision_style) + '</div>' +
+      '<div class="stake-traits">' +
+        '<span><span class="stake-k">risk</span><span class="stake-v">' + Math.round(p.risk_tolerance * 100) + '</span></span>' +
+        '<span><span class="stake-k">ego</span><span class="stake-v">' + Math.round(p.ego_size * 100) + '</span></span>' +
+        '<span><span class="stake-k">zeal</span><span class="stake-v">' + Math.round(p.religious_zeal * 100) + '</span></span>' +
+        '<span><span class="stake-k">flex</span><span class="stake-v">' + Math.round(p.flexibility * 100) + '</span></span>' +
+        '<span><span class="stake-k">commit</span><span class="stake-v">' + Math.round(p.public_commitment * 100) + '</span></span>' +
+        '<span><span class="stake-k">horizon</span><span class="stake-v">' + p.time_horizon_days + 'd</span></span>' +
       '</div></div>';
   });
+  shHtml += '</div>';
   $('readStakeholders').innerHTML = shHtml;
 
-  // Iran split
+  // Iran split — side-by-side regime/population panels
   var idd = dd.iranDeepDynamics || {};
-  var iranHtml = '<p style="color:var(--read-muted);margin-bottom:10px">The dashboard\'s most underweighted factor.</p>' +
-    '<div class="deeper-row"><div><strong>Regime support</strong> · % of Iranians who back the regime</div><div class="deeper-num">' + iranSupport + '%</div></div>' +
-    '<div class="deeper-row"><div>Regime grip strength</div><div class="deeper-num">' + Math.round((rd.regime_grip_strength || 0) * 100) + '%</div></div>' +
-    '<div class="deeper-row"><div>Population restiveness</div><div class="deeper-num">' + Math.round((rd.population_restiveness || 0) * 100) + '%</div></div>' +
-    '<div class="deeper-row"><div>Economic pain</div><div class="deeper-num">' + Math.round((rd.economic_pain_index || 0) * 100) + '%</div></div>' +
-    '<div class="deeper-row"><div>IRGC + clergy alignment</div><div class="deeper-num">' + Math.round((idd.clerical_irgc_alignment || 0) * 100) + '%</div></div>' +
-    '<div class="deeper-row"><div>Mojtaba succession lock</div><div class="deeper-num">' + Math.round((idd.mojtaba_succession_lock || 0) * 100) + '%</div></div>' +
-    '<div class="deeper-row"><div>Khamenei health concern</div><div class="deeper-num">' + Math.round((idd.khamenei_health_concern || 0) * 100) + '%</div></div>' +
-    '<div class="deeper-row"><div>Oil revenue collapse</div><div class="deeper-num">' + Math.round((idd.oil_revenue_collapse_pct || 0) * 100) + '%</div></div>' +
-    '<div class="deeper-row"><div><strong>Regime fracture probability (60d)</strong></div><div class="deeper-num">' + pct(fracture) + '%</div></div>';
+  var iranHtml = '<p style="color:var(--read-muted);margin-bottom:14px">The dashboard\'s most underweighted factor: ~' + iranSupport + '% support the regime, ~' + (100 - iranSupport) + '% don\'t — but the regime is armed and the population can\'t act.</p>';
+  iranHtml += '<div class="iran-split-grid">' +
+    '<div class="iran-card iran-regime">' +
+      '<div class="iran-card-title">REGIME · ~' + iranSupport + '% support</div>' +
+      '<div class="iran-card-row"><span>Grip strength</span><strong>' + Math.round((rd.regime_grip_strength || 0) * 100) + '%</strong></div>' +
+      '<div class="iran-card-row"><span>Brittleness</span><strong>' + Math.round((rd.regime_brittleness || 0) * 100) + '%</strong></div>' +
+      '<div class="iran-card-row"><span>IRGC + clergy alignment</span><strong>' + Math.round((idd.clerical_irgc_alignment || 0) * 100) + '%</strong></div>' +
+      '<div class="iran-card-row"><span>Khamenei health concern</span><strong>' + Math.round((idd.khamenei_health_concern || 0) * 100) + '%</strong></div>' +
+      '<div class="iran-card-row"><span>Mojtaba succession lock</span><strong>' + Math.round((idd.mojtaba_succession_lock || 0) * 100) + '%</strong></div>' +
+    '</div>' +
+    '<div class="iran-card iran-pop">' +
+      '<div class="iran-card-title">POPULATION · ~' + (100 - iranSupport) + '%</div>' +
+      '<div class="iran-card-row"><span>War fatigue</span><strong>' + Math.round((rd.population_war_fatigue || 0) * 100) + '%</strong></div>' +
+      '<div class="iran-card-row"><span>Restiveness</span><strong>' + Math.round((rd.population_restiveness || 0) * 100) + '%</strong></div>' +
+      '<div class="iran-card-row"><span>Economic pain</span><strong>' + Math.round((rd.economic_pain_index || 0) * 100) + '%</strong></div>' +
+      '<div class="iran-card-row"><span>Oil revenue collapse</span><strong>' + Math.round((idd.oil_revenue_collapse_pct || 0) * 100) + '%</strong></div>' +
+      '<div class="iran-card-row"><span>Diaspora mobilization</span><strong>' + Math.round((idd.diaspora_mobilization || 0) * 100) + '%</strong></div>' +
+    '</div>' +
+  '</div>';
+  iranHtml += '<div class="iran-headline">Regime fracture probability (60d) <strong>' + pct(fracture) + '%</strong> — derived from population × restiveness × brittleness × succession overhang.</div>';
   $('readIranSplit').innerHTML = iranHtml;
 
   // Methodology
