@@ -1,6 +1,6 @@
 {
   "meta": {
-    "lastUpdated": "2026-04-30T10:00:00-04:00",
+    "lastUpdated": "2026-05-01T10:00:00-04:00",
     "preWarBaselines": {
       "d1Missiles": 480,
       "preWarOil": 65,
@@ -8,6 +8,7 @@
       "preWarGas": 3
     },
     "notes": [
+      "D63 (May 1, cfDay24): WAR POWERS 60-DAY DEADLINE HIT — TRUMP REVIEWS STRIKE OPTIONS; PEZESHKIAN CALLS BLOCKADE 'INTOLERABLE'; SENATE REJECTS WAR POWERS 47-50. May 1 = 60-day mark under War Powers Resolution (Trump notified Congress Mar 2). Senate rejected Democrat War Powers measure 47-50 (Collins + Paul only GOP crossovers). Hegseth claims ceasefire 'pauses' clock — no statutory basis. CENTCOM briefed Trump on three military options: heavy strikes; Isfahan HEU special forces operation; Hormuz island deployments. Trump: 'We might need it.' Iran President Pezeshkian: US naval siege is 'extension of military operations' and 'intolerable' — sharpest presidential rhetoric since ceasefire. Israel DefMin Katz: Israel may need to 'act again' against Iran. No new Iranian proposal — Araghchi still consulting Khamenei. Rare Hormuz transit: Japanese tanker (Idemitsu Kosan). Brent $116.80 est. WTI $106.10 est. Hormuz ~6 vessels/24hr. ~2,000 ships stranded. Lebanon: 2,491+ killed, 7,719 wounded. Internet blackout Day 64 = 1,536+ hrs. Rial ~181,000 tomans/USD. Polymarket: Trump announces end of ops — June 30 = 51%, May 31 = 28%. ⚠ MODE SWITCH FLAG: ceasefireMode.enabled is still True — ceasefire formally expired Apr 21 8PM ET but Trump extended it indefinitely on Apr 21; user should review ceasefireMode.enabled and update if/when ceasefire formally ends.",
       "D62 (Apr 30, cfDay23): US LAUNCHES MARITIME FREEDOM CONSTRUCT; TRUMP FORMALLY REJECTS IRAN PROPOSAL. Two escalatory signals: (1) Trump formally rejected Iran's deferred-nuclear proposal (Axios): 'blockade stays until nuclear deal'; Iran must 'cry uncle'; blockade 'somewhat more effective than bombing.' (2) State Dept cable (Rubio) launched 'Maritime Freedom Construct' (MFC) — international coalition to restore Hormuz freedom of navigation; France/UK willing only post-conflict. Pakistan opened overland trade routes to Iran (Ministry of Commerce Transit Order 2026) — first land corridor. Lebanon: Hezbollah drone wounded 12 IDF soldiers near Shomera (2 moderate). Brent hit $126 intraday wartime high, closed $115.81 (-1.9%). WTI $106.26. Hormuz: 7 vessels/24hr. ~2,000 ships stranded. Iran rial record 1.81M/USD. Internet Day 63 = 1,512+ hrs. China-Iran trade Q1 down 50% YoY. Polymarket: nuclear deal by Apr 30 = 1%; peace deal June 30 = 50%. ⚠ MODE SWITCH FLAG: ceasefireMode.enabled is still True — ceasefire formally expired Apr 21 8PM ET but Trump extended it indefinitely on Apr 21; user should review ceasefireMode.enabled and update if/when ceasefire formally ends.",
       "D61 (Apr 29, cfDay22): UAE QUITS OPEC EFFECTIVE MAY 1 — HISTORIC GULF FRACTURE. UAE formally announced OPEC/OPEC+ exit effective May 1 — first Gulf Arab state to leave during the crisis; driven by Hormuz blockade choking UAE exports + production-cap constraints (capped ~3.2M bpd, could nearly double without). Araghchi returned to Tehran to consult hidden Supreme Leader Khamenei on revised proposal — slow, contentious process. Iran formally passed 'red lines' to Pakistan mediators: nuclear programme and Strait of Hormuz sovereignty non-negotiable. Pakistan expects revised Iranian proposal 'within days.' US still examining deferred-nuclear framework; Trump cool. Brent $113.47 (highest since June 2022; +2.06% from D60). WTI $99.32 close (crossed $100 intraday). Peace efforts 'stalled' per Manila Times Apr 29. 22-day zero-attack streak. Lebanon 2,515+ killed est. Internet Day 62 = 1,488+ hrs. Ships stranded ~910 est. ⚠ MODE SWITCH FLAG: ceasefireMode.enabled is still True — ceasefire formally expired Apr 21 8PM ET but Trump extended it indefinitely on Apr 21; user should review ceasefireMode.enabled and update if/when ceasefire formally ends.",
       "D60 (Apr 28, cfDay21): IRAN SUBMITS NEW PEACE PROPOSAL — HORMUZ+WAR NOW, NUCLEAR DEFERRED. Iran sent US a new proposal via Pakistan: reopen Hormuz + end war immediately, address nuclear programme in a separate later phase. US/Trump 'cold' to proposal — Rubio: 'better than we expected' but any deal must block nuclear weapons. Araghchi continues Putin meeting at St. Petersburg; Putin: 'we see how courageously Iran is fighting'; Lavrov + Belousov + military intel chief Adm. Kostyukov in attendance; Putin confirms received message from Mojtaba Khamenei last week. UN chief warns Hormuz standoff risks global food emergency. Pakistan trying to restart US-Iran negotiations. WAR POWERS 60-DAY CLOCK EXPIRES TODAY. 21-day zero-attack streak. Lebanon 2,509+ killed. Brent $111.16 (+2.71%), WTI ~$99.40. Internet Day 61 = 1,464+ hrs. Dual blockade: ~3 vessels/day. Ships stranded ~900+.",
@@ -210,7 +211,8 @@
       "Apr 27",
       "Apr 28",
       "Apr 29",
-      "Apr 30"
+      "Apr 30",
+      "D63"
     ],
     "missiles": [
       480,
@@ -253,6 +255,7 @@
       45,
       58,
       12,
+      0,
       0,
       0,
       0,
@@ -317,6 +320,7 @@
       50,
       62,
       18,
+      0,
       0,
       0,
       0,
@@ -404,7 +408,8 @@
       62,
       1,
       60,
-      58
+      58,
+      57
     ],
     "confidenceNote": "1.0 = JPost verified day-by-day (D1-D10). 0.8 = UAE MoD official scaled (D11). 0.6 = fragment estimates from Gulf reports (D12-D29). 0.5 = latest data, less verified (D30+). 1.0 = ceasefire/blockade confirmed 0 launches (D40-D60)."
   },
@@ -472,7 +477,8 @@
       "Apr 27",
       "Apr 28",
       "Apr 29",
-      "Apr 30"
+      "Apr 30",
+      "May 1"
     ],
     "brent": [
       65,
@@ -537,7 +543,8 @@
       108.22,
       111.16,
       113.47,
-      115.81
+      115.81,
+      116.8
     ],
     "wti": [
       62,
@@ -602,7 +609,8 @@
       97.0,
       99.4,
       99.32,
-      106.26
+      106.26,
+      106.1
     ],
     "note": "D60 (Apr 28): Brent $111.16 (+2.71% from D59 close $108.22). WTI $99.40 est (range $96.26-$100.10). Highest since March. Trajectory: $84 (D49 Hormuz open) → $90 (D50 re-closed) → $108 (D59 actual close) → $111.16 (D60 Iran deferred-nuclear proposal rejected). UN food emergency warning. If deal: $85-90. If escalation resumes: $125+."
   },
@@ -669,7 +677,8 @@
       "Apr 27",
       "Apr 28",
       "D61",
-      "D62"
+      "D62",
+      "D63"
     ],
     "attrition": [
       2,
@@ -711,6 +720,7 @@
       10,
       10,
       10.2,
+      10.5,
       10.5,
       10.5,
       10.5,
@@ -797,7 +807,8 @@
       9.1,
       9.3,
       9.5,
-      9.7
+      9.7,
+      9.8
     ]
   },
   "latestTargetBreakdown": {
@@ -1360,6 +1371,15 @@
       "capability": "0+0 missile/drone. 23-day zero-attack streak — ceasefire record extended. Dual Hormuz blockade: US naval blockade (~34+ ships turned away cumulative est.), Iran IRGC counter-blockade (7 vessels/24hr on Apr 30). MSC Francesca, Epaminondas, Touska still held. Lebanon: Hezbollah drone attack wounded 12 IDF soldiers near Shomera — marks tactical escalation at Lebanon front. US Maritime Freedom Construct: coalition-building for potential forced Hormuz reopening, with France/UK willing only post-conflict. Pakistan land corridor now open: US goods to Iran by road via Pakistan for first time.",
       "cost": "Brent $115.81 close (hit $126 intraday wartime high; +2.06% from D61 $113.47; up ~60% since Feb 28). WTI $106.26 (-0.6%). Iran rial hit record 1.81M/USD Apr 29 (partial recovery). Hormuz: 7 vessels/24hr (~88% below pre-crisis ~60/day). ~2,000 ships stranded (sharply up from ~910 est.). Internet blackout Day 63 = 1,512+ hrs. Cumulative internet economic cost ~$2.78B+ est ($40M/day). US blockade: ~34+ ships turned away cumulative est. Lebanon 2,491+ killed, 7,719 wounded. Iran economy: IMF −6.1% GDP, 68.9% inflation. China-Iran bilateral trade Q1 2026 down 50% year-on-year.",
       "assessment": "D62 — MFC + TRUMP REJECTION = US SHIFTING FROM BLOCKADE TO ENFORCEMENT. The Maritime Freedom Construct is the most significant new development since the blockade began. It signals the US is preparing a next phase: if diplomacy fails, build a coalition to physically reopen Hormuz — bypassing the need for an Iran deal entirely. Trump's formal rejection of the deferred-nuclear proposal eliminates the middle ground Iran was trying to create. The message is unambiguous: no Hormuz deal without nuclear constraints. Combined with 'cry uncle' language, Trump is betting Iran’s economic collapse accelerates before domestic political pressure forces a compromise. The rial at 1.81M/USD, Brent at $126 intraday, 2,000 ships stranded, and Day 63 internet blackout suggest Iran’s economic pain is indeed intensifying. But Iran’s 'red lines' formalized to Pakistan suggest the regime believes hardliners would view any nuclear compromise as fatal. Lebanon front: Hezbollah drones wounding 12 IDF soldiers signals Hezbollah is unwilling to let the Lebanon ceasefire die quietly — potential second front if Iran orders escalation. Convergence 4.7 (slight drop): economic pain surging, but diplomatic channel narrowing. Scenarios: Escalation 44% / Stalled 25% / Deal 15% / Victory 9% / Intervention 5% / Fracture 2%."
+    },
+    {
+      "date": "May 1",
+      "missiles": 0,
+      "drones": 0,
+      "primary": "D63 CEASEFIRE DAY 24 — WAR POWERS 60-DAY DEADLINE HIT; TRUMP REVIEWS STRIKE OPTIONS; PEZESHKIAN CALLS BLOCKADE 'INTOLERABLE'; SENATE REJECTS WAR POWERS MEASURE 47-50; 24-DAY ZERO-ATTACK STREAK: May 1 is the 60-day mark under the War Powers Resolution — Trump notified Congress Mar 2, setting a May 1 withdrawal deadline. Defense Secretary Hegseth argued the active ceasefire 'pauses or stops' the clock. Senate voted 47-50 to reject a Democrat-led War Powers measure, with only Collins and Paul crossing the aisle. CENTCOM separately briefed Trump on three military options: (1) heavy rapid strikes to force Iranian flexibility; (2) special forces operation in Isfahan to remove ~440kg of 60%-enriched uranium; (3) ground deployments to small Hormuz islands. Trump: 'I don't know that we need it. We might need it.' Iran's President Pezeshkian publicly described the US naval siege of Iranian ports as an 'extension of military operations' that is 'intolerable' — most direct presidential escalation language yet. Israel Defense Minister Katz said Israel may soon have to 'act again' against Iran to ensure the Islamic Republic 'does not become a threat' again. No new Iranian diplomatic proposal — Araghchi still consulting Khamenei in Tehran. Rare Japanese oil tanker (Idemitsu Kosan) completed Hormuz transit, destination Nagoya; Cospearl Lake (Iraqi oil) arrived Zhoushan China. Lebanon: Israeli strikes continue; total 2,491+ killed, 7,719 wounded since Feb 28. Brent $116.80 (est; modest gain on military-option news). WTI $106 (est). Internet blackout Day 64 = 1,536+ hrs. ~2,000 ships stranded. Polymarket: Trump announces end of ops — June 30 = 51%, May 31 = 28%.",
+      "capability": "0+0 missile/drone. 24-day zero-attack streak — ceasefire holds militarily. But War Powers deadline creates new legal pressure point: Trump administration chose to absorb the deadline rather than seek congressional authorization or acknowledge the law's force. CENTCOM strike options briefed to Trump: heavy strikes + Isfahan HEU special forces + Hormuz island deployments = three escalatory tracks active in planning. Rare tankers transiting Hormuz (Japanese Idemitsu; Iraqi Cospearl Lake) indicate marginal piercing of blockade — not a trend. Lebanon front: Israeli strikes ongoing despite 3-week ceasefire extension.",
+      "cost": "Brent $116.80 est (+0.9% from D62 $115.81). WTI $106.10 est (-0.2%). Iran rial ~181,000 tomans/USD (free market). Internet blackout Day 64 = 1,536+ hrs. Cumulative internet economic cost ~$2.82B+ est ($35.7M/day per Iranian Communications Minister Hashemi). Hormuz: 6 vessels/24hr est (~5% of pre-war ~62/day). ~2,000 ships stranded. Lebanon 2,491+ killed, 7,719 wounded. HRANA: 1,701 civilian deaths, 3,636 total documented. Hengaw: 7,650 total (6,620 military + 1,030 civilians) as of ceasefire. Iran IMF forecast: -6.1% GDP, 68.9% inflation. US blockade: ~34+ ships turned away cumulative est.",
+      "assessment": "D63 — WAR POWERS DEADLINE ABSORBED BUT LEGAL AMBIGUITY DEEPENS. May 1 is the constitutional stress test Trump chose to ignore rather than resolve. The Senate's 47-50 rejection of the War Powers measure leaves the legal question unresolved — not settled in Trump's favor. The Hegseth 'ceasefire pauses the clock' doctrine has no statutory basis; it is a political claim, not a legal ruling. More immediately significant: CENTCOM has three active military option tracks on the President's desk. The Isfahan HEU option is particularly dangerous — a covert operation to physically remove Iran's enriched uranium would constitute a resumption of combat that would likely collapse the ceasefire instantly. Iran's Pezeshkian calling the blockade 'intolerable' signals presidential-level frustration that could provide political cover for IRGC hardliners to act unilaterally. The Japanese tanker transit is a data point, not a trend: Hormuz remains effectively closed at ~5% capacity. The economic trajectory is locked in — rial at 181,000 tomans, 2,000 ships stranded, Day 64 internet blackout, $35.7M/day cost. The question is no longer 'can Iran sustain this' but 'which actor moves first.' Escalation scenarios are elevated. Convergence 4.5 (slight drop): legal deadline absorbed, but military planning now in an active advisory phase. Scenarios: Escalation 46% / Stalled 23% / Deal 14% / Victory 9% / Intervention 6% / Fracture 2%."
     }
   ],
   "timeline": [
@@ -2320,7 +2340,8 @@
         "Apr 27",
         "Apr 28",
         "D61",
-        "D62"
+        "D62",
+        "D63"
       ],
       "militaryExhaustion": [
         1,
@@ -2362,6 +2383,7 @@
         7,
         7.5,
         7,
+        6.5,
         6.5,
         6.5,
         6.5,
@@ -2448,7 +2470,8 @@
         9.4,
         9.5,
         9.7,
-        9.8
+        9.8,
+        9.9
       ],
       "diplomaticMomentum": [
         0,
@@ -2512,7 +2535,8 @@
         1.5,
         2.0,
         2.5,
-        1.5
+        1.5,
+        1.3
       ],
       "usPoliticalSustainability": [
         8,
@@ -2576,7 +2600,8 @@
         3.7,
         3.5,
         3.4,
-        3.2
+        3.2,
+        2.7
       ],
       "escalationCeilingDistance": [
         7,
@@ -2640,7 +2665,8 @@
         1.4,
         1.8,
         1.9,
-        1.4
+        1.4,
+        1.2
       ]
     },
     "vectorNotes": {
@@ -2730,7 +2756,8 @@
       2,
       2,
       2,
-      3
+      3,
+      4
     ],
     "geoSpreadLabels": [
       "Feb 28",
@@ -2794,7 +2821,8 @@
       "Apr 27",
       "Apr 28",
       "D61",
-      "D62"
+      "D62",
+      "D63"
     ],
     "countriesTargetedPerDay": [
       8,
@@ -2837,6 +2865,7 @@
       9,
       8,
       4,
+      0,
       0,
       0,
       0,
@@ -2922,6 +2951,7 @@
       0,
       0,
       0,
+      0,
       0
     ],
     "interceptRateLabels": [
@@ -2986,7 +3016,8 @@
       "Apr 27",
       "Apr 28",
       "D61",
-      "D62"
+      "D62",
+      "D63"
     ],
     "interceptRate": [
       0.82,
@@ -3026,6 +3057,7 @@
       0.87,
       0.89,
       0.89,
+      0.88,
       0.88,
       0.88,
       0.88,
@@ -3824,7 +3856,8 @@
       "Apr 27",
       "Apr 28",
       "Apr 29",
-      "Apr 30"
+      "Apr 30",
+      "May 1"
     ],
     "vessels": [
       62,
@@ -3889,7 +3922,8 @@
       3,
       3,
       3,
-      7
+      7,
+      6
     ],
     "preWarAverage": 62,
     "note": "D60 (Apr 28): DUAL BLOCKADE Day 15. ~3 vessels/day (IRGC escort + USS Spruance intercept). Iran submitted deferred-nuclear proposal via Pakistan: reopen Hormuz NOW as part of deal — US cold. UN Secretary-General warned global food emergency. War Powers 60-day clock expired — no congressional authorization. D52 (Apr 20): Hormuz CLOSED. D49 (Apr 17): brief opening, ~15 vessels. D50 (Apr 18): IRGC fired on Sanmar Herald, Hormuz re-closed. D51 (Apr 19): USS Spruance seized M/V Touska. 25+ vessels turned back. Cape of Good Hope: +$3-5M/ship.",
@@ -6233,6 +6267,32 @@
       ],
       "totalCount": 2,
       "maxSeverity": 3
+    },
+    {
+      "day": "May 1",
+      "cfDay": 24,
+      "incidents": [
+        {
+          "type": "blockade",
+          "severity": 3,
+          "actor": "US Navy / Iran IRGC",
+          "target": "Strait of Hormuz / Iranian ports",
+          "description": "Dual blockade continues. US naval blockade (~34+ ships turned away cumulative est.). Iran IRGC counter-blockade: ~6 vessels/24hr. MSC Francesca, Epaminondas, Touska still held. ~2,000 ships stranded. Rare transit: Japanese tanker (Idemitsu Kosan) completed Hormuz passage. CENTCOM briefed Trump on military options including Hormuz island deployments. Pezeshkian called blockade 'extension of military operations' and 'intolerable.' War Powers 60-day deadline reached — Hegseth claims ceasefire pauses clock.",
+          "description_fa": "محاصره دوگانه ادامه دارد. پزشکیان محاصره دریایی را ‘غیرقابل تحمل’ خواند. ضربالعجل سخترین زبان ریاست جمهوری درباره محاصره.",
+          "withinScope": "yes"
+        },
+        {
+          "type": "political",
+          "severity": 2,
+          "actor": "US Congress / Trump administration",
+          "target": "War Powers Resolution 60-day deadline",
+          "description": "May 1 marks the 60-day War Powers deadline (Trump notified Congress Mar 2). Senate rejected Democrat-led War Powers measure 47-50; Collins and Paul only Republicans crossing aisle. Hegseth claims ceasefire 'pauses' the legal clock — no statutory basis. CENTCOM briefed Trump on three military option tracks including heavy strikes, Isfahan HEU removal, and Hormuz island deployments. Trump: 'We might need it.'",
+          "description_fa": "سنا طرح حقوق جنگی را در مهلت رای داد — ۴۷-۵۰. پنتاگون سه گزینه نظامی برای ترامپ تهیه کرد.",
+          "withinScope": "yes"
+        }
+      ],
+      "totalCount": 2,
+      "maxSeverity": 3
     }
   ],
   "ceasefireNegotiations": [
@@ -6594,6 +6654,23 @@
       "outcome": "No new Iranian proposal; US formally rejects deferred-nuclear framework; MFC signals coalition force option; diplomatic stalemate deepens; land corridor marginal offset",
       "significance": 8,
       "keyGap": "Trump's formal rejection of the deferred-nuclear proposal closes the middle ground Iran was trying to create. The MFC is the clearest US signal yet that it will seek to reopen Hormuz by coalition force if diplomacy fails — not just maintain blockade indefinitely. France/UK's conditional response (only post-conflict) limits MFC immediate effectiveness but shows US is building the architecture. Iran's rial at 1.81M/USD and 2,000 ships stranded signals economic pain is acute, but regime's formal 'red lines' to Pakistan confirm nuclear sovereignty is non-negotiable. The gap: US requires nuclear constraints in any deal; Iran requires no preconditions on nuclear programme before Hormuz deal. No bridging mechanism currently proposed."
+    },
+    {
+      "date": "May 1",
+      "cfDay": 24,
+      "event": "War Powers 60-day deadline reached with no congressional authorization; Senate rejected War Powers measure 47-50; Trump administration claims ceasefire pauses clock. CENTCOM briefed Trump on three military option tracks. Iran's Pezeshkian publicly called US blockade 'intolerable' and 'extension of military operations' — sharpest presidential statement since ceasefire. Israel Defense Minister Katz signaled Israel may need to 'act again' against Iran. No new Iranian diplomatic proposal submitted — Araghchi still consulting Khamenei in Tehran; no Round 3 date set. Polymarket: Trump announces end of ops — June 30 = 51%, May 31 = 28%. Talks: no formal diplomatic contact.",
+      "event_fa": "مهلت ۶۰ روزه قانون اختیارات جنگی بدون تصویب کنگره گذشت. پزشکیان: محاصره ‘غیرقابل تحمل’ است. سنتا: طرح حقوق جنگی رد شد ۴۷-۵۰. هیچ پیشنهاد جدیدی از ایران ارائه نشد.",
+      "participants": [
+        "Trump administration (reviewed military options; Hegseth claimed ceasefire pauses 60-day clock)",
+        "US Senate (rejected War Powers measure 47-50; Collins + Paul only GOP crossovers)",
+        "Pezeshkian (Iran President — called blockade 'intolerable')",
+        "Katz (Israel DefMin — signaled possible 'act again')",
+        "Araghchi (Iran FM — still in Tehran consulting Khamenei, no new proposal)",
+        "Khamenei (Supreme Leader — consulting with Araghchi, location hidden)"
+      ],
+      "outcome": "No diplomatic progress; War Powers deadline absorbed without legal resolution; military options now in active advisory phase; Iran presidential rhetoric hardening; stalemate deepens",
+      "significance": 7,
+      "keyGap": "The War Powers deadline is legally significant but practically inert without congressional enforcement. The Hegseth 'ceasefire pauses clock' argument has no statutory basis — but Congress lacks the votes or will to force the issue (47-50 rejection). The real signal from today is that CENTCOM's military options are now formally on Trump's desk in a structured briefing. The Isfahan HEU option would end the ceasefire instantly. Pezeshkian's 'intolerable' language is the strongest presidential escalation rhetoric since the ceasefire began — it gives domestic cover for IRGC action and signals Iran's patience with the blockade is fraying. Key unresolved: Iran has not submitted a revised proposal since Trump rejected the Apr 28 deferred-nuclear framework. Every day without a new proposal is a day closer to military options being exercised."
     }
   ],
   "ceasefireEconomicRecovery": {
@@ -6620,7 +6697,8 @@
       "Apr 27",
       "Apr 28",
       "Apr 29",
-      "Apr 30"
+      "Apr 30",
+      "May 1"
     ],
     "hormuzDaily": [
       8,
@@ -6645,7 +6723,8 @@
       3,
       3,
       3,
-      7
+      7,
+      6
     ],
     "hormuzPreWar": 135,
     "brentPreCeasefire": 109,
@@ -6672,7 +6751,8 @@
       106.2,
       111.16,
       113.47,
-      115.81
+      115.81,
+      116.8
     ],
     "shipsStranded": [
       800,
@@ -6697,9 +6777,10 @@
       900,
       900,
       910,
+      2000,
       2000
     ],
-    "note": "Dual blockade Day 17: US naval blockade + Iran IRGC counter-blockade. Hormuz 7 vessels/24hr Apr 30 (slight uptick). Brent $115.81 (hit $126 wartime high intraday). ~2,000 ships stranded (sharp revision up from ~910 est.). US launches Maritime Freedom Construct (MFC) coalition to reopen Hormuz. Trump formally rejects Iran deferred-nuclear proposal. Iran rial record 1.81M/USD. Internet economic cost ~$2.78B+ est. Pakistan opens land corridor to Iran."
+    "note": "Dual blockade Day 18 (cfDay 24): US naval blockade + Iran IRGC counter-blockade. Hormuz ~6 vessels/24hr May 1 (marginal — rare Japanese tanker transit). Brent $116.80 est (+0.9% on military-option news). ~2,000 ships stranded. War Powers 60-day deadline hit — Trump reviewing strike options. Pezeshkian: blockade 'intolerable.' Internet Day 64 = $2.82B+ cumulative cost est. Iran rial ~181,000 tomans/USD. IMF: -6.1% GDP forecast."
   },
   "ceasefirePostConflictTree": {
     "branchExtend": [
