@@ -19,7 +19,16 @@
   <div class="topbar">
     <div class="topbar-inner">
       <div class="title">
-        <h1 data-i18n="title">Iran War Dashboard</h1>
+        <h1>
+          <svg class="title-mark" viewBox="0 0 32 32" width="22" height="22" aria-hidden="true">
+            <rect width="32" height="32" rx="6" fill="#0e1a2e"/>
+            <circle cx="16" cy="16" r="6" fill="#ffd166"/>
+            <circle cx="16" cy="16" r="10" fill="none" stroke="#ff6b6b" stroke-width="1.5" stroke-dasharray="2 3">
+              <animateTransform attributeName="transform" type="rotate" from="0 16 16" to="360 16 16" dur="22s" repeatCount="indefinite"/>
+            </circle>
+          </svg>
+          <span data-i18n="title">Iran War Dashboard</span>
+        </h1>
         <p data-i18n-html="subtitle">Predictive conflict analysis: capability models, convergence vectors, oil shock, and business impact.</p>
       </div>
       <div class="chips">
@@ -184,6 +193,102 @@
         </div>
       </div>
       <div class="metric-grid" id="metrics" style="margin-top:16px"></div>
+    </section>
+
+    <!-- THE READ — editorial intelligence brief (government-grade) -->
+    <section class="the-read" id="theRead">
+      <div class="read-classification">
+        <span class="read-class-text">FOR ANALYTIC PURPOSES · UNCLASSIFIED MODEL OUTPUT</span>
+        <span class="read-class-grade" id="readGrade"></span>
+      </div>
+
+      <header class="read-header">
+        <div class="read-header-l">
+          <div class="read-eyebrow">The Read</div>
+          <div class="read-issue" id="readIssue"></div>
+        </div>
+        <div class="read-header-r">
+          <div class="read-publisher">2026 IRAN CONFLICT MONITOR</div>
+          <div class="read-publisher-sub">Predictive Intelligence Briefing · Daily 0700 ET</div>
+        </div>
+      </header>
+
+      <div class="read-rule"></div>
+
+      <div class="read-section-num">§ 01 — Bottom Line</div>
+      <h2 class="read-headline" id="readHeadline"></h2>
+      <p class="read-dek" id="readDek"></p>
+
+      <div class="read-stat">
+        <div class="read-stat-num" id="readStatNum"></div>
+        <div class="read-stat-label" id="readStatLabel"></div>
+        <div class="read-stat-delta" id="readStatDelta"></div>
+      </div>
+
+      <div class="read-section-num">§ 02 — Analytic Judgment</div>
+      <div class="read-body" id="readBody"></div>
+
+      <figure class="read-figure">
+        <div class="read-chart-wrap"><canvas id="readHorizonChart"></canvas></div>
+        <figcaption id="readFigCaption"></figcaption>
+      </figure>
+
+      <blockquote class="read-pullquote" id="readPullquote"></blockquote>
+
+      <div class="read-body" id="readBodyTwo"></div>
+
+      <div class="read-section-num">§ 03 — Operational Indicators</div>
+      <div class="read-callouts" id="readCallouts"></div>
+
+      <div class="read-section-num">§ 04 — Indicators &amp; Warnings</div>
+      <ol class="read-watchlist" id="readWatchlist"></ol>
+
+      <div class="read-section-num">§ 05 — Tail Risks (Underweighted)</div>
+      <ul class="read-tails" id="readTails"></ul>
+
+      <div class="read-section-num">§ 06 — Annex</div>
+      <details class="read-deeper">
+        <summary>A. Model vs market — alpha signals</summary>
+        <div id="readAlphas"></div>
+      </details>
+      <details class="read-deeper">
+        <summary>B. Game-theoretic equilibrium &amp; Trump decision tree</summary>
+        <div id="readGame"></div>
+      </details>
+      <details class="read-deeper">
+        <summary>C. Stakeholder psychology — twelve principals</summary>
+        <div id="readStakeholders"></div>
+      </details>
+      <details class="read-deeper">
+        <summary>D. Iran regime / population split</summary>
+        <div id="readIranSplit"></div>
+      </details>
+      <details class="read-deeper">
+        <summary>E. Methodology &amp; confidence framework</summary>
+        <div id="readMethodology"></div>
+      </details>
+
+      <footer class="read-footer">
+        <div class="read-foot-row">
+          <span>Engine version</span><span id="readFootVersion">—</span>
+        </div>
+        <div class="read-foot-row">
+          <span>Inter-layer agreement</span><span id="readFootAgreement">—</span>
+        </div>
+        <div class="read-foot-row">
+          <span>Top historical analog</span><span id="readFootAnalog">—</span>
+        </div>
+        <div class="read-foot-row">
+          <span>Last data update</span><span id="readFootUpdated">—</span>
+        </div>
+        <p class="read-foot-disclaimer">
+          Estimates are model-derived from publicly observable signals (oil futures, prediction markets,
+          press briefings, AIS data, polling) plus structured judgment about actor psychology and historical
+          analogs. They are NOT classified intelligence. Confidence grade reflects inter-layer agreement
+          across structural, historical, and market signals. Publication may itself shift markets;
+          reflexivity adjustment applied.
+        </p>
+      </footer>
     </section>
 
     <!-- 2. Scenario Simulator -->

@@ -18,3 +18,12 @@ public-dist/
 # Editor
 .vscode/
 .idea/
+
+# Python venv + caches
+.venv/
+__pycache__/
+*.pyc
+.pytest_cache/
+
+# Engine-emit pre-engine backup
+.war-data.json.pre-engine.bak

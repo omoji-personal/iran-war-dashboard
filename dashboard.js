@@ -387,7 +387,10 @@ function setText() {
   }
   var fr = computeFreshness();
   if ($('freshnessStatus')) {
-    $('freshnessStatus').innerHTML = '<span class="tag ' + fr.cls + '">' + fr.label + '</span>';
+    var dot = fr.cls === 'good'
+      ? '<span class="fresh-dot live" aria-hidden="true"></span>'
+      : '<span class="fresh-dot" aria-hidden="true"></span>';
+    $('freshnessStatus').innerHTML = '<span class="tag ' + fr.cls + '">' + dot + fr.label + '</span>';
   }
   if ($('seriesThrough')) $('seriesThrough').textContent = state.dailySeries.throughDate || '—';
 
@@ -1678,8 +1681,9 @@ function renderDecisionEngine(de) {
       { label: currentLang === 'fa' ? 'سایر' : 'Other', pct: Math.round(eng.pOther*100), color: 'var(--muted)' }
     ];
     outcomes.sort(function(a, b) { return b.pct - a.pct; });
-    $('outcomeBreakdown').innerHTML = outcomes.map(function(o) {
-      return '<div class="outcome-row"><div class="outcome-header"><span>' + o.label + '</span><strong style="color:' + o.color + '">' + o.pct + '%</strong></div>' +
+    $('outcomeBreakdown').innerHTML = outcomes.map(function(o, i) {
+      var cls = 'outcome-row' + (i === 0 ? ' leading' : '');
+      return '<div class="' + cls + '"><div class="outcome-header"><span>' + o.label + '</span><strong style="color:' + o.color + '">' + o.pct + '%</strong></div>' +
         '<div class="prob-track" style="margin:2px 0 6px"><div class="prob-bar" style="width:' + o.pct + '%;background:' + o.color + '"></div></div></div>';
     }).join('');
   }
@@ -2407,6 +2411,7 @@ function buildSectionNav() {
   ]);
 
   var html = '';
+  var navIdx = 0;
   groups.forEach(function(g) {
     html += '<div class="nav-group">' + g.group + '</div>';
     g.items.forEach(function(item) {
@@ -2418,7 +2423,12 @@ function buildSectionNav() {
         if (target.parentElement) target = target.parentElement;
       }
       if (!target.id) target.id = 'nav-' + item.label.toLowerCase().replace(/[^a-z0-9]+/g, '-');
-      html += '<a href="#' + target.id + '" onclick="document.getElementById(\'sectionNav\').classList.remove(\'open\')">' + item.label + '</a>';
+      navIdx++;
+      var num = (navIdx < 10 ? '0' : '') + navIdx;
+      html += '<a href="#' + target.id + '" onclick="document.getElementById(\'sectionNav\').classList.remove(\'open\')">' +
+        '<span class="nav-num">' + num + '</span>' +
+        '<span class="nav-label">' + item.label + '</span>' +
+        '</a>';
     });
   });
   nav.innerHTML = html;
@@ -2441,10 +2451,11 @@ function renderSensitivity() {
   if (!sens || !$('sensitivityBars')) return;
   // Sort by impact descending
   var sorted = sens.slice().sort(function(a,b) { return b.impact - a.impact; });
-  $('sensitivityBars').innerHTML = sorted.map(function(s) {
+  $('sensitivityBars').innerHTML = sorted.map(function(s, i) {
     var barWidth = Math.min(s.impact * 5, 100);
     var color = s.impact >= 10 ? 'var(--cyan)' : s.impact >= 3 ? 'var(--gold)' : 'var(--muted)';
-    return '<div style="margin-bottom:8px">' +
+    var cls = 'sens-row' + (i === 0 ? ' leading' : '');
+    return '<div class="' + cls + '" style="margin-bottom:8px">' +
       '<div style="display:flex;justify-content:space-between;font-size:12px;margin-bottom:2px"><span>' + s.input + '</span><strong style="color:' + color + '">+' + s.impact + '% impact</strong></div>' +
       '<div class="prob-track" style="margin:0"><div class="prob-bar" style="width:' + barWidth + '%;background:' + color + '"></div></div></div>';
   }).join('');
@@ -2859,6 +2870,405 @@ function applyConfidenceShading() {
   });
 }
 
+
+/* ============================================
+   THE READ — editorial intelligence brief renderer
+   ============================================ */
+
+function renderTheRead() {
+  var dd = state.deepDynamics;
+  if (!dd) return;
+  var $ = function(id) { return document.getElementById(id); };
+  var esc = function(s) {
+    return String(s == null ? '' : s)
+      .replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;');
+  };
+  var pct = function(v) { return Math.round((v || 0) * 100); };
+  var num = function(v) { return '<span class="num">' + v + '</span>'; };
+
+  // ----- Pull source data -----
+  var syn = (dd.synthesizedOutcome && dd.synthesizedOutcome.outcome_dist) || {};
+  var mods = dd.psychModifiers || {};
+  var modScores = dd.modifiedConditionScores || {};
+  var mc = (dd.monteCarloSimulation && dd.monteCarloSimulation.outcome_frequencies) || {};
+  var fracture = dd.regimeFractureProbability || 0;
+  var ha = dd.historicalAnalogProjection || {};
+  var ts = state.today_scalars || {};
+  var tsScalars = (state.deepDynamics && state.deepDynamics.iranDeepDynamics) || {};
+  var meta = state.meta || {};
+  var notes = (meta.notes || [''])[0] || '';
+
+  // Sort buckets to find the top one
+  var bucketOrder = ['deal', 'escalation', 'protracted', 'intervention', 'other'];
+  var topBucket = null, topPct = 0;
+  bucketOrder.forEach(function(b) {
+    var p = pct(syn[b] || 0);
+    if (p > topPct) { topPct = p; topBucket = b; }
+  });
+  var bucketLabels = {
+    deal: 'NEGOTIATED RESOLUTION', escalation: 'CEASEFIRE COLLAPSE / ESCALATION',
+    protracted: 'PROTRACTED STANDOFF', intervention: 'INTERNATIONAL INTERVENTION', other: 'OTHER',
+  };
+  var bucketPhrases = {
+    deal: 'a negotiated resolution',
+    escalation: 'a return to active escalation',
+    protracted: 'a protracted standoff',
+    intervention: 'international intervention',
+    other: 'an unmodeled outcome',
+  };
+
+  // Try to extract scalars from D63 prose
+  var brent = _readScalar(notes, /Brent\s*[\\$~]?(\d+(?:\.\d+)?)/i);
+  var gas = _readScalar(notes, /gas\s*\$(\d+(?:\.\d+)?)/i);
+  var hormuz = _readScalar(notes, /Hormuz[^\d]{0,30}(\d+)\s*vessels/i);
+  var streak = _readScalar(notes, /(\d+)-day zero-attack/i);
+  var oilStorage = _readScalar(notes, /(\d+)-?\d*\s*days?\s*of\s*storage/i);
+  var lebanon = _readScalar(notes, /Lebanon[^\d]*(\d[\d,]+)\+?\s*killed/i);
+
+  // ----- Header / classification / grade -----
+  var dateStr = (meta.lastUpdated || '').slice(0, 10) || '—';
+  var dayNum = _readScalar(notes, /^D(\d+)/) || '—';
+  // Use UTC components to avoid timezone slip (dateStr is YYYY-MM-DD already)
+  var dateLong = '—';
+  if (dateStr !== '—') {
+    var p = dateStr.split('-');
+    var dt = new Date(Date.UTC(+p[0], +p[1] - 1, +p[2]));
+    dateLong = dt.toLocaleDateString('en-US', { year: 'numeric', month: 'long', day: 'numeric', timeZone: 'UTC' });
+  }
+  var issueEl = $('readIssue');
+  if (issueEl) issueEl.textContent = 'Issue D' + dayNum + ' · ' + dateLong;
+
+  // Inter-layer agreement label (NOT a grade — it's a signal that layers disagree)
+  var conf = (dd.synthesizedOutcome && dd.synthesizedOutcome.confidence_score) || 0;
+  var confPct = Math.round(conf * 100);
+  var confLabel, confClass;
+  if (conf >= 0.70)      { confLabel = 'CONVERGENT'; confClass = 'convergent'; }
+  else if (conf >= 0.45) { confLabel = 'AGREED';     confClass = 'agreed'; }
+  else if (conf >= 0.25) { confLabel = 'MIXED';      confClass = 'mixed'; }
+  else                   { confLabel = 'DIVERGENT';  confClass = 'divergent'; }
+  var gradeEl = $('readGrade');
+  if (gradeEl) {
+    gradeEl.innerHTML = '<span class="read-conf-label ' + confClass + '">' + confLabel + ' · ' + confPct + '%</span>';
+  }
+
+  // Footer fields
+  var setFoot = function(id, val) { var el = $(id); if (el) el.textContent = val; };
+  setFoot('readFootVersion', 'engine v' + (dd.engineVersion || '?'));
+  setFoot('readFootAgreement', Math.round(conf * 100) + '%');
+  setFoot('readFootAnalog', (ha.top_analog || '').replace(/_/g, ' ') || '—');
+  setFoot('readFootUpdated', meta.lastUpdated ? new Date(meta.lastUpdated).toLocaleString() : '—');
+
+  // ----- Headline -----
+  var lensPhrase = _lensPhrase(syn, mods, ha);
+  $('readHeadline').textContent = lensPhrase.headline;
+  $('readDek').innerHTML = lensPhrase.dek;
+
+  // ----- Big stat -----
+  $('readStatNum').textContent = topPct + '%';
+  $('readStatLabel').textContent = bucketLabels[topBucket] || 'TOP OUTCOME';
+  // Compute delta vs first historical snapshot if available
+  var deltaHtml = '';
+  var spine = state.calibrationSpine && state.calibrationSpine.outcomeBucketSeries;
+  if (spine && bucketLabels[topBucket]) {
+    var seriesKey = ({deal:'negotiatedResolution', escalation:'escalationCatastrophe', protracted:'protractedContinuation', intervention:'internationalIntervention'})[topBucket];
+    var series = spine[seriesKey] || [];
+    if (series.length >= 2) {
+      var prev = series[series.length - 2];
+      if (prev && prev.value != null) {
+        var delta = topPct - Math.round(prev.value * 100);
+        if (delta !== 0) {
+          deltaHtml = (delta > 0 ? '↑ ' : '↓ ') + Math.abs(delta) + 'pp from previous reading';
+          $('readStatDelta').className = 'read-stat-delta ' + (delta > 0 ? 'up' : 'down');
+        } else {
+          deltaHtml = 'Unchanged';
+        }
+      }
+    }
+  }
+  $('readStatDelta').textContent = deltaHtml;
+
+  // ----- Body paragraph 1 -----
+  var deal = pct(syn.deal); var esc1 = pct(syn.escalation);
+  var prot = pct(syn.protracted); var interv = pct(syn.intervention);
+  var bodyOne = '<p>The model now puts ' + bucketPhrases[topBucket] + ' at ' + num(topPct + '%') +
+    ' as the most likely outcome ' + (deltaHtml ? '— ' + deltaHtml.toLowerCase() + ' — ' : '') +
+    'across structural, historical, and market layers. The four pathways: ' +
+    num(deal + '% deal') + ', ' + num(esc1 + '% escalation') + ', ' + num(prot + '% protracted') +
+    ', ' + num(interv + '% intervention') + '. Inter-layer agreement is ' +
+    num((dd.synthesizedOutcome && dd.synthesizedOutcome.confidence_score ? Math.round(dd.synthesizedOutcome.confidence_score * 100) : '—') + '%') +
+    ' — when the structural model and historical analogs disagree, the read is "one of these is wrong; figure out which."</p>';
+
+  var bodyTwo = '<p>The dominant <strong>structural fact</strong> is the Khamenei lock: ' +
+    'religious zeal × public commitment is at near-maximum, which means the supreme leader has ' +
+    'foreclosed the only deal-shape Iran could deliver. Iran-acceptance is dragged ' +
+    num((mods.iranAcceptance ? Math.round(mods.iranAcceptance * 100) : 0) + 'pp') +
+    ' by psychological factors before any structural input is even weighed.</p>';
+
+  var topAnalog = (ha.top_analog || '').replace(/_/g, ' ');
+  var bodyThree = '<p>The <strong>historical analog</strong> the model leans on most is the ' +
+    '<em>' + esc(topAnalog) + '</em> — frozen-conflict trajectory with a median resolution of roughly ' +
+    num((ha.median_resolution_days || 0) + ' days') + '. ' +
+    'Combined with the gas-price midterm-amplifier on the US side ' +
+    '(' + num((mods.usExitPressure ? '+' + Math.round(mods.usExitPressure * 100) : 0) + 'pp') +
+    ' on US exit pressure), the read is: <em>both sides individually want out, but the deal-shape they could each survive politically does not currently overlap.</em></p>';
+
+  $('readBody').innerHTML = bodyOne + bodyTwo + bodyThree;
+
+  // ----- Hero chart: multi-horizon deal probability + escalation -----
+  _renderReadHorizonChart(dd.multiHorizonForecast || {});
+  $('readFigCaption').innerHTML = 'Outcome probability across horizons. ' +
+    '<strong>Short-term</strong> reflects today\'s actor positions; ' +
+    '<strong>long-term</strong> blends in structural-prior weight (historical analogs imply eventual resolution). ' +
+    'A rising long-horizon deal line does NOT mean a deal soon — it reflects analog base rates over multi-year windows.';
+
+  // ----- Pull quote -----
+  var quote = _selectPullquote(syn, mods, modScores, ha, fracture);
+  $('readPullquote').textContent = quote;
+
+  // ----- Body paragraph 2 — Iran internal + game theory -----
+  var rd = dd.iranRegimeDynamics || {};
+  var iranSupport = (rd.regime_public_support_pct != null) ? Math.round(rd.regime_public_support_pct) : 10;
+  var fatigue = pct(rd.population_war_fatigue);
+  var pain = pct(rd.economic_pain_index);
+  var gt = (dd.gameTheoryEquilibrium && dd.gameTheoryEquilibrium.nash_equilibria || [])[0] || {};
+  var bodyFour = '<p>Inside Iran, the asymmetry is acute: about ' + num(iranSupport + '%') +
+    ' of the population supports the regime, ' + num(fatigue + '%') + ' are war-fatigued, and ' +
+    num(pain + '%') + ' are in extreme economic pain. None of that translates to action because ' +
+    'the regime is armed and willing to shoot. The only path from population pressure to deal-pressure ' +
+    'runs through restiveness × brittleness — currently a ' + num(pct(fracture) + '%') +
+    ' regime fracture probability over 60 days.</p>';
+
+  var bodyFive = gt.us_strategy ? (
+    '<p>The <strong>game-theoretic equilibrium</strong> says US plays \'' + esc(gt.us_strategy) +
+    '\' and Iran plays \'' + esc(gt.iran_strategy) + '\' (joint welfare ' + num(gt.joint_welfare + '/20') +
+    '). That is the rational read. The deviation in the actual world is the ego/ideology gap: ' +
+    'Trump\'s deal-maker mythology vs Khamenei\'s religious-vow lock. Neither can take the rational ' +
+    'choice without paying a political cost they\'re currently unwilling to bear.</p>'
+  ) : '';
+  $('readBodyTwo').innerHTML = bodyFour + bodyFive;
+
+  // ----- Inline callouts -----
+  var callouts = [];
+  if (brent) callouts.push({num: '$' + brent, label: 'Brent crude'});
+  if (gas) callouts.push({num: '$' + gas, label: 'US gas (gallon)'});
+  if (hormuz) callouts.push({num: hormuz + '/day', label: 'Hormuz transit'});
+  if (streak) callouts.push({num: streak + 'd', label: 'Zero-attack streak'});
+  if (oilStorage) callouts.push({num: '~' + oilStorage + 'd', label: 'Iran oil storage left'});
+  if (lebanon) callouts.push({num: lebanon + '+', label: 'Lebanon killed'});
+  callouts = callouts.slice(0, 3);
+  $('readCallouts').innerHTML = callouts.map(function(c) {
+    return '<div class="read-callout"><span class="read-callout-num">' + esc(c.num) + '</span>' +
+      '<span class="read-callout-label">' + esc(c.label) + '</span></div>';
+  }).join('');
+
+  // ----- Watchlist (top 5 crystallization triggers ranked by leverage) -----
+  var triggers = (dd.crystallizationTriggers || []).slice(0).sort(function(a, b) {
+    var aLev = Math.max(a.if_fires_p_deal || 0, a.if_fires_p_escalation || 0) - (a.prior_p || 0);
+    var bLev = Math.max(b.if_fires_p_deal || 0, b.if_fires_p_escalation || 0) - (b.prior_p || 0);
+    return bLev - aLev;
+  });
+  $('readWatchlist').innerHTML = triggers.slice(0, 5).map(function(t) {
+    var dealShift = ((t.if_fires_p_deal || 0) - 0.20) * 100;
+    var escShift = ((t.if_fires_p_escalation || 0) - 0.30) * 100;
+    var biggerShift = Math.abs(dealShift) > Math.abs(escShift) ?
+      (dealShift > 0 ? '+' + Math.round(dealShift) + 'pp deal' : Math.round(dealShift) + 'pp deal') :
+      (escShift > 0 ? '+' + Math.round(escShift) + 'pp escalation' : Math.round(escShift) + 'pp escalation');
+    return '<li>' +
+      '<span class="read-watch-trigger">' + esc(t.trigger) + '</span> · ' +
+      num(Math.round((t.prior_p || 0) * 100) + '%') + ' next ' + (t.horizon_days || '?') + ' days' +
+      '<span class="read-watch-meta">If fires: ' + biggerShift + '. Watch: ' + esc(t.watch_for) + '</span>' +
+      '</li>';
+  }).join('');
+
+  // ----- Tail risks -----
+  var tails = (dd.tailRisks || []).slice(0).sort(function(a, b) {
+    return (b.probability_60d * b.impact_severity) - (a.probability_60d * a.impact_severity);
+  });
+  $('readTails').innerHTML = tails.slice(0, 5).map(function(t) {
+    return '<li>' +
+      '<span class="read-tail-scenario">' + esc(t.scenario) + '</span>' +
+      '<span class="read-tail-prob">' + Math.round(t.probability_60d * 100) + '% / 60d · sev ' + t.impact_severity + '</span>' +
+      '<span class="read-tail-meta">Hedge: ' + esc(t.trade_pre_event) + '</span>' +
+      '</li>';
+  }).join('');
+
+  // ----- Deeper sections (collapsed by default) -----
+  // Alpha signals
+  var alphas = dd.alphaSignals || [];
+  $('readAlphas').innerHTML = alphas.length ? alphas.map(function(a) {
+    return '<div class="deeper-row">' +
+      '<div><strong>' + esc(a.trade) + '</strong><br><span style="color:var(--read-muted)">' + esc(a.reasoning) + '</span></div>' +
+      '<div class="deeper-num">' + (a.kelly_fraction != null ? (a.kelly_fraction * 100).toFixed(1) + '% Kelly' : '—') + '</div>' +
+      '</div>';
+  }).join('') : '<p>No active alpha signals — model and consensus aligned this turn.</p>';
+
+  // Game theory + Trump decision tree
+  var dt = dd.trumpDecisionTree || {};
+  var gameHtml = '<p style="color:var(--read-muted)">' +
+    'Pure-strategy Nash equilibrium found at: <strong>US ' + esc(gt.us_strategy || '?') + ', Iran ' + esc(gt.iran_strategy || '?') +
+    '</strong>. Joint welfare ' + (gt.joint_welfare || '?') + '/20. Trapped welfare loss: ' +
+    ((dd.gameTheoryEquilibrium && dd.gameTheoryEquilibrium.trapped_welfare_loss) || 0) + '.</p>' +
+    '<p style="margin-top:14px;color:var(--read-ink)"><strong>Trump\'s rational choice (highest expected value):</strong> ' +
+    esc(dt.rational_choice || '?') + ' (EV ' + (dt.rational_ev || '?') + ').</p>';
+  (dt.branches || []).forEach(function(b, i) {
+    gameHtml += '<div class="deeper-row">' +
+      '<div>' + (i === 0 ? '<strong>' : '') + esc(b.us_move) + (i === 0 ? ' ★</strong>' : '') + '</div>' +
+      '<div class="deeper-num">EV ' + b.expected_value + '</div>' +
+      '</div>';
+  });
+  $('readGame').innerHTML = gameHtml;
+
+  // Stakeholders
+  var sh = dd.stakeholders || {};
+  var shHtml = '<p style="color:var(--read-muted);margin-bottom:10px">Each actor scored on 12 dimensions; aggregate weights into the four condition-score psych modifiers.</p>';
+  Object.keys(sh).forEach(function(name) {
+    var p = sh[name];
+    shHtml += '<div class="deeper-row">' +
+      '<div><strong>' + esc(name.replace(/_/g, ' ')) + '</strong> · <em>' + esc(p.decision_style) + '</em></div>' +
+      '<div style="font-size:11px;color:var(--read-muted)">' +
+        'risk ' + Math.round(p.risk_tolerance * 100) + ' · ego ' + Math.round(p.ego_size * 100) +
+        ' · zeal ' + Math.round(p.religious_zeal * 100) + ' · flex ' + Math.round(p.flexibility * 100) +
+      '</div></div>';
+  });
+  $('readStakeholders').innerHTML = shHtml;
+
+  // Iran split
+  var idd = dd.iranDeepDynamics || {};
+  var iranHtml = '<p style="color:var(--read-muted);margin-bottom:10px">The dashboard\'s most underweighted factor.</p>' +
+    '<div class="deeper-row"><div><strong>Regime support</strong> · % of Iranians who back the regime</div><div class="deeper-num">' + iranSupport + '%</div></div>' +
+    '<div class="deeper-row"><div>Regime grip strength</div><div class="deeper-num">' + Math.round((rd.regime_grip_strength || 0) * 100) + '%</div></div>' +
+    '<div class="deeper-row"><div>Population restiveness</div><div class="deeper-num">' + Math.round((rd.population_restiveness || 0) * 100) + '%</div></div>' +
+    '<div class="deeper-row"><div>Economic pain</div><div class="deeper-num">' + Math.round((rd.economic_pain_index || 0) * 100) + '%</div></div>' +
+    '<div class="deeper-row"><div>IRGC + clergy alignment</div><div class="deeper-num">' + Math.round((idd.clerical_irgc_alignment || 0) * 100) + '%</div></div>' +
+    '<div class="deeper-row"><div>Mojtaba succession lock</div><div class="deeper-num">' + Math.round((idd.mojtaba_succession_lock || 0) * 100) + '%</div></div>' +
+    '<div class="deeper-row"><div>Khamenei health concern</div><div class="deeper-num">' + Math.round((idd.khamenei_health_concern || 0) * 100) + '%</div></div>' +
+    '<div class="deeper-row"><div>Oil revenue collapse</div><div class="deeper-num">' + Math.round((idd.oil_revenue_collapse_pct || 0) * 100) + '%</div></div>' +
+    '<div class="deeper-row"><div><strong>Regime fracture probability (60d)</strong></div><div class="deeper-num">' + pct(fracture) + '%</div></div>';
+  $('readIranSplit').innerHTML = iranHtml;
+
+  // Methodology
+  $('readMethodology').innerHTML = '<p>' + esc((dd.predictiveFrameworkDoc || '').replace(/\*\*/g, '').replace(/\n\n+/g, '</p><p>').replace(/\n/g, ' ')) + '</p>';
+}
+
+function _readScalar(text, re) {
+  var m = re.exec(text || '');
+  if (!m) return null;
+  return m[1].replace(/,/g, '');
+}
+
+function _lensPhrase(syn, mods, ha) {
+  var topAnalog = (ha.top_analog || '').replace(/_/g, ' ').replace(/\b\w/g, function(c) { return c.toUpperCase(); });
+  var ia = mods.iranAcceptance || 0;
+  var ue = mods.usExitPressure || 0;
+  var ep = mods.escalationProximity || 0;
+  // Pick a headline based on the dominant signal
+  if (ep > 0.15 && ia < -0.15) {
+    return {
+      headline: 'A frozen conflict, with both sides quietly preferring it',
+      dek: 'The model\'s top historical analog is the <em>' + topAnalog + '</em>. Khamenei\'s religious lock has foreclosed the deal-shape Iran could deliver; Trump\'s ego-lock and gas-price midterm pressure stop the US from withdrawing cleanly. Both sides prefer the current trap to the cost of escape.'
+    };
+  }
+  if (ue > 0.15) {
+    return {
+      headline: 'US electoral pressure builds while Iran sits',
+      dek: 'Gas-price midterm amplifier compounding non-linearly. The model is pricing rising US exit pressure that has not yet shown up in surface metrics — a leading indicator that a shift in posture is approaching.'
+    };
+  }
+  if (ia > 0.0) {
+    return {
+      headline: 'Iran shows the first cracks',
+      dek: 'Population restiveness and economic pain are pushing the regime\'s loss-aversion past its religious-vow commitment. This is the rare configuration where deal probability rises without external catalyst.'
+    };
+  }
+  return {
+    headline: 'Status quo holds, and the structural pressures compound',
+    dek: 'No single actor has the political room to shift posture. The model favors a continued protracted standoff with rising tail risks.'
+  };
+}
+
+function _selectPullquote(syn, mods, modScores, ha, fracture) {
+  var quotes = [];
+  if ((mods.iranAcceptance || 0) < -0.20) {
+    quotes.push('Khamenei\'s religious-zeal lock is the single most consequential variable in the model. ' +
+      'No serious path to a deal exists until that constraint moves.');
+  }
+  if ((mods.usExitPressure || 0) > 0.20) {
+    quotes.push('US exit pressure is rising faster than headline metrics suggest. ' +
+      'The gas-price midterm amplifier compounds non-linearly inside 600 days.');
+  }
+  if ((ha.top_analog || '').includes('korean')) {
+    quotes.push('The Korean War armistice is the dashboard\'s most-similar past conflict. ' +
+      'That ended in a ceasefire-without-peace that has now lasted 70+ years.');
+  }
+  if (fracture > 0.20) {
+    quotes.push('Iran regime fracture probability has crossed 20%. ' +
+      'Past that threshold, mass shifts from \'protracted\' to \'deal + intervention\' — the model rewires.');
+  }
+  if (!quotes.length) {
+    quotes.push('No single actor has the political room to shift posture today. ' +
+      'That is the structural fact behind the protracted-standoff base rate.');
+  }
+  return quotes[0];
+}
+
+function _renderReadHorizonChart(mh) {
+  if (typeof Chart === 'undefined') return;
+  var canvas = document.getElementById('readHorizonChart');
+  if (!canvas) return;
+  var labels = Object.keys(mh);
+  if (!labels.length) return;
+  var deal = labels.map(function(h) { return Math.round((mh[h].deal || 0) * 100); });
+  var esc = labels.map(function(h) { return Math.round((mh[h].escalation || 0) * 100); });
+  var prot = labels.map(function(h) { return Math.round((mh[h].protracted || 0) * 100); });
+  var inter = labels.map(function(h) { return Math.round((mh[h].intervention || 0) * 100); });
+  if (charts.readHorizon) charts.readHorizon.destroy();
+  charts.readHorizon = new Chart(canvas.getContext('2d'), {
+    type: 'line',
+    data: {
+      labels: labels,
+      datasets: [
+        { label: 'Deal',         data: deal,  borderColor: '#46d7b0', borderWidth: 2.5, tension: .35, pointRadius: 3, pointBackgroundColor: '#46d7b0', backgroundColor: 'transparent' },
+        { label: 'Escalation',   data: esc,   borderColor: '#d97757', borderWidth: 2.5, tension: .35, pointRadius: 3, pointBackgroundColor: '#d97757', backgroundColor: 'transparent' },
+        { label: 'Protracted',   data: prot,  borderColor: '#a09486', borderWidth: 2,   tension: .35, pointRadius: 2, pointBackgroundColor: '#a09486', backgroundColor: 'transparent', borderDash: [4, 3] },
+        { label: 'Intervention', data: inter, borderColor: '#786d62', borderWidth: 1.5, tension: .35, pointRadius: 2, pointBackgroundColor: '#786d62', backgroundColor: 'transparent', borderDash: [2, 2] },
+      ],
+    },
+    options: {
+      responsive: true,
+      maintainAspectRatio: false,
+      plugins: {
+        legend: {
+          position: 'bottom',
+          labels: {
+            color: '#a09486', font: { size: 11, family: 'Inter, system-ui, sans-serif' },
+            boxWidth: 14, padding: 14,
+          },
+        },
+        tooltip: {
+          backgroundColor: '#0b1322',
+          titleColor: '#ecdfd0',
+          bodyColor: '#ecdfd0',
+          borderColor: 'rgba(236,223,208,.2)',
+          borderWidth: 1,
+          padding: 10,
+          callbacks: { label: function(ctx) { return ctx.dataset.label + ': ' + ctx.parsed.y + '%'; } },
+        },
+      },
+      scales: {
+        y: {
+          beginAtZero: true, max: 60,
+          ticks: { color: '#786d62', font: { size: 10, family: 'Inter' }, callback: function(v) { return v + '%'; } },
+          grid: { color: 'rgba(236,223,208,.06)', drawBorder: false },
+        },
+        x: {
+          ticks: { color: '#786d62', font: { size: 10, family: 'Inter' } },
+          grid: { display: false },
+        },
+      },
+    },
+  });
+}
+
 function render() {
   // Wrap each renderer so one failure doesn't cascade and blank out every
   // section that comes after it. Log to console for debugging.
@@ -2881,6 +3291,9 @@ function render() {
     safe(renderNegotiationTracker, 'renderNegotiationTracker');
     safe(renderCeasefireRecovery, 'renderCeasefireRecovery');
   }
+
+  // THE READ — editorial intelligence brief (visible both modes)
+  safe(renderTheRead, 'renderTheRead');
 
   // War mode renders (always call — CSS hides them in ceasefire mode)
   safe(renderPredictiveSection, 'renderPredictiveSection');

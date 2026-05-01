@@ -1,0 +1,414 @@
+meta:
+  day: 63
+  cf_day: 24
+  date: '2026-05-01'
+  notes:
+  - 'D63 (May 1, cfDay24): WAR POWERS DEADLINE + TRUMP BRIEFED ON CENTCOM STRIKE PLAN
+    + KHAMENEI DOUBLES DOWN ON NUCLEAR. Three major developments: (1) War Powers Resolution
+    60-day deadline hits today — White House claims war ''terminated'' for WPR purposes
+    because ceasefire ''paused'' hostilities; Hegseth: clock paused during ceasefire.
+    Senate had already rejected war powers resolution (D62 — gave Trump cover). Congressional
+    pushback: Sen. Tillis (R-NC): ''need to talk about AUMF.'' Trump: ''might need''
+    to restart war; says only he and ''a couple of other people'' know status of talks;
+    claims Iran ''wants to make a deal badly.'' (2) CENTCOM STRIKE PLAN BRIEFED: CENTCOM
+    has prepared ''short and powerful'' wave of strikes to break diplomatic deadlock
+    and force Iran to be more flexible — Trump briefed on plan per JPost. Signals
+    military option being actively prepared. (3) KHAMENEI (D62 statement, Persian
+    Gulf Day): First public written statement since war began (read by state TV anchor).
+    Vowed Iran will protect ''nuclear and missile capabilities as national assets.''
+    Declared only US place in Gulf is ''at the bottom of its waters.'' ''New chapter''
+    being written in region. Iran President Pezeshkian (D63): called US ports siege
+    ''intolerable'' — characterizes blockade as ''extension of military operations.''
+    UAE OPEC exit effective today. Brent ~$114 (down from $115.81 D62 close; had hit
+    $126 intraday D62). WTI ~$103.50. Iran oil storage crisis: Kpler (Bloomberg) says
+    only 12-22 days of storage remaining — Iran may need to cut 1.5M bpd by mid-May.
+    US gas $4.30 (+47% since war; +9% last week). Lebanon: 2,521+ killed. Internet
+    Day 64 = 1,536+ hrs. ~2,000 ships stranded. 24-day zero-attack streak. Convergence
+    4.6.'
+mode:
+  ceasefire_status: hollow
+constants:
+  pre_war_brent: 65.0
+  pre_war_hormuz: 135.0
+  pre_war_gas: 3.0
+  d1_missiles: 480
+  ceasefire_start_day: 39
+  ceasefire_original_deadline_day: 53
+today_scalars:
+  brent: 114.0
+  brent_intraday_high: 103.5
+  wti: 103.5
+  gas_price: 4.3
+  hormuz_vessels: 7
+  rial_per_usd: null
+  zero_attack_streak_days: 24
+  internet_blackout_hours: 1536
+  ships_stranded: 2000
+  us_kia: 15
+  us_wounded: 520
+  us_aircraft_lost: 7
+  lebanon_killed: 2521
+  iran_civ_killed_hrana: 3540
+  iran_civ_killed_aj: 0
+  iran_oil_storage_days_remaining: null
+  coalition_cohesion_score: 2.5
+condition_inputs:
+  deal:
+    iran_proposal_active: false
+    us_acceptance_signal: 0.2
+    nuclear_gap_pp: 15
+    score_override: 0.42
+  us_exit:
+    gas_pain_above_threshold: true
+    war_powers_passed: true
+    centcom_strike_plan_briefed: true
+    score_override: 0.64
+  iran_acceptance:
+    khamenei_public_vow_against: true
+    irgc_in_charge: true
+    formal_proposals_rejected: 3
+    score_override: 0.3
+  escalation:
+    centcom_briefed: true
+    hezbollah_action_recent: true
+    new_blockade_action: true
+    score_override: 0.42
+stakeholders:
+  trump:
+    risk_tolerance: 0.7
+    loss_aversion: 0.4
+    public_commitment: 0.85
+    time_horizon_days: 14
+    audience_domestic_weight: 0.9
+    coalition_dependency: 0.2
+    flexibility: 0.55
+    decision_style: transactional
+    ego_size: 0.95
+    need_for_credit: 0.95
+    religious_zeal: 0.05
+    legacy_calculus: 0.6
+    succession_anxiety: 0.0
+    notes: Maximum ego-driven; deal-maker mythology; needs visible win; climb-down
+      cost = self-image
+  vance:
+    risk_tolerance: 0.45
+    loss_aversion: 0.55
+    public_commitment: 0.5
+    time_horizon_days: 120
+    audience_domestic_weight: 0.85
+    coalition_dependency: 0.6
+    flexibility: 0.6
+    decision_style: institutional
+    ego_size: 0.7
+    need_for_credit: 0.6
+    religious_zeal: 0.3
+    legacy_calculus: 0.7
+    succession_anxiety: 0.5
+    notes: Restrainer; 2028 shadow distorts every move; cannot be seen as soft
+  rubio:
+    risk_tolerance: 0.55
+    loss_aversion: 0.5
+    public_commitment: 0.65
+    time_horizon_days: 90
+    audience_domestic_weight: 0.7
+    coalition_dependency: 0.7
+    flexibility: 0.5
+    decision_style: institutional
+    ego_size: 0.55
+    need_for_credit: 0.5
+    religious_zeal: 0.2
+    legacy_calculus: 0.6
+    succession_anxiety: 0.0
+    notes: Hawk-leaning State principal; brokers Lebanon track; constrained by WH
+      line
+  hegseth:
+    risk_tolerance: 0.75
+    loss_aversion: 0.3
+    public_commitment: 0.8
+    time_horizon_days: 30
+    audience_domestic_weight: 0.9
+    coalition_dependency: 0.4
+    flexibility: 0.25
+    decision_style: personalist
+    ego_size: 0.7
+    need_for_credit: 0.6
+    religious_zeal: 0.35
+    legacy_calculus: 0.4
+    succession_anxiety: 0.0
+    notes: Military-action preference; 'ready to restart combat' rhetoric; Christian-nationalist
+      register
+  khamenei:
+    risk_tolerance: 0.65
+    loss_aversion: 0.85
+    public_commitment: 0.95
+    time_horizon_days: 3650
+    audience_domestic_weight: 0.55
+    coalition_dependency: 0.3
+    flexibility: 0.15
+    decision_style: ideological
+    ego_size: 0.75
+    need_for_credit: 0.6
+    religious_zeal: 0.95
+    legacy_calculus: 0.95
+    succession_anxiety: 0.85
+    notes: Public nuclear/missile vow forecloses concessions; 86 yrs old; legacy +
+      succession dominate
+  pezeshkian:
+    risk_tolerance: 0.4
+    loss_aversion: 0.7
+    public_commitment: 0.5
+    time_horizon_days: 365
+    audience_domestic_weight: 0.85
+    coalition_dependency: 0.85
+    flexibility: 0.65
+    decision_style: institutional
+    ego_size: 0.4
+    need_for_credit: 0.4
+    religious_zeal: 0.35
+    legacy_calculus: 0.5
+    succession_anxiety: 0.2
+    notes: Civilian-pragmatic; constrained by Khamenei + IRGC; voice but no decision
+      power
+  araghchi:
+    risk_tolerance: 0.4
+    loss_aversion: 0.6
+    public_commitment: 0.55
+    time_horizon_days: 120
+    audience_domestic_weight: 0.55
+    coalition_dependency: 0.85
+    flexibility: 0.7
+    decision_style: transactional
+    ego_size: 0.4
+    need_for_credit: 0.5
+    religious_zeal: 0.25
+    legacy_calculus: 0.4
+    succession_anxiety: 0.0
+    notes: JCPOA-era diplomat; sidelined by IRGC; messenger more than principal
+  irgc:
+    risk_tolerance: 0.85
+    loss_aversion: 0.45
+    public_commitment: 0.9
+    time_horizon_days: 180
+    audience_domestic_weight: 0.6
+    coalition_dependency: 0.4
+    flexibility: 0.2
+    decision_style: ideological
+    ego_size: 0.6
+    need_for_credit: 0.55
+    religious_zeal: 0.9
+    legacy_calculus: 0.55
+    succession_anxiety: 0.4
+    notes: Theocratic-militant; ascendant since FM track collapsed; institutional
+      + ideological
+  mojtaba_khamenei:
+    risk_tolerance: 0.5
+    loss_aversion: 0.85
+    public_commitment: 0.4
+    time_horizon_days: 3650
+    audience_domestic_weight: 0.8
+    coalition_dependency: 0.7
+    flexibility: 0.4
+    decision_style: ideological
+    ego_size: 0.55
+    need_for_credit: 0.45
+    religious_zeal: 0.85
+    legacy_calculus: 0.7
+    succession_anxiety: 0.95
+    notes: Likely successor; succession-mode = risk-averse + narrow audience + religious
+      branding
+  iran_population:
+    risk_tolerance: 0.2
+    loss_aversion: 0.95
+    public_commitment: 0.15
+    time_horizon_days: 30
+    audience_domestic_weight: 1.0
+    coalition_dependency: 0.05
+    flexibility: 0.85
+    decision_style: opportunistic
+    ego_size: 0.0
+    need_for_credit: 0.0
+    religious_zeal: 0.2
+    legacy_calculus: 0.1
+    succession_anxiety: 0.0
+    notes: 90%+ would accept any deal that ends economic pain. Cannot ACT — regime
+      is armed and willing to shoot. But extreme restiveness raises regime loss-aversion.
+  putin:
+    risk_tolerance: 0.7
+    loss_aversion: 0.6
+    public_commitment: 0.4
+    time_horizon_days: 730
+    audience_domestic_weight: 0.5
+    coalition_dependency: 0.2
+    flexibility: 0.7
+    decision_style: opportunistic
+    ego_size: 0.85
+    need_for_credit: 0.7
+    religious_zeal: 0.25
+    legacy_calculus: 0.7
+    succession_anxiety: 0.4
+    notes: Leverage-seeker; offers diplomatic cover; price-of-oil beneficiary; sees
+      crisis as asset
+  munir:
+    risk_tolerance: 0.5
+    loss_aversion: 0.5
+    public_commitment: 0.4
+    time_horizon_days: 365
+    audience_domestic_weight: 0.6
+    coalition_dependency: 0.5
+    flexibility: 0.7
+    decision_style: institutional
+    ego_size: 0.55
+    need_for_credit: 0.6
+    religious_zeal: 0.3
+    legacy_calculus: 0.55
+    succession_anxiety: 0.2
+    notes: Pakistan Army Chief; primary intermediary; survival depends on producing
+      a result
+  netanyahu:
+    risk_tolerance: 0.7
+    loss_aversion: 0.4
+    public_commitment: 0.85
+    time_horizon_days: 180
+    audience_domestic_weight: 0.85
+    coalition_dependency: 0.55
+    flexibility: 0.3
+    decision_style: personalist
+    ego_size: 0.85
+    need_for_credit: 0.7
+    religious_zeal: 0.25
+    legacy_calculus: 0.7
+    succession_anxiety: 0.0
+    notes: Lebanon front escalator; war = political oxygen; personal legal jeopardy
+      distorts incentives
+  hezbollah:
+    risk_tolerance: 0.6
+    loss_aversion: 0.7
+    public_commitment: 0.7
+    time_horizon_days: 365
+    audience_domestic_weight: 0.7
+    coalition_dependency: 0.8
+    flexibility: 0.4
+    decision_style: ideological
+    ego_size: 0.4
+    need_for_credit: 0.5
+    religious_zeal: 0.85
+    legacy_calculus: 0.5
+    succession_anxiety: 0.2
+    notes: Bleeding from Israel strikes; 2,521+ killed; calls truces 'meaningless';
+      theological
+iran_regime_dynamics:
+  regime_public_support_pct: 10.0
+  regime_grip_strength: 0.85
+  population_restiveness: 0.4
+  population_war_fatigue: 0.85
+  regime_brittleness: 0.35
+  economic_pain_index: 0.9
+  notes: ''
+us_dynamics:
+  maga_base_war_support: 0.55
+  establishment_gop_pressure: 0.4
+  democrats_pressure_to_end: 0.85
+  deep_state_alignment: 0.5
+  gas_price_pain_index: 0.6499999999999999
+  midterms_proximity_days: 550
+  approval_rating_war: 0.35
+  market_recession_prob: 0.4
+  christian_nationalist_pressure: 0.45
+  isolationist_resurgence: 0.5
+  notes: ''
+iran_deep_dynamics:
+  clerical_irgc_alignment: 0.7
+  qom_seminary_dissent: 0.15
+  khamenei_health_concern: 0.4
+  mojtaba_succession_lock: 0.6
+  kurd_unrest: 0.4
+  baluch_unrest: 0.5
+  arab_minority_unrest: 0.35
+  diaspora_mobilization: 0.6
+  oil_revenue_collapse_pct: 0.85
+  sanctioned_elite_wealth_at_risk: 0.7
+  proxy_network_coherence: 0.4
+  nuclear_program_status: degraded
+  notes: ''
+world_dynamics:
+  china_stance: neutral_pro_iran
+  china_oil_buyer_committed: 0.7
+  russia_leverage_seeking: 0.85
+  eu_unity: 0.4
+  gcc_realignment: 0.7
+  global_south_neutrality: 0.7
+  israel_independence_score: 0.85
+  un_security_council_paralysis: 0.95
+  notes: ''
+historical_ideology:
+  iran_1979_revolution_legacy: 0.95
+  iran_iraq_war_trauma: 0.9
+  hostage_crisis_us_lens: 0.85
+  soleimani_assassination_iran_lens: 0.9
+  jcpoa_collapse_iran_lens: 0.85
+  israel_existential_frame: 0.95
+  shia_geopolitics: 0.8
+  us_iraq_war_fatigue: 0.85
+  us_october_7_pivot: 0.7
+  trump_jcpoa_personal_animus: 0.9
+  nuclear_taboo_strength: 0.85
+  notes: ''
+exotic_signals:
+  rial_official_per_usd: null
+  rial_black_market_per_usd: null
+  gold_price_tehran_per_gram_usd: null
+  bitcoin_iran_premium_pct: null
+  cement_price_index_tehran: null
+  vpn_install_rate_index: 0.5
+  starlink_terminals_estimated: 20000
+  google_search_passport_renewal: 0.5
+  google_search_protest_trend: 0.5
+  khamenei_public_appearance_freq_30d: 2
+  friday_prayer_attendance_index: 0.6
+  irgc_promotion_velocity: 0.5
+  bonyad_assets_frozen_estimate_usd_b: null
+  iranian_dark_fleet_active_tankers: null
+  china_iranian_oil_imports_kbpd: null
+  brent_wti_spread_usd: 10.0
+  hormuz_war_risk_premium_pct: 0.5
+  polymarket_ceasefire_holds_pct: 18
+  polymarket_deal_by_jun30_pct: 15
+  kalshi_oil_above_120_pct: null
+  metaculus_war_continues_2026_pct: null
+  polymarket_volume_24h_usd: 280000000
+  google_search_iran_war_us: 0.6
+  s_and_p_iran_correlated_drawdown_pct: null
+  cboe_oil_vix: null
+  federal_funds_rate_pct: null
+  iaea_inspector_access_score: 0.3
+  swift_iran_isolation_score: 0.95
+  un_condemnation_resolutions_60d: 0
+  ofac_designations_30d: 0
+  houthi_attacks_red_sea_7d: 0
+  iraq_militia_attacks_us_bases_7d: 0
+  hezbollah_rocket_launches_7d: 0
+  syria_route_disruption_index: 0.7
+  iran_state_media_threat_level_idx: 0.7
+  us_msm_war_coverage_index: 0.5
+  twitter_iranian_dissent_sentiment: 0.6
+  notes: ''
+historical_analogs:
+  cuban_missile_crisis_1962: 0.3
+  iran_iraq_war_endgame_1988: 0.4
+  suez_crisis_1956: 0.2
+  yom_kippur_war_1973: 0.55
+  kuwait_invasion_1990_91: 0.4
+  kosovo_intervention_1999: 0.25
+  syria_civil_war_2011_present: 0.5
+  jcpoa_negotiation_2013_15: 0.45
+  korean_war_armistice_1953: 0.6
+  october_war_aftermath_1973_75: 0.5
+  notes: ''
+new_events:
+  violation: null
+  negotiation: null
+  recovery_point: null
+  daily_series:
+    missiles: 0
+    drones: 0
+  daily_row: null
