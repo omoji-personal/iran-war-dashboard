@@ -26,5 +26,33 @@
       "low": 12,
       "high": 22
     }
+  },
+  {
+    "date": "2026-05-02",
+    "day": 64,
+    "engineVersion": "0.1.0",
+    "scores": {
+      "dealAvailability": 0.38,
+      "usExitPressure": 0.66,
+      "iranAcceptance": 0.3,
+      "escalationProximity": 0.45
+    },
+    "outcomeProbabilities": {
+      "negotiatedResolution": 0.075,
+      "derivation_negotiated": "DOWN from 0.18. Naval blockade = further from diplomacy. No talks. Allies refusing. Nuclear gap unbridgeable.",
+      "escalationCatastrophe": 0.237,
+      "derivation_escalation": "UP from 0.28. Blockade Monday = direct confrontation risk. If Iran resists: naval war. IRGC 'act of war.'",
+      "protractedContinuation": 0.461,
+      "derivation_protracted": "DOWN from 0.38. Blockade accelerates timeline — less likely to remain protracted, more likely collapse or confrontation.",
+      "internationalIntervention": 0.152,
+      "derivation_intervention": "UP from 0.10. Allies refusing blockade. China condemning. If maritime confrontation: international pressure surges.",
+      "other": 0.075,
+      "derivation_other": "Regime fracture, coup, rogue IRGC action, Houthi Bab al-Mandab closure."
+    },
+    "resolutionProbability": {
+      "estimate": 17,
+      "low": 12,
+      "high": 22
+    }
   }
 ]

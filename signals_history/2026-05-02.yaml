@@ -19,8 +19,8 @@ meta:
     $4.433 (+3% from D63; +47.8% since war start). CNN two-month analysis: ''almost
     everybody is a loser.'' 61% of Americans say war was a mistake (WaPo/ABC/Ipsos
     poll). Lebanon: 7 more killed in Israeli strikes today (Kfar Dajal 2, Lwaizeh
-    3, Shoukin 2), cumulative 2,528+. Internet Day 65 = 1,560+ hrs. ~2,000 ships
-    stranded. 25-day zero-attack streak. Convergence 4.6.'
+    3, Shoukin 2), cumulative 2,528+. Internet Day 65 = 1,560+ hrs. ~2,000 ships stranded.
+    25-day zero-attack streak. Convergence 4.6.'
 mode:
   ceasefire_status: collapsed
 constants:
@@ -408,10 +408,25 @@ new_events:
     missiles: 0
     drones: 0
   daily_row:
-    date: 'May 02'
+    date: May 02
     missiles: 0
     drones: 0
-    primary_targets: 'Zero attacks Day 25; Trump rejects Iran Hormuz-first proposal; IRGC warns conflict likely to restart'
-    capability: 'No offensive action by either side; 25-day zero-attack streak holds. Iranian military spokesman declared Iran fully prepared for any new adventures or foolishness from the Americans — most direct escalation warning since ceasefire began.'
-    cost: 'Brent corrected ~$5.50 to $108.50 on Iran proposal then Trump rejection whipsaw; WTI ~$101.50; Brent-WTI spread narrows to $7. AAA gas $4.433 (+3% from prior day). Polymarket deal-by-Jun30 rose to 39%. 61% of Americans say war was a mistake per WaPo/ABC/Ipsos poll.'
-    assessment: 'Trump rejection of Hormuz-first proposal — paired with IRGC consolidation and sidelining of civilian Pezeshkian — moves both sides toward impasse rather than deal. The decision-making axis is now Trump vs IRGC, two maximalist actors with minimal flexibility. War Powers maneuver (ceasefire = terminated hostilities) provides domestic legal cover but does not resolve the nuclear standoff. Deal probability edging down to ~0.38; escalation risk rising to ~0.45 as IRGC warns of conflict restart and CENTCOM strike plan remains briefed. Next pivot: whether mediators can bridge the zero-enrichment vs enrichment-rights gap in coming days.'
+    primary_targets: Zero attacks Day 25; Trump rejects Iran Hormuz-first proposal;
+      IRGC warns conflict likely to restart
+    capability: No offensive action by either side; 25-day zero-attack streak holds.
+      Iranian military spokesman declared Iran fully prepared for any new adventures
+      or foolishness from the Americans — most direct escalation warning since ceasefire
+      began.
+    cost: Brent corrected ~$5.50 to $108.50 on Iran proposal then Trump rejection
+      whipsaw; WTI ~$101.50; Brent-WTI spread narrows to $7. AAA gas $4.433 (+3% from
+      prior day). Polymarket deal-by-Jun30 rose to 39%. 61% of Americans say war was
+      a mistake per WaPo/ABC/Ipsos poll.
+    assessment: 'Trump rejection of Hormuz-first proposal — paired with IRGC consolidation
+      and sidelining of civilian Pezeshkian — moves both sides toward impasse rather
+      than deal. The decision-making axis is now Trump vs IRGC, two maximalist actors
+      with minimal flexibility. War Powers maneuver (ceasefire = terminated hostilities)
+      provides domestic legal cover but does not resolve the nuclear standoff. Deal
+      probability edging down to ~0.38; escalation risk rising to ~0.45 as IRGC warns
+      of conflict restart and CENTCOM strike plan remains briefed. Next pivot: whether
+      mediators can bridge the zero-enrichment vs enrichment-rights gap in coming
+      days.'

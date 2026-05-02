@@ -1,6 +1,6 @@
 {
   "meta": {
-    "lastUpdated": "2026-05-02T12:00:00-04:00",
+    "lastUpdated": "2026-05-02T07:00:00-04:00",
     "preWarBaselines": {
       "d1Missiles": 480,
       "preWarOil": 65.0,
@@ -8,7 +8,7 @@
       "preWarGas": 3.0
     },
     "notes": [
-      "D64 (May 2, cfDay25): TRUMP REJECTS IRAN PROPOSAL + ARAGHCHI CANCELS MAY 4 + LEBANON 13 KILLED. Trump said Friday he remains 'not satisfied' with Iran's Apr 28 proposal (Hormuz-for-blockade-lift, nuclear deferred); Rubio insists nuclear must be resolved simultaneously. Araghchi held Saturday calls with Turkey, Egypt, Qatar, Saudi Arabia, Iraq, Azerbaijan counterparts, then canceled May 4 indirect talks ('technical reason') — signals Iranian domestic realignment or tactical recalibration. Lebanon: 13 killed in Israeli strikes on south (8 in Habboush incl. child + two women, 21 wounded); Hezbollah claimed retaliatory attacks. Iran oil storage crisis: ~11-21 days remaining before forced 1.5M bpd cut. Brent ~$109 (est), WTI ~$100 (est). Internet Day 65 = 1,560+ hrs (~2% connectivity). 25-day zero-attack streak. ~2,000 ships stranded. Polymarket: ~59% Trump announces end of operations by June 30; regime fall by May 31 = ~6.5%. Convergence 4.4.",
+      "D64 (May 02, cfDay25): TRUMP REJECTS HORMUZ-FIRST PROPOSAL + IRAN MILITARY WARNS CONFLICT 'LIKELY' TO RESTART + BRENT CORRECTS TO ~$108.50. (1) DEAL DEAD-END: Trump flatly rejected Iran's April 28 proposal — reopen Hormuz, postpone nuclear talks — calling the conditions 'I can't agree to this'; later told reporters US may be 'better off' with no deal at all. Trump: Iran 'unyielding' on nuclear; most other points were agreed but nuclear is the only point that 'really mattered.' Polymarket deal-by-Jun30 rose to 39% reflecting expectation deal is eventual not imminent. (2) IRAN ESCALATION WARNING: Senior Iranian military official declared renewed conflict 'likely'; Iran 'fully prepared for any new adventures or foolishness from the Americans.' IRGC has formally sidelined President Pezeshkian from state functions per multiple reports — decision authority now firmly IRGC. (3) OIL CORRECTION: Brent dropped ~$5.50 from D63 close of $114 to ~$108.50 after peace-proposal then Trump-rejection whipsaw; WTI ~$101.50; Brent-WTI spread narrows to ~$7. AAA gas: $4.433 (+3% from D63; +47.8% since war start). CNN two-month analysis: 'almost everybody is a loser.' 61% of Americans say war was a mistake (WaPo/ABC/Ipsos poll). Lebanon: 7 more killed in Israeli strikes today (Kfar Dajal 2, Lwaizeh 3, Shoukin 2), cumulative 2,528+. Internet Day 65 = 1,560+ hrs. ~2,000 ships stranded. 25-day zero-attack streak. Convergence 4.6.",
       "D63 (May 1, cfDay24): WAR POWERS DEADLINE + TRUMP BRIEFED ON CENTCOM STRIKE PLAN + KHAMENEI DOUBLES DOWN ON NUCLEAR. Three major developments: (1) War Powers Resolution 60-day deadline hits today — White House claims war 'terminated' for WPR purposes because ceasefire 'paused' hostilities; Hegseth: clock paused during ceasefire. Senate had already rejected war powers resolution (D62 — gave Trump cover). Congressional pushback: Sen. Tillis (R-NC): 'need to talk about AUMF.' Trump: 'might need' to restart war; says only he and 'a couple of other people' know status of talks; claims Iran 'wants to make a deal badly.' (2) CENTCOM STRIKE PLAN BRIEFED: CENTCOM has prepared 'short and powerful' wave of strikes to break diplomatic deadlock and force Iran to be more flexible — Trump briefed on plan per JPost. Signals military option being actively prepared. (3) KHAMENEI (D62 statement, Persian Gulf Day): First public written statement since war began (read by state TV anchor). Vowed Iran will protect 'nuclear and missile capabilities as national assets.' Declared only US place in Gulf is 'at the bottom of its waters.' 'New chapter' being written in region. Iran President Pezeshkian (D63): called US ports siege 'intolerable' — characterizes blockade as 'extension of military operations.' UAE OPEC exit effective today. Brent ~$114 (down from $115.81 D62 close; had hit $126 intraday D62). WTI ~$103.50. Iran oil storage crisis: Kpler (Bloomberg) says only 12-22 days of storage remaining — Iran may need to cut 1.5M bpd by mid-May. US gas $4.30 (+47% since war; +9% last week). Lebanon: 2,521+ killed. Internet Day 64 = 1,536+ hrs. ~2,000 ships stranded. 24-day zero-attack streak. Convergence 4.6.",
       "D62 (Apr 30, cfDay23): US LAUNCHES MARITIME FREEDOM CONSTRUCT; TRUMP FORMALLY REJECTS IRAN PROPOSAL. Two escalatory signals: (1) Trump formally rejected Iran's deferred-nuclear proposal (Axios): 'blockade stays until nuclear deal'; Iran must 'cry uncle'; blockade 'somewhat more effective than bombing.' (2) State Dept cable (Rubio) launched 'Maritime Freedom Construct' (MFC) — international coalition to restore Hormuz freedom of navigation; France/UK willing only post-conflict. Pakistan opened overland trade routes to Iran (Ministry of Commerce Transit Order 2026) — first land corridor. Lebanon: Hezbollah drone wounded 12 IDF soldiers near Shomera (2 moderate). Brent hit $126 intraday wartime high, closed $115.81 (-1.9%). WTI $106.26. Hormuz: 7 vessels/24hr. ~2,000 ships stranded. Iran rial record 1.81M/USD. Internet Day 63 = 1,512+ hrs. China-Iran trade Q1 down 50% YoY. Polymarket: nuclear deal by Apr 30 = 1%; peace deal June 30 = 50%. ⚠ MODE SWITCH FLAG: ceasefireMode.enabled is still True — ceasefire formally expired Apr 21 8PM ET but Trump extended it indefinitely on Apr 21; user should review ceasefireMode.enabled and update if/when ceasefire formally ends.",
       "D61 (Apr 29, cfDay22): UAE QUITS OPEC EFFECTIVE MAY 1 — HISTORIC GULF FRACTURE. UAE formally announced OPEC/OPEC+ exit effective May 1 — first Gulf Arab state to leave during the crisis; driven by Hormuz blockade choking UAE exports + production-cap constraints (capped ~3.2M bpd, could nearly double without). Araghchi returned to Tehran to consult hidden Supreme Leader Khamenei on revised proposal — slow, contentious process. Iran formally passed 'red lines' to Pakistan mediators: nuclear programme and Strait of Hormuz sovereignty non-negotiable. Pakistan expects revised Iranian proposal 'within days.' US still examining deferred-nuclear framework; Trump cool. Brent $113.47 (highest since June 2022; +2.06% from D60). WTI $99.32 close (crossed $100 intraday). Peace efforts 'stalled' per Manila Times Apr 29. 22-day zero-attack streak. Lebanon 2,515+ killed est. Internet Day 62 = 1,488+ hrs. Ships stranded ~910 est. ⚠ MODE SWITCH FLAG: ceasefireMode.enabled is still True — ceasefire formally expired Apr 21 8PM ET but Trump extended it indefinitely on Apr 21; user should review ceasefireMode.enabled and update if/when ceasefire formally ends.",
@@ -349,7 +349,7 @@
       0
     ],
     "sourceLabel": "D1-D10: JPost. D11: UAE MoD. D12-D38: fragment est. D39: ceasefire. D40-D63: 0+0 ceasefire/blockade (24 days). D63: WPR deadline + CENTCOM strike plan briefed; Khamenei vows nuclear/missile protection; Iran oil storage crisis 12-22 days. Brent $114.",
-    "throughDate": "2026-05-01",
+    "throughDate": "2026-05-02",
     "confidence": [
       1,
       1,
@@ -1396,10 +1396,10 @@
       "date": "May 02",
       "missiles": 0,
       "drones": 0,
-      "primary": "D64 CEASEFIRE DAY 25 — TRUMP REJECTS IRAN PROPOSAL; ARAGHCHI CANCELS MAY 4 TALKS; LEBANON 13 KILLED. Diplomatic breakdown: Trump on Friday said he remains ‘not satisfied’ with Iran’s Apr 28 proposal (reopen Hormuz in exchange for lifting blockade + end war, deferring nuclear talks); US sources say administration ‘cool’ on offer; Rubio insists nuclear dismantlement must be simultaneous. Araghchi held calls Saturday with counterparts from Turkey, Egypt, Qatar, Saudi Arabia, Iraq, and Azerbaijan to brief on Iran’s latest initiatives — then canceled the scheduled May 4 indirect talks, citing a ‘technical reason.’ Cancellation signals Iranian domestic realignment or tactical recalibration. Lebanon: Israeli strikes killed 13 in southern Lebanon (8 in Habboush, including a child and two women; 21 wounded), IDF citing Hezbollah ceasefire violations. Hezbollah claimed retaliatory attacks on Israeli positions. Iran oil storage: now ~11–21 days to forced 1.5M bpd production cut. Brent ~$109 (est). 25-day zero-attack streak.",
-      "capability": "0+0 missile/drone. 25-day zero-attack streak continues. IRGC maintenance and repositioning ongoing. Dual blockade: US naval enforcement (~34+ ships turned away cumulative); IRGC counter-blockade (~4 vessels/24hr). Araghchi’s regional calls (Turkey, Egypt, Qatar, Saudi, Iraq, Azerbaijan) — Iran building political backing before next move. May 4 talks canceled = diplomatic calendar blank for now.",
-      "cost": "Brent ~$109 (est; pullback from $114 D63 / $126 D62 intraday high). WTI ~$100 (est). US gas ~$4.30/gallon. Iran rial: ~1.4M/USD (recovering from Apr 29 record ~1.81M). Internet Day 65 = 1,560+ hrs (~2% connectivity). Iran oil storage: ~11–21 days before forced 1.5M bpd cut. ~2,000 ships stranded. Lebanon: 2,534+ killed cumulative.",
-      "assessment": "D64 — DIPLOMATIC PAUSE + TALKS CANCELED. Araghchi canceling May 4 indirect talks is the key signal of the day: Iran either lost internal consensus on the current offer or is recalibrating after Trump’s public ‘not satisfied.’ Regional consultation round (Turkey, Egypt, Qatar, Saudi, Iraq, Azerbaijan) suggests Iran is polling its diplomatic network before making its next offer or hardening its position. Trump’s pattern — 'not satisfied' while keeping the ceasefire intact — suggests he is maximizing economic pressure to force nuclear concessions before any Hormuz deal. The oil storage clock (~11–21 days) remains the most concrete forcing function: Iran may be forced to cut production regardless of diplomatic outcome. Lebanon strikes (13 killed) continue degrading ceasefire optics and giving Hezbollah domestic justification for retaliation. Convergence 4.4 (↓ from 4.6): diplomatic track collapsing but economic pressure near maximum — the next 10–14 days are pivotal. Escalation 47% / Stalled 26% / Deal 11% / Victory 8% / Intervention 6% / Fracture 2%."
+      "primaryTargets": "Zero attacks Day 25; Trump rejects Iran Hormuz-first proposal; IRGC warns conflict likely to restart",
+      "capability": "No offensive action by either side; 25-day zero-attack streak holds. Iranian military spokesman declared Iran fully prepared for any new adventures or foolishness from the Americans — most direct escalation warning since ceasefire began.",
+      "cost": "Brent corrected ~$5.50 to $108.50 on Iran proposal then Trump rejection whipsaw; WTI ~$101.50; Brent-WTI spread narrows to $7. AAA gas $4.433 (+3% from prior day). Polymarket deal-by-Jun30 rose to 39%. 61% of Americans say war was a mistake per WaPo/ABC/Ipsos poll.",
+      "assessment": "Trump rejection of Hormuz-first proposal — paired with IRGC consolidation and sidelining of civilian Pezeshkian — moves both sides toward impasse rather than deal. The decision-making axis is now Trump vs IRGC, two maximalist actors with minimal flexibility. War Powers maneuver (ceasefire = terminated hostilities) provides domestic legal cover but does not resolve the nuclear standoff. Deal probability edging down to ~0.38; escalation risk rising to ~0.45 as IRGC warns of conflict restart and CENTCOM strike plan remains briefed. Next pivot: whether mediators can bridge the zero-enrichment vs enrichment-rights gap in coming days."
     }
   ],
   "timeline": [
@@ -4486,18 +4486,18 @@
     "indicators": {
       "launchRate7DMA": 0.0,
       "launchRateVsD1": 0.0,
-      "brentShock": 0.75,
+      "brentShock": 0.67,
       "hormuzRecovery": 0.05,
       "usKIA": 15,
       "usWounded": 520,
       "usAircraftLost": 7,
-      "gasPrice": 4.3,
+      "gasPrice": 4.433,
       "approvalWrong": 59,
-      "warDays": 63,
+      "warDays": 64,
       "iranCivKilled_HRANA": 3540,
       "iranCivKilled_AJ": 0,
       "iraqKilled": 109,
-      "lebanonKilled": 2521,
+      "lebanonKilled": 2528,
       "nuclearFacilitiesStruck": 5,
       "nuclearFacilitiesTotal": 6,
       "coalitionCohesionScore": 2.5,
@@ -4512,11 +4512,11 @@
       "babAlMandabThreatened": true,
       "groundTroopsDeployed": 8000,
       "mojtabaAbsentDays": 29,
-      "gasShock": 0.43,
-      "daysWithoutMissile": 24
+      "gasShock": 0.48,
+      "daysWithoutMissile": 25
     },
     "dealAvailability": {
-      "score": 0.42,
+      "score": 0.38,
       "inputs": {
         "mediatorActivity": 0.92,
         "proposalSpecificity": 0.75,
@@ -4527,7 +4527,7 @@
       "reasoning_fa": "ایران ۱۰ ماده = مفصل‌ترین پاسخ (specificity UP). اما ماکسیمالیست: NPT + تحریم + بازسازی = ماه‌ها. ترامپ رد تمدید. شکاف عمیق‌تر. DOWN 0.22->0.18."
     },
     "usExitPressure": {
-      "score": 0.64,
+      "score": 0.66,
       "inputs": {
         "approvalPressure": 0.59,
         "kiaPressure": 0.5,
@@ -4550,7 +4550,7 @@
       "reasoning_fa": "ایران ۱۰ ماده ماکسیمالیست = موضع افتتاحیه مذاکره. NPT + تحریم + بازسازی. طرح آمریکا 'بیش از حد.' سپاه 'درمانده.' DOWN 0.10->0.08. سخت‌تر."
     },
     "escalationProximity": {
-      "score": 0.42,
+      "score": 0.45,
       "inputs": {
         "nuclearProximity": 0.8,
         "chokePointProximity": 0.35,
@@ -4561,15 +4561,15 @@
       "reasoning_fa": "نیروگاه سه‌شنبه <20 ساعت. P=0.22 UP. ترامپ رد تمدید (0.88). ایران ۱۰ ماده = بدون خروج. IAEA 'deeply concerned' (0.85). تشدید UP 0.68->0.72."
     },
     "outcomeProbabilities": {
-      "negotiatedResolution": 0.081,
+      "negotiatedResolution": 0.075,
       "derivation_negotiated": "DOWN from 0.18. Naval blockade = further from diplomacy. No talks. Allies refusing. Nuclear gap unbridgeable.",
-      "escalationCatastrophe": 0.207,
+      "escalationCatastrophe": 0.237,
       "derivation_escalation": "UP from 0.28. Blockade Monday = direct confrontation risk. If Iran resists: naval war. IRGC 'act of war.'",
-      "protractedContinuation": 0.497,
+      "protractedContinuation": 0.461,
       "derivation_protracted": "DOWN from 0.38. Blockade accelerates timeline — less likely to remain protracted, more likely collapse or confrontation.",
-      "internationalIntervention": 0.142,
+      "internationalIntervention": 0.152,
       "derivation_intervention": "UP from 0.10. Allies refusing blockade. China condemning. If maritime confrontation: international pressure surges.",
-      "other": 0.073,
+      "other": 0.075,
       "derivation_other": "Regime fracture, coup, rogue IRGC action, Houthi Bab al-Mandab closure."
     },
     "calibration": {
@@ -4577,7 +4577,7 @@
       "polymarketSource": "Polymarket: ceasefire-holds ~18% (crashing). Deal by Apr 30 ~15-18%. Conflict-ends-Dec31 ~97%. $280M+ traded. Blockade active = bearish signal but Trump 'deal' talk providing floor.",
       "historicalBaseRate": {
         "value": 35,
-        "methodology": "D63: model derived from 1 narrative bullets + 4 condition input groups. Polymarket + historical base rate weighted in ensemble."
+        "methodology": "D64: model derived from 1 narrative bullets + 4 condition input groups. Polymarket + historical base rate weighted in ensemble."
       },
       "oilFuturesSignal": {
         "spotVs3Month": "backwardation",
@@ -4591,7 +4591,7 @@
         "low": 12,
         "high": 22
       },
-      "methodology": "D63 ensemble: model 8% × market signal × base rate. Ceasefire collapsed — back to active conflict. Khamenei public vow against US demands = bottleneck on Iran acceptance."
+      "methodology": "D64 ensemble: model 8% × market signal × base rate. Ceasefire collapsed — back to active conflict. Khamenei public vow against US demands = bottleneck on Iran acceptance."
     },
     "dailyIndicators": {
       "labels": [
@@ -6871,26 +6871,26 @@
       "escalationProximity": 0.175
     },
     "modifiedConditionScores": {
-      "dealAvailability": 0.269,
-      "usExitPressure": 0.886,
+      "dealAvailability": 0.229,
+      "usExitPressure": 0.906,
       "iranAcceptance": 0.0,
-      "escalationProximity": 0.595
+      "escalationProximity": 0.625
     },
     "regimeFractureProbability": 0.106,
     "synthesizedOutcome": {
       "outcome_dist": {
-        "deal": 0.22,
-        "escalation": 0.268,
-        "protracted": 0.327,
-        "intervention": 0.185,
+        "deal": 0.26,
+        "escalation": 0.279,
+        "protracted": 0.279,
+        "intervention": 0.182,
         "other": 0.0
       },
       "layer_contributions": {
         "structural": {
           "deal": 0.0,
-          "escalation": 0.37,
-          "protracted": 0.35,
-          "intervention": 0.201
+          "escalation": 0.41,
+          "protracted": 0.299,
+          "intervention": 0.211
         },
         "historical": {
           "deal": 0.554,
@@ -6899,7 +6899,7 @@
           "intervention": 0.132
         },
         "market": {
-          "deal": 0.15
+          "deal": 0.39
         },
         "fracture_adjustment": 0.106
       },
@@ -6909,10 +6909,10 @@
       "top_analog_lesson": "Ceasefire-without-peace → frozen conflict for 70+ years. The 'extended_indef' mode current Iran-US is in."
     },
     "reflexivityAdjusted": {
-      "deal": 0.219,
-      "escalation": 0.265,
-      "protracted": 0.321,
-      "intervention": 0.186,
+      "deal": 0.257,
+      "escalation": 0.275,
+      "protracted": 0.275,
+      "intervention": 0.183,
       "other": 0.01
     },
     "forwardProjections": {
@@ -6936,7 +6936,7 @@
         },
         "escalation": {
           "direction": "rising",
-          "magnitude_pp": 7,
+          "magnitude_pp": 8,
           "driver": "Sustained CENTCOM signaling + IRGC ascendancy"
         }
       },
@@ -6955,60 +6955,60 @@
     },
     "multiHorizonForecast": {
       "1d": {
-        "deal": 0.237,
-        "escalation": 0.258,
-        "intervention": 0.182,
+        "escalation": 0.269,
+        "protracted": 0.277,
+        "intervention": 0.179,
         "other": 0.0,
-        "protracted": 0.323
+        "deal": 0.275
       },
       "7d": {
-        "deal": 0.287,
-        "escalation": 0.229,
-        "intervention": 0.174,
+        "escalation": 0.238,
+        "protracted": 0.271,
+        "intervention": 0.172,
         "other": 0.0,
-        "protracted": 0.31
+        "deal": 0.319
       },
       "14d": {
-        "deal": 0.337,
-        "escalation": 0.2,
-        "intervention": 0.166,
+        "escalation": 0.207,
+        "protracted": 0.266,
+        "intervention": 0.165,
         "other": 0.0,
-        "protracted": 0.297
+        "deal": 0.363
       },
       "30d": {
-        "deal": 0.387,
-        "escalation": 0.171,
-        "intervention": 0.159,
+        "escalation": 0.176,
+        "protracted": 0.26,
+        "intervention": 0.157,
         "other": 0.0,
-        "protracted": 0.284
+        "deal": 0.407
       },
       "60d": {
-        "deal": 0.437,
-        "escalation": 0.141,
-        "intervention": 0.151,
+        "escalation": 0.145,
+        "protracted": 0.254,
+        "intervention": 0.149,
         "other": 0.0,
-        "protracted": 0.271
+        "deal": 0.451
       },
       "90d": {
-        "deal": 0.471,
-        "escalation": 0.122,
+        "escalation": 0.124,
+        "protracted": 0.251,
         "intervention": 0.145,
         "other": 0.0,
-        "protracted": 0.263
+        "deal": 0.481
       },
       "180d": {
-        "deal": 0.504,
-        "escalation": 0.102,
+        "escalation": 0.104,
+        "protracted": 0.247,
         "intervention": 0.14,
         "other": 0.0,
-        "protracted": 0.254
+        "deal": 0.509
       },
       "365d": {
-        "deal": 0.521,
-        "escalation": 0.092,
+        "escalation": 0.094,
+        "protracted": 0.245,
         "intervention": 0.137,
         "other": 0.0,
-        "protracted": 0.25
+        "deal": 0.524
       }
     },
     "historicalAnalogProjection": {
@@ -7027,10 +7027,10 @@
       "n_runs": 5000,
       "horizon_days": 90,
       "outcome_frequencies": {
-        "deal": 0.207,
-        "escalation": 0.345,
-        "protracted": 0.168,
-        "intervention": 0.194,
+        "deal": 0.196,
+        "escalation": 0.356,
+        "protracted": 0.158,
+        "intervention": 0.202,
         "regime_collapse": 0.064,
         "tail": 0.024
       },
@@ -7078,10 +7078,10 @@
     },
     "bayesianEvidenceChain": {
       "posteriors": {
-        "deal": 0.22,
-        "escalation": 0.268,
-        "protracted": 0.327,
-        "intervention": 0.185,
+        "deal": 0.26,
+        "escalation": 0.279,
+        "protracted": 0.279,
+        "intervention": 0.182,
         "other": 0.0
       },
       "evidence_chain": []
@@ -7177,21 +7177,21 @@
       "no_trump": {
         "scenario": "neutral US president (no Trump-specific ego/public-commitment penalty)",
         "outcome_dist": {
-          "deal": 0.22,
-          "escalation": 0.238,
-          "protracted": 0.358,
-          "intervention": 0.184,
-          "other": 0.0
+          "deal": 0.26,
+          "escalation": 0.248,
+          "protracted": 0.31,
+          "intervention": 0.181,
+          "other": 0.001
         },
         "delta_vs_actual": "compare to deepDynamics.synthesizedOutcome.outcome_dist"
       },
       "no_khamenei_lock": {
         "scenario": "Khamenei had not made public anti-deal vow",
         "outcome_dist": {
-          "deal": 0.222,
-          "escalation": 0.268,
-          "protracted": 0.325,
-          "intervention": 0.185,
+          "deal": 0.262,
+          "escalation": 0.279,
+          "protracted": 0.278,
+          "intervention": 0.182,
           "other": 0.0
         },
         "delta_vs_actual": "compare to deepDynamics.synthesizedOutcome.outcome_dist"
@@ -7200,14 +7200,14 @@
     "alphaSignals": [
       {
         "signal": "deal_probability_vs_polymarket",
-        "model_pct": 22,
-        "market_pct": 15,
-        "delta_pp": 7,
-        "trade": "LONG Polymarket 'deal by Jun 30' contract",
-        "size_conviction": 0.35,
+        "model_pct": 26,
+        "market_pct": 39,
+        "delta_pp": -13,
+        "trade": "SHORT Polymarket 'deal by Jun 30' contract",
+        "size_conviction": 0.65,
         "reasoning": "Model + historical analogs disagree with prediction-market pricing",
-        "kelly_fraction": 0.041,
-        "kelly_interpretation": "Allocate ~4.1% of dedicated bankroll LONG; market-implied payoff = 5.67x"
+        "kelly_fraction": -0.107,
+        "kelly_interpretation": "Allocate ~10.7% of dedicated bankroll SHORT; market-implied payoff = 1.56x"
       }
     ],
     "crystallizationTriggers": [
@@ -7342,20 +7342,20 @@
     "exoticTriggers": {
       "polymarket_divergence": {
         "fired": false,
-        "value_pct": 18,
+        "value_pct": 15,
         "implies": "calibration check — see ensemble methodology",
         "source_pattern": "always check market disagreement"
       }
     },
     "contrarianCheck": {
-      "current_top_outcome": "protracted",
-      "current_top_pct": 33,
+      "current_top_outcome": "escalation",
+      "current_top_pct": 28,
       "what_would_invalidate": [
-        "Major military strike (either direction)",
-        "Sudden diplomatic breakthrough at any G20 sideline",
-        "Khamenei dies or visibly incapacitated",
-        "China announces enforcement against Iranian crude",
-        "Saudi-Iran direct peace announcement"
+        "Iran transmits revised acceptable proposal via Oman",
+        "CENTCOM strike plan publicly shelved",
+        "Polymarket ceasefire-holds spikes above 40%",
+        "Hegseth replaced as SecDef",
+        "Khamenei makes conciliatory statement"
       ],
       "anti_consensus_warning": "If 5+ of these falsifiers fire within 14 days, the model has been wrong-footed; rerun with revised priors. Discipline: track which falsifiers fired, not which didn't."
     },
@@ -7909,10 +7909,10 @@
       "bonyad_assets_frozen_estimate_usd_b": null,
       "iranian_dark_fleet_active_tankers": null,
       "china_iranian_oil_imports_kbpd": null,
-      "brent_wti_spread_usd": 10.0,
+      "brent_wti_spread_usd": 7.0,
       "hormuz_war_risk_premium_pct": 0.5,
-      "polymarket_ceasefire_holds_pct": 18,
-      "polymarket_deal_by_jun30_pct": 15,
+      "polymarket_ceasefire_holds_pct": 15,
+      "polymarket_deal_by_jun30_pct": 39,
       "kalshi_oil_above_120_pct": null,
       "metaculus_war_continues_2026_pct": null,
       "polymarket_volume_24h_usd": 280000000,
@@ -7946,7 +7946,7 @@
       "october_war_aftermath_1973_75": 0.5,
       "notes": ""
     },
-    "ultraRead": "ULTRA READ — D63 (2026-05-01):\n\nMost-likely outcome: **protracted at ~32%** (synthesized across structural/historical/market layers with 17% inter-layer agreement). Top historical analog: **korean_war_armistice_1953** (median resolution 1018d). Monte Carlo (5000 runs, 90d horizon): escalation 34%, protracted 16%, deal 20%, regime collapse 6%.\n\nGame-theoretic equilibrium: **US plays 'withdraw', Iran plays 'prolong'** with joint welfare 12.3/20 — near-Pareto. Iran regime survival hazard: 50% by day 371.2.\n\nDOMINANT BOTTLENECK: Khamenei religious-zeal × public-commitment lock (psych modifier -30pp on iranAcceptance). COMPOUND PRESSURE: US gas-price midterm amplifier (+25pp on usExitPressure).\n\nWATCH-FOR (highest-leverage trigger): Khamenei dies or steps down.\n\nFALSIFIER: If 5+ of {Major military strike (either direction), Sudden diplomatic breakthrough at any G20 sideline, Khamenei dies or visibly incapacitated, ...} fire within 14 days, model is wrong-footed."
+    "ultraRead": "ULTRA READ — D64 (2026-05-02):\n\nMost-likely outcome: **escalation at ~27%** (synthesized across structural/historical/market layers with 17% inter-layer agreement). Top historical analog: **korean_war_armistice_1953** (median resolution 1018d). Monte Carlo (5000 runs, 90d horizon): escalation 35%, protracted 15%, deal 19%, regime collapse 6%.\n\nGame-theoretic equilibrium: **US plays 'withdraw', Iran plays 'prolong'** with joint welfare 12.3/20 — near-Pareto. Iran regime survival hazard: 50% by day 371.2.\n\nDOMINANT BOTTLENECK: Khamenei religious-zeal × public-commitment lock (psych modifier -30pp on iranAcceptance). COMPOUND PRESSURE: US gas-price midterm amplifier (+25pp on usExitPressure).\n\nWATCH-FOR (highest-leverage trigger): Khamenei dies or steps down.\n\nFALSIFIER: If 5+ of {Iran transmits revised acceptable proposal via Oman, CENTCOM strike plan publicly shelved, Polymarket ceasefire-holds spikes above 40%, ...} fire within 14 days, model is wrong-footed."
   },
   "calibrationSpine": {
     "spineLength": 1,
