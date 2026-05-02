@@ -1288,14 +1288,15 @@ html[dir="rtl"] .chips { flex-direction: row-reverse; }
   list-style: none;
   counter-reset: w;
   display: grid;
-  grid-template-columns: 1fr;
+  grid-template-columns: minmax(0, 1fr);
   gap: 0 36px;
 }
 @media (min-width: 980px) {
   .read-watchlist {
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
   }
 }
+.read-watchlist li { min-width: 0; }
 .read-watchlist li {
   counter-increment: w;
   position: relative;
@@ -1330,14 +1331,15 @@ html[dir="rtl"] .chips { flex-direction: row-reverse; }
   padding: 0;
   list-style: none;
   display: grid;
-  grid-template-columns: 1fr;
+  grid-template-columns: minmax(0, 1fr);
   gap: 0 36px;
 }
 @media (min-width: 980px) {
   .read-tails {
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
   }
 }
+.read-tails li { min-width: 0; }
 .read-tails li {
   padding: 14px 0;
   border-bottom: 1px solid var(--read-rule);
@@ -1437,12 +1439,14 @@ html[dir="rtl"] .chips { flex-direction: row-reverse; }
 /* Stakeholder grid (4-col on wide) */
 .stake-grid {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: repeat(2, minmax(0, 1fr));
   gap: 12px;
 }
 @media (min-width: 980px) {
-  .stake-grid { grid-template-columns: repeat(4, 1fr); }
+  .stake-grid { grid-template-columns: repeat(4, minmax(0, 1fr)); }
 }
+.stake-card { min-width: 0; word-break: break-word; }
+.stake-name { word-break: break-word; }
 .stake-card {
   border: 1px solid var(--read-rule);
   border-radius: 4px;
@@ -1494,10 +1498,11 @@ html[dir="rtl"] .chips { flex-direction: row-reverse; }
 /* Iran regime/population side-by-side */
 .iran-split-grid {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
   gap: 14px;
   margin-bottom: 14px;
 }
+.iran-card { min-width: 0; }
 @media (max-width: 700px) {
   .iran-split-grid { grid-template-columns: 1fr; }
 }
@@ -1553,12 +1558,13 @@ html[dir="rtl"] .chips { flex-direction: row-reverse; }
 /* Game theory + decision tree 2-col */
 .game-grid {
   display: grid;
-  grid-template-columns: 1fr;
+  grid-template-columns: minmax(0, 1fr);
   gap: 24px;
 }
 @media (min-width: 980px) {
-  .game-grid { grid-template-columns: 1fr 1fr; gap: 36px; }
+  .game-grid { grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); gap: 36px; }
 }
+.game-side { min-width: 0; }
 .game-side {
   border: 1px solid var(--read-rule);
   border-radius: 4px;
@@ -1595,19 +1601,67 @@ html[dir="rtl"] .chips { flex-direction: row-reverse; }
 .game-side .deeper-row.rational div:first-child { color: var(--read-accent); font-weight: 700; }
 .game-side .deeper-row.rational .deeper-num { color: var(--read-accent); }
 
-@media (max-width: 800px) {
-  .the-read {
-    padding: 36px 24px 32px;
-    margin: 24px auto;
+@media (max-width: 980px) {
+  .the-read,
+  .briefing-section {
+    padding: 32px 22px 28px !important;
+    margin: 16px 12px 24px !important;
+    max-width: none;
+    border-radius: 4px;
   }
-  .read-headline { font-size: 28px; }
-  .read-dek { font-size: 16px; }
-  .read-stat-num { font-size: 60px; }
-  .read-body { font-size: 16px; }
-  .read-pullquote { font-size: 20px; padding-left: 16px; }
-  .read-callouts { grid-template-columns: 1fr; }
-  .read-callout { border-right: none; border-bottom: 1px solid var(--read-rule); padding: 12px 0; }
-  .read-callout:last-child { border-bottom: none; }
+  .the-read .read-headline,
+  .briefing-section .read-headline { font-size: 26px; line-height: 1.18; letter-spacing: -0.4px; }
+  .the-read .read-dek,
+  .briefing-section .read-dek { font-size: 15px; line-height: 1.55; }
+  .the-read .read-stat-num { font-size: 48px; letter-spacing: -1.5px; }
+  .read-stat-secondary .read-stat-num { font-size: 28px; }
+  .read-stat-secondary .read-stat-text { font-size: 14px; }
+  .the-read .read-body,
+  .briefing-section .read-body { font-size: 15px; column-count: 1; max-width: none; }
+  .read-pullquote { font-size: 18px !important; padding-left: 14px !important; }
+  .read-classification {
+    margin: -32px -22px 22px !important;
+    padding: 8px 14px !important;
+    flex-wrap: wrap; gap: 6px;
+  }
+  .read-class-text { font-size: 9px; letter-spacing: 1.5px; }
+  .read-header { flex-direction: column; gap: 8px; }
+  .read-header-r { text-align: left; }
+  .read-publisher { font-size: 11px; letter-spacing: 1px; }
+  .read-issue { font-size: 11px; }
+  .read-section-num { font-size: 9px; letter-spacing: 1.8px; margin: 24px 0 10px; }
+  .read-statbar { grid-template-columns: 1fr 1fr !important; }
+  .read-stat,
+  .read-stat-secondary { padding: 12px 10px !important; border-right: none !important; border-bottom: 1px solid var(--read-rule); }
+  .read-stat-primary { grid-column: 1 / -1; padding-bottom: 18px !important; }
+  .read-callouts { grid-template-columns: 1fr 1fr !important; }
+  .read-callout { padding: 10px 12px !important; border-bottom: 1px solid var(--read-rule); }
+  .read-watchlist,
+  .read-tails { grid-template-columns: 1fr !important; }
+  .stake-grid { grid-template-columns: 1fr 1fr !important; }
+  .iran-split-grid { grid-template-columns: 1fr !important; }
+  .game-grid { grid-template-columns: 1fr !important; }
+  .brief-fig-grid { grid-template-columns: 1fr !important; }
+  .brief-fig-chart { height: 220px !important; padding: 12px 10px 6px !important; }
+  .brief-fig-title { font-size: 16px !important; }
+  .brief-diplomacy { grid-template-columns: 1fr !important; }
+  .brief-fig-blurb { font-size: 13px !important; }
+}
+/* Scoped table responsive */
+.brief-log-wrap {
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+}
+.brief-log {
+  min-width: 720px;
+}
+@media (max-width: 980px) {
+  .brief-log col.c-head { width: 200px; }
+}
+@media (max-width: 700px) {
+  .brief-log col.c-head { width: 160px; }
+  .brief-log td:nth-child(4) { display: none; }
+  .brief-log th:nth-child(4) { display: none; }
 }
 
 /* RTL */
@@ -1739,26 +1793,28 @@ html[dir="rtl"] .read-watchlist li::before { left: auto; right: 0; }
 }
 .brief-fig-grid {
   display: grid;
-  grid-template-columns: 1fr;
+  grid-template-columns: minmax(0, 1fr);
   gap: 32px 28px;
 }
 @media (min-width: 980px) {
   .brief-fig-grid {
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
   }
 }
+.brief-fig { min-width: 0; }
 
 /* Diplomacy timeline — 2-col grid of cards on wide viewports */
 .brief-diplomacy {
   margin: 0; padding: 0;
   list-style: none;
   display: grid;
-  grid-template-columns: 1fr;
+  grid-template-columns: minmax(0, 1fr);
   gap: 14px;
 }
 @media (min-width: 980px) {
-  .brief-diplomacy { grid-template-columns: 1fr 1fr; }
+  .brief-diplomacy { grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); }
 }
+.brief-diplomacy li { min-width: 0; }
 .brief-diplomacy li {
   padding: 16px 18px;
   border: 1px solid var(--read-rule);
