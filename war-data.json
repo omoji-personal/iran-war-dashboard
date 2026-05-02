@@ -1,6 +1,6 @@
 {
   "meta": {
-    "lastUpdated": "2026-05-01T07:00:00-04:00",
+    "lastUpdated": "2026-05-02T12:00:00-04:00",
     "preWarBaselines": {
       "d1Missiles": 480,
       "preWarOil": 65.0,
@@ -8,6 +8,7 @@
       "preWarGas": 3.0
     },
     "notes": [
+      "D64 (May 2, cfDay25): TRUMP REJECTS IRAN PROPOSAL + ARAGHCHI CANCELS MAY 4 + LEBANON 13 KILLED. Trump said Friday he remains 'not satisfied' with Iran's Apr 28 proposal (Hormuz-for-blockade-lift, nuclear deferred); Rubio insists nuclear must be resolved simultaneously. Araghchi held Saturday calls with Turkey, Egypt, Qatar, Saudi Arabia, Iraq, Azerbaijan counterparts, then canceled May 4 indirect talks ('technical reason') — signals Iranian domestic realignment or tactical recalibration. Lebanon: 13 killed in Israeli strikes on south (8 in Habboush incl. child + two women, 21 wounded); Hezbollah claimed retaliatory attacks. Iran oil storage crisis: ~11-21 days remaining before forced 1.5M bpd cut. Brent ~$109 (est), WTI ~$100 (est). Internet Day 65 = 1,560+ hrs (~2% connectivity). 25-day zero-attack streak. ~2,000 ships stranded. Polymarket: ~59% Trump announces end of operations by June 30; regime fall by May 31 = ~6.5%. Convergence 4.4.",
       "D63 (May 1, cfDay24): WAR POWERS DEADLINE + TRUMP BRIEFED ON CENTCOM STRIKE PLAN + KHAMENEI DOUBLES DOWN ON NUCLEAR. Three major developments: (1) War Powers Resolution 60-day deadline hits today — White House claims war 'terminated' for WPR purposes because ceasefire 'paused' hostilities; Hegseth: clock paused during ceasefire. Senate had already rejected war powers resolution (D62 — gave Trump cover). Congressional pushback: Sen. Tillis (R-NC): 'need to talk about AUMF.' Trump: 'might need' to restart war; says only he and 'a couple of other people' know status of talks; claims Iran 'wants to make a deal badly.' (2) CENTCOM STRIKE PLAN BRIEFED: CENTCOM has prepared 'short and powerful' wave of strikes to break diplomatic deadlock and force Iran to be more flexible — Trump briefed on plan per JPost. Signals military option being actively prepared. (3) KHAMENEI (D62 statement, Persian Gulf Day): First public written statement since war began (read by state TV anchor). Vowed Iran will protect 'nuclear and missile capabilities as national assets.' Declared only US place in Gulf is 'at the bottom of its waters.' 'New chapter' being written in region. Iran President Pezeshkian (D63): called US ports siege 'intolerable' — characterizes blockade as 'extension of military operations.' UAE OPEC exit effective today. Brent ~$114 (down from $115.81 D62 close; had hit $126 intraday D62). WTI ~$103.50. Iran oil storage crisis: Kpler (Bloomberg) says only 12-22 days of storage remaining — Iran may need to cut 1.5M bpd by mid-May. US gas $4.30 (+47% since war; +9% last week). Lebanon: 2,521+ killed. Internet Day 64 = 1,536+ hrs. ~2,000 ships stranded. 24-day zero-attack streak. Convergence 4.6.",
       "D62 (Apr 30, cfDay23): US LAUNCHES MARITIME FREEDOM CONSTRUCT; TRUMP FORMALLY REJECTS IRAN PROPOSAL. Two escalatory signals: (1) Trump formally rejected Iran's deferred-nuclear proposal (Axios): 'blockade stays until nuclear deal'; Iran must 'cry uncle'; blockade 'somewhat more effective than bombing.' (2) State Dept cable (Rubio) launched 'Maritime Freedom Construct' (MFC) — international coalition to restore Hormuz freedom of navigation; France/UK willing only post-conflict. Pakistan opened overland trade routes to Iran (Ministry of Commerce Transit Order 2026) — first land corridor. Lebanon: Hezbollah drone wounded 12 IDF soldiers near Shomera (2 moderate). Brent hit $126 intraday wartime high, closed $115.81 (-1.9%). WTI $106.26. Hormuz: 7 vessels/24hr. ~2,000 ships stranded. Iran rial record 1.81M/USD. Internet Day 63 = 1,512+ hrs. China-Iran trade Q1 down 50% YoY. Polymarket: nuclear deal by Apr 30 = 1%; peace deal June 30 = 50%. ⚠ MODE SWITCH FLAG: ceasefireMode.enabled is still True — ceasefire formally expired Apr 21 8PM ET but Trump extended it indefinitely on Apr 21; user should review ceasefireMode.enabled and update if/when ceasefire formally ends.",
       "D61 (Apr 29, cfDay22): UAE QUITS OPEC EFFECTIVE MAY 1 — HISTORIC GULF FRACTURE. UAE formally announced OPEC/OPEC+ exit effective May 1 — first Gulf Arab state to leave during the crisis; driven by Hormuz blockade choking UAE exports + production-cap constraints (capped ~3.2M bpd, could nearly double without). Araghchi returned to Tehran to consult hidden Supreme Leader Khamenei on revised proposal — slow, contentious process. Iran formally passed 'red lines' to Pakistan mediators: nuclear programme and Strait of Hormuz sovereignty non-negotiable. Pakistan expects revised Iranian proposal 'within days.' US still examining deferred-nuclear framework; Trump cool. Brent $113.47 (highest since June 2022; +2.06% from D60). WTI $99.32 close (crossed $100 intraday). Peace efforts 'stalled' per Manila Times Apr 29. 22-day zero-attack streak. Lebanon 2,515+ killed est. Internet Day 62 = 1,488+ hrs. Ships stranded ~910 est. ⚠ MODE SWITCH FLAG: ceasefireMode.enabled is still True — ceasefire formally expired Apr 21 8PM ET but Trump extended it indefinitely on Apr 21; user should review ceasefireMode.enabled and update if/when ceasefire formally ends.",
@@ -212,7 +213,8 @@
       "Apr 28",
       "Apr 29",
       "Apr 30",
-      "May 01"
+      "May 01",
+      "May 02"
     ],
     "missiles": [
       480,
@@ -255,6 +257,7 @@
       45,
       58,
       12,
+      0,
       0,
       0,
       0,
@@ -342,6 +345,7 @@
       0,
       0,
       0,
+      0,
       0
     ],
     "sourceLabel": "D1-D10: JPost. D11: UAE MoD. D12-D38: fragment est. D39: ceasefire. D40-D63: 0+0 ceasefire/blockade (24 days). D63: WPR deadline + CENTCOM strike plan briefed; Khamenei vows nuclear/missile protection; Iran oil storage crisis 12-22 days. Brent $114.",
@@ -388,6 +392,7 @@
       0.5,
       0.5,
       0.5,
+      1,
       1,
       1,
       1,
@@ -478,7 +483,8 @@
       "Apr 28",
       "Apr 29",
       "Apr 30",
-      "May 01"
+      "May 01",
+      "May 02"
     ],
     "brent": [
       65,
@@ -544,7 +550,8 @@
       111.16,
       113.47,
       115.81,
-      114.0
+      114.0,
+      109.0
     ],
     "wti": [
       62,
@@ -610,7 +617,8 @@
       99.4,
       99.32,
       106.26,
-      103.5
+      103.5,
+      100.0
     ],
     "note": "D63 (May 1): Brent $114 (down from $115.81 D62 close; D62 intraday hit $126 wartime record). WTI $103.50 est. Trajectory: $84 (D49) → $90 (D50) → $111.16 (D60) → $113.47 (D61) → $115.81 (D62) → $114 (D63). UAE OPEC exit effective today (short-term neutral). Iran oil storage crisis: 12-22 days remaining (Kpler/Bloomberg) — forced 1.5M bpd cut imminent. If deal: $85-90. If storage crisis forces Iran capitulation: $95-100. If escalation: $130+."
   },
@@ -678,7 +686,8 @@
       "Apr 28",
       "D61",
       "D62",
-      "D63"
+      "D63",
+      "D64"
     ],
     "attrition": [
       2,
@@ -720,6 +729,7 @@
       10,
       10,
       10.2,
+      10.5,
       10.5,
       10.5,
       10.5,
@@ -808,7 +818,8 @@
       9.3,
       9.5,
       9.7,
-      9.8
+      9.8,
+      9.9
     ]
   },
   "latestTargetBreakdown": {
@@ -1380,6 +1391,15 @@
       "capability": "0+0 missile/drone. 24-day zero-attack streak. IRGC maintenance + repositioning ongoing. Dual blockade active: US naval (~34+ ships turned away); IRGC counter-blockade (~5 vessels/24hr). MSC Francesca, Epaminondas, Touska still held. CENTCOM strike plan briefed = US military readiness for resumed campaign elevated. Khamenei’s nuclear/missile vow = political authorization for continued resistance. Pakistan land corridor open (Transit Order 2026) — first overland trade route bypassing Hormuz.",
       "cost": "Brent $114 (D62 hit $126 intraday wartime high; closed $115.81; D63 down 1.6%). WTI ~$103.50. US gas $4.30/gallon (+47% since Feb 28; +9% last week). Iran rial: recovering from Apr 29 record 1.81M/USD. Internet Day 64 = 1,536+ hrs. Iran oil storage crisis: 12-22 days to full capacity — 1.5M bpd forced cut imminent. UAE OPEC exit effective today (3.2M bpd cap removed; aims for 6M+ bpd). ~2,000 ships stranded. Pakistan land corridor: first goods transiting by road.",
       "assessment": "D63 — OIL STORAGE DEADLINE + CENTCOM PLAN + KHAMENEI VOW = THREE-WAY PRESSURE. The oil storage crisis (12-22 days) is the most concrete forcing function of the war — it doesn’t require military action, it’s purely economic. Iran must either negotiate a Hormuz deal quickly or face forced 1.5M bpd production cut, devastating an already-contracted economy. CENTCOM’s strike plan briefing + Khamenei’s first public nuclear vow signal neither side is blinking. The UAE OPEC exit removes any OPEC production-cap lever that might have offset Hormuz disruption for Gulf states — each Gulf nation now pursues energy self-interest. Pakistan land corridor provides Iran modest economic relief (overland trade to/from Pakistan) but is not large enough to offset storage + blockade losses. Gas $4.30 (+9% last week) = Trump approaching $4.50 domestic political crisis threshold. Convergence 4.6 (↓ from D62’s 4.7): economic surging, diplomatic collapsing. Escalation 46% / Stalled 24% / Deal 13% / Victory 8% / Intervention 7% / Fracture 2%."
+    },
+    {
+      "date": "May 02",
+      "missiles": 0,
+      "drones": 0,
+      "primary": "D64 CEASEFIRE DAY 25 — TRUMP REJECTS IRAN PROPOSAL; ARAGHCHI CANCELS MAY 4 TALKS; LEBANON 13 KILLED. Diplomatic breakdown: Trump on Friday said he remains ‘not satisfied’ with Iran’s Apr 28 proposal (reopen Hormuz in exchange for lifting blockade + end war, deferring nuclear talks); US sources say administration ‘cool’ on offer; Rubio insists nuclear dismantlement must be simultaneous. Araghchi held calls Saturday with counterparts from Turkey, Egypt, Qatar, Saudi Arabia, Iraq, and Azerbaijan to brief on Iran’s latest initiatives — then canceled the scheduled May 4 indirect talks, citing a ‘technical reason.’ Cancellation signals Iranian domestic realignment or tactical recalibration. Lebanon: Israeli strikes killed 13 in southern Lebanon (8 in Habboush, including a child and two women; 21 wounded), IDF citing Hezbollah ceasefire violations. Hezbollah claimed retaliatory attacks on Israeli positions. Iran oil storage: now ~11–21 days to forced 1.5M bpd production cut. Brent ~$109 (est). 25-day zero-attack streak.",
+      "capability": "0+0 missile/drone. 25-day zero-attack streak continues. IRGC maintenance and repositioning ongoing. Dual blockade: US naval enforcement (~34+ ships turned away cumulative); IRGC counter-blockade (~4 vessels/24hr). Araghchi’s regional calls (Turkey, Egypt, Qatar, Saudi, Iraq, Azerbaijan) — Iran building political backing before next move. May 4 talks canceled = diplomatic calendar blank for now.",
+      "cost": "Brent ~$109 (est; pullback from $114 D63 / $126 D62 intraday high). WTI ~$100 (est). US gas ~$4.30/gallon. Iran rial: ~1.4M/USD (recovering from Apr 29 record ~1.81M). Internet Day 65 = 1,560+ hrs (~2% connectivity). Iran oil storage: ~11–21 days before forced 1.5M bpd cut. ~2,000 ships stranded. Lebanon: 2,534+ killed cumulative.",
+      "assessment": "D64 — DIPLOMATIC PAUSE + TALKS CANCELED. Araghchi canceling May 4 indirect talks is the key signal of the day: Iran either lost internal consensus on the current offer or is recalibrating after Trump’s public ‘not satisfied.’ Regional consultation round (Turkey, Egypt, Qatar, Saudi, Iraq, Azerbaijan) suggests Iran is polling its diplomatic network before making its next offer or hardening its position. Trump’s pattern — 'not satisfied' while keeping the ceasefire intact — suggests he is maximizing economic pressure to force nuclear concessions before any Hormuz deal. The oil storage clock (~11–21 days) remains the most concrete forcing function: Iran may be forced to cut production regardless of diplomatic outcome. Lebanon strikes (13 killed) continue degrading ceasefire optics and giving Hezbollah domestic justification for retaliation. Convergence 4.4 (↓ from 4.6): diplomatic track collapsing but economic pressure near maximum — the next 10–14 days are pivotal. Escalation 47% / Stalled 26% / Deal 11% / Victory 8% / Intervention 6% / Fracture 2%."
     }
   ],
   "timeline": [
@@ -2350,7 +2370,8 @@
         "Apr 28",
         "D61",
         "D62",
-        "May 01"
+        "May 01",
+        "May 02"
       ],
       "militaryExhaustion": [
         1,
@@ -2392,6 +2413,7 @@
         7,
         7.5,
         7,
+        6.5,
         6.5,
         6.5,
         6.5,
@@ -2480,7 +2502,8 @@
         9.5,
         9.7,
         9.8,
-        9.7
+        9.7,
+        9.8
       ],
       "diplomaticMomentum": [
         0,
@@ -2545,7 +2568,8 @@
         2.0,
         2.5,
         1.5,
-        1.3
+        1.3,
+        1.1
       ],
       "usPoliticalSustainability": [
         8,
@@ -2610,7 +2634,8 @@
         3.5,
         3.4,
         3.2,
-        3.0
+        3.0,
+        2.9
       ],
       "escalationCeilingDistance": [
         7,
@@ -2675,7 +2700,8 @@
         1.8,
         1.9,
         1.4,
-        1.4
+        1.4,
+        1.3
       ]
     },
     "vectorNotes": {
@@ -2766,6 +2792,7 @@
       2,
       2,
       3,
+      3,
       3
     ],
     "geoSpreadLabels": [
@@ -2831,7 +2858,8 @@
       "Apr 28",
       "D61",
       "D62",
-      "May 01"
+      "May 01",
+      "May 02"
     ],
     "countriesTargetedPerDay": [
       8,
@@ -2874,6 +2902,7 @@
       9,
       8,
       4,
+      0,
       0,
       0,
       0,
@@ -2961,6 +2990,7 @@
       0,
       0,
       0,
+      0,
       0
     ],
     "interceptRateLabels": [
@@ -3026,7 +3056,8 @@
       "Apr 28",
       "D61",
       "D62",
-      "May 01"
+      "May 01",
+      "May 02"
     ],
     "interceptRate": [
       0.82,
@@ -3066,6 +3097,7 @@
       0.87,
       0.89,
       0.89,
+      0.88,
       0.88,
       0.88,
       0.88,
@@ -3873,7 +3905,8 @@
       "Apr 28",
       "Apr 29",
       "Apr 30",
-      "May 01"
+      "May 01",
+      "May 02"
     ],
     "vessels": [
       62,
@@ -3939,7 +3972,8 @@
       3,
       3,
       7,
-      5
+      5,
+      4
     ],
     "preWarAverage": 62,
     "note": "D63 (May 01): DUAL BLOCKADE Day 17. ~5 vessels/24hr. ~2,000 ships stranded globally. CENTCOM 'short and powerful' strike plan briefed to Trump. Khamenei nuclear/missile vow (Apr 30) = 'national assets, never traded.' UAE OPEC exit effective today. MFC (Maritime Freedom Construct) cable issued Apr 30. Iran oil storage crisis: 12-22 days to capacity. Senate D62 rejected WPR = Trump retains authority. Brent $114 (D62 hit $126 intraday). D60 (Apr 28): DUAL BLOCKADE Day 15. D52 (Apr 20): Hormuz CLOSED. D49 (Apr 17): brief opening, ~15 vessels. D50 (Apr 18): IRGC fired on Sanmar Herald, Hormuz re-closed. D51 (Apr 19): USS Spruance seized M/V Touska.",
