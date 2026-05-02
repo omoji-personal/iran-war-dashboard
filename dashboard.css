@@ -37,8 +37,85 @@ body::before{
 .topbar, .shell{ position:relative; z-index:1; }
 html[dir="rtl"] body{font-family:"Vazirmatn",Tahoma,"Segoe UI",system-ui,sans-serif}
 
-/* --- Topbar --- */
-.topbar{position:sticky;top:0;z-index:5;backdrop-filter:blur(16px);background:rgba(7,17,31,.84);border-bottom:1px solid var(--border);margin-bottom:18px}
+/* --- Topbar (restyled to editorial palette) --- */
+.topbar{
+  position:sticky;top:0;z-index:5;
+  backdrop-filter:blur(16px);
+  background: rgba(11,19,34,.94);
+  border-bottom: 1px solid rgba(217,119,87,.28);
+  margin-bottom: 18px;
+  font-family: 'Iowan Old Style', 'Palatino Linotype', 'Book Antiqua', Palatino, Georgia, serif;
+}
+.topbar .title h1 {
+  color: #ecdfd0;
+  font-family: inherit;
+  font-weight: 600;
+  font-size: 18px;
+  letter-spacing: .2px;
+}
+.topbar .title p {
+  color: #786d62;
+  font-family: Inter, system-ui, sans-serif;
+  font-size: 11px;
+  margin-top: 4px;
+  letter-spacing: .2px;
+}
+.topbar .chip {
+  font-family: Inter, system-ui, sans-serif;
+  background: transparent;
+  border: 1px solid rgba(236,223,208,.16);
+  color: #a09486;
+  font-size: 11px;
+  padding: 7px 12px;
+  letter-spacing: .3px;
+}
+.topbar .chip strong { color: #ecdfd0; font-weight: 600; }
+.topbar .lang-btn {
+  font-family: Inter, system-ui, sans-serif;
+  border-color: rgba(217,119,87,.5);
+  background: rgba(217,119,87,.08);
+  color: #d97757;
+  font-size: 11px;
+  padding: 6px 14px;
+}
+.topbar .lang-btn:hover { background: rgba(217,119,87,.16); }
+.topbar .nav-toggle {
+  font-family: Inter, system-ui, sans-serif;
+  background: transparent;
+  border-color: rgba(236,223,208,.16);
+  color: #a09486;
+  font-size: 11px;
+}
+.topbar .nav-toggle:hover { color: #d97757; border-color: #d97757; }
+.topbar .mode-toggle {
+  border-color: rgba(236,223,208,.16);
+  background: transparent;
+}
+.topbar .mode-btn {
+  font-family: Inter, system-ui, sans-serif;
+  color: #786d62;
+  font-size: 11px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+.topbar .mode-btn:hover { color: #ecdfd0; }
+.topbar .mode-btn.active {
+  background: rgba(217,119,87,.12);
+  color: #d97757;
+}
+.topbar .section-nav {
+  background: rgba(11,19,34,.96);
+  border: 1px solid rgba(217,119,87,.28);
+  font-family: Inter, system-ui, sans-serif;
+}
+.topbar .section-nav a:hover {
+  color: #d97757;
+  background: rgba(217,119,87,.08);
+}
+.topbar .section-nav a:hover .nav-num { color: #d97757; }
+.topbar .section-nav .nav-group {
+  color: #d97757;
+}
 .topbar-inner,.shell{max-width:1520px;margin:0 auto;padding-left:18px;padding-right:18px}
 .topbar-inner{padding-top:14px;padding-bottom:14px;display:flex;gap:16px;justify-content:space-between;align-items:center;flex-wrap:wrap;min-width:0}
 .topbar-inner .chips{flex-wrap:wrap;min-width:0}
