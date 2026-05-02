@@ -1760,6 +1760,111 @@ html[dir="rtl"] .read-watchlist li::before { left: auto; right: 0; }
 .legacy-hidden { display: none !important; }
 
 /* ============================================
+   PRINT STYLESHEET — clean PDF for officials
+   ============================================ */
+@media print {
+  @page {
+    size: letter;
+    margin: 0.6in 0.5in;
+  }
+  body, html {
+    background: #ffffff !important;
+    color: #1a1a1a !important;
+  }
+  body::before { display: none !important; } /* no atmospheric overlays */
+  .topbar, .scrubber-wrap, .nav-wrap, .lang-btn, .mode-toggle,
+  details.read-deeper { display: none !important; }
+  /* Force-open all annex content for print */
+  details.read-deeper {
+    display: block !important;
+  }
+  details.read-deeper summary { display: none !important; }
+  details.read-deeper[open] > div,
+  details.read-deeper > div { display: block !important; }
+
+  .the-read, .briefing-section {
+    background: #ffffff !important;
+    color: #1a1a1a !important;
+    margin: 0 !important;
+    max-width: none !important;
+    padding: 0 !important;
+    border-radius: 0 !important;
+    page-break-inside: avoid;
+  }
+  .the-read::before, .briefing-section::before { display: none !important; }
+  .the-read .read-headline, .briefing-section .read-headline {
+    color: #1a1a1a !important;
+    font-size: 28px !important;
+    page-break-after: avoid;
+  }
+  .the-read .read-dek, .briefing-section .read-dek {
+    color: #555555 !important;
+    font-size: 13px !important;
+  }
+  .the-read .read-body, .briefing-section .read-body {
+    color: #1a1a1a !important;
+    column-count: 2 !important;
+    column-gap: 24px !important;
+    column-rule: 1px solid #cccccc !important;
+    font-size: 11px !important;
+    line-height: 1.55 !important;
+  }
+  .read-body p:first-child::first-letter { color: #1a1a1a !important; }
+  .read-stat-num { color: #d97757 !important; font-size: 36px !important; }
+  .read-stat-label, .read-stat-secondary .read-stat-num,
+  .read-stat-secondary .read-stat-text {
+    color: #1a1a1a !important;
+  }
+  .read-statbar {
+    border-color: #cccccc !important;
+    page-break-inside: avoid;
+  }
+  .read-stat, .read-stat-secondary {
+    border-color: #cccccc !important;
+  }
+  .read-classification {
+    background: #f5f5f5 !important;
+    border-bottom-color: #d97757 !important;
+    margin: 0 0 16px 0 !important;
+    padding: 6px 12px !important;
+  }
+  .read-class-text { color: #d97757 !important; font-size: 9px !important; }
+  .read-section-num {
+    color: #d97757 !important;
+    border-bottom-color: #cccccc !important;
+    margin: 16px 0 8px !important;
+  }
+  .read-pullquote {
+    color: #1a1a1a !important;
+    border-left-color: #d97757 !important;
+    font-size: 14px !important;
+  }
+  .brief-fig-chart, .read-chart-wrap {
+    background: #fafafa !important;
+    border: 1px solid #e5e5e5 !important;
+    page-break-inside: avoid;
+  }
+  .brief-log {
+    color: #1a1a1a !important;
+    page-break-inside: auto;
+  }
+  .brief-log th { color: #d97757 !important; border-bottom-color: #d97757 !important; }
+  .brief-log td { border-bottom-color: #e5e5e5 !important; }
+  .brief-log tr { page-break-inside: avoid; }
+  .iran-card, .stake-card, .game-side, .brief-diplomacy li {
+    background: #fafafa !important;
+    border-color: #d0d0d0 !important;
+    color: #1a1a1a !important;
+    page-break-inside: avoid;
+  }
+  .read-deeper > div .deeper-num { color: #d97757 !important; }
+  .read-footer { border-top-color: #d97757 !important; }
+  .read-foot-row { border-bottom-color: #e5e5e5 !important; color: #555 !important; }
+  .read-foot-row > span:last-child { color: #1a1a1a !important; }
+  .read-foot-disclaimer { color: #777 !important; }
+}
+
+/* ============================================
    BRIEFING SECTIONS — extend The Read aesthetic full-page
    ============================================ */
 
