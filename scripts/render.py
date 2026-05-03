@@ -236,16 +236,16 @@ def render_diff_panel(diffs: list[dict], history: list[dict]) -> str:
 
     if not has_prior_baseline:
         return """
-        <section class="diff-panel diff-empty" role="region" aria-label="24-hour probability changes">
-          <h2 class="diff-h">What changed since last tick</h2>
-          <p class="diff-empty-msg">First tick — no prior baseline. Future updates list only probability movements <em>larger than each question's 80% credible-interval half-width</em> (CI-aware noise suppression). Days when nothing material changed will say so.</p>
+        <section class="diff-panel diff-empty" role="region" aria-label="What changed since the last update">
+          <h2 class="diff-h">What changed since the last update</h2>
+          <p class="diff-empty-msg">First update — no prior day to compare against. From tomorrow on, this panel will list only the probabilities that moved more than the question's own uncertainty range. Quiet days will say so.</p>
         </section>
         """
     if not diffs:
         last_date = prior[-1]["date"]
         return f"""
-        <section class="diff-panel diff-empty" role="region" aria-label="24-hour probability changes">
-          <h2 class="diff-h">What changed since last tick</h2>
+        <section class="diff-panel diff-empty" role="region" aria-label="What changed since the last update">
+          <h2 class="diff-h">What changed since the last update</h2>
           <p class="diff-empty-msg">No probability moves above the noise floor since {esc(last_date)}. Quiet day. The questions worth watching are unchanged.</p>
         </section>
         """
@@ -265,8 +265,8 @@ def render_diff_panel(diffs: list[dict], history: list[dict]) -> str:
           </li>
         """)
     return f"""
-        <section class="diff-panel" role="region" aria-label="24-hour probability changes">
-          <h2 class="diff-h">What changed since last tick</h2>
+        <section class="diff-panel" role="region" aria-label="What changed since the last update">
+          <h2 class="diff-h">What changed since the last update</h2>
           <ul class="diff-list">{"".join(items)}</ul>
         </section>
     """
@@ -371,84 +371,54 @@ def render_headline_narrative(today: datetime, portfolio: dict, stripped: bool =
 
     if stripped:
         body = (
-            f"Three highest-stakes questions in the portfolio right now: "
+            f"The three highest-stakes questions to watch right now: "
             f"{'; '.join(bullets)}. "
-            f"For current situational facts (oil price, gas, regime moves, news), see "
-            f"the daily probability-change log under <code>logs/probability-changes/</code> — "
-            f"refreshed each tick by a cron-driven Claude session that scrapes Polymarket "
-            f"and Manifold for prediction-market signals."
+            f"Each card below shows the current probability, the 80% range it's likely "
+            f"to fall in, and a one-line rationale. The list is grouped by topic and "
+            f"updated each morning."
         )
     else:
         body = (
-            f"Three highest-stakes questions in the portfolio right now: "
+            f"The three highest-stakes questions to watch right now: "
             f"{'; '.join(bullets)}. "
-            f"Family-business questions (F-series) are tagged PERSONAL — those track "
-            f"consequences to Iranfarhang (US/UK university Persian-content distribution, "
-            f"~$310K/yr) and Kipa (Iran-UAE specialty-chemicals importer-distributor, "
-            f"~$10-12M/yr). For current situational facts (oil price, gas, regime moves, "
-            f"news), see <code>agent/memory.md</code> and "
-            f"<code>logs/events/{esc(today.strftime('%Y-%m-%d'))}.md</code> — those are "
-            f"refreshed each tick. Open <code>agent/operator-queue.md</code> to "
-            f"confirm/edit/replace any F-question whose framing is wrong."
+            f"The PERSONAL-tagged questions track family-business consequences — "
+            f"Iranfarhang (Persian-content distribution to US/UK universities) and "
+            f"Kipa (specialty-chemicals importer into Iran). Each card below shows the "
+            f"current probability, the 80% range it's likely to fall in, and a one-line "
+            f"rationale. Updated each morning."
         )
 
     return f"""
       <section class="headline" role="region" aria-label="Today's headline">
         <div class="headline-eyebrow">Today's read · {esc(today_str)} · {esc(cf_phrase)} · {esc(bd_phrase)} · interpretation, not forecast</div>
-        <p class="headline-lead"><span class="dropcap">D</span>{d} of the 2026 Iran-US conflict. Probabilities below are seeded from public reporting and operator judgment, then advanced daily by a cron-driven Claude session that ingests Polymarket + Manifold prediction-market signals and surfaces 24h diffs. The model is <em>uncalibrated</em> — no prediction has resolved yet, no Brier scores exist. Treat as structured scenario reasoning, not as forecasts.</p>
+        <p class="headline-lead"><span class="dropcap">D</span>{d} of the 2026 Iran-US conflict. The questions below are scored from a daily reading of public news and prediction-market prices. None have resolved yet, so the probabilities have no track record — treat them as structured guesses, not predictions.</p>
         <p class="headline-body">{body}</p>
       </section>
     """
 
 
 def render_methodology(stripped: bool = False) -> str:
-    if stripped:
-        return """
-      <section class="methodology" role="region" aria-label="Methodology and disclosures">
-        <h2 class="meth-h">Methodology + honesty disclosures</h2>
+    # Both paths use plain language — the page is read by family + public, not engineers.
+    common = """
+      <section class="methodology" role="region" aria-label="What to keep in mind">
+        <h2 class="meth-h">What to keep in mind</h2>
         <ul class="meth-list">
-          <li><strong>EXPERIMENTAL — UNCALIBRATED.</strong> No prediction has resolved yet. Model has no validated track record. Brier scores against Polymarket / Manifold / AR baseline begin populating as resolutions accumulate.</li>
-          <li><strong>Two questions carry permanent humility flags</strong> (C1 Khamenei death, C3 Mojtaba succession). Every published statistical conflict-forecasting model has failed to predict regime-fracture / leader-incapacity events. Treat probabilities as structurally uncertain, not numeric.</li>
-          <li><strong>Free-only data sources.</strong> Polymarket Gamma + Manifold + optional Metaculus prediction-market signals. No paid feeds, no proprietary inputs.</li>
-          <li><strong>No trade output.</strong> Until 1-year Brier beats the relevant benchmark for the specific outcome class, no actionable trade signals are surfaced.</li>
-          <li>Methodology grounded in published forecasting literature (Tetlock superforecasting, IARPA HFC, Mueller-Rauh ConflictForecast, ICD-203 vocabulary, Pearl-style theory-of-change DAGs).</li>
+          <li><strong>Experimental — no track record yet.</strong> None of these questions has resolved, so the probabilities haven't been graded against reality. Treat them as structured guesses.</li>
+          <li><strong>Two questions are intentionally fuzzy</strong> — anything tied to whether a leader is alive, ill, or being succeeded (Khamenei, Mojtaba). Forecasting models historically fail at these. The number is a placeholder; the rationale is what to read.</li>
+          <li><strong>How probabilities move</strong>: each morning, public news and prediction-market prices are re-read. If something shifts a question by more than its 80% range, it shows up at the top in "What changed since the last update."</li>
+          <li><strong>What this is not.</strong> It is not financial or political advice. No one is being told to act on these numbers. Probabilities are scenario weighing, not forecasts.</li>
         </ul>
       </section>
     """
-    return """
-      <section class="methodology" role="region" aria-label="Methodology and disclosures">
-        <h2 class="meth-h">Methodology + honesty disclosures</h2>
-        <ul class="meth-list">
-          <li><strong>EXPERIMENTAL — UNCALIBRATED.</strong> No prediction has resolved yet. Model has no validated track record. Brier scores against Polymarket / Manifold / AR baseline begin populating Phase 2+ as resolutions accumulate.</li>
-          <li><strong>Probabilities are agent-seeded initial reads</strong> in Phase 0 MVP — operator (you) has not yet reviewed. Operator owns probability edits via direct <code>portfolio.yaml</code> commits; cron-driven session surfaces market-signal deltas and never modifies probabilities itself.</li>
-          <li><strong>Two questions carry permanent humility flags</strong> (C1 Khamenei death, C3 Mojtaba succession). Every published statistical conflict-forecasting model has failed to predict regime-fracture / leader-incapacity events. Treat probabilities as structurally uncertain, not numeric.</li>
-          <li><strong>Reference classes</strong> (strict + broad tiers) governing each probability are at <code>reference_classes.yaml</code>.</li>
-          <li><strong>Sourced LR table</strong> (every likelihood ratio carries source class — historical-analog / market-implied / explicitly-subjective with replacement criteria) at <code>lr_table.yaml</code>. Activates Phase 2.</li>
-          <li><strong>Free-only operating cost.</strong> Cron via existing Claude subscription (RemoteTrigger included), data sources are free public APIs (Polymarket Gamma + Manifold + optional Metaculus). Total cost: $0/year. Paid feeds permanently out-of-scope.</li>
-          <li><strong>No alpha-trade output, period.</strong> Until 1-year Brier beats the relevant benchmark for the specific outcome class, no actionable trade signals are surfaced.</li>
-          <li>Full design at <code>docs/superpowers/specs/2026-05-03-predictive-agent-design.md</code> (v8 — converged after 7 adversarial-review rounds). Audit at <code>docs/audits/AUDIT-2026-05-03.md</code>.</li>
-        </ul>
-      </section>
-    """
+    return common
 
 
 def render_logs_section() -> str:
-    return """
-      <section class="logs-section" role="region" aria-label="Change-history logs">
-        <h2 class="logs-h">Eight first-class change logs</h2>
-        <p class="logs-sub">For a <em>living</em> model the change-history is the product. All logs are committed Markdown, append-only per cron tick.</p>
-        <div class="logs-grid">
-          <a class="log-card" href="logs/events"><span class="log-name">Event log</span><span class="log-desc">Every ingested event with source, cluster ID, applied LRs</span></a>
-          <a class="log-card" href="logs/probability-changes"><span class="log-name">Probability-change log</span><span class="log-desc">Every probability movement with attribution chain</span></a>
-          <a class="log-card" href="logs/agent-decisions"><span class="log-name">Agent-decision log</span><span class="log-desc">What the agent investigated, why, what it found</span></a>
-          <a class="log-card" href="logs/sources-shifted"><span class="log-name">Sources-shifted log</span><span class="log-desc">Polymarket / Manifold / Metaculus deltas</span></a>
-          <a class="log-card" href="logs/adversarial-inputs"><span class="log-name">Adversarial-input log</span><span class="log-desc">Quarantined claims, deception flags, state-media positioning</span></a>
-          <a class="log-card placeholder"><span class="log-name">LR-revision log</span><span class="log-desc">Phase 2+: every LR change with old, new, source class, justification</span></a>
-          <a class="log-card placeholder"><span class="log-name">Resolution log</span><span class="log-desc">Phase 2+: every question resolved with Brier, post-mortem</span></a>
-          <a class="log-card placeholder"><span class="log-name">Reference-class log</span><span class="log-desc">Phase 2+: members added/removed with justification</span></a>
-        </div>
-      </section>
-    """
+    # Intentionally empty — the rendered page does not surface internal log files
+    # to visitors. The "What changed since last tick" panel covers the
+    # visitor-relevant change history. The actual log files remain on disk for
+    # operator review but are not linked from the page.
+    return ""
 
 
 def render_question_board(by_cat: dict, stripped: bool = False) -> str:
@@ -531,7 +501,7 @@ def render_html(portfolio: dict, diffs: list[dict], history: list[dict], strippe
     title_base = "2026 Iran Conflict — Predictive Agent"
     title = title_base + (" (Public)" if stripped else "")
     n_questions_visible = len(questions_for_view)
-    description_text = f"Daily Brier-scoreable predictions across {n_questions_visible} questions on the 2026 Iran-US conflict. Experimental — uncalibrated."
+    description_text = f"Daily-updated probability brief on {n_questions_visible} questions about the 2026 Iran-US conflict. Experimental — no track record yet."
 
     d = war_day(today)
     cf = cf_day(today)
@@ -548,23 +518,13 @@ def render_html(portfolio: dict, diffs: list[dict], history: list[dict], strippe
     methodology_html = render_methodology(stripped=stripped)
     logs_html = "" if stripped else render_logs_section()
 
-    # Footer link set differs by deploy:
+    # Footer keeps only links a visitor would actually click.
+    # Internal docs (design spec, audits, cron workflow) are not surfaced —
+    # they exist in the repo for the operator's reference, not the page.
     if stripped:
-        # Public deploy: only the (filtered, stripped) portfolio.yaml is exposed.
-        # Reference classes + LR table contain F-class entries — kept private.
-        footer_links_html = (
-            '<a href="portfolio.yaml">Portfolio (YAML, public-stripped)</a>'
-        )
+        footer_links_html = ""
     else:
-        footer_links_html = (
-            '<a href="docs/superpowers/specs/2026-05-03-predictive-agent-design.md">Design spec (v8)</a>'
-            '<a href="docs/audits/AUDIT-2026-05-03.md">Audit</a>'
-            '<a href="docs/CRON-WORKFLOW.md">Cron workflow</a>'
-            '<a href="portfolio.yaml">Portfolio (YAML)</a>'
-            '<a href="reference_classes.yaml">Reference classes</a>'
-            '<a href="lr_table.yaml">LR table</a>'
-            '<a href="/legacy">Legacy dashboard</a>'
-        )
+        footer_links_html = '<a href="/legacy">Older dashboard</a>'
 
     return f"""<!DOCTYPE html>
 <html lang="en" dir="ltr">
@@ -589,22 +549,18 @@ def render_html(portfolio: dict, diffs: list[dict], history: list[dict], strippe
         <span class="topbar-title">Predictive Agent</span>
       </div>
       <div class="topbar-r">
-        <span class="topbar-meta" title="Tick rendered at this UTC instant">{esc(today.strftime("%Y-%m-%d %H:%M UTC"))}</span>
+        <span class="topbar-meta" title="Page rendered at this time (UTC)">{esc(today.strftime("%Y-%m-%d %H:%M UTC"))}</span>
         <span class="topbar-meta">Next: {esc(next_tick_local)}</span>
-        <span class="topbar-meta">v{esc(portfolio["metadata"]["engine_version"])}</span>
-        <span class="topbar-meta">Phase 0</span>
       </div>
     </div>
   </div>
 
   <div class="experimental-banner agent-banner">
     <strong>EXPERIMENTAL — UNCALIBRATED</strong>
-    <span>No prediction has resolved yet. Model has no validated track record. Treat probabilities as structured scenario reasoning, not as forecasts.{(
+    <span>None of these questions has resolved yet, so the probabilities have no track record. Treat them as structured scenario reasoning, not as forecasts.{(
       ''
       if stripped else
-      ' <a href="docs/superpowers/specs/2026-05-03-predictive-agent-design.md">Design spec</a> · '
-      '<a href="docs/audits/AUDIT-2026-05-03.md">Audit</a> · '
-      '<a href="/legacy">Legacy dashboard</a>'
+      ' <a href="/legacy">Older dashboard</a>'
     )}</span>
   </div>
 
@@ -619,7 +575,7 @@ def render_html(portfolio: dict, diffs: list[dict], history: list[dict], strippe
         </div>
         <div class="masthead-r">
           <div class="masthead-publisher">2026 IRAN-US CONFLICT MONITOR</div>
-          <div class="masthead-publisher-sub">v0.2 Phase 0 MVP · Daily 07:00 ET cron</div>
+          <div class="masthead-publisher-sub">Daily 07:00 ET update</div>
         </div>
       </div>
       <div class="masthead-rule"></div>
@@ -643,7 +599,7 @@ def render_html(portfolio: dict, diffs: list[dict], history: list[dict], strippe
     <div class="agent-footer-inner">
       <div class="agent-footer-l">
         <div class="agent-footer-brand">2026 IRAN-US CONFLICT PREDICTIVE AGENT</div>
-        <div class="agent-footer-meta">Daily structured scenario analysis · cron-driven · experimental · uncalibrated</div>
+        <div class="agent-footer-meta">Daily structured scenario analysis · experimental · no track record yet</div>
       </div>
       <div class="agent-footer-r">
         {footer_links_html}

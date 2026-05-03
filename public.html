@@ -6,9 +6,9 @@
   <meta name="theme-color" content="#0b1322" />
   <title>2026 Iran Conflict — Predictive Agent (Public)</title>
   <meta property="og:title" content="2026 Iran Conflict — Predictive Agent (Public)" />
-  <meta property="og:description" content="Daily Brier-scoreable predictions across 20 questions on the 2026 Iran-US conflict. Experimental — uncalibrated." />
+  <meta property="og:description" content="Daily-updated probability brief on 20 questions about the 2026 Iran-US conflict. Experimental — no track record yet." />
   <meta property="og:type" content="article" />
-  <meta name="description" content="Daily Brier-scoreable predictions across 20 questions on the 2026 Iran-US conflict. Experimental — uncalibrated." />
+  <meta name="description" content="Daily-updated probability brief on 20 questions about the 2026 Iran-US conflict. Experimental — no track record yet." />
   <link rel="stylesheet" href="dashboard.css" />
   <link rel="canonical" href="https://iran-war-public.vercel.app/" />
 </head>
@@ -21,17 +21,15 @@
         <span class="topbar-title">Predictive Agent</span>
       </div>
       <div class="topbar-r">
-        <span class="topbar-meta" title="Tick rendered at this UTC instant">2026-05-03 20:05 UTC</span>
+        <span class="topbar-meta" title="Page rendered at this time (UTC)">2026-05-03 20:11 UTC</span>
         <span class="topbar-meta">Next: Daily 07:00 ET</span>
-        <span class="topbar-meta">v0.2.0</span>
-        <span class="topbar-meta">Phase 0</span>
       </div>
     </div>
   </div>
 
   <div class="experimental-banner agent-banner">
     <strong>EXPERIMENTAL — UNCALIBRATED</strong>
-    <span>No prediction has resolved yet. Model has no validated track record. Treat probabilities as structured scenario reasoning, not as forecasts.</span>
+    <span>None of these questions has resolved yet, so the probabilities have no track record. Treat them as structured scenario reasoning, not as forecasts.</span>
   </div>
 
   <main class="agent-page" role="main" aria-label="Predictive Agent Brief">
@@ -45,16 +43,16 @@
         </div>
         <div class="masthead-r">
           <div class="masthead-publisher">2026 IRAN-US CONFLICT MONITOR</div>
-          <div class="masthead-publisher-sub">v0.2 Phase 0 MVP · Daily 07:00 ET cron</div>
+          <div class="masthead-publisher-sub">Daily 07:00 ET update</div>
         </div>
       </div>
       <div class="masthead-rule"></div>
     </header>
 
     
-        <section class="diff-panel diff-empty" role="region" aria-label="24-hour probability changes">
-          <h2 class="diff-h">What changed since last tick</h2>
-          <p class="diff-empty-msg">First tick — no prior baseline. Future updates list only probability movements <em>larger than each question's 80% credible-interval half-width</em> (CI-aware noise suppression). Days when nothing material changed will say so.</p>
+        <section class="diff-panel diff-empty" role="region" aria-label="What changed since the last update">
+          <h2 class="diff-h">What changed since the last update</h2>
+          <p class="diff-empty-msg">First update — no prior day to compare against. From tomorrow on, this panel will list only the probabilities that moved more than the question's own uncertainty range. Quiet days will say so.</p>
         </section>
         
 
@@ -77,8 +75,8 @@
     
       <section class="headline" role="region" aria-label="Today's headline">
         <div class="headline-eyebrow">Today's read · May 3, 2026 · cease-fire Day 27 · Hormuz blockade Day 19 · interpretation, not forecast</div>
-        <p class="headline-lead"><span class="dropcap">D</span>65 of the 2026 Iran-US conflict. Probabilities below are seeded from public reporting and operator judgment, then advanced daily by a cron-driven Claude session that ingests Polymarket + Manifold prediction-market signals and surfaces 24h diffs. The model is <em>uncalibrated</em> — no prediction has resolved yet, no Brier scores exist. Treat as structured scenario reasoning, not as forecasts.</p>
-        <p class="headline-body">Three highest-stakes questions in the portfolio right now: <strong>A1</strong> (very unlikely, 18%) — Iran-US framework agreement signed (any form) by 2026-09-30; <strong>A3</strong> (very unlikely, 12%) — US announces formal naval reflagging of GCC-flagged tankers transiting Hormuz by 2026-12-31; <strong>B1</strong> (unlikely, 20%) — US conducts kinetic strike on Iranian sovereign territory by 2026-12-31. For current situational facts (oil price, gas, regime moves, news), see the daily probability-change log under <code>logs/probability-changes/</code> — refreshed each tick by a cron-driven Claude session that scrapes Polymarket and Manifold for prediction-market signals.</p>
+        <p class="headline-lead"><span class="dropcap">D</span>65 of the 2026 Iran-US conflict. The questions below are scored from a daily reading of public news and prediction-market prices. None have resolved yet, so the probabilities have no track record — treat them as structured guesses, not predictions.</p>
+        <p class="headline-body">The three highest-stakes questions to watch right now: <strong>A1</strong> (very unlikely, 18%) — Iran-US framework agreement signed (any form) by 2026-09-30; <strong>A3</strong> (very unlikely, 12%) — US announces formal naval reflagging of GCC-flagged tankers transiting Hormuz by 2026-12-31; <strong>B1</strong> (unlikely, 20%) — US conducts kinetic strike on Iranian sovereign territory by 2026-12-31. Each card below shows the current probability, the 80% range it's likely to fall in, and a one-line rationale. The list is grouped by topic and updated each morning.</p>
       </section>
     
 
@@ -628,14 +626,13 @@
     
 
     
-      <section class="methodology" role="region" aria-label="Methodology and disclosures">
-        <h2 class="meth-h">Methodology + honesty disclosures</h2>
+      <section class="methodology" role="region" aria-label="What to keep in mind">
+        <h2 class="meth-h">What to keep in mind</h2>
         <ul class="meth-list">
-          <li><strong>EXPERIMENTAL — UNCALIBRATED.</strong> No prediction has resolved yet. Model has no validated track record. Brier scores against Polymarket / Manifold / AR baseline begin populating as resolutions accumulate.</li>
-          <li><strong>Two questions carry permanent humility flags</strong> (C1 Khamenei death, C3 Mojtaba succession). Every published statistical conflict-forecasting model has failed to predict regime-fracture / leader-incapacity events. Treat probabilities as structurally uncertain, not numeric.</li>
-          <li><strong>Free-only data sources.</strong> Polymarket Gamma + Manifold + optional Metaculus prediction-market signals. No paid feeds, no proprietary inputs.</li>
-          <li><strong>No trade output.</strong> Until 1-year Brier beats the relevant benchmark for the specific outcome class, no actionable trade signals are surfaced.</li>
-          <li>Methodology grounded in published forecasting literature (Tetlock superforecasting, IARPA HFC, Mueller-Rauh ConflictForecast, ICD-203 vocabulary, Pearl-style theory-of-change DAGs).</li>
+          <li><strong>Experimental — no track record yet.</strong> None of these questions has resolved, so the probabilities haven't been graded against reality. Treat them as structured guesses.</li>
+          <li><strong>Two questions are intentionally fuzzy</strong> — anything tied to whether a leader is alive, ill, or being succeeded (Khamenei, Mojtaba). Forecasting models historically fail at these. The number is a placeholder; the rationale is what to read.</li>
+          <li><strong>How probabilities move</strong>: each morning, public news and prediction-market prices are re-read. If something shifts a question by more than its 80% range, it shows up at the top in "What changed since the last update."</li>
+          <li><strong>What this is not.</strong> It is not financial or political advice. No one is being told to act on these numbers. Probabilities are scenario weighing, not forecasts.</li>
         </ul>
       </section>
     
@@ -646,10 +643,10 @@
     <div class="agent-footer-inner">
       <div class="agent-footer-l">
         <div class="agent-footer-brand">2026 IRAN-US CONFLICT PREDICTIVE AGENT</div>
-        <div class="agent-footer-meta">Daily structured scenario analysis · cron-driven · experimental · uncalibrated</div>
+        <div class="agent-footer-meta">Daily structured scenario analysis · experimental · no track record yet</div>
       </div>
       <div class="agent-footer-r">
-        <a href="portfolio.yaml">Portfolio (YAML, public-stripped)</a>
+        
       </div>
     </div>
   </footer>

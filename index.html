@@ -6,9 +6,9 @@
   <meta name="theme-color" content="#0b1322" />
   <title>2026 Iran Conflict — Predictive Agent</title>
   <meta property="og:title" content="2026 Iran Conflict — Predictive Agent" />
-  <meta property="og:description" content="Daily Brier-scoreable predictions across 32 questions on the 2026 Iran-US conflict. Experimental — uncalibrated." />
+  <meta property="og:description" content="Daily-updated probability brief on 32 questions about the 2026 Iran-US conflict. Experimental — no track record yet." />
   <meta property="og:type" content="article" />
-  <meta name="description" content="Daily Brier-scoreable predictions across 32 questions on the 2026 Iran-US conflict. Experimental — uncalibrated." />
+  <meta name="description" content="Daily-updated probability brief on 32 questions about the 2026 Iran-US conflict. Experimental — no track record yet." />
   <link rel="stylesheet" href="dashboard.css" />
   <link rel="canonical" href="https://iran-war-dashboard-murex.vercel.app/" />
 </head>
@@ -21,17 +21,15 @@
         <span class="topbar-title">Predictive Agent</span>
       </div>
       <div class="topbar-r">
-        <span class="topbar-meta" title="Tick rendered at this UTC instant">2026-05-03 20:05 UTC</span>
+        <span class="topbar-meta" title="Page rendered at this time (UTC)">2026-05-03 20:11 UTC</span>
         <span class="topbar-meta">Next: Daily 07:00 ET</span>
-        <span class="topbar-meta">v0.2.0</span>
-        <span class="topbar-meta">Phase 0</span>
       </div>
     </div>
   </div>
 
   <div class="experimental-banner agent-banner">
     <strong>EXPERIMENTAL — UNCALIBRATED</strong>
-    <span>No prediction has resolved yet. Model has no validated track record. Treat probabilities as structured scenario reasoning, not as forecasts. <a href="docs/superpowers/specs/2026-05-03-predictive-agent-design.md">Design spec</a> · <a href="docs/audits/AUDIT-2026-05-03.md">Audit</a> · <a href="/legacy">Legacy dashboard</a></span>
+    <span>None of these questions has resolved yet, so the probabilities have no track record. Treat them as structured scenario reasoning, not as forecasts. <a href="/legacy">Older dashboard</a></span>
   </div>
 
   <main class="agent-page" role="main" aria-label="Predictive Agent Brief">
@@ -45,16 +43,16 @@
         </div>
         <div class="masthead-r">
           <div class="masthead-publisher">2026 IRAN-US CONFLICT MONITOR</div>
-          <div class="masthead-publisher-sub">v0.2 Phase 0 MVP · Daily 07:00 ET cron</div>
+          <div class="masthead-publisher-sub">Daily 07:00 ET update</div>
         </div>
       </div>
       <div class="masthead-rule"></div>
     </header>
 
     
-        <section class="diff-panel diff-empty" role="region" aria-label="24-hour probability changes">
-          <h2 class="diff-h">What changed since last tick</h2>
-          <p class="diff-empty-msg">First tick — no prior baseline. Future updates list only probability movements <em>larger than each question's 80% credible-interval half-width</em> (CI-aware noise suppression). Days when nothing material changed will say so.</p>
+        <section class="diff-panel diff-empty" role="region" aria-label="What changed since the last update">
+          <h2 class="diff-h">What changed since the last update</h2>
+          <p class="diff-empty-msg">First update — no prior day to compare against. From tomorrow on, this panel will list only the probabilities that moved more than the question's own uncertainty range. Quiet days will say so.</p>
         </section>
         
 
@@ -77,8 +75,8 @@
     
       <section class="headline" role="region" aria-label="Today's headline">
         <div class="headline-eyebrow">Today's read · May 3, 2026 · cease-fire Day 27 · Hormuz blockade Day 19 · interpretation, not forecast</div>
-        <p class="headline-lead"><span class="dropcap">D</span>65 of the 2026 Iran-US conflict. Probabilities below are seeded from public reporting and operator judgment, then advanced daily by a cron-driven Claude session that ingests Polymarket + Manifold prediction-market signals and surfaces 24h diffs. The model is <em>uncalibrated</em> — no prediction has resolved yet, no Brier scores exist. Treat as structured scenario reasoning, not as forecasts.</p>
-        <p class="headline-body">Three highest-stakes questions in the portfolio right now: <strong>A1</strong> (very unlikely, 18%) — Iran-US framework agreement signed (any form) by 2026-09-30; <strong>A3</strong> (very unlikely, 12%) — US announces formal naval reflagging of GCC-flagged tankers transiting Hormuz by 2026-12-31; <strong>B1</strong> (unlikely, 20%) — US conducts kinetic strike on Iranian sovereign territory by 2026-12-31. Family-business questions (F-series) are tagged PERSONAL — those track consequences to Iranfarhang (US/UK university Persian-content distribution, ~$310K/yr) and Kipa (Iran-UAE specialty-chemicals importer-distributor, ~$10-12M/yr). For current situational facts (oil price, gas, regime moves, news), see <code>agent/memory.md</code> and <code>logs/events/2026-05-03.md</code> — those are refreshed each tick. Open <code>agent/operator-queue.md</code> to confirm/edit/replace any F-question whose framing is wrong.</p>
+        <p class="headline-lead"><span class="dropcap">D</span>65 of the 2026 Iran-US conflict. The questions below are scored from a daily reading of public news and prediction-market prices. None have resolved yet, so the probabilities have no track record — treat them as structured guesses, not predictions.</p>
+        <p class="headline-body">The three highest-stakes questions to watch right now: <strong>A1</strong> (very unlikely, 18%) — Iran-US framework agreement signed (any form) by 2026-09-30; <strong>A3</strong> (very unlikely, 12%) — US announces formal naval reflagging of GCC-flagged tankers transiting Hormuz by 2026-12-31; <strong>B1</strong> (unlikely, 20%) — US conducts kinetic strike on Iranian sovereign territory by 2026-12-31. The PERSONAL-tagged questions track family-business consequences — Iranfarhang (Persian-content distribution to US/UK universities) and Kipa (specialty-chemicals importer into Iran). Each card below shows the current probability, the 80% range it's likely to fall in, and a one-line rationale. Updated each morning.</p>
       </section>
     
 
@@ -938,34 +936,15 @@
 </section>
 
     
-      <section class="logs-section" role="region" aria-label="Change-history logs">
-        <h2 class="logs-h">Eight first-class change logs</h2>
-        <p class="logs-sub">For a <em>living</em> model the change-history is the product. All logs are committed Markdown, append-only per cron tick.</p>
-        <div class="logs-grid">
-          <a class="log-card" href="logs/events"><span class="log-name">Event log</span><span class="log-desc">Every ingested event with source, cluster ID, applied LRs</span></a>
-          <a class="log-card" href="logs/probability-changes"><span class="log-name">Probability-change log</span><span class="log-desc">Every probability movement with attribution chain</span></a>
-          <a class="log-card" href="logs/agent-decisions"><span class="log-name">Agent-decision log</span><span class="log-desc">What the agent investigated, why, what it found</span></a>
-          <a class="log-card" href="logs/sources-shifted"><span class="log-name">Sources-shifted log</span><span class="log-desc">Polymarket / Manifold / Metaculus deltas</span></a>
-          <a class="log-card" href="logs/adversarial-inputs"><span class="log-name">Adversarial-input log</span><span class="log-desc">Quarantined claims, deception flags, state-media positioning</span></a>
-          <a class="log-card placeholder"><span class="log-name">LR-revision log</span><span class="log-desc">Phase 2+: every LR change with old, new, source class, justification</span></a>
-          <a class="log-card placeholder"><span class="log-name">Resolution log</span><span class="log-desc">Phase 2+: every question resolved with Brier, post-mortem</span></a>
-          <a class="log-card placeholder"><span class="log-name">Reference-class log</span><span class="log-desc">Phase 2+: members added/removed with justification</span></a>
-        </div>
-      </section>
-    
 
     
-      <section class="methodology" role="region" aria-label="Methodology and disclosures">
-        <h2 class="meth-h">Methodology + honesty disclosures</h2>
+      <section class="methodology" role="region" aria-label="What to keep in mind">
+        <h2 class="meth-h">What to keep in mind</h2>
         <ul class="meth-list">
-          <li><strong>EXPERIMENTAL — UNCALIBRATED.</strong> No prediction has resolved yet. Model has no validated track record. Brier scores against Polymarket / Manifold / AR baseline begin populating Phase 2+ as resolutions accumulate.</li>
-          <li><strong>Probabilities are agent-seeded initial reads</strong> in Phase 0 MVP — operator (you) has not yet reviewed. Operator owns probability edits via direct <code>portfolio.yaml</code> commits; cron-driven session surfaces market-signal deltas and never modifies probabilities itself.</li>
-          <li><strong>Two questions carry permanent humility flags</strong> (C1 Khamenei death, C3 Mojtaba succession). Every published statistical conflict-forecasting model has failed to predict regime-fracture / leader-incapacity events. Treat probabilities as structurally uncertain, not numeric.</li>
-          <li><strong>Reference classes</strong> (strict + broad tiers) governing each probability are at <code>reference_classes.yaml</code>.</li>
-          <li><strong>Sourced LR table</strong> (every likelihood ratio carries source class — historical-analog / market-implied / explicitly-subjective with replacement criteria) at <code>lr_table.yaml</code>. Activates Phase 2.</li>
-          <li><strong>Free-only operating cost.</strong> Cron via existing Claude subscription (RemoteTrigger included), data sources are free public APIs (Polymarket Gamma + Manifold + optional Metaculus). Total cost: $0/year. Paid feeds permanently out-of-scope.</li>
-          <li><strong>No alpha-trade output, period.</strong> Until 1-year Brier beats the relevant benchmark for the specific outcome class, no actionable trade signals are surfaced.</li>
-          <li>Full design at <code>docs/superpowers/specs/2026-05-03-predictive-agent-design.md</code> (v8 — converged after 7 adversarial-review rounds). Audit at <code>docs/audits/AUDIT-2026-05-03.md</code>.</li>
+          <li><strong>Experimental — no track record yet.</strong> None of these questions has resolved, so the probabilities haven't been graded against reality. Treat them as structured guesses.</li>
+          <li><strong>Two questions are intentionally fuzzy</strong> — anything tied to whether a leader is alive, ill, or being succeeded (Khamenei, Mojtaba). Forecasting models historically fail at these. The number is a placeholder; the rationale is what to read.</li>
+          <li><strong>How probabilities move</strong>: each morning, public news and prediction-market prices are re-read. If something shifts a question by more than its 80% range, it shows up at the top in "What changed since the last update."</li>
+          <li><strong>What this is not.</strong> It is not financial or political advice. No one is being told to act on these numbers. Probabilities are scenario weighing, not forecasts.</li>
         </ul>
       </section>
     
@@ -976,10 +955,10 @@
     <div class="agent-footer-inner">
       <div class="agent-footer-l">
         <div class="agent-footer-brand">2026 IRAN-US CONFLICT PREDICTIVE AGENT</div>
-        <div class="agent-footer-meta">Daily structured scenario analysis · cron-driven · experimental · uncalibrated</div>
+        <div class="agent-footer-meta">Daily structured scenario analysis · experimental · no track record yet</div>
       </div>
       <div class="agent-footer-r">
-        <a href="docs/superpowers/specs/2026-05-03-predictive-agent-design.md">Design spec (v8)</a><a href="docs/audits/AUDIT-2026-05-03.md">Audit</a><a href="docs/CRON-WORKFLOW.md">Cron workflow</a><a href="portfolio.yaml">Portfolio (YAML)</a><a href="reference_classes.yaml">Reference classes</a><a href="lr_table.yaml">LR table</a><a href="/legacy">Legacy dashboard</a>
+        <a href="/legacy">Older dashboard</a>
       </div>
     </div>
   </footer>
