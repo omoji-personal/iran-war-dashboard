@@ -490,7 +490,7 @@ def _is_private_question(q: dict) -> bool:
 def render_html(portfolio: dict, diffs: list[dict], history: list[dict], stripped: bool = False) -> str:
     today = datetime.now(timezone.utc)
     today_iso = today.strftime("%Y-%m-%d")
-    next_tick_local = "Daily 06:00 ET (next tomorrow morning)"
+    next_tick_local = "Daily 07:00 ET"
 
     # Stripped public deploy excludes private/personal/business questions entirely.
     # Filter applies BOTH category and stakeholder-tag rules so a Q tagged for
@@ -619,7 +619,7 @@ def render_html(portfolio: dict, diffs: list[dict], history: list[dict], strippe
         </div>
         <div class="masthead-r">
           <div class="masthead-publisher">2026 IRAN-US CONFLICT MONITOR</div>
-          <div class="masthead-publisher-sub">v0.2 Phase 0 MVP · Daily 0700 ET cron</div>
+          <div class="masthead-publisher-sub">v0.2 Phase 0 MVP · Daily 07:00 ET cron</div>
         </div>
       </div>
       <div class="masthead-rule"></div>
