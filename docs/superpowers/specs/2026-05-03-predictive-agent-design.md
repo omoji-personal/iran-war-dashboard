@@ -504,8 +504,8 @@ The honest claim: top-quartile forecasting *system* on the discrete events it co
 
 1. **MVP go/no-go?** Default: yes, ship 5-day MVP at homepage with 8 questions; current dashboard moves to `/legacy`.
 2. **Cron cadence — daily-only or twice-daily?** Default: daily 06:00 ET to start; add 17:00 ET in Phase 2.
-3. **~$4,000/year operating budget** ($3,650 cron + ~$100 Polymarket + ~$200 Persian NLP + ~$50 hosting). Approve?
-4. **Paid feeds?** Default: free-only; add Kpler / Spire / Windward / Bloomberg only when specific bottleneck identified.
+3. **~~~$4,000/year operating budget~~** *(superseded 2026-05-03: agent runs under user's existing Claude subscription via RemoteTrigger; all data sources are free public APIs; total operating cost = **$0/year**)*
+4. **Paid feeds?** **Permanently out-of-scope per user constraint 2026-05-03.** Kpler / Spire / Windward / Bloomberg / Metaculus-token (free with account but requires manual setup) all stay out unless user explicitly opts in.
 5. **Persian NLP scope.** Default: NLLB translate-then-extract for Phase 4; full ParsBERT fine-tune in Phase 6.
 6. **Telegram + ADS-B scope.** Default: Phase 4-5 with conservative trigger logic.
 7. **External reviewer pick.** Default: Sadjadpour first; fallback Vaez or Alfoneh.
