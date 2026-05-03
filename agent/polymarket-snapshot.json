@@ -1,5 +1,5 @@
 {
-  "fetched_at": "2026-05-03T16:14:47.266711+00:00",
+  "fetched_at": "2026-05-03T16:17:51.135634+00:00",
   "markets": {
     "will-the-iranian-regime-fall-by-may-31": {
       "slug": "will-the-iranian-regime-fall-by-may-31",
@@ -270,15 +270,15 @@
       "question": "Iran agrees to surrender enriched uranium stockpile by June 30, 2026?",
       "price_yes": 0.145,
       "volume_24h": 33161.034741,
-      "liquidity": 192312.123,
+      "liquidity": 286561.1762,
       "end_date": "2026-06-30T00:00:00Z"
     },
     "iran-agrees-to-end-enrichment-of-uranium-by-june-30": {
       "slug": "iran-agrees-to-end-enrichment-of-uranium-by-june-30",
       "question": "Iran agrees to end enrichment of uranium by June 30?",
       "price_yes": 0.28,
-      "volume_24h": 31028.634422,
-      "liquidity": 58622.6513,
+      "volume_24h": 31168.15757,
+      "liquidity": 75170.205,
       "end_date": "2026-06-30T00:00:00Z"
     },
     "iran-leadership-change-by-december-31-974-976-658-482-568": {
@@ -286,7 +286,7 @@
       "question": "Iran leadership change by December 31?",
       "price_yes": 0.335,
       "volume_24h": 30965.997729000002,
-      "liquidity": 172296.0285,
+      "liquidity": 185330.1968,
       "end_date": "2026-12-31T00:00:00Z"
     },
     "kharg-island-no-longer-under-iranian-control-by-june-30-561-854": {
@@ -294,15 +294,15 @@
       "question": "Kharg Island no longer under Iranian control by June 30?",
       "price_yes": 0.115,
       "volume_24h": 28144.502920000003,
-      "liquidity": 212621.7128,
+      "liquidity": 212661.9776,
       "end_date": "2026-06-30T23:55:00Z"
     },
     "us-x-iran-diplomatic-meeting-by-june-30-2026": {
       "slug": "us-x-iran-diplomatic-meeting-by-june-30-2026",
       "question": "US x Iran diplomatic meeting by June 30, 2026?",
       "price_yes": 0.705,
-      "volume_24h": 26108.43448700001,
-      "liquidity": 150778.7297,
+      "volume_24h": 26083.11448700001,
+      "liquidity": 172142.3949,
       "end_date": "2026-05-15T00:00:00Z"
     },
     "us-iran-nuclear-deal-by-june-30": {
@@ -310,15 +310,15 @@
       "question": "US-Iran nuclear deal by June 30?",
       "price_yes": 0.315,
       "volume_24h": 24747.563192,
-      "liquidity": 78578.1599,
+      "liquidity": 78656.6571,
       "end_date": "2026-06-30T00:00:00Z"
     },
     "iran-agrees-to-end-enrichment-of-uranium-by-may-31-945": {
       "slug": "iran-agrees-to-end-enrichment-of-uranium-by-may-31-945",
       "question": "Iran agrees to end enrichment of uranium by May 31?",
       "price_yes": 0.095,
-      "volume_24h": 21773.096372000004,
-      "liquidity": 85869.4705,
+      "volume_24h": 21536.732737000006,
+      "liquidity": 140782.2448,
       "end_date": "2026-05-31T00:00:00Z"
     },
     "will-another-country-conduct-military-action-against-iran-by-april-30-2026": {
@@ -326,7 +326,7 @@
       "question": "Will another country conduct military action against Iran by April 30, 2026?",
       "price_yes": 0.001,
       "volume_24h": 19092.736665,
-      "liquidity": 29530.10754,
+      "liquidity": 29540.17754,
       "end_date": "2026-04-30T00:00:00Z"
     },
     "iran-agrees-to-unrestricted-shipping-through-hormuz-by-may-31": {
@@ -334,15 +334,15 @@
       "question": "Iran agrees to unrestricted shipping through Hormuz by May 31?",
       "price_yes": 0.145,
       "volume_24h": 18251.584679,
-      "liquidity": 102843.0349,
+      "liquidity": 103033.3391,
       "end_date": "2026-05-31T00:00:00Z"
     },
     "trump-renames-straight-of-hormuz-to-strait-of-trump-by-may-31": {
       "slug": "trump-renames-straight-of-hormuz-to-strait-of-trump-by-may-31",
       "question": "Trump renames Strait of Hormuz to \"Strait of Trump\" by May 31?",
-      "price_yes": 0.0295,
-      "volume_24h": 16927.339937,
-      "liquidity": 64102.52483,
+      "price_yes": 0.0315,
+      "volume_24h": 17072.139937,
+      "liquidity": 64540.83254,
       "end_date": "2026-05-31T00:00:00Z"
     },
     "will-the-iranian-regime-survive-us-military-strikes-741": {
@@ -350,15 +350,15 @@
       "question": "Will the Iranian regime survive U.S. military strikes?",
       "price_yes": 0.935,
       "volume_24h": 16347.392549000002,
-      "liquidity": 105817.9693,
+      "liquidity": 104998.7193,
       "end_date": "2026-06-30T00:00:00Z"
     },
     "will-mojtaba-khamenei-be-head-of-state-in-iran-end-of-2026": {
       "slug": "will-mojtaba-khamenei-be-head-of-state-in-iran-end-of-2026",
       "question": "Will Mojtaba Khamenei be head of state in Iran end of 2026?",
-      "price_yes": 0.67,
+      "price_yes": 0.6705,
       "volume_24h": 15925.453353000006,
-      "liquidity": 101816.08422,
+      "liquidity": 100582.40959,
       "end_date": "2026-12-31T00:00:00Z"
     },
     "us-obtains-iranian-enriched-uranium-by-december-31": {
@@ -366,7 +366,7 @@
       "question": "US obtains Iranian enriched uranium by December 31?",
       "price_yes": 0.275,
       "volume_24h": 13535.250532000005,
-      "liquidity": 63993.4834,
+      "liquidity": 63137.643,
       "end_date": "2026-12-31T00:00:00Z"
     },
     "iran-agrees-to-surrender-enriched-uranium-stockpile-by-december-31-2026": {
@@ -374,7 +374,7 @@
       "question": "Iran agrees to surrender enriched uranium stockpile by December 31, 2026?",
       "price_yes": 0.325,
       "volume_24h": 13345.196791,
-      "liquidity": 158127.1598,
+      "liquidity": 166992.2362,
       "end_date": "2026-12-31T00:00:00Z"
     },
     "israel-x-iran-permanent-peace-deal-by-june-30-2026-262": {

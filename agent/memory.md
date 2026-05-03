@@ -1,4 +1,4 @@
-# Agent Memory — last updated 2026-05-03 12:00 ET (initial seed)
+# Agent Memory — last updated 2026-05-03T16:17Z (cron tick #1)
 
 ## Portfolio summary (32 questions)
 
@@ -62,17 +62,31 @@
 Sadjadpour, Vaez, Alfoneh, Khalaji, Batmanghelidj, Nasr, Maloney;
 Takeyh + Parsi as polar baseline averaged together.)
 
-## Top-of-mind context (carried forward)
+## Top-of-mind context (cron tick #1 — 2026-05-03T16:17Z)
 
-- D65 (May 3 2026): ceasefire Day 26, Iran 14-point counter-proposal active, Trump
-  reviewing "concept of deal" but "not satisfied"; Khamenei nuclear vow hardens red lines.
-  Polymarket deal-by-Jun30 fell to 36% (-3pp).
-- Hormuz blockade Day 17, ~2,000 ships stranded. Iran Hormuz Sovereignty Law advancing.
-- Brent ~$108.20; gas $4.45 (+0.013). Lebanon killed 2,659+. 26-day zero-attack streak.
-- Khamenei reportedly recovering from severe burns; publicly unseen since Feb 28.
-- Mojtaba "unconscious / face-burnt" reporting (March 2026, multiple outlets).
-- Iran oil storage 12-22d remaining (Kpler).
-- USD/IRR free-market reached 1.45M Dec 2025; trajectory points higher.
+### ⚠ MAJOR UPDATE (from cron #1 web search — operator action required on C1 + C3)
+- **Ali Khamenei KILLED Feb 28, 2026** — confirmed per Washington Times, CNBC, CBS News,
+  Al Jazeera, Fox News. Prior memory entry ("recovering from severe burns") was outdated.
+- **Mojtaba Khamenei now Supreme Leader** — confirmed issuing SL statements by Apr 30.
+  Washington Times headline: "Iran's Ayatollah Mojtaba Khamenei says Tehran protect nuclear missile."
+- **C1 and C3 likely RESOLVED YES** — queued in operator-queue.md for operator to update portfolio.yaml.
+
+### Market signals (cron #1)
+- Brent $108.17 (↓ from $116.10 May 1 peak; ↓ from $126 Apr 30 intraday); WTI ~$101.50
+- AAA gas $4.446/gal (below $4.50 D3 threshold; down slightly week-over-week)
+- Polymarket: A1 deal-by-2027 = 56%; Hormuz end-of-June = 51%; US-invade = 30%; leadership change Dec = 34%
+- Manifold: deal-by-Jun30 = 30%; Mojtaba alive Jan 2027 = 64%
+
+### Situation context (D65, May 3)
+- Iran-US ceasefire Day 26 (26-day zero-attack streak continuing)
+- Hormuz blockade Day 20 (US naval blockade since Apr 13; Iran mines/IRGC since Feb 28)
+- Iran delivered 14-point proposal text to Pakistan (mediator) formally May 1
+- Trump reviewing "concept of deal"; declared hostilities "terminated" in Congress letter (May 1)
+- Iran: nuclear + missile capabilities "non-negotiable national assets" (Mojtaba SL Apr 30)
+- Iran Hormuz Sovereignty Law advancing in parliament (12-article)
+- Iran losing ~$500M/day from blockade (White House official); oil storage 12-22d remaining
+- Lebanon killed 2,659+ (cumulative); 26-day zero-attack streak
+- USD/IRR trajectory: free-market 1.45M Dec 2025 — likely higher by now
 
 ### Family-business state
 - **Iranfarhang**: Mar 2026 "Update from Tehran" all-client crisis email sent due to
@@ -87,13 +101,21 @@ Takeyh + Parsi as polar baseline averaged together.)
   90% A/R deferred 2-4mo in Rial — central financial-risk concentration.
   Shareholder Q&A 2026-03-27 confirmed scale: ~$10-12M/yr, 4-5kt/yr.
 
-## What I considered changing but didn't (last tick)
+## What I considered changing but didn't (cron tick #1)
 
-(First tick — none yet.)
+- **C1 probability**: Web sources strongly imply C1 (Khamenei dies/removed) has resolved YES.
+  Phase 0 rule: operator-only. Queued in operator-queue.md.
+- **C3 probability**: Web sources strongly imply C3 (Mojtaba designated heir) has resolved YES.
+  Phase 0 rule: operator-only. Queued in operator-queue.md.
+- **A1 upward revision**: Polymarket 56% (by 2027) vs our 18% (by Sep 30). Active negotiations
+  warrant revisit, but date difference and deadlock on nuclear capabilities are confounders.
+  Phase 0 rule: operator-only. Flagged in operator-queue.md.
+- **A2 upward revision**: Polymarket 51% Hormuz return by June vs our 25% by Dec 31.
+  Our longer horizon implies higher probability — potential underestimate. Flagged for operator.
 
 ## What should have changed but didn't (inertia detection)
 
-(First tick — none yet.)
+(Tick #1 — baseline not yet established. Will report from tick 2026-05-10 onward.)
 
 ## Operator notes
 
