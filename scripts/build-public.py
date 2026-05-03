@@ -24,35 +24,60 @@ OUTPUT_DIR = REPO_ROOT / "public-dist"
 
 
 def _ensure_pyyaml() -> None:
-    """Vercel's Python build sandbox ships without pyyaml. Install it on first run."""
+    """Vercel's Python build sandbox is uv-managed (PEP 668 externally-managed).
+    pip install requires --break-system-packages flag — safe in ephemeral CI sandbox."""
     try:
         import yaml  # noqa: F401
         return
     except ImportError:
         pass
     print("[build-public] installing pyyaml (Vercel sandbox dependency)", file=sys.stderr)
-    rc = subprocess.call(
-        [sys.executable, "-m", "pip", "install", "--quiet", "--disable-pip-version-check", "pyyaml"],
-        cwd=REPO_ROOT,
-    )
-    if rc != 0:
-        # Try with --user flag if global install fails (Vercel sandbox restrictions)
-        rc = subprocess.call(
-            [sys.executable, "-m", "pip", "install", "--quiet", "--disable-pip-version-check", "--user", "pyyaml"],
-            cwd=REPO_ROOT,
-        )
-    if rc != 0:
-        print(f"[build-public] pyyaml install failed (rc={rc})", file=sys.stderr)
-        sys.exit(rc)
+    install_attempts = [
+        # Vercel/uv-managed Python: PEP 668 requires --break-system-packages
+        [sys.executable, "-m", "pip", "install", "--quiet", "--disable-pip-version-check", "--break-system-packages", "pyyaml"],
+        # Fallback: --user flag with --break-system-packages
+        [sys.executable, "-m", "pip", "install", "--quiet", "--disable-pip-version-check", "--user", "--break-system-packages", "pyyaml"],
+        # Fallback: install to a temp dir and add to PYTHONPATH
+        [sys.executable, "-m", "pip", "install", "--quiet", "--disable-pip-version-check", "--target", "/tmp/buildpub-deps", "pyyaml"],
+    ]
+    for cmd in install_attempts:
+        rc = subprocess.call(cmd, cwd=REPO_ROOT)
+        if rc == 0:
+            # If --target install, prepend to sys.path
+            if "--target" in cmd:
+                sys.path.insert(0, "/tmp/buildpub-deps")
+            try:
+                import yaml  # noqa: F401
+                print(f"[build-public] pyyaml installed via: {' '.join(cmd[3:])}", file=sys.stderr)
+                return
+            except ImportError:
+                continue
+    print("[build-public] pyyaml install failed across all strategies", file=sys.stderr)
+    sys.exit(1)
 
 
 def main() -> int:
     _ensure_pyyaml()
     print("[build-public] rendering homepage via scripts/render.py --public")
-    rc = subprocess.call([sys.executable, "scripts/render.py", "--public"], cwd=REPO_ROOT)
-    if rc != 0:
-        print(f"[build-public] render.py failed with rc={rc}", file=sys.stderr)
-        return rc
+    # Import render in-process so it inherits any pyyaml install we just did
+    sys.path.insert(0, str(REPO_ROOT / "scripts"))
+    # Set argv so render.main() sees --public
+    saved_argv = sys.argv
+    try:
+        sys.argv = ["render.py", "--public"]
+        import render
+        render.main()
+    except SystemExit as e:
+        if e.code not in (0, None):
+            print(f"[build-public] render.py exited rc={e.code}", file=sys.stderr)
+            return int(e.code) if isinstance(e.code, int) else 1
+    except Exception as e:
+        import traceback
+        traceback.print_exc()
+        print(f"[build-public] render.py raised: {e}", file=sys.stderr)
+        return 1
+    finally:
+        sys.argv = saved_argv
 
     if OUTPUT_DIR.exists():
         shutil.rmtree(OUTPUT_DIR)
