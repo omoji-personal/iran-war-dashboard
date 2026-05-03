@@ -59,6 +59,7 @@
     "date": "2026-05-03",
     "engineVersion": "0.2.0-rc1",
     "phase": 0,
+    "cronTick": 1,
     "questions": [
       {
         "id": "A1",

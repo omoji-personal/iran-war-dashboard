@@ -1,5 +1,5 @@
 {
-  "fetched_at": "2026-05-03T16:14:47.835122+00:00",
+  "fetched_at": "2026-05-03T16:17:56.109022+00:00",
   "markets": {
     "tt0Uy260hp": {
       "id": "tt0Uy260hp",
@@ -131,16 +131,6 @@
       "trader_count": 95,
       "close_time": 1804895940000
     },
-    "XjrxwUAhpJqgzn7Tk17y": {
-      "id": "XjrxwUAhpJqgzn7Tk17y",
-      "slug": "will-iran-have-a-nuclear-weapon-by-958ce4dc195c",
-      "question": "Will Iran have a nuclear weapon by the end of 2030?",
-      "url": "https://manifold.markets/benjaminIkuta/will-iran-have-a-nuclear-weapon-by-958ce4dc195c",
-      "probability": 0.2165,
-      "volume": 16301.202093233866,
-      "trader_count": 91,
-      "close_time": 1924639140000
-    },
     "d2Npg068t5": {
       "id": "d2Npg068t5",
       "slug": "will-america-send-troops-to-iran",
@@ -150,6 +140,16 @@
       "volume": 13627.492956434919,
       "trader_count": 91,
       "close_time": 1798735320000
+    },
+    "XjrxwUAhpJqgzn7Tk17y": {
+      "id": "XjrxwUAhpJqgzn7Tk17y",
+      "slug": "will-iran-have-a-nuclear-weapon-by-958ce4dc195c",
+      "question": "Will Iran have a nuclear weapon by the end of 2030?",
+      "url": "https://manifold.markets/benjaminIkuta/will-iran-have-a-nuclear-weapon-by-958ce4dc195c",
+      "probability": 0.2165,
+      "volume": 16301.202093233866,
+      "trader_count": 91,
+      "close_time": 1924639140000
     },
     "Z8IZEA9zPO": {
       "id": "Z8IZEA9zPO",
@@ -571,16 +571,6 @@
       "trader_count": 39,
       "close_time": 1806964020000
     },
-    "NNlsyzOsns": {
-      "id": "NNlsyzOsns",
-      "slug": "will-iran-officially-announce-a-blo",
-      "question": "Will Iran officially announce a blockade/closure of the Strait of Hormuz for more than 48 consecutive hours by July 2026",
-      "url": "https://manifold.markets/adhoum/will-iran-officially-announce-a-blo",
-      "probability": 0.861,
-      "volume": 4680.156042720602,
-      "trader_count": 36,
-      "close_time": 1782863940000
-    },
     "h5pCgpQqp9": {
       "id": "h5pCgpQqp9",
       "slug": "will-there-be-a-food-shortage-relat",
@@ -590,6 +580,16 @@
       "volume": 3945.083273889247,
       "trader_count": 36,
       "close_time": 1798734060000
+    },
+    "NNlsyzOsns": {
+      "id": "NNlsyzOsns",
+      "slug": "will-iran-officially-announce-a-blo",
+      "question": "Will Iran officially announce a blockade/closure of the Strait of Hormuz for more than 48 consecutive hours by July 2026",
+      "url": "https://manifold.markets/adhoum/will-iran-officially-announce-a-blo",
+      "probability": 0.861,
+      "volume": 4680.156042720602,
+      "trader_count": 36,
+      "close_time": 1782863940000
     },
     "ULIILgPhPN": {
       "id": "ULIILgPhPN",
@@ -671,16 +671,6 @@
       "trader_count": 16,
       "close_time": 1782863940000
     },
-    "C5qRlAcCAQ": {
-      "id": "C5qRlAcCAQ",
-      "slug": "will-fees-for-passing-the-strait-of",
-      "question": "Will Fees for Passing the Strait of Hormuz Persist?",
-      "url": "https://manifold.markets/Desert/will-fees-for-passing-the-strait-of",
-      "probability": 0.1321,
-      "volume": 444.8472931636566,
-      "trader_count": 15,
-      "close_time": 1830249480000
-    },
     "hLSunc0Npn": {
       "id": "hLSunc0Npn",
       "slug": "strait-of-hormuz-traffic-returns-to-uIcnuhup5s",
@@ -690,6 +680,16 @@
       "volume": 895.4843517347813,
       "trader_count": 15,
       "close_time": 1798765140000
+    },
+    "C5qRlAcCAQ": {
+      "id": "C5qRlAcCAQ",
+      "slug": "will-fees-for-passing-the-strait-of",
+      "question": "Will Fees for Passing the Strait of Hormuz Persist?",
+      "url": "https://manifold.markets/Desert/will-fees-for-passing-the-strait-of",
+      "probability": 0.1321,
+      "volume": 444.8472931636566,
+      "trader_count": 15,
+      "close_time": 1830249480000
     },
     "pPQ5ALPCLP": {
       "id": "pPQ5ALPCLP",
