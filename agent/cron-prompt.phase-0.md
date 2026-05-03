@@ -21,7 +21,7 @@ You are the **Iran-US Conflict Predictive Agent** running in cron.
 
 ### 3. Identify probability changes since last tick
 For each question in `portfolio.yaml`:
-- Compare `current_probability` to last snapshot in `engine_history.json`
+- Compare `current_probability` to last snapshot in `portfolio_history.json`
 - If changed, write entry to `logs/probability-changes/{{TODAY}}.md` with:
   - question id, old probability, new probability, ICD-203 label change, what triggered
 
@@ -53,13 +53,19 @@ Write/append today's entries to:
 - `logs/agent-decisions/{{TODAY}}.md`
 - `logs/sources-shifted/{{TODAY}}.md`
 
-### 7. Update agent memory
-Update `agent/memory.md` with:
+### 7. Update agent memory (programmatically — DO NOT compose by hand)
+Run `python3 scripts/refresh_memory.py` — it deterministically regenerates
+`agent/memory.md` from portfolio.yaml + portfolio_history.json + operator-queue.md
++ recent logs. The script writes:
 - Portfolio summary (current probabilities + ICD-203 labels per question)
 - Recent probability changes (last 7d)
 - Open Tier-C decisions in operator queue
-- Top-of-mind context (carried forward)
-- Cap at ~500 lines; rotate older entries to `agent/memory-archive/{{YYYY-MM}}.md`
+- Top-of-mind context (carried forward, operator-curated section)
+
+Do NOT manually compose memory.md — the cron LLM should NEVER edit memory.md
+directly. If `scripts/refresh_memory.py` fails, log the failure to
+`logs/agent-decisions/{{TODAY}}.md` and skip — do not write a hand-composed
+memory.md as a fallback.
 
 ### 8. Re-render homepage
 - `bash scripts/render.py` — regenerates `index.html` from `public/what-i-think.md` + `portfolio.yaml`
@@ -68,8 +74,9 @@ Update `agent/memory.md` with:
 ### 9. Commit + PR
 ```bash
 git checkout -B proposed-signals/{{TODAY}}
-git add public/what-i-think.md index.html public.html portfolio.yaml \
-        logs/ agent/memory.md engine_history.json
+git add index.html public.html logs/ agent/memory.md portfolio_history.json
+# DO NOT add agent/*-snapshot.json — those are gitignored intentionally
+# DO NOT add portfolio.yaml — Phase 0 = operator-only
 git commit -m "Daily tick {{TICK_TIMESTAMP}}: {{N_PROB_CHANGES}} prob changes, {{N_RESOLUTIONS}} resolutions"
 git push -u origin proposed-signals/{{TODAY}}
 gh pr create --draft \
@@ -95,9 +102,17 @@ gh pr create --draft \
 
 ## Phase 0 → Phase 2 upgrade triggers
 
-This prompt activates the **Phase 2** cron (`agent/cron-prompt.md` — full ingest + Bayesian update + ensemble) when:
+When Phase 2 ships, the canonical cron prompt at `agent/cron-prompt.md` (does not yet exist; will be created when Phase 2 is built) replaces this Phase-0 prompt. Phase 2 adds:
+- Full ingest pipeline (Tier-1 daily scrapers beyond markets — bonbast, TGJU, Kpler, ACLED, GDELT)
+- ConfliBERT extraction with span-grounded JSON
+- MinHash deduplication
+- Adversarial-input filter (single-source quarantine, state-media → positioning channel)
+- Per-event LR retrospective (14d-resolving events that miscalibrate flag the LR immediately)
+- Bayesian belief update with the sourced LR table (currently Phase-2-stretch)
+
+Phase-2 readiness requires:
 - All `scripts/fetch_tier1.py`, `scripts/extract_confli.py`, `scripts/dedup_minhash.py`, `scripts/adversarial_filter.py`, `scripts/per_event_retrospective.py` exist and pass tests
 - LR table reality-check status field is fully populated
 - Reference-class registry F-class tiers built out
 
-Until then, Phase 0 is the live cron prompt.
+Until Phase 2 ships, **this** Phase-0 prompt is the live cron prompt.

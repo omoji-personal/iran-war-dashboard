@@ -1,6 +1,6 @@
 """Render the predictive-agent homepage from portfolio.yaml + memory + logs.
 
-Produces production-grade HTML using the existing editorial-brief aesthetic:
+Produces production-grade HTML using the editorial-brief aesthetic:
 - Iowan Old Style / Palatino serif for headlines + body
 - Inter sans for UI metadata
 - Dark navy (#0b1322) + cream (#ecdfd0) + rust (#d97757) palette
@@ -8,14 +8,14 @@ Produces production-grade HTML using the existing editorial-brief aesthetic:
 
 Usage:
     python3 scripts/render.py            # renders index.html
-    python3 scripts/render.py --public   # also renders public.html
+    python3 scripts/render.py --public   # also renders public.html (stripped)
 """
 from __future__ import annotations
 
 import argparse
 import json
 import re
-from datetime import datetime, timezone
+from datetime import datetime, timezone, timedelta
 from pathlib import Path
 
 import yaml
@@ -25,9 +25,18 @@ REPO_ROOT = Path(__file__).resolve().parent.parent
 PORTFOLIO_PATH = REPO_ROOT / "portfolio.yaml"
 MEMORY_PATH = REPO_ROOT / "agent" / "memory.md"
 QUEUE_PATH = REPO_ROOT / "agent" / "operator-queue.md"
-HISTORY_PATH = REPO_ROOT / "engine_history.json"
+HISTORY_PATH = REPO_ROOT / "portfolio_history.json"
+SOURCES_SHIFTED_DIR = REPO_ROOT / "logs" / "sources-shifted"
+EVENTS_DIR = REPO_ROOT / "logs" / "events"
 OUTPUT_INDEX = REPO_ROOT / "index.html"
 OUTPUT_PUBLIC = REPO_ROOT / "public.html"
+
+# Hardcoded reference date for "war Day N" computation. D1 of conflict = 2026-02-28.
+WAR_D1_ISO = "2026-02-28"
+# Cease-fire start: 2026-04-07 (Day 39)
+CEASEFIRE_START_ISO = "2026-04-07"
+# Hormuz blockade start: 2026-04-15 (Day 47, est.)
+BLOCKADE_START_ISO = "2026-04-15"
 
 
 ICD203_BUCKETS = [
@@ -39,17 +48,20 @@ ICD203_BUCKETS = [
     (0.55, 0.80, "likely", "55-80%"),
     (0.80, 0.95, "very likely", "80-95%"),
     (0.95, 0.99, "almost certain", "95-99%"),
-    (0.99, 1.01, "near certain", ">99%"),
+    (0.99, 1.001, "near certain", ">99%"),
 ]
 
 
 def icd203(p: float) -> tuple[str, str, str]:
     """Returns (label, range_str, css_class)."""
+    p = max(0.0, min(1.0, p))
     for lo, hi, label, range_str in ICD203_BUCKETS:
         if lo <= p < hi:
             css = label.replace(" ", "-")
             return label, range_str, css
-    return "unknown", "?", "unknown"
+    # p == exactly 1.0 hits the last bucket
+    label, range_str, _ = ICD203_BUCKETS[-1][2:] if False else ("near certain", ">99%", "near-certain")
+    return label, range_str, "near-certain"
 
 
 CATEGORY = {
@@ -77,12 +89,16 @@ def load_history() -> list[dict]:
         return []
 
 
-def compute_24h_diffs(portfolio: dict, history: list[dict]) -> list[dict]:
-    diffs = []
-    if not history:
-        return diffs
-    last = history[-1]
+def compute_diffs_vs_yesterday(portfolio: dict, history: list[dict]) -> list[dict]:
+    """Compare today's portfolio against the most recent snapshot whose date is
+    BEFORE today. Avoids the today-vs-today degenerate-zero-diff bug."""
+    today_iso = datetime.now(timezone.utc).strftime("%Y-%m-%d")
+    prior = [h for h in history if h.get("date") and h["date"] < today_iso]
+    if not prior:
+        return []
+    last = prior[-1]
     last_qs = {q.get("id"): q for q in last.get("questions", [])}
+    diffs = []
     for q in portfolio["questions"]:
         qid = q["id"]
         cur_p = q["current_probability"]
@@ -91,6 +107,7 @@ def compute_24h_diffs(portfolio: dict, history: list[dict]) -> list[dict]:
         delta = cur_p - last_p
         ci = q.get("current_credible_interval_80", [cur_p, cur_p])
         ci_halfwidth = (ci[1] - ci[0]) / 2.0
+        # CI-aware noise suppression: only headline diffs > question's CI half-width
         if abs(delta) > ci_halfwidth and ci_halfwidth > 0:
             diffs.append({
                 "id": qid,
@@ -102,6 +119,26 @@ def compute_24h_diffs(portfolio: dict, history: list[dict]) -> list[dict]:
     return diffs
 
 
+def war_day(today: datetime) -> int:
+    """Days since 2026-02-28 (D1). Returns int >= 1."""
+    d1 = datetime.fromisoformat(WAR_D1_ISO).replace(tzinfo=timezone.utc)
+    return max(1, (today.date() - d1.date()).days + 1)
+
+
+def cf_day(today: datetime) -> int:
+    """Days since cease-fire start (2026-04-07). Returns 0 if before."""
+    cf1 = datetime.fromisoformat(CEASEFIRE_START_ISO).replace(tzinfo=timezone.utc)
+    delta = today.date() - cf1.date()
+    return max(0, delta.days + 1) if delta.days >= 0 else 0
+
+
+def blockade_day(today: datetime) -> int:
+    """Days since Hormuz blockade start. 0 if before."""
+    bs = datetime.fromisoformat(BLOCKADE_START_ISO).replace(tzinfo=timezone.utc)
+    delta = today.date() - bs.date()
+    return max(0, delta.days + 1) if delta.days >= 0 else 0
+
+
 def esc(s: str) -> str:
     if s is None:
         return ""
@@ -111,14 +148,23 @@ def esc(s: str) -> str:
                   .replace('"', "&quot;"))
 
 
-def first_line(text: str) -> str:
+_SENTENCE_SPLIT = re.compile(r"(?<=[.!?])\s+(?=[A-Z(])")
+
+
+def first_sentence(text: str) -> str:
+    """Return the first complete sentence (terminating punctuation included).
+    Falls back to first line if no sentence boundary found."""
     if not text:
         return ""
-    for line in text.strip().splitlines():
-        line = line.strip()
-        if line:
-            return line
-    return ""
+    cleaned = " ".join(line.strip() for line in text.strip().splitlines() if line.strip())
+    parts = _SENTENCE_SPLIT.split(cleaned, maxsplit=1)
+    candidate = parts[0].strip()
+    if not candidate:
+        return ""
+    # Cap at 220 chars even if no sentence boundary
+    if len(candidate) > 220:
+        candidate = candidate[:217].rstrip() + "…"
+    return candidate
 
 
 def render_question_card(q: dict) -> str:
@@ -126,7 +172,7 @@ def render_question_card(q: dict) -> str:
     label, range_str, label_css = icd203(p)
     ci = q["current_credible_interval_80"]
     humility = q.get("humility_flag", False)
-    notes = first_line(q.get("notes", ""))
+    notes = first_sentence(q.get("notes", ""))
     deadline = q["deadline"]
 
     cat_meta = CATEGORY.get(q["category"], ("", "", "cat-default"))
@@ -141,7 +187,7 @@ def render_question_card(q: dict) -> str:
         flags.append('<span class="card-flag flag-humility" title="Model class has zero validated track record on this outcome type">HUMILITY</span>')
     for tag in q.get("stakeholder_tags", []):
         if tag == "omid_personal":
-            flags.append('<span class="card-flag flag-personal" title="Affects user personally">PERSONAL</span>')
+            flags.append('<span class="card-flag flag-personal" title="Directly affects family business">PERSONAL</span>')
             break
 
     return f"""
@@ -158,7 +204,7 @@ def render_question_card(q: dict) -> str:
             <span class="qcard-prob-label">{esc(label)}</span>
           </div>
           <div class="qcard-ci">
-            <span class="qcard-ci-bar">
+            <span class="qcard-ci-bar" aria-label="80% credible interval, mark at point estimate">
               <span class="qcard-ci-track"></span>
               <span class="qcard-ci-fill" style="left: {ci_lo}%; width: {ci_hi - ci_lo}%"></span>
               <span class="qcard-ci-mark" style="left: {pct}%"></span>
@@ -171,12 +217,24 @@ def render_question_card(q: dict) -> str:
     """
 
 
-def render_diff_panel(diffs: list[dict]) -> str:
-    if not diffs:
+def render_diff_panel(diffs: list[dict], history: list[dict]) -> str:
+    today_iso = datetime.now(timezone.utc).strftime("%Y-%m-%d")
+    prior = [h for h in history if h.get("date") and h["date"] < today_iso]
+    has_prior_baseline = bool(prior)
+
+    if not has_prior_baseline:
         return """
-        <section class="diff-panel diff-empty">
-          <h2 class="diff-h">What changed in last 24h</h2>
-          <p class="diff-empty-msg">First tick — no prior baseline. Future updates show only probability movements <em>larger than each question's 80% credible-interval half-width</em> (CI-aware noise suppression — small wobbles within model uncertainty are not reported).</p>
+        <section class="diff-panel diff-empty" role="region" aria-label="24-hour probability changes">
+          <h2 class="diff-h">What changed since last tick</h2>
+          <p class="diff-empty-msg">First tick — no prior baseline. Future updates list only probability movements <em>larger than each question's 80% credible-interval half-width</em> (CI-aware noise suppression). Days when nothing material changed will say so.</p>
+        </section>
+        """
+    if not diffs:
+        last_date = prior[-1]["date"]
+        return f"""
+        <section class="diff-panel diff-empty" role="region" aria-label="24-hour probability changes">
+          <h2 class="diff-h">What changed since last tick</h2>
+          <p class="diff-empty-msg">No probability moves above the noise floor since {esc(last_date)}. Quiet day. The questions worth watching are unchanged.</p>
         </section>
         """
     items = []
@@ -195,28 +253,64 @@ def render_diff_panel(diffs: list[dict]) -> str:
           </li>
         """)
     return f"""
-        <section class="diff-panel">
-          <h2 class="diff-h">What changed in last 24h</h2>
+        <section class="diff-panel" role="region" aria-label="24-hour probability changes">
+          <h2 class="diff-h">What changed since last tick</h2>
           <ul class="diff-list">{"".join(items)}</ul>
         </section>
     """
 
 
-def topness(q: dict) -> float:
+def topness(q: dict, last_q_by_id: dict[str, dict]) -> float:
+    """Score for 'top question' selection.
+
+    Real signal: biggest absolute change since prior tick × stakes. NOT max
+    probability (which is degenerate — D1 65% always wins).
+    """
+    cur_p = q["current_probability"]
+    qid = q["id"]
+    last_q = last_q_by_id.get(qid, {})
+    last_p = last_q.get("probability", cur_p)
+    abs_delta = abs(cur_p - last_p)
     n_tags = len(q.get("stakeholder_tags", []))
     is_personal = "omid_personal" in q.get("stakeholder_tags", [])
-    bonus = 0.3 if is_personal else 0.0
-    return q["current_probability"] * 0.5 + n_tags * 0.15 + bonus
+    has_humility = bool(q.get("humility_flag"))
+    # Stakes proxy: # stakeholder tags + personal-affects-Omid bonus
+    stakes = n_tags * 0.10 + (0.30 if is_personal else 0.0)
+    # Recency bonus: questions with deadlines closer to today carry slightly more weight.
+    # YAML may parse date strings as datetime.date OR keep them as str — handle both.
+    deadline = q["deadline"]
+    if hasattr(deadline, "isoformat"):
+        deadline_str = deadline.isoformat()
+    else:
+        deadline_str = str(deadline)
+    try:
+        d_dt = datetime.strptime(deadline_str, "%Y-%m-%d").replace(tzinfo=timezone.utc)
+        days_to_deadline = max(1, (d_dt.date() - datetime.now(timezone.utc).date()).days)
+        recency = max(0.0, 1.0 - min(days_to_deadline / 365.0, 1.0)) * 0.10
+    except (ValueError, TypeError):
+        recency = 0.0
+    # Humility flags suppress (we shouldn't headline a question we admit we can't forecast)
+    humility_penalty = -0.30 if has_humility else 0.0
+    return abs_delta * 1.5 + stakes + recency + humility_penalty
 
 
-def render_top_question(q: dict) -> str:
+def render_top_question(q: dict, last_q_by_id: dict, history_present: bool) -> str:
     label, _, css = icd203(q["current_probability"])
     pct = round(q["current_probability"] * 100)
     ci = q["current_credible_interval_80"]
-    notes = first_line(q.get("notes", ""))
+    notes = first_sentence(q.get("notes", ""))
+    delta_text = ""
+    if history_present:
+        last_q = last_q_by_id.get(q["id"], {})
+        last_p = last_q.get("probability")
+        if last_p is not None and abs(q["current_probability"] - last_p) > 0.001:
+            d_pp = (q["current_probability"] - last_p) * 100
+            arrow = "▲" if d_pp > 0 else "▼"
+            delta_text = f' · <span class="topq-delta">{arrow} {d_pp:+.1f}pp since last tick</span>'
+
     return f"""
-      <section class="topq topq-{css}">
-        <div class="topq-eyebrow">Today's top question · {esc(q['id'])} · → {esc(q['deadline'])}</div>
+      <section class="topq topq-{css}" role="region" aria-label="Today's top question">
+        <div class="topq-eyebrow">Today's top question · {esc(q['id'])} · → {esc(q['deadline'])}{delta_text}</div>
         <h2 class="topq-question">{esc(q['question'])}</h2>
         <div class="topq-row">
           <div class="topq-prob">
@@ -231,28 +325,52 @@ def render_top_question(q: dict) -> str:
     """
 
 
-def render_headline_narrative() -> str:
-    return """
-      <section class="headline">
-        <div class="headline-eyebrow">Today's headline · interpretation, not forecast</div>
-        <p class="headline-lead"><span class="dropcap">D</span>65 of conflict (cease-fire Day 26 with active blockade limbo). Iran's 14-point counter-proposal is in motion via Pakistani mediators; Trump is reviewing the &ldquo;concept of the deal&rdquo; but reports as &ldquo;not satisfied.&rdquo; Khamenei's Apr 30 nuclear-and-missile vow &mdash; his first public statement since the conflict began &mdash; has hardened red lines on the issue most central to any framework.</p>
-        <p class="headline-body">Polymarket's deal-by-Jun30 contract sits at <strong>36%</strong> (down 3pp). Hormuz blockade is at Day 17 with ~2,000 ships stranded; Iran's Hormuz Sovereignty Law is advancing in parliament. Brent has retreated from the $126 D62 intraday high to ~$108; US gas $4.45 (+0.013/d). Khamenei reportedly recovering from severe burns; publicly unseen since Feb 28. Mojtaba reported &ldquo;unconscious / face-burnt&rdquo; per March 2026 multiple-source coverage. Iran oil storage 12-22d remaining (Kpler). USD/IRR free-market reached 1.45M Dec 2025 and trajectory points higher.</p>
+def render_headline_narrative(today: datetime, portfolio: dict) -> str:
+    """Compose the headline paragraph dynamically from current date + portfolio.
+
+    Earlier version had hardcoded date/figure references. Now derives day numbers
+    from a single fixed reference (D1=2026-02-28). Concrete numbers (Brent, gas,
+    casualty counts) are NOT in the headline — they age too fast. Operator notes
+    in `agent/memory.md` carry that detail and are visible in the agent-decision log.
+    """
+    d = war_day(today)
+    cf = cf_day(today)
+    bd = blockade_day(today)
+    today_str = today.strftime("%B %d, %Y").replace(" 0", " ")
+    # Top 3 highest-stakes questions to anchor narrative
+    high_stakes = sorted(
+        portfolio["questions"],
+        key=lambda q: -(len(q.get("stakeholder_tags", [])) + (1 if "omid_personal" in q.get("stakeholder_tags", []) else 0)),
+    )[:3]
+    bullets = []
+    for q in high_stakes:
+        label, _, _ = icd203(q["current_probability"])
+        bullets.append(f"<strong>{esc(q['id'])}</strong> ({esc(label)}, {round(q['current_probability']*100)}%) — {esc(q['question'])}")
+
+    cf_phrase = f"cease-fire Day {cf}" if cf > 0 else "active conflict"
+    bd_phrase = f"Hormuz blockade Day {bd}" if bd > 0 else "Hormuz traffic open"
+
+    return f"""
+      <section class="headline" role="region" aria-label="Today's headline">
+        <div class="headline-eyebrow">Today's read · {esc(today_str)} · {esc(cf_phrase)} · {esc(bd_phrase)} · interpretation, not forecast</div>
+        <p class="headline-lead"><span class="dropcap">D</span>{d} of the 2026 Iran-US conflict. Probabilities below are seeded from public reporting and operator judgment, then advanced daily by a cron-driven Claude session that ingests Polymarket + Manifold prediction-market signals and surfaces 24h diffs. The model is <em>uncalibrated</em> — no prediction has resolved yet, no Brier scores exist. Treat as structured scenario reasoning, not as forecasts.</p>
+        <p class="headline-body">Three highest-stakes questions in the portfolio right now: {'; '.join(bullets)}. Family-business questions (F-series) are tagged PERSONAL — those track consequences to Iranfarhang (US/UK university Persian-content distribution, ~$310K/yr) and Kipa (Iran-UAE specialty-chemicals importer-distributor, ~$10-12M/yr). For current situational facts (oil price, gas, regime moves, news), see <code>agent/memory.md</code> and <code>logs/events/{esc(today.strftime("%Y-%m-%d"))}.md</code> — those are refreshed each tick. Open <code>agent/operator-queue.md</code> to confirm/edit/replace any F-question whose framing is wrong.</p>
       </section>
     """
 
 
 def render_methodology() -> str:
     return """
-      <section class="methodology">
+      <section class="methodology" role="region" aria-label="Methodology and disclosures">
         <h2 class="meth-h">Methodology + honesty disclosures</h2>
         <ul class="meth-list">
-          <li><strong>EXPERIMENTAL — UNCALIBRATED.</strong> No prediction has resolved yet. Model has no validated track record. Brier scores against Polymarket / Metaculus / AR baseline begin populating Phase 2+ as resolutions accumulate.</li>
-          <li><strong>Probabilities are operator-set initial reads</strong> in Phase 0 MVP. Bayesian update + 5-input ensemble (Bayesian, baseline, market, external SOTA, named-expert composite) activates Phase 2.</li>
-          <li><strong>Two questions carry permanent humility flags</strong> (C1 Khamenei death, C3 Mojtaba succession) — every published statistical conflict-forecasting model has failed to predict regime-fracture / leader-incapacity events. Treat probabilities as structurally uncertain, not numeric.</li>
+          <li><strong>EXPERIMENTAL — UNCALIBRATED.</strong> No prediction has resolved yet. Model has no validated track record. Brier scores against Polymarket / Manifold / AR baseline begin populating Phase 2+ as resolutions accumulate.</li>
+          <li><strong>Probabilities are agent-seeded initial reads</strong> in Phase 0 MVP — operator (you) has not yet reviewed. Operator owns probability edits via direct <code>portfolio.yaml</code> commits; cron-driven session surfaces market-signal deltas and never modifies probabilities itself.</li>
+          <li><strong>Two questions carry permanent humility flags</strong> (C1 Khamenei death, C3 Mojtaba succession). Every published statistical conflict-forecasting model has failed to predict regime-fracture / leader-incapacity events. Treat probabilities as structurally uncertain, not numeric.</li>
           <li><strong>Reference classes</strong> (strict + broad tiers) governing each probability are at <code>reference_classes.yaml</code>.</li>
           <li><strong>Sourced LR table</strong> (every likelihood ratio carries source class — historical-analog / market-implied / explicitly-subjective with replacement criteria) at <code>lr_table.yaml</code>. Activates Phase 2.</li>
-          <li><strong>No alpha-trade output.</strong> Until 1-year Brier beats relevant benchmark for the specific outcome class, no actionable trade signals are surfaced.</li>
-          <li><strong>External 90-day adversarial review</strong> by Sadjadpour / Vaez / Alfoneh planned — 5 most-divergent predictions sent for critique; feedback published as artifact + drives method changes.</li>
+          <li><strong>Free-only operating cost.</strong> Cron via existing Claude subscription (RemoteTrigger included), data sources are free public APIs (Polymarket Gamma + Manifold + optional Metaculus). Total cost: $0/year. Paid feeds permanently out-of-scope.</li>
+          <li><strong>No alpha-trade output, period.</strong> Until 1-year Brier beats the relevant benchmark for the specific outcome class, no actionable trade signals are surfaced.</li>
           <li>Full design at <code>docs/superpowers/specs/2026-05-03-predictive-agent-design.md</code> (v8 — converged after 7 adversarial-review rounds). Audit at <code>docs/audits/AUDIT-2026-05-03.md</code>.</li>
         </ul>
       </section>
@@ -261,14 +379,14 @@ def render_methodology() -> str:
 
 def render_logs_section() -> str:
     return """
-      <section class="logs-section">
+      <section class="logs-section" role="region" aria-label="Change-history logs">
         <h2 class="logs-h">Eight first-class change logs</h2>
         <p class="logs-sub">For a <em>living</em> model the change-history is the product. All logs are committed Markdown, append-only per cron tick.</p>
         <div class="logs-grid">
           <a class="log-card" href="logs/events"><span class="log-name">Event log</span><span class="log-desc">Every ingested event with source, cluster ID, applied LRs</span></a>
           <a class="log-card" href="logs/probability-changes"><span class="log-name">Probability-change log</span><span class="log-desc">Every probability movement with attribution chain</span></a>
           <a class="log-card" href="logs/agent-decisions"><span class="log-name">Agent-decision log</span><span class="log-desc">What the agent investigated, why, what it found</span></a>
-          <a class="log-card" href="logs/sources-shifted"><span class="log-name">Sources-shifted log</span><span class="log-desc">Polymarket / Metaculus / expert deltas</span></a>
+          <a class="log-card" href="logs/sources-shifted"><span class="log-name">Sources-shifted log</span><span class="log-desc">Polymarket / Manifold / Metaculus deltas</span></a>
           <a class="log-card" href="logs/adversarial-inputs"><span class="log-name">Adversarial-input log</span><span class="log-desc">Quarantined claims, deception flags, state-media positioning</span></a>
           <a class="log-card placeholder"><span class="log-name">LR-revision log</span><span class="log-desc">Phase 2+: every LR change with old, new, source class, justification</span></a>
           <a class="log-card placeholder"><span class="log-name">Resolution log</span><span class="log-desc">Phase 2+: every question resolved with Brier, post-mortem</span></a>
@@ -279,7 +397,7 @@ def render_logs_section() -> str:
 
 
 def render_question_board(by_cat: dict) -> str:
-    parts = ['<section class="board"><h2 class="board-h">Question portfolio · 32 questions</h2>']
+    parts = ['<section class="board" role="region" aria-label="Question portfolio"><h2 class="board-h">Question portfolio · 32 questions</h2>']
     for cat_id, (num, title, css) in CATEGORY.items():
         if cat_id not in by_cat:
             continue
@@ -299,47 +417,64 @@ def render_question_board(by_cat: dict) -> str:
     return "\n".join(parts)
 
 
-def render_html(portfolio: dict, diffs: list[dict], stripped: bool = False) -> str:
+def render_html(portfolio: dict, diffs: list[dict], history: list[dict], stripped: bool = False) -> str:
+    today = datetime.now(timezone.utc)
+    today_iso = today.strftime("%Y-%m-%d")
+    next_tick_local = "Daily 06:00 ET (next tomorrow morning)"
+
     by_cat: dict[str, list[dict]] = {}
     for q in portfolio["questions"]:
         by_cat.setdefault(q["category"], []).append(q)
 
-    top_q = max(portfolio["questions"], key=topness)
+    # last_q_by_id: portfolio snapshot from yesterday-or-prior
+    prior = [h for h in history if h.get("date") and h["date"] < today_iso]
+    last_q_by_id = {q.get("id"): q for q in (prior[-1].get("questions", []) if prior else [])}
 
-    now = datetime.now(timezone.utc)
-    next_tick_local = "Daily 06:00 ET (next tomorrow morning)"
+    top_q = max(portfolio["questions"], key=lambda q: topness(q, last_q_by_id))
 
-    title = "2026 Iran Conflict — Predictive Agent"
-    if stripped:
-        title += " (Public)"
+    title_base = "2026 Iran Conflict — Predictive Agent"
+    title = title_base + (" (Public)" if stripped else "")
+
+    d = war_day(today)
+    cf = cf_day(today)
+    bd = blockade_day(today)
+    issue_subline = f"D{d}"
+    if cf > 0:
+        issue_subline += f" · cease-fire Day {cf}"
+    if bd > 0:
+        issue_subline += f" · blockade Day {bd}"
+
+    # Public-stripped: drop methodology + logs sections (more compact)
+    methodology_html = "" if stripped else render_methodology()
+    logs_html = "" if stripped else render_logs_section()
 
     return f"""<!DOCTYPE html>
 <html lang="en" dir="ltr">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#0b1322" />
   <title>{esc(title)}</title>
   <meta property="og:title" content="{esc(title)}" />
-  <meta property="og:description" content="Daily structured scenario analysis — predictive-agent v0.2 (Phase 0 MVP). 32 Brier-scoreable discrete-event predictions across diplomatic / military / regime / economic / US-side / family-business categories. Experimental — uncalibrated." />
+  <meta property="og:description" content="Daily Brier-scoreable predictions across 32 questions on the 2026 Iran-US conflict. Experimental — uncalibrated." />
   <meta property="og:type" content="article" />
-  <meta name="description" content="Daily predictive-agent brief on the 2026 Iran conflict. Experimental — uncalibrated." />
+  <meta name="description" content="Daily predictive-agent brief on the 2026 Iran-US conflict. 32 questions, ICD-203 vocabulary, free public APIs only. Experimental — uncalibrated." />
   <link rel="stylesheet" href="dashboard.css" />
   <link rel="canonical" href="https://iran-war-dashboard-murex.vercel.app/" />
-  <script defer src="https://cdn.jsdelivr.net/npm/chart.js@4.4.0/dist/chart.umd.min.js"></script>
 </head>
 <body class="agent-v2">
 
   <div class="topbar">
     <div class="topbar-inner">
       <div class="topbar-l">
-        <span class="topbar-eyebrow">2026 Iran Conflict</span>
+        <span class="topbar-eyebrow">2026 Iran-US Conflict</span>
         <span class="topbar-title">Predictive Agent</span>
       </div>
       <div class="topbar-r">
-        <span class="topbar-meta">Tick: {esc(now.strftime("%Y-%m-%d %H:%M UTC"))}</span>
+        <span class="topbar-meta" title="Tick rendered at this UTC instant">{esc(today.strftime("%Y-%m-%d %H:%M UTC"))}</span>
         <span class="topbar-meta">Next: {esc(next_tick_local)}</span>
-        <span class="topbar-meta">Engine v{esc(portfolio["metadata"]["engine_version"])}</span>
-        <span class="topbar-meta">Phase 0 MVP</span>
+        <span class="topbar-meta">v{esc(portfolio["metadata"]["engine_version"])}</span>
+        <span class="topbar-meta">Phase 0</span>
       </div>
     </div>
   </div>
@@ -352,50 +487,51 @@ def render_html(portfolio: dict, diffs: list[dict], stripped: bool = False) -> s
     <a href="/legacy">Legacy dashboard</a></span>
   </div>
 
-  <main class="agent-page">
+  <main class="agent-page" role="main" aria-label="Predictive Agent Brief">
 
-    <header class="agent-masthead">
+    <header class="agent-masthead" role="banner" aria-label="Issue masthead">
       <div class="masthead-class">FOR ANALYTIC PURPOSES · UNCLASSIFIED MODEL OUTPUT · OPERATOR-DRIVEN</div>
       <div class="masthead-row">
         <div class="masthead-l">
-          <div class="masthead-eyebrow">Issue · D65 · cease-fire Day 26 · blockade Day 17</div>
-          <h1 class="masthead-title">The Read</h1>
+          <div class="masthead-eyebrow">Issue · {esc(issue_subline)}</div>
+          <h1 class="masthead-title">Predictive Agent</h1>
         </div>
         <div class="masthead-r">
-          <div class="masthead-publisher">2026 IRAN CONFLICT MONITOR</div>
-          <div class="masthead-publisher-sub">Predictive Agent · Daily 0700 ET cron</div>
+          <div class="masthead-publisher">2026 IRAN-US CONFLICT MONITOR</div>
+          <div class="masthead-publisher-sub">v0.2 Phase 0 MVP · Daily 0700 ET cron</div>
         </div>
       </div>
       <div class="masthead-rule"></div>
     </header>
 
-    {render_diff_panel(diffs)}
+    {render_diff_panel(diffs, history)}
 
-    {render_top_question(top_q)}
+    {render_top_question(top_q, last_q_by_id, history_present=bool(prior))}
 
-    {render_headline_narrative()}
+    {render_headline_narrative(today, portfolio)}
 
     {render_question_board(by_cat)}
 
-    {render_logs_section()}
+    {logs_html}
 
-    {render_methodology()}
+    {methodology_html}
 
   </main>
 
   <footer class="agent-footer">
     <div class="agent-footer-inner">
       <div class="agent-footer-l">
-        <div class="agent-footer-brand">2026 IRAN CONFLICT PREDICTIVE AGENT</div>
-        <div class="agent-footer-meta">Daily structured scenario analysis · cron-driven · experimental · uncalibrated</div>
+        <div class="agent-footer-brand">2026 IRAN-US CONFLICT PREDICTIVE AGENT</div>
+        <div class="agent-footer-meta">Daily structured scenario analysis · cron-driven · experimental · uncalibrated · $0/yr</div>
       </div>
       <div class="agent-footer-r">
         <a href="docs/superpowers/specs/2026-05-03-predictive-agent-design.md">Design spec (v8)</a>
-        <a href="docs/audits/AUDIT-2026-05-03.md">Audit (2026-05-03)</a>
+        <a href="docs/audits/AUDIT-2026-05-03.md">Audit</a>
         <a href="docs/CRON-WORKFLOW.md">Cron workflow</a>
         <a href="portfolio.yaml">Portfolio (YAML)</a>
         <a href="reference_classes.yaml">Reference classes</a>
         <a href="lr_table.yaml">LR table</a>
+        <a href="/legacy">Legacy dashboard</a>
       </div>
     </div>
   </footer>
@@ -406,19 +542,29 @@ def render_html(portfolio: dict, diffs: list[dict], stripped: bool = False) -> s
 
 
 def main():
+    import time
+    t0 = time.monotonic()
     parser = argparse.ArgumentParser()
-    parser.add_argument("--public", action="store_true", help="Also render public.html")
+    parser.add_argument("--public", action="store_true", help="Also render public.html (stripped)")
     args = parser.parse_args()
 
     portfolio = load_portfolio()
     history = load_history()
-    diffs = compute_24h_diffs(portfolio, history)
+    diffs = compute_diffs_vs_yesterday(portfolio, history)
 
-    OUTPUT_INDEX.write_text(render_html(portfolio, diffs, stripped=False), encoding="utf-8")
-    print(f"wrote {OUTPUT_INDEX}")
+    # Atomic write via tmp + rename
+    full_html = render_html(portfolio, diffs, history, stripped=False)
+    tmp = OUTPUT_INDEX.with_suffix(".html.tmp")
+    tmp.write_text(full_html, encoding="utf-8")
+    tmp.replace(OUTPUT_INDEX)
+    print(f"wrote {OUTPUT_INDEX} ({len(full_html)} bytes)")
     if args.public:
-        OUTPUT_PUBLIC.write_text(render_html(portfolio, diffs, stripped=True), encoding="utf-8")
-        print(f"wrote {OUTPUT_PUBLIC}")
+        pub_html = render_html(portfolio, diffs, history, stripped=True)
+        tmp_pub = OUTPUT_PUBLIC.with_suffix(".html.tmp")
+        tmp_pub.write_text(pub_html, encoding="utf-8")
+        tmp_pub.replace(OUTPUT_PUBLIC)
+        print(f"wrote {OUTPUT_PUBLIC} ({len(pub_html)} bytes)")
+    print(f"render took {time.monotonic() - t0:.2f}s")
 
 
 if __name__ == "__main__":

@@ -3,28 +3,28 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#0b1322" />
   <title>2026 Iran Conflict — Predictive Agent</title>
   <meta property="og:title" content="2026 Iran Conflict — Predictive Agent" />
-  <meta property="og:description" content="Daily structured scenario analysis — predictive-agent v0.2 (Phase 0 MVP). 32 Brier-scoreable discrete-event predictions across diplomatic / military / regime / economic / US-side / family-business categories. Experimental — uncalibrated." />
+  <meta property="og:description" content="Daily Brier-scoreable predictions across 32 questions on the 2026 Iran-US conflict. Experimental — uncalibrated." />
   <meta property="og:type" content="article" />
-  <meta name="description" content="Daily predictive-agent brief on the 2026 Iran conflict. Experimental — uncalibrated." />
+  <meta name="description" content="Daily predictive-agent brief on the 2026 Iran-US conflict. 32 questions, ICD-203 vocabulary, free public APIs only. Experimental — uncalibrated." />
   <link rel="stylesheet" href="dashboard.css" />
   <link rel="canonical" href="https://iran-war-dashboard-murex.vercel.app/" />
-  <script defer src="https://cdn.jsdelivr.net/npm/chart.js@4.4.0/dist/chart.umd.min.js"></script>
 </head>
 <body class="agent-v2">
 
   <div class="topbar">
     <div class="topbar-inner">
       <div class="topbar-l">
-        <span class="topbar-eyebrow">2026 Iran Conflict</span>
+        <span class="topbar-eyebrow">2026 Iran-US Conflict</span>
         <span class="topbar-title">Predictive Agent</span>
       </div>
       <div class="topbar-r">
-        <span class="topbar-meta">Tick: 2026-05-03 16:14 UTC</span>
+        <span class="topbar-meta" title="Tick rendered at this UTC instant">2026-05-03 16:51 UTC</span>
         <span class="topbar-meta">Next: Daily 06:00 ET (next tomorrow morning)</span>
-        <span class="topbar-meta">Engine v0.2.0-rc1</span>
-        <span class="topbar-meta">Phase 0 MVP</span>
+        <span class="topbar-meta">v0.2.0</span>
+        <span class="topbar-meta">Phase 0</span>
       </div>
     </div>
   </div>
@@ -37,55 +37,55 @@
     <a href="/legacy">Legacy dashboard</a></span>
   </div>
 
-  <main class="agent-page">
+  <main class="agent-page" role="main" aria-label="Predictive Agent Brief">
 
-    <header class="agent-masthead">
+    <header class="agent-masthead" role="banner" aria-label="Issue masthead">
       <div class="masthead-class">FOR ANALYTIC PURPOSES · UNCLASSIFIED MODEL OUTPUT · OPERATOR-DRIVEN</div>
       <div class="masthead-row">
         <div class="masthead-l">
-          <div class="masthead-eyebrow">Issue · D65 · cease-fire Day 26 · blockade Day 17</div>
-          <h1 class="masthead-title">The Read</h1>
+          <div class="masthead-eyebrow">Issue · D65 · cease-fire Day 27 · blockade Day 19</div>
+          <h1 class="masthead-title">Predictive Agent</h1>
         </div>
         <div class="masthead-r">
-          <div class="masthead-publisher">2026 IRAN CONFLICT MONITOR</div>
-          <div class="masthead-publisher-sub">Predictive Agent · Daily 0700 ET cron</div>
+          <div class="masthead-publisher">2026 IRAN-US CONFLICT MONITOR</div>
+          <div class="masthead-publisher-sub">v0.2 Phase 0 MVP · Daily 0700 ET cron</div>
         </div>
       </div>
       <div class="masthead-rule"></div>
     </header>
 
     
-        <section class="diff-panel diff-empty">
-          <h2 class="diff-h">What changed in last 24h</h2>
-          <p class="diff-empty-msg">First tick — no prior baseline. Future updates show only probability movements <em>larger than each question's 80% credible-interval half-width</em> (CI-aware noise suppression — small wobbles within model uncertainty are not reported).</p>
+        <section class="diff-panel diff-empty" role="region" aria-label="24-hour probability changes">
+          <h2 class="diff-h">What changed since last tick</h2>
+          <p class="diff-empty-msg">No probability moves above the noise floor since 2026-05-02. Quiet day. The questions worth watching are unchanged.</p>
         </section>
         
 
     
-      <section class="topq topq-likely">
-        <div class="topq-eyebrow">Today's top question · B5 · → 2026-09-30</div>
-        <h2 class="topq-question">IRGC seizes a third foreign-flagged commercial vessel in Gulf/Hormuz by 2026-09-30</h2>
+      <section class="topq topq-unlikely" role="region" aria-label="Today's top question">
+        <div class="topq-eyebrow">Today's top question · F7 · → 2026-06-30</div>
+        <h2 class="topq-question">Strait of Hormuz reopens to commercial container traffic &gt;7 consecutive days by 2026-06-30</h2>
         <div class="topq-row">
           <div class="topq-prob">
-            <span class="topq-prob-num">55<span class="topq-prob-pct">%</span></span>
-            <span class="topq-prob-label">likely</span>
-            <span class="topq-prob-ci">80% CI: 38–72%</span>
+            <span class="topq-prob-num">20<span class="topq-prob-pct">%</span></span>
+            <span class="topq-prob-label">unlikely</span>
+            <span class="topq-prob-ci">80% CI: 8–38%</span>
           </div>
-          <p class="topq-note">Hormuz Sovereignty Law formalizes seizure regime. US Treasury warned shippers</p>
+          <p class="topq-note">Bandar Abbas is Kipa's single inbound chokepoint.</p>
         </div>
-        <a class="topq-link" href="#q-B5">Read full evidence chain ↓</a>
+        <a class="topq-link" href="#q-F7">Read full evidence chain ↓</a>
       </section>
     
 
     
-      <section class="headline">
-        <div class="headline-eyebrow">Today's headline · interpretation, not forecast</div>
-        <p class="headline-lead"><span class="dropcap">D</span>65 of conflict (cease-fire Day 26 with active blockade limbo). Iran's 14-point counter-proposal is in motion via Pakistani mediators; Trump is reviewing the &ldquo;concept of the deal&rdquo; but reports as &ldquo;not satisfied.&rdquo; Khamenei's Apr 30 nuclear-and-missile vow &mdash; his first public statement since the conflict began &mdash; has hardened red lines on the issue most central to any framework.</p>
-        <p class="headline-body">Polymarket's deal-by-Jun30 contract sits at <strong>36%</strong> (down 3pp). Hormuz blockade is at Day 17 with ~2,000 ships stranded; Iran's Hormuz Sovereignty Law is advancing in parliament. Brent has retreated from the $126 D62 intraday high to ~$108; US gas $4.45 (+0.013/d). Khamenei reportedly recovering from severe burns; publicly unseen since Feb 28. Mojtaba reported &ldquo;unconscious / face-burnt&rdquo; per March 2026 multiple-source coverage. Iran oil storage 12-22d remaining (Kpler). USD/IRR free-market reached 1.45M Dec 2025 and trajectory points higher.</p>
+      <section class="headline" role="region" aria-label="Today's headline">
+        <div class="headline-eyebrow">Today's read · May 3, 2026 · cease-fire Day 27 · Hormuz blockade Day 19 · interpretation, not forecast</div>
+        <p class="headline-lead"><span class="dropcap">D</span>65 of the 2026 Iran-US conflict. Probabilities below are seeded from public reporting and operator judgment, then advanced daily by a cron-driven Claude session that ingests Polymarket + Manifold prediction-market signals and surfaces 24h diffs. The model is <em>uncalibrated</em> — no prediction has resolved yet, no Brier scores exist. Treat as structured scenario reasoning, not as forecasts.</p>
+        <p class="headline-body">Three highest-stakes questions in the portfolio right now: <strong>F7</strong> (unlikely, 20%) — Strait of Hormuz reopens to commercial container traffic &gt;7 consecutive days by 2026-06-30; <strong>F8</strong> (likely, 55%) — Iran's commercial/ICE FX rate crosses 2,000,000 IRR/USD by 2026-08-31; <strong>F12</strong> (unlikely, 30%) — Polymer war premium (LDPE CFR Far East Asia) compresses &gt;25% from 2026-04-01 anchor of $1,390-1,500/MT by 2026-08-31. Family-business questions (F-series) are tagged PERSONAL — those track consequences to Iranfarhang (US/UK university Persian-content distribution, ~$310K/yr) and Kipa (Iran-UAE specialty-chemicals importer-distributor, ~$10-12M/yr). For current situational facts (oil price, gas, regime moves, news), see <code>agent/memory.md</code> and <code>logs/events/2026-05-03.md</code> — those are refreshed each tick. Open <code>agent/operator-queue.md</code> to confirm/edit/replace any F-question whose framing is wrong.</p>
       </section>
     
 
-    <section class="board"><h2 class="board-h">Question portfolio · 32 questions</h2>
+    <section class="board" role="region" aria-label="Question portfolio"><h2 class="board-h">Question portfolio · 32 questions</h2>
 
           <div class="board-cat board-cat-diplomacy">
             <header class="board-cat-head">
@@ -99,7 +99,7 @@
         <header class="qcard-head">
           <span class="qcard-id">A1</span>
           <span class="qcard-deadline">→ 2026-09-30</span>
-          <span class="qcard-flags"><span class="card-flag flag-personal" title="Affects user personally">PERSONAL</span></span>
+          <span class="qcard-flags"></span>
         </header>
         <h3 class="qcard-question">Iran-US framework agreement signed (any form) by 2026-09-30</h3>
         <div class="qcard-numbers">
@@ -108,7 +108,7 @@
             <span class="qcard-prob-label">very unlikely</span>
           </div>
           <div class="qcard-ci">
-            <span class="qcard-ci-bar">
+            <span class="qcard-ci-bar" aria-label="80% credible interval, mark at point estimate">
               <span class="qcard-ci-track"></span>
               <span class="qcard-ci-fill" style="left: 8%; width: 24%"></span>
               <span class="qcard-ci-mark" style="left: 18%"></span>
@@ -116,14 +116,14 @@
             <span class="qcard-ci-label">80% CI: 8–32%</span>
           </div>
         </div>
-        <p class="qcard-note">14-point counter-proposal in motion (D65). Trump reviewing &quot;concept of deal.&quot;</p>
+        <p class="qcard-note">14-point counter-proposal in motion (D65).</p>
       </article>
     
       <article class="qcard qcard-cat-diplomacy qcard-prob-unlikely" id="q-A2">
         <header class="qcard-head">
           <span class="qcard-id">A2</span>
           <span class="qcard-deadline">→ 2026-12-31</span>
-          <span class="qcard-flags"><span class="card-flag flag-personal" title="Affects user personally">PERSONAL</span></span>
+          <span class="qcard-flags"></span>
         </header>
         <h3 class="qcard-question">Hormuz commercial transit returns to &gt;50% pre-war (&gt;67 vessels/day, 7d MA) by 2026-12-31</h3>
         <div class="qcard-numbers">
@@ -132,7 +132,7 @@
             <span class="qcard-prob-label">unlikely</span>
           </div>
           <div class="qcard-ci">
-            <span class="qcard-ci-bar">
+            <span class="qcard-ci-bar" aria-label="80% credible interval, mark at point estimate">
               <span class="qcard-ci-track"></span>
               <span class="qcard-ci-fill" style="left: 12%; width: 30%"></span>
               <span class="qcard-ci-mark" style="left: 25%"></span>
@@ -140,7 +140,7 @@
             <span class="qcard-ci-label">80% CI: 12–42%</span>
           </div>
         </div>
-        <p class="qcard-note">Currently ~7 vessels/day (5% of pre-war 135). Iran Hormuz Sovereignty Law</p>
+        <p class="qcard-note">Currently ~7 vessels/day (5% of pre-war 135).</p>
       </article>
     
       <article class="qcard qcard-cat-diplomacy qcard-prob-very-unlikely" id="q-A3">
@@ -156,7 +156,7 @@
             <span class="qcard-prob-label">very unlikely</span>
           </div>
           <div class="qcard-ci">
-            <span class="qcard-ci-bar">
+            <span class="qcard-ci-bar" aria-label="80% credible interval, mark at point estimate">
               <span class="qcard-ci-track"></span>
               <span class="qcard-ci-fill" style="left: 4%; width: 21%"></span>
               <span class="qcard-ci-mark" style="left: 12%"></span>
@@ -164,14 +164,14 @@
             <span class="qcard-ci-label">80% CI: 4–25%</span>
           </div>
         </div>
-        <p class="qcard-note">Earnest Will took ~12 months to escalate. CENTCOM strike plan briefed (D63).</p>
+        <p class="qcard-note">Earnest Will took ~12 months to escalate.</p>
       </article>
     
       <article class="qcard qcard-cat-diplomacy qcard-prob-unlikely" id="q-A4">
         <header class="qcard-head">
           <span class="qcard-id">A4</span>
           <span class="qcard-deadline">→ 2026-08-31</span>
-          <span class="qcard-flags"><span class="card-flag flag-personal" title="Affects user personally">PERSONAL</span></span>
+          <span class="qcard-flags"></span>
         </header>
         <h3 class="qcard-question">Iran 14-point counter-proposal becomes basis for substantive talks (joint working groups announced) by 2026-08-31</h3>
         <div class="qcard-numbers">
@@ -180,7 +180,7 @@
             <span class="qcard-prob-label">unlikely</span>
           </div>
           <div class="qcard-ci">
-            <span class="qcard-ci-bar">
+            <span class="qcard-ci-bar" aria-label="80% credible interval, mark at point estimate">
               <span class="qcard-ci-track"></span>
               <span class="qcard-ci-fill" style="left: 10%; width: 28%"></span>
               <span class="qcard-ci-mark" style="left: 22%"></span>
@@ -188,7 +188,7 @@
             <span class="qcard-ci-label">80% CI: 10–38%</span>
           </div>
         </div>
-        <p class="qcard-note">Proposal active D65; Trump &quot;reviewing concept&quot; but &quot;not satisfied.&quot;</p>
+        <p class="qcard-note">Proposal active D65; Trump &quot;reviewing concept&quot; but &quot;not satisfied.&quot; Araghchi cancelled May 4 talks (per D64 update).</p>
       </article>
     
       <article class="qcard qcard-cat-diplomacy qcard-prob-very-unlikely" id="q-A5">
@@ -204,7 +204,7 @@
             <span class="qcard-prob-label">very unlikely</span>
           </div>
           <div class="qcard-ci">
-            <span class="qcard-ci-bar">
+            <span class="qcard-ci-bar" aria-label="80% credible interval, mark at point estimate">
               <span class="qcard-ci-track"></span>
               <span class="qcard-ci-fill" style="left: 3%; width: 19%"></span>
               <span class="qcard-ci-mark" style="left: 10%"></span>
@@ -231,7 +231,7 @@
         <header class="qcard-head">
           <span class="qcard-id">B1</span>
           <span class="qcard-deadline">→ 2026-12-31</span>
-          <span class="qcard-flags"><span class="card-flag flag-personal" title="Affects user personally">PERSONAL</span></span>
+          <span class="qcard-flags"></span>
         </header>
         <h3 class="qcard-question">US conducts kinetic strike on Iranian sovereign territory by 2026-12-31</h3>
         <div class="qcard-numbers">
@@ -240,7 +240,7 @@
             <span class="qcard-prob-label">unlikely</span>
           </div>
           <div class="qcard-ci">
-            <span class="qcard-ci-bar">
+            <span class="qcard-ci-bar" aria-label="80% credible interval, mark at point estimate">
               <span class="qcard-ci-track"></span>
               <span class="qcard-ci-fill" style="left: 10%; width: 25%"></span>
               <span class="qcard-ci-mark" style="left: 20%"></span>
@@ -264,7 +264,7 @@
             <span class="qcard-prob-label">unlikely</span>
           </div>
           <div class="qcard-ci">
-            <span class="qcard-ci-bar">
+            <span class="qcard-ci-bar" aria-label="80% credible interval, mark at point estimate">
               <span class="qcard-ci-track"></span>
               <span class="qcard-ci-fill" style="left: 15%; width: 30%"></span>
               <span class="qcard-ci-mark" style="left: 28%"></span>
@@ -272,7 +272,7 @@
             <span class="qcard-ci-label">80% CI: 15–45%</span>
           </div>
         </div>
-        <p class="qcard-note">US KIA 15, US wounded 520, US aircraft 7 lost cumulative. Continued kinetic.</p>
+        <p class="qcard-note">US KIA 15, US wounded 520, US aircraft 7 lost cumulative.</p>
       </article>
     
       <article class="qcard qcard-cat-military qcard-prob-very-unlikely" id="q-B3">
@@ -288,7 +288,7 @@
             <span class="qcard-prob-label">very unlikely</span>
           </div>
           <div class="qcard-ci">
-            <span class="qcard-ci-bar">
+            <span class="qcard-ci-bar" aria-label="80% credible interval, mark at point estimate">
               <span class="qcard-ci-track"></span>
               <span class="qcard-ci-fill" style="left: 6%; width: 24%"></span>
               <span class="qcard-ci-mark" style="left: 15%"></span>
@@ -312,7 +312,7 @@
             <span class="qcard-prob-label">unlikely</span>
           </div>
           <div class="qcard-ci">
-            <span class="qcard-ci-bar">
+            <span class="qcard-ci-bar" aria-label="80% credible interval, mark at point estimate">
               <span class="qcard-ci-track"></span>
               <span class="qcard-ci-fill" style="left: 18%; width: 27%"></span>
               <span class="qcard-ci-mark" style="left: 30%"></span>
@@ -320,14 +320,14 @@
             <span class="qcard-ci-label">80% CI: 18–45%</span>
           </div>
         </div>
-        <p class="qcard-note">Lebanon killed 2,659+ (D65). Hezbollah bleeding from IDF strikes.</p>
+        <p class="qcard-note">Lebanon killed 2,659+ (D65).</p>
       </article>
     
       <article class="qcard qcard-cat-military qcard-prob-likely" id="q-B5">
         <header class="qcard-head">
           <span class="qcard-id">B5</span>
           <span class="qcard-deadline">→ 2026-09-30</span>
-          <span class="qcard-flags"><span class="card-flag flag-personal" title="Affects user personally">PERSONAL</span></span>
+          <span class="qcard-flags"></span>
         </header>
         <h3 class="qcard-question">IRGC seizes a third foreign-flagged commercial vessel in Gulf/Hormuz by 2026-09-30</h3>
         <div class="qcard-numbers">
@@ -336,7 +336,7 @@
             <span class="qcard-prob-label">likely</span>
           </div>
           <div class="qcard-ci">
-            <span class="qcard-ci-bar">
+            <span class="qcard-ci-bar" aria-label="80% credible interval, mark at point estimate">
               <span class="qcard-ci-track"></span>
               <span class="qcard-ci-fill" style="left: 38%; width: 34%"></span>
               <span class="qcard-ci-mark" style="left: 55%"></span>
@@ -344,7 +344,7 @@
             <span class="qcard-ci-label">80% CI: 38–72%</span>
           </div>
         </div>
-        <p class="qcard-note">Hormuz Sovereignty Law formalizes seizure regime. US Treasury warned shippers</p>
+        <p class="qcard-note">Hormuz Sovereignty Law formalizes seizure regime.</p>
       </article>
     
             </div>
@@ -363,7 +363,7 @@
         <header class="qcard-head">
           <span class="qcard-id">C1</span>
           <span class="qcard-deadline">→ 2026-12-31</span>
-          <span class="qcard-flags"><span class="card-flag flag-humility" title="Model class has zero validated track record on this outcome type">HUMILITY</span><span class="card-flag flag-personal" title="Affects user personally">PERSONAL</span></span>
+          <span class="qcard-flags"><span class="card-flag flag-humility" title="Model class has zero validated track record on this outcome type">HUMILITY</span></span>
         </header>
         <h3 class="qcard-question">Khamenei dies or is publicly removed from office by 2026-12-31</h3>
         <div class="qcard-numbers">
@@ -372,7 +372,7 @@
             <span class="qcard-prob-label">very unlikely</span>
           </div>
           <div class="qcard-ci">
-            <span class="qcard-ci-bar">
+            <span class="qcard-ci-bar" aria-label="80% credible interval, mark at point estimate">
               <span class="qcard-ci-track"></span>
               <span class="qcard-ci-fill" style="left: 3%; width: 15%"></span>
               <span class="qcard-ci-mark" style="left: 8%"></span>
@@ -380,14 +380,14 @@
             <span class="qcard-ci-label">80% CI: 3–18%</span>
           </div>
         </div>
-        <p class="qcard-note">Reportedly recovering from severe burns. Awaiting prosthetic leg.</p>
+        <p class="qcard-note">Reportedly recovering from severe burns.</p>
       </article>
     
       <article class="qcard qcard-cat-regime qcard-prob-roughly-even-chance" id="q-C2">
         <header class="qcard-head">
           <span class="qcard-id">C2</span>
           <span class="qcard-deadline">→ 2026-12-31</span>
-          <span class="qcard-flags"><span class="card-flag flag-personal" title="Affects user personally">PERSONAL</span></span>
+          <span class="qcard-flags"></span>
         </header>
         <h3 class="qcard-question">Iran sustained protest wave (&gt;14d, &gt;5 cities, ACLED-coded) by 2026-12-31</h3>
         <div class="qcard-numbers">
@@ -396,7 +396,7 @@
             <span class="qcard-prob-label">roughly even chance</span>
           </div>
           <div class="qcard-ci">
-            <span class="qcard-ci-bar">
+            <span class="qcard-ci-bar" aria-label="80% credible interval, mark at point estimate">
               <span class="qcard-ci-track"></span>
               <span class="qcard-ci-fill" style="left: 28%; width: 34%"></span>
               <span class="qcard-ci-mark" style="left: 45%"></span>
@@ -404,7 +404,7 @@
             <span class="qcard-ci-label">80% CI: 28–62%</span>
           </div>
         </div>
-        <p class="qcard-note">Currency at record low (1.45M rial Dec 2025). Bonbast &gt;8%/wk slides have</p>
+        <p class="qcard-note">Currency at record low (1.45M rial Dec 2025).</p>
       </article>
     
       <article class="qcard qcard-cat-regime qcard-prob-very-unlikely" id="q-C3">
@@ -420,7 +420,7 @@
             <span class="qcard-prob-label">very unlikely</span>
           </div>
           <div class="qcard-ci">
-            <span class="qcard-ci-bar">
+            <span class="qcard-ci-bar" aria-label="80% credible interval, mark at point estimate">
               <span class="qcard-ci-track"></span>
               <span class="qcard-ci-fill" style="left: 2%; width: 13%"></span>
               <span class="qcard-ci-mark" style="left: 6%"></span>
@@ -435,7 +435,7 @@
         <header class="qcard-head">
           <span class="qcard-id">C4</span>
           <span class="qcard-deadline">→ 2026-12-31</span>
-          <span class="qcard-flags"><span class="card-flag flag-personal" title="Affects user personally">PERSONAL</span></span>
+          <span class="qcard-flags"></span>
         </header>
         <h3 class="qcard-question">Sustained bazaari shutdown (&gt;3d Tehran Grand Bazaar) by 2026-12-31</h3>
         <div class="qcard-numbers">
@@ -444,7 +444,7 @@
             <span class="qcard-prob-label">unlikely</span>
           </div>
           <div class="qcard-ci">
-            <span class="qcard-ci-bar">
+            <span class="qcard-ci-bar" aria-label="80% credible interval, mark at point estimate">
               <span class="qcard-ci-track"></span>
               <span class="qcard-ci-fill" style="left: 15%; width: 35%"></span>
               <span class="qcard-ci-mark" style="left: 30%"></span>
@@ -471,7 +471,7 @@
         <header class="qcard-head">
           <span class="qcard-id">D1</span>
           <span class="qcard-deadline">→ 2026-12-31</span>
-          <span class="qcard-flags"><span class="card-flag flag-personal" title="Affects user personally">PERSONAL</span></span>
+          <span class="qcard-flags"></span>
         </header>
         <h3 class="qcard-question">USD/IRR bonbast rate exceeds 2,000,000 by 2026-12-31</h3>
         <div class="qcard-numbers">
@@ -480,7 +480,7 @@
             <span class="qcard-prob-label">likely</span>
           </div>
           <div class="qcard-ci">
-            <span class="qcard-ci-bar">
+            <span class="qcard-ci-bar" aria-label="80% credible interval, mark at point estimate">
               <span class="qcard-ci-track"></span>
               <span class="qcard-ci-fill" style="left: 45%; width: 37%"></span>
               <span class="qcard-ci-mark" style="left: 65%"></span>
@@ -488,14 +488,14 @@
             <span class="qcard-ci-label">80% CI: 45–82%</span>
           </div>
         </div>
-        <p class="qcard-note">Reached 1.45M Dec 2025. Iran oil storage 12-22d remaining (Kpler).</p>
+        <p class="qcard-note">Reached 1.45M Dec 2025.</p>
       </article>
     
       <article class="qcard qcard-cat-economic qcard-prob-roughly-even-chance" id="q-D2">
         <header class="qcard-head">
           <span class="qcard-id">D2</span>
           <span class="qcard-deadline">→ 2026-12-31</span>
-          <span class="qcard-flags"><span class="card-flag flag-personal" title="Affects user personally">PERSONAL</span></span>
+          <span class="qcard-flags"></span>
         </header>
         <h3 class="qcard-question">Iran oil exports fall below 0.5M bpd (Kpler 30d MA) by 2026-12-31</h3>
         <div class="qcard-numbers">
@@ -504,7 +504,7 @@
             <span class="qcard-prob-label">roughly even chance</span>
           </div>
           <div class="qcard-ci">
-            <span class="qcard-ci-bar">
+            <span class="qcard-ci-bar" aria-label="80% credible interval, mark at point estimate">
               <span class="qcard-ci-track"></span>
               <span class="qcard-ci-fill" style="left: 28%; width: 37%"></span>
               <span class="qcard-ci-mark" style="left: 45%"></span>
@@ -512,14 +512,14 @@
             <span class="qcard-ci-label">80% CI: 28–65%</span>
           </div>
         </div>
-        <p class="qcard-note">Iran oil storage 12-22d remaining. Iran may need to cut 1.5M bpd by mid-May</p>
+        <p class="qcard-note">Iran oil storage 12-22d remaining.</p>
       </article>
     
       <article class="qcard qcard-cat-economic qcard-prob-roughly-even-chance" id="q-D3">
         <header class="qcard-head">
           <span class="qcard-id">D3</span>
           <span class="qcard-deadline">→ 2026-09-30</span>
-          <span class="qcard-flags"><span class="card-flag flag-personal" title="Affects user personally">PERSONAL</span></span>
+          <span class="qcard-flags"></span>
         </header>
         <h3 class="qcard-question">US gas national average (AAA) crosses $4.50 sustained 7+d by 2026-09-30</h3>
         <div class="qcard-numbers">
@@ -528,7 +528,7 @@
             <span class="qcard-prob-label">roughly even chance</span>
           </div>
           <div class="qcard-ci">
-            <span class="qcard-ci-bar">
+            <span class="qcard-ci-bar" aria-label="80% credible interval, mark at point estimate">
               <span class="qcard-ci-track"></span>
               <span class="qcard-ci-fill" style="left: 30%; width: 40%"></span>
               <span class="qcard-ci-mark" style="left: 50%"></span>
@@ -536,14 +536,14 @@
             <span class="qcard-ci-label">80% CI: 30–70%</span>
           </div>
         </div>
-        <p class="qcard-note">Currently $4.45 (D65). +9% last week trend. Brent $108. Linear extrapolation</p>
+        <p class="qcard-note">Currently $4.45 (D65). +9% last week trend.</p>
       </article>
     
       <article class="qcard qcard-cat-economic qcard-prob-unlikely" id="q-D4">
         <header class="qcard-head">
           <span class="qcard-id">D4</span>
           <span class="qcard-deadline">→ 2026-12-31</span>
-          <span class="qcard-flags"><span class="card-flag flag-personal" title="Affects user personally">PERSONAL</span></span>
+          <span class="qcard-flags"></span>
         </header>
         <h3 class="qcard-question">Brent crude crosses $130 by 2026-12-31</h3>
         <div class="qcard-numbers">
@@ -552,7 +552,7 @@
             <span class="qcard-prob-label">unlikely</span>
           </div>
           <div class="qcard-ci">
-            <span class="qcard-ci-bar">
+            <span class="qcard-ci-bar" aria-label="80% credible interval, mark at point estimate">
               <span class="qcard-ci-track"></span>
               <span class="qcard-ci-fill" style="left: 18%; width: 37%"></span>
               <span class="qcard-ci-mark" style="left: 35%"></span>
@@ -560,7 +560,7 @@
             <span class="qcard-ci-label">80% CI: 18–55%</span>
           </div>
         </div>
-        <p class="qcard-note">D62 hit $126 intraday. Currently $108. Hormuz closure scenario (B5+) →</p>
+        <p class="qcard-note">D62 hit $126 intraday.</p>
       </article>
     
             </div>
@@ -588,7 +588,7 @@
             <span class="qcard-prob-label">unlikely</span>
           </div>
           <div class="qcard-ci">
-            <span class="qcard-ci-bar">
+            <span class="qcard-ci-bar" aria-label="80% credible interval, mark at point estimate">
               <span class="qcard-ci-track"></span>
               <span class="qcard-ci-fill" style="left: 18%; width: 27%"></span>
               <span class="qcard-ci-mark" style="left: 30%"></span>
@@ -596,7 +596,7 @@
             <span class="qcard-ci-label">80% CI: 18–45%</span>
           </div>
         </div>
-        <p class="qcard-note">Personnel = policy. First-term: Bolton/Pompeo/etc replaced before JCPOA exit.</p>
+        <p class="qcard-note">Personnel = policy.</p>
       </article>
     
       <article class="qcard qcard-cat-us qcard-prob-likely" id="q-E2">
@@ -612,7 +612,7 @@
             <span class="qcard-prob-label">likely</span>
           </div>
           <div class="qcard-ci">
-            <span class="qcard-ci-bar">
+            <span class="qcard-ci-bar" aria-label="80% credible interval, mark at point estimate">
               <span class="qcard-ci-track"></span>
               <span class="qcard-ci-fill" style="left: 40%; width: 30%"></span>
               <span class="qcard-ci-mark" style="left: 55%"></span>
@@ -620,7 +620,7 @@
             <span class="qcard-ci-label">80% CI: 40–70%</span>
           </div>
         </div>
-        <p class="qcard-note">Midterms in ~550 days. Wartime midterms historically incumbent-unfavorable.</p>
+        <p class="qcard-note">Midterms in ~550 days.</p>
       </article>
     
             </div>
@@ -639,7 +639,7 @@
         <header class="qcard-head">
           <span class="qcard-id">F1</span>
           <span class="qcard-deadline">→ 2026-09-30</span>
-          <span class="qcard-flags"><span class="card-flag flag-personal" title="Affects user personally">PERSONAL</span></span>
+          <span class="qcard-flags"><span class="card-flag flag-personal" title="Directly affects family business">PERSONAL</span></span>
         </header>
         <h3 class="qcard-question">At least one Tier-1 university (Stanford/Columbia/Yale/NYU/UChicago/Harvard/UPenn/Princeton/Berkeley) formally pauses or declines FY27 approval-plan budget renewal with Iranfarhang citing the conflict, by 2026-09-30</h3>
         <div class="qcard-numbers">
@@ -648,7 +648,7 @@
             <span class="qcard-prob-label">unlikely</span>
           </div>
           <div class="qcard-ci">
-            <span class="qcard-ci-bar">
+            <span class="qcard-ci-bar" aria-label="80% credible interval, mark at point estimate">
               <span class="qcard-ci-track"></span>
               <span class="qcard-ci-fill" style="left: 8%; width: 30%"></span>
               <span class="qcard-ci-mark" style="left: 20%"></span>
@@ -656,14 +656,14 @@
             <span class="qcard-ci-label">80% CI: 8–38%</span>
           </div>
         </div>
-        <p class="qcard-note">18 active institutions; ~$310K/yr revenue. Berman Amendment exemption protects</p>
+        <p class="qcard-note">18 active institutions; ~$310K/yr revenue.</p>
       </article>
     
       <article class="qcard qcard-cat-iranfarhang qcard-prob-unlikely" id="q-F2">
         <header class="qcard-head">
           <span class="qcard-id">F2</span>
           <span class="qcard-deadline">→ 2026-12-31</span>
-          <span class="qcard-flags"><span class="card-flag flag-personal" title="Affects user personally">PERSONAL</span></span>
+          <span class="qcard-flags"><span class="card-flag flag-personal" title="Directly affects family business">PERSONAL</span></span>
         </header>
         <h3 class="qcard-question">Kemco SARL banking relationship terminated, frozen, or requires additional IBAN re-issue (beyond Oct 2025) by 2026-12-31</h3>
         <div class="qcard-numbers">
@@ -672,7 +672,7 @@
             <span class="qcard-prob-label">unlikely</span>
           </div>
           <div class="qcard-ci">
-            <span class="qcard-ci-bar">
+            <span class="qcard-ci-bar" aria-label="80% credible interval, mark at point estimate">
               <span class="qcard-ci-track"></span>
               <span class="qcard-ci-fill" style="left: 15%; width: 35%"></span>
               <span class="qcard-ci-mark" style="left: 30%"></span>
@@ -680,14 +680,14 @@
             <span class="qcard-ci-label">80% CI: 15–50%</span>
           </div>
         </div>
-        <p class="qcard-note">Single point of failure for entire payment rail. Already changed once Oct 2025.</p>
+        <p class="qcard-note">Single point of failure for entire payment rail.</p>
       </article>
     
       <article class="qcard qcard-cat-iranfarhang qcard-prob-roughly-even-chance" id="q-F3">
         <header class="qcard-head">
           <span class="qcard-id">F3</span>
           <span class="qcard-deadline">→ 2026-08-31</span>
-          <span class="qcard-flags"><span class="card-flag flag-personal" title="Affects user personally">PERSONAL</span></span>
+          <span class="qcard-flags"><span class="card-flag flag-personal" title="Directly affects family business">PERSONAL</span></span>
         </header>
         <h3 class="qcard-question">Frankfurt Magiran-standby-server operational (Phase 4 production-drill passed) by 2026-08-31</h3>
         <div class="qcard-numbers">
@@ -696,7 +696,7 @@
             <span class="qcard-prob-label">roughly even chance</span>
           </div>
           <div class="qcard-ci">
-            <span class="qcard-ci-bar">
+            <span class="qcard-ci-bar" aria-label="80% credible interval, mark at point estimate">
               <span class="qcard-ci-track"></span>
               <span class="qcard-ci-fill" style="left: 30%; width: 40%"></span>
               <span class="qcard-ci-mark" style="left: 50%"></span>
@@ -704,14 +704,14 @@
             <span class="qcard-ci-label">80% CI: 30–70%</span>
           </div>
         </div>
-        <p class="qcard-note">Plan v15 stable (Codex round-5). Awaiting Magiran answers Q21-Q25 + O14a.</p>
+        <p class="qcard-note">Plan v15 stable (Codex round-5).</p>
       </article>
     
       <article class="qcard qcard-cat-iranfarhang qcard-prob-roughly-even-chance" id="q-F4">
         <header class="qcard-head">
           <span class="qcard-id">F4</span>
           <span class="qcard-deadline">→ 2026-10-31</span>
-          <span class="qcard-flags"><span class="card-flag flag-personal" title="Affects user personally">PERSONAL</span></span>
+          <span class="qcard-flags"><span class="card-flag flag-personal" title="Directly affects family business">PERSONAL</span></span>
         </header>
         <h3 class="qcard-question">Tehran→Atlanta cargo (Shipment #65 or later) delayed &gt;60 days from intended send date due to Iran Air / Hormuz / customs by 2026-10-31</h3>
         <div class="qcard-numbers">
@@ -720,7 +720,7 @@
             <span class="qcard-prob-label">roughly even chance</span>
           </div>
           <div class="qcard-ci">
-            <span class="qcard-ci-bar">
+            <span class="qcard-ci-bar" aria-label="80% credible interval, mark at point estimate">
               <span class="qcard-ci-track"></span>
               <span class="qcard-ci-fill" style="left: 25%; width: 40%"></span>
               <span class="qcard-ci-mark" style="left: 45%"></span>
@@ -728,14 +728,14 @@
             <span class="qcard-ci-label">80% CI: 25–65%</span>
           </div>
         </div>
-        <p class="qcard-note">Shipments #61-#64 completed in last year. Hormuz blockade Day 17 + 2,000 ships</p>
+        <p class="qcard-note">Shipments #61-#64 completed in last year.</p>
       </article>
     
       <article class="qcard qcard-cat-iranfarhang qcard-prob-very-unlikely" id="q-F5">
         <header class="qcard-head">
           <span class="qcard-id">F5</span>
           <span class="qcard-deadline">→ 2026-12-31</span>
-          <span class="qcard-flags"><span class="card-flag flag-humility" title="Model class has zero validated track record on this outcome type">HUMILITY</span><span class="card-flag flag-personal" title="Affects user personally">PERSONAL</span></span>
+          <span class="qcard-flags"><span class="card-flag flag-humility" title="Model class has zero validated track record on this outcome type">HUMILITY</span><span class="card-flag flag-personal" title="Directly affects family business">PERSONAL</span></span>
         </header>
         <h3 class="qcard-question">OFAC issues guidance/enforcement narrowing the informational-materials exemption (31 CFR 560.315) by 2026-12-31</h3>
         <div class="qcard-numbers">
@@ -744,7 +744,7 @@
             <span class="qcard-prob-label">very unlikely</span>
           </div>
           <div class="qcard-ci">
-            <span class="qcard-ci-bar">
+            <span class="qcard-ci-bar" aria-label="80% credible interval, mark at point estimate">
               <span class="qcard-ci-track"></span>
               <span class="qcard-ci-fill" style="left: 3%; width: 19%"></span>
               <span class="qcard-ci-mark" style="left: 10%"></span>
@@ -752,14 +752,14 @@
             <span class="qcard-ci-label">80% CI: 3–22%</span>
           </div>
         </div>
-        <p class="qcard-note">Berman Amendment has survived JCPOA withdrawal + 2017/2018 OFAC re-confirmation</p>
+        <p class="qcard-note">Berman Amendment has survived JCPOA withdrawal + 2017/2018 OFAC re-confirmation letters on file.</p>
       </article>
     
       <article class="qcard qcard-cat-iranfarhang qcard-prob-likely" id="q-F6">
         <header class="qcard-head">
           <span class="qcard-id">F6</span>
           <span class="qcard-deadline">→ 2026-09-30</span>
-          <span class="qcard-flags"><span class="card-flag flag-personal" title="Affects user personally">PERSONAL</span></span>
+          <span class="qcard-flags"><span class="card-flag flag-personal" title="Directly affects family business">PERSONAL</span></span>
         </header>
         <h3 class="qcard-question">Mozhgan unreachable for &gt;7 consecutive days at any point by 2026-09-30</h3>
         <div class="qcard-numbers">
@@ -768,7 +768,7 @@
             <span class="qcard-prob-label">likely</span>
           </div>
           <div class="qcard-ci">
-            <span class="qcard-ci-bar">
+            <span class="qcard-ci-bar" aria-label="80% credible interval, mark at point estimate">
               <span class="qcard-ci-track"></span>
               <span class="qcard-ci-fill" style="left: 35%; width: 40%"></span>
               <span class="qcard-ci-mark" style="left: 55%"></span>
@@ -776,7 +776,7 @@
             <span class="qcard-ci-label">80% CI: 35–75%</span>
           </div>
         </div>
-        <p class="qcard-note">Iran international internet 300+ hr degraded Jan 2026. March 2026 forced</p>
+        <p class="qcard-note">Iran international internet 300+ hr degraded Jan 2026.</p>
       </article>
     
             </div>
@@ -795,7 +795,7 @@
         <header class="qcard-head">
           <span class="qcard-id">F7</span>
           <span class="qcard-deadline">→ 2026-06-30</span>
-          <span class="qcard-flags"><span class="card-flag flag-personal" title="Affects user personally">PERSONAL</span></span>
+          <span class="qcard-flags"><span class="card-flag flag-personal" title="Directly affects family business">PERSONAL</span></span>
         </header>
         <h3 class="qcard-question">Strait of Hormuz reopens to commercial container traffic &gt;7 consecutive days by 2026-06-30</h3>
         <div class="qcard-numbers">
@@ -804,7 +804,7 @@
             <span class="qcard-prob-label">unlikely</span>
           </div>
           <div class="qcard-ci">
-            <span class="qcard-ci-bar">
+            <span class="qcard-ci-bar" aria-label="80% credible interval, mark at point estimate">
               <span class="qcard-ci-track"></span>
               <span class="qcard-ci-fill" style="left: 8%; width: 30%"></span>
               <span class="qcard-ci-mark" style="left: 20%"></span>
@@ -812,14 +812,14 @@
             <span class="qcard-ci-label">80% CI: 8–38%</span>
           </div>
         </div>
-        <p class="qcard-note">Bandar Abbas is Kipa's single inbound chokepoint. If NO, Sibur Caspian route</p>
+        <p class="qcard-note">Bandar Abbas is Kipa's single inbound chokepoint.</p>
       </article>
     
       <article class="qcard qcard-cat-kipa qcard-prob-likely" id="q-F8">
         <header class="qcard-head">
           <span class="qcard-id">F8</span>
           <span class="qcard-deadline">→ 2026-08-31</span>
-          <span class="qcard-flags"><span class="card-flag flag-personal" title="Affects user personally">PERSONAL</span></span>
+          <span class="qcard-flags"><span class="card-flag flag-personal" title="Directly affects family business">PERSONAL</span></span>
         </header>
         <h3 class="qcard-question">Iran's commercial/ICE FX rate crosses 2,000,000 IRR/USD by 2026-08-31</h3>
         <div class="qcard-numbers">
@@ -828,7 +828,7 @@
             <span class="qcard-prob-label">likely</span>
           </div>
           <div class="qcard-ci">
-            <span class="qcard-ci-bar">
+            <span class="qcard-ci-bar" aria-label="80% credible interval, mark at point estimate">
               <span class="qcard-ci-track"></span>
               <span class="qcard-ci-fill" style="left: 35%; width: 40%"></span>
               <span class="qcard-ci-mark" style="left: 55%"></span>
@@ -836,14 +836,14 @@
             <span class="qcard-ci-label">80% CI: 35–75%</span>
           </div>
         </div>
-        <p class="qcard-note">90% of Kipa A/R deferred 2-4 mo in Rial. ICE rate crossing triggers Rial-receivables</p>
+        <p class="qcard-note">90% of Kipa A/R deferred 2-4 mo in Rial.</p>
       </article>
     
       <article class="qcard qcard-cat-kipa qcard-prob-unlikely" id="q-F9">
         <header class="qcard-head">
           <span class="qcard-id">F9</span>
           <span class="qcard-deadline">→ 2026-09-30</span>
-          <span class="qcard-flags"><span class="card-flag flag-personal" title="Affects user personally">PERSONAL</span></span>
+          <span class="qcard-flags"><span class="card-flag flag-personal" title="Directly affects family business">PERSONAL</span></span>
         </header>
         <h3 class="qcard-question">Behrah Baspar Mana achieves signed second-line cryogenic pulverizer commitment (LOI or equipment PO) by 2026-09-30</h3>
         <div class="qcard-numbers">
@@ -852,7 +852,7 @@
             <span class="qcard-prob-label">unlikely</span>
           </div>
           <div class="qcard-ci">
-            <span class="qcard-ci-bar">
+            <span class="qcard-ci-bar" aria-label="80% credible interval, mark at point estimate">
               <span class="qcard-ci-track"></span>
               <span class="qcard-ci-fill" style="left: 20%; width: 42%"></span>
               <span class="qcard-ci-mark" style="left: 40%"></span>
@@ -860,14 +860,14 @@
             <span class="qcard-ci-label">80% CI: 20–62%</span>
           </div>
         </div>
-        <p class="qcard-note">Behrah is Kipa's safest growth bet under Scenario C — sanctions-invariant,</p>
+        <p class="qcard-note">Behrah is Kipa's safest growth bet under Scenario C — sanctions-invariant, domestic Rial sales to govt-paid contractors.</p>
       </article>
     
       <article class="qcard qcard-cat-kipa qcard-prob-very-unlikely" id="q-F10">
         <header class="qcard-head">
           <span class="qcard-id">F10</span>
           <span class="qcard-deadline">→ 2026-12-31</span>
-          <span class="qcard-flags"><span class="card-flag flag-personal" title="Affects user personally">PERSONAL</span></span>
+          <span class="qcard-flags"><span class="card-flag flag-personal" title="Directly affects family business">PERSONAL</span></span>
         </header>
         <h3 class="qcard-question">Iran MIMT publishes bakhshname restricting raw-material imports to manufacturer-end-users by 2026-12-31</h3>
         <div class="qcard-numbers">
@@ -876,7 +876,7 @@
             <span class="qcard-prob-label">very unlikely</span>
           </div>
           <div class="qcard-ci">
-            <span class="qcard-ci-bar">
+            <span class="qcard-ci-bar" aria-label="80% credible interval, mark at point estimate">
               <span class="qcard-ci-track"></span>
               <span class="qcard-ci-fill" style="left: 5%; width: 27%"></span>
               <span class="qcard-ci-mark" style="left: 15%"></span>
@@ -891,7 +891,7 @@
         <header class="qcard-head">
           <span class="qcard-id">F11</span>
           <span class="qcard-deadline">→ 2026-12-31</span>
-          <span class="qcard-flags"><span class="card-flag flag-personal" title="Affects user personally">PERSONAL</span></span>
+          <span class="qcard-flags"><span class="card-flag flag-personal" title="Directly affects family business">PERSONAL</span></span>
         </header>
         <h3 class="qcard-question">OFAC designates any Dubai-based chemical FZCO/FZE entity for Iran-related transactions by 2026-12-31</h3>
         <div class="qcard-numbers">
@@ -900,7 +900,7 @@
             <span class="qcard-prob-label">unlikely</span>
           </div>
           <div class="qcard-ci">
-            <span class="qcard-ci-bar">
+            <span class="qcard-ci-bar" aria-label="80% credible interval, mark at point estimate">
               <span class="qcard-ci-track"></span>
               <span class="qcard-ci-fill" style="left: 15%; width: 35%"></span>
               <span class="qcard-ci-mark" style="left: 30%"></span>
@@ -908,14 +908,14 @@
             <span class="qcard-ci-label">80% CI: 15–50%</span>
           </div>
         </div>
-        <p class="qcard-note">Triggers AMAG re-architecture review. Recent enforcement frontier:</p>
+        <p class="qcard-note">Triggers AMAG re-architecture review.</p>
       </article>
     
       <article class="qcard qcard-cat-kipa qcard-prob-unlikely" id="q-F12">
         <header class="qcard-head">
           <span class="qcard-id">F12</span>
           <span class="qcard-deadline">→ 2026-08-31</span>
-          <span class="qcard-flags"><span class="card-flag flag-personal" title="Affects user personally">PERSONAL</span></span>
+          <span class="qcard-flags"><span class="card-flag flag-personal" title="Directly affects family business">PERSONAL</span></span>
         </header>
         <h3 class="qcard-question">Polymer war premium (LDPE CFR Far East Asia) compresses &gt;25% from 2026-04-01 anchor of $1,390-1,500/MT by 2026-08-31</h3>
         <div class="qcard-numbers">
@@ -924,7 +924,7 @@
             <span class="qcard-prob-label">unlikely</span>
           </div>
           <div class="qcard-ci">
-            <span class="qcard-ci-bar">
+            <span class="qcard-ci-bar" aria-label="80% credible interval, mark at point estimate">
               <span class="qcard-ci-track"></span>
               <span class="qcard-ci-fill" style="left: 15%; width: 35%"></span>
               <span class="qcard-ci-mark" style="left: 30%"></span>
@@ -932,7 +932,7 @@
             <span class="qcard-ci-label">80% CI: 15–50%</span>
           </div>
         </div>
-        <p class="qcard-note">If YES: inventory-at-peak risk crystallizes. Pause Tier-1 inventory build,</p>
+        <p class="qcard-note">If YES: inventory-at-peak risk crystallizes.</p>
       </article>
     
             </div>
@@ -941,14 +941,14 @@
 </section>
 
     
-      <section class="logs-section">
+      <section class="logs-section" role="region" aria-label="Change-history logs">
         <h2 class="logs-h">Eight first-class change logs</h2>
         <p class="logs-sub">For a <em>living</em> model the change-history is the product. All logs are committed Markdown, append-only per cron tick.</p>
         <div class="logs-grid">
           <a class="log-card" href="logs/events"><span class="log-name">Event log</span><span class="log-desc">Every ingested event with source, cluster ID, applied LRs</span></a>
           <a class="log-card" href="logs/probability-changes"><span class="log-name">Probability-change log</span><span class="log-desc">Every probability movement with attribution chain</span></a>
           <a class="log-card" href="logs/agent-decisions"><span class="log-name">Agent-decision log</span><span class="log-desc">What the agent investigated, why, what it found</span></a>
-          <a class="log-card" href="logs/sources-shifted"><span class="log-name">Sources-shifted log</span><span class="log-desc">Polymarket / Metaculus / expert deltas</span></a>
+          <a class="log-card" href="logs/sources-shifted"><span class="log-name">Sources-shifted log</span><span class="log-desc">Polymarket / Manifold / Metaculus deltas</span></a>
           <a class="log-card" href="logs/adversarial-inputs"><span class="log-name">Adversarial-input log</span><span class="log-desc">Quarantined claims, deception flags, state-media positioning</span></a>
           <a class="log-card placeholder"><span class="log-name">LR-revision log</span><span class="log-desc">Phase 2+: every LR change with old, new, source class, justification</span></a>
           <a class="log-card placeholder"><span class="log-name">Resolution log</span><span class="log-desc">Phase 2+: every question resolved with Brier, post-mortem</span></a>
@@ -958,16 +958,16 @@
     
 
     
-      <section class="methodology">
+      <section class="methodology" role="region" aria-label="Methodology and disclosures">
         <h2 class="meth-h">Methodology + honesty disclosures</h2>
         <ul class="meth-list">
-          <li><strong>EXPERIMENTAL — UNCALIBRATED.</strong> No prediction has resolved yet. Model has no validated track record. Brier scores against Polymarket / Metaculus / AR baseline begin populating Phase 2+ as resolutions accumulate.</li>
-          <li><strong>Probabilities are operator-set initial reads</strong> in Phase 0 MVP. Bayesian update + 5-input ensemble (Bayesian, baseline, market, external SOTA, named-expert composite) activates Phase 2.</li>
-          <li><strong>Two questions carry permanent humility flags</strong> (C1 Khamenei death, C3 Mojtaba succession) — every published statistical conflict-forecasting model has failed to predict regime-fracture / leader-incapacity events. Treat probabilities as structurally uncertain, not numeric.</li>
+          <li><strong>EXPERIMENTAL — UNCALIBRATED.</strong> No prediction has resolved yet. Model has no validated track record. Brier scores against Polymarket / Manifold / AR baseline begin populating Phase 2+ as resolutions accumulate.</li>
+          <li><strong>Probabilities are agent-seeded initial reads</strong> in Phase 0 MVP — operator (you) has not yet reviewed. Operator owns probability edits via direct <code>portfolio.yaml</code> commits; cron-driven session surfaces market-signal deltas and never modifies probabilities itself.</li>
+          <li><strong>Two questions carry permanent humility flags</strong> (C1 Khamenei death, C3 Mojtaba succession). Every published statistical conflict-forecasting model has failed to predict regime-fracture / leader-incapacity events. Treat probabilities as structurally uncertain, not numeric.</li>
           <li><strong>Reference classes</strong> (strict + broad tiers) governing each probability are at <code>reference_classes.yaml</code>.</li>
           <li><strong>Sourced LR table</strong> (every likelihood ratio carries source class — historical-analog / market-implied / explicitly-subjective with replacement criteria) at <code>lr_table.yaml</code>. Activates Phase 2.</li>
-          <li><strong>No alpha-trade output.</strong> Until 1-year Brier beats relevant benchmark for the specific outcome class, no actionable trade signals are surfaced.</li>
-          <li><strong>External 90-day adversarial review</strong> by Sadjadpour / Vaez / Alfoneh planned — 5 most-divergent predictions sent for critique; feedback published as artifact + drives method changes.</li>
+          <li><strong>Free-only operating cost.</strong> Cron via existing Claude subscription (RemoteTrigger included), data sources are free public APIs (Polymarket Gamma + Manifold + optional Metaculus). Total cost: $0/year. Paid feeds permanently out-of-scope.</li>
+          <li><strong>No alpha-trade output, period.</strong> Until 1-year Brier beats the relevant benchmark for the specific outcome class, no actionable trade signals are surfaced.</li>
           <li>Full design at <code>docs/superpowers/specs/2026-05-03-predictive-agent-design.md</code> (v8 — converged after 7 adversarial-review rounds). Audit at <code>docs/audits/AUDIT-2026-05-03.md</code>.</li>
         </ul>
       </section>
@@ -978,16 +978,17 @@
   <footer class="agent-footer">
     <div class="agent-footer-inner">
       <div class="agent-footer-l">
-        <div class="agent-footer-brand">2026 IRAN CONFLICT PREDICTIVE AGENT</div>
-        <div class="agent-footer-meta">Daily structured scenario analysis · cron-driven · experimental · uncalibrated</div>
+        <div class="agent-footer-brand">2026 IRAN-US CONFLICT PREDICTIVE AGENT</div>
+        <div class="agent-footer-meta">Daily structured scenario analysis · cron-driven · experimental · uncalibrated · $0/yr</div>
       </div>
       <div class="agent-footer-r">
         <a href="docs/superpowers/specs/2026-05-03-predictive-agent-design.md">Design spec (v8)</a>
-        <a href="docs/audits/AUDIT-2026-05-03.md">Audit (2026-05-03)</a>
+        <a href="docs/audits/AUDIT-2026-05-03.md">Audit</a>
         <a href="docs/CRON-WORKFLOW.md">Cron workflow</a>
         <a href="portfolio.yaml">Portfolio (YAML)</a>
         <a href="reference_classes.yaml">Reference classes</a>
         <a href="lr_table.yaml">LR table</a>
+        <a href="/legacy">Legacy dashboard</a>
       </div>
     </div>
   </footer>

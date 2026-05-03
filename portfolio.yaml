@@ -22,7 +22,7 @@ questions:
     reference_class_strict: A1_iran_us_framework_strict
     reference_class_broad: A1_bilateral_nuclear_framework_broad
     expiration_policy: agent_judgment_at_deadline
-    stakeholder_tags: [us_foreign_policy, iran_regime_survival, oil_energy_markets, omid_personal]
+    stakeholder_tags: [us_foreign_policy, iran_regime_survival, oil_energy_markets]
     current_probability: 0.18
     current_credible_interval_80: [0.08, 0.32]
     current_icd203_label: very_unlikely
@@ -50,7 +50,7 @@ questions:
     reference_class_strict: A2_hormuz_normalization_strict
     reference_class_broad: A2_blockade_resolution_broad
     expiration_policy: auto_resolve_no
-    stakeholder_tags: [oil_energy_markets, omid_personal, regional_security]
+    stakeholder_tags: [oil_energy_markets, regional_security]
     current_probability: 0.25
     current_credible_interval_80: [0.12, 0.42]
     current_icd203_label: unlikely
@@ -101,7 +101,7 @@ questions:
     reference_class_strict: A4_iran_proposal_acceptance_strict
     reference_class_broad: A1_bilateral_nuclear_framework_broad
     expiration_policy: agent_judgment_at_deadline
-    stakeholder_tags: [us_foreign_policy, iran_regime_survival, omid_personal]
+    stakeholder_tags: [us_foreign_policy, iran_regime_survival]
     current_probability: 0.22
     current_credible_interval_80: [0.10, 0.38]
     current_icd203_label: unlikely
@@ -144,7 +144,7 @@ questions:
     reference_class_strict: B1_us_strike_iran_strict
     reference_class_broad: B1_us_strike_named_state_broad
     expiration_policy: auto_resolve_no
-    stakeholder_tags: [us_foreign_policy, regional_security, oil_energy_markets, omid_personal]
+    stakeholder_tags: [us_foreign_policy, regional_security, oil_energy_markets]
     current_probability: 0.20
     current_credible_interval_80: [0.10, 0.35]
     current_icd203_label: unlikely
@@ -235,7 +235,7 @@ questions:
     reference_class_strict: B5_irgc_vessel_seizure_strict
     reference_class_broad: B5_iran_vessel_seizure_broad
     expiration_policy: auto_resolve_no
-    stakeholder_tags: [oil_energy_markets, omid_personal, regional_security]
+    stakeholder_tags: [oil_energy_markets,regional_security]
     current_probability: 0.55
     current_credible_interval_80: [0.38, 0.72]
     current_icd203_label: likely
@@ -256,7 +256,7 @@ questions:
     reference_class_strict: C1_khamenei_death_strict
     reference_class_broad: C1_supreme_leader_succession_broad
     expiration_policy: auto_resolve_no
-    stakeholder_tags: [iran_regime_survival, us_foreign_policy, omid_personal]
+    stakeholder_tags: [iran_regime_survival, us_foreign_policy]
     humility_flag: true
     humility_note: |
       Model class (statistical conflict forecasting) has zero validated track record
@@ -288,7 +288,7 @@ questions:
     reference_class_strict: C2_iran_protest_wave_strict
     reference_class_broad: C2_authoritarian_protest_wave_broad
     expiration_policy: auto_resolve_no
-    stakeholder_tags: [iran_regime_survival, omid_personal]
+    stakeholder_tags: [iran_regime_survival]
     current_probability: 0.45
     current_credible_interval_80: [0.28, 0.62]
     current_icd203_label: roughly_even_chance
@@ -332,7 +332,7 @@ questions:
     reference_class_strict: C4_bazaari_strike_strict
     reference_class_broad: C4_bazaari_political_action_broad
     expiration_policy: auto_resolve_no
-    stakeholder_tags: [iran_regime_survival, omid_personal]
+    stakeholder_tags: [iran_regime_survival]
     current_probability: 0.30
     current_credible_interval_80: [0.15, 0.50]
     current_icd203_label: unlikely
@@ -354,7 +354,7 @@ questions:
     reference_class_strict: D1_rial_collapse_strict
     reference_class_broad: D1_emerging_markets_currency_collapse_broad
     expiration_policy: auto_resolve_no
-    stakeholder_tags: [iran_regime_survival, omid_personal]
+    stakeholder_tags: [iran_regime_survival]
     current_probability: 0.65
     current_credible_interval_80: [0.45, 0.82]
     current_icd203_label: likely
@@ -374,7 +374,7 @@ questions:
     reference_class_strict: D2_iran_oil_export_collapse_strict
     reference_class_broad: D2_sanctions_oil_collapse_broad
     expiration_policy: auto_resolve_no
-    stakeholder_tags: [iran_regime_survival, oil_energy_markets, omid_personal]
+    stakeholder_tags: [iran_regime_survival, oil_energy_markets]
     current_probability: 0.45
     current_credible_interval_80: [0.28, 0.65]
     current_icd203_label: roughly_even_chance
@@ -394,7 +394,7 @@ questions:
     reference_class_strict: D3_us_gas_political_threshold_strict
     reference_class_broad: D3_oil_shock_pump_pass_through_broad
     expiration_policy: auto_resolve_no
-    stakeholder_tags: [us_foreign_policy, omid_personal]
+    stakeholder_tags: [us_foreign_policy]
     current_probability: 0.50
     current_credible_interval_80: [0.30, 0.70]
     current_icd203_label: roughly_even_chance
@@ -414,7 +414,7 @@ questions:
     reference_class_strict: D4_brent_war_premium_strict
     reference_class_broad: D4_brent_geopolitical_spike_broad
     expiration_policy: auto_resolve_no
-    stakeholder_tags: [oil_energy_markets, us_foreign_policy, omid_personal]
+    stakeholder_tags: [oil_energy_markets, us_foreign_policy]
     current_probability: 0.35
     current_credible_interval_80: [0.18, 0.55]
     current_icd203_label: unlikely
@@ -730,7 +730,7 @@ questions:
 
 # ===== Portfolio metadata =====
 metadata:
-  engine_version: "0.2.0-rc1"
+  engine_version: "0.2.0"
   spec_version: v8
   last_full_review: 2026-05-03
   next_review: 2026-08-03

@@ -1,13 +1,29 @@
-# actuals.yaml — mark resolved outcomes here so the calibration spine can score
-# the model's historical predictions.
+# actuals.yaml — resolved-outcome ledger for the predictive-agent calibration spine
 #
-# Each entry:
-#   - outcome: deal | escalation | protracted | intervention | regime_collapse
-#     date: YYYY-MM-DD          # when the outcome materialized
-#     notes: ""                 # what specifically happened
+# When a portfolio question resolves (deadline reached + criterion met OR not),
+# append an entry below. The cron + per-event retrospective use this file to
+# compute Brier scores, calibration deciles, and re-weight ensemble components.
 #
-# Once you mark an outcome, the engine will compute Brier scores for every
-# prediction the engine made BEFORE that date, plus a calibration plot
-# (predicted-bucket vs actual-frequency) and a bias direction.
+# Schema per resolution:
+#   - question_id: A1 | B5 | F2 | etc.
+#     resolution_date: YYYY-MM-DD (when it actually resolved, not when noticed)
+#     resolved: yes | no | partial | invalidated
+#     evidence:
+#       - source: URL or "operator note"
+#         note: prose
+#     post_mortem: |
+#       What was the model's prediction trajectory before resolution?
+#       Which evidence pieces were over/underweighted?
+#       What LR or reference-class adjustment is implied?
+#     successors_added: [list of new question IDs spawned per portfolio.yaml successors_on_resolve_*]
+#
+# This file is empty in Phase 0 — no questions have resolved yet. The cron does
+# NOT modify this file; only the operator (during PR review) marks resolutions.
 
 resolved: []
+
+# Schema notes:
+# - Each resolved entry can be referenced from logs/resolutions.md (Phase 2+)
+# - Per-event retrospective (Phase 3+) reads this file to flag LRs whose
+#   stated effect didn't survive reality check
+# - Quarterly model report aggregates over this file

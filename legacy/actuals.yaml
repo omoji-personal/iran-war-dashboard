@@ -1,0 +1,13 @@
+# actuals.yaml — mark resolved outcomes here so the calibration spine can score
+# the model's historical predictions.
+#
+# Each entry:
+#   - outcome: deal | escalation | protracted | intervention | regime_collapse
+#     date: YYYY-MM-DD          # when the outcome materialized
+#     notes: ""                 # what specifically happened
+#
+# Once you mark an outcome, the engine will compute Brier scores for every
+# prediction the engine made BEFORE that date, plus a calibration plot
+# (predicted-bucket vs actual-frequency) and a bias direction.
+
+resolved: []

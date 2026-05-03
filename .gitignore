@@ -7,13 +7,9 @@
 
 # Backups
 *.bak
-war-data.json.bak
 
 # Vercel
 .vercel
-
-# Build output for iran-war-public
-public-dist/
 
 # Editor
 .vscode/
@@ -25,5 +21,10 @@ __pycache__/
 *.pyc
 .pytest_cache/
 
-# Engine-emit pre-engine backup
-.war-data.json.pre-engine.bak
+# Agent-state snapshots — regenerated each cron tick
+agent/polymarket-snapshot.json
+agent/manifold-snapshot.json
+agent/metaculus-snapshot.json
+agent/memory-archive/
+
+# (Legacy: engine-emit backups now under legacy/)

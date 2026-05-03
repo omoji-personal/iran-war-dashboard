@@ -1,0 +1,8 @@
+User-agent: *
+Allow: /
+Disallow: /agent/
+Disallow: /logs/
+Disallow: /portfolio_history.json
+Disallow: /actuals.yaml
+
+# No sitemap — single-page static site

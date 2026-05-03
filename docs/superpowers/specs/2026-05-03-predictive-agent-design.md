@@ -12,6 +12,8 @@
 - v5 → v6: J1 condense cron prompt to summary · J2 §10 file schemas · J3 cold-start = median ensemble · J4 ~$4K/yr budget · J5 MVP re-prioritized · J6 ICD-203 tails · J7-J15 operational
 - v6 → v7: K1 branch cleanup · K2 phase-progressive cron prompt · K3 §11 migration plan · K4 rollback plan · K5-K10 operational
 - v7 → v8: L1 mid-tick budget checkpoint · L2 optional operator notification channels · convergence declared (§12)
+- v8 → v8.1 (post-impl polish 2026-05-03): resolved internal contradiction between §0 #5 (ICD-203 narrative-only) and §3.6 (ICD-203 always alongside) — DECIDED: ICD-203 label always alongside numeric probability. Narrative paragraphs use ICD-203 vocabulary as well. Document on the live page makes both the number and the label visible. The stricter "narrative-only" stance was over-corrective; readers benefit from the redundancy.
+- Honest disclosure: this spec was written and adversarially refined by Claude in a single session. The "v8 converged after 7 rounds" descriptor is accurate to the iterative-refinement process used, but does not represent multi-author or multi-session review. External adversarial review is the planned 90-day milestone (§7).
 
 ---
 

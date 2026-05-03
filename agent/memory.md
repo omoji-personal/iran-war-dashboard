@@ -1,100 +1,89 @@
-# Agent Memory — last updated 2026-05-03 12:00 ET (initial seed)
+# Agent Memory — last regenerated 2026-05-03T16:51:42 UTC
 
-## Portfolio summary (32 questions)
+_This file is **programmatically regenerated** each tick by `scripts/refresh_memory.py` from `portfolio.yaml`, `portfolio_history.json`, `agent/operator-queue.md`, and recent logs._
+
+## Portfolio summary (current state)
+
+Engine version: **0.2.0** · Spec: **v8** · Questions: **32** · History snapshots: **3**
 
 ### A. Diplomatic resolution
-- A1 Iran-US framework deal by 2026-09-30: **18%** (very_unlikely) — last_updated 2026-05-03
-- A2 Hormuz transit >50% pre-war by 2026-12-31: **25%** (unlikely)
-- A3 US naval reflagging by 2026-12-31: **12%** (very_unlikely)
-- A4 Iran 14-point becomes substantive talks by 2026-08-31: **22%** (unlikely)
-- A5 Khamenei "heroic flexibility" framing by 2026-12-31: **10%** (very_unlikely)
+
+- **A1** 18% (*very unlikely*) → 2026-09-30: Iran-US framework agreement signed (any form) by 2026-09-30
+- **A2** 25% (*unlikely*) → 2026-12-31: Hormuz commercial transit returns to >50% pre-war (>67 vessels/day, 7d MA) by 20
+- **A3** 12% (*very unlikely*) → 2026-12-31: US announces formal naval reflagging of GCC-flagged tankers transiting Hormuz by
+- **A4** 22% (*unlikely*) → 2026-08-31: Iran 14-point counter-proposal becomes basis for substantive talks (joint workin
+- **A5** 10% (*very unlikely*) → 2026-12-31: Khamenei publicly endorses negotiations using 'heroic flexibility' framing by 20
 
 ### B. Military escalation
-- B1 US strikes Iran by 2026-12-31: **20%** (unlikely)
-- B2 Iran kinetic strike on US by 2026-12-31: **28%** (unlikely)
-- B3 Israel strikes Iran nuclear by 2026-12-31: **15%** (very_unlikely)
-- B4 Hezbollah deep strike by 2026-09-30: **30%** (unlikely)
-- B5 IRGC seizes 3rd vessel by 2026-09-30: **55%** (likely)
+
+- **B1** 20% (*unlikely*) → 2026-12-31: US conducts kinetic strike on Iranian sovereign territory by 2026-12-31
+- **B2** 28% (*unlikely*) → 2026-12-31: Iran conducts kinetic strike on US-flagged or US-base target by 2026-12-31
+- **B3** 15% (*very unlikely*) → 2026-12-31: Israel strikes Iranian nuclear infrastructure (Natanz/Fordow/Arak) by 2026-12-31
+- **B4** 30% (*unlikely*) → 2026-09-30: Hezbollah-attributed attack reaches Israeli population center >25km north of bor
+- **B5** 55% (*likely*) → 2026-09-30: IRGC seizes a third foreign-flagged commercial vessel in Gulf/Hormuz by 2026-09-
 
 ### C. Regime / leadership
-- C1 Khamenei dies/removed by 2026-12-31: **8%** (very_unlikely) [HUMILITY FLAG]
-- C2 Iran sustained protest wave by 2026-12-31: **45%** (roughly_even_chance)
-- C3 Mojtaba designated heir by 2026-12-31: **6%** (very_unlikely) [HUMILITY FLAG]
-- C4 Bazaari shutdown by 2026-12-31: **30%** (unlikely)
+
+- **C1** 8% (*very unlikely*) 🚩 [HUMILITY] → 2026-12-31: Khamenei dies or is publicly removed from office by 2026-12-31
+- **C2** 45% (*roughly even chance*) → 2026-12-31: Iran sustained protest wave (>14d, >5 cities, ACLED-coded) by 2026-12-31
+- **C3** 6% (*very unlikely*) 🚩 [HUMILITY] → 2026-12-31: Mojtaba Khamenei publicly designated heir-apparent by Assembly of Experts by 202
+- **C4** 30% (*unlikely*) → 2026-12-31: Sustained bazaari shutdown (>3d Tehran Grand Bazaar) by 2026-12-31
 
 ### D. Economic / structural
-- D1 USD/IRR bonbast >2M by 2026-12-31: **65%** (likely)
-- D2 Iran oil exports <0.5M bpd by 2026-12-31: **45%** (roughly_even_chance)
-- D3 US gas crosses $4.50 sustained by 2026-09-30: **50%** (roughly_even_chance)
-- D4 Brent crosses $130 by 2026-12-31: **35%** (unlikely)
+
+- **D1** 65% (*likely*) → 2026-12-31: USD/IRR bonbast rate exceeds 2,000,000 by 2026-12-31
+- **D2** 45% (*roughly even chance*) → 2026-12-31: Iran oil exports fall below 0.5M bpd (Kpler 30d MA) by 2026-12-31
+- **D3** 50% (*roughly even chance*) → 2026-09-30: US gas national average (AAA) crosses $4.50 sustained 7+d by 2026-09-30
+- **D4** 35% (*unlikely*) → 2026-12-31: Brent crude crosses $130 by 2026-12-31
 
 ### E. US side
-- E1 Trump replaces SecDef/NSA/SecState by 2026-09-30: **30%** (unlikely)
-- E2 Republicans lose chamber Nov 2026: **55%** (likely)
 
-### F. Iranfarhang business
-- F1 Tier-1 university pauses FY27 renewal by 2026-09-30: **20%** (unlikely)
-- F2 Kemco SARL banking action by 2026-12-31: **30%** (unlikely)
-- F3 Magiran-standby Phase-4 drill by 2026-08-31: **50%** (roughly_even_chance)
-- F4 Tehran-Atlanta cargo delay >60d by 2026-10-31: **45%** (roughly_even_chance)
-- F5 OFAC narrows Berman Amendment by 2026-12-31: **10%** (very_unlikely) [HUMILITY FLAG]
-- F6 Mozhgan unreachable >7d by 2026-09-30: **55%** (likely)
+- **E1** 30% (*unlikely*) → 2026-09-30: Trump replaces SecDef, NSA, or SecState by 2026-09-30
+- **E2** 55% (*likely*) → 2026-12-15: Republican loses control of either chamber in Nov 2026 midterms
 
-### F. Kipa business
-- F7 Hormuz reopens by 2026-06-30: **20%** (unlikely)
-- F8 Iran ICE FX >2M IRR/USD by 2026-08-31: **55%** (likely)
-- F9 Behrah second pulverizer commitment by 2026-09-30: **40%** (unlikely)
-- F10 Iran MIMT bakhshname (Atabak Cat-2 conversion) by 2026-12-31: **15%** (very_unlikely)
-- F11 OFAC designates UAE chemical FZCO by 2026-12-31: **30%** (unlikely)
-- F12 LDPE polymer war premium compresses >25% by 2026-08-31: **30%** (unlikely)
+### F.1 Iranfarhang business
 
-## Open investigations
+- **F1** 20% (*unlikely*) 👤 [PERSONAL] → 2026-09-30: At least one Tier-1 university (Stanford/Columbia/Yale/NYU/UChicago/Harvard/UPen
+- **F2** 30% (*unlikely*) 👤 [PERSONAL] → 2026-12-31: Kemco SARL banking relationship terminated, frozen, or requires additional IBAN 
+- **F3** 50% (*roughly even chance*) 👤 [PERSONAL] → 2026-08-31: Frankfurt Magiran-standby-server operational (Phase 4 production-drill passed) b
+- **F4** 45% (*roughly even chance*) 👤 [PERSONAL] → 2026-10-31: Tehran→Atlanta cargo (Shipment #65 or later) delayed >60 days from intended send
+- **F5** 10% (*very unlikely*) 🚩 [HUMILITY] 👤 [PERSONAL] → 2026-12-31: OFAC issues guidance/enforcement narrowing the informational-materials exemption
+- **F6** 55% (*likely*) 👤 [PERSONAL] → 2026-09-30: Mozhgan unreachable for >7 consecutive days at any point by 2026-09-30
 
-(Phase 0 — operator-driven; no agent-initiated investigations yet.)
+### F.2 Kipa business
 
-## Recent LR revisions (last 30d)
+- **F7** 20% (*unlikely*) 👤 [PERSONAL] → 2026-06-30: Strait of Hormuz reopens to commercial container traffic >7 consecutive days by 
+- **F8** 55% (*likely*) 👤 [PERSONAL] → 2026-08-31: Iran's commercial/ICE FX rate crosses 2,000,000 IRR/USD by 2026-08-31
+- **F9** 40% (*unlikely*) 👤 [PERSONAL] → 2026-09-30: Behrah Baspar Mana achieves signed second-line cryogenic pulverizer commitment (
+- **F10** 15% (*very unlikely*) 👤 [PERSONAL] → 2026-12-31: Iran MIMT publishes bakhshname restricting raw-material imports to manufacturer-
+- **F11** 30% (*unlikely*) 👤 [PERSONAL] → 2026-12-31: OFAC designates any Dubai-based chemical FZCO/FZE entity for Iran-related transa
+- **F12** 30% (*unlikely*) 👤 [PERSONAL] → 2026-08-31: Polymer war premium (LDPE CFR Far East Asia) compresses >25% from 2026-04-01 anc
 
-(LR table active Phase 2+; not used in Phase 0.)
+## Recent probability changes (last 7d)
 
-## Named-expert standing forecasts
+_No moves above CI noise floor in last 7d (since 2026-05-01)._
 
-(Tracked Phase 2+. Initial named-expert composite:
-Sadjadpour, Vaez, Alfoneh, Khalaji, Batmanghelidj, Nasr, Maloney;
-Takeyh + Parsi as polar baseline averaged together.)
+## Open Tier-C operator decisions
 
-## Top-of-mind context (carried forward)
+- 2026-05-03 — F1-F12 portfolio confirmation — confirm/edit family-business questions
+- 2026-05-03 — Phase 0 → Phase 1 transition trigger
+- 2026-05-03 — Free-only operating constraint (CONFIRMED by user)
 
-- D65 (May 3 2026): ceasefire Day 26, Iran 14-point counter-proposal active, Trump
-  reviewing "concept of deal" but "not satisfied"; Khamenei nuclear vow hardens red lines.
-  Polymarket deal-by-Jun30 fell to 36% (-3pp).
-- Hormuz blockade Day 17, ~2,000 ships stranded. Iran Hormuz Sovereignty Law advancing.
-- Brent ~$108.20; gas $4.45 (+0.013). Lebanon killed 2,659+. 26-day zero-attack streak.
+## Recent log files
+
+- **Events**: `2026-05-03.md`
+- **Probability changes**: `2026-05-03.md`
+- **Sources shifted**: `2026-05-03.md`
+
+## Top-of-mind context (operator-curated)
+
+_Operator: add fresh notes here as situational awareness shifts. Format: `### YYYY-MM-DD note: ...`_
+
+### 2026-05-03 baseline
+- D65 conflict, cease-fire Day 26, Hormuz blockade Day 17. Iran's 14-point counter-proposal active.
 - Khamenei reportedly recovering from severe burns; publicly unseen since Feb 28.
-- Mojtaba "unconscious / face-burnt" reporting (March 2026, multiple outlets).
-- Iran oil storage 12-22d remaining (Kpler).
+- Mojtaba reportedly unconscious / face-burnt per March 2026 multiple-source reporting.
 - USD/IRR free-market reached 1.45M Dec 2025; trajectory points higher.
-
-### Family-business state
-- **Iranfarhang**: Mar 2026 "Update from Tehran" all-client crisis email sent due to
-  Iran international internet 300+ hr degraded. ~$310K/yr revenue, 18 active institutions.
-  Magiran-standby PLAN.md v15 stable (Codex round-5), awaiting Magiran answers Q21-Q25.
-  Single point of failure on Mozhgan in Tehran (father just passed Feb 2026).
-  Kemco SARL IBAN already changed once (Oct 2025). No US bank account exists as backup.
-- **Kipa**: V2 War-Opportunity strategy active 2026-04-11. Target 2-3x in 18 months via
-  four-tier layer cake (existing book +30-60%, new segments PVC pipe/wire/cable/paint,
-  Behrah expansion, supplier diversification incl. Sibur Caspian route).
-  Bandar Abbas single inbound chokepoint — Hormuz Day 17 makes Sibur Caspian critical-path.
-  90% A/R deferred 2-4mo in Rial — central financial-risk concentration.
-  Shareholder Q&A 2026-03-27 confirmed scale: ~$10-12M/yr, 4-5kt/yr.
-
-## What I considered changing but didn't (last tick)
-
-(First tick — none yet.)
-
-## What should have changed but didn't (inertia detection)
-
-(First tick — none yet.)
-
-## Operator notes
-
-(User to add notes here for agent context. Format: `### YYYY-MM-DD note: ...`)
+- Iran oil storage 12-22d remaining (Kpler).
+- Iranfarhang revenue ~$310K/yr; Kemco SARL IBAN already changed once (Oct 2025); no US bank backup.
+- Kipa revenue ~$10-12M/yr; V2 War-Opportunity strategy targets 2-3x in 18 months.

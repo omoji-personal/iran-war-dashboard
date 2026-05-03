@@ -20,7 +20,7 @@ echo "=== Iran Predictive Agent — manual tick $(date -u +%Y-%m-%dT%H:%M:%SZ) =
 if [ ! -d ".venv" ]; then
   python3 -m venv .venv
   source .venv/bin/activate
-  pip install -q pyyaml pydantic pytest
+  pip install -q pyyaml pytest
 else
   source .venv/bin/activate
 fi
@@ -41,7 +41,7 @@ snap = {'date': '${TODAY}', 'engineVersion': p['metadata']['engine_version'], 'p
         'questions': [{'id': q['id'], 'category': q['category'], 'probability': q['current_probability'],
                       'ci_80': q['current_credible_interval_80'], 'last_updated': str(q['last_updated'])}
                       for q in p['questions']]}
-hp = Path('engine_history.json')
+hp = Path('portfolio_history.json')
 hist = json.loads(hp.read_text()) if hp.exists() else []
 hist = [h for h in hist if h.get('date') != '${TODAY}']
 hist.append(snap)
@@ -49,7 +49,10 @@ hp.write_text(json.dumps(hist, indent=2))
 print(f'snapshots: {len(hist)}')
 "
 
-echo "--- STEP 3: render ---"
+echo "--- STEP 3: refresh agent memory ---"
+python3 scripts/refresh_memory.py 2>&1 | tail -2
+
+echo "--- STEP 4: render ---"
 python3 scripts/render.py --public 2>&1 | tail -3
 
 echo "--- STEP 4: tests ---"
