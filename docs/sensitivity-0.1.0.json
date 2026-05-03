@@ -1,0 +1,484 @@
+{
+  "engine_version": "0.1.0",
+  "baseline": {
+    "outcome_dist": {
+      "deal": 0.173,
+      "escalation": 0.247,
+      "protracted": 0.307,
+      "intervention": 0.173,
+      "regime_collapse": 0.042,
+      "partial_deal": 0.057,
+      "other": 0.001
+    },
+    "resolution_estimate": 17
+  },
+  "n_targets": 15,
+  "n_high_leverage": 0,
+  "results": [
+    {
+      "path": "iran_regime_dynamics.regime_grip_strength",
+      "nominal": 0.85,
+      "low_50pct": {
+        "buckets_pp": {
+          "deal": -0.5,
+          "escalation": -0.8,
+          "protracted": -1.0,
+          "intervention": -0.5,
+          "regime_collapse": 2.9,
+          "partial_deal": -0.1,
+          "other": 0.0
+        },
+        "resolution_pp": 0,
+        "max_abs_pp": 2.9
+      },
+      "high_150pct": {
+        "buckets_pp": {
+          "deal": 0.2,
+          "escalation": 0.3,
+          "protracted": 0.3,
+          "intervention": 0.2,
+          "regime_collapse": -1.0,
+          "partial_deal": 0.1,
+          "other": -0.1
+        },
+        "resolution_pp": 0,
+        "max_abs_pp": 1.0
+      },
+      "high_leverage": false
+    },
+    {
+      "path": "iran_regime_dynamics.regime_brittleness",
+      "nominal": 0.35,
+      "low_50pct": {
+        "buckets_pp": {
+          "deal": 0.4,
+          "escalation": 0.5,
+          "protracted": 0.6,
+          "intervention": 0.4,
+          "regime_collapse": -2.0,
+          "partial_deal": 0.2,
+          "other": -0.1
+        },
+        "resolution_pp": 0,
+        "max_abs_pp": 2.0
+      },
+      "high_150pct": {
+        "buckets_pp": {
+          "deal": -0.3,
+          "escalation": -0.5,
+          "protracted": -0.7,
+          "intervention": -0.3,
+          "regime_collapse": 2.1,
+          "partial_deal": -0.1,
+          "other": -0.1
+        },
+        "resolution_pp": 0,
+        "max_abs_pp": 2.1
+      },
+      "high_leverage": false
+    },
+    {
+      "path": "stakeholders.trump.ego_size",
+      "nominal": 0.95,
+      "low_50pct": {
+        "buckets_pp": {
+          "deal": 0.0,
+          "escalation": -1.9,
+          "protracted": 1.9,
+          "intervention": 0.0,
+          "regime_collapse": 0.0,
+          "partial_deal": 0.0,
+          "other": 0.0
+        },
+        "resolution_pp": 0,
+        "max_abs_pp": 1.9
+      },
+      "high_150pct": {
+        "buckets_pp": {
+          "deal": 0.0,
+          "escalation": 0.2,
+          "protracted": -0.2,
+          "intervention": 0.0,
+          "regime_collapse": 0.0,
+          "partial_deal": 0.0,
+          "other": 0.0
+        },
+        "resolution_pp": 0,
+        "max_abs_pp": 0.2
+      },
+      "high_leverage": false
+    },
+    {
+      "path": "stakeholders.trump.public_commitment",
+      "nominal": 0.85,
+      "low_50pct": {
+        "buckets_pp": {
+          "deal": 0.0,
+          "escalation": -1.9,
+          "protracted": 1.9,
+          "intervention": 0.0,
+          "regime_collapse": 0.0,
+          "partial_deal": 0.0,
+          "other": 0.0
+        },
+        "resolution_pp": 0,
+        "max_abs_pp": 1.9
+      },
+      "high_150pct": {
+        "buckets_pp": {
+          "deal": 0.0,
+          "escalation": 0.6,
+          "protracted": -0.7,
+          "intervention": 0.0,
+          "regime_collapse": 0.0,
+          "partial_deal": 0.0,
+          "other": 0.1
+        },
+        "resolution_pp": 0,
+        "max_abs_pp": 0.7
+      },
+      "high_leverage": false
+    },
+    {
+      "path": "historical_ideology.trump_jcpoa_personal_animus",
+      "nominal": 0.9,
+      "low_50pct": {
+        "buckets_pp": {
+          "deal": 0.0,
+          "escalation": -1.4,
+          "protracted": 1.4,
+          "intervention": 0.0,
+          "regime_collapse": 0.0,
+          "partial_deal": 0.0,
+          "other": 0.0
+        },
+        "resolution_pp": 0,
+        "max_abs_pp": 1.4
+      },
+      "high_150pct": {
+        "buckets_pp": {
+          "deal": 0.0,
+          "escalation": 0.3,
+          "protracted": -0.3,
+          "intervention": 0.0,
+          "regime_collapse": 0.0,
+          "partial_deal": 0.0,
+          "other": 0.0
+        },
+        "resolution_pp": 0,
+        "max_abs_pp": 0.3
+      },
+      "high_leverage": false
+    },
+    {
+      "path": "world_dynamics.un_security_council_paralysis",
+      "nominal": 0.95,
+      "low_50pct": {
+        "buckets_pp": {
+          "deal": 0.0,
+          "escalation": -0.9,
+          "protracted": 1.3,
+          "intervention": -0.4,
+          "regime_collapse": 0.0,
+          "partial_deal": 0.0,
+          "other": 0.0
+        },
+        "resolution_pp": 0,
+        "max_abs_pp": 1.3
+      },
+      "high_150pct": {
+        "buckets_pp": {
+          "deal": 0.0,
+          "escalation": 0.1,
+          "protracted": -0.2,
+          "intervention": 0.1,
+          "regime_collapse": 0.0,
+          "partial_deal": 0.0,
+          "other": 0.0
+        },
+        "resolution_pp": 0,
+        "max_abs_pp": 0.2
+      },
+      "high_leverage": false
+    },
+    {
+      "path": "world_dynamics.gcc_realignment",
+      "nominal": 0.7,
+      "low_50pct": {
+        "buckets_pp": {
+          "deal": 0.0,
+          "escalation": 0.6,
+          "protracted": -1.0,
+          "intervention": 0.4,
+          "regime_collapse": 0.0,
+          "partial_deal": 0.0,
+          "other": 0.0
+        },
+        "resolution_pp": 0,
+        "max_abs_pp": 1.0
+      },
+      "high_150pct": {
+        "buckets_pp": {
+          "deal": 0.0,
+          "escalation": -0.6,
+          "protracted": 0.8,
+          "intervention": -0.3,
+          "regime_collapse": 0.0,
+          "partial_deal": 0.0,
+          "other": 0.1
+        },
+        "resolution_pp": 0,
+        "max_abs_pp": 0.8
+      },
+      "high_leverage": false
+    },
+    {
+      "path": "iran_deep_dynamics.oil_revenue_collapse_pct",
+      "nominal": 0.85,
+      "low_50pct": {
+        "buckets_pp": {
+          "deal": 0.1,
+          "escalation": 0.1,
+          "protracted": 0.1,
+          "intervention": 0.1,
+          "regime_collapse": -0.4,
+          "partial_deal": 0.1,
+          "other": -0.1
+        },
+        "resolution_pp": 0,
+        "max_abs_pp": 0.4
+      },
+      "high_150pct": {
+        "buckets_pp": {
+          "deal": 0.0,
+          "escalation": -0.1,
+          "protracted": -0.1,
+          "intervention": 0.0,
+          "regime_collapse": 0.2,
+          "partial_deal": 0.0,
+          "other": 0.0
+        },
+        "resolution_pp": 0,
+        "max_abs_pp": 0.2
+      },
+      "high_leverage": false
+    },
+    {
+      "path": "iran_deep_dynamics.khamenei_health_concern",
+      "nominal": 0.4,
+      "low_50pct": {
+        "buckets_pp": {
+          "deal": 0.1,
+          "escalation": 0.1,
+          "protracted": 0.0,
+          "intervention": 0.1,
+          "regime_collapse": -0.3,
+          "partial_deal": 0.1,
+          "other": -0.1
+        },
+        "resolution_pp": 0,
+        "max_abs_pp": 0.3
+      },
+      "high_150pct": {
+        "buckets_pp": {
+          "deal": 0.0,
+          "escalation": -0.1,
+          "protracted": -0.2,
+          "intervention": 0.0,
+          "regime_collapse": 0.4,
+          "partial_deal": 0.0,
+          "other": -0.1
+        },
+        "resolution_pp": 0,
+        "max_abs_pp": 0.4
+      },
+      "high_leverage": false
+    },
+    {
+      "path": "stakeholders.hegseth.risk_tolerance",
+      "nominal": 0.75,
+      "low_50pct": {
+        "buckets_pp": {
+          "deal": 0.0,
+          "escalation": -0.1,
+          "protracted": 0.1,
+          "intervention": 0.0,
+          "regime_collapse": 0.0,
+          "partial_deal": 0.0,
+          "other": 0.0
+        },
+        "resolution_pp": 0,
+        "max_abs_pp": 0.1
+      },
+      "high_150pct": {
+        "buckets_pp": {
+          "deal": 0.0,
+          "escalation": 0.1,
+          "protracted": -0.1,
+          "intervention": 0.0,
+          "regime_collapse": 0.0,
+          "partial_deal": 0.0,
+          "other": 0.0
+        },
+        "resolution_pp": 0,
+        "max_abs_pp": 0.1
+      },
+      "high_leverage": false
+    },
+    {
+      "path": "stakeholders.khamenei.religious_zeal",
+      "nominal": 0.95,
+      "low_50pct": {
+        "buckets_pp": {
+          "deal": 0.0,
+          "escalation": 0.0,
+          "protracted": 0.0,
+          "intervention": 0.0,
+          "regime_collapse": 0.0,
+          "partial_deal": 0.0,
+          "other": 0.0
+        },
+        "resolution_pp": 0,
+        "max_abs_pp": 0
+      },
+      "high_150pct": {
+        "buckets_pp": {
+          "deal": 0.0,
+          "escalation": 0.0,
+          "protracted": 0.0,
+          "intervention": 0.0,
+          "regime_collapse": 0.0,
+          "partial_deal": 0.0,
+          "other": 0.0
+        },
+        "resolution_pp": 0,
+        "max_abs_pp": 0
+      },
+      "high_leverage": false
+    },
+    {
+      "path": "stakeholders.khamenei.public_commitment",
+      "nominal": 0.95,
+      "low_50pct": {
+        "buckets_pp": {
+          "deal": 0.0,
+          "escalation": 0.0,
+          "protracted": 0.0,
+          "intervention": 0.0,
+          "regime_collapse": 0.0,
+          "partial_deal": 0.0,
+          "other": 0.0
+        },
+        "resolution_pp": 0,
+        "max_abs_pp": 0
+      },
+      "high_150pct": {
+        "buckets_pp": {
+          "deal": 0.0,
+          "escalation": 0.0,
+          "protracted": 0.0,
+          "intervention": 0.0,
+          "regime_collapse": 0.0,
+          "partial_deal": 0.0,
+          "other": 0.0
+        },
+        "resolution_pp": 0,
+        "max_abs_pp": 0
+      },
+      "high_leverage": false
+    },
+    {
+      "path": "us_dynamics.gas_price_pain_index",
+      "nominal": 0.6499999999999999,
+      "low_50pct": {
+        "buckets_pp": {
+          "deal": 0.0,
+          "escalation": 0.0,
+          "protracted": 0.0,
+          "intervention": 0.0,
+          "regime_collapse": 0.0,
+          "partial_deal": 0.0,
+          "other": 0.0
+        },
+        "resolution_pp": 0,
+        "max_abs_pp": 0
+      },
+      "high_150pct": {
+        "buckets_pp": {
+          "deal": 0.0,
+          "escalation": 0.0,
+          "protracted": 0.0,
+          "intervention": 0.0,
+          "regime_collapse": 0.0,
+          "partial_deal": 0.0,
+          "other": 0.0
+        },
+        "resolution_pp": 0,
+        "max_abs_pp": 0
+      },
+      "high_leverage": false
+    },
+    {
+      "path": "us_dynamics.midterms_proximity_days",
+      "nominal": 550.0,
+      "low_50pct": {
+        "buckets_pp": {
+          "deal": 0.0,
+          "escalation": 0.0,
+          "protracted": 0.0,
+          "intervention": 0.0,
+          "regime_collapse": 0.0,
+          "partial_deal": 0.0,
+          "other": 0.0
+        },
+        "resolution_pp": 0,
+        "max_abs_pp": 0
+      },
+      "high_150pct": {
+        "buckets_pp": {
+          "deal": 0.0,
+          "escalation": 0.0,
+          "protracted": 0.0,
+          "intervention": 0.0,
+          "regime_collapse": 0.0,
+          "partial_deal": 0.0,
+          "other": 0.0
+        },
+        "resolution_pp": 0,
+        "max_abs_pp": 0
+      },
+      "high_leverage": false
+    },
+    {
+      "path": "us_dynamics.christian_nationalist_pressure",
+      "nominal": 0.45,
+      "low_50pct": {
+        "buckets_pp": {
+          "deal": 0.0,
+          "escalation": 0.0,
+          "protracted": 0.0,
+          "intervention": 0.0,
+          "regime_collapse": 0.0,
+          "partial_deal": 0.0,
+          "other": 0.0
+        },
+        "resolution_pp": 0,
+        "max_abs_pp": 0
+      },
+      "high_150pct": {
+        "buckets_pp": {
+          "deal": 0.0,
+          "escalation": 0.0,
+          "protracted": 0.0,
+          "intervention": 0.0,
+          "regime_collapse": 0.0,
+          "partial_deal": 0.0,
+          "other": 0.0
+        },
+        "resolution_pp": 0,
+        "max_abs_pp": 0
+      },
+      "high_leverage": false
+    }
+  ]
+}

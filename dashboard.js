@@ -2872,6 +2872,51 @@ function applyConfidenceShading() {
 
 
 /* ============================================
+   AUDIT-DRIVEN HONESTY BANNERS (R2 override chip + R4 freshness gate)
+   ============================================ */
+
+function renderAuditBanners() {
+  var $ = function(id) { return document.getElementById(id); };
+  var meta = state.meta || {};
+  var dd = state.deepDynamics || {};
+
+  // R4: freshness gate — staleness banner if last-updated > 36h ago
+  var staleEl = $('stalenessBanner');
+  if (staleEl && meta.lastUpdated) {
+    var ageHours = (Date.now() - new Date(meta.lastUpdated).getTime()) / (1000 * 60 * 60);
+    if (ageHours > 36) {
+      staleEl.hidden = false;
+      staleEl.innerHTML =
+        '<strong>STALE DATA</strong>' +
+        '<span>Last signals refresh was ' + Math.round(ageHours) + ' hours ago. ' +
+        'Daily refresh cadence is 0700 ET — values may not reflect current situation.</span>';
+    } else {
+      staleEl.hidden = true;
+    }
+  }
+
+  // R2: override chip — surface when condition_inputs.*.score_override is set
+  var overrideEl = $('overrideBanner');
+  if (overrideEl) {
+    var ci = (dd.modifiedConditionScores) ? state : null;  // we need raw signals
+    // signals.yaml inputs aren't always echoed in war-data.json; check engine
+    // version + overridesActive flag if exposed, otherwise fall back to a
+    // simple heuristic: structural scores rounded to 2 dp suggest hand-typed values.
+    var overridesField = dd.overridesActive;  // populated by emit.py when we add it
+    if (overridesField && Array.isArray(overridesField) && overridesField.length > 0) {
+      overrideEl.hidden = false;
+      overrideEl.innerHTML =
+        '<strong>HUMAN OVERRIDE</strong>' +
+        '<span>The structural engine is bypassed for: ' +
+        overridesField.map(function(k) { return '<code>' + k + '</code>'; }).join(', ') +
+        '. Downstream layers (psych, Bayesian, Monte Carlo, Nash) operate on those typed values, not on the engine\'s structural derivation.</span>';
+    } else {
+      overrideEl.hidden = true;
+    }
+  }
+}
+
+/* ============================================
    THE READ — editorial intelligence brief renderer
    ============================================ */
 
@@ -3586,6 +3631,8 @@ function render() {
   // THE READ — editorial intelligence brief (visible both modes)
   safe(renderTheRead, 'renderTheRead');
   safe(renderBriefing, 'renderBriefing');
+  // Audit-driven honesty banners (R2 override chip + R4 freshness gate)
+  safe(renderAuditBanners, 'renderAuditBanners');
 
   // War mode renders (always call — CSS hides them in ceasefire mode)
   safe(renderPredictiveSection, 'renderPredictiveSection');

@@ -3,15 +3,15 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>2026 Iran Conflict Monitor — Predictive Intelligence Briefing</title>
-  <meta property="og:title" content="2026 Iran Conflict Monitor — Predictive Intelligence Briefing" />
-  <meta property="og:description" content="Daily 0700 ET briefing. Probability-weighted forecasts of negotiated resolution, escalation, and protracted standoff — with stakeholder psychology, game-theoretic equilibrium, and historical analog matching." />
+  <title>2026 Iran Conflict Monitor — Structured Scenario Analysis</title>
+  <meta property="og:title" content="2026 Iran Conflict Monitor — Structured Scenario Analysis" />
+  <meta property="og:description" content="Daily 0700 ET briefing. Probability-weighted scenarios for negotiated resolution, escalation, and protracted standoff — with stakeholder psychology, game-theoretic equilibrium, and historical analog matching. Experimental — uncalibrated." />
   <meta property="og:type" content="article" />
   <meta property="og:site_name" content="2026 Iran Conflict Monitor" />
   <meta name="twitter:card" content="summary_large_image" />
   <meta name="twitter:title" content="2026 Iran Conflict Monitor" />
-  <meta name="twitter:description" content="Daily predictive intelligence briefing on the 2026 Iran conflict." />
-  <meta name="description" content="Daily predictive intelligence briefing on the 2026 Iran conflict. Probability-weighted outcome forecasts derived from structural model + historical analogs + market signals." />
+  <meta name="twitter:description" content="Daily structured scenario analysis of the 2026 Iran conflict (experimental, uncalibrated)." />
+  <meta name="description" content="Daily structured scenario analysis of the 2026 Iran conflict (experimental, uncalibrated). Probability-weighted outcome scenarios from structural model + historical analogs + market signals. Experimental — model has no validated track record." />
   <link rel="canonical" href="https://iran-war-dashboard-murex.vercel.app/" />
   <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='6' fill='%230e1a2e'/%3E%3Ccircle cx='16' cy='16' r='6' fill='%23ffd166'/%3E%3Ccircle cx='16' cy='16' r='10' fill='none' stroke='%23ff6b6b' stroke-width='1.5' stroke-dasharray='2 3'/%3E%3C/svg%3E" />
   <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.1/dist/chart.umd.min.js" integrity="sha384-9nhczxUqK87bcKHh20fSQcTGD4qq5GhayNYSYWqwBkINBhOfQLg/P5HG5lF1urn4" crossorigin="anonymous"></script>
@@ -75,6 +75,14 @@
   </footer>
 
   <template id="dashboardTemplate">
+    <!-- R1: experimental banner + R4: data freshness banner (rendered by JS) -->
+    <div class="experimental-banner" id="experimentalBanner">
+      <strong>EXPERIMENTAL — UNCALIBRATED</strong>
+      <span>Probability outputs have <em>not</em> been validated against any resolved outcome. Treat as structured scenario reasoning, not as forecasts. <a href="docs/audits/AUDIT-2026-05-03.md">See audit →</a></span>
+    </div>
+    <div class="staleness-banner" id="stalenessBanner" hidden></div>
+    <div class="override-banner" id="overrideBanner" hidden></div>
+
     <!-- THE READ — editorial intelligence brief (government-grade) -->
     <section class="the-read" id="theRead">
       <div class="read-classification">
@@ -89,7 +97,7 @@
         </div>
         <div class="read-header-r">
           <div class="read-publisher">2026 IRAN CONFLICT MONITOR</div>
-          <div class="read-publisher-sub">Predictive Intelligence Briefing · Daily 0700 ET</div>
+          <div class="read-publisher-sub">Structured Scenario Analysis · Daily 0700 ET</div>
         </div>
       </header>
 
@@ -142,7 +150,8 @@
 
       <div class="read-section-num">§ 06 — Annex</div>
       <details class="read-deeper">
-        <summary>A. Model vs market — alpha signals</summary>
+        <summary>A. Model vs market — hypothetical asymmetric scenarios <span class="not-advice">(NOT investment advice — no backtested edge)</span></summary>
+        <p class="deeper-disclaimer">These are hypothetical asymmetric-payoff scenarios surfaced by the model when its probabilities diverge from market signals. The model has <strong>no validated track record</strong> against resolved outcomes. Treat as scenario reasoning, not as actionable trades.</p>
         <div id="readAlphas"></div>
       </details>
       <details class="read-deeper">

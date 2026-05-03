@@ -10,11 +10,11 @@
       "escalationProximity": 0.42
     },
     "outcomeProbabilities": {
-      "negotiatedResolution": 0.081,
+      "negotiatedResolution": 0.239,
       "derivation_negotiated": "DOWN from 0.18. Naval blockade = further from diplomacy. No talks. Allies refusing. Nuclear gap unbridgeable.",
       "escalationCatastrophe": 0.207,
       "derivation_escalation": "UP from 0.28. Blockade Monday = direct confrontation risk. If Iran resists: naval war. IRGC 'act of war.'",
-      "protractedContinuation": 0.497,
+      "protractedContinuation": 0.339,
       "derivation_protracted": "DOWN from 0.38. Blockade accelerates timeline — less likely to remain protracted, more likely collapse or confrontation.",
       "internationalIntervention": 0.142,
       "derivation_intervention": "UP from 0.10. Allies refusing blockade. China condemning. If maritime confrontation: international pressure surges.",
@@ -23,8 +23,8 @@
     },
     "resolutionProbability": {
       "estimate": 17,
-      "low": 12,
-      "high": 22
+      "low": 4,
+      "high": 30
     }
   },
   {

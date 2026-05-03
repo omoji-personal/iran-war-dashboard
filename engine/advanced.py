@@ -32,12 +32,21 @@ from .schema import Signals
 def game_theory_equilibrium(s: Signals) -> dict:
     """2-player simultaneous-move game between US and Iran.
 
+    LAYER DISCIPLINE (R8): this function emits *utility-based strategy analysis*,
+    NOT probability mass. It does not contribute to any outcome distribution.
+    It reads stakeholder fields (Trump ego, Khamenei zeal, gas pain) to construct
+    payoff matrices — these are independent of psych_modifiers' delta application
+    to condition scores. Both functions reading the same field is intentional and
+    NOT double-counting, because they output to different domains (utilities vs
+    probabilities).
+
+    The output is presentational: 'if both played rationally given current
+    incentives, here is the equilibrium.' Treat as scenario reasoning, not as a
+    forecast that compounds with the synthesized outcome distribution.
+
     Strategies:
       US:   {strike, blockade_only, negotiate, withdraw}
       Iran: {capitulate, negotiate, prolong, escalate}
-
-    Payoffs derived from psych profiles + historical priors. Find pure-strategy
-    Nash equilibria + mixed-strategy if no pure exists.
     """
     sh = s.stakeholders
     ud = s.us_dynamics
@@ -453,13 +462,17 @@ def reflexivity_adjustment(outcome_dist: dict[str, float], publication_impact: f
     A high deal-probability prediction may itself shift Polymarket toward deal,
     which could become self-fulfilling OR mean-reverting depending on dynamics.
 
-    Conservative correction: assume 5% mean-reversion toward 0.5 (max-uncertainty)
-    when dispersion is extreme.
+    Conservative correction: assume `publication_impact` mean-reversion toward
+    the equiprobable anchor (1/N for an N-bucket distribution), reflecting
+    humility under reflexivity. Previously anchored to 0.20 regardless of N — a bug.
     """
+    if not outcome_dist:
+        return {}
+    n_buckets = len(outcome_dist)
+    anchor = 1.0 / n_buckets
     adjusted = {}
     for k, p in outcome_dist.items():
-        # Pull extreme predictions slightly toward 0.5 (humility under reflexivity)
-        adjusted[k] = round(p * (1 - publication_impact) + 0.20 * publication_impact, 3)
+        adjusted[k] = round(p * (1 - publication_impact) + anchor * publication_impact, 3)
     # Renormalize
     total = sum(adjusted.values())
     if total > 0:
@@ -697,7 +710,7 @@ def ultraread(s: Signals, all_outputs: dict) -> str:
     return (
         f"ULTRA READ — D{s.meta.day} ({s.meta.date.isoformat()}):\n\n"
         f"Most-likely outcome: **{top[0]} at ~{int((top[1] or 0)*100)}%** (synthesized across "
-        f"structural/historical/market layers with {syn.get('confidence_score', 0)*100:.0f}% inter-layer "
+        f"structural/historical/market layers with {syn.get('inter_layer_agreement', syn.get('confidence_score', 0))*100:.0f}% inter-layer "
         f"agreement). Top historical analog: **{syn.get('top_analog')}** (median resolution "
         f"{syn.get('median_resolution_days_analog')}d). Monte Carlo (5000 runs, 90d horizon): "
         f"escalation {int(mc.get('escalation', 0)*100)}%, protracted {int(mc.get('protracted', 0)*100)}%, "

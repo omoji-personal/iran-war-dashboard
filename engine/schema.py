@@ -287,6 +287,39 @@ class Stakeholders(BaseModel):
         legacy_calculus=0.5, succession_anxiety=0.2,
         notes="Bleeding from Israel strikes; 2,521+ killed; calls truces 'meaningless'; theological"
     ))
+    # ===== R15: missing-but-decisive actors added per audit 2026-05-03 =====
+    erdogan: PsychProfile = Field(default_factory=lambda: PsychProfile(
+        risk_tolerance=0.55, loss_aversion=0.55, public_commitment=0.55,
+        time_horizon_days=365, audience_domestic_weight=0.85, coalition_dependency=0.5,
+        flexibility=0.6, decision_style="opportunistic",
+        ego_size=0.85, need_for_credit=0.85, religious_zeal=0.4,
+        legacy_calculus=0.7, succession_anxiety=0.3,
+        notes="Hosting talks (45-60d extension offer per D63 notes); brokerage role to NATO + Iran"
+    ))
+    mbs: PsychProfile = Field(default_factory=lambda: PsychProfile(
+        risk_tolerance=0.7, loss_aversion=0.45, public_commitment=0.55,
+        time_horizon_days=730, audience_domestic_weight=0.65, coalition_dependency=0.3,
+        flexibility=0.65, decision_style="personalist",
+        ego_size=0.85, need_for_credit=0.8, religious_zeal=0.25,
+        legacy_calculus=0.8, succession_anxiety=0.0,
+        notes="Saudi Arabia; GCC realignment lead; oil-supply optionality; Vision 2030 hedge against US dependence"
+    ))
+    xi: PsychProfile = Field(default_factory=lambda: PsychProfile(
+        risk_tolerance=0.4, loss_aversion=0.7, public_commitment=0.5,
+        time_horizon_days=1825, audience_domestic_weight=0.7, coalition_dependency=0.2,
+        flexibility=0.5, decision_style="institutional",
+        ego_size=0.7, need_for_credit=0.5, religious_zeal=0.0,
+        legacy_calculus=0.85, succession_anxiety=0.4,
+        notes="Iran-oil top buyer; single largest external lever on Iran economy; prefers status quo + cheap crude"
+    ))
+    sistani: PsychProfile = Field(default_factory=lambda: PsychProfile(
+        risk_tolerance=0.25, loss_aversion=0.7, public_commitment=0.4,
+        time_horizon_days=1825, audience_domestic_weight=0.6, coalition_dependency=0.2,
+        flexibility=0.55, decision_style="institutional",
+        ego_size=0.3, need_for_credit=0.2, religious_zeal=0.85,
+        legacy_calculus=0.95, succession_anxiety=0.7,
+        notes="Iraqi Najaf marja; Shia legitimacy check on Khamenei; quietist tradition vs Iran's velayat-e faqih"
+    ))
 
 
 # (removed obsolete duplicate Stakeholders — earlier definition above is canonical)
@@ -535,8 +568,10 @@ class ExoticSignals(BaseModel):
     kalshi_oil_above_120_pct: Optional[int] = Field(default=None, ge=0, le=100,
         description="Kalshi event contract — Brent above $120 by end-of-month")
     metaculus_war_continues_2026_pct: Optional[int] = Field(default=None, ge=0, le=100)
-    polymarket_volume_24h_usd: int = Field(default=280_000_000,
-        description="24h Polymarket Iran-related contract volume — engagement intensity")
+    polymarket_volume_24h_usd: Optional[int] = Field(default=None,
+        description="24h Polymarket Iran-related contract volume — engagement intensity. "
+                    "Old default of 280M was wrong by ~4 orders of magnitude (real per-market "
+                    "volumes are 4-5 figures USD); leave None until verified.")
 
     # ===== US side =====
     google_search_iran_war_us: float = Field(default=0.6, ge=0.0, le=1.0,

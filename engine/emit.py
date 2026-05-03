@@ -266,8 +266,23 @@ def assemble(signals: Signals, previous: dict[str, Any]) -> dict[str, Any]:
     cf_no_khamenei = counterfactual_no_khamenei_lock(signals)
     reflex = reflexivity_adjustment(synthesis["outcome_dist"])
 
+    # R2: surface which condition scores are bypassed by hand-typed overrides.
+    # Dashboard renders a HUMAN OVERRIDE chip when this list is non-empty.
+    overrides_active = []
+    ci = signals.condition_inputs
+    if ci.deal.score_override is not None:
+        overrides_active.append("dealAvailability")
+    if ci.us_exit.score_override is not None:
+        overrides_active.append("usExitPressure")
+    if ci.iran_acceptance.score_override is not None:
+        overrides_active.append("iranAcceptance")
+    if ci.escalation.score_override is not None:
+        overrides_active.append("escalationProximity")
+
     deep = {
         "engineVersion": __version__,
+        # Layer 0: bypass-status
+        "overridesActive": overrides_active,
         # Layer 1: structural + psych
         "psychModifiers": deltas,
         "modifiedConditionScores": modified_scores,

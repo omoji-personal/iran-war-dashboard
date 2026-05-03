@@ -1,0 +1,6 @@
+{
+  "engine_version": "0.1.0",
+  "resolved_count": 0,
+  "message": "No resolved outcomes in actuals.yaml \u2014 nothing to backfill.",
+  "next_step": "Mark a resolved outcome in actuals.yaml when one materializes."
+}

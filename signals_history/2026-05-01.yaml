@@ -296,6 +296,68 @@ stakeholders:
     succession_anxiety: 0.2
     notes: Bleeding from Israel strikes; 2,521+ killed; calls truces 'meaningless';
       theological
+  erdogan:
+    risk_tolerance: 0.55
+    loss_aversion: 0.55
+    public_commitment: 0.55
+    time_horizon_days: 365
+    audience_domestic_weight: 0.85
+    coalition_dependency: 0.5
+    flexibility: 0.6
+    decision_style: opportunistic
+    ego_size: 0.85
+    need_for_credit: 0.85
+    religious_zeal: 0.4
+    legacy_calculus: 0.7
+    succession_anxiety: 0.3
+    notes: Hosting talks per D63 (45-60d extension offer); NATO+Iran brokerage
+  mbs:
+    risk_tolerance: 0.7
+    loss_aversion: 0.45
+    public_commitment: 0.55
+    time_horizon_days: 730
+    audience_domestic_weight: 0.65
+    coalition_dependency: 0.3
+    flexibility: 0.65
+    decision_style: personalist
+    ego_size: 0.85
+    need_for_credit: 0.8
+    religious_zeal: 0.25
+    legacy_calculus: 0.8
+    succession_anxiety: 0.0
+    notes: GCC realignment lead; oil supply optionality; Vision 2030 hedge against
+      US dependence
+  xi:
+    risk_tolerance: 0.4
+    loss_aversion: 0.7
+    public_commitment: 0.5
+    time_horizon_days: 1825
+    audience_domestic_weight: 0.7
+    coalition_dependency: 0.2
+    flexibility: 0.5
+    decision_style: institutional
+    ego_size: 0.7
+    need_for_credit: 0.5
+    religious_zeal: 0.0
+    legacy_calculus: 0.85
+    succession_anxiety: 0.4
+    notes: Iran-oil top buyer; single largest external lever on Iran economy
+  sistani:
+    risk_tolerance: 0.25
+    loss_aversion: 0.7
+    public_commitment: 0.4
+    time_horizon_days: 1825
+    audience_domestic_weight: 0.6
+    coalition_dependency: 0.2
+    flexibility: 0.55
+    decision_style: institutional
+    ego_size: 0.3
+    need_for_credit: 0.2
+    religious_zeal: 0.85
+    legacy_calculus: 0.95
+    succession_anxiety: 0.7
+    notes: Iraqi Najaf marja; Shia legitimacy check on Khamenei; quietist vs velayat-e
+      faqih
 iran_regime_dynamics:
   regime_public_support_pct: 10.0
   regime_grip_strength: 0.85
@@ -375,7 +437,7 @@ exotic_signals:
   polymarket_deal_by_jun30_pct: 15
   kalshi_oil_above_120_pct: null
   metaculus_war_continues_2026_pct: null
-  polymarket_volume_24h_usd: 280000000
+  polymarket_volume_24h_usd: null
   google_search_iran_war_us: 0.6
   s_and_p_iran_correlated_drawdown_pct: null
   cboe_oil_vix: null

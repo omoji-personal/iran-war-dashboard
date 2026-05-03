@@ -104,15 +104,29 @@ def all_condition_scores(c: ConditionInputs, gas_price: float) -> dict[str, floa
 def outcome_probabilities(
     scores: dict[str, float],
     coalition_cohesion: float = 5.0,
+    correlation: float = 0.45,
 ) -> dict[str, float]:
-    """Derive 5-bucket outcome distribution from condition scores."""
+    """Derive 5-bucket outcome distribution from condition scores.
+
+    `negotiated` previously used `deal * us * iran`, which assumes the three
+    preconditions are independent. In reality they correlate positively
+    (US exit pressure rises with deal availability; Iran acceptance rises
+    with mediator activity). Multiplying correlated probabilities understates
+    the true joint, biasing `deal` down. We blend independent product with
+    geometric-mean (which is the joint when correlation is high) using a
+    `correlation` parameter in [0,1]: 0 = pure independent, 1 = pure comonotone.
+    """
     deal = scores["dealAvailability"]
     us = scores["usExitPressure"]
     iran = scores["iranAcceptance"]
     esc = scores["escalationProximity"]
 
-    # Negotiated resolution = three-condition AND (multiplicative)
-    negotiated = deal * us * iran
+    # Negotiated resolution: weighted blend of independent product (over-suppresses)
+    # and geometric mean (over-permits when one input is high). Default correlation
+    # 0.45 leans toward joint behavior — real-world precondition correlation is moderate.
+    independent_p = deal * us * iran
+    comonotone_p = (deal * us * iran) ** (1.0 / 3.0)  # geometric mean
+    negotiated = (1.0 - correlation) * independent_p + correlation * comonotone_p
 
     # Escalation catastrophe: high escalation pressure × low deal availability
     escalation = esc * (1.0 - deal) * 0.85
@@ -146,22 +160,49 @@ def outcome_probabilities(
     }
 
 
-def resolution_probability(scores: dict[str, float], polymarket: int = 18, base_rate: int = 35) -> dict:
-    """Top-line ensemble: model + market + base rate."""
+def resolution_probability(
+    scores: dict[str, float],
+    polymarket: Optional[int] = 18,
+    base_rate: int = 35,
+    polymarket_liquidity_score: float = 0.0,
+) -> dict:
+    """Top-line ensemble: model + base rate + (conditionally) market.
+
+    R18: previously hard-coded model 0.4 + market 0.4 + base 0.2. With the
+    market at 40%, the model could not strongly disagree with prediction
+    markets, foreclosing alpha. Now the market term is weighted by
+    `polymarket_liquidity_score` (0..1) — a thin/absent market gets near-zero
+    weight; only a verified-liquid market gets meaningful weight (max 0.30).
+
+    The interval (low/high) is heuristic, not statistical — explicitly named
+    `heuristic_band` in the dashboard.
+    """
     model_pct = round(
         scores["dealAvailability"] * scores["usExitPressure"] * scores["iranAcceptance"] * 100
     )
-    # Weighted ensemble (model 0.4, market 0.4, base rate 0.2)
-    estimate = round(model_pct * 0.4 + polymarket * 0.4 + base_rate * 0.2)
-    # Confidence band: ±10pp baseline, widens when model-market disagree
-    spread = max(10, abs(model_pct - polymarket))
+    if polymarket is not None and polymarket_liquidity_score > 0:
+        market_w = min(0.30, polymarket_liquidity_score * 0.30)
+    else:
+        market_w = 0.0
+    # Remaining weight split between model and base rate (model takes the lion's share)
+    remaining = 1.0 - market_w
+    model_w = remaining * (2.0 / 3.0)
+    base_w = remaining * (1.0 / 3.0)
+    estimate = round(model_pct * model_w + (polymarket or 0) * market_w + base_rate * base_w)
+    # Heuristic band: widens with model-market disagreement, but only when market has weight
+    if market_w > 0:
+        spread = max(10, abs(model_pct - polymarket))
+    else:
+        spread = max(15, abs(model_pct - base_rate))  # wider default w/o market signal
     return {
         "model_pct": model_pct,
         "polymarket_pct": polymarket,
+        "polymarket_weight": round(market_w, 3),
         "base_rate_pct": base_rate,
         "estimate": estimate,
         "low": max(0, estimate - spread // 2),
         "high": min(100, estimate + spread // 2),
+        "heuristic_band_note": "low/high are heuristic gaps, not statistical confidence intervals",
     }
 
 
@@ -426,52 +467,68 @@ def regime_fracture_probability(s: Signals) -> float:
 # Forward projections (predict trajectories, not just current state)
 # ---------------------------------------------------------------------------
 
+def _direction_from_magnitude(magnitude_pp: float, deadband: float = 2.0) -> str:
+    """Smooth direction signal with a deadband (R7).
+
+    Avoids step-function cliffs where 0.21 vs 0.19 flipped output entirely.
+    Magnitudes inside [-deadband, +deadband] register as 'flat'.
+    """
+    if magnitude_pp > deadband:
+        return "rising"
+    if magnitude_pp < -deadband:
+        return "falling"
+    return "flat"
+
+
 def forward_projections(s: Signals, scores: dict[str, float]) -> dict[str, dict]:
     """Produce 7/14/30-day directional forecasts for each condition score.
 
-    For each horizon, return:
-      - direction: 'rising' | 'flat' | 'falling'
-      - magnitude_pp: signed percentage-point shift expected
-      - driver: one-sentence reason
+    R7: thresholds replaced with smooth magnitude → direction mapping (deadband).
+    R8: structural_iran_pressure / structural_us_pressure now read from `scores`
+    (which already have psych_modifiers applied), instead of re-multiplying raw
+    `khamenei.religious_zeal × public_commitment` etc. here. This removes one
+    of the duplicate-counting pathways the audit flagged.
     """
     sh = s.stakeholders
-    rd = s.iran_regime_dynamics
     ud = s.us_dynamics
-    idd = s.iran_deep_dynamics
 
     # 7-day: dominated by short-horizon actors
     short_horizon_force = _short_horizon_pressure(sh.trump) + _short_horizon_pressure(sh.hegseth)
-    midterm_amplifier = max(0.5, 1.0 - ud.midterms_proximity_days / 730)
 
-    # 30-day: dominated by structural pressures (succession, oil, population)
-    structural_iran_pressure = (
-        rd.population_war_fatigue * idd.oil_revenue_collapse_pct
-        - sh.khamenei.religious_zeal * sh.khamenei.public_commitment
-    )
-    structural_us_pressure = ud.gas_price_pain_index * midterm_amplifier - ud.christian_nationalist_pressure * 0.5
+    # 30-day: read from already-modified scores rather than re-mixing raw psych fields.
+    # iranAcceptance / usExitPressure are the canonical single-source-of-truth surfaces.
+    structural_iran_pressure = scores["iranAcceptance"] - 0.40  # centered on neutral 0.40
+    structural_us_pressure = scores["usExitPressure"] - 0.40
+
+    h7_esc_mag = round(short_horizon_force * 30)
+    h14_deal_mag = round(structural_iran_pressure * 20)
+    h14_esc_mag = round(scores["escalationProximity"] * 20 - 5)
+    h30_deal_mag = round((structural_iran_pressure + structural_us_pressure) * 15)
+    fracture_p = regime_fracture_probability(s)
+    h30_fracture_mag = round(fracture_p * 100)
 
     return {
         "h7": {
             "deal": {"direction": "flat", "magnitude_pp": 0,
                      "driver": "Trump ego-lock + Khamenei vow → no deal in 7 days"},
-            "escalation": {"direction": "rising" if short_horizon_force > 0.15 else "flat",
-                           "magnitude_pp": round(short_horizon_force * 30),
+            "escalation": {"direction": _direction_from_magnitude(h7_esc_mag),
+                           "magnitude_pp": h7_esc_mag,
                            "driver": "Short-horizon decisioners + CENTCOM plan briefed"},
         },
         "h14": {
-            "deal": {"direction": "rising" if structural_iran_pressure > 0.2 else "falling",
-                     "magnitude_pp": round(structural_iran_pressure * 20),
-                     "driver": "Iran population pressure + oil revenue collapse vs Khamenei religious lock"},
-            "escalation": {"direction": "rising" if scores["escalationProximity"] > 0.5 else "flat",
-                           "magnitude_pp": round(scores["escalationProximity"] * 20 - 5),
+            "deal": {"direction": _direction_from_magnitude(h14_deal_mag),
+                     "magnitude_pp": h14_deal_mag,
+                     "driver": "Iran-acceptance trajectory (psych-adjusted)"},
+            "escalation": {"direction": _direction_from_magnitude(h14_esc_mag),
+                           "magnitude_pp": h14_esc_mag,
                            "driver": "Sustained CENTCOM signaling + IRGC ascendancy"},
         },
         "h30": {
-            "deal": {"direction": "rising" if structural_iran_pressure + structural_us_pressure > 0.3 else "flat",
-                     "magnitude_pp": round((structural_iran_pressure + structural_us_pressure) * 15),
-                     "driver": "Compound: Iran economic + US electoral pressure both rising"},
-            "regime_fracture": {"direction": "rising" if regime_fracture_probability(s) > 0.15 else "flat",
-                                "magnitude_pp": round(regime_fracture_probability(s) * 100),
+            "deal": {"direction": _direction_from_magnitude(h30_deal_mag),
+                     "magnitude_pp": h30_deal_mag,
+                     "driver": "Compound: Iran-acceptance + US-exit pressure (both psych-adjusted)"},
+            "regime_fracture": {"direction": _direction_from_magnitude(h30_fracture_mag),
+                                "magnitude_pp": h30_fracture_mag,
                                 "driver": "Population × restiveness × brittleness ramp"},
         },
     }
@@ -484,8 +541,11 @@ def forward_projections(s: Signals, scores: dict[str, float]) -> dict[str, dict]
 def deep_read(s: Signals, scores: dict[str, float], deltas: dict[str, float]) -> str:
     """Generate an analytical paragraph synthesizing the deep layers.
 
-    This is the 'what an AI looking at all this would say' output — surfaces
-    non-obvious patterns from the cross-product of psych + dynamics + history.
+    LAYER DISCIPLINE (R8): this function emits *narrative text*, NOT probability
+    mass. It reads stakeholder/dynamics fields to surface readable patterns
+    (e.g., 'Khamenei lock' bullet) but does not contribute to any outcome
+    distribution. Reading raw fields here is intentional and NOT double-counting
+    because the output is presentational, not probabilistic.
     """
     sh = s.stakeholders
     rd = s.iran_regime_dynamics
@@ -779,7 +839,9 @@ def synthesized_outcome_probabilities(
     Returns:
       - outcome_dist: 5-bucket probability distribution
       - layer_contributions: dict showing each layer's weighted vote
-      - confidence_score: 0..1, how much each layer agrees with the others
+      - inter_layer_agreement: 0..1, how much each layer agrees with the others
+        (NOT a statistical confidence interval on the headline probability —
+        a high value means the layers concur, a low value means they disagree)
     """
     # Layer 1: Structural (the original condition-score model, with psych applied)
     structural = outcome_probabilities(modified_scores, s.today_scalars.coalition_cohesion_score)
@@ -807,23 +869,50 @@ def synthesized_outcome_probabilities(
     # Layer 4: Regime fracture as discount on protracted (regime collapse → deal or intervention)
     fracture_p = regime_fracture_probability(s)
 
-    # ---- Ensemble (weights tunable) ----
-    # 0.45 structural + 0.30 historical + 0.20 market (when available) + 0.05 fracture-adjustment
+    # ---- Ensemble — bucket-symmetric weights (R6) ----
+    # Earlier version dropped the market layer for buckets without market signals
+    # and renormalized, which made effective structural/historical weights vary
+    # by bucket. We now hold structural+historical at fixed proportions ACROSS
+    # all buckets, and only let the market layer add weight where a real signal
+    # exists. Conditional Polymarket weight (R18): scaled by liquidity proxy —
+    # currently null/unknown → market gets weight 0.05 baseline (was 0.20 hard).
+    market_weight = 0.0
+    if e.polymarket_deal_by_jun30_pct is not None:
+        # Conservative baseline weight; intent is to grow with verified liquidity
+        market_weight = 0.05  # was 0.20 — see audit F13/R18
+
+    structural_weight = 0.55
+    historical_weight = 0.40
+    # market_weight added only on buckets where market has a signal
+
     final = {}
     for bucket in ["deal", "escalation", "protracted", "intervention"]:
         layers = []
         weights = []
         if bucket in structural_4:
             layers.append(structural_4[bucket])
-            weights.append(0.45)
+            weights.append(structural_weight)
         if bucket in historical:
             layers.append(historical[bucket])
-            weights.append(0.30)
-        if market.get(bucket) is not None:
+            weights.append(historical_weight)
+        if market.get(bucket) is not None and market_weight > 0:
             layers.append(market[bucket])
-            weights.append(0.20)
+            weights.append(market_weight)
         wsum = sum(weights)
         final[bucket] = sum(L * w for L, w in zip(layers, weights)) / wsum if wsum > 0 else 0.0
+
+    # R16: surface regime_collapse and partial_deal as first-class buckets,
+    # not folded into 'other' or visible only in Monte Carlo.
+    # regime_collapse mass derives from regime fracture probability (capped).
+    # partial_deal carved from `deal` mass — historically partial sanctions
+    # relief / framework-without-nuclear-resolution scenarios are a meaningful
+    # fraction of "deal-shaped" outcomes.
+    final["regime_collapse"] = round(min(0.20, fracture_p * 0.4), 3)
+    # partial_deal = ~25% of pure deal mass (heuristic until backtested)
+    partial_share = 0.25
+    pure_deal = final.get("deal", 0.0) * (1 - partial_share)
+    final["partial_deal"] = round(final.get("deal", 0.0) * partial_share, 3)
+    final["deal"] = round(pure_deal, 3)
 
     # Fracture adjustment: high fracture probability shifts mass from protracted -> deal + intervention
     if fracture_p > 0.20:
@@ -842,13 +931,16 @@ def synthesized_outcome_probabilities(
     # Add residual "other" bucket
     final["other"] = round(max(0.0, 1.0 - sum(final.values())), 3)
 
-    # Confidence score: 1 - max-pairwise-disagreement across layers
+    # Inter-layer agreement: 1 - max-pairwise-disagreement across layers.
+    # NOT a statistical CI on the headline — this measures whether structural,
+    # historical, and market layers concur. Low value = layers disagree (which
+    # is information, not weakness).
     layer_disagreement = 0.0
     if "deal" in historical and "deal" in structural_4:
         layer_disagreement = max(layer_disagreement, abs(historical["deal"] - structural_4["deal"]))
     if market.get("deal") is not None:
         layer_disagreement = max(layer_disagreement, abs(market["deal"] - structural_4["deal"]))
-    confidence = round(max(0.0, 1.0 - layer_disagreement * 1.5), 2)
+    inter_layer_agreement = round(max(0.0, 1.0 - layer_disagreement * 1.5), 2)
 
     return {
         "outcome_dist": final,
@@ -858,7 +950,9 @@ def synthesized_outcome_probabilities(
             "market": {k: v for k, v in market.items() if v is not None},
             "fracture_adjustment": fracture_p,
         },
-        "confidence_score": confidence,
+        "inter_layer_agreement": inter_layer_agreement,
+        # Backward-compat alias for older clients/tests; new code should read inter_layer_agreement
+        "confidence_score": inter_layer_agreement,
         "top_analog": analogs["top_analog"],
         "median_resolution_days_analog": analogs["median_resolution_days"],
         "top_analog_lesson": analogs["top_lesson"],
@@ -960,7 +1054,11 @@ def crystallization_triggers(s: Signals) -> list[dict]:
             "trigger": "Khamenei dies or steps down",
             "watch_for": "Public-appearance frequency drops to 0; mobilization at Tehran University",
             "horizon_days": 90,
-            "prior_p": 0.10,  # rough actuarial + observed health concern
+            # R10: re-priored 0.10 → 0.04. Source: WHO/SSA actuarial life tables
+            # for 86-year-old males give ~13%/yr mortality → ~3.2%/90d, plus
+            # ~0.8pp upward adjustment for observed health concern.
+            "prior_p": 0.04,
+            "prior_p_source": "WHO/SSA actuarial 86yo M ~13%/yr → 3.2%/90d + 0.8pp health adj",
             "if_fires_p_deal": 0.45,
             "if_fires_p_escalation": 0.20,
             "if_fires_p_protracted": 0.20,
@@ -972,6 +1070,7 @@ def crystallization_triggers(s: Signals) -> list[dict]:
             "watch_for": "Pakistani mediator carries proposal back to Trump; State Dept readout uses 'constructive'",
             "horizon_days": 30,
             "prior_p": 0.15,
+            "prior_p_source": "anecdotal — Iran framework-acceptance rate during acute pressure (~3 in 20yr); needs better sourcing",
             "if_fires_p_deal": 0.70,
             "if_fires_p_escalation": 0.05,
             "if_fires_p_protracted": 0.20,
@@ -982,7 +1081,11 @@ def crystallization_triggers(s: Signals) -> list[dict]:
             "trigger": "CENTCOM strike on power grid or oil infrastructure",
             "watch_for": "Trump truth-social pre-announcement; Saudi/UAE air-defense activation",
             "horizon_days": 14,
+            # R10: prior held 0.18. Conditional on CENTCOM strike plan being
+            # briefed (currently true per signals.yaml). Unconditional base rate
+            # ~5%/14d; conditional bumps to ~15-20%. Documented but unsourced.
             "prior_p": 0.18,
+            "prior_p_source": "subjective — conditional on CENTCOM-plan-briefed=true; unconditional base ~5%/14d",
             "if_fires_p_deal": 0.05,
             "if_fires_p_escalation": 0.55,
             "if_fires_p_protracted": 0.10,
@@ -993,8 +1096,12 @@ def crystallization_triggers(s: Signals) -> list[dict]:
             "trigger": "US gas price crosses $4.50",
             "watch_for": "Sustained 7-day average above threshold; AAA national average",
             "horizon_days": 21,
+            # R10: prior held 0.45. Source: gas at $4.30 today, +9% last week
+            # (signals.yaml D63 notes). Linear extrapolation → reaches $4.50
+            # in ~14d at current rate. With volatility, 21d crossing prob ~0.40-0.50.
             "prior_p": 0.45,
-            "if_fires_p_deal": 0.30,  # Trump exit pressure spike
+            "prior_p_source": "linear extrapolation from $4.30 + 9%/week trend (signals.yaml D63)",
+            "if_fires_p_deal": 0.30,
             "if_fires_p_escalation": 0.20,
             "if_fires_p_protracted": 0.40,
             "if_fires_p_intervention": 0.10,
@@ -1005,6 +1112,7 @@ def crystallization_triggers(s: Signals) -> list[dict]:
             "watch_for": "MOFCOM statement; Sinopec halts Iranian crude",
             "horizon_days": 60,
             "prior_p": 0.05,
+            "prior_p_source": "subjective — China sanctions-enforcement against Iran has zero observed instances; 0.05 = conservative non-zero",
             "if_fires_p_deal": 0.55,
             "if_fires_p_escalation": 0.10,
             "if_fires_p_protracted": 0.30,
@@ -1015,7 +1123,11 @@ def crystallization_triggers(s: Signals) -> list[dict]:
             "trigger": "Iranian dark fleet seized in third country",
             "watch_for": "Indonesia/Malaysia announce; insurance war-risk premium spikes",
             "horizon_days": 45,
-            "prior_p": 0.20,
+            # R10: prior reduced 0.20 → 0.12. Source: 3rd-country dark-fleet
+            # seizures of Iranian crude have occurred ~2-3 times in past 5 years
+            # → base rate ~0.05/45d; conditional on active blockade ~0.10-0.15.
+            "prior_p": 0.12,
+            "prior_p_source": "historical 3rd-country Iran-dark-fleet seizures ~2-3 in 5yr; +conditional on blockade active",
             "if_fires_p_deal": 0.10,
             "if_fires_p_escalation": 0.45,
             "if_fires_p_protracted": 0.30,
@@ -1026,7 +1138,10 @@ def crystallization_triggers(s: Signals) -> list[dict]:
             "trigger": "Major Hezbollah attack inside Israeli population center",
             "watch_for": "Drone/rocket reaches Tel Aviv; civilian casualties >10",
             "horizon_days": 30,
+            # R10: prior held 0.25. Source: 4-5 Tel-Aviv-reaching attacks in
+            # past 18 months of conflict → ~25%/30d. Reasonable.
             "prior_p": 0.25,
+            "prior_p_source": "observed Hezbollah Tel-Aviv-reach attacks ~4-5 in past 18mo of conflict",
             "if_fires_p_deal": 0.05,
             "if_fires_p_escalation": 0.65,
             "if_fires_p_protracted": 0.15,

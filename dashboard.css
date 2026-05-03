@@ -949,6 +949,96 @@ html[dir="rtl"] .chips { flex-direction: row-reverse; }
 }
 
 /* ============================================
+   AUDIT-DRIVEN HONESTY BANNERS (R1, R2, R4)
+   ============================================ */
+
+.experimental-banner,
+.staleness-banner,
+.override-banner {
+  max-width: 1480px;
+  margin: 0 auto 16px auto;
+  padding: 12px 20px;
+  font-family: -apple-system, 'SF Pro Text', 'Inter', system-ui, sans-serif;
+  font-size: 13px;
+  line-height: 1.5;
+  border-radius: 4px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  gap: 12px;
+}
+
+.experimental-banner {
+  background: rgba(217, 119, 87, 0.13);          /* rust tint */
+  color: #f3dcc9;
+  border: 1px solid rgba(217, 119, 87, 0.35);
+}
+.experimental-banner strong {
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  font-size: 11px;
+  color: #f7b894;
+}
+.experimental-banner em {
+  font-style: italic;
+  color: #f7b894;
+}
+.experimental-banner a {
+  color: #f7b894;
+  text-decoration: underline;
+}
+
+.staleness-banner {
+  background: rgba(212, 175, 55, 0.12);          /* amber */
+  color: #f3e3a8;
+  border: 1px solid rgba(212, 175, 55, 0.35);
+}
+.staleness-banner strong { letter-spacing: 0.06em; font-size: 11px; }
+
+.override-banner {
+  background: rgba(180, 70, 70, 0.13);           /* red tint */
+  color: #f3cccc;
+  border: 1px solid rgba(180, 70, 70, 0.35);
+}
+.override-banner strong { letter-spacing: 0.06em; font-size: 11px; color: #ffb4b4; }
+.override-banner code {
+  font-family: ui-monospace, 'SF Mono', 'Menlo', monospace;
+  font-size: 12px;
+  background: rgba(0,0,0,0.25);
+  padding: 1px 5px;
+  border-radius: 3px;
+}
+
+@media print {
+  .experimental-banner,
+  .staleness-banner,
+  .override-banner {
+    border: 1px solid #999;
+    color: #333;
+    background: #fff;
+  }
+}
+
+/* Disclaimer styling for the alpha-scenarios annex (R3) */
+.not-advice {
+  font-size: 11px;
+  color: #d97757;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+  margin-left: 6px;
+}
+.deeper-disclaimer {
+  font-size: 12px;
+  color: #a09486;
+  font-style: italic;
+  margin: 8px 0 14px 0;
+  padding: 8px 12px;
+  border-left: 2px solid rgba(217, 119, 87, 0.4);
+  background: rgba(217, 119, 87, 0.05);
+}
+.deeper-disclaimer strong { color: #d97757; }
+
+/* ============================================
    THE READ — editorial intelligence brief
    ============================================ */
 

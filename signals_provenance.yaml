@@ -1,0 +1,114 @@
+# R13: Provenance ledger for the numeric inputs in signals.yaml
+#
+# For every field in signals.yaml that is not directly observable (i.e., not a
+# news-reported scalar like brent or us_kia), record:
+#   - source: where the number came from (URL, dataset, polling, "subjective")
+#   - last_verified: ISO date when the source was last checked
+#   - notes: methodology, scoring rubric, any inter-rater divergence
+#
+# Engine reads this file to surface "unsourced inputs" warnings on the dashboard.
+# Goal: every numeric input either has a citation or is explicitly tagged
+# "subjective — analyst estimate, not validated."
+#
+# Schema (pydantic class to enforce TBD):
+#   field_path:
+#     source: str
+#     last_verified: YYYY-MM-DD | null
+#     notes: str
+#
+# Initial seed: most fields tagged "subjective — analyst estimate" until the
+# scoring rubric work in R13/R10 is completed.
+
+stakeholders.trump.ego_size:
+  source: subjective — analyst estimate (consensus reading of media coverage)
+  last_verified: 2026-05-03
+  notes: |
+    Derived from public-statement frequency, language of self-reference, and
+    historical pattern across 2017-26. No formal psychometric scoring.
+stakeholders.trump.public_commitment:
+  source: subjective — analyst estimate
+  last_verified: 2026-05-03
+  notes: Inferred from frequency + escalation of public statements about Iran.
+stakeholders.trump.flexibility:
+  source: subjective — analyst estimate
+  last_verified: 2026-05-03
+stakeholders.khamenei.religious_zeal:
+  source: subjective — analyst estimate (review of Khamenei's published works + recent statements)
+  last_verified: 2026-05-03
+  notes: |
+    Estimated from the Apr 30 Persian Gulf Day vow + lifetime ideological writing.
+    No established academic scoring exists. Used as a structural ceiling
+    on Iran-acceptance score.
+stakeholders.khamenei.public_commitment:
+  source: subjective — anchored on D62 Apr 30 nuclear/missile vow
+  last_verified: 2026-05-03
+stakeholders.khamenei.religious_zeal_actuarial_note:
+  source: WHO/SSA actuarial life tables for 86yo male
+  last_verified: 2026-05-03
+  notes: |
+    Used in crystallization_triggers for "Khamenei dies in 90d" prior:
+    13%/yr → 3.2%/90d, plus ~0.8pp upward adjustment for observed health concern.
+iran_regime_dynamics.regime_public_support_pct:
+  source: GAMAAN survey 2024 (10-15% range across waves)
+  last_verified: 2026-05-03
+  notes: |
+    Group for Analyzing and Measuring Attitudes in IRAN — diaspora-led but the
+    only systematically published Iran-public-opinion data. Caveat: methodology
+    reliant on online respondents.
+iran_regime_dynamics.population_war_fatigue:
+  source: subjective — analyst estimate from social-media sentiment + diaspora reporting
+  last_verified: 2026-05-03
+iran_regime_dynamics.regime_brittleness:
+  source: subjective — comparative authoritarian-resilience scoring (vs Syria 2011, Iran 2009, Egypt 2011)
+  last_verified: 2026-05-03
+iran_deep_dynamics.oil_revenue_collapse_pct:
+  source: Kpler / Bloomberg (signals.yaml D63 notes — 12-22d storage remaining)
+  last_verified: 2026-05-03
+us_dynamics.gas_price_pain_index:
+  source: derived from AAA national gas average + war-era multiplier
+  last_verified: 2026-05-03
+  notes: 0.65 = $4.30 (current) vs $3.00 (pre-war baseline) with non-linear pain curve.
+us_dynamics.midterms_proximity_days:
+  source: calendar (Nov 2026 midterms minus today)
+  last_verified: 2026-05-03
+us_dynamics.approval_rating_war:
+  source: subjective — analyst estimate (no current public-poll data on Iran-war approval)
+  last_verified: 2026-05-03
+historical_analogs.cuban_missile_crisis_1962:
+  source: subjective — analyst weighting (similarity-of-structure judgment)
+  last_verified: 2026-05-03
+  notes: |
+    Reflects the analyst's intuition about which past conflict's structure most
+    resembles the present. Circular: the engine then recovers "top analog" =
+    whatever analyst weighted highest. See audit F20.
+historical_analogs.iran_iraq_war_endgame_1988:
+  source: subjective — analyst weighting
+  last_verified: 2026-05-03
+historical_analogs.korean_war_armistice_1953:
+  source: subjective — analyst weighting
+  last_verified: 2026-05-03
+historical_analogs.jcpoa_negotiation_2013_15:
+  source: subjective — analyst weighting
+  last_verified: 2026-05-03
+exotic_signals.polymarket_deal_by_jun30_pct:
+  source: Polymarket gamma-api (last-traded yes-price on Iran-deal market)
+  last_verified: 2026-05-01
+  notes: Market is thin — 4-5 figure depth. Treated as one weak signal, not a clean market.
+exotic_signals.polymarket_volume_24h_usd:
+  source: null (was 280M — wrong by ~4 orders of magnitude; nulled per R14 audit fix)
+  last_verified: 2026-05-03
+  notes: Real per-market volumes are 4-5 figures USD; need correct fetch logic before re-populating.
+exotic_signals.iaea_inspector_access_score:
+  source: subjective — analyst estimate from IAEA quarterly board reports
+  last_verified: 2026-05-03
+exotic_signals.khamenei_public_appearance_freq_30d:
+  source: count of Khamenei.ir + state-media appearances over trailing 30d
+  last_verified: 2026-05-03
+exotic_signals.friday_prayer_attendance_index:
+  source: subjective — diaspora reporting + satellite imagery (no rigorous source)
+  last_verified: 2026-05-03
+
+# === FIELDS NOT YET PROVENANCED ===
+# All other fields in signals.yaml currently default to "subjective — analyst
+# estimate" until each has been audited. The engine should refuse to emit
+# alpha-signal trades on any bucket whose primary inputs are not provenanced.
