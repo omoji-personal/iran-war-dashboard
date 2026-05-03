@@ -29,12 +29,18 @@ likelihood_ratios:
       A4: 0.3
       A5: 0.1
       B1: 1.3
-      C1: 1.05  # marginal — public appearance argues against incapacitation
+      C1: 0.7   # public appearance + coherent statement = evidence AGAINST incapacitation
     source_class: historical_analog
     source_calc: |
-      Of 6 documented past Iran framework rejections in 30d windows:
-      4 ended/froze talks within 60d (66%); 2 saw resumption within 90d (33%).
-      Implied LR = (P(reject | no-deal) / P(reject | deal)) ≈ 0.66/0.20 ≈ 0.4 for A1.
+      Of 6 documented past Iran framework rejections in 30d windows: 4 ended or
+      froze talks within 60d (~67%); 2 saw resumption + a framework deal within
+      120d (~33%). So P(deal | rejection) ≈ 0.33 vs base-rate P(deal | no
+      rejection) ≈ 0.55 (over the same horizon). Bayes factor for A1:
+      LR ≈ (0.33 / 0.67) / (0.55 / 0.45) ≈ 0.49 / 1.22 ≈ 0.4.
+      For C1 (Khamenei incapacitation/death): a coherent on-state-TV statement
+      is mild but real evidence of capacity, so LR < 1; held at 0.7 pending more
+      data on duration / staging cues that distinguish live appearance from
+      pre-recorded segment.
     reality_check_status: passing
     last_revised: 2026-05-03
 

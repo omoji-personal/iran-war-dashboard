@@ -89,11 +89,21 @@ def load_history() -> list[dict]:
         return []
 
 
+def _is_v02_snapshot(h: dict) -> bool:
+    """v0.1 history entries (legacy engine) lack a `questions[]` array; they
+    have keys like `scores`, `outcomeProbabilities`, `resolutionProbability`.
+    Treating those as a v0.2 baseline produces silently-empty diffs that
+    misleadingly read as 'no probability moves' instead of 'no comparable
+    baseline'. Only consider snapshots that carry a v0.2 questions[] array."""
+    qs = h.get("questions")
+    return isinstance(qs, list) and len(qs) > 0
+
+
 def compute_diffs_vs_yesterday(portfolio: dict, history: list[dict]) -> list[dict]:
     """Compare today's portfolio against the most recent snapshot whose date is
     BEFORE today. Avoids the today-vs-today degenerate-zero-diff bug."""
     today_iso = datetime.now(timezone.utc).strftime("%Y-%m-%d")
-    prior = [h for h in history if h.get("date") and h["date"] < today_iso]
+    prior = [h for h in history if h.get("date") and h["date"] < today_iso and _is_v02_snapshot(h)]
     if not prior:
         return []
     last = prior[-1]
@@ -221,7 +231,7 @@ def render_question_card(q: dict, stripped: bool = False) -> str:
 
 def render_diff_panel(diffs: list[dict], history: list[dict]) -> str:
     today_iso = datetime.now(timezone.utc).strftime("%Y-%m-%d")
-    prior = [h for h in history if h.get("date") and h["date"] < today_iso]
+    prior = [h for h in history if h.get("date") and h["date"] < today_iso and _is_v02_snapshot(h)]
     has_prior_baseline = bool(prior)
 
     if not has_prior_baseline:
@@ -262,12 +272,17 @@ def render_diff_panel(diffs: list[dict], history: list[dict]) -> str:
     """
 
 
-def topness(q: dict, last_q_by_id: dict[str, dict]) -> float:
+def topness(q: dict, last_q_by_id: dict[str, dict], today: datetime | None = None) -> float:
     """Score for 'top question' selection.
 
     Real signal: biggest absolute change since prior tick × stakes. NOT max
     probability (which is degenerate — D1 65% always wins).
+
+    `today` is injected (not pulled from datetime.now()) so historical
+    snapshot rendering is reproducible.
     """
+    if today is None:
+        today = datetime.now(timezone.utc)
     cur_p = q["current_probability"]
     qid = q["id"]
     last_q = last_q_by_id.get(qid, {})
@@ -287,7 +302,7 @@ def topness(q: dict, last_q_by_id: dict[str, dict]) -> float:
         deadline_str = str(deadline)
     try:
         d_dt = datetime.strptime(deadline_str, "%Y-%m-%d").replace(tzinfo=timezone.utc)
-        days_to_deadline = max(1, (d_dt.date() - datetime.now(timezone.utc).date()).days)
+        days_to_deadline = max(1, (d_dt.date() - today.date()).days)
         recency = max(0.0, 1.0 - min(days_to_deadline / 365.0, 1.0)) * 0.10
     except (ValueError, TypeError):
         recency = 0.0
@@ -460,6 +475,16 @@ def render_question_board(by_cat: dict, stripped: bool = False) -> str:
 
 # Categories that contain personal/business content — stripped from public deploy
 PRIVATE_CATEGORIES = {"family_business_iranfarhang", "family_business_kipa"}
+# Stakeholder tags that mark a question as private — even if its category is generic.
+# Defense-in-depth against a private question accidentally being placed in a generic
+# category (e.g. economic_structural) but still tagged for personal channels.
+PRIVATE_STAKEHOLDER_TAGS = {"omid_personal", "iranfarhang_business", "kipa_business"}
+
+
+def _is_private_question(q: dict) -> bool:
+    if q.get("category") in PRIVATE_CATEGORIES:
+        return True
+    return any(t in PRIVATE_STAKEHOLDER_TAGS for t in q.get("stakeholder_tags", []))
 
 
 def render_html(portfolio: dict, diffs: list[dict], history: list[dict], stripped: bool = False) -> str:
@@ -467,18 +492,26 @@ def render_html(portfolio: dict, diffs: list[dict], history: list[dict], strippe
     today_iso = today.strftime("%Y-%m-%d")
     next_tick_local = "Daily 06:00 ET (next tomorrow morning)"
 
-    # Stripped public deploy excludes private/personal/business questions entirely
+    # Stripped public deploy excludes private/personal/business questions entirely.
+    # Filter applies BOTH category and stakeholder-tag rules so a Q tagged for
+    # private channels but placed in a generic category still gets stripped.
     questions_for_view = [
         q for q in portfolio["questions"]
-        if not stripped or q["category"] not in PRIVATE_CATEGORIES
+        if not stripped or not _is_private_question(q)
     ]
     # Stripped portfolio passed to renderers as if it were the full portfolio
     portfolio_view = {**portfolio, "questions": questions_for_view}
 
-    # Stripped diffs: drop any diff for a private question
+    # Stripped diffs: drop any diff whose Q is private — by category, by tag,
+    # OR by ID-prefix `F` (covers a Q that was deleted/recategorized between
+    # the snapshot and now and would otherwise leak via the diff payload).
+    private_qids = {q["id"] for q in portfolio["questions"] if _is_private_question(q)}
     diffs_for_view = [
         d for d in diffs
-        if not stripped or d.get("id", "") not in {q["id"] for q in portfolio["questions"] if q["category"] in PRIVATE_CATEGORIES}
+        if not stripped or (
+            d.get("id", "") not in private_qids
+            and not str(d.get("id", "")).startswith("F")
+        )
     ]
 
     by_cat: dict[str, list[dict]] = {}
@@ -486,17 +519,19 @@ def render_html(portfolio: dict, diffs: list[dict], history: list[dict], strippe
         by_cat.setdefault(q["category"], []).append(q)
 
     # last_q_by_id: portfolio snapshot from yesterday-or-prior
-    prior = [h for h in history if h.get("date") and h["date"] < today_iso]
+    prior = [h for h in history if h.get("date") and h["date"] < today_iso and _is_v02_snapshot(h)]
     last_q_by_id = {q.get("id"): q for q in (prior[-1].get("questions", []) if prior else [])}
 
     # Top question: filtered to public set if stripped
     if questions_for_view:
-        top_q = max(questions_for_view, key=lambda q: topness(q, last_q_by_id))
+        top_q = max(questions_for_view, key=lambda q: topness(q, last_q_by_id, today=today))
     else:
         top_q = portfolio["questions"][0]
 
     title_base = "2026 Iran Conflict — Predictive Agent"
     title = title_base + (" (Public)" if stripped else "")
+    n_questions_visible = len(questions_for_view)
+    description_text = f"Daily Brier-scoreable predictions across {n_questions_visible} questions on the 2026 Iran-US conflict. Experimental — uncalibrated."
 
     d = war_day(today)
     cf = cf_day(today)
@@ -539,9 +574,9 @@ def render_html(portfolio: dict, diffs: list[dict], history: list[dict], strippe
   <meta name="theme-color" content="#0b1322" />
   <title>{esc(title)}</title>
   <meta property="og:title" content="{esc(title)}" />
-  <meta property="og:description" content="Daily Brier-scoreable predictions across 32 questions on the 2026 Iran-US conflict. Experimental — uncalibrated." />
+  <meta property="og:description" content="{esc(description_text)}" />
   <meta property="og:type" content="article" />
-  <meta name="description" content="Daily predictive-agent brief on the 2026 Iran-US conflict. 32 questions, ICD-203 vocabulary, free public APIs only. Experimental — uncalibrated." />
+  <meta name="description" content="{esc(description_text)}" />
   <link rel="stylesheet" href="dashboard.css" />
   <link rel="canonical" href="{esc('https://iran-war-public.vercel.app/' if stripped else 'https://iran-war-dashboard-murex.vercel.app/')}" />
 </head>
@@ -564,10 +599,13 @@ def render_html(portfolio: dict, diffs: list[dict], history: list[dict], strippe
 
   <div class="experimental-banner agent-banner">
     <strong>EXPERIMENTAL — UNCALIBRATED</strong>
-    <span>No prediction has resolved yet. Model has no validated track record. Treat probabilities as structured scenario reasoning, not as forecasts.
-    <a href="docs/superpowers/specs/2026-05-03-predictive-agent-design.md">Design spec</a> ·
-    <a href="docs/audits/AUDIT-2026-05-03.md">Audit</a> ·
-    <a href="/legacy">Legacy dashboard</a></span>
+    <span>No prediction has resolved yet. Model has no validated track record. Treat probabilities as structured scenario reasoning, not as forecasts.{(
+      ''
+      if stripped else
+      ' <a href="docs/superpowers/specs/2026-05-03-predictive-agent-design.md">Design spec</a> · '
+      '<a href="docs/audits/AUDIT-2026-05-03.md">Audit</a> · '
+      '<a href="/legacy">Legacy dashboard</a>'
+    )}</span>
   </div>
 
   <main class="agent-page" role="main" aria-label="Predictive Agent Brief">

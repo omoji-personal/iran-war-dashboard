@@ -9,11 +9,49 @@ Usage:
 from __future__ import annotations
 
 import json
+import re
 import sys
 import urllib.error
+import urllib.parse
 import urllib.request
 from datetime import datetime, timezone
 from pathlib import Path
+
+
+# Untrusted market-title/url payloads come from external prediction-market APIs.
+# They are written into Markdown logs that the cron-driven Claude reads as
+# context next tick — a prompt-injection channel. Sanitize before emit.
+
+_MD_BAD = re.compile(r"[\|\n\r\t`<>\[\]\\]")
+
+
+def md_table_safe(s: str | None, cap: int = 120) -> str:
+    """Strip Markdown / HTML / table-breaking characters from untrusted text
+    before placing it inside a `| cell |`. Caps length so a malicious title
+    cannot blow out the log file."""
+    if not s:
+        return ""
+    out = _MD_BAD.sub(" ", str(s))
+    out = re.sub(r"\s+", " ", out).strip()
+    if len(out) > cap:
+        out = out[: cap - 1] + "…"
+    return out
+
+
+def url_safe(u: str | None) -> str:
+    """Only allow http/https URLs. Strip whitespace and any trailing
+    paren/bracket that would close a Markdown link prematurely."""
+    if not u:
+        return ""
+    u = str(u).strip()
+    try:
+        parts = urllib.parse.urlsplit(u)
+    except ValueError:
+        return ""
+    if parts.scheme not in ("http", "https"):
+        return ""
+    # Strip control chars + whitespace + brackets/parens that break MD link syntax
+    return re.sub(r"[\s\[\]\(\)<>`\\]", "", u)
 
 REPO_ROOT = Path(__file__).resolve().parent.parent
 LOGS_DIR = REPO_ROOT / "logs" / "sources-shifted"
@@ -153,8 +191,10 @@ def append_log(markets: list[dict], mapping: dict[str, dict], prior: dict) -> st
                     close = "—"
             else:
                 close = "—"
-            q_short = (n.get("question") or "")[:60]
-            lines.append(f"| **{qid}** | [{q_short}]({n['url']}) | {cur_str} | {delta} | {n.get('trader_count') or 0} | {close} |")
+            q_short = md_table_safe(n.get("question"), cap=60)
+            url_clean = url_safe(n.get("url"))
+            link = f"[{q_short}]({url_clean})" if url_clean else q_short
+            lines.append(f"| **{qid}** | {link} | {cur_str} | {delta} | {n.get('trader_count') or 0} | {close} |")
         lines.append("")
 
     lines.append("### All Iran-related Manifold markets")
@@ -165,8 +205,10 @@ def append_log(markets: list[dict], mapping: dict[str, dict], prior: dict) -> st
         n = normalize(m)
         cur_str = f"{n['probability']*100:.0f}%" if n.get("probability") is not None else "—"
         vol = f"{n['volume']:,.0f}" if n.get("volume") else "—"
-        q_short = (n.get("question") or "")[:80]
-        lines.append(f"| [{q_short}]({n['url']}) | {cur_str} | {vol} | {n.get('trader_count') or 0} |")
+        q_short = md_table_safe(n.get("question"), cap=80)
+        url_clean = url_safe(n.get("url"))
+        link = f"[{q_short}]({url_clean})" if url_clean else q_short
+        lines.append(f"| {link} | {cur_str} | {vol} | {n.get('trader_count') or 0} |")
 
     with log_path.open("a" if log_path.exists() else "w", encoding="utf-8") as f:
         f.write("\n".join(lines))

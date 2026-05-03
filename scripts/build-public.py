@@ -90,9 +90,33 @@ def main() -> int:
         return 1
     shutil.copy(src_public, OUTPUT_DIR / "index.html")
 
-    # Copy CSS so the page actually styles
+    # Copy CSS so the page actually styles, but strip rules that name
+    # Iranfarhang / Kipa selectors. Selectors leak business names even if no
+    # element on the public page uses them.
     src_css = REPO_ROOT / "dashboard.css"
-    shutil.copy(src_css, OUTPUT_DIR / "dashboard.css")
+    css_text = src_css.read_text(encoding="utf-8")
+    # Remove any line whose CSS selector or value mentions a private business name.
+    # Conservative line-level filter — preserves layout rules but drops the 6 known
+    # `qcard-cat-iranfarhang` / `qcard-cat-kipa` / `board-cat-iranfarhang` / `board-cat-kipa`
+    # selector lines plus any future addition matching the same pattern.
+    private_css_tokens = ("iranfarhang", "kipa", "family-business")
+    public_css_lines = []
+    skip_block = False
+    for line in css_text.splitlines():
+        low = line.lower()
+        if any(tok in low for tok in private_css_tokens):
+            # Drop this line. If it opened a block (line ends in `{`), drop until the
+            # matching `}` on its own line.
+            if line.rstrip().endswith("{"):
+                skip_block = True
+            continue
+        if skip_block:
+            if line.strip().startswith("}"):
+                skip_block = False
+            continue
+        public_css_lines.append(line)
+    public_css = "\n".join(public_css_lines)
+    (OUTPUT_DIR / "dashboard.css").write_text(public_css, encoding="utf-8")
 
     # Copy ONLY robots.txt — the YAML data files contain F-class
     # (Iranfarhang / Kipa) entries that must not be served on the public deploy.
@@ -105,12 +129,18 @@ def main() -> int:
 
     # Write a public-scoped portfolio.yaml that excludes F-categories — operator
     # might still want a structured-data view of the public questions.
+    # Defense-in-depth: filter on BOTH category AND stakeholder-tag so a Q
+    # mistakenly placed in a public category but still tagged private gets stripped.
     import yaml as _yaml
     portfolio_data = _yaml.safe_load((REPO_ROOT / "portfolio.yaml").read_text(encoding="utf-8"))
     PRIVATE = {"family_business_iranfarhang", "family_business_kipa"}
-    public_questions = [q for q in portfolio_data.get("questions", []) if q.get("category") not in PRIVATE]
-    # Scrub public-facing question payloads of any tag mentioning private channels
     PRIVATE_TAGS = {"omid_personal", "iranfarhang_business", "kipa_business"}
+    def _is_private(q):
+        if q.get("category") in PRIVATE:
+            return True
+        return any(t in PRIVATE_TAGS for t in q.get("stakeholder_tags", []))
+    public_questions = [q for q in portfolio_data.get("questions", []) if not _is_private(q)]
+    # Scrub public-facing question payloads of any tag mentioning private channels
     for q in public_questions:
         q["stakeholder_tags"] = [t for t in q.get("stakeholder_tags", []) if t not in PRIVATE_TAGS]
     # Build a clean metadata block (drop F-class category counts + Iranfarhang/Kipa notes)
@@ -162,7 +192,7 @@ def main() -> int:
     (OUTPUT_DIR / "vercel.json").write_text(vercel_cfg, encoding="utf-8")
 
     print(f"[build-public] wrote {OUTPUT_DIR}/")
-    print(f"[build-public]   index.html, dashboard.css, portfolio.yaml, lr_table.yaml, reference_classes.yaml, robots.txt, vercel.json")
+    print(f"[build-public]   index.html, dashboard.css, portfolio.yaml (stripped), robots.txt, vercel.json")
     return 0
 
 

@@ -22,6 +22,25 @@ SNAPSHOT_PATH = REPO_ROOT / "agent" / "polymarket-snapshot.json"
 
 GAMMA = "https://gamma-api.polymarket.com/markets"
 
+
+# Untrusted market-title/slug payloads are written into Markdown logs that the
+# cron-driven Claude reads as context next tick — a prompt-injection channel.
+# Sanitize before emit.
+_MD_BAD = re.compile(r"[\|\n\r\t`<>\[\]\\]")
+
+
+def md_table_safe(s: str | None, cap: int = 120) -> str:
+    """Strip Markdown / HTML / table-breaking characters from untrusted text
+    before placing it inside a `| cell |`. Caps length so a malicious title
+    cannot blow out the log file."""
+    if not s:
+        return ""
+    out = _MD_BAD.sub(" ", str(s))
+    out = re.sub(r"\s+", " ", out).strip()
+    if len(out) > cap:
+        out = out[: cap - 1] + "…"
+    return out
+
 # Iran-relevant tag/keyword filters. Polymarket tags evolve; we cast wide net + filter.
 KEYWORDS = ("iran", "khamenei", "tehran", "hormuz", "iranian")
 # Markets whose question/slug matches any of these are SOCCER/SPORTS/celebrity etc — exclude
@@ -196,7 +215,8 @@ def write_log(markets: list[dict], mapping: dict[str, dict], prior: dict) -> str
             cur_str = f"{cur_p*100:.0f}%" if cur_p is not None else "—"
             liq = f"{n['liquidity']:,.0f}" if n.get("liquidity") else "—"
             end = (n.get("end_date") or "")[:10] if n.get("end_date") else "—"
-            lines.append(f"| **{qid}** | `{slug}` | {cur_str} | {delta} | {liq} | {end} |")
+            slug_safe = md_table_safe(slug, cap=80)
+            lines.append(f"| **{qid}** | `{slug_safe}` | {cur_str} | {delta} | {liq} | {end} |")
         lines.append("")
 
     # All Iran-tagged markets
@@ -211,8 +231,9 @@ def write_log(markets: list[dict], mapping: dict[str, dict], prior: dict) -> str
         cur_str = f"{n['price_yes']*100:.0f}%" if n.get("price_yes") is not None else "—"
         vol = f"{n['volume_24h']:,.0f}" if n.get("volume_24h") else "—"
         liq = f"{n['liquidity']:,.0f}" if n.get("liquidity") else "—"
-        q_short = (n.get("question") or "")[:80]
-        lines.append(f"| `{n['slug']}` | {q_short} | {cur_str} | {vol} | {liq} |")
+        q_short = md_table_safe(n.get("question"), cap=80)
+        slug_safe = md_table_safe(n.get("slug"), cap=80)
+        lines.append(f"| `{slug_safe}` | {q_short} | {cur_str} | {vol} | {liq} |")
 
     log_path.write_text("\n".join(lines), encoding="utf-8")
     return str(log_path)

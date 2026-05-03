@@ -600,7 +600,7 @@ F12_commodity_war_premium_decay_broad:
 
 # ===== Metadata =====
 metadata:
-  total_classes: 41  # 14 strict + 14 broad + 13 F-class
+  total_classes: 56  # auto-counted; matches len(yaml.safe_load(...).keys()) - 1 (metadata)
   last_full_review: 2026-05-03
   next_review: 2026-08-03
   notes: |
@@ -612,3 +612,6 @@ metadata:
     Iranfarhang + Kipa research agents. Several F-class strict tiers have n=0
     (no prior events documented); probabilities are driven by broad-class base
     rates + structural reasoning.
+
+    `total_classes` is enforced by tests/test_portfolio.py — keep it in sync
+    when classes are added or removed.

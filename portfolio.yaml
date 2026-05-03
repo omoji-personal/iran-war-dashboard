@@ -632,7 +632,10 @@ questions:
       2,000,000 IRR per USD on ≥3 consecutive days.
     deadline: 2026-08-31
     baseline_class: ar_plus_oil_export_model
-    reference_class_strict: D1_rial_collapse_strict
+    # F8 tracks the ICE/official-managed rate, which is structurally distinct
+    # from D1 (free-market bonbast). No strict analog exists for Iran's ICE
+    # crossing 2M; broad class is generic emerging-market currency collapse.
+    reference_class_strict: null
     reference_class_broad: D1_emerging_markets_currency_collapse_broad
     expiration_policy: auto_resolve_no
     stakeholder_tags: [omid_personal, kipa_business, iran_regime_survival]
@@ -653,7 +656,7 @@ questions:
       second cryogenic pulverizer line at Shamsabad Industrial Town.
     deadline: 2026-09-30
     baseline_class: explicit_subjective
-    reference_class_strict: null
+    reference_class_strict: F9_behrah_capacity_expansion_strict
     reference_class_broad: null
     expiration_policy: auto_resolve_no
     stakeholder_tags: [omid_personal, kipa_business]

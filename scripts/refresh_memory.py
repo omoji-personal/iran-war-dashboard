@@ -45,6 +45,13 @@ def label_for(p: float) -> str:
     return "near certain"
 
 
+CATEGORY_ORDER = [
+    "diplomatic_resolution", "military_escalation", "regime_leadership",
+    "economic_structural", "us_side",
+    "family_business_iranfarhang", "family_business_kipa",
+]
+
+
 def category_title(cat_id: str) -> str:
     return {
         "diplomatic_resolution": "A. Diplomatic resolution",
@@ -55,6 +62,32 @@ def category_title(cat_id: str) -> str:
         "family_business_iranfarhang": "F.1 Iranfarhang business",
         "family_business_kipa": "F.2 Kipa business",
     }.get(cat_id, cat_id)
+
+
+def _ordered_categories(by_cat: dict) -> list[str]:
+    """Return categories in canonical order, then any extras seen in portfolio.
+    Ensures new categories added to portfolio.yaml become visible automatically
+    instead of being silently dropped by a hardcoded list."""
+    seen = list(CATEGORY_ORDER)
+    extras = [c for c in by_cat.keys() if c not in seen]
+    return [c for c in seen if c in by_cat] + extras
+
+
+# Marker that fences the operator-curated context block. Lines between these
+# markers are preserved verbatim across ticks; without the markers, prior
+# operator notes are wiped each tick by the regenerator.
+OP_BLOCK_BEGIN = "<!-- BEGIN operator-curated context (preserved across ticks) -->"
+OP_BLOCK_END = "<!-- END operator-curated context -->"
+
+
+def extract_operator_block(memory_text: str) -> str | None:
+    """Pull the operator-curated block from existing memory.md if present.
+    Returns the inner content (between markers, exclusive) or None if missing."""
+    if OP_BLOCK_BEGIN not in memory_text or OP_BLOCK_END not in memory_text:
+        return None
+    start = memory_text.index(OP_BLOCK_BEGIN) + len(OP_BLOCK_BEGIN)
+    end = memory_text.index(OP_BLOCK_END)
+    return memory_text[start:end].strip("\n")
 
 
 def load_portfolio() -> dict:
@@ -159,11 +192,7 @@ def render_memory() -> str:
                f"Questions: **{len(portfolio['questions'])}** · "
                f"History snapshots: **{len(history)}**")
     out.append("")
-    for cat_id in [
-        "diplomatic_resolution", "military_escalation", "regime_leadership",
-        "economic_structural", "us_side",
-        "family_business_iranfarhang", "family_business_kipa",
-    ]:
+    for cat_id in _ordered_categories(by_cat):
         if cat_id not in by_cat:
             continue
         out.append(f"### {category_title(cat_id)}")
@@ -203,19 +232,28 @@ def render_memory() -> str:
             out.append(f"- **{label}**: " + ", ".join(f"`{f.name}`" for f in files))
     out.append("")
 
-    # Top-of-mind context (carried-forward; static for Phase 0; cron LLM may append)
+    # Top-of-mind context — operator-curated; PRESERVED VERBATIM across ticks.
+    # The block between OP_BLOCK_BEGIN/END markers in the existing memory.md is
+    # carried forward unchanged. If no prior memory.md exists OR the markers are
+    # missing, a minimal seed is written and the operator owns subsequent edits.
     out.append("## Top-of-mind context (operator-curated)")
     out.append("")
-    out.append("_Operator: add fresh notes here as situational awareness shifts. Format: `### YYYY-MM-DD note: ...`_")
+    out.append("_Operator: add fresh notes between the markers below. Each tick `refresh_memory.py` preserves whatever is between the markers verbatim — it does NOT regenerate this block. If you delete the markers, you lose preservation._")
     out.append("")
-    out.append("### 2026-05-03 baseline")
-    out.append("- D65 conflict, cease-fire Day 26, Hormuz blockade Day 17. Iran's 14-point counter-proposal active.")
-    out.append("- Khamenei reportedly recovering from severe burns; publicly unseen since Feb 28.")
-    out.append("- Mojtaba reportedly unconscious / face-burnt per March 2026 multiple-source reporting.")
-    out.append("- USD/IRR free-market reached 1.45M Dec 2025; trajectory points higher.")
-    out.append("- Iran oil storage 12-22d remaining (Kpler).")
-    out.append("- Iranfarhang revenue ~$310K/yr; Kemco SARL IBAN already changed once (Oct 2025); no US bank backup.")
-    out.append("- Kipa revenue ~$10-12M/yr; V2 War-Opportunity strategy targets 2-3x in 18 months.")
+    out.append(OP_BLOCK_BEGIN)
+    existing_block = None
+    if MEMORY.exists():
+        try:
+            existing_block = extract_operator_block(MEMORY.read_text(encoding="utf-8"))
+        except (OSError, UnicodeDecodeError):
+            existing_block = None
+    if existing_block is not None:
+        out.append(existing_block)
+    else:
+        # Minimal seed only when no prior block exists. Operator overwrites this
+        # on first edit; thereafter it's preserved verbatim.
+        out.append("_(operator-curated context will appear here once written. The regenerator preserves this block verbatim across ticks.)_")
+    out.append(OP_BLOCK_END)
     out.append("")
 
     return "\n".join(out)

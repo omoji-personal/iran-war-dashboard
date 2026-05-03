@@ -8,7 +8,7 @@
   <meta property="og:title" content="2026 Iran Conflict — Predictive Agent" />
   <meta property="og:description" content="Daily Brier-scoreable predictions across 32 questions on the 2026 Iran-US conflict. Experimental — uncalibrated." />
   <meta property="og:type" content="article" />
-  <meta name="description" content="Daily predictive-agent brief on the 2026 Iran-US conflict. 32 questions, ICD-203 vocabulary, free public APIs only. Experimental — uncalibrated." />
+  <meta name="description" content="Daily Brier-scoreable predictions across 32 questions on the 2026 Iran-US conflict. Experimental — uncalibrated." />
   <link rel="stylesheet" href="dashboard.css" />
   <link rel="canonical" href="https://iran-war-dashboard-murex.vercel.app/" />
 </head>
@@ -21,7 +21,7 @@
         <span class="topbar-title">Predictive Agent</span>
       </div>
       <div class="topbar-r">
-        <span class="topbar-meta" title="Tick rendered at this UTC instant">2026-05-03 17:19 UTC</span>
+        <span class="topbar-meta" title="Tick rendered at this UTC instant">2026-05-03 19:55 UTC</span>
         <span class="topbar-meta">Next: Daily 06:00 ET (next tomorrow morning)</span>
         <span class="topbar-meta">v0.2.0</span>
         <span class="topbar-meta">Phase 0</span>
@@ -31,10 +31,7 @@
 
   <div class="experimental-banner agent-banner">
     <strong>EXPERIMENTAL — UNCALIBRATED</strong>
-    <span>No prediction has resolved yet. Model has no validated track record. Treat probabilities as structured scenario reasoning, not as forecasts.
-    <a href="docs/superpowers/specs/2026-05-03-predictive-agent-design.md">Design spec</a> ·
-    <a href="docs/audits/AUDIT-2026-05-03.md">Audit</a> ·
-    <a href="/legacy">Legacy dashboard</a></span>
+    <span>No prediction has resolved yet. Model has no validated track record. Treat probabilities as structured scenario reasoning, not as forecasts. <a href="docs/superpowers/specs/2026-05-03-predictive-agent-design.md">Design spec</a> · <a href="docs/audits/AUDIT-2026-05-03.md">Audit</a> · <a href="/legacy">Legacy dashboard</a></span>
   </div>
 
   <main class="agent-page" role="main" aria-label="Predictive Agent Brief">
@@ -57,7 +54,7 @@
     
         <section class="diff-panel diff-empty" role="region" aria-label="24-hour probability changes">
           <h2 class="diff-h">What changed since last tick</h2>
-          <p class="diff-empty-msg">No probability moves above the noise floor since 2026-05-02. Quiet day. The questions worth watching are unchanged.</p>
+          <p class="diff-empty-msg">First tick — no prior baseline. Future updates list only probability movements <em>larger than each question's 80% credible-interval half-width</em> (CI-aware noise suppression). Days when nothing material changed will say so.</p>
         </section>
         
 

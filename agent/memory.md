@@ -1,4 +1,4 @@
-# Agent Memory — last regenerated 2026-05-03T16:51:42 UTC
+# Agent Memory — last regenerated 2026-05-03T19:55:17 UTC
 
 _This file is **programmatically regenerated** each tick by `scripts/refresh_memory.py` from `portfolio.yaml`, `portfolio_history.json`, `agent/operator-queue.md`, and recent logs._
 
@@ -77,13 +77,8 @@ _No moves above CI noise floor in last 7d (since 2026-05-01)._
 
 ## Top-of-mind context (operator-curated)
 
-_Operator: add fresh notes here as situational awareness shifts. Format: `### YYYY-MM-DD note: ...`_
+_Operator: add fresh notes between the markers below. Each tick `refresh_memory.py` preserves whatever is between the markers verbatim — it does NOT regenerate this block. If you delete the markers, you lose preservation._
 
-### 2026-05-03 baseline
-- D65 conflict, cease-fire Day 26, Hormuz blockade Day 17. Iran's 14-point counter-proposal active.
-- Khamenei reportedly recovering from severe burns; publicly unseen since Feb 28.
-- Mojtaba reportedly unconscious / face-burnt per March 2026 multiple-source reporting.
-- USD/IRR free-market reached 1.45M Dec 2025; trajectory points higher.
-- Iran oil storage 12-22d remaining (Kpler).
-- Iranfarhang revenue ~$310K/yr; Kemco SARL IBAN already changed once (Oct 2025); no US bank backup.
-- Kipa revenue ~$10-12M/yr; V2 War-Opportunity strategy targets 2-3x in 18 months.
+<!-- BEGIN operator-curated context (preserved across ticks) -->
+_(operator-curated context will appear here once written. The regenerator preserves this block verbatim across ticks.)_
+<!-- END operator-curated context -->

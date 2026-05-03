@@ -48,6 +48,9 @@ def test_every_question_has_required_fields(portfolio):
         "baseline_class", "expiration_policy", "stakeholder_tags",
         "current_probability", "current_credible_interval_80",
         "current_icd203_label", "last_updated",
+        # Reference classes are part of the schema even when set to null
+        # (the contract is "the field is present, populated or explicitly null").
+        "reference_class_strict", "reference_class_broad",
     }
     for q in portfolio["questions"]:
         missing = required - set(q.keys())
@@ -132,6 +135,51 @@ def test_reference_classes_have_inclusion_criteria(reference_classes):
             continue
         assert isinstance(body, dict), f"{class_id}: body must be dict"
         assert body.get("inclusion_criteria"), f"{class_id}: missing inclusion_criteria"
+
+
+def test_portfolio_reference_classes_resolve(portfolio, reference_classes):
+    """Every non-null reference_class_strict / reference_class_broad named in
+    portfolio.yaml MUST exist as a key in reference_classes.yaml. Without this
+    test, a typo or rename leaves an orphan reference and tests still pass."""
+    valid = {k for k in reference_classes.keys() if k != "metadata"}
+    for q in portfolio["questions"]:
+        for field in ("reference_class_strict", "reference_class_broad"):
+            ref = q.get(field)
+            if ref is None:
+                continue
+            assert ref in valid, (
+                f"{q['id']}: {field}={ref!r} does not exist in reference_classes.yaml"
+            )
+
+
+def test_reference_classes_metadata_count_matches(reference_classes):
+    """metadata.total_classes must match the number of non-metadata top-level keys."""
+    actual = len([k for k in reference_classes.keys() if k != "metadata"])
+    declared = reference_classes.get("metadata", {}).get("total_classes")
+    assert declared == actual, (
+        f"reference_classes.yaml metadata.total_classes={declared} but file has {actual} classes"
+    )
+
+
+def test_lr_table_lr_directionality_consistent_with_notes(lr_table):
+    """If an LR's question_relevance value is explicitly described in the
+    source_calc as 'evidence against' the question hypothesis, the LR must
+    be < 1; if 'evidence for', LR > 1. Catches the sign errors gemini found."""
+    for lr in lr_table["likelihood_ratios"]:
+        calc = (lr.get("source_calc") or "").lower()
+        for qid, val in (lr.get("question_relevance") or {}).items():
+            if val is None:
+                continue
+            # Only evaluate the assertion for LR rows that explicitly mention
+            # the question id in the calc text (otherwise we'd over-constrain).
+            if qid.lower() not in calc:
+                continue
+            against_phrases = ("argues against", "evidence against", "evidence ag.")
+            for_phrases = ("argues for", "evidence for ", "evidence for\n")
+            if any(p in calc for p in against_phrases):
+                assert val < 1.0, f"{lr['id']}/{qid}: source_calc says 'against' but LR={val} >= 1"
+            if any(p in calc for p in for_phrases):
+                assert val > 1.0, f"{lr['id']}/{qid}: source_calc says 'for' but LR={val} <= 1"
 
 
 def test_portfolio_yaml_parses_without_warnings(portfolio):

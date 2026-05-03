@@ -145,19 +145,51 @@ def test_render_html_is_well_formed():
     assert "{{" not in html, "Unfilled template placeholder"
 
 
-def test_render_public_is_smaller_than_full():
+def test_render_public_actually_strips_private_content():
+    """The public render must NOT contain any F-question card OR any business
+    name tied to private categories. A size-only assertion is too weak — a
+    size-equal but content-leaking output would slip through."""
     portfolio = render.load_portfolio()
-    full = render.render_html(portfolio, [], history=[], stripped=False)
     pub = render.render_html(portfolio, [], history=[], stripped=True)
+    full = render.render_html(portfolio, [], history=[], stripped=False)
+
     assert len(pub) < len(full), "public.html must drop methodology + logs"
+
+    # No F-question card IDs in public HTML
+    for q in portfolio["questions"]:
+        if q["id"].startswith("F"):
+            assert f'id="q-{q["id"]}"' not in pub, (
+                f"public render leaks F-question card: {q['id']}"
+            )
+
+    # No private business names in user-facing strings
+    forbidden_substrings = ("Iranfarhang", "Kipa", "iranfarhang", "kipa",
+                             "Mozhgan", "Behrah", "Magiran", "Kemco")
+    for tok in forbidden_substrings:
+        assert tok not in pub, f"public render leaks private term: {tok!r}"
+
+    # PERSONAL flag is operator-only and must never appear publicly
+    assert "flag-personal" not in pub
+    assert "PERSONAL" not in pub
 
 
 def test_render_html_no_unfilled_placeholders():
-    """Catch f-string mistakes that leave literal '{var}' in output."""
+    """Catch f-string / template mistakes that leave literal `{var}` tokens in output.
+    Uses a real regex instead of a fixed list of suspect substrings."""
+    import re
     portfolio = render.load_portfolio()
     html = render.render_html(portfolio, [], history=[], stripped=False)
-    # Heuristic: no curly-brace pairs in the output (CSS uses curly braces but they're in linked file, not inline)
-    # We check for unterminated f-string patterns specifically
-    suspicious = ["{q[", "{q.", "{esc(", "{round(", "{label}"]
-    for pat in suspicious:
-        assert pat not in html, f"Unfilled f-string leak: {pat!r}"
+
+    # Strip <style>...</style> and <script>...</script> blocks (legitimate JS/CSS
+    # may use {} braces). Ours doesn't, but the test stays defensive.
+    cleaned = re.sub(r"<(style|script)\b.*?</\1>", "", html, flags=re.DOTALL | re.IGNORECASE)
+
+    # Match `{...}` where contents look like a Python expression — letters,
+    # digits, underscores, brackets, dots, parens, but NOT a CSS pseudo-block
+    # (which always contains `:`, semicolons, or has a tag-like chunk before `{`).
+    pattern = re.compile(r"\{[A-Za-z_][A-Za-z0-9_\[\]\.\(\)\"'\s]*\}")
+    leaks = [m.group(0) for m in pattern.finditer(cleaned)]
+    # Whitelist: exact CSS clamp(...)/calc(...)/var(...) helpers won't match because
+    # they're inside an external stylesheet. If any genuine leftover f-string
+    # placeholder slips through, this assertion fires.
+    assert not leaks, f"Unfilled placeholder(s) in HTML: {leaks[:5]}"
