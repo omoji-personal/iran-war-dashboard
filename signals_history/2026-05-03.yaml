@@ -10,18 +10,17 @@ meta:
     notable shift from D64 flat rejection, though still ''not satisfied'' as of Friday.
     Araghchi expressed uncertainty about imminence; Khamenei advisor Shamkhani called
     US nuclear control demands a ''fantasy.'' Polymarket deal-by-Jun30 fell to 36%
-    (-3pp) on Khamenei nuclear hardline. (2) MOJTABA KHAMENEI (Persian Gulf Day
-    statement): vowed to protect nuclear and missile capabilities as national assets;
-    declared Americans belong ''at the bottom of'' the Gulf''s waters. Khamenei
-    reportedly recovering from severe burns, awaiting prosthetic leg, publicly unseen
-    since Feb 28. (3) HORMUZ SOVEREIGNTY LAW: Iran parliament advancing 12-article
-    law formalizing Hormuz toll regime — friendly vessels pay, hostile nations banned;
-    first toll revenues reportedly deposited at Central Bank; US Treasury warned shippers
-    against paying tolls. (4) OIL: Brent ~$108.20 (day range $103.60–$108.65); WTI
-    ~$101.90; Brent-WTI spread $6.30; AAA gas $4.446 (+$0.013). Lebanon killed
-    corrected upward to 2,659+ (2,618 by May 1 per Wikipedia + 41 more May 2 per
-    AJ). Zero-attack streak Day 26; Internet Day 66 = 1,584+ hrs; ~2,000 ships
-    stranded. Convergence 4.6.'
+    (-3pp) on Khamenei nuclear hardline. (2) MOJTABA KHAMENEI (Persian Gulf Day statement):
+    vowed to protect nuclear and missile capabilities as national assets; declared
+    Americans belong ''at the bottom of'' the Gulf''s waters. Khamenei reportedly
+    recovering from severe burns, awaiting prosthetic leg, publicly unseen since Feb
+    28. (3) HORMUZ SOVEREIGNTY LAW: Iran parliament advancing 12-article law formalizing
+    Hormuz toll regime — friendly vessels pay, hostile nations banned; first toll
+    revenues reportedly deposited at Central Bank; US Treasury warned shippers against
+    paying tolls. (4) OIL: Brent ~$108.20 (day range $103.60–$108.65); WTI ~$101.90;
+    Brent-WTI spread $6.30; AAA gas $4.446 (+$0.013). Lebanon killed corrected upward
+    to 2,659+ (2,618 by May 1 per Wikipedia + 41 more May 2 per AJ). Zero-attack streak
+    Day 26; Internet Day 66 = 1,584+ hrs; ~2,000 ships stranded. Convergence 4.6.'
 mode:
   ceasefire_status: collapsed
 constants:
@@ -409,10 +408,31 @@ new_events:
     missiles: 0
     drones: 0
   daily_row:
-    date: 'May 03'
+    date: May 03
     missiles: 0
     drones: 0
-    primary_targets: 'Zero attacks Day 26; Iran submits 14-point counter-proposal; Trump reviews concept of deal; Khamenei nuclear/missile vow; Iran Hormuz sovereignty law advances'
-    capability: 'No offensive action by either side; 26-day zero-attack streak holds. Iran submitted a 14-point counter-proposal via Pakistani mediators — most structured diplomatic response since talks began. Mojtaba Khamenei (Persian Gulf Day statement) publicly vowed to protect nuclear and missile capabilities as national assets and declared Americans belong at the bottom of the Gulf, setting a hard floor on nuclear concessions.'
-    cost: 'Brent ~$108.20 (day range $103.60–$108.65, -$0.30 from D64); WTI ~$101.90; Brent-WTI spread narrows to $6.30 as ceasefire-deal optimism offset by Khamenei hardline. AAA gas $4.446 (+$0.013). Polymarket deal-by-Jun30 fell to 36% (-3pp). Iran parliament Hormuz sovereignty law formalizes toll regime and hostile-nation transit ban; US Treasury warned shippers against paying Iran Hormuz tolls.'
-    assessment: 'Iran''s 14-point counter-proposal represents the most structured diplomatic engagement since Islamabad — a constructive signal that Tehran is still negotiating rather than only posturing. Trump reviewing the concept of deal (vs D64 flat rejection) is a marginal positive. But Khamenei''s nuclear/missile vow is a public commitment that forecloses the zero-enrichment demand at the core of the US position; combined with the parliament Hormuz law formalizing the blockade as sovereign policy, the structural gap is unchanged. Deal probability edged down to ~0.36 (Polymarket-aligned); escalation risk ticks up to ~0.46 as IRGC-aligned Khamenei sets explicit nuclear red line. Pivot point: whether Trump can accept a deal that acknowledges Iranian enrichment rights rather than demanding zero.'
+    primary_targets: Zero attacks Day 26; Iran submits 14-point counter-proposal;
+      Trump reviews concept of deal; Khamenei nuclear/missile vow; Iran Hormuz sovereignty
+      law advances
+    capability: No offensive action by either side; 26-day zero-attack streak holds.
+      Iran submitted a 14-point counter-proposal via Pakistani mediators — most structured
+      diplomatic response since talks began. Mojtaba Khamenei (Persian Gulf Day statement)
+      publicly vowed to protect nuclear and missile capabilities as national assets
+      and declared Americans belong at the bottom of the Gulf, setting a hard floor
+      on nuclear concessions.
+    cost: Brent ~$108.20 (day range $103.60–$108.65, -$0.30 from D64); WTI ~$101.90;
+      Brent-WTI spread narrows to $6.30 as ceasefire-deal optimism offset by Khamenei
+      hardline. AAA gas $4.446 (+$0.013). Polymarket deal-by-Jun30 fell to 36% (-3pp).
+      Iran parliament Hormuz sovereignty law formalizes toll regime and hostile-nation
+      transit ban; US Treasury warned shippers against paying Iran Hormuz tolls.
+    assessment: 'Iran''s 14-point counter-proposal represents the most structured
+      diplomatic engagement since Islamabad — a constructive signal that Tehran is
+      still negotiating rather than only posturing. Trump reviewing the concept of
+      deal (vs D64 flat rejection) is a marginal positive. But Khamenei''s nuclear/missile
+      vow is a public commitment that forecloses the zero-enrichment demand at the
+      core of the US position; combined with the parliament Hormuz law formalizing
+      the blockade as sovereign policy, the structural gap is unchanged. Deal probability
+      edged down to ~0.36 (Polymarket-aligned); escalation risk ticks up to ~0.46
+      as IRGC-aligned Khamenei sets explicit nuclear red line. Pivot point: whether
+      Trump can accept a deal that acknowledges Iranian enrichment rights rather than
+      demanding zero.'
