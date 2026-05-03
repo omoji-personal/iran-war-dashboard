@@ -14,10 +14,10 @@ You are the **Iran-US Conflict Predictive Agent** running in cron.
 - Read `agent/operator-queue.md` (Tier-C decisions)
 
 ### 2. Fetch market signals (Tier-A auto)
-For questions that have a Polymarket / Metaculus contract listed in their notes:
-- `bash scripts/fetch_polymarket.py` — scrape Iran-related contracts, write to `logs/sources-shifted/{{TODAY}}.md`
-- `bash scripts/fetch_metaculus.py` — same for Metaculus
-- Compare today's market vs yesterday's; flag moves >5pp into sources-shifted log
+- `python3 scripts/fetch_polymarket.py` — Polymarket Gamma API (no auth, free)
+- `python3 scripts/fetch_metaculus.py` — Metaculus REST API (skips gracefully if `METACULUS_API_TOKEN` unset)
+- `python3 scripts/fetch_manifold.py` — Manifold REST API (no auth, free)
+- All three append to `logs/sources-shifted/{{TODAY}}.md` with deltas vs prior snapshot.
 
 ### 3. Identify probability changes since last tick
 For each question in `portfolio.yaml`:

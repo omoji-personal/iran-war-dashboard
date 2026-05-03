@@ -1,0 +1,975 @@
+{
+  "fetched_at": "2026-05-03T16:14:47.835122+00:00",
+  "markets": {
+    "tt0Uy260hp": {
+      "id": "tt0Uy260hp",
+      "slug": "will-irans-regime-fall-in-2026",
+      "question": "Will Iran's regime fall in 2026?",
+      "url": "https://manifold.markets/SaviorofPlant/will-irans-regime-fall-in-2026",
+      "probability": 0.1599,
+      "volume": 2636681.907997625,
+      "trader_count": 1870,
+      "close_time": 1798761540000
+    },
+    "ZZOShc2zIU": {
+      "id": "ZZOShc2zIU",
+      "slug": "iran-vs-us-props",
+      "question": "Iran vs US (props)",
+      "url": "https://manifold.markets/spacedroplet/iran-vs-us-props",
+      "probability": null,
+      "volume": 112151.61413738593,
+      "trader_count": 505,
+      "close_time": 1804416932719
+    },
+    "PALZgtRy8L": {
+      "id": "PALZgtRy8L",
+      "slug": "for-how-long-will-this-fighting-wit",
+      "question": "How many weeks will the US\u2013Iran war last?",
+      "url": "https://manifold.markets/GazDownright/for-how-long-will-this-fighting-wit",
+      "probability": null,
+      "volume": 457946.6380248295,
+      "trader_count": 473,
+      "close_time": 1838843940000
+    },
+    "2pO2thdnpq": {
+      "id": "2pO2thdnpq",
+      "slug": "prop-bets-usisrael-strikes-on-iran",
+      "question": "[PROP BETS] US-Israel strikes on Iran",
+      "url": "https://manifold.markets/prismatic/prop-bets-usisrael-strikes-on-iran",
+      "probability": null,
+      "volume": 82355.68925700929,
+      "trader_count": 295,
+      "close_time": 1780199940000
+    },
+    "zOSd5nE56c": {
+      "id": "zOSd5nE56c",
+      "slug": "will-iran-actually-participate-in-t",
+      "question": "Will Iran actually participate in the 2026 FIFA World Cup?",
+      "url": "https://manifold.markets/MachiNi/will-iran-actually-participate-in-t",
+      "probability": 0.8243,
+      "volume": 58186.81947613572,
+      "trader_count": 205,
+      "close_time": 1781135940000
+    },
+    "RqZ5ltIL2t": {
+      "id": "RqZ5ltIL2t",
+      "slug": "will-the-us-deploy-1000-ground-troo",
+      "question": "Will the U.S. deploy 1000 ground troops in Iran in 2026?",
+      "url": "https://manifold.markets/bens/will-the-us-deploy-1000-ground-troo",
+      "probability": 0.25,
+      "volume": 67620.01944747342,
+      "trader_count": 204,
+      "close_time": 1798761540000
+    },
+    "2Z82IQ6lO2": {
+      "id": "2Z82IQ6lO2",
+      "slug": "leader-of-iran-at-end-of-2026",
+      "question": "Leader of Iran at end of 2026?",
+      "url": "https://manifold.markets/Jack1/leader-of-iran-at-end-of-2026",
+      "probability": null,
+      "volume": 45774.440630841425,
+      "trader_count": 203,
+      "close_time": 1798761540000
+    },
+    "g2ccz0AI8U": {
+      "id": "g2ccz0AI8U",
+      "slug": "will-the-government-of-the-islamic-9R2hcIEElO",
+      "question": "Will the government of the Islamic Republic of Iran fall by 2030?",
+      "url": "https://manifold.markets/BaryLevy/will-the-government-of-the-islamic-9R2hcIEElO",
+      "probability": 0.3632,
+      "volume": 368394.5152261816,
+      "trader_count": 201,
+      "close_time": 1893535140000
+    },
+    "q2CZUhn500": {
+      "id": "q2CZUhn500",
+      "slug": "will-the-us-invade-iran-before-the-zs06u6hptc",
+      "question": "Will the US invade Iran before the end of 2026?",
+      "url": "https://manifold.markets/cash/will-the-us-invade-iran-before-the-zs06u6hptc",
+      "probability": 0.2596,
+      "volume": 54676.68491734046,
+      "trader_count": 191,
+      "close_time": 1798790340000
+    },
+    "cnlR6p5sZl": {
+      "id": "cnlR6p5sZl",
+      "slug": "us-iran-nuclear-deal-by-end-of-june",
+      "question": "US - Iran nuclear deal by end of June?",
+      "url": "https://manifold.markets/bens/us-iran-nuclear-deal-by-end-of-june",
+      "probability": 0.3,
+      "volume": 63342.100305063665,
+      "trader_count": 148,
+      "close_time": 1782863940000
+    },
+    "ZhcpO8ENU2": {
+      "id": "ZhcpO8ENU2",
+      "slug": "iran-war-will-my-wedding-happen",
+      "question": "(Iran war) Will my wedding happen?",
+      "url": "https://manifold.markets/someoneR5c8l/iran-war-will-my-wedding-happen",
+      "probability": 0.9528,
+      "volume": 13247.37944388976,
+      "trader_count": 102,
+      "close_time": 1777902300000
+    },
+    "9dOQ5uOO22": {
+      "id": "9dOQ5uOO22",
+      "slug": "will-a-foreign-military-strike-iran",
+      "question": "Will a foreign military strike Iran before Jan 16th [NO], and will the regime fall this year?",
+      "url": "https://manifold.markets/EvanDaniel/will-a-foreign-military-strike-iran",
+      "probability": null,
+      "volume": 45018.001213989766,
+      "trader_count": 96,
+      "close_time": 1798761540000
+    },
+    "6gnCqg2L6d": {
+      "id": "6gnCqg2L6d",
+      "slug": "will-iran-strike-us-soil-this-year",
+      "question": "Will Iran strike US soil this year?",
+      "url": "https://manifold.markets/MaxHarms/will-iran-strike-us-soil-this-year",
+      "probability": 0.1942,
+      "volume": 12284.274589236507,
+      "trader_count": 95,
+      "close_time": 1804895940000
+    },
+    "XjrxwUAhpJqgzn7Tk17y": {
+      "id": "XjrxwUAhpJqgzn7Tk17y",
+      "slug": "will-iran-have-a-nuclear-weapon-by-958ce4dc195c",
+      "question": "Will Iran have a nuclear weapon by the end of 2030?",
+      "url": "https://manifold.markets/benjaminIkuta/will-iran-have-a-nuclear-weapon-by-958ce4dc195c",
+      "probability": 0.2165,
+      "volume": 16301.202093233866,
+      "trader_count": 91,
+      "close_time": 1924639140000
+    },
+    "d2Npg068t5": {
+      "id": "d2Npg068t5",
+      "slug": "will-america-send-troops-to-iran",
+      "question": "Will America send troops to Iran?",
+      "url": "https://manifold.markets/Gemc/will-america-send-troops-to-iran",
+      "probability": 0.7757,
+      "volume": 13627.492956434919,
+      "trader_count": 91,
+      "close_time": 1798735320000
+    },
+    "Z8IZEA9zPO": {
+      "id": "Z8IZEA9zPO",
+      "slug": "will-iran-become-more-authoritarian-0qhugPqPdQ",
+      "question": "Will Iran become more authoritarian in 2026?",
+      "url": "https://manifold.markets/PlasmaPower/will-iran-become-more-authoritarian-0qhugPqPdQ",
+      "probability": 0.6989,
+      "volume": 9458.599351163804,
+      "trader_count": 87,
+      "close_time": 1798761540000
+    },
+    "ZEhZugy0nz": {
+      "id": "ZEhZugy0nz",
+      "slug": "will-the-us-invade-irans-kharg-isla",
+      "question": "Will the US invade Iran's Kharg Island  by the end of 2026?",
+      "url": "https://manifold.markets/HenriConfucius/will-the-us-invade-irans-kharg-isla",
+      "probability": 0.2209,
+      "volume": 5384.851456991897,
+      "trader_count": 78,
+      "close_time": 1798761540000
+    },
+    "gLOZNqntUz": {
+      "id": "gLOZNqntUz",
+      "slug": "will-iran-sink-a-us-navy-ship-befor",
+      "question": "Will Iran sink a US Navy ship before 2030?",
+      "url": "https://manifold.markets/JoshuaWilkes/will-iran-sink-a-us-navy-ship-befor",
+      "probability": 0.264,
+      "volume": 13578.34825509051,
+      "trader_count": 75,
+      "close_time": 1893455940000
+    },
+    "5uy3YEb4anlmAhWSh0V7": {
+      "id": "5uy3YEb4anlmAhWSh0V7",
+      "slug": "will-iran-have-a-nuclear-weapon-by-12dc938abd23",
+      "question": "Will Iran have a nuclear weapon by 2030?",
+      "url": "https://manifold.markets/Keepcalmandchill/will-iran-have-a-nuclear-weapon-by-12dc938abd23",
+      "probability": 0.3133,
+      "volume": 10883.102294207423,
+      "trader_count": 66,
+      "close_time": 1924991940000
+    },
+    "ghI9lZO0CP": {
+      "id": "ghI9lZO0CP",
+      "slug": "us-x-iran-permanent-peace-deal-by-m",
+      "question": "US x Iran permanent peace deal by May 31? [Polymarket]",
+      "url": "https://manifold.markets/vdb/us-x-iran-permanent-peace-deal-by-m",
+      "probability": 0.2,
+      "volume": 22605.156169444126,
+      "trader_count": 63,
+      "close_time": 1780271940000
+    },
+    "I8cOuPCQ6l": {
+      "id": "I8cOuPCQ6l",
+      "slug": "1000-american-troops-inside-iran-by",
+      "question": "1000 american troops inside Iran by EOY?",
+      "url": "https://manifold.markets/Bandors/1000-american-troops-inside-iran-by",
+      "probability": 0.2413,
+      "volume": 11570.260551379195,
+      "trader_count": 62,
+      "close_time": 1798761540000
+    },
+    "922t85ZPhh": {
+      "id": "922t85ZPhh",
+      "slug": "will-irans-regime-fall-before-end-o",
+      "question": "Will Iran's regime fall before end of 2027?",
+      "url": "https://manifold.markets/ManiPart/will-irans-regime-fall-before-end-o",
+      "probability": 0.2011,
+      "volume": 14622.692757651943,
+      "trader_count": 59,
+      "close_time": 1830297540000
+    },
+    "ShncZEzc9Z": {
+      "id": "ShncZEzc9Z",
+      "slug": "if-the-us-strikes-iran-by-march-31",
+      "question": "If the US strikes Iran by March 31, 2026, will the Iranian regime fall in 2026?",
+      "url": "https://manifold.markets/Tetraspace/if-the-us-strikes-iran-by-march-31",
+      "probability": 0.1597,
+      "volume": 3579.396522042856,
+      "trader_count": 58,
+      "close_time": 1798761540000
+    },
+    "1SWyAELMPbMmu0lRa5YT": {
+      "id": "1SWyAELMPbMmu0lRa5YT",
+      "slug": "will-iran-have-a-nuclear-weapon-by-3865ab28bffd",
+      "question": "Will Iran have a nuclear weapon by the end of 2040?",
+      "url": "https://manifold.markets/benjaminIkuta/will-iran-have-a-nuclear-weapon-by-3865ab28bffd",
+      "probability": 0.459,
+      "volume": 7408.020063786416,
+      "trader_count": 56,
+      "close_time": 2240603940000
+    },
+    "yUnSZ55s2t": {
+      "id": "yUnSZ55s2t",
+      "slug": "will-reza-pahlavi-lead-iran-this-ye",
+      "question": "Will Reza Pahlavi lead Iran this year?",
+      "url": "https://manifold.markets/Jack1/will-reza-pahlavi-lead-iran-this-ye",
+      "probability": 0.0213,
+      "volume": 14237.184344777892,
+      "trader_count": 55,
+      "close_time": 1798761540000
+    },
+    "QWmbkD4LuMIoSQ6E7MEO": {
+      "id": "QWmbkD4LuMIoSQ6E7MEO",
+      "slug": "will-iran-acquire-nuclear-weapons-b",
+      "question": "Will Iran acquire nuclear weapons before 2031?",
+      "url": "https://manifold.markets/RemNi/will-iran-acquire-nuclear-weapons-b",
+      "probability": 0.3094,
+      "volume": 11660.051759188222,
+      "trader_count": 54,
+      "close_time": 1930172340000
+    },
+    "AQIsLgzUU8": {
+      "id": "AQIsLgzUU8",
+      "slug": "will-there-be-a-separate-second-cea",
+      "question": "Will there be a separate, second ceasefire in the America / Iran war in 2026?",
+      "url": "https://manifold.markets/Panfilo/will-there-be-a-separate-second-cea",
+      "probability": 0.5229,
+      "volume": 4252.745745454642,
+      "trader_count": 53,
+      "close_time": 1798847940000
+    },
+    "EQ2cncgqsz": {
+      "id": "EQ2cncgqsz",
+      "slug": "how-long-will-the-current-indefinit",
+      "question": "How long will \u201cindefinite extension\u201d US x Iran ceasefire hold?",
+      "url": "https://manifold.markets/Mochi/how-long-will-the-current-indefinit",
+      "probability": null,
+      "volume": 16690.735322396195,
+      "trader_count": 49,
+      "close_time": 1779467280000
+    },
+    "AU5Lzc8zhz": {
+      "id": "AU5Lzc8zhz",
+      "slug": "will-the-us-military-control-at-lea",
+      "question": "Will the US military control at least ten percent of Iran by area at any point during 2026?",
+      "url": "https://manifold.markets/benjaminIkuta/will-the-us-military-control-at-lea",
+      "probability": 0.0738,
+      "volume": 16081.465740940212,
+      "trader_count": 48,
+      "close_time": 1798761540000
+    },
+    "ZPLC6E598c": {
+      "id": "ZPLC6E598c",
+      "slug": "who-will-be-paramount-leader-of-ira",
+      "question": "Who will be paramount leader of Iran on January 1st 2027?",
+      "url": "https://manifold.markets/Tetraspace/who-will-be-paramount-leader-of-ira",
+      "probability": null,
+      "volume": 6240.020978314585,
+      "trader_count": 47,
+      "close_time": 1798761600000
+    },
+    "OjFIX30pvONnovM6WLbb": {
+      "id": "OjFIX30pvONnovM6WLbb",
+      "slug": "what-will-be-true-about-the-world-a",
+      "question": "\ud83d\udd2eWhat will be true about the world at the end of 2028? [ADD RESPONSES]",
+      "url": "https://manifold.markets/strutheo/what-will-be-true-about-the-world-a",
+      "probability": null,
+      "volume": 19996.566145923713,
+      "trader_count": 134,
+      "close_time": 1862024340000
+    },
+    "tIUcUSQOlA": {
+      "id": "tIUcUSQOlA",
+      "slug": "will-mojtaba-khamenei-be-alive-on-j",
+      "question": "Will Mojtaba Khamenei be alive on Jan 1, 2027?",
+      "url": "https://manifold.markets/vdb/will-mojtaba-khamenei-be-alive-on-j",
+      "probability": 0.637,
+      "volume": 6504.341393663974,
+      "trader_count": 60,
+      "close_time": 1798761540000
+    },
+    "2Ntu5qqQth": {
+      "id": "2Ntu5qqQth",
+      "slug": "will-mojtaba-khamenei-be-killed-by",
+      "question": "Will Mojtaba Khamenei be killed by US/Israeli forces in 2026?",
+      "url": "https://manifold.markets/ZenSpam/will-mojtaba-khamenei-be-killed-by",
+      "probability": 0.3946,
+      "volume": 7016.326515122756,
+      "trader_count": 54,
+      "close_time": 1798761540000
+    },
+    "RZ8Zn5NSqu": {
+      "id": "RZ8Zn5NSqu",
+      "slug": "is-mojtaba-khamenei-already-dead",
+      "question": "Is Mojtaba Khamenei already dead?",
+      "url": "https://manifold.markets/ZenSpam/is-mojtaba-khamenei-already-dead",
+      "probability": 0.0574,
+      "volume": 7617.608040539924,
+      "trader_count": 44,
+      "close_time": 1798737660000
+    },
+    "AxzfZ3oMmhh5CKjDkTR5": {
+      "id": "AxzfZ3oMmhh5CKjDkTR5",
+      "slug": "which-celebrity-will-die-last-in-ch",
+      "question": "Which celebrity will die last in chronological order",
+      "url": "https://manifold.markets/JamesF/which-celebrity-will-die-last-in-ch",
+      "probability": null,
+      "volume": 9194.531963973195,
+      "trader_count": 36,
+      "close_time": 4102549140000
+    },
+    "46nv71fj3i": {
+      "id": "46nv71fj3i",
+      "slug": "will-israel-survive-the-date-khamen",
+      "question": "Will Israel survive the date Khamenei predicted for its destruction?",
+      "url": "https://manifold.markets/5bd4/will-israel-survive-the-date-khamen",
+      "probability": 0.9233,
+      "volume": 3353.5874086852746,
+      "trader_count": 35,
+      "close_time": 2230923540000
+    },
+    "9zz2Uhn2P0": {
+      "id": "9zz2Uhn2P0",
+      "slug": "which-6-of-these-12-politicians-wil",
+      "question": "IRON MEN: Which 6 of these 10 politicians will keep power longer? The next four \"out\" go to 0%, remaining six go to 100%",
+      "url": "https://manifold.markets/Ernie/which-6-of-these-12-politicians-wil",
+      "probability": null,
+      "volume": 10903.494426029709,
+      "trader_count": 35,
+      "close_time": 1864713540000
+    },
+    "ALcRdNpLZI": {
+      "id": "ALcRdNpLZI",
+      "slug": "who-will-be-on-the-2026-time-person",
+      "question": "Who will be on the 2026 Time Person Of The Year Shortlist?",
+      "url": "https://manifold.markets/Jack1/who-will-be-on-the-2026-time-person",
+      "probability": null,
+      "volume": 6504.765361376657,
+      "trader_count": 34,
+      "close_time": 1796169540000
+    },
+    "ClzCCUpCpR": {
+      "id": "ClzCCUpCpR",
+      "slug": "if-khamenei-is-forcibly-removed-fro",
+      "question": "If Khamenei is forcibly removed from power, will the Islamic regime survive?",
+      "url": "https://manifold.markets/PoliticalEconomyPK/if-khamenei-is-forcibly-removed-fro",
+      "probability": 0.6539,
+      "volume": 1213.78224033742,
+      "trader_count": 33,
+      "close_time": 1830352800000
+    },
+    "Rc8u50LLCh": {
+      "id": "Rc8u50LLCh",
+      "slug": "which-of-the-following-things-will-Rql0REUqqz",
+      "question": "Which of the following things will happen in the 2026 USA/Israel vs. Iran conflict by the end of 2026?",
+      "url": "https://manifold.markets/GuyCohen/which-of-the-following-things-will-Rql0REUqqz",
+      "probability": null,
+      "volume": 2545.590577713141,
+      "trader_count": 32,
+      "close_time": 1798761540000
+    },
+    "qcg6IUgOg6": {
+      "id": "qcg6IUgOg6",
+      "slug": "mojtaba-khamenei-supreme-leader-of",
+      "question": "Mojtaba Khamenei Supreme Leader of Iran on July 1st, 2026",
+      "url": "https://manifold.markets/JoshSnider/mojtaba-khamenei-supreme-leader-of",
+      "probability": 0.8444,
+      "volume": 2864.0797740631306,
+      "trader_count": 31,
+      "close_time": 1782864000000
+    },
+    "U0dSs2nR5L": {
+      "id": "U0dSs2nR5L",
+      "slug": "will-mojtaba-khamenei-be-irans-supr",
+      "question": "Will Mojtaba Khamenei be Iran\u2019s supreme leader on 1 January 2027?",
+      "url": "https://manifold.markets/JimD/will-mojtaba-khamenei-be-irans-supr",
+      "probability": 0.5796,
+      "volume": 6158.915936618506,
+      "trader_count": 28,
+      "close_time": 1798847940000
+    },
+    "6dtUdOtRs6": {
+      "id": "6dtUdOtRs6",
+      "slug": "will-the-current-wave-of-iranian-pr",
+      "question": "Will the current wave of Iranian protests be suppressed by the end of 2026?",
+      "url": "https://manifold.markets/RafaelAlkalai/will-the-current-wave-of-iranian-pr",
+      "probability": 0.8619,
+      "volume": 1530.7270405239,
+      "trader_count": 28,
+      "close_time": 1798761540000
+    },
+    "dAgpcldZs6": {
+      "id": "dAgpcldZs6",
+      "slug": "assembly-of-experts-hit-by-us-or-is",
+      "question": "Assembly of  Experts hit by US or Israeli attack in 2026 and at least one cleric dies",
+      "url": "https://manifold.markets/AlexanderTheGreater/assembly-of-experts-hit-by-us-or-is",
+      "probability": 0.0849,
+      "volume": 10441.292638526467,
+      "trader_count": 27,
+      "close_time": 1798790340000
+    },
+    "2Cl5C8c28R": {
+      "id": "2Cl5C8c28R",
+      "slug": "in-how-many-days-will-mojtaba-khame",
+      "question": "In how many days will Mojtaba Khamenei die?",
+      "url": "https://manifold.markets/gabriele_mn/in-how-many-days-will-mojtaba-khame",
+      "probability": null,
+      "volume": 885.2185628931281,
+      "trader_count": 22,
+      "close_time": 1798758000000
+    },
+    "dQdyIttCh5": {
+      "id": "dQdyIttCh5",
+      "slug": "who-be-dead-on-may-18th-add-answers",
+      "question": "Who be dead on May 18th (Add Answers)",
+      "url": "https://manifold.markets/AAR/who-be-dead-on-may-18th-add-answers",
+      "probability": null,
+      "volume": 1127.3903898268784,
+      "trader_count": 20,
+      "close_time": 1779235200000
+    },
+    "qdScEAnClL": {
+      "id": "qdScEAnClL",
+      "slug": "add-answers-which-political-figures",
+      "question": "(Add Answers) Which political figures/World leaders will pass before the end of 2026?",
+      "url": "https://manifold.markets/NicBergman/add-answers-which-political-figures",
+      "probability": null,
+      "volume": 738.9583770322762,
+      "trader_count": 13,
+      "close_time": 1798761540000
+    },
+    "9N26Z59IAC": {
+      "id": "9N26Z59IAC",
+      "slug": "when-irans-new-supreme-leader-mojta",
+      "question": "When Iran\u2019s new Supreme Leader (Mojtaba Khamenei) dies or steps down, who will be the next next Supreme Leader?",
+      "url": "https://manifold.markets/JoeandSeth/when-irans-new-supreme-leader-mojta",
+      "probability": null,
+      "volume": 1747.8634970400592,
+      "trader_count": 12,
+      "close_time": 1804608840000
+    },
+    "d3irofbaxe": {
+      "id": "d3irofbaxe",
+      "slug": "will-israel-be-destroyed-before-204",
+      "question": "Will Israel be destroyed before 2040, as predicted by Khamenei?",
+      "url": "https://manifold.markets/NoamPostavsky/will-israel-be-destroyed-before-204",
+      "probability": 0.0736,
+      "volume": 693.7336930328767,
+      "trader_count": 9,
+      "close_time": 2230171140000
+    },
+    "SOlNlls0hL": {
+      "id": "SOlNlls0hL",
+      "slug": "if-khamenei-or-epstein-faked-their",
+      "question": "If Khamenei or Epstein faked their deaths, will Trump do a backflip, XOR will Putin not release a sex tape, by 2100?",
+      "url": "https://manifold.markets/TheAllMemeingEye/if-khamenei-or-epstein-faked-their",
+      "probability": 0.8768,
+      "volume": 254.41547384966202,
+      "trader_count": 9,
+      "close_time": 4102444800000
+    },
+    "62qEONqSLL": {
+      "id": "62qEONqSLL",
+      "slug": "which-politician-on-this-list-of-20-AZdqyPduUc",
+      "question": "Which politician on this list of 20 politicians will pass away tenth?",
+      "url": "https://manifold.markets/Ernie/which-politician-on-this-list-of-20-AZdqyPduUc",
+      "probability": null,
+      "volume": 363.10903903843575,
+      "trader_count": 6,
+      "close_time": 1877583540000
+    },
+    "qt2gOAP9C2": {
+      "id": "qt2gOAP9C2",
+      "slug": "state-of-iran-on-jan-1st-2027",
+      "question": "State of Iran on Jan 1st 2027",
+      "url": "https://manifold.markets/draaglom/state-of-iran-on-jan-1st-2027",
+      "probability": null,
+      "volume": 838.3931396206885,
+      "trader_count": 5,
+      "close_time": 1798761540000
+    },
+    "OCdndnCIPy": {
+      "id": "OCdndnCIPy",
+      "slug": "when-will-mojtaba-khamenei-be-first",
+      "question": "When Will Mojtaba Khamenei be first be shown alive on video?",
+      "url": "https://manifold.markets/JoeandSeth/when-will-mojtaba-khamenei-be-first",
+      "probability": null,
+      "volume": 829.2448686255296,
+      "trader_count": 2,
+      "close_time": 1861941540000
+    },
+    "5uctcL2zNU": {
+      "id": "5uctcL2zNU",
+      "slug": "world-conflict-prop-bets-20252027",
+      "question": "World Conflict Prop Bets 2025-2027 [High Liquidity]",
+      "url": "https://manifold.markets/BlackCrusade/world-conflict-prop-bets-20252027",
+      "probability": null,
+      "volume": 66885.15980614336,
+      "trader_count": 181,
+      "close_time": 1830275940000
+    },
+    "2ItEg96spt": {
+      "id": "2ItEg96spt",
+      "slug": "strait-of-hormuz-traffic-returns-to-n28Zdl8Nd6",
+      "question": "Strait of Hormuz traffic returns to normal by end of May? [Polymarket]",
+      "url": "https://manifold.markets/vdb/strait-of-hormuz-traffic-returns-to-n28Zdl8Nd6",
+      "probability": 0.21,
+      "volume": 29572.263363026068,
+      "trader_count": 127,
+      "close_time": 1780271940000
+    },
+    "0z8ZsUPS2A": {
+      "id": "0z8ZsUPS2A",
+      "slug": "will-gas-exceed-450-before-midterm",
+      "question": "Will gas exceed $4.50 before midterm",
+      "url": "https://manifold.markets/vdb/will-gas-exceed-450-before-midterm",
+      "probability": 0.8702,
+      "volume": 12457.61891911791,
+      "trader_count": 63,
+      "close_time": 1793750340000
+    },
+    "pSPnUEOygL": {
+      "id": "pSPnUEOygL",
+      "slug": "will-iran-get-substantial-sanctions",
+      "question": "Will Iran get substantial sanctions relief AND tolls on ships in exchange for reopening Hormuz?",
+      "url": "https://manifold.markets/SaviorofPlant/will-iran-get-substantial-sanctions",
+      "probability": 0.2731,
+      "volume": 6245.770919947994,
+      "trader_count": 39,
+      "close_time": 1806964020000
+    },
+    "NNlsyzOsns": {
+      "id": "NNlsyzOsns",
+      "slug": "will-iran-officially-announce-a-blo",
+      "question": "Will Iran officially announce a blockade/closure of the Strait of Hormuz for more than 48 consecutive hours by July 2026",
+      "url": "https://manifold.markets/adhoum/will-iran-officially-announce-a-blo",
+      "probability": 0.861,
+      "volume": 4680.156042720602,
+      "trader_count": 36,
+      "close_time": 1782863940000
+    },
+    "h5pCgpQqp9": {
+      "id": "h5pCgpQqp9",
+      "slug": "will-there-be-a-food-shortage-relat",
+      "question": "Will there be a food shortage related to the closure of the Strait of Hormuz?",
+      "url": "https://manifold.markets/Gabrielle/will-there-be-a-food-shortage-relat",
+      "probability": 0.4958,
+      "volume": 3945.083273889247,
+      "trader_count": 36,
+      "close_time": 1798734060000
+    },
+    "ULIILgPhPN": {
+      "id": "ULIILgPhPN",
+      "slug": "which-countries-will-assist-militar",
+      "question": "Which countries will assist militarily in reopening the Strait of Hormuz during ongoing hostilities?",
+      "url": "https://manifold.markets/Balasar/which-countries-will-assist-militar",
+      "probability": null,
+      "volume": 2690.3145736716615,
+      "trader_count": 35,
+      "close_time": 1798744920000
+    },
+    "lqhq6OQQPp": {
+      "id": "lqhq6OQQPp",
+      "slug": "will-us-average-gas-price-reach-469",
+      "question": "Will US average gas price reach $4.690 in May 2026?",
+      "url": "https://manifold.markets/vdb/will-us-average-gas-price-reach-469",
+      "probability": 0.4406,
+      "volume": 2449.9329139762763,
+      "trader_count": 35,
+      "close_time": 1780271940000
+    },
+    "E0ONq9czPd": {
+      "id": "E0ONq9czPd",
+      "slug": "how-high-will-the-national-average",
+      "question": "How high will the US national average gas price get in 2026?",
+      "url": "https://manifold.markets/Drifting/how-high-will-the-national-average",
+      "probability": null,
+      "volume": 18017.67797320086,
+      "trader_count": 35,
+      "close_time": 1798761540000
+    },
+    "RcNs5ch6qU": {
+      "id": "RcNs5ch6qU",
+      "slug": "strait-of-hormuz-traffic-returns-to-NyzSudIt9R",
+      "question": "Strait of Hormuz traffic returns to normal by end of June? [Polymarket]",
+      "url": "https://manifold.markets/HillaryClinton/strait-of-hormuz-traffic-returns-to-NyzSudIt9R",
+      "probability": 0.5,
+      "volume": 6222.32029239574,
+      "trader_count": 32,
+      "close_time": 1782792000000
+    },
+    "u0yElUq58t": {
+      "id": "u0yElUq58t",
+      "slug": "iran-charges-strait-of-hormuz-fees",
+      "question": "Iran charges \"Strait of Hormuz fees\" on June 1?",
+      "url": "https://manifold.markets/Ziddletwix/iran-charges-strait-of-hormuz-fees",
+      "probability": 0.51,
+      "volume": 1718.2736590796148,
+      "trader_count": 27,
+      "close_time": 1780271940000
+    },
+    "EgPqNEQq89": {
+      "id": "EgPqNEQq89",
+      "slug": "trump-announces-us-blockade-of-horm-czz952EPtU",
+      "question": "Trump announces US blockade of Hormuz lifted by May 31? [Polymarket]",
+      "url": "https://manifold.markets/vdb/trump-announces-us-blockade-of-horm-czz952EPtU",
+      "probability": 0.29,
+      "volume": 1278.2870920961968,
+      "trader_count": 26,
+      "close_time": 1780271940000
+    },
+    "c2p6sUpg9E": {
+      "id": "c2p6sUpg9E",
+      "slug": "will-europe-find-a-peaceful-agreeme",
+      "question": "Will Europe find a peaceful agreement with Iran to pass the Strait of Hormuz in 2026 while the US/Iran war continues?",
+      "url": "https://manifold.markets/DaniellqdC6/will-europe-find-a-peaceful-agreeme",
+      "probability": 0.1829,
+      "volume": 2151.789607066522,
+      "trader_count": 20,
+      "close_time": 1798761540000
+    },
+    "9ppn5cCLld": {
+      "id": "9ppn5cCLld",
+      "slug": "will-an-oil-tankerbe-destroyed-in-t",
+      "question": "Will we see a destroyed tanker in the Straight of Hormuz by mid 2026?",
+      "url": "https://manifold.markets/Ernie/will-an-oil-tankerbe-destroyed-in-t",
+      "probability": 0.3588,
+      "volume": 1489.2999609355115,
+      "trader_count": 16,
+      "close_time": 1782863940000
+    },
+    "C5qRlAcCAQ": {
+      "id": "C5qRlAcCAQ",
+      "slug": "will-fees-for-passing-the-strait-of",
+      "question": "Will Fees for Passing the Strait of Hormuz Persist?",
+      "url": "https://manifold.markets/Desert/will-fees-for-passing-the-strait-of",
+      "probability": 0.1321,
+      "volume": 444.8472931636566,
+      "trader_count": 15,
+      "close_time": 1830249480000
+    },
+    "hLSunc0Npn": {
+      "id": "hLSunc0Npn",
+      "slug": "strait-of-hormuz-traffic-returns-to-uIcnuhup5s",
+      "question": "Strait of Hormuz traffic returns to normal by ...",
+      "url": "https://manifold.markets/PromisingWind/strait-of-hormuz-traffic-returns-to-uIcnuhup5s",
+      "probability": null,
+      "volume": 895.4843517347813,
+      "trader_count": 15,
+      "close_time": 1798765140000
+    },
+    "pPQ5ALPCLP": {
+      "id": "pPQ5ALPCLP",
+      "slug": "april-8-usiran-war-ceasefire-prop-b",
+      "question": "April 8, US-IRAN war ceasefire: prop bets",
+      "url": "https://manifold.markets/100Anonymous/april-8-usiran-war-ceasefire-prop-b",
+      "probability": null,
+      "volume": 669.5045083693079,
+      "trader_count": 15,
+      "close_time": 1780271940000
+    },
+    "GApMRjfbKcahetAech0T": {
+      "id": "GApMRjfbKcahetAech0T",
+      "slug": "will-a-crossing-of-the-strait-of-ho",
+      "question": "Will a crossing of the Strait of Hormuz, between Iran and Oman or UAE, have started construction by 2040?",
+      "url": "https://manifold.markets/JoshuaWilkes/will-a-crossing-of-the-strait-of-ho",
+      "probability": 0.382,
+      "volume": 294.6672876608523,
+      "trader_count": 13,
+      "close_time": 2209046340000
+    },
+    "gEy6pqL02z": {
+      "id": "gEy6pqL02z",
+      "slug": "will-the-us-lift-its-naval-blockade",
+      "question": "Will the US lift its naval blockade of the Strait of Hormuz by May 31, 2026?",
+      "url": "https://manifold.markets/CalibratedGhosts/will-the-us-lift-its-naval-blockade",
+      "probability": 0.1927,
+      "volume": 657.3747130147698,
+      "trader_count": 12,
+      "close_time": 1780264800000
+    },
+    "tQ6hEdPAuN": {
+      "id": "tQ6hEdPAuN",
+      "slug": "who-will-control-the-strait-of-horm",
+      "question": "Who will control the Strait of Hormuz on December 1, 2026?",
+      "url": "https://manifold.markets/MichaeldelaMaza/who-will-control-the-strait-of-horm",
+      "probability": null,
+      "volume": 236.64314965676772,
+      "trader_count": 11,
+      "close_time": 1796947140000
+    },
+    "N0tUNn09SS": {
+      "id": "N0tUNn09SS",
+      "slug": "what-will-be-included-in-the-iranus",
+      "question": "What will be included in the Iran-US peace deal?",
+      "url": "https://manifold.markets/vdb/what-will-be-included-in-the-iranus",
+      "probability": null,
+      "volume": 727.6970067593921,
+      "trader_count": 11,
+      "close_time": 1798767600000
+    },
+    "IcEQncuSQn": {
+      "id": "IcEQncuSQn",
+      "slug": "free-flow-of-shipping-through-the-s",
+      "question": "Free flow of shipping through the Strait of Hormuz returns to normal in 2026?",
+      "url": "https://manifold.markets/waterlilly/free-flow-of-shipping-through-the-s",
+      "probability": 0.82,
+      "volume": 294.647960712758,
+      "trader_count": 10,
+      "close_time": 1798761540000
+    },
+    "LzOUz8AERI": {
+      "id": "LzOUz8AERI",
+      "slug": "will-a-canal-be-created-in-the-stra",
+      "question": "Will a canal be created in the Strait of Hormuz using nuclear weapons?",
+      "url": "https://manifold.markets/GuyCohen/will-a-canal-be-created-in-the-stra",
+      "probability": 0.0072,
+      "volume": 1588.6587999610115,
+      "trader_count": 9,
+      "close_time": 1798762080000
+    },
+    "CstAP92ld0": {
+      "id": "CstAP92ld0",
+      "slug": "on-may-4th-2026-what-will-the-7day",
+      "question": "On May 4th 2026, what will the 7-day average ships passing through the Strait of Hormuz be?",
+      "url": "https://manifold.markets/dfish/on-may-4th-2026-what-will-the-7day",
+      "probability": null,
+      "volume": 525.4115688284139,
+      "trader_count": 8,
+      "close_time": 1777939200000
+    },
+    "hqPUPd02tl": {
+      "id": "hqPUPd02tl",
+      "slug": "multibet-mansion-combine-multiple-b",
+      "question": "Multibet Mansion \u2013 combine multiple bets into one",
+      "url": "https://manifold.markets/a_l_e_x/multibet-mansion-combine-multiple-b",
+      "probability": null,
+      "volume": 293.9422987798969,
+      "trader_count": 5,
+      "close_time": 1798641060000
+    },
+    "AynnELNQAu": {
+      "id": "AynnELNQAu",
+      "slug": "strait-of-hormuz-traffic-percentage-zLz5NUnnpz",
+      "question": "Strait of Hormuz Traffic Percentage On?",
+      "url": "https://manifold.markets/Cactus/strait-of-hormuz-traffic-percentage-zLz5NUnnpz",
+      "probability": null,
+      "volume": 208.06235539214077,
+      "trader_count": 4,
+      "close_time": 1798705020000
+    },
+    "5ZRPA85gns": {
+      "id": "5ZRPA85gns",
+      "slug": "what-will-a-marine-expeditionary-fo",
+      "question": "What will a Marine Expeditionary Force be used for in 2026?",
+      "url": "https://manifold.markets/Balasar/what-will-a-marine-expeditionary-fo",
+      "probability": null,
+      "volume": 36.329983664104134,
+      "trader_count": 3,
+      "close_time": 1798761540000
+    },
+    "zP0RynR5pI": {
+      "id": "zP0RynR5pI",
+      "slug": "will-iranians-be-able-to-overthrow",
+      "question": "Will the Iranian regime be overthrown?",
+      "url": "https://manifold.markets/PoliticalEconomyPK/will-iranians-be-able-to-overthrow",
+      "probability": 0.1597,
+      "volume": 31716.137157282275,
+      "trader_count": 88,
+      "close_time": 1798761540000
+    },
+    "qxrSFJKd16WqeRaT6IiT": {
+      "id": "qxrSFJKd16WqeRaT6IiT",
+      "slug": "what-will-be-the-next-capital-city",
+      "question": "What will be the next capital city to be occupied by a foreign military?",
+      "url": "https://manifold.markets/Duncn/what-will-be-the-next-capital-city",
+      "probability": null,
+      "volume": 1549.1207273417351,
+      "trader_count": 47,
+      "close_time": 1925009940000
+    },
+    "zZNhdQgPCR": {
+      "id": "zZNhdQgPCR",
+      "slug": "how-many-iranians-will-be-killed-by-OIt69uyy0t",
+      "question": "How many Iranians will be killed by it's regime in 2026?",
+      "url": "https://manifold.markets/HenriConfucius/how-many-iranians-will-be-killed-by-OIt69uyy0t",
+      "probability": null,
+      "volume": 7523.530929331063,
+      "trader_count": 46,
+      "close_time": 1799722740000
+    },
+    "pUncsZnp2u": {
+      "id": "pUncsZnp2u",
+      "slug": "will-the-us-and-iran-be-at-war-on-j",
+      "question": "Will the US and Iran be at war on January 1st, 2027?",
+      "url": "https://manifold.markets/morallawwithin/will-the-us-and-iran-be-at-war-on-j",
+      "probability": 0.2232,
+      "volume": 9836.13969239928,
+      "trader_count": 43,
+      "close_time": 1798847940000
+    },
+    "3quUSpBCbTqL7tfrPRlG": {
+      "id": "3quUSpBCbTqL7tfrPRlG",
+      "slug": "what-will-be-the-next-city-to-be-nu-5q893xpi2i",
+      "question": "What will be the next city to be nuked? (add your picks)",
+      "url": "https://manifold.markets/Khazar_Man_From_Turan/what-will-be-the-next-city-to-be-nu-5q893xpi2i",
+      "probability": null,
+      "volume": 11632.723382376129,
+      "trader_count": 35,
+      "close_time": 4859845140000
+    },
+    "SAAsu5gn5C": {
+      "id": "SAAsu5gn5C",
+      "slug": "will-iranian-foreign-minister-abbas",
+      "question": "Will Iranian Foreign Minister Abbas Araghchi still be alive by June 1st 2026?",
+      "url": "https://manifold.markets/DataDependent/will-iranian-foreign-minister-abbas",
+      "probability": 0.4842,
+      "volume": 2529.8661760969962,
+      "trader_count": 23,
+      "close_time": 1780271940000
+    },
+    "mEYmXgQch6jdAcbQkcAP": {
+      "id": "mEYmXgQch6jdAcbQkcAP",
+      "slug": "what-will-be-the-next-city-to-be-nu",
+      "question": "What will be the next city to be nuked",
+      "url": "https://manifold.markets/JamesF/what-will-be-the-next-city-to-be-nu",
+      "probability": null,
+      "volume": 1620.4341785538818,
+      "trader_count": 22,
+      "close_time": 4102549140000
+    },
+    "5qREUnAOlu": {
+      "id": "5qREUnAOlu",
+      "slug": "civil-war-in-iran-by-2027",
+      "question": "Civil War in Iran in 2026?",
+      "url": "https://manifold.markets/HenriConfucius/civil-war-in-iran-by-2027",
+      "probability": 0.2066,
+      "volume": 433.21779996207886,
+      "trader_count": 20,
+      "close_time": 1798847940000
+    },
+    "hC9606sC9y": {
+      "id": "hC9606sC9y",
+      "slug": "will-iran-suffer-an-oil-blockade-an",
+      "question": "Will Iran suffer an oil blockade, and will the regime fall this year?",
+      "url": "https://manifold.markets/HenriConfucius/will-iran-suffer-an-oil-blockade-an",
+      "probability": null,
+      "volume": 505.15962397919014,
+      "trader_count": 17,
+      "close_time": 1798761540000
+    },
+    "PdlUOR8E90": {
+      "id": "PdlUOR8E90",
+      "slug": "will-the-us-and-iran-reach-a-formal",
+      "question": "Will the US and Iran reach a formal nuclear deal framework by July 1, 2026?",
+      "url": "https://manifold.markets/ExcuseMeSir/will-the-us-and-iran-reach-a-formal",
+      "probability": 0.2887,
+      "volume": 483.76756819135176,
+      "trader_count": 16,
+      "close_time": 1782864000000
+    },
+    "5gS5ul9U22": {
+      "id": "5gS5ul9U22",
+      "slug": "when-will-the-usallies-kill-more-ir",
+      "question": "When will the US+allies kill more Iranians than Iran?",
+      "url": "https://manifold.markets/BrunoParga/when-will-the-usallies-kill-more-ir",
+      "probability": null,
+      "volume": 2691.6242587080833,
+      "trader_count": 13,
+      "close_time": 1791586740000
+    },
+    "pS5nAORsyc": {
+      "id": "pS5nAORsyc",
+      "slug": "will-the-us-israel-andor-one-of-the",
+      "question": "Will the US, Israel and/or one of the non-Iranian Gulf states occupy Larak Island (Iran) before June 1 2026?",
+      "url": "https://manifold.markets/DataDependent/will-the-us-israel-andor-one-of-the",
+      "probability": 0.4,
+      "volume": 451.0725764682926,
+      "trader_count": 12,
+      "close_time": 1780271940000
+    },
+    "lA0OnpAdq2": {
+      "id": "lA0OnpAdq2",
+      "slug": "will-iran-and-the-us-reach-a-formal",
+      "question": "Will Iran and the US reach a formal nuclear deal by September 30, 2026?",
+      "url": "https://manifold.markets/ExcuseMeSir/will-iran-and-the-us-reach-a-formal",
+      "probability": 0.54,
+      "volume": 184.95538382578144,
+      "trader_count": 8,
+      "close_time": 1790812799000
+    },
+    "tgOPZOh5LU": {
+      "id": "tgOPZOh5LU",
+      "slug": "will-tehran-be-evacuated",
+      "question": "Will Tehran be evacuated?",
+      "url": "https://manifold.markets/CommanderKeen/will-tehran-be-evacuated",
+      "probability": 0.1627,
+      "volume": 3419.425514184515,
+      "trader_count": 6,
+      "close_time": 1796252340000
+    },
+    "xnhvp0fyl9": {
+      "id": "xnhvp0fyl9",
+      "slug": "metaculus-if-there-is-an-american-a",
+      "question": "[Metaculus] If there is an American AUMF or declaration of war against Iran before 2030, wil...l Tehran within one year?",
+      "url": "https://manifold.markets/mirrorbot/metaculus-if-there-is-an-american-a",
+      "probability": 0.3672,
+      "volume": 1507.5773991806432,
+      "trader_count": 5,
+      "close_time": 1925096400000
+    },
+    "pNNZ2zhPcA": {
+      "id": "pNNZ2zhPcA",
+      "slug": "will-iran-sign-a-peace-deal-with-th",
+      "question": "Will Iran sign a peace deal with the middle east countries",
+      "url": "https://manifold.markets/TopnotchdenoDennis/will-iran-sign-a-peace-deal-with-th",
+      "probability": 0.3,
+      "volume": 115.46536707079773,
+      "trader_count": 4,
+      "close_time": 1798761540000
+    },
+    "DUoONvxFQHmoBIlQOGmO": {
+      "id": "DUoONvxFQHmoBIlQOGmO",
+      "slug": "will-a-commercial-nonstop-flight-be-fb737ce0f518",
+      "question": "Will a commercial non-stop flight between Toronto and Tehran exist before the end of 2027?",
+      "url": "https://manifold.markets/JoshuaWilkes/will-a-commercial-nonstop-flight-be-fb737ce0f518",
+      "probability": 0.4058,
+      "volume": 13,
+      "trader_count": 3,
+      "close_time": 1830268740000
+    }
+  }
+}

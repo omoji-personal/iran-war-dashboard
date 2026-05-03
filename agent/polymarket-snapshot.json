@@ -1,0 +1,645 @@
+{
+  "fetched_at": "2026-05-03T16:14:47.266711+00:00",
+  "markets": {
+    "will-the-iranian-regime-fall-by-may-31": {
+      "slug": "will-the-iranian-regime-fall-by-may-31",
+      "question": "Will the Iranian regime fall by May 31?",
+      "price_yes": 0.0275,
+      "volume_24h": 1152990.8171729988,
+      "liquidity": 836526.68366,
+      "end_date": "2026-05-31T00:00:00Z"
+    },
+    "strait-of-hormuz-traffic-returns-to-normal-by-end-of-may": {
+      "slug": "strait-of-hormuz-traffic-returns-to-normal-by-end-of-may",
+      "question": "Strait of Hormuz traffic returns to normal by end of May?",
+      "price_yes": 0.215,
+      "volume_24h": 639262.1882190002,
+      "liquidity": 283059.5691,
+      "end_date": "2026-05-31T00:00:00Z"
+    },
+    "strait-of-hormuz-traffic-returns-to-normal-by-may-15": {
+      "slug": "strait-of-hormuz-traffic-returns-to-normal-by-may-15",
+      "question": "Strait of Hormuz traffic returns to normal by May 15?",
+      "price_yes": 0.065,
+      "volume_24h": 620606.1516030004,
+      "liquidity": 310680.3133,
+      "end_date": "2026-05-15T00:00:00Z"
+    },
+    "us-x-iran-permanent-peace-deal-by-may-31-2026-333-871": {
+      "slug": "us-x-iran-permanent-peace-deal-by-may-31-2026-333-871",
+      "question": "US x Iran permanent peace deal by May 31, 2026?",
+      "price_yes": 0.205,
+      "volume_24h": 462742.1049149999,
+      "liquidity": 418763.0883,
+      "end_date": "2026-05-31T00:00:00Z"
+    },
+    "us-obtains-iranian-enriched-uranium-by-may-31-396": {
+      "slug": "us-obtains-iranian-enriched-uranium-by-may-31-396",
+      "question": "US obtains Iranian enriched uranium by May 31?",
+      "price_yes": 0.095,
+      "volume_24h": 437632.738975,
+      "liquidity": 362352.3488,
+      "end_date": "2026-05-31T00:00:00Z"
+    },
+    "strait-of-hormuz-traffic-returns-to-normal-by-april-30": {
+      "slug": "strait-of-hormuz-traffic-returns-to-normal-by-april-30",
+      "question": "Strait of Hormuz traffic returns to normal by end of April?",
+      "price_yes": 0.0015,
+      "volume_24h": 373431.30000000005,
+      "liquidity": 298702.74366,
+      "end_date": "2026-04-30T00:00:00Z"
+    },
+    "us-x-iran-diplomatic-meeting-by-may-5-2026": {
+      "slug": "us-x-iran-diplomatic-meeting-by-may-5-2026",
+      "question": "US x Iran diplomatic meeting by May 5, 2026?",
+      "price_yes": 0.0145,
+      "volume_24h": 346102.3756249997,
+      "liquidity": 96368.96543,
+      "end_date": "2026-05-05T00:00:00Z"
+    },
+    "iran-closes-its-airspace-by-may-8": {
+      "slug": "iran-closes-its-airspace-by-may-8",
+      "question": "Iran closes its airspace by May 8?",
+      "price_yes": 0.125,
+      "volume_24h": 304964.02355099976,
+      "liquidity": 156251.7336,
+      "end_date": "2026-05-31T00:00:00Z"
+    },
+    "will-the-iranian-regime-fall-by-june-30": {
+      "slug": "will-the-iranian-regime-fall-by-june-30",
+      "question": "Will the Iranian regime fall by June 30?",
+      "price_yes": 0.055,
+      "volume_24h": 258792.02427,
+      "liquidity": 1211609.7954,
+      "end_date": "2026-06-30T00:00:00Z"
+    },
+    "us-x-iran-permanent-peace-deal-by-may-15-2026": {
+      "slug": "us-x-iran-permanent-peace-deal-by-may-15-2026",
+      "question": "US x Iran permanent peace deal by May 15, 2026?",
+      "price_yes": 0.065,
+      "volume_24h": 258706.41292499998,
+      "liquidity": 248777.9287,
+      "end_date": "2026-05-15T00:00:00Z"
+    },
+    "us-x-iran-permanent-peace-deal-by-june-30-2026-837": {
+      "slug": "us-x-iran-permanent-peace-deal-by-june-30-2026-837",
+      "question": "US x Iran permanent peace deal by June 30, 2026?",
+      "price_yes": 0.385,
+      "volume_24h": 206968.82352699997,
+      "liquidity": 259757.4924,
+      "end_date": "2026-05-31T00:00:00Z"
+    },
+    "will-donald-trump-announce-that-the-united-states-blockade-of-the-strait-of-hormuz-has-been-lifted-by-may-31-2026-313-388-459-589": {
+      "slug": "will-donald-trump-announce-that-the-united-states-blockade-of-the-strait-of-hormuz-has-been-lifted-by-may-31-2026-313-388-459-589",
+      "question": "Will Donald Trump announce that the United States blockade of the Strait of Hormuz has been lifted by May 31, 2026?",
+      "price_yes": 0.295,
+      "volume_24h": 187735.606263,
+      "liquidity": 136941.4528,
+      "end_date": "2026-05-31T00:00:00Z"
+    },
+    "strait-of-hormuz-traffic-returns-to-normal-by-end-of-june": {
+      "slug": "strait-of-hormuz-traffic-returns-to-normal-by-end-of-june",
+      "question": "Strait of Hormuz traffic returns to normal by end of June?",
+      "price_yes": 0.51,
+      "volume_24h": 165975.43870800003,
+      "liquidity": 150553.8938,
+      "end_date": "2026-06-30T00:00:00Z"
+    },
+    "kharg-island-no-longer-under-iranian-control-by-may-31-689": {
+      "slug": "kharg-island-no-longer-under-iranian-control-by-may-31-689",
+      "question": "Kharg Island no longer under Iranian control by May 31?",
+      "price_yes": 0.075,
+      "volume_24h": 165276.51205599998,
+      "liquidity": 655538.9851,
+      "end_date": "2026-05-31T23:55:00Z"
+    },
+    "will-the-us-invade-iran-before-2027": {
+      "slug": "will-the-us-invade-iran-before-2027",
+      "question": "Will the U.S. invade Iran before 2027?",
+      "price_yes": 0.295,
+      "volume_24h": 164998.67594299992,
+      "liquidity": 792066.5512,
+      "end_date": "2026-12-31T00:00:00Z"
+    },
+    "will-donald-trump-announce-that-the-united-states-blockade-of-the-strait-of-hormuz-has-been-lifted-by-may-15-2026-154": {
+      "slug": "will-donald-trump-announce-that-the-united-states-blockade-of-the-strait-of-hormuz-has-been-lifted-by-may-15-2026-154",
+      "question": "Will Donald Trump announce that the United States blockade of the Strait of Hormuz has been lifted by May 15, 2026?",
+      "price_yes": 0.16,
+      "volume_24h": 121328.70071999998,
+      "liquidity": 37395.4685,
+      "end_date": "2026-05-15T00:00:00Z"
+    },
+    "will-donald-trump-announce-that-the-united-states-blockade-of-the-strait-of-hormuz-has-been-lifted-by-may-8-2026-522": {
+      "slug": "will-donald-trump-announce-that-the-united-states-blockade-of-the-strait-of-hormuz-has-been-lifted-by-may-8-2026-522",
+      "question": "Will Donald Trump announce that the United States blockade of the Strait of Hormuz has been lifted by May 8, 2026?",
+      "price_yes": 0.0635,
+      "volume_24h": 113533.677153,
+      "liquidity": 27598.49463,
+      "end_date": "2026-05-08T00:00:00Z"
+    },
+    "us-x-iran-diplomatic-meeting-by-may-15-2026": {
+      "slug": "us-x-iran-diplomatic-meeting-by-may-15-2026",
+      "question": "US x Iran diplomatic meeting by May 15, 2026?",
+      "price_yes": 0.185,
+      "volume_24h": 102815.291831,
+      "liquidity": 82054.7123,
+      "end_date": "2026-05-15T00:00:00Z"
+    },
+    "us-x-iran-diplomatic-meeting-by-may-31-2026": {
+      "slug": "us-x-iran-diplomatic-meeting-by-may-31-2026",
+      "question": "US x Iran diplomatic meeting by May 31, 2026?",
+      "price_yes": 0.415,
+      "volume_24h": 95574.400216,
+      "liquidity": 72930.7122,
+      "end_date": "2026-05-15T00:00:00Z"
+    },
+    "will-donald-trump-announce-that-the-united-states-blockade-of-the-strait-of-hormuz-has-been-lifted-by-may-22-2026": {
+      "slug": "will-donald-trump-announce-that-the-united-states-blockade-of-the-strait-of-hormuz-has-been-lifted-by-may-22-2026",
+      "question": "Will Donald Trump announce that the United States blockade of the Strait of Hormuz has been lifted by May 22, 2026?",
+      "price_yes": 0.195,
+      "volume_24h": 75587.16052200002,
+      "liquidity": 43286.3156,
+      "end_date": "2026-05-22T00:00:00Z"
+    },
+    "us-iran-nuclear-deal-before-2027": {
+      "slug": "us-iran-nuclear-deal-before-2027",
+      "question": "US-Iran nuclear deal before 2027?",
+      "price_yes": 0.555,
+      "volume_24h": 75283.83348200002,
+      "liquidity": 119792.2547,
+      "end_date": "2026-12-31T00:00:00Z"
+    },
+    "iran-closes-its-airspace-by-may-31": {
+      "slug": "iran-closes-its-airspace-by-may-31",
+      "question": "Iran closes its airspace by May 31?",
+      "price_yes": 0.345,
+      "volume_24h": 71422.626429,
+      "liquidity": 44516.2181,
+      "end_date": "2026-05-31T00:00:00Z"
+    },
+    "will-the-iranian-regime-fall-by-the-end-of-2026": {
+      "slug": "will-the-iranian-regime-fall-by-the-end-of-2026",
+      "question": "Will the Iranian regime fall before 2027?",
+      "price_yes": 0.185,
+      "volume_24h": 61245.631269000005,
+      "liquidity": 569789.2939,
+      "end_date": "2026-12-31T00:00:00Z"
+    },
+    "us-iran-nuclear-deal-by-may-31-974": {
+      "slug": "us-iran-nuclear-deal-by-may-31-974",
+      "question": "US-Iran nuclear deal by May 31?",
+      "price_yes": 0.165,
+      "volume_24h": 56699.51826599999,
+      "liquidity": 60258.8708,
+      "end_date": "2026-05-31T00:00:00Z"
+    },
+    "will-reza-pahlavi-enter-iran-by-may-31": {
+      "slug": "will-reza-pahlavi-enter-iran-by-may-31",
+      "question": "Will Reza Pahlavi enter Iran by May 31?",
+      "price_yes": 0.0115,
+      "volume_24h": 54160.882687,
+      "liquidity": 111946.31666,
+      "end_date": "2026-05-31T00:00:00Z"
+    },
+    "will-reza-pahlavi-enter-iran-by-december-31-898-927": {
+      "slug": "will-reza-pahlavi-enter-iran-by-december-31-898-927",
+      "question": "Will Reza Pahlavi enter Iran by December 31?",
+      "price_yes": 0.105,
+      "volume_24h": 46361.874409,
+      "liquidity": 151516.3084,
+      "end_date": "2026-12-31T00:00:00Z"
+    },
+    "iran-leadership-change-by-june-30-689-922": {
+      "slug": "iran-leadership-change-by-june-30-689-922",
+      "question": "Iran leadership change by June 30?",
+      "price_yes": 0.145,
+      "volume_24h": 46057.84915999999,
+      "liquidity": 120889.3076,
+      "end_date": "2026-06-30T00:00:00Z"
+    },
+    "will-the-next-us-x-iran-diplomatic-meeting-occur-after-may-10": {
+      "slug": "will-the-next-us-x-iran-diplomatic-meeting-occur-after-may-10",
+      "question": "Will the next US x Iran diplomatic meeting occur after May 10?",
+      "price_yes": 0.92,
+      "volume_24h": 44304.117697999995,
+      "liquidity": 136163.9844,
+      "end_date": "2026-05-10T00:00:00Z"
+    },
+    "will-reza-pahlavi-enter-iran-by-june-30-555-947-362-379-213": {
+      "slug": "will-reza-pahlavi-enter-iran-by-june-30-555-947-362-379-213",
+      "question": "Will Reza Pahlavi enter Iran by June 30?",
+      "price_yes": 0.0285,
+      "volume_24h": 43144.726514999995,
+      "liquidity": 183912.12591,
+      "end_date": "2026-06-30T00:00:00Z"
+    },
+    "iran-leadership-change-by-may-31-593-194-829": {
+      "slug": "iran-leadership-change-by-may-31-593-194-829",
+      "question": "Iran leadership change by May 31?",
+      "price_yes": 0.075,
+      "volume_24h": 42517.651187999996,
+      "liquidity": 186319.7725,
+      "end_date": "2026-05-31T00:00:00Z"
+    },
+    "will-no-qualifying-diplomatic-us-iran-meeting-occur-by-june-30-2026-673": {
+      "slug": "will-no-qualifying-diplomatic-us-iran-meeting-occur-by-june-30-2026-673",
+      "question": "Will no qualifying diplomatic US-Iran meeting occur by June 30, 2026?",
+      "price_yes": 0.2865,
+      "volume_24h": 41457.614912,
+      "liquidity": 93386.96351,
+      "end_date": "2026-06-30T00:00:00Z"
+    },
+    "iran-agrees-to-surrender-enriched-uranium-stockpile-by-may-31-2026": {
+      "slug": "iran-agrees-to-surrender-enriched-uranium-stockpile-by-may-31-2026",
+      "question": "Iran agrees to surrender enriched uranium stockpile by May 31, 2026?",
+      "price_yes": 0.095,
+      "volume_24h": 40206.622943,
+      "liquidity": 113081.6028,
+      "end_date": "2026-05-31T00:00:00Z"
+    },
+    "will-iran-strike-bahrain-by-april-30-2026-553": {
+      "slug": "will-iran-strike-bahrain-by-april-30-2026-553",
+      "question": "Will Iran strike Bahrain by April 30, 2026?",
+      "price_yes": 0.0205,
+      "volume_24h": 38622.800663,
+      "liquidity": 68054.73409,
+      "end_date": "2026-04-30T00:00:00Z"
+    },
+    "iran-agrees-to-surrender-enriched-uranium-stockpile-by-june-30-2026": {
+      "slug": "iran-agrees-to-surrender-enriched-uranium-stockpile-by-june-30-2026",
+      "question": "Iran agrees to surrender enriched uranium stockpile by June 30, 2026?",
+      "price_yes": 0.145,
+      "volume_24h": 33161.034741,
+      "liquidity": 192312.123,
+      "end_date": "2026-06-30T00:00:00Z"
+    },
+    "iran-agrees-to-end-enrichment-of-uranium-by-june-30": {
+      "slug": "iran-agrees-to-end-enrichment-of-uranium-by-june-30",
+      "question": "Iran agrees to end enrichment of uranium by June 30?",
+      "price_yes": 0.28,
+      "volume_24h": 31028.634422,
+      "liquidity": 58622.6513,
+      "end_date": "2026-06-30T00:00:00Z"
+    },
+    "iran-leadership-change-by-december-31-974-976-658-482-568": {
+      "slug": "iran-leadership-change-by-december-31-974-976-658-482-568",
+      "question": "Iran leadership change by December 31?",
+      "price_yes": 0.335,
+      "volume_24h": 30965.997729000002,
+      "liquidity": 172296.0285,
+      "end_date": "2026-12-31T00:00:00Z"
+    },
+    "kharg-island-no-longer-under-iranian-control-by-june-30-561-854": {
+      "slug": "kharg-island-no-longer-under-iranian-control-by-june-30-561-854",
+      "question": "Kharg Island no longer under Iranian control by June 30?",
+      "price_yes": 0.115,
+      "volume_24h": 28144.502920000003,
+      "liquidity": 212621.7128,
+      "end_date": "2026-06-30T23:55:00Z"
+    },
+    "us-x-iran-diplomatic-meeting-by-june-30-2026": {
+      "slug": "us-x-iran-diplomatic-meeting-by-june-30-2026",
+      "question": "US x Iran diplomatic meeting by June 30, 2026?",
+      "price_yes": 0.705,
+      "volume_24h": 26108.43448700001,
+      "liquidity": 150778.7297,
+      "end_date": "2026-05-15T00:00:00Z"
+    },
+    "us-iran-nuclear-deal-by-june-30": {
+      "slug": "us-iran-nuclear-deal-by-june-30",
+      "question": "US-Iran nuclear deal by June 30?",
+      "price_yes": 0.315,
+      "volume_24h": 24747.563192,
+      "liquidity": 78578.1599,
+      "end_date": "2026-06-30T00:00:00Z"
+    },
+    "iran-agrees-to-end-enrichment-of-uranium-by-may-31-945": {
+      "slug": "iran-agrees-to-end-enrichment-of-uranium-by-may-31-945",
+      "question": "Iran agrees to end enrichment of uranium by May 31?",
+      "price_yes": 0.095,
+      "volume_24h": 21773.096372000004,
+      "liquidity": 85869.4705,
+      "end_date": "2026-05-31T00:00:00Z"
+    },
+    "will-another-country-conduct-military-action-against-iran-by-april-30-2026": {
+      "slug": "will-another-country-conduct-military-action-against-iran-by-april-30-2026",
+      "question": "Will another country conduct military action against Iran by April 30, 2026?",
+      "price_yes": 0.001,
+      "volume_24h": 19092.736665,
+      "liquidity": 29530.10754,
+      "end_date": "2026-04-30T00:00:00Z"
+    },
+    "iran-agrees-to-unrestricted-shipping-through-hormuz-by-may-31": {
+      "slug": "iran-agrees-to-unrestricted-shipping-through-hormuz-by-may-31",
+      "question": "Iran agrees to unrestricted shipping through Hormuz by May 31?",
+      "price_yes": 0.145,
+      "volume_24h": 18251.584679,
+      "liquidity": 102843.0349,
+      "end_date": "2026-05-31T00:00:00Z"
+    },
+    "trump-renames-straight-of-hormuz-to-strait-of-trump-by-may-31": {
+      "slug": "trump-renames-straight-of-hormuz-to-strait-of-trump-by-may-31",
+      "question": "Trump renames Strait of Hormuz to \"Strait of Trump\" by May 31?",
+      "price_yes": 0.0295,
+      "volume_24h": 16927.339937,
+      "liquidity": 64102.52483,
+      "end_date": "2026-05-31T00:00:00Z"
+    },
+    "will-the-iranian-regime-survive-us-military-strikes-741": {
+      "slug": "will-the-iranian-regime-survive-us-military-strikes-741",
+      "question": "Will the Iranian regime survive U.S. military strikes?",
+      "price_yes": 0.935,
+      "volume_24h": 16347.392549000002,
+      "liquidity": 105817.9693,
+      "end_date": "2026-06-30T00:00:00Z"
+    },
+    "will-mojtaba-khamenei-be-head-of-state-in-iran-end-of-2026": {
+      "slug": "will-mojtaba-khamenei-be-head-of-state-in-iran-end-of-2026",
+      "question": "Will Mojtaba Khamenei be head of state in Iran end of 2026?",
+      "price_yes": 0.67,
+      "volume_24h": 15925.453353000006,
+      "liquidity": 101816.08422,
+      "end_date": "2026-12-31T00:00:00Z"
+    },
+    "us-obtains-iranian-enriched-uranium-by-december-31": {
+      "slug": "us-obtains-iranian-enriched-uranium-by-december-31",
+      "question": "US obtains Iranian enriched uranium by December 31?",
+      "price_yes": 0.275,
+      "volume_24h": 13535.250532000005,
+      "liquidity": 63993.4834,
+      "end_date": "2026-12-31T00:00:00Z"
+    },
+    "iran-agrees-to-surrender-enriched-uranium-stockpile-by-december-31-2026": {
+      "slug": "iran-agrees-to-surrender-enriched-uranium-stockpile-by-december-31-2026",
+      "question": "Iran agrees to surrender enriched uranium stockpile by December 31, 2026?",
+      "price_yes": 0.325,
+      "volume_24h": 13345.196791,
+      "liquidity": 158127.1598,
+      "end_date": "2026-12-31T00:00:00Z"
+    },
+    "israel-x-iran-permanent-peace-deal-by-june-30-2026-262": {
+      "slug": "israel-x-iran-permanent-peace-deal-by-june-30-2026-262",
+      "question": "Israel x Iran permanent peace deal by June 30, 2026?",
+      "price_yes": 0.09,
+      "volume_24h": 10410.379903,
+      "liquidity": 76291.6554,
+      "end_date": "2026-06-30T00:00:00Z"
+    },
+    "mojtaba-khamenei-seen-in-public-by-may-31": {
+      "slug": "mojtaba-khamenei-seen-in-public-by-may-31",
+      "question": "Mojtaba Khamenei seen in public by May 31?",
+      "price_yes": 0.075,
+      "volume_24h": 9642.478021,
+      "liquidity": 44215.3089,
+      "end_date": "2026-05-31T00:00:00Z"
+    },
+    "will-the-next-us-x-iran-diplomatic-meeting-be-on-may-9": {
+      "slug": "will-the-next-us-x-iran-diplomatic-meeting-be-on-may-9",
+      "question": "Will the next US x Iran diplomatic meeting be on May 9?",
+      "price_yes": 0.0075,
+      "volume_24h": 9554.593943,
+      "liquidity": 15055.53547,
+      "end_date": "2026-05-10T00:00:00Z"
+    },
+    "will-the-next-us-x-iran-diplomatic-meeting-be-on-may-8": {
+      "slug": "will-the-next-us-x-iran-diplomatic-meeting-be-on-may-8",
+      "question": "Will the next US x Iran diplomatic meeting be on May 8?",
+      "price_yes": 0.027,
+      "volume_24h": 9388.181923,
+      "liquidity": 55231.83869,
+      "end_date": "2026-05-10T00:00:00Z"
+    },
+    "will-jd-vance-have-a-diplomatic-meeting-with-iran-by-may-15-2026": {
+      "slug": "will-jd-vance-have-a-diplomatic-meeting-with-iran-by-may-15-2026",
+      "question": "Will JD Vance have a diplomatic meeting with Iran by May 15, 2026?",
+      "price_yes": 0.027,
+      "volume_24h": 9315.513278,
+      "liquidity": 19464.69134,
+      "end_date": "2026-05-15T00:00:00Z"
+    },
+    "will-the-next-us-x-iran-diplomatic-meeting-be-on-may-7": {
+      "slug": "will-the-next-us-x-iran-diplomatic-meeting-be-on-may-7",
+      "question": "Will the next US x Iran diplomatic meeting be on May 7?",
+      "price_yes": 0.0075,
+      "volume_24h": 9252.602301,
+      "liquidity": 11550.42104,
+      "end_date": "2026-05-10T00:00:00Z"
+    },
+    "will-25-49-ships-transit-the-strait-of-hormuz-between-april-27-may-3": {
+      "slug": "will-25-49-ships-transit-the-strait-of-hormuz-between-april-27-may-3",
+      "question": "Will 25-49 ships transit the Strait of Hormuz between April 27-May 3?",
+      "price_yes": 0.78,
+      "volume_24h": 9185.754602999998,
+      "liquidity": 13594.0207,
+      "end_date": "2026-05-03T00:00:00Z"
+    },
+    "will-there-be-no-head-of-state-in-iran-end-of-2026": {
+      "slug": "will-there-be-no-head-of-state-in-iran-end-of-2026",
+      "question": "Will there be no Head of State in Iran end of 2026?",
+      "price_yes": 0.0285,
+      "volume_24h": 9127.193786,
+      "liquidity": 62423.46511,
+      "end_date": "2026-12-31T00:00:00Z"
+    },
+    "will-iran-strike-qatar-by-april-30-2026": {
+      "slug": "will-iran-strike-qatar-by-april-30-2026",
+      "question": "Will Iran strike Qatar by April 30, 2026?",
+      "price_yes": 0.005,
+      "volume_24h": 8730.622727,
+      "liquidity": 18108.7065,
+      "end_date": "2026-04-30T00:00:00Z"
+    },
+    "will-a-gulf-state-carry-out-military-action-against-iran-by-april-30-2026": {
+      "slug": "will-a-gulf-state-carry-out-military-action-against-iran-by-april-30-2026",
+      "question": "Will a Gulf State carry out military action against Iran by April 30, 2026?",
+      "price_yes": 0.002,
+      "volume_24h": 8445.29,
+      "liquidity": 17797.72918,
+      "end_date": "2026-04-30T00:00:00Z"
+    },
+    "will-fewer-than-25-ships-transit-the-strait-of-hormuz-between-april-27-may-3": {
+      "slug": "will-fewer-than-25-ships-transit-the-strait-of-hormuz-between-april-27-may-3",
+      "question": "Will fewer than 25 ships transit the Strait of Hormuz between April 27-May 3?",
+      "price_yes": 0.021,
+      "volume_24h": 8044.329570000001,
+      "liquidity": 5811.88232,
+      "end_date": "2026-05-03T00:00:00Z"
+    },
+    "will-masoud-pezeshkian-be-head-of-state-in-iran-end-of-2026": {
+      "slug": "will-masoud-pezeshkian-be-head-of-state-in-iran-end-of-2026",
+      "question": "Will Masoud Pezeshkian be head of state in Iran end of 2026?",
+      "price_yes": 0.008,
+      "volume_24h": 7999.545454,
+      "liquidity": 57433.58906,
+      "end_date": "2026-12-31T00:00:00Z"
+    },
+    "will-mahmoud-ahmadinejad-be-head-of-state-in-iran-end-of-2026": {
+      "slug": "will-mahmoud-ahmadinejad-be-head-of-state-in-iran-end-of-2026",
+      "question": "Will Mahmoud Ahmadinejad be head of state in Iran end of 2026?",
+      "price_yes": 0.0215,
+      "volume_24h": 7570.620242,
+      "liquidity": 66500.15802,
+      "end_date": "2026-12-31T00:00:00Z"
+    },
+    "will-the-next-us-x-iran-diplomatic-meeting-be-on-may-6": {
+      "slug": "will-the-next-us-x-iran-diplomatic-meeting-be-on-may-6",
+      "question": "Will the next US x Iran diplomatic meeting be on May 6?",
+      "price_yes": 0.0075,
+      "volume_24h": 7482.012135,
+      "liquidity": 10539.23078,
+      "end_date": "2026-05-10T00:00:00Z"
+    },
+    "will-hassan-khomeini-be-head-of-state-in-iran-end-of-2026": {
+      "slug": "will-hassan-khomeini-be-head-of-state-in-iran-end-of-2026",
+      "question": "Will Hassan Khomeini be head of state in Iran end of 2026?",
+      "price_yes": 0.014,
+      "volume_24h": 7424.743529,
+      "liquidity": 64349.20031,
+      "end_date": "2026-12-31T00:00:00Z"
+    },
+    "will-jd-vance-have-a-diplomatic-meeting-with-iran-by-may-31-2026": {
+      "slug": "will-jd-vance-have-a-diplomatic-meeting-with-iran-by-may-31-2026",
+      "question": "Will JD Vance have a diplomatic meeting with Iran by May 31, 2026?",
+      "price_yes": 0.2,
+      "volume_24h": 7332.9311030000035,
+      "liquidity": 22863.7925,
+      "end_date": "2026-05-31T00:00:00Z"
+    },
+    "will-the-next-diplomatic-us-iran-meeting-be-in-switzerland-861": {
+      "slug": "will-the-next-diplomatic-us-iran-meeting-be-in-switzerland-861",
+      "question": "Will the next diplomatic US-Iran meeting be in Switzerland?",
+      "price_yes": 0.008,
+      "volume_24h": 7130.899893999999,
+      "liquidity": 10319.66613,
+      "end_date": "2026-06-30T00:00:00Z"
+    },
+    "will-mohammad-bagher-ghalibaf-be-head-of-state-in-iran-end-of-2026": {
+      "slug": "will-mohammad-bagher-ghalibaf-be-head-of-state-in-iran-end-of-2026",
+      "question": "Will Mohammad-Bagher Ghalibaf be head of state in Iran end of 2026?",
+      "price_yes": 0.0195,
+      "volume_24h": 6966.815453,
+      "liquidity": 56610.18393,
+      "end_date": "2026-12-31T00:00:00Z"
+    },
+    "will-60-ships-transit-the-strait-of-hormuz-on-any-day-by-april-30": {
+      "slug": "will-60-ships-transit-the-strait-of-hormuz-on-any-day-by-april-30",
+      "question": "Will 60 ships transit the Strait of Hormuz on any day by April 30?",
+      "price_yes": 0.0035,
+      "volume_24h": 6940.289999999999,
+      "liquidity": 6553.68616,
+      "end_date": "2026-04-30T00:00:00Z"
+    },
+    "will-mohammad-khatami-be-head-of-state-in-iran-end-of-2026": {
+      "slug": "will-mohammad-khatami-be-head-of-state-in-iran-end-of-2026",
+      "question": "Will Mohammad Khatami be head of state in Iran end of 2026?",
+      "price_yes": 0.0045,
+      "volume_24h": 6866.0,
+      "liquidity": 68183.3414,
+      "end_date": "2026-12-31T00:00:00Z"
+    },
+    "mojtaba-khamenei-leaves-iran-by-may-31-2026": {
+      "slug": "mojtaba-khamenei-leaves-iran-by-may-31-2026",
+      "question": "Mojtaba Khamenei leaves Iran by May 31, 2026?",
+      "price_yes": 0.031,
+      "volume_24h": 6620.284605,
+      "liquidity": 18055.63068,
+      "end_date": "2026-05-31T00:00:00Z"
+    },
+    "will-abbas-araghchi-be-head-of-state-in-iran-end-of-2026": {
+      "slug": "will-abbas-araghchi-be-head-of-state-in-iran-end-of-2026",
+      "question": "Will Abbas Araghchi be head of state in Iran end of 2026?",
+      "price_yes": 0.0215,
+      "volume_24h": 6510.0,
+      "liquidity": 68801.91184,
+      "end_date": "2026-12-31T00:00:00Z"
+    },
+    "will-ahmad-vahidi-be-head-of-state-in-iran-end-of-2026": {
+      "slug": "will-ahmad-vahidi-be-head-of-state-in-iran-end-of-2026",
+      "question": "Will Ahmad Vahidi be head of state in Iran end of 2026?",
+      "price_yes": 0.011,
+      "volume_24h": 6509.1,
+      "liquidity": 65341.43956,
+      "end_date": "2026-12-31T00:00:00Z"
+    },
+    "will-50-74-ships-transit-the-strait-of-hormuz-between-april-27-may-3": {
+      "slug": "will-50-74-ships-transit-the-strait-of-hormuz-between-april-27-may-3",
+      "question": "Will 50-74 ships transit the Strait of Hormuz between April 27-May 3?",
+      "price_yes": 0.2,
+      "volume_24h": 6357.125704,
+      "liquidity": 12223.1119,
+      "end_date": "2026-05-03T00:00:00Z"
+    },
+    "iran-agrees-to-end-enrichment-of-uranium-by-december-31": {
+      "slug": "iran-agrees-to-end-enrichment-of-uranium-by-december-31",
+      "question": "Iran agrees to end enrichment of uranium by December 31?",
+      "price_yes": 0.445,
+      "volume_24h": 6279.969102999999,
+      "liquidity": 40702.8413,
+      "end_date": "2026-12-31T00:00:00Z"
+    },
+    "will-the-next-us-x-iran-diplomatic-meeting-be-on-may-3": {
+      "slug": "will-the-next-us-x-iran-diplomatic-meeting-be-on-may-3",
+      "question": "Will the next US x Iran diplomatic meeting be on May 3?",
+      "price_yes": 0.001,
+      "volume_24h": 6249.2744999999995,
+      "liquidity": 18388.02323,
+      "end_date": "2026-05-10T00:00:00Z"
+    },
+    "will-the-next-diplomatic-us-iran-meeting-be-in-pakistan-295": {
+      "slug": "will-the-next-diplomatic-us-iran-meeting-be-in-pakistan-295",
+      "question": "Will the next diplomatic US-Iran meeting be in Pakistan?",
+      "price_yes": 0.664,
+      "volume_24h": 6207.13801,
+      "liquidity": 60926.80772,
+      "end_date": "2026-06-30T00:00:00Z"
+    },
+    "will-reza-pahlavi-be-head-of-state-in-iran-end-of-2026": {
+      "slug": "will-reza-pahlavi-be-head-of-state-in-iran-end-of-2026",
+      "question": "Will Reza Pahlavi be head of state in Iran end of 2026?",
+      "price_yes": 0.09,
+      "volume_24h": 5984.555855,
+      "liquidity": 78427.3132,
+      "end_date": "2026-12-31T00:00:00Z"
+    },
+    "will-the-next-us-x-iran-diplomatic-meeting-be-on-may-5": {
+      "slug": "will-the-next-us-x-iran-diplomatic-meeting-be-on-may-5",
+      "question": "Will the next US x Iran diplomatic meeting be on May 5?",
+      "price_yes": 0.0135,
+      "volume_24h": 5401.024791,
+      "liquidity": 17079.70323,
+      "end_date": "2026-05-10T00:00:00Z"
+    },
+    "will-the-next-diplomatic-us-iran-meeting-be-in-russia-252": {
+      "slug": "will-the-next-diplomatic-us-iran-meeting-be-in-russia-252",
+      "question": "Will the next diplomatic US-Iran meeting be in Russia?",
+      "price_yes": 0.0025,
+      "volume_24h": 5375.006998,
+      "liquidity": 22263.81278,
+      "end_date": "2026-06-30T00:00:00Z"
+    },
+    "will-the-next-us-x-iran-diplomatic-meeting-be-on-may-4": {
+      "slug": "will-the-next-us-x-iran-diplomatic-meeting-be-on-may-4",
+      "question": "Will the next US x Iran diplomatic meeting be on May 4?",
+      "price_yes": 0.0075,
+      "volume_24h": 5371.309802,
+      "liquidity": 12237.33452,
+      "end_date": "2026-05-10T00:00:00Z"
+    },
+    "iran-coup-attempt-by-june-30": {
+      "slug": "iran-coup-attempt-by-june-30",
+      "question": "Iran coup attempt by June 30?",
+      "price_yes": 0.115,
+      "volume_24h": 5306.901467000001,
+      "liquidity": 48309.2326,
+      "end_date": "2026-06-30T00:00:00Z"
+    },
+    "will-the-next-diplomatic-us-iran-meeting-be-in-qatar-436": {
+      "slug": "will-the-next-diplomatic-us-iran-meeting-be-in-qatar-436",
+      "question": "Will the next diplomatic US-Iran meeting be in Qatar?",
+      "price_yes": 0.0025,
+      "volume_24h": 5230.615213999999,
+      "liquidity": 17861.05683,
+      "end_date": "2026-06-30T00:00:00Z"
+    }
+  }
+}
