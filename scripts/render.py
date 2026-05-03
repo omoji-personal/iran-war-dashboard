@@ -515,10 +515,10 @@ def render_html(portfolio: dict, diffs: list[dict], history: list[dict], strippe
 
     # Footer link set differs by deploy:
     if stripped:
+        # Public deploy: only the (filtered, stripped) portfolio.yaml is exposed.
+        # Reference classes + LR table contain F-class entries — kept private.
         footer_links_html = (
-            '<a href="portfolio.yaml">Portfolio (YAML)</a>'
-            '<a href="reference_classes.yaml">Reference classes</a>'
-            '<a href="lr_table.yaml">LR table</a>'
+            '<a href="portfolio.yaml">Portfolio (YAML, public-stripped)</a>'
         )
     else:
         footer_links_html = (
@@ -543,7 +543,7 @@ def render_html(portfolio: dict, diffs: list[dict], history: list[dict], strippe
   <meta property="og:type" content="article" />
   <meta name="description" content="Daily predictive-agent brief on the 2026 Iran-US conflict. 32 questions, ICD-203 vocabulary, free public APIs only. Experimental — uncalibrated." />
   <link rel="stylesheet" href="dashboard.css" />
-  <link rel="canonical" href="https://iran-war-dashboard-murex.vercel.app/" />
+  <link rel="canonical" href="{esc('https://iran-war-public.vercel.app/' if stripped else 'https://iran-war-dashboard-murex.vercel.app/')}" />
 </head>
 <body class="agent-v2">
 

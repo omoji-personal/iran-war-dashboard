@@ -94,11 +94,41 @@ def main() -> int:
     src_css = REPO_ROOT / "dashboard.css"
     shutil.copy(src_css, OUTPUT_DIR / "dashboard.css")
 
-    # Copy the YAML data so Vercel's text/plain Content-Type header serves it readable
-    for f in ("portfolio.yaml", "lr_table.yaml", "reference_classes.yaml", "robots.txt"):
+    # Copy ONLY robots.txt — the YAML data files contain F-class
+    # (Iranfarhang / Kipa) entries that must not be served on the public deploy.
+    # If the public site needs to expose data, render filtered JSON via the
+    # render pipeline; never copy raw portfolio/lr/reference YAMLs.
+    for f in ("robots.txt",):
         src = REPO_ROOT / f
         if src.exists():
             shutil.copy(src, OUTPUT_DIR / f)
+
+    # Write a public-scoped portfolio.yaml that excludes F-categories — operator
+    # might still want a structured-data view of the public questions.
+    import yaml as _yaml
+    portfolio_data = _yaml.safe_load((REPO_ROOT / "portfolio.yaml").read_text(encoding="utf-8"))
+    PRIVATE = {"family_business_iranfarhang", "family_business_kipa"}
+    public_questions = [q for q in portfolio_data.get("questions", []) if q.get("category") not in PRIVATE]
+    # Scrub public-facing question payloads of any tag mentioning private channels
+    PRIVATE_TAGS = {"omid_personal", "iranfarhang_business", "kipa_business"}
+    for q in public_questions:
+        q["stakeholder_tags"] = [t for t in q.get("stakeholder_tags", []) if t not in PRIVATE_TAGS]
+    # Build a clean metadata block (drop F-class category counts + Iranfarhang/Kipa notes)
+    src_md = portfolio_data.get("metadata", {})
+    public_md = {
+        "engine_version": src_md.get("engine_version"),
+        "spec_version": src_md.get("spec_version"),
+        "last_full_review": str(src_md.get("last_full_review")) if src_md.get("last_full_review") else None,
+        "next_review": str(src_md.get("next_review")) if src_md.get("next_review") else None,
+        "total_questions": len(public_questions),
+        "public_view": True,
+        "note": "Public deploy. Private categories filtered out at build time.",
+    }
+    public_portfolio = {"questions": public_questions, "metadata": public_md}
+    (OUTPUT_DIR / "portfolio.yaml").write_text(
+        _yaml.safe_dump(public_portfolio, sort_keys=False, allow_unicode=True),
+        encoding="utf-8",
+    )
 
     # Ship a slim vercel.json into the bundle so headers + cleanUrls are correct
     vercel_cfg = (
