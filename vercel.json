@@ -1,11 +1,27 @@
 {
   "cleanUrls": true,
+  "rewrites": [
+    { "source": "/legacy", "destination": "/legacy/index.html" },
+    { "source": "/legacy/", "destination": "/legacy/index.html" }
+  ],
   "headers": [
     {
       "source": "/war-data.json",
       "headers": [
         { "key": "Cache-Control", "value": "no-cache, no-store, must-revalidate" },
         { "key": "Pragma", "value": "no-cache" }
+      ]
+    },
+    {
+      "source": "/index.html",
+      "headers": [
+        { "key": "Cache-Control", "value": "no-cache, no-store, must-revalidate" }
+      ]
+    },
+    {
+      "source": "/portfolio.yaml",
+      "headers": [
+        { "key": "Cache-Control", "value": "no-cache, no-store, must-revalidate" }
       ]
     },
     {

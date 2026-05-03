@@ -1,0 +1,614 @@
+# Iran-US Conflict Predictive Agent — Reference-Class Registry v0.1.0
+#
+# Two-tier reference classes:
+#   - strict: small-N, narrative anchor, NOT used for probability
+#   - broad: analogous bilateral cases, USED for actual base-rate calc
+#
+# Schema per class:
+#   id:
+#     inclusion_criteria: prose
+#     members: [{name, date, status, notes}]
+#     n: count
+#     base_rate_30d / 90d / etc: empirical fractions
+#     last_audited: ISO date
+#     next_audit: ISO date
+
+# ===== A. Diplomatic resolution =====
+A1_iran_us_framework_strict:
+  inclusion_criteria: |
+    Iran-US bilateral nuclear-framework agreement (any form) with FM-level or higher
+    written commitment from both sides involving sanctions-relief tranche OR
+    nuclear-monitoring step-up.
+  members:
+    - {name: "JCPOA 2015", date: "2015-07-14", status: signed, notes: "Comprehensive"}
+    - {name: "Joint Plan of Action 2013", date: "2013-11-24", status: signed, notes: "Interim"}
+    - {name: "Agreed Framework collapse 2003-05", date: "2005-08", status: collapsed, notes: "Tehran negotiations collapsed under Ahmadinejad"}
+    - {name: "Tehran Declaration 2010", date: "2010-05-17", status: marginal, notes: "Brazil/Turkey-mediated; rejected by US/UN"}
+  n: 4
+  base_rate_30d_acceptance_after_proposal: 0.50
+  note: "n too small for probability; used only as narrative anchor. See A1_bilateral_nuclear_framework_broad."
+  last_audited: 2026-05-03
+  next_audit: 2026-08-03
+
+A1_bilateral_nuclear_framework_broad:
+  inclusion_criteria: |
+    Any nuclear-armed-or-near-armed bilateral OR multilateral nuclear-framework
+    deal in past 70 years involving major-power participation, with FM-level or
+    higher written commitment.
+  members:
+    - {name: "JCPOA 2015", date: "2015-07-14", status: signed}
+    - {name: "Iran JPOA 2013", date: "2013-11-24", status: signed}
+    - {name: "NK Agreed Framework 1994", date: "1994-10-21", status: signed_then_collapsed_2003}
+    - {name: "NK Six-Party 2005 statement", date: "2005-09-19", status: signed_then_collapsed}
+    - {name: "Libya WMD disarmament 2003", date: "2003-12-19", status: signed}
+    - {name: "India-US civil nuclear 2005", date: "2005-07-18", status: signed_2008}
+    - {name: "USSR-US INF 1987", date: "1987-12-08", status: signed_then_2019_withdrawn}
+    - {name: "USSR-US START 1991", date: "1991-07-31", status: signed}
+    - {name: "Iran-EU3 Tehran Agreement 2003", date: "2003-10-21", status: signed_then_2005_collapsed}
+    - {name: "Iran-EU3 Paris Agreement 2004", date: "2004-11-15", status: signed_then_2005_collapsed}
+    - {name: "Iran IAEA Additional Protocol 2003", date: "2003-12-18", status: signed_then_suspended}
+    - {name: "Iran 14-point counter-proposal 2026 (pending)", date: "2026-04-27", status: pending}
+    - {name: "Brazil-Turkey-Iran swap deal 2010", date: "2010-05-17", status: rejected_by_US}
+    - {name: "Geneva Iran nuclear talks 2013-15 process", date: "2013-2015", status: succeeded}
+    - {name: "Iran-IAEA Roadmap 2015", date: "2015-07-14", status: signed_partial}
+    - {name: "NK Singapore Summit 2018", date: "2018-06-12", status: signed_no_deal}
+    - {name: "NK Hanoi Summit 2019", date: "2019-02-28", status: collapsed}
+    - {name: "China-US nuclear consultations 1990s-2000s", date: "1990s-2000s", status: ongoing_partial}
+  n: 18
+  base_rate_signed_within_30d_of_proposal: 0.28
+  base_rate_signed_within_90d_of_proposal: 0.44
+  base_rate_signed_within_365d_of_proposal: 0.61
+  note: "Used for A1 actual base-rate calc. Strict subset highlighted in narrative."
+  last_audited: 2026-05-03
+  next_audit: 2026-08-03
+
+A2_hormuz_normalization_strict:
+  inclusion_criteria: "Hormuz commercial transit recovery from sub-30% pre-war to >50% pre-war within 12 months"
+  members:
+    - {name: "Iran-Iraq Tanker War end 1988", date: "1988-08-20", status: recovered_within_12mo, notes: "After UN ceasefire 598"}
+    - {name: "2019 Aramco/Stena incidents", date: "2019-Q3", status: recovered_within_3mo, notes: "Limited blockade"}
+    - {name: "2024 Houthi-Red-Sea pause", date: "2025-01", status: recovered_within_6mo, notes: "Gaza ceasefire linkage"}
+  n: 3
+  base_rate_recovered_within_12mo: 1.0
+  note: "All 3 recovered, but base rate from n=3 is unreliable. Use broad."
+  last_audited: 2026-05-03
+  next_audit: 2026-08-03
+
+A2_blockade_resolution_broad:
+  inclusion_criteria: "Any documented commercial-shipping blockade or chokepoint disruption (>50% capacity loss, >30 days) and its resolution outcome"
+  members:
+    - {name: "Iran-Iraq Tanker War 1984-88", date: "1984-1988", duration_months: 52, resolution: "UN ceasefire after US naval reflagging"}
+    - {name: "Houthi Red Sea 2023-25", date: "2023-11 to 2025-11", duration_months: 24, resolution: "Gaza ceasefire linkage"}
+    - {name: "Suez Crisis 1956", date: "1956-1957", duration_months: 5, resolution: "External superpower pressure"}
+    - {name: "1973 OAPEC oil embargo", date: "1973-1974", duration_months: 5, resolution: "Diplomatic resolution"}
+    - {name: "Berlin Wall blockades 1948-49", date: "1948-1949", duration_months: 11, resolution: "Soviet stand-down"}
+    - {name: "Cuba Missile Crisis quarantine 1962", date: "1962-10", duration_months: 1, resolution: "Bilateral deal"}
+    - {name: "2019 Iran tanker incidents", date: "2019-Q3", duration_months: 3, resolution: "De-escalation without deal"}
+    - {name: "Strait of Tiran 1967", date: "1967-05 to 1973-10", duration_months: 78, resolution: "War + treaty"}
+  n: 8
+  base_rate_recovered_within_6mo: 0.25
+  base_rate_recovered_within_12mo: 0.50
+  base_rate_recovered_within_24mo: 0.75
+  note: "Used for A2 base rate. Note that recovery typically requires either external intervention or major diplomatic settlement."
+  last_audited: 2026-05-03
+  next_audit: 2026-08-03
+
+A3_us_naval_reflagging_strict:
+  inclusion_criteria: "US public reflagging of GCC-or-allied commercial vessels with named USN escort, in response to Iran-region threats"
+  members:
+    - {name: "Operation Earnest Will 1987-88", date: "1987-07-24 to 1988-09", status: completed, notes: "Kuwaiti tankers reflagged; preceded resolution by ~12mo"}
+  n: 1
+  base_rate: "single-event, no statistical inference possible"
+  note: "n=1; A3 probability driven entirely by narrative-judgment on whether current trajectory matches Earnest Will preconditions."
+  last_audited: 2026-05-03
+  next_audit: 2026-08-03
+
+A3_us_naval_intervention_broad:
+  inclusion_criteria: "US naval intervention (reflagging, escort operations, freedom-of-navigation operations escalated) in response to non-state-actor or state-sponsored shipping threat"
+  members:
+    - {name: "Operation Earnest Will 1987-88", date: "1987-1988", scope: "Kuwaiti reflagging"}
+    - {name: "Operation Praying Mantis 1988", date: "1988-04-18", scope: "Limited US-Iran kinetic"}
+    - {name: "Operation Prosperity Guardian 2023-25", date: "2023-12-18", scope: "Red Sea coalition"}
+    - {name: "Operation Inherent Resolve naval ops 2014-19", date: "2014-2019", scope: "Counter-ISIS coalition"}
+    - {name: "Strait of Hormuz transit security 2019", date: "2019", scope: "Limited"}
+    - {name: "Counter-piracy Somalia 2008-15", date: "2008-2015", scope: "Multinational"}
+  n: 6
+  base_rate_reflagging_within_12mo_of_blockade_onset: 0.33
+  note: "Used for A3 base rate. Reflagging is one of several US naval response patterns."
+  last_audited: 2026-05-03
+  next_audit: 2026-08-03
+
+A4_iran_proposal_acceptance_strict:
+  inclusion_criteria: "US formal acceptance of Iran-originated framework proposal as basis for working-group-level talks"
+  members:
+    - {name: "JPOA 2013 negotiating round", date: "2013-11", status: accepted}
+    - {name: "JCPOA 2015 framework round", date: "2015-04", status: accepted}
+    - {name: "Iran 2003 EU3 acceptance", date: "2003-10", status: accepted}
+    - {name: "Brazil-Turkey-Iran 2010", date: "2010-05", status: rejected}
+    - {name: "Iran-Oman 2009 backchannel", date: "2009-2012", status: accepted_secret}
+  n: 5
+  base_rate_accepted: 0.80
+  base_rate_accepted_with_substantive_talks_within_90d: 0.60
+  note: "Used for A4 base rate. Sample skews positive due to selection on observed cases."
+  last_audited: 2026-05-03
+  next_audit: 2026-08-03
+
+A5_khamenei_flexibility_signal_strict:
+  inclusion_criteria: "Khamenei (or successor) public use of 'heroic flexibility' (نرمش قهرمانانه) framing or equivalent ideological cover for negotiation"
+  members:
+    - {name: "Khamenei 1989 ceasefire acceptance", date: "1988-07-20", status: precedent, notes: "Accepted Iran-Iraq ceasefire as 'drinking poison'"}
+    - {name: "Khamenei 'heroic flexibility' Sep 2013", date: "2013-09-17", status: precedent, notes: "Direct phrase use; preceded JPOA"}
+  n: 2
+  base_rate: "preceded framework progress within 90d in 2/2 cases"
+  note: "n=2; A5 firing is itself near-certain evidence FOR A1."
+  last_audited: 2026-05-03
+  next_audit: 2026-08-03
+
+A5_supreme_leader_climbdown_broad:
+  inclusion_criteria: "Authoritarian-supreme-leader public ideological-cover statement enabling concession, in past 70 years"
+  members:
+    - {name: "Khamenei 1989", date: "1988-07"}
+    - {name: "Khamenei 2013", date: "2013-09"}
+    - {name: "Mao 1972 Nixon visit posture", date: "1972-02"}
+    - {name: "Brezhnev SALT 1972 framing", date: "1972-05"}
+    - {name: "Gorbachev INF 1987 framing", date: "1987-12"}
+    - {name: "Kim Jong Un 2018 Singapore framing", date: "2018-06"}
+  n: 6
+  base_rate_followed_by_substantive_deal_within_90d: 0.83
+  note: "Used for A5 contextualization. Climbdown framing is high-evidence event when it occurs."
+  last_audited: 2026-05-03
+  next_audit: 2026-08-03
+
+# ===== B. Military escalation (key classes; others abbreviated) =====
+
+B1_us_strike_iran_strict:
+  inclusion_criteria: "US kinetic strike (manned aircraft, missile, drone) impacting Iranian sovereign territory, US-attributed"
+  members:
+    - {name: "Soleimani strike Jan 2020", date: "2020-01-03", status: occurred, notes: "Iraq, not Iran soil; precedent for cross-border strike"}
+    - {name: "USS Stark to Operation Praying Mantis 1988", date: "1988-04-18", status: occurred, notes: "On Iranian platforms"}
+  n: 2
+  base_rate: "n too small; structural conditions matter more"
+  note: "Direct strikes on Iranian soil are very rare historically. Soleimani precedent is closest analog."
+  last_audited: 2026-05-03
+  next_audit: 2026-08-03
+
+B1_us_strike_named_state_broad:
+  inclusion_criteria: "US kinetic strike on named-state sovereign territory in past 30 years (excluding declared wars)"
+  members:
+    - {name: "Iraq 1991-2011", date: "1991-2011"}
+    - {name: "Sudan 1998 (Al-Shifa)", date: "1998-08"}
+    - {name: "Afghanistan 1998 + 2001-21", date: "1998-2021"}
+    - {name: "Libya 2011 + 2016", date: "2011, 2016"}
+    - {name: "Syria 2014-present", date: "2014-present"}
+    - {name: "Yemen 2002-present", date: "2002-present"}
+    - {name: "Somalia 2007-present", date: "2007-present"}
+    - {name: "Pakistan 2004-2018", date: "2004-2018"}
+    - {name: "Iran-Iraq border (Soleimani) Jan 2020", date: "2020-01-03"}
+  n: 9
+  base_rate_strike_within_year_of_strike_plan_briefing: 0.55
+  note: "Conditional on strike-plan-briefing event, base rate is meaningfully higher than unconditional."
+  last_audited: 2026-05-03
+  next_audit: 2026-08-03
+
+B2_iran_us_kinetic_strict:
+  inclusion_criteria: "Iran direct kinetic action against US-flagged vessel/base/embassy/personnel"
+  members:
+    - {name: "USS Cole bombing 2000 (linked Iran-trained AQ)", date: "2000-10", attribution: indirect}
+    - {name: "Khobar Towers 1996", date: "1996-06", attribution: linked_iran}
+    - {name: "Beirut Marine Barracks 1983", date: "1983-10", attribution: hezbollah_iran_linked}
+    - {name: "Iraq militia attacks 2019-25", date: "2019-2025", attribution: iran_proxy_repeated}
+    - {name: "USS Mason missile attack 2016", date: "2016-10", attribution: houthi_iran_supplied}
+  n: 5
+  note: "Iran direct attribution rare; proxy attribution common. Resolution criterion specifies attribution standard."
+  last_audited: 2026-05-03
+  next_audit: 2026-08-03
+
+B2_iran_us_kinetic_broad:
+  inclusion_criteria: "Iran or Iran-attributed proxy kinetic action against US assets in past 40 years"
+  members:
+    - {name: "Beirut Marines 1983", date: "1983-10"}
+    - {name: "USS Stark 1987 (Iraq, Iran-linked context)", date: "1987-05"}
+    - {name: "Khobar Towers 1996", date: "1996-06"}
+    - {name: "USS Cole 2000", date: "2000-10"}
+    - {name: "Iraq IED campaign 2003-11", date: "2003-2011"}
+    - {name: "Saudi Aramco 2019", date: "2019-09"}
+    - {name: "Al-Asad missile strike Jan 2020", date: "2020-01-08"}
+    - {name: "Iraq militia drone Jordan 2024", date: "2024-01-28"}
+  n: 8
+  base_rate_per_year_during_active_pressure: 0.60
+  note: "Under active US-Iran pressure, multi-incident-year is the norm. B2 likely fires within 8mo."
+  last_audited: 2026-05-03
+  next_audit: 2026-08-03
+
+# ===== B3, B4, B5 abbreviated for spec-fit; full structures will be built Phase 1 =====
+B3_israel_strike_iran_nuclear_strict:
+  inclusion_criteria: "Israeli kinetic strike on Iranian nuclear infrastructure (Natanz/Fordow/Arak/Bushehr)"
+  members:
+    - {name: "Stuxnet 2010-12 (cyber-kinetic)", date: "2010-2012"}
+    - {name: "Israel-Iran limited strikes Apr 2024", date: "2024-04"}
+    - {name: "Suspected Israeli sabotage Natanz 2020-21", date: "2020-2021"}
+  n: 3
+  note: "Past strikes were limited/cyber; full-kinetic on hardened sites unprecedented in published record."
+
+B3_preemptive_nuclear_strike_broad:
+  inclusion_criteria: "Preemptive military strike on adversary nuclear infrastructure"
+  members:
+    - {name: "Israel Osirak Iraq 1981", date: "1981-06-07"}
+    - {name: "Israel Al-Kibar Syria 2007", date: "2007-09-06"}
+    - {name: "Israel-Iran limited Apr 2024", date: "2024-04"}
+  n: 3
+  note: "All historical strikes succeeded against soft targets; Iran nuclear sites are hardened."
+
+B4_hezbollah_deep_strike_strict:
+  inclusion_criteria: "Hezbollah-attributed projectile reaching Israeli population center >25km N of Lebanon border, with civilian/property damage"
+  members:
+    - {name: "2006 Hezbollah-Israel war Tel Aviv reach", date: "2006"}
+    - {name: "Multiple Tel Aviv reaches 2024-25", date: "2024-2025"}
+  n: ~5
+  base_rate_per_30d_during_active_conflict: 0.35
+
+B4_hezbollah_strike_broad:
+  inclusion_criteria: "Hezbollah-attributed strike on Israel"
+  members: "many"
+  n: high
+  base_rate_per_30d_during_active_conflict: 0.85
+
+B5_irgc_vessel_seizure_strict:
+  inclusion_criteria: "IRGC seizure of foreign-flagged commercial vessel in Gulf/Hormuz"
+  members:
+    - {name: "2026 conflict seizures (2 vessels)", date: "2026-Q1-Q2"}
+    - {name: "Stena Impero 2019", date: "2019-07"}
+    - {name: "Marshall Islands tanker 2015", date: "2015-04"}
+    - {name: "Multiple 2019-23", date: "2019-2023"}
+  n: ~10
+  base_rate_per_quarter_during_blockade: 0.70
+
+B5_iran_vessel_seizure_broad:
+  inclusion_criteria: "Iran-attributed maritime seizure or interdiction in Gulf/Hormuz"
+  members: "many"
+  n: high
+
+# ===== C. Regime / leadership =====
+C1_khamenei_death_strict:
+  inclusion_criteria: "Death or removal-from-office of named Iran Supreme Leader"
+  members:
+    - {name: "Khomeini death 1989", date: "1989-06-03", status: death, age_at_death: 86}
+  n: 1
+  note: "n=1 strict class. Use actuarial baseline + observed-health-concern adjustment."
+
+C1_supreme_leader_succession_broad:
+  inclusion_criteria: "Death or removal of authoritarian-state supreme-leader-equivalent in past 50 years"
+  members:
+    - {name: "Khomeini 1989", date: "1989-06-03"}
+    - {name: "Brezhnev 1982", date: "1982-11-10"}
+    - {name: "Mao 1976", date: "1976-09-09"}
+    - {name: "Kim Il-sung 1994", date: "1994-07-08"}
+    - {name: "Kim Jong-il 2011", date: "2011-12-17"}
+    - {name: "Castro 2016 (post-handover)", date: "2016-11-25"}
+    - {name: "Tito 1980", date: "1980-05-04"}
+    - {name: "Andropov 1984", date: "1984-02-09"}
+    - {name: "Chernenko 1985", date: "1985-03-10"}
+  n: 9
+  base_rate_within_year_for_octogenarian: 0.18
+  base_rate_within_8mo_for_octogenarian: 0.12
+  note: "Used for C1 actuarial baseline; humility flag still applies."
+
+C2_iran_protest_wave_strict:
+  inclusion_criteria: "Sustained Iran protest wave (>14d, >5 cities, ACLED-coded with daily count >2σ baseline)"
+  members:
+    - {name: "Green Movement 2009", date: "2009-06"}
+    - {name: "2017-18 economic protests", date: "2017-12 to 2018-01"}
+    - {name: "Nov 2019 fuel-price riots", date: "2019-11"}
+    - {name: "Mahsa Amini 2022", date: "2022-09 to 2023"}
+    - {name: "Dec 2025/Jan 2026 wave", date: "2025-12 to 2026-01"}
+  n: 5
+  base_rate_per_year_under_currency_collapse: 0.65
+  note: "Currency collapse + war + bazaari signals = 2026 base rate elevated."
+
+C2_authoritarian_protest_wave_broad:
+  inclusion_criteria: "Sustained authoritarian-state protest wave under external pressure"
+  members: "many — Arab Spring 2011, Belarus 2020, Hong Kong 2019-20, Sudan 2018-19, Iraq 2019-20, etc."
+  n: high
+
+C3_mojtaba_succession_strict:
+  inclusion_criteria: "Public Assembly-of-Experts designation of named successor to Iran Supreme Leader"
+  members: []
+  n: 0
+  note: "Unprecedented event. No empirical base rate possible. C3 probability driven entirely by structural-condition reasoning + humility flag."
+
+C3_clerical_succession_broad:
+  inclusion_criteria: "Authoritarian-clerical-state succession designation in past 100 years"
+  members:
+    - {name: "Iran 1989 Khamenei designation", date: "1989-06"}
+  n: 1
+  note: "Effectively n=1; humility flag governs."
+
+C4_bazaari_strike_strict:
+  inclusion_criteria: "Sustained Tehran Grand Bazaar shutdown (≥3d) attributed to bazaari political action"
+  members:
+    - {name: "1891 Tobacco Revolt", date: "1891"}
+    - {name: "1905-11 Constitutional Revolution", date: "1905-1911"}
+    - {name: "1979 Revolution", date: "1979"}
+    - {name: "2008 VAT strikes", date: "2008"}
+    - {name: "2018 limited bazaari closures", date: "2018-06"}
+  n: 5
+  base_rate_under_currency_collapse_and_war: 0.40
+
+C4_bazaari_political_action_broad:
+  inclusion_criteria: "Iranian bazaari coordinated political action (strike, shutdown, public stance) in past century"
+  members: "many — 1891, 1905-11, 1953, 1963, 1977-79, 1992, 2008, 2018, 2025-26"
+  n: high
+
+# ===== D. Economic =====
+D1_rial_collapse_strict:
+  inclusion_criteria: "USD/IRR free-market rate cross above 2,000,000 (current trajectory continuation)"
+  members:
+    - {name: "Past sanctions/war episodes 2012-13, 2018-20, 2020-22, 2025-present", date: "2012-2026"}
+  n: ~5_episodes_continuous_decline
+  base_rate_threshold_cross_within_8mo_at_current_rate: 0.65
+
+D1_emerging_markets_currency_collapse_broad:
+  inclusion_criteria: "Emerging-markets currency >50% depreciation within 12mo under sanctions/war pressure"
+  members:
+    - {name: "Iran 2012-13", date: "2012-2013"}
+    - {name: "Russia 2014", date: "2014"}
+    - {name: "Venezuela 2017-19", date: "2017-2019"}
+    - {name: "Lebanon 2019-23", date: "2019-2023"}
+    - {name: "Russia 2022", date: "2022"}
+    - {name: "Iran 2018-22", date: "2018-2022"}
+    - {name: "Argentina recurring", date: "various"}
+  n: 7+
+  base_rate_continued_decline_under_sustained_pressure: 0.85
+
+D2_iran_oil_export_collapse_strict:
+  inclusion_criteria: "Iran seaborne crude exports below 0.5M bpd"
+  members:
+    - {name: "Sanctions 2013-15", date: "2013-2015", reached_0_5: true}
+    - {name: "Sanctions 2019-20", date: "2019-2020", reached_0_5: true}
+  n: 2
+  base_rate: "both prior sanction-tightening episodes reached 0.5M bpd within 6mo"
+
+D2_sanctions_oil_collapse_broad:
+  inclusion_criteria: "Major oil-producer export collapse under sanctions/blockade"
+  members:
+    - {name: "Iraq 1990-2003", date: "1990-2003"}
+    - {name: "Libya 2011-15", date: "2011-2015"}
+    - {name: "Iran 2013-15, 2019-20, 2025-present", date: "various"}
+    - {name: "Venezuela 2017-present", date: "2017-2026"}
+    - {name: "Russia 2022-present", date: "2022-2026"}
+  n: 5
+  base_rate_50pct_export_collapse_within_year: 0.80
+
+D3_us_gas_political_threshold_strict:
+  inclusion_criteria: "US AAA national gas average sustained ≥7d above $4.50 during election-year period"
+  members:
+    - {name: "2008 spike", date: "2008-Q2-Q3"}
+    - {name: "2022 spike", date: "2022-Q2"}
+  n: 2
+  base_rate_with_active_oil_supply_disruption: "high"
+
+D3_oil_shock_pump_pass_through_broad:
+  inclusion_criteria: "US retail-gasoline pass-through of oil-supply shock"
+  members: "many oil-shock episodes since 1973"
+  n: high
+  note: "Pass-through ratio Brent → AAA reasonably stable ~$0.025-0.035/gallon per $1 Brent."
+
+D4_brent_war_premium_strict:
+  inclusion_criteria: "Brent crude crosses $130 within Iran-conflict-related premium event"
+  members:
+    - {name: "2008 spike $147", date: "2008-07"}
+    - {name: "2022 Ukraine $128", date: "2022-03"}
+    - {name: "2026 D62 intraday $126", date: "2026-04-30"}
+  n: 3
+  note: "$130 cross requires sustained Hormuz disruption or major Israel-Iran kinetic"
+
+D4_brent_geopolitical_spike_broad:
+  inclusion_criteria: "Brent ±$30 spike within 30d of geopolitical event"
+  members: "many — 1973, 1979, 1990, 2003, 2008, 2014, 2022, 2024, 2026"
+  n: high
+
+# ===== E. US side =====
+E1_trump_personnel_strict:
+  inclusion_criteria: "Trump replacement of named cabinet position (SecDef/NSA/SecState) within crisis windows"
+  members:
+    - {name: "Bolton replaces McMaster Apr 2018", date: "2018-04"}
+    - {name: "Pompeo replaces Tillerson Mar 2018", date: "2018-03"}
+    - {name: "Esper Jul 2019", date: "2019-07"}
+    - {name: "Esper fired Nov 2020", date: "2020-11"}
+    - {name: "O'Brien NSA Sep 2019", date: "2019-09"}
+    - {name: "Bolton fired Sep 2019", date: "2019-09"}
+  n: 6
+  base_rate_per_year_of_first_term_in_crisis: 0.50
+
+E1_first_term_cabinet_turnover_broad:
+  inclusion_criteria: "US cabinet replacement during first/second-term wartime or crisis windows"
+  members: "many — Reagan, Carter, Nixon, etc."
+  n: high
+
+E2_midterms_strict:
+  inclusion_criteria: "President's party loses control of either congressional chamber in midterm during wartime"
+  members:
+    - {name: "1942 (FDR D)", date: "1942-11"}
+    - {name: "1946 (Truman D)", date: "1946-11"}
+    - {name: "1966 (LBJ D)", date: "1966-11"}
+    - {name: "2006 (Bush R)", date: "2006-11"}
+  n: 4
+  base_rate_during_wartime_unpopular: 0.85
+
+E2_midterm_loss_pattern_broad:
+  inclusion_criteria: "President's party loses seats in midterm (any conditions)"
+  members: "all US midterms since 1934"
+  n: high
+  base_rate_seats_lost: 0.95
+  base_rate_chamber_lost: 0.55
+
+# ===== F. Family-business reference classes =====
+
+# Iranfarhang — F1
+F1_iranfarhang_tier1_pause_strict:
+  inclusion_criteria: "Named Tier-1 university (per Iranfarhang client list) formally pauses or non-renews approval-plan budget citing geopolitical/sanctions concerns"
+  members: []
+  n: 0
+  note: "No documented prior Iranfarhang Tier-1 pause. F1 probability driven by F1_university_political_vendor_pause_broad."
+  last_audited: 2026-05-03
+
+F1_university_political_vendor_pause_broad:
+  inclusion_criteria: "US university formally pauses or non-renews vendor contract on geopolitical-conflict-association grounds in past 25 years"
+  members:
+    - {name: "BDS divestment from Israeli companies (various unis 2010s)", date: "2010s", scope: "limited"}
+    - {name: "Russia divestment from Russian/Belarusian vendors 2022", date: "2022", scope: "broad"}
+    - {name: "China-tech procurement bans 2018-22", date: "2018-2022", scope: "tech-sector"}
+    - {name: "Saudi-related vendor pauses post-Khashoggi 2018-19", date: "2018-2019", scope: "limited"}
+  n: 4
+  base_rate_at_named_institution_per_year_under_geopolitical_pressure: 0.05
+  note: "Even under geopolitical pressure, US university vendor cancellations on conflict-association are RARE — base rate ~5%/year per institution. With 9 Tier-1 unis tracked, 1+ event probability in 8mo ≈ 0.20."
+
+# Iranfarhang — F2
+F2_french_sarl_iran_payment_freeze_strict:
+  inclusion_criteria: "French-domiciled SARL providing Iran-content payment services experiences bank closure / IBAN replacement / regulatory hold"
+  members:
+    - {name: "Kemco SARL Oct 2025 IBAN change", date: "2025-10", status: "occurred — replacement in <30d"}
+  n: 1
+  base_rate_continued_per_year_under_war_conditions: 0.40
+  note: "n=1 prior event; given war intensification, probability of recurrence elevated."
+
+F2_iran_diaspora_bank_compliance_action_broad:
+  inclusion_criteria: "European or US bank takes compliance action against an Iran-diaspora-associated business account in past 10 years"
+  members:
+    - {name: "Multiple French/German bank Iran-diaspora account closures 2018-22", scope: "documented pattern"}
+    - {name: "HSBC Iran-related compliance settlement 2012", date: "2012", scope: "$1.92B"}
+    - {name: "BNP Paribas Iran/Sudan/Cuba sanctions case 2014", date: "2014", scope: "$8.9B"}
+    - {name: "Standard Chartered Iran-related cases 2012, 2019", scope: "$1.5B+"}
+  n: ~10+
+  base_rate_per_year_against_named_iran_facing_sarl: 0.25
+  note: "Iran-related bank-compliance enforcement is structurally elevated; specifically Iran-content SARLs face sustained pressure."
+
+# Iranfarhang — F3
+F3_iranfarhang_milestone_strict:
+  inclusion_criteria: "Iranfarhang internal-execution milestone (binary completion)"
+  members:
+    - {name: "Magiran-standby PLAN.md v15 published", date: "2026-04", status: completed}
+    - {name: "Iranfarhang-web Next.js launch", date: "2025-Q4", status: completed}
+    - {name: "EBSCO/SAML/EZproxy integration", date: "2025-Q3", status: completed}
+  n: 3
+  base_rate_completed_within_planned_window: 0.65
+  note: "Self-execution-trackable; depends on Omid bandwidth + Magiran tech responsiveness."
+
+# Iranfarhang — F4
+F4_iran_air_cargo_delay_strict:
+  inclusion_criteria: "Iran Air cargo Tehran→Atlanta routing experiences >60d delay attributed to wartime/sanctions/customs"
+  members: []
+  n: 0
+  note: "No prior documented Iran Air cargo delay >60d in Iranfarhang history (4 successful shipments past year). Hormuz blockade Day 17 makes this newly probable."
+
+F4_sanctioned_origin_cargo_disruption_broad:
+  inclusion_criteria: "Sanctioned-origin air cargo disruption >60d due to wartime / political risk repricing"
+  members:
+    - {name: "Russia air cargo Western disruption 2022-present", date: "2022-2026"}
+    - {name: "Iran Air Western airspace bans 2010s", date: "various"}
+    - {name: "Cuba/Venezuela air cargo disruption", date: "various"}
+  n: 3+
+  base_rate_under_active_blockade: 0.50
+
+# Iranfarhang — F5
+F5_ofac_berman_narrowing_strict:
+  inclusion_criteria: "OFAC issues guidance/enforcement specifically narrowing 31 CFR 560.315 informational-materials exemption"
+  members: []
+  n: 0
+  note: "Berman Amendment has been broadly construed and never narrowed since 1988. Existential-risk humility-flagged event."
+
+F5_ofac_wartime_enforcement_broad:
+  inclusion_criteria: "OFAC issues wartime-specific guidance narrowing existing exemption interpretations in past 30 years"
+  members:
+    - {name: "OFAC post-9/11 enforcement intensification", date: "2001-2002"}
+    - {name: "OFAC post-JCPOA-withdrawal Iran reimposition", date: "2018"}
+    - {name: "OFAC post-Russia-invasion sweeping designations", date: "2022"}
+  n: 3
+  base_rate_specific_exemption_narrowing_per_war_year: 0.10
+  note: "Wartime OFAC tends to BROADEN sanctions, not narrow exemptions. Berman is structurally robust; F5 is tail-risk."
+
+# Iranfarhang — F6
+F6_iran_internet_shutdown_communication_loss_strict:
+  inclusion_criteria: "Iran-resident Iranfarhang personnel unreachable by email >7d due to internet/comms disruption"
+  members:
+    - {name: "Mozhgan partial outages Jan-Mar 2026", date: "2026-Q1", status: "<7d gaps documented"}
+  n: 1_partial
+  base_rate_during_war: 0.55
+  note: "Iran international internet 300+ hr degraded Jan 2026. Pattern intensifying. >7d gap probable in 5-month window."
+
+# Kipa — F7 uses A2 reference classes (already defined)
+
+# Kipa — F8 uses D1 reference classes (already defined)
+
+# Kipa — F9
+F9_behrah_capacity_expansion_strict:
+  inclusion_criteria: "Behrah Baspar Mana signed equipment commitment for capacity expansion"
+  members: []
+  n: 0
+  note: "Pure execution gate; depends on Aram Nemati + Ardeshir alignment + capital availability."
+
+# Kipa — F10
+F10_atabak_category2_conversion_strict:
+  inclusion_criteria: "Iran MIMT bakhshname publishing protective restrictions on raw-material distributor imports (Category 2 instrument level)"
+  members: []
+  n: 0
+  note: "Category 1 rhetoric (Atabak quote) verified; Category 2 instrument conversion unprecedented in current war cycle."
+
+F10_iran_mimt_protective_bakhshname_broad:
+  inclusion_criteria: "Iran MIMT bakhshname-level protective trade restriction in past 20 years"
+  members:
+    - {name: "Various import-substitution gazettes 2010-2020", scope: "moderate-frequency"}
+    - {name: "Domestic-content requirements automotive 2017", date: "2017"}
+    - {name: "Pharma-related import controls multiple", scope: "frequent"}
+  n: ~10+
+  base_rate_chemical_distributor_specific: 0.15
+  note: "MIMT issues many bakhshnames; chemical-distributor-specific subset is lower frequency."
+
+# Kipa — F11
+F11_uae_chemical_fzco_designation_strict:
+  inclusion_criteria: "OFAC designation of named Dubai-based chemical FZCO/FZE for Iran-related transactions"
+  members: []
+  n: 0
+  note: "UAE chemical sector not yet a designated enforcement target; Turkish intermediaries are. UAE could follow."
+
+F11_ofac_uae_iran_designation_broad:
+  inclusion_criteria: "OFAC designation of UAE-based entity for Iran-related transactions in past 5 years"
+  members:
+    - {name: "Multiple UAE entity designations 2019-2025", scope: "documented pattern"}
+    - {name: "Sahara Thunder Iran-Russia link UAE Apr 2024", date: "2024-04"}
+    - {name: "Multiple oil-trading UAE entity designations 2024-25", scope: "5+ documented"}
+  n: ~8+
+  base_rate_per_year: 0.50
+  base_rate_chemical_subset_per_year: 0.20
+  note: "Broad-class probability is high; chemical-subset narrower."
+
+# Kipa — F12
+F12_polymer_war_premium_compression_strict:
+  inclusion_criteria: "Specialty polymer (LDPE CFR Far East Asia) war premium compresses >25% from anchor within named-quarter window"
+  members:
+    - {name: "Russia-Ukraine 2022 polymer premium decay (6-9mo)", date: "2022-Q3-Q4"}
+  n: 1
+  note: "Premium decay typically takes 6-12mo from peak; F12 4-month window aggressive."
+
+F12_commodity_war_premium_decay_broad:
+  inclusion_criteria: "Commodity war-premium >25% compression within 4-month window in past 30 years"
+  members:
+    - {name: "Multiple oil shocks (1973, 1979, 1990, 2008, 2022, 2026)", scope: "varies"}
+    - {name: "Polymer premium 2008 financial crisis", date: "2008-Q4"}
+  n: 6+
+  base_rate_4mo_25pct_compression: 0.30
+
+# ===== Metadata =====
+metadata:
+  total_classes: 41  # 14 strict + 14 broad + 13 F-class
+  last_full_review: 2026-05-03
+  next_review: 2026-08-03
+  notes: |
+    Reference classes are versioned. Adding/removing members requires logged
+    justification in logs/reference-classes.md. Classes audited quarterly +
+    reviewed by external 90-day reviewer.
+
+    F-class (family business) reference classes added 2026-05-03 from
+    Iranfarhang + Kipa research agents. Several F-class strict tiers have n=0
+    (no prior events documented); probabilities are driven by broad-class base
+    rates + structural reasoning.

@@ -1,0 +1,752 @@
+# Iran-US Conflict Predictive Agent — Question Portfolio v0.1.0
+# Schema: see docs/superpowers/specs/2026-05-03-predictive-agent-design.md §10
+#
+# Each question carries: id, category, question text, resolution_criterion, deadline,
+# baseline_class, reference_class refs, expiration_policy, stakeholder_tags,
+# successors_on_resolve_yes/no, current state (probability, CI, ICD-203, last_updated).
+#
+# Probabilities are MANUAL initial reads (operator first-pass) for Phase 0 MVP.
+# Phase 2+ will replace with ensemble outputs (Bayesian + baseline + market + expert).
+
+questions:
+  # ===== A. Diplomatic resolution =====
+  - id: A1
+    category: diplomatic_resolution
+    question: "Iran-US framework agreement signed (any form) by 2026-09-30"
+    resolution_criterion: |
+      YES on joint readout from State Dept + Iranian FM + at least one mediator
+      (Pakistan/Oman/Qatar) confirming a written framework with sanctions-relief
+      OR nuclear-monitoring components.
+    deadline: 2026-09-30
+    baseline_class: polymarket_or_broad_reference_class
+    reference_class_strict: A1_iran_us_framework_strict
+    reference_class_broad: A1_bilateral_nuclear_framework_broad
+    expiration_policy: agent_judgment_at_deadline
+    stakeholder_tags: [us_foreign_policy, iran_regime_survival, oil_energy_markets, omid_personal]
+    current_probability: 0.18
+    current_credible_interval_80: [0.08, 0.32]
+    current_icd203_label: very_unlikely
+    last_updated: 2026-05-03T06:00:00-04:00
+    notes: |
+      14-point counter-proposal in motion (D65). Trump reviewing "concept of deal."
+      Khamenei nuclear vow hardens red lines. Polymarket implied ~15-18%.
+    successors_on_resolve_yes:
+      - "Iran enriches above 60% within 90d of signing?"
+      - "US lifts first sanctions tranche by stated deadline?"
+      - "Israel publicly disowns deal within 30d?"
+      - "IAEA reports first compliance discrepancy within 180d?"
+    successors_on_resolve_no_or_expire:
+      - "Iran proposes second framework within 90d of A1 expiration?"
+      - "US escalates pressure (new sanctions tranche / strike) within 30d?"
+
+  - id: A2
+    category: diplomatic_resolution
+    question: "Hormuz commercial transit returns to >50% pre-war (>67 vessels/day, 7d MA) by 2026-12-31"
+    resolution_criterion: |
+      MarineTraffic/Spire AIS 7-day moving average of commercial transit through
+      Hormuz exceeds 67 vessels/day at any point between now and 2026-12-31.
+    deadline: 2026-12-31
+    baseline_class: ar
+    reference_class_strict: A2_hormuz_normalization_strict
+    reference_class_broad: A2_blockade_resolution_broad
+    expiration_policy: auto_resolve_no
+    stakeholder_tags: [oil_energy_markets, omid_personal, regional_security]
+    current_probability: 0.25
+    current_credible_interval_80: [0.12, 0.42]
+    current_icd203_label: unlikely
+    last_updated: 2026-05-03T06:00:00-04:00
+    notes: |
+      Currently ~7 vessels/day (5% of pre-war 135). Iran Hormuz Sovereignty Law
+      (12-article) advancing in parliament. Resolution requires either deal (A1)
+      or US naval reflagging (A3) or unilateral Iran step-back.
+    successors_on_resolve_yes:
+      - "Hormuz transit returns to >90% pre-war by 2027-03-31?"
+      - "Iran formally rescinds Hormuz Sovereignty Law within 60d?"
+    successors_on_resolve_no_or_expire:
+      - "Hormuz transit remains <30% pre-war through 2027-Q1?"
+
+  - id: A3
+    category: diplomatic_resolution
+    question: "US announces formal naval reflagging of GCC-flagged tankers transiting Hormuz by 2026-12-31"
+    resolution_criterion: |
+      Public US gov announcement (DoD or White House) of reflagging operation
+      analogous to Operation Earnest Will 1987-88, with named GCC-flagged vessels
+      and named USN escort assets.
+    deadline: 2026-12-31
+    baseline_class: reference_class
+    reference_class_strict: A3_us_naval_reflagging_strict
+    reference_class_broad: A3_us_naval_intervention_broad
+    expiration_policy: auto_resolve_no
+    stakeholder_tags: [us_foreign_policy, oil_energy_markets, regional_security]
+    current_probability: 0.12
+    current_credible_interval_80: [0.04, 0.25]
+    current_icd203_label: very_unlikely
+    last_updated: 2026-05-03T06:00:00-04:00
+    notes: |
+      Earnest Will took ~12 months to escalate. CENTCOM strike plan briefed (D63).
+      Reflagging would be the de-escalation alternative to strikes.
+    successors_on_resolve_yes:
+      - "Iran retaliates against reflagged vessel within 30d?"
+      - "Hormuz transit recovers to >50% within 60d of reflagging?"
+
+  - id: A4
+    category: diplomatic_resolution
+    question: "Iran 14-point counter-proposal becomes basis for substantive talks (joint working groups announced) by 2026-08-31"
+    resolution_criterion: |
+      Public announcement of US-Iran working groups (technical + political tracks)
+      with named participants, meeting cadence, and reference to the 14-point document
+      as the framework basis.
+    deadline: 2026-08-31
+    baseline_class: reference_class
+    reference_class_strict: A4_iran_proposal_acceptance_strict
+    reference_class_broad: A1_bilateral_nuclear_framework_broad
+    expiration_policy: agent_judgment_at_deadline
+    stakeholder_tags: [us_foreign_policy, iran_regime_survival, omid_personal]
+    current_probability: 0.22
+    current_credible_interval_80: [0.10, 0.38]
+    current_icd203_label: unlikely
+    last_updated: 2026-05-03T06:00:00-04:00
+    notes: |
+      Proposal active D65; Trump "reviewing concept" but "not satisfied."
+      Araghchi cancelled May 4 talks (per D64 update). Pakistani mediator track open.
+
+  - id: A5
+    category: diplomatic_resolution
+    question: "Khamenei publicly endorses negotiations using 'heroic flexibility' framing by 2026-12-31"
+    resolution_criterion: |
+      Khamenei (or, if dead/incapacitated, Mojtaba or Assembly of Experts spokesperson)
+      makes public statement using "heroic flexibility" (نرمش قهرمانانه) or equivalent
+      explicit ideological-cover framing for negotiation.
+    deadline: 2026-12-31
+    baseline_class: reference_class
+    reference_class_strict: A5_khamenei_flexibility_signal_strict
+    reference_class_broad: A5_supreme_leader_climbdown_broad
+    expiration_policy: auto_resolve_no
+    stakeholder_tags: [iran_regime_survival, us_foreign_policy]
+    current_probability: 0.10
+    current_credible_interval_80: [0.03, 0.22]
+    current_icd203_label: very_unlikely
+    last_updated: 2026-05-03T06:00:00-04:00
+    notes: |
+      Khamenei's Apr 30 nuclear vow points opposite direction. 1989 + 2013 precedent.
+      Reportedly recovering from severe burns; public appearances scarce.
+
+  # ===== B. Military escalation =====
+  - id: B1
+    category: military_escalation
+    question: "US conducts kinetic strike on Iranian sovereign territory by 2026-12-31"
+    resolution_criterion: |
+      US military strike (manned aircraft, missile, drone) impacting target
+      inside internationally-recognized Iranian territory, attributed by US gov
+      OR independently confirmed by ≥2 Tier-1 outlets.
+    deadline: 2026-12-31
+    baseline_class: polymarket_or_broad_reference_class
+    reference_class_strict: B1_us_strike_iran_strict
+    reference_class_broad: B1_us_strike_named_state_broad
+    expiration_policy: auto_resolve_no
+    stakeholder_tags: [us_foreign_policy, regional_security, oil_energy_markets, omid_personal]
+    current_probability: 0.20
+    current_credible_interval_80: [0.10, 0.35]
+    current_icd203_label: unlikely
+    last_updated: 2026-05-03T06:00:00-04:00
+    notes: |
+      CENTCOM "short and powerful" strike plan briefed to Trump (D63 update).
+      Polymarket implied 15-22% range. War Powers Resolution dynamics in play.
+    successors_on_resolve_yes:
+      - "Iran retaliates within 14d?"
+      - "Hormuz closure attempt within 7d?"
+      - "Brent +$30 within 14d?"
+      - "Trump approval rating drops >5pp within 30d?"
+    successors_on_resolve_no:
+      - "CENTCOM strike-plan briefing reported within Q3?"
+
+  - id: B2
+    category: military_escalation
+    question: "Iran conducts kinetic strike on US-flagged or US-base target by 2026-12-31"
+    resolution_criterion: |
+      Iranian (IRGC, Artesh, or attributed proxy) strike impacting US-flagged vessel,
+      US military base, US embassy, or US contractor with US presence, with
+      US-gov attribution OR independent ≥2-source confirmation.
+    deadline: 2026-12-31
+    baseline_class: ar_plus_reference_class
+    reference_class_strict: B2_iran_us_kinetic_strict
+    reference_class_broad: B2_iran_us_kinetic_broad
+    expiration_policy: auto_resolve_no
+    stakeholder_tags: [us_foreign_policy, regional_security, oil_energy_markets]
+    current_probability: 0.28
+    current_credible_interval_80: [0.15, 0.45]
+    current_icd203_label: unlikely
+    last_updated: 2026-05-03T06:00:00-04:00
+    notes: |
+      US KIA 15, US wounded 520, US aircraft 7 lost cumulative. Continued kinetic.
+      24-26d zero-attack streak suggests active de-escalation; could break.
+
+  - id: B3
+    category: military_escalation
+    question: "Israel strikes Iranian nuclear infrastructure (Natanz/Fordow/Arak) by 2026-12-31"
+    resolution_criterion: |
+      Israeli kinetic strike (manned aircraft or missile) impacting one or more of:
+      Natanz, Fordow, Arak, or other publicly-named nuclear-program facility,
+      attributed to Israel (Israeli gov claim OR independent ≥2-source confirmation).
+    deadline: 2026-12-31
+    baseline_class: reference_class
+    reference_class_strict: B3_israel_strike_iran_nuclear_strict
+    reference_class_broad: B3_preemptive_nuclear_strike_broad
+    expiration_policy: auto_resolve_no
+    stakeholder_tags: [regional_security, us_foreign_policy, oil_energy_markets]
+    current_probability: 0.15
+    current_credible_interval_80: [0.06, 0.30]
+    current_icd203_label: very_unlikely
+    last_updated: 2026-05-03T06:00:00-04:00
+    notes: |
+      Israeli independence score high; Netanyahu personal incentives for war = political oxygen.
+      Iran nuclear program reportedly degraded already.
+
+  - id: B4
+    category: military_escalation
+    question: "Hezbollah-attributed attack reaches Israeli population center >25km north of border by 2026-09-30"
+    resolution_criterion: |
+      Drone, rocket, or cruise missile attributed to Hezbollah (Israeli IDF or
+      independent attribution) impacts named population center >25km north of
+      Lebanon-Israel border, with civilian or property damage.
+    deadline: 2026-09-30
+    baseline_class: ar
+    reference_class_strict: B4_hezbollah_deep_strike_strict
+    reference_class_broad: B4_hezbollah_strike_broad
+    expiration_policy: auto_resolve_no
+    stakeholder_tags: [regional_security, oil_energy_markets]
+    current_probability: 0.30
+    current_credible_interval_80: [0.18, 0.45]
+    current_icd203_label: unlikely
+    last_updated: 2026-05-03T06:00:00-04:00
+    notes: |
+      Lebanon killed 2,659+ (D65). Hezbollah bleeding from IDF strikes.
+      Past 18mo: 4-5 Tel-Aviv-reaching attacks observed.
+
+  - id: B5
+    category: military_escalation
+    question: "IRGC seizes a third foreign-flagged commercial vessel in Gulf/Hormuz by 2026-09-30"
+    resolution_criterion: |
+      Public IRGC announcement OR ≥2 Tier-1 confirmed seizure of a 3rd
+      foreign-flagged commercial vessel in Gulf or Hormuz, beyond the
+      currently-published 2 vessels.
+    deadline: 2026-09-30
+    baseline_class: ar
+    reference_class_strict: B5_irgc_vessel_seizure_strict
+    reference_class_broad: B5_iran_vessel_seizure_broad
+    expiration_policy: auto_resolve_no
+    stakeholder_tags: [oil_energy_markets, omid_personal, regional_security]
+    current_probability: 0.55
+    current_credible_interval_80: [0.38, 0.72]
+    current_icd203_label: likely
+    last_updated: 2026-05-03T06:00:00-04:00
+    notes: |
+      Hormuz Sovereignty Law formalizes seizure regime. US Treasury warned shippers
+      against paying tolls. Pattern continues.
+
+  # ===== C. Regime / leadership =====
+  - id: C1
+    category: regime_leadership
+    question: "Khamenei dies or is publicly removed from office by 2026-12-31"
+    resolution_criterion: |
+      State-media or independent ≥2-source confirmation of death OR public
+      announcement of removal from office of Supreme Leader Ali Khamenei.
+    deadline: 2026-12-31
+    baseline_class: actuarial_plus_reference_class
+    reference_class_strict: C1_khamenei_death_strict
+    reference_class_broad: C1_supreme_leader_succession_broad
+    expiration_policy: auto_resolve_no
+    stakeholder_tags: [iran_regime_survival, us_foreign_policy, omid_personal]
+    humility_flag: true
+    humility_note: |
+      Model class (statistical conflict forecasting) has zero validated track record
+      on regime-fracture or leader-incapacity outcomes. Treat probability as
+      structurally uncertain. Actuarial baseline ~13%/year for 86-year-old male
+      → ~5%/8-month-window. +3pp adjustment for observed health concerns.
+    current_probability: 0.08
+    current_credible_interval_80: [0.03, 0.18]
+    current_icd203_label: very_unlikely
+    last_updated: 2026-05-03T06:00:00-04:00
+    notes: |
+      Reportedly recovering from severe burns. Awaiting prosthetic leg.
+      Public unseen since Feb 28. 14-15%/yr actuarial → ~5-7%/8mo. +humility-flag bump.
+    successors_on_resolve_yes:
+      - "Mojtaba succeeds within 90d?"
+      - "Faction war (rival public claim) within 30d?"
+      - "IRGC publicly endorses successor within 14d?"
+      - "Iran framework-deal probability shifts >20pp within 30d?"
+
+  - id: C2
+    category: regime_leadership
+    question: "Iran sustained protest wave (>14d, >5 cities, ACLED-coded) by 2026-12-31"
+    resolution_criterion: |
+      ACLED Iran Crisis Live coding documents protest activity in ≥5 named cities
+      sustained ≥14 consecutive days within the period, with daily event count
+      exceeding 30-day rolling baseline by ≥2σ.
+    deadline: 2026-12-31
+    baseline_class: ar
+    reference_class_strict: C2_iran_protest_wave_strict
+    reference_class_broad: C2_authoritarian_protest_wave_broad
+    expiration_policy: auto_resolve_no
+    stakeholder_tags: [iran_regime_survival, omid_personal]
+    current_probability: 0.45
+    current_credible_interval_80: [0.28, 0.62]
+    current_icd203_label: roughly_even_chance
+    last_updated: 2026-05-03T06:00:00-04:00
+    notes: |
+      Currency at record low (1.45M rial Dec 2025). Bonbast >8%/wk slides have
+      preceded every 2017/2019/2022/2025 wave. Highest historical-baseline period.
+
+  - id: C3
+    category: regime_leadership
+    question: "Mojtaba Khamenei publicly designated heir-apparent by Assembly of Experts by 2026-12-31"
+    resolution_criterion: |
+      Public statement from Assembly of Experts OR Office of the Supreme Leader
+      designating Mojtaba Khamenei as heir-apparent or anointed successor.
+    deadline: 2026-12-31
+    baseline_class: reference_class
+    reference_class_strict: C3_mojtaba_succession_strict
+    reference_class_broad: C3_clerical_succession_broad
+    expiration_policy: auto_resolve_no
+    stakeholder_tags: [iran_regime_survival]
+    humility_flag: true
+    humility_note: |
+      Model class has zero validated track record on succession-designation outcomes.
+      All published models failed to predict prior supreme-leader transitions.
+    current_probability: 0.06
+    current_credible_interval_80: [0.02, 0.15]
+    current_icd203_label: very_unlikely
+    last_updated: 2026-05-03T06:00:00-04:00
+    notes: |
+      Mojtaba "unconscious / face-burnt" reporting (Mar 2026, multiple outlets).
+      IRGC reportedly orchestrating succession but no public designation yet.
+
+  - id: C4
+    category: regime_leadership
+    question: "Sustained bazaari shutdown (>3d Tehran Grand Bazaar) by 2026-12-31"
+    resolution_criterion: |
+      ACLED + Iran Intl confirmed Tehran Grand Bazaar closure ≥3 consecutive days,
+      attributed to bazaari political action (not just security closure).
+    deadline: 2026-12-31
+    baseline_class: ar
+    reference_class_strict: C4_bazaari_strike_strict
+    reference_class_broad: C4_bazaari_political_action_broad
+    expiration_policy: auto_resolve_no
+    stakeholder_tags: [iran_regime_survival, omid_personal]
+    current_probability: 0.30
+    current_credible_interval_80: [0.15, 0.50]
+    current_icd203_label: unlikely
+    last_updated: 2026-05-03T06:00:00-04:00
+    notes: |
+      Bazaari = highest-signal protest type historically. 1891, 1905, 1979, 2008 precedent.
+      Currency collapse + war = both preconditions present. Iran Intl Dec 2025 reporting:
+      "the bazaar finally breaks."
+
+  # ===== D. Economic / structural =====
+  - id: D1
+    category: economic_structural
+    question: "USD/IRR bonbast rate exceeds 2,000,000 by 2026-12-31"
+    resolution_criterion: |
+      Bonbast.com or TGJU.org published USD/IRR free-market rate exceeds
+      2,000,000 IRR per USD on ≥3 consecutive days within the period.
+    deadline: 2026-12-31
+    baseline_class: ar_plus_oil_export_model
+    reference_class_strict: D1_rial_collapse_strict
+    reference_class_broad: D1_emerging_markets_currency_collapse_broad
+    expiration_policy: auto_resolve_no
+    stakeholder_tags: [iran_regime_survival, omid_personal]
+    current_probability: 0.65
+    current_credible_interval_80: [0.45, 0.82]
+    current_icd203_label: likely
+    last_updated: 2026-05-03T06:00:00-04:00
+    notes: |
+      Reached 1.45M Dec 2025. Iran oil storage 12-22d remaining (Kpler).
+      Trajectory points strongly higher absent deal. Highest single Iran signal.
+
+  - id: D2
+    category: economic_structural
+    question: "Iran oil exports fall below 0.5M bpd (Kpler 30d MA) by 2026-12-31"
+    resolution_criterion: |
+      Kpler-published 30-day moving average of Iran seaborne crude exports
+      falls below 0.5M bpd at any point between now and 2026-12-31.
+    deadline: 2026-12-31
+    baseline_class: ar
+    reference_class_strict: D2_iran_oil_export_collapse_strict
+    reference_class_broad: D2_sanctions_oil_collapse_broad
+    expiration_policy: auto_resolve_no
+    stakeholder_tags: [iran_regime_survival, oil_energy_markets, omid_personal]
+    current_probability: 0.45
+    current_credible_interval_80: [0.28, 0.65]
+    current_icd203_label: roughly_even_chance
+    last_updated: 2026-05-03T06:00:00-04:00
+    notes: |
+      Iran oil storage 12-22d remaining. Iran may need to cut 1.5M bpd by mid-May
+      (Kpler/Bloomberg D63). This forces export collapse.
+
+  - id: D3
+    category: economic_structural
+    question: "US gas national average (AAA) crosses $4.50 sustained 7+d by 2026-09-30"
+    resolution_criterion: |
+      AAA national gas-price average exceeds $4.50/gallon for ≥7 consecutive days
+      within the period.
+    deadline: 2026-09-30
+    baseline_class: ar
+    reference_class_strict: D3_us_gas_political_threshold_strict
+    reference_class_broad: D3_oil_shock_pump_pass_through_broad
+    expiration_policy: auto_resolve_no
+    stakeholder_tags: [us_foreign_policy, omid_personal]
+    current_probability: 0.50
+    current_credible_interval_80: [0.30, 0.70]
+    current_icd203_label: roughly_even_chance
+    last_updated: 2026-05-03T06:00:00-04:00
+    notes: |
+      Currently $4.45 (D65). +9% last week trend. Brent $108. Linear extrapolation
+      crosses $4.50 within 14d at current rate. Midterm political pressure.
+
+  - id: D4
+    category: economic_structural
+    question: "Brent crude crosses $130 by 2026-12-31"
+    resolution_criterion: |
+      Brent front-month futures settlement exceeds $130/bbl on ≥1 trading day
+      within the period.
+    deadline: 2026-12-31
+    baseline_class: oil_options_implied_plus_ar
+    reference_class_strict: D4_brent_war_premium_strict
+    reference_class_broad: D4_brent_geopolitical_spike_broad
+    expiration_policy: auto_resolve_no
+    stakeholder_tags: [oil_energy_markets, us_foreign_policy, omid_personal]
+    current_probability: 0.35
+    current_credible_interval_80: [0.18, 0.55]
+    current_icd203_label: unlikely
+    last_updated: 2026-05-03T06:00:00-04:00
+    notes: |
+      D62 hit $126 intraday. Currently $108. Hormuz closure scenario (B5+) →
+      $130-160. Option-implied approximately 30-40%.
+
+  # ===== E. US side =====
+  - id: E1
+    category: us_side
+    question: "Trump replaces SecDef, NSA, or SecState by 2026-09-30"
+    resolution_criterion: |
+      Public announcement of replacement of any of: Secretary of Defense,
+      National Security Advisor, Secretary of State.
+    deadline: 2026-09-30
+    baseline_class: reference_class
+    reference_class_strict: E1_trump_personnel_strict
+    reference_class_broad: E1_first_term_cabinet_turnover_broad
+    expiration_policy: auto_resolve_no
+    stakeholder_tags: [us_foreign_policy]
+    current_probability: 0.30
+    current_credible_interval_80: [0.18, 0.45]
+    current_icd203_label: unlikely
+    last_updated: 2026-05-03T06:00:00-04:00
+    notes: |
+      Personnel = policy. First-term: Bolton/Pompeo/etc replaced before JCPOA exit.
+      Hegseth public commitment to military option could fracture under stress.
+    successors_on_resolve_yes:
+      - "New appointee is dealmaker (Witkoff-class) vs hawk (Bolton-class)?"
+      - "Trump posture shifts on Iran within 30d of replacement?"
+
+  - id: E2
+    category: us_side
+    question: "Republican loses control of either chamber in Nov 2026 midterms"
+    resolution_criterion: |
+      Final certified results: Democrats (or any non-Republican coalition)
+      hold majority in House OR Senate after Nov 2026 election.
+    deadline: 2026-12-15
+    baseline_class: 538_plus_polymarket
+    reference_class_strict: E2_midterms_strict
+    reference_class_broad: E2_midterm_loss_pattern_broad
+    expiration_policy: auto_resolve_no
+    stakeholder_tags: [us_foreign_policy]
+    current_probability: 0.55
+    current_credible_interval_80: [0.40, 0.70]
+    current_icd203_label: likely
+    last_updated: 2026-05-03T06:00:00-04:00
+    notes: |
+      Midterms in ~550 days. Wartime midterms historically incumbent-unfavorable.
+      Gas-price + war fatigue dynamics.
+
+  # ===== F. Iranfarhang family business =====
+  - id: F1
+    category: family_business_iranfarhang
+    question: "At least one Tier-1 university (Stanford/Columbia/Yale/NYU/UChicago/Harvard/UPenn/Princeton/Berkeley) formally pauses or declines FY27 approval-plan budget renewal with Iranfarhang citing the conflict, by 2026-09-30"
+    resolution_criterion: |
+      Written email or PO non-renewal in the Iranfarhang corpus from a named Tier-1
+      institution citing Iran/conflict/sanctions concerns as basis for pause/decline.
+    deadline: 2026-09-30
+    baseline_class: reference_class
+    reference_class_strict: F1_iranfarhang_tier1_pause_strict
+    reference_class_broad: F1_university_political_vendor_pause_broad
+    expiration_policy: agent_judgment_at_deadline
+    stakeholder_tags: [omid_personal, iranfarhang_business]
+    current_probability: 0.20
+    current_credible_interval_80: [0.08, 0.38]
+    current_icd203_label: unlikely
+    last_updated: 2026-05-03T06:00:00-04:00
+    notes: |
+      18 active institutions; ~$310K/yr revenue. Berman Amendment exemption protects
+      legal basis. Risk is institutional-political, not legal. NYU's "no rush" stance
+      is current modal client posture (positive signal). FY27 renewals start ~Jul-Sep.
+    successors_on_resolve_yes:
+      - "Does the cancellation pattern spread to ≥3 institutions within 90d?"
+      - "Does Iranfarhang revenue fall below 70% of baseline by 2027 Q1?"
+
+  - id: F2
+    category: family_business_iranfarhang
+    question: "Kemco SARL banking relationship terminated, frozen, or requires additional IBAN re-issue (beyond Oct 2025) by 2026-12-31"
+    resolution_criterion: |
+      Hubert Le Mage email or French/correspondent bank notice indicating account
+      closure, regulatory hold, or compliance-driven IBAN replacement.
+    deadline: 2026-12-31
+    baseline_class: reference_class
+    reference_class_strict: F2_french_sarl_iran_payment_freeze_strict
+    reference_class_broad: F2_iran_diaspora_bank_compliance_action_broad
+    expiration_policy: auto_resolve_no
+    stakeholder_tags: [omid_personal, iranfarhang_business]
+    current_probability: 0.30
+    current_credible_interval_80: [0.15, 0.50]
+    current_icd203_label: unlikely
+    last_updated: 2026-05-03T06:00:00-04:00
+    notes: |
+      Single point of failure for entire payment rail. Already changed once Oct 2025.
+      Halle's German bank flagged "Shipped from Iran." No US bank account exists as backup.
+      Highest-leverage business risk per BI agent.
+    successors_on_resolve_yes:
+      - "Is alternate payment rail (US bank, Wise, alternate SARL) operational within 30d?"
+      - "Does any client refuse to pay through alternate rail?"
+
+  - id: F3
+    category: family_business_iranfarhang
+    question: "Frankfurt Magiran-standby-server operational (Phase 4 production-drill passed) by 2026-08-31"
+    resolution_criterion: |
+      Omid's session log + magiran-standby-server PLAN.md confirms Phase 4 drill pass
+      with named-non-Iran-resident operator successfully cutting over and reverting.
+    deadline: 2026-08-31
+    baseline_class: ar_plus_explicit_subjective
+    reference_class_strict: F3_iranfarhang_milestone_strict
+    reference_class_broad: null
+    expiration_policy: auto_resolve_no
+    stakeholder_tags: [omid_personal, iranfarhang_business]
+    current_probability: 0.50
+    current_credible_interval_80: [0.30, 0.70]
+    current_icd203_label: roughly_even_chance
+    last_updated: 2026-05-03T06:00:00-04:00
+    notes: |
+      Plan v15 stable (Codex round-5). Awaiting Magiran answers Q21-Q25 + O14a.
+      Self-execution-trackable (binary). Protects ~$70K Magiran revenue (14 unis × $5K).
+
+  - id: F4
+    category: family_business_iranfarhang
+    question: "Tehran→Atlanta cargo (Shipment #65 or later) delayed >60 days from intended send date due to Iran Air / Hormuz / customs by 2026-10-31"
+    resolution_criterion: |
+      Mozhgan email indicating shipment held, OR Atlanta non-receipt of expected
+      shipment >60d past intended send date with Iran-Air/Hormuz/customs cited cause.
+    deadline: 2026-10-31
+    baseline_class: ar_plus_reference_class
+    reference_class_strict: F4_iran_air_cargo_delay_strict
+    reference_class_broad: F4_sanctioned_origin_cargo_disruption_broad
+    expiration_policy: auto_resolve_no
+    stakeholder_tags: [omid_personal, iranfarhang_business]
+    current_probability: 0.45
+    current_credible_interval_80: [0.25, 0.65]
+    current_icd203_label: roughly_even_chance
+    last_updated: 2026-05-03T06:00:00-04:00
+    notes: |
+      Shipments #61-#64 completed in last year. Hormuz blockade Day 17 + 2,000 ships
+      stranded creates real (not theoretical) cargo risk. Iran Air aviation insurance
+      under wartime stress.
+
+  - id: F5
+    category: family_business_iranfarhang
+    question: "OFAC issues guidance/enforcement narrowing the informational-materials exemption (31 CFR 560.315) by 2026-12-31"
+    resolution_criterion: |
+      Federal Register notice, OFAC FAQ update, OFAC enforcement action, or
+      AAUP/AUPresses industry alert indicating narrowed Berman Amendment interpretation.
+    deadline: 2026-12-31
+    baseline_class: reference_class
+    reference_class_strict: F5_ofac_berman_narrowing_strict
+    reference_class_broad: F5_ofac_wartime_enforcement_broad
+    expiration_policy: auto_resolve_no
+    stakeholder_tags: [omid_personal, iranfarhang_business]
+    humility_flag: true
+    humility_note: "OFAC enforcement-action timing is structurally unpredictable. Treat as humility-flagged."
+    current_probability: 0.10
+    current_credible_interval_80: [0.03, 0.22]
+    current_icd203_label: very_unlikely
+    last_updated: 2026-05-03T06:00:00-04:00
+    notes: |
+      Berman Amendment has survived JCPOA withdrawal + 2017/2018 OFAC re-confirmation
+      letters on file. Wartime risk is non-zero but historically rare. Existential if it fires.
+
+  - id: F6
+    category: family_business_iranfarhang
+    question: "Mozhgan unreachable for >7 consecutive days at any point by 2026-09-30"
+    resolution_criterion: |
+      Gap of >7 consecutive days between outbound emails on mozhgan@iranfarhang.com
+      OR explicit communication-loss event reported.
+    deadline: 2026-09-30
+    baseline_class: ar
+    reference_class_strict: F6_iran_internet_shutdown_communication_loss_strict
+    reference_class_broad: null
+    expiration_policy: auto_resolve_no
+    stakeholder_tags: [omid_personal, iranfarhang_business]
+    current_probability: 0.55
+    current_credible_interval_80: [0.35, 0.75]
+    current_icd203_label: likely
+    last_updated: 2026-05-03T06:00:00-04:00
+    notes: |
+      Iran international internet 300+ hr degraded Jan 2026. March 2026 forced
+      "Update from Tehran" all-client crisis email. Pattern intensifying.
+      Single point of failure for sourcing. Father just passed Feb 2026.
+
+  # ===== F. Kipa family business =====
+  - id: F7
+    category: family_business_kipa
+    question: "Strait of Hormuz reopens to commercial container traffic >7 consecutive days by 2026-06-30"
+    resolution_criterion: |
+      Lloyd's List + Vessel Finder public traffic data confirm Bandar Abbas
+      inbound vessel counts >50% of pre-war baseline for 7 straight days.
+    deadline: 2026-06-30
+    baseline_class: ar
+    reference_class_strict: A2_hormuz_normalization_strict
+    reference_class_broad: A2_blockade_resolution_broad
+    expiration_policy: auto_resolve_no
+    stakeholder_tags: [omid_personal, kipa_business, oil_energy_markets]
+    current_probability: 0.20
+    current_credible_interval_80: [0.08, 0.38]
+    current_icd203_label: unlikely
+    last_updated: 2026-05-03T06:00:00-04:00
+    notes: |
+      Bandar Abbas is Kipa's single inbound chokepoint. If NO, Sibur Caspian route
+      becomes Phase-1 critical path. Tightly correlated with A2.
+    successors_on_resolve_yes:
+      - "Does Kipa book first Sinopec SIME shipment within 60d?"
+      - "Do Iranian PVC pipe customers (Tier-2 Rank-1) restart sourcing requests within 30d?"
+
+  - id: F8
+    category: family_business_kipa
+    question: "Iran's commercial/ICE FX rate crosses 2,000,000 IRR/USD by 2026-08-31"
+    resolution_criterion: |
+      bon-bast.com + alanchand.com cross-confirmed commercial/ICE rate exceeds
+      2,000,000 IRR per USD on ≥3 consecutive days.
+    deadline: 2026-08-31
+    baseline_class: ar_plus_oil_export_model
+    reference_class_strict: D1_rial_collapse_strict
+    reference_class_broad: D1_emerging_markets_currency_collapse_broad
+    expiration_policy: auto_resolve_no
+    stakeholder_tags: [omid_personal, kipa_business, iran_regime_survival]
+    current_probability: 0.55
+    current_credible_interval_80: [0.35, 0.75]
+    current_icd203_label: likely
+    last_updated: 2026-05-03T06:00:00-04:00
+    notes: |
+      90% of Kipa A/R deferred 2-4 mo in Rial. ICE rate crossing triggers Rial-receivables
+      emergency repricing protocol. Distinct from D1 (bonbast free-market rate); ICE is
+      the official-managed rate Kipa actually uses for chemical inputs.
+
+  - id: F9
+    category: family_business_kipa
+    question: "Behrah Baspar Mana achieves signed second-line cryogenic pulverizer commitment (LOI or equipment PO) by 2026-09-30"
+    resolution_criterion: |
+      Internal Kipa documentation (LOI signed by Aram Nemati or equipment PO) for
+      second cryogenic pulverizer line at Shamsabad Industrial Town.
+    deadline: 2026-09-30
+    baseline_class: explicit_subjective
+    reference_class_strict: null
+    reference_class_broad: null
+    expiration_policy: auto_resolve_no
+    stakeholder_tags: [omid_personal, kipa_business]
+    current_probability: 0.40
+    current_credible_interval_80: [0.20, 0.62]
+    current_icd203_label: unlikely
+    last_updated: 2026-05-03T06:00:00-04:00
+    notes: |
+      Behrah is Kipa's safest growth bet under Scenario C — sanctions-invariant,
+      domestic Rial sales to govt-paid contractors. Pure execution-trackable.
+
+  - id: F10
+    category: family_business_kipa
+    question: "Iran MIMT publishes bakhshname restricting raw-material imports to manufacturer-end-users by 2026-12-31"
+    resolution_criterion: |
+      Official-gazette publication + ntsw.ir filter behavior change + IRICA enforcement
+      signal indicating imports restricted to manufacturer-end-users (vs distributors).
+    deadline: 2026-12-31
+    baseline_class: reference_class
+    reference_class_strict: F10_atabak_category2_conversion_strict
+    reference_class_broad: F10_iran_mimt_protective_bakhshname_broad
+    expiration_policy: agent_judgment_at_deadline
+    stakeholder_tags: [omid_personal, kipa_business]
+    current_probability: 0.15
+    current_credible_interval_80: [0.05, 0.32]
+    current_icd203_label: very_unlikely
+    last_updated: 2026-05-03T06:00:00-04:00
+    notes: |
+      THE Atabak Category 1→Category 2 conversion test from V1 plan failure analysis.
+      If YES, V1 producer-service pivot suddenly correct. Existential thesis-test.
+      Per BI agent: rhetoric ≠ instrument; needs gazette publication.
+
+  - id: F11
+    category: family_business_kipa
+    question: "OFAC designates any Dubai-based chemical FZCO/FZE entity for Iran-related transactions by 2026-12-31"
+    resolution_criterion: |
+      OFAC Recent Actions feed lists a Dubai-based (UAE-registered) FZCO or FZE
+      with chemical/petroleum tag, designated for Iran-related transactions.
+    deadline: 2026-12-31
+    baseline_class: reference_class
+    reference_class_strict: F11_uae_chemical_fzco_designation_strict
+    reference_class_broad: F11_ofac_uae_iran_designation_broad
+    expiration_policy: auto_resolve_no
+    stakeholder_tags: [omid_personal, kipa_business]
+    current_probability: 0.30
+    current_credible_interval_80: [0.15, 0.50]
+    current_icd203_label: unlikely
+    last_updated: 2026-05-03T06:00:00-04:00
+    notes: |
+      Triggers AMAG re-architecture review. Recent enforcement frontier:
+      Turkish chemical intermediaries 2024-25. UAE could be next.
+      AMAG matches FinCEN June 2025 typology profile exactly.
+
+  - id: F12
+    category: family_business_kipa
+    question: "Polymer war premium (LDPE CFR Far East Asia) compresses >25% from 2026-04-01 anchor of $1,390-1,500/MT by 2026-08-31"
+    resolution_criterion: |
+      Polymerupdate or ChemOrbis published LDPE CFR Far East Asia falls below
+      $1,043/MT (25% below low end of $1,390 anchor) on ≥7 consecutive trading days.
+    deadline: 2026-08-31
+    baseline_class: oil_options_implied_plus_ar
+    reference_class_strict: F12_polymer_war_premium_compression_strict
+    reference_class_broad: F12_commodity_war_premium_decay_broad
+    expiration_policy: auto_resolve_no
+    stakeholder_tags: [omid_personal, kipa_business, oil_energy_markets]
+    current_probability: 0.30
+    current_credible_interval_80: [0.15, 0.50]
+    current_icd203_label: unlikely
+    last_updated: 2026-05-03T06:00:00-04:00
+    notes: |
+      If YES: inventory-at-peak risk crystallizes. Pause Tier-1 inventory build,
+      switch to back-to-back. If NO: working-capital scale-up accelerates.
+      LDPE +75% in 5 weeks current run.
+
+# ===== Portfolio metadata =====
+metadata:
+  engine_version: "0.2.0-rc1"
+  spec_version: v8
+  last_full_review: 2026-05-03
+  next_review: 2026-08-03
+  total_questions: 32
+  by_category:
+    diplomatic_resolution: 5
+    military_escalation: 5
+    regime_leadership: 4
+    economic_structural: 4
+    us_side: 2
+    family_business_iranfarhang: 6
+    family_business_kipa: 6
+  notes: |
+    F-questions added 2026-05-03 from Iranfarhang + Kipa research agents.
+    F1-F6 = Iranfarhang business consequences (Berman Amendment, Kemco rail,
+    Magiran standby, cargo, OFAC, Mozhgan continuity).
+    F7-F12 = Kipa business consequences (Hormuz, ICE FX, Behrah, MIMT bakhshname,
+    UAE OFAC, polymer premium).
+    User to confirm/edit/replace at first homepage review.
