@@ -23,7 +23,31 @@ REPO_ROOT = Path(__file__).resolve().parent.parent
 OUTPUT_DIR = REPO_ROOT / "public-dist"
 
 
+def _ensure_pyyaml() -> None:
+    """Vercel's Python build sandbox ships without pyyaml. Install it on first run."""
+    try:
+        import yaml  # noqa: F401
+        return
+    except ImportError:
+        pass
+    print("[build-public] installing pyyaml (Vercel sandbox dependency)", file=sys.stderr)
+    rc = subprocess.call(
+        [sys.executable, "-m", "pip", "install", "--quiet", "--disable-pip-version-check", "pyyaml"],
+        cwd=REPO_ROOT,
+    )
+    if rc != 0:
+        # Try with --user flag if global install fails (Vercel sandbox restrictions)
+        rc = subprocess.call(
+            [sys.executable, "-m", "pip", "install", "--quiet", "--disable-pip-version-check", "--user", "pyyaml"],
+            cwd=REPO_ROOT,
+        )
+    if rc != 0:
+        print(f"[build-public] pyyaml install failed (rc={rc})", file=sys.stderr)
+        sys.exit(rc)
+
+
 def main() -> int:
+    _ensure_pyyaml()
     print("[build-public] rendering homepage via scripts/render.py --public")
     rc = subprocess.call([sys.executable, "scripts/render.py", "--public"], cwd=REPO_ROOT)
     if rc != 0:

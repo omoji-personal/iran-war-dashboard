@@ -167,7 +167,7 @@ def first_sentence(text: str) -> str:
     return candidate
 
 
-def render_question_card(q: dict) -> str:
+def render_question_card(q: dict, stripped: bool = False) -> str:
     p = q["current_probability"]
     label, range_str, label_css = icd203(p)
     ci = q["current_credible_interval_80"]
@@ -185,10 +185,12 @@ def render_question_card(q: dict) -> str:
     flags = []
     if humility:
         flags.append('<span class="card-flag flag-humility" title="Model class has zero validated track record on this outcome type">HUMILITY</span>')
-    for tag in q.get("stakeholder_tags", []):
-        if tag == "omid_personal":
-            flags.append('<span class="card-flag flag-personal" title="Directly affects family business">PERSONAL</span>')
-            break
+    # PERSONAL flag is operator-private — never shown on the stripped public deploy
+    if not stripped:
+        for tag in q.get("stakeholder_tags", []):
+            if tag == "omid_personal":
+                flags.append('<span class="card-flag flag-personal" title="Directly affects family business">PERSONAL</span>')
+                break
 
     return f"""
       <article class="qcard qcard-{cat_css} qcard-prob-{label_css}" id="q-{q['id']}">
@@ -325,13 +327,15 @@ def render_top_question(q: dict, last_q_by_id: dict, history_present: bool) -> s
     """
 
 
-def render_headline_narrative(today: datetime, portfolio: dict) -> str:
+def render_headline_narrative(today: datetime, portfolio: dict, stripped: bool = False) -> str:
     """Compose the headline paragraph dynamically from current date + portfolio.
 
     Earlier version had hardcoded date/figure references. Now derives day numbers
     from a single fixed reference (D1=2026-02-28). Concrete numbers (Brent, gas,
-    casualty counts) are NOT in the headline — they age too fast. Operator notes
-    in `agent/memory.md` carry that detail and are visible in the agent-decision log.
+    casualty counts) are NOT in the headline — they age too fast.
+
+    Stripped (public deploy): scrub all personal/business references. The portfolio
+    passed in already has F-categories filtered out.
     """
     d = war_day(today)
     cf = cf_day(today)
@@ -340,7 +344,7 @@ def render_headline_narrative(today: datetime, portfolio: dict) -> str:
     # Top 3 highest-stakes questions to anchor narrative
     high_stakes = sorted(
         portfolio["questions"],
-        key=lambda q: -(len(q.get("stakeholder_tags", [])) + (1 if "omid_personal" in q.get("stakeholder_tags", []) else 0)),
+        key=lambda q: -len(q.get("stakeholder_tags", [])),
     )[:3]
     bullets = []
     for q in high_stakes:
@@ -350,16 +354,52 @@ def render_headline_narrative(today: datetime, portfolio: dict) -> str:
     cf_phrase = f"cease-fire Day {cf}" if cf > 0 else "active conflict"
     bd_phrase = f"Hormuz blockade Day {bd}" if bd > 0 else "Hormuz traffic open"
 
+    if stripped:
+        body = (
+            f"Three highest-stakes questions in the portfolio right now: "
+            f"{'; '.join(bullets)}. "
+            f"For current situational facts (oil price, gas, regime moves, news), see "
+            f"the daily probability-change log under <code>logs/probability-changes/</code> — "
+            f"refreshed each tick by a cron-driven Claude session that scrapes Polymarket "
+            f"and Manifold for prediction-market signals."
+        )
+    else:
+        body = (
+            f"Three highest-stakes questions in the portfolio right now: "
+            f"{'; '.join(bullets)}. "
+            f"Family-business questions (F-series) are tagged PERSONAL — those track "
+            f"consequences to Iranfarhang (US/UK university Persian-content distribution, "
+            f"~$310K/yr) and Kipa (Iran-UAE specialty-chemicals importer-distributor, "
+            f"~$10-12M/yr). For current situational facts (oil price, gas, regime moves, "
+            f"news), see <code>agent/memory.md</code> and "
+            f"<code>logs/events/{esc(today.strftime('%Y-%m-%d'))}.md</code> — those are "
+            f"refreshed each tick. Open <code>agent/operator-queue.md</code> to "
+            f"confirm/edit/replace any F-question whose framing is wrong."
+        )
+
     return f"""
       <section class="headline" role="region" aria-label="Today's headline">
         <div class="headline-eyebrow">Today's read · {esc(today_str)} · {esc(cf_phrase)} · {esc(bd_phrase)} · interpretation, not forecast</div>
         <p class="headline-lead"><span class="dropcap">D</span>{d} of the 2026 Iran-US conflict. Probabilities below are seeded from public reporting and operator judgment, then advanced daily by a cron-driven Claude session that ingests Polymarket + Manifold prediction-market signals and surfaces 24h diffs. The model is <em>uncalibrated</em> — no prediction has resolved yet, no Brier scores exist. Treat as structured scenario reasoning, not as forecasts.</p>
-        <p class="headline-body">Three highest-stakes questions in the portfolio right now: {'; '.join(bullets)}. Family-business questions (F-series) are tagged PERSONAL — those track consequences to Iranfarhang (US/UK university Persian-content distribution, ~$310K/yr) and Kipa (Iran-UAE specialty-chemicals importer-distributor, ~$10-12M/yr). For current situational facts (oil price, gas, regime moves, news), see <code>agent/memory.md</code> and <code>logs/events/{esc(today.strftime("%Y-%m-%d"))}.md</code> — those are refreshed each tick. Open <code>agent/operator-queue.md</code> to confirm/edit/replace any F-question whose framing is wrong.</p>
+        <p class="headline-body">{body}</p>
       </section>
     """
 
 
-def render_methodology() -> str:
+def render_methodology(stripped: bool = False) -> str:
+    if stripped:
+        return """
+      <section class="methodology" role="region" aria-label="Methodology and disclosures">
+        <h2 class="meth-h">Methodology + honesty disclosures</h2>
+        <ul class="meth-list">
+          <li><strong>EXPERIMENTAL — UNCALIBRATED.</strong> No prediction has resolved yet. Model has no validated track record. Brier scores against Polymarket / Manifold / AR baseline begin populating as resolutions accumulate.</li>
+          <li><strong>Two questions carry permanent humility flags</strong> (C1 Khamenei death, C3 Mojtaba succession). Every published statistical conflict-forecasting model has failed to predict regime-fracture / leader-incapacity events. Treat probabilities as structurally uncertain, not numeric.</li>
+          <li><strong>Free-only data sources.</strong> Polymarket Gamma + Manifold + optional Metaculus prediction-market signals. No paid feeds, no proprietary inputs.</li>
+          <li><strong>No trade output.</strong> Until 1-year Brier beats the relevant benchmark for the specific outcome class, no actionable trade signals are surfaced.</li>
+          <li>Methodology grounded in published forecasting literature (Tetlock superforecasting, IARPA HFC, Mueller-Rauh ConflictForecast, ICD-203 vocabulary, Pearl-style theory-of-change DAGs).</li>
+        </ul>
+      </section>
+    """
     return """
       <section class="methodology" role="region" aria-label="Methodology and disclosures">
         <h2 class="meth-h">Methodology + honesty disclosures</h2>
@@ -396,8 +436,9 @@ def render_logs_section() -> str:
     """
 
 
-def render_question_board(by_cat: dict) -> str:
-    parts = ['<section class="board" role="region" aria-label="Question portfolio"><h2 class="board-h">Question portfolio · 32 questions</h2>']
+def render_question_board(by_cat: dict, stripped: bool = False) -> str:
+    total = sum(len(qs) for qs in by_cat.values())
+    parts = [f'<section class="board" role="region" aria-label="Question portfolio"><h2 class="board-h">Question portfolio · {total} questions</h2>']
     for cat_id, (num, title, css) in CATEGORY.items():
         if cat_id not in by_cat:
             continue
@@ -409,7 +450,7 @@ def render_question_board(by_cat: dict) -> str:
               <span class="board-cat-count">{len(by_cat[cat_id])} questions</span>
             </header>
             <div class="board-grid">
-              {"".join(render_question_card(q) for q in by_cat[cat_id])}
+              {"".join(render_question_card(q, stripped=stripped) for q in by_cat[cat_id])}
             </div>
           </div>
         """)
@@ -417,20 +458,42 @@ def render_question_board(by_cat: dict) -> str:
     return "\n".join(parts)
 
 
+# Categories that contain personal/business content — stripped from public deploy
+PRIVATE_CATEGORIES = {"family_business_iranfarhang", "family_business_kipa"}
+
+
 def render_html(portfolio: dict, diffs: list[dict], history: list[dict], stripped: bool = False) -> str:
     today = datetime.now(timezone.utc)
     today_iso = today.strftime("%Y-%m-%d")
     next_tick_local = "Daily 06:00 ET (next tomorrow morning)"
 
+    # Stripped public deploy excludes private/personal/business questions entirely
+    questions_for_view = [
+        q for q in portfolio["questions"]
+        if not stripped or q["category"] not in PRIVATE_CATEGORIES
+    ]
+    # Stripped portfolio passed to renderers as if it were the full portfolio
+    portfolio_view = {**portfolio, "questions": questions_for_view}
+
+    # Stripped diffs: drop any diff for a private question
+    diffs_for_view = [
+        d for d in diffs
+        if not stripped or d.get("id", "") not in {q["id"] for q in portfolio["questions"] if q["category"] in PRIVATE_CATEGORIES}
+    ]
+
     by_cat: dict[str, list[dict]] = {}
-    for q in portfolio["questions"]:
+    for q in questions_for_view:
         by_cat.setdefault(q["category"], []).append(q)
 
     # last_q_by_id: portfolio snapshot from yesterday-or-prior
     prior = [h for h in history if h.get("date") and h["date"] < today_iso]
     last_q_by_id = {q.get("id"): q for q in (prior[-1].get("questions", []) if prior else [])}
 
-    top_q = max(portfolio["questions"], key=lambda q: topness(q, last_q_by_id))
+    # Top question: filtered to public set if stripped
+    if questions_for_view:
+        top_q = max(questions_for_view, key=lambda q: topness(q, last_q_by_id))
+    else:
+        top_q = portfolio["questions"][0]
 
     title_base = "2026 Iran Conflict — Predictive Agent"
     title = title_base + (" (Public)" if stripped else "")
@@ -444,9 +507,29 @@ def render_html(portfolio: dict, diffs: list[dict], history: list[dict], strippe
     if bd > 0:
         issue_subline += f" · blockade Day {bd}"
 
-    # Public-stripped: drop methodology + logs sections (more compact)
-    methodology_html = "" if stripped else render_methodology()
+    # Public-stripped: keep a SCRUBBED methodology (no operator-queue / portfolio.yaml refs);
+    # drop the eight-logs section entirely (those reference internal Markdown logs not
+    # user-facing).
+    methodology_html = render_methodology(stripped=stripped)
     logs_html = "" if stripped else render_logs_section()
+
+    # Footer link set differs by deploy:
+    if stripped:
+        footer_links_html = (
+            '<a href="portfolio.yaml">Portfolio (YAML)</a>'
+            '<a href="reference_classes.yaml">Reference classes</a>'
+            '<a href="lr_table.yaml">LR table</a>'
+        )
+    else:
+        footer_links_html = (
+            '<a href="docs/superpowers/specs/2026-05-03-predictive-agent-design.md">Design spec (v8)</a>'
+            '<a href="docs/audits/AUDIT-2026-05-03.md">Audit</a>'
+            '<a href="docs/CRON-WORKFLOW.md">Cron workflow</a>'
+            '<a href="portfolio.yaml">Portfolio (YAML)</a>'
+            '<a href="reference_classes.yaml">Reference classes</a>'
+            '<a href="lr_table.yaml">LR table</a>'
+            '<a href="/legacy">Legacy dashboard</a>'
+        )
 
     return f"""<!DOCTYPE html>
 <html lang="en" dir="ltr">
@@ -504,13 +587,13 @@ def render_html(portfolio: dict, diffs: list[dict], history: list[dict], strippe
       <div class="masthead-rule"></div>
     </header>
 
-    {render_diff_panel(diffs, history)}
+    {render_diff_panel(diffs_for_view, history)}
 
     {render_top_question(top_q, last_q_by_id, history_present=bool(prior))}
 
-    {render_headline_narrative(today, portfolio)}
+    {render_headline_narrative(today, portfolio_view, stripped=stripped)}
 
-    {render_question_board(by_cat)}
+    {render_question_board(by_cat, stripped=stripped)}
 
     {logs_html}
 
@@ -522,16 +605,10 @@ def render_html(portfolio: dict, diffs: list[dict], history: list[dict], strippe
     <div class="agent-footer-inner">
       <div class="agent-footer-l">
         <div class="agent-footer-brand">2026 IRAN-US CONFLICT PREDICTIVE AGENT</div>
-        <div class="agent-footer-meta">Daily structured scenario analysis · cron-driven · experimental · uncalibrated · $0/yr</div>
+        <div class="agent-footer-meta">Daily structured scenario analysis · cron-driven · experimental · uncalibrated</div>
       </div>
       <div class="agent-footer-r">
-        <a href="docs/superpowers/specs/2026-05-03-predictive-agent-design.md">Design spec (v8)</a>
-        <a href="docs/audits/AUDIT-2026-05-03.md">Audit</a>
-        <a href="docs/CRON-WORKFLOW.md">Cron workflow</a>
-        <a href="portfolio.yaml">Portfolio (YAML)</a>
-        <a href="reference_classes.yaml">Reference classes</a>
-        <a href="lr_table.yaml">LR table</a>
-        <a href="/legacy">Legacy dashboard</a>
+        {footer_links_html}
       </div>
     </div>
   </footer>
