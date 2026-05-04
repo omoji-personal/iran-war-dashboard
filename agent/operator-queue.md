@@ -34,6 +34,50 @@ upgrades when:
 **Agent recommendation:** transition Phase 0 → Phase 1 within 14d of MVP launch
 to avoid the model staying in operator-driven mode indefinitely.
 
+## 2026-05-04 — C1 resolution candidate — Ali Khamenei death confirmation
+
+Multiple Tier-1 sources (Al Jazeera, Iran International, Times of Israel, NPR) confirm Ali Khamenei
+died ~March 1, 2026; Mojtaba Khamenei became Supreme Leader March 12, 2026.
+
+C1 question: "Khamenei dies or is publicly removed from office by 2026-12-31"
+
+**Resolution appears: YES** (death reported March 1, 2026)
+
+But C1 was set May 3, 2026 (after reported death) at 8% — possibly operator is tracking Mojtaba as
+the ongoing "Khamenei" subject, or resolution has not yet been applied.
+
+**Operator action required:**
+1. Confirm C1 resolves YES with resolution_date 2026-03-01 in portfolio.yaml; OR
+2. Confirm that C1 is intentionally tracking Mojtaba Khamenei going forward (amend question text).
+Also review A5 notes for accuracy (references pre-death Khamenei statements).
+
+---
+
+## 2026-05-04 — C3 resolution candidate — Mojtaba Khamenei leadership status
+
+C3 question: "Mojtaba Khamenei publicly designated heir-apparent by Assembly of Experts by 2026-12-31"
+
+If C1 resolves YES, Mojtaba was elevated directly to Supreme Leader (not heir-apparent). The C3
+resolution criterion may have been met in spirit (public designation by AoE), but the question text
+says "heir-apparent" not "supreme leader."
+
+**Agent recommendation:** Resolve C3 YES (elevation by AoE is a superset of designation as heir),
+and replace with new question: "Will Mojtaba Khamenei consolidate full IRGC/bazaari loyalty by Dec 31, 2026?"
+
+**Operator action required:** Confirm C3 resolution + decide on successor question.
+
+---
+
+## 2026-05-04 — D3 approaching $4.50 threshold — monitor
+
+D3 question: "US gas national average (AAA) crosses $4.50 sustained 7+d by 2026-09-30"
+
+Current AAA: $4.457 (May 4). Gap: $0.043. Trend: +$0.34/week.
+
+**Operator action:** No portfolio change yet. Monitor daily. Alert when sustained 7+ days above $4.50.
+
+---
+
 ## 2026-05-03 — Free-only operating constraint (CONFIRMED by user)
 
 User specified: agent runs under existing Claude subscription. RemoteTrigger
