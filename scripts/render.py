@@ -194,7 +194,7 @@ def render_question_card(q: dict, stripped: bool = False) -> str:
 
     flags = []
     if humility:
-        flags.append('<span class="card-flag flag-humility" title="Model class has zero validated track record on this outcome type">HUMILITY</span>')
+        flags.append('<span class="card-flag flag-humility" title="This kind of event is historically very hard to forecast — treat the number as a placeholder, read the rationale instead">HUMILITY</span>')
     # PERSONAL flag is operator-private — never shown on the stripped public deploy
     if not stripped:
         for tag in q.get("stakeholder_tags", []):
@@ -229,6 +229,15 @@ def render_question_card(q: dict, stripped: bool = False) -> str:
     """
 
 
+def _human_date(iso_date: str) -> str:
+    """Render YYYY-MM-DD as 'Mon D' (e.g. 'May 3'). Falls back to ISO on parse error."""
+    try:
+        d = datetime.strptime(iso_date, "%Y-%m-%d")
+        return d.strftime("%b %d").replace(" 0", " ")
+    except (ValueError, TypeError):
+        return iso_date
+
+
 def render_diff_panel(diffs: list[dict], history: list[dict]) -> str:
     today_iso = datetime.now(timezone.utc).strftime("%Y-%m-%d")
     prior = [h for h in history if h.get("date") and h["date"] < today_iso and _is_v02_snapshot(h)]
@@ -242,11 +251,11 @@ def render_diff_panel(diffs: list[dict], history: list[dict]) -> str:
         </section>
         """
     if not diffs:
-        last_date = prior[-1]["date"]
+        last_date = _human_date(prior[-1]["date"])
         return f"""
         <section class="diff-panel diff-empty" role="region" aria-label="What changed since the last update">
           <h2 class="diff-h">What changed since the last update</h2>
-          <p class="diff-empty-msg">No probability moves above the noise floor since {esc(last_date)}. Quiet day. The questions worth watching are unchanged.</p>
+          <p class="diff-empty-msg">No probability moves on the question cards since {esc(last_date)}. The <em>"What's most likely to keep being true"</em> section below has the freshest read on the situation; the card values update when the questions are formally revised.</p>
         </section>
         """
     items = []
@@ -328,7 +337,7 @@ def render_top_question(q: dict, last_q_by_id: dict, history_present: bool) -> s
         if last_p is not None and abs(q["current_probability"] - last_p) > 0.001:
             d_pp = (q["current_probability"] - last_p) * 100
             arrow = "▲" if d_pp > 0 else "▼"
-            delta_text = f' · <span class="topq-delta">{arrow} {d_pp:+.1f}pp since last tick</span>'
+            delta_text = f' · <span class="topq-delta">{arrow} {d_pp:+.1f}pp since last update</span>'
 
     return f"""
       <section class="topq topq-{css}" role="region" aria-label="Today's top question">
@@ -358,8 +367,6 @@ def render_headline_narrative(today: datetime, portfolio: dict, stripped: bool =
     passed in already has F-categories filtered out.
     """
     d = war_day(today)
-    cf = cf_day(today)
-    bd = blockade_day(today)
     today_str = today.strftime("%B %d, %Y").replace(" 0", " ")
     # Top 3 highest-stakes questions to anchor narrative
     high_stakes = sorted(
@@ -371,8 +378,9 @@ def render_headline_narrative(today: datetime, portfolio: dict, stripped: bool =
         label, _, _ = icd203(q["current_probability"])
         bullets.append(f"<strong>{esc(q['id'])}</strong> ({esc(label)}, {round(q['current_probability']*100)}%) — {esc(q['question'])}")
 
-    cf_phrase = f"cease-fire Day {cf}" if cf > 0 else "active conflict"
-    bd_phrase = f"Hormuz blockade Day {bd}" if bd > 0 else "Hormuz traffic open"
+    # Eyebrow used to carry "cease-fire Day N · Hormuz blockade Day M" but those
+    # numeric counters lock in a steady-state framing that gets stale fast.
+    # The base case paragraph (rendered below) carries the current read.
 
     if stripped:
         body = (
@@ -395,8 +403,8 @@ def render_headline_narrative(today: datetime, portfolio: dict, stripped: bool =
 
     return f"""
       <section class="headline" role="region" aria-label="Today's headline">
-        <div class="headline-eyebrow">Today's read · {esc(today_str)} · {esc(cf_phrase)} · {esc(bd_phrase)} · interpretation, not forecast</div>
-        <p class="headline-lead"><span class="dropcap">D</span>{d} of the 2026 Iran-US conflict. The questions below are scored from a daily reading of public news and prediction-market prices. None have resolved yet, so the probabilities have no track record — treat them as structured guesses, not predictions.</p>
+        <div class="headline-eyebrow">Today's read · {esc(today_str)} · interpretation, not forecast</div>
+        <p class="headline-lead"><span class="dropcap">D</span>ay {d} of the 2026 Iran-US conflict. The questions below are scored from a daily reading of public news and prediction-market prices. None have resolved yet, so the probabilities have no track record — treat them as structured guesses, not predictions.</p>
         <p class="headline-body">{body}</p>
       </section>
     """
@@ -439,7 +447,7 @@ def render_base_case(portfolio: dict, stripped: bool = False) -> str:
     if last_updated is not None:
         # YAML may parse as date or string
         last_updated_str = last_updated.isoformat() if hasattr(last_updated, "isoformat") else str(last_updated)
-    eyebrow_extra = f" · last revised {esc(last_updated_str)}" if last_updated_str else ""
+    eyebrow_extra = f" · last revised {esc(_human_date(last_updated_str))}" if last_updated_str else ""
     # Preserve operator-line breaks but escape for safety
     paragraphs = [esc(p.strip()) for p in text.split("\n\n") if p.strip()]
     if not paragraphs:
@@ -447,7 +455,7 @@ def render_base_case(portfolio: dict, stripped: bool = False) -> str:
     body_html = "".join(f"<p class=\"basecase-body\">{p}</p>" for p in paragraphs)
     return f"""
       <section class="basecase" role="region" aria-label="Most-likely scenario">
-        <div class="basecase-eyebrow">Most-likely scenario · operator's modal forecast{eyebrow_extra}</div>
+        <div class="basecase-eyebrow">The most likely path forward{eyebrow_extra}</div>
         <h2 class="basecase-h">What's most likely to keep being true</h2>
         {body_html}
         <p class="basecase-foot">Each topic below leads with the questions sitting closest to this base case, then shows the lower-probability scenarios that would break it.</p>
@@ -586,13 +594,10 @@ def render_html(portfolio: dict, diffs: list[dict], history: list[dict], strippe
     description_text = f"Daily-updated probability brief on {n_questions_visible} questions about the 2026 Iran-US conflict. Experimental — no track record yet."
 
     d = war_day(today)
-    cf = cf_day(today)
-    bd = blockade_day(today)
-    issue_subline = f"D{d}"
-    if cf > 0:
-        issue_subline += f" · cease-fire Day {cf}"
-    if bd > 0:
-        issue_subline += f" · blockade Day {bd}"
+    issue_subline = f"Day {d}"
+    # Cease-fire / blockade day counters were removed from the masthead — they
+    # imply a steady-state count that's misleading once the situation shifts.
+    # The "most-likely scenario" paragraph below carries the live read.
 
     # Public-stripped: keep a SCRUBBED methodology (no operator-queue / portfolio.yaml refs);
     # drop the eight-logs section entirely (those reference internal Markdown logs not
@@ -649,7 +654,7 @@ def render_html(portfolio: dict, diffs: list[dict], history: list[dict], strippe
   <main class="agent-page" role="main" aria-label="Predictive Agent Brief">
 
     <header class="agent-masthead" role="banner" aria-label="Issue masthead">
-      <div class="masthead-class">FOR ANALYTIC PURPOSES · UNCLASSIFIED MODEL OUTPUT · OPERATOR-DRIVEN</div>
+      <div class="masthead-class">For analytic reading · Probability brief, not advice</div>
       <div class="masthead-row">
         <div class="masthead-l">
           <div class="masthead-eyebrow">Issue · {esc(issue_subline)}</div>
@@ -663,13 +668,13 @@ def render_html(portfolio: dict, diffs: list[dict], history: list[dict], strippe
       <div class="masthead-rule"></div>
     </header>
 
-    {render_diff_panel(diffs_for_view, history)}
-
-    {render_top_question(top_q, last_q_by_id, history_present=bool(prior))}
-
     {render_headline_narrative(today, portfolio_view, stripped=stripped)}
 
     {render_base_case(portfolio_view, stripped=stripped)}
+
+    {render_diff_panel(diffs_for_view, history)}
+
+    {render_top_question(top_q, last_q_by_id, history_present=bool(prior))}
 
     {render_question_board(by_cat, stripped=stripped)}
 

@@ -28,7 +28,7 @@ questions:
     current_icd203_label: very_unlikely
     last_updated: 2026-05-03T06:00:00-04:00
     notes: |
-      14-point counter-proposal in motion (D65). Trump reviewing "concept of deal."
+      14-point counter-proposal in motion (May 3). Trump reviewing "concept of deal."
       Khamenei nuclear vow hardens red lines. Polymarket implied ~15-18%.
     successors_on_resolve_yes:
       - "Iran enriches above 60% within 90d of signing?"
@@ -83,7 +83,7 @@ questions:
     current_icd203_label: very_unlikely
     last_updated: 2026-05-03T06:00:00-04:00
     notes: |
-      Earnest Will took ~12 months to escalate. CENTCOM strike plan briefed (D63).
+      Earnest Will took ~12 months to escalate. CENTCOM strike plan briefed May 1.
       Reflagging would be the de-escalation alternative to strikes.
     successors_on_resolve_yes:
       - "Iran retaliates against reflagged vessel within 30d?"
@@ -107,8 +107,8 @@ questions:
     current_icd203_label: unlikely
     last_updated: 2026-05-03T06:00:00-04:00
     notes: |
-      Proposal active D65; Trump "reviewing concept" but "not satisfied."
-      Araghchi cancelled May 4 talks (per D64 update). Pakistani mediator track open.
+      Proposal active since May 3; Trump "reviewing concept" but "not satisfied."
+      Araghchi cancelled May 4 talks (per May 2 readout). Pakistani mediator track open.
 
   - id: A5
     category: diplomatic_resolution
@@ -150,7 +150,7 @@ questions:
     current_icd203_label: unlikely
     last_updated: 2026-05-03T06:00:00-04:00
     notes: |
-      CENTCOM "short and powerful" strike plan briefed to Trump (D63 update).
+      CENTCOM "short and powerful" strike plan briefed to Trump (May 1 reporting).
       Polymarket implied 15-22% range. War Powers Resolution dynamics in play.
     successors_on_resolve_yes:
       - "Iran retaliates within 14d?"
@@ -220,7 +220,7 @@ questions:
     current_icd203_label: unlikely
     last_updated: 2026-05-03T06:00:00-04:00
     notes: |
-      Lebanon killed 2,659+ (D65). Hezbollah bleeding from IDF strikes.
+      Lebanon killed 2,659+ (May 3). Hezbollah bleeding from IDF strikes.
       Past 18mo: 4-5 Tel-Aviv-reaching attacks observed.
 
   - id: B5
@@ -381,7 +381,7 @@ questions:
     last_updated: 2026-05-03T06:00:00-04:00
     notes: |
       Iran oil storage 12-22d remaining. Iran may need to cut 1.5M bpd by mid-May
-      (Kpler/Bloomberg D63). This forces export collapse.
+      (Kpler/Bloomberg May 1). This forces export collapse.
 
   - id: D3
     category: economic_structural
@@ -400,7 +400,7 @@ questions:
     current_icd203_label: roughly_even_chance
     last_updated: 2026-05-03T06:00:00-04:00
     notes: |
-      Currently $4.45 (D65). +9% last week trend. Brent $108. Linear extrapolation
+      Currently $4.45 (May 3). +9% last week trend. Brent $108. Linear extrapolation
       crosses $4.50 within 14d at current rate. Midterm political pressure.
 
   - id: D4
@@ -420,7 +420,7 @@ questions:
     current_icd203_label: unlikely
     last_updated: 2026-05-03T06:00:00-04:00
     notes: |
-      D62 hit $126 intraday. Currently $108. Hormuz closure scenario (B5+) →
+      Apr 30 hit $126 intraday. Currently $108. Hormuz closure scenario (B5+) →
       $130-160. Option-implied approximately 30-40%.
 
   # ===== E. US side =====
@@ -533,8 +533,9 @@ questions:
     current_icd203_label: roughly_even_chance
     last_updated: 2026-05-03T06:00:00-04:00
     notes: |
-      Plan v15 stable (Codex round-5). Awaiting Magiran answers Q21-Q25 + O14a.
-      Self-execution-trackable (binary). Protects ~$70K Magiran revenue (14 unis × $5K).
+      Disaster-recovery server plan converged after seven revisions. Awaiting answers
+      from Magiran on five open infrastructure questions before going operational.
+      Protects roughly $70K of Magiran revenue across 14 universities ($5K each).
 
   - id: F4
     category: family_business_iranfarhang
@@ -685,9 +686,10 @@ questions:
     current_icd203_label: very_unlikely
     last_updated: 2026-05-03T06:00:00-04:00
     notes: |
-      THE Atabak Category 1→Category 2 conversion test from V1 plan failure analysis.
-      If YES, V1 producer-service pivot suddenly correct. Existential thesis-test.
-      Per BI agent: rhetoric ≠ instrument; needs gazette publication.
+      The decisive test for whether Iran's protectionist rhetoric becomes a binding
+      regulation. If yes, Kipa's strategy needs to pivot toward producer-service.
+      Rhetoric alone doesn't trigger this; the question resolves on official-gazette
+      publication of an enforceable instrument.
 
   - id: F11
     category: family_business_kipa
