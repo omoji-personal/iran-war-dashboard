@@ -755,7 +755,18 @@ def render_question_board(by_cat: dict, stripped: bool = False, lang: str = "en"
     board_h = _t("board_h_template", lang).format(n=n_display)
     board_sub_html = f'<p class="board-sub">{_t("board_sub", lang)}</p>'
     notice = _t("translation_in_progress_notice", lang)
-    notice_html = f'<p class="board-translation-notice" dir="auto">{esc(notice)}</p>' if notice else ""
+    # Only render the notice if there's actually missing translation in the
+    # questions about to be shown (any visible Q without `question_fa` for fa).
+    needs_notice = False
+    if lang == "fa" and notice:
+        for cat_qs in by_cat.values():
+            for q in cat_qs:
+                if not q.get("question_fa"):
+                    needs_notice = True
+                    break
+            if needs_notice:
+                break
+    notice_html = f'<p class="board-translation-notice" dir="auto">{esc(notice)}</p>' if needs_notice else ""
     parts = [
         f'<section class="board" role="region" aria-label="{esc(board_h)}">'
         f'<h2 class="board-h">{esc(board_h)}</h2>',
