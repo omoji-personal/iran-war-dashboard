@@ -748,45 +748,52 @@ metadata:
     us_side: 2
     family_business_iranfarhang: 6
     family_business_kipa: 6
-  # Modal forecast / base case — one prose paragraph describing the future
-  # that gets the most probability mass. The questions below are the ways
-  # this base case could break.
-  # Editable by hand; the renderer surfaces this above the question board.
-  # `base_case_narrative` is shown on the private (family-shared) deploy.
-  # `base_case_narrative_public` is shown on the public deploy and must drop
-  # any family-business specifics.
-  base_case_narrative: |
-    The ceasefire is now formally in question after Iran's May 4 missile
-    barrage on UAE infrastructure broke the 27-day zero-attack streak.
-    Trump won't say whether the ceasefire is still in effect; CENTCOM is
-    escorting tankers through Hormuz under "Project Freedom" while Araghchi
-    flies to Beijing in search of a diplomatic exit. Base-case for the
-    next 30 days: limited tit-for-tat continues — UAE-style targeting and
-    small-craft skirmishes inside Hormuz, not a full kinetic war. Brent
-    holds around $110–120 with a war-premium tail. The 14-point proposal
-    stays on the table but neither side closes. Iran's rial keeps
-    weakening; oil exports keep grinding lower. Khamenei stays sparse on
-    state TV with no formal succession announcement. Iranfarhang books
-    keep clearing through the Berman Amendment exemption; Kipa keeps
-    importing through the AMAG-Dubai corridor though the Hormuz delays
-    bite harder. The questions below are the named ways this base case
-    could break in either direction — toward de-escalation, or toward
-    a wider regional war.
-  base_case_narrative_public: |
-    The ceasefire is now formally in question after Iran's May 4 missile
-    barrage on UAE infrastructure broke the 27-day zero-attack streak.
-    Trump won't say whether the ceasefire is still in effect; CENTCOM is
-    escorting tankers through Hormuz under "Project Freedom" while Iran's
-    foreign minister flies to Beijing in search of a diplomatic exit.
-    Base-case for the next 30 days: limited tit-for-tat continues — UAE-
-    style targeting and small-craft skirmishes inside Hormuz, not a full
-    kinetic war. Brent holds around $110–120 with a war-premium tail.
-    The 14-point proposal stays on the table but neither side closes.
-    The rial keeps weakening; oil exports keep grinding lower. Khamenei
-    stays sparse on state TV; no formal succession announcement. The
-    questions below are the named ways this base case could break — either
-    toward de-escalation, or toward a wider regional war.
-  base_case_last_updated: 2026-05-05
+  # ---- i18n editorial sections ----
+  # Two visitor-facing prose sections render above the question board:
+  #   1) economic_war_frame — the editorial framing (why the page exists)
+  #   2) base_case — the modal forecast (what's most likely)
+  # Both have `en` + `fa` variants. `base_case` additionally has a `public`
+  # field per language for the stripped public deploy (drops family-business
+  # specifics). Renderer falls back to English on missing Persian.
+
+  economic_war_frame:
+    en:
+      title: "The frame: this is mostly an economic war, with calibrated kinetic shocks"
+      body: |
+        Neither Tehran nor Washington wants a full shooting war — both have decided it would cost more than either could win. So the slow game is economic. But "slow" doesn't mean "quiet": Iran's May 4 missile barrage on UAE infrastructure and the IRGC's anti-ship missiles at a U.S. destroyer showed that both sides will throw calibrated kinetic strikes when the economic squeeze gets uncomfortable. The frame is not "no fighting"; it is "fighting kept below the threshold that triggers full war."
+
+        Iran's lever is the Strait of Hormuz. Keep it half-closed, and oil prices stay elevated, Trump pays a domestic political bill in gas-pump prices and midterm polling, and U.S. allies in the Gulf get nervous enough to pressure Washington toward concessions.
+
+        The U.S. lever is the sanctions architecture and naval pressure. Keep both tight, and Iran's rial weakens, oil exports grind lower, the storage crisis forces production cuts, and Tehran pays the bill in street pressure and currency collapse.
+
+        Both sides currently believe they can outlast the other's economic pain, which is why the May 3 fourteen-point counter-proposal hasn't moved. Whoever blinks first concedes the negotiating points. The risk to the frame is a miscalculation — a strike that crosses a line and forces the other side to escalate beyond what either intended.
+      map_to_questions: |
+        The diplomatic and economic cards (A and D) measure who's blinking. The kinetic cards (B) measure the risk that one side miscalculates and the frame breaks toward full war. The regime cards (C) measure Iranian internal pressure. The U.S.-side cards (E) measure Trump's political pressure.
+    fa:
+      title: "چارچوب: این عمدتاً یک جنگ اقتصادی است، با ضربه‌های نظامیِ کالیبره‌شده"
+      body: |
+        نه تهران و نه واشنگتن خواهان یک جنگ تمام‌عیار نیستند — هر دو به این نتیجه رسیده‌اند که هزینه‌اش بیش از دستاوردی است که می‌توانند به‌دست آورند. پس بازی کند، اقتصادی است. اما «کند» به معنای «ساکت» نیست: حملهٔ موشکی ۴ مه ایران به زیرساخت‌های امارات و موشک‌های ضدکشتیِ سپاه به سمت ناوشکن آمریکایی نشان داد که هر دو طرف وقتی فشار اقتصادی ناخوشایند شود، به ضربه‌های نظامیِ کالیبره‌شده دست می‌زنند. چارچوب «بدون درگیری» نیست؛ «درگیری زیر آستانه‌ای که جنگ تمام‌عیار را تحریک می‌کند» است.
+
+        اهرم ایران تنگهٔ هرمز است. اگر تنگه نیمه‌بسته بماند، قیمت نفت بالا می‌ماند، ترامپ هزینهٔ سیاسی داخلی را در قالب قیمت بنزین و نظرسنجی‌های انتخابات میان‌دوره‌ای می‌پردازد، و متحدان آمریکا در خلیج فارس به‌اندازه‌ای نگران می‌شوند که واشنگتن را به سمت امتیازدهی فشار دهند.
+
+        اهرم آمریکا ساختار تحریم‌ها و فشار دریایی است. این اهرم اگر سفت بماند، ریال ضعیف‌تر می‌شود، صادرات نفت ایران کاهش می‌یابد، بحران ذخیره‌سازی نفت کاهش تولید را اجباری می‌کند، و تهران هزینه را در قالب فشار خیابانی و فروپاشی ارزی می‌پردازد.
+
+        هر دو طرف در حال حاضر باور دارند می‌توانند بیش از طرف مقابل دوام بیاورند؛ به همین دلیل پیشنهاد چهارده‌بندیِ سوم مه پیشرفتی نکرده است. هرکدام که اول کوتاه بیاید، امتیاز مذاکره را واگذار می‌کند. ریسکِ این چارچوب یک محاسبهٔ غلط است — ضربه‌ای که خط قرمزی را رد کند و طرف مقابل را به تشدیدی فراتر از قصد اولیه وادار سازد.
+      map_to_questions: |
+        پرسش‌های دیپلماتیک و اقتصادی (A و D) نشان می‌دهند چه کسی در حال کوتاه‌آمدن است. پرسش‌های نظامی (B) ریسک شکستن چارچوب به سمت جنگ تمام‌عیار را اندازه می‌گیرند. پرسش‌های مربوط به نظام/رهبری (C) فشار داخلی ایران را می‌سنجند. پرسش‌های مربوط به آمریکا (E) فشار سیاسی بر ترامپ را اندازه می‌گیرند.
+
+  base_case:
+    en:
+      full: |
+        The ceasefire is now formally in question after Iran's May 4 missile barrage on UAE infrastructure broke the 27-day zero-attack streak. Trump won't say whether the ceasefire is still in effect; CENTCOM is escorting tankers through Hormuz under "Project Freedom" while Araghchi flies to Beijing in search of a diplomatic exit. Base-case for the next 30 days: limited tit-for-tat continues — UAE-style targeting and small-craft skirmishes inside Hormuz, not a full kinetic war. Brent holds around $110–120 with a war-premium tail. The 14-point proposal stays on the table but neither side closes. Iran's rial keeps weakening; oil exports keep grinding lower. Khamenei stays sparse on state TV with no formal succession announcement. Iranfarhang books keep clearing through the Berman Amendment exemption; Kipa keeps importing through the AMAG-Dubai corridor though the Hormuz delays bite harder. The questions below are the named ways this base case could break in either direction — toward de-escalation, or toward a wider regional war.
+      public: |
+        The ceasefire is now formally in question after Iran's May 4 missile barrage on UAE infrastructure broke the 27-day zero-attack streak. Trump won't say whether the ceasefire is still in effect; CENTCOM is escorting tankers through Hormuz under "Project Freedom" while Iran's foreign minister flies to Beijing in search of a diplomatic exit. Base-case for the next 30 days: limited tit-for-tat continues — UAE-style targeting and small-craft skirmishes inside Hormuz, not a full kinetic war. Brent holds around $110–120 with a war-premium tail. The 14-point proposal stays on the table but neither side closes. The rial keeps weakening; oil exports keep grinding lower. Khamenei stays sparse on state TV; no formal succession announcement. The questions below are the named ways this base case could break — either toward de-escalation, or toward a wider regional war.
+    fa:
+      full: |
+        آتش‌بس پس از حملهٔ موشکی ۴ مه ایران به زیرساخت‌های امارات و شکستن رشتهٔ ۲۷ روزهٔ «حملهٔ صفر» رسماً زیر سؤال رفته است. ترامپ نمی‌گوید آیا آتش‌بس همچنان برقرار است؛ سنتکام در قالب «طرح آزادی» نفت‌کش‌ها را در هرمز اسکورت می‌کند و عراقچی برای راه‌حل دیپلماتیک به پکن می‌رود. خط پایهٔ سی روز آینده: تبادل ضربات محدود ادامه می‌یابد — هدف‌گیری شبیه امارات و درگیری‌های قایق‌های کوچک در هرمز، نه جنگ تمام‌عیار. برنت در محدودهٔ ۱۱۰ تا ۱۲۰ دلار با حاشیهٔ ریسک جنگ. پیشنهاد چهارده‌بندی روی میز می‌ماند ولی هیچ‌یک از دو طرف توافق نمی‌کند. ریال ضعیف‌تر می‌شود؛ صادرات نفت کاهش می‌یابد. خامنه‌ای به‌ندرت در تلویزیون دولتی ظاهر می‌شود؛ هیچ اعلام رسمی جانشینی صورت نگرفته است. ایران‌فرهنگ همچنان کتاب‌ها را از طریق معافیت متمم برمن منتقل می‌کند؛ کیپا کالاها را از کریدور AMAG–دبی وارد می‌کند هرچند تأخیرهای هرمز شدیدتر شده است. پرسش‌های پایین، راه‌های نامبرده‌ای هستند که این خط پایه می‌تواند از طریق آن‌ها بشکند — یا به سمت آرامش، یا به سمت جنگ منطقه‌ای گسترده‌تر.
+      public: |
+        آتش‌بس پس از حملهٔ موشکی ۴ مه ایران به زیرساخت‌های امارات و شکستن رشتهٔ ۲۷ روزهٔ «حملهٔ صفر» رسماً زیر سؤال رفته است. ترامپ نمی‌گوید آیا آتش‌بس همچنان برقرار است؛ سنتکام در قالب «طرح آزادی» نفت‌کش‌ها را در هرمز اسکورت می‌کند و وزیر خارجهٔ ایران برای راه‌حل دیپلماتیک به پکن می‌رود. خط پایهٔ سی روز آینده: تبادل ضربات محدود ادامه می‌یابد — هدف‌گیری شبیه امارات و درگیری‌های قایق‌های کوچک در هرمز، نه جنگ تمام‌عیار. برنت در محدودهٔ ۱۱۰ تا ۱۲۰ دلار با حاشیهٔ ریسک جنگ. پیشنهاد چهارده‌بندی روی میز می‌ماند ولی هیچ‌یک از دو طرف توافق نمی‌کند. ریال ضعیف‌تر می‌شود؛ صادرات نفت کاهش می‌یابد. خامنه‌ای به‌ندرت در تلویزیون دولتی ظاهر می‌شود؛ هیچ اعلام رسمی جانشینی صورت نگرفته است. پرسش‌های پایین، راه‌های نامبرده‌ای هستند که این خط پایه می‌تواند از طریق آن‌ها بشکند — یا به سمت آرامش، یا به سمت جنگ منطقه‌ای گسترده‌تر.
+    last_updated: 2026-05-05
   notes: |
     F-questions added 2026-05-03 from Iranfarhang + Kipa research agents.
     F1-F6 = Iranfarhang business consequences (Berman Amendment, Kemco rail,

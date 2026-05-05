@@ -188,25 +188,75 @@ def test_base_case_renders_when_present():
 
 
 def test_base_case_renders_public_variant_for_stripped():
-    """Public render uses base_case_narrative_public if set, falls back to
-    base_case_narrative otherwise. Must not leak family-business specifics."""
+    """Public render reads metadata.base_case.{lang}.public; must not leak
+    family-business specifics that live in the .full variant."""
     portfolio = render.load_portfolio()
     pub = render.render_html(portfolio, [], history=[], stripped=True)
     assert 'class="basecase"' in pub
-    # Family-business names must never appear in the public base case
     md = portfolio.get("metadata", {})
-    if md.get("base_case_narrative_public"):
+    if (md.get("base_case") or {}).get("en", {}).get("public"):
         for tok in ("Iranfarhang", "Kipa", "iranfarhang", "kipa", "Berman Amendment", "AMAG"):
             assert tok not in pub, f"public base case leaks {tok!r}"
 
 
-def test_base_case_section_omitted_when_metadata_empty():
-    """Renderer must gracefully render nothing if base_case_narrative is missing."""
+def test_persian_render_emits_rtl_html():
+    """Persian variant must set lang='fa' and dir='rtl' on <html>, and use
+    Persian chrome strings (e.g. 'محتمل‌ترین', 'روز')."""
     portfolio = render.load_portfolio()
-    # Synthesize a portfolio with no base case
+    html = render.render_html(portfolio, [], history=[], stripped=False, lang="fa")
+    assert 'lang="fa"' in html
+    assert 'dir="rtl"' in html
+    # Persian chrome substrings
+    assert "محتمل‌ترین" in html
+    # Day counter uses Persian word
+    assert "روز" in html
+
+
+def test_persian_public_strips_family_business_just_like_english():
+    """Even in Persian, the public deploy must not contain Iranfarhang/Kipa
+    names — neither in English nor in Persian transliteration."""
+    portfolio = render.load_portfolio()
+    pub_fa = render.render_html(portfolio, [], history=[], stripped=True, lang="fa")
+    forbidden = (
+        "Iranfarhang", "Kipa", "iranfarhang", "kipa", "Berman", "AMAG",
+        "ایران‌فرهنگ", "ایرانفرهنگ", "کیپا",
+    )
+    for tok in forbidden:
+        assert tok not in pub_fa, f"public Persian render leaks {tok!r}"
+
+
+def test_economic_war_frame_renders_when_metadata_present():
+    """The editorial framing section must appear above the base case when
+    metadata.economic_war_frame is set."""
+    portfolio = render.load_portfolio()
+    html = render.render_html(portfolio, [], history=[], stripped=False)
+    if "economic_war_frame" in (portfolio.get("metadata") or {}):
+        assert 'class="frame"' in html
+        # Frame appears before base case
+        assert html.index('class="frame"') < html.index('class="basecase"')
+
+
+def test_language_toggle_links_to_other_language():
+    """English render's lang-toggle href points to the Persian file; vice versa."""
+    portfolio = render.load_portfolio()
+    en = render.render_html(portfolio, [], history=[], stripped=False, lang="en")
+    fa = render.render_html(portfolio, [], history=[], stripped=False, lang="fa")
+    assert 'class="topbar-meta lang-toggle"' in en
+    assert 'class="topbar-meta lang-toggle"' in fa
+    # English page links to /fa.html
+    assert 'href="/fa.html"' in en
+    # Persian page links back to /
+    assert 'href="/"' in fa
+
+
+def test_base_case_section_omitted_when_metadata_empty():
+    """Renderer must gracefully render nothing if base_case is missing."""
+    portfolio = render.load_portfolio()
+    # Synthesize a portfolio with no base case (clear both new and legacy keys)
     p = {**portfolio, "metadata": {**portfolio["metadata"]}}
-    p["metadata"].pop("base_case_narrative", None)
-    p["metadata"].pop("base_case_narrative_public", None)
+    for k in ("base_case", "base_case_narrative", "base_case_narrative_public",
+              "base_case_public", "base_case_narrative_fa", "base_case_public_fa"):
+        p["metadata"].pop(k, None)
     html = render.render_html(p, [], history=[], stripped=False)
     assert 'class="basecase"' not in html
 

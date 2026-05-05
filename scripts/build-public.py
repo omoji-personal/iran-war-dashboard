@@ -83,12 +83,18 @@ def main() -> int:
         shutil.rmtree(OUTPUT_DIR)
     OUTPUT_DIR.mkdir(parents=True)
 
-    # The stripped variant becomes index.html on the iran-war-public domain
+    # The stripped variant becomes index.html on the iran-war-public domain.
+    # Persian variant ships alongside as fa.html (linked via the lang-toggle).
     src_public = REPO_ROOT / "public.html"
     if not src_public.exists():
         print(f"[build-public] expected {src_public} after render — missing", file=sys.stderr)
         return 1
     shutil.copy(src_public, OUTPUT_DIR / "index.html")
+    src_public_fa = REPO_ROOT / "public.fa.html"
+    if src_public_fa.exists():
+        shutil.copy(src_public_fa, OUTPUT_DIR / "fa.html")
+    else:
+        print(f"[build-public] {src_public_fa} not found — Persian variant skipped", file=sys.stderr)
 
     # Copy CSS so the page actually styles, but strip rules that name
     # Iranfarhang / Kipa selectors. Selectors leak business names even if no
@@ -164,6 +170,9 @@ def main() -> int:
     vercel_cfg = (
         '{\n'
         '  "cleanUrls": false,\n'
+        '  "rewrites": [\n'
+        '    { "source": "/fa", "destination": "/fa.html" }\n'
+        '  ],\n'
         '  "headers": [\n'
         '    {\n'
         '      "source": "/(.*)\\\\.yaml",\n'
@@ -173,7 +182,7 @@ def main() -> int:
         '      ]\n'
         '    },\n'
         '    {\n'
-        '      "source": "/index.html",\n'
+        '      "source": "/(index|fa)\\\\.html",\n'
         '      "headers": [\n'
         '        { "key": "Cache-Control", "value": "no-cache, no-store, must-revalidate" },\n'
         '        { "key": "X-Content-Type-Options", "value": "nosniff" },\n'
@@ -192,7 +201,7 @@ def main() -> int:
     (OUTPUT_DIR / "vercel.json").write_text(vercel_cfg, encoding="utf-8")
 
     print(f"[build-public] wrote {OUTPUT_DIR}/")
-    print(f"[build-public]   index.html, dashboard.css, portfolio.yaml (stripped), robots.txt, vercel.json")
+    print(f"[build-public]   index.html, fa.html, dashboard.css, portfolio.yaml (stripped), robots.txt, vercel.json")
     return 0
 
 

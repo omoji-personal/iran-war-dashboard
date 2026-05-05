@@ -29,7 +29,174 @@ HISTORY_PATH = REPO_ROOT / "portfolio_history.json"
 SOURCES_SHIFTED_DIR = REPO_ROOT / "logs" / "sources-shifted"
 EVENTS_DIR = REPO_ROOT / "logs" / "events"
 OUTPUT_INDEX = REPO_ROOT / "index.html"
+OUTPUT_INDEX_FA = REPO_ROOT / "fa.html"
 OUTPUT_PUBLIC = REPO_ROOT / "public.html"
+OUTPUT_PUBLIC_FA = REPO_ROOT / "public.fa.html"
+
+LANGS = ("en", "fa")
+
+# Visitor-facing chrome strings — section labels, button text, etc.
+# Question content (question text + notes) lives in portfolio.yaml; it stays
+# English for now and will pick up `_fa` overrides when those are filled in.
+STRINGS = {
+    "en": {
+        "site_eyebrow": "2026 Iran-US Conflict",
+        "site_title": "Predictive Agent",
+        "topbar_next_label": "Next:",
+        "topbar_next_value": "Daily 07:00 ET update",
+        "lang_toggle_to_fa": "فارسی",
+        "lang_toggle_to_en": "English",
+        "masthead_classification": "For analytic reading · Probability brief, not advice",
+        "masthead_publisher": "2026 IRAN-US CONFLICT MONITOR",
+        "masthead_subline": "Daily 07:00 ET update",
+        "issue_day": "Day",
+        "banner_strong": "EXPERIMENTAL — UNCALIBRATED",
+        "banner_text": "None of these questions has resolved yet, so the probabilities have no track record. Treat them as structured scenario reasoning, not as forecasts.",
+        "banner_legacy_link": "Older dashboard",
+        "headline_eyebrow_today": "Today's read",
+        "headline_eyebrow_tagline": "interpretation, not forecast",
+        "headline_lead_template": "{day_phrase} of the 2026 Iran-US conflict. The questions below are scored from a daily reading of public news and prediction-market prices. None have resolved yet, so the probabilities have no track record — treat them as structured guesses, not predictions.",
+        "headline_body_intro": "The three highest-stakes questions to watch right now",
+        "headline_body_outro_full": "The PERSONAL-tagged questions track family-business consequences — Iranfarhang (Persian-content distribution to US/UK universities) and Kipa (specialty-chemicals importer into Iran). Each card below shows the current probability, the 80% range it's likely to fall in, and a one-line rationale. Updated each morning.",
+        "headline_body_outro_public": "Each card below shows the current probability, the 80% range it's likely to fall in, and a one-line rationale. The list is grouped by topic and updated each morning.",
+        "frame_eyebrow": "Why this page exists",
+        "frame_map_label": "How the questions map",
+        "basecase_eyebrow": "The most likely path forward",
+        "basecase_eyebrow_revised": "last revised",
+        "basecase_h": "What's most likely to keep being true",
+        "basecase_foot": "Each topic below leads with the questions sitting closest to this base case, then shows the lower-probability scenarios that would break it.",
+        "diff_h": "What changed since the last update",
+        "diff_first_msg": "First update — no prior day to compare against. From tomorrow on, this panel will list only the probabilities that moved more than the question's own uncertainty range. Quiet days will say so.",
+        "diff_quiet_msg_template": "No probability moves on the question cards since {date}. The \"What's most likely to keep being true\" section above has the freshest read on the situation; the card values update when the questions are formally revised.",
+        "topq_eyebrow": "Today's top question",
+        "topq_link": "Read full evidence chain ↓",
+        "topq_delta_suffix": "since last update",
+        "topq_ci_label": "80% CI:",
+        "qcard_ci_label": "80% CI:",
+        "qcard_flag_humility": "HUMILITY",
+        "qcard_flag_humility_title": "This kind of event is historically very hard to forecast — treat the number as a placeholder, read the rationale instead",
+        "qcard_flag_personal": "PERSONAL",
+        "qcard_flag_personal_title": "Directly affects family business",
+        "board_h_template": "Question portfolio · {n} questions",
+        "board_sub": "Within each topic, most-likely outcomes lead; lower-probability scenarios to watch follow under the divider. Each card shows the current probability and the 80% range it's likely to fall in.",
+        "cluster_likely_h": "Most-likely outcomes",
+        "cluster_tail_h": "Lower-probability scenarios to watch",
+        "cat_count_template": "{n} questions",
+        "method_h": "What to keep in mind",
+        "method_b1": "<strong>The \"most-likely scenario\" paragraph above is the anchor.</strong> It's the single future getting the most probability mass once you average across the questions. The questions below — especially the ones in the \"lower-probability\" cluster of each topic — are the named ways that base case could break. Most of those tail-risk cards will read low for a reason.",
+        "method_b2": "<strong>Experimental — no track record yet.</strong> None of these questions has resolved, so the probabilities haven't been graded against reality. Treat them as structured guesses.",
+        "method_b3": "<strong>Two questions are intentionally fuzzy</strong> — anything tied to whether a leader is alive, ill, or being succeeded (Khamenei, Mojtaba). Forecasting models historically fail at these. The number is a placeholder; the rationale is what to read.",
+        "method_b4": "<strong>How probabilities move</strong>: each morning, public news and prediction-market prices are re-read. If something shifts a question by more than its 80% range, it shows up at the top in \"What changed since the last update.\"",
+        "method_b5": "<strong>What this is not.</strong> It is not financial or political advice. No one is being told to act on these numbers. Probabilities are scenario weighing, not forecasts.",
+        "footer_brand": "2026 IRAN-US CONFLICT PREDICTIVE AGENT",
+        "footer_meta": "Daily structured scenario analysis · experimental · no track record yet",
+        "footer_legacy_link": "Older dashboard",
+        "category_diplomatic_resolution": "Diplomatic resolution",
+        "category_military_escalation": "Military escalation",
+        "category_regime_leadership": "Regime / leadership",
+        "category_economic_structural": "Economic / structural",
+        "category_us_side": "US side",
+        "category_family_business_iranfarhang": "Iranfarhang business",
+        "category_family_business_kipa": "Kipa business",
+        "category_num_diplomatic_resolution": "§ A",
+        "category_num_military_escalation": "§ B",
+        "category_num_regime_leadership": "§ C",
+        "category_num_economic_structural": "§ D",
+        "category_num_us_side": "§ E",
+        "category_num_family_business_iranfarhang": "§ F.1",
+        "category_num_family_business_kipa": "§ F.2",
+        "icd_vanishing": "vanishing",
+        "icd_almost_no_chance": "almost no chance",
+        "icd_very_unlikely": "very unlikely",
+        "icd_unlikely": "unlikely",
+        "icd_roughly_even_chance": "roughly even chance",
+        "icd_likely": "likely",
+        "icd_very_likely": "very likely",
+        "icd_almost_certain": "almost certain",
+        "icd_near_certain": "near certain",
+    },
+    "fa": {
+        "site_eyebrow": "نزاع ایران و آمریکا ۲۰۲۶",
+        "site_title": "تحلیل‌گر پیش‌بینی",
+        "topbar_next_label": "بعدی:",
+        "topbar_next_value": "به‌روزرسانی هر روز ساعت ۷:۰۰ شرق آمریکا",
+        "lang_toggle_to_fa": "فارسی",
+        "lang_toggle_to_en": "English",
+        "masthead_classification": "برای مطالعه‌ی تحلیلی · گزارش احتمالات، نه توصیه",
+        "masthead_publisher": "ناظر نزاع ایران و آمریکا ۲۰۲۶",
+        "masthead_subline": "به‌روزرسانی هر روز ساعت ۷:۰۰ شرق آمریکا",
+        "issue_day": "روز",
+        "banner_strong": "آزمایشی — کالیبره‌نشده",
+        "banner_text": "هیچ‌یک از این پرسش‌ها هنوز قطعی نشده‌اند، پس احتمالات سابقه‌ی عملکردی ندارند. آن‌ها را به عنوان استدلال ساخت‌یافته‌ی سناریو در نظر بگیرید، نه پیش‌بینی.",
+        "banner_legacy_link": "داشبورد قدیمی",
+        "headline_eyebrow_today": "خوانش امروز",
+        "headline_eyebrow_tagline": "تفسیر، نه پیش‌بینی",
+        "headline_lead_template": "{day_phrase} از نزاع ایران و آمریکا ۲۰۲۶. پرسش‌های پایین بر پایه‌ی خوانش روزانه‌ی اخبار عمومی و قیمت بازارهای پیش‌بینی نمره‌گذاری شده‌اند. هیچ‌یک هنوز قطعی نشده‌اند، پس احتمالات سابقه‌ی عملکردی ندارند — آن‌ها را گمانه‌های ساخت‌یافته بدانید، نه پیش‌بینی.",
+        "headline_body_intro": "سه پرسش با بیشترین اهمیت برای رصد در حال حاضر",
+        "headline_body_outro_full": "پرسش‌های با برچسب «شخصی» پیامدهای کسب‌وکار خانوادگی را دنبال می‌کنند — ایران‌فرهنگ (توزیع محتوای فارسی به دانشگاه‌های آمریکا و بریتانیا) و کیپا (وارد‌کننده‌ی مواد شیمیایی تخصصی به ایران). هر کارت پایین احتمال جاری، بازه‌ی ۸۰٪ احتمالی و یک خط استدلال را نشان می‌دهد. هر صبح به‌روزرسانی می‌شود.",
+        "headline_body_outro_public": "هر کارت پایین احتمال جاری، بازه‌ی ۸۰٪ احتمالی و یک خط استدلال را نشان می‌دهد. فهرست بر اساس موضوع گروه‌بندی شده و هر صبح به‌روزرسانی می‌شود.",
+        "frame_eyebrow": "چرا این صفحه وجود دارد",
+        "frame_map_label": "نگاشت پرسش‌ها",
+        "basecase_eyebrow": "محتمل‌ترین مسیر پیش‌رو",
+        "basecase_eyebrow_revised": "آخرین بازنگری",
+        "basecase_h": "چه چیزی به‌احتمال زیاد همچنان درست خواهد بود",
+        "basecase_foot": "هر موضوع پایین با پرسش‌هایی که به این خط پایه نزدیک‌ترند آغاز می‌شود، سپس سناریوهای کم‌احتمال‌تری را که می‌توانند آن را بشکنند نشان می‌دهد.",
+        "diff_h": "چه تغییری از آخرین به‌روزرسانی رخ داد",
+        "diff_first_msg": "اولین به‌روزرسانی — هنوز روز قبلی برای مقایسه وجود ندارد. از فردا، این بخش فقط احتمالاتی را که بیش از بازه‌ی عدم‌قطعیت خود تغییر کرده‌اند نشان خواهد داد. روزهای آرام نیز اعلام می‌شوند.",
+        "diff_quiet_msg_template": "هیچ تغییر احتمالی روی کارت‌های پرسش از زمان {date} رخ نداده است. بخش «چه چیزی به‌احتمال زیاد همچنان درست خواهد بود» در بالا تازه‌ترین خوانش وضعیت را دارد؛ مقادیر کارت‌ها در زمان بازنگری رسمی پرسش‌ها به‌روز می‌شود.",
+        "topq_eyebrow": "پرسش امروز",
+        "topq_link": "خواندن زنجیره‌ی کامل شواهد ↓",
+        "topq_delta_suffix": "از آخرین به‌روزرسانی",
+        "topq_ci_label": "بازه‌ی ۸۰٪:",
+        "qcard_ci_label": "بازه‌ی ۸۰٪:",
+        "qcard_flag_humility": "فروتنی",
+        "qcard_flag_humility_title": "این نوع رویداد از نظر تاریخی بسیار سخت‌قابل‌پیش‌بینی است — عدد را به‌عنوان یک جای‌نشان در نظر بگیرید و به استدلال نگاه کنید",
+        "qcard_flag_personal": "شخصی",
+        "qcard_flag_personal_title": "مستقیماً بر کسب‌وکار خانوادگی اثر می‌گذارد",
+        "board_h_template": "مجموعه‌ی پرسش‌ها · {n} پرسش",
+        "board_sub": "در هر موضوع، محتمل‌ترین نتایج ابتدا می‌آیند؛ سناریوهای کم‌احتمال‌تر زیر خط جداکننده. هر کارت احتمال جاری و بازه‌ی ۸۰٪ احتمالی را نشان می‌دهد.",
+        "cluster_likely_h": "محتمل‌ترین نتایج",
+        "cluster_tail_h": "سناریوهای کم‌احتمال‌تر برای رصد",
+        "cat_count_template": "{n} پرسش",
+        "method_h": "آنچه باید در نظر داشت",
+        "method_b1": "<strong>پاراگراف «محتمل‌ترین سناریو» در بالا، لنگرگاه است.</strong> این تنها آینده‌ای است که پس از میانگین‌گیری بین پرسش‌ها، بیشترین وزن احتمالی را دریافت می‌کند. پرسش‌های پایین — به‌ویژه آن‌هایی که در خوشه‌ی «کم‌احتمال‌تر» هر موضوع قرار می‌گیرند — راه‌های نامبرده‌ای هستند که این خط پایه می‌تواند بشکند. اکثر آن کارت‌های ریسک دم به دلیلی پایین خوانده می‌شوند.",
+        "method_b2": "<strong>آزمایشی — بدون سابقه.</strong> هیچ‌یک از این پرسش‌ها قطعی نشده، پس احتمالات نسبت به واقعیت نمره‌گذاری نشده‌اند. آن‌ها را گمانه‌های ساخت‌یافته بدانید.",
+        "method_b3": "<strong>دو پرسش به‌عمد مبهم‌اند</strong> — هر چیزی مرتبط با زنده‌بودن، بیماری یا جانشینی یک رهبر (خامنه‌ای، مجتبی). مدل‌های پیش‌بینی از نظر تاریخی در این موارد ناکام می‌مانند. عدد جای‌نشان است؛ آنچه باید بخوانید استدلال است.",
+        "method_b4": "<strong>چگونه احتمالات حرکت می‌کنند</strong>: هر صبح، اخبار عمومی و قیمت بازارهای پیش‌بینی دوباره خوانده می‌شود. اگر چیزی پرسشی را بیش از بازه‌ی ۸۰٪ آن جابه‌جا کند، در بالا در «چه تغییری از آخرین به‌روزرسانی رخ داد» نمایش داده می‌شود.",
+        "method_b5": "<strong>این چه نیست.</strong> این مشاوره‌ی مالی یا سیاسی نیست. به هیچ‌کس گفته نمی‌شود بر اساس این اعداد عمل کند. احتمالات وزن‌دهی سناریو هستند، نه پیش‌بینی.",
+        "footer_brand": "تحلیل‌گر پیش‌بینی نزاع ایران و آمریکا ۲۰۲۶",
+        "footer_meta": "تحلیل سناریوی ساخت‌یافته‌ی روزانه · آزمایشی · بدون سابقه",
+        "footer_legacy_link": "داشبورد قدیمی",
+        "category_diplomatic_resolution": "حل دیپلماتیک",
+        "category_military_escalation": "تشدید نظامی",
+        "category_regime_leadership": "نظام / رهبری",
+        "category_economic_structural": "اقتصادی / ساختاری",
+        "category_us_side": "سمت آمریکا",
+        "category_family_business_iranfarhang": "کسب‌وکار ایران‌فرهنگ",
+        "category_family_business_kipa": "کسب‌وکار کیپا",
+        "category_num_diplomatic_resolution": "بخش الف",
+        "category_num_military_escalation": "بخش ب",
+        "category_num_regime_leadership": "بخش ج",
+        "category_num_economic_structural": "بخش د",
+        "category_num_us_side": "بخش ه",
+        "category_num_family_business_iranfarhang": "بخش و-۱",
+        "category_num_family_business_kipa": "بخش و-۲",
+        "icd_vanishing": "ناچیز",
+        "icd_almost_no_chance": "تقریباً بی‌شانس",
+        "icd_very_unlikely": "بسیار بعید",
+        "icd_unlikely": "بعید",
+        "icd_roughly_even_chance": "تقریباً مساوی",
+        "icd_likely": "محتمل",
+        "icd_very_likely": "بسیار محتمل",
+        "icd_almost_certain": "تقریباً قطعی",
+        "icd_near_certain": "نزدیک به قطعی",
+    },
+}
+
+
+def _t(key: str, lang: str) -> str:
+    """Translate a chrome string. Falls back to English if Persian missing."""
+    return STRINGS.get(lang, {}).get(key) or STRINGS["en"].get(key, key)
 
 # Hardcoded reference date for "war Day N" computation. D1 of conflict = 2026-02-28.
 WAR_D1_ISO = "2026-02-28"
@@ -52,27 +219,39 @@ ICD203_BUCKETS = [
 ]
 
 
-def icd203(p: float) -> tuple[str, str, str]:
-    """Returns (label, range_str, css_class)."""
+def icd203(p: float, lang: str = "en") -> tuple[str, str, str]:
+    """Returns (label, range_str, css_class). Label is translated via STRINGS."""
     p = max(0.0, min(1.0, p))
-    for lo, hi, label, range_str in ICD203_BUCKETS:
+    for lo, hi, label_en, range_str in ICD203_BUCKETS:
         if lo <= p < hi:
-            css = label.replace(" ", "-")
+            css = label_en.replace(" ", "-")
+            label = _t("icd_" + label_en.replace(" ", "_"), lang)
             return label, range_str, css
     # p == exactly 1.0 hits the last bucket
-    label, range_str, _ = ICD203_BUCKETS[-1][2:] if False else ("near certain", ">99%", "near-certain")
-    return label, range_str, "near-certain"
+    return _t("icd_near_certain", lang), ">99%", "near-certain"
 
 
-CATEGORY = {
-    "diplomatic_resolution": ("§ A", "Diplomatic resolution", "cat-diplomacy"),
-    "military_escalation": ("§ B", "Military escalation", "cat-military"),
-    "regime_leadership": ("§ C", "Regime / leadership", "cat-regime"),
-    "economic_structural": ("§ D", "Economic / structural", "cat-economic"),
-    "us_side": ("§ E", "US side", "cat-us"),
-    "family_business_iranfarhang": ("§ F.1", "Iranfarhang business", "cat-iranfarhang"),
-    "family_business_kipa": ("§ F.2", "Kipa business", "cat-kipa"),
+# Mapping of category id → CSS class. The numeric label and human-readable
+# title are looked up via STRINGS so they translate correctly per language.
+CATEGORY_CSS = {
+    "diplomatic_resolution": "cat-diplomacy",
+    "military_escalation": "cat-military",
+    "regime_leadership": "cat-regime",
+    "economic_structural": "cat-economic",
+    "us_side": "cat-us",
+    "family_business_iranfarhang": "cat-iranfarhang",
+    "family_business_kipa": "cat-kipa",
 }
+# Display order — public categories first, family-business last
+CATEGORY_ORDER = list(CATEGORY_CSS.keys())
+
+
+def category_label(cat_id: str, lang: str) -> tuple[str, str, str]:
+    """Returns (numbering, title, css_class) for a category in the given language."""
+    num = _t(f"category_num_{cat_id}", lang)
+    title = _t(f"category_{cat_id}", lang)
+    css = CATEGORY_CSS.get(cat_id, "cat-default")
+    return num, title, css
 
 
 def load_portfolio() -> dict:
@@ -177,16 +356,25 @@ def first_sentence(text: str) -> str:
     return candidate
 
 
-def render_question_card(q: dict, stripped: bool = False) -> str:
+def _q_field(q: dict, key: str, lang: str) -> str:
+    """Return the language-specific question field if present, else fall back to English.
+    Looks up `{key}_fa` for Persian; uses `{key}` for English / fallback."""
+    if lang == "fa":
+        v = q.get(f"{key}_fa")
+        if v:
+            return str(v)
+    return str(q.get(key, "") or "")
+
+
+def render_question_card(q: dict, stripped: bool = False, lang: str = "en") -> str:
     p = q["current_probability"]
-    label, range_str, label_css = icd203(p)
+    label, range_str, label_css = icd203(p, lang=lang)
     ci = q["current_credible_interval_80"]
     humility = q.get("humility_flag", False)
-    notes = first_sentence(q.get("notes", ""))
+    notes = first_sentence(_q_field(q, "notes", lang))
     deadline = q["deadline"]
 
-    cat_meta = CATEGORY.get(q["category"], ("", "", "cat-default"))
-    cat_css = cat_meta[2]
+    _, _, cat_css = category_label(q["category"], lang)
 
     pct = round(p * 100)
     ci_lo = round(ci[0] * 100)
@@ -194,12 +382,18 @@ def render_question_card(q: dict, stripped: bool = False) -> str:
 
     flags = []
     if humility:
-        flags.append('<span class="card-flag flag-humility" title="This kind of event is historically very hard to forecast — treat the number as a placeholder, read the rationale instead">HUMILITY</span>')
+        flags.append(
+            f'<span class="card-flag flag-humility" title="{esc(_t("qcard_flag_humility_title", lang))}">'
+            f'{esc(_t("qcard_flag_humility", lang))}</span>'
+        )
     # PERSONAL flag is operator-private — never shown on the stripped public deploy
     if not stripped:
         for tag in q.get("stakeholder_tags", []):
             if tag == "omid_personal":
-                flags.append('<span class="card-flag flag-personal" title="Directly affects family business">PERSONAL</span>')
+                flags.append(
+                    f'<span class="card-flag flag-personal" title="{esc(_t("qcard_flag_personal_title", lang))}">'
+                    f'{esc(_t("qcard_flag_personal", lang))}</span>'
+                )
                 break
 
     return f"""
@@ -209,19 +403,19 @@ def render_question_card(q: dict, stripped: bool = False) -> str:
           <span class="qcard-deadline">→ {esc(deadline)}</span>
           <span class="qcard-flags">{''.join(flags)}</span>
         </header>
-        <h3 class="qcard-question">{esc(q['question'])}</h3>
+        <h3 class="qcard-question">{esc(_q_field(q, 'question', lang))}</h3>
         <div class="qcard-numbers">
           <div class="qcard-prob">
             <span class="qcard-prob-num">{pct}<span class="qcard-prob-pct">%</span></span>
             <span class="qcard-prob-label">{esc(label)}</span>
           </div>
           <div class="qcard-ci">
-            <span class="qcard-ci-bar" aria-label="80% credible interval, mark at point estimate">
+            <span class="qcard-ci-bar" aria-label="{esc(_t('qcard_ci_label', lang))} {ci_lo}–{ci_hi}%">
               <span class="qcard-ci-track"></span>
               <span class="qcard-ci-fill" style="left: {ci_lo}%; width: {ci_hi - ci_lo}%"></span>
               <span class="qcard-ci-mark" style="left: {pct}%"></span>
             </span>
-            <span class="qcard-ci-label">80% CI: {ci_lo}–{ci_hi}%</span>
+            <span class="qcard-ci-label">{esc(_t('qcard_ci_label', lang))} {ci_lo}–{ci_hi}%</span>
           </div>
         </div>
         <p class="qcard-note">{esc(notes)}</p>
@@ -238,24 +432,26 @@ def _human_date(iso_date: str) -> str:
         return iso_date
 
 
-def render_diff_panel(diffs: list[dict], history: list[dict]) -> str:
+def render_diff_panel(diffs: list[dict], history: list[dict], lang: str = "en") -> str:
     today_iso = datetime.now(timezone.utc).strftime("%Y-%m-%d")
     prior = [h for h in history if h.get("date") and h["date"] < today_iso and _is_v02_snapshot(h)]
     has_prior_baseline = bool(prior)
+    diff_h = _t("diff_h", lang)
 
     if not has_prior_baseline:
-        return """
-        <section class="diff-panel diff-empty" role="region" aria-label="What changed since the last update">
-          <h2 class="diff-h">What changed since the last update</h2>
-          <p class="diff-empty-msg">First update — no prior day to compare against. From tomorrow on, this panel will list only the probabilities that moved more than the question's own uncertainty range. Quiet days will say so.</p>
+        return f"""
+        <section class="diff-panel diff-empty" role="region" aria-label="{esc(diff_h)}">
+          <h2 class="diff-h">{esc(diff_h)}</h2>
+          <p class="diff-empty-msg">{esc(_t("diff_first_msg", lang))}</p>
         </section>
         """
     if not diffs:
         last_date = _human_date(prior[-1]["date"])
+        msg = _t("diff_quiet_msg_template", lang).format(date=last_date)
         return f"""
-        <section class="diff-panel diff-empty" role="region" aria-label="What changed since the last update">
-          <h2 class="diff-h">What changed since the last update</h2>
-          <p class="diff-empty-msg">No probability moves on the question cards since {esc(last_date)}. The <em>"What's most likely to keep being true"</em> section below has the freshest read on the situation; the card values update when the questions are formally revised.</p>
+        <section class="diff-panel diff-empty" role="region" aria-label="{esc(diff_h)}">
+          <h2 class="diff-h">{esc(diff_h)}</h2>
+          <p class="diff-empty-msg">{esc(msg)}</p>
         </section>
         """
     items = []
@@ -274,8 +470,8 @@ def render_diff_panel(diffs: list[dict], history: list[dict]) -> str:
           </li>
         """)
     return f"""
-        <section class="diff-panel" role="region" aria-label="What changed since the last update">
-          <h2 class="diff-h">What changed since the last update</h2>
+        <section class="diff-panel" role="region" aria-label="{esc(diff_h)}">
+          <h2 class="diff-h">{esc(diff_h)}</h2>
           <ul class="diff-list">{"".join(items)}</ul>
         </section>
     """
@@ -325,11 +521,11 @@ def topness(q: dict, last_q_by_id: dict[str, dict], today: datetime | None = Non
     return abs_delta * 1.0 + stakes + recency + in_play_bonus + humility_penalty
 
 
-def render_top_question(q: dict, last_q_by_id: dict, history_present: bool) -> str:
-    label, _, css = icd203(q["current_probability"])
+def render_top_question(q: dict, last_q_by_id: dict, history_present: bool, lang: str = "en") -> str:
+    label, _, css = icd203(q["current_probability"], lang=lang)
     pct = round(q["current_probability"] * 100)
     ci = q["current_credible_interval_80"]
-    notes = first_sentence(q.get("notes", ""))
+    notes = first_sentence(_q_field(q, "notes", lang))
     delta_text = ""
     if history_present:
         last_q = last_q_by_id.get(q["id"], {})
@@ -337,37 +533,40 @@ def render_top_question(q: dict, last_q_by_id: dict, history_present: bool) -> s
         if last_p is not None and abs(q["current_probability"] - last_p) > 0.001:
             d_pp = (q["current_probability"] - last_p) * 100
             arrow = "▲" if d_pp > 0 else "▼"
-            delta_text = f' · <span class="topq-delta">{arrow} {d_pp:+.1f}pp since last update</span>'
+            delta_text = (
+                f' · <span class="topq-delta">{arrow} {d_pp:+.1f}pp '
+                f'{esc(_t("topq_delta_suffix", lang))}</span>'
+            )
 
+    eyebrow = _t("topq_eyebrow", lang)
     return f"""
-      <section class="topq topq-{css}" role="region" aria-label="Today's top question">
-        <div class="topq-eyebrow">Today's top question · {esc(q['id'])} · → {esc(q['deadline'])}{delta_text}</div>
-        <h2 class="topq-question">{esc(q['question'])}</h2>
+      <section class="topq topq-{css}" role="region" aria-label="{esc(eyebrow)}">
+        <div class="topq-eyebrow">{esc(eyebrow)} · {esc(q['id'])} · → {esc(q['deadline'])}{delta_text}</div>
+        <h2 class="topq-question">{esc(_q_field(q, 'question', lang))}</h2>
         <div class="topq-row">
           <div class="topq-prob">
             <span class="topq-prob-num">{pct}<span class="topq-prob-pct">%</span></span>
             <span class="topq-prob-label">{esc(label)}</span>
-            <span class="topq-prob-ci">80% CI: {round(ci[0]*100)}–{round(ci[1]*100)}%</span>
+            <span class="topq-prob-ci">{esc(_t("topq_ci_label", lang))} {round(ci[0]*100)}–{round(ci[1]*100)}%</span>
           </div>
           <p class="topq-note">{esc(notes)}</p>
         </div>
-        <a class="topq-link" href="#q-{q['id']}">Read full evidence chain ↓</a>
+        <a class="topq-link" href="#q-{q['id']}">{esc(_t("topq_link", lang))}</a>
       </section>
     """
 
 
-def render_headline_narrative(today: datetime, portfolio: dict, stripped: bool = False) -> str:
-    """Compose the headline paragraph dynamically from current date + portfolio.
+def _human_date_lang(d: datetime, lang: str) -> str:
+    """Date format suitable for the masthead eyebrow. English: 'May 5, 2026'.
+    Persian: keep ASCII numerals — Iranian readers parse Gregorian dates fine,
+    and converting to Jalali would mismatch the war_day() integer."""
+    return d.strftime("%B %d, %Y").replace(" 0", " ")
 
-    Earlier version had hardcoded date/figure references. Now derives day numbers
-    from a single fixed reference (D1=2026-02-28). Concrete numbers (Brent, gas,
-    casualty counts) are NOT in the headline — they age too fast.
 
-    Stripped (public deploy): scrub all personal/business references. The portfolio
-    passed in already has F-categories filtered out.
-    """
+def render_headline_narrative(today: datetime, portfolio: dict, stripped: bool = False, lang: str = "en") -> str:
+    """Compose the headline paragraph dynamically from current date + portfolio."""
     d = war_day(today)
-    today_str = today.strftime("%B %d, %Y").replace(" 0", " ")
+    today_str = _human_date_lang(today, lang)
     # Top 3 highest-stakes questions to anchor narrative
     high_stakes = sorted(
         portfolio["questions"],
@@ -375,90 +574,111 @@ def render_headline_narrative(today: datetime, portfolio: dict, stripped: bool =
     )[:3]
     bullets = []
     for q in high_stakes:
-        label, _, _ = icd203(q["current_probability"])
-        bullets.append(f"<strong>{esc(q['id'])}</strong> ({esc(label)}, {round(q['current_probability']*100)}%) — {esc(q['question'])}")
-
-    # Eyebrow used to carry "cease-fire Day N · Hormuz blockade Day M" but those
-    # numeric counters lock in a steady-state framing that gets stale fast.
-    # The base case paragraph (rendered below) carries the current read.
-
-    if stripped:
-        body = (
-            f"The three highest-stakes questions to watch right now: "
-            f"{'; '.join(bullets)}. "
-            f"Each card below shows the current probability, the 80% range it's likely "
-            f"to fall in, and a one-line rationale. The list is grouped by topic and "
-            f"updated each morning."
+        label, _, _ = icd203(q["current_probability"], lang=lang)
+        bullets.append(
+            f"<strong>{esc(q['id'])}</strong> ({esc(label)}, {round(q['current_probability']*100)}%) — "
+            f"{esc(_q_field(q, 'question', lang))}"
         )
-    else:
-        body = (
-            f"The three highest-stakes questions to watch right now: "
-            f"{'; '.join(bullets)}. "
-            f"The PERSONAL-tagged questions track family-business consequences — "
-            f"Iranfarhang (Persian-content distribution to US/UK universities) and "
-            f"Kipa (specialty-chemicals importer into Iran). Each card below shows the "
-            f"current probability, the 80% range it's likely to fall in, and a one-line "
-            f"rationale. Updated each morning."
-        )
+
+    intro = _t("headline_body_intro", lang)
+    outro_key = "headline_body_outro_public" if stripped else "headline_body_outro_full"
+    outro = _t(outro_key, lang)
+    body = f"{intro}: {'; '.join(bullets)}. {outro}"
+
+    day_phrase = f'<span class="dropcap">{esc(_t("issue_day", lang)[:1])}</span>{esc(_t("issue_day", lang)[1:])} {d}'
+    lead = _t("headline_lead_template", lang).format(day_phrase=day_phrase)
 
     return f"""
-      <section class="headline" role="region" aria-label="Today's headline">
-        <div class="headline-eyebrow">Today's read · {esc(today_str)} · interpretation, not forecast</div>
-        <p class="headline-lead"><span class="dropcap">D</span>ay {d} of the 2026 Iran-US conflict. The questions below are scored from a daily reading of public news and prediction-market prices. None have resolved yet, so the probabilities have no track record — treat them as structured guesses, not predictions.</p>
+      <section class="headline" role="region" aria-label="{esc(_t("headline_eyebrow_today", lang))}">
+        <div class="headline-eyebrow">{esc(_t("headline_eyebrow_today", lang))} · {esc(today_str)} · {esc(_t("headline_eyebrow_tagline", lang))}</div>
+        <p class="headline-lead">{lead}</p>
         <p class="headline-body">{body}</p>
       </section>
     """
 
 
-def render_methodology(stripped: bool = False) -> str:
-    # Both paths use plain language — the page is read by family + public, not engineers.
-    common = """
-      <section class="methodology" role="region" aria-label="What to keep in mind">
-        <h2 class="meth-h">What to keep in mind</h2>
+def render_methodology(stripped: bool = False, lang: str = "en") -> str:
+    bullets = "".join(
+        f"<li>{_t(f'method_b{i}', lang)}</li>" for i in range(1, 6)
+    )
+    return f"""
+      <section class="methodology" role="region" aria-label="{esc(_t("method_h", lang))}">
+        <h2 class="meth-h">{esc(_t("method_h", lang))}</h2>
         <ul class="meth-list">
-          <li><strong>The "most-likely scenario" paragraph at the top is the anchor.</strong> It's the single future getting the most probability mass once you average across the questions. The questions below — especially the ones in the "lower-probability" cluster of each topic — are the named ways that base case could break. Most of those tail-risk cards will read low for a reason.</li>
-          <li><strong>Experimental — no track record yet.</strong> None of these questions has resolved, so the probabilities haven't been graded against reality. Treat them as structured guesses.</li>
-          <li><strong>Two questions are intentionally fuzzy</strong> — anything tied to whether a leader is alive, ill, or being succeeded (Khamenei, Mojtaba). Forecasting models historically fail at these. The number is a placeholder; the rationale is what to read.</li>
-          <li><strong>How probabilities move</strong>: each morning, public news and prediction-market prices are re-read. If something shifts a question by more than its 80% range, it shows up at the top in "What changed since the last update."</li>
-          <li><strong>What this is not.</strong> It is not financial or political advice. No one is being told to act on these numbers. Probabilities are scenario weighing, not forecasts.</li>
+          {bullets}
         </ul>
       </section>
     """
-    return common
 
 
-def render_base_case(portfolio: dict, stripped: bool = False) -> str:
-    """Render the operator's modal-forecast paragraph above the question board.
+def render_economic_war_frame(portfolio: dict, lang: str = "en") -> str:
+    """Render the editorial framing section (the "why" of the page) above the
+    base case. Reads `metadata.economic_war_frame.{en|fa}.{title, body, map_to_questions}`.
+    Falls back to English if Persian variant missing. Returns empty string
+    if the metadata field is absent."""
+    md = portfolio.get("metadata", {}) or {}
+    frame = md.get("economic_war_frame") or {}
+    block = frame.get(lang) or frame.get("en") or {}
+    title = (block.get("title") or "").strip()
+    body = (block.get("body") or "").strip()
+    if not title and not body:
+        return ""
+    paragraphs = [esc(p.strip()) for p in body.split("\n\n") if p.strip()]
+    body_html = "".join(f'<p class="frame-body">{p}</p>' for p in paragraphs)
+    map_text = (block.get("map_to_questions") or "").strip()
+    map_html = (
+        f'<div class="frame-map"><span class="frame-map-label">{esc(_t("frame_map_label", lang))}</span> '
+        f'<span class="frame-map-text">{esc(map_text)}</span></div>'
+        if map_text else ""
+    )
+    return f"""
+      <section class="frame" role="region" aria-label="{esc(title)}">
+        <div class="frame-eyebrow">{esc(_t("frame_eyebrow", lang))}</div>
+        <h2 class="frame-h">{esc(title)}</h2>
+        {body_html}
+        {map_html}
+      </section>
+    """
 
-    Reads `metadata.base_case_narrative` (private) or
-    `metadata.base_case_narrative_public` (stripped public). Renders nothing
-    if the relevant field is empty/missing — graceful no-op so the page still
-    works during operator transitions.
+
+def render_base_case(portfolio: dict, stripped: bool = False, lang: str = "en") -> str:
+    """Render the modal-forecast paragraph. Reads `metadata.base_case`:
+        base_case:
+          en: { full: ..., public: ... }
+          fa: { full: ..., public: ... }
+          last_updated: YYYY-MM-DD
+    Falls back to English if Persian variant missing. Renders nothing if absent.
     """
     md = portfolio.get("metadata", {}) or {}
-    if stripped:
-        text = (md.get("base_case_narrative_public") or md.get("base_case_narrative") or "").strip()
-    else:
-        text = (md.get("base_case_narrative") or "").strip()
+    bc = md.get("base_case") or {}
+    block = bc.get(lang) or bc.get("en") or {}
+    key = "public" if stripped else "full"
+    text = (block.get(key) or block.get("full") or "").strip()
+    if not text and lang != "en":
+        # final English fallback
+        en_block = bc.get("en") or {}
+        text = (en_block.get(key) or en_block.get("full") or "").strip()
     if not text:
         return ""
-    last_updated = md.get("base_case_last_updated")
+
+    last_updated = bc.get("last_updated")
     last_updated_str = ""
     if last_updated is not None:
-        # YAML may parse as date or string
         last_updated_str = last_updated.isoformat() if hasattr(last_updated, "isoformat") else str(last_updated)
-    eyebrow_extra = f" · last revised {esc(_human_date(last_updated_str))}" if last_updated_str else ""
-    # Preserve operator-line breaks but escape for safety
+    eyebrow_extra = (
+        f" · {esc(_t('basecase_eyebrow_revised', lang))} {esc(_human_date(last_updated_str))}"
+        if last_updated_str else ""
+    )
     paragraphs = [esc(p.strip()) for p in text.split("\n\n") if p.strip()]
     if not paragraphs:
         paragraphs = [esc(text)]
-    body_html = "".join(f"<p class=\"basecase-body\">{p}</p>" for p in paragraphs)
+    body_html = "".join(f'<p class="basecase-body">{p}</p>' for p in paragraphs)
     return f"""
-      <section class="basecase" role="region" aria-label="Most-likely scenario">
-        <div class="basecase-eyebrow">The most likely path forward{eyebrow_extra}</div>
-        <h2 class="basecase-h">What's most likely to keep being true</h2>
+      <section class="basecase" role="region" aria-label="{esc(_t("basecase_h", lang))}">
+        <div class="basecase-eyebrow">{esc(_t("basecase_eyebrow", lang))}{eyebrow_extra}</div>
+        <h2 class="basecase-h">{esc(_t("basecase_h", lang))}</h2>
         {body_html}
-        <p class="basecase-foot">Each topic below leads with the questions sitting closest to this base case, then shows the lower-probability scenarios that would break it.</p>
+        <p class="basecase-foot">{esc(_t("basecase_foot", lang))}</p>
       </section>
     """
 
@@ -486,45 +706,44 @@ def _split_likely_tail(questions: list[dict]) -> tuple[list[dict], list[dict]]:
     return likely, tail
 
 
-def render_question_board(by_cat: dict, stripped: bool = False) -> str:
+def render_question_board(by_cat: dict, stripped: bool = False, lang: str = "en") -> str:
     total = sum(len(qs) for qs in by_cat.values())
-    parts = [f'<section class="board" role="region" aria-label="Question portfolio"><h2 class="board-h">Question portfolio · {total} questions</h2>']
-    parts.append(
-        '<p class="board-sub">Within each topic, most-likely outcomes lead; '
-        'lower-probability scenarios to watch follow under the divider. '
-        'Each card shows the current probability and the 80% range it\'s likely to fall in.</p>'
-    )
-    for cat_id, (num, title, css) in CATEGORY.items():
+    parts = [
+        f'<section class="board" role="region" aria-label="{esc(_t("board_h_template", lang).format(n=total))}">'
+        f'<h2 class="board-h">{esc(_t("board_h_template", lang).format(n=total))}</h2>',
+        f'<p class="board-sub">{_t("board_sub", lang)}</p>',
+    ]
+    for cat_id in CATEGORY_ORDER:
         if cat_id not in by_cat:
             continue
+        num, title, css = category_label(cat_id, lang)
         likely, tail = _split_likely_tail(by_cat[cat_id])
         cluster_blocks: list[str] = []
         if likely:
             cluster_blocks.append(f"""
               <div class="board-cluster board-cluster-likely">
-                <h4 class="board-cluster-h">Most-likely outcomes</h4>
+                <h4 class="board-cluster-h">{esc(_t("cluster_likely_h", lang))}</h4>
                 <div class="board-grid">
-                  {"".join(render_question_card(q, stripped=stripped) for q in likely)}
+                  {"".join(render_question_card(q, stripped=stripped, lang=lang) for q in likely)}
                 </div>
               </div>
             """)
         if tail:
             cluster_blocks.append(f"""
               <div class="board-cluster board-cluster-tail">
-                <h4 class="board-cluster-h">Lower-probability scenarios to watch</h4>
+                <h4 class="board-cluster-h">{esc(_t("cluster_tail_h", lang))}</h4>
                 <div class="board-grid">
-                  {"".join(render_question_card(q, stripped=stripped) for q in tail)}
+                  {"".join(render_question_card(q, stripped=stripped, lang=lang) for q in tail)}
                 </div>
               </div>
             """)
-        # If both clusters present, draw a thin divider between them
         cluster_html = '<hr class="board-cluster-divider" aria-hidden="true" />'.join(cluster_blocks) if len(cluster_blocks) > 1 else "".join(cluster_blocks)
         parts.append(f"""
           <div class="board-cat board-{css}">
             <header class="board-cat-head">
               <span class="board-cat-num">{esc(num)}</span>
               <h3 class="board-cat-title">{esc(title)}</h3>
-              <span class="board-cat-count">{len(by_cat[cat_id])} questions</span>
+              <span class="board-cat-count">{esc(_t("cat_count_template", lang).format(n=len(by_cat[cat_id])))}</span>
             </header>
             {cluster_html}
           </div>
@@ -547,10 +766,27 @@ def _is_private_question(q: dict) -> bool:
     return any(t in PRIVATE_STAKEHOLDER_TAGS for t in q.get("stakeholder_tags", []))
 
 
-def render_html(portfolio: dict, diffs: list[dict], history: list[dict], stripped: bool = False) -> str:
+def _toggle_link(lang: str, stripped: bool) -> tuple[str, str]:
+    """Returns (href, label) for the language-toggle link. Each rendered page
+    points to its sibling-language file."""
+    other = "fa" if lang == "en" else "en"
+    if stripped:
+        # On the public deploy, the file is served at root: index.html (en) or fa.html (fa).
+        # build-public.py renames public.html → index.html and public.fa.html → fa.html.
+        href = "/" if other == "en" else "/fa.html"
+    else:
+        # On the private deploy: index.html (en) or fa.html (fa) at repo root.
+        href = "/" if other == "en" else "/fa.html"
+    label = STRINGS[other]["lang_toggle_to_" + other] if other in STRINGS else other
+    # lang_toggle_to_fa always shows فارسی and lang_toggle_to_en always shows English
+    label = STRINGS["en"]["lang_toggle_to_" + other] if other == "fa" else STRINGS["fa"]["lang_toggle_to_" + other]
+    return href, label
+
+
+def render_html(portfolio: dict, diffs: list[dict], history: list[dict], stripped: bool = False, lang: str = "en") -> str:
     today = datetime.now(timezone.utc)
     today_iso = today.strftime("%Y-%m-%d")
-    next_tick_local = "Daily 07:00 ET"
+    next_tick_local = _t("topbar_next_value", lang)
 
     # Stripped public deploy excludes private/personal/business questions entirely.
     # Filter applies BOTH category and stakeholder-tag rules so a Q tagged for
@@ -588,33 +824,47 @@ def render_html(portfolio: dict, diffs: list[dict], history: list[dict], strippe
     else:
         top_q = portfolio["questions"][0]
 
-    title_base = "2026 Iran Conflict — Predictive Agent"
+    if lang == "fa":
+        title_base = STRINGS["fa"]["site_eyebrow"] + " — " + STRINGS["fa"]["site_title"]
+    else:
+        title_base = "2026 Iran Conflict — Predictive Agent"
     title = title_base + (" (Public)" if stripped else "")
     n_questions_visible = len(questions_for_view)
-    description_text = f"Daily-updated probability brief on {n_questions_visible} questions about the 2026 Iran-US conflict. Experimental — no track record yet."
+    if lang == "fa":
+        description_text = f"گزارش احتمال روزانه‌ی {n_questions_visible} پرسش درباره‌ی نزاع ایران و آمریکا ۲۰۲۶. آزمایشی — بدون سابقه."
+    else:
+        description_text = f"Daily-updated probability brief on {n_questions_visible} questions about the 2026 Iran-US conflict. Experimental — no track record yet."
+
+    toggle_href, toggle_label = _toggle_link(lang, stripped)
+    is_rtl = (lang == "fa")
+    html_dir = "rtl" if is_rtl else "ltr"
 
     d = war_day(today)
-    issue_subline = f"Day {d}"
+    issue_subline = f"{_t('issue_day', lang)} {d}"
     # Cease-fire / blockade day counters were removed from the masthead — they
     # imply a steady-state count that's misleading once the situation shifts.
     # The "most-likely scenario" paragraph below carries the live read.
 
-    # Public-stripped: keep a SCRUBBED methodology (no operator-queue / portfolio.yaml refs);
-    # drop the eight-logs section entirely (those reference internal Markdown logs not
-    # user-facing).
-    methodology_html = render_methodology(stripped=stripped)
+    methodology_html = render_methodology(stripped=stripped, lang=lang)
     logs_html = "" if stripped else render_logs_section()
 
     # Footer keeps only links a visitor would actually click.
-    # Internal docs (design spec, audits, cron workflow) are not surfaced —
-    # they exist in the repo for the operator's reference, not the page.
     if stripped:
         footer_links_html = ""
     else:
-        footer_links_html = '<a href="/legacy">Older dashboard</a>'
+        footer_links_html = f'<a href="/legacy">{esc(_t("footer_legacy_link", lang))}</a>'
+
+    banner_link = (
+        ""
+        if stripped else
+        f' <a href="/legacy">{esc(_t("banner_legacy_link", lang))}</a>'
+    )
+
+    canonical_base = "https://iran-war-public.vercel.app/" if stripped else "https://iran-war-dashboard-murex.vercel.app/"
+    canonical_url = canonical_base + ("fa.html" if lang == "fa" else "")
 
     return f"""<!DOCTYPE html>
-<html lang="en" dir="ltr">
+<html lang="{esc(lang)}" dir="{esc(html_dir)}">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -625,58 +875,59 @@ def render_html(portfolio: dict, diffs: list[dict], history: list[dict], strippe
   <meta property="og:type" content="article" />
   <meta name="description" content="{esc(description_text)}" />
   <link rel="stylesheet" href="dashboard.css" />
-  <link rel="canonical" href="{esc('https://iran-war-public.vercel.app/' if stripped else 'https://iran-war-dashboard-murex.vercel.app/')}" />
+  <link rel="canonical" href="{esc(canonical_url)}" />
+  <link rel="alternate" hreflang="en" href="{esc(canonical_base)}" />
+  <link rel="alternate" hreflang="fa" href="{esc(canonical_base + 'fa.html')}" />
 </head>
-<body class="agent-v2">
+<body class="agent-v2 lang-{esc(lang)}{' is-rtl' if is_rtl else ''}">
 
   <div class="topbar">
     <div class="topbar-inner">
       <div class="topbar-l">
-        <span class="topbar-eyebrow">2026 Iran-US Conflict</span>
-        <span class="topbar-title">Predictive Agent</span>
+        <span class="topbar-eyebrow">{esc(_t("site_eyebrow", lang))}</span>
+        <span class="topbar-title">{esc(_t("site_title", lang))}</span>
       </div>
       <div class="topbar-r">
-        <span class="topbar-meta" title="Page rendered at this time (UTC)">{esc(today.strftime("%Y-%m-%d %H:%M UTC"))}</span>
-        <span class="topbar-meta">Next: {esc(next_tick_local)}</span>
+        <span class="topbar-meta">{esc(today.strftime("%Y-%m-%d %H:%M UTC"))}</span>
+        <span class="topbar-meta">{esc(_t("topbar_next_label", lang))} {esc(next_tick_local)}</span>
+        <a class="topbar-meta lang-toggle" href="{esc(toggle_href)}" hreflang="{'fa' if lang == 'en' else 'en'}" rel="alternate">{esc(toggle_label)}</a>
       </div>
     </div>
   </div>
 
   <div class="experimental-banner agent-banner">
-    <strong>EXPERIMENTAL — UNCALIBRATED</strong>
-    <span>None of these questions has resolved yet, so the probabilities have no track record. Treat them as structured scenario reasoning, not as forecasts.{(
-      ''
-      if stripped else
-      ' <a href="/legacy">Older dashboard</a>'
-    )}</span>
+    <strong>{esc(_t("banner_strong", lang))}</strong>
+    <span>{_t("banner_text", lang)}{banner_link}</span>
   </div>
 
-  <main class="agent-page" role="main" aria-label="Predictive Agent Brief">
+  <main class="agent-page" role="main" aria-label="{esc(_t("site_title", lang))}">
 
-    <header class="agent-masthead" role="banner" aria-label="Issue masthead">
-      <div class="masthead-class">For analytic reading · Probability brief, not advice</div>
+    <header class="agent-masthead" role="banner" aria-label="{esc(_t("masthead_publisher", lang))}">
+      <div class="masthead-class">{esc(_t("masthead_classification", lang))}</div>
       <div class="masthead-row">
         <div class="masthead-l">
           <div class="masthead-eyebrow">Issue · {esc(issue_subline)}</div>
-          <h1 class="masthead-title">Predictive Agent</h1>
+          <h1 class="masthead-title">{esc(_t("site_title", lang))}</h1>
         </div>
         <div class="masthead-r">
-          <div class="masthead-publisher">2026 IRAN-US CONFLICT MONITOR</div>
-          <div class="masthead-publisher-sub">Daily 07:00 ET update</div>
+          <div class="masthead-publisher">{esc(_t("masthead_publisher", lang))}</div>
+          <div class="masthead-publisher-sub">{esc(_t("masthead_subline", lang))}</div>
         </div>
       </div>
       <div class="masthead-rule"></div>
     </header>
 
-    {render_headline_narrative(today, portfolio_view, stripped=stripped)}
+    {render_headline_narrative(today, portfolio_view, stripped=stripped, lang=lang)}
 
-    {render_base_case(portfolio_view, stripped=stripped)}
+    {render_economic_war_frame(portfolio_view, lang=lang)}
 
-    {render_diff_panel(diffs_for_view, history)}
+    {render_base_case(portfolio_view, stripped=stripped, lang=lang)}
 
-    {render_top_question(top_q, last_q_by_id, history_present=bool(prior))}
+    {render_diff_panel(diffs_for_view, history, lang=lang)}
 
-    {render_question_board(by_cat, stripped=stripped)}
+    {render_top_question(top_q, last_q_by_id, history_present=bool(prior), lang=lang)}
+
+    {render_question_board(by_cat, stripped=stripped, lang=lang)}
 
     {logs_html}
 
@@ -687,8 +938,8 @@ def render_html(portfolio: dict, diffs: list[dict], history: list[dict], strippe
   <footer class="agent-footer">
     <div class="agent-footer-inner">
       <div class="agent-footer-l">
-        <div class="agent-footer-brand">2026 IRAN-US CONFLICT PREDICTIVE AGENT</div>
-        <div class="agent-footer-meta">Daily structured scenario analysis · experimental · no track record yet</div>
+        <div class="agent-footer-brand">{esc(_t("footer_brand", lang))}</div>
+        <div class="agent-footer-meta">{esc(_t("footer_meta", lang))}</div>
       </div>
       <div class="agent-footer-r">
         {footer_links_html}
@@ -701,29 +952,34 @@ def render_html(portfolio: dict, diffs: list[dict], history: list[dict], strippe
 """
 
 
+def _atomic_write(path: Path, text: str) -> None:
+    tmp = path.with_suffix(path.suffix + ".tmp")
+    tmp.write_text(text, encoding="utf-8")
+    tmp.replace(path)
+
+
 def main():
     import time
     t0 = time.monotonic()
     parser = argparse.ArgumentParser()
-    parser.add_argument("--public", action="store_true", help="Also render public.html (stripped)")
+    parser.add_argument("--public", action="store_true", help="Also render public.html / public.fa.html (stripped)")
     args = parser.parse_args()
 
     portfolio = load_portfolio()
     history = load_history()
     diffs = compute_diffs_vs_yesterday(portfolio, history)
 
-    # Atomic write via tmp + rename
-    full_html = render_html(portfolio, diffs, history, stripped=False)
-    tmp = OUTPUT_INDEX.with_suffix(".html.tmp")
-    tmp.write_text(full_html, encoding="utf-8")
-    tmp.replace(OUTPUT_INDEX)
-    print(f"wrote {OUTPUT_INDEX} ({len(full_html)} bytes)")
+    targets: list[tuple[Path, bool, str]] = [
+        (OUTPUT_INDEX, False, "en"),
+        (OUTPUT_INDEX_FA, False, "fa"),
+    ]
     if args.public:
-        pub_html = render_html(portfolio, diffs, history, stripped=True)
-        tmp_pub = OUTPUT_PUBLIC.with_suffix(".html.tmp")
-        tmp_pub.write_text(pub_html, encoding="utf-8")
-        tmp_pub.replace(OUTPUT_PUBLIC)
-        print(f"wrote {OUTPUT_PUBLIC} ({len(pub_html)} bytes)")
+        targets.append((OUTPUT_PUBLIC, True, "en"))
+        targets.append((OUTPUT_PUBLIC_FA, True, "fa"))
+    for out_path, stripped, lang in targets:
+        html = render_html(portfolio, diffs, history, stripped=stripped, lang=lang)
+        _atomic_write(out_path, html)
+        print(f"wrote {out_path} ({len(html)} bytes, lang={lang}, stripped={stripped})")
     print(f"render took {time.monotonic() - t0:.2f}s")
 
 
