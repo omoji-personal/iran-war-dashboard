@@ -2895,8 +2895,10 @@ body.agent-v2 .topq-link:hover { color: var(--agent-accent-2); }
 
 /* ===== Headline narrative ===== */
 body.agent-v2 .headline {
-  margin-bottom: 56px;
-  max-width: 920px;
+  margin-bottom: 48px;
+  /* No section-level width cap — the headline matches every other section
+     visually (full container width). Inner paragraphs cap themselves at a
+     readable line length. */
 }
 body.agent-v2 .headline-eyebrow {
   font-family: var(--mono);
@@ -2904,23 +2906,42 @@ body.agent-v2 .headline-eyebrow {
   letter-spacing: 0.14em;
   text-transform: uppercase;
   color: var(--agent-amber);
-  margin-bottom: 16px;
+  margin-bottom: 18px;
   border-top: 1px solid var(--agent-rule);
   padding-top: 16px;
 }
-body.agent-v2 .headline-lead {
-  font-family: var(--serif);
-  font-size: 22px;
-  line-height: 1.45;
-  color: var(--agent-ink);
-  margin: 0 0 16px 0;
-}
+/* Two-column editorial layout for the lead + body so the headline section
+   uses the full container width without sacrificing readable line length.
+   On narrower screens it falls back to a single column via the responsive
+   block at the bottom of this file. */
+body.agent-v2 .headline-lead,
 body.agent-v2 .headline-body {
   font-family: var(--serif);
-  font-size: 17px;
-  line-height: 1.65;
   color: var(--agent-ink);
   margin: 0;
+  max-width: 60ch;
+}
+body.agent-v2 .headline-lead {
+  font-size: 22px;
+  line-height: 1.45;
+}
+body.agent-v2 .headline-body {
+  font-size: 17px;
+  line-height: 1.65;
+}
+@media (min-width: 1100px) {
+  body.agent-v2 .headline {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas:
+      "eyebrow eyebrow"
+      "lead    body";
+    column-gap: 48px;
+    row-gap: 8px;
+  }
+  body.agent-v2 .headline-eyebrow { grid-area: eyebrow; }
+  body.agent-v2 .headline-lead { grid-area: lead; max-width: none; }
+  body.agent-v2 .headline-body { grid-area: body; max-width: none; }
 }
 body.agent-v2 .dropcap {
   font-family: var(--serif);
