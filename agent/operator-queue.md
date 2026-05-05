@@ -10,6 +10,43 @@ Format per item:
 
 ---
 
+## 2026-05-05 — C1 — URGENT: Resolve YES (Ali Khamenei killed 2026-02-28)
+
+Washington Post, CNN, Al Jazeera all confirm Ali Khamenei was killed in the Feb 28 US-Israel strikes.
+Portfolio still shows C1 at 8% (incorrect — written with bad initial data).
+
+**Agent recommendation:** Resolve C1 = YES (date: 2026-02-28). Activate successor questions.
+Check whether "Iran framework-deal probability shifts >20pp within 30d of C1" — it should, given Mojtaba now leads.
+
+**Open issue:** Confirm the resolution date. Also: was the successor process faction-contested?
+
+---
+
+## 2026-05-05 — C3 — URGENT: Resolve YES (Mojtaba named Supreme Leader 2026-03-09)
+
+Mojtaba Khamenei was elected Supreme Leader by Assembly of Experts (election March 3–8, announced March 9).
+Resolution criterion exceeded (he was elected outright, not merely named heir-apparent).
+
+**Agent recommendation:** Resolve C3 = YES (date: 2026-03-09). This also requires re-reading A5 (now applies to Mojtaba, not Ali).
+
+**Open issue:** Does the question "Mojtaba designated heir-apparent" count even though he became Supreme Leader directly? Agent says YES — stronger resolution than required.
+
+---
+
+## 2026-05-05 — 14 probability moves recommended — operator to apply or decline
+
+See `logs/probability-changes/2026-05-05.md` for the full recommended-move table.
+Key highest-confidence moves:
+- D3: 50% → 68% (gas $4.483, one incident away from $4.50 trigger)
+- A3: 12% → 35% (Project Freedom = Earnest Will-style escort in operation)
+- B2: 28% → 42% (Iran actively fired on US+SK ships in Hormuz)
+
+**Agent recommendation:** Apply all 14 moves at next operator session.
+
+**Open issue:** Do you want to continue using old portfolio.yaml probabilities or let cron surface recommended moves each tick for manual application?
+
+---
+
 ## 2026-05-03 — F1-F12 portfolio confirmation — confirm/edit family-business questions
 
 The 12 F-class questions (F1-F6 Iranfarhang, F7-F12 Kipa) were generated from

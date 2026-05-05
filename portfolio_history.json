@@ -15,7 +15,7 @@
       "escalationCatastrophe": 0.207,
       "derivation_escalation": "UP from 0.28. Blockade Monday = direct confrontation risk. If Iran resists: naval war. IRGC 'act of war.'",
       "protractedContinuation": 0.339,
-      "derivation_protracted": "DOWN from 0.38. Blockade accelerates timeline \u2014 less likely to remain protracted, more likely collapse or confrontation.",
+      "derivation_protracted": "DOWN from 0.38. Blockade accelerates timeline — less likely to remain protracted, more likely collapse or confrontation.",
       "internationalIntervention": 0.142,
       "derivation_intervention": "UP from 0.10. Allies refusing blockade. China condemning. If maritime confrontation: international pressure surges.",
       "other": 0.073,
@@ -43,7 +43,7 @@
       "escalationCatastrophe": 0.237,
       "derivation_escalation": "UP from 0.28. Blockade Monday = direct confrontation risk. If Iran resists: naval war. IRGC 'act of war.'",
       "protractedContinuation": 0.461,
-      "derivation_protracted": "DOWN from 0.38. Blockade accelerates timeline \u2014 less likely to remain protracted, more likely collapse or confrontation.",
+      "derivation_protracted": "DOWN from 0.38. Blockade accelerates timeline — less likely to remain protracted, more likely collapse or confrontation.",
       "internationalIntervention": 0.152,
       "derivation_intervention": "UP from 0.10. Allies refusing blockade. China condemning. If maritime confrontation: international pressure surges.",
       "other": 0.075,
@@ -515,327 +515,457 @@
   {
     "date": "2026-05-05",
     "engineVersion": "0.2.0",
-    "phase": 0,
+    "spec_version": "v8",
+    "captured_at": "2026-05-05T11:13:29.574014+00:00",
     "questions": [
       {
         "id": "A1",
-        "category": "diplomatic_resolution",
         "probability": 0.18,
-        "ci_80": [
+        "credible_interval_80": [
           0.08,
           0.32
         ],
-        "last_updated": "2026-05-03 06:00:00-04:00"
+        "icd203_label": "very_unlikely",
+        "category": "diplomatic_resolution",
+        "stakeholder_tags": [
+          "us_foreign_policy",
+          "iran_regime_survival",
+          "oil_energy_markets"
+        ]
       },
       {
         "id": "A2",
-        "category": "diplomatic_resolution",
         "probability": 0.25,
-        "ci_80": [
+        "credible_interval_80": [
           0.12,
           0.42
         ],
-        "last_updated": "2026-05-03 06:00:00-04:00"
+        "icd203_label": "unlikely",
+        "category": "diplomatic_resolution",
+        "stakeholder_tags": [
+          "oil_energy_markets",
+          "regional_security"
+        ]
       },
       {
         "id": "A3",
-        "category": "diplomatic_resolution",
         "probability": 0.12,
-        "ci_80": [
+        "credible_interval_80": [
           0.04,
           0.25
         ],
-        "last_updated": "2026-05-03 06:00:00-04:00"
+        "icd203_label": "very_unlikely",
+        "category": "diplomatic_resolution",
+        "stakeholder_tags": [
+          "us_foreign_policy",
+          "oil_energy_markets",
+          "regional_security"
+        ]
       },
       {
         "id": "A4",
-        "category": "diplomatic_resolution",
         "probability": 0.22,
-        "ci_80": [
+        "credible_interval_80": [
           0.1,
           0.38
         ],
-        "last_updated": "2026-05-03 06:00:00-04:00"
+        "icd203_label": "unlikely",
+        "category": "diplomatic_resolution",
+        "stakeholder_tags": [
+          "us_foreign_policy",
+          "iran_regime_survival"
+        ]
       },
       {
         "id": "A5",
-        "category": "diplomatic_resolution",
         "probability": 0.1,
-        "ci_80": [
+        "credible_interval_80": [
           0.03,
           0.22
         ],
-        "last_updated": "2026-05-03 06:00:00-04:00"
+        "icd203_label": "very_unlikely",
+        "category": "diplomatic_resolution",
+        "stakeholder_tags": [
+          "iran_regime_survival",
+          "us_foreign_policy"
+        ]
       },
       {
         "id": "B1",
-        "category": "military_escalation",
         "probability": 0.2,
-        "ci_80": [
+        "credible_interval_80": [
           0.1,
           0.35
         ],
-        "last_updated": "2026-05-03 06:00:00-04:00"
+        "icd203_label": "unlikely",
+        "category": "military_escalation",
+        "stakeholder_tags": [
+          "us_foreign_policy",
+          "regional_security",
+          "oil_energy_markets"
+        ]
       },
       {
         "id": "B2",
-        "category": "military_escalation",
         "probability": 0.28,
-        "ci_80": [
+        "credible_interval_80": [
           0.15,
           0.45
         ],
-        "last_updated": "2026-05-03 06:00:00-04:00"
+        "icd203_label": "unlikely",
+        "category": "military_escalation",
+        "stakeholder_tags": [
+          "us_foreign_policy",
+          "regional_security",
+          "oil_energy_markets"
+        ]
       },
       {
         "id": "B3",
-        "category": "military_escalation",
         "probability": 0.15,
-        "ci_80": [
+        "credible_interval_80": [
           0.06,
           0.3
         ],
-        "last_updated": "2026-05-03 06:00:00-04:00"
+        "icd203_label": "very_unlikely",
+        "category": "military_escalation",
+        "stakeholder_tags": [
+          "regional_security",
+          "us_foreign_policy",
+          "oil_energy_markets"
+        ]
       },
       {
         "id": "B4",
-        "category": "military_escalation",
         "probability": 0.3,
-        "ci_80": [
+        "credible_interval_80": [
           0.18,
           0.45
         ],
-        "last_updated": "2026-05-03 06:00:00-04:00"
+        "icd203_label": "unlikely",
+        "category": "military_escalation",
+        "stakeholder_tags": [
+          "regional_security",
+          "oil_energy_markets"
+        ]
       },
       {
         "id": "B5",
-        "category": "military_escalation",
         "probability": 0.55,
-        "ci_80": [
+        "credible_interval_80": [
           0.38,
           0.72
         ],
-        "last_updated": "2026-05-03 06:00:00-04:00"
+        "icd203_label": "likely",
+        "category": "military_escalation",
+        "stakeholder_tags": [
+          "oil_energy_markets",
+          "regional_security"
+        ]
       },
       {
         "id": "C1",
-        "category": "regime_leadership",
         "probability": 0.08,
-        "ci_80": [
+        "credible_interval_80": [
           0.03,
           0.18
         ],
-        "last_updated": "2026-05-03 06:00:00-04:00"
+        "icd203_label": "very_unlikely",
+        "category": "regime_leadership",
+        "stakeholder_tags": [
+          "iran_regime_survival",
+          "us_foreign_policy"
+        ]
       },
       {
         "id": "C2",
-        "category": "regime_leadership",
         "probability": 0.45,
-        "ci_80": [
+        "credible_interval_80": [
           0.28,
           0.62
         ],
-        "last_updated": "2026-05-03 06:00:00-04:00"
+        "icd203_label": "roughly_even_chance",
+        "category": "regime_leadership",
+        "stakeholder_tags": [
+          "iran_regime_survival"
+        ]
       },
       {
         "id": "C3",
-        "category": "regime_leadership",
         "probability": 0.06,
-        "ci_80": [
+        "credible_interval_80": [
           0.02,
           0.15
         ],
-        "last_updated": "2026-05-03 06:00:00-04:00"
+        "icd203_label": "very_unlikely",
+        "category": "regime_leadership",
+        "stakeholder_tags": [
+          "iran_regime_survival"
+        ]
       },
       {
         "id": "C4",
-        "category": "regime_leadership",
         "probability": 0.3,
-        "ci_80": [
+        "credible_interval_80": [
           0.15,
           0.5
         ],
-        "last_updated": "2026-05-03 06:00:00-04:00"
+        "icd203_label": "unlikely",
+        "category": "regime_leadership",
+        "stakeholder_tags": [
+          "iran_regime_survival"
+        ]
       },
       {
         "id": "D1",
-        "category": "economic_structural",
         "probability": 0.65,
-        "ci_80": [
+        "credible_interval_80": [
           0.45,
           0.82
         ],
-        "last_updated": "2026-05-03 06:00:00-04:00"
+        "icd203_label": "likely",
+        "category": "economic_structural",
+        "stakeholder_tags": [
+          "iran_regime_survival"
+        ]
       },
       {
         "id": "D2",
-        "category": "economic_structural",
         "probability": 0.45,
-        "ci_80": [
+        "credible_interval_80": [
           0.28,
           0.65
         ],
-        "last_updated": "2026-05-03 06:00:00-04:00"
+        "icd203_label": "roughly_even_chance",
+        "category": "economic_structural",
+        "stakeholder_tags": [
+          "iran_regime_survival",
+          "oil_energy_markets"
+        ]
       },
       {
         "id": "D3",
-        "category": "economic_structural",
         "probability": 0.5,
-        "ci_80": [
+        "credible_interval_80": [
           0.3,
           0.7
         ],
-        "last_updated": "2026-05-03 06:00:00-04:00"
+        "icd203_label": "roughly_even_chance",
+        "category": "economic_structural",
+        "stakeholder_tags": [
+          "us_foreign_policy"
+        ]
       },
       {
         "id": "D4",
-        "category": "economic_structural",
         "probability": 0.35,
-        "ci_80": [
+        "credible_interval_80": [
           0.18,
           0.55
         ],
-        "last_updated": "2026-05-03 06:00:00-04:00"
+        "icd203_label": "unlikely",
+        "category": "economic_structural",
+        "stakeholder_tags": [
+          "oil_energy_markets",
+          "us_foreign_policy"
+        ]
       },
       {
         "id": "E1",
-        "category": "us_side",
         "probability": 0.3,
-        "ci_80": [
+        "credible_interval_80": [
           0.18,
           0.45
         ],
-        "last_updated": "2026-05-03 06:00:00-04:00"
+        "icd203_label": "unlikely",
+        "category": "us_side",
+        "stakeholder_tags": [
+          "us_foreign_policy"
+        ]
       },
       {
         "id": "E2",
-        "category": "us_side",
         "probability": 0.55,
-        "ci_80": [
+        "credible_interval_80": [
           0.4,
           0.7
         ],
-        "last_updated": "2026-05-03 06:00:00-04:00"
+        "icd203_label": "likely",
+        "category": "us_side",
+        "stakeholder_tags": [
+          "us_foreign_policy"
+        ]
       },
       {
         "id": "F1",
-        "category": "family_business_iranfarhang",
         "probability": 0.2,
-        "ci_80": [
+        "credible_interval_80": [
           0.08,
           0.38
         ],
-        "last_updated": "2026-05-03 06:00:00-04:00"
+        "icd203_label": "unlikely",
+        "category": "family_business_iranfarhang",
+        "stakeholder_tags": [
+          "omid_personal",
+          "iranfarhang_business"
+        ]
       },
       {
         "id": "F2",
-        "category": "family_business_iranfarhang",
         "probability": 0.3,
-        "ci_80": [
+        "credible_interval_80": [
           0.15,
           0.5
         ],
-        "last_updated": "2026-05-03 06:00:00-04:00"
+        "icd203_label": "unlikely",
+        "category": "family_business_iranfarhang",
+        "stakeholder_tags": [
+          "omid_personal",
+          "iranfarhang_business"
+        ]
       },
       {
         "id": "F3",
-        "category": "family_business_iranfarhang",
         "probability": 0.5,
-        "ci_80": [
+        "credible_interval_80": [
           0.3,
           0.7
         ],
-        "last_updated": "2026-05-03 06:00:00-04:00"
+        "icd203_label": "roughly_even_chance",
+        "category": "family_business_iranfarhang",
+        "stakeholder_tags": [
+          "omid_personal",
+          "iranfarhang_business"
+        ]
       },
       {
         "id": "F4",
-        "category": "family_business_iranfarhang",
         "probability": 0.45,
-        "ci_80": [
+        "credible_interval_80": [
           0.25,
           0.65
         ],
-        "last_updated": "2026-05-03 06:00:00-04:00"
+        "icd203_label": "roughly_even_chance",
+        "category": "family_business_iranfarhang",
+        "stakeholder_tags": [
+          "omid_personal",
+          "iranfarhang_business"
+        ]
       },
       {
         "id": "F5",
-        "category": "family_business_iranfarhang",
         "probability": 0.1,
-        "ci_80": [
+        "credible_interval_80": [
           0.03,
           0.22
         ],
-        "last_updated": "2026-05-03 06:00:00-04:00"
+        "icd203_label": "very_unlikely",
+        "category": "family_business_iranfarhang",
+        "stakeholder_tags": [
+          "omid_personal",
+          "iranfarhang_business"
+        ]
       },
       {
         "id": "F6",
-        "category": "family_business_iranfarhang",
         "probability": 0.55,
-        "ci_80": [
+        "credible_interval_80": [
           0.35,
           0.75
         ],
-        "last_updated": "2026-05-03 06:00:00-04:00"
+        "icd203_label": "likely",
+        "category": "family_business_iranfarhang",
+        "stakeholder_tags": [
+          "omid_personal",
+          "iranfarhang_business"
+        ]
       },
       {
         "id": "F7",
-        "category": "family_business_kipa",
         "probability": 0.2,
-        "ci_80": [
+        "credible_interval_80": [
           0.08,
           0.38
         ],
-        "last_updated": "2026-05-03 06:00:00-04:00"
+        "icd203_label": "unlikely",
+        "category": "family_business_kipa",
+        "stakeholder_tags": [
+          "omid_personal",
+          "kipa_business",
+          "oil_energy_markets"
+        ]
       },
       {
         "id": "F8",
-        "category": "family_business_kipa",
         "probability": 0.55,
-        "ci_80": [
+        "credible_interval_80": [
           0.35,
           0.75
         ],
-        "last_updated": "2026-05-03 06:00:00-04:00"
+        "icd203_label": "likely",
+        "category": "family_business_kipa",
+        "stakeholder_tags": [
+          "omid_personal",
+          "kipa_business",
+          "iran_regime_survival"
+        ]
       },
       {
         "id": "F9",
-        "category": "family_business_kipa",
         "probability": 0.4,
-        "ci_80": [
+        "credible_interval_80": [
           0.2,
           0.62
         ],
-        "last_updated": "2026-05-03 06:00:00-04:00"
+        "icd203_label": "unlikely",
+        "category": "family_business_kipa",
+        "stakeholder_tags": [
+          "omid_personal",
+          "kipa_business"
+        ]
       },
       {
         "id": "F10",
-        "category": "family_business_kipa",
         "probability": 0.15,
-        "ci_80": [
+        "credible_interval_80": [
           0.05,
           0.32
         ],
-        "last_updated": "2026-05-03 06:00:00-04:00"
+        "icd203_label": "very_unlikely",
+        "category": "family_business_kipa",
+        "stakeholder_tags": [
+          "omid_personal",
+          "kipa_business"
+        ]
       },
       {
         "id": "F11",
-        "category": "family_business_kipa",
         "probability": 0.3,
-        "ci_80": [
+        "credible_interval_80": [
           0.15,
           0.5
         ],
-        "last_updated": "2026-05-03 06:00:00-04:00"
+        "icd203_label": "unlikely",
+        "category": "family_business_kipa",
+        "stakeholder_tags": [
+          "omid_personal",
+          "kipa_business"
+        ]
       },
       {
         "id": "F12",
-        "category": "family_business_kipa",
         "probability": 0.3,
-        "ci_80": [
+        "credible_interval_80": [
           0.15,
           0.5
         ],
-        "last_updated": "2026-05-03 06:00:00-04:00"
+        "icd203_label": "unlikely",
+        "category": "family_business_kipa",
+        "stakeholder_tags": [
+          "omid_personal",
+          "kipa_business",
+          "oil_energy_markets"
+        ]
       }
     ]
   }
