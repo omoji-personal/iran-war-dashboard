@@ -2764,7 +2764,7 @@ body.agent-v2 .diff-panel {
   border: 1px solid var(--agent-rule);
   border-left: 3px solid var(--agent-accent);
   padding: 22px 26px;
-  margin-bottom: 32px;
+  margin-bottom: 40px;
   border-radius: 2px;
 }
 body.agent-v2 .diff-h {
@@ -2804,7 +2804,7 @@ body.agent-v2 .topq {
   border: 1px solid var(--agent-rule);
   border-left: 4px solid var(--agent-accent);
   padding: 32px 36px;
-  margin-bottom: 40px;
+  margin-bottom: 56px;  /* major break before the question board */
   border-radius: 2px;
   position: relative;
   overflow: hidden;
@@ -2893,9 +2893,12 @@ body.agent-v2 .topq-link {
 }
 body.agent-v2 .topq-link:hover { color: var(--agent-accent-2); }
 
-/* ===== Headline narrative ===== */
+/* ===== Headline narrative =====
+   Section spacing rhythm: standard sections use 40px margin-bottom; the
+   board and the topq→board transition use 56px to create visible "major
+   break" beats before the densest part of the page. */
 body.agent-v2 .headline {
-  margin-bottom: 48px;
+  margin-bottom: 40px;
   /* No section-level width cap — the headline matches every other section
      visually (full container width). Inner paragraphs cap themselves at a
      readable line length. */
@@ -3044,7 +3047,7 @@ body.agent-v2 .frame {
   border-right: 1px solid var(--agent-rule);
   border-bottom: 1px solid var(--agent-rule);
   padding: 24px 28px 22px 28px;
-  margin: 0 0 28px 0;
+  margin: 0 0 40px 0;
   border-radius: 2px;
 }
 body.agent-v2 .frame-eyebrow {
@@ -3675,7 +3678,7 @@ body.agent-v2 .log-desc {
 
 /* ===== Methodology ===== */
 body.agent-v2 .methodology {
-  margin-bottom: 32px;
+  margin-bottom: 0; /* last section before footer; footer carries its own gap */
   padding-top: 28px;
   border-top: 3px double var(--agent-rule);
 }
