@@ -402,6 +402,11 @@ def render_question_card(q: dict, stripped: bool = False, lang: str = "en") -> s
 
     # `dir="auto"` on user-content blocks so an English question on a Persian
     # page renders LTR without breaking the surrounding RTL chrome.
+    # CI-label split: only the numeric range gets <bdi dir="ltr"> isolation.
+    # The Persian "بازه‌ی ۸۰٪:" label stays in the document direction so the
+    # colon attaches to the right side of the Persian chars (correct flow).
+    ci_label_text = _t('qcard_ci_label', lang)
+    ci_range = f'<bdi dir="ltr">{ci_lo}–{ci_hi}%</bdi>'
     return f"""
       <article class="qcard qcard-{cat_css} qcard-prob-{label_css}" id="q-{q['id']}">
         <header class="qcard-head">
@@ -416,12 +421,12 @@ def render_question_card(q: dict, stripped: bool = False, lang: str = "en") -> s
             <span class="qcard-prob-label">{esc(label)}</span>
           </div>
           <div class="qcard-ci">
-            <span class="qcard-ci-bar" aria-label="{esc(_t('qcard_ci_label', lang))} {ci_lo}–{ci_hi}%">
+            <span class="qcard-ci-bar" aria-label="{esc(ci_label_text)} {ci_lo}–{ci_hi}%">
               <span class="qcard-ci-track"></span>
               <span class="qcard-ci-fill" style="left: {ci_lo}%; width: {ci_hi - ci_lo}%"></span>
               <span class="qcard-ci-mark" style="left: {pct}%"></span>
             </span>
-            <bdi class="qcard-ci-label" dir="ltr">{esc(_t('qcard_ci_label', lang))} {ci_lo}–{ci_hi}%</bdi>
+            <span class="qcard-ci-label">{esc(ci_label_text)} {ci_range}</span>
           </div>
         </div>
         <p class="qcard-note" dir="auto">{esc(notes)}</p>
@@ -561,6 +566,8 @@ def render_top_question(q: dict, last_q_by_id: dict, history_present: bool, lang
             )
 
     eyebrow = _t("topq_eyebrow", lang)
+    ci_label_text = _t("topq_ci_label", lang)
+    ci_range = f'<bdi dir="ltr">{round(ci[0]*100)}–{round(ci[1]*100)}%</bdi>'
     return f"""
       <section class="topq topq-{css}" role="region" aria-label="{esc(eyebrow)}">
         <div class="topq-eyebrow">{esc(eyebrow)} · {esc(q['id'])} · <bdi dir="ltr">→ {esc(q['deadline'])}</bdi>{delta_text}</div>
@@ -569,7 +576,7 @@ def render_top_question(q: dict, last_q_by_id: dict, history_present: bool, lang
           <div class="topq-prob">
             <span class="topq-prob-num">{pct}<span class="topq-prob-pct">%</span></span>
             <span class="topq-prob-label">{esc(label)}</span>
-            <bdi class="topq-prob-ci" dir="ltr">{esc(_t("topq_ci_label", lang))} {round(ci[0]*100)}–{round(ci[1]*100)}%</bdi>
+            <span class="topq-prob-ci">{esc(ci_label_text)} {ci_range}</span>
           </div>
           <p class="topq-note" dir="auto">{esc(notes)}</p>
         </div>
@@ -600,8 +607,19 @@ def render_headline_narrative(today: datetime, portfolio: dict, stripped: bool =
     bullets = []
     for q in high_stakes:
         label, _, _ = icd203(q["current_probability"], lang=lang)
+        pct_int = round(q["current_probability"] * 100)
+        # In RTL the bare percent string (`18%`) and the surrounding parens
+        # would attach awkwardly to the Persian label. Wrap percent in <bdi>
+        # so bidi recognizes the LTR boundary and the closing `)` mirrors
+        # back to the Persian side correctly.
+        pct_display = (
+            f'<bdi dir="ltr">{_to_fa_digits(str(pct_int))}٪</bdi>'
+            if lang == "fa"
+            else f"{pct_int}%"
+        )
+        sep = "،" if lang == "fa" else ","
         bullets.append(
-            f"<strong>{esc(q['id'])}</strong> ({esc(label)}, {round(q['current_probability']*100)}%) — "
+            f"<strong>{esc(q['id'])}</strong> ({esc(label)}{sep} {pct_display}) — "
             f"{esc(_q_field(q, 'question', lang))}"
         )
 
@@ -857,9 +875,11 @@ def render_html(portfolio: dict, diffs: list[dict], history: list[dict], strippe
 
     if lang == "fa":
         title_base = STRINGS["fa"]["site_eyebrow"] + " — " + STRINGS["fa"]["site_title"]
+        public_suffix = " (عمومی)" if stripped else ""
     else:
         title_base = "2026 Iran Conflict — Predictive Agent"
-    title = title_base + (" (Public)" if stripped else "")
+        public_suffix = " (Public)" if stripped else ""
+    title = title_base + public_suffix
     n_questions_visible = len(questions_for_view)
     if lang == "fa":
         description_text = f"گزارش احتمال روزانه‌ی {n_questions_visible} پرسش درباره‌ی نزاع ایران و آمریکا ۲۰۲۶. آزمایشی — بدون سابقه."
@@ -924,7 +944,7 @@ def render_html(portfolio: dict, diffs: list[dict], history: list[dict], strippe
         <span class="topbar-title">{esc(_t("site_title", lang))}</span>
       </div>
       <div class="topbar-r">
-        <span class="topbar-meta">{esc(today.strftime("%Y-%m-%d %H:%M UTC"))}</span>
+        <span class="topbar-meta">{esc(_to_fa_digits(today.strftime("%Y-%m-%d %H:%M")) if lang == "fa" else today.strftime("%Y-%m-%d %H:%M"))} UTC</span>
         <span class="topbar-meta">{esc(_t("topbar_next_label", lang))} {esc(next_tick_local)}</span>
         <a class="topbar-meta lang-toggle" href="{esc(toggle_href)}" hreflang="{'fa' if lang == 'en' else 'en'}" rel="alternate">{esc(toggle_label)}</a>
       </div>

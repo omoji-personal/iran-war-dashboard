@@ -30,6 +30,10 @@ questions:
     notes: |
       14-point counter-proposal in motion (May 3). Trump reviewing "concept of deal."
       Khamenei nuclear vow hardens red lines. Polymarket implied ~15-18%.
+    question_fa: "توافق چارچوبی ایران و آمریکا (به هر شکل) تا ۳۰ سپتامبر ۲۰۲۶ امضا شود"
+    notes_fa: |
+      پیشنهاد چهارده‌بندی متقابل از ۳ مه فعال است. ترامپ در حال بررسی «مفهوم توافق» اما «راضی نیست».
+      نذر هسته‌ای خامنه‌ای خط قرمزها را سفت‌تر می‌کند. بازار پیش‌بینی Polymarket حدود ۱۵ تا ۱۸٪ تخمین می‌زند.
     successors_on_resolve_yes:
       - "Iran enriches above 60% within 90d of signing?"
       - "US lifts first sanctions tranche by stated deadline?"
@@ -59,6 +63,11 @@ questions:
       Currently ~7 vessels/day (5% of pre-war 135). Iran Hormuz Sovereignty Law
       (12-article) advancing in parliament. Resolution requires either deal (A1)
       or US naval reflagging (A3) or unilateral Iran step-back.
+    question_fa: "ترانزیت تجاری تنگهٔ هرمز تا ۳۱ دسامبر ۲۰۲۶ به بیش از ۵۰٪ سطح پیش‌از‌جنگ بازگردد (بیش از ۶۷ کشتی در روز، میانگین ۷ روزه)"
+    notes_fa: |
+      در حال حاضر حدود ۷ کشتی در روز (۵٪ از ۱۳۵ پیش‌از‌جنگ). قانون حاکمیت هرمز ایران
+      (۱۲ ماده) در مجلس در حال پیشروی. این پرسش نیازمند یا توافق (A1)
+      یا تغییر پرچم نیروی دریایی آمریکا (A3) یا عقب‌نشینی یک‌جانبهٔ ایران است.
     successors_on_resolve_yes:
       - "Hormuz transit returns to >90% pre-war by 2027-03-31?"
       - "Iran formally rescinds Hormuz Sovereignty Law within 60d?"
@@ -85,6 +94,10 @@ questions:
     notes: |
       Earnest Will took ~12 months to escalate. CENTCOM strike plan briefed May 1.
       Reflagging would be the de-escalation alternative to strikes.
+    question_fa: "آمریکا تا ۳۱ دسامبر ۲۰۲۶ به‌طور رسمی نفت‌کش‌های با پرچم شورای همکاری خلیج فارس را که از هرمز عبور می‌کنند تحت پرچم خود می‌برد"
+    notes_fa: |
+      عملیات Earnest Will حدود ۱۲ ماه طول کشید تا تشدید شود. سنتکام طرح حمله را در ۱ مه برای ترامپ تشریح کرد.
+      تغییر پرچم گزینهٔ آرامش‌بخش جایگزین حمله است.
     successors_on_resolve_yes:
       - "Iran retaliates against reflagged vessel within 30d?"
       - "Hormuz transit recovers to >50% within 60d of reflagging?"
@@ -109,6 +122,10 @@ questions:
     notes: |
       Proposal active since May 3; Trump "reviewing concept" but "not satisfied."
       Araghchi cancelled May 4 talks (per May 2 readout). Pakistani mediator track open.
+    question_fa: "پیشنهاد چهارده‌بندی ایران تا ۳۱ اوت ۲۰۲۶ به مبنای مذاکرات ماهوی تبدیل شود (با اعلام کارگروه‌های مشترک)"
+    notes_fa: |
+      پیشنهاد از ۳ مه فعال است؛ ترامپ «در حال بررسی مفهوم» ولی «راضی نیست».
+      عراقچی مذاکرات ۴ مه را لغو کرد (طبق گزارش ۲ مه). مسیر میانجی پاکستانی باز است.
 
   - id: A5
     category: diplomatic_resolution
@@ -130,6 +147,10 @@ questions:
     notes: |
       Khamenei's Apr 30 nuclear vow points opposite direction. 1989 + 2013 precedent.
       Reportedly recovering from severe burns; public appearances scarce.
+    question_fa: "خامنه‌ای تا ۳۱ دسامبر ۲۰۲۶ به‌طور علنی از مذاکره با چارچوب «نرمش قهرمانانه» حمایت کند"
+    notes_fa: |
+      نذر هسته‌ای ۳۰ آوریل خامنه‌ای در جهت مخالف اشاره می‌کند. سابقهٔ ۱۹۸۹ + ۲۰۱۳.
+      گزارش‌ها از بهبودی او از سوختگی شدید حکایت دارند؛ ظاهر علنی کم.
 
   # ===== B. Military escalation =====
   - id: B1
@@ -152,6 +173,10 @@ questions:
     notes: |
       CENTCOM "short and powerful" strike plan briefed to Trump (May 1 reporting).
       Polymarket implied 15-22% range. War Powers Resolution dynamics in play.
+    question_fa: "آمریکا تا ۳۱ دسامبر ۲۰۲۶ ضربهٔ نظامی به خاک حاکمیتی ایران می‌زند"
+    notes_fa: |
+      طرح حملهٔ «کوتاه و قدرتمند» سنتکام برای ترامپ تشریح شد (گزارش ۱ مه).
+      بازار پیش‌بینی Polymarket محدودهٔ ۱۵ تا ۲۲٪ را برآورد کرده. پویایی‌های قانون اختیارات جنگی در جریان است.
     successors_on_resolve_yes:
       - "Iran retaliates within 14d?"
       - "Hormuz closure attempt within 7d?"
@@ -180,6 +205,10 @@ questions:
     notes: |
       US KIA 15, US wounded 520, US aircraft 7 lost cumulative. Continued kinetic.
       24-26d zero-attack streak suggests active de-escalation; could break.
+    question_fa: "ایران تا ۳۱ دسامبر ۲۰۲۶ ضربهٔ نظامی به هدف با پرچم آمریکا یا پایگاه آمریکایی می‌زند"
+    notes_fa: |
+      تلفات تجمعی آمریکا: ۱۵ کشته، ۵۲۰ زخمی، ۷ هواپیمای ساقط‌شده. ضربه‌های ادامه‌دار.
+      رشتهٔ ۲۴ تا ۲۶ روزهٔ «حملهٔ صفر» اشاره به آرامش فعال دارد؛ امکان شکستن دارد.
 
   - id: B3
     category: military_escalation
@@ -201,6 +230,10 @@ questions:
     notes: |
       Israeli independence score high; Netanyahu personal incentives for war = political oxygen.
       Iran nuclear program reportedly degraded already.
+    question_fa: "اسرائیل تا ۳۱ دسامبر ۲۰۲۶ به زیرساخت هسته‌ای ایران (نطنز/فردو/اراک) حمله می‌کند"
+    notes_fa: |
+      امتیاز استقلال اسرائیل بالاست؛ انگیزه‌های شخصی نتانیاهو برای جنگ = اکسیژن سیاسی.
+      برنامهٔ هسته‌ای ایران طبق گزارش‌ها از قبل تحلیل رفته است.
 
   - id: B4
     category: military_escalation
@@ -222,6 +255,10 @@ questions:
     notes: |
       Lebanon killed 2,659+ (May 3). Hezbollah bleeding from IDF strikes.
       Past 18mo: 4-5 Tel-Aviv-reaching attacks observed.
+    question_fa: "حملهٔ منتسب به حزب‌الله تا ۳۰ سپتامبر ۲۰۲۶ به مرکز جمعیتی اسرائیلی بیش از ۲۵ کیلومتر شمال مرز برسد"
+    notes_fa: |
+      تلفات لبنان بیش از ۲٬۶۵۹ نفر (۳ مه). حزب‌الله از حملات اسرائیل صدمه می‌بیند.
+      در ۱۸ ماه گذشته ۴ تا ۵ حمله به تل‌آویو ثبت شده.
 
   - id: B5
     category: military_escalation
@@ -243,6 +280,10 @@ questions:
     notes: |
       Hormuz Sovereignty Law formalizes seizure regime. US Treasury warned shippers
       against paying tolls. Pattern continues.
+    question_fa: "سپاه تا ۳۰ سپتامبر ۲۰۲۶ سومین کشتی تجاری با پرچم خارجی را در خلیج/هرمز توقیف می‌کند"
+    notes_fa: |
+      قانون حاکمیت هرمز رژیم توقیف را رسمی می‌کند. خزانه‌داری آمریکا به کشتی‌رانی‌ها هشدار داد
+      عوارض پرداخت نکنند. الگو ادامه دارد.
 
   # ===== C. Regime / leadership =====
   - id: C1
@@ -270,6 +311,10 @@ questions:
     notes: |
       Reportedly recovering from severe burns. Awaiting prosthetic leg.
       Public unseen since Feb 28. 14-15%/yr actuarial → ~5-7%/8mo. +humility-flag bump.
+    question_fa: "خامنه‌ای تا ۳۱ دسامبر ۲۰۲۶ می‌میرد یا به‌طور علنی برکنار می‌شود"
+    notes_fa: |
+      گزارش‌ها از بهبودی او از سوختگی شدید حکایت دارند. منتظر پای مصنوعی است.
+      از ۲۸ فوریه به‌طور علنی دیده نشده. ۱۴ تا ۱۵٪ سالانهٔ آماری → حدود ۵ تا ۷٪ در ۸ ماه. + پرچم فروتنی.
     successors_on_resolve_yes:
       - "Mojtaba succeeds within 90d?"
       - "Faction war (rival public claim) within 30d?"
@@ -296,6 +341,10 @@ questions:
     notes: |
       Currency at record low (1.45M rial Dec 2025). Bonbast >8%/wk slides have
       preceded every 2017/2019/2022/2025 wave. Highest historical-baseline period.
+    question_fa: "ایران تا ۳۱ دسامبر ۲۰۲۶ موج اعتراضات پایدار (بیش از ۱۴ روز، بیش از ۵ شهر، با کدگذاری ACLED) داشته باشد"
+    notes_fa: |
+      ارز در پایین‌ترین حد تاریخ خود (۱.۴۵ میلیون ریال در دسامبر ۲۰۲۵). ریزش بازار آزاد
+      بیش از ۸٪ در هفته پیش‌نشانهٔ تمام موج‌های ۲۰۱۷/۲۰۱۹/۲۰۲۲/۲۰۲۵ بوده. بالاترین دورهٔ مبنای تاریخی.
 
   - id: C3
     category: regime_leadership
@@ -320,6 +369,10 @@ questions:
     notes: |
       Mojtaba "unconscious / face-burnt" reporting (Mar 2026, multiple outlets).
       IRGC reportedly orchestrating succession but no public designation yet.
+    question_fa: "مجلس خبرگان تا ۳۱ دسامبر ۲۰۲۶ مجتبی خامنه‌ای را به‌طور علنی به‌عنوان جانشین تعیین می‌کند"
+    notes_fa: |
+      گزارش «مجتبی بی‌هوش / صورت‌سوخته» (مارس ۲۰۲۶، چندین خبرگزاری).
+      سپاه طبق گزارش‌ها در حال هماهنگی جانشینی است ولی هنوز انتصاب علنی نشده.
 
   - id: C4
     category: regime_leadership
@@ -341,6 +394,10 @@ questions:
       Bazaari = highest-signal protest type historically. 1891, 1905, 1979, 2008 precedent.
       Currency collapse + war = both preconditions present. Iran Intl Dec 2025 reporting:
       "the bazaar finally breaks."
+    question_fa: "تعطیلی پایدار بازاری‌ها (بیش از ۳ روز در بازار بزرگ تهران) تا ۳۱ دسامبر ۲۰۲۶ رخ دهد"
+    notes_fa: |
+      بازاری‌ها از نظر تاریخی پرسیگنال‌ترین نوع اعتراض‌اند. سابقهٔ ۱۸۹۱، ۱۹۰۵، ۱۹۷۹، ۲۰۰۸.
+      فروپاشی ارزی + جنگ = هر دو پیش‌شرط حاضرند. گزارش ایران اینترنشنال دسامبر ۲۰۲۵: «بازار سرانجام می‌شکند».
 
   # ===== D. Economic / structural =====
   - id: D1
@@ -362,6 +419,10 @@ questions:
     notes: |
       Reached 1.45M Dec 2025. Iran oil storage 12-22d remaining (Kpler).
       Trajectory points strongly higher absent deal. Highest single Iran signal.
+    question_fa: "نرخ بازار آزاد دلار/ریال تا ۳۱ دسامبر ۲۰۲۶ از ۲٬۰۰۰٬۰۰۰ بالاتر رود"
+    notes_fa: |
+      در دسامبر ۲۰۲۵ به ۱.۴۵ میلیون رسیده. ذخایر نفتی ایران ۱۲ تا ۲۲ روز باقی‌مانده (Kpler).
+      در غیاب توافق، مسیر شدیداً به سمت بالا اشاره می‌کند. مهم‌ترین تک‌سیگنال ایران.
 
   - id: D2
     category: economic_structural
@@ -382,6 +443,10 @@ questions:
     notes: |
       Iran oil storage 12-22d remaining. Iran may need to cut 1.5M bpd by mid-May
       (Kpler/Bloomberg May 1). This forces export collapse.
+    question_fa: "صادرات نفت ایران تا ۳۱ دسامبر ۲۰۲۶ به زیر ۰.۵ میلیون بشکه در روز برسد (میانگین ۳۰ روزهٔ Kpler)"
+    notes_fa: |
+      ذخایر نفتی ایران ۱۲ تا ۲۲ روز باقی‌مانده. ایران ممکن است تا اواسط مه ۱.۵ میلیون بشکه در روز کاهش دهد
+      (Kpler/Bloomberg ۱ مه). این فروپاشی صادرات را اجباری می‌کند.
 
   - id: D3
     category: economic_structural
@@ -402,6 +467,10 @@ questions:
     notes: |
       Currently $4.45 (May 3). +9% last week trend. Brent $108. Linear extrapolation
       crosses $4.50 within 14d at current rate. Midterm political pressure.
+    question_fa: "میانگین ملی قیمت بنزین آمریکا (AAA) تا ۳۰ سپتامبر ۲۰۲۶ بیش از ۴.۵۰ دلار به‌مدت ۷ روز پایدار باشد"
+    notes_fa: |
+      در حال حاضر ۴.۴۵ دلار (۳ مه). روند ۹٪+ هفتهٔ گذشته. نفت برنت ۱۰۸ دلار. برون‌یابی خطی
+      ظرف ۱۴ روز با نرخ کنونی از ۴.۵۰ عبور می‌کند. فشار سیاسی انتخابات میان‌دوره‌ای.
 
   - id: D4
     category: economic_structural
@@ -422,6 +491,10 @@ questions:
     notes: |
       Apr 30 hit $126 intraday. Currently $108. Hormuz closure scenario (B5+) →
       $130-160. Option-implied approximately 30-40%.
+    question_fa: "نفت برنت تا ۳۱ دسامبر ۲۰۲۶ از ۱۳۰ دلار عبور کند"
+    notes_fa: |
+      ۳۰ آوریل به‌صورت لحظه‌ای به ۱۲۶ دلار رسید. در حال حاضر ۱۰۸ دلار. سناریوی بسته‌شدن هرمز (B5+) →
+      ۱۳۰ تا ۱۶۰ دلار. اختیارات ضمنی تقریباً ۳۰ تا ۴۰٪.
 
   # ===== E. US side =====
   - id: E1
@@ -443,6 +516,10 @@ questions:
     notes: |
       Personnel = policy. First-term: Bolton/Pompeo/etc replaced before JCPOA exit.
       Hegseth public commitment to military option could fracture under stress.
+    question_fa: "ترامپ تا ۳۰ سپتامبر ۲۰۲۶ وزیر دفاع، مشاور امنیت ملی یا وزیر خارجه را عوض می‌کند"
+    notes_fa: |
+      پرسنل = سیاست. در دور اول: بولتون/پامپئو/و دیگران قبل از خروج از برجام تعویض شدند.
+      تعهد عمومی هگست به گزینهٔ نظامی می‌تواند زیر فشار شکسته شود.
     successors_on_resolve_yes:
       - "New appointee is dealmaker (Witkoff-class) vs hawk (Bolton-class)?"
       - "Trump posture shifts on Iran within 30d of replacement?"
@@ -466,6 +543,10 @@ questions:
     notes: |
       Midterms in ~550 days. Wartime midterms historically incumbent-unfavorable.
       Gas-price + war fatigue dynamics.
+    question_fa: "جمهوری‌خواهان در انتخابات میان‌دوره‌ای نوامبر ۲۰۲۶ کنترل یکی از دو مجلس را از دست می‌دهند"
+    notes_fa: |
+      انتخابات میان‌دوره‌ای حدود ۵۵۰ روز دیگر. انتخابات میان‌دوره‌ای زمان جنگ از نظر تاریخی
+      به ضرر دولت مستقر است. پویایی‌های قیمت بنزین + خستگی جنگ.
 
   # ===== F. Iranfarhang family business =====
   - id: F1
@@ -488,6 +569,11 @@ questions:
       18 active institutions; ~$310K/yr revenue. Berman Amendment exemption protects
       legal basis. Risk is institutional-political, not legal. NYU's "no rush" stance
       is current modal client posture (positive signal). FY27 renewals start ~Jul-Sep.
+    question_fa: "حداقل یک دانشگاه ردیف اول (استنفورد/کلمبیا/ییل/NYU/شیکاگو/هاروارد/پنسیلوانیا/پرینستون/برکلی) تا ۳۰ سپتامبر ۲۰۲۶ با اشاره به نزاع، تمدید بودجهٔ approval-plan سال مالی ۲۰۲۷ را با ایران‌فرهنگ به‌طور رسمی متوقف یا رد می‌کند"
+    notes_fa: |
+      ۱۸ مؤسسهٔ فعال؛ درآمد حدود ۳۱۰ هزار دلار سالانه. معافیت متمم برمن مبنای حقوقی را حفظ می‌کند.
+      ریسک نهادی-سیاسی است نه حقوقی. موضع «بی‌عجله» NYU وضعیت پایهٔ فعلی مشتری است (سیگنال مثبت).
+      تمدیدهای سال مالی ۲۰۲۷ از حدود ژوئیه تا سپتامبر شروع می‌شوند.
     successors_on_resolve_yes:
       - "Does the cancellation pattern spread to ≥3 institutions within 90d?"
       - "Does Iranfarhang revenue fall below 70% of baseline by 2027 Q1?"
@@ -512,6 +598,11 @@ questions:
       Single point of failure for entire payment rail. Already changed once Oct 2025.
       Halle's German bank flagged "Shipped from Iran." No US bank account exists as backup.
       Highest-leverage business risk per BI agent.
+    question_fa: "رابطهٔ بانکی Kemco SARL تا ۳۱ دسامبر ۲۰۲۶ خاتمه یابد، مسدود شود یا نیاز به صدور IBAN جدید (فراتر از اکتبر ۲۰۲۵) داشته باشد"
+    notes_fa: |
+      تک‌نقطهٔ شکست برای کل ریل پرداخت. یک‌بار در اکتبر ۲۰۲۵ تغییر کرده. بانک آلمانی هاله
+      علامت‌گذاری «ارسال‌شده از ایران» داشت. هیچ حساب بانکی آمریکایی به‌عنوان پشتیبان وجود ندارد.
+      بالاترین ریسک کسب‌و‌کاری بر اساس تحلیل BI.
     successors_on_resolve_yes:
       - "Is alternate payment rail (US bank, Wise, alternate SARL) operational within 30d?"
       - "Does any client refuse to pay through alternate rail?"
@@ -536,6 +627,11 @@ questions:
       Disaster-recovery server plan converged after seven revisions. Awaiting answers
       from Magiran on five open infrastructure questions before going operational.
       Protects roughly $70K of Magiran revenue across 14 universities ($5K each).
+    question_fa: "سرور پشتیبان مگیران فرانکفورت تا ۳۱ اوت ۲۰۲۶ به‌طور عملیاتی (تمرین تولید فاز ۴) راه‌اندازی شود"
+    notes_fa: |
+      طرح سرور بازیابی پس از حادثه پس از هفت بازنگری به همگرایی رسید. منتظر پاسخ مگیران
+      به پنج پرسش زیرساختی باز قبل از عملیاتی‌شدن. حدود ۷۰ هزار دلار درآمد مگیران را در ۱۴ دانشگاه
+      (هرکدام ۵ هزار دلار) محافظت می‌کند.
 
   - id: F4
     category: family_business_iranfarhang
@@ -557,6 +653,10 @@ questions:
       Shipments #61-#64 completed in last year. Hormuz blockade Day 17 + 2,000 ships
       stranded creates real (not theoretical) cargo risk. Iran Air aviation insurance
       under wartime stress.
+    question_fa: "محمولهٔ تهران→آتلانتا (بستهٔ #۶۵ یا بعد از آن) تا ۳۱ اکتبر ۲۰۲۶ به دلیل ایران‌اِیر / هرمز / گمرک بیش از ۶۰ روز از تاریخ ارسال موردنظر تأخیر داشته باشد"
+    notes_fa: |
+      محموله‌های #۶۱ تا #۶۴ در سال گذشته انجام شد. روز ۱۷ بسته‌شدن هرمز + ۲٬۰۰۰ کشتی متوقف
+      ریسک واقعی (نه نظری) محموله ایجاد می‌کند. بیمهٔ هواپیمایی ایران‌اِیر تحت فشار جنگ.
 
   - id: F5
     category: family_business_iranfarhang
@@ -579,6 +679,10 @@ questions:
     notes: |
       Berman Amendment has survived JCPOA withdrawal + 2017/2018 OFAC re-confirmation
       letters on file. Wartime risk is non-zero but historically rare. Existential if it fires.
+    question_fa: "OFAC تا ۳۱ دسامبر ۲۰۲۶ راهنما/اجرایی صادر کند که معافیت مواد اطلاعاتی (31 CFR 560.315) را محدود می‌کند"
+    notes_fa: |
+      متمم برمن از خروج برجام + نامه‌های تأییدیهٔ ۲۰۱۷/۲۰۱۸ OFAC جان به در برد.
+      ریسک زمان جنگ غیرصفر است ولی از نظر تاریخی نادر. اگر اتفاق بیفتد، وجودی است.
 
   - id: F6
     category: family_business_iranfarhang
@@ -600,6 +704,11 @@ questions:
       Iran international internet 300+ hr degraded Jan 2026. March 2026 forced
       "Update from Tehran" all-client crisis email. Pattern intensifying.
       Single point of failure for sourcing. Father just passed Feb 2026.
+    question_fa: "مژگان تا ۳۰ سپتامبر ۲۰۲۶ بیش از ۷ روز پیاپی در دسترس نباشد"
+    notes_fa: |
+      اینترنت بین‌المللی ایران در ژانویهٔ ۲۰۲۶ بیش از ۳۰۰ ساعت قطع شد. ایمیل بحران مارس ۲۰۲۶
+      «به‌روزرسانی از تهران» به همهٔ مشتری‌ها اجباری شد. الگو در حال شدت‌گرفتن.
+      تک‌نقطهٔ شکست برای تأمین. پدر تازه فوت کرد فوریهٔ ۲۰۲۶.
 
   # ===== F. Kipa family business =====
   - id: F7
@@ -621,6 +730,10 @@ questions:
     notes: |
       Bandar Abbas is Kipa's single inbound chokepoint. If NO, Sibur Caspian route
       becomes Phase-1 critical path. Tightly correlated with A2.
+    question_fa: "تنگهٔ هرمز تا ۳۰ ژوئن ۲۰۲۶ بیش از ۷ روز پیاپی به ترافیک کانتینری تجاری بازگردد"
+    notes_fa: |
+      بندرعباس تک‌نقطهٔ گلوگاه ورودی کیپا است. اگر نه، مسیر کاسپین سیبور به مسیر بحرانی فاز ۱
+      تبدیل می‌شود. هم‌بستگی تنگ با A2.
     successors_on_resolve_yes:
       - "Does Kipa book first Sinopec SIME shipment within 60d?"
       - "Do Iranian PVC pipe customers (Tier-2 Rank-1) restart sourcing requests within 30d?"
@@ -648,6 +761,11 @@ questions:
       90% of Kipa A/R deferred 2-4 mo in Rial. ICE rate crossing triggers Rial-receivables
       emergency repricing protocol. Distinct from D1 (bonbast free-market rate); ICE is
       the official-managed rate Kipa actually uses for chemical inputs.
+    question_fa: "نرخ ارز تجاری/ICE ایران تا ۳۱ اوت ۲۰۲۶ از ۲٬۰۰۰٬۰۰۰ ریال بر دلار عبور کند"
+    notes_fa: |
+      ۹۰٪ از حساب‌های دریافتنی کیپا ۲ تا ۴ ماه به ریال تأخیر دارد. عبور نرخ ICE
+      پروتکل قیمت‌گذاری اضطراری ریال-دریافتنی را فعال می‌کند. متمایز از D1 (نرخ بازار آزاد بنبست)؛
+      ICE نرخ مدیریت‌شدهٔ رسمی است که کیپا واقعاً برای ورودی‌های شیمیایی استفاده می‌کند.
 
   - id: F9
     category: family_business_kipa
@@ -668,6 +786,10 @@ questions:
     notes: |
       Behrah is Kipa's safest growth bet under Scenario C — sanctions-invariant,
       domestic Rial sales to govt-paid contractors. Pure execution-trackable.
+    question_fa: "بهرا باسپار مانا تا ۳۰ سپتامبر ۲۰۲۶ تعهد امضاشده برای خط دوم آسیاب کرایوژنیک (LOI یا سفارش تجهیزات) به‌دست آورد"
+    notes_fa: |
+      بهرا امن‌ترین شرط رشد کیپا تحت سناریوی C است — ضدتحریم، فروش ریالی داخلی به پیمانکاران دولتی.
+      خالصاً قابل ردیابی اجرایی.
 
   - id: F10
     category: family_business_kipa
@@ -690,6 +812,11 @@ questions:
       regulation. If yes, Kipa's strategy needs to pivot toward producer-service.
       Rhetoric alone doesn't trigger this; the question resolves on official-gazette
       publication of an enforceable instrument.
+    question_fa: "وزارت صمت ایران تا ۳۱ دسامبر ۲۰۲۶ بخشنامه‌ای صادر کند که واردات مواد اولیه را به تولیدکنندگان مصرف‌کننده محدود می‌کند"
+    notes_fa: |
+      آزمون قطعی برای اینکه آیا لفاظی حمایتی ایران به مقررات الزام‌آور تبدیل می‌شود.
+      اگر بله، استراتژی کیپا باید به سمت خدمات تولیدکننده بچرخد.
+      لفاظی به‌تنهایی این را تحریک نمی‌کند؛ پرسش با انتشار رسمی-روزنامهٔ دستور قابل اجرا حل می‌شود.
 
   - id: F11
     category: family_business_kipa
@@ -711,6 +838,10 @@ questions:
       Triggers AMAG re-architecture review. Recent enforcement frontier:
       Turkish chemical intermediaries 2024-25. UAE could be next.
       AMAG matches FinCEN June 2025 typology profile exactly.
+    question_fa: "OFAC تا ۳۱ دسامبر ۲۰۲۶ یک نهاد شیمیایی FZCO/FZE مستقر در دبی را برای تراکنش‌های مرتبط با ایران تحریم کند"
+    notes_fa: |
+      بازنگری معماری AMAG را تحریک می‌کند. مرز اخیر اجرایی: واسطه‌های شیمیایی ترکیه ۲۰۲۴-۲۵.
+      امارات می‌تواند بعدی باشد. AMAG دقیقاً با پروفایل تیپولوژی ژوئن ۲۰۲۵ FinCEN مطابقت می‌کند.
 
   - id: F12
     category: family_business_kipa
@@ -732,6 +863,10 @@ questions:
       If YES: inventory-at-peak risk crystallizes. Pause Tier-1 inventory build,
       switch to back-to-back. If NO: working-capital scale-up accelerates.
       LDPE +75% in 5 weeks current run.
+    question_fa: "حق بیمهٔ جنگ پلیمر (LDPE CFR شرق دور آسیا) تا ۳۱ اوت ۲۰۲۶ از لنگرگاه ۱ آوریل ۲۰۲۶ به مقدار ۱٬۳۹۰ تا ۱٬۵۰۰ دلار/تن بیش از ۲۵٪ کاهش یابد"
+    notes_fa: |
+      اگر بله: ریسک موجودی-در-اوج تثبیت می‌شود. توقف ساخت موجودی ردیف ۱، تغییر به مدل پشت‌به‌پشت.
+      اگر نه: مقیاس‌گذاری سرمایه در گردش شتاب می‌گیرد. روند فعلی LDPE +۷۵٪ در ۵ هفته.
 
 # ===== Portfolio metadata =====
 metadata:

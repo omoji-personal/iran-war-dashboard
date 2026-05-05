@@ -3198,36 +3198,78 @@ body.agent-v2.is-rtl .topbar-title {
 }
 
 /* Eyebrows — keep them small and uppercase-ish, but Persian doesn't have
-   uppercase. Drop the text-transform: uppercase that earlier rules added
-   so eyebrows render in normal Persian weight. */
+   uppercase. Drop the text-transform: uppercase everywhere on RTL: any
+   English chrome string (like "English" on the lang-toggle) shouldn't
+   shout, and Persian text stays unaffected by the rule anyway. */
 body.agent-v2.is-rtl .topbar-eyebrow,
+body.agent-v2.is-rtl .topbar-title,
+body.agent-v2.is-rtl .topbar-meta,
+body.agent-v2.is-rtl .lang-toggle,
 body.agent-v2.is-rtl .masthead-class,
 body.agent-v2.is-rtl .masthead-eyebrow,
+body.agent-v2.is-rtl .masthead-publisher,
+body.agent-v2.is-rtl .masthead-publisher-sub,
+body.agent-v2.is-rtl .frame-eyebrow,
+body.agent-v2.is-rtl .basecase-eyebrow,
+body.agent-v2.is-rtl .topq-eyebrow,
+body.agent-v2.is-rtl .topq-prob-label,
+body.agent-v2.is-rtl .topq-link,
+body.agent-v2.is-rtl .qcard-id,
+body.agent-v2.is-rtl .qcard-prob-label,
+body.agent-v2.is-rtl .qcard-deadline,
+body.agent-v2.is-rtl .board-cluster-h,
+body.agent-v2.is-rtl .board-cat-count,
+body.agent-v2.is-rtl .frame-map-label,
+body.agent-v2.is-rtl .diff-h,
+body.agent-v2.is-rtl .agent-banner,
+body.agent-v2.is-rtl .agent-banner strong,
+body.agent-v2.is-rtl .agent-footer-brand,
+body.agent-v2.is-rtl .agent-footer-meta {
+  text-transform: none;
+  letter-spacing: normal;
+}
+body.agent-v2.is-rtl .topbar-eyebrow,
 body.agent-v2.is-rtl .frame-eyebrow,
 body.agent-v2.is-rtl .basecase-eyebrow,
 body.agent-v2.is-rtl .topq-eyebrow,
 body.agent-v2.is-rtl .board-cluster-h,
 body.agent-v2.is-rtl .board-cat-count,
-body.agent-v2.is-rtl .frame-map-label {
-  text-transform: none;
-  letter-spacing: normal;
+body.agent-v2.is-rtl .frame-map-label,
+body.agent-v2.is-rtl .masthead-class {
   font-weight: 600;
   font-size: 12.5px;
 }
 
-/* Drop cap — kill float-left + Western italic; in RTL it should ride on
-   the right side of the paragraph (browsers honor float:right under RTL
-   automatically when float is not explicitly set, but we set it for
-   safety). Reduce visual weight; Persian display caps don't anchor a
-   paragraph the same way Latin caps do. */
+/* Drop cap — Persian script joins; floating a single letter and pulling
+   the next letter away with padding tears words apart visually. We
+   inline-merge the dropcap on RTL: same font/size as body, just bolder.
+   Visitors get a subtle emphasis on the first letter without disjointing
+   the word ("روز" stays a single readable unit). */
 body.agent-v2.is-rtl .dropcap {
-  float: right;
+  float: none;
   font-family: 'Vazirmatn', 'Tahoma', system-ui, sans-serif;
-  font-size: 44px;
-  line-height: 0.95;
-  font-weight: 700;
+  font-size: inherit;
+  line-height: inherit;
+  font-weight: 800;
   font-style: normal;
-  padding: 6px 0 0 10px;
+  padding: 0;
+  color: var(--agent-accent);
+}
+
+/* Experimental banner inside .is-rtl: kill the Latin-specific tracking +
+   any italic that the base rules leak in. The banner-strong tag had
+   `letter-spacing: 0.06em` from the legacy banner CSS. */
+body.agent-v2.is-rtl .experimental-banner,
+body.agent-v2.is-rtl .experimental-banner strong,
+body.agent-v2.is-rtl .experimental-banner em,
+body.agent-v2.is-rtl .experimental-banner span,
+body.agent-v2.is-rtl .agent-banner,
+body.agent-v2.is-rtl .agent-banner strong,
+body.agent-v2.is-rtl .agent-banner em,
+body.agent-v2.is-rtl .agent-banner span {
+  letter-spacing: normal;
+  font-style: normal;
+  text-transform: none;
 }
 
 /* Visual hierarchy / accent bars flip to right side under RTL. */
@@ -3254,11 +3296,19 @@ body.agent-v2.is-rtl .qcard,
 body.agent-v2.is-rtl .topq {
   border-left: 1px solid var(--agent-rule);
 }
+/* Public-deploy categories: kept in their own selector list so the
+   build-public.py CSS strip (which drops any line touching the private
+   category names) can't accidentally amputate the public category overrides. */
 body.agent-v2.is-rtl .qcard-cat-diplomacy,
 body.agent-v2.is-rtl .qcard-cat-military,
 body.agent-v2.is-rtl .qcard-cat-regime,
 body.agent-v2.is-rtl .qcard-cat-economic,
-body.agent-v2.is-rtl .qcard-cat-us,
+body.agent-v2.is-rtl .qcard-cat-us {
+  border-right: 3px solid currentColor;
+  border-left: 1px solid var(--agent-rule);
+}
+/* Private (family-business) categories — separate rule so it can be
+   stripped wholesale without affecting the public-cat rules above. */
 body.agent-v2.is-rtl .qcard-cat-iranfarhang,
 body.agent-v2.is-rtl .qcard-cat-kipa {
   border-right: 3px solid currentColor;
