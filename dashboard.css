@@ -3089,11 +3089,150 @@ body.agent-v2 .lang-toggle {
 }
 body.agent-v2 .lang-toggle:hover { color: var(--agent-accent-2); }
 
-/* ===== RTL polish for v0.2 components ===== */
-body.agent-v2.is-rtl { direction: rtl; }
+/* ===== RTL / Persian — typography + layout pass =====
+   Load Vazirmatn (Google Fonts) for the Farsi page; the link tag is added
+   only on .is-rtl renders by scripts/render.py. The CSS below overrides
+   Western-typography choices that don't translate to Persian script:
+   - serif/italic display fonts → Vazirmatn (Persian glyphs render correctly)
+   - tight letter-spacing → normal (Persian script joins; tracking distorts it)
+   - 1.4–1.55 line-heights → 1.8 (Persian descenders/ascenders need air)
+   - drop-cap with float:left → repositioned to right side, no italic
+   - the colored accent bar flips from left edge to right edge per RTL flow
+*/
+body.agent-v2.is-rtl {
+  direction: rtl;
+  font-family: 'Vazirmatn', 'Tahoma', 'Segoe UI', system-ui, sans-serif;
+  /* Persian glyphs read smaller than Latin at the same px size — bump base
+     to compensate so the page reads at parity with the English version. */
+  font-size: 16.5px;
+}
+
+/* Override every v0.2 component's font-family + remove italic + reset tracking. */
+body.agent-v2.is-rtl,
+body.agent-v2.is-rtl h1,
+body.agent-v2.is-rtl h2,
+body.agent-v2.is-rtl h3,
+body.agent-v2.is-rtl h4,
+body.agent-v2.is-rtl p,
+body.agent-v2.is-rtl li,
+body.agent-v2.is-rtl span,
+body.agent-v2.is-rtl div,
+body.agent-v2.is-rtl a,
+body.agent-v2.is-rtl .topbar-eyebrow,
+body.agent-v2.is-rtl .topbar-title,
+body.agent-v2.is-rtl .topbar-meta,
+body.agent-v2.is-rtl .masthead-class,
+body.agent-v2.is-rtl .masthead-eyebrow,
+body.agent-v2.is-rtl .masthead-title,
+body.agent-v2.is-rtl .masthead-publisher,
+body.agent-v2.is-rtl .masthead-publisher-sub,
+body.agent-v2.is-rtl .agent-banner,
+body.agent-v2.is-rtl .headline-eyebrow,
+body.agent-v2.is-rtl .headline-lead,
+body.agent-v2.is-rtl .headline-body,
+body.agent-v2.is-rtl .frame-eyebrow,
+body.agent-v2.is-rtl .frame-h,
+body.agent-v2.is-rtl .frame-body,
+body.agent-v2.is-rtl .frame-map,
+body.agent-v2.is-rtl .frame-map-label,
+body.agent-v2.is-rtl .basecase-eyebrow,
+body.agent-v2.is-rtl .basecase-h,
+body.agent-v2.is-rtl .basecase-body,
+body.agent-v2.is-rtl .basecase-foot,
+body.agent-v2.is-rtl .diff-h,
+body.agent-v2.is-rtl .diff-empty-msg,
+body.agent-v2.is-rtl .topq-eyebrow,
+body.agent-v2.is-rtl .topq-question,
+body.agent-v2.is-rtl .topq-prob-label,
+body.agent-v2.is-rtl .topq-prob-ci,
+body.agent-v2.is-rtl .topq-note,
+body.agent-v2.is-rtl .topq-link,
+body.agent-v2.is-rtl .qcard-id,
+body.agent-v2.is-rtl .qcard-flags,
+body.agent-v2.is-rtl .qcard-question,
+body.agent-v2.is-rtl .qcard-prob-label,
+body.agent-v2.is-rtl .qcard-note,
+body.agent-v2.is-rtl .card-flag,
+body.agent-v2.is-rtl .board-h,
+body.agent-v2.is-rtl .board-sub,
+body.agent-v2.is-rtl .board-cat-num,
+body.agent-v2.is-rtl .board-cat-title,
+body.agent-v2.is-rtl .board-cat-count,
+body.agent-v2.is-rtl .board-cluster-h,
+body.agent-v2.is-rtl .board-translation-notice,
+body.agent-v2.is-rtl .meth-h,
+body.agent-v2.is-rtl .meth-list,
+body.agent-v2.is-rtl .meth-list li,
+body.agent-v2.is-rtl .agent-footer,
+body.agent-v2.is-rtl .agent-footer-brand,
+body.agent-v2.is-rtl .agent-footer-meta {
+  font-family: 'Vazirmatn', 'Tahoma', 'Segoe UI', system-ui, sans-serif;
+  font-style: normal;
+  letter-spacing: normal;
+}
+
+/* Bump line-heights for Persian readability. */
+body.agent-v2.is-rtl .headline-lead,
+body.agent-v2.is-rtl .headline-body,
+body.agent-v2.is-rtl .frame-body,
+body.agent-v2.is-rtl .basecase-body,
+body.agent-v2.is-rtl .basecase-foot,
+body.agent-v2.is-rtl .diff-empty-msg,
+body.agent-v2.is-rtl .topq-note,
+body.agent-v2.is-rtl .qcard-note,
+body.agent-v2.is-rtl .meth-list li {
+  line-height: 1.85;
+}
+
+/* Headline weight tuning — Persian display weight reads heavier than Latin. */
+body.agent-v2.is-rtl .frame-h,
+body.agent-v2.is-rtl .basecase-h,
+body.agent-v2.is-rtl .topq-question,
+body.agent-v2.is-rtl .board-h,
+body.agent-v2.is-rtl .meth-h,
+body.agent-v2.is-rtl .masthead-title,
+body.agent-v2.is-rtl .topbar-title {
+  font-weight: 700;
+  letter-spacing: 0;
+  line-height: 1.4;
+}
+
+/* Eyebrows — keep them small and uppercase-ish, but Persian doesn't have
+   uppercase. Drop the text-transform: uppercase that earlier rules added
+   so eyebrows render in normal Persian weight. */
+body.agent-v2.is-rtl .topbar-eyebrow,
+body.agent-v2.is-rtl .masthead-class,
+body.agent-v2.is-rtl .masthead-eyebrow,
+body.agent-v2.is-rtl .frame-eyebrow,
+body.agent-v2.is-rtl .basecase-eyebrow,
+body.agent-v2.is-rtl .topq-eyebrow,
+body.agent-v2.is-rtl .board-cluster-h,
+body.agent-v2.is-rtl .board-cat-count,
+body.agent-v2.is-rtl .frame-map-label {
+  text-transform: none;
+  letter-spacing: normal;
+  font-weight: 600;
+  font-size: 12.5px;
+}
+
+/* Drop cap — kill float-left + Western italic; in RTL it should ride on
+   the right side of the paragraph (browsers honor float:right under RTL
+   automatically when float is not explicitly set, but we set it for
+   safety). Reduce visual weight; Persian display caps don't anchor a
+   paragraph the same way Latin caps do. */
+body.agent-v2.is-rtl .dropcap {
+  float: right;
+  font-family: 'Vazirmatn', 'Tahoma', system-ui, sans-serif;
+  font-size: 44px;
+  line-height: 0.95;
+  font-weight: 700;
+  font-style: normal;
+  padding: 6px 0 0 10px;
+}
+
+/* Visual hierarchy / accent bars flip to right side under RTL. */
 body.agent-v2.is-rtl .basecase,
 body.agent-v2.is-rtl .frame {
-  /* Mirror the colored accent bar from left to right */
   border-left: 1px solid var(--agent-rule);
   border-right: 4px solid var(--agent-accent);
 }
@@ -3113,7 +3252,6 @@ body.agent-v2.is-rtl .lang-toggle {
 }
 body.agent-v2.is-rtl .qcard,
 body.agent-v2.is-rtl .topq {
-  /* Flip card-left accent stripe to the right edge in RTL */
   border-left: 1px solid var(--agent-rule);
 }
 body.agent-v2.is-rtl .qcard-cat-diplomacy,
@@ -3126,6 +3264,7 @@ body.agent-v2.is-rtl .qcard-cat-kipa {
   border-right: 3px solid currentColor;
   border-left: 1px solid var(--agent-rule);
 }
+
 /* Translation-in-progress notice on the Persian board */
 body.agent-v2 .board-translation-notice {
   font-family: var(--serif);
@@ -3142,10 +3281,45 @@ body.agent-v2 .board-translation-notice {
 body.agent-v2.is-rtl .board-translation-notice {
   border-left: none;
   border-right: 3px solid var(--agent-accent-2);
+  font-style: normal;
+  font-size: 14.5px;
+  line-height: 1.7;
 }
+
 body.agent-v2.is-rtl .topq-link::after { content: ""; }
 body.agent-v2.is-rtl .diff-arrow,
 body.agent-v2.is-rtl .topq-delta { unicode-bidi: isolate; }
+
+/* Persian-specific size tuning for the new editorial sections. Persian
+   prose at 17px reads fine; we bump headlines slightly because the
+   uppercase-ish display feel of italic Latin is replaced with bolder
+   Vazirmatn weight. */
+body.agent-v2.is-rtl .frame-h { font-size: 28px; }
+body.agent-v2.is-rtl .basecase-h { font-size: 26px; }
+body.agent-v2.is-rtl .frame-body,
+body.agent-v2.is-rtl .basecase-body { font-size: 17.5px; }
+body.agent-v2.is-rtl .topq-question { font-size: 30px; line-height: 1.32; }
+body.agent-v2.is-rtl .qcard-question { font-size: 17px; line-height: 1.45; }
+body.agent-v2.is-rtl .qcard-note { font-size: 14.5px; line-height: 1.65; }
+body.agent-v2.is-rtl .headline-lead { font-size: 19.5px; line-height: 1.7; }
+body.agent-v2.is-rtl .headline-body { font-size: 17px; line-height: 1.85; }
+body.agent-v2.is-rtl .meth-list li { font-size: 16px; }
+body.agent-v2.is-rtl .meth-list li + li { margin-top: 12px; }
+
+/* Ensure category headings and cluster-divider read at parity. */
+body.agent-v2.is-rtl .board-cat-title { font-size: 24px; font-weight: 700; }
+body.agent-v2.is-rtl .board-cat-num { font-size: 14px; }
+body.agent-v2.is-rtl .board-h { font-size: 30px; }
+
+/* RTL responsive: slightly larger base text on small screens (Persian
+   characters can fall below readable threshold faster than Latin). */
+@media (max-width: 980px) {
+  body.agent-v2.is-rtl { font-size: 17px; }
+  body.agent-v2.is-rtl .frame-h { font-size: 22px; }
+  body.agent-v2.is-rtl .basecase-h { font-size: 20px; }
+  body.agent-v2.is-rtl .topq-question { font-size: 24px; }
+  body.agent-v2.is-rtl .headline-lead { font-size: 17.5px; }
+}
 
 /* ===== Most-likely scenario (base case) ===== */
 body.agent-v2 .basecase {

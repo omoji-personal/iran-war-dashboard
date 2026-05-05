@@ -907,6 +907,10 @@ def render_html(portfolio: dict, diffs: list[dict], history: list[dict], strippe
   <meta property="og:type" content="article" />
   <meta name="description" content="{esc(description_text)}" />
   <link rel="stylesheet" href="dashboard.css" />
+  {('<link rel="preconnect" href="https://fonts.googleapis.com" />' +
+    '<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />' +
+    '<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Vazirmatn:wght@300;400;500;600;700;800&display=swap" />')
+   if is_rtl else ''}
   <link rel="canonical" href="{esc(canonical_url)}" />
   <link rel="alternate" hreflang="en" href="{esc(canonical_base)}" />
   <link rel="alternate" hreflang="fa" href="{esc(canonical_base + 'fa.html')}" />
