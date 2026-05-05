@@ -10,6 +10,43 @@ Format per item:
 
 ---
 
+## 2026-05-05 — C1 — URGENT: Resolve YES (Ali Khamenei killed 2026-02-28)
+
+Washington Post, CNN, Al Jazeera all confirm Ali Khamenei was killed in the Feb 28 US-Israel strikes.
+Portfolio still shows C1 at 8% (incorrect — written with bad initial data).
+
+**Agent recommendation:** Resolve C1 = YES (date: 2026-02-28). Activate successor questions.
+Check whether "Iran framework-deal probability shifts >20pp within 30d of C1" — it should, given Mojtaba now leads.
+
+**Open issue:** Confirm the resolution date. Also: was the successor process faction-contested?
+
+---
+
+## 2026-05-05 — C3 — URGENT: Resolve YES (Mojtaba named Supreme Leader 2026-03-09)
+
+Mojtaba Khamenei was elected Supreme Leader by Assembly of Experts (election March 3–8, announced March 9).
+Resolution criterion exceeded (he was elected outright, not merely named heir-apparent).
+
+**Agent recommendation:** Resolve C3 = YES (date: 2026-03-09). This also requires re-reading A5 (now applies to Mojtaba, not Ali).
+
+**Open issue:** Does the question "Mojtaba designated heir-apparent" count even though he became Supreme Leader directly? Agent says YES — stronger resolution than required.
+
+---
+
+## 2026-05-05 — 14 probability moves recommended — operator to apply or decline
+
+See `logs/probability-changes/2026-05-05.md` for the full recommended-move table.
+Key highest-confidence moves:
+- D3: 50% → 68% (gas $4.483, one incident away from $4.50 trigger)
+- A3: 12% → 35% (Project Freedom = Earnest Will-style escort in operation)
+- B2: 28% → 42% (Iran actively fired on US+SK ships in Hormuz)
+
+**Agent recommendation:** Apply all 14 moves at next operator session.
+
+**Open issue:** Do you want to continue using old portfolio.yaml probabilities or let cron surface recommended moves each tick for manual application?
+
+---
+
 ## 2026-05-03 — F1-F12 portfolio confirmation — confirm/edit family-business questions
 
 The 12 F-class questions (F1-F6 Iranfarhang, F7-F12 Kipa) were generated from
@@ -64,3 +101,30 @@ What requires manual user opt-in (free-with-account):
 
 If a future Phase identifies a specific bottleneck that paid feeds would solve,
 agent surfaces in operator-queue with cost + value justification. User decides.
+
+---
+
+## 2026-05-05 — C1/C3 label + resolution review (TICK-GENERATED)
+
+Web research (tick 2026-05-05) confirms Ali Khamenei was killed ~2026-03-01 and Mojtaba
+Khamenei became supreme leader ~2026-03-12. Portfolio questions C1/C3 may need update:
+
+- **C1** ("Khamenei dies or is publicly removed from office" at 8%): If this referred to ALI
+  Khamenei, it is already resolved YES and should be archived. If it refers to MOJTABA
+  Khamenei (current leader), the question text should be updated to say "Mojtaba Khamenei."
+- **C3** ("Mojtaba Khamenei publicly designated heir-apparent by Assembly of Experts" at 6%):
+  Mojtaba IS the supreme leader, not heir-apparent. This question may be moot or should be
+  reframed (e.g., "Mojtaba Khamenei designates his own successor / heir-apparent").
+
+**Agent recommendation:** Operator to clarify C1 scope and resolve/archive C3 as appropriate.
+
+---
+
+## 2026-05-05 — D3 threshold watch (TICK-GENERATED)
+
+AAA national gas average is $4.457 as of 2026-05-05 — $0.043 below the D3 threshold of $4.50.
+Brent crude spiked ~6% on 2026-05-04, suggesting further pump price pressure.
+If AAA crosses $4.50 and holds 7+ days, D3 resolves YES. Current portfolio: 50%.
+
+**Agent recommendation:** Monitor AAA daily for next 10 days. Operator may wish to increase D3
+probability if Brent holds above $110. No auto-change in Phase 0.

@@ -1,10 +1,10 @@
-# Agent Memory — last regenerated 2026-05-03T19:55:17 UTC
+# Agent Memory — last regenerated 2026-05-05T11:13:35 UTC
 
 _This file is **programmatically regenerated** each tick by `scripts/refresh_memory.py` from `portfolio.yaml`, `portfolio_history.json`, `agent/operator-queue.md`, and recent logs._
 
 ## Portfolio summary (current state)
 
-Engine version: **0.2.0** · Spec: **v8** · Questions: **32** · History snapshots: **3**
+Engine version: **0.2.0** · Spec: **v8** · Questions: **32** · History snapshots: **4**
 
 ### A. Diplomatic resolution
 
@@ -65,15 +65,18 @@ _No moves above CI noise floor in last 7d (since 2026-05-01)._
 
 ## Open Tier-C operator decisions
 
+- 2026-05-05 — C1 — URGENT: Resolve YES (Ali Khamenei killed 2026-02-28)
+- 2026-05-05 — C3 — URGENT: Resolve YES (Mojtaba named Supreme Leader 2026-03-09)
+- 2026-05-05 — 14 probability moves recommended — operator to apply or decline
 - 2026-05-03 — F1-F12 portfolio confirmation — confirm/edit family-business questions
 - 2026-05-03 — Phase 0 → Phase 1 transition trigger
 - 2026-05-03 — Free-only operating constraint (CONFIRMED by user)
 
 ## Recent log files
 
-- **Events**: `2026-05-03.md`
-- **Probability changes**: `2026-05-03.md`
-- **Sources shifted**: `2026-05-03.md`
+- **Events**: `2026-05-05.md`, `2026-05-03.md`
+- **Probability changes**: `2026-05-05.md`, `2026-05-03.md`
+- **Sources shifted**: `2026-05-05.md`, `2026-05-03.md`
 
 ## Top-of-mind context (operator-curated)
 
