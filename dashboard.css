@@ -3120,9 +3120,28 @@ body.agent-v2.is-rtl .qcard-cat-diplomacy,
 body.agent-v2.is-rtl .qcard-cat-military,
 body.agent-v2.is-rtl .qcard-cat-regime,
 body.agent-v2.is-rtl .qcard-cat-economic,
-body.agent-v2.is-rtl .qcard-cat-us {
+body.agent-v2.is-rtl .qcard-cat-us,
+body.agent-v2.is-rtl .qcard-cat-iranfarhang,
+body.agent-v2.is-rtl .qcard-cat-kipa {
   border-right: 3px solid currentColor;
   border-left: 1px solid var(--agent-rule);
+}
+/* Translation-in-progress notice on the Persian board */
+body.agent-v2 .board-translation-notice {
+  font-family: var(--serif);
+  font-size: 14px;
+  line-height: 1.5;
+  font-style: italic;
+  color: var(--agent-muted);
+  margin: -8px 0 22px 0;
+  padding: 10px 14px;
+  border-left: 3px solid var(--agent-accent-2);
+  background: color-mix(in srgb, var(--agent-bg-2) 80%, transparent);
+  max-width: 820px;
+}
+body.agent-v2.is-rtl .board-translation-notice {
+  border-left: none;
+  border-right: 3px solid var(--agent-accent-2);
 }
 body.agent-v2.is-rtl .topq-link::after { content: ""; }
 body.agent-v2.is-rtl .diff-arrow,

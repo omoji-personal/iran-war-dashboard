@@ -49,7 +49,9 @@ STRINGS = {
         "masthead_classification": "For analytic reading · Probability brief, not advice",
         "masthead_publisher": "2026 IRAN-US CONFLICT MONITOR",
         "masthead_subline": "Daily 07:00 ET update",
+        "masthead_issue_prefix": "Issue",
         "issue_day": "Day",
+        "translation_in_progress_notice": "",
         "banner_strong": "EXPERIMENTAL — UNCALIBRATED",
         "banner_text": "None of these questions has resolved yet, so the probabilities have no track record. Treat them as structured scenario reasoning, not as forecasts.",
         "banner_legacy_link": "Older dashboard",
@@ -125,7 +127,9 @@ STRINGS = {
         "masthead_classification": "برای مطالعه‌ی تحلیلی · گزارش احتمالات، نه توصیه",
         "masthead_publisher": "ناظر نزاع ایران و آمریکا ۲۰۲۶",
         "masthead_subline": "به‌روزرسانی هر روز ساعت ۷:۰۰ شرق آمریکا",
+        "masthead_issue_prefix": "شماره",
         "issue_day": "روز",
+        "translation_in_progress_notice": "متن پرسش‌ها در حال حاضر به انگلیسی نمایش داده می‌شود. ترجمه‌ی پرسش به پرسش در حال تکمیل است.",
         "banner_strong": "آزمایشی — کالیبره‌نشده",
         "banner_text": "هیچ‌یک از این پرسش‌ها هنوز قطعی نشده‌اند، پس احتمالات سابقه‌ی عملکردی ندارند. آن‌ها را به عنوان استدلال ساخت‌یافته‌ی سناریو در نظر بگیرید، نه پیش‌بینی.",
         "banner_legacy_link": "داشبورد قدیمی",
@@ -396,14 +400,16 @@ def render_question_card(q: dict, stripped: bool = False, lang: str = "en") -> s
                 )
                 break
 
+    # `dir="auto"` on user-content blocks so an English question on a Persian
+    # page renders LTR without breaking the surrounding RTL chrome.
     return f"""
       <article class="qcard qcard-{cat_css} qcard-prob-{label_css}" id="q-{q['id']}">
         <header class="qcard-head">
           <span class="qcard-id">{esc(q['id'])}</span>
-          <span class="qcard-deadline">→ {esc(deadline)}</span>
+          <bdi class="qcard-deadline" dir="ltr">→ {esc(deadline)}</bdi>
           <span class="qcard-flags">{''.join(flags)}</span>
         </header>
-        <h3 class="qcard-question">{esc(_q_field(q, 'question', lang))}</h3>
+        <h3 class="qcard-question" dir="auto">{esc(_q_field(q, 'question', lang))}</h3>
         <div class="qcard-numbers">
           <div class="qcard-prob">
             <span class="qcard-prob-num">{pct}<span class="qcard-prob-pct">%</span></span>
@@ -415,21 +421,34 @@ def render_question_card(q: dict, stripped: bool = False, lang: str = "en") -> s
               <span class="qcard-ci-fill" style="left: {ci_lo}%; width: {ci_hi - ci_lo}%"></span>
               <span class="qcard-ci-mark" style="left: {pct}%"></span>
             </span>
-            <span class="qcard-ci-label">{esc(_t('qcard_ci_label', lang))} {ci_lo}–{ci_hi}%</span>
+            <bdi class="qcard-ci-label" dir="ltr">{esc(_t('qcard_ci_label', lang))} {ci_lo}–{ci_hi}%</bdi>
           </div>
         </div>
-        <p class="qcard-note">{esc(notes)}</p>
+        <p class="qcard-note" dir="auto">{esc(notes)}</p>
       </article>
     """
 
 
-def _human_date(iso_date: str) -> str:
-    """Render YYYY-MM-DD as 'Mon D' (e.g. 'May 3'). Falls back to ISO on parse error."""
+_FA_MONTHS = ("ژانویه", "فوریه", "مارس", "آوریل", "مه", "ژوئن",
+              "ژوئیه", "اوت", "سپتامبر", "اکتبر", "نوامبر", "دسامبر")
+_FA_DIGITS = str.maketrans("0123456789", "۰۱۲۳۴۵۶۷۸۹")
+
+
+def _to_fa_digits(s: str) -> str:
+    """Convert ASCII digits in a string to Persian (Farsi) digits."""
+    return s.translate(_FA_DIGITS)
+
+
+def _human_date(iso_date: str, lang: str = "en") -> str:
+    """Render YYYY-MM-DD as a short human date in the chosen language.
+    English: 'May 3'. Persian: '۳ مه'. Falls back to original on parse error."""
     try:
         d = datetime.strptime(iso_date, "%Y-%m-%d")
-        return d.strftime("%b %d").replace(" 0", " ")
     except (ValueError, TypeError):
         return iso_date
+    if lang == "fa":
+        return f"{_to_fa_digits(str(d.day))} {_FA_MONTHS[d.month - 1]}"
+    return d.strftime("%b %d").replace(" 0", " ")
 
 
 def render_diff_panel(diffs: list[dict], history: list[dict], lang: str = "en") -> str:
@@ -446,7 +465,7 @@ def render_diff_panel(diffs: list[dict], history: list[dict], lang: str = "en") 
         </section>
         """
     if not diffs:
-        last_date = _human_date(prior[-1]["date"])
+        last_date = _human_date(prior[-1]["date"], lang=lang)
         msg = _t("diff_quiet_msg_template", lang).format(date=last_date)
         return f"""
         <section class="diff-panel diff-empty" role="region" aria-label="{esc(diff_h)}">
@@ -458,14 +477,17 @@ def render_diff_panel(diffs: list[dict], history: list[dict], lang: str = "en") 
     for d in diffs:
         arrow = "▲" if d["delta_pp"] > 0 else "▼"
         css_dir = "diff-up" if d["delta_pp"] > 0 else "diff-down"
+        # Wrap the numeric old→new range in <bdi> so Unicode bidi keeps it
+        # left-to-right inside an RTL paragraph (otherwise "(18% → 20%)" can
+        # visually render as "(20% ← 18%)").
         items.append(f"""
           <li class="diff-item {css_dir}">
             <a href="#q-{d['id']}">
               <span class="diff-id">{esc(d['id'])}</span>
               <span class="diff-arrow">{arrow}</span>
               <span class="diff-delta">{d['delta_pp']:+.1f}pp</span>
-              <span class="diff-from-to">({d['old_p']*100:.0f}% → {d['new_p']*100:.0f}%)</span>
-              <span class="diff-question">{esc(d['question'])}</span>
+              <bdi class="diff-from-to" dir="ltr">({d['old_p']*100:.0f}% → {d['new_p']*100:.0f}%)</bdi>
+              <span class="diff-question" dir="auto">{esc(d['question'])}</span>
             </a>
           </li>
         """)
@@ -541,15 +563,15 @@ def render_top_question(q: dict, last_q_by_id: dict, history_present: bool, lang
     eyebrow = _t("topq_eyebrow", lang)
     return f"""
       <section class="topq topq-{css}" role="region" aria-label="{esc(eyebrow)}">
-        <div class="topq-eyebrow">{esc(eyebrow)} · {esc(q['id'])} · → {esc(q['deadline'])}{delta_text}</div>
-        <h2 class="topq-question">{esc(_q_field(q, 'question', lang))}</h2>
+        <div class="topq-eyebrow">{esc(eyebrow)} · {esc(q['id'])} · <bdi dir="ltr">→ {esc(q['deadline'])}</bdi>{delta_text}</div>
+        <h2 class="topq-question" dir="auto">{esc(_q_field(q, 'question', lang))}</h2>
         <div class="topq-row">
           <div class="topq-prob">
             <span class="topq-prob-num">{pct}<span class="topq-prob-pct">%</span></span>
             <span class="topq-prob-label">{esc(label)}</span>
-            <span class="topq-prob-ci">{esc(_t("topq_ci_label", lang))} {round(ci[0]*100)}–{round(ci[1]*100)}%</span>
+            <bdi class="topq-prob-ci" dir="ltr">{esc(_t("topq_ci_label", lang))} {round(ci[0]*100)}–{round(ci[1]*100)}%</bdi>
           </div>
-          <p class="topq-note">{esc(notes)}</p>
+          <p class="topq-note" dir="auto">{esc(notes)}</p>
         </div>
         <a class="topq-link" href="#q-{q['id']}">{esc(_t("topq_link", lang))}</a>
       </section>
@@ -557,9 +579,12 @@ def render_top_question(q: dict, last_q_by_id: dict, history_present: bool, lang
 
 
 def _human_date_lang(d: datetime, lang: str) -> str:
-    """Date format suitable for the masthead eyebrow. English: 'May 5, 2026'.
-    Persian: keep ASCII numerals — Iranian readers parse Gregorian dates fine,
-    and converting to Jalali would mismatch the war_day() integer."""
+    """Date format suitable for the masthead eyebrow.
+    English: 'May 5, 2026'. Persian: '۵ مه ۱۴۰۵' (Gregorian month rendered
+    in Persian + Persian-digit Gregorian year — Jalali conversion is out of
+    scope and would mismatch war_day())."""
+    if lang == "fa":
+        return f"{_to_fa_digits(str(d.day))} {_FA_MONTHS[d.month - 1]} {_to_fa_digits(str(d.year))}"
     return d.strftime("%B %d, %Y").replace(" 0", " ")
 
 
@@ -666,7 +691,7 @@ def render_base_case(portfolio: dict, stripped: bool = False, lang: str = "en") 
     if last_updated is not None:
         last_updated_str = last_updated.isoformat() if hasattr(last_updated, "isoformat") else str(last_updated)
     eyebrow_extra = (
-        f" · {esc(_t('basecase_eyebrow_revised', lang))} {esc(_human_date(last_updated_str))}"
+        f" · {esc(_t('basecase_eyebrow_revised', lang))} {esc(_human_date(last_updated_str, lang=lang))}"
         if last_updated_str else ""
     )
     paragraphs = [esc(p.strip()) for p in text.split("\n\n") if p.strip()]
@@ -708,10 +733,16 @@ def _split_likely_tail(questions: list[dict]) -> tuple[list[dict], list[dict]]:
 
 def render_question_board(by_cat: dict, stripped: bool = False, lang: str = "en") -> str:
     total = sum(len(qs) for qs in by_cat.values())
+    n_display = _to_fa_digits(str(total)) if lang == "fa" else str(total)
+    board_h = _t("board_h_template", lang).format(n=n_display)
+    board_sub_html = f'<p class="board-sub">{_t("board_sub", lang)}</p>'
+    notice = _t("translation_in_progress_notice", lang)
+    notice_html = f'<p class="board-translation-notice" dir="auto">{esc(notice)}</p>' if notice else ""
     parts = [
-        f'<section class="board" role="region" aria-label="{esc(_t("board_h_template", lang).format(n=total))}">'
-        f'<h2 class="board-h">{esc(_t("board_h_template", lang).format(n=total))}</h2>',
-        f'<p class="board-sub">{_t("board_sub", lang)}</p>',
+        f'<section class="board" role="region" aria-label="{esc(board_h)}">'
+        f'<h2 class="board-h">{esc(board_h)}</h2>',
+        board_sub_html,
+        notice_html,
     ]
     for cat_id in CATEGORY_ORDER:
         if cat_id not in by_cat:
@@ -743,7 +774,7 @@ def render_question_board(by_cat: dict, stripped: bool = False, lang: str = "en"
             <header class="board-cat-head">
               <span class="board-cat-num">{esc(num)}</span>
               <h3 class="board-cat-title">{esc(title)}</h3>
-              <span class="board-cat-count">{esc(_t("cat_count_template", lang).format(n=len(by_cat[cat_id])))}</span>
+              <span class="board-cat-count">{esc(_t("cat_count_template", lang).format(n=(_to_fa_digits(str(len(by_cat[cat_id]))) if lang == "fa" else str(len(by_cat[cat_id])))))}</span>
             </header>
             {cluster_html}
           </div>
@@ -840,7 +871,8 @@ def render_html(portfolio: dict, diffs: list[dict], history: list[dict], strippe
     html_dir = "rtl" if is_rtl else "ltr"
 
     d = war_day(today)
-    issue_subline = f"{_t('issue_day', lang)} {d}"
+    day_num = _to_fa_digits(str(d)) if lang == "fa" else str(d)
+    issue_subline = f"{_t('issue_day', lang)} {day_num}"
     # Cease-fire / blockade day counters were removed from the masthead — they
     # imply a steady-state count that's misleading once the situation shifts.
     # The "most-likely scenario" paragraph below carries the live read.
@@ -906,7 +938,7 @@ def render_html(portfolio: dict, diffs: list[dict], history: list[dict], strippe
       <div class="masthead-class">{esc(_t("masthead_classification", lang))}</div>
       <div class="masthead-row">
         <div class="masthead-l">
-          <div class="masthead-eyebrow">Issue · {esc(issue_subline)}</div>
+          <div class="masthead-eyebrow">{esc(_t("masthead_issue_prefix", lang))} · {esc(issue_subline)}</div>
           <h1 class="masthead-title">{esc(_t("site_title", lang))}</h1>
         </div>
         <div class="masthead-r">
