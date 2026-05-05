@@ -746,6 +746,31 @@ metadata:
     us_side: 2
     family_business_iranfarhang: 6
     family_business_kipa: 6
+  # Modal forecast / base case — one prose paragraph describing the future
+  # that gets the most probability mass. The questions below are the ways
+  # this base case could break.
+  # Editable by hand; the renderer surfaces this above the question board.
+  # `base_case_narrative` is shown on the private (family-shared) deploy.
+  # `base_case_narrative_public` is shown on the public deploy and must drop
+  # any family-business specifics.
+  base_case_narrative: |
+    Continued ceasefire-blockade limbo into the summer. The zero-attack
+    streak holds; the 14-point counter-proposal stays alive but neither
+    side moves to sign. Hormuz traffic stays at a fraction of normal —
+    Bandar Abbas slow-bleeding, no kinetic re-escalation. Brent drifts
+    $100–115. The rial creeps weaker but no collapse. Khamenei stays
+    sparse on state TV with no formal succession announcement.
+    Iranfarhang books keep clearing through the Berman Amendment exemption;
+    Kipa keeps importing through the AMAG-Dubai corridor. The questions
+    below are the named ways this base case could break.
+  base_case_narrative_public: |
+    Continued ceasefire-blockade limbo into the summer. The zero-attack
+    streak holds; the 14-point counter-proposal stays alive but neither
+    side moves to sign. Hormuz traffic stays at a fraction of normal,
+    Brent drifts $100–115, and the rial creeps weaker without collapsing.
+    Khamenei stays sparse on state TV; no formal succession announcement.
+    The questions below are the named ways this base case could break.
+  base_case_last_updated: 2026-05-05
   notes: |
     F-questions added 2026-05-03 from Iranfarhang + Kipa research agents.
     F1-F6 = Iranfarhang business consequences (Berman Amendment, Kemco rail,

@@ -173,6 +173,100 @@ def test_render_public_actually_strips_private_content():
     assert "PERSONAL" not in pub
 
 
+def test_base_case_renders_when_present():
+    """Base-case section must appear above the question board when metadata
+    has base_case_narrative populated. The portfolio.yaml currently has it
+    populated; the rendered HTML must show the section."""
+    portfolio = render.load_portfolio()
+    html = render.render_html(portfolio, [], history=[], stripped=False)
+    assert 'class="basecase"' in html, "base-case section missing on private render"
+    assert 'class="basecase-h"' in html
+    # Order: base-case must appear BEFORE the question board
+    assert html.index('class="basecase"') < html.index('class="board"'), (
+        "base-case must render above the question board"
+    )
+
+
+def test_base_case_renders_public_variant_for_stripped():
+    """Public render uses base_case_narrative_public if set, falls back to
+    base_case_narrative otherwise. Must not leak family-business specifics."""
+    portfolio = render.load_portfolio()
+    pub = render.render_html(portfolio, [], history=[], stripped=True)
+    assert 'class="basecase"' in pub
+    # Family-business names must never appear in the public base case
+    md = portfolio.get("metadata", {})
+    if md.get("base_case_narrative_public"):
+        for tok in ("Iranfarhang", "Kipa", "iranfarhang", "kipa", "Berman Amendment", "AMAG"):
+            assert tok not in pub, f"public base case leaks {tok!r}"
+
+
+def test_base_case_section_omitted_when_metadata_empty():
+    """Renderer must gracefully render nothing if base_case_narrative is missing."""
+    portfolio = render.load_portfolio()
+    # Synthesize a portfolio with no base case
+    p = {**portfolio, "metadata": {**portfolio["metadata"]}}
+    p["metadata"].pop("base_case_narrative", None)
+    p["metadata"].pop("base_case_narrative_public", None)
+    html = render.render_html(p, [], history=[], stripped=False)
+    assert 'class="basecase"' not in html
+
+
+def test_question_board_clusters_present_when_relevant():
+    """The board should surface cluster headings whenever at least one
+    category has both clusters or just one. At least one heading variant
+    must appear in the rendered HTML for the current portfolio."""
+    portfolio = render.load_portfolio()
+    html = render.render_html(portfolio, [], history=[], stripped=False)
+    has_likely = "Most-likely outcomes" in html
+    has_tail = "Lower-probability scenarios to watch" in html
+    assert has_likely or has_tail, "expected at least one cluster heading in rendered board"
+    # Per-category ordering verified by test_question_board_within_category_descending_by_probability
+
+
+def test_question_board_within_category_descending_by_probability():
+    """For at least one category that has both clusters, verify the cards
+    inside the rendered HTML appear in descending-probability order."""
+    portfolio = render.load_portfolio()
+    by_cat = {}
+    for q in portfolio["questions"]:
+        by_cat.setdefault(q["category"], []).append(q)
+
+    # Render one category in isolation
+    for cat_id in by_cat:
+        likely, tail = render._split_likely_tail(by_cat[cat_id])
+        if likely and tail:
+            # Both clusters present — assert sort order
+            ordered = likely + tail
+            html = render.render_question_board({cat_id: by_cat[cat_id]}, stripped=False)
+            positions = [html.index(f'id="q-{q["id"]}"') for q in ordered]
+            assert positions == sorted(positions), (
+                f"category {cat_id}: cards not rendered in expected likely→tail order"
+            )
+            return  # one is enough
+    # If no category had both clusters, we can't run this assertion (not a failure)
+    return
+
+
+def test_topness_prefers_in_play_over_equal_stakes_tail():
+    """A 70% question with 0 movement and equal stakes should now beat a 12%
+    tail-risk that just jumped 3pp — that's the round-16 rebalance."""
+    in_play = {"id": "X1", "current_probability": 0.70,
+                "current_credible_interval_80": [0.55, 0.85],
+                "deadline": "2026-09-30",
+                "stakeholder_tags": ["us_foreign_policy"]}
+    tail = {"id": "X2", "current_probability": 0.12,
+             "current_credible_interval_80": [0.05, 0.20],
+             "deadline": "2026-09-30",
+             "stakeholder_tags": ["us_foreign_policy"]}
+    last = {"X1": {"probability": 0.70}, "X2": {"probability": 0.09}}  # X2 jumped 3pp
+    today = datetime(2026, 5, 5, tzinfo=timezone.utc)
+    s_in = render.topness(in_play, last, today=today)
+    s_tail = render.topness(tail, last, today=today)
+    assert s_in > s_tail, (
+        f"in-play 70% question should outscore tail-risk 12% mover; got {s_in:.3f} vs {s_tail:.3f}"
+    )
+
+
 def test_render_html_no_unfilled_placeholders():
     """Catch f-string / template mistakes that leave literal `{var}` tokens in output.
     Uses a real regex instead of a fixed list of suspect substrings."""

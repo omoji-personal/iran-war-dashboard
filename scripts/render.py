@@ -275,8 +275,10 @@ def render_diff_panel(diffs: list[dict], history: list[dict]) -> str:
 def topness(q: dict, last_q_by_id: dict[str, dict], today: datetime | None = None) -> float:
     """Score for 'top question' selection.
 
-    Real signal: biggest absolute change since prior tick × stakes. NOT max
-    probability (which is degenerate — D1 65% always wins).
+    Picks "the question worth watching today" — biased toward questions that
+    are actively in play (45-80% probability) rather than always surfacing the
+    biggest tail-risk mover. A 70% question holding steady can still be the
+    headline if it's high-stakes and the deadline is near.
 
     `today` is injected (not pulled from datetime.now()) so historical
     snapshot rendering is reproducible.
@@ -306,9 +308,12 @@ def topness(q: dict, last_q_by_id: dict[str, dict], today: datetime | None = Non
         recency = max(0.0, 1.0 - min(days_to_deadline / 365.0, 1.0)) * 0.10
     except (ValueError, TypeError):
         recency = 0.0
+    # Stability bias: a question sitting in the 45-80% band is "actively in play"
+    # and more interesting to watch than a 12% tail-risk that just jumped 3pp.
+    in_play_bonus = 0.15 if 0.45 <= cur_p < 0.80 else 0.0
     # Humility flags suppress (we shouldn't headline a question we admit we can't forecast)
     humility_penalty = -0.30 if has_humility else 0.0
-    return abs_delta * 1.5 + stakes + recency + humility_penalty
+    return abs_delta * 1.0 + stakes + recency + in_play_bonus + humility_penalty
 
 
 def render_top_question(q: dict, last_q_by_id: dict, history_present: bool) -> str:
@@ -403,6 +408,7 @@ def render_methodology(stripped: bool = False) -> str:
       <section class="methodology" role="region" aria-label="What to keep in mind">
         <h2 class="meth-h">What to keep in mind</h2>
         <ul class="meth-list">
+          <li><strong>The "most-likely scenario" paragraph at the top is the anchor.</strong> It's the single future getting the most probability mass once you average across the questions. The questions below — especially the ones in the "lower-probability" cluster of each topic — are the named ways that base case could break. Most of those tail-risk cards will read low for a reason.</li>
           <li><strong>Experimental — no track record yet.</strong> None of these questions has resolved, so the probabilities haven't been graded against reality. Treat them as structured guesses.</li>
           <li><strong>Two questions are intentionally fuzzy</strong> — anything tied to whether a leader is alive, ill, or being succeeded (Khamenei, Mojtaba). Forecasting models historically fail at these. The number is a placeholder; the rationale is what to read.</li>
           <li><strong>How probabilities move</strong>: each morning, public news and prediction-market prices are re-read. If something shifts a question by more than its 80% range, it shows up at the top in "What changed since the last update."</li>
@@ -413,6 +419,42 @@ def render_methodology(stripped: bool = False) -> str:
     return common
 
 
+def render_base_case(portfolio: dict, stripped: bool = False) -> str:
+    """Render the operator's modal-forecast paragraph above the question board.
+
+    Reads `metadata.base_case_narrative` (private) or
+    `metadata.base_case_narrative_public` (stripped public). Renders nothing
+    if the relevant field is empty/missing — graceful no-op so the page still
+    works during operator transitions.
+    """
+    md = portfolio.get("metadata", {}) or {}
+    if stripped:
+        text = (md.get("base_case_narrative_public") or md.get("base_case_narrative") or "").strip()
+    else:
+        text = (md.get("base_case_narrative") or "").strip()
+    if not text:
+        return ""
+    last_updated = md.get("base_case_last_updated")
+    last_updated_str = ""
+    if last_updated is not None:
+        # YAML may parse as date or string
+        last_updated_str = last_updated.isoformat() if hasattr(last_updated, "isoformat") else str(last_updated)
+    eyebrow_extra = f" · last revised {esc(last_updated_str)}" if last_updated_str else ""
+    # Preserve operator-line breaks but escape for safety
+    paragraphs = [esc(p.strip()) for p in text.split("\n\n") if p.strip()]
+    if not paragraphs:
+        paragraphs = [esc(text)]
+    body_html = "".join(f"<p class=\"basecase-body\">{p}</p>" for p in paragraphs)
+    return f"""
+      <section class="basecase" role="region" aria-label="Most-likely scenario">
+        <div class="basecase-eyebrow">Most-likely scenario · operator's modal forecast{eyebrow_extra}</div>
+        <h2 class="basecase-h">What's most likely to keep being true</h2>
+        {body_html}
+        <p class="basecase-foot">Each topic below leads with the questions sitting closest to this base case, then shows the lower-probability scenarios that would break it.</p>
+      </section>
+    """
+
+
 def render_logs_section() -> str:
     # Intentionally empty — the rendered page does not surface internal log files
     # to visitors. The "What changed since last tick" panel covers the
@@ -421,12 +463,54 @@ def render_logs_section() -> str:
     return ""
 
 
+# Probability boundary that splits "most-likely outcomes" from "lower-probability
+# scenarios to watch". A card at exactly 45% is in the "roughly even" ICD-203
+# bucket — close enough to coin-flip that we lead with it.
+LIKELY_THRESHOLD = 0.45
+
+
+def _split_likely_tail(questions: list[dict]) -> tuple[list[dict], list[dict]]:
+    """Sort by current_probability descending, then partition at LIKELY_THRESHOLD.
+    Returns (likely_cluster, tail_cluster)."""
+    sorted_qs = sorted(questions, key=lambda q: -q["current_probability"])
+    likely = [q for q in sorted_qs if q["current_probability"] >= LIKELY_THRESHOLD]
+    tail = [q for q in sorted_qs if q["current_probability"] < LIKELY_THRESHOLD]
+    return likely, tail
+
+
 def render_question_board(by_cat: dict, stripped: bool = False) -> str:
     total = sum(len(qs) for qs in by_cat.values())
     parts = [f'<section class="board" role="region" aria-label="Question portfolio"><h2 class="board-h">Question portfolio · {total} questions</h2>']
+    parts.append(
+        '<p class="board-sub">Within each topic, most-likely outcomes lead; '
+        'lower-probability scenarios to watch follow under the divider. '
+        'Each card shows the current probability and the 80% range it\'s likely to fall in.</p>'
+    )
     for cat_id, (num, title, css) in CATEGORY.items():
         if cat_id not in by_cat:
             continue
+        likely, tail = _split_likely_tail(by_cat[cat_id])
+        cluster_blocks: list[str] = []
+        if likely:
+            cluster_blocks.append(f"""
+              <div class="board-cluster board-cluster-likely">
+                <h4 class="board-cluster-h">Most-likely outcomes</h4>
+                <div class="board-grid">
+                  {"".join(render_question_card(q, stripped=stripped) for q in likely)}
+                </div>
+              </div>
+            """)
+        if tail:
+            cluster_blocks.append(f"""
+              <div class="board-cluster board-cluster-tail">
+                <h4 class="board-cluster-h">Lower-probability scenarios to watch</h4>
+                <div class="board-grid">
+                  {"".join(render_question_card(q, stripped=stripped) for q in tail)}
+                </div>
+              </div>
+            """)
+        # If both clusters present, draw a thin divider between them
+        cluster_html = '<hr class="board-cluster-divider" aria-hidden="true" />'.join(cluster_blocks) if len(cluster_blocks) > 1 else "".join(cluster_blocks)
         parts.append(f"""
           <div class="board-cat board-{css}">
             <header class="board-cat-head">
@@ -434,9 +518,7 @@ def render_question_board(by_cat: dict, stripped: bool = False) -> str:
               <h3 class="board-cat-title">{esc(title)}</h3>
               <span class="board-cat-count">{len(by_cat[cat_id])} questions</span>
             </header>
-            <div class="board-grid">
-              {"".join(render_question_card(q, stripped=stripped) for q in by_cat[cat_id])}
-            </div>
+            {cluster_html}
           </div>
         """)
     parts.append("</section>")
@@ -586,6 +668,8 @@ def render_html(portfolio: dict, diffs: list[dict], history: list[dict], strippe
     {render_top_question(top_q, last_q_by_id, history_present=bool(prior))}
 
     {render_headline_narrative(today, portfolio_view, stripped=stripped)}
+
+    {render_base_case(portfolio_view, stripped=stripped)}
 
     {render_question_board(by_cat, stripped=stripped)}
 
