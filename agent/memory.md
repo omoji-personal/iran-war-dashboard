@@ -1,10 +1,10 @@
-# Agent Memory — last regenerated 2026-05-03T19:55:17 UTC
+# Agent Memory — last regenerated 2026-05-05T11:06:17 UTC
 
 _This file is **programmatically regenerated** each tick by `scripts/refresh_memory.py` from `portfolio.yaml`, `portfolio_history.json`, `agent/operator-queue.md`, and recent logs._
 
 ## Portfolio summary (current state)
 
-Engine version: **0.2.0** · Spec: **v8** · Questions: **32** · History snapshots: **3**
+Engine version: **0.2.0** · Spec: **v8** · Questions: **32** · History snapshots: **4**
 
 ### A. Diplomatic resolution
 
@@ -71,9 +71,9 @@ _No moves above CI noise floor in last 7d (since 2026-05-01)._
 
 ## Recent log files
 
-- **Events**: `2026-05-03.md`
-- **Probability changes**: `2026-05-03.md`
-- **Sources shifted**: `2026-05-03.md`
+- **Events**: `2026-05-05.md`, `2026-05-03.md`
+- **Probability changes**: `2026-05-05.md`, `2026-05-03.md`
+- **Sources shifted**: `2026-05-05.md`, `2026-05-03.md`
 
 ## Top-of-mind context (operator-curated)
 

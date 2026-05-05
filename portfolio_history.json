@@ -15,7 +15,7 @@
       "escalationCatastrophe": 0.207,
       "derivation_escalation": "UP from 0.28. Blockade Monday = direct confrontation risk. If Iran resists: naval war. IRGC 'act of war.'",
       "protractedContinuation": 0.339,
-      "derivation_protracted": "DOWN from 0.38. Blockade accelerates timeline — less likely to remain protracted, more likely collapse or confrontation.",
+      "derivation_protracted": "DOWN from 0.38. Blockade accelerates timeline \u2014 less likely to remain protracted, more likely collapse or confrontation.",
       "internationalIntervention": 0.142,
       "derivation_intervention": "UP from 0.10. Allies refusing blockade. China condemning. If maritime confrontation: international pressure surges.",
       "other": 0.073,
@@ -43,7 +43,7 @@
       "escalationCatastrophe": 0.237,
       "derivation_escalation": "UP from 0.28. Blockade Monday = direct confrontation risk. If Iran resists: naval war. IRGC 'act of war.'",
       "protractedContinuation": 0.461,
-      "derivation_protracted": "DOWN from 0.38. Blockade accelerates timeline — less likely to remain protracted, more likely collapse or confrontation.",
+      "derivation_protracted": "DOWN from 0.38. Blockade accelerates timeline \u2014 less likely to remain protracted, more likely collapse or confrontation.",
       "internationalIntervention": 0.152,
       "derivation_intervention": "UP from 0.10. Allies refusing blockade. China condemning. If maritime confrontation: international pressure surges.",
       "other": 0.075,
@@ -509,6 +509,333 @@
           "kipa_business",
           "oil_energy_markets"
         ]
+      }
+    ]
+  },
+  {
+    "date": "2026-05-05",
+    "engineVersion": "0.2.0",
+    "phase": 0,
+    "questions": [
+      {
+        "id": "A1",
+        "category": "diplomatic_resolution",
+        "probability": 0.18,
+        "ci_80": [
+          0.08,
+          0.32
+        ],
+        "last_updated": "2026-05-03 06:00:00-04:00"
+      },
+      {
+        "id": "A2",
+        "category": "diplomatic_resolution",
+        "probability": 0.25,
+        "ci_80": [
+          0.12,
+          0.42
+        ],
+        "last_updated": "2026-05-03 06:00:00-04:00"
+      },
+      {
+        "id": "A3",
+        "category": "diplomatic_resolution",
+        "probability": 0.12,
+        "ci_80": [
+          0.04,
+          0.25
+        ],
+        "last_updated": "2026-05-03 06:00:00-04:00"
+      },
+      {
+        "id": "A4",
+        "category": "diplomatic_resolution",
+        "probability": 0.22,
+        "ci_80": [
+          0.1,
+          0.38
+        ],
+        "last_updated": "2026-05-03 06:00:00-04:00"
+      },
+      {
+        "id": "A5",
+        "category": "diplomatic_resolution",
+        "probability": 0.1,
+        "ci_80": [
+          0.03,
+          0.22
+        ],
+        "last_updated": "2026-05-03 06:00:00-04:00"
+      },
+      {
+        "id": "B1",
+        "category": "military_escalation",
+        "probability": 0.2,
+        "ci_80": [
+          0.1,
+          0.35
+        ],
+        "last_updated": "2026-05-03 06:00:00-04:00"
+      },
+      {
+        "id": "B2",
+        "category": "military_escalation",
+        "probability": 0.28,
+        "ci_80": [
+          0.15,
+          0.45
+        ],
+        "last_updated": "2026-05-03 06:00:00-04:00"
+      },
+      {
+        "id": "B3",
+        "category": "military_escalation",
+        "probability": 0.15,
+        "ci_80": [
+          0.06,
+          0.3
+        ],
+        "last_updated": "2026-05-03 06:00:00-04:00"
+      },
+      {
+        "id": "B4",
+        "category": "military_escalation",
+        "probability": 0.3,
+        "ci_80": [
+          0.18,
+          0.45
+        ],
+        "last_updated": "2026-05-03 06:00:00-04:00"
+      },
+      {
+        "id": "B5",
+        "category": "military_escalation",
+        "probability": 0.55,
+        "ci_80": [
+          0.38,
+          0.72
+        ],
+        "last_updated": "2026-05-03 06:00:00-04:00"
+      },
+      {
+        "id": "C1",
+        "category": "regime_leadership",
+        "probability": 0.08,
+        "ci_80": [
+          0.03,
+          0.18
+        ],
+        "last_updated": "2026-05-03 06:00:00-04:00"
+      },
+      {
+        "id": "C2",
+        "category": "regime_leadership",
+        "probability": 0.45,
+        "ci_80": [
+          0.28,
+          0.62
+        ],
+        "last_updated": "2026-05-03 06:00:00-04:00"
+      },
+      {
+        "id": "C3",
+        "category": "regime_leadership",
+        "probability": 0.06,
+        "ci_80": [
+          0.02,
+          0.15
+        ],
+        "last_updated": "2026-05-03 06:00:00-04:00"
+      },
+      {
+        "id": "C4",
+        "category": "regime_leadership",
+        "probability": 0.3,
+        "ci_80": [
+          0.15,
+          0.5
+        ],
+        "last_updated": "2026-05-03 06:00:00-04:00"
+      },
+      {
+        "id": "D1",
+        "category": "economic_structural",
+        "probability": 0.65,
+        "ci_80": [
+          0.45,
+          0.82
+        ],
+        "last_updated": "2026-05-03 06:00:00-04:00"
+      },
+      {
+        "id": "D2",
+        "category": "economic_structural",
+        "probability": 0.45,
+        "ci_80": [
+          0.28,
+          0.65
+        ],
+        "last_updated": "2026-05-03 06:00:00-04:00"
+      },
+      {
+        "id": "D3",
+        "category": "economic_structural",
+        "probability": 0.5,
+        "ci_80": [
+          0.3,
+          0.7
+        ],
+        "last_updated": "2026-05-03 06:00:00-04:00"
+      },
+      {
+        "id": "D4",
+        "category": "economic_structural",
+        "probability": 0.35,
+        "ci_80": [
+          0.18,
+          0.55
+        ],
+        "last_updated": "2026-05-03 06:00:00-04:00"
+      },
+      {
+        "id": "E1",
+        "category": "us_side",
+        "probability": 0.3,
+        "ci_80": [
+          0.18,
+          0.45
+        ],
+        "last_updated": "2026-05-03 06:00:00-04:00"
+      },
+      {
+        "id": "E2",
+        "category": "us_side",
+        "probability": 0.55,
+        "ci_80": [
+          0.4,
+          0.7
+        ],
+        "last_updated": "2026-05-03 06:00:00-04:00"
+      },
+      {
+        "id": "F1",
+        "category": "family_business_iranfarhang",
+        "probability": 0.2,
+        "ci_80": [
+          0.08,
+          0.38
+        ],
+        "last_updated": "2026-05-03 06:00:00-04:00"
+      },
+      {
+        "id": "F2",
+        "category": "family_business_iranfarhang",
+        "probability": 0.3,
+        "ci_80": [
+          0.15,
+          0.5
+        ],
+        "last_updated": "2026-05-03 06:00:00-04:00"
+      },
+      {
+        "id": "F3",
+        "category": "family_business_iranfarhang",
+        "probability": 0.5,
+        "ci_80": [
+          0.3,
+          0.7
+        ],
+        "last_updated": "2026-05-03 06:00:00-04:00"
+      },
+      {
+        "id": "F4",
+        "category": "family_business_iranfarhang",
+        "probability": 0.45,
+        "ci_80": [
+          0.25,
+          0.65
+        ],
+        "last_updated": "2026-05-03 06:00:00-04:00"
+      },
+      {
+        "id": "F5",
+        "category": "family_business_iranfarhang",
+        "probability": 0.1,
+        "ci_80": [
+          0.03,
+          0.22
+        ],
+        "last_updated": "2026-05-03 06:00:00-04:00"
+      },
+      {
+        "id": "F6",
+        "category": "family_business_iranfarhang",
+        "probability": 0.55,
+        "ci_80": [
+          0.35,
+          0.75
+        ],
+        "last_updated": "2026-05-03 06:00:00-04:00"
+      },
+      {
+        "id": "F7",
+        "category": "family_business_kipa",
+        "probability": 0.2,
+        "ci_80": [
+          0.08,
+          0.38
+        ],
+        "last_updated": "2026-05-03 06:00:00-04:00"
+      },
+      {
+        "id": "F8",
+        "category": "family_business_kipa",
+        "probability": 0.55,
+        "ci_80": [
+          0.35,
+          0.75
+        ],
+        "last_updated": "2026-05-03 06:00:00-04:00"
+      },
+      {
+        "id": "F9",
+        "category": "family_business_kipa",
+        "probability": 0.4,
+        "ci_80": [
+          0.2,
+          0.62
+        ],
+        "last_updated": "2026-05-03 06:00:00-04:00"
+      },
+      {
+        "id": "F10",
+        "category": "family_business_kipa",
+        "probability": 0.15,
+        "ci_80": [
+          0.05,
+          0.32
+        ],
+        "last_updated": "2026-05-03 06:00:00-04:00"
+      },
+      {
+        "id": "F11",
+        "category": "family_business_kipa",
+        "probability": 0.3,
+        "ci_80": [
+          0.15,
+          0.5
+        ],
+        "last_updated": "2026-05-03 06:00:00-04:00"
+      },
+      {
+        "id": "F12",
+        "category": "family_business_kipa",
+        "probability": 0.3,
+        "ci_80": [
+          0.15,
+          0.5
+        ],
+        "last_updated": "2026-05-03 06:00:00-04:00"
       }
     ]
   }

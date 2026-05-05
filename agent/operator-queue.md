@@ -64,3 +64,30 @@ What requires manual user opt-in (free-with-account):
 
 If a future Phase identifies a specific bottleneck that paid feeds would solve,
 agent surfaces in operator-queue with cost + value justification. User decides.
+
+---
+
+## 2026-05-05 — C1/C3 label + resolution review (TICK-GENERATED)
+
+Web research (tick 2026-05-05) confirms Ali Khamenei was killed ~2026-03-01 and Mojtaba
+Khamenei became supreme leader ~2026-03-12. Portfolio questions C1/C3 may need update:
+
+- **C1** ("Khamenei dies or is publicly removed from office" at 8%): If this referred to ALI
+  Khamenei, it is already resolved YES and should be archived. If it refers to MOJTABA
+  Khamenei (current leader), the question text should be updated to say "Mojtaba Khamenei."
+- **C3** ("Mojtaba Khamenei publicly designated heir-apparent by Assembly of Experts" at 6%):
+  Mojtaba IS the supreme leader, not heir-apparent. This question may be moot or should be
+  reframed (e.g., "Mojtaba Khamenei designates his own successor / heir-apparent").
+
+**Agent recommendation:** Operator to clarify C1 scope and resolve/archive C3 as appropriate.
+
+---
+
+## 2026-05-05 — D3 threshold watch (TICK-GENERATED)
+
+AAA national gas average is $4.457 as of 2026-05-05 — $0.043 below the D3 threshold of $4.50.
+Brent crude spiked ~6% on 2026-05-04, suggesting further pump price pressure.
+If AAA crosses $4.50 and holds 7+ days, D3 resolves YES. Current portfolio: 50%.
+
+**Agent recommendation:** Monitor AAA daily for next 10 days. Operator may wish to increase D3
+probability if Brent holds above $110. No auto-change in Phase 0.
