@@ -23,17 +23,22 @@ questions:
     reference_class_broad: A1_bilateral_nuclear_framework_broad
     expiration_policy: agent_judgment_at_deadline
     stakeholder_tags: [us_foreign_policy, iran_regime_survival, oil_energy_markets]
-    current_probability: 0.18
-    current_credible_interval_80: [0.08, 0.32]
-    current_icd203_label: very_unlikely
-    last_updated: 2026-05-03T06:00:00-04:00
+    current_probability: 0.28
+    current_credible_interval_80: [0.14, 0.45]
+    current_icd203_label: unlikely
+    last_updated: 2026-05-06T07:00:00-04:00
     notes: |
-      14-point counter-proposal in motion (May 3). Trump reviewing "concept of deal."
-      Khamenei nuclear vow hardens red lines. Polymarket implied ~15-18%.
+      Rubio: US offensive phase "over" (May 5). Trump "great progress" in talks (May 6).
+      Araghchi met Wang Yi in Beijing (first foreign trip since war); Trump-Xi summit next week.
+      Brent dropped 8% to $101 on deal-progress signals. Polymarket: 64% nuclear deal before
+      2027, 55% peace deal by Jun 30. Key obstacle: Iran wants war-end first, nuclear talks
+      later; US insists Iran surrender 400+ kg HEU first. CI widened on asymmetric upside.
     question_fa: "توافق چارچوبی ایران و آمریکا (به هر شکل) تا ۳۰ سپتامبر ۲۰۲۶ امضا شود"
     notes_fa: |
-      پیشنهاد چهارده‌بندی متقابل از ۳ مه فعال است. ترامپ در حال بررسی «مفهوم توافق» اما «راضی نیست».
-      نذر هسته‌ای خامنه‌ای خط قرمزها را سفت‌تر می‌کند. بازار پیش‌بینی Polymarket حدود ۱۵ تا ۱۸٪ تخمین می‌زند.
+      روبیو: مرحله تهاجمی آمریکا «تمام شده» (۵ مه). ترامپ «پیشرفت بزرگ» (۶ مه).
+      عراقچی با وانگ‌یی در پکن ملاقات کرد؛ نشست ترامپ-شی هفته آینده. برنت ۸٪ به ۱۰۱ دلار افتاد.
+      Polymarket: ۶۴٪ توافق هسته‌ای پیش از ۲۰۲۷، ۵۵٪ صلح دائمی تا ۳۰ ژوئن.
+      مانع اصلی: ایران می‌خواهد ابتدا جنگ تمام شود، سپس مذاکرات هسته‌ای؛ آمریکا اصرار دارد ایران ابتدا اورانیوم غنی‌شده را تسلیم دهد.
     successors_on_resolve_yes:
       - "Iran enriches above 60% within 90d of signing?"
       - "US lifts first sanctions tranche by stated deadline?"
@@ -55,19 +60,22 @@ questions:
     reference_class_broad: A2_blockade_resolution_broad
     expiration_policy: auto_resolve_no
     stakeholder_tags: [oil_energy_markets, regional_security]
-    current_probability: 0.25
-    current_credible_interval_80: [0.12, 0.42]
+    current_probability: 0.38
+    current_credible_interval_80: [0.20, 0.55]
     current_icd203_label: unlikely
-    last_updated: 2026-05-03T06:00:00-04:00
+    last_updated: 2026-05-06T07:00:00-04:00
     notes: |
-      Currently ~7 vessels/day (5% of pre-war 135). Iran Hormuz Sovereignty Law
-      (12-article) advancing in parliament. Resolution requires either deal (A1)
-      or US naval reflagging (A3) or unilateral Iran step-back.
+      Polymarket: 36% for Hormuz normal by end of May, 62% by end of June. Project
+      Freedom (US naval tanker escorts) launched Day 66, paused Day 68 after CMA CGM
+      San Antonio cruise-missile strike (crew injured). Diplomatic pivot (Rubio "offensive
+      over", Trump-Xi next week) creates plausible reopening path within this deadline.
+      Still requires political agreement — Hormuz Sovereignty Law not rescinded.
     question_fa: "ترانزیت تجاری تنگهٔ هرمز تا ۳۱ دسامبر ۲۰۲۶ به بیش از ۵۰٪ سطح پیش‌از‌جنگ بازگردد (بیش از ۶۷ کشتی در روز، میانگین ۷ روزه)"
     notes_fa: |
-      در حال حاضر حدود ۷ کشتی در روز (۵٪ از ۱۳۵ پیش‌از‌جنگ). قانون حاکمیت هرمز ایران
-      (۱۲ ماده) در مجلس در حال پیشروی. این پرسش نیازمند یا توافق (A1)
-      یا تغییر پرچم نیروی دریایی آمریکا (A3) یا عقب‌نشینی یک‌جانبهٔ ایران است.
+      Polymarket: ۳۶٪ برای بازگشایی هرمز تا پایان مه، ۶۲٪ تا پایان ژوئن. Project Freedom
+      (اسکورت نفت‌کش‌ها) روز ۶۶ راه‌اندازی شد و روز ۶۸ پس از حمله موشکی به CMA CGM San Antonio
+      (خدمه مجروح) متوقف شد. چرخش دیپلماتیک (روبیو «تهاجم تمام شده»، نشست ترامپ-شی) مسیر ممکن به
+      بازگشایی ایجاد می‌کند. هنوز نیاز به توافق سیاسی دارد — قانون حاکمیت هرمز لغو نشده.
     successors_on_resolve_yes:
       - "Hormuz transit returns to >90% pre-war by 2027-03-31?"
       - "Iran formally rescinds Hormuz Sovereignty Law within 60d?"
@@ -166,13 +174,15 @@ questions:
     reference_class_broad: B1_us_strike_named_state_broad
     expiration_policy: auto_resolve_no
     stakeholder_tags: [us_foreign_policy, regional_security, oil_energy_markets]
-    current_probability: 0.20
-    current_credible_interval_80: [0.10, 0.35]
-    current_icd203_label: unlikely
-    last_updated: 2026-05-03T06:00:00-04:00
+    current_probability: 0.15
+    current_credible_interval_80: [0.06, 0.27]
+    current_icd203_label: very_unlikely
+    last_updated: 2026-05-06T07:00:00-04:00
     notes: |
-      CENTCOM "short and powerful" strike plan briefed to Trump (May 1 reporting).
-      Polymarket implied 15-22% range. War Powers Resolution dynamics in play.
+      Rubio declared US offensive phase "over" (May 5). Trump signaling deal, not strike.
+      CENTCOM strike plan briefed May 1 is superseded by diplomacy track. Polymarket
+      US invade Iran before 2027: 20% (broader than our question). Tail risk remains
+      if nuclear-sequencing talks collapse.
     question_fa: "آمریکا تا ۳۱ دسامبر ۲۰۲۶ ضربهٔ نظامی به خاک حاکمیتی ایران می‌زند"
     notes_fa: |
       طرح حملهٔ «کوتاه و قدرتمند» سنتکام برای ترامپ تشریح شد (گزارش ۱ مه).
@@ -198,13 +208,15 @@ questions:
     reference_class_broad: B2_iran_us_kinetic_broad
     expiration_policy: auto_resolve_no
     stakeholder_tags: [us_foreign_policy, regional_security, oil_energy_markets]
-    current_probability: 0.28
-    current_credible_interval_80: [0.15, 0.45]
+    current_probability: 0.20
+    current_credible_interval_80: [0.10, 0.35]
     current_icd203_label: unlikely
-    last_updated: 2026-05-03T06:00:00-04:00
+    last_updated: 2026-05-06T07:00:00-04:00
     notes: |
-      US KIA 15, US wounded 520, US aircraft 7 lost cumulative. Continued kinetic.
-      24-26d zero-attack streak suggests active de-escalation; could break.
+      US KIA 15, US wounded 520, US aircraft 7 lost cumulative. CMA CGM San Antonio
+      (cruise missile, Hormuz, May 5) is not a US-flagged/US-base target — de-escalation
+      signals (Rubio "offensive over", Trump "great progress") point against direct
+      Iran-US kinetic exchange near-term.
     question_fa: "ایران تا ۳۱ دسامبر ۲۰۲۶ ضربهٔ نظامی به هدف با پرچم آمریکا یا پایگاه آمریکایی می‌زند"
     notes_fa: |
       تلفات تجمعی آمریکا: ۱۵ کشته، ۵۲۰ زخمی، ۷ هواپیمای ساقط‌شده. ضربه‌های ادامه‌دار.
@@ -276,10 +288,11 @@ questions:
     current_probability: 0.55
     current_credible_interval_80: [0.38, 0.72]
     current_icd203_label: likely
-    last_updated: 2026-05-03T06:00:00-04:00
+    last_updated: 2026-05-06T07:00:00-04:00
     notes: |
-      Hormuz Sovereignty Law formalizes seizure regime. US Treasury warned shippers
-      against paying tolls. Pattern continues.
+      CMA CGM San Antonio cruise-missile strike (May 5) chose kinetic attack over vessel
+      seizure — different tactical playbook but same pressure campaign. Hormuz Sovereignty
+      Law still on books. Diplomatic progress (A1↑) is the key downside risk to this question.
     question_fa: "سپاه تا ۳۰ سپتامبر ۲۰۲۶ سومین کشتی تجاری با پرچم خارجی را در خلیج/هرمز توقیف می‌کند"
     notes_fa: |
       قانون حاکمیت هرمز رژیم توقیف را رسمی می‌کند. خزانه‌داری آمریکا به کشتی‌رانی‌ها هشدار داد
@@ -460,13 +473,15 @@ questions:
     reference_class_broad: D3_oil_shock_pump_pass_through_broad
     expiration_policy: auto_resolve_no
     stakeholder_tags: [us_foreign_policy]
-    current_probability: 0.50
-    current_credible_interval_80: [0.30, 0.70]
+    current_probability: 0.52
+    current_credible_interval_80: [0.32, 0.70]
     current_icd203_label: roughly_even_chance
-    last_updated: 2026-05-03T06:00:00-04:00
+    last_updated: 2026-05-06T07:00:00-04:00
     notes: |
-      Currently $4.45 (May 3). +9% last week trend. Brent $108. Linear extrapolation
-      crosses $4.50 within 14d at current rate. Midterm political pressure.
+      Gas $4.48 (May 5), essentially at the $4.50 threshold. Brent dropped 8% to $101
+      on May 6 peace-progress news — if Hormuz deal materializes, gas pump relief could
+      follow in 2-3 weeks. 63% of Americans blame Trump for gas prices (NPR poll May 6).
+      Near-term outcome binary: deal → relief; talks fail → crosses threshold.
     question_fa: "میانگین ملی قیمت بنزین آمریکا (AAA) تا ۳۰ سپتامبر ۲۰۲۶ بیش از ۴.۵۰ دلار به‌مدت ۷ روز پایدار باشد"
     notes_fa: |
       در حال حاضر ۴.۴۵ دلار (۳ مه). روند ۹٪+ هفتهٔ گذشته. نفت برنت ۱۰۸ دلار. برون‌یابی خطی
@@ -484,13 +499,15 @@ questions:
     reference_class_broad: D4_brent_geopolitical_spike_broad
     expiration_policy: auto_resolve_no
     stakeholder_tags: [oil_energy_markets, us_foreign_policy]
-    current_probability: 0.35
-    current_credible_interval_80: [0.18, 0.55]
+    current_probability: 0.25
+    current_credible_interval_80: [0.12, 0.42]
     current_icd203_label: unlikely
-    last_updated: 2026-05-03T06:00:00-04:00
+    last_updated: 2026-05-06T07:00:00-04:00
     notes: |
-      Apr 30 hit $126 intraday. Currently $108. Hormuz closure scenario (B5+) →
-      $130-160. Option-implied approximately 30-40%.
+      Brent dropped to $101 on May 6 peace-progress news (from $126 Apr 30 high, $116 May 5).
+      $130 scenario now requires Hormuz escalation to resume — conditional on deal failure.
+      If Trump-Xi talks (next week) produce framework, $130 tail compresses significantly.
+      If talks fail and Iran resumes attacks, $130 spike could re-emerge within days.
     question_fa: "نفت برنت تا ۳۱ دسامبر ۲۰۲۶ از ۱۳۰ دلار عبور کند"
     notes_fa: |
       ۳۰ آوریل به‌صورت لحظه‌ای به ۱۲۶ دلار رسید. در حال حاضر ۱۰۸ دلار. سناریوی بسته‌شدن هرمز (B5+) →
@@ -536,13 +553,15 @@ questions:
     reference_class_broad: E2_midterm_loss_pattern_broad
     expiration_policy: auto_resolve_no
     stakeholder_tags: [us_foreign_policy]
-    current_probability: 0.55
-    current_credible_interval_80: [0.40, 0.70]
+    current_probability: 0.58
+    current_credible_interval_80: [0.42, 0.72]
     current_icd203_label: likely
-    last_updated: 2026-05-03T06:00:00-04:00
+    last_updated: 2026-05-06T07:00:00-04:00
     notes: |
-      Midterms in ~550 days. Wartime midterms historically incumbent-unfavorable.
-      Gas-price + war fatigue dynamics.
+      Trump approval 35-37% (CNN/WaPo May 5). 66% disapprove of Iran war handling.
+      Gas $4.48 (May 5). Midterms ~550 days out. Wartime + gas-price combination is
+      historically the worst for incumbents. Diplomatic progress (if it holds) could
+      partially recover numbers, but structural damage from $4+ gas is sticky.
     question_fa: "جمهوری‌خواهان در انتخابات میان‌دوره‌ای نوامبر ۲۰۲۶ کنترل یکی از دو مجلس را از دست می‌دهند"
     notes_fa: |
       انتخابات میان‌دوره‌ای حدود ۵۵۰ روز دیگر. انتخابات میان‌دوره‌ای زمان جنگ از نظر تاریخی
@@ -920,15 +939,15 @@ metadata:
   base_case:
     en:
       full: |
-        The ceasefire is now formally in question after Iran's May 4 missile barrage on UAE infrastructure broke the 27-day zero-attack streak. Trump won't say whether the ceasefire is still in effect; CENTCOM is escorting tankers through Hormuz under "Project Freedom" while Araghchi flies to Beijing in search of a diplomatic exit. Base-case for the next 30 days: limited tit-for-tat continues — UAE-style targeting and small-craft skirmishes inside Hormuz, not a full kinetic war. Brent holds around $110–120 with a war-premium tail. The 14-point proposal stays on the table but neither side closes. Iran's rial keeps weakening; oil exports keep grinding lower. Khamenei stays sparse on state TV with no formal succession announcement. Iranfarhang books keep clearing through the Berman Amendment exemption; Kipa keeps importing through the AMAG-Dubai corridor though the Hormuz delays bite harder. The questions below are the named ways this base case could break in either direction — toward de-escalation, or toward a wider regional war.
+        Day 68 marks the sharpest diplomatic pivot since the war began. Secretary Rubio declared the US offensive phase "over" on Day 67; Trump hailed "great progress" in Iran talks on Day 68, sending Brent down 8% to $101 — the biggest one-day oil relief since February. Project Freedom (the US naval tanker-escort corridor through Hormuz, launched just two days earlier) was paused after the CMA CGM San Antonio was struck by a cruise missile on May 5, injuring crew. Iran's Foreign Minister Araghchi flew to Beijing to meet Wang Yi — his first foreign trip since the war started — with the Trump-Xi summit set for next week. Iran is now signaling willingness for a two-track deal: end the shooting war first, nuclear talks second. Washington's counter-position remains: Iran must surrender its 400+ kg of highly enriched uranium stockpile before hostilities end. That sequencing gap is the remaining obstacle. Base-case for the next 30 days: a preliminary framework or partial ceasefire extension is in sight — Polymarket prices a permanent peace deal at 55% by June 30, and Hormuz normalization at 62% by end of June. Brent holds $95–108 on deal-hope premium compression; Hormuz attacks continue at reduced intensity while talks proceed; Khamenei stays sidelined with no succession announcement. Iranfarhang books keep clearing on the Berman Amendment exemption; Kipa's AMAG-Dubai corridor remains choked but a Hormuz reopening by June 30 is now market-consensus. The questions below measure whether this tentative de-escalation holds or whether a breakdown on nuclear sequencing restarts the escalation clock.
       public: |
-        The ceasefire is now formally in question after Iran's May 4 missile barrage on UAE infrastructure broke the 27-day zero-attack streak. Trump won't say whether the ceasefire is still in effect; CENTCOM is escorting tankers through Hormuz under "Project Freedom" while Iran's foreign minister flies to Beijing in search of a diplomatic exit. Base-case for the next 30 days: limited tit-for-tat continues — UAE-style targeting and small-craft skirmishes inside Hormuz, not a full kinetic war. Brent holds around $110–120 with a war-premium tail. The 14-point proposal stays on the table but neither side closes. The rial keeps weakening; oil exports keep grinding lower. Khamenei stays sparse on state TV; no formal succession announcement. The questions below are the named ways this base case could break — either toward de-escalation, or toward a wider regional war.
+        Day 68 marks the sharpest diplomatic pivot since the war began. Secretary Rubio declared the US offensive phase "over" on Day 67; Trump hailed "great progress" in Iran talks on Day 68, sending Brent down 8% to $101 — the biggest one-day oil relief since February. Project Freedom (the US naval tanker-escort corridor through Hormuz, launched just two days earlier) was paused after the CMA CGM San Antonio was struck by a cruise missile on May 5, injuring crew. Araghchi flew to Beijing to meet Wang Yi — his first foreign trip since the war — with Trump-Xi set for next week. Iran wants a two-track deal: end the shooting war first, nuclear talks second. Washington insists Iran surrender its 400+ kg HEU stockpile first. That sequencing gap is the remaining obstacle. Base-case: a preliminary framework or partial ceasefire is in sight — Polymarket prices a peace deal at 55% by June 30, Hormuz normalization at 62% by end of June. Brent $95–108 on deal-hope compression; Hormuz attacks continue at reduced intensity; no succession announcement from Tehran. The questions below are the tests this de-escalation must pass to become durable.
     fa:
       full: |
-        آتش‌بس پس از حملهٔ موشکی ۴ مه ایران به زیرساخت‌های امارات و شکستن رشتهٔ ۲۷ روزهٔ «حملهٔ صفر» رسماً زیر سؤال رفته است. ترامپ نمی‌گوید آیا آتش‌بس همچنان برقرار است؛ سنتکام در قالب «طرح آزادی» نفت‌کش‌ها را در هرمز اسکورت می‌کند و عراقچی برای راه‌حل دیپلماتیک به پکن می‌رود. خط پایهٔ سی روز آینده: تبادل ضربات محدود ادامه می‌یابد — هدف‌گیری شبیه امارات و درگیری‌های قایق‌های کوچک در هرمز، نه جنگ تمام‌عیار. برنت در محدودهٔ ۱۱۰ تا ۱۲۰ دلار با حاشیهٔ ریسک جنگ. پیشنهاد چهارده‌بندی روی میز می‌ماند ولی هیچ‌یک از دو طرف توافق نمی‌کند. ریال ضعیف‌تر می‌شود؛ صادرات نفت کاهش می‌یابد. خامنه‌ای به‌ندرت در تلویزیون دولتی ظاهر می‌شود؛ هیچ اعلام رسمی جانشینی صورت نگرفته است. ایران‌فرهنگ همچنان کتاب‌ها را از طریق معافیت متمم برمن منتقل می‌کند؛ کیپا کالاها را از کریدور AMAG–دبی وارد می‌کند هرچند تأخیرهای هرمز شدیدتر شده است. پرسش‌های پایین مسیرهای مشخصی هستند که این خط پایه می‌تواند از طریق آن‌ها بشکند — یا به سمت آرامش، یا به سمت جنگ منطقه‌ای گسترده‌تر.
+        روز ۶۸ شدیدترین چرخش دیپلماتیک از آغاز جنگ بود. وزیر خارجه روبیو روز ۶۷ اعلام کرد مرحله تهاجمی آمریکا «تمام شده»؛ ترامپ روز ۶۸ از «پیشرفت بزرگ» در مذاکرات ایران خبر داد و برنت ۸٪ به ۱۰۱ دلار افتاد — بزرگ‌ترین کاهش یک‌روزهٔ قیمت نفت از فوریه. Project Freedom (کریدور اسکورت نفت‌کش توسط نیروی دریایی آمریکا که تنها دو روز پیش راه‌اندازی شده بود) پس از اینکه کشتی CMA CGM San Antonio در ۵ مه توسط موشک کروز ضربه خورد و خدمه مجروح شدند، متوقف شد. عراقچی برای اولین بار از آغاز جنگ به پکن رفت و با وانگ‌یی دیدار کرد؛ نشست ترامپ-شی هفته آینده برنامه‌ریزی شده. ایران اکنون آمادگی خود را برای توافق دو مرحله‌ای نشان می‌دهد: ابتدا پایان جنگ مسلحانه، سپس مذاکرات هسته‌ای. موضع واشنگتن: ایران باید ابتدا ۴۰۰+ کیلوگرم اورانیوم غنی‌شده خود را تسلیم دهد. این اختلاف توالی مانع اصلی باقی است. خط پایه برای ۳۰ روز آینده: یک چارچوب اولیه یا تمدید آتش‌بس جزئی در دسترس است — Polymarket توافق دائمی تا ۳۰ ژوئن را ۵۵٪ و بهنجارسازی هرمز تا پایان ژوئن را ۶۲٪ قیمت‌گذاری می‌کند. برنت ۹۵ تا ۱۰۸ دلار بر کاهش حق‌بیمه امید توافق؛ حملات هرمز با شدت کمتر ادامه دارد؛ خامنه‌ای همچنان در حاشیه با هیچ اعلام جانشینی. ایران‌فرهنگ کتاب‌ها را از طریق معافیت متمم برمن منتقل می‌کند؛ کریدور AMAG-دبی کیپا همچنان مسدود است اما بازگشایی هرمز تا ۳۰ ژوئن در اجماع بازار است. پرسش‌های پایین آزمون‌هایی هستند که این آرامش موقتی برای تبدیل‌شدن به پایدار باید از آن‌ها بگذرد.
       public: |
-        آتش‌بس پس از حملهٔ موشکی ۴ مه ایران به زیرساخت‌های امارات و شکستن رشتهٔ ۲۷ روزهٔ «حملهٔ صفر» رسماً زیر سؤال رفته است. ترامپ نمی‌گوید آیا آتش‌بس همچنان برقرار است؛ سنتکام در قالب «طرح آزادی» نفت‌کش‌ها را در هرمز اسکورت می‌کند و وزیر خارجهٔ ایران برای راه‌حل دیپلماتیک به پکن می‌رود. خط پایهٔ سی روز آینده: تبادل ضربات محدود ادامه می‌یابد — هدف‌گیری شبیه امارات و درگیری‌های قایق‌های کوچک در هرمز، نه جنگ تمام‌عیار. برنت در محدودهٔ ۱۱۰ تا ۱۲۰ دلار با حاشیهٔ ریسک جنگ. پیشنهاد چهارده‌بندی روی میز می‌ماند ولی هیچ‌یک از دو طرف توافق نمی‌کند. ریال ضعیف‌تر می‌شود؛ صادرات نفت کاهش می‌یابد. خامنه‌ای به‌ندرت در تلویزیون دولتی ظاهر می‌شود؛ هیچ اعلام رسمی جانشینی صورت نگرفته است. پرسش‌های پایین مسیرهای مشخصی هستند که این خط پایه می‌تواند از طریق آن‌ها بشکند — یا به سمت آرامش، یا به سمت جنگ منطقه‌ای گسترده‌تر.
-    last_updated: 2026-05-05
+        روز ۶۸ شدیدترین چرخش دیپلماتیک از آغاز جنگ بود. روبیو روز ۶۷ اعلام کرد مرحله تهاجمی «تمام شده»؛ ترامپ روز ۶۸ از «پیشرفت بزرگ» در مذاکرات خبر داد و برنت ۸٪ به ۱۰۱ دلار افتاد. Project Freedom پس از حمله موشکی به CMA CGM San Antonio متوقف شد. عراقچی در پکن با وانگ‌یی ملاقات کرد؛ نشست ترامپ-شی هفته آینده. ایران می‌خواهد ابتدا جنگ تمام شود، سپس هسته؛ آمریکا اصرار دارد ابتدا ۴۰۰+ کیلوگرم اورانیوم. خط پایه: چارچوب اولیه در دسترس است — Polymarket: صلح دائمی ۵۵٪ تا ۳۰ ژوئن، بازگشایی هرمز ۶۲٪ تا پایان ژوئن. برنت ۹۵ تا ۱۰۸ دلار؛ حملات با شدت کمتر؛ خامنه‌ای در حاشیه. پرسش‌های پایین آزمون‌های این آرامش موقتی هستند.
+    last_updated: 2026-05-06
   notes: |
     F-questions added 2026-05-03 from Iranfarhang + Kipa research agents.
     F1-F6 = Iranfarhang business consequences (Berman Amendment, Kemco rail,

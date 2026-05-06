@@ -1,23 +1,23 @@
-# Agent Memory — last regenerated 2026-05-03T19:55:17 UTC
+# Agent Memory — last regenerated 2026-05-06T11:14:23 UTC
 
 _This file is **programmatically regenerated** each tick by `scripts/refresh_memory.py` from `portfolio.yaml`, `portfolio_history.json`, `agent/operator-queue.md`, and recent logs._
 
 ## Portfolio summary (current state)
 
-Engine version: **0.2.0** · Spec: **v8** · Questions: **32** · History snapshots: **3**
+Engine version: **0.2.0** · Spec: **v8** · Questions: **32** · History snapshots: **4**
 
 ### A. Diplomatic resolution
 
-- **A1** 18% (*very unlikely*) → 2026-09-30: Iran-US framework agreement signed (any form) by 2026-09-30
-- **A2** 25% (*unlikely*) → 2026-12-31: Hormuz commercial transit returns to >50% pre-war (>67 vessels/day, 7d MA) by 20
+- **A1** 28% (*unlikely*) → 2026-09-30: Iran-US framework agreement signed (any form) by 2026-09-30
+- **A2** 38% (*unlikely*) → 2026-12-31: Hormuz commercial transit returns to >50% pre-war (>67 vessels/day, 7d MA) by 20
 - **A3** 12% (*very unlikely*) → 2026-12-31: US announces formal naval reflagging of GCC-flagged tankers transiting Hormuz by
 - **A4** 22% (*unlikely*) → 2026-08-31: Iran 14-point counter-proposal becomes basis for substantive talks (joint workin
 - **A5** 10% (*very unlikely*) → 2026-12-31: Khamenei publicly endorses negotiations using 'heroic flexibility' framing by 20
 
 ### B. Military escalation
 
-- **B1** 20% (*unlikely*) → 2026-12-31: US conducts kinetic strike on Iranian sovereign territory by 2026-12-31
-- **B2** 28% (*unlikely*) → 2026-12-31: Iran conducts kinetic strike on US-flagged or US-base target by 2026-12-31
+- **B1** 15% (*very unlikely*) → 2026-12-31: US conducts kinetic strike on Iranian sovereign territory by 2026-12-31
+- **B2** 20% (*unlikely*) → 2026-12-31: Iran conducts kinetic strike on US-flagged or US-base target by 2026-12-31
 - **B3** 15% (*very unlikely*) → 2026-12-31: Israel strikes Iranian nuclear infrastructure (Natanz/Fordow/Arak) by 2026-12-31
 - **B4** 30% (*unlikely*) → 2026-09-30: Hezbollah-attributed attack reaches Israeli population center >25km north of bor
 - **B5** 55% (*likely*) → 2026-09-30: IRGC seizes a third foreign-flagged commercial vessel in Gulf/Hormuz by 2026-09-
@@ -33,13 +33,13 @@ Engine version: **0.2.0** · Spec: **v8** · Questions: **32** · History snapsh
 
 - **D1** 65% (*likely*) → 2026-12-31: USD/IRR bonbast rate exceeds 2,000,000 by 2026-12-31
 - **D2** 45% (*roughly even chance*) → 2026-12-31: Iran oil exports fall below 0.5M bpd (Kpler 30d MA) by 2026-12-31
-- **D3** 50% (*roughly even chance*) → 2026-09-30: US gas national average (AAA) crosses $4.50 sustained 7+d by 2026-09-30
-- **D4** 35% (*unlikely*) → 2026-12-31: Brent crude crosses $130 by 2026-12-31
+- **D3** 52% (*roughly even chance*) → 2026-09-30: US gas national average (AAA) crosses $4.50 sustained 7+d by 2026-09-30
+- **D4** 25% (*unlikely*) → 2026-12-31: Brent crude crosses $130 by 2026-12-31
 
 ### E. US side
 
 - **E1** 30% (*unlikely*) → 2026-09-30: Trump replaces SecDef, NSA, or SecState by 2026-09-30
-- **E2** 55% (*likely*) → 2026-12-15: Republican loses control of either chamber in Nov 2026 midterms
+- **E2** 58% (*likely*) → 2026-12-15: Republican loses control of either chamber in Nov 2026 midterms
 
 ### F.1 Iranfarhang business
 
@@ -71,9 +71,9 @@ _No moves above CI noise floor in last 7d (since 2026-05-01)._
 
 ## Recent log files
 
-- **Events**: `2026-05-03.md`
-- **Probability changes**: `2026-05-03.md`
-- **Sources shifted**: `2026-05-03.md`
+- **Events**: `2026-05-06.md`, `2026-05-03.md`
+- **Probability changes**: `2026-05-06.md`, `2026-05-03.md`
+- **Sources shifted**: `2026-05-06.md`, `2026-05-03.md`
 
 ## Top-of-mind context (operator-curated)
 
