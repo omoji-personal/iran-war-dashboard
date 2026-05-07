@@ -1,40 +1,40 @@
-# Agent Memory — last regenerated 2026-05-03T19:55:17 UTC
+# Agent Memory — last regenerated 2026-05-07T11:06:42 UTC
 
 _This file is **programmatically regenerated** each tick by `scripts/refresh_memory.py` from `portfolio.yaml`, `portfolio_history.json`, `agent/operator-queue.md`, and recent logs._
 
 ## Portfolio summary (current state)
 
-Engine version: **0.2.0** · Spec: **v8** · Questions: **32** · History snapshots: **3**
+Engine version: **0.2.0** · Spec: **v8** · Questions: **32** · History snapshots: **4**
 
 ### A. Diplomatic resolution
 
-- **A1** 18% (*very unlikely*) → 2026-09-30: Iran-US framework agreement signed (any form) by 2026-09-30
+- **A1** 22% (*unlikely*) → 2026-09-30: Iran-US framework agreement signed (any form) by 2026-09-30
 - **A2** 25% (*unlikely*) → 2026-12-31: Hormuz commercial transit returns to >50% pre-war (>67 vessels/day, 7d MA) by 20
-- **A3** 12% (*very unlikely*) → 2026-12-31: US announces formal naval reflagging of GCC-flagged tankers transiting Hormuz by
-- **A4** 22% (*unlikely*) → 2026-08-31: Iran 14-point counter-proposal becomes basis for substantive talks (joint workin
+- **A3** 10% (*very unlikely*) → 2026-12-31: US announces formal naval reflagging of GCC-flagged tankers transiting Hormuz by
+- **A4** 35% (*unlikely*) → 2026-08-31: Iran 14-point counter-proposal becomes basis for substantive talks (joint workin
 - **A5** 10% (*very unlikely*) → 2026-12-31: Khamenei publicly endorses negotiations using 'heroic flexibility' framing by 20
 
 ### B. Military escalation
 
-- **B1** 20% (*unlikely*) → 2026-12-31: US conducts kinetic strike on Iranian sovereign territory by 2026-12-31
+- **B1** 15% (*very unlikely*) → 2026-12-31: US conducts kinetic strike on Iranian sovereign territory by 2026-12-31
 - **B2** 28% (*unlikely*) → 2026-12-31: Iran conducts kinetic strike on US-flagged or US-base target by 2026-12-31
 - **B3** 15% (*very unlikely*) → 2026-12-31: Israel strikes Iranian nuclear infrastructure (Natanz/Fordow/Arak) by 2026-12-31
 - **B4** 30% (*unlikely*) → 2026-09-30: Hezbollah-attributed attack reaches Israeli population center >25km north of bor
-- **B5** 55% (*likely*) → 2026-09-30: IRGC seizes a third foreign-flagged commercial vessel in Gulf/Hormuz by 2026-09-
+- **B5** 50% (*roughly even chance*) → 2026-09-30: IRGC seizes a third foreign-flagged commercial vessel in Gulf/Hormuz by 2026-09-
 
 ### C. Regime / leadership
 
 - **C1** 8% (*very unlikely*) 🚩 [HUMILITY] → 2026-12-31: Khamenei dies or is publicly removed from office by 2026-12-31
-- **C2** 45% (*roughly even chance*) → 2026-12-31: Iran sustained protest wave (>14d, >5 cities, ACLED-coded) by 2026-12-31
+- **C2** 42% (*unlikely*) → 2026-12-31: Iran sustained protest wave (>14d, >5 cities, ACLED-coded) by 2026-12-31
 - **C3** 6% (*very unlikely*) 🚩 [HUMILITY] → 2026-12-31: Mojtaba Khamenei publicly designated heir-apparent by Assembly of Experts by 202
-- **C4** 30% (*unlikely*) → 2026-12-31: Sustained bazaari shutdown (>3d Tehran Grand Bazaar) by 2026-12-31
+- **C4** 28% (*unlikely*) → 2026-12-31: Sustained bazaari shutdown (>3d Tehran Grand Bazaar) by 2026-12-31
 
 ### D. Economic / structural
 
-- **D1** 65% (*likely*) → 2026-12-31: USD/IRR bonbast rate exceeds 2,000,000 by 2026-12-31
+- **D1** 60% (*likely*) → 2026-12-31: USD/IRR bonbast rate exceeds 2,000,000 by 2026-12-31
 - **D2** 45% (*roughly even chance*) → 2026-12-31: Iran oil exports fall below 0.5M bpd (Kpler 30d MA) by 2026-12-31
-- **D3** 50% (*roughly even chance*) → 2026-09-30: US gas national average (AAA) crosses $4.50 sustained 7+d by 2026-09-30
-- **D4** 35% (*unlikely*) → 2026-12-31: Brent crude crosses $130 by 2026-12-31
+- **D3** 42% (*unlikely*) → 2026-09-30: US gas national average (AAA) crosses $4.50 sustained 7+d by 2026-09-30
+- **D4** 28% (*unlikely*) → 2026-12-31: Brent crude crosses $130 by 2026-12-31
 
 ### E. US side
 
@@ -46,18 +46,18 @@ Engine version: **0.2.0** · Spec: **v8** · Questions: **32** · History snapsh
 - **F1** 20% (*unlikely*) 👤 [PERSONAL] → 2026-09-30: At least one Tier-1 university (Stanford/Columbia/Yale/NYU/UChicago/Harvard/UPen
 - **F2** 30% (*unlikely*) 👤 [PERSONAL] → 2026-12-31: Kemco SARL banking relationship terminated, frozen, or requires additional IBAN 
 - **F3** 50% (*roughly even chance*) 👤 [PERSONAL] → 2026-08-31: Frankfurt Magiran-standby-server operational (Phase 4 production-drill passed) b
-- **F4** 45% (*roughly even chance*) 👤 [PERSONAL] → 2026-10-31: Tehran→Atlanta cargo (Shipment #65 or later) delayed >60 days from intended send
+- **F4** 42% (*unlikely*) 👤 [PERSONAL] → 2026-10-31: Tehran→Atlanta cargo (Shipment #65 or later) delayed >60 days from intended send
 - **F5** 10% (*very unlikely*) 🚩 [HUMILITY] 👤 [PERSONAL] → 2026-12-31: OFAC issues guidance/enforcement narrowing the informational-materials exemption
 - **F6** 55% (*likely*) 👤 [PERSONAL] → 2026-09-30: Mozhgan unreachable for >7 consecutive days at any point by 2026-09-30
 
 ### F.2 Kipa business
 
-- **F7** 20% (*unlikely*) 👤 [PERSONAL] → 2026-06-30: Strait of Hormuz reopens to commercial container traffic >7 consecutive days by 
-- **F8** 55% (*likely*) 👤 [PERSONAL] → 2026-08-31: Iran's commercial/ICE FX rate crosses 2,000,000 IRR/USD by 2026-08-31
+- **F7** 22% (*unlikely*) 👤 [PERSONAL] → 2026-06-30: Strait of Hormuz reopens to commercial container traffic >7 consecutive days by 
+- **F8** 48% (*roughly even chance*) 👤 [PERSONAL] → 2026-08-31: Iran's commercial/ICE FX rate crosses 2,000,000 IRR/USD by 2026-08-31
 - **F9** 40% (*unlikely*) 👤 [PERSONAL] → 2026-09-30: Behrah Baspar Mana achieves signed second-line cryogenic pulverizer commitment (
 - **F10** 15% (*very unlikely*) 👤 [PERSONAL] → 2026-12-31: Iran MIMT publishes bakhshname restricting raw-material imports to manufacturer-
 - **F11** 30% (*unlikely*) 👤 [PERSONAL] → 2026-12-31: OFAC designates any Dubai-based chemical FZCO/FZE entity for Iran-related transa
-- **F12** 30% (*unlikely*) 👤 [PERSONAL] → 2026-08-31: Polymer war premium (LDPE CFR Far East Asia) compresses >25% from 2026-04-01 anc
+- **F12** 33% (*unlikely*) 👤 [PERSONAL] → 2026-08-31: Polymer war premium (LDPE CFR Far East Asia) compresses >25% from 2026-04-01 anc
 
 ## Recent probability changes (last 7d)
 
@@ -71,9 +71,9 @@ _No moves above CI noise floor in last 7d (since 2026-05-01)._
 
 ## Recent log files
 
-- **Events**: `2026-05-03.md`
-- **Probability changes**: `2026-05-03.md`
-- **Sources shifted**: `2026-05-03.md`
+- **Events**: `2026-05-07.md`, `2026-05-03.md`
+- **Probability changes**: `2026-05-07.md`, `2026-05-03.md`
+- **Sources shifted**: `2026-05-07.md`, `2026-05-03.md`
 
 ## Top-of-mind context (operator-curated)
 
