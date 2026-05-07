@@ -3007,7 +3007,8 @@
       "May 03",
       "May 04",
       "May 05",
-      "May 06"
+      "May 06",
+      "May 07"
     ],
     "countriesTargetedPerDay": [
       8,
@@ -3219,7 +3220,8 @@
       "May 03",
       "May 04",
       "May 05",
-      "May 06"
+      "May 06",
+      "May 07"
     ],
     "interceptRate": [
       0.82,
@@ -4084,7 +4086,8 @@
       "May 03",
       "May 04",
       "May 05",
-      "May 06"
+      "May 06",
+      "May 07"
     ],
     "vessels": [
       62,
@@ -4155,6 +4158,7 @@
       3,
       2,
       3,
+      4,
       4
     ],
     "preWarAverage": 62,
