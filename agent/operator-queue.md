@@ -34,6 +34,71 @@ upgrades when:
 **Agent recommendation:** transition Phase 0 → Phase 1 within 14d of MVP launch
 to avoid the model staying in operator-driven mode indefinitely.
 
+## 2026-05-08 — 🔴 CRITICAL — C1 resolution: Khamenei death
+
+Multiple Tier-1 sources confirm Ali Khamenei was killed in strikes on 2026-02-28.
+Portfolio still shows C1 at 8% (*very unlikely*). C1 appears to have RESOLVED YES.
+
+**Agent recommendation**: Mark C1 resolved=YES, date=2026-02-28. Evaluate successors:
+- "Mojtaba succeeds within 90d?" → YES (already head of state as of May 2026)
+- "Faction war (rival public claim) within 30d?" → assess
+- "IRGC publicly endorses successor within 14d?" → assess
+- "Iran framework-deal probability shifts >20pp within 30d?" → likely YES
+
+Sources: Wikipedia 2026 Iran war ceasefire; Euronews 2026-05-07; PBS NewsHour; Iran International.
+
+---
+
+## 2026-05-08 — 🔴 CRITICAL — B1 + B2 resolution: US-Iran fire exchange Day 70
+
+On 2026-05-08 (Day 70), US and Iran exchanged fire in Hormuz:
+- CENTCOM acknowledged strikes on Iranian coastal areas (Qeshm Island, Bandar Khamir, Sirik) → B1 resolution criterion may be met.
+- Iran launched missiles/drones/small boats against 3 US Navy destroyers → B2 resolution criterion may be met.
+Trump stated ceasefire remains in effect. Both B1 and B2 require operator confirmation before being marked resolved.
+
+**Agent recommendation**: Review and resolve B1 and B2 YES if criteria satisfied. Evaluate successors.
+
+Sources: Al Jazeera Day 70; NBC News; CNN Live; CNBC May 8.
+
+---
+
+## 2026-05-08 — 🟡 D3 threshold crossed (Day 1): AAA gas at $4.558
+
+AAA national average hit $4.558 on 2026-05-07 — Day 1 above the $4.50 resolution threshold.
+D3 requires sustained 7+ consecutive days. Monitor daily.
+
+**Agent recommendation**: Update D3 probability from 42% to ~70–80% given:
+(a) threshold already crossed; (b) Brent ~$100 with active Hormuz conflict;
+(c) AAA rising $0.25/week. Revisit after 7d to confirm resolution.
+
+Source: AAA Newsroom 2026-05-08; Fox Business.
+
+---
+
+## 2026-05-08 — 🟡 A1 Polymarket divergence: 22% portfolio vs 61–74% market
+
+Polymarket "US-Iran deal before 2027": 61% ($119k liquidity).
+Polymarket "deal by Dec 31 2026": 74% ($184k liquidity).
+Portfolio A1: 22%. Gap = 39–52pp.
+
+A1 criterion is stricter than "deal" — requires joint readout + written framework + mediator.
+Discount warranted but 22% vs 74% likely overcorrects.
+
+**Agent recommendation**: Update A1 to 35–45%. Discount from market for strict criterion,
+with additional downside from today's fire-exchange event.
+
+---
+
+## 2026-05-08 — 🟡 C3 framing review: Mojtaba is Supreme Leader, not heir-apparent
+
+C3 asks "Mojtaba Khamenei publicly designated heir-apparent by Assembly of Experts."
+He IS now Supreme Leader — the question framing is potentially moot or resolved.
+
+**Agent recommendation**: Assess C3 resolution (YES if formal succession process met criterion)
+or void/replace with successor question (e.g., "Mojtaba publicly appears in public by Dec 31?").
+
+---
+
 ## 2026-05-03 — Free-only operating constraint (CONFIRMED by user)
 
 User specified: agent runs under existing Claude subscription. RemoteTrigger
