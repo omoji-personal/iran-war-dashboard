@@ -23,19 +23,24 @@ questions:
     reference_class_broad: A1_bilateral_nuclear_framework_broad
     expiration_policy: agent_judgment_at_deadline
     stakeholder_tags: [us_foreign_policy, iran_regime_survival, oil_energy_markets]
-    current_probability: 0.22
-    current_credible_interval_80: [0.1, 0.38]
-    current_icd203_label: very_unlikely
-    last_updated: 2026-05-06
+    current_probability: 0.40
+    current_credible_interval_80: [0.25, 0.58]
+    current_icd203_label: unlikely
+    last_updated: 2026-05-09T07:00:00-04:00
     notes: |
-      Polymarket deal-by-Jun30 jumped to ~37% on D68 after Project Freedom paused +
-      Araghchi met Wang Yi in Beijing. Trump-Xi summit May 14–15 is the next inflection.
-      Still very-unlikely band but the diplomatic momentum is real this week.
+      D71: Polymarket US-Iran nuclear deal before 2027 = 62%; deal-by-Jun30 at 46%.
+      One-page 14-point MOU being negotiated by Witkoff/Kushner + Iranian officials
+      (directly and via mediators). Terms: 12–15yr enrichment moratorium, IAEA inspections,
+      sanctions relief + Hormuz gradual reopening. "Not far, but no deal yet" (US official).
+      Iran "reviewing" but "strongly rejected" some terms. Trump-Xi summit May 14–15 remains
+      inflection. Naval clashes May 7–8 did not derail the diplomatic track.
     question_fa: "توافق چارچوبی ایران و آمریکا (به هر شکل) تا ۳۰ سپتامبر ۲۰۲۶ امضا شود"
     notes_fa: |
-      بازار پیش‌بینی Polymarket برای توافق تا ۳۰ ژوئن در روز ۶۸ به حدود ۳۷٪ رسید پس از
-      تعلیق طرح آزادی + ملاقات عراقچی با وانگ یی در پکن. نشست ترامپ-شی در ۱۴ تا ۱۵ مه نقطه بعدی است.
-      هنوز در محدودهٔ بسیار بعید ولی شتاب دیپلماتیک این هفته واقعی است.
+      روز ۷۱: Polymarket برای توافق هسته‌ای ایران-آمریکا قبل از ۲۰۲۷ به ۶۲٪ رسیده؛ توافق تا ۳۰ ژوئن ۴۶٪.
+      یادداشت تفاهم یک‌صفحه‌ای ۱۴‌بندی توسط ویتکاف/کوشنر و مقامات ایرانی مذاکره می‌شود.
+      شرایط: تعلیق ۱۲ تا ۱۵ساله غنی‌سازی، بازرسی‌های آژانس، تسهیل تحریم‌ها + بازگشایی تدریجی هرمز.
+      «نزدیک هستیم ولی هنوز توافقی نشده» (مقام آمریکایی). ایران برخی شرایط را «به شدت رد» کرده.
+      نشست ترامپ-شی در ۱۴ تا ۱۵ مه همچنان نقطه‌ٔ انعطاف است. درگیری‌های دریایی ۷–۸ مه مسیر دیپلماتیک را از ریل خارج نکرد.
     successors_on_resolve_yes:
       - "Iran enriches above 60% within 90d of signing?"
       - "US lifts first sanctions tranche by stated deadline?"
@@ -57,14 +62,18 @@ questions:
     reference_class_broad: A2_blockade_resolution_broad
     expiration_policy: auto_resolve_no
     stakeholder_tags: [oil_energy_markets, regional_security]
-    current_probability: 0.25
-    current_credible_interval_80: [0.12, 0.42]
+    current_probability: 0.30
+    current_credible_interval_80: [0.15, 0.48]
     current_icd203_label: unlikely
-    last_updated: 2026-05-03T06:00:00-04:00
+    last_updated: 2026-05-09T07:00:00-04:00
     notes: |
-      Currently ~7 vessels/day (5% of pre-war 135). Iran Hormuz Sovereignty Law
-      (12-article) advancing in parliament. Resolution requires either deal (A1)
-      or US naval reflagging (A3) or unilateral Iran step-back.
+      D71: Polymarket "Hormuz traffic returns to normal by end of June" at 52%.
+      Current Hormuz traffic ~4 vessels/day (3% of pre-war 135). Iran established
+      "Persian Gulf Strait Authority" May 8 — new body managing Hormuz passage with
+      full coordination/clearance requirements. Naval clashes May 7–8 did not close
+      the strait further. MOU talks are the path to Hormuz reopening. Our question's
+      criterion (>67 vessels/day 7d MA) is stricter than Polymarket's "normal" — applying
+      a discount.
     question_fa: "ترانزیت تجاری تنگهٔ هرمز تا ۳۱ دسامبر ۲۰۲۶ به بیش از ۵۰٪ سطح پیش‌از‌جنگ بازگردد (بیش از ۶۷ کشتی در روز، میانگین ۷ روزه)"
     notes_fa: |
       در حال حاضر حدود ۷ کشتی در روز (۵٪ از ۱۳۵ پیش‌از‌جنگ). قانون حاکمیت هرمز ایران
@@ -89,13 +98,14 @@ questions:
     reference_class_broad: A3_us_naval_intervention_broad
     expiration_policy: auto_resolve_no
     stakeholder_tags: [us_foreign_policy, oil_energy_markets, regional_security]
-    current_probability: 0.1
-    current_credible_interval_80: [0.04, 0.2]
+    current_probability: 0.08
+    current_credible_interval_80: [0.03, 0.18]
     current_icd203_label: very_unlikely
-    last_updated: 2026-05-06T07:00:00-04:00
+    last_updated: 2026-05-09T07:00:00-04:00
     notes: |
-      Project Freedom suspended D68 after 48h — that was the de-facto reflagging.
-      Formal reflagging now less likely with the diplomatic track active.
+      Project Freedom suspended D68. US destroyers transited Hormuz May 7 without
+      formal reflagging (defensive self-defense framing). Formal Earnest-Will-style
+      reflagging less likely while MOU track is active.
     question_fa: "آمریکا تا ۳۱ دسامبر ۲۰۲۶ به‌طور رسمی نفت‌کش‌های با پرچم شورای همکاری خلیج فارس را که از هرمز عبور می‌کنند تحت پرچم خود می‌برد"
     notes_fa: |
       طرح آزادی پس از ۴۸ ساعت در روز ۶۸ تعلیق شد — این عملاً همان تغییر پرچم بود.
@@ -117,14 +127,16 @@ questions:
     reference_class_broad: A1_bilateral_nuclear_framework_broad
     expiration_policy: agent_judgment_at_deadline
     stakeholder_tags: [us_foreign_policy, iran_regime_survival]
-    current_probability: 0.35
-    current_credible_interval_80: [0.2, 0.52]
-    current_icd203_label: unlikely
-    last_updated: 2026-05-06T07:00:00-04:00
+    current_probability: 0.55
+    current_credible_interval_80: [0.38, 0.72]
+    current_icd203_label: roughly_even_chance
+    last_updated: 2026-05-09T07:00:00-04:00
     notes: |
-      D68: Araghchi-Wang Yi meeting in Beijing; China pressing Iran toward diplomacy;
-      Trump-Xi summit May 14–15 announced. Trump suspended Project Freedom citing
-      "great progress" toward a deal. Single biggest D68 mover.
+      D71: The one-page MOU being negotiated IS based on the Iran 14-point framework —
+      Witkoff/Kushner negotiating directly against Iran's 14-point counter-proposal
+      structure. The MOU would trigger a 30-day detailed-negotiation period (=working
+      groups). US official: "not far, but no deal yet." Iran still reviewing. Single
+      largest probability jump this tick — deal momentum is the strongest it has been.
     question_fa: "پیشنهاد چهارده‌بندی ایران تا ۳۱ اوت ۲۰۲۶ به مبنای مذاکرات ماهوی تبدیل شود (با اعلام کارگروه‌های مشترک)"
     notes_fa: |
       روز ۶۸: ملاقات عراقچی-وانگ یی در پکن؛ چین در حال فشار به ایران به سوی دیپلماسی؛
@@ -147,10 +159,13 @@ questions:
     current_probability: 0.10
     current_credible_interval_80: [0.03, 0.22]
     current_icd203_label: very_unlikely
-    last_updated: 2026-05-03T06:00:00-04:00
+    last_updated: 2026-05-09T07:00:00-04:00
     notes: |
-      Khamenei's Apr 30 nuclear vow points opposite direction. 1989 + 2013 precedent.
-      Reportedly recovering from severe burns; public appearances scarce.
+      Mojtaba Khamenei (new SL since March 9) has not used "heroic flexibility" framing.
+      He has been in limited communications (written statements only) while recovering
+      from injuries. Iran's negotiating posture is pragmatic but still not ideologically
+      framing concessions in Khomeini-era cover language. 1989 + 2013 precedent applies
+      but Mojtaba has less ideological capital to spend.
     question_fa: "خامنه‌ای تا ۳۱ دسامبر ۲۰۲۶ به‌طور علنی از مذاکره با چارچوب «نرمش قهرمانانه» حمایت کند"
     notes_fa: |
       نذر هسته‌ای ۳۰ آوریل خامنه‌ای در جهت مخالف اشاره می‌کند. سابقهٔ ۱۹۸۹ + ۲۰۱۳.
@@ -170,13 +185,19 @@ questions:
     reference_class_broad: B1_us_strike_named_state_broad
     expiration_policy: auto_resolve_no
     stakeholder_tags: [us_foreign_policy, regional_security, oil_energy_markets]
-    current_probability: 0.15
-    current_credible_interval_80: [0.06, 0.28]
-    current_icd203_label: very_unlikely
-    last_updated: 2026-05-06T07:00:00-04:00
+    current_probability: 1.0
+    current_credible_interval_80: [1.0, 1.0]
+    current_icd203_label: very_likely
+    last_updated: 2026-05-09T07:00:00-04:00
     notes: |
-      US in clear de-escalation mode D68: Project Freedom suspended, Trump signaling
-      deal optimism. CENTCOM strike plan still on file but politically frozen.
+      **RESOLVED YES — 2026-05-07 (D69)**
+      CENTCOM confirmed US strikes on Iranian military facilities at Bandar Abbas and
+      Qeshm Island on May 7 in response to Iranian missile/drone/small-boat attacks on
+      US destroyers transiting Hormuz. Attributed by US gov (CENTCOM public statement) +
+      confirmed by CNN, NBC, NPR, Business Standard (≥2 Tier-1 sources). Trump described
+      as "defensive self-defense" not resumption of major combat, but resolution criterion
+      does not require "major combat" — only kinetic strike on Iranian sovereign territory
+      with US gov attribution. Resolution criterion met.
     question_fa: "آمریکا تا ۳۱ دسامبر ۲۰۲۶ ضربهٔ نظامی به خاک حاکمیتی ایران می‌زند"
     notes_fa: |
       آمریکا در روز ۶۸ به‌روشنی در حالت آرامش‌بخش است: طرح آزادی تعلیق شد، ترامپ
@@ -202,13 +223,20 @@ questions:
     reference_class_broad: B2_iran_us_kinetic_broad
     expiration_policy: auto_resolve_no
     stakeholder_tags: [us_foreign_policy, regional_security, oil_energy_markets]
-    current_probability: 0.28
-    current_credible_interval_80: [0.15, 0.45]
-    current_icd203_label: unlikely
-    last_updated: 2026-05-03T06:00:00-04:00
+    current_probability: 1.0
+    current_credible_interval_80: [1.0, 1.0]
+    current_icd203_label: very_likely
+    last_updated: 2026-05-09T07:00:00-04:00
     notes: |
-      US KIA 15, US wounded 520, US aircraft 7 lost cumulative. Continued kinetic.
-      24-26d zero-attack streak suggests active de-escalation; could break.
+      **RESOLVED YES — 2026-05-07 (D69)**
+      IRGC Navy launched combined missile, drone, and small-boat attack on three US
+      Navy guided-missile destroyers transiting Strait of Hormuz on May 7. CENTCOM
+      confirmed: "intercepted unprovoked Iranian attacks" on US ships. Iranian state
+      media (PressTV) released footage of attack. Confirmed by Al Jazeera, NPR, CBS,
+      Rigzone (≥2 Tier-1 sources). Resolution criterion: IRGC strike on US military
+      target, US gov attribution (CENTCOM) confirmed. The 24-26d zero-attack streak
+      ended abruptly May 7 with the destroyer transit.
+      US KIA cumulative: 15, wounded: 520+, aircraft lost: 7.
     question_fa: "ایران تا ۳۱ دسامبر ۲۰۲۶ ضربهٔ نظامی به هدف با پرچم آمریکا یا پایگاه آمریکایی می‌زند"
     notes_fa: |
       تلفات تجمعی آمریکا: ۱۵ کشته، ۵۲۰ زخمی، ۷ هواپیمای ساقط‌شده. ضربه‌های ادامه‌دار.
@@ -230,10 +258,12 @@ questions:
     current_probability: 0.15
     current_credible_interval_80: [0.06, 0.30]
     current_icd203_label: very_unlikely
-    last_updated: 2026-05-03T06:00:00-04:00
+    last_updated: 2026-05-09T07:00:00-04:00
     notes: |
       Israeli independence score high; Netanyahu personal incentives for war = political oxygen.
-      Iran nuclear program reportedly degraded already.
+      Iran nuclear program reportedly degraded already. Israel struck Radwan Forces commander
+      in Beirut May 6 and continues Lebanon strikes. MOU talks could reduce Israeli window
+      for nuclear strike, but Israeli autonomy remains high. No change this tick.
     question_fa: "اسرائیل تا ۳۱ دسامبر ۲۰۲۶ به زیرساخت هسته‌ای ایران (نطنز/فردو/اراک) حمله می‌کند"
     notes_fa: |
       امتیاز استقلال اسرائیل بالاست؛ انگیزه‌های شخصی نتانیاهو برای جنگ = اکسیژن سیاسی.
@@ -252,13 +282,18 @@ questions:
     reference_class_broad: B4_hezbollah_strike_broad
     expiration_policy: auto_resolve_no
     stakeholder_tags: [regional_security, oil_energy_markets]
-    current_probability: 0.30
-    current_credible_interval_80: [0.18, 0.45]
+    current_probability: 0.33
+    current_credible_interval_80: [0.20, 0.48]
     current_icd203_label: unlikely
-    last_updated: 2026-05-03T06:00:00-04:00
+    last_updated: 2026-05-09T07:00:00-04:00
     notes: |
-      Lebanon killed 2,659+ (May 3). Hezbollah bleeding from IDF strikes.
-      Past 18mo: 4-5 Tel-Aviv-reaching attacks observed.
+      D71: Lebanon killed 2,759+ total (up from 2,659 May 3). Israel killed Radwan
+      Forces commander in Beirut May 6 (first Beirut airstrike since ceasefire). Hezbollah
+      fired rockets at Israeli military base in northern Israel + targeted army vehicle in
+      Deir Siryan. Israeli airstrikes hit 5 in southern Lebanon May 8. Israel-Lebanon
+      ceasefire technically "holding" (per US) but Israeli attacks continuing. Second stage
+      negotiations expected May 14–15 in Washington (same day as Trump-Xi summit). Slight
+      upward revision on continued Hezbollah-IDF exchange tempo.
     question_fa: "حملهٔ منتسب به حزب‌الله تا ۳۰ سپتامبر ۲۰۲۶ به مرکز جمعیتی اسرائیلی بیش از ۲۵ کیلومتر شمال مرز برسد"
     notes_fa: |
       تلفات لبنان بیش از ۲٬۶۵۹ نفر (۳ مه). حزب‌الله از حملات اسرائیل صدمه می‌بیند.
@@ -277,13 +312,19 @@ questions:
     reference_class_broad: B5_iran_vessel_seizure_broad
     expiration_policy: auto_resolve_no
     stakeholder_tags: [oil_energy_markets,regional_security]
-    current_probability: 0.5
-    current_credible_interval_80: [0.32, 0.68]
-    current_icd203_label: roughly_even_chance
-    last_updated: 2026-05-06T07:00:00-04:00
+    current_probability: 1.0
+    current_credible_interval_80: [1.0, 1.0]
+    current_icd203_label: very_likely
+    last_updated: 2026-05-09T07:00:00-04:00
     notes: |
-      Iran 2 consecutive days zero-strikes (since D66 UAE barrage). Hormuz Sovereignty
-      Law still in force but seizures held during the de-escalation window.
+      **RESOLVED YES — 2026-05-08 (D70)**
+      IRGC seized the Barbados-flagged MV Jin Li (ex-Ocean Koi, 72,000 dwt) in Gulf of
+      Oman on May 8 — the third foreign-flagged commercial vessel seizure. Iran said vessel
+      was seized for "attempting to disrupt oil exports." Confirmed by Seatrade Maritime,
+      Al Jazeera, OilPrice.com, El-Balad (≥2 Tier-1 sources). Simultaneously Iran
+      announced "Persian Gulf Strait Authority" to manage new Hormuz transit rules.
+      US "disabled" two tankers seeking to enter Iranian ports on the same day.
+      Resolution criterion met (3rd IRGC seizure, publicly confirmed).
     question_fa: "سپاه تا ۳۰ سپتامبر ۲۰۲۶ سومین کشتی تجاری با پرچم خارجی را در خلیج/هرمز توقیف می‌کند"
     notes_fa: |
       ایران ۲ روز پیاپی بدون حمله (از ۴ مه پس از حملهٔ امارات). قانون حاکمیت هرمز
@@ -308,13 +349,19 @@ questions:
       on regime-fracture or leader-incapacity outcomes. Treat probability as
       structurally uncertain. Actuarial baseline ~13%/year for 86-year-old male
       → ~5%/8-month-window. +3pp adjustment for observed health concerns.
-    current_probability: 0.08
-    current_credible_interval_80: [0.03, 0.18]
-    current_icd203_label: very_unlikely
-    last_updated: 2026-05-03T06:00:00-04:00
+    current_probability: 1.0
+    current_credible_interval_80: [1.0, 1.0]
+    current_icd203_label: very_likely
+    last_updated: 2026-05-09T07:00:00-04:00
     notes: |
-      Reportedly recovering from severe burns. Awaiting prosthetic leg.
-      Public unseen since Feb 28. 14-15%/yr actuarial → ~5-7%/8mo. +humility-flag bump.
+      **RESOLVED YES — 2026-02-28 (D1)**
+      Supreme Leader Ali Khamenei was assassinated in US-Israeli airstrikes on Feb 28,
+      2026 (Day 1 of the conflict). Iran confirmed his death March 1, 2026 (Caspian News,
+      Wikipedia). This question was already resolved at portfolio initialization (D65) but
+      was not formally marked. Correcting now.
+      [Prior notes referred to Mojtaba Khamenei's condition — those belong under C3/successor
+      tracking. Manifold market "Will Mojtaba Khamenei be alive on Jan 1, 2027?" = 64%
+      — Mojtaba's survival is a separate open risk not currently in this portfolio.]
     question_fa: "خامنه‌ای تا ۳۱ دسامبر ۲۰۲۶ می‌میرد یا به‌طور علنی برکنار می‌شود"
     notes_fa: |
       گزارش‌ها از بهبودی او از سوختگی شدید حکایت دارند. منتظر پای مصنوعی است.
@@ -338,13 +385,18 @@ questions:
     reference_class_broad: C2_authoritarian_protest_wave_broad
     expiration_policy: auto_resolve_no
     stakeholder_tags: [iran_regime_survival]
-    current_probability: 0.42
-    current_credible_interval_80: [0.25, 0.62]
+    current_probability: 0.40
+    current_credible_interval_80: [0.22, 0.60]
     current_icd203_label: unlikely
-    last_updated: 2026-05-06T07:00:00-04:00
+    last_updated: 2026-05-09T07:00:00-04:00
     notes: |
-      Rial recovered ~3.5% to 1.76M D68 on deal optimism. Currency pressure eased
-      modestly this week — protest-trigger threshold pushed slightly further out.
+      D71: Rial at 1.797M (alanchand May 9) — slightly UP from 1.76M on D68 as naval
+      clashes May 7–8 created uncertainty. Polymarket "regime fall by May 31" = 2%,
+      "fall by June 30" = 4% — markets don't see near-term regime collapse. Protests
+      context: the Jan-Feb 2026 protest wave (200+ cities, Grand Bazaar shutdown) was
+      suppressed via live fire (thousands killed per Amnesty). A new sustained wave
+      requires a fresh economic shock or a major military setback. Deal optimism slightly
+      dampens the probability but Hormuz-driven inflation keeps pressure on.
     question_fa: "ایران تا ۳۱ دسامبر ۲۰۲۶ موج اعتراضات پایدار (بیش از ۱۴ روز، بیش از ۵ شهر، با کدگذاری ACLED) داشته باشد"
     notes_fa: |
       ریال در روز ۶۸ با خوش‌بینی به توافق حدود ۳.۵٪ به ۱.۷۶ میلیون تقویت شد. فشار ارزی
@@ -366,13 +418,22 @@ questions:
     humility_note: |
       Model class has zero validated track record on succession-designation outcomes.
       All published models failed to predict prior supreme-leader transitions.
-    current_probability: 0.06
-    current_credible_interval_80: [0.02, 0.15]
-    current_icd203_label: very_unlikely
-    last_updated: 2026-05-03T06:00:00-04:00
+    current_probability: 1.0
+    current_credible_interval_80: [1.0, 1.0]
+    current_icd203_label: very_likely
+    last_updated: 2026-05-09T07:00:00-04:00
     notes: |
-      Mojtaba "unconscious / face-burnt" reporting (Mar 2026, multiple outlets).
-      IRGC reportedly orchestrating succession but no public designation yet.
+      **RESOLVED YES — 2026-03-09 (D10)**
+      Mojtaba Khamenei was publicly announced as the new Supreme Leader of Iran on
+      March 9, 2026 (Wikipedia, Euronews, IranIntl). Assembly of Experts designated him
+      following Ali Khamenei's death March 1. Resolution criterion satisfied: "designating
+      Mojtaba Khamenei as heir-apparent or anointed successor" — he was designated the
+      actual Supreme Leader, which satisfies "anointed successor."
+      This was already resolved at portfolio initialization (D65) but was not formally marked.
+      Status D71: Mojtaba recovering from injuries (awaiting prosthetic leg, facial burns).
+      Iranian president Pezeshkian met him for 2.5 hours May 7 — first public confirmation
+      of direct meeting since his appointment. US intel assesses he is shaping war strategy
+      despite limited public visibility.
     question_fa: "مجلس خبرگان تا ۳۱ دسامبر ۲۰۲۶ مجتبی خامنه‌ای را به‌طور علنی به‌عنوان جانشین تعیین می‌کند"
     notes_fa: |
       گزارش «مجتبی بی‌هوش / صورت‌سوخته» (مارس ۲۰۲۶، چندین خبرگزاری).
@@ -390,12 +451,16 @@ questions:
     reference_class_broad: C4_bazaari_political_action_broad
     expiration_policy: auto_resolve_no
     stakeholder_tags: [iran_regime_survival]
-    current_probability: 0.28
-    current_credible_interval_80: [0.14, 0.46]
+    current_probability: 0.25
+    current_credible_interval_80: [0.12, 0.40]
     current_icd203_label: unlikely
-    last_updated: 2026-05-06T07:00:00-04:00
+    last_updated: 2026-05-09T07:00:00-04:00
     notes: |
-      Same currency-relief signal as C2. Bazaari shutdown trigger eased modestly D68.
+      D71: Rial at 1.797M — slightly up from D68 but below the 1.85M D67 peak.
+      Jan-Feb 2026 bazaar shutdown/protest wave was violently suppressed. The regime
+      proved willing to use live fire. Bazaari shutdown risk requires a new currency
+      shock to cross the trigger; current rial level is elevated but not at the
+      Jan-2026 breaking point. Slight downward revision consistent with C2 move.
     question_fa: "تعطیلی پایدار بازاری‌ها (بیش از ۳ روز در بازار بزرگ تهران) تا ۳۱ دسامبر ۲۰۲۶ رخ دهد"
     notes_fa: |
       همان سیگنال آرامش ارزی C2. آستانهٔ تعطیلی بازاری در روز ۶۸ اندکی کاهش یافت.
@@ -413,13 +478,16 @@ questions:
     reference_class_broad: D1_emerging_markets_currency_collapse_broad
     expiration_policy: auto_resolve_no
     stakeholder_tags: [iran_regime_survival]
-    current_probability: 0.6
+    current_probability: 0.62
     current_credible_interval_80: [0.42, 0.78]
     current_icd203_label: likely
-    last_updated: 2026-05-06T07:00:00-04:00
+    last_updated: 2026-05-09T07:00:00-04:00
     notes: |
-      Rial recovered to 1.76M D68 (was 1.85M D67). Still on track to 2M absent a
-      framework deal, but the tail thinned this week with the China track active.
+      D71: Rial at 1,797,000 (alanchand May 9) — slightly up from 1.76M D68 on naval
+      clash uncertainty. Naval clashes May 7–8 temporarily reversed the deal-optimism
+      rial recovery. Still on track to 2M absent a signed framework — MOU talks are
+      live but not yet signed. Threshold is 10.7% above current; structural forces
+      (oil export compression, Hormuz blockade) keep downward pressure on rial.
     question_fa: "نرخ بازار آزاد دلار/ریال تا ۳۱ دسامبر ۲۰۲۶ از ۲٬۰۰۰٬۰۰۰ بالاتر رود"
     notes_fa: |
       ریال در روز ۶۸ به ۱.۷۶ میلیون بازگشت (۱.۸۵ میلیون در روز ۶۷). در غیاب توافق
@@ -437,13 +505,16 @@ questions:
     reference_class_broad: D2_sanctions_oil_collapse_broad
     expiration_policy: auto_resolve_no
     stakeholder_tags: [iran_regime_survival, oil_energy_markets]
-    current_probability: 0.45
-    current_credible_interval_80: [0.28, 0.65]
+    current_probability: 0.48
+    current_credible_interval_80: [0.30, 0.66]
     current_icd203_label: roughly_even_chance
-    last_updated: 2026-05-03T06:00:00-04:00
+    last_updated: 2026-05-09T07:00:00-04:00
     notes: |
-      Iran oil storage 12-22d remaining. Iran may need to cut 1.5M bpd by mid-May
-      (Kpler/Bloomberg May 1). This forces export collapse.
+      D71: Iran's "Persian Gulf Strait Authority" + IRGC vessel seizures + US disabling
+      of tankers entering Iranian ports are collectively restricting Iran's oil export
+      capacity. Naval clashes May 7–8 add uncertainty. Oil storage constraint (12-22d
+      reported May 1) may now be resolving or forcing cuts. No fresh Kpler data available
+      this tick; slight upward revision based on continued Hormuz constraint signals.
     question_fa: "صادرات نفت ایران تا ۳۱ دسامبر ۲۰۲۶ به زیر ۰.۵ میلیون بشکه در روز برسد (میانگین ۳۰ روزهٔ Kpler)"
     notes_fa: |
       ذخایر نفتی ایران ۱۲ تا ۲۲ روز باقی‌مانده. ایران ممکن است تا اواسط مه ۱.۵ میلیون بشکه در روز کاهش دهد
@@ -461,13 +532,18 @@ questions:
     reference_class_broad: D3_oil_shock_pump_pass_through_broad
     expiration_policy: auto_resolve_no
     stakeholder_tags: [us_foreign_policy]
-    current_probability: 0.42
-    current_credible_interval_80: [0.25, 0.62]
-    current_icd203_label: unlikely
-    last_updated: 2026-05-06T07:00:00-04:00
+    current_probability: 0.78
+    current_credible_interval_80: [0.60, 0.90]
+    current_icd203_label: likely
+    last_updated: 2026-05-09T07:00:00-04:00
     notes: |
-      Brent dropped to $111.80 D68 on deal optimism (-1.4% from D67). Gas pressure
-      easing — the $4.50 trip-line is no longer a 14-day projection at current rates.
+      D71: **THRESHOLD CROSSED — day 1 of potential 7-day sustained period.**
+      AAA national average gas price = $4.530/gallon on May 9, 2026 (above the $4.50
+      trigger). Resolution requires ≥7 consecutive days above $4.50. Day 1 of crossing.
+      Brent at $101-104 (May 8; down from $111.80 D68) — gas prices lag crude by ~2wk,
+      so the pump price may stay elevated even if Brent continues to ease. Naval clashes
+      in Hormuz are re-adding supply uncertainty. High probability of 7-day streak given
+      current Hormuz constraints. Massive upward revision from 42%.
     question_fa: "میانگین ملی قیمت بنزین آمریکا (AAA) تا ۳۰ سپتامبر ۲۰۲۶ بیش از ۴.۵۰ دلار به‌مدت ۷ روز پایدار باشد"
     notes_fa: |
       برنت در روز ۶۸ با خوش‌بینی به توافق به ۱۱۱.۸۰ دلار کاهش یافت (۱.۴٪- نسبت به روز ۶۷).
@@ -485,14 +561,17 @@ questions:
     reference_class_broad: D4_brent_geopolitical_spike_broad
     expiration_policy: auto_resolve_no
     stakeholder_tags: [oil_energy_markets, us_foreign_policy]
-    current_probability: 0.28
-    current_credible_interval_80: [0.14, 0.45]
+    current_probability: 0.20
+    current_credible_interval_80: [0.10, 0.36]
     current_icd203_label: unlikely
-    last_updated: 2026-05-06T07:00:00-04:00
+    last_updated: 2026-05-09T07:00:00-04:00
     notes: |
-      Brent at $111.80 D68 — down from $115 D66 spike. War-premium tail thinned with
-      Project Freedom suspended + de-escalation track active. Hormuz-closure scenario
-      still the trigger, but probability eased.
+      D71: Brent at ~$101–104/bbl (May 8; down from $111.80 D68). MOU talks + naval
+      clashes creating mixed signals. War premium compressed further as both sides
+      continue negotiations. The $130 scenario requires full Hormuz closure or major
+      escalation beyond current levels. The MOU being negotiated includes Hormuz reopening
+      — if signed, Brent could fall sharply. Downward revision as Brent has dropped
+      further from D68 levels despite the May 7–8 clashes.
     question_fa: "نفت برنت تا ۳۱ دسامبر ۲۰۲۶ از ۱۳۰ دلار عبور کند"
     notes_fa: |
       برنت در روز ۶۸ به ۱۱۱.۸۰ دلار رسید — از سقف ۱۱۵ دلار روز ۶۶ پایین آمده. دم حق بیمهٔ
@@ -515,10 +594,12 @@ questions:
     current_probability: 0.30
     current_credible_interval_80: [0.18, 0.45]
     current_icd203_label: unlikely
-    last_updated: 2026-05-03T06:00:00-04:00
+    last_updated: 2026-05-09T07:00:00-04:00
     notes: |
-      Personnel = policy. First-term: Bolton/Pompeo/etc replaced before JCPOA exit.
-      Hegseth public commitment to military option could fracture under stress.
+      No change D71. Hegseth and Rubio remain in place; Witkoff leading Iran diplomacy.
+      The fact that Kushner is now co-leading MOU talks alongside Witkoff adds a personal
+      Trump-family dimension that could complicate a Hegseth replacement. No public
+      signals of imminent cabinet change.
     question_fa: "ترامپ تا ۳۰ سپتامبر ۲۰۲۶ وزیر دفاع، مشاور امنیت ملی یا وزیر خارجه را عوض می‌کند"
     notes_fa: |
       پرسنل = سیاست. در دور اول: بولتون/پامپئو/و دیگران قبل از خروج از برجام تعویض شدند.
@@ -539,13 +620,14 @@ questions:
     reference_class_broad: E2_midterm_loss_pattern_broad
     expiration_policy: auto_resolve_no
     stakeholder_tags: [us_foreign_policy]
-    current_probability: 0.55
-    current_credible_interval_80: [0.40, 0.70]
+    current_probability: 0.58
+    current_credible_interval_80: [0.42, 0.72]
     current_icd203_label: likely
-    last_updated: 2026-05-03T06:00:00-04:00
+    last_updated: 2026-05-09T07:00:00-04:00
     notes: |
-      Midterms in ~550 days. Wartime midterms historically incumbent-unfavorable.
-      Gas-price + war fatigue dynamics.
+      D71: AAA gas at $4.53 — above the $4.50 political pain threshold. Gas-price
+      pressure is real and polling-relevant. War fatigue compounding with naval clashes
+      (US KIA 15+). Midterms ~540 days away. Small upward revision on gas-price signal.
     question_fa: "جمهوری‌خواهان در انتخابات میان‌دوره‌ای نوامبر ۲۰۲۶ کنترل یکی از دو مجلس را از دست می‌دهند"
     notes_fa: |
       انتخابات میان‌دوره‌ای حدود ۵۵۰ روز دیگر. انتخابات میان‌دوره‌ای زمان جنگ از نظر تاریخی
@@ -564,14 +646,17 @@ questions:
     reference_class_broad: F1_university_political_vendor_pause_broad
     expiration_policy: agent_judgment_at_deadline
     stakeholder_tags: [omid_personal, iranfarhang_business]
-    current_probability: 0.20
-    current_credible_interval_80: [0.08, 0.38]
+    current_probability: 0.18
+    current_credible_interval_80: [0.07, 0.35]
     current_icd203_label: unlikely
-    last_updated: 2026-05-03T06:00:00-04:00
+    last_updated: 2026-05-09T07:00:00-04:00
     notes: |
-      18 active institutions; ~$310K/yr revenue. Berman Amendment exemption protects
-      legal basis. Risk is institutional-political, not legal. NYU's "no rush" stance
-      is current modal client posture (positive signal). FY27 renewals start ~Jul-Sep.
+      D71: MOU talks are the most advanced diplomacy since war started — if a framework
+      agreement signs (A1 now at 40%), it would likely reduce institutional-political
+      cancellation risk at universities. Slight downward revision on deal-optimism signal.
+      Berman Amendment exemption remains intact. FY27 renewals still 2-4 months out.
+      Iranfarhang operational: US naval clashes in Hormuz don't directly affect air cargo
+      route (Tehran→Dubai→Atlanta). Key watch: whether MOU talks become public deal.
     question_fa: "حداقل یک دانشگاه ردیف اول (استنفورد/کلمبیا/ییل/NYU/شیکاگو/هاروارد/پنسیلوانیا/پرینستون/برکلی) تا ۳۰ سپتامبر ۲۰۲۶ با اشاره به نزاع، تمدید بودجهٔ approval-plan سال مالی ۲۰۲۷ را با ایران‌فرهنگ به‌طور رسمی متوقف یا رد می‌کند"
     notes_fa: |
       ۱۸ مؤسسهٔ فعال؛ درآمد حدود ۳۱۰ هزار دلار سالانه. معافیت متمم برمن مبنای حقوقی را حفظ می‌کند.
@@ -596,11 +681,14 @@ questions:
     current_probability: 0.30
     current_credible_interval_80: [0.15, 0.50]
     current_icd203_label: unlikely
-    last_updated: 2026-05-03T06:00:00-04:00
+    last_updated: 2026-05-09T07:00:00-04:00
     notes: |
-      Single point of failure for entire payment rail. Already changed once Oct 2025.
-      Halle's German bank flagged "Shipped from Iran." No US bank account exists as backup.
-      Highest-leverage business risk per BI agent.
+      No change D71. KEMCO SARL (France) is the sole payment rail for Iranfarhang.
+      US-Iran naval clashes raise the diplomatic temperature and could increase French
+      bank compliance scrutiny of Iran-related flows — but no direct trigger event this
+      tick. MOU talks, if they progress, could reduce the compliance-risk environment.
+      Remains highest-leverage structural risk for the business. No Hubert Le Mage
+      communication flagged.
     question_fa: "رابطهٔ بانکی Kemco SARL تا ۳۱ دسامبر ۲۰۲۶ خاتمه یابد، مسدود شود یا نیاز به صدور IBAN جدید (فراتر از اکتبر ۲۰۲۵) داشته باشد"
     notes_fa: |
       تک‌نقطهٔ شکست برای کل ریل پرداخت. یک‌بار در اکتبر ۲۰۲۵ تغییر کرده. بانک آلمانی هاله
@@ -625,11 +713,13 @@ questions:
     current_probability: 0.50
     current_credible_interval_80: [0.30, 0.70]
     current_icd203_label: roughly_even_chance
-    last_updated: 2026-05-03T06:00:00-04:00
+    last_updated: 2026-05-09T07:00:00-04:00
     notes: |
-      Disaster-recovery server plan converged after seven revisions. Awaiting answers
-      from Magiran on five open infrastructure questions before going operational.
-      Protects roughly $70K of Magiran revenue across 14 universities ($5K each).
+      No change D71. Frankfurt standby server execution track: purely internal milestone.
+      Iran internet degradation (300+ hr in Jan 2026) is the trigger for why this matters.
+      The naval clashes and MOU uncertainty don't directly accelerate or delay the
+      Frankfurt server setup — it's dependent on Magiran's Q21-Q25 answers and operator
+      execution time. Deadline: Aug 31. Coin-flip on execution pace.
     question_fa: "سرور پشتیبان مگیران فرانکفورت تا ۳۱ اوت ۲۰۲۶ به‌طور عملیاتی (تمرین تولید فاز ۴) راه‌اندازی شود"
     notes_fa: |
       طرح سرور بازیابی پس از حادثه پس از هفت بازنگری به همگرایی رسید. منتظر پاسخ مگیران
@@ -648,13 +738,19 @@ questions:
     reference_class_broad: F4_sanctioned_origin_cargo_disruption_broad
     expiration_policy: auto_resolve_no
     stakeholder_tags: [omid_personal, iranfarhang_business]
-    current_probability: 0.42
-    current_credible_interval_80: [0.22, 0.65]
-    current_icd203_label: unlikely
-    last_updated: 2026-05-06T07:00:00-04:00
+    current_probability: 0.45
+    current_credible_interval_80: [0.25, 0.66]
+    current_icd203_label: roughly_even_chance
+    last_updated: 2026-05-09T07:00:00-04:00
     notes: |
-      Hormuz still at ~4 vessels/day D68 (vs 67 pre-war target) but de-escalation
-      track may let some cargo through. Iran Air aviation insurance still under stress.
+      D71: Iran set up "Persian Gulf Strait Authority" May 8 — new agency requiring
+      full coordination/clearance for all Hormuz transit. IRGC seizure of 3rd vessel
+      (Ocean Koi) increases shipping disruption risk. Iran Air aviation insurance
+      remains under stress from war conditions. This directly affects the Tehran→Atlanta
+      cargo route: any Iran Air flights require aviation insurance from carriers now
+      reluctant to underwrite war-zone routes. Naval clashes in Hormuz also increase
+      the likelihood of cargo disruptions on the Dubai→Atlanta leg if UAE/Gulf shipping
+      is disrupted. Slight upward revision on compound operational risk.
     question_fa: "محمولهٔ تهران→آتلانتا (بستهٔ #۶۵ یا بعد از آن) تا ۳۱ اکتبر ۲۰۲۶ به دلیل ایران‌اِیر / هرمز / گمرک بیش از ۶۰ روز از تاریخ ارسال موردنظر تأخیر داشته باشد"
     notes_fa: |
       هرمز در روز ۶۸ هنوز حدود ۴ کشتی در روز است (در مقایسه با ۶۷ پیش‌از‌جنگ) ولی مسیر
@@ -677,10 +773,13 @@ questions:
     current_probability: 0.10
     current_credible_interval_80: [0.03, 0.22]
     current_icd203_label: very_unlikely
-    last_updated: 2026-05-03T06:00:00-04:00
+    last_updated: 2026-05-09T07:00:00-04:00
     notes: |
-      Berman Amendment has survived JCPOA withdrawal + 2017/2018 OFAC re-confirmation
-      letters on file. Wartime risk is non-zero but historically rare. Existential if it fires.
+      No change D71. Berman Amendment has survived JCPOA withdrawal + 2017/2018 OFAC
+      re-confirmation. Naval clashes and active combat conditions don't automatically
+      change OFAC enforcement posture on informational-materials exemption. MOU talks
+      actually reduce the probability of wartime OFAC tightening. Existential if it fires;
+      maintains low probability.
     question_fa: "OFAC تا ۳۱ دسامبر ۲۰۲۶ راهنما/اجرایی صادر کند که معافیت مواد اطلاعاتی (31 CFR 560.315) را محدود می‌کند"
     notes_fa: |
       متمم برمن از خروج برجام + نامه‌های تأییدیهٔ ۲۰۱۷/۲۰۱۸ OFAC جان به در برد.
@@ -701,11 +800,12 @@ questions:
     current_probability: 0.55
     current_credible_interval_80: [0.35, 0.75]
     current_icd203_label: likely
-    last_updated: 2026-05-03T06:00:00-04:00
+    last_updated: 2026-05-09T07:00:00-04:00
     notes: |
-      Iran international internet 300+ hr degraded Jan 2026. March 2026 forced
-      "Update from Tehran" all-client crisis email. Pattern intensifying.
-      Single point of failure for sourcing. Father just passed Feb 2026.
+      No change D71. Iran internet degradation ongoing since war start. Naval clashes
+      and active Hormuz hostilities maintain military internet-restriction risk.
+      Mozhgan's reachability directly depends on Iran's internet/VPN environment.
+      No communication gap flagged this tick. Pattern risk unchanged.
     question_fa: "مژگان تا ۳۰ سپتامبر ۲۰۲۶ بیش از ۷ روز پیاپی در دسترس نباشد"
     notes_fa: |
       اینترنت بین‌المللی ایران در ژانویهٔ ۲۰۲۶ بیش از ۳۰۰ ساعت قطع شد. ایمیل بحران مارس ۲۰۲۶
@@ -725,13 +825,19 @@ questions:
     reference_class_broad: A2_blockade_resolution_broad
     expiration_policy: auto_resolve_no
     stakeholder_tags: [omid_personal, kipa_business, oil_energy_markets]
-    current_probability: 0.22
-    current_credible_interval_80: [0.1, 0.38]
+    current_probability: 0.28
+    current_credible_interval_80: [0.14, 0.45]
     current_icd203_label: unlikely
-    last_updated: 2026-05-06T07:00:00-04:00
+    last_updated: 2026-05-09T07:00:00-04:00
     notes: |
-      Hormuz still ~4 vessels/day. Project Freedom suspension is a US move, not an
-      Iranian one — blockade structurally unchanged. Slight bump on overall deal optimism.
+      D71: Polymarket "Hormuz traffic returns to normal by end of June" at 52% — positive
+      signal for this question (deadline June 30). MOU terms include "gradual Hormuz
+      reopening during 30-day negotiation period." However our criterion (>50% of pre-war
+      baseline, 7 consecutive days, Lloyd's/VesselFinder data) is stricter. Currently ~4
+      vessels/day vs pre-war 135. Iran's "Persian Gulf Strait Authority" adds a new
+      compliance layer even if military hostilities ease. Net: higher probability on MOU
+      signal but applying 40% discount to Polymarket's 52%. Key KIP operational dependency:
+      Hormuz reopening directly restores Kipa's Jebel Ali import corridor for polymers.
     question_fa: "تنگهٔ هرمز تا ۳۰ ژوئن ۲۰۲۶ بیش از ۷ روز پیاپی به ترافیک کانتینری تجاری بازگردد"
     notes_fa: |
       هرمز همچنان حدود ۴ کشتی در روز. تعلیق طرح آزادی حرکت آمریکا است، نه ایران —
@@ -755,13 +861,18 @@ questions:
     reference_class_broad: D1_emerging_markets_currency_collapse_broad
     expiration_policy: auto_resolve_no
     stakeholder_tags: [omid_personal, kipa_business, iran_regime_survival]
-    current_probability: 0.48
-    current_credible_interval_80: [0.28, 0.68]
+    current_probability: 0.50
+    current_credible_interval_80: [0.30, 0.70]
     current_icd203_label: roughly_even_chance
-    last_updated: 2026-05-06T07:00:00-04:00
+    last_updated: 2026-05-09T07:00:00-04:00
     notes: |
-      ICE rate likely eased with the rial recovery to 1.76M D68. Threshold to 2M
-      less imminent than D67 read. Still close to coin-flip — operator review pending.
+      D71: Rial (bonbast free-market) at 1,797,000 on May 9 — slightly above D68's 1.76M.
+      ICE/commercial rate tracked on alanchand lags bonbast slightly; likely in 1.75-1.80M
+      range. The MOU talks create ceiling pressure on the rate crossing 2M by Aug 31, but
+      naval clashes and ongoing Hormuz disruption maintain structural downward rial pressure.
+      Kipa's AMAG-Dubai trade corridor uses ICE/official rate for customs invoicing — 2M
+      crossing would trigger Iranian importers to front-load orders, temporarily boosting
+      volume but straining working capital. Coin-flip remains.
     question_fa: "نرخ ارز تجاری/ICE ایران تا ۳۱ اوت ۲۰۲۶ از ۲٬۰۰۰٬۰۰۰ ریال بر دلار عبور کند"
     notes_fa: |
       نرخ ICE احتمالاً با تقویت ریال به ۱.۷۶ میلیون در روز ۶۸ کاهش یافته. عبور از ۲ میلیون
@@ -782,10 +893,12 @@ questions:
     current_probability: 0.40
     current_credible_interval_80: [0.20, 0.62]
     current_icd203_label: unlikely
-    last_updated: 2026-05-03T06:00:00-04:00
+    last_updated: 2026-05-09T07:00:00-04:00
     notes: |
-      Behrah is Kipa's safest growth bet under Scenario C — sanctions-invariant,
-      domestic Rial sales to govt-paid contractors. Pure execution-trackable.
+      No change D71. Behrah is sanctions-invariant (domestic Rial sales to govt-paid
+      contractors at Shamsabad Industrial Town) — the Hormuz clashes and MOU talks
+      don't directly affect the domestic Iran-facing cryogenic pulverizer business.
+      Pure execution-trackable milestone. Deadline: Sep 30.
     question_fa: "بهرا باسپار مانا تا ۳۰ سپتامبر ۲۰۲۶ تعهد امضاشده برای خط دوم آسیاب کرایوژنیک (LOI یا سفارش تجهیزات) به‌دست آورد"
     notes_fa: |
       بهرا امن‌ترین شرط رشد کیپا تحت سناریوی C است — ضدتحریم، فروش ریالی داخلی به پیمانکاران دولتی.
@@ -806,12 +919,12 @@ questions:
     current_probability: 0.15
     current_credible_interval_80: [0.05, 0.32]
     current_icd203_label: very_unlikely
-    last_updated: 2026-05-03T06:00:00-04:00
+    last_updated: 2026-05-09T07:00:00-04:00
     notes: |
-      The decisive test for whether Iran's protectionist rhetoric becomes a binding
-      regulation. If yes, Kipa's strategy needs to pivot toward producer-service.
-      Rhetoric alone doesn't trigger this; the question resolves on official-gazette
-      publication of an enforceable instrument.
+      No change D71. Iran MIMT bakhshname restricting imports is a wartime protectionism
+      risk. The MOU talks, if anything, may reduce the urgency of protectionist measures
+      (deal = sanctions relief = less need for import substitution mandates). Rhetoric
+      alone doesn't trigger resolution. No official-gazette publication flagged.
     question_fa: "وزارت صمت ایران تا ۳۱ دسامبر ۲۰۲۶ بخشنامه‌ای صادر کند که واردات مواد اولیه را به تولیدکنندگان مصرف‌کننده محدود می‌کند"
     notes_fa: |
       آزمون قطعی برای اینکه آیا لفاظی حمایتی ایران به مقررات الزام‌آور تبدیل می‌شود.
@@ -830,14 +943,17 @@ questions:
     reference_class_broad: F11_ofac_uae_iran_designation_broad
     expiration_policy: auto_resolve_no
     stakeholder_tags: [omid_personal, kipa_business]
-    current_probability: 0.30
-    current_credible_interval_80: [0.15, 0.50]
+    current_probability: 0.32
+    current_credible_interval_80: [0.16, 0.52]
     current_icd203_label: unlikely
-    last_updated: 2026-05-03T06:00:00-04:00
+    last_updated: 2026-05-09T07:00:00-04:00
     notes: |
-      Triggers AMAG re-architecture review. Recent enforcement frontier:
-      Turkish chemical intermediaries 2024-25. UAE could be next.
-      AMAG matches FinCEN June 2025 typology profile exactly.
+      D71: Slight upward revision. IRGC seizure of 3rd vessel (Ocean Koi, Gulf of Oman)
+      and Iran's "Persian Gulf Strait Authority" may increase OFAC scrutiny of UAE-based
+      entities facilitating Iran-destined cargo. Hormuz naval clashes on May 7–8 could
+      accelerate OFAC's enforcement attention on UAE-based chemical FZCO/FZE entities.
+      Kipa's AMAG entity is the specific watch item — AMAG matches FinCEN June 2025
+      typology profile exactly. No designation event yet.
     question_fa: "OFAC تا ۳۱ دسامبر ۲۰۲۶ یک نهاد شیمیایی FZCO/FZE مستقر در دبی را برای تراکنش‌های مرتبط با ایران تحریم کند"
     notes_fa: |
       بازنگری معماری AMAG را تحریک می‌کند. مرز اخیر اجرایی: واسطه‌های شیمیایی ترکیه ۲۰۲۴-۲۵.
@@ -855,13 +971,17 @@ questions:
     reference_class_broad: F12_commodity_war_premium_decay_broad
     expiration_policy: auto_resolve_no
     stakeholder_tags: [omid_personal, kipa_business, oil_energy_markets]
-    current_probability: 0.33
-    current_credible_interval_80: [0.16, 0.55]
+    current_probability: 0.38
+    current_credible_interval_80: [0.20, 0.58]
     current_icd203_label: unlikely
-    last_updated: 2026-05-06T07:00:00-04:00
+    last_updated: 2026-05-09T07:00:00-04:00
     notes: |
-      War-premium compression more likely as Brent eases + de-escalation continues.
-      LDPE compression scenario gets thicker the longer the diplomatic track holds.
+      D71: Brent at $101-104 (May 8), down sharply from D66 $115 spike and D68 $111.80.
+      War-premium compression accelerating. LDPE CFR Far East Asia anchor was $1,390-1,500
+      on Apr 1; at $104 Brent, compression toward $1,043/MT (25% below low) is now more
+      plausible than at D68. Kipa's customer margins improve if polymer prices compress.
+      The MOU talks and Hormuz reopening scenario (52% Polymarket by June) are the upside
+      catalyst. Upward revision as Brent has fallen more than expected since D68.
     question_fa: "حق بیمهٔ جنگ پلیمر (LDPE CFR شرق دور آسیا) تا ۳۱ اوت ۲۰۲۶ از لنگرگاه ۱ آوریل ۲۰۲۶ به مقدار ۱٬۳۹۰ تا ۱٬۵۰۰ دلار/تن بیش از ۲۵٪ کاهش یابد"
     notes_fa: |
       فشردگی حق بیمهٔ جنگ با کاهش برنت + ادامهٔ آرامش محتمل‌تر است. سناریوی فشردگی LDPE
@@ -871,8 +991,8 @@ questions:
 metadata:
   engine_version: "0.2.0"
   spec_version: v8
-  last_full_review: 2026-05-03
-  next_review: 2026-08-03
+  last_full_review: 2026-05-09
+  next_review: 2026-08-09
   total_questions: 32
   by_category:
     diplomatic_resolution: 5
@@ -894,13 +1014,13 @@ metadata:
     en:
       title: "The frame: this is mostly an economic war, with calibrated kinetic shocks"
       body: |
-        Neither Tehran nor Washington wants a full shooting war — both have decided it would cost more than either could win. So the slow game is economic. But "slow" doesn't mean "quiet": Iran's May 4 missile barrage on UAE infrastructure and the IRGC's anti-ship missiles at a U.S. destroyer showed that both sides will throw calibrated kinetic strikes when the economic squeeze gets uncomfortable. The frame is not "no fighting"; it is "fighting kept below the threshold that triggers full war."
+        Neither Tehran nor Washington wants a full shooting war — both have decided it would cost more than either could win. So the slow game is economic. But "slow" doesn't mean "quiet": the May 7–8 naval exchange — IRGC missiles and drones on US destroyers in Hormuz, US strikes on Bandar Abbas and Qeshm Island — showed that both sides will use live fire while simultaneously negotiating a one-page peace memo. The frame is not "no fighting"; it is "fighting kept below the threshold that triggers full war."
 
-        Iran's lever is the Strait of Hormuz. Keep it half-closed, and oil prices stay elevated, Trump pays a domestic political bill in gas-pump prices and midterm polling, and U.S. allies in the Gulf get nervous enough to pressure Washington toward concessions.
+        Iran's lever is the Strait of Hormuz. Keep it half-closed, and oil prices stay elevated, Trump pays a domestic political bill in gas-pump prices (now above $4.53 nationally) and midterm polling, and U.S. allies in the Gulf get nervous enough to pressure Washington toward concessions. Iran's new "Persian Gulf Strait Authority" is the institutional expression of that lever — bureaucratizing the blockade to make it easier to partially open for a deal.
 
-        The U.S. lever is the sanctions architecture and naval pressure. Keep both tight, and Iran's rial weakens, oil exports grind lower, the storage crisis forces production cuts, and Tehran pays the bill in street pressure and currency collapse.
+        The U.S. lever is the sanctions architecture and naval pressure. Keep both tight, and Iran's rial weakens (now at 1.797M), oil exports grind lower, and Tehran pays the bill in street pressure and currency collapse.
 
-        Both sides currently believe they can outlast the other's economic pain, which is why the May 3 fourteen-point counter-proposal hasn't moved. Whoever blinks first concedes the negotiating points. The risk to the frame is a miscalculation — a strike that crosses a line and forces the other side to escalate beyond what either intended.
+        The biggest change since D68: both sides may be genuinely blinking — a one-page MOU (14-point framework) is being negotiated, "not far but no deal yet." Whoever signs first controls the terms for 30 more days of detailed talks. The risk to the frame is still a miscalculation — the May 7–8 clashes showed how fast a destroyer transit can turn into live fire — but the diplomatic track is now thick enough that even active kinetic exchanges have not derailed it.
       map_to_questions: |
         The diplomatic and economic cards (A and D) measure who's blinking. The kinetic cards (B) measure the risk that one side miscalculates and the frame breaks toward full war. The regime cards (C) measure Iranian internal pressure. The U.S.-side cards (E) measure Trump's political pressure.
     fa:
@@ -919,15 +1039,21 @@ metadata:
   base_case:
     en:
       full: |
-        The ceasefire is back on the de-escalation track this week. After May 4–5's UAE missile barrage and the Project Freedom standoff, Trump suspended Project Freedom citing "great progress" toward a deal, Iran has now logged two consecutive days with zero strikes, and Araghchi met Wang Yi in Beijing — with a Trump-Xi summit on May 14–15 the next inflection point. The frame is still economic war: Hormuz traffic remains at roughly four vessels per day, Iran's oil-storage crisis is still binding, and the rial only recovered to about 1.76 million. But the kinetic-tail risk has thinned this week. Base-case for the next 30 days: cautious de-escalation continues, neither side commits to the 14-point proposal, oil drifts back toward $100–110, and either the Beijing track or a Trump-Xi-driven offer becomes the credible path forward. Iranfarhang books keep clearing through the Berman Amendment exemption; Kipa keeps importing through the AMAG-Dubai corridor with the Hormuz pinch easing slightly. The questions below are the named ways this base case could break — toward a wider regional war, or toward an actual signed framework.
+        D71 (May 9): The diplomatic track and the kinetic track ran simultaneously this week — and both escalated. On May 7–8, IRGC launched missiles, drones, and small boats against US destroyers transiting Hormuz; the US struck back at Bandar Abbas and Qeshm Island; Iran seized a third commercial vessel (Ocean Koi); and US forces disabled two tankers heading for Iranian ports. Trump called the US strikes "defensive" and said "the ceasefire still holds." At the same time, Witkoff and Kushner are reportedly within reach of a one-page MOU with Iranian officials — a 14-point framework that would declare an end to the war, open a 30-day negotiation window on nuclear limits and Hormuz reopening, and lift sanctions. "Not far, but no deal yet" (US official). Iran is still reviewing and "strongly rejected" some terms. Trump-Xi summit on May 14–15 is the next inflection.
+
+        The frame is evolving: this is still an economic war with calibrated kinetic shocks, but the "calibrated" part is increasingly tested. Brent is at $101–104 (down from $115 D66 and $111.80 D68) — the war premium is compressing as deal optimism rises. AAA gas crossed $4.53/gallon — the political pain threshold Trump is watching. Rial at 1.797M (slightly up from D68's 1.76M).
+
+        Base-case for next 14 days: MOU talks continue through the Trump-Xi summit May 14–15; if Xi presses Iran and Trump holds the diplomatic track, a signed one-pager is possible by May 20–25. Hormuz reopening would follow in the 30-day negotiation window. Iranfarhang books keep clearing through the Berman Amendment exemption; Kipa's AMAG-Dubai corridor remains functional but the new "Persian Gulf Strait Authority" adds a compliance layer. The questions below are the named ways this base case could break — toward full Hormuz closure and a wider war, or toward an actual signed framework and sanctions relief.
       public: |
-        The ceasefire is back on the de-escalation track this week. After May 4–5's UAE missile barrage and the Project Freedom standoff, Trump suspended Project Freedom citing "great progress" toward a deal, Iran has now logged two consecutive days with zero strikes, and Iran's foreign minister met Wang Yi in Beijing — with a Trump-Xi summit on May 14–15 the next inflection point. The frame is still economic war: Hormuz traffic remains at roughly four vessels per day, Iran's oil-storage crisis is still binding, and the rial only recovered to about 1.76 million. But the kinetic-tail risk has thinned this week. Base-case for the next 30 days: cautious de-escalation continues, neither side commits to the 14-point proposal, oil drifts back toward $100–110, and either the Beijing track or a Trump-Xi-driven offer becomes the credible path forward. The questions below are the named ways this base case could break — toward a wider regional war, or toward an actual signed framework.
+        D71 (May 9): The diplomatic track and the kinetic track ran simultaneously this week — and both escalated. On May 7–8, IRGC launched missiles and drones at US destroyers transiting Hormuz; the US struck back at Bandar Abbas and Qeshm Island; Iran seized a third commercial vessel; and US forces disabled two tankers heading for Iranian ports. Trump called the US strikes "defensive" and said "the ceasefire still holds." At the same time, the US and Iran are reportedly within reach of a one-page peace memo — a 14-point framework that would declare an end to the war, open 30 days of nuclear and Hormuz talks, and lift sanctions. "Not far, but no deal yet." Trump-Xi summit on May 14–15 is the next inflection.
+
+        Brent is at $101–104 (war premium compressing). AAA gas crossed $4.53/gallon. Iran's rial at 1.797M. The questions below are the named ways the situation could break — toward full Hormuz closure and wider war, or toward a signed framework.
     fa:
       full: |
-        آتش‌بس این هفته دوباره روی ریل آرامش قرار گرفت. پس از حمله موشکی ۴ تا ۵ مه به امارات و بن‌بست طرح آزادی، ترامپ طرح آزادی را به استناد «پیشرفت بزرگ» به سوی توافق تعلیق کرد، ایران اکنون دو روز پیاپی بدون حمله ثبت کرده، و عراقچی در پکن با وانگ یی ملاقات کرد — نشست ترامپ-شی در ۱۴ تا ۱۵ مه نقطهٔ بعدی است. چارچوب همچنان جنگ اقتصادی است: ترافیک هرمز همچنان حدود چهار کشتی در روز است، بحران ذخیرهٔ نفت ایران همچنان الزام‌آور است، و ریال فقط به حدود ۱.۷۶ میلیون بازگشته. اما دم ریسک نظامی این هفته نازک‌تر شد. خط پایهٔ سی روز آینده: آرامش محتاطانه ادامه می‌یابد، هیچ‌یک از دو طرف به پیشنهاد چهارده‌بندی متعهد نمی‌شود، نفت به سمت ۱۰۰ تا ۱۱۰ دلار باز می‌گردد، و یا مسیر پکن یا پیشنهاد ترامپ-شی به مسیر معتبر پیش‌رو تبدیل می‌شود. ایران‌فرهنگ همچنان کتاب‌ها را از طریق معافیت متمم برمن منتقل می‌کند؛ کیپا کالاها را از کریدور AMAG–دبی وارد می‌کند با تخفیف اندک فشار هرمز. پرسش‌های پایین مسیرهای مشخصی هستند که این خط پایه می‌تواند از طریق آن‌ها بشکند — یا به سمت جنگ منطقه‌ای گسترده‌تر، یا به سمت یک چارچوب امضاشدهٔ واقعی.
+        روز ۷۱ (۹ مه): این هفته مسیر دیپلماتیک و مسیر نظامی هم‌زمان پیش رفتند — و هر دو تشدید شدند. در ۷–۸ مه، سپاه موشک، پهپاد و قایق‌های تندرو به ناوشکن‌های آمریکایی در گذرگاه هرمز حمله کرد؛ آمریکا بندرعباس و جزیرهٔ قشم را هدف قرار داد؛ ایران سومین کشتی تجاری (Ocean Koi) را توقیف کرد؛ و نیروهای آمریکایی دو نفت‌کش متوجه بنادر ایرانی را ناتوان ساختند. ترامپ ضربات آمریکایی را «دفاعی» خواند و گفت «آتش‌بس برقرار است.» هم‌زمان، ویتکاف و کوشنر به گفتهٔ منابع در آستانهٔ یادداشت تفاهم یک‌صفحه‌ای با مقامات ایرانی هستند — چارچوب ۱۴‌بندی که پایان جنگ، ۳۰ روز مذاکره دربارهٔ هسته‌ای و هرمز، و تسهیل تحریم‌ها را در بر می‌گیرد. «نزدیک هستیم ولی هنوز توافقی نشده.» ایران هنوز در حال بررسی است. نشست ترامپ-شی در ۱۴–۱۵ مه نقطهٔ بعدی است. برنت در ۱۰۱–۱۰۴ دلار، ریال ۱٫۷۹۷ میلیون، بنزین آمریکا ۴٫۵۳ دلار.
       public: |
-        آتش‌بس این هفته دوباره روی ریل آرامش قرار گرفت. پس از حمله موشکی ۴ تا ۵ مه به امارات و بن‌بست طرح آزادی، ترامپ طرح آزادی را به استناد «پیشرفت بزرگ» به سوی توافق تعلیق کرد، ایران اکنون دو روز پیاپی بدون حمله ثبت کرده، و وزیر خارجهٔ ایران در پکن با وانگ یی ملاقات کرد — نشست ترامپ-شی در ۱۴ تا ۱۵ مه نقطهٔ بعدی است. چارچوب همچنان جنگ اقتصادی است: ترافیک هرمز همچنان حدود چهار کشتی در روز است، بحران ذخیرهٔ نفت ایران همچنان الزام‌آور است، و ریال فقط به حدود ۱.۷۶ میلیون بازگشته. اما دم ریسک نظامی این هفته نازک‌تر شد. خط پایهٔ سی روز آینده: آرامش محتاطانه ادامه می‌یابد، هیچ‌یک از دو طرف به پیشنهاد چهارده‌بندی متعهد نمی‌شود، نفت به سمت ۱۰۰ تا ۱۱۰ دلار باز می‌گردد، و یا مسیر پکن یا پیشنهاد ترامپ-شی به مسیر معتبر پیش‌رو تبدیل می‌شود. پرسش‌های پایین مسیرهای مشخصی هستند که این خط پایه می‌تواند از طریق آن‌ها بشکند — یا به سمت جنگ منطقه‌ای گسترده‌تر، یا به سمت یک چارچوب امضاشدهٔ واقعی.
-    last_updated: 2026-05-05
+        روز ۷۱ (۹ مه): مسیر دیپلماتیک و نظامی این هفته هم‌زمان پیش رفتند. سپاه به ناوشکن‌های آمریکایی حمله کرد؛ آمریکا بندرعباس و قشم را زد؛ ایران سومین کشتی تجاری را توقیف کرد. در عین حال، یادداشت تفاهم یک‌صفحه‌ای در حال مذاکره است. «نزدیک هستیم ولی هنوز توافقی نشده.» نشست ترامپ-شی در ۱۴–۱۵ مه نقطهٔ بعدی است. برنت ۱۰۱–۱۰۴ دلار، ریال ۱٫۷۹۷ میلیون.
+    last_updated: 2026-05-09
   notes: |
     F-questions added 2026-05-03 from Iranfarhang + Kipa research agents.
     F1-F6 = Iranfarhang business consequences (Berman Amendment, Kemco rail,
