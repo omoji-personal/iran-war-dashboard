@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """
 One-time Vercel build fix: restore D70 war-data.json from git history
-(HEAD~1 = commit 2385d9f, the last good version) and apply D71 data.
+(commit 2385d9f = last known-good version) and apply D71 data.
 
 Safe to leave in place: if war-data.json already has real data (> 1 KB)
 the script exits immediately with no changes.
@@ -18,21 +18,35 @@ if len(current) > 1000:
 
 print("apply-d71.py: PLACEHOLDER detected — restoring D70 from git history…")
 
-# ── Restore D70 from HEAD~1 (Vercel shallow clone always has HEAD~1) ──────
-r = subprocess.run(['git', '--no-pager', 'show', 'HEAD~1:' + WAR_DATA],
-                   capture_output=True, text=True)
-if r.returncode != 0:
-    # fallback: try specific D70 hash
-    r = subprocess.run(['git', '--no-pager', 'show',
-                        '2385d9f:' + WAR_DATA],
+# ── Try multiple commits to find valid D70 JSON ────────────────────────────
+D70_HASH = '2385d9f'  # commit with correct D70 war-data.json
+candidates = [D70_HASH, 'HEAD~1', 'HEAD~2', 'HEAD~3']
+d = None
+for ref in candidates:
+    r = subprocess.run(['git', '--no-pager', 'show', f'{ref}:{WAR_DATA}'],
                        capture_output=True, text=True)
-if r.returncode != 0:
-    print(f"apply-d71.py: ERROR: could not retrieve D70 data\n{r.stderr}",
+    if r.returncode != 0:
+        continue
+    try:
+        d = json.loads(r.stdout)
+        print(f"apply-d71.py: D70 restored from {ref} (lastUpdated={d['meta']['lastUpdated']})")
+        break
+    except (json.JSONDecodeError, KeyError):
+        print(f"apply-d71.py: {ref} content is not valid war-data JSON, skipping…")
+        continue
+
+if d is None:
+    print("apply-d71.py: ERROR: could not retrieve valid D70 data from any ref",
           file=sys.stderr)
     sys.exit(1)
 
-d = json.loads(r.stdout)
-print("apply-d71.py: D70 restored, applying D71 additions…")
+# Guard: ensure we're applying on D70 (70 rows), not some other state
+if len(d.get('dailyRows', [])) != 70:
+    n = len(d.get('dailyRows', []))
+    print(f"apply-d71.py: WARNING: expected 70 dailyRows but got {n}; skipping apply.")
+    sys.exit(0)
+
+print("apply-d71.py: applying D71 additions…")
 
 # ── D71 standard arrays (70 → 71) ─────────────────────────────────────────
 d['dailySeries']['labels'].append('May 09')
@@ -116,17 +130,17 @@ d['dailyRows'].append({
     )
 })
 
-# ── Meta ──────────────────────────────────────────────────────────────────────────
+# ── Meta ──────────────────────────────────────────────────────────────────
 d['meta']['lastUpdated'] = '2026-05-09T18:00:00-04:00'
 d['meta']['notes'].insert(0,
     "D71 (May 09): KHARG ISLAND OIL SPILL — 80k-bbl slick at Iran's main crude terminal; "
     "US fires on 2 more Iranian tankers; Araghchi condemns US 'reckless military adventure'; "
     "Iran MOU response overdue; Vance-Qatar PM: 'high probability' of deal; "
     "Trump-Xi summit (May 14-15) now hard deadline; Brent $101.65 est (wknd carry); "
-    "zero Iranian offensive strikes D41-D71 streak"
+    "zero Iranian offensive strikes D41–D71 streak"
 )
 
-# ── Write ──────────────────────────────────────────────────────────────────────────
+# ── Write ──────────────────────────────────────────────────────────────────
 with open(WAR_DATA, 'w') as f:
     json.dump(d, f, indent=2)
 
