@@ -511,5 +511,462 @@
         ]
       }
     ]
+  },
+  {
+    "date": "2026-05-09",
+    "engineVersion": "0.2.0",
+    "spec_version": "v8",
+    "captured_at": "2026-05-09T11:17:21.780547+00:00",
+    "questions": [
+      {
+        "id": "A1",
+        "probability": 0.4,
+        "credible_interval_80": [
+          0.25,
+          0.58
+        ],
+        "icd203_label": "unlikely",
+        "category": "diplomatic_resolution",
+        "stakeholder_tags": [
+          "us_foreign_policy",
+          "iran_regime_survival",
+          "oil_energy_markets"
+        ]
+      },
+      {
+        "id": "A2",
+        "probability": 0.3,
+        "credible_interval_80": [
+          0.15,
+          0.48
+        ],
+        "icd203_label": "unlikely",
+        "category": "diplomatic_resolution",
+        "stakeholder_tags": [
+          "oil_energy_markets",
+          "regional_security"
+        ]
+      },
+      {
+        "id": "A3",
+        "probability": 0.08,
+        "credible_interval_80": [
+          0.03,
+          0.18
+        ],
+        "icd203_label": "very_unlikely",
+        "category": "diplomatic_resolution",
+        "stakeholder_tags": [
+          "us_foreign_policy",
+          "oil_energy_markets",
+          "regional_security"
+        ]
+      },
+      {
+        "id": "A4",
+        "probability": 0.55,
+        "credible_interval_80": [
+          0.38,
+          0.72
+        ],
+        "icd203_label": "roughly_even_chance",
+        "category": "diplomatic_resolution",
+        "stakeholder_tags": [
+          "us_foreign_policy",
+          "iran_regime_survival"
+        ]
+      },
+      {
+        "id": "A5",
+        "probability": 0.1,
+        "credible_interval_80": [
+          0.03,
+          0.22
+        ],
+        "icd203_label": "very_unlikely",
+        "category": "diplomatic_resolution",
+        "stakeholder_tags": [
+          "iran_regime_survival",
+          "us_foreign_policy"
+        ]
+      },
+      {
+        "id": "B1",
+        "probability": 1.0,
+        "credible_interval_80": [
+          1.0,
+          1.0
+        ],
+        "icd203_label": "very_likely",
+        "category": "military_escalation",
+        "stakeholder_tags": [
+          "us_foreign_policy",
+          "regional_security",
+          "oil_energy_markets"
+        ]
+      },
+      {
+        "id": "B2",
+        "probability": 1.0,
+        "credible_interval_80": [
+          1.0,
+          1.0
+        ],
+        "icd203_label": "very_likely",
+        "category": "military_escalation",
+        "stakeholder_tags": [
+          "us_foreign_policy",
+          "regional_security",
+          "oil_energy_markets"
+        ]
+      },
+      {
+        "id": "B3",
+        "probability": 0.15,
+        "credible_interval_80": [
+          0.06,
+          0.3
+        ],
+        "icd203_label": "very_unlikely",
+        "category": "military_escalation",
+        "stakeholder_tags": [
+          "regional_security",
+          "us_foreign_policy",
+          "oil_energy_markets"
+        ]
+      },
+      {
+        "id": "B4",
+        "probability": 0.33,
+        "credible_interval_80": [
+          0.2,
+          0.48
+        ],
+        "icd203_label": "unlikely",
+        "category": "military_escalation",
+        "stakeholder_tags": [
+          "regional_security",
+          "oil_energy_markets"
+        ]
+      },
+      {
+        "id": "B5",
+        "probability": 1.0,
+        "credible_interval_80": [
+          1.0,
+          1.0
+        ],
+        "icd203_label": "very_likely",
+        "category": "military_escalation",
+        "stakeholder_tags": [
+          "oil_energy_markets",
+          "regional_security"
+        ]
+      },
+      {
+        "id": "C1",
+        "probability": 1.0,
+        "credible_interval_80": [
+          1.0,
+          1.0
+        ],
+        "icd203_label": "very_likely",
+        "category": "regime_leadership",
+        "stakeholder_tags": [
+          "iran_regime_survival",
+          "us_foreign_policy"
+        ]
+      },
+      {
+        "id": "C2",
+        "probability": 0.4,
+        "credible_interval_80": [
+          0.22,
+          0.6
+        ],
+        "icd203_label": "unlikely",
+        "category": "regime_leadership",
+        "stakeholder_tags": [
+          "iran_regime_survival"
+        ]
+      },
+      {
+        "id": "C3",
+        "probability": 1.0,
+        "credible_interval_80": [
+          1.0,
+          1.0
+        ],
+        "icd203_label": "very_likely",
+        "category": "regime_leadership",
+        "stakeholder_tags": [
+          "iran_regime_survival"
+        ]
+      },
+      {
+        "id": "C4",
+        "probability": 0.25,
+        "credible_interval_80": [
+          0.12,
+          0.4
+        ],
+        "icd203_label": "unlikely",
+        "category": "regime_leadership",
+        "stakeholder_tags": [
+          "iran_regime_survival"
+        ]
+      },
+      {
+        "id": "D1",
+        "probability": 0.62,
+        "credible_interval_80": [
+          0.42,
+          0.78
+        ],
+        "icd203_label": "likely",
+        "category": "economic_structural",
+        "stakeholder_tags": [
+          "iran_regime_survival"
+        ]
+      },
+      {
+        "id": "D2",
+        "probability": 0.48,
+        "credible_interval_80": [
+          0.3,
+          0.66
+        ],
+        "icd203_label": "roughly_even_chance",
+        "category": "economic_structural",
+        "stakeholder_tags": [
+          "iran_regime_survival",
+          "oil_energy_markets"
+        ]
+      },
+      {
+        "id": "D3",
+        "probability": 0.78,
+        "credible_interval_80": [
+          0.6,
+          0.9
+        ],
+        "icd203_label": "likely",
+        "category": "economic_structural",
+        "stakeholder_tags": [
+          "us_foreign_policy"
+        ]
+      },
+      {
+        "id": "D4",
+        "probability": 0.2,
+        "credible_interval_80": [
+          0.1,
+          0.36
+        ],
+        "icd203_label": "unlikely",
+        "category": "economic_structural",
+        "stakeholder_tags": [
+          "oil_energy_markets",
+          "us_foreign_policy"
+        ]
+      },
+      {
+        "id": "E1",
+        "probability": 0.3,
+        "credible_interval_80": [
+          0.18,
+          0.45
+        ],
+        "icd203_label": "unlikely",
+        "category": "us_side",
+        "stakeholder_tags": [
+          "us_foreign_policy"
+        ]
+      },
+      {
+        "id": "E2",
+        "probability": 0.58,
+        "credible_interval_80": [
+          0.42,
+          0.72
+        ],
+        "icd203_label": "likely",
+        "category": "us_side",
+        "stakeholder_tags": [
+          "us_foreign_policy"
+        ]
+      },
+      {
+        "id": "F1",
+        "probability": 0.18,
+        "credible_interval_80": [
+          0.07,
+          0.35
+        ],
+        "icd203_label": "unlikely",
+        "category": "family_business_iranfarhang",
+        "stakeholder_tags": [
+          "omid_personal",
+          "iranfarhang_business"
+        ]
+      },
+      {
+        "id": "F2",
+        "probability": 0.3,
+        "credible_interval_80": [
+          0.15,
+          0.5
+        ],
+        "icd203_label": "unlikely",
+        "category": "family_business_iranfarhang",
+        "stakeholder_tags": [
+          "omid_personal",
+          "iranfarhang_business"
+        ]
+      },
+      {
+        "id": "F3",
+        "probability": 0.5,
+        "credible_interval_80": [
+          0.3,
+          0.7
+        ],
+        "icd203_label": "roughly_even_chance",
+        "category": "family_business_iranfarhang",
+        "stakeholder_tags": [
+          "omid_personal",
+          "iranfarhang_business"
+        ]
+      },
+      {
+        "id": "F4",
+        "probability": 0.45,
+        "credible_interval_80": [
+          0.25,
+          0.66
+        ],
+        "icd203_label": "roughly_even_chance",
+        "category": "family_business_iranfarhang",
+        "stakeholder_tags": [
+          "omid_personal",
+          "iranfarhang_business"
+        ]
+      },
+      {
+        "id": "F5",
+        "probability": 0.1,
+        "credible_interval_80": [
+          0.03,
+          0.22
+        ],
+        "icd203_label": "very_unlikely",
+        "category": "family_business_iranfarhang",
+        "stakeholder_tags": [
+          "omid_personal",
+          "iranfarhang_business"
+        ]
+      },
+      {
+        "id": "F6",
+        "probability": 0.55,
+        "credible_interval_80": [
+          0.35,
+          0.75
+        ],
+        "icd203_label": "likely",
+        "category": "family_business_iranfarhang",
+        "stakeholder_tags": [
+          "omid_personal",
+          "iranfarhang_business"
+        ]
+      },
+      {
+        "id": "F7",
+        "probability": 0.28,
+        "credible_interval_80": [
+          0.14,
+          0.45
+        ],
+        "icd203_label": "unlikely",
+        "category": "family_business_kipa",
+        "stakeholder_tags": [
+          "omid_personal",
+          "kipa_business",
+          "oil_energy_markets"
+        ]
+      },
+      {
+        "id": "F8",
+        "probability": 0.5,
+        "credible_interval_80": [
+          0.3,
+          0.7
+        ],
+        "icd203_label": "roughly_even_chance",
+        "category": "family_business_kipa",
+        "stakeholder_tags": [
+          "omid_personal",
+          "kipa_business",
+          "iran_regime_survival"
+        ]
+      },
+      {
+        "id": "F9",
+        "probability": 0.4,
+        "credible_interval_80": [
+          0.2,
+          0.62
+        ],
+        "icd203_label": "unlikely",
+        "category": "family_business_kipa",
+        "stakeholder_tags": [
+          "omid_personal",
+          "kipa_business"
+        ]
+      },
+      {
+        "id": "F10",
+        "probability": 0.15,
+        "credible_interval_80": [
+          0.05,
+          0.32
+        ],
+        "icd203_label": "very_unlikely",
+        "category": "family_business_kipa",
+        "stakeholder_tags": [
+          "omid_personal",
+          "kipa_business"
+        ]
+      },
+      {
+        "id": "F11",
+        "probability": 0.32,
+        "credible_interval_80": [
+          0.16,
+          0.52
+        ],
+        "icd203_label": "unlikely",
+        "category": "family_business_kipa",
+        "stakeholder_tags": [
+          "omid_personal",
+          "kipa_business"
+        ]
+      },
+      {
+        "id": "F12",
+        "probability": 0.38,
+        "credible_interval_80": [
+          0.2,
+          0.58
+        ],
+        "icd203_label": "unlikely",
+        "category": "family_business_kipa",
+        "stakeholder_tags": [
+          "omid_personal",
+          "kipa_business",
+          "oil_energy_markets"
+        ]
+      }
+    ]
   }
 ]
