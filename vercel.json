@@ -1,4 +1,6 @@
 {
+  "buildCommand": "python3 legacy/apply-d71.py",
+  "outputDirectory": ".",
   "cleanUrls": false,
   "rewrites": [
     { "source": "/legacy", "destination": "/legacy/index.html" },
