@@ -174,16 +174,17 @@ def test_render_public_actually_strips_private_content():
 
 
 def test_base_case_renders_when_present():
-    """Base-case section must appear above the question board when metadata
-    has base_case_narrative populated. The portfolio.yaml currently has it
-    populated; the rendered HTML must show the section."""
+    """Base-case still renders, but now inside the collapsible "About this page"
+    block at the bottom (post-Morning-Brief redesign per 2026-05-15 spec). It
+    must appear AFTER the question board, not before."""
     portfolio = render.load_portfolio()
     html = render.render_html(portfolio, [], history=[], stripped=False)
     assert 'class="basecase"' in html, "base-case section missing on private render"
     assert 'class="basecase-h"' in html
-    # Order: base-case must appear BEFORE the question board
-    assert html.index('class="basecase"') < html.index('class="board"'), (
-        "base-case must render above the question board"
+    assert 'class="about-this-page"' in html, "about-this-page collapsible block missing"
+    # Order: base-case is inside the About block, which sits AFTER the board.
+    assert html.index('class="board"') < html.index('class="basecase"'), (
+        "base-case must render below the question board now (in About block)"
     )
 
 

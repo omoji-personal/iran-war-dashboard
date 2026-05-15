@@ -5,6 +5,7 @@ description = "Iran-US Conflict Predictive Agent — Brier-scoreable discrete-ev
 requires-python = ">=3.10"
 dependencies = [
     "pyyaml>=6.0",
+    "feedparser>=6.0",
 ]
 
 [project.optional-dependencies]

@@ -28,12 +28,22 @@ QUEUE_PATH = REPO_ROOT / "agent" / "operator-queue.md"
 HISTORY_PATH = REPO_ROOT / "portfolio_history.json"
 SOURCES_SHIFTED_DIR = REPO_ROOT / "logs" / "sources-shifted"
 EVENTS_DIR = REPO_ROOT / "logs" / "events"
+BRIEFING_DIR = REPO_ROOT / "agent"
 OUTPUT_INDEX = REPO_ROOT / "index.html"
 OUTPUT_INDEX_FA = REPO_ROOT / "fa.html"
 OUTPUT_PUBLIC = REPO_ROOT / "public.html"
 OUTPUT_PUBLIC_FA = REPO_ROOT / "public.fa.html"
 
 LANGS = ("en", "fa")
+
+# Stale-warning thresholds (hours) for the morning-brief overnight strip.
+BRIEF_FRESH_MAX_HOURS = 24
+BRIEF_AGING_MAX_HOURS = 36
+
+# Fallback string used when an LLM-supplied mover "why" doesn't reference any
+# event in the briefing's events list. See ground_movers().
+MOVER_FALLBACK_WHY = "(no event-grounded explanation generated this tick)"
+MOVER_FALLBACK_WHY_FA = "(دلیلی مستند به رویداد در این تیک ساخته نشد)"
 
 # Visitor-facing chrome strings — section labels, button text, etc.
 # Question content (question text + notes) lives in portfolio.yaml; it stays
@@ -826,6 +836,414 @@ def _is_private_question(q: dict) -> bool:
     return any(t in PRIVATE_STAKEHOLDER_TAGS for t in q.get("stakeholder_tags", []))
 
 
+# ---------------------------------------------------------------------------
+# Morning Brief — daily-freshening top-of-page block (see
+# docs/superpowers/specs/2026-05-15-morning-briefing-design.md)
+# ---------------------------------------------------------------------------
+
+def load_briefing(today_iso: str | None = None) -> dict | None:
+    """Load today's briefing JSON if present. Returns None if missing/unparseable."""
+    if today_iso is None:
+        today_iso = datetime.now(timezone.utc).strftime("%Y-%m-%d")
+    path = BRIEFING_DIR / f"briefing-{today_iso}.json"
+    if not path.exists():
+        # Fallback: most recent briefing-*.json so the page can still render
+        # the (potentially stale) last-known good content.
+        candidates = sorted(BRIEFING_DIR.glob("briefing-*.json"))
+        if not candidates:
+            return None
+        path = candidates[-1]
+    try:
+        return json.loads(path.read_text())
+    except (json.JSONDecodeError, OSError):
+        return None
+
+
+def cron_failed_flag_present() -> bool:
+    """True iff a cron-failed-*.flag file exists at repo root."""
+    return bool(list(REPO_ROOT.glob("cron-failed-*.flag")))
+
+
+def briefing_freshness_state(
+    briefing: dict | None,
+    *,
+    flag_present: bool,
+    now: datetime | None = None,
+) -> tuple[str, int | None]:
+    """Return (state, hours_since_tick).
+
+    state: 'fresh' | 'aging' | 'stale'
+    - 'stale' if briefing is None OR flag_present OR >36h old
+    - 'aging' if 24h < age <= 36h
+    - 'fresh' otherwise
+    """
+    if briefing is None:
+        return "stale", None
+    if flag_present:
+        ts = briefing.get("tick_timestamp_utc")
+        hours = _briefing_age_hours(ts, now=now) if ts else None
+        return "stale", hours
+    ts = briefing.get("tick_timestamp_utc")
+    if not ts:
+        return "stale", None
+    hours = _briefing_age_hours(ts, now=now)
+    if hours is None:
+        return "stale", None
+    if hours > BRIEF_AGING_MAX_HOURS:
+        return "stale", hours
+    if hours > BRIEF_FRESH_MAX_HOURS:
+        return "aging", hours
+    return "fresh", hours
+
+
+def _briefing_age_hours(ts_iso: str, *, now: datetime | None = None) -> int | None:
+    try:
+        ts = datetime.fromisoformat(ts_iso.replace("Z", "+00:00"))
+    except (TypeError, ValueError, AttributeError):
+        return None
+    if ts.tzinfo is None:
+        ts = ts.replace(tzinfo=timezone.utc)
+    now = now or datetime.now(timezone.utc)
+    delta = now - ts
+    return max(0, int(delta.total_seconds() // 3600))
+
+
+def sanitize_events(events: list[dict], *, stripped: bool) -> list[dict]:
+    """Drop events without a URL; in the public variant, also drop public_safe=false items."""
+    out = []
+    for e in events or []:
+        url = (e.get("url") or "").strip()
+        if not url:
+            continue
+        if stripped and not e.get("public_safe", False):
+            continue
+        out.append(e)
+    return out
+
+
+# IDs of questions that are private — used for mover scrubbing in the public variant.
+# Mirrors PRIVATE_CATEGORIES + PRIVATE_STAKEHOLDER_TAGS via a startswith heuristic
+# (F-prefixed question IDs are the family-business set in the current portfolio).
+_PRIVATE_QID_PREFIXES = ("F",)
+
+
+def _is_private_qid(qid: str) -> bool:
+    return any(qid.startswith(p) for p in _PRIVATE_QID_PREFIXES)
+
+
+def ground_movers(
+    movers: list[dict],
+    events: list[dict],
+    *,
+    stripped: bool = False,
+    lang: str = "en",
+) -> list[dict]:
+    """Verify each mover's `why` references something in the events list.
+
+    For each mover:
+    - If `stripped` and the qid is private OR public_safe=false, drop it.
+    - If no event headline/summary contains a meaningful overlap with `why`,
+      replace `why` with the fallback string.
+    """
+    fallback = MOVER_FALLBACK_WHY_FA if lang == "fa" else MOVER_FALLBACK_WHY
+    event_blob = " ".join(
+        (e.get("headline", "") + " " + e.get("summary", "")).lower()
+        for e in events or []
+    )
+
+    out: list[dict] = []
+    for m in movers or []:
+        qid = m.get("qid", "")
+        if stripped and (_is_private_qid(qid) or not m.get("public_safe", False)):
+            continue
+        why = (m.get("why") or "").strip()
+        if not why:
+            grounded_why = fallback
+        else:
+            grounded_why = why if _why_grounded_in_events(why, event_blob) else fallback
+        new = dict(m)
+        new["why"] = grounded_why
+        out.append(new)
+    return out
+
+
+# Common stopwords filtered out of "why" tokens before grounding check.
+_GROUNDING_STOPWORDS = {
+    "the", "a", "an", "to", "of", "in", "on", "at", "and", "or", "but",
+    "by", "for", "with", "without", "from", "as", "is", "are", "was", "were",
+    "be", "been", "has", "have", "had", "do", "does", "did", "this", "that",
+    "these", "those", "it", "its", "than", "then", "so", "if", "into", "over",
+    "under", "out", "off", "up", "down", "new", "old", "still", "just", "more",
+    "less", "after", "before", "during", "while", "since", "until", "per",
+}
+
+
+def _why_grounded_in_events(why: str, event_blob_lower: str) -> bool:
+    """A `why` string is event-grounded if any non-stopword token from it
+    appears in the concatenated event headlines+summaries."""
+    if not event_blob_lower.strip():
+        return False
+    tokens = [
+        t.lower()
+        for t in re.split(r"[^\w'-]+", why)
+        if len(t) >= 4 and t.lower() not in _GROUNDING_STOPWORDS
+    ]
+    if not tokens:
+        return False
+    return any(t in event_blob_lower for t in tokens)
+
+
+_BRIEF_STRINGS = {
+    "en": {
+        "strip_day": "Day",
+        "strip_events": "events overnight",
+        "strip_moves": "probability moves",
+        "strip_fresh": "cron OK",
+        "strip_aging": "cron last refreshed",
+        "strip_stale": "cron has not refreshed",
+        "strip_hours_ago_suffix": "h ago",
+        "stale_banner_prefix": "Last update",
+        "partial_notice": "Briefing truncated — partial data only",
+        "movers_h": "What moved",
+        "movers_empty": "No probability moves since the last update.",
+        "events_h": "What happened overnight",
+        "events_empty": "No verified overnight events.",
+        "read_h": "The read",
+        "more_info": "More:",
+        "delta_pp": "pp",
+    },
+    "fa": {
+        "strip_day": "روز",
+        "strip_events": "رویداد در ۲۴ ساعت",
+        "strip_moves": "تغییر احتمال",
+        "strip_fresh": "کرون فعال",
+        "strip_aging": "آخرین به‌روزرسانی کرون",
+        "strip_stale": "کرون به‌روز نشده است",
+        "strip_hours_ago_suffix": " ساعت پیش",
+        "stale_banner_prefix": "آخرین به‌روزرسانی",
+        "partial_notice": "بریفینگ ناقص — داده‌ها بخشی هستند",
+        "movers_h": "چه چیزی حرکت کرد",
+        "movers_empty": "از آخرین به‌روزرسانی، تغییری در احتمال‌ها رخ نداده است.",
+        "events_h": "رویدادهای دیشب",
+        "events_empty": "رویداد تأیید‌شده‌ای دیشب ثبت نشد.",
+        "read_h": "خوانش امروز",
+        "more_info": "بیشتر:",
+        "delta_pp": "واحد درصد",
+    },
+}
+
+
+def _bs(key: str, lang: str) -> str:
+    return _BRIEF_STRINGS.get(lang, _BRIEF_STRINGS["en"]).get(key, key)
+
+
+def _render_brief_strip(state: str, hours: int | None, briefing: dict | None, lang: str) -> str:
+    """The single horizontal row at the top of the Morning Brief block."""
+    if briefing is None:
+        day = "?"
+        events_count = 0
+        moves_count = 0
+        tick_label = ""
+    else:
+        day = str(briefing.get("day_number", "?"))
+        if lang == "fa":
+            day = _to_fa_digits(day)
+        events_count = briefing.get("events_count_24h", 0)
+        moves_count = briefing.get("probability_moves_24h", 0)
+        ts = briefing.get("tick_timestamp_utc", "")
+        try:
+            dt = datetime.fromisoformat(ts.replace("Z", "+00:00")) if ts else None
+        except (ValueError, AttributeError):
+            dt = None
+        tick_label = dt.strftime("%Y-%m-%d %H:%M UTC") if dt else ""
+        if lang == "fa" and tick_label:
+            tick_label = _to_fa_digits(tick_label)
+
+    state_class = f"brief-strip-{state}"
+    state_text_key = {"fresh": "strip_fresh", "aging": "strip_aging", "stale": "strip_stale"}[state]
+    hours_text = ""
+    if hours is not None:
+        hours_str = _to_fa_digits(str(hours)) if lang == "fa" else str(hours)
+        hours_text = f" · {hours_str}{esc(_bs('strip_hours_ago_suffix', lang))}"
+
+    if state == "stale":
+        # Loud banner — overrides the normal stat row.
+        if briefing is None:
+            inner = f"<strong>{esc(_bs('strip_stale', lang))}</strong>{esc(hours_text)}"
+        else:
+            tick_disp = esc(tick_label) if tick_label else "—"
+            inner = (
+                f"<strong>{esc(_bs('strip_stale', lang))}{esc(hours_text)}</strong>"
+                f" · {esc(_bs('stale_banner_prefix', lang))}: {tick_disp}"
+            )
+        return f'<div class="brief-strip {state_class}" role="status">{inner}</div>'
+
+    day_str_disp = _to_fa_digits(day) if lang == "fa" else day
+    events_str = _to_fa_digits(str(events_count)) if lang == "fa" else str(events_count)
+    moves_str = _to_fa_digits(str(moves_count)) if lang == "fa" else str(moves_count)
+    return (
+        f'<div class="brief-strip {state_class}" role="status">'
+        f'<span class="brief-strip-day">{esc(_bs("strip_day", lang))} {esc(day_str_disp)}</span>'
+        f'<span class="brief-strip-sep">·</span>'
+        f'<span class="brief-strip-events">{esc(events_str)} {esc(_bs("strip_events", lang))}</span>'
+        f'<span class="brief-strip-sep">·</span>'
+        f'<span class="brief-strip-moves">{esc(moves_str)} {esc(_bs("strip_moves", lang))}</span>'
+        f'<span class="brief-strip-sep">·</span>'
+        f'<span class="brief-strip-status">{esc(_bs(state_text_key, lang))}{esc(hours_text)}</span>'
+        f'</div>'
+    )
+
+
+def _render_brief_read(briefing: dict | None, lang: str) -> str:
+    if briefing is None:
+        return ""
+    block = (briefing.get(lang) or briefing.get("en") or {})
+    paragraphs = block.get("read_paragraphs") or []
+    if not paragraphs:
+        return ""
+    paras_html = "\n".join(f"<p class=\"brief-read-p\">{esc(p)}</p>" for p in paragraphs)
+    return (
+        f'<section class="brief-read" role="region" aria-label="{esc(_bs("read_h", lang))}">'
+        f'<div class="brief-read-eyebrow">{esc(_bs("read_h", lang))}</div>'
+        f'{paras_html}'
+        f'</section>'
+    )
+
+
+def _render_brief_movers(movers: list[dict], lang: str) -> str:
+    if not movers:
+        return (
+            f'<section class="brief-movers brief-movers-empty" role="region" '
+            f'aria-label="{esc(_bs("movers_h", lang))}">'
+            f'<div class="brief-movers-eyebrow">{esc(_bs("movers_h", lang))}</div>'
+            f'<p class="brief-empty-msg">{esc(_bs("movers_empty", lang))}</p>'
+            f'</section>'
+        )
+
+    rows = []
+    pp = _bs("delta_pp", lang)
+    for m in movers:
+        qid = esc(m.get("qid", ""))
+        direction = m.get("direction", "flat")
+        arrow = {"up": "▲", "down": "▼", "flat": "—"}.get(direction, "—")
+        dir_class = {"up": "mover-up", "down": "mover-down", "flat": "mover-flat"}.get(direction, "mover-flat")
+        delta = m.get("delta_pp", 0)
+        old = m.get("old", "")
+        new = m.get("new", "")
+        if lang == "fa":
+            delta_disp = _to_fa_digits(str(delta))
+            old_disp = _to_fa_digits(str(old))
+            new_disp = _to_fa_digits(str(new))
+        else:
+            delta_disp = str(delta)
+            old_disp = str(old)
+            new_disp = str(new)
+        why = esc(m.get("why", ""))
+        cite_url = m.get("citation_url") or ""
+        cite_html = (
+            f' <a class="brief-mover-cite" href="{esc(cite_url)}" target="_blank" rel="noopener">↗</a>'
+            if cite_url else ""
+        )
+        rows.append(
+            f'<li class="brief-mover-row {dir_class}">'
+            f'<span class="brief-mover-qid">{qid}</span>'
+            f'<span class="brief-mover-arrow">{arrow}</span>'
+            f'<span class="brief-mover-delta">{esc(delta_disp)}{esc(pp)}</span>'
+            f'<span class="brief-mover-vals">{esc(old_disp)}% → {esc(new_disp)}%</span>'
+            f'<span class="brief-mover-why">{why}{cite_html}</span>'
+            f'</li>'
+        )
+    return (
+        f'<section class="brief-movers" role="region" aria-label="{esc(_bs("movers_h", lang))}">'
+        f'<div class="brief-movers-eyebrow">{esc(_bs("movers_h", lang))}</div>'
+        f'<ul class="brief-mover-list">{"".join(rows)}</ul>'
+        f'</section>'
+    )
+
+
+def _render_brief_events(events: list[dict], lang: str) -> str:
+    if len(events) < 3:
+        return (
+            f'<section class="brief-events brief-events-empty" role="region" '
+            f'aria-label="{esc(_bs("events_h", lang))}">'
+            f'<div class="brief-events-eyebrow">{esc(_bs("events_h", lang))}</div>'
+            f'<p class="brief-empty-msg">{esc(_bs("events_empty", lang))}</p>'
+            f'</section>'
+        )
+    rows = []
+    for e in events[:8]:
+        headline = esc(e.get("headline", ""))
+        url = e.get("url", "")
+        source_name = esc(e.get("source_name", ""))
+        rows.append(
+            f'<li class="brief-event-row">'
+            f'<a class="brief-event-headline" href="{esc(url)}" target="_blank" rel="noopener">{headline}</a>'
+            f' <span class="brief-event-source">— {source_name}</span>'
+            f'</li>'
+        )
+    return (
+        f'<section class="brief-events" role="region" aria-label="{esc(_bs("events_h", lang))}">'
+        f'<div class="brief-events-eyebrow">{esc(_bs("events_h", lang))}</div>'
+        f'<ul class="brief-event-list">{"".join(rows)}</ul>'
+        f'</section>'
+    )
+
+
+def render_morning_brief(
+    briefing: dict | None,
+    *,
+    stripped: bool,
+    lang: str,
+    flag_present: bool,
+    now: datetime | None = None,
+) -> str:
+    """The fully-composed Morning Brief block (strip + read + movers + events)."""
+    state, hours = briefing_freshness_state(briefing, flag_present=flag_present, now=now)
+    strip_html = _render_brief_strip(state, hours, briefing, lang)
+
+    if briefing is None or state == "stale":
+        # Stale mode: render the strip + a single empty-state read block.
+        # Cards below still render from portfolio.yaml in render_html().
+        empty_msg = (
+            "بریفینگ تازه‌ای موجود نیست. کارت‌های پرسش در پایین همچنان از portfolio.yaml نمایش داده می‌شوند."
+            if lang == "fa"
+            else "No fresh briefing available. Question cards below still render from portfolio.yaml."
+        )
+        return (
+            f'<div class="morning-brief morning-brief-stale">'
+            f'{strip_html}'
+            f'<section class="brief-read brief-read-stale"><p class="brief-empty-msg">{esc(empty_msg)}</p></section>'
+            f'</div>'
+        )
+
+    block = (briefing.get(lang) or briefing.get("en") or {})
+    raw_movers = block.get("movers") or []
+    raw_events = block.get("events") or []
+    safe_events = sanitize_events(raw_events, stripped=stripped)
+    safe_movers = ground_movers(raw_movers, safe_events, stripped=stripped, lang=lang)
+
+    partial_notice = ""
+    if briefing.get("briefing_partial"):
+        partial_notice = (
+            f'<div class="brief-partial-notice" role="alert">'
+            f'<strong>{esc(_bs("partial_notice", lang))}</strong>'
+            f'</div>'
+        )
+
+    return (
+        f'<div class="morning-brief">'
+        f'{strip_html}'
+        f'{partial_notice}'
+        f'{_render_brief_read(briefing, lang)}'
+        f'{_render_brief_movers(safe_movers, lang)}'
+        f'{_render_brief_events(safe_events, lang)}'
+        f'</div>'
+    )
+
+
+# ---------------------------------------------------------------------------
+
+
 def _toggle_link(lang: str, stripped: bool) -> tuple[str, str]:
     """Returns (href, label) for the language-toggle link. Each rendered page
     points to its sibling-language file."""
@@ -926,6 +1344,34 @@ def render_html(portfolio: dict, diffs: list[dict], history: list[dict], strippe
     canonical_base = "https://iran-war-public.vercel.app/" if stripped else "https://iran-war-dashboard-murex.vercel.app/"
     canonical_url = canonical_base + ("fa.html" if lang == "fa" else "")
 
+    # Morning Brief block — replaces the old headline+frame+basecase+diff+top
+    # sections at the top of the page. Frame + base-case prose moves into a
+    # collapsible "About this page" footer below the question cards.
+    briefing = load_briefing()
+    flag_present = cron_failed_flag_present()
+    morning_brief_html = render_morning_brief(
+        briefing,
+        stripped=stripped,
+        lang=lang,
+        flag_present=flag_present,
+    )
+
+    # "About this page" — collapsible block holding evergreen frame + base case
+    # + methodology. Kept for readers who want the standing context, but no
+    # longer dominates the first viewport.
+    about_label = "About this page" if lang == "en" else "درباره‌ی این صفحه"
+    about_inner = "\n".join([
+        render_economic_war_frame(portfolio_view, lang=lang),
+        render_base_case(portfolio_view, stripped=stripped, lang=lang),
+        methodology_html,
+    ])
+    about_block_html = (
+        f'<details class="about-this-page">'
+        f'<summary class="about-this-page-summary">{esc(about_label)}</summary>'
+        f'<div class="about-this-page-body">{about_inner}</div>'
+        f'</details>'
+    )
+
     return f"""<!DOCTYPE html>
 <html lang="{esc(lang)}" dir="{esc(html_dir)}">
 <head>
@@ -984,21 +1430,13 @@ def render_html(portfolio: dict, diffs: list[dict], history: list[dict], strippe
       <div class="masthead-rule"></div>
     </header>
 
-    {render_headline_narrative(today, portfolio_view, stripped=stripped, lang=lang)}
-
-    {render_economic_war_frame(portfolio_view, lang=lang)}
-
-    {render_base_case(portfolio_view, stripped=stripped, lang=lang)}
-
-    {render_diff_panel(diffs_for_view, history, lang=lang)}
-
-    {render_top_question(top_q, last_q_by_id, history_present=bool(prior), lang=lang)}
+    {morning_brief_html}
 
     {render_question_board(by_cat, stripped=stripped, lang=lang)}
 
     {logs_html}
 
-    {methodology_html}
+    {about_block_html}
 
   </main>
 

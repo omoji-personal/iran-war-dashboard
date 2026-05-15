@@ -1,0 +1,141 @@
+{
+  "tick_date": "2026-05-15",
+  "tick_timestamp_utc": "2026-05-15T11:00:00+00:00",
+  "day_number": 77,
+  "cron_status": "ok",
+  "events_count_24h": 19,
+  "probability_moves_24h": 0,
+  "briefing_partial": false,
+  "en": {
+    "read_paragraphs": [
+      "Iran spent the day in active diplomatic mode, not kinetic. Foreign Minister Abbas Araghchi cycled through bilateral meetings in New Delhi — sitting with India's Jaishankar and Modi, South Africa's foreign minister, and the AALCO Secretary-General — while publicly framing the Strait of Hormuz as 'not closed' and Iran as its 'protector of security.' The UK pushed back on the other side with a fresh sanctions package, which Tehran called 'baseless.' Day 77 of the conflict is reading like a textbook economic-pressure-plus-diplomacy day, with the May 4 UAE barrage now ten days in the rearview.",
+      "The shape matches the standing frame: economic war continues, kinetic restraint holds. Hormuz transit language stayed defiant-but-de-escalatory — Araghchi's 'only responds to language of respect' line is the rhetorical envelope, not a threat. Iraq's parliament approved a new government with only 14 of 23 ministers filled, an unfilled-ministries pattern that Long War Journal attributes directly to ongoing Tehran-Washington disagreements over portfolios. Lebanon-Israel direct talks reached a third unprecedented round on borders and Hezbollah disarmament. Both stories say the same thing: regional bargaining is happening underneath the surface, and Iran's hand is in every one of them.",
+      "What to watch next 24h: any concrete Indian readout from the Araghchi-Modi meeting (oil, IT-corridor, sanctions workaround), any Treasury or OFAC follow-on to the UK package, and whether the Trump-Xi summit week produces a separate Iran channel readout. The 32 question cards below have not moved since May 6 — that staleness is on the operator, not on the briefing pipeline."
+    ],
+    "movers": [],
+    "events": [
+      {
+        "headline": "Araghchi: Strait of Hormuz is not closed, as far as we're concerned",
+        "source_name": "IRNA",
+        "url": "https://en.irna.ir/news/85841290/Araghchi-Strait-of-Hormuz-is-not-closed-as-far-as-we-re",
+        "published_at": "2026-05-15T13:21:00+00:00",
+        "public_safe": true
+      },
+      {
+        "headline": "Araghchi reiterates Iran's historical duty as protector of security in Hormuz",
+        "source_name": "IRNA",
+        "url": "https://en.irna.ir/news/85841304/Araghchi-reiterates-Iran-s-historical-duty-as-protector-of",
+        "published_at": "2026-05-15T15:14:00+00:00",
+        "public_safe": true
+      },
+      {
+        "headline": "Iran terms UK's fresh sanctions as baseless",
+        "source_name": "IRNA",
+        "url": "https://en.irna.ir/news/85841247/Iran-terms-UK-s-fresh-sanctions-as-baseless",
+        "published_at": "2026-05-15T13:52:00+00:00",
+        "public_safe": true
+      },
+      {
+        "headline": "Araghchi and Modi discuss war, regional security",
+        "source_name": "IRNA",
+        "url": "https://en.irna.ir/news/85841356/Araghchi-and-Modi-discuss-war-regional-security",
+        "published_at": "2026-05-15T18:30:00+00:00",
+        "public_safe": true
+      },
+      {
+        "headline": "Iran, India FMs discuss bilateral ties, regional developments, multilateral cooperation",
+        "source_name": "IRNA",
+        "url": "https://en.irna.ir/news/85841318/Iran-India-FMs-discuss-bilateral-ties-regional-developments",
+        "published_at": "2026-05-15T17:00:00+00:00",
+        "public_safe": true
+      },
+      {
+        "headline": "Araghchi holds talks with South African counterpart in New Delhi",
+        "source_name": "IRNA",
+        "url": "https://en.irna.ir/news/85841162/Araghchi-holds-talks-with-South-African-counterpart-in-New",
+        "published_at": "2026-05-15T08:45:00+00:00",
+        "public_safe": true
+      },
+      {
+        "headline": "Iraq forms new government with only 14 of 23 ministers",
+        "source_name": "Long War Journal",
+        "url": "https://www.longwarjournal.org/archives/2026/05/iraq-forms-new-government-with-only-14-of-23-ministers.php",
+        "published_at": "2026-05-15T15:26:00+00:00",
+        "public_safe": true
+      },
+      {
+        "headline": "In Talks with Israel, Lebanon is Walking a Thin Line",
+        "source_name": "War on the Rocks",
+        "url": "https://warontherocks.com/in-talks-with-israel-lebanon-is-walking-a-thin-line/",
+        "published_at": "2026-05-14T19:40:00+00:00",
+        "public_safe": true
+      }
+    ]
+  },
+  "fa": {
+    "read_paragraphs": [
+      "ایران امروز را در حالت دیپلماتیک فعال گذراند، نه نظامی. عباس عراقچی وزیر امور خارجه در نیودهلی دیدارهای دوجانبه‌ای داشت — با جیشانکار و مودی هند، با وزیر خارجه آفریقای جنوبی، و با دبیرکل آالکو — و در عین حال تنگه‌ی هرمز را «بسته نشده» و ایران را «نگهبان امنیت» آن معرفی کرد. در سوی دیگر، انگلستان بسته‌ی تازه‌ی تحریم را معرفی کرد و تهران آن را «بی‌اساس» خواند. روز ۷۷ نزاع، الگوی کلاسیک فشار اقتصادی به‌علاوه‌ی دیپلماسی را نشان می‌دهد، با موشک‌باران ۴ مه به امارات حالا ده روز در گذشته.",
+      "این شکل با چارچوب موجود همخوان است: جنگ اقتصادی ادامه دارد، خویشتنداری نظامی حفظ می‌شود. زبانِ ترددی هرمز همچنان «استوار اما تنش‌زدا» باقی ماند — جمله‌ی عراقچی «ایران فقط با زبان احترام پاسخ می‌دهد» چارچوب بلاغی است، نه تهدید. مجلس عراق دولت تازه را با تنها ۱۴ از ۲۳ وزیر تأیید کرد؛ این الگوی پست‌های پر نشده را Long War Journal مستقیماً به اختلاف تهران-واشنگتن بر سر سبد وزرا نسبت می‌دهد. مذاکرات مستقیم لبنان و اسرائیل به دور سوم بی‌سابقه رسید بر سر مرزها و خلع‌سلاح حزب‌الله. هر دو خبر یک حرف می‌زند: چانه‌زنی منطقه‌ای زیر سطح در جریان است، و دست ایران در همه‌ی این‌ها هست.",
+      "آنچه باید در ۲۴ ساعت آینده پایید: هرگونه گزارش رسمی هندی از دیدار عراقچی-مودی (نفت، کریدور IT، دور زدن تحریم)، هرگونه پیگیری از خزانه‌داری یا OFAC در پی بسته‌ی انگلستان، و این‌که آیا هفته‌ی نشست ترامپ-شی کانال جداگانه‌ای برای ایران تولید می‌کند. ۳۲ کارت پرسش پایین صفحه از ۶ مه حرکت نکرده — آن کهنگی برعهده‌ی اپراتور است، نه خط لوله‌ی بریفینگ."
+    ],
+    "movers": [],
+    "events": [
+      {
+        "headline": "عراقچی: تنگه‌ی هرمز از نظر ما بسته نیست",
+        "source_name": "ایرنا",
+        "url": "https://en.irna.ir/news/85841290/Araghchi-Strait-of-Hormuz-is-not-closed-as-far-as-we-re",
+        "published_at": "2026-05-15T13:21:00+00:00",
+        "public_safe": true
+      },
+      {
+        "headline": "عراقچی بر وظیفه‌ی تاریخی ایران به‌عنوان نگهبان امنیت هرمز تأکید کرد",
+        "source_name": "ایرنا",
+        "url": "https://en.irna.ir/news/85841304/Araghchi-reiterates-Iran-s-historical-duty-as-protector-of",
+        "published_at": "2026-05-15T15:14:00+00:00",
+        "public_safe": true
+      },
+      {
+        "headline": "ایران تحریم‌های تازه‌ی انگلستان را «بی‌اساس» خواند",
+        "source_name": "ایرنا",
+        "url": "https://en.irna.ir/news/85841247/Iran-terms-UK-s-fresh-sanctions-as-baseless",
+        "published_at": "2026-05-15T13:52:00+00:00",
+        "public_safe": true
+      },
+      {
+        "headline": "عراقچی و مودی درباره‌ی جنگ و امنیت منطقه‌ای گفت‌وگو کردند",
+        "source_name": "ایرنا",
+        "url": "https://en.irna.ir/news/85841356/Araghchi-and-Modi-discuss-war-regional-security",
+        "published_at": "2026-05-15T18:30:00+00:00",
+        "public_safe": true
+      },
+      {
+        "headline": "وزرای امور خارجه‌ی ایران و هند درباره‌ی روابط دوجانبه گفت‌وگو کردند",
+        "source_name": "ایرنا",
+        "url": "https://en.irna.ir/news/85841318/Iran-India-FMs-discuss-bilateral-ties-regional-developments",
+        "published_at": "2026-05-15T17:00:00+00:00",
+        "public_safe": true
+      },
+      {
+        "headline": "عراقچی با همتای آفریقای جنوبی در نیودهلی دیدار کرد",
+        "source_name": "ایرنا",
+        "url": "https://en.irna.ir/news/85841162/Araghchi-holds-talks-with-South-African-counterpart-in-New",
+        "published_at": "2026-05-15T08:45:00+00:00",
+        "public_safe": true
+      },
+      {
+        "headline": "عراق دولت تازه را با تنها ۱۴ از ۲۳ وزیر تشکیل داد",
+        "source_name": "Long War Journal",
+        "url": "https://www.longwarjournal.org/archives/2026/05/iraq-forms-new-government-with-only-14-of-23-ministers.php",
+        "published_at": "2026-05-15T15:26:00+00:00",
+        "public_safe": true
+      },
+      {
+        "headline": "در مذاکرات با اسرائیل، لبنان روی لبه‌ی باریک راه می‌رود",
+        "source_name": "War on the Rocks",
+        "url": "https://warontherocks.com/in-talks-with-israel-lebanon-is-walking-a-thin-line/",
+        "published_at": "2026-05-14T19:40:00+00:00",
+        "public_safe": true
+      }
+    ]
+  }
+}
