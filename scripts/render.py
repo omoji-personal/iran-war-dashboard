@@ -1235,8 +1235,10 @@ def render_morning_brief(
         f'{strip_html}'
         f'{partial_notice}'
         f'{_render_brief_read(briefing, lang)}'
+        f'<div class="brief-right-col">'
         f'{_render_brief_movers(safe_movers, lang)}'
         f'{_render_brief_events(safe_events, lang)}'
+        f'</div>'
         f'</div>'
     )
 

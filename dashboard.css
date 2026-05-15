@@ -3813,6 +3813,37 @@ body.agent-v2 .morning-brief {
   flex-direction: column;
   gap: 22px;
 }
+body.agent-v2 .brief-right-col {
+  display: flex;
+  flex-direction: column;
+  gap: 22px;
+}
+
+/* Wide-viewport editorial 2-column layout — read on the left,
+   movers + events stacked on the right. Strip + partial-notice
+   span full container width. Matches the existing 2-col rhythm
+   used by .headline + .frame at ≥1100px. */
+@media (min-width: 1100px) {
+  body.agent-v2 .morning-brief {
+    display: grid;
+    grid-template-columns: minmax(0, 1.25fr) minmax(0, 1fr);
+    grid-template-areas:
+      "strip   strip"
+      "partial partial"
+      "read    right";
+    column-gap: 56px;
+    row-gap: 28px;
+    align-items: start;
+  }
+  body.agent-v2 .morning-brief > .brief-strip { grid-area: strip; }
+  body.agent-v2 .morning-brief > .brief-partial-notice { grid-area: partial; }
+  body.agent-v2 .morning-brief > .brief-read { grid-area: read; }
+  body.agent-v2 .morning-brief > .brief-right-col { grid-area: right; }
+  /* Let the left column fill its column width; max-width on the
+     paragraph itself stops oversized line lengths on very wide
+     viewports. */
+  body.agent-v2 .brief-read-p { max-width: 64ch; }
+}
 
 /* Overnight strip — single row above everything else */
 body.agent-v2 .brief-strip {

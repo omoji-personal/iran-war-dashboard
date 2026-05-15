@@ -231,6 +231,26 @@ def test_render_morning_brief_strips_private_content_in_public_variant():
     assert "private-only" not in html
 
 
+def test_render_morning_brief_wraps_movers_and_events_in_right_column():
+    """Movers + events must share a single .brief-right-col wrapper so the
+    wide-viewport grid can place them on the right while the read fills the
+    left. The wrapper sits AFTER the read in source order so narrow screens
+    still flow read → movers → events."""
+    b = _briefing(events=[
+        {"headline": f"h{i}", "url": f"https://x.test/{i}", "source_name": "S", "public_safe": True}
+        for i in range(5)
+    ])
+    html = render.render_morning_brief(b, stripped=False, lang="en", flag_present=False)
+    assert "brief-right-col" in html, "right-column wrapper missing"
+    # Order: read must precede right-col, right-col must contain both movers + events
+    read_idx = html.index("brief-read")
+    right_idx = html.index("brief-right-col")
+    movers_idx = html.index("brief-movers")
+    events_idx = html.index("brief-events")
+    assert read_idx < right_idx, "read must precede right-col in source order"
+    assert right_idx < movers_idx < events_idx, "movers + events must live inside right-col"
+
+
 def test_render_morning_brief_shows_partial_notice_when_flagged():
     b = _briefing(briefing_partial=True, events=[
         {"headline": f"h{i}", "url": f"https://x.test/{i}", "source_name": "S", "public_safe": True}
