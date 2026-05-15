@@ -1,5 +1,5 @@
 {
-  "buildCommand": "python3 legacy/apply-d74.py",
+  "buildCommand": "",
   "outputDirectory": ".",
   "cleanUrls": false,
   "rewrites": [
