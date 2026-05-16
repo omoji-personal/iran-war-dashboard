@@ -1,0 +1,113 @@
+{
+  "tick_date": "2026-05-16",
+  "tick_timestamp_utc": "2026-05-16T11:05:37Z",
+  "day_number": 78,
+  "cron_status": "ok",
+  "events_count_24h": 6,
+  "probability_moves_24h": 0,
+  "briefing_partial": false,
+  "en": {
+    "read_paragraphs": [
+      "Day 78 opened on a sharp diplomatic clarification: Trump told Fox News Thursday night that Iran must \"make a deal or get annihilated,\" while simultaneously disclosing that Xi Jinping personally offered to help end the war and reopen Hormuz. The Xi angle matters because China's continued dependence on Gulf oil gives Beijing a genuine incentive to press Tehran — but Trump's annihilation framing also signals he is not softening his public posture heading into any weekend diplomatic activity. Iranian FM Araghchi responded by declaring a public deadlock on uranium enrichment, saying the nuclear program is off the table at this stage and will be deferred to a later negotiating phase.",
+      "On the ground, the Strait of Hormuz remains effectively closed to commercial traffic: open transits are near zero since May 6, per UANI's May 13 shipping update. Thirty-nine Iranian oil tankers are sitting west of the strait, and U.S. CENTCOM reports redirecting 67 commercial ships and disabling four since the blockade began. Kuwait separately arrested four alleged IRGC operatives after an armed exchange on Bubiyan Island on May 14, underscoring how proxy pressure has migrated to Gulf-state territory. The rial held at 1,810,000 IRR/USD on the open market May 15 — still roughly 10% below the 2,000,000 portfolio threshold.",
+      "What to watch in the next 24 hours: any Saturday Trump statement walking back (or doubling down on) the annihilation framing; whether Pakistan conveys Round 5 Oman scheduling; and any Indian readout from the Araghchi-Modi meeting that could clarify New Delhi's role as an economic lifeline. The 45-day Israel-Lebanon ceasefire extension removes one escalation pressure valve. No portfolio probability moves today — operator has not edited since D74."
+    ],
+    "movers": [],
+    "events": [
+      {
+        "headline": "Trump: Iran must 'make a deal or get annihilated'; Xi offered to help end war",
+        "source_name": "CNBC / Fox News",
+        "url": "https://www.cnbc.com/2026/05/15/trump-xi-us-china-iran-war-deal.html",
+        "published_at": "2026-05-15T23:00:00Z",
+        "public_safe": true
+      },
+      {
+        "headline": "Araghchi: nuclear enrichment is a deadlock; question deferred to later negotiation stage",
+        "source_name": "Al Jazeera",
+        "url": "https://www.aljazeera.com/news/2026/5/10/why-is-iran-taking-time-to-respond-to-the-us-proposal-to-end-the-war",
+        "published_at": "2026-05-15T18:00:00Z",
+        "public_safe": true
+      },
+      {
+        "headline": "Commercial Hormuz transits near zero since May 6; 39 Iranian tankers west of strait; US redirected 67 ships",
+        "source_name": "UANI",
+        "url": "https://www.unitedagainstnucleariran.com/blog/iran-war-shipping-update-may-13-2026",
+        "published_at": "2026-05-13T16:00:00Z",
+        "public_safe": true
+      },
+      {
+        "headline": "Kuwait arrests 4 alleged IRGC operatives after armed clash on Bubiyan Island",
+        "source_name": "Jerusalem Post",
+        "url": "https://www.jpost.com/middle-east/iran-news/article-895926",
+        "published_at": "2026-05-14T14:00:00Z",
+        "public_safe": true
+      },
+      {
+        "headline": "Iran rial open-market rate: 1,810,000 IRR/USD on May 15 — below 2M portfolio threshold",
+        "source_name": "AlanChand",
+        "url": "https://alanchand.com/en/currencies-price/usd",
+        "published_at": "2026-05-15T12:00:00Z",
+        "public_safe": true
+      },
+      {
+        "headline": "Israel-Lebanon ceasefire extended 45 days; direct talks enter third round on borders and Hezbollah",
+        "source_name": "ABC News",
+        "url": "https://abcnews.com/International/live-updates/iran-live-updates-tehran-peace-talks-baghaei/?id=132837701",
+        "published_at": "2026-05-15T20:00:00Z",
+        "public_safe": true
+      }
+    ]
+  },
+  "fa": {
+    "read_paragraphs": [
+      "روز ۷۸ با یک توضیح دیپلماتیک تند آغاز شد: ترامپ شب پنجشنبه به فاکس‌نیوز گفت ایران باید «توافق کند یا نابود شود»، و در همان حال فاش کرد که شی جین‌پینگ شخصاً پیشنهاد کمک برای پایان دادن به جنگ و بازگشایی هرمز را مطرح کرده است. زاویه‌ی شی اهمیت دارد زیرا وابستگی مداوم چین به نفت خلیج فارس به پکن انگیزه‌ای واقعی برای فشار بر تهران می‌دهد — اما چارچوب «نابودی» ترامپ نیز نشان می‌دهد که او در آستانه‌ی هر فعالیت دیپلماتیک آخر هفته موضع عمومی خود را نرم نمی‌کند. عراقچی وزیر امور خارجه با اعلام بن‌بست عمومی درباره‌ی غنی‌سازی اورانیوم پاسخ داد و گفت برنامه‌ی هسته‌ای در این مرحله روی میز نیست و به مرحله‌ی بعدی موکول می‌شود.",
+      "در میدان، تنگه‌ی هرمز برای ترافیک تجاری عملاً بسته مانده است: ترددهای آزاد از ۶ مه به نزدیک صفر رسیده‌اند، بر اساس به‌روزرسانی UANI در ۱۳ مه. ۳۹ نفتکش ایرانی در غرب تنگه لنگر انداخته‌اند، و سنتکام آمریکا گزارش می‌دهد از آغاز محاصره ۶۷ کشتی تجاری را تغییر مسیر داده و چهار فروند را از کار انداخته است. کویت در ۱۴ مه چهار مظنون عضو سپاه را پس از درگیری مسلحانه در جزیره‌ی بوبیان دستگیر کرد — نشانه‌ای که فشار نیابتی به خاک کشورهای حاشیه‌ی خلیج کشیده شده. ریال در بازار آزاد در ۱۵ مه روی ۱٬۸۱۰٬۰۰۰ ریال به ازای هر دلار ماند — هنوز حدود ۱۰٪ زیر آستانه‌ی ۲٬۰۰۰٬۰۰۰ ریال در پرتفوی.",
+      "آنچه باید در ۲۴ ساعت آینده پایید: آیا ترامپ در بیانیه‌ی شنبه از ادبیات «نابودی» عقب‌نشینی می‌کند یا آن را تشدید می‌کند؛ آیا پاکستان زمان‌بندی دور پنجم عمان را اعلام می‌کند؛ و هر گزارش هندی از دیدار عراقچی-مودی. تمدید ۴۵ روزه‌ی آتش‌بس اسرائیل-لبنان یک دریچه‌ی فشار تشدید را می‌بندد. هیچ تغییری در احتمال‌های پرتفوی امروز رخ نداده — اپراتور از روز ۷۴ ویرایشی انجام نداده است."
+    ],
+    "movers": [],
+    "events": [
+      {
+        "headline": "ترامپ: ایران باید «توافق کند یا نابود شود»؛ شی پیشنهاد کمک داد",
+        "source_name": "CNBC / فاکس‌نیوز",
+        "url": "https://www.cnbc.com/2026/05/15/trump-xi-us-china-iran-war-deal.html",
+        "published_at": "2026-05-15T23:00:00Z",
+        "public_safe": true
+      },
+      {
+        "headline": "عراقچی: غنی‌سازی اورانیوم بن‌بست است؛ موضوع هسته‌ای به مرحله‌ی بعدی موکول شد",
+        "source_name": "الجزیره",
+        "url": "https://www.aljazeera.com/news/2026/5/10/why-is-iran-taking-time-to-respond-to-the-us-proposal-to-end-the-war",
+        "published_at": "2026-05-15T18:00:00Z",
+        "public_safe": true
+      },
+      {
+        "headline": "تردد تجاری هرمز از ۶ مه به نزدیک صفر رسید؛ ۳۹ نفتکش ایرانی در غرب تنگه؛ آمریکا ۶۷ کشتی را منحرف کرد",
+        "source_name": "UANI",
+        "url": "https://www.unitedagainstnucleariran.com/blog/iran-war-shipping-update-may-13-2026",
+        "published_at": "2026-05-13T16:00:00Z",
+        "public_safe": true
+      },
+      {
+        "headline": "کویت ۴ مظنون عضو سپاه را پس از درگیری مسلحانه در جزیره‌ی بوبیان بازداشت کرد",
+        "source_name": "جروزالم پست",
+        "url": "https://www.jpost.com/middle-east/iran-news/article-895926",
+        "published_at": "2026-05-14T14:00:00Z",
+        "public_safe": true
+      },
+      {
+        "headline": "نرخ ریال در بازار آزاد: ۱٬۸۱۰٬۰۰۰ ریال به ازای هر دلار در ۱۵ مه — زیر آستانه‌ی ۲ میلیون",
+        "source_name": "آلان‌چند",
+        "url": "https://alanchand.com/en/currencies-price/usd",
+        "published_at": "2026-05-15T12:00:00Z",
+        "public_safe": true
+      },
+      {
+        "headline": "آتش‌بس اسرائیل-لبنان ۴۵ روز تمدید شد؛ مذاکرات مستقیم وارد دور سوم شد",
+        "source_name": "ABC News",
+        "url": "https://abcnews.com/International/live-updates/iran-live-updates-tehran-peace-talks-baghaei/?id=132837701",
+        "published_at": "2026-05-15T20:00:00Z",
+        "public_safe": true
+      }
+    ]
+  }
+}

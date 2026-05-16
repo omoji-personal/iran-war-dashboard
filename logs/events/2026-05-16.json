@@ -1,0 +1,56 @@
+{
+  "tick_date": "2026-05-16",
+  "tick_timestamp_utc": "2026-05-16T11:05:37Z",
+  "max_age_hours": 24,
+  "items_count": 6,
+  "items": [
+    {
+      "title": "Trump tells Fox News Iran must 'make a deal or get annihilated'; says Xi offered to help end war",
+      "source": "web-search:Trump Iran statement today",
+      "source_name": "CNBC / Fox News",
+      "url": "https://www.cnbc.com/2026/05/15/trump-xi-us-china-iran-war-deal.html",
+      "published_at": "2026-05-15T23:00:00Z",
+      "summary": "Trump disclosed in a Fox News interview that Xi Jinping personally offered to help end the war and reopen Hormuz, while simultaneously warning Iran to 'make a deal or get annihilated.'"
+    },
+    {
+      "title": "Araghchi declares nuclear enrichment deadlock; says enrichment question deferred to later negotiating stage",
+      "source": "web-search:Tehran nuclear talks update",
+      "source_name": "Al Jazeera",
+      "url": "https://www.aljazeera.com/news/2026/5/10/why-is-iran-taking-time-to-respond-to-the-us-proposal-to-end-the-war",
+      "published_at": "2026-05-15T18:00:00Z",
+      "summary": "Iranian FM Araghchi stated Iran has reached a deadlock on uranium enrichment and the nuclear program is off the table at this stage, to be deferred to a later phase of negotiations."
+    },
+    {
+      "title": "UANI May 13 shipping update: commercial transits near zero; 39 Iranian tankers west of Hormuz; US redirected 67 ships",
+      "source": "web-search:Iran Hormuz shipping last 24 hours",
+      "source_name": "UANI",
+      "url": "https://www.unitedagainstnucleariran.com/blog/iran-war-shipping-update-may-13-2026",
+      "published_at": "2026-05-13T16:00:00Z",
+      "summary": "Open commercial transits have fallen to near zero since May 6; UANI satellite imagery identified 39 Iranian oil tankers near Chabahar; US CENTCOM reports redirecting 67 ships and disabling 4 since blockade began."
+    },
+    {
+      "title": "Kuwait arrests 4 alleged IRGC operatives after armed clash on Bubiyan Island",
+      "source": "web-search:IRGC Persian Gulf incident today",
+      "source_name": "Jerusalem Post",
+      "url": "https://www.jpost.com/middle-east/iran-news/article-895926",
+      "published_at": "2026-05-14T14:00:00Z",
+      "summary": "Kuwait captured four alleged IRGC-linked operatives who approached Bubiyan Island on a fishing vessel; one Kuwaiti service member was injured in the exchange of gunfire."
+    },
+    {
+      "title": "Iran rial open-market rate holds at 1,810,000 IRR/USD on May 15",
+      "source": "web-search:Iran rial today",
+      "source_name": "AlanChand",
+      "url": "https://alanchand.com/en/currencies-price/usd",
+      "published_at": "2026-05-15T12:00:00Z",
+      "summary": "USD/IRR open-market rate was 1,810,000 on May 15, 2026 — still roughly 190,000 rials below the 2,000,000 threshold tracked in the D1 and F8 portfolio questions."
+    },
+    {
+      "title": "Israel-Lebanon ceasefire extended 45 days; Lebanon-Israel direct talks enter third round",
+      "source": "web-search:Tehran nuclear talks update",
+      "source_name": "ABC News",
+      "url": "https://abcnews.com/International/live-updates/iran-live-updates-tehran-peace-talks-baghaei/?id=132837701",
+      "published_at": "2026-05-15T20:00:00Z",
+      "summary": "The Israel-Lebanon ceasefire was extended by 45 days; direct talks between Lebanon and Israel over borders and Hezbollah disarmament entered a third unprecedented round."
+    }
+  ]
+}
