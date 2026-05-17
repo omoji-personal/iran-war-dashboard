@@ -1,0 +1,113 @@
+{
+  "tick_date": "2026-05-17",
+  "tick_timestamp_utc": "2026-05-17T11:08:44Z",
+  "day_number": 79,
+  "cron_status": "ok",
+  "events_count_24h": 6,
+  "probability_moves_24h": 0,
+  "briefing_partial": false,
+  "en": {
+    "read_paragraphs": [
+      "Day 79 opened with the sharpest escalation signal since the ceasefire began: Trump returned from Beijing Saturday with no Iran deliverable from Xi Jinping and immediately posted a 'calm before the storm' image to social media — the phrase he used in 2017 ahead of military action. He also stated that the 'decimation' of Iran's army 'is to be continued,' suggesting resumed strikes are actively on the table. Prediction markets responded: Polymarket's 'Hormuz normal by May 31' sat at 4%, and the 'US invade Iran before 2027' contract traded at 30%. The ceasefire, already on life support since D72, now faces its most critical 48-hour window.",
+      "Iran is simultaneously widening its coercive toolkit. A CNN investigation published Sunday reveals that Iranian state-affiliated military spokesperson Ebrahim Zolfaghari threatened fees on internet traffic through undersea cables beneath the Strait of Hormuz, warning of disruption if tech companies refuse to pay. These cables carry less than 1% of global bandwidth but their disruption would compound the oil-chokepoint with a data-chokepoint, amplifying Iran's leverage at the very moment talks are deadlocked. On the economic front, the rial ticked up to 1,819,000 IRR/USD on May 17 — still 9% below the portfolio's 2,000,000 threshold (D1 question) but moving in the wrong direction.",
+      "Watch for a formal Trump statement Sunday or Monday — his 'calm before storm' post is either a negotiating feint or an operational signal, and the 48-hour read should clarify which. Manifold prices Mojtaba Khamenei's survival through year-end at 66%, indicating markets still assign meaningful leadership continuity risk. The nuclear deal by June 30 remains at 21% on both Polymarket and Manifold — aligned with portfolio A1 at 20%. No operator probability updates today; Phase 0 portfolio unchanged since D74."
+    ],
+    "movers": [],
+    "events": [
+      {
+        "headline": "Trump posts 'calm before the storm' after returning from China with no Iran breakthrough",
+        "source_name": "Times of Israel",
+        "url": "https://www.timesofisrael.com/liveblog-may-17-2026/",
+        "published_at": "2026-05-17T09:00:00Z",
+        "public_safe": true
+      },
+      {
+        "headline": "Iran threatens fees and disruption on Hormuz undersea internet cables — expanding coercive toolkit",
+        "source_name": "CNN",
+        "url": "https://www.cnn.com/2026/05/17/middleeast/iran-hormuz-undersea-cables-intl",
+        "published_at": "2026-05-17T08:00:00Z",
+        "public_safe": true
+      },
+      {
+        "headline": "Trump returns from China with no Iran breakthrough; decision on resumed strikes now active",
+        "source_name": "CNN",
+        "url": "https://www.cnn.com/2026/05/16/politics/iran-trump-china-military-strikes",
+        "published_at": "2026-05-16T22:00:00Z",
+        "public_safe": true
+      },
+      {
+        "headline": "Iran rial: 1,819,000 IRR/USD on May 17 — approaching but still 9% below 2M portfolio threshold",
+        "source_name": "AlanChand",
+        "url": "https://alanchand.com/en/currencies-price",
+        "published_at": "2026-05-17T11:08:44Z",
+        "public_safe": true
+      },
+      {
+        "headline": "Manifold: Mojtaba Khamenei survival through 2026 at 66%; Iran nuclear deal June 30 at 21%",
+        "source_name": "Manifold Markets",
+        "url": "https://manifold.markets/bens/us-iran-nuclear-deal-by-end-of-june",
+        "published_at": "2026-05-17T11:08:44Z",
+        "public_safe": true
+      },
+      {
+        "headline": "Polymarket: Hormuz normal by May 31 at 4%; US invasion of Iran before 2027 at 30%",
+        "source_name": "Polymarket",
+        "url": "https://polymarket.com/event/strait-of-hormuz-traffic-returns-to-normal-by-end-of-may",
+        "published_at": "2026-05-17T11:08:44Z",
+        "public_safe": true
+      }
+    ]
+  },
+  "fa": {
+    "read_paragraphs": [
+      "روز ۷۹ با تندترین سیگنال تشدید از آغاز آتش‌بس آغاز شد: ترامپ شنبه از پکن بازگشت بدون هیچ دستاوردی از دیدار با شی جین‌پینگ، و بلافاصله تصویری با کپشن «آرامش قبل از طوفان» در شبکه‌های اجتماعی منتشر کرد — همان عبارتی که در ۲۰۱۷ پیش از اقدام نظامی به کار برد. وی همچنین گفت «نابودی» ارتش ایران «ادامه خواهد داشت»، که نشان می‌دهد از سرگیری حملات به‌طور فعال روی میز است. بازارهای پیش‌بینی واکنش نشان دادند: پولیمارکت «عادی‌سازی هرمز تا پایان مه» را ۴٪ و قرارداد «تهاجم آمریکا به ایران تا ۲۰۲۷» را ۳۰٪ قیمت‌گذاری کرد. آتش‌بس، که از روز ۷۲ در وضعیت بحرانی بود، اینک وارد حساس‌ترین پنجره‌ی ۴۸ ساعته‌ی خود می‌شود.",
+      "ایران هم‌زمان ابزار اهرمی خود را گسترش می‌دهد. یک گزارش CNN در روز یکشنبه فاش کرد که سخنگوی نظامی وابسته به دولت، ابراهیم ذوالفقاری، اعلام کرد از شرکت‌های فناوری برای ترافیک اینترنتی از کابل‌های زیردریایی زیر تنگه هرمز کارمزد دریافت خواهد شد و در صورت امتناع به قطع ارتباط تهدید کرد. این کابل‌ها کمتر از ۱٪ پهنای باند جهانی را حمل می‌کنند، اما هرگونه اختلال یک اختناق داده را بر اختناق نفتی می‌افزاید — درست در لحظه‌ای که مذاکرات در بن‌بست است. از نظر اقتصادی، ریال در ۱۷ مه به ۱٬۸۱۹٬۰۰۰ ریال به ازای هر دلار رسید — هنوز ۹٪ زیر آستانه‌ی ۲ میلیون پرتفوی، اما در مسیر نادرست.",
+      "در ۲۴-۴۸ ساعت آینده منتظر اعلامیه رسمی ترامپ باشید — پست «آرامش قبل از طوفان» یا یک مانور چانه‌زنی است یا سیگنال عملیاتی، و قرائت این دو روز مشخص خواهد کرد. منیفولد احتمال زنده ماندن مجتبی خامنه‌ای تا پایان سال را ۶۶٪ می‌بیند. توافق هسته‌ای تا ۳۰ ژوئن روی ۲۱٪ مانده — همسو با A1 پرتفوی (۲۰٪). امروز هیچ تغییری در احتمال‌های پرتفوی ثبت نشد؛ فاز ۰ از روز ۷۴ بدون تغییر است."
+    ],
+    "movers": [],
+    "events": [
+      {
+        "headline": "ترامپ پس از بازگشت بی‌نتیجه از چین، تصویر «آرامش قبل از طوفان» منتشر کرد",
+        "source_name": "تایمز اوف ایزراییل",
+        "url": "https://www.timesofisrael.com/liveblog-may-17-2026/",
+        "published_at": "2026-05-17T09:00:00Z",
+        "public_safe": true
+      },
+      {
+        "headline": "ایران تهدید کرد کابل‌های اینترنتی زیردریایی هرمز را کنترل و از آن‌ها کارمزد دریافت خواهد کرد",
+        "source_name": "CNN",
+        "url": "https://www.cnn.com/2026/05/17/middleeast/iran-hormuz-undersea-cables-intl",
+        "published_at": "2026-05-17T08:00:00Z",
+        "public_safe": true
+      },
+      {
+        "headline": "ترامپ بدون پیشرفت در پرونده ایران از چین بازگشت؛ تصمیم درباره از سرگیری حملات فعال است",
+        "source_name": "CNN",
+        "url": "https://www.cnn.com/2026/05/16/politics/iran-trump-china-military-strikes",
+        "published_at": "2026-05-16T22:00:00Z",
+        "public_safe": true
+      },
+      {
+        "headline": "نرخ ریال در ۱۷ مه: ۱٬۸۱۹٬۰۰۰ ریال به ازای هر دلار — هنوز ۹٪ زیر آستانه‌ی ۲ میلیون",
+        "source_name": "آلان‌چند",
+        "url": "https://alanchand.com/en/currencies-price",
+        "published_at": "2026-05-17T11:08:44Z",
+        "public_safe": true
+      },
+      {
+        "headline": "منیفولد: بقای مجتبی خامنه‌ای تا ۲۰۲۶ در ۶۶٪؛ توافق هسته‌ای تا ۳۰ ژوئن در ۲۱٪",
+        "source_name": "منیفولد مارکتس",
+        "url": "https://manifold.markets/bens/us-iran-nuclear-deal-by-end-of-june",
+        "published_at": "2026-05-17T11:08:44Z",
+        "public_safe": true
+      },
+      {
+        "headline": "پولیمارکت: عادی‌سازی هرمز تا پایان مه در ۴٪؛ تهاجم آمریکا به ایران تا ۲۰۲۷ در ۳۰٪",
+        "source_name": "پولیمارکت",
+        "url": "https://polymarket.com/event/strait-of-hormuz-traffic-returns-to-normal-by-end-of-may",
+        "published_at": "2026-05-17T11:08:44Z",
+        "public_safe": true
+      }
+    ]
+  }
+}

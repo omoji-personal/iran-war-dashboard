@@ -1,0 +1,65 @@
+{
+  "tick_date": "2026-05-17",
+  "tick_timestamp_utc": "2026-05-17T11:08:44Z",
+  "max_age_hours": 24,
+  "items_count": 6,
+  "rss_items_count": 0,
+  "websearch_items_count": 6,
+  "rss_note": "Most feeds returned 403/503 or zero Iran-relevant items within 24h window; supplemented entirely by WebSearch.",
+  "items": [
+    {
+      "source": "web-search:Trump Iran statement today",
+      "source_name": "Times of Israel",
+      "title": "Trump posts 'calm before the storm' image amid reports Iran war could resume after China trip",
+      "url": "https://www.timesofisrael.com/liveblog-may-17-2026/",
+      "published_at": "2026-05-17T09:00:00Z",
+      "summary": "Trump returned from Beijing with no Iran breakthrough and posted a 'calm before the storm' image to social media on May 17, echoing his 2017 phrase that preceded US military action; he also said Iran's 'decimation' is 'to be continued'.",
+      "lang": "en"
+    },
+    {
+      "source": "web-search:IRGC Persian Gulf incident today",
+      "source_name": "CNN",
+      "title": "Iran eyes undersea cables beneath Strait of Hormuz, threatens fees and potential disruption",
+      "url": "https://www.cnn.com/2026/05/17/middleeast/iran-hormuz-undersea-cables-intl",
+      "published_at": "2026-05-17T08:00:00Z",
+      "summary": "Iranian state-linked media and military spokesperson Ebrahim Zolfaghari threatened to charge tech companies fees for internet traffic traversing undersea cables beneath Hormuz, warning of disruption if unpaid — expanding Iran's coercive toolkit beyond oil.",
+      "lang": "en"
+    },
+    {
+      "source": "web-search:Trump Iran statement today",
+      "source_name": "CNN",
+      "title": "Trump returns from China with no Iran breakthrough and faces decision on resumed strikes",
+      "url": "https://www.cnn.com/2026/05/16/politics/iran-trump-china-military-strikes",
+      "published_at": "2026-05-16T22:00:00Z",
+      "summary": "Trump landed Friday with no Iran deliverable from Xi Jinping meeting; CNN reports he now faces an active decision on whether to authorize resumed US military strikes after the ceasefire deadlock.",
+      "lang": "en"
+    },
+    {
+      "source": "web-search:Iran rial today",
+      "source_name": "AlanChand",
+      "title": "Iran rial at 1,819,000 IRR/USD on May 17 — approaching but below 2M portfolio threshold",
+      "url": "https://alanchand.com/en/currencies-price",
+      "published_at": "2026-05-17T11:08:44Z",
+      "summary": "USD/IRR open-market (havala) rate reached 1,819,000 on May 17, a 3,000-rial increase from May 15; remains roughly 9% below the portfolio D1 threshold of 2,000,000.",
+      "lang": "en"
+    },
+    {
+      "source": "web-search:Tehran nuclear talks update",
+      "source_name": "Manifold Markets",
+      "title": "Manifold: nuclear deal by June 30 at 21%; Mojtaba Khamenei survival through 2026 at 66%",
+      "url": "https://manifold.markets/bens/us-iran-nuclear-deal-by-end-of-june",
+      "published_at": "2026-05-17T11:08:44Z",
+      "summary": "Manifold prediction markets price US-Iran nuclear deal by June 30 at 21% (aligned with portfolio A1 at 20%); separately, Mojtaba Khamenei's survival through year-end is priced at 66%, reflecting post-succession leadership stability uncertainty.",
+      "lang": "en"
+    },
+    {
+      "source": "web-search:Iran Hormuz shipping last 24 hours",
+      "source_name": "Polymarket",
+      "title": "Polymarket: Hormuz normalization by end of May at 4%; US invasion of Iran by 2027 at 30%",
+      "url": "https://polymarket.com/event/strait-of-hormuz-traffic-returns-to-normal-by-end-of-may",
+      "published_at": "2026-05-17T11:08:44Z",
+      "summary": "Polymarket prices only 4% probability that Hormuz returns to normal commercial traffic by May 31; the 'US invade Iran before 2027' market is at 30%, up from prior session, reflecting Trump's post-China posture.",
+      "lang": "en"
+    }
+  ]
+}
