@@ -1,0 +1,127 @@
+{
+  "tick_date": "2026-05-18",
+  "tick_timestamp_utc": "2026-05-18T11:12:41Z",
+  "day_number": 80,
+  "cron_status": "ok",
+  "events_count_24h": 7,
+  "probability_moves_24h": 0,
+  "briefing_partial": false,
+  "en": {
+    "read_paragraphs": [
+      "Day 80 brings the most substantive US nuclear concession since the war began: on May 15, Trump told reporters aboard Air Force One that he would accept a 20-year Iranian uranium enrichment suspension — walking back the prior demand for permanent cessation — if Tehran offered a 'real' guarantee. Iranian FM Araghchi rejected the framing, saying Iran has 'no trust' in the US. Simultaneously, Polymarket is now pricing Iranian airspace closure by May 24 at 34% — a short-fuse escalation signal not seen in prior ticks — while the US invasion contract ticked up to 32%, its highest level since the ceasefire began.",
+      "On the ground, Kuwait announced the arrest of four IRGC-linked operatives, including two Naval Colonels, who infiltrated Bubiyan Island reportedly tasked with hostile operations. This marks the first GCC-territory IRGC infiltration incident in the conflict's 80-day history and is a potential trigger for portfolio questions B2 (Iran strike on US/allied asset) and B5 (vessel seizure). The Hormuz chokepoint remains locked at ~5% of pre-war transit, with over 600 tankers inside the Gulf and 240 waiting offshore per Saudi Aramco CEO Nasser's May 11 count.",
+      "The rial stabilized marginally at 1,805,000 IRR/USD on May 18 (down from 1,819,000 yesterday) — still 9.75% below D1's 2,000,000 threshold. Watch Tuesday: whether Trump formalizes the 20-year concession in writing to Araghchi or escalates militarily following the Kuwait IRGC arrest will be the binary decision point this week. Operator review of A1 (now has a concrete concession to price) and B2/B5 is recommended."
+    ],
+    "movers": [],
+    "events": [
+      {
+        "headline": "Trump offers to accept 20-year uranium enrichment suspension; Iran FM Araghchi rejects, cites 'no trust'",
+        "source_name": "Times of Israel",
+        "url": "https://www.timesofisrael.com/trump-says-hes-ok-with-iran-suspending-nuke-program-for-20-years-if-theres-a-real-commitment/",
+        "published_at": "2026-05-15T18:00:00Z",
+        "public_safe": true
+      },
+      {
+        "headline": "Kuwait arrests four IRGC operatives, including two Naval Colonels, after Bubiyan Island infiltration",
+        "source_name": "Jerusalem Post",
+        "url": "https://www.jpost.com/middle-east/iran-news/article-895926",
+        "published_at": "2026-05-17T14:00:00Z",
+        "public_safe": true
+      },
+      {
+        "headline": "Polymarket: Iran airspace closure by May 24 at 34%; US invasion before 2027 at 32%; Hormuz normal by June 30 at 28%",
+        "source_name": "Polymarket",
+        "url": "https://polymarket.com/event/iran-closes-its-airspace-by-may-24",
+        "published_at": "2026-05-18T11:12:41Z",
+        "public_safe": true
+      },
+      {
+        "headline": "600+ tankers trapped in Persian Gulf; Hormuz transit at 5% of pre-war average — Saudi Aramco CEO",
+        "source_name": "UANI Shipping Tracker",
+        "url": "https://www.unitedagainstnucleariran.com/blog/iran-war-shipping-update-may-13-2026",
+        "published_at": "2026-05-13T12:00:00Z",
+        "public_safe": true
+      },
+      {
+        "headline": "Round 4 Oman talks: Iran proposes 3-step deal — lower enrichment to 3.67%, frozen assets, then oil exports",
+        "source_name": "Wikipedia / Iran-US negotiations",
+        "url": "https://en.wikipedia.org/wiki/2025%E2%80%932026_Iran%E2%80%93United_States_negotiations",
+        "published_at": "2026-05-11T18:00:00Z",
+        "public_safe": true
+      },
+      {
+        "headline": "Iran rial at 1,805,000 IRR/USD on May 18 — stabilizing slightly, 9.75% below 2M portfolio threshold",
+        "source_name": "AlanChand",
+        "url": "https://alanchand.com/en/currencies-price",
+        "published_at": "2026-05-18T11:12:41Z",
+        "public_safe": true
+      },
+      {
+        "headline": "Trump letter to Congress: Iran hostilities 'have terminated' — skirting War Powers 60-day deadline",
+        "source_name": "PBS NewsHour",
+        "url": "https://www.pbs.org/newshour/politics/trump-says-deadline-for-congress-to-approve-iran-war-doesnt-apply-claiming-hostilities-have-terminated",
+        "published_at": "2026-05-17T20:00:00Z",
+        "public_safe": true
+      }
+    ]
+  },
+  "fa": {
+    "read_paragraphs": [
+      "روز ۸۰ با بزرگ‌ترین امتیاز هسته‌ای آمریکا از آغاز جنگ همراه بود: ترامپ در ۱۵ مه در هواپیمای ریاست‌جمهوری، هنگام بازگشت از چین، اعلام کرد در صورت ارائه‌ی «تضمین واقعی»، تعلیق ۲۰ساله غنی‌سازی اورانیوم را می‌پذیرد — و از خواسته‌ی پیشین برای توقف دائمی عقب‌نشینی کرد. وزیر خارجه ایران، عباس عراقچی، این چارچوب را رد کرد و گفت تهران «هیچ اعتمادی» به آمریکا ندارد. هم‌زمان، پولیمارکت بسته شدن فضای هوایی ایران تا ۲۴ مه را ۳۴٪ قیمت‌گذاری کرد — سیگنال تشدید کوتاه‌مدتی که در تیک‌های پیشین دیده نشده بود — و قرارداد تهاجم آمریکا به ایران به ۳۲٪ رسید.",
+      "در میدان، کویت اعلام کرد چهار عامل وابسته به سپاه پاسداران، از جمله دو سرهنگ نیروی دریایی، پس از نفوذ به جزیره بوبیان دستگیر شده‌اند. این اولین حادثه‌ی نفوذ سپاه به خاک کشورهای حوزه خلیج در طول ۸۰ روز درگیری است و می‌تواند ماشه‌ی سوالات پرتفوی B2 (حمله ایران به دارایی آمریکا/متحد) و B5 (توقیف کشتی) را بکشد. تنگه هرمز همچنان با حدود ۵٪ ترافیک پیش از جنگ بسته است؛ بیش از ۶۰۰ نفتکش در خلیج فارس گرفتار و ۲۴۰ کشتی دیگر در انتظار ورود هستند.",
+      "نرخ ریال در ۱۸ مه با کاهشی جزئی به ۱٬۸۰۵٬۰۰۰ ریال به ازای هر دلار رسید — هنوز ۹.۷۵٪ زیر آستانه‌ی دو میلیون (سوال D1). نقطه عطف این هفته: آیا ترامپ امتیاز تعلیق ۲۰ساله را به‌صورت کتبی به عراقچی منتقل می‌کند یا پس از بازداشت عوامل سپاه در کویت تهدید نظامی را تشدید خواهد کرد؟ بازنگری اپراتور در سوال A1 و B2/B5 توصیه می‌شود."
+    ],
+    "movers": [],
+    "events": [
+      {
+        "headline": "ترامپ آمادگی پذیرش تعلیق ۲۰ساله غنی‌سازی را اعلام کرد؛ عراقچی آن را رد کرد",
+        "source_name": "تایمز اوف ایزراییل",
+        "url": "https://www.timesofisrael.com/trump-says-hes-ok-with-iran-suspending-nuke-program-for-20-years-if-theres-a-real-commitment/",
+        "published_at": "2026-05-15T18:00:00Z",
+        "public_safe": true
+      },
+      {
+        "headline": "کویت چهار عامل سپاه پاسداران، از جمله دو سرهنگ دریایی، را در جزیره بوبیان دستگیر کرد",
+        "source_name": "جروزالم پست",
+        "url": "https://www.jpost.com/middle-east/iran-news/article-895926",
+        "published_at": "2026-05-17T14:00:00Z",
+        "public_safe": true
+      },
+      {
+        "headline": "پولیمارکت: بسته شدن فضای هوایی ایران تا ۲۴ مه در ۳۴٪؛ تهاجم آمریکا تا ۲۰۲۷ در ۳۲٪",
+        "source_name": "پولیمارکت",
+        "url": "https://polymarket.com/event/iran-closes-its-airspace-by-may-24",
+        "published_at": "2026-05-18T11:12:41Z",
+        "public_safe": true
+      },
+      {
+        "headline": "بیش از ۶۰۰ نفتکش در خلیج فارس گرفتار؛ ترافیک هرمز تنها ۵٪ سطح پیش از جنگ",
+        "source_name": "یونانی (UANI)",
+        "url": "https://www.unitedagainstnucleariran.com/blog/iran-war-shipping-update-may-13-2026",
+        "published_at": "2026-05-13T12:00:00Z",
+        "public_safe": true
+      },
+      {
+        "headline": "مذاکرات عمان (دور چهارم): ایران طرح ۳مرحله‌ای پیشنهاد داد — کاهش غنی‌سازی به ۳.۶۷٪، آزادسازی دارایی‌ها، صادرات نفت",
+        "source_name": "ویکی‌پدیا / مذاکرات ایران-آمریکا",
+        "url": "https://en.wikipedia.org/wiki/2025%E2%80%932026_Iran%E2%80%93United_States_negotiations",
+        "published_at": "2026-05-11T18:00:00Z",
+        "public_safe": true
+      },
+      {
+        "headline": "نرخ ریال در ۱۸ مه: ۱٬۸۰۵٬۰۰۰ ریال به ازای هر دلار — اندکی پایین‌تر از دیروز",
+        "source_name": "آلان‌چند",
+        "url": "https://alanchand.com/en/currencies-price",
+        "published_at": "2026-05-18T11:12:41Z",
+        "public_safe": true
+      },
+      {
+        "headline": "ترامپ به کنگره نوشت جنگ با ایران «پایان یافته» — برای دور زدن مهلت قانون اختیارات جنگی",
+        "source_name": "پی‌بی‌اس نیوزاور",
+        "url": "https://www.pbs.org/newshour/politics/trump-says-deadline-for-congress-to-approve-iran-war-doesnt-apply-claiming-hostilities-have-terminated",
+        "published_at": "2026-05-17T20:00:00Z",
+        "public_safe": true
+      }
+    ]
+  }
+}
