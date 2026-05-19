@@ -1,0 +1,88 @@
+{
+  "tick_date": "2026-05-19",
+  "tick_timestamp_utc": "2026-05-19T11:02:49Z",
+  "max_age_hours": 24,
+  "items_count": 8,
+  "items": [
+    {
+      "title": "Trump Cancels Planned Attack on Iran, Citing 'Serious Negotiations'",
+      "headline": "Trump cancels scheduled military attack on Iran at Gulf leaders' request; warns full assault ready 'on a moment's notice'",
+      "source_name": "Time",
+      "source": "web-search:Trump Iran statement today",
+      "url": "https://time.com/article/2026/05/19/trump-us-iran-israel-war-gulf-states-attack-hormuz/",
+      "published_at": "2026-05-19T06:00:00Z",
+      "summary": "Trump posted on Truth Social that he told military leaders to stand down a planned strike after Qatar, Saudi Arabia and UAE leaders requested a pause, saying 'serious negotiations are now taking place.'",
+      "public_safe": true
+    },
+    {
+      "title": "Trump says he's postponing 'scheduled attack of Iran tomorrow' at Middle East leaders' request",
+      "headline": "Trump postpones May 19 Iran strike after Gulf state leaders intervene; peace deal must include 'NO NUCLEAR WEAPONS FOR IRAN'",
+      "source_name": "CNBC",
+      "source": "web-search:Trump Iran statement today",
+      "url": "https://www.cnbc.com/2026/05/18/trump-iran-attack-saudi-uae-qatar-deal.html",
+      "published_at": "2026-05-18T22:00:00Z",
+      "summary": "Trump told Hegseth and Joint Chiefs Chair Caine to be prepared for a full large-scale assault on a moment's notice if an acceptable deal is not reached.",
+      "public_safe": true
+    },
+    {
+      "title": "Why Donald Trump Delayed a Planned Military Attack on Iran",
+      "headline": "Newsweek: Trump delayed attack citing Gulf state lobbying; deal terms include enrichment moratorium and Hormuz reopening",
+      "source_name": "Newsweek",
+      "source": "web-search:Trump Iran statement today",
+      "url": "https://www.newsweek.com/donald-trump-says-hes-delayed-military-attack-on-iran-11964510",
+      "published_at": "2026-05-18T23:00:00Z",
+      "summary": "Analysis of why Trump stood down from a scheduled Iran strike, noting Gulf state lobbying and the outline of a potential deal.",
+      "public_safe": true
+    },
+    {
+      "title": "IRGC threatened to destroy US bases in the southern Persian Gulf",
+      "headline": "IRGC spokesperson Zolfagari: all US military facilities in Persian Gulf region to be destroyed; zero ships allowed through Hormuz in past 24 hours",
+      "source_name": "Pravda EN",
+      "source": "web-search:IRGC Persian Gulf incident today",
+      "url": "https://news-pravda.com/usa/2026/05/18/2314686.html",
+      "published_at": "2026-05-18T12:00:00Z",
+      "summary": "IRGC military spokesperson threatened to put all American military facilities in the region 'out of action in the near future' and confirmed total Hormuz blockade in the preceding 24-hour window.",
+      "public_safe": true
+    },
+    {
+      "title": "Exclusive: U.S. and Iran closing in on one-page memo to end war, officials say",
+      "headline": "US-Iran one-page MOU in progress: enrichment moratorium 12-15 years likely, Iran to remove highly enriched uranium, sanctions lifted",
+      "source_name": "Axios",
+      "source": "web-search:Tehran nuclear talks update",
+      "url": "https://www.axios.com/2026/05/06/iran-us-deal-one-page-memo",
+      "published_at": "2026-05-06T00:00:00Z",
+      "summary": "US officials told Axios they are closing in on a framework MOU under which Iran would suspend enrichment for 12-15 years and ship out its highly enriched uranium in exchange for sanctions relief and Hormuz reopening.",
+      "public_safe": true
+    },
+    {
+      "title": "US, Iran said closing in on framework for permanent deal, as Trump renews bomb threats",
+      "headline": "Times of Israel: US-Iran framework deal within reach as Trump simultaneously threatens bombing 'at much higher level'",
+      "source_name": "Times of Israel",
+      "source": "web-search:Tehran nuclear talks update",
+      "url": "https://www.timesofisrael.com/us-iran-said-closing-in-on-framework-for-permanent-deal-as-trump-renews-bomb-threats/",
+      "published_at": "2026-05-18T16:00:00Z",
+      "summary": "Dual-track US posture: diplomatic momentum toward a framework agreement concurrent with Trump's escalating military threats creates negotiating ambiguity.",
+      "public_safe": true
+    },
+    {
+      "title": "Iran rial at 1,775,000 IRR/USD on May 19 — down 2,000 from yesterday",
+      "headline": "Iran rial stabilizes at 1,775,000 IRR/USD on May 19 — 11.25% below 2,000,000 portfolio threshold",
+      "source_name": "AlanChand",
+      "source": "web-search:Iran rial today",
+      "url": "https://alanchand.com/en/currencies-price",
+      "published_at": "2026-05-19T11:02:49Z",
+      "summary": "USD remittance rate in Iran's open market fell marginally to 1,775,000 IRR on May 19, continuing a modest plateau after earlier volatility.",
+      "public_safe": true
+    },
+    {
+      "title": "Polymarket Iran markets snapshot — May 19, 2026",
+      "headline": "Polymarket: US invasion before 2027 at 28% (down 4pp); peace deal June 30 at 32%; Iran airspace closure by May 24 at 28% (down 6pp)",
+      "source_name": "Polymarket",
+      "source": "Polymarket",
+      "url": "https://polymarket.com/event/will-the-us-invade-iran-before-2027",
+      "published_at": "2026-05-19T11:03:15Z",
+      "summary": "Markets shifted meaningfully after Trump's attack cancellation: US invasion probability fell 4pp to 28%, and near-term airspace-closure contracts also eased.",
+      "public_safe": true
+    }
+  ]
+}

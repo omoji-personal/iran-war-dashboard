@@ -1,0 +1,141 @@
+{
+  "tick_date": "2026-05-19",
+  "tick_timestamp_utc": "2026-05-19T11:02:49Z",
+  "day_number": 81,
+  "cron_status": "ok",
+  "events_count_24h": 8,
+  "probability_moves_24h": 0,
+  "briefing_partial": false,
+  "en": {
+    "read_paragraphs": [
+      "Day 81 opens with the conflict's most consequential deescalation signal to date: late on May 18, Trump posted on Truth Social that he told Defense Secretary Hegseth and Joint Chiefs Chair Caine to stand down a scheduled military strike on Iran, citing requests from Qatari Emir Tamim, Saudi Crown Prince MBS, and UAE President MBZ to 'hold off' because 'serious negotiations are now taking place.' The attack cancellation tracked directly with Polymarket's US invasion contract falling 4 percentage points to 28%, and Iran airspace closure by May 24 dropping 6pp to 28% — the clearest single-session market deescalation since the ceasefire's inception.",
+      "The diplomatic backdrop for the pause is an active US-Iran one-page memorandum of understanding framework (Axios): Iran would suspend enrichment for 12–15 years, ship out its highly enriched uranium stock, and both sides would lift Hormuz restrictions, in exchange for US sanctions relief and frozen asset releases. The gap remains wide — Iran proposed a 5-year moratorium, the US has demanded 20. Simultaneously, IRGC spokesperson Zolfagari threatened on May 18 to destroy all US military facilities in the Persian Gulf 'in the near future' and confirmed zero commercial transits through Hormuz in the preceding 24 hours, signaling that Iran's coercive posture is unchanged even as talks proceed.",
+      "The Iran rial held at 1,775,000 IRR/USD on May 19 — marginally below yesterday's 1,777,000 and 11.25% under the 2,000,000 portfolio threshold (D1, F8). Operator review is strongly recommended: the Trump attack cancellation plus active MOU talks represent a structural inflection on A1 (framework agreement, at 20%), B1 (US strike on Iran, at 22%), and B2 (Iran strike on US asset, at 75%). Polymarket is pricing a June 30 deal at 32% — 12pp above portfolio's A1."
+    ],
+    "movers": [],
+    "events": [
+      {
+        "headline": "Trump cancels scheduled military attack on Iran at Gulf leaders' request; warns full assault ready 'on a moment's notice'",
+        "source_name": "Time",
+        "url": "https://time.com/article/2026/05/19/trump-us-iran-israel-war-gulf-states-attack-hormuz/",
+        "published_at": "2026-05-19T06:00:00Z",
+        "public_safe": true
+      },
+      {
+        "headline": "Trump postpones May 19 Iran strike after Gulf state leaders intervene; peace deal must include 'NO NUCLEAR WEAPONS FOR IRAN'",
+        "source_name": "CNBC",
+        "url": "https://www.cnbc.com/2026/05/18/trump-iran-attack-saudi-uae-qatar-deal.html",
+        "published_at": "2026-05-18T22:00:00Z",
+        "public_safe": true
+      },
+      {
+        "headline": "IRGC spokesperson Zolfagari: all US military facilities in Persian Gulf to be destroyed; zero Hormuz transits in past 24 hours",
+        "source_name": "Pravda EN",
+        "url": "https://news-pravda.com/usa/2026/05/18/2314686.html",
+        "published_at": "2026-05-18T12:00:00Z",
+        "public_safe": true
+      },
+      {
+        "headline": "US-Iran one-page MOU in progress: enrichment moratorium 12-15 years likely; Iran to remove highly enriched uranium; sanctions lifted",
+        "source_name": "Axios",
+        "url": "https://www.axios.com/2026/05/06/iran-us-deal-one-page-memo",
+        "published_at": "2026-05-06T00:00:00Z",
+        "public_safe": true
+      },
+      {
+        "headline": "Times of Israel: US-Iran framework deal within reach as Trump simultaneously threatens bombing 'at much higher level'",
+        "source_name": "Times of Israel",
+        "url": "https://www.timesofisrael.com/us-iran-said-closing-in-on-framework-for-permanent-deal-as-trump-renews-bomb-threats/",
+        "published_at": "2026-05-18T16:00:00Z",
+        "public_safe": true
+      },
+      {
+        "headline": "Iran rial stabilizes at 1,775,000 IRR/USD on May 19 — 11.25% below 2,000,000 portfolio threshold",
+        "source_name": "AlanChand",
+        "url": "https://alanchand.com/en/currencies-price",
+        "published_at": "2026-05-19T11:02:49Z",
+        "public_safe": true
+      },
+      {
+        "headline": "Polymarket: US invasion before 2027 at 28% (down 4pp); peace deal June 30 at 32%; Iran airspace closure by May 24 at 28% (down 6pp)",
+        "source_name": "Polymarket",
+        "url": "https://polymarket.com/event/will-the-us-invade-iran-before-2027",
+        "published_at": "2026-05-19T11:03:15Z",
+        "public_safe": true
+      },
+      {
+        "headline": "Newsweek: Trump delayed Iran attack citing Gulf state lobbying; deal framework includes enrichment moratorium and Hormuz reopening",
+        "source_name": "Newsweek",
+        "url": "https://www.newsweek.com/donald-trump-says-hes-delayed-military-attack-on-iran-11964510",
+        "published_at": "2026-05-18T23:00:00Z",
+        "public_safe": true
+      }
+    ]
+  },
+  "fa": {
+    "read_paragraphs": [
+      "روز ۸۱ با مهم‌ترین سیگنال کاهش تنش از آغاز درگیری گشوده می‌شود: ترامپ شامگاه ۱۸ مه در تروث‌سوشال نوشت که به وزیر دفاع هگست و رئیس ستاد مشترک ژنرال کین دستور داد تا حمله‌ی نظامی برنامه‌ریزی‌شده علیه ایران را متوقف کنند، با اشاره به درخواست شیخ تمیم امیر قطر، محمد بن سلمان ولیعهد عربستان، و محمد بن‌زاید رئیس امارات برای «صبر کردن» زیرا «مذاکرات جدی در جریان است.» این دیپلماسی پشت‌پرده بازار پیش‌بینی را تکان داد: قرارداد تهاجم آمریکا به ایران ۴ واحد افتاد و به ۲۸٪ رسید، و احتمال بسته شدن فضای هوایی ایران تا ۲۴ مه ۶ واحد کاهش یافت و به ۲۸٪ رسید.",
+      "پس‌زمینه‌ی دیپلماتیک این توقف یک چارچوب تفاهم‌نامه‌ی یک‌صفحه‌ای میان آمریکا و ایران است که اکسیوس گزارش داد: ایران غنی‌سازی را به مدت ۱۲ تا ۱۵ سال تعلیق می‌کند، اورانیوم غنی‌شده‌ی خود را از کشور خارج می‌سازد و محدودیت‌های تنگه هرمز برداشته می‌شود — در عوض آمریکا تحریم‌ها را رفع و دارایی‌های بلوکه‌شده را آزاد می‌کند. شکاف هنوز گسترده است: ایران ۵ سال پیشنهاد داده و آمریکا ۲۰ سال می‌خواهد. هم‌زمان سخنگوی سپاه پاسداران ذوالفقاری در ۱۸ مه تهدید کرد که تمامی پایگاه‌های نظامی آمریکا در خلیج فارس «به‌زودی از کار می‌افتند» و تأیید کرد که در ۲۴ ساعت گذشته هیچ کشتی‌ای از تنگه هرمز عبور نکرده است.",
+      "نرخ ریال در ۱۹ مه با ۱٬۷۷۵٬۰۰۰ ریال به ازای هر دلار تثبیت شد — اندکی کمتر از دیروز و ۱۱.۲۵٪ پایین‌تر از آستانه‌ی ۲ میلیون (سوال‌های D1 و F8). بازنگری اپراتور در سوال‌های A1 (توافق چارچوبی، ۲۰٪)، B1 (حمله آمریکا به ایران، ۲۲٪) و B2 (حمله ایران به هدف آمریکایی، ۷۵٪) با اولویت بالا توصیه می‌شود؛ پولیمارکت معامله‌ی ژوئن را ۳۲٪ قیمت‌گذاری می‌کند — ۱۲ واحد درصد بالاتر از سوال A1."
+    ],
+    "movers": [],
+    "events": [
+      {
+        "headline": "ترامپ حمله‌ی نظامی برنامه‌ریزی‌شده به ایران را به درخواست رهبران حوزه خلیج لغو کرد",
+        "source_name": "تایم",
+        "url": "https://time.com/article/2026/05/19/trump-us-iran-israel-war-gulf-states-attack-hormuz/",
+        "published_at": "2026-05-19T06:00:00Z",
+        "public_safe": true
+      },
+      {
+        "headline": "ترامپ: حمله به ایران به تعویق افتاد؛ توافق باید شامل «هیچ سلاح هسته‌ای برای ایران» باشد",
+        "source_name": "سی‌ان‌بی‌سی",
+        "url": "https://www.cnbc.com/2026/05/18/trump-iran-attack-saudi-uae-qatar-deal.html",
+        "published_at": "2026-05-18T22:00:00Z",
+        "public_safe": true
+      },
+      {
+        "headline": "سخنگوی سپاه پاسداران: تمامی پایگاه‌های آمریکا در خلیج فارس منهدم خواهند شد؛ صفر کشتی از هرمز عبور کرد",
+        "source_name": "پراودا EN",
+        "url": "https://news-pravda.com/usa/2026/05/18/2314686.html",
+        "published_at": "2026-05-18T12:00:00Z",
+        "public_safe": true
+      },
+      {
+        "headline": "اکسیوس: آمریکا و ایران در حال نهایی کردن تفاهم‌نامه یک‌صفحه‌ای هستند — تعلیق غنی‌سازی ۱۲ تا ۱۵ سال",
+        "source_name": "اکسیوس",
+        "url": "https://www.axios.com/2026/05/06/iran-us-deal-one-page-memo",
+        "published_at": "2026-05-06T00:00:00Z",
+        "public_safe": true
+      },
+      {
+        "headline": "تایمز اوف ایزراییل: آمریکا و ایران در آستانه توافق چارچوبی، همزمان ترامپ تهدیدات بمباران را تجدید می‌کند",
+        "source_name": "تایمز اوف ایزراییل",
+        "url": "https://www.timesofisrael.com/us-iran-said-closing-in-on-framework-for-permanent-deal-as-trump-renews-bomb-threats/",
+        "published_at": "2026-05-18T16:00:00Z",
+        "public_safe": true
+      },
+      {
+        "headline": "نرخ ریال در ۱۹ مه: ۱٬۷۷۵٬۰۰۰ ریال به ازای هر دلار — ۱۱.۲۵٪ زیر آستانه‌ی ۲ میلیون",
+        "source_name": "آلان‌چند",
+        "url": "https://alanchand.com/en/currencies-price",
+        "published_at": "2026-05-19T11:02:49Z",
+        "public_safe": true
+      },
+      {
+        "headline": "پولیمارکت: تهاجم آمریکا به ایران ۲۸٪ (کاهش ۴ واحد)؛ توافق صلح تا ژوئن ۳۲٪؛ بسته شدن فضای هوایی تا ۲۴ مه ۲۸٪",
+        "source_name": "پولیمارکت",
+        "url": "https://polymarket.com/event/will-the-us-invade-iran-before-2027",
+        "published_at": "2026-05-19T11:03:15Z",
+        "public_safe": true
+      },
+      {
+        "headline": "نیوزویک: ترامپ حمله را به دلیل فشار کشورهای حوزه خلیج به تأخیر انداخت؛ چارچوب توافق شامل تعلیق غنی‌سازی",
+        "source_name": "نیوزویک",
+        "url": "https://www.newsweek.com/donald-trump-says-hes-delayed-military-attack-on-iran-11964510",
+        "published_at": "2026-05-18T23:00:00Z",
+        "public_safe": true
+      }
+    ]
+  }
+}
