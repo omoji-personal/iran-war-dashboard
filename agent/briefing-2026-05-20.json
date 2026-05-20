@@ -1,0 +1,141 @@
+{
+  "tick_date": "2026-05-20",
+  "tick_timestamp_utc": "2026-05-20T11:04:45Z",
+  "day_number": 82,
+  "cron_status": "ok",
+  "events_count_24h": 8,
+  "probability_moves_24h": 0,
+  "briefing_partial": false,
+  "en": {
+    "read_paragraphs": [
+      "Day 82 opens under a hard deadline. Standing in front of the White House South Lawn, Trump told reporters he is giving Tehran two to three days to produce an acceptable deal — 'maybe Friday, Saturday, Sunday, something, maybe early next week' — before strikes resume at a much higher level. Iran's response was immediate and defiant: Tehran warned that any renewed US military action would bring 'many more surprises' and threaten to open 'new fronts' beyond the current theater. Polymarket's US-invasion contract jumped 4 percentage points to 32% on the deadline news, while the June 30 peace-deal contract eased 2 points to 30%. Kuwait separately confirmed the capture of four IRGC-linked operatives who had infiltrated Kuwaiti territory.",
+      "The Trump deadline compresses a negotiating gap that has resisted closure for weeks: the US demands a 20-year enrichment moratorium, Iran has offered five years. CNN reported May 20 that Israel is actively preparing strikes on Iranian nuclear facilities — a move that would break sharply from Trump's diplomatic track and risk significant escalation, raising the portfolio's B3 question (Israel strikes Natanz or Fordow, currently 15%) as a near-term watch. Meanwhile the Hormuz blockade remains largely intact; Kpler data shows transit running at approximately 5% of pre-war levels, with only 191 vessel crossings recorded in all of April and roughly 2,000 ships still stranded in the Gulf. Iran formalized its control posture by establishing the 'Persian Gulf Strait Authority,' a new regulatory body governing all vessel passage.",
+      "Watch for an Iranian response to Trump's deadline within 48–72 hours — any Oman-channel or Pakistani-intermediary signal would be the leading indicator. The Iran rial edged to 1,780,000 IRR/USD today, marginally above yesterday's 1,775,000 and still 11% below the 2,000,000 portfolio threshold tracked by D1 and F8. A sharp rial depreciation on deal pessimism, or a sharp appreciation on a deal signal, would be the first economic tell on which way the weekend breaks."
+    ],
+    "movers": [],
+    "events": [
+      {
+        "headline": "Trump gives Iran 2–3 days to seal deal; warns strikes ready 'on a moment's notice'",
+        "source_name": "Al Jazeera",
+        "url": "https://www.aljazeera.com/amp/news/2026/5/20/iran-war-day-82-tehran-warns-of-new-fronts-as-trump-sets-deadline",
+        "published_at": "2026-05-20T06:00:00Z",
+        "public_safe": true
+      },
+      {
+        "headline": "Tehran warns renewed US strikes would open 'new fronts' and bring 'many more surprises'",
+        "source_name": "Al Jazeera",
+        "url": "https://www.aljazeera.com/amp/news/2026/5/20/iran-war-day-82-tehran-warns-of-new-fronts-as-trump-sets-deadline",
+        "published_at": "2026-05-20T06:00:00Z",
+        "public_safe": true
+      },
+      {
+        "headline": "CNN: Israel preparing strikes on Iranian nuclear facilities, a move that would break with Trump's diplomatic track",
+        "source_name": "CNN / Al Jazeera Day 82",
+        "url": "https://www.aljazeera.com/amp/news/2026/5/20/iran-war-day-82-tehran-warns-of-new-fronts-as-trump-sets-deadline",
+        "published_at": "2026-05-20T06:00:00Z",
+        "public_safe": true
+      },
+      {
+        "headline": "Kuwait captures four IRGC-linked operatives who infiltrated Kuwaiti territory, Foreign Ministry confirms",
+        "source_name": "Jerusalem Post",
+        "url": "https://www.jpost.com/middle-east/iran-news/article-895926",
+        "published_at": "2026-05-20T11:04:45Z",
+        "public_safe": true
+      },
+      {
+        "headline": "Hormuz transit at ~5% of pre-war average; only 191 vessels crossed in April; ~2,000 ships stranded in Gulf",
+        "source_name": "CNN",
+        "url": "https://www.cnn.com/2026/04/29/world/iran-war-gulf-hormuz-shipping-maps-intl-vis",
+        "published_at": "2026-04-29T00:00:00Z",
+        "public_safe": true
+      },
+      {
+        "headline": "Iran establishes 'Persian Gulf Strait Authority' to regulate all vessel passage through Hormuz",
+        "source_name": "Wikipedia / Hormuz Crisis",
+        "url": "https://en.wikipedia.org/wiki/2026_Strait_of_Hormuz_crisis",
+        "published_at": "2026-05-20T11:04:45Z",
+        "public_safe": true
+      },
+      {
+        "headline": "Iran rial at 1,780,000 IRR/USD on May 20 — up 5,000 from yesterday, 11% below 2M portfolio threshold",
+        "source_name": "AlanChand",
+        "url": "https://alanchand.com/en/currencies-price",
+        "published_at": "2026-05-20T11:04:45Z",
+        "public_safe": true
+      },
+      {
+        "headline": "Polymarket: US invasion before 2027 at 32% (up 4pp); peace deal June 30 at 30%; ceasefire through May 22 at 80%",
+        "source_name": "Polymarket",
+        "url": "https://polymarket.com/event/will-the-us-invade-iran-before-2027",
+        "published_at": "2026-05-20T11:05:00Z",
+        "public_safe": true
+      }
+    ]
+  },
+  "fa": {
+    "read_paragraphs": [
+      "روز ۸۲ با ضرب‌الاجلی سنگین آغاز می‌شود. ترامپ در جلوی کاخ سفید به خبرنگاران گفت تهران دو تا سه روز فرصت دارد تا توافق قابل قبولی ارائه دهد — «شاید جمعه، شنبه یا یکشنبه، یا اوایل هفته آینده» — وگرنه حملات در مقیاسی بسیار بزرگ‌تر از سر گرفته خواهند شد. پاسخ تهران آنی و قاطعانه بود: ایران هشدار داد که هر گونه اقدام نظامی مجدد آمریکا «غافلگیری‌های بسیار بیشتری» به همراه خواهد آورد و «جبهه‌های جدیدی» فراتر از میدان کنونی گشوده خواهد شد. پولیمارکت قرارداد تهاجم آمریکا به ایران را ۴ واحد درصد بالاتر برد و به ۳۲٪ رساند. کویت هم به‌طور مجزا دستگیری چهار نفر مرتبط با سپاه پاسداران را که به خاک این کشور نفوذ کرده بودند تأیید کرد.",
+      "ضرب‌الاجل ترامپ با شکافی مذاکراتی که هفته‌ها است بدون راه‌حل مانده است تلاقی می‌کند: آمریکا توقف ۲۰ ساله غنی‌سازی می‌خواهد و ایران ۵ سال پیشنهاد داده است. شبکه سی‌ان‌ان در ۲۰ مه گزارش داد که اسرائیل در حال آماده‌سازی فعال برای ضربه به تأسیسات هسته‌ای ایران است، اقدامی که با مسیر دیپلماتیک ترامپ به‌شدت تعارض دارد و ریسک تشدید جدی درگیری را بالا می‌برد — سوال B3 پرتفولیو (حمله اسرائیل به نطنز یا فردو، در حال حاضر ۱۵٪) را به یک موضوع پایش کوتاه‌مدت تبدیل می‌کند. در این میان انسداد تنگه هرمز تقریباً کامل باقی مانده؛ داده‌های Kpler نشان می‌دهد ترافیک تنها در حدود ۵٪ میانگین پیش از جنگ است و تنها ۱۹۱ کشتی در کل ماه آوریل از تنگه عبور کرد. ایران با ایجاد «اداره تنگه خلیج فارس» کنترل خود را نهادینه کرد.",
+      "پاسخ ایران به ضرب‌الاجل ترامپ را در ۴۸ تا ۷۲ ساعت آینده رصد کنید — هر سیگنالی از کانال عمانی یا واسطه پاکستانی شاخص پیشرو خواهد بود. ریال ایران امروز به ۱٬۷۸۰٬۰۰۰ ریال به ازای هر دلار رسید، اندکی بالاتر از دیروز (۱٬۷۷۵٬۰۰۰) و همچنان ۱۱٪ زیر آستانه ۲ میلیونی که سوال‌های D1 و F8 رصد می‌کنند. کاهش شدید ریال در پی بدبینی نسبت به توافق، یا تقویت آن در پی سیگنال مثبت، نخستین نشانه اقتصادی از سمت‌وسوی آخر هفته خواهد بود."
+    ],
+    "movers": [],
+    "events": [
+      {
+        "headline": "ترامپ به ایران ۲ تا ۳ روز مهلت می‌دهد؛ هشدار می‌دهد حملات آماده است",
+        "source_name": "الجزیره",
+        "url": "https://www.aljazeera.com/amp/news/2026/5/20/iran-war-day-82-tehran-warns-of-new-fronts-as-trump-sets-deadline",
+        "published_at": "2026-05-20T06:00:00Z",
+        "public_safe": true
+      },
+      {
+        "headline": "تهران هشدار می‌دهد حملات مجدد آمریکا «جبهه‌های جدید» و «غافلگیری‌های بیشتر» به همراه خواهد داشت",
+        "source_name": "الجزیره",
+        "url": "https://www.aljazeera.com/amp/news/2026/5/20/iran-war-day-82-tehran-warns-of-new-fronts-as-trump-sets-deadline",
+        "published_at": "2026-05-20T06:00:00Z",
+        "public_safe": true
+      },
+      {
+        "headline": "سی‌ان‌ان: اسرائیل در حال آماده‌سازی برای ضربه به تأسیسات هسته‌ای ایران است",
+        "source_name": "سی‌ان‌ان / الجزیره روز ۸۲",
+        "url": "https://www.aljazeera.com/amp/news/2026/5/20/iran-war-day-82-tehran-warns-of-new-fronts-as-trump-sets-deadline",
+        "published_at": "2026-05-20T06:00:00Z",
+        "public_safe": true
+      },
+      {
+        "headline": "کویت چهار عامل مرتبط با سپاه پاسداران را که به خاک این کشور نفوذ کرده بودند دستگیر کرد",
+        "source_name": "جروزالم پست",
+        "url": "https://www.jpost.com/middle-east/iran-news/article-895926",
+        "published_at": "2026-05-20T11:04:45Z",
+        "public_safe": true
+      },
+      {
+        "headline": "ترافیک هرمز در حدود ۵٪ میانگین پیش از جنگ؛ تنها ۱۹۱ کشتی در کل آوریل عبور کرد",
+        "source_name": "سی‌ان‌ان",
+        "url": "https://www.cnn.com/2026/04/29/world/iran-war-gulf-hormuz-shipping-maps-intl-vis",
+        "published_at": "2026-04-29T00:00:00Z",
+        "public_safe": true
+      },
+      {
+        "headline": "ایران «اداره تنگه خلیج فارس» را برای کنترل عبور همه کشتی‌ها از هرمز تأسیس کرد",
+        "source_name": "ویکی‌پدیا / بحران تنگه هرمز",
+        "url": "https://en.wikipedia.org/wiki/2026_Strait_of_Hormuz_crisis",
+        "published_at": "2026-05-20T11:04:45Z",
+        "public_safe": true
+      },
+      {
+        "headline": "نرخ ریال ۱٬۷۸۰٬۰۰۰ ریال به دلار در ۲۰ مه — ۱۱٪ زیر آستانه ۲ میلیون",
+        "source_name": "آلان‌چند",
+        "url": "https://alanchand.com/en/currencies-price",
+        "published_at": "2026-05-20T11:04:45Z",
+        "public_safe": true
+      },
+      {
+        "headline": "پولیمارکت: تهاجم آمریکا قبل از ۲۰۲۷ به ۳۲٪ رسید (۴ واحد بالا)؛ توافق صلح ۳۰ ژوئن ۳۰٪",
+        "source_name": "پولیمارکت",
+        "url": "https://polymarket.com/event/will-the-us-invade-iran-before-2027",
+        "published_at": "2026-05-20T11:05:00Z",
+        "public_safe": true
+      }
+    ]
+  }
+}

@@ -1,0 +1,64 @@
+{
+  "tick_date": "2026-05-20",
+  "tick_timestamp_utc": "2026-05-20T11:04:45Z",
+  "max_age_hours": 24,
+  "items_count": 8,
+  "items": [
+    {
+      "title": "Trump gives Iran 2–3 days to seal deal; warns strikes ready 'on a moment's notice'",
+      "source": "web-search:Trump Iran statement today May 20 2026",
+      "url": "https://www.aljazeera.com/amp/news/2026/5/20/iran-war-day-82-tehran-warns-of-new-fronts-as-trump-sets-deadline",
+      "published_at": "2026-05-20T06:00:00Z",
+      "summary": "Trump set a 2–3 day deadline for Tehran to produce an acceptable peace deal, saying he expects resolution 'maybe Friday, Saturday, Sunday' or early next week, while warning full military strikes remain ready at a moment’s notice."
+    },
+    {
+      "title": "Tehran warns renewed US strikes would open 'new fronts' and bring 'many more surprises'",
+      "source": "web-search:Trump Iran statement today May 20 2026",
+      "url": "https://www.aljazeera.com/amp/news/2026/5/20/iran-war-day-82-tehran-warns-of-new-fronts-as-trump-sets-deadline",
+      "published_at": "2026-05-20T06:00:00Z",
+      "summary": "Iran's government warned that any resumption of US military strikes would generate 'many more surprises' and open 'new fronts' in the conflict, pushing back against Trump's deadline."
+    },
+    {
+      "title": "Iran rial at 1,780,000 IRR/USD on May 20 — up 5,000 from yesterday, 11% below 2M portfolio threshold",
+      "source": "web-search:Iran rial exchange rate today May 2026",
+      "url": "https://alanchand.com/en/currencies-price",
+      "published_at": "2026-05-20T11:04:45Z",
+      "summary": "USD remittance rate in Iran's parallel market reached 1,780,000 IRR/USD on May 20, marginally higher than yesterday’s 1,775,000 and still approximately 11% below the 2,000,000 portfolio threshold tracked by D1 and F8."
+    },
+    {
+      "title": "Polymarket: US invasion before 2027 at 32% (up 4pp); peace deal June 30 at 30%; ceasefire through May 22 at 80%",
+      "source": "web-search:Iran Hormuz shipping last 24 hours 2026",
+      "url": "https://polymarket.com/event/will-the-us-invade-iran-before-2027",
+      "published_at": "2026-05-20T11:05:00Z",
+      "summary": "Polymarket Iran war markets as of May 20: US invasion before 2027 rose 4pp to 32% on Trump deadline news; June 30 peace deal eased 2pp to 30%; ceasefire continuation through May 22 holds at 80%."
+    },
+    {
+      "title": "Iran establishes 'Persian Gulf Strait Authority' to regulate all vessel passage through Hormuz",
+      "source": "web-search:IRGC Persian Gulf incident May 2026",
+      "url": "https://en.wikipedia.org/wiki/2026_Strait_of_Hormuz_crisis",
+      "published_at": "2026-05-20T11:04:45Z",
+      "summary": "Iran created the 'Persian Gulf Strait Authority,' a new regulatory body to formally govern passage of all military and commercial vessels through the Strait of Hormuz, institutionalizing IRGC control over the waterway."
+    },
+    {
+      "title": "Kuwait captures four IRGC-linked operatives who infiltrated Kuwaiti territory, Foreign Ministry confirms",
+      "source": "web-search:IRGC Persian Gulf incident May 2026",
+      "url": "https://www.jpost.com/middle-east/iran-news/article-895926",
+      "published_at": "2026-05-20T11:04:45Z",
+      "summary": "Kuwait's Foreign Ministry confirmed four individuals linked to Iran's IRGC were captured after infiltrating Kuwaiti territory, adding to regional tension as Gulf states pressure both sides toward a deal."
+    },
+    {
+      "title": "Hormuz transit at ~5% of pre-war average; only 191 vessels crossed in April; ~2,000 ships stranded in Gulf",
+      "source": "web-search:Iran Hormuz shipping last 24 hours 2026",
+      "url": "https://www.cnn.com/2026/04/29/world/iran-war-gulf-hormuz-shipping-maps-intl-vis",
+      "published_at": "2026-04-29T00:00:00Z",
+      "summary": "Hormuz shipping remains at approximately 5% of pre-war levels with 191 vessel crossings recorded in all of April; roughly 2,000 vessels remain stranded in the Gulf awaiting clearance."
+    },
+    {
+      "title": "CNN: Israel preparing strikes on Iranian nuclear facilities, a move that would break with Trump's diplomatic track",
+      "source": "web-search:Tehran nuclear talks update May 20 2026",
+      "url": "https://www.aljazeera.com/amp/news/2026/5/20/iran-war-day-82-tehran-warns-of-new-fronts-as-trump-sets-deadline",
+      "published_at": "2026-05-20T06:00:00Z",
+      "summary": "CNN reported May 20 that Israel is preparing to strike Iranian nuclear facilities, an action that would sharply break from Trump's diplomatic efforts and risk significant escalation."
+    }
+  ]
+}
