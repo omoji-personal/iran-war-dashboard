@@ -1,0 +1,134 @@
+{
+  "tick_date": "2026-05-21",
+  "tick_timestamp_utc": "2026-05-21T11:07:00Z",
+  "day_number": 83,
+  "cron_status": "ok",
+  "events_count_24h": 10,
+  "probability_moves_24h": 0,
+  "briefing_partial": false,
+  "en": {
+    "read_paragraphs": [
+      "Day 83 finds the conflict locked in a narrow diplomatic corridor. Trump told reporters he was willing to wait 'a few days' — his own Friday-to-Sunday window — for Tehran to deliver an acceptable response to the U.S. peace proposal, while warning that forces remain on standby for a 'full, large-scale assault.' Iran confirmed it is reviewing the proposal. The 14-point, one-page MOU framework under negotiation would declare an end to the war and open a 30-day detailed bargaining round on Hormuz access, nuclear limits, and sanctions relief.",
+      "The talks remain structurally stuck. Washington wants Iran to suspend enrichment upfront and accept a 20-year commitment; Tehran counters with five years and insists enrichment rights are non-negotiable. Meanwhile, the IRGC claims it coordinated passage of 26 vessels through the Strait in the past 24 hours under the new Persian Gulf Strait Authority — a managed-access regime rather than open transit. Iran's free-market remittance rate reached 1,787,000 IRR/USD today, 89% of the 2,000,000 threshold flagged in the portfolio; Saudi Arabia and the UAE publicly attributed recent drone attacks to Iraq-based Iranian-backed militias.",
+      "Watch over the next 24–72 hours: whether Tehran delivers a formal written response before Trump's self-imposed weekend deadline, any movement on enrichment-rights language, and whether the IRGC-managed 26-vessel daily cadence holds or tightens. A positive written response from Tehran would lift A1 (framework deal) odds materially; failure to respond raises B1 (US kinetic strike) risk."
+    ],
+    "movers": [],
+    "events": [
+      {
+        "headline": "Iran reviews U.S. peace proposal; Trump says he'll wait 'a few days' for response",
+        "source_name": "CNBC",
+        "url": "https://www.cnbc.com/2026/05/21/iran-war-us-peace-talks-trump-hormuz.html",
+        "published_at": "2026-05-21T09:00:00Z",
+        "public_safe": true
+      },
+      {
+        "headline": "Trump calls off Iran attack planned for Tuesday at Gulf leaders' request",
+        "source_name": "Euronews",
+        "url": "https://www.euronews.com/2026/05/18/trump-i-called-off-attack-on-iran-planned-for-tuesday",
+        "published_at": "2026-05-18T18:00:00Z",
+        "public_safe": true
+      },
+      {
+        "headline": "Iran IRGC claims coordination of 26 vessel transits through Hormuz in past 24 hours",
+        "source_name": "Al Jazeera",
+        "url": "https://www.aljazeera.com/news/2026/5/20/iran-says-it-coordinated-crossing-of-26-vessels-out-of-strait-of-hormuz",
+        "published_at": "2026-05-20T12:00:00Z",
+        "public_safe": true
+      },
+      {
+        "headline": "U.S. and Iran closing in on 14-point one-page memo to end war, officials say",
+        "source_name": "Axios",
+        "url": "https://www.axios.com/2026/05/06/iran-us-deal-one-page-memo",
+        "published_at": "2026-05-06T16:00:00Z",
+        "public_safe": true
+      },
+      {
+        "headline": "Iran free-market remittance dollar rate reaches 1,787,000 IRR on May 21",
+        "source_name": "AlanChand",
+        "url": "https://alanchand.com/en/currencies-price/usd-hav",
+        "published_at": "2026-05-21T11:07:00Z",
+        "public_safe": true
+      },
+      {
+        "headline": "Saudi Arabia and UAE attribute Iraq-based drone attacks to Iranian-backed militias",
+        "source_name": "Long War Journal",
+        "url": "https://www.longwarjournal.org/archives/2026/05/saudi-arabia-and-uae-say-drone-attacks-were-launched-from-iraq.php",
+        "published_at": "2026-05-20T13:35:55Z",
+        "public_safe": true
+      },
+      {
+        "headline": "IRGC Navy vows to enforce Khamenei's directive; Persian Gulf Strait Authority asserts vessel-transit control",
+        "source_name": "PressTV / GlobalSecurity",
+        "url": "https://www.presstv.ir/Detail/2026/05/01/767877/Iran-Strait-of-Hormuz-Persian-Gulf-IRGC-Leader",
+        "published_at": "2026-05-01T10:00:00Z",
+        "public_safe": true
+      },
+      {
+        "headline": "Hamas replaces military wing leader after IDF elimination; 19 Gaza ceasefire violations logged May 6–20",
+        "source_name": "Long War Journal",
+        "url": "https://www.longwarjournal.org/archives/2026/05/hamas-replaces-military-wing-leader-idf-reports-19-gaza-ceasefire-violations-may-6-20.php",
+        "published_at": "2026-05-20T17:35:12Z",
+        "public_safe": true
+      }
+    ]
+  },
+  "fa": {
+    "read_paragraphs": [
+      "روز ۸۳ درگیری در یک راهروی باریک دیپلماتیک گیر افتاده است. ترامپ گفت آماده است «چند روزی» — از جمعه تا یکشنبه — منتظر پاسخ تهران به پیشنهاد صلح آمریکا بماند و هشدار داد در صورت نبود توافق، نیروها برای «حمله تمام‌عیار» در آماده‌باش هستند. ایران تأیید کرد که پیشنهاد را بررسی می‌کند. چارچوب یادداشت تفاهم ۱۴‌بندی که در حال مذاکره است، پایان جنگ را اعلام و یک دوره مذاکره ۳۰‌روزه درباره دسترسی به تنگه هرمز، محدودیت‌های هسته‌ای و رفع تحریم‌ها را آغاز می‌کند.",
+      "مذاکرات از نظر ساختاری همچنان در بن‌بست است. واشنگتن می‌خواهد ایران پیشاپیش غنی‌سازی را متوقف کرده و تعهد ۲۰ ساله بدهد؛ تهران با ۵ سال پاسخ می‌دهد و بر حق غنی‌سازی تأکید می‌کند. در همین حال، سپاه پاسداران ادعا کرد که در ۲۴ ساعت گذشته عبور ۲۶ کشتی از تنگه را هماهنگ کرده — رژیم دسترسی مدیریت‌شده، نه تردد آزاد. نرخ حواله دلار در بازار آزاد ایران امروز به ۱٬۷۸۷٬۰۰۰ تومان رسید — ۸۹٪ آستانه ۲٬۰۰۰٬۰۰۰ تومانی پرتفولیو. عربستان سعودی و امارات رسماً حملات پهپادی اخیر را به شبه‌نظامیان وابسته به ایران در عراق نسبت دادند.",
+      "در ۲۴ تا ۷۲ ساعت آینده باید دید: آیا تهران پیش از مهلت آخر هفته ترامپ پاسخ کتبی رسمی می‌دهد، آیا در زبان حقوق غنی‌سازی تحرکی رخ می‌دهد، و آیا کادانس روزانه ۲۶ کشتی تحت مدیریت سپاه پابرجا می‌ماند یا تنگ‌تر می‌شود. پاسخ مثبت کتبی از تهران احتمال A1 (توافق چارچوبی) را به‌طور قابل‌توجهی بالا می‌برد؛ عدم پاسخ ریسک B1 (حمله سینتیک آمریکا) را افزایش می‌دهد."
+    ],
+    "movers": [],
+    "events": [
+      {
+        "headline": "ایران پیشنهاد صلح آمریکا را بررسی می‌کند؛ ترامپ گفت «چند روز» صبر می‌کند",
+        "source_name": "CNBC",
+        "url": "https://www.cnbc.com/2026/05/21/iran-war-us-peace-talks-trump-hormuz.html",
+        "published_at": "2026-05-21T09:00:00Z",
+        "public_safe": true
+      },
+      {
+        "headline": "ترامپ حمله برنامه‌ریزی‌شده علیه ایران در روز سه‌شنبه را به درخواست رهبران خلیج لغو کرد",
+        "source_name": "Euronews",
+        "url": "https://www.euronews.com/2026/05/18/trump-i-called-off-attack-on-iran-planned-for-tuesday",
+        "published_at": "2026-05-18T18:00:00Z",
+        "public_safe": true
+      },
+      {
+        "headline": "سپاه پاسداران ادعا کرد عبور ۲۶ شناور از تنگه هرمز در ۲۴ ساعت گذشته را هماهنگ کرده",
+        "source_name": "Al Jazeera",
+        "url": "https://www.aljazeera.com/news/2026/5/20/iran-says-it-coordinated-crossing-of-26-vessels-out-of-strait-of-hormuz",
+        "published_at": "2026-05-20T12:00:00Z",
+        "public_safe": true
+      },
+      {
+        "headline": "آمریکا و ایران در حال نزدیک شدن به یادداشت تفاهم یک‌صفحه‌ای برای پایان جنگ هستند",
+        "source_name": "Axios",
+        "url": "https://www.axios.com/2026/05/06/iran-us-deal-one-page-memo",
+        "published_at": "2026-05-06T16:00:00Z",
+        "public_safe": true
+      },
+      {
+        "headline": "نرخ حواله دلار در بازار آزاد ایران به ۱٬۷۸۷٬۰۰۰ ریال در ۲۱ مه رسید",
+        "source_name": "AlanChand",
+        "url": "https://alanchand.com/en/currencies-price/usd-hav",
+        "published_at": "2026-05-21T11:07:00Z",
+        "public_safe": true
+      },
+      {
+        "headline": "عربستان سعودی و امارات حملات پهپادی را به شبه‌نظامیان وابسته به ایران در عراق نسبت دادند",
+        "source_name": "Long War Journal",
+        "url": "https://www.longwarjournal.org/archives/2026/05/saudi-arabia-and-uae-say-drone-attacks-were-launched-from-iraq.php",
+        "published_at": "2026-05-20T13:35:55Z",
+        "public_safe": true
+      },
+      {
+        "headline": "نیروی دریایی سپاه پاسداران از اجرای دستور تاریخی خامنه‌ای درباره مدیریت جدید خلیج فارس خبر داد",
+        "source_name": "PressTV",
+        "url": "https://www.presstv.ir/Detail/2026/05/01/767877/Iran-Strait-of-Hormuz-Persian-Gulf-IRGC-Leader",
+        "published_at": "2026-05-01T10:00:00Z",
+        "public_safe": true
+      }
+    ]
+  }
+}
