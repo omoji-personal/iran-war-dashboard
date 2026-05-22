@@ -1,0 +1,72 @@
+{
+  "tick_date": "2026-05-22",
+  "tick_timestamp_utc": "2026-05-22T11:06:40Z",
+  "max_age_hours": 48,
+  "items_count": 8,
+  "items": [
+    {
+      "source": "web-search:Trump Iran statement today May 22 2026",
+      "title": "Iran reviews U.S. peace proposal; Trump warns of 'nasty' response if no deal reached",
+      "url": "https://www.cnbc.com/2026/05/21/iran-war-us-peace-talks-trump-hormuz.html",
+      "published_at": "2026-05-21T09:00:00Z",
+      "lang": "en",
+      "summary": "Trump told reporters talks are in 'final stages' and warned of a 'nasty' response if Iran fails to deliver an acceptable reply; Iran's Foreign Ministry confirmed receipt of U.S. proposal and said it is 'reviewing American views.'"
+    },
+    {
+      "source": "web-search:Trump Iran statement today May 22 2026",
+      "title": "Trump shifts between diplomacy and threats in Iran standoff",
+      "url": "https://www.aljazeera.com/news/2026/5/21/trump-shifts-between-diplomacy-and-threats-in-iran-standoff",
+      "published_at": "2026-05-21T12:00:00Z",
+      "lang": "en",
+      "summary": "Trump oscillated between diplomatic overtures and military threats, promising to seize Iran's 440 kg of highly enriched uranium — a demand Tehran immediately called a non-starter."
+    },
+    {
+      "source": "web-search:Tehran nuclear talks update May 22 2026",
+      "title": "U.S. demands 10-year enrichment halt and HEU surrender; Iran insists on staggered approach",
+      "url": "https://en.wikipedia.org/wiki/2025%E2%80%932026_Iran%E2%80%93United_States_negotiations",
+      "published_at": "2026-05-21T12:00:00Z",
+      "lang": "en",
+      "summary": "Washington insists on an upfront 10-year enrichment moratorium and handover of 440 kg HEU; Tehran proposes a staggered approach (war-end first, nuclear talks later), calling HEU surrender a non-starter."
+    },
+    {
+      "source": "web-search:Iran Hormuz shipping last 24 hours May 2026",
+      "title": "IRGC reports coordinating 26 vessel transits through Hormuz in latest 24-hour period",
+      "url": "https://www.aljazeera.com/news/2026/5/20/iran-says-it-coordinated-crossing-of-26-vessels-out-of-strait-of-hormuz",
+      "published_at": "2026-05-20T12:00:00Z",
+      "lang": "en",
+      "summary": "Iran's IRGC Navy said it coordinated 26 vessel transits through the Strait of Hormuz, framing access as occurring under the Persian Gulf Strait Authority managed-access regime rather than open transit."
+    },
+    {
+      "source": "web-search:Iran rial exchange rate today May 2026",
+      "title": "Iran free-market remittance dollar rate reaches 1,787,000 IRR/USD on May 21",
+      "url": "https://alanchand.com/en/currencies-price/usd-hav",
+      "published_at": "2026-05-21T11:00:00Z",
+      "lang": "en",
+      "summary": "The USD remittance rate in Iran's free market hit 1,787,000 IRR on May 21, reaching 89% of the 2,000,000 threshold in portfolio questions D1 and F8; official banking rate was 1,322,540 IRR/USD."
+    },
+    {
+      "source": "web-search:IRGC Persian Gulf incident May 2026",
+      "title": "IRGC threatens to destroy U.S. bases in southern Persian Gulf amid Hormuz standoff",
+      "url": "https://usa.news-pravda.com/world/2026/05/18/776993.html",
+      "published_at": "2026-05-18T12:00:00Z",
+      "lang": "en",
+      "summary": "The IRGC issued threats to destroy U.S. military bases in the southern Persian Gulf as the Hormuz standoff continues; Iran has redefined the strait as a 'vast operational area' extending from Jask to Siri Island."
+    },
+    {
+      "source": "web-search:IRGC Persian Gulf incident May 2026",
+      "title": "Polymarket: Iran ceasefire holding through May 22 at 98%; U.S.-Iran peace deal by Dec 31 at 70%",
+      "url": "https://polymarket.com/event/will-the-iran-ceasefire-continue-through-may-22",
+      "published_at": "2026-05-22T11:06:40Z",
+      "lang": "en",
+      "summary": "Prediction markets show 98% confidence in ceasefire holding today and 70% for a full U.S.-Iran peace deal by December 31, 2026 — well above the portfolio's A1 framework-deal probability of 20% for September 30."
+    },
+    {
+      "source": "web-search:Iran protests economy May 2026",
+      "title": "Iran protests extend into May 2026 as economy worsens; 40% inflation and rial collapse",
+      "url": "https://www.realinstitutoelcano.org/en/analyses/irans-2025-26-protests-resilience-and-political-containment/",
+      "published_at": "2026-05-22T11:06:40Z",
+      "lang": "en",
+      "summary": "Iran faces its most extensive protest wave since the 2022 Mahsa Amini movement, driven by 40% inflation, rial collapse, and food insecurity; government has combined selective repression with political containment, with local elections underway in May."
+    }
+  ]
+}

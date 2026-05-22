@@ -1,0 +1,141 @@
+{
+  "tick_date": "2026-05-22",
+  "tick_timestamp_utc": "2026-05-22T11:06:40Z",
+  "day_number": 84,
+  "cron_status": "ok",
+  "events_count_24h": 8,
+  "probability_moves_24h": 0,
+  "briefing_partial": false,
+  "en": {
+    "read_paragraphs": [
+      "Day 84 finds the conflict poised on a sharp knife's edge between diplomacy and renewed strikes. Iran's Foreign Ministry confirmed overnight it received the latest U.S. framework proposal and is 'reviewing American views,' with Pakistan continuing to mediate exchanges. Trump told reporters the talks are in their 'final stages' and warned of a 'nasty' response if Iran fails to deliver acceptable answers — adding a fresh demand that Tehran surrender its 440 kg of highly enriched uranium, a condition Iran immediately called a non-starter. Polymarket traders price a ceasefire holding through today at 98%.",
+      "The structural deadlock is unchanged: Washington insists on an upfront 10-year enrichment moratorium plus HEU handover; Tehran proposes a staggered approach — war-end declaration first, nuclear limits later. The IRGC's managed-access Hormuz regime continues, reporting coordination of 26 vessel transits in the 24 hours ending May 20 — well below the pre-war 138 vessels per day but the standing status quo. Iran's free-market remittance dollar hit 1,787,000 IRR/USD on May 21, reaching 89% of the 2,000,000 threshold tracked in questions D1 and F8. Manifold markets price a US-Iran nuclear deal by end of June at 27%, consistent with the portfolio's cautious read.",
+      "Watch in the next 24–72 hours: whether Tehran delivers a written formal response before Trump's self-imposed deadline (likely May 23–24), and whether the IRGC-managed vessel transit count holds or tightens. A positive written response would lift A1 (framework deal by Sep 30) odds materially; continued silence or rejection raises B1 (US kinetic strike) risk above the current 22%. No probability moves above CI noise today."
+    ],
+    "movers": [],
+    "events": [
+      {
+        "headline": "Iran reviews U.S. peace proposal; Trump warns of 'nasty' response if no deal reached",
+        "source_name": "CNBC",
+        "url": "https://www.cnbc.com/2026/05/21/iran-war-us-peace-talks-trump-hormuz.html",
+        "published_at": "2026-05-21T09:00:00Z",
+        "public_safe": true
+      },
+      {
+        "headline": "Trump shifts between diplomacy and threats in Iran standoff",
+        "source_name": "Al Jazeera",
+        "url": "https://www.aljazeera.com/news/2026/5/21/trump-shifts-between-diplomacy-and-threats-in-iran-standoff",
+        "published_at": "2026-05-21T12:00:00Z",
+        "public_safe": true
+      },
+      {
+        "headline": "U.S. demands 10-year enrichment halt and 440 kg HEU surrender; Iran calls it a non-starter",
+        "source_name": "Wikipedia — 2025–2026 Iran–US Negotiations",
+        "url": "https://en.wikipedia.org/wiki/2025%E2%80%932026_Iran%E2%80%93United_States_negotiations",
+        "published_at": "2026-05-21T12:00:00Z",
+        "public_safe": true
+      },
+      {
+        "headline": "IRGC reports coordinating 26 vessel transits through Hormuz in latest 24-hour period",
+        "source_name": "Al Jazeera",
+        "url": "https://www.aljazeera.com/news/2026/5/20/iran-says-it-coordinated-crossing-of-26-vessels-out-of-strait-of-hormuz",
+        "published_at": "2026-05-20T12:00:00Z",
+        "public_safe": true
+      },
+      {
+        "headline": "Iran free-market remittance dollar hits 1,787,000 IRR/USD on May 21 — 89% of 2M threshold",
+        "source_name": "AlanChand",
+        "url": "https://alanchand.com/en/currencies-price/usd-hav",
+        "published_at": "2026-05-21T11:00:00Z",
+        "public_safe": true
+      },
+      {
+        "headline": "IRGC threatens to destroy U.S. bases in southern Persian Gulf amid Hormuz standoff",
+        "source_name": "Pravda USA / IRGC statement",
+        "url": "https://usa.news-pravda.com/world/2026/05/18/776993.html",
+        "published_at": "2026-05-18T12:00:00Z",
+        "public_safe": true
+      },
+      {
+        "headline": "Polymarket: Iran ceasefire holding through May 22 at 98%; U.S.-Iran peace deal by Dec 31 at 70%",
+        "source_name": "Polymarket",
+        "url": "https://polymarket.com/event/will-the-iran-ceasefire-continue-through-may-22",
+        "published_at": "2026-05-22T11:06:40Z",
+        "public_safe": true
+      },
+      {
+        "headline": "Iran protests extend into May 2026 as 40% inflation and rial collapse fuel unrest",
+        "source_name": "Real Instituto Elcano",
+        "url": "https://www.realinstitutoelcano.org/en/analyses/irans-2025-26-protests-resilience-and-political-containment/",
+        "published_at": "2026-05-22T11:06:40Z",
+        "public_safe": true
+      }
+    ]
+  },
+  "fa": {
+    "read_paragraphs": [
+      "در روز هشتاد و چهارم جنگ، تنش بین دیپلماسی و از سرگیری حملات به نقطه‌ای حساس رسیده است. وزارت امور خارجه ایران شب گذشته تأیید کرد که آخرین پیشنهاد چارچوبی آمریکا را دریافت کرده و «دیدگاه‌های آمریکایی را بررسی می‌کند»، در حالی که پاکستان به میانجیگری ادامه می‌دهد. ترامپ به خبرنگاران گفت مذاکرات در «مراحل پایانی» است و در صورت نرسیدن به پاسخ قابل‌قبول، از واکنش «ناخوشایند» خبر داد. همچنین خواستار تحویل ۴۴۰ کیلوگرم اورانیوم غنی‌شده بالا شد که تهران آن را فوراً غیرقابل قبول اعلام کرد. پالیمارکت ادامه آتش‌بس تا امروز را با احتمال ۹۸٪ قیمت‌گذاری کرده است.",
+      "بن‌بست ساختاری تغییری نکرده است: واشنگتن بر توقف ۱۰ ساله غنی‌سازی و تحویل اورانیوم غنی‌شده از پیش پافشاری دارد؛ تهران رویکرد تدریجی را پیشنهاد می‌دهد — ابتدا اعلام پایان جنگ، سپس محدودیت‌های هسته‌ای. رژیم دسترسی کنترل‌شده سپاه در تنگه هرمز ادامه دارد و گزارش شد که در ۲۴ ساعت منتهی به ۲۰ مه، عبور ۲۶ کشتی هماهنگ شده — بسیار کمتر از ۱۳۸ کشتی روزانه پیش از جنگ. نرخ حواله دلار در بازار آزاد در ۲۱ مه به ۱٬۷۸۷٬۰۰۰ ریال رسید؛ یعنی ۸۹٪ آستانه دو میلیونی که در سؤالات D1 و F8 دنبال می‌شود.",
+      "در ۲۴ تا ۷۲ ساعت آینده باید دید آیا تهران پیش از ضرب‌الاجل خودخوانده ترامپ (احتمالاً ۲۳–۲۴ مه) پاسخ کتبی رسمی ارائه می‌دهد یا خیر. پاسخ مثبت احتمال A1 (توافق چارچوبی تا ۳۰ سپتامبر) را به‌طور قابل‌توجهی بالا می‌برد؛ سکوت یا رد آن خطر B1 (حمله نظامی آمریکا) را از ۲۲٪ کنونی فراتر می‌برد. امروز هیچ تغییر احتمالی بالاتر از سطح نویز CI ثبت نشد."
+    ],
+    "movers": [],
+    "events": [
+      {
+        "headline": "ایران پیشنهاد صلح آمریکا را بررسی می‌کند؛ ترامپ از پاسخ «ناخوشایند» در صورت شکست مذاکرات هشدار داد",
+        "source_name": "CNBC",
+        "url": "https://www.cnbc.com/2026/05/21/iran-war-us-peace-talks-trump-hormuz.html",
+        "published_at": "2026-05-21T09:00:00Z",
+        "public_safe": true
+      },
+      {
+        "headline": "ترامپ بین دیپلماسی و تهدید در بحران ایران در نوسان است",
+        "source_name": "الجزیره",
+        "url": "https://www.aljazeera.com/news/2026/5/21/trump-shifts-between-diplomacy-and-threats-in-iran-standoff",
+        "published_at": "2026-05-21T12:00:00Z",
+        "public_safe": true
+      },
+      {
+        "headline": "آمریکا خواهان توقف ۱۰ ساله غنی‌سازی و تحویل ۴۴۰ کیلوگرم اورانیوم است؛ ایران آن را رد کرد",
+        "source_name": "ویکی‌پدیا — مذاکرات ایران–آمریکا",
+        "url": "https://en.wikipedia.org/wiki/2025%E2%80%932026_Iran%E2%80%93United_States_negotiations",
+        "published_at": "2026-05-21T12:00:00Z",
+        "public_safe": true
+      },
+      {
+        "headline": "سپاه از هماهنگی عبور ۲۶ کشتی از تنگه هرمز در ۲۴ ساعت اخیر خبر داد",
+        "source_name": "الجزیره",
+        "url": "https://www.aljazeera.com/news/2026/5/20/iran-says-it-coordinated-crossing-of-26-vessels-out-of-strait-of-hormuz",
+        "published_at": "2026-05-20T12:00:00Z",
+        "public_safe": true
+      },
+      {
+        "headline": "نرخ حواله دلار در بازار آزاد ایران در ۲۱ مه به ۱٬۷۸۷٬۰۰۰ ریال رسید — ۸۹٪ آستانه دو میلیونی",
+        "source_name": "آلان‌چند",
+        "url": "https://alanchand.com/en/currencies-price/usd-hav",
+        "published_at": "2026-05-21T11:00:00Z",
+        "public_safe": true
+      },
+      {
+        "headline": "سپاه از تخریب پایگاه‌های آمریکا در خلیج فارس تهدید کرد",
+        "source_name": "Pravda USA / بیانیه سپاه",
+        "url": "https://usa.news-pravda.com/world/2026/05/18/776993.html",
+        "published_at": "2026-05-18T12:00:00Z",
+        "public_safe": true
+      },
+      {
+        "headline": "پالیمارکت: ادامه آتش‌بس تا ۲۲ مه ۹۸٪؛ توافق صلح دائمی تا پایان ۲۰۲۶ با احتمال ۷۰٪",
+        "source_name": "پالیمارکت",
+        "url": "https://polymarket.com/event/will-the-iran-ceasefire-continue-through-may-22",
+        "published_at": "2026-05-22T11:06:40Z",
+        "public_safe": true
+      },
+      {
+        "headline": "اعتراضات ایران در مه ۲۰۲۶ ادامه دارد؛ تورم ۴۰ درصدی و سقوط ریال موج نارضایتی را تغذیه می‌کند",
+        "source_name": "Real Instituto Elcano",
+        "url": "https://www.realinstitutoelcano.org/en/analyses/irans-2025-26-protests-resilience-and-political-containment/",
+        "published_at": "2026-05-22T11:06:40Z",
+        "public_safe": true
+      }
+    ]
+  }
+}
