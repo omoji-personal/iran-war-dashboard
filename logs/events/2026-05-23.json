@@ -1,0 +1,88 @@
+{
+  "tick_date": "2026-05-23",
+  "tick_timestamp_utc": "2026-05-23T11:07:14Z",
+  "max_age_hours": 24,
+  "items_count": 8,
+  "items": [
+    {
+      "id": "ws-hormuz-35vessels",
+      "title": "IRGC Navy claims 35 vessels transited Strait of Hormuz with its 'permission' on May 22",
+      "source_name": "Tribune India / IRGC statement",
+      "url": "https://www.tribuneindia.com/news/global-trade-corridor/irans-irgc-navy-claims-35-vessels-transited-through-strait-of-hormuz-with-its-permission",
+      "published_at": "2026-05-22T18:00:00Z",
+      "summary": "Iran's IRGC Navy announced 35 vessels transited the Strait of Hormuz on May 22 with its authorization, continuing Tehran's 'permission-based' transit regime.",
+      "source": "web-search:Iran Hormuz shipping last 24 hours May 2026",
+      "public_safe": true
+    },
+    {
+      "id": "ws-pgsa-map",
+      "title": "Iran's new Persian Gulf Strait Authority publishes controlled maritime zone map",
+      "source_name": "Al Jazeera",
+      "url": "https://www.aljazeera.com/news/2026/5/20/iran-says-it-coordinated-crossing-of-26-vessels-out-of-strait-of-hormuz",
+      "published_at": "2026-05-20T12:00:00Z",
+      "summary": "Iran's newly created Persian Gulf Strait Authority released a map delineating a controlled maritime zone that vessels cannot transit without Tehran's authorization.",
+      "source": "web-search:Iran Hormuz shipping last 24 hours May 2026",
+      "public_safe": true
+    },
+    {
+      "id": "ws-rial-rate",
+      "title": "Iran rial remittance rate reaches 1,762,000 IRR/USD on May 23, up 10,000 from prior day",
+      "source_name": "AlanChand / Bonbast",
+      "url": "https://alanchand.com/en/currencies-price/usd-hav",
+      "published_at": "2026-05-23T08:00:00Z",
+      "summary": "The USD remittance rate in Iran's open market stands at 1,762,000 IRR on Saturday May 23, a 0.57% daily increase, remaining below the F8 and D1 trigger thresholds of 2,000,000.",
+      "source": "web-search:Iran rial exchange rate today May 23 2026",
+      "public_safe": true
+    },
+    {
+      "id": "ws-trump-hormuz-tolls",
+      "title": "Trump rejects Iran-Oman Hormuz toll discussions, demands free international passage",
+      "source_name": "CNBC",
+      "url": "https://www.cnbc.com/2026/05/22/iran-war-strait-of-hormuz-tolls-trump.html",
+      "published_at": "2026-05-22T16:00:00Z",
+      "summary": "Trump told reporters the U.S. has 'total control' of Hormuz and opposed any toll system, saying 'It's an international waterway — we want it open and free.'",
+      "source": "web-search:Trump Iran statement today May 2026",
+      "public_safe": true
+    },
+    {
+      "id": "ws-trump-nsc-deadline",
+      "title": "Trump cancels weekend plans, meets NSC, gives Iran early-next-week deadline for peace offer",
+      "source_name": "CNN Politics",
+      "url": "https://www.cnn.com/2026/05/22/politics/trump-iran-national-security-meeting",
+      "published_at": "2026-05-22T20:00:00Z",
+      "summary": "Trump stayed in Washington Friday to meet top national security officials on Iran, giving Tehran a loose deadline of early next week to return an acceptable peace proposal.",
+      "source": "web-search:Trump Iran statement today May 2026",
+      "public_safe": true
+    },
+    {
+      "id": "ws-trump-enrichment-20yr",
+      "title": "Trump signals flexibility on nuclear program, would accept 20-year enrichment suspension",
+      "source_name": "Times of Israel",
+      "url": "https://www.timesofisrael.com/trump-says-hes-ok-with-iran-suspending-nuke-program-for-20-years-if-theres-a-real-commitment/",
+      "published_at": "2026-05-21T14:00:00Z",
+      "summary": "Trump said he would accept a 20-year uranium enrichment suspension instead of a permanent halt if Iran provides a 'real' guarantee, marking an apparent softening of the U.S. nuclear demand.",
+      "source": "web-search:Trump Iran statement today May 2026",
+      "public_safe": true
+    },
+    {
+      "id": "ws-rome-round5-no-deal",
+      "title": "Fifth round of US-Iran Rome talks ends without deal; both sides agree to continue",
+      "source_name": "PBS NewsHour / Voice of Emirates",
+      "url": "https://www.voiceofemirates.com/en/news/2026/05/23/preliminary-understandings-in-tehran-negotiations-on-the-iranian-nuclear-file/",
+      "published_at": "2026-05-23T09:00:00Z",
+      "summary": "Oman-mediated Rome talks concluded without a breakthrough but with 'preliminary understandings' on sanctions and uranium; Hormuz status and security guarantees remain unresolved; a 30-day detailed talks window may open after a Declaration of Principles is approved.",
+      "source": "web-search:Tehran nuclear talks update May 23 2026",
+      "public_safe": true
+    },
+    {
+      "id": "ws-aljaz-live-no-deal",
+      "title": "Al Jazeera live: Tehran says diplomacy continues but no deal yet with US as of May 23",
+      "source_name": "Al Jazeera",
+      "url": "https://www.aljazeera.com/news/liveblog/2026/5/23/iran-war-live-tehran-says-diplomacy-continues-but-no-deal-yet-with-us",
+      "published_at": "2026-05-23T10:00:00Z",
+      "summary": "Iran's Foreign Ministry confirmed diplomatic channels remain active while denying any deal has been reached; Witkoff and Araghchi reportedly held a brief in-person exchange after Rome's fifth round.",
+      "source": "web-search:Tehran nuclear talks update May 23 2026",
+      "public_safe": true
+    }
+  ]
+}
