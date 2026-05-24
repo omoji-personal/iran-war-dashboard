@@ -1,0 +1,127 @@
+{
+  "tick_date": "2026-05-24",
+  "tick_timestamp_utc": "2026-05-24T11:02:58Z",
+  "day_number": 86,
+  "cron_status": "ok",
+  "events_count_24h": 7,
+  "probability_moves_24h": 0,
+  "briefing_partial": false,
+  "en": {
+    "read_paragraphs": [
+      "Day 86 may be the most consequential since the ceasefire. President Trump posted Saturday that a deal to end the war and reopen the Strait of Hormuz has been 'largely been negotiated,' with an announcement expected 'shortly' — potentially this Sunday. Axios reporting on the draft MOU describes a 60-day framework: Iran clears the mines it deployed at Hormuz, the strait reopens with zero tolls, the US lifts its port blockade and issues sanctions waivers allowing Iran to freely sell oil, and Iran commits to never pursuing nuclear weapons. A 30-day negotiation window would follow to work out the harder question of enrichment suspension and the uranium stockpile. UK PM Starmer has already welcomed 'progress towards agreement.'",
+      "Two structural tensions could still unravel the deal before ink dries. First, Mojtaba Khamenei issued a directive on May 22 explicitly prohibiting the removal of Iran's enriched uranium stockpile from Iranian soil — a direct contradiction of the nuclear terms being negotiated. Second, a senior Israeli official told the Times of Israel that Trump privately told Netanyahu the 'final deal' would require full dismantlement of Iran's nuclear program and complete removal of all enriched uranium, a standard far harder than the MOU draft. Whether these represent hardening red lines or negotiating noise for different audiences is the single most important ambiguity right now. Polymarket's A1-adjacent market — 'US-Iran permanent peace deal by Dec 31' — sits at 78%.",
+      "Watch in the next 24 hours: whether Trump formally announces the MOU (expected Sunday), how Araghchi's side responds publicly, whether Khamenei's enriched-uranium directive is walked back or restated, and whether the Hormuz controlled-transit count (25 ships on May 23) begins to rise ahead of an expected mine-clearance window. A signed MOU would be a step-change for A1 and F7; failure before announcement re-opens B1 risk. The rial held at 1,762,000 — markets appear to be pricing partial deal probability but haven't gone all-in."
+    ],
+    "movers": [],
+    "events": [
+      {
+        "headline": "Trump says Iran deal reopening Strait of Hormuz has been 'largely negotiated', announcement imminent",
+        "source_name": "CNBC",
+        "url": "https://www.cnbc.com/2026/05/23/us-iran-war-talks.html",
+        "published_at": "2026-05-23T18:00:00Z",
+        "public_safe": true
+      },
+      {
+        "headline": "Exclusive: Draft MOU — 60-day ceasefire extension, Hormuz reopens no-toll, mines cleared, sanctions waivers for Iran oil, Iran commits no nuclear weapons",
+        "source_name": "Axios",
+        "url": "https://www.axios.com/2026/05/24/iran-deal-strait-hormuz-sanctions-nuclear",
+        "published_at": "2026-05-24T07:00:00Z",
+        "public_safe": true
+      },
+      {
+        "headline": "Israeli official: Trump told Netanyahu final Iran deal requires full nuclear program dismantlement, all enriched uranium removed",
+        "source_name": "Times of Israel",
+        "url": "https://www.timesofisrael.com/liveblog-may-24-2026/",
+        "published_at": "2026-05-24T09:00:00Z",
+        "public_safe": true
+      },
+      {
+        "headline": "Khamenei (Mojtaba) issues directive: Iran's enriched uranium stockpile must not leave Iranian soil",
+        "source_name": "Al Jazeera",
+        "url": "https://www.aljazeera.com/news/2026/5/22/irans-enriched-uranium-stockpile-can-it-be-safely-transferred",
+        "published_at": "2026-05-22T14:00:00Z",
+        "public_safe": true
+      },
+      {
+        "headline": "IRGC Navy: 25 vessels transited Strait of Hormuz in 24h ending May 23",
+        "source_name": "Middle East Monitor",
+        "url": "https://www.middleeastmonitor.com/20260523-iran-says-25-ships-passed-through-strait-of-hormuz-in-past-24-hours/",
+        "published_at": "2026-05-23T16:00:00Z",
+        "public_safe": true
+      },
+      {
+        "headline": "Iran rial holds ~1,762,000 IRR/USD on May 23-24, below 2M threshold, modest risk-off ahead of potential deal",
+        "source_name": "AlanChand / Bonbast",
+        "url": "https://alanchand.com/en/currencies-price/usd-hav",
+        "published_at": "2026-05-24T09:00:00Z",
+        "public_safe": true
+      },
+      {
+        "headline": "UK PM Starmer welcomes 'progress towards agreement' to end Iran war, pledges international support",
+        "source_name": "Fortune",
+        "url": "https://fortune.com/2026/05/23/iran-war-us-agreement-memorandum-of-understanding-strait-hormuz-nuclear-weapons/",
+        "published_at": "2026-05-24T10:00:00Z",
+        "public_safe": true
+      }
+    ]
+  },
+  "fa": {
+    "read_paragraphs": [
+      "روز هشتاد و ششم جنگ احتمالاً پراهمیت‌ترین روز از زمان آتش‌بس بود. ترامپ شنبه اعلام کرد که توافقی برای پایان جنگ و بازگشایی تنگه هرمز «عمدتاً مذاکره شده» و اعلام آن «به‌زودی» در راه است — احتمالاً همین یکشنبه. گزارش اکسیوس از جزئیات پیش‌نویس تفاهم‌نامه: یک چارچوب ۶۰ روزه که در آن ایران مین‌های تنگه هرمز را پاکسازی می‌کند، تنگه بدون عوارض بازمی‌گردد، آمریکا محاصره بنادر را می‌لغزد و معافیت‌های تحریمی برای فروش آزاد نفت ایران صادر می‌کند، و ایران متعهد می‌شود هرگز به دنبال سلاح هسته‌ای نرود. پس از آن یک پنجره ۳۰ روزه برای مذاکره روی تعلیق غنی‌سازی و حذف ذخایر اورانیوم باز خواهد شد. نخست‌وزیر انگلیس استارمر نیز «پیشرفت به سوی توافق» را خیرمقدم گفت.",
+      "دو تنش ساختاری می‌توانند معامله را پیش از امضا بر هم بزنند. نخست، مجتبی خامنه‌ای ۲ خرداد دستوری صادر کرد که صریحاً انتقال ذخایر اورانیوم غنی‌شده ایران به خارج از کشور را ممنوع می‌کند — تناقضی مستقیم با شروط هسته‌ای در حال مذاکره. دوم، یک مقام ارشد اسرائیلی به تایمز اسرائیل گفت ترامپ به نتانیاهو گفته «توافق نهایی» مستلزم برچیدن کامل برنامه هسته‌ای ایران و حذف کل ذخایر اورانیوم است — استانداردی بسیار سخت‌تر از پیش‌نویس تفاهم‌نامه. بازار پیش‌بینی پولی‌مارکت برای «توافق صلح دائمی ایران-آمریکا تا ۳۱ دسامبر» روی ۷۸٪ ایستاده است.",
+      "در ۲۴ ساعت آینده باید دید: آیا ترامپ تفاهم‌نامه را رسماً اعلام می‌کند، واکنش عمومی عراقچی چه خواهد بود، دستور خامنه‌ای درباره اورانیوم پس گرفته می‌شود یا تأیید مجدد می‌یابد، و آیا شمار کشتی‌های تنگه هرمز (۲۵ فروند در ۲۳ مه) با نزدیک‌شدن پنجره پاکسازی مین افزایش می‌یابد. امضای تفاهم‌نامه برای A1 و F7 تحول‌آفرین است؛ شکست مذاکرات پیش از اعلام، خطر B1 را بالا می‌برد. ریال در ۱٬۷۶۲٬۰۰۰ ماند — بازارها احتمال جزئی توافق را قیمت‌گذاری کرده‌اند اما هنوز تمام قد وارد نشده‌اند."
+    ],
+    "movers": [],
+    "events": [
+      {
+        "headline": "ترامپ: توافق با ایران برای بازگشایی هرمز «عمدتاً مذاکره شده»، اعلام آن «به‌زودی»",
+        "source_name": "CNBC",
+        "url": "https://www.cnbc.com/2026/05/23/us-iran-war-talks.html",
+        "published_at": "2026-05-23T18:00:00Z",
+        "public_safe": true
+      },
+      {
+        "headline": "اکسیوس: پیش‌نویس تفاهم‌نامه — ۶۰ روز تمدید آتش‌بس، هرمز بدون عوارض، پاکسازی مین، معافیت تحریمی نفت، تعهد ایران به عدم دستیابی به سلاح هسته‌ای",
+        "source_name": "Axios",
+        "url": "https://www.axios.com/2026/05/24/iran-deal-strait-hormuz-sanctions-nuclear",
+        "published_at": "2026-05-24T07:00:00Z",
+        "public_safe": true
+      },
+      {
+        "headline": "مقام اسرائیلی: ترامپ به نتانیاهو گفته توافق نهایی برچیدن کامل برنامه هسته‌ای و حذف کل اورانیوم غنی‌شده را می‌طلبد",
+        "source_name": "Times of Israel",
+        "url": "https://www.timesofisrael.com/liveblog-may-24-2026/",
+        "published_at": "2026-05-24T09:00:00Z",
+        "public_safe": true
+      },
+      {
+        "headline": "دستور خامنه‌ای (مجتبی): ذخایر اورانیوم غنی‌شده نباید از خاک ایران خارج شود",
+        "source_name": "Al Jazeera",
+        "url": "https://www.aljazeera.com/news/2026/5/22/irans-enriched-uranium-stockpile-can-it-be-safely-transferred",
+        "published_at": "2026-05-22T14:00:00Z",
+        "public_safe": true
+      },
+      {
+        "headline": "سپاه: ۲۵ کشتی در ۲۴ ساعت منتهی به ۲۳ مه از تنگه هرمز گذشتند",
+        "source_name": "Middle East Monitor",
+        "url": "https://www.middleeastmonitor.com/20260523-iran-says-25-ships-passed-through-strait-of-hormuz-in-past-24-hours/",
+        "published_at": "2026-05-23T16:00:00Z",
+        "public_safe": true
+      },
+      {
+        "headline": "ریال ایران حدود ۱٬۷۶۲٬۰۰۰ ریال در برابر دلار — زیر آستانه ۲ میلیون، کاهش جزئی فشار بازار پیش از اعلام احتمالی توافق",
+        "source_name": "AlanChand / Bonbast",
+        "url": "https://alanchand.com/en/currencies-price/usd-hav",
+        "published_at": "2026-05-24T09:00:00Z",
+        "public_safe": true
+      },
+      {
+        "headline": "نخست‌وزیر انگلیس استارمر «پیشرفت به سوی توافق» برای پایان جنگ ایران را خیرمقدم گفت",
+        "source_name": "Fortune",
+        "url": "https://fortune.com/2026/05/23/iran-war-us-agreement-memorandum-of-understanding-strait-hormuz-nuclear-weapons/",
+        "published_at": "2026-05-24T10:00:00Z",
+        "public_safe": true
+      }
+    ]
+  }
+}

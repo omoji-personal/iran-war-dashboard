@@ -1,10 +1,10 @@
-# Agent Memory — last regenerated 2026-05-23T11:11:44 UTC
+# Agent Memory — last regenerated 2026-05-24T11:06:52 UTC
 
 _This file is **programmatically regenerated** each tick by `scripts/refresh_memory.py` from `portfolio.yaml`, `portfolio_history.json`, `agent/operator-queue.md`, and recent logs._
 
 ## Portfolio summary (current state)
 
-Engine version: **0.2.0** · Spec: **v8** · Questions: **32** · History snapshots: **12**
+Engine version: **0.2.0** · Spec: **v8** · Questions: **32** · History snapshots: **13**
 
 ### A. Diplomatic resolution
 
@@ -61,7 +61,7 @@ Engine version: **0.2.0** · Spec: **v8** · Questions: **32** · History snapsh
 
 ## Recent probability changes (last 7d)
 
-_No moves above CI noise floor in last 7d (since 2026-05-16)._
+_No moves above CI noise floor in last 7d (since 2026-05-17)._
 
 ## Open Tier-C operator decisions
 
@@ -72,8 +72,8 @@ _No moves above CI noise floor in last 7d (since 2026-05-16)._
 ## Recent log files
 
 - **Events**: `2026-05-03.md`
-- **Probability changes**: `2026-05-23.md`, `2026-05-22.md`, `2026-05-21.md`, `2026-05-20.md`, `2026-05-19.md`
-- **Sources shifted**: `2026-05-23.md`, `2026-05-22.md`, `2026-05-21.md`, `2026-05-20.md`, `2026-05-19.md`
+- **Probability changes**: `2026-05-24.md`, `2026-05-23.md`, `2026-05-22.md`, `2026-05-21.md`, `2026-05-20.md`
+- **Sources shifted**: `2026-05-24.md`, `2026-05-23.md`, `2026-05-22.md`, `2026-05-21.md`, `2026-05-20.md`
 
 ## Top-of-mind context (operator-curated)
 

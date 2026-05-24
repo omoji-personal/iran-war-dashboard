@@ -1,0 +1,57 @@
+{
+  "tick_date": "2026-05-24",
+  "tick_timestamp_utc": "2026-05-24T11:02:58Z",
+  "max_age_hours": 24,
+  "items_count": 7,
+  "items": [
+    {
+      "source": "web-search:Iran US memorandum of understanding nuclear deal May 24 2026",
+      "title": "Trump says Iran deal reopening Strait of Hormuz has been 'largely negotiated', announcement imminent",
+      "url": "https://www.cnbc.com/2026/05/23/us-iran-war-talks.html",
+      "published_at": "2026-05-23T18:00:00Z",
+      "summary": "President Trump posted that an agreement to end the Iran war and reopen the Strait of Hormuz has been 'largely been negotiated,' with final details still being discussed and an announcement expected 'shortly.'"
+    },
+    {
+      "source": "web-search:Iran US memorandum of understanding nuclear deal May 24 2026",
+      "title": "Exclusive: What's inside the Iran deal Trump is close to signing",
+      "url": "https://www.axios.com/2026/05/24/iran-deal-strait-hormuz-sanctions-nuclear",
+      "published_at": "2026-05-24T07:00:00Z",
+      "summary": "The draft 60-day MOU would reopen the Strait of Hormuz with no tolls, have Iran clear mines, lift the US blockade plus sanctions waivers for Iranian oil, and require Iran to commit to never pursuing nuclear weapons while a 30-day window opens to negotiate enrichment suspension and uranium stockpile removal."
+    },
+    {
+      "source": "web-search:Trump Iran nuclear talks statement May 24 2026",
+      "title": "Israeli official: Trump told PM that final Iran deal will see nuke program dismantled, all enriched uranium removed",
+      "url": "https://www.timesofisrael.com/liveblog-may-24-2026/",
+      "published_at": "2026-05-24T09:00:00Z",
+      "summary": "A senior Israeli official said Trump told Netanyahu that Washington's final deal with Iran would require full dismantlement of Iran's nuclear program and removal of all enriched uranium — a harder line than what the current MOU draft requires."
+    },
+    {
+      "source": "web-search:Khamenei statement Iran nuclear deal May 2026",
+      "title": "Khamenei (Mojtaba) issues directive: Iran's enriched uranium stockpile must not be sent abroad",
+      "url": "https://www.aljazeera.com/news/2026/5/22/irans-enriched-uranium-stockpile-can-it-be-safely-transferred",
+      "published_at": "2026-05-22T14:00:00Z",
+      "summary": "Iran's supreme leader Mojtaba Khamenei issued an order prohibiting the removal of Iran's enriched uranium stockpile from the country — a direct obstacle to the nuclear terms being negotiated in the MOU."
+    },
+    {
+      "source": "web-search:Iran Hormuz shipping last 24 hours May 24 2026",
+      "title": "Iran says 25 ships passed through Strait of Hormuz in past 24 hours",
+      "url": "https://www.middleeastmonitor.com/20260523-iran-says-25-ships-passed-through-strait-of-hormuz-in-past-24-hours/",
+      "published_at": "2026-05-23T16:00:00Z",
+      "summary": "The IRGC Navy reported 25 vessels transited the Strait of Hormuz in the 24 hours ending May 23, continuing Iran's controlled-transit permission regime."
+    },
+    {
+      "source": "web-search:Iran rial exchange rate today May 24 2026",
+      "title": "Iran rial holds near 1,762,000 IRR/USD on May 23-24, below 2M threshold",
+      "url": "https://alanchand.com/en/currencies-price/usd-hav",
+      "published_at": "2026-05-24T09:00:00Z",
+      "summary": "The free-market USD/IRR remittance rate hovered around 1,762,000 on May 23-24, suggesting a modest risk-off reduction ahead of possible deal announcement — still well below the D1/F8 threshold of 2,000,000."
+    },
+    {
+      "source": "web-search:Iran US memorandum of understanding nuclear deal May 24 2026",
+      "title": "UK PM Starmer welcomes 'progress towards agreement' to end Iran war",
+      "url": "https://fortune.com/2026/05/23/iran-war-us-agreement-memorandum-of-understanding-strait-hormuz-nuclear-weapons/",
+      "published_at": "2026-05-24T10:00:00Z",
+      "summary": "British PM Keir Starmer welcomed 'the progress towards an agreement' to end the Iran war and said the UK will work with international partners 'to seize this moment and achieve a long-term diplomatic settlement.'"
+    }
+  ]
+}
