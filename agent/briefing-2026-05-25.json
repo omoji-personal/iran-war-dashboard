@@ -1,0 +1,113 @@
+{
+  "tick_date": "2026-05-25",
+  "tick_timestamp_utc": "2026-05-25T11:05:34Z",
+  "day_number": 87,
+  "cron_status": "ok",
+  "events_count_24h": 6,
+  "probability_moves_24h": 0,
+  "briefing_partial": false,
+  "en": {
+    "read_paragraphs": [
+      "Day 87: The Sunday announcement that President Trump promised did not arrive. US officials told Axios the Iran deal is still 'days away,' while Iran's Foreign Ministry accused Washington of obstruction — even as Secretary Rubio called the past 48 hours 'significant progress.' The ceasefire holds (Polymarket 99% through today). The rial edged down to ~1,709,000 IRR/USD on May 24, a modest improvement from 1,762,000 on D86, suggesting markets are partially pricing deal probability but not treating it as certain.",
+      "The structural sticking points from D86 remain live: Mojtaba Khamenei's May 22 directive against removing enriched uranium from Iranian soil sits in direct contradiction to the nuclear terms being finalized; the US and Israel continue to demand full enrichment-program dismantlement, while Iran's opening offer is a moratorium and 30-day further talks. Polymarket now prices a permanent deal by December 31 at 80% — far above portfolio A1's 20% (Sep 30 deadline), reflecting both the later resolution horizon and recent optimism. The 60-day framework structure reported by Axios suggests the Sep-30 deadline for A1 is achievable if an MOU signs in the next 10–14 days.",
+      "Watch over the next 24 hours: any formal White House or Iranian FM statement on an MOU signing; whether the May 25 ceasefire holds cleanly (99% Polymarket); movement on the enriched-uranium language. The operator may want to review A1 (framework agreement by Sep 30) and A2 (Hormuz >50% by Dec 31) against Polymarket levels — both appear underpriced relative to current market consensus."
+    ],
+    "movers": [],
+    "events": [
+      {
+        "headline": "Trump officials: Iran deal to end war still days away; Sunday announcement did not materialize",
+        "source_name": "Axios",
+        "url": "https://www.axios.com/2026/05/24/iran-deal-white-house-delay-days-trump",
+        "published_at": "2026-05-24T00:00:00Z",
+        "public_safe": true
+      },
+      {
+        "headline": "US says Iran deal agreed in principle; Tehran accuses Washington of obstruction as Rubio cites 'significant progress'",
+        "source_name": "Al Jazeera",
+        "url": "https://www.aljazeera.com/news/2026/5/24/marco-rubio-says-significant-progress-made-in-us-iran-talks-to-end-war",
+        "published_at": "2026-05-24T00:00:00Z",
+        "public_safe": true
+      },
+      {
+        "headline": "Khamenei reported to have endorsed broad deal template; uranium enrichment transfer remains unresolved sticking point",
+        "source_name": "Axios",
+        "url": "https://www.axios.com/2026/05/24/iran-deal-strait-hormuz-sanctions-nuclear",
+        "published_at": "2026-05-24T00:00:00Z",
+        "public_safe": true
+      },
+      {
+        "headline": "Iran rial remittance rate at 1,709,000 IRR/USD on May 24, edging lower from 1,762,000 the prior day",
+        "source_name": "AlanChand",
+        "url": "https://alanchand.com/en/currencies-price/usd-hav",
+        "published_at": "2026-05-24T00:00:00Z",
+        "public_safe": true
+      },
+      {
+        "headline": "Polymarket: Permanent US-Iran deal by Dec 31, 2026 priced at 80%; ceasefire through May 25 at 99%",
+        "source_name": "Polymarket",
+        "url": "https://polymarket.com/event/us-x-iran-permanent-peace-deal-by-december-31-2026",
+        "published_at": "2026-05-25T11:05:34Z",
+        "public_safe": true
+      },
+      {
+        "headline": "Iran coordinated passage of 26 vessels through Hormuz in 24 hours as IRGC maintains control authority",
+        "source_name": "Al Jazeera",
+        "url": "https://www.aljazeera.com/news/2026/5/20/iran-says-it-coordinated-crossing-of-26-vessels-out-of-strait-of-hormuz",
+        "published_at": "2026-05-20T00:00:00Z",
+        "public_safe": true
+      }
+    ]
+  },
+  "fa": {
+    "read_paragraphs": [
+      "روز ۸۷: اعلامیه‌ای که دونالد ترامپ برای یکشنبه وعده داده بود، محقق نشد. مقامات آمریکایی به آکسیوس گفتند توافق ایران-آمریکا همچنان «چند روز» فاصله دارد، در حالی که وزارت خارجه ایران واشنگتن را متهم به «کارشکنی» کرد — و روبیو همین بازه را «پیشرفت قابل‌توجه» نامید. آتش‌بس برقرار است (پلی‌مارکت: ۹۹٪ تا امروز). نرخ حواله دلار به ریال در ۲۴ مه به حدود ۱٬۷۰۹٬۰۰۰ تومان رسید — بهبود اندک نسبت به ۱٬۷۶۲٬۰۰۰ در روز D86 — نشانه قیمت‌گذاری جزئی احتمال توافق.",
+      "موانع ساختاری از روز D86 همچنان پابرجاست: دستورالعمل مجتبی خامنه‌ای در ۲۲ مه مبنی بر ممنوعیت انتقال اورانیوم غنی‌شده از خاک ایران، مستقیماً با شرایط هسته‌ای در حال مذاکره در تناقض است؛ آمریکا و اسرائیل خواهان برچیدن کامل برنامه غنی‌سازی‌اند، در حالی که پیشنهاد ایران تعلیق موقت و ۳۰ روز مذاکره است. پلی‌مارکت اکنون احتمال توافق دائمی تا ۳۱ دسامبر ۲۰۲۶ را ۸۰٪ قیمت‌گذاری می‌کند — بسیار بالاتر از ۲۰٪ پرتفولیو برای A1 (مهلت ۳۰ سپتامبر).",
+      "در ۲۴ ساعت آینده باید توجه داشت: هرگونه اعلامیه رسمی کاخ سفید یا وزارت خارجه ایران درباره امضای MOU؛ تداوم آتش‌بس در ۲۵ مه؛ و تحولات زبان توافق درباره اورانیوم غنی‌شده. اپراتور احتمالاً باید A1 و A2 را در پرتو سطوح فعلی پلی‌مارکت بازبینی کند."
+    ],
+    "movers": [],
+    "events": [
+      {
+        "headline": "مقامات آمریکایی: توافق ایران و آمریکا هنوز چند روز فاصله دارد؛ اعلامیه یکشنبه محقق نشد",
+        "source_name": "Axios",
+        "url": "https://www.axios.com/2026/05/24/iran-deal-white-house-delay-days-trump",
+        "published_at": "2026-05-24T00:00:00Z",
+        "public_safe": true
+      },
+      {
+        "headline": "آمریکا می‌گوید توافق با ایران در اصل حاصل شده؛ تهران واشنگتن را به کارشکنی متهم می‌کند",
+        "source_name": "Al Jazeera",
+        "url": "https://www.aljazeera.com/news/2026/5/24/marco-rubio-says-significant-progress-made-in-us-iran-talks-to-end-war",
+        "published_at": "2026-05-24T00:00:00Z",
+        "public_safe": true
+      },
+      {
+        "headline": "خامنه‌ای گزارش شده که چارچوب کلی توافق را تأیید کرده؛ انتقال اورانیوم غنی‌شده همچنان نقطه گره‌گاهی است",
+        "source_name": "Axios",
+        "url": "https://www.axios.com/2026/05/24/iran-deal-strait-hormuz-sanctions-nuclear",
+        "published_at": "2026-05-24T00:00:00Z",
+        "public_safe": true
+      },
+      {
+        "headline": "نرخ حواله دلار در ۲۴ مه: ۱٬۷۰۹٬۰۰۰ ریال — کاهش جزئی نسبت به ۱٬۷۶۲٬۰۰۰ روز قبل",
+        "source_name": "AlanChand",
+        "url": "https://alanchand.com/en/currencies-price/usd-hav",
+        "published_at": "2026-05-24T00:00:00Z",
+        "public_safe": true
+      },
+      {
+        "headline": "پلی‌مارکت: احتمال توافق دائمی آمریکا-ایران تا ۳۱ دسامبر ۲۰۲۶ به ۸۰٪ رسید؛ ادامه آتش‌بس تا ۲۵ مه: ۹۹٪",
+        "source_name": "Polymarket",
+        "url": "https://polymarket.com/event/us-x-iran-permanent-peace-deal-by-december-31-2026",
+        "published_at": "2026-05-25T11:05:34Z",
+        "public_safe": true
+      },
+      {
+        "headline": "ایران: ۲۶ کشتی در ۲۴ ساعت با هماهنگی سپاه از تنگه هرمز عبور کردند",
+        "source_name": "Al Jazeera",
+        "url": "https://www.aljazeera.com/news/2026/5/20/iran-says-it-coordinated-crossing-of-26-vessels-out-of-strait-of-hormuz",
+        "published_at": "2026-05-20T00:00:00Z",
+        "public_safe": true
+      }
+    ]
+  }
+}

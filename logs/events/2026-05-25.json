@@ -1,0 +1,56 @@
+{
+  "tick_date": "2026-05-25",
+  "tick_timestamp_utc": "2026-05-25T11:05:34Z",
+  "max_age_hours": 24,
+  "items_count": 6,
+  "items": [
+    {
+      "title": "Trump officials: Iran deal to end war may take days, announcement delayed past Sunday",
+      "source": "web-search:Trump Iran statement today",
+      "url": "https://www.axios.com/2026/05/24/iran-deal-white-house-delay-days-trump",
+      "published_at": "2026-05-24T00:00:00Z",
+      "summary": "US officials said the Iran deal is still days away from announcement after Trump declared it largely negotiated on May 23.",
+      "public_safe": true
+    },
+    {
+      "title": "US says Iran deal agreed as Tehran accuses Washington of obstruction; Rubio cites significant progress",
+      "source": "web-search:Trump Iran statement today",
+      "url": "https://www.aljazeera.com/news/2026/5/24/marco-rubio-says-significant-progress-made-in-us-iran-talks-to-end-war",
+      "published_at": "2026-05-24T00:00:00Z",
+      "summary": "Secretary Rubio said significant progress was made in US-Iran talks; Iran's foreign ministry accused Washington of obstruction.",
+      "public_safe": true
+    },
+    {
+      "title": "Iran rial remittance rate at 1,709,000 IRR/USD on May 24, edging lower from 1,762,000 prior day",
+      "source": "web-search:Iran rial today",
+      "url": "https://alanchand.com/en/currencies-price/usd-hav",
+      "published_at": "2026-05-24T00:00:00Z",
+      "summary": "USD/IRR (Havala/remittance rate) closed at 1,709,000 on Sunday May 24, down from 1,762,000 the day before.",
+      "public_safe": true
+    },
+    {
+      "title": "Iran claims it coordinated passage of 26 vessels out of Hormuz in 24 hours as talks remain stalled",
+      "source": "web-search:Iran Hormuz shipping last 24 hours",
+      "url": "https://www.aljazeera.com/news/2026/5/20/iran-says-it-coordinated-crossing-of-26-vessels-out-of-strait-of-hormuz",
+      "published_at": "2026-05-20T00:00:00Z",
+      "summary": "IRGC Navy said it coordinated 26 vessel transits through Hormuz in 24 hours, framing control as Iran's authority over the strait.",
+      "public_safe": true
+    },
+    {
+      "title": "Polymarket: US-Iran permanent peace deal by December 31, 2026 at 80%; ceasefire through May 25 at 99%",
+      "source": "web-search:Tehran nuclear talks update",
+      "url": "https://polymarket.com/event/us-x-iran-permanent-peace-deal-by-december-31-2026",
+      "published_at": "2026-05-25T11:05:34Z",
+      "summary": "Polymarket prices a permanent Iran-US deal by Dec 31 at 80%, while ceasefire continuation through May 25 trades at 99%.",
+      "public_safe": true
+    },
+    {
+      "title": "Khamenei reported to have endorsed broad template of Iran deal; enrichment remains core sticking point",
+      "source": "web-search:Khamenei statement today",
+      "url": "https://www.axios.com/2026/05/24/iran-deal-strait-hormuz-sanctions-nuclear",
+      "published_at": "2026-05-24T00:00:00Z",
+      "summary": "US officials said Supreme Leader Khamenei has endorsed the broad deal template, though uranium enrichment and stockpile transfer remain unresolved.",
+      "public_safe": true
+    }
+  ]
+}
