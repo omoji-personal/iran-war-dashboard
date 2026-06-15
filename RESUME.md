@@ -1,16 +1,29 @@
-# Resume — Iran War Dashboard Morning Brief
+# Resume — Iran War Dashboard
 
-**Last session**: 2026-05-15 (shipped Morning Brief feature end-to-end).
+**Last session**: 2026-06-15 (full audit + deal-era refresh, Day 108).
 
-## TL;DR
+## TL;DR — 2026-06-15 deal-era update (shipped, NOT yet pushed at time of writing this line; see git log)
 
-The Morning Brief is **shipped and live**. The cron is **scheduled and enabled** at 7am EDT. Nothing is half-done.
+The war is ending. On **June 14** the US and Iran reached a **framework MOU** (signs **June 19**, Switzerland; 60-day window to a permanent deal): US naval blockade lifted, Strait of Hormuz reopening toll-free (physical recovery gated by mine-clearing), nuclear/sanctions/$24B-assets deferred. **Ali Khamenei was killed Feb 28; son Mojtaba has led since March 8** — this corrected a counterfactual the dashboard had carried.
+
+What shipped this session (all cited from a 7-agent intel sweep + 4 adversarial verifiers):
+- **Re-rated all 32 questions**; **resolved 9** (B1/B2/B3/B5/C1/C3/D2/D3 = YES, A5 = NO).
+- **Added A6** (permanent settlement by Sep 30, ~50/50) and **B6** (ceasefire holds through Aug 31, ~70%) → 34 total.
+- **Rewrote** `economic_war_frame` + `base_case` (EN+FA, full+public) to the deal-era worldview.
+- **New deal-tracker component** (render + `metadata.deal_tracker`, EN+FA, public-safe) above the board.
+- **Resolution rendering**: `status`/`resolution_date` schema + RESOLVED ✓/✕ cards + a "Resolved" cluster + hardened `render_question_card` (no more KeyError on missing fields). Surgical CSS only.
+- **Day-108 briefing** seeded (`agent/briefing-2026-06-15.json`, EN+FA, 9 cited events + 5 movers).
+- **Softened false-cadence strings** (cron is disabled → "Updated as events warrant").
+- **Restored `/legacy`** chart data (`legacy/war-data.json` from the .bak).
+- **Reusable scripts**: `agent/apply_2026-06-15_update.py` (ruamel comment-preserving updater), `agent/build_briefing_2026-06-15.py`, `agent/audit-update-workflow.mjs` (the intel+audit workflow).
+
+**Cron is now DISABLED** (`trig_01UD1sGTg9SHWMN2HjY7AiBa`) — updates are manual/on-demand.
 
 - Live: https://iran-war-dashboard-murex.vercel.app/
 - Public stripped: https://iran-war-public.vercel.app/
 - Spec: `docs/superpowers/specs/2026-05-15-morning-briefing-design.md`
-- Cron procedure: `agent/cron-prompt.phase-0.md`
-- 85/85 tests green
+- **91/91 tests green**; public bundle leak-clean (English + Persian).
+- **Operator follow-ups**: (1) confirm the `murex` root deploy is access-gated — it serves the PRIVATE root (F-cards + full portfolio.yaml) by design; (2) the June-19 signing would resolve A1 YES; (3) re-enable the cron if desired.
 
 ## What shipped this session (5 commits)
 

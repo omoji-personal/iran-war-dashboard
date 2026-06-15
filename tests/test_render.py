@@ -318,6 +318,62 @@ def test_topness_prefers_in_play_over_equal_stakes_tail():
     )
 
 
+def test_resolved_question_renders_badge_not_live_probability():
+    """A status=resolved_yes/no question renders a RESOLVED badge, not a live
+    probability bar — but keeps the `<article class="qcard ` prefix (count invariant)."""
+    q = {"id": "Z1", "category": "diplomatic_resolution", "question": "Test resolved?",
+         "status": "resolved_yes", "resolution_date": "2026-06-14",
+         "current_probability": 0.99, "current_credible_interval_80": [0.98, 1.0],
+         "deadline": "2026-12-31", "notes": "Resolved by the deal.", "stakeholder_tags": []}
+    html = render.render_question_card(q, stripped=False, lang="en")
+    assert html.strip().startswith('<article class="qcard ')
+    assert "qcard-resolved" in html
+    assert "RESOLVED" in html.upper()
+    # No live CI fill bar on a settled card
+    assert "qcard-ci-fill" not in html
+    # resolved_no path
+    q["status"] = "resolved_no"
+    q["current_probability"] = 0.02
+    html_no = render.render_question_card(q, stripped=False, lang="en")
+    assert "qcard-resolved-no" in html_no
+
+
+def test_render_question_card_hardened_against_missing_fields():
+    """Missing current_probability / CI / deadline must NOT KeyError the render
+    (which would abort render_html and write zero HTML files)."""
+    q = {"id": "Z2", "category": "us_side", "question": "Q?", "notes": "n",
+         "stakeholder_tags": []}
+    html = render.render_question_card(q, stripped=False, lang="en")
+    assert 'id="q-Z2"' in html  # rendered, did not raise
+
+
+def test_all_resolved_questions_render_as_resolved_in_board():
+    """Every portfolio question with status resolved_* must carry the resolved
+    class in the rendered board (not silently render as a live forecast)."""
+    portfolio = render.load_portfolio()
+    html = render.render_html(portfolio, [], history=[], stripped=False)
+    resolved_ids = [q["id"] for q in portfolio["questions"]
+                    if q.get("status") in ("resolved_yes", "resolved_no")]
+    assert resolved_ids, "expected resolved questions after the deal-era update"
+    for qid in resolved_ids:
+        idx = html.find(f'id="q-{qid}"')
+        assert idx != -1, f"{qid} card missing"
+        assert "qcard-resolved" in html[max(0, idx - 240):idx], f"{qid} not marked resolved"
+
+
+def test_deal_tracker_renders_above_board_and_in_public():
+    """The June-14 deal tracker renders when metadata.deal_tracker is present,
+    sits above the question board, and is public-safe (survives the strip)."""
+    portfolio = render.load_portfolio()
+    if "deal_tracker" not in (portfolio.get("metadata") or {}):
+        return
+    html = render.render_html(portfolio, [], history=[], stripped=False)
+    assert 'class="deal-tracker"' in html
+    assert html.index('class="deal-tracker"') < html.index('class="board"')
+    pub = render.render_html(portfolio, [], history=[], stripped=True)
+    assert 'class="deal-tracker"' in pub, "deal tracker should appear on the public deploy"
+
+
 def test_render_html_no_unfilled_placeholders():
     """Catch f-string / template mistakes that leave literal `{var}` tokens in output.
     Uses a real regex instead of a fixed list of suspect substrings."""

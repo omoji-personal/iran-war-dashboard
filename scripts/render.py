@@ -52,18 +52,18 @@ STRINGS = {
     "en": {
         "site_eyebrow": "2026 Iran-US Conflict",
         "site_title": "Predictive Agent",
-        "topbar_next_label": "Next:",
-        "topbar_next_value": "Daily 07:00 ET update",
+        "topbar_next_label": "Status:",
+        "topbar_next_value": "Updated as events warrant",
         "lang_toggle_to_fa": "فارسی",
         "lang_toggle_to_en": "English",
         "masthead_classification": "For analytic reading · Probability brief, not advice",
         "masthead_publisher": "2026 IRAN-US CONFLICT MONITOR",
-        "masthead_subline": "Daily 07:00 ET update",
+        "masthead_subline": "Updated as the situation develops",
         "masthead_issue_prefix": "Issue",
         "issue_day": "Day",
         "translation_in_progress_notice": "",
-        "banner_strong": "EXPERIMENTAL — UNCALIBRATED",
-        "banner_text": "None of these questions has resolved yet, so the probabilities have no track record. Treat them as structured scenario reasoning, not as forecasts.",
+        "banner_strong": "EXPERIMENTAL · EARLY TRACK RECORD",
+        "banner_text": "As of the June 14 framework deal, several questions have resolved (marked ✓ below). The open ones remain structured scenario reasoning, not graded forecasts.",
         "banner_legacy_link": "Older dashboard",
         "headline_eyebrow_today": "Today's read",
         "headline_eyebrow_tagline": "interpretation, not forecast",
@@ -93,15 +93,26 @@ STRINGS = {
         "board_sub": "Within each topic, most-likely outcomes lead; lower-probability scenarios to watch follow under the divider. Each card shows the current probability and the 80% range it's likely to fall in.",
         "cluster_likely_h": "Most-likely outcomes",
         "cluster_tail_h": "Lower-probability scenarios to watch",
+        "cluster_resolved_h": "Resolved",
         "cat_count_template": "{n} questions",
+        "qcard_resolved_badge_yes": "✓ RESOLVED · YES",
+        "qcard_resolved_badge_no": "✕ RESOLVED · NO",
+        "qcard_resolved_on": "resolved",
+        "dealtracker_eyebrow": "Where the deal stands",
+        "dealtracker_h": "June 14 framework — implementation tracker",
+        "dealtracker_foot": "Status reflects public reporting as of the date shown. The political deal (signing, blockade, Hormuz) is moving faster than physical normalization (mine-clearing) and the deferred nuclear / sanctions file.",
+        "deal_status_done": "Done",
+        "deal_status_progress": "In progress",
+        "deal_status_pending": "Pending",
+        "deal_status_deferred": "Deferred",
         "method_h": "What to keep in mind",
         "method_b1": "<strong>The \"most-likely scenario\" paragraph above is the anchor.</strong> It's the single future getting the most probability mass once you average across the questions. The questions below — especially the ones in the \"lower-probability\" cluster of each topic — are the named ways that base case could break. Most of those tail-risk cards will read low for a reason.",
-        "method_b2": "<strong>Experimental — no track record yet.</strong> None of these questions has resolved, so the probabilities haven't been graded against reality. Treat them as structured guesses.",
-        "method_b3": "<strong>Two questions are intentionally fuzzy</strong> — anything tied to whether a leader is alive, ill, or being succeeded (Khamenei, Mojtaba). Forecasting models historically fail at these. The number is a placeholder; the rationale is what to read.",
+        "method_b2": "<strong>Early track record.</strong> Some questions have now resolved (the ✓ cards); the rest haven't been graded against reality yet. Treat open numbers as structured guesses.",
+        "method_b3": "<strong>Leadership questions are intentionally fuzzy.</strong> Iran's succession resolved the hard way — Ali Khamenei was killed on Feb 28 and his son Mojtaba became Supreme Leader on March 8. Forecasting models fail at these; read the rationale, not the number.",
         "method_b4": "<strong>How probabilities move</strong>: each morning, public news and prediction-market prices are re-read. If something shifts a question by more than its 80% range, it shows up at the top in \"What changed since the last update.\"",
         "method_b5": "<strong>What this is not.</strong> It is not financial or political advice. No one is being told to act on these numbers. Probabilities are scenario weighing, not forecasts.",
         "footer_brand": "2026 IRAN-US CONFLICT PREDICTIVE AGENT",
-        "footer_meta": "Daily structured scenario analysis · experimental · no track record yet",
+        "footer_meta": "Structured scenario analysis · experimental · partial track record",
         "footer_legacy_link": "Older dashboard",
         "category_diplomatic_resolution": "Diplomatic resolution",
         "category_military_escalation": "Military escalation",
@@ -130,18 +141,18 @@ STRINGS = {
     "fa": {
         "site_eyebrow": "نزاع ایران و آمریکا ۲۰۲۶",
         "site_title": "تحلیل‌گر پیش‌بینی",
-        "topbar_next_label": "بعدی:",
-        "topbar_next_value": "به‌روزرسانی هر روز ساعت ۷:۰۰ شرق آمریکا",
+        "topbar_next_label": "وضعیت:",
+        "topbar_next_value": "به‌روزرسانی بر حسب رویدادها",
         "lang_toggle_to_fa": "فارسی",
         "lang_toggle_to_en": "English",
         "masthead_classification": "برای مطالعه‌ی تحلیلی · گزارش احتمالات، نه توصیه",
         "masthead_publisher": "ناظر نزاع ایران و آمریکا ۲۰۲۶",
-        "masthead_subline": "به‌روزرسانی هر روز ساعت ۷:۰۰ شرق آمریکا",
+        "masthead_subline": "به‌روزرسانی با تحول اوضاع",
         "masthead_issue_prefix": "شماره",
         "issue_day": "روز",
         "translation_in_progress_notice": "متن پرسش‌ها در حال حاضر به انگلیسی نمایش داده می‌شود. ترجمه‌ی پرسش به پرسش در حال تکمیل است.",
-        "banner_strong": "آزمایشی — کالیبره‌نشده",
-        "banner_text": "هیچ‌یک از این پرسش‌ها هنوز قطعی نشده‌اند، پس احتمالات سابقه‌ی عملکردی ندارند. آن‌ها را به عنوان استدلال ساخت‌یافته‌ی سناریو در نظر بگیرید، نه پیش‌بینی.",
+        "banner_strong": "آزمایشی · سابقه‌ی اولیه",
+        "banner_text": "با توافق چارچوبی ۱۴ ژوئن، چند پرسش قطعی شده‌اند (با نشان ✓ در پایین). پرسش‌های باز همچنان استدلال ساخت‌یافته‌ی سناریو هستند، نه پیش‌بینی نمره‌گذاری‌شده.",
         "banner_legacy_link": "داشبورد قدیمی",
         "headline_eyebrow_today": "خوانش امروز",
         "headline_eyebrow_tagline": "تفسیر، نه پیش‌بینی",
@@ -171,15 +182,26 @@ STRINGS = {
         "board_sub": "در هر موضوع، محتمل‌ترین نتایج ابتدا می‌آیند؛ سناریوهای کم‌احتمال‌تر زیر خط جداکننده. هر کارت احتمال جاری و بازه‌ی ۸۰٪ احتمالی را نشان می‌دهد.",
         "cluster_likely_h": "محتمل‌ترین نتایج",
         "cluster_tail_h": "سناریوهای کم‌احتمال‌تر برای رصد",
+        "cluster_resolved_h": "قطعی‌شده",
         "cat_count_template": "{n} پرسش",
+        "qcard_resolved_badge_yes": "✓ قطعی · بله",
+        "qcard_resolved_badge_no": "✕ قطعی · خیر",
+        "qcard_resolved_on": "قطعی‌شده در",
+        "dealtracker_eyebrow": "وضعیت توافق",
+        "dealtracker_h": "توافق چارچوبی ۱۴ ژوئن — رصد اجرا",
+        "dealtracker_foot": "وضعیت بر پایه‌ی گزارش‌های عمومی تا تاریخ نشان‌داده‌شده است. توافق سیاسی (امضا، رفع محاصره، هرمز) سریع‌تر از عادی‌سازی فیزیکی (مین‌روبی) و پرونده‌ی موکول‌شده‌ی هسته‌ای/تحریم پیش می‌رود.",
+        "deal_status_done": "انجام‌شده",
+        "deal_status_progress": "در حال انجام",
+        "deal_status_pending": "در انتظار",
+        "deal_status_deferred": "موکول‌شده",
         "method_h": "آنچه باید در نظر داشت",
         "method_b1": "<strong>پاراگراف «محتمل‌ترین سناریو» در بالا، لنگرگاه است.</strong> این تنها آینده‌ای است که پس از میانگین‌گیری بین پرسش‌ها، بیشترین وزن احتمالی را دریافت می‌کند. پرسش‌های پایین — به‌ویژه آن‌هایی که در خوشه‌ی «کم‌احتمال‌تر» هر موضوع قرار می‌گیرند — راه‌های نامبرده‌ای هستند که این خط پایه می‌تواند بشکند. اکثر آن کارت‌های ریسک دم به دلیلی پایین خوانده می‌شوند.",
-        "method_b2": "<strong>آزمایشی — بدون سابقه.</strong> هیچ‌یک از این پرسش‌ها قطعی نشده، پس احتمالات نسبت به واقعیت نمره‌گذاری نشده‌اند. آن‌ها را گمانه‌های ساخت‌یافته بدانید.",
-        "method_b3": "<strong>دو پرسش به‌عمد مبهم‌اند</strong> — هر چیزی مرتبط با زنده‌بودن، بیماری یا جانشینی یک رهبر (خامنه‌ای، مجتبی). مدل‌های پیش‌بینی از نظر تاریخی در این موارد ناکام می‌مانند. عدد جای‌نشان است؛ آنچه باید بخوانید استدلال است.",
+        "method_b2": "<strong>سابقه‌ی اولیه.</strong> برخی پرسش‌ها اکنون قطعی شده‌اند (کارت‌های ✓)؛ بقیه هنوز نسبت به واقعیت نمره‌گذاری نشده‌اند. اعداد باز را گمانه‌های ساخت‌یافته بدانید.",
+        "method_b3": "<strong>پرسش‌های رهبری به‌عمد مبهم‌اند.</strong> جانشینی ایران به سخت‌ترین شکل قطعی شد — علی خامنه‌ای در ۲۸ فوریه کشته شد و پسرش مجتبی در ۸ مارس رهبر شد. مدل‌ها در این موارد ناکام می‌مانند؛ استدلال را بخوانید، نه عدد را.",
         "method_b4": "<strong>چگونه احتمالات حرکت می‌کنند</strong>: هر صبح، اخبار عمومی و قیمت بازارهای پیش‌بینی دوباره خوانده می‌شود. اگر چیزی پرسشی را بیش از بازه‌ی ۸۰٪ آن جابه‌جا کند، در بالا در «چه تغییری از آخرین به‌روزرسانی رخ داد» نمایش داده می‌شود.",
         "method_b5": "<strong>این چه نیست.</strong> این مشاوره‌ی مالی یا سیاسی نیست. به هیچ‌کس گفته نمی‌شود بر اساس این اعداد عمل کند. احتمالات وزن‌دهی سناریو هستند، نه پیش‌بینی.",
         "footer_brand": "تحلیل‌گر پیش‌بینی نزاع ایران و آمریکا ۲۰۲۶",
-        "footer_meta": "تحلیل سناریوی ساخت‌یافته‌ی روزانه · آزمایشی · بدون سابقه",
+        "footer_meta": "تحلیل سناریوی ساخت‌یافته · آزمایشی · سابقه‌ی نسبی",
         "footer_legacy_link": "داشبورد قدیمی",
         "category_diplomatic_resolution": "حل دیپلماتیک",
         "category_military_escalation": "تشدید نظامی",
@@ -380,27 +402,22 @@ def _q_field(q: dict, key: str, lang: str) -> str:
     return str(q.get(key, "") or "")
 
 
-def render_question_card(q: dict, stripped: bool = False, lang: str = "en") -> str:
-    p = q["current_probability"]
-    label, range_str, label_css = icd203(p, lang=lang)
-    ci = q["current_credible_interval_80"]
-    humility = q.get("humility_flag", False)
-    notes = first_sentence(_q_field(q, "notes", lang))
-    deadline = q["deadline"]
+RESOLVED_STATES = ("resolved_yes", "resolved_no")
 
-    _, _, cat_css = category_label(q["category"], lang)
 
-    pct = round(p * 100)
-    ci_lo = round(ci[0] * 100)
-    ci_hi = round(ci[1] * 100)
+def _is_resolved(q: dict) -> bool:
+    return q.get("status") in RESOLVED_STATES
 
+
+def _card_flags(q: dict, stripped: bool, lang: str) -> str:
+    """Shared HUMILITY / PERSONAL flag chips for a question card.
+    PERSONAL is operator-private — never shown on the stripped public deploy."""
     flags = []
-    if humility:
+    if q.get("humility_flag", False):
         flags.append(
             f'<span class="card-flag flag-humility" title="{esc(_t("qcard_flag_humility_title", lang))}">'
             f'{esc(_t("qcard_flag_humility", lang))}</span>'
         )
-    # PERSONAL flag is operator-private — never shown on the stripped public deploy
     if not stripped:
         for tag in q.get("stakeholder_tags", []):
             if tag == "omid_personal":
@@ -409,6 +426,56 @@ def render_question_card(q: dict, stripped: bool = False, lang: str = "en") -> s
                     f'{esc(_t("qcard_flag_personal", lang))}</span>'
                 )
                 break
+    return "".join(flags)
+
+
+def _render_resolved_card(q: dict, stripped: bool, lang: str) -> str:
+    """A settled question: shows the outcome badge instead of a live probability
+    bar. Keeps the `<article class="qcard ` prefix so card-count invariants hold."""
+    status = q.get("status")
+    yes = status == "resolved_yes"
+    badge = _t("qcard_resolved_badge_yes" if yes else "qcard_resolved_badge_no", lang)
+    res_css = "yes" if yes else "no"
+    _, _, cat_css = category_label(q["category"], lang)
+    notes = first_sentence(_q_field(q, "notes", lang))
+    rdate = q.get("resolution_date", "")
+    rdate_str = _human_date(str(rdate), lang) if rdate else ""
+    on_label = _t("qcard_resolved_on", lang)
+    meta = (
+        f'<bdi class="qcard-resolved-on" dir="ltr">{esc(on_label)} {esc(rdate_str)}</bdi>'
+        if rdate_str else ""
+    )
+    return f"""
+      <article class="qcard qcard-{cat_css} qcard-resolved qcard-resolved-{res_css}" id="q-{q['id']}">
+        <header class="qcard-head">
+          <span class="qcard-id">{esc(q['id'])}</span>
+          {meta}
+          <span class="qcard-flags">{_card_flags(q, stripped, lang)}</span>
+        </header>
+        <h3 class="qcard-question" dir="auto">{esc(_q_field(q, 'question', lang))}</h3>
+        <div class="qcard-resolved-badge qcard-resolved-badge-{res_css}">{esc(badge)}</div>
+        <p class="qcard-note" dir="auto">{esc(notes)}</p>
+      </article>
+    """
+
+
+def render_question_card(q: dict, stripped: bool = False, lang: str = "en") -> str:
+    if _is_resolved(q):
+        return _render_resolved_card(q, stripped, lang)
+
+    # Hardened reads: a question missing current_probability / CI / deadline must
+    # degrade gracefully rather than KeyError the whole render (no HTML written).
+    p = q.get("current_probability", 0.0)
+    label, range_str, label_css = icd203(p, lang=lang)
+    ci = q.get("current_credible_interval_80") or [p, p]
+    notes = first_sentence(_q_field(q, "notes", lang))
+    deadline = q.get("deadline", "")
+
+    _, _, cat_css = category_label(q["category"], lang)
+
+    pct = round(p * 100)
+    ci_lo = round(ci[0] * 100)
+    ci_hi = round(ci[1] * 100)
 
     # `dir="auto"` on user-content blocks so an English question on a Persian
     # page renders LTR without breaking the surrounding RTL chrome.
@@ -422,7 +489,7 @@ def render_question_card(q: dict, stripped: bool = False, lang: str = "en") -> s
         <header class="qcard-head">
           <span class="qcard-id">{esc(q['id'])}</span>
           <bdi class="qcard-deadline" dir="ltr">→ {esc(deadline)}</bdi>
-          <span class="qcard-flags">{''.join(flags)}</span>
+          <span class="qcard-flags">{_card_flags(q, stripped, lang)}</span>
         </header>
         <h3 class="qcard-question" dir="auto">{esc(_q_field(q, 'question', lang))}</h3>
         <div class="qcard-numbers">
@@ -751,12 +818,77 @@ LIKELY_THRESHOLD = 0.45
 
 
 def _split_likely_tail(questions: list[dict]) -> tuple[list[dict], list[dict]]:
-    """Sort by current_probability descending, then partition at LIKELY_THRESHOLD.
-    Returns (likely_cluster, tail_cluster)."""
-    sorted_qs = sorted(questions, key=lambda q: -q["current_probability"])
-    likely = [q for q in sorted_qs if q["current_probability"] >= LIKELY_THRESHOLD]
-    tail = [q for q in sorted_qs if q["current_probability"] < LIKELY_THRESHOLD]
+    """Sort OPEN questions by current_probability descending, then partition at
+    LIKELY_THRESHOLD. Resolved questions are excluded — they render in their own
+    cluster (see render_question_board). Returns (likely_cluster, tail_cluster)."""
+    open_qs = [q for q in questions if not _is_resolved(q)]
+    sorted_qs = sorted(open_qs, key=lambda q: -q.get("current_probability", 0.0))
+    likely = [q for q in sorted_qs if q.get("current_probability", 0.0) >= LIKELY_THRESHOLD]
+    tail = [q for q in sorted_qs if q.get("current_probability", 0.0) < LIKELY_THRESHOLD]
     return likely, tail
+
+
+def _resolved_in_category(questions: list[dict]) -> list[dict]:
+    """Resolved questions, most-recently-resolved first."""
+    resolved = [q for q in questions if _is_resolved(q)]
+    return sorted(resolved, key=lambda q: str(q.get("resolution_date", "")), reverse=True)
+
+
+# Allowed deal-tracker item statuses → (css suffix, STRINGS label key)
+DEAL_STATUS = {
+    "done": ("done", "deal_status_done"),
+    "progress": ("progress", "deal_status_progress"),
+    "pending": ("pending", "deal_status_pending"),
+    "deferred": ("deferred", "deal_status_deferred"),
+}
+
+
+def render_deal_tracker(portfolio: dict, lang: str = "en") -> str:
+    """Render the June-14 framework implementation tracker from
+    `metadata.deal_tracker.{en|fa}` = {title, as_of, items:[{label, status,
+    detail, date}]}. Public-safe (deal facts only). Empty string if absent."""
+    md = portfolio.get("metadata", {}) or {}
+    dt = md.get("deal_tracker") or {}
+    block = dt.get(lang) or dt.get("en") or {}
+    title = (block.get("title") or "").strip()
+    items = block.get("items") or []
+    if not title and not items:
+        return ""
+    as_of = block.get("as_of") or dt.get("as_of")
+    as_of_str = _human_date(str(as_of), lang) if as_of else ""
+    as_of_html = (
+        f' · <bdi dir="ltr">{esc(as_of_str)}</bdi>' if as_of_str else ""
+    )
+    rows = []
+    for it in items:
+        st = it.get("status", "pending")
+        css, label_key = DEAL_STATUS.get(st, ("pending", "deal_status_pending"))
+        label = esc((it.get("label") or "").strip())
+        detail = esc((it.get("detail") or "").strip())
+        date = it.get("date", "")
+        date_str = _human_date(str(date), lang) if date else ""
+        date_html = (
+            f'<bdi class="deal-date" dir="ltr">{esc(date_str)}</bdi>' if date_str else ""
+        )
+        rows.append(
+            f'<li class="deal-item deal-item-{css}">'
+            f'<span class="deal-status deal-status-{css}">{esc(_t(label_key, lang))}</span>'
+            f'<span class="deal-body"><span class="deal-label" dir="auto">{label}</span>'
+            f'<span class="deal-detail" dir="auto">{detail}</span></span>'
+            f'{date_html}'
+            f'</li>'
+        )
+    foot = _t("dealtracker_foot", lang)
+    return f"""
+      <section class="deal-tracker" role="region" aria-label="{esc(title)}">
+        <div class="deal-tracker-eyebrow">{esc(_t("dealtracker_eyebrow", lang))}{as_of_html}</div>
+        <h2 class="deal-tracker-h" dir="auto">{esc(title)}</h2>
+        <ul class="deal-tracker-list">
+          {"".join(rows)}
+        </ul>
+        <p class="deal-tracker-foot">{esc(foot)}</p>
+      </section>
+    """
 
 
 def render_question_board(by_cat: dict, stripped: bool = False, lang: str = "en") -> str:
@@ -788,6 +920,7 @@ def render_question_board(by_cat: dict, stripped: bool = False, lang: str = "en"
             continue
         num, title, css = category_label(cat_id, lang)
         likely, tail = _split_likely_tail(by_cat[cat_id])
+        resolved = _resolved_in_category(by_cat[cat_id])
         cluster_blocks: list[str] = []
         if likely:
             cluster_blocks.append(f"""
@@ -804,6 +937,16 @@ def render_question_board(by_cat: dict, stripped: bool = False, lang: str = "en"
                 <h4 class="board-cluster-h">{esc(_t("cluster_tail_h", lang))}</h4>
                 <div class="board-grid">
                   {"".join(render_question_card(q, stripped=stripped, lang=lang) for q in tail)}
+                </div>
+              </div>
+            """)
+        # Resolved questions render last in their category, visually de-emphasized.
+        if resolved:
+            cluster_blocks.append(f"""
+              <div class="board-cluster board-cluster-resolved">
+                <h4 class="board-cluster-h">{esc(_t("cluster_resolved_h", lang))}</h4>
+                <div class="board-grid">
+                  {"".join(render_question_card(q, stripped=stripped, lang=lang) for q in resolved)}
                 </div>
               </div>
             """)
@@ -1313,9 +1456,9 @@ def render_html(portfolio: dict, diffs: list[dict], history: list[dict], strippe
     title = title_base + public_suffix
     n_questions_visible = len(questions_for_view)
     if lang == "fa":
-        description_text = f"گزارش احتمال روزانه‌ی {n_questions_visible} پرسش درباره‌ی نزاع ایران و آمریکا ۲۰۲۶. آزمایشی — بدون سابقه."
+        description_text = f"گزارش احتمال {n_questions_visible} پرسش درباره‌ی نزاع ایران و آمریکا ۲۰۲۶ — اکنون در حال رصد توافق چارچوبی ژوئن. آزمایشی · سابقه‌ی نسبی."
     else:
-        description_text = f"Daily-updated probability brief on {n_questions_visible} questions about the 2026 Iran-US conflict. Experimental — no track record yet."
+        description_text = f"Probability brief on {n_questions_visible} questions about the 2026 Iran-US conflict — now tracking the June 2026 framework deal. Experimental · partial track record."
 
     toggle_href, toggle_label = _toggle_link(lang, stripped)
     is_rtl = (lang == "fa")
@@ -1433,6 +1576,8 @@ def render_html(portfolio: dict, diffs: list[dict], history: list[dict], strippe
     </header>
 
     {morning_brief_html}
+
+    {render_deal_tracker(portfolio_view, lang=lang)}
 
     {render_question_board(by_cat, stripped=stripped, lang=lang)}
 

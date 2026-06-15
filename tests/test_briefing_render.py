@@ -258,3 +258,38 @@ def test_render_morning_brief_shows_partial_notice_when_flagged():
     ])
     html = render.render_morning_brief(b, stripped=False, lang="en", flag_present=False)
     assert "partial" in html.lower() or "truncated" in html.lower()
+
+
+# --- shipped briefing file validation --------------------------------------
+
+def test_shipped_briefing_2026_06_15_schema_and_grounding():
+    """The committed Day-108 briefing must satisfy the schema (required keys,
+    bool public_safe, URL-bearing events) AND every mover must ground against
+    its own events list in both languages."""
+    path = ROOT / "agent" / "briefing-2026-06-15.json"
+    b = json.loads(path.read_text(encoding="utf-8"))
+    for k in ("tick_date", "tick_timestamp_utc", "day_number", "cron_status",
+              "events_count_24h", "probability_moves_24h", "briefing_partial", "en", "fa"):
+        assert k in b, f"briefing missing top-level key {k!r}"
+    assert b["day_number"] == 108
+    for lang in ("en", "fa"):
+        blk = b[lang]
+        assert blk["read_paragraphs"] and all(isinstance(s, str) and s for s in blk["read_paragraphs"])
+        assert len(blk["events"]) >= 3
+        for e in blk["events"]:
+            assert (e.get("url") or "").strip(), f"{lang} event missing url"
+            assert isinstance(e.get("public_safe"), bool), f"{lang} event public_safe must be bool"
+        grounded = render.ground_movers(blk["movers"], blk["events"], lang=lang)
+        for m in grounded:
+            assert "no event-grounded" not in m["why"].lower(), f"{lang} mover {m['qid']} ungrounded (en fallback)"
+            assert "مستند به رویداد" not in m["why"], f"{lang} mover {m['qid']} ungrounded (fa fallback)"
+
+
+def test_shipped_briefing_public_strip_has_no_private_movers():
+    """Public render of the shipped briefing must drop F-class / non-public-safe
+    movers and non-public-safe events."""
+    path = ROOT / "agent" / "briefing-2026-06-15.json"
+    b = json.loads(path.read_text(encoding="utf-8"))
+    html = render.render_morning_brief(b, stripped=True, lang="en", flag_present=False)
+    for tok in ("Iranfarhang", "Kipa", "Kemco", "KEMCO", "Mozhgan", "Behrah", "AMAG", "Berman"):
+        assert tok not in html, f"public briefing leaks {tok!r}"

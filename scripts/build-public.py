@@ -105,7 +105,10 @@ def main() -> int:
     # Conservative line-level filter — preserves layout rules but drops the 6 known
     # `qcard-cat-iranfarhang` / `qcard-cat-kipa` / `board-cat-iranfarhang` / `board-cat-kipa`
     # selector lines plus any future addition matching the same pattern.
-    private_css_tokens = ("iranfarhang", "kipa", "family-business")
+    # `flag-personal` is the PERSONAL chip selector — operator-only; strip its
+    # rule block from the public stylesheet even though the public HTML never
+    # uses the class (defense-in-depth, removes the selector name from the bundle).
+    private_css_tokens = ("iranfarhang", "kipa", "family-business", "flag-personal")
     public_css_lines = []
     skip_block = False
     for line in css_text.splitlines():
